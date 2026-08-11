@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	<TargetFramework>net10.0</TargetFramework>
+	<ImplicitUsings>enable</ImplicitUsings>
+	<Nullable>enable</Nullable>
+	<RootNamespace>Nueyon.Compose.Infrastructure</RootNamespace>
+	<AssemblyName>Nueyon.Compose.Infrastructure</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+	<ProjectReference Include="..\Nueyon.Compose.Application\Nueyon.Compose.Application.csproj" />
+	<ProjectReference Include="..\Nueyon.Compose.Domain\Nueyon.Compose.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
