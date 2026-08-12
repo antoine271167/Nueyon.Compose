@@ -1,7 +1,10 @@
-﻿<Solution>
-  <Project Path="Nueyon.Compose.Application/Nueyon.Compose.Application.csproj" />
+<Solution>
   <Project Path="Nueyon.Compose.Application.Tests/Nueyon.Compose.Application.Tests.csproj" />
+  <Project Path="Nueyon.Compose.Application/Nueyon.Compose.Application.csproj" />
+  <Project Path="Nueyon.Compose.Domain.Tests/Nueyon.Compose.Domain.Tests.csproj" Id="7fdbf825-7521-4444-b010-465ec7721d89" />
   <Project Path="Nueyon.Compose.Domain/Nueyon.Compose.Domain.csproj" />
+  <Project Path="Nueyon.Compose.Host.Console.Tests/Nueyon.Compose.Host.Console.Tests.csproj" Id="c8f9e4ac-812e-4a74-81ea-f89e4ecdc623" />
   <Project Path="Nueyon.Compose.Host.Console/Nueyon.Compose.Host.Console.csproj" />
+  <Project Path="Nueyon.Compose.Infrastructure.Tests/Nueyon.Compose.Infrastructure.Tests.csproj" Id="1e5d6b96-0c6d-4fb8-8500-915a8fec1cae" />
   <Project Path="Nueyon.Compose.Infrastructure/Nueyon.Compose.Infrastructure.csproj" />
 </Solution>
