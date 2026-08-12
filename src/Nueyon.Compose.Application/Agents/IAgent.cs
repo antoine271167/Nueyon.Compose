@@ -1,6 +1,6 @@
 namespace Nueyon.Compose.Application.Agents;
 
-public interface IAgent<TInput, TOutput>
+public interface IAgent<in TInput, TOutput>
 {
     Task<TOutput> ExecuteAsync(
         TInput input,
