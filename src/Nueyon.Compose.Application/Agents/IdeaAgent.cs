@@ -5,16 +5,6 @@ using Nueyon.Compose.Domain;
 namespace Nueyon.Compose.Application.Agents;
 
 /// <summary>
-/// A minimal concrete implementation of AgentSession for single-shot agent execution.
-/// </summary>
-internal sealed class SimpleAgentSession : AgentSession
-{
-    public SimpleAgentSession() : base()
-    {
-    }
-}
-
-/// <summary>
 /// A real IDEA agent powered by Microsoft Agent Framework and OpenAI.
 /// Transforms a user's idea or thought into one or more concrete content ideas.
 /// </summary>
@@ -74,11 +64,8 @@ public sealed class IdeaAgent : IAgent<ChatInput, IReadOnlyList<Idea>>
             {input.Content}
             """;
 
-        // Create a new session for this execution
-        var session = new SimpleAgentSession();
-
-        var options = new AgentRunOptions();
-        var response = await _agent.RunAsync(session, options, cancellationToken);
+        // Run the agent with the user message
+        var response = await _agent.RunAsync(userMessage, session: null, options: null, cancellationToken);
 
         var responseText = ExtractResponseText(response);
 
@@ -94,13 +81,17 @@ public sealed class IdeaAgent : IAgent<ChatInput, IReadOnlyList<Idea>>
     /// <returns>The extracted text content.</returns>
     private static string ExtractResponseText(AgentResponse response)
     {
-        if (response?.Messages == null || response.Messages.Count == 0)
+        ArgumentNullException.ThrowIfNull(response);
+
+        // Use the built-in Text property which concatenates all text content
+        var text = response.Text;
+
+        if (string.IsNullOrWhiteSpace(text))
         {
-            throw new InvalidOperationException("Agent response contains no messages.");
+            throw new InvalidOperationException("Agent response does not contain text content.");
         }
 
-        var lastMessage = response.Messages[response.Messages.Count - 1];
-        return lastMessage.ToString() ?? string.Empty;
+        return text;
     }
 
     /// <summary>
