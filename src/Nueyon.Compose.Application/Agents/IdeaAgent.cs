@@ -1,17 +1,26 @@
 using System.Text.Json;
-using Anthropic;
-using Anthropic.Core;
+using Microsoft.Agents.AI;
 using Nueyon.Compose.Domain;
 
 namespace Nueyon.Compose.Application.Agents;
 
 /// <summary>
-/// A real IDEA agent powered by Microsoft Agent Framework and Anthropic Claude Haiku 4.5.
+/// A minimal concrete implementation of AgentSession for single-shot agent execution.
+/// </summary>
+internal sealed class SimpleAgentSession : AgentSession
+{
+    public SimpleAgentSession() : base()
+    {
+    }
+}
+
+/// <summary>
+/// A real IDEA agent powered by Microsoft Agent Framework and OpenAI.
 /// Transforms a user's idea or thought into one or more concrete content ideas.
 /// </summary>
 public sealed class IdeaAgent : IAgent<ChatInput, IReadOnlyList<Idea>>
 {
-    private readonly AnthropicClient _client;
+    private readonly AIAgent _agent;
 
     /// <summary>
     /// System instruction for the IDEA agent that guides its behavior.
@@ -35,39 +44,14 @@ public sealed class IdeaAgent : IAgent<ChatInput, IReadOnlyList<Idea>>
         Do not include explanations outside the JSON.
         """;
 
-    private const string Model = "claude-haiku-4-5";
-
     /// <summary>
-    /// Initializes a new instance of the IdeaAgent with a new Anthropic client.
-    /// The API key is read from the ANTHROPIC_API_KEY environment variable.
+    /// Initializes a new instance of the IdeaAgent with the specified AIAgent.
     /// </summary>
-    /// <exception cref="InvalidOperationException">Thrown when ANTHROPIC_API_KEY environment variable is not set.</exception>
-    public IdeaAgent()
+    /// <param name="agent">The Microsoft Agent Framework AIAgent to use for generating ideas.</param>
+    /// <exception cref="ArgumentNullException">Thrown when agent is null.</exception>
+    public IdeaAgent(AIAgent agent)
     {
-        var apiKey = Environment.GetEnvironmentVariable("ANTHROPIC_API_KEY");
-        if (string.IsNullOrWhiteSpace(apiKey))
-        {
-            throw new InvalidOperationException(
-                "ANTHROPIC_API_KEY environment variable is not set. Please set it before using IdeaAgent.");
-        }
-
-        var options = new ClientOptions
-        {
-            ApiKey = apiKey
-        };
-
-        _client = new AnthropicClient(options);
-    }
-
-    /// <summary>
-    /// Initializes a new instance of the IdeaAgent with the specified Anthropic client.
-    /// Used for testing purposes.
-    /// </summary>
-    /// <param name="client">The Anthropic client to use.</param>
-    /// <exception cref="ArgumentNullException">Thrown when client is null.</exception>
-    public IdeaAgent(AnthropicClient client)
-    {
-        _client = client ?? throw new ArgumentNullException(nameof(client));
+        _agent = agent ?? throw new ArgumentNullException(nameof(agent));
     }
 
     /// <summary>
@@ -90,26 +74,33 @@ public sealed class IdeaAgent : IAgent<ChatInput, IReadOnlyList<Idea>>
             {input.Content}
             """;
 
-        var response = await _client.Messages.CreateAsync(new Anthropic.MessageCreateParams
-        {
-            Model = Model,
-            MaxTokens = 2048,
-            System = SystemInstruction,
-            Messages = new[]
-            {
-                new Anthropic.MessageParam
-                {
-                    Role = "user",
-                    Content = userMessage
-                }
-            }
-        }, cancellationToken);
+        // Create a new session for this execution
+        var session = new SimpleAgentSession();
 
-        var responseText = response.Content.FirstOrDefault()?.Text ?? string.Empty;
+        var options = new AgentRunOptions();
+        var response = await _agent.RunAsync(session, options, cancellationToken);
+
+        var responseText = ExtractResponseText(response);
 
         var ideas = ParseIdeasFromJson(responseText);
 
         return ideas;
+    }
+
+    /// <summary>
+    /// Extracts the text content from the agent response.
+    /// </summary>
+    /// <param name="response">The agent response.</param>
+    /// <returns>The extracted text content.</returns>
+    private static string ExtractResponseText(AgentResponse response)
+    {
+        if (response?.Messages == null || response.Messages.Count == 0)
+        {
+            throw new InvalidOperationException("Agent response contains no messages.");
+        }
+
+        var lastMessage = response.Messages[response.Messages.Count - 1];
+        return lastMessage.ToString() ?? string.Empty;
     }
 
     /// <summary>
