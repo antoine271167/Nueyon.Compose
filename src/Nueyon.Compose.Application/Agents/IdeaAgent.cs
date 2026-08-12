@@ -13,28 +13,6 @@ public sealed class IdeaAgent : IAgent<ChatInput, IReadOnlyList<Idea>>
     private readonly AIAgent _agent;
 
     /// <summary>
-    /// System instruction for the IDEA agent that guides its behavior.
-    /// </summary>
-    private const string SystemInstruction = """
-        You are the Idea Agent in Nueyon.Compose.
-
-        Your job is to transform a user's idea or thought into one or more concrete content ideas.
-
-        Generate useful, specific ideas rather than generic topics.
-
-        Each idea must have:
-        - a short title
-        - a clear description
-        - a specific target audience
-        - a clear rationale explaining why the idea is worth pursuing
-
-        Return only valid JSON.
-        Do not use Markdown.
-        Do not wrap the JSON in ``` fences.
-        Do not include explanations outside the JSON.
-        """;
-
-    /// <summary>
     /// Initializes a new instance of the IdeaAgent with the specified AIAgent.
     /// </summary>
     /// <param name="agent">The Microsoft Agent Framework AIAgent to use for generating ideas.</param>
