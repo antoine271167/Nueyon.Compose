@@ -1,6 +1,5 @@
 using Microsoft.Agents.AI;
 using Nueyon.Compose.Application.Agents;
-using Nueyon.Compose.Application.Harness;
 using Nueyon.Compose.Application.Validation;
 using Nueyon.Compose.Domain;
 
@@ -54,18 +53,5 @@ public static class IdeaAgentFactory
 
         // Create and return the IdeaAgent
         return new IdeaAgent(aiAgent);
-    }
-
-    /// <summary>
-    /// Creates an IdeaHarness backed by OpenAI with validation and retry logic.
-    /// </summary>
-    /// <param name="apiKey">The OpenAI API key. If null or empty, reads from OPENAI_API_KEY environment variable.</param>
-    /// <returns>A configured IdeaHarness instance wrapping an IdeaAgent.</returns>
-    /// <exception cref="InvalidOperationException">Thrown when API key is not provided and not found in environment.</exception>
-    public static IAgentHarness<ChatInput, IReadOnlyList<Idea>> CreateOpenAIIdeaHarness(string? apiKey = null)
-    {
-        var agent = CreateOpenAIIdeaAgent(apiKey);
-        var validator = new IdeaValidator();
-        return new IdeaHarness(agent, validator);
     }
 }

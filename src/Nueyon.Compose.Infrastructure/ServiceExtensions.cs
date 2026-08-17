@@ -1,11 +1,13 @@
+using Microsoft.Agents.AI;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 using Nueyon.Compose.Application.Agents;
-using Nueyon.Compose.Application.Harness;
 using Nueyon.Compose.Application.Validation;
 using Nueyon.Compose.Domain;
 using Nueyon.Compose.Infrastructure.Agents;
 using Nueyon.Compose.Infrastructure.Options;
+
+#pragma warning disable MAAI001 // Type is for evaluation purposes only and is subject to change or removal in future updates.
 
 namespace Nueyon.Compose.Infrastructure;
 
@@ -16,7 +18,7 @@ public static class InfrastructureServiceExtensions
 {
     /// <summary>
     /// Adds OpenAI-backed infrastructure services to the dependency injection container.
-    /// Configures OpenAI options, validates configuration, and registers the Idea Agent and Idea Harness.
+    /// Configures OpenAI options, validates configuration, and registers the Idea Agent with LoopAgent-backed validation/retry logic.
     /// </summary>
     /// <param name="services">The service collection to add services to.</param>
     /// <returns>The service collection for chaining.</returns>
@@ -29,26 +31,41 @@ public static class InfrastructureServiceExtensions
         // Register the IdeaValidator
         services.AddSingleton<IIdeaValidator, IdeaValidator>();
 
-        // Register the Idea Agent (backed by OpenAI)
+        // Register the Idea Validation Loop Evaluator (stateless, safe for concurrent use)
+        services.AddSingleton<IdeaValidationLoopEvaluator>(provider =>
+        {
+            var validator = provider.GetRequiredService<IIdeaValidator>();
+            return new IdeaValidationLoopEvaluator(validator);
+        });
+
+        // Register the Idea Agent with LoopAgent-backed validation and retry logic
+        // The agent is created as a LoopAgent wrapping the OpenAI AIAgent
         services.AddSingleton<IAgent<ChatInput, IReadOnlyList<Idea>>>(provider =>
         {
             var options = provider.GetRequiredService<IOptions<OpenAiOptions>>().Value;
             options.Validate();
 
-            var aiAgent = OpenAIAgentFactory.CreateOpenAIAgent(
+            // Create the base OpenAI AIAgent
+            var baseAiAgent = OpenAIAgentFactory.CreateOpenAIAgent(
                 options.ApiKey,
                 options.Model,
                 GetSystemInstructions());
 
-            return new IdeaAgent(aiAgent);
-        });
+            // Create the loop evaluator for validation and retry decision making
+            var evaluator = provider.GetRequiredService<IdeaValidationLoopEvaluator>();
 
-        // Register the Idea Harness (with validation and retry logic)
-        services.AddSingleton<IAgentHarness<ChatInput, IReadOnlyList<Idea>>>(provider =>
-        {
-            var agent = provider.GetRequiredService<IAgent<ChatInput, IReadOnlyList<Idea>>>();
-            var validator = provider.GetRequiredService<IIdeaValidator>();
-            return new IdeaHarness(agent, validator);
+            // Create LoopAgent configuration with max 3 iterations (matching original IdeaHarness behavior)
+            var loopOptions = new LoopAgentOptions
+            {
+                MaxIterations = 3
+            };
+
+            // Create the LoopAgent that wraps the base OpenAI agent
+            // The evaluator will decide when ideas are valid and the loop should stop
+            var loopAgent = new LoopAgent(baseAiAgent, evaluator, loopOptions);
+
+            // Return the IdeaAgent that uses the loop-backed agent
+            return new IdeaAgent(loopAgent);
         });
 
         return services;
@@ -77,3 +94,5 @@ public static class InfrastructureServiceExtensions
         Do not include explanations outside the JSON.
         """;
 }
+
+#pragma warning restore MAAI001 // Type is for evaluation purposes only and is subject to change or removal in future updates.

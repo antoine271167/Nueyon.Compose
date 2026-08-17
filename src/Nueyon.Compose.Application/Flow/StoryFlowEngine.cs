@@ -1,23 +1,23 @@
-using Nueyon.Compose.Application.Harness;
+using Nueyon.Compose.Application.Agents;
 using Nueyon.Compose.Domain;
 
 namespace Nueyon.Compose.Application.Flow;
 
 /// <summary>
 /// The flow engine that orchestrates the IDEA flow.
-/// Coordinates the execution of the flow by delegating to the harness.
+/// Delegates to the Idea Agent for generating content ideas from user input.
 /// </summary>
 public sealed class StoryFlowEngine : IFlowEngine
 {
-    private readonly IAgentHarness<ChatInput, IReadOnlyList<Idea>> _ideaHarness;
+    private readonly IAgent<ChatInput, IReadOnlyList<Idea>> _ideaAgent;
 
     /// <summary>
-    /// Initializes a new instance of the StoryFlowEngine with the specified harness.
+    /// Initializes a new instance of the StoryFlowEngine with the specified agent.
     /// </summary>
-    /// <param name="ideaHarness">The harness for executing the IDEA flow.</param>
-    /// <exception cref="ArgumentNullException">Thrown when ideaHarness is null.</exception>
-    public StoryFlowEngine(IAgentHarness<ChatInput, IReadOnlyList<Idea>> ideaHarness) => 
-        _ideaHarness = ideaHarness ?? throw new ArgumentNullException(nameof(ideaHarness));
+    /// <param name="ideaAgent">The agent for executing the IDEA flow (includes validation and retry via LoopAgent).</param>
+    /// <exception cref="ArgumentNullException">Thrown when ideaAgent is null.</exception>
+    public StoryFlowEngine(IAgent<ChatInput, IReadOnlyList<Idea>> ideaAgent) => 
+        _ideaAgent = ideaAgent ?? throw new ArgumentNullException(nameof(ideaAgent));
 
     /// <summary>
     /// Executes the IDEA flow on the provided workspace.
@@ -32,7 +32,7 @@ public sealed class StoryFlowEngine : IFlowEngine
     {
         ArgumentNullException.ThrowIfNull(workspace);
 
-        var ideas = await _ideaHarness.ExecuteAsync(
+        var ideas = await _ideaAgent.ExecuteAsync(
             workspace.Input,
             cancellationToken);
 

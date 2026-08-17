@@ -1,6 +1,5 @@
 using Nueyon.Compose.Application.Agents;
 using Nueyon.Compose.Application.Flow;
-using Nueyon.Compose.Application.Harness;
 using Nueyon.Compose.Domain;
 using Xunit;
 
@@ -16,8 +15,7 @@ public sealed class StoryFlowEngineTests
     {
         // Arrange
         var agent = new FakeIdeaAgent();
-        var harness = new FakeIdeaHarness(agent);
-        var engine = new StoryFlowEngine(harness);
+        var engine = new StoryFlowEngine(agent);
 
         var input = new ChatInput { Content = "Test input" };
         var workspace = new StoryWorkspace { Input = input };
@@ -37,8 +35,7 @@ public sealed class StoryFlowEngineTests
     {
         // Arrange
         var agent = new FakeIdeaAgent();
-        var harness = new FakeIdeaHarness(agent);
-        var engine = new StoryFlowEngine(harness);
+        var engine = new StoryFlowEngine(agent);
 
         var input = new ChatInput { Content = "Test input" };
         var workspace = new StoryWorkspace { Input = input };
@@ -58,7 +55,7 @@ public sealed class StoryFlowEngineTests
     }
 
     /// <summary>
-    /// Test 3: Workspace input is passed unchanged to the harness.
+    /// Test 3: Workspace input is passed unchanged to the agent.
     /// </summary>
     [Fact]
     public async Task ExecuteAsync_PassesWorkspaceInputToHarness()
@@ -66,8 +63,7 @@ public sealed class StoryFlowEngineTests
         // Arrange
         var capturedInput = default(ChatInput);
         var mockAgent = new CaptureInputAgent(input => capturedInput = input);
-        var harness = new FakeIdeaHarness(mockAgent);
-        var engine = new StoryFlowEngine(harness);
+        var engine = new StoryFlowEngine(mockAgent);
 
         var expectedInput = new ChatInput { Content = "Test input content" };
         var workspace = new StoryWorkspace { Input = expectedInput };
@@ -82,7 +78,7 @@ public sealed class StoryFlowEngineTests
     }
 
     /// <summary>
-    /// Test 4: Cancellation token is forwarded unchanged to the harness.
+    /// Test 4: Cancellation token is forwarded unchanged to the agent.
     /// </summary>
     [Fact]
     public async Task ExecuteAsync_ForwardsCancellationTokenToHarness()
@@ -90,8 +86,7 @@ public sealed class StoryFlowEngineTests
         // Arrange
         var capturedToken = default(CancellationToken);
         var mockAgent = new CaptureTokenAgent(token => capturedToken = token);
-        var harness = new FakeIdeaHarness(mockAgent);
-        var engine = new StoryFlowEngine(harness);
+        var engine = new StoryFlowEngine(mockAgent);
 
         var input = new ChatInput { Content = "Test input" };
         var workspace = new StoryWorkspace { Input = input };
@@ -105,13 +100,13 @@ public sealed class StoryFlowEngineTests
     }
 
     /// <summary>
-    /// Test 5: Flow Engine depends on the harness to obtain the result.
+    /// Test 5: Flow Engine depends on the agent to obtain the result.
     /// </summary>
     [Fact]
     public async Task ExecuteAsync_ObtainsResultThroughHarness()
     {
         // Arrange
-        var harnessWasCalled = false;
+        var agentWasCalled = false;
         var testIdea = new Idea
         {
             Title = "Custom Idea",
@@ -123,12 +118,11 @@ public sealed class StoryFlowEngineTests
         var mockAgent = new TestAgent(
             () =>
             {
-                harnessWasCalled = true;
+                agentWasCalled = true;
                 return new List<Idea> { testIdea }.AsReadOnly();
             });
 
-        var harness = new FakeIdeaHarness(mockAgent);
-        var engine = new StoryFlowEngine(harness);
+        var engine = new StoryFlowEngine(mockAgent);
 
         var input = new ChatInput { Content = "Test input" };
         var workspace = new StoryWorkspace { Input = input };
@@ -137,7 +131,7 @@ public sealed class StoryFlowEngineTests
         var result = await engine.ExecuteAsync(workspace);
 
         // Assert
-        Assert.True(harnessWasCalled, "The harness should have been called");
+        Assert.True(agentWasCalled, "The agent should have been called");
         Assert.Single(result.Ideas);
         Assert.Equal("Custom Idea", result.Ideas[0].Title);
     }

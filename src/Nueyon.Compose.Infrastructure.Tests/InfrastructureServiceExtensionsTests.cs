@@ -1,7 +1,6 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 using Nueyon.Compose.Application.Agents;
-using Nueyon.Compose.Application.Harness;
 using Nueyon.Compose.Application.Validation;
 using Nueyon.Compose.Domain;
 using Nueyon.Compose.Infrastructure.Options;
@@ -53,7 +52,7 @@ public sealed class InfrastructureServiceExtensionsTests
     }
 
     [Fact]
-    public void AddInfrastructure_RegistersIdeaHarness()
+    public void AddInfrastructure_RegistersIdeaValidationLoopEvaluator()
     {
         // Arrange
         var services = new ServiceCollection();
@@ -68,9 +67,8 @@ public sealed class InfrastructureServiceExtensionsTests
         var provider = services.BuildServiceProvider();
 
         // Assert
-        var harness = provider.GetRequiredService<IAgentHarness<ChatInput, IReadOnlyList<Idea>>>();
-        Assert.NotNull(harness);
-        Assert.IsType<IdeaHarness>(harness);
+        var evaluator = provider.GetRequiredService<IdeaValidationLoopEvaluator>();
+        Assert.NotNull(evaluator);
     }
 
     [Fact]
@@ -123,7 +121,7 @@ public sealed class InfrastructureServiceExtensionsTests
     }
 
     [Fact]
-    public void AddInfrastructure_AgentAndHarnessAreSingletons()
+    public void AddInfrastructure_AgentIsSingleton()
     {
         // Arrange
         var services = new ServiceCollection();
@@ -139,11 +137,8 @@ public sealed class InfrastructureServiceExtensionsTests
         // Act
         var agent1 = provider.GetRequiredService<IAgent<ChatInput, IReadOnlyList<Idea>>>();
         var agent2 = provider.GetRequiredService<IAgent<ChatInput, IReadOnlyList<Idea>>>();
-        var harness1 = provider.GetRequiredService<IAgentHarness<ChatInput, IReadOnlyList<Idea>>>();
-        var harness2 = provider.GetRequiredService<IAgentHarness<ChatInput, IReadOnlyList<Idea>>>();
 
         // Assert
         Assert.Same(agent1, agent2);
-        Assert.Same(harness1, harness2);
     }
 }
