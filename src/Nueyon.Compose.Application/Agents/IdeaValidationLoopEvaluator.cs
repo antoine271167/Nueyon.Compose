@@ -39,7 +39,9 @@ public sealed class IdeaValidationLoopEvaluator : LoopEvaluator
     /// 2. Convert to IReadOnlyList&lt;Idea&gt;
     /// 3. Pass to IdeaValidator.IsValid()
     /// 4. If valid, return LoopEvaluation.Stop() (success - no more attempts needed)
-    /// 5. If invalid, return LoopEvaluation.Continue() (retry the agent with feedback)
+    /// 5. If invalid:
+    ///    a. If at the final iteration (Iteration == MaxIterations), throw InvalidOperationException
+    ///    b. Otherwise, return LoopEvaluation.Continue() to retry with feedback
     /// 
     /// Note: Parsing happens here for validation, and again in IdeaAgent for the final
     /// output. This duplication is acceptable to maintain clean architecture.
@@ -47,6 +49,7 @@ public sealed class IdeaValidationLoopEvaluator : LoopEvaluator
     /// <param name="context">The current loop context containing the agent response and state.</param>
     /// <param name="cancellationToken">The cancellation token.</param>
     /// <returns>A LoopEvaluation indicating whether to continue or stop the loop.</returns>
+    /// <exception cref="InvalidOperationException">Thrown when the agent fails to produce valid ideas after the maximum number of attempts.</exception>
     public override async ValueTask<LoopEvaluation> EvaluateAsync(
         LoopContext context,
         CancellationToken cancellationToken = default)
@@ -58,7 +61,13 @@ public sealed class IdeaValidationLoopEvaluator : LoopEvaluator
 
         if (string.IsNullOrWhiteSpace(responseText))
         {
-            // Empty response - ask the agent to try again
+            // Empty response is invalid - check if at final attempt
+            if (context.Iteration == 3)
+            {
+                throw new InvalidOperationException("Idea agent failed to produce valid ideas after 3 attempts.");
+            }
+
+            // Not at final attempt - ask the agent to try again
             return LoopEvaluation.Continue("The agent provided an empty response. Please generate content ideas.");
         }
 
@@ -70,7 +79,13 @@ public sealed class IdeaValidationLoopEvaluator : LoopEvaluator
         }
         catch (InvalidOperationException ex)
         {
-            // Parsing failed - ask the agent to try again with feedback
+            // Parsing failed - check if at final attempt
+            if (context.Iteration == 3)
+            {
+                throw new InvalidOperationException("Idea agent failed to produce valid ideas after 3 attempts.", ex);
+            }
+
+            // Not at final attempt - ask the agent to try again with feedback
             return LoopEvaluation.Continue(
                 $"Failed to parse the response: {ex.Message} " +
                 "Please respond with valid JSON containing an array of ideas with Title, Description, Audience, and Rationale fields.");
@@ -85,7 +100,13 @@ public sealed class IdeaValidationLoopEvaluator : LoopEvaluator
             return LoopEvaluation.Stop();
         }
 
-        // Ideas are invalid - continue the loop for another attempt with feedback
+        // Ideas are invalid - check if at final attempt
+        if (context.Iteration == 3)
+        {
+            throw new InvalidOperationException("Idea agent failed to produce valid ideas after 3 attempts.");
+        }
+
+        // Not at final attempt - continue the loop for another attempt with feedback
         var feedback = "The generated ideas do not meet validation requirements. " +
             "Ensure each idea has a non-empty Title, Description, Audience, and Rationale.";
 
