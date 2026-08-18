@@ -5,17 +5,13 @@ using Nueyon.Compose.Domain;
 namespace Nueyon.Compose.Host.Console;
 
 /// <summary>
-/// The interactive console application for Nueyon.Compose.
-/// Orchestrates user input, flow execution, and result presentation.
+///     The interactive console application for Nueyon.Compose.
+///     Orchestrates user input, flow execution, and result presentation.
 /// </summary>
 public sealed class ConsoleApplication
 {
-    private readonly IFlowEngine _flowEngine;
-    private readonly ILogger<ConsoleApplication> _logger;
-    private readonly IConsole _console;
-
     /// <summary>
-    /// Initializes a new instance of the ConsoleApplication.
+    ///     Initializes a new instance of the ConsoleApplication.
     /// </summary>
     /// <param name="flowEngine">The flow engine to execute the Compose flow.</param>
     /// <param name="logger">The logger for diagnostics.</param>
@@ -28,10 +24,14 @@ public sealed class ConsoleApplication
         _console = console ?? throw new ArgumentNullException(nameof(console));
     }
 
+    private readonly IConsole _console;
+    private readonly IFlowEngine _flowEngine;
+    private readonly ILogger<ConsoleApplication> _logger;
+
     /// <summary>
-    /// Runs the interactive console application.
-    /// Displays a welcome message, accepts user input, executes the flow, and displays results.
-    /// Continues until the user enters /exit.
+    ///     Runs the interactive console application.
+    ///     Displays a welcome message, accepts user input, executes the flow, and displays results.
+    ///     Continues until the user enters /exit.
     /// </summary>
     /// <param name="cancellationToken">The cancellation token to cancel the operation.</param>
     /// <returns>The exit code (0 for success, 1 for error, 130 for cancellation).</returns>
@@ -96,7 +96,7 @@ public sealed class ConsoleApplication
     }
 
     /// <summary>
-    /// Displays the welcome message at application startup.
+    ///     Displays the welcome message at application startup.
     /// </summary>
     private void DisplayWelcomeMessage()
     {
@@ -112,7 +112,7 @@ public sealed class ConsoleApplication
     }
 
     /// <summary>
-    /// Displays the goodbye message when exiting.
+    ///     Displays the goodbye message when exiting.
     /// </summary>
     private void DisplayGoodbyeMessage()
     {
@@ -121,8 +121,8 @@ public sealed class ConsoleApplication
     }
 
     /// <summary>
-    /// Reads a line of input from the console.
-    /// Returns null if the user entered the exit command.
+    ///     Reads a line of input from the console.
+    ///     Returns null if the user entered the exit command.
     /// </summary>
     /// <returns>The user input, or null if exit was requested.</returns>
     private string? ReadInput()
@@ -139,7 +139,7 @@ public sealed class ConsoleApplication
     }
 
     /// <summary>
-    /// Executes the Compose flow with the provided user input.
+    ///     Executes the Compose flow with the provided user input.
     /// </summary>
     /// <param name="userInput">The user's idea or topic.</param>
     /// <param name="cancellationToken">The cancellation token.</param>
@@ -158,12 +158,12 @@ public sealed class ConsoleApplication
     }
 
     /// <summary>
-    /// Displays the result of the Compose flow execution.
+    ///     Displays the result of the Compose flow execution.
     /// </summary>
     /// <param name="workspace">The workspace containing the generated ideas.</param>
     private void DisplayResult(StoryWorkspace workspace)
     {
-        if (workspace.Ideas is null || workspace.Ideas.Count == 0)
+        if (workspace.Ideas.Count == 0)
         {
             _console.WriteLine("No ideas were generated.");
             _console.WriteLine("");
@@ -174,7 +174,7 @@ public sealed class ConsoleApplication
         _console.WriteLine("-----");
         _console.WriteLine("");
 
-        for (int i = 0; i < workspace.Ideas.Count; i++)
+        for (var i = 0; i < workspace.Ideas.Count; i++)
         {
             var idea = workspace.Ideas[i];
             _console.WriteLine($"{i + 1}. {idea.Title}");

@@ -6,26 +6,23 @@ using Nueyon.Compose.Domain;
 namespace Nueyon.Compose.Application.Agents;
 
 /// <summary>
-/// A real IDEA agent powered by Microsoft Agent Framework and OpenAI.
-/// Transforms a user's idea or thought into one or more concrete content ideas.
+///     A real IDEA agent powered by Microsoft Agent Framework and OpenAI.
+///     Transforms a user's idea or thought into one or more concrete content ideas.
 /// </summary>
 public sealed class IdeaAgent : IAgent<ChatInput, IReadOnlyList<Idea>>
 {
-    private readonly AIAgent _agent;
-
     /// <summary>
-    /// Initializes a new instance of the IdeaAgent with the specified AIAgent.
+    ///     Initializes a new instance of the IdeaAgent with the specified AIAgent.
     /// </summary>
     /// <param name="agent">The Microsoft Agent Framework AIAgent to use for generating ideas.</param>
     /// <exception cref="ArgumentNullException">Thrown when agent is null.</exception>
-    public IdeaAgent(AIAgent agent)
-    {
-        _agent = agent ?? throw new ArgumentNullException(nameof(agent));
-    }
+    public IdeaAgent(AIAgent agent) => _agent = agent ?? throw new ArgumentNullException(nameof(agent));
+
+    private readonly AIAgent _agent;
 
     /// <summary>
-    /// Executes the IDEA agent to generate content ideas from the user's input.
-    /// Configures structured output to enforce the IdeaResponse JSON contract.
+    ///     Executes the IDEA agent to generate content ideas from the user's input.
+    ///     Configures structured output to enforce the IdeaResponse JSON contract.
     /// </summary>
     /// <param name="input">The chat input containing the user's idea or thought.</param>
     /// <param name="cancellationToken">The cancellation token to cancel the operation.</param>
@@ -38,14 +35,14 @@ public sealed class IdeaAgent : IAgent<ChatInput, IReadOnlyList<Idea>>
     {
         ArgumentNullException.ThrowIfNull(input);
         var userMessage = $"""
-            Create content ideas from this input:
+                           Create content ideas from this input:
 
-            {input.Content}
-            """;
+                           {input.Content}
+                           """;
 
         // Run the agent with structured output options configured
         var options = CreateAgentRunOptions();
-        var response = await _agent.RunAsync(userMessage, session: null, options: options, cancellationToken);
+        var response = await _agent.RunAsync(userMessage, null, options, cancellationToken);
 
         var responseText = ExtractResponseText(response);
 
@@ -55,15 +52,14 @@ public sealed class IdeaAgent : IAgent<ChatInput, IReadOnlyList<Idea>>
     }
 
     /// <summary>
-    /// Creates ChatClientAgentRunOptions with structured JSON output configured for IdeaResponse.
+    ///     Creates ChatClientAgentRunOptions with structured JSON output configured for IdeaResponse.
     /// </summary>
     /// <returns>Configured ChatClientAgentRunOptions with ResponseFormat set.</returns>
     private static ChatClientAgentRunOptions CreateAgentRunOptions()
     {
         var responseFormat = ChatResponseFormat.ForJsonSchema<IdeaResponse>(
-            serializerOptions: null,
-            schemaName: nameof(IdeaResponse),
-            schemaDescription: null);
+            null,
+            nameof(IdeaResponse));
 
         var chatOptions = new ChatOptions
         {
@@ -74,7 +70,7 @@ public sealed class IdeaAgent : IAgent<ChatInput, IReadOnlyList<Idea>>
     }
 
     /// <summary>
-    /// Extracts the text content from the agent response.
+    ///     Extracts the text content from the agent response.
     /// </summary>
     /// <param name="response">The agent response.</param>
     /// <returns>The extracted text content.</returns>
@@ -93,20 +89,20 @@ public sealed class IdeaAgent : IAgent<ChatInput, IReadOnlyList<Idea>>
         return text;
     }
 
+    // ReSharper disable once GrammarMistakeInComment
     /// <summary>
-    /// Parses the JSON response from the model into a list of Idea objects.
-    /// 
-    /// The expected response format is:
-    /// {
-    ///   "ideas": [
+    ///     Parses the JSON response from the model into a list of Idea objects.
+    ///     The expected response format is:
     ///     {
-    ///       "title": "...",
-    ///       "description": "...",
-    ///       "audience": "...",
-    ///       "rationale": "..."
+    ///     "ideas": [
+    ///     {
+    ///     "title": "...",
+    ///     "description": "...",
+    ///     "audience": "...",
+    ///     "rationale": "..."
     ///     }
-    ///   ]
-    /// }
+    ///     ]
+    ///     }
     /// </summary>
     /// <param name="json">The JSON string to parse.</param>
     /// <returns>A read-only list of parsed Idea objects.</returns>
@@ -126,14 +122,9 @@ public sealed class IdeaAgent : IAgent<ChatInput, IReadOnlyList<Idea>>
             };
 
             var response = JsonSerializer.Deserialize<IdeaResponse>(json, options)
-                ?? throw new InvalidOperationException("Deserialization resulted in null response.");
+                           ?? throw new InvalidOperationException("Deserialization resulted in null response.");
 
-            if (response.Ideas == null)
-            {
-                throw new InvalidOperationException("Response ideas property is null.");
-            }
-
-            return response.Ideas;
+            return response.Ideas ?? throw new InvalidOperationException("Response ideas property is null.");
         }
         catch (JsonException ex)
         {

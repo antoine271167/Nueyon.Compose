@@ -3,13 +3,13 @@ using Nueyon.Compose.Domain;
 namespace Nueyon.Compose.Application.Agents;
 
 /// <summary>
-/// A deterministic fake IDEA agent that always returns the same example idea.
-/// Used for testing the flow architecture without requiring a real LLM.
+///     A deterministic fake IDEA agent that always returns the same example idea.
+///     Used for testing the flow architecture without requiring a real LLM.
 /// </summary>
 public sealed class FakeIdeaAgent : IAgent<ChatInput, IReadOnlyList<Idea>>
 {
     /// <summary>
-    /// Executes the fake agent by returning a single deterministic example idea.
+    ///     Executes the fake agent by returning a single deterministic example idea.
     /// </summary>
     /// <param name="input">The chat input (not used by the fake agent).</param>
     /// <param name="cancellationToken">The cancellation token.</param>

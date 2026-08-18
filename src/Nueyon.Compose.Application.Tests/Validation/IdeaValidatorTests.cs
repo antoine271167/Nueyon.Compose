@@ -9,7 +9,7 @@ public sealed class IdeaValidatorTests
     private readonly IdeaValidator _validator = new();
 
     /// <summary>
-    /// Test: A list containing one fully populated Idea returns true.
+    ///     Test: A list containing one fully populated Idea returns true.
     /// </summary>
     [Fact]
     public void IsValid_WithSingleValidIdea_ReturnsTrue()
@@ -32,7 +32,7 @@ public sealed class IdeaValidatorTests
     }
 
     /// <summary>
-    /// Test: A list containing multiple fully populated Ideas returns true.
+    ///     Test: A list containing multiple fully populated Ideas returns true.
     /// </summary>
     [Fact]
     public void IsValid_WithMultipleValidIdeas_ReturnsTrue()
@@ -62,7 +62,7 @@ public sealed class IdeaValidatorTests
     }
 
     /// <summary>
-    /// Test: A null list returns false.
+    ///     Test: A null list returns false.
     /// </summary>
     [Fact]
     public void IsValid_WithNullList_ReturnsFalse()
@@ -75,7 +75,7 @@ public sealed class IdeaValidatorTests
     }
 
     /// <summary>
-    /// Test: An empty list returns false.
+    ///     Test: An empty list returns false.
     /// </summary>
     [Fact]
     public void IsValid_WithEmptyList_ReturnsFalse()
@@ -91,7 +91,7 @@ public sealed class IdeaValidatorTests
     }
 
     /// <summary>
-    /// Test: A list with an idea missing Title returns false.
+    ///     Test: A list with an idea missing Title returns false.
     /// </summary>
     [Fact]
     public void IsValid_WithMissingTitle_ReturnsFalse()
@@ -114,7 +114,7 @@ public sealed class IdeaValidatorTests
     }
 
     /// <summary>
-    /// Test: A list with an idea having null Title returns false.
+    ///     Test: A list with an idea having null Title returns false.
     /// </summary>
     [Fact]
     public void IsValid_WithNullTitle_ReturnsFalse()
@@ -137,7 +137,7 @@ public sealed class IdeaValidatorTests
     }
 
     /// <summary>
-    /// Test: A list with an idea having whitespace-only Title returns false.
+    ///     Test: A list with an idea having whitespace-only Title returns false.
     /// </summary>
     [Fact]
     public void IsValid_WithWhitespaceTitle_ReturnsFalse()
@@ -160,7 +160,7 @@ public sealed class IdeaValidatorTests
     }
 
     /// <summary>
-    /// Test: A list with an idea missing Description returns false.
+    ///     Test: A list with an idea missing Description returns false.
     /// </summary>
     [Fact]
     public void IsValid_WithMissingDescription_ReturnsFalse()
@@ -183,7 +183,7 @@ public sealed class IdeaValidatorTests
     }
 
     /// <summary>
-    /// Test: A list with an idea missing Audience returns false.
+    ///     Test: A list with an idea missing Audience returns false.
     /// </summary>
     [Fact]
     public void IsValid_WithMissingAudience_ReturnsFalse()
@@ -206,7 +206,7 @@ public sealed class IdeaValidatorTests
     }
 
     /// <summary>
-    /// Test: A list with an idea missing Rationale returns false.
+    ///     Test: A list with an idea missing Rationale returns false.
     /// </summary>
     [Fact]
     public void IsValid_WithMissingRationale_ReturnsFalse()
@@ -229,7 +229,7 @@ public sealed class IdeaValidatorTests
     }
 
     /// <summary>
-    /// Test: A list where the first idea is valid but the second is missing a field returns false.
+    ///     Test: A list where the first idea is valid but the second is missing a field returns false.
     /// </summary>
     [Fact]
     public void IsValid_WithOneValidAndOneInvalidIdea_ReturnsFalse()

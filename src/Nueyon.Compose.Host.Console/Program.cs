@@ -10,10 +10,11 @@ using Nueyon.Compose.Infrastructure.Options;
 // Build configuration
 var configuration = new ConfigurationBuilder()
     .SetBasePath(Directory.GetCurrentDirectory())
-    .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
-    .AddJsonFile($"appsettings.{Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") ?? "Production"}.json", optional: true, reloadOnChange: true)
+    .AddJsonFile("appsettings.json", false, true)
+    .AddJsonFile($"appsettings.{Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") ?? "Production"}.json",
+        true, true)
     .AddEnvironmentVariables()
-    .AddUserSecrets<Program>(optional: true)
+    .AddUserSecrets<Program>(true)
     .Build();
 
 // Set up dependency injection
@@ -56,9 +57,10 @@ try
 
     // Create a cancellation token source to handle Ctrl+C
     using var cts = new CancellationTokenSource();
-    Console.CancelKeyPress += (sender, e) =>
+    Console.CancelKeyPress += (_, e) =>
     {
         e.Cancel = true;
+        // ReSharper disable once AccessToDisposedClosure
         cts.Cancel();
     };
 
@@ -78,6 +80,7 @@ catch (Exception ex)
     {
         Console.Error.WriteLine($"Details: {ex.InnerException.Message}");
     }
+
     Environment.Exit(1);
 }
 finally

@@ -1,7 +1,7 @@
 namespace Nueyon.Compose.Host.Console;
 
 /// <summary>
-/// Production implementation of IConsole that delegates to System.Console.
+///     Production implementation of IConsole that delegates to System.Console.
 /// </summary>
 internal sealed class SystemConsole : IConsole
 {

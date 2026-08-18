@@ -8,7 +8,7 @@ namespace Nueyon.Compose.Application.Tests.Flow;
 public sealed class StoryFlowEngineTests
 {
     /// <summary>
-    /// Test 1: IDEA flow executes successfully with a valid StoryWorkspace.
+    ///     Test 1: IDEA flow executes successfully with a valid StoryWorkspace.
     /// </summary>
     [Fact]
     public async Task ExecuteAsync_WithValidWorkspace_CompletesSuccessfully()
@@ -28,7 +28,7 @@ public sealed class StoryFlowEngineTests
     }
 
     /// <summary>
-    /// Test 2: IDEA flow populates the workspace with exactly one idea containing the correct values.
+    ///     Test 2: IDEA flow populates the workspace with exactly one idea containing the correct values.
     /// </summary>
     [Fact]
     public async Task ExecuteAsync_PopulatesWorkspaceWithExactlyOneIdea()
@@ -55,7 +55,7 @@ public sealed class StoryFlowEngineTests
     }
 
     /// <summary>
-    /// Test 3: Workspace input is passed unchanged to the agent.
+    ///     Test 3: Workspace input is passed unchanged to the agent.
     /// </summary>
     [Fact]
     public async Task ExecuteAsync_PassesWorkspaceInputToHarness()
@@ -78,19 +78,19 @@ public sealed class StoryFlowEngineTests
     }
 
     /// <summary>
-    /// Test 4: Cancellation token is forwarded unchanged to the agent.
+    ///     Test 4: Cancellation token is forwarded unchanged to the agent.
     /// </summary>
     [Fact]
     public async Task ExecuteAsync_ForwardsCancellationTokenToHarness()
     {
         // Arrange
-        var capturedToken = default(CancellationToken);
+        var capturedToken = CancellationToken.None;
         var mockAgent = new CaptureTokenAgent(token => capturedToken = token);
         var engine = new StoryFlowEngine(mockAgent);
 
         var input = new ChatInput { Content = "Test input" };
         var workspace = new StoryWorkspace { Input = input };
-        var expectedToken = new CancellationToken();
+        var expectedToken = CancellationToken.None;
 
         // Act
         await engine.ExecuteAsync(workspace, expectedToken);
@@ -100,7 +100,7 @@ public sealed class StoryFlowEngineTests
     }
 
     /// <summary>
-    /// Test 5: Flow Engine depends on the agent to obtain the result.
+    ///     Test 5: Flow Engine depends on the agent to obtain the result.
     /// </summary>
     [Fact]
     public async Task ExecuteAsync_ObtainsResultThroughHarness()
@@ -115,12 +115,11 @@ public sealed class StoryFlowEngineTests
             Rationale = "Custom rationale"
         };
 
-        var mockAgent = new TestAgent(
-            () =>
-            {
-                agentWasCalled = true;
-                return new List<Idea> { testIdea }.AsReadOnly();
-            });
+        var mockAgent = new TestAgent(() =>
+        {
+            agentWasCalled = true;
+            return new List<Idea> { testIdea }.AsReadOnly();
+        });
 
         var engine = new StoryFlowEngine(mockAgent);
 
@@ -137,7 +136,7 @@ public sealed class StoryFlowEngineTests
     }
 
     /// <summary>
-    /// Test 6: FakeIdeaAgent always returns the same deterministic idea.
+    ///     Test 6: FakeIdeaAgent always returns the same deterministic idea.
     /// </summary>
     [Fact]
     public async Task FakeIdeaAgent_ReturnsDeterministicIdea()
@@ -166,22 +165,15 @@ public sealed class StoryFlowEngineTests
     }
 
     /// <summary>
-    /// Test helper agent that captures the input.
+    ///     Test helper agent that captures the input.
     /// </summary>
-    private sealed class CaptureInputAgent : IAgent<ChatInput, IReadOnlyList<Idea>>
+    private sealed class CaptureInputAgent(Action<ChatInput> onInput) : IAgent<ChatInput, IReadOnlyList<Idea>>
     {
-        private readonly Action<ChatInput> _onInput;
-
-        public CaptureInputAgent(Action<ChatInput> onInput)
-        {
-            _onInput = onInput;
-        }
-
         public Task<IReadOnlyList<Idea>> ExecuteAsync(
             ChatInput input,
             CancellationToken cancellationToken = default)
         {
-            _onInput(input);
+            onInput(input);
             var idea = new Idea
             {
                 Title = "Example Idea",
@@ -194,22 +186,15 @@ public sealed class StoryFlowEngineTests
     }
 
     /// <summary>
-    /// Test helper agent that captures the cancellation token.
+    ///     Test helper agent that captures the cancellation token.
     /// </summary>
-    private sealed class CaptureTokenAgent : IAgent<ChatInput, IReadOnlyList<Idea>>
+    private sealed class CaptureTokenAgent(Action<CancellationToken> onToken) : IAgent<ChatInput, IReadOnlyList<Idea>>
     {
-        private readonly Action<CancellationToken> _onToken;
-
-        public CaptureTokenAgent(Action<CancellationToken> onToken)
-        {
-            _onToken = onToken;
-        }
-
         public Task<IReadOnlyList<Idea>> ExecuteAsync(
             ChatInput input,
             CancellationToken cancellationToken = default)
         {
-            _onToken(cancellationToken);
+            onToken(cancellationToken);
             var idea = new Idea
             {
                 Title = "Example Idea",
@@ -222,22 +207,13 @@ public sealed class StoryFlowEngineTests
     }
 
     /// <summary>
-    /// Test helper agent with custom behavior.
+    ///     Test helper agent with custom behavior.
     /// </summary>
-    private sealed class TestAgent : IAgent<ChatInput, IReadOnlyList<Idea>>
+    private sealed class TestAgent(Func<IReadOnlyList<Idea>> execute) : IAgent<ChatInput, IReadOnlyList<Idea>>
     {
-        private readonly Func<IReadOnlyList<Idea>> _execute;
-
-        public TestAgent(Func<IReadOnlyList<Idea>> execute)
-        {
-            _execute = execute;
-        }
-
         public Task<IReadOnlyList<Idea>> ExecuteAsync(
             ChatInput input,
-            CancellationToken cancellationToken = default)
-        {
-            return Task.FromResult(_execute());
-        }
+            CancellationToken cancellationToken = default) =>
+            Task.FromResult(execute());
     }
 }
