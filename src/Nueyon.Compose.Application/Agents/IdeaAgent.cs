@@ -74,6 +74,18 @@ public sealed class IdeaAgent : IAgent<ChatInput, IReadOnlyList<Idea>>
 
     /// <summary>
     /// Parses the JSON response from the model into a list of Idea objects.
+    /// 
+    /// The expected response format is:
+    /// {
+    ///   "ideas": [
+    ///     {
+    ///       "title": "...",
+    ///       "description": "...",
+    ///       "audience": "...",
+    ///       "rationale": "..."
+    ///     }
+    ///   ]
+    /// }
     /// </summary>
     /// <param name="json">The JSON string to parse.</param>
     /// <returns>A read-only list of parsed Idea objects.</returns>
@@ -92,10 +104,15 @@ public sealed class IdeaAgent : IAgent<ChatInput, IReadOnlyList<Idea>>
                 PropertyNameCaseInsensitive = true
             };
 
-            var ideas = JsonSerializer.Deserialize<List<Idea>>(json, options)
-                ?? throw new InvalidOperationException("Deserialization resulted in null list.");
+            var response = JsonSerializer.Deserialize<IdeaResponse>(json, options)
+                ?? throw new InvalidOperationException("Deserialization resulted in null response.");
 
-            return ideas.AsReadOnly();
+            if (response.Ideas == null)
+            {
+                throw new InvalidOperationException("Response ideas property is null.");
+            }
+
+            return response.Ideas;
         }
         catch (JsonException ex)
         {

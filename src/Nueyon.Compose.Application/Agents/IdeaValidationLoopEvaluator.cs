@@ -117,6 +117,18 @@ public sealed class IdeaValidationLoopEvaluator : LoopEvaluator
     /// <summary>
     /// Parses the JSON response from the model into a list of Idea objects.
     /// 
+    /// The expected response format is:
+    /// {
+    ///   "ideas": [
+    ///     {
+    ///       "title": "...",
+    ///       "description": "...",
+    ///       "audience": "...",
+    ///       "rationale": "..."
+    ///     }
+    ///   ]
+    /// }
+    /// 
     /// This mirrors the parsing logic in IdeaAgent. The duplication is intentional
     /// to maintain separation between the validation loop logic and the agent result processing.
     /// </summary>
@@ -137,10 +149,15 @@ public sealed class IdeaValidationLoopEvaluator : LoopEvaluator
                 PropertyNameCaseInsensitive = true
             };
 
-            var ideas = JsonSerializer.Deserialize<List<Idea>>(json, options)
-                ?? throw new InvalidOperationException("Deserialization resulted in null list.");
+            var response = JsonSerializer.Deserialize<IdeaResponse>(json, options)
+                ?? throw new InvalidOperationException("Deserialization resulted in null response.");
 
-            return ideas.AsReadOnly();
+            if (response.Ideas == null)
+            {
+                throw new InvalidOperationException("Response ideas property is null.");
+            }
+
+            return response.Ideas;
         }
         catch (JsonException ex)
         {

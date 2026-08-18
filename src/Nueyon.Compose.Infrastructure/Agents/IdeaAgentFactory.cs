@@ -25,10 +25,32 @@ public static class IdeaAgentFactory
         - a specific target audience
         - a clear rationale explaining why the idea is worth pursuing
 
-        Return only valid JSON.
-        Do not use Markdown.
-        Do not wrap the JSON in ``` fences.
-        Do not include explanations outside the JSON.
+        RESPONSE FORMAT (CRITICAL):
+
+        You MUST return ONLY a JSON object with this exact structure:
+        {
+          "ideas": [
+            {
+              "title": "...",
+              "description": "...",
+              "audience": "...",
+              "rationale": "..."
+            }
+          ]
+        }
+
+        The root must ALWAYS be an object (not an array).
+        The "ideas" property must contain an array of idea objects.
+        Each idea must have all four properties: title, description, audience, rationale.
+        All values must be non-empty strings.
+
+        Do NOT return:
+        - A bare array of ideas
+        - Markdown or code fences
+        - Explanatory text outside the JSON
+        - Any structure other than the one specified above
+
+        Return only the JSON object. No other text.
         """;
 
     /// <summary>

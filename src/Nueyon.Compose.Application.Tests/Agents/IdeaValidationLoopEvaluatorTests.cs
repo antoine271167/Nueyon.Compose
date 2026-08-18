@@ -34,25 +34,31 @@ public sealed class IdeaValidationLoopEvaluatorBehavioralTests
         _evaluator = new IdeaValidationLoopEvaluator(_validator);
     }
 
-    private static string ValidIdeasJson => JsonSerializer.Serialize(new[]
+    private static string ValidIdeasJson => JsonSerializer.Serialize(new
     {
-        new
+        ideas = new[]
         {
-            Title = "Valid Idea",
-            Description = "A valid description",
-            Audience = "Test Audience",
-            Rationale = "Good rationale"
+            new
+            {
+                Title = "Valid Idea",
+                Description = "A valid description",
+                Audience = "Test Audience",
+                Rationale = "Good rationale"
+            }
         }
     });
 
-    private static string InvalidIdeasJson => JsonSerializer.Serialize(new[]
+    private static string InvalidIdeasJson => JsonSerializer.Serialize(new
     {
-        new
+        ideas = new[]
         {
-            Title = "", // Missing title - invalid
-            Description = "A description",
-            Audience = "Test Audience",
-            Rationale = "Good rationale"
+            new
+            {
+                Title = "", // Missing title - invalid
+                Description = "A description",
+                Audience = "Test Audience",
+                Rationale = "Good rationale"
+            }
         }
     });
 
