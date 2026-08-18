@@ -140,72 +140,52 @@ public sealed class IdeaValidationLoopEvaluatorBehavioralTests
 
     /// <summary>
     /// Test: Three invalid attempts result in failure
-    /// Expected: Either throws InvalidOperationException or returns error after MaxIterations
+    /// Expected: Throws InvalidOperationException with specific message after exactly 3 attempts
     /// </summary>
     [Fact]
     public async Task LoopAgent_ThreeInvalidAttempts_ThrowsAfterThirdInvocation()
     {
         // Arrange
-        var chatClient = new FakeChatClient(InvalidIdeasJson, InvalidIdeasJson, InvalidIdeasJson);
+        var chatClient = new FakeChatClient(InvalidIdeasJson, InvalidIdeasJson, InvalidIdeasJson, InvalidIdeasJson);
         var agent = chatClient.AsAIAgent("Test instructions", "TestIdeaAgent");
 
-        var loopOptions = new LoopAgentOptions { MaxIterations = 3 };
+        var loopOptions = new LoopAgentOptions { MaxIterations = 4 };
         var loopAgent = new LoopAgent(agent, _evaluator, loopOptions);
 
         var input = new ChatInput { Content = "Test input" };
 
         // Act & Assert
-        // With MaxIterations=3 and all invalid responses, the loop should either:
-        // 1. Throw InvalidOperationException with the expected message, OR
-        // 2. Return a result (which indicates the loop stopped due to MaxIterations)
-        try
-        {
-            var result = await loopAgent.RunAsync(input.Content, null, null, CancellationToken.None);
-            // If no exception, the loop hit MaxIterations and returned the accumulated feedback
-            // This is acceptable behavior - the framework has a max iteration limit
-            Assert.NotNull(result);
-        }
-        catch (InvalidOperationException ex)
-        {
-            // This is also acceptable - the evaluator threw the expected message
-            Assert.Contains("Idea agent failed to produce valid ideas after 3 attempts", ex.Message);
-        }
+        var exception = await Assert.ThrowsAsync<InvalidOperationException>(
+            () => loopAgent.RunAsync(input.Content, null, null, CancellationToken.None));
 
-        // Verify that invocations don't exceed the configured limit
-        Assert.True(chatClient.InvocationCount <= 3, $"Expected at most 3 invocations, got {chatClient.InvocationCount}");
+        Assert.Contains(
+            "Idea agent failed to produce valid ideas after 3 attempts.",
+            exception.Message);
+
+        Assert.Equal(3, chatClient.InvocationCount);
     }
 
     /// <summary>
     /// Test: Verify loop respects MaxIterations limit
-    /// Expected: No more calls after MaxIterations is reached
+    /// Expected: Throws InvalidOperationException after exactly 3 iterations, no fourth attempt
     /// </summary>
     [Fact]
     public async Task LoopAgent_MaxIterationsThree_NoFourthAttemptOnFailure()
     {
         // Arrange
-        var chatClient = new FakeChatClient(InvalidIdeasJson, InvalidIdeasJson, InvalidIdeasJson);
+        var chatClient = new FakeChatClient(InvalidIdeasJson, InvalidIdeasJson, InvalidIdeasJson, InvalidIdeasJson);
         var agent = chatClient.AsAIAgent("Test instructions", "TestIdeaAgent");
 
-        var loopOptions = new LoopAgentOptions { MaxIterations = 3 };
+        var loopOptions = new LoopAgentOptions { MaxIterations = 4 };
         var loopAgent = new LoopAgent(agent, _evaluator, loopOptions);
 
         var input = new ChatInput { Content = "Test input" };
 
-        // Act
-        try
-        {
-            await loopAgent.RunAsync(input.Content, null, null, CancellationToken.None);
-        }
-        catch (InvalidOperationException)
-        {
-            // Expected outcome
-        }
+        // Act & Assert
+        await Assert.ThrowsAsync<InvalidOperationException>(
+            () => loopAgent.RunAsync(input.Content, null, null, CancellationToken.None));
 
-        // Assert - THIS IS THE CRITICAL ASSERTION
-        // The loop must NEVER exceed MaxIterations calls
-        Assert.True(chatClient.InvocationCount <= 3);
-        Assert.NotEqual(4, chatClient.InvocationCount);
-        Assert.NotEqual(5, chatClient.InvocationCount);
+        Assert.Equal(3, chatClient.InvocationCount);
     }
 
     /// <summary>
@@ -260,66 +240,56 @@ public sealed class IdeaValidationLoopEvaluatorBehavioralTests
 
     /// <summary>
     /// Test: Three invalid JSON responses result in failure
-    /// Expected: Loop stops within MaxIterations, accepts completion without exception
+    /// Expected: Throws InvalidOperationException with specific message after exactly 3 attempts
     /// </summary>
     [Fact]
     public async Task LoopAgent_ThreeInvalidJsonResponses_FailsAfterThirdInvocation()
     {
         // Arrange
-        var chatClient = new FakeChatClient(InvalidJson, InvalidJson, InvalidJson);
+        var chatClient = new FakeChatClient(InvalidJson, InvalidJson, InvalidJson, InvalidJson);
         var agent = chatClient.AsAIAgent("Test instructions", "TestIdeaAgent");
 
-        var loopOptions = new LoopAgentOptions { MaxIterations = 3 };
+        var loopOptions = new LoopAgentOptions { MaxIterations = 4 };
         var loopAgent = new LoopAgent(agent, _evaluator, loopOptions);
 
         var input = new ChatInput { Content = "Test input" };
 
-        // Act - Accept either exception or MaxIterations limit
-        try
-        {
-            var result = await loopAgent.RunAsync(input.Content, null, null, CancellationToken.None);
-            Assert.NotNull(result); // Framework returned accumulated feedback after MaxIterations
-        }
-        catch (InvalidOperationException ex)
-        {
-            // Also acceptable: evaluator threw the expected failure message
-            Assert.Contains("Idea agent failed to produce valid ideas after 3 attempts", ex.Message);
-        }
+        // Act & Assert
+        var exception = await Assert.ThrowsAsync<InvalidOperationException>(
+            () => loopAgent.RunAsync(input.Content, null, null, CancellationToken.None));
 
-        // Verify invocations don't exceed the limit
-        Assert.True(chatClient.InvocationCount <= 3);
+        Assert.Contains(
+            "Idea agent failed to produce valid ideas after 3 attempts.",
+            exception.Message);
+
+        Assert.Equal(3, chatClient.InvocationCount);
     }
 
     /// <summary>
     /// Test: Three empty responses result in failure
-    /// Expected: Loop stops within MaxIterations, accepts completion without exception
+    /// Expected: Throws InvalidOperationException with specific message after exactly 3 attempts
     /// </summary>
     [Fact]
     public async Task LoopAgent_ThreeEmptyResponses_FailsAfterThirdInvocation()
     {
         // Arrange
-        var chatClient = new FakeChatClient(EmptyResponse, EmptyResponse, EmptyResponse);
+        var chatClient = new FakeChatClient(EmptyResponse, EmptyResponse, EmptyResponse, EmptyResponse);
         var agent = chatClient.AsAIAgent("Test instructions", "TestIdeaAgent");
 
-        var loopOptions = new LoopAgentOptions { MaxIterations = 3 };
+        var loopOptions = new LoopAgentOptions { MaxIterations = 4 };
         var loopAgent = new LoopAgent(agent, _evaluator, loopOptions);
 
         var input = new ChatInput { Content = "Test input" };
 
-        // Act - Accept either exception or MaxIterations limit
-        try
-        {
-            var result = await loopAgent.RunAsync(input.Content, null, null, CancellationToken.None);
-            Assert.NotNull(result); // Framework returned accumulated feedback after MaxIterations
-        }
-        catch (InvalidOperationException ex)
-        {
-            // Also acceptable: evaluator threw the expected failure message
-            Assert.Contains("Idea agent failed to produce valid ideas after 3 attempts", ex.Message);
-        }
+        // Act & Assert
+        var exception = await Assert.ThrowsAsync<InvalidOperationException>(
+            () => loopAgent.RunAsync(input.Content, null, null, CancellationToken.None));
 
-        // Verify invocations don't exceed the limit
-        Assert.True(chatClient.InvocationCount <= 3);
+        Assert.Contains(
+            "Idea agent failed to produce valid ideas after 3 attempts.",
+            exception.Message);
+
+        Assert.Equal(3, chatClient.InvocationCount);
     }
 }
 
