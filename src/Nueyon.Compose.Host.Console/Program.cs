@@ -3,7 +3,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Nueyon.Compose.Application.Flow;
-using Nueyon.Compose.Domain;
+using Nueyon.Compose.Host.Console;
 using Nueyon.Compose.Infrastructure;
 using Nueyon.Compose.Infrastructure.Options;
 
@@ -36,6 +36,9 @@ services.AddInfrastructure();
 // Add application services
 services.AddSingleton<IFlowEngine, StoryFlowEngine>();
 
+// Add console application
+services.AddSingleton<ConsoleApplication>();
+
 // Build the service provider
 var serviceProvider = services.BuildServiceProvider();
 
@@ -45,44 +48,20 @@ try
     var openAiOptions = serviceProvider.GetRequiredService<IOptions<OpenAiOptions>>().Value;
     openAiOptions.Validate();
 
-    // Get the flow engine
-    var flowEngine = serviceProvider.GetRequiredService<IFlowEngine>();
+    // Get and run the console application
+    var consoleApplication = serviceProvider.GetRequiredService<ConsoleApplication>();
 
-    // Execute the Compose flow with sample input
-    Console.WriteLine("Nueyon.Compose");
-    Console.WriteLine("================");
-    Console.WriteLine();
-
-    // Create a sample input
-    var input = new ChatInput
+    // Create a cancellation token source to handle Ctrl+C
+    using var cts = new CancellationTokenSource();
+    Console.CancelKeyPress += (sender, e) =>
     {
-        Content = "Create a short story about a time traveler discovering an ancient library"
+        e.Cancel = true;
+        cts.Cancel();
     };
 
-    Console.WriteLine($"Processing: {input.Content}");
-    Console.WriteLine();
-
-    // Execute the flow
-    var workspace = new StoryWorkspace { Input = input };
-    var result = await flowEngine.ExecuteAsync(workspace, CancellationToken.None);
-
-    // Display results
-    if (result.Ideas is not null && result.Ideas.Count > 0)
-    {
-        Console.WriteLine("Generated Ideas:");
-        Console.WriteLine("================");
-        foreach (var idea in result.Ideas)
-        {
-            Console.WriteLine($"\nTitle: {idea.Title}");
-            Console.WriteLine($"Description: {idea.Description}");
-            Console.WriteLine($"Audience: {idea.Audience}");
-            Console.WriteLine($"Rationale: {idea.Rationale}");
-        }
-    }
-    else
-    {
-        Console.WriteLine("No ideas were generated.");
-    }
+    // Run the application
+    var exitCode = await consoleApplication.RunAsync(cts.Token);
+    Environment.Exit(exitCode);
 }
 catch (InvalidOperationException ex)
 {
