@@ -170,7 +170,7 @@ public sealed class IdeaValidationLoopEvaluatorBehavioralTests
     /// Expected: Throws InvalidOperationException after exactly 3 iterations, no fourth attempt
     /// </summary>
     [Fact]
-    public async Task LoopAgent_MaxIterationsThree_NoFourthAttemptOnFailure()
+    public async Task LoopAgent_ThreeInvalidAttempts_StopsBeforeFourthInvocation()
     {
         // Arrange
         var chatClient = new FakeChatClient(InvalidIdeasJson, InvalidIdeasJson, InvalidIdeasJson, InvalidIdeasJson);
