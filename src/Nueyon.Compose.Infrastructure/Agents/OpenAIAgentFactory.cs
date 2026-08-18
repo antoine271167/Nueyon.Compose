@@ -1,7 +1,7 @@
 using Microsoft.Agents.AI;
-using Microsoft.Agents.AI.OpenAI;
+using Microsoft.Extensions.AI;
 using OpenAI;
-using OpenAI.Responses;
+using OpenAI.Chat;
 
 namespace Nueyon.Compose.Infrastructure.Agents;
 
@@ -26,16 +26,20 @@ public static class OpenAIAgentFactory
         // Create OpenAI client
         var openAIClient = new OpenAIClient(apiKey);
 
-        // Get the Responses client (experimental API, but official OpenAI SDK integration)
-#pragma warning disable OPENAI001 // Type is for evaluation purposes only and is subject to change or removal in future updates.
-        var responsesClient = openAIClient.GetResponsesClient();
-#pragma warning restore OPENAI001
+        // Get the Chat client
+        var chatClient = openAIClient.GetChatClient(model);
 
-        // Create AIAgent using the official Microsoft Agent Framework OpenAI integration
-        var agent = responsesClient.AsAIAgent(
-            model: model,
+        // Wrap with structured output decorator
+        Func<IChatClient, IChatClient> clientFactory = (baseClient) =>
+        {
+            return new StructuredOutputChatClientDecorator(baseClient);
+        };
+
+        // Create AIAgent using the Chat client with structured output support
+        var agent = chatClient.AsAIAgent(
             instructions: systemInstructions,
-            name: "OpenAIAgent");
+            name: "OpenAIAgent",
+            clientFactory: clientFactory);
 
         return agent;
     }

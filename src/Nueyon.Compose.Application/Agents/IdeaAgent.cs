@@ -1,5 +1,6 @@
 using System.Text.Json;
 using Microsoft.Agents.AI;
+using Microsoft.Extensions.AI;
 using Nueyon.Compose.Domain;
 
 namespace Nueyon.Compose.Application.Agents;
@@ -24,6 +25,7 @@ public sealed class IdeaAgent : IAgent<ChatInput, IReadOnlyList<Idea>>
 
     /// <summary>
     /// Executes the IDEA agent to generate content ideas from the user's input.
+    /// Configures structured output to enforce the IdeaResponse JSON contract.
     /// </summary>
     /// <param name="input">The chat input containing the user's idea or thought.</param>
     /// <param name="cancellationToken">The cancellation token to cancel the operation.</param>
@@ -42,14 +44,79 @@ public sealed class IdeaAgent : IAgent<ChatInput, IReadOnlyList<Idea>>
             {input.Content}
             """;
 
-        // Run the agent with the user message
-        var response = await _agent.RunAsync(userMessage, session: null, options: null, cancellationToken);
+        // Run the agent with structured output options configured
+        var options = CreateAgentRunOptions();
+        var response = await _agent.RunAsync(userMessage, session: null, options: options, cancellationToken);
 
         var responseText = ExtractResponseText(response);
 
         var ideas = ParseIdeasFromJson(responseText);
 
         return ideas;
+    }
+
+    /// <summary>
+    /// Creates AgentRunOptions configured for structured output using the IdeaResponse schema.
+    /// </summary>
+    /// <returns>Configured AgentRunOptions with structured response format.</returns>
+    private static ChatClientAgentRunOptions CreateAgentRunOptions()
+    {
+        // Configure structured output through ChatOptions
+        // This ensures the LLM returns JSON that matches the IdeaResponse schema
+        var chatOptions = new ChatOptions();
+
+        // Pass structured output schema through AdditionalProperties
+        // The OpenAI adapter will use this to configure the OpenAI API request
+        chatOptions.AdditionalProperties["StructuredOutputType"] = typeof(IdeaResponse);
+        chatOptions.AdditionalProperties["StructuredOutputSchema"] = GetIdeaResponseJsonSchema();
+
+        // Create ChatClientAgentRunOptions with the configured ChatOptions
+        var options = new ChatClientAgentRunOptions(chatOptions);
+        return options;
+    }
+
+    /// <summary>
+    /// Gets the JSON schema for IdeaResponse structured output.
+    /// </summary>
+    /// <returns>The JSON schema string.</returns>
+    private static string GetIdeaResponseJsonSchema()
+    {
+        return """
+        {
+          "type": "object",
+          "properties": {
+            "ideas": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "title": {
+                    "type": "string",
+                    "description": "A short title for the idea"
+                  },
+                  "description": {
+                    "type": "string",
+                    "description": "A clear description of the idea"
+                  },
+                  "audience": {
+                    "type": "string",
+                    "description": "The specific target audience for this idea"
+                  },
+                  "rationale": {
+                    "type": "string",
+                    "description": "Why this idea is worth pursuing"
+                  }
+                },
+                "required": ["title", "description", "audience", "rationale"],
+                "additionalProperties": false
+              },
+              "description": "Array of idea objects"
+            }
+          },
+          "required": ["ideas"],
+          "additionalProperties": false
+        }
+        """;
     }
 
     /// <summary>
