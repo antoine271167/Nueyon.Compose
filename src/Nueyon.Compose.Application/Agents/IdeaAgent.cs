@@ -55,17 +55,22 @@ public sealed class IdeaAgent : IAgent<ChatInput, IReadOnlyList<Idea>>
     }
 
     /// <summary>
-    /// Creates ChatClientAgentRunOptions for the agent run.
-    /// Structured output configuration will be handled at the framework level.
+    /// Creates ChatClientAgentRunOptions with structured JSON output configured for IdeaResponse.
     /// </summary>
-    /// <returns>Configured ChatClientAgentRunOptions.</returns>
+    /// <returns>Configured ChatClientAgentRunOptions with ResponseFormat set.</returns>
     private static ChatClientAgentRunOptions CreateAgentRunOptions()
     {
-        // For now, create options with minimal configuration
-        // The framework and underlying OpenAI client will handle structured output
-        // through the system prompt and agent configuration
-        var options = new ChatClientAgentRunOptions();
-        return options;
+        var responseFormat = ChatResponseFormat.ForJsonSchema<IdeaResponse>(
+            serializerOptions: null,
+            schemaName: nameof(IdeaResponse),
+            schemaDescription: null);
+
+        var chatOptions = new ChatOptions
+        {
+            ResponseFormat = responseFormat
+        };
+
+        return new ChatClientAgentRunOptions(chatOptions);
     }
 
     /// <summary>
