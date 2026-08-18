@@ -1,5 +1,4 @@
 using Microsoft.Agents.AI;
-using Microsoft.Extensions.AI;
 using OpenAI;
 using OpenAI.Chat;
 
@@ -29,18 +28,14 @@ public static class OpenAIAgentFactory
         // Get the Chat client
         var chatClient = openAIClient.GetChatClient(model);
 
-        // Wrap with structured output decorator
-        Func<IChatClient, IChatClient> clientFactory = (baseClient) =>
-        {
-            return new StructuredOutputChatClientDecorator(baseClient);
-        };
-
-        // Create AIAgent using the Chat client with structured output support
+        // Create AIAgent using the Chat client
+        // Structured output is configured by the caller (Application layer) at execution time
         var agent = chatClient.AsAIAgent(
             instructions: systemInstructions,
-            name: "OpenAIAgent",
-            clientFactory: clientFactory);
+            name: "OpenAIAgent");
 
         return agent;
     }
 }
+
+

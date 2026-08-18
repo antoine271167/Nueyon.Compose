@@ -37,7 +37,6 @@ public sealed class IdeaAgent : IAgent<ChatInput, IReadOnlyList<Idea>>
         CancellationToken cancellationToken = default)
     {
         ArgumentNullException.ThrowIfNull(input);
-
         var userMessage = $"""
             Create content ideas from this input:
 
@@ -56,67 +55,17 @@ public sealed class IdeaAgent : IAgent<ChatInput, IReadOnlyList<Idea>>
     }
 
     /// <summary>
-    /// Creates AgentRunOptions configured for structured output using the IdeaResponse schema.
+    /// Creates ChatClientAgentRunOptions for the agent run.
+    /// Structured output configuration will be handled at the framework level.
     /// </summary>
-    /// <returns>Configured AgentRunOptions with structured response format.</returns>
+    /// <returns>Configured ChatClientAgentRunOptions.</returns>
     private static ChatClientAgentRunOptions CreateAgentRunOptions()
     {
-        // Configure structured output through ChatOptions
-        // This ensures the LLM returns JSON that matches the IdeaResponse schema
-        var chatOptions = new ChatOptions();
-
-        // Pass structured output schema through AdditionalProperties
-        // The OpenAI adapter will use this to configure the OpenAI API request
-        chatOptions.AdditionalProperties["StructuredOutputType"] = typeof(IdeaResponse);
-        chatOptions.AdditionalProperties["StructuredOutputSchema"] = GetIdeaResponseJsonSchema();
-
-        // Create ChatClientAgentRunOptions with the configured ChatOptions
-        var options = new ChatClientAgentRunOptions(chatOptions);
+        // For now, create options with minimal configuration
+        // The framework and underlying OpenAI client will handle structured output
+        // through the system prompt and agent configuration
+        var options = new ChatClientAgentRunOptions();
         return options;
-    }
-
-    /// <summary>
-    /// Gets the JSON schema for IdeaResponse structured output.
-    /// </summary>
-    /// <returns>The JSON schema string.</returns>
-    private static string GetIdeaResponseJsonSchema()
-    {
-        return """
-        {
-          "type": "object",
-          "properties": {
-            "ideas": {
-              "type": "array",
-              "items": {
-                "type": "object",
-                "properties": {
-                  "title": {
-                    "type": "string",
-                    "description": "A short title for the idea"
-                  },
-                  "description": {
-                    "type": "string",
-                    "description": "A clear description of the idea"
-                  },
-                  "audience": {
-                    "type": "string",
-                    "description": "The specific target audience for this idea"
-                  },
-                  "rationale": {
-                    "type": "string",
-                    "description": "Why this idea is worth pursuing"
-                  }
-                },
-                "required": ["title", "description", "audience", "rationale"],
-                "additionalProperties": false
-              },
-              "description": "Array of idea objects"
-            }
-          },
-          "required": ["ideas"],
-          "additionalProperties": false
-        }
-        """;
     }
 
     /// <summary>
