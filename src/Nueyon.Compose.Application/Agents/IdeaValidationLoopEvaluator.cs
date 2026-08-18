@@ -62,7 +62,7 @@ public sealed class IdeaValidationLoopEvaluator : LoopEvaluator
         if (string.IsNullOrWhiteSpace(responseText))
         {
             // Empty response is invalid - check if at final attempt
-            if (context.Iteration == 3)
+            if (context.Iteration >= 3)
             {
                 throw new InvalidOperationException("Idea agent failed to produce valid ideas after 3 attempts.");
             }
@@ -80,7 +80,7 @@ public sealed class IdeaValidationLoopEvaluator : LoopEvaluator
         catch (InvalidOperationException ex)
         {
             // Parsing failed - check if at final attempt
-            if (context.Iteration == 3)
+            if (context.Iteration >= 3)
             {
                 throw new InvalidOperationException("Idea agent failed to produce valid ideas after 3 attempts.", ex);
             }
@@ -101,7 +101,8 @@ public sealed class IdeaValidationLoopEvaluator : LoopEvaluator
         }
 
         // Ideas are invalid - check if at final attempt
-        if (context.Iteration == 3)
+        // Since iterations are 0-indexed and MaxIterations=3, the final iteration is 3 (not 2)
+        if (context.Iteration >= 3)
         {
             throw new InvalidOperationException("Idea agent failed to produce valid ideas after 3 attempts.");
         }
