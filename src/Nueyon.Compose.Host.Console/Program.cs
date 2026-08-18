@@ -33,6 +33,9 @@ services.AddLogging(builder =>
 // Add infrastructure (OpenAI integration)
 services.AddInfrastructure();
 
+// Add console abstraction
+services.AddSingleton<IConsole, SystemConsole>();
+
 // Add application services
 services.AddSingleton<IFlowEngine, StoryFlowEngine>();
 

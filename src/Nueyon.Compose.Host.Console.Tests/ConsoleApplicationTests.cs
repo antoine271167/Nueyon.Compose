@@ -8,175 +8,294 @@ namespace Nueyon.Compose.Host.Console.Tests;
 public sealed class ConsoleApplicationTests
 {
     /// <summary>
-    /// Test 1: Console application can be instantiated with valid dependencies.
+    /// Test: Valid input executes the flow and displays results.
     /// </summary>
     [Fact]
-    public void Constructor_WithValidDependencies_Succeeds()
+    public async Task RunAsync_WithValidInput_ExecutesFlowAndDisplaysResults()
     {
         // Arrange
-        var mockLogger = new MockLogger<ConsoleApplication>();
-        var mockFlowEngine = new MockFlowEngine();
+        var input = new[] { "artificial intelligence", "/exit" };
+        var console = new FakeConsole(input);
+        var flowEngine = new TrackingFlowEngine();
+        var logger = new MockLogger<ConsoleApplication>();
+        var app = new ConsoleApplication(flowEngine, logger, console);
 
         // Act
-        var consoleApp = new ConsoleApplication(mockFlowEngine, mockLogger);
+        var exitCode = await app.RunAsync();
 
         // Assert
-        Assert.NotNull(consoleApp);
+        Assert.Equal(0, exitCode);
+        Assert.Equal(1, flowEngine.ExecutionCount);
+        Assert.Equal("artificial intelligence", flowEngine.LastInputContent);
+        Assert.Contains("Ideas", console.GetOutput());
+        Assert.Contains("Example Idea 1", console.GetOutput());
     }
 
     /// <summary>
-    /// Test 2: Flow engine receives the user input as ChatInput with correct content.
+    /// Test: Multiple inputs are processed independently.
     /// </summary>
     [Fact]
-    public async Task MockFlowEngine_ExecuteAsync_ReturnsWorkspaceWithIdeas()
+    public async Task RunAsync_WithMultipleInputs_ExecutesFlowForEach()
     {
         // Arrange
-        var mockFlowEngine = new MockFlowEngine();
-        var userInput = "artificial intelligence";
-        var chatInput = new ChatInput { Content = userInput };
-        var workspace = new StoryWorkspace { Input = chatInput };
+        var input = new[] { "topic one", "topic two", "/exit" };
+        var console = new FakeConsole(input);
+        var flowEngine = new TrackingFlowEngine();
+        var logger = new MockLogger<ConsoleApplication>();
+        var app = new ConsoleApplication(flowEngine, logger, console);
 
         // Act
-        var result = await mockFlowEngine.ExecuteAsync(workspace);
+        var exitCode = await app.RunAsync();
 
         // Assert
-        Assert.NotNull(result);
-        Assert.Equal(userInput, result.Input.Content);
-        Assert.NotEmpty(result.Ideas);
-        Assert.Equal(2, result.Ideas.Count);
+        Assert.Equal(0, exitCode);
+        Assert.Equal(2, flowEngine.ExecutionCount);
+        Assert.Equal(2, flowEngine.AllInputs.Count);
+        Assert.Equal("topic one", flowEngine.AllInputs[0]);
+        Assert.Equal("topic two", flowEngine.AllInputs[1]);
     }
 
     /// <summary>
-    /// Test 3: Mock flow engine returns ideas with correct structure.
+    /// Test: Empty input does not invoke the flow engine.
     /// </summary>
     [Fact]
-    public async Task MockFlowEngine_ReturnsIdeasWithRequiredFields()
+    public async Task RunAsync_WithEmptyInput_DoesNotExecuteFlow()
     {
         // Arrange
-        var mockFlowEngine = new MockFlowEngine();
-        var chatInput = new ChatInput { Content = "test topic" };
-        var workspace = new StoryWorkspace { Input = chatInput };
+        var input = new[] { "", "   ", "/exit" };
+        var console = new FakeConsole(input);
+        var flowEngine = new TrackingFlowEngine();
+        var logger = new MockLogger<ConsoleApplication>();
+        var app = new ConsoleApplication(flowEngine, logger, console);
 
         // Act
-        var result = await mockFlowEngine.ExecuteAsync(workspace);
+        var exitCode = await app.RunAsync();
 
         // Assert
-        Assert.NotNull(result.Ideas);
-        foreach (var idea in result.Ideas)
+        Assert.Equal(0, exitCode);
+        Assert.Equal(0, flowEngine.ExecutionCount);
+        Assert.Contains("Please enter an idea or topic", console.GetOutput());
+    }
+
+    /// <summary>
+    /// Test: /exit command terminates the application.
+    /// </summary>
+    [Fact]
+    public async Task RunAsync_WithExitCommand_TerminatesCleanly()
+    {
+        // Arrange
+        var input = new[] { "/exit" };
+        var console = new FakeConsole(input);
+        var flowEngine = new TrackingFlowEngine();
+        var logger = new MockLogger<ConsoleApplication>();
+        var app = new ConsoleApplication(flowEngine, logger, console);
+
+        // Act
+        var exitCode = await app.RunAsync();
+
+        // Assert
+        Assert.Equal(0, exitCode);
+        Assert.Equal(0, flowEngine.ExecutionCount);
+        Assert.Contains("Goodbye", console.GetOutput());
+    }
+
+    /// <summary>
+    /// Test: /exit is case-insensitive.
+    /// </summary>
+    [Theory]
+    [InlineData("/EXIT")]
+    [InlineData("/Exit")]
+    [InlineData("/eXiT")]
+    public async Task RunAsync_WithVariousCasesOfExit_Terminates(string exitCommand)
+    {
+        // Arrange
+        var input = new[] { exitCommand };
+        var console = new FakeConsole(input);
+        var flowEngine = new TrackingFlowEngine();
+        var logger = new MockLogger<ConsoleApplication>();
+        var app = new ConsoleApplication(flowEngine, logger, console);
+
+        // Act
+        var exitCode = await app.RunAsync();
+
+        // Assert
+        Assert.Equal(0, exitCode);
+        Assert.Equal(0, flowEngine.ExecutionCount);
+        Assert.Contains("Goodbye", console.GetOutput());
+    }
+
+    /// <summary>
+    /// Test: Whitespace around /exit is trimmed and recognized.
+    /// </summary>
+    [Fact]
+    public async Task RunAsync_WithWhitespaceAroundExit_Terminates()
+    {
+        // Arrange
+        var input = new[] { "   /exit   " };
+        var console = new FakeConsole(input);
+        var flowEngine = new TrackingFlowEngine();
+        var logger = new MockLogger<ConsoleApplication>();
+        var app = new ConsoleApplication(flowEngine, logger, console);
+
+        // Act
+        var exitCode = await app.RunAsync();
+
+        // Assert
+        Assert.Equal(0, exitCode);
+        Assert.Equal(0, flowEngine.ExecutionCount);
+    }
+
+    /// <summary>
+    /// Test: Flow engine failures do not crash the application.
+    /// </summary>
+    [Fact]
+    public async Task RunAsync_WhenFlowEngineFails_ContinuesExecution()
+    {
+        // Arrange
+        var input = new[] { "topic", "/exit" };
+        var console = new FakeConsole(input);
+        var flowEngine = new FailingFlowEngine();
+        var logger = new MockLogger<ConsoleApplication>();
+        var app = new ConsoleApplication(flowEngine, logger, console);
+
+        // Act
+        var exitCode = await app.RunAsync();
+
+        // Assert
+        Assert.Equal(0, exitCode);
+        Assert.Contains("Unable to process the request", console.GetOutput());
+        Assert.Contains("Goodbye", console.GetOutput());
+    }
+
+    /// <summary>
+    /// Test: Result display shows ideas correctly.
+    /// </summary>
+    [Fact]
+    public async Task RunAsync_DisplaysResultsCorrectly()
+    {
+        // Arrange
+        var input = new[] { "test topic", "/exit" };
+        var console = new FakeConsole(input);
+        var flowEngine = new CustomFlowEngine(
+            new[] {
+                new Idea { Title = "First idea", Description = "First description", Audience = "Test", Rationale = "Test" },
+                new Idea { Title = "Second idea", Description = "Second description", Audience = "Test", Rationale = "Test" }
+            });
+        var logger = new MockLogger<ConsoleApplication>();
+        var app = new ConsoleApplication(flowEngine, logger, console);
+
+        // Act
+        var exitCode = await app.RunAsync();
+
+        // Assert
+        var output = console.GetOutput();
+        Assert.Equal(0, exitCode);
+        Assert.Contains("1. First idea", output);
+        Assert.Contains("First description", output);
+        Assert.Contains("2. Second idea", output);
+        Assert.Contains("Second description", output);
+    }
+
+    /// <summary>
+    /// Test: Empty results are handled correctly.
+    /// </summary>
+    [Fact]
+    public async Task RunAsync_WithEmptyResults_DisplaysNoIdeasMessage()
+    {
+        // Arrange
+        var input = new[] { "test topic", "/exit" };
+        var console = new FakeConsole(input);
+        var flowEngine = new CustomFlowEngine(Array.Empty<Idea>());
+        var logger = new MockLogger<ConsoleApplication>();
+        var app = new ConsoleApplication(flowEngine, logger, console);
+
+        // Act
+        var exitCode = await app.RunAsync();
+
+        // Assert
+        var output = console.GetOutput();
+        Assert.Equal(0, exitCode);
+        Assert.Contains("No ideas were generated", output);
+    }
+
+    /// <summary>
+    /// Test: Cancellation token is passed through to the flow engine.
+    /// </summary>
+    [Fact]
+    public async Task RunAsync_PassesCancellationTokenToFlowEngine()
+    {
+        // Arrange
+        var input = new[] { "test topic", "/exit" };
+        var console = new FakeConsole(input);
+        var flowEngine = new CancellationObservingFlowEngine();
+        var logger = new MockLogger<ConsoleApplication>();
+        var app = new ConsoleApplication(flowEngine, logger, console);
+        var cts = new CancellationTokenSource();
+
+        // Act
+        var exitCode = await app.RunAsync(cts.Token);
+
+        // Assert
+        Assert.Equal(0, exitCode);
+        Assert.True(flowEngine.ReceivedCancellationToken);
+    }
+}
+
+/// <summary>
+/// Fake console implementation that accepts pre-determined input
+/// and captures output for testing assertions.
+/// </summary>
+internal sealed class FakeConsole : IConsole
+{
+    private readonly Queue<string?> _inputQueue;
+    private readonly List<string> _output = new();
+
+    public FakeConsole(IEnumerable<string> inputLines)
+    {
+        _inputQueue = new Queue<string?>(inputLines);
+    }
+
+    public string? ReadLine()
+    {
+        if (_inputQueue.Count == 0)
         {
-            Assert.NotNull(idea.Title);
-            Assert.NotEmpty(idea.Title);
-            Assert.NotNull(idea.Description);
-            Assert.NotEmpty(idea.Description);
-            Assert.NotNull(idea.Audience);
-            Assert.NotEmpty(idea.Audience);
-            Assert.NotNull(idea.Rationale);
-            Assert.NotEmpty(idea.Rationale);
+            return null;
         }
+        var line = _inputQueue.Dequeue();
+        _output.Add($"[INPUT] {line}");
+        return line;
     }
 
-    /// <summary>
-    /// Test 4: Failing flow engine throws the expected exception.
-    /// </summary>
-    [Fact]
-    public async Task FailingFlowEngine_ExecuteAsync_ThrowsInvalidOperationException()
+    public void Write(string value)
     {
-        // Arrange
-        var failingFlowEngine = new FailingFlowEngine();
-        var chatInput = new ChatInput { Content = "test" };
-        var workspace = new StoryWorkspace { Input = chatInput };
-
-        // Act & Assert
-        await Assert.ThrowsAsync<InvalidOperationException>(
-            () => failingFlowEngine.ExecuteAsync(workspace));
+        _output.Add(value);
     }
 
-    /// <summary>
-    /// Test 5: Mock logger can be instantiated and used.
-    /// </summary>
-    [Fact]
-    public void MockLogger_LogsWithoutException()
+    public void WriteLine(string value)
     {
-        // Arrange
-        var logger = new MockLogger<ConsoleApplication>();
-
-        // Act & Assert - should not throw
-        logger.Log(LogLevel.Information, default(EventId), "Test message", null, (s, e) => s.ToString() ?? string.Empty);
-        Assert.True(logger.IsEnabled(LogLevel.Information));
+        _output.Add(value);
     }
 
-    /// <summary>
-    /// Test 6: Console application can be constructed with mock dependencies.
-    /// </summary>
-    [Fact]
-    public void ConsoleApplication_WithMockFlowEngine_CanBeCreated()
-    {
-        // Arrange
-        var logger = new MockLogger<ConsoleApplication>();
-        var flowEngine = new MockFlowEngine();
-
-        // Act
-        var app = new ConsoleApplication(flowEngine, logger);
-
-        // Assert
-        Assert.NotNull(app);
-    }
-
-    /// <summary>
-    /// Test 7: Multiple flow executions return different result instances.
-    /// </summary>
-    [Fact]
-    public async Task MockFlowEngine_MultipleExecutions_ReturnDifferentInstances()
-    {
-        // Arrange
-        var flowEngine = new MockFlowEngine();
-        var chatInput1 = new ChatInput { Content = "topic 1" };
-        var chatInput2 = new ChatInput { Content = "topic 2" };
-        var workspace1 = new StoryWorkspace { Input = chatInput1 };
-        var workspace2 = new StoryWorkspace { Input = chatInput2 };
-
-        // Act
-        var result1 = await flowEngine.ExecuteAsync(workspace1);
-        var result2 = await flowEngine.ExecuteAsync(workspace2);
-
-        // Assert
-        Assert.NotNull(result1);
-        Assert.NotNull(result2);
-        Assert.NotSame(result1, result2);
-        Assert.NotEqual(result1.Input.Content, result2.Input.Content);
-    }
+    public string GetOutput() => string.Join("\n", _output);
 }
 
 /// <summary>
-/// Mock logger that captures log messages without outputting to console.
+/// Mock flow engine that tracks execution count and input content.
 /// </summary>
-internal sealed class MockLogger<T> : ILogger<T>
+internal sealed class TrackingFlowEngine : IFlowEngine
 {
-    public IDisposable? BeginScope<TState>(TState state) where TState : notnull => null;
+    public int ExecutionCount { get; private set; }
+    public string? LastInputContent { get; private set; }
+    public List<string> AllInputs { get; } = new();
 
-    public bool IsEnabled(LogLevel logLevel) => true;
-
-    public void Log<TState>(
-        LogLevel logLevel,
-        EventId eventId,
-        TState state,
-        Exception? exception,
-        Func<TState, Exception?, string> formatter)
-    {
-        // Do nothing - mock implementation
-    }
-}
-
-/// <summary>
-/// Mock flow engine that returns a workspace with example ideas.
-/// </summary>
-internal sealed class MockFlowEngine : IFlowEngine
-{
     public Task<StoryWorkspace> ExecuteAsync(
         StoryWorkspace workspace,
         CancellationToken cancellationToken = default)
     {
-        // Return the workspace with example ideas
+        ExecutionCount++;
+        LastInputContent = workspace.Input.Content;
+        AllInputs.Add(workspace.Input.Content);
+
         var ideas = new List<Idea>
         {
             new Idea
@@ -210,5 +329,75 @@ internal sealed class FailingFlowEngine : IFlowEngine
         CancellationToken cancellationToken = default)
     {
         throw new InvalidOperationException("Simulated flow engine failure for testing.");
+    }
+}
+
+/// <summary>
+/// Custom flow engine that returns specified ideas.
+/// </summary>
+internal sealed class CustomFlowEngine : IFlowEngine
+{
+    private readonly IReadOnlyList<Idea> _ideas;
+
+    public CustomFlowEngine(IEnumerable<Idea> ideas)
+    {
+        _ideas = ideas.ToList().AsReadOnly();
+    }
+
+    public Task<StoryWorkspace> ExecuteAsync(
+        StoryWorkspace workspace,
+        CancellationToken cancellationToken = default)
+    {
+        workspace.Ideas = _ideas;
+        return Task.FromResult(workspace);
+    }
+}
+
+/// <summary>
+/// Flow engine that observes and records the cancellation token.
+/// </summary>
+internal sealed class CancellationObservingFlowEngine : IFlowEngine
+{
+    public bool ReceivedCancellationToken { get; private set; }
+
+    public Task<StoryWorkspace> ExecuteAsync(
+        StoryWorkspace workspace,
+        CancellationToken cancellationToken = default)
+    {
+        ReceivedCancellationToken = !cancellationToken.Equals(default(CancellationToken));
+
+        var ideas = new List<Idea>
+        {
+            new Idea
+            {
+                Title = "Test Idea",
+                Description = "Test description",
+                Audience = "Test Audience",
+                Rationale = "For testing purposes"
+            }
+        };
+
+        workspace.Ideas = ideas.AsReadOnly();
+        return Task.FromResult(workspace);
+    }
+}
+
+/// <summary>
+/// Mock logger that captures log messages without outputting to console.
+/// </summary>
+internal sealed class MockLogger<T> : ILogger<T>
+{
+    public IDisposable? BeginScope<TState>(TState state) where TState : notnull => null;
+
+    public bool IsEnabled(LogLevel logLevel) => true;
+
+    public void Log<TState>(
+        LogLevel logLevel,
+        EventId eventId,
+        TState state,
+        Exception? exception,
+        Func<TState, Exception?, string> formatter)
+    {
+        // Do nothing - mock implementation
     }
 }
