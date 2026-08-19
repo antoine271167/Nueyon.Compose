@@ -1,6 +1,7 @@
 using Microsoft.Extensions.Logging;
 using Nueyon.Compose.Application.Agents;
 using Nueyon.Compose.Application.Flow;
+using Nueyon.Compose.Application.Tests.Agents;
 using Nueyon.Compose.Domain;
 using Xunit;
 

@@ -1,6 +1,7 @@
+using Nueyon.Compose.Application.Agents;
 using Nueyon.Compose.Domain;
 
-namespace Nueyon.Compose.Application.Agents;
+namespace Nueyon.Compose.Application.Tests.Agents;
 
 /// <summary>
 ///     A deterministic fake IDEA agent that always returns the same example idea.
