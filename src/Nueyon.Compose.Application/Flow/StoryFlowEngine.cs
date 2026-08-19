@@ -47,7 +47,8 @@ public sealed class StoryFlowEngine : IFlowEngine
         ArgumentNullException.ThrowIfNull(workspace);
 
         var flowName = "Story";
-        var stopwatch = Stopwatch.StartNew();
+        var stepName = "Idea";
+        var flowStopwatch = Stopwatch.StartNew();
 
         try
         {
@@ -56,32 +57,62 @@ public sealed class StoryFlowEngine : IFlowEngine
                 flowName,
                 executionContext.ExecutionId);
 
-            var ideas = await _ideaAgent.ExecuteAsync(
-                executionContext,
-                workspace.Input,
-                cancellationToken);
+            var stepStopwatch = Stopwatch.StartNew();
 
-            stopwatch.Stop();
+            try
+            {
+                _logger.LogInformation(
+                    "Step {StepName} started with ExecutionId {ExecutionId}",
+                    stepName,
+                    executionContext.ExecutionId);
 
-            workspace.Ideas = ideas;
+                var ideas = await _ideaAgent.ExecuteAsync(
+                    executionContext,
+                    workspace.Input,
+                    cancellationToken);
+
+                stepStopwatch.Stop();
+                workspace.Ideas = ideas;
+
+                _logger.LogInformation(
+                    "Step {StepName} completed in {Duration}ms with ExecutionId {ExecutionId}",
+                    stepName,
+                    stepStopwatch.ElapsedMilliseconds,
+                    executionContext.ExecutionId);
+            }
+            catch (Exception ex)
+            {
+                stepStopwatch.Stop();
+
+                _logger.LogError(
+                    ex,
+                    "Step {StepName} failed after {Duration}ms with ExecutionId {ExecutionId}",
+                    stepName,
+                    stepStopwatch.ElapsedMilliseconds,
+                    executionContext.ExecutionId);
+
+                throw;
+            }
+
+            flowStopwatch.Stop();
 
             _logger.LogInformation(
                 "Flow {FlowName} completed in {Duration}ms with ExecutionId {ExecutionId}",
                 flowName,
-                stopwatch.ElapsedMilliseconds,
+                flowStopwatch.ElapsedMilliseconds,
                 executionContext.ExecutionId);
 
             return workspace;
         }
         catch (Exception ex)
         {
-            stopwatch.Stop();
+            flowStopwatch.Stop();
 
             _logger.LogError(
                 ex,
                 "Flow {FlowName} failed after {Duration}ms with ExecutionId {ExecutionId}",
                 flowName,
-                stopwatch.ElapsedMilliseconds,
+                flowStopwatch.ElapsedMilliseconds,
                 executionContext.ExecutionId);
 
             throw;

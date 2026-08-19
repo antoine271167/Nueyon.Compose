@@ -132,27 +132,74 @@ public sealed class ObservabilityTests
     }
 
     /// <summary>
-    ///     Test 6: IdeaAgent logs agent invocation events.
+    ///     Test 6: Idea step start and completion events are logged with ExecutionId.
     /// </summary>
     [Fact]
-    public async Task IdeaAgent_ExecuteAsync_LogsAgentInvocationEvents()
+    public async Task ExecuteAsync_IdeaStepLogsStartAndCompletionEvents()
     {
         // Arrange
-        var executionContext = new FlowExecutionContext(Guid.NewGuid());
-        var agentLogger = new MockLogger<IdeaAgent>();
-        var fakeAgent = new FakeIdeaAgent();
+        var executionId = Guid.NewGuid();
+        var executionContext = new FlowExecutionContext(executionId);
+        var logger = new MockLogger<StoryFlowEngine>();
+        var agent = new FakeIdeaAgent();
+        var engine = new StoryFlowEngine(agent, logger);
 
         var input = new ChatInput { Content = "Test input" };
+        var workspace = new StoryWorkspace { Input = input };
 
         // Act
-        await fakeAgent.ExecuteAsync(executionContext, input);
-
-        // Note: FakeIdeaAgent doesn't have logging capability in this test setup,
-        // so this test verifies the interface accepts the executionContext parameter.
-        // The real agent would log through its logger dependency.
+        await engine.ExecuteAsync(executionContext, workspace);
 
         // Assert
-        Assert.NotNull(executionContext);
+        var messages = logger.LoggedMessages;
+
+        // Verify Idea step started
+        var stepStarted = messages.FirstOrDefault(m => m.Contains("Step Idea started"));
+        Assert.NotNull(stepStarted);
+        Assert.Contains(executionId.ToString(), stepStarted!);
+
+        // Verify Idea step completed
+        var stepCompleted = messages.FirstOrDefault(m => m.Contains("Step Idea completed"));
+        Assert.NotNull(stepCompleted);
+        Assert.Contains(executionId.ToString(), stepCompleted!);
+        Assert.Contains("ms", stepCompleted!);
+    }
+
+    /// <summary>
+    ///     Test 7: Idea step failure events are logged with ExecutionId and exception.
+    /// </summary>
+    [Fact]
+    public async Task ExecuteAsync_IdeaStepFailureIsLogged()
+    {
+        // Arrange
+        var executionId = Guid.NewGuid();
+        var executionContext = new FlowExecutionContext(executionId);
+        var logger = new MockLogger<StoryFlowEngine>();
+        var faultyAgent = new FaultyAgent();
+        var engine = new StoryFlowEngine(faultyAgent, logger);
+
+        var input = new ChatInput { Content = "Test input" };
+        var workspace = new StoryWorkspace { Input = input };
+
+        // Act & Assert
+        var exception = await Assert.ThrowsAsync<InvalidOperationException>(
+            () => engine.ExecuteAsync(executionContext, workspace));
+
+        // Verify the original exception is still thrown
+        Assert.Equal("Simulated agent failure", exception.Message);
+
+        var messages = logger.LoggedMessages;
+
+        // Verify Idea step started
+        var stepStarted = messages.FirstOrDefault(m => m.Contains("Step Idea started"));
+        Assert.NotNull(stepStarted);
+        Assert.Contains(executionId.ToString(), stepStarted!);
+
+        // Verify Idea step failed
+        var stepFailed = messages.FirstOrDefault(m => m.Contains("Step Idea failed"));
+        Assert.NotNull(stepFailed);
+        Assert.Contains(executionId.ToString(), stepFailed!);
+        Assert.Contains("ms", stepFailed!);
     }
 
     /// <summary>

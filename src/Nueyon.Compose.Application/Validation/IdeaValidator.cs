@@ -22,7 +22,7 @@ public sealed class IdeaValidator : IIdeaValidator
     public bool IsValid(IReadOnlyList<Idea> ideas)
     {
         // Null or empty list is invalid
-        if (ideas.Count == 0)
+        if (ideas == null || ideas.Count == 0)
         {
             return false;
         }

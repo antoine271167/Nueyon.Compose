@@ -1,4 +1,5 @@
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Nueyon.Compose.Application.Agents;
 using Nueyon.Compose.Application.Validation;
@@ -14,6 +15,7 @@ public sealed class InfrastructureServiceExtensionsTests
     {
         // Arrange
         var services = new ServiceCollection();
+        services.AddLogging();
         services.Configure<OpenAiOptions>(opt =>
         {
             opt.ApiKey = "test-key";
@@ -35,6 +37,7 @@ public sealed class InfrastructureServiceExtensionsTests
     {
         // Arrange
         var services = new ServiceCollection();
+        services.AddLogging();
         services.Configure<OpenAiOptions>(opt =>
         {
             opt.ApiKey = "test-key";
@@ -56,6 +59,7 @@ public sealed class InfrastructureServiceExtensionsTests
     {
         // Arrange
         var services = new ServiceCollection();
+        services.AddLogging();
         services.Configure<OpenAiOptions>(opt =>
         {
             opt.ApiKey = "test-key";
@@ -76,6 +80,7 @@ public sealed class InfrastructureServiceExtensionsTests
     {
         // Arrange
         var services = new ServiceCollection();
+        services.AddLogging();
         services.Configure<OpenAiOptions>(opt =>
         {
             opt.ApiKey = "";
@@ -96,6 +101,7 @@ public sealed class InfrastructureServiceExtensionsTests
     {
         // Arrange
         var services = new ServiceCollection();
+        services.AddLogging();
         services.Configure<OpenAiOptions>(opt =>
         {
             opt.ApiKey = "test-key";
@@ -125,6 +131,7 @@ public sealed class InfrastructureServiceExtensionsTests
     {
         // Arrange
         var services = new ServiceCollection();
+        services.AddLogging();
         services.Configure<OpenAiOptions>(opt =>
         {
             opt.ApiKey = "test-key";
