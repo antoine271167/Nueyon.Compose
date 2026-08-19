@@ -12,10 +12,7 @@ public sealed class StoryFlowEngineTests
     /// <summary>
     ///     Creates a no-op logger for testing.
     /// </summary>
-    private static ILogger<StoryFlowEngine> CreateTestLogger()
-    {
-        return new NoOpLogger<StoryFlowEngine>();
-    }
+    private static NoOpLogger<StoryFlowEngine> CreateTestLogger() => new();
 
     /// <summary>
     ///     Test 1: IDEA flow executes successfully with a valid StoryWorkspace.

@@ -100,8 +100,7 @@ public sealed class ObservabilityTests
         var workspace = new StoryWorkspace { Input = input };
 
         // Act & Assert
-        await Assert.ThrowsAsync<InvalidOperationException>(
-            () => engine.ExecuteAsync(executionContext, workspace));
+        await Assert.ThrowsAsync<InvalidOperationException>(() => engine.ExecuteAsync(executionContext, workspace));
 
         // Verify failure was logged
         var messages = logger.LoggedMessages;
@@ -129,7 +128,7 @@ public sealed class ObservabilityTests
         // Assert
         var completionMessage = logger.LoggedMessages.FirstOrDefault(m => m.Contains("completed"));
         Assert.NotNull(completionMessage);
-        Assert.Contains("ms", completionMessage!);
+        Assert.Contains("ms", completionMessage);
     }
 
     /// <summary>
@@ -157,13 +156,13 @@ public sealed class ObservabilityTests
         // Verify Idea step started
         var stepStarted = messages.FirstOrDefault(m => m.Contains("Step Idea started"));
         Assert.NotNull(stepStarted);
-        Assert.Contains(executionId.ToString(), stepStarted!);
+        Assert.Contains(executionId.ToString(), stepStarted);
 
         // Verify Idea step completed
         var stepCompleted = messages.FirstOrDefault(m => m.Contains("Step Idea completed"));
         Assert.NotNull(stepCompleted);
-        Assert.Contains(executionId.ToString(), stepCompleted!);
-        Assert.Contains("ms", stepCompleted!);
+        Assert.Contains(executionId.ToString(), stepCompleted);
+        Assert.Contains("ms", stepCompleted);
     }
 
     /// <summary>
@@ -183,8 +182,8 @@ public sealed class ObservabilityTests
         var workspace = new StoryWorkspace { Input = input };
 
         // Act & Assert
-        var exception = await Assert.ThrowsAsync<InvalidOperationException>(
-            () => engine.ExecuteAsync(executionContext, workspace));
+        var exception =
+            await Assert.ThrowsAsync<InvalidOperationException>(() => engine.ExecuteAsync(executionContext, workspace));
 
         // Verify the original exception is still thrown
         Assert.Equal("Simulated agent failure", exception.Message);
@@ -194,13 +193,13 @@ public sealed class ObservabilityTests
         // Verify Idea step started
         var stepStarted = messages.FirstOrDefault(m => m.Contains("Step Idea started"));
         Assert.NotNull(stepStarted);
-        Assert.Contains(executionId.ToString(), stepStarted!);
+        Assert.Contains(executionId.ToString(), stepStarted);
 
         // Verify Idea step failed
         var stepFailed = messages.FirstOrDefault(m => m.Contains("Step Idea failed"));
         Assert.NotNull(stepFailed);
-        Assert.Contains(executionId.ToString(), stepFailed!);
-        Assert.Contains("ms", stepFailed!);
+        Assert.Contains(executionId.ToString(), stepFailed);
+        Assert.Contains("ms", stepFailed);
     }
 
     /// <summary>
@@ -208,7 +207,7 @@ public sealed class ObservabilityTests
     /// </summary>
     private class MockLogger<T> : ILogger<T>
     {
-        private readonly List<string> _messages = new();
+        private readonly List<string> _messages = [];
 
         public IReadOnlyList<string> LoggedMessages => _messages.AsReadOnly();
 
@@ -236,9 +235,7 @@ public sealed class ObservabilityTests
         public Task<IReadOnlyList<Idea>> ExecuteAsync(
             FlowExecutionContext executionContext,
             ChatInput input,
-            CancellationToken cancellationToken = default)
-        {
+            CancellationToken cancellationToken = default) =>
             throw new InvalidOperationException("Simulated agent failure");
-        }
     }
 }

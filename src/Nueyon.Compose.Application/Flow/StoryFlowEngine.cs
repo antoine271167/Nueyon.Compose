@@ -46,8 +46,8 @@ public sealed class StoryFlowEngine : IFlowEngine
         ArgumentNullException.ThrowIfNull(executionContext);
         ArgumentNullException.ThrowIfNull(workspace);
 
-        var flowName = "Story";
-        var stepName = "Idea";
+        const string flowName = "Story";
+        const string stepName = "Idea";
         var flowStopwatch = Stopwatch.StartNew();
 
         try
