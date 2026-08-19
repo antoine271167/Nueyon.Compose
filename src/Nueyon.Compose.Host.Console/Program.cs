@@ -38,7 +38,8 @@ services.AddInfrastructure();
 services.AddSingleton<IConsole, SystemConsole>();
 
 // Add application services
-services.AddSingleton<IFlowEngine, StoryFlowEngine>();
+services.AddSingleton<StoryFlowEngine>();
+services.AddSingleton<IFlowEngine>(provider => provider.GetRequiredService<StoryFlowEngine>());
 
 // Add console application
 services.AddSingleton<ConsoleApplication>();

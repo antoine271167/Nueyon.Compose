@@ -1,5 +1,6 @@
 using Microsoft.Agents.AI;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Nueyon.Compose.Application.Agents;
 using Nueyon.Compose.Application.Validation;
@@ -45,6 +46,8 @@ public static class InfrastructureServiceExtensions
             var options = provider.GetRequiredService<IOptions<OpenAiOptions>>().Value;
             options.Validate();
 
+            var logger = provider.GetRequiredService<ILogger<IdeaAgent>>();
+
             // Create the base OpenAI AIAgent
             var baseAiAgent = OpenAIAgentFactory.CreateOpenAIAgent(
                 options.ApiKey,
@@ -65,7 +68,7 @@ public static class InfrastructureServiceExtensions
             var loopAgent = new LoopAgent(baseAiAgent, evaluator, loopOptions);
 
             // Return the IdeaAgent that uses the loop-backed agent
-            return new IdeaAgent(loopAgent);
+            return new IdeaAgent(loopAgent, logger);
         });
 
         return services;

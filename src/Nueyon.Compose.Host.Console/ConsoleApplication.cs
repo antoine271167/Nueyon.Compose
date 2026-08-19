@@ -149,10 +149,11 @@ public sealed class ConsoleApplication
         _console.WriteLine("Processing...");
         _console.WriteLine("");
 
+        var executionContext = new FlowExecutionContext(Guid.NewGuid());
         var chatInput = new ChatInput { Content = userInput };
         var workspace = new StoryWorkspace { Input = chatInput };
 
-        var result = await _flowEngine.ExecuteAsync(workspace, cancellationToken);
+        var result = await _flowEngine.ExecuteAsync(executionContext, workspace, cancellationToken);
 
         DisplayResult(result);
     }

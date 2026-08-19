@@ -11,13 +11,16 @@ public sealed class FakeIdeaAgent : IAgent<ChatInput, IReadOnlyList<Idea>>
     /// <summary>
     ///     Executes the fake agent by returning a single deterministic example idea.
     /// </summary>
+    /// <param name="executionContext">The execution context (not used by the fake agent).</param>
     /// <param name="input">The chat input (not used by the fake agent).</param>
     /// <param name="cancellationToken">The cancellation token.</param>
     /// <returns>A read-only list containing exactly one example idea.</returns>
     public Task<IReadOnlyList<Idea>> ExecuteAsync(
+        FlowExecutionContext executionContext,
         ChatInput input,
         CancellationToken cancellationToken = default)
     {
+        ArgumentNullException.ThrowIfNull(executionContext);
         ArgumentNullException.ThrowIfNull(input);
 
         var exampleIdea = new Idea

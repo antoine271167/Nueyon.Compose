@@ -1,3 +1,4 @@
+using Microsoft.Extensions.Logging;
 using Nueyon.Compose.Application.Agents;
 using Nueyon.Compose.Application.Flow;
 using Nueyon.Compose.Domain;
@@ -8,6 +9,14 @@ namespace Nueyon.Compose.Application.Tests.Flow;
 public sealed class StoryFlowEngineTests
 {
     /// <summary>
+    ///     Creates a no-op logger for testing.
+    /// </summary>
+    private static ILogger<StoryFlowEngine> CreateTestLogger()
+    {
+        return new NoOpLogger<StoryFlowEngine>();
+    }
+
+    /// <summary>
     ///     Test 1: IDEA flow executes successfully with a valid StoryWorkspace.
     /// </summary>
     [Fact]
@@ -15,13 +24,15 @@ public sealed class StoryFlowEngineTests
     {
         // Arrange
         var agent = new FakeIdeaAgent();
-        var engine = new StoryFlowEngine(agent);
+        var logger = CreateTestLogger();
+        var engine = new StoryFlowEngine(agent, logger);
 
+        var executionContext = new FlowExecutionContext(Guid.NewGuid());
         var input = new ChatInput { Content = "Test input" };
         var workspace = new StoryWorkspace { Input = input };
 
         // Act
-        var result = await engine.ExecuteAsync(workspace);
+        var result = await engine.ExecuteAsync(executionContext, workspace);
 
         // Assert
         Assert.NotNull(result);
@@ -35,13 +46,15 @@ public sealed class StoryFlowEngineTests
     {
         // Arrange
         var agent = new FakeIdeaAgent();
-        var engine = new StoryFlowEngine(agent);
+        var logger = CreateTestLogger();
+        var engine = new StoryFlowEngine(agent, logger);
 
+        var executionContext = new FlowExecutionContext(Guid.NewGuid());
         var input = new ChatInput { Content = "Test input" };
         var workspace = new StoryWorkspace { Input = input };
 
         // Act
-        var result = await engine.ExecuteAsync(workspace);
+        var result = await engine.ExecuteAsync(executionContext, workspace);
 
         // Assert
         Assert.NotNull(result.Ideas);
@@ -63,13 +76,15 @@ public sealed class StoryFlowEngineTests
         // Arrange
         var capturedInput = default(ChatInput);
         var mockAgent = new CaptureInputAgent(input => capturedInput = input);
-        var engine = new StoryFlowEngine(mockAgent);
+        var logger = CreateTestLogger();
+        var engine = new StoryFlowEngine(mockAgent, logger);
 
+        var executionContext = new FlowExecutionContext(Guid.NewGuid());
         var expectedInput = new ChatInput { Content = "Test input content" };
         var workspace = new StoryWorkspace { Input = expectedInput };
 
         // Act
-        await engine.ExecuteAsync(workspace);
+        await engine.ExecuteAsync(executionContext, workspace);
 
         // Assert
         Assert.NotNull(capturedInput);
@@ -86,14 +101,16 @@ public sealed class StoryFlowEngineTests
         // Arrange
         var capturedToken = CancellationToken.None;
         var mockAgent = new CaptureTokenAgent(token => capturedToken = token);
-        var engine = new StoryFlowEngine(mockAgent);
+        var logger = CreateTestLogger();
+        var engine = new StoryFlowEngine(mockAgent, logger);
 
+        var executionContext = new FlowExecutionContext(Guid.NewGuid());
         var input = new ChatInput { Content = "Test input" };
         var workspace = new StoryWorkspace { Input = input };
         var expectedToken = CancellationToken.None;
 
         // Act
-        await engine.ExecuteAsync(workspace, expectedToken);
+        await engine.ExecuteAsync(executionContext, workspace, expectedToken);
 
         // Assert
         Assert.Equal(expectedToken, capturedToken);
@@ -121,13 +138,15 @@ public sealed class StoryFlowEngineTests
             return new List<Idea> { testIdea }.AsReadOnly();
         });
 
-        var engine = new StoryFlowEngine(mockAgent);
+        var logger = CreateTestLogger();
+        var engine = new StoryFlowEngine(mockAgent, logger);
 
+        var executionContext = new FlowExecutionContext(Guid.NewGuid());
         var input = new ChatInput { Content = "Test input" };
         var workspace = new StoryWorkspace { Input = input };
 
         // Act
-        var result = await engine.ExecuteAsync(workspace);
+        var result = await engine.ExecuteAsync(executionContext, workspace);
 
         // Assert
         Assert.True(agentWasCalled, "The agent should have been called");
@@ -143,11 +162,12 @@ public sealed class StoryFlowEngineTests
     {
         // Arrange
         var agent = new FakeIdeaAgent();
+        var executionContext = new FlowExecutionContext(Guid.NewGuid());
         var input = new ChatInput { Content = "Any input" };
 
         // Act
-        var result1 = await agent.ExecuteAsync(input);
-        var result2 = await agent.ExecuteAsync(input);
+        var result1 = await agent.ExecuteAsync(executionContext, input);
+        var result2 = await agent.ExecuteAsync(executionContext, input);
 
         // Assert
         Assert.NotNull(result1);
@@ -170,9 +190,11 @@ public sealed class StoryFlowEngineTests
     private sealed class CaptureInputAgent(Action<ChatInput> onInput) : IAgent<ChatInput, IReadOnlyList<Idea>>
     {
         public Task<IReadOnlyList<Idea>> ExecuteAsync(
+            FlowExecutionContext executionContext,
             ChatInput input,
             CancellationToken cancellationToken = default)
         {
+            ArgumentNullException.ThrowIfNull(executionContext);
             onInput(input);
             var idea = new Idea
             {
@@ -191,9 +213,11 @@ public sealed class StoryFlowEngineTests
     private sealed class CaptureTokenAgent(Action<CancellationToken> onToken) : IAgent<ChatInput, IReadOnlyList<Idea>>
     {
         public Task<IReadOnlyList<Idea>> ExecuteAsync(
+            FlowExecutionContext executionContext,
             ChatInput input,
             CancellationToken cancellationToken = default)
         {
+            ArgumentNullException.ThrowIfNull(executionContext);
             onToken(cancellationToken);
             var idea = new Idea
             {
@@ -212,8 +236,31 @@ public sealed class StoryFlowEngineTests
     private sealed class TestAgent(Func<IReadOnlyList<Idea>> execute) : IAgent<ChatInput, IReadOnlyList<Idea>>
     {
         public Task<IReadOnlyList<Idea>> ExecuteAsync(
+            FlowExecutionContext executionContext,
             ChatInput input,
-            CancellationToken cancellationToken = default) =>
-            Task.FromResult(execute());
+            CancellationToken cancellationToken = default)
+        {
+            ArgumentNullException.ThrowIfNull(executionContext);
+            return Task.FromResult(execute());
+        }
+    }
+
+    /// <summary>
+    ///     No-op logger for testing.
+    /// </summary>
+    private sealed class NoOpLogger<T> : ILogger<T>
+    {
+        public IDisposable? BeginScope<TState>(TState state) where TState : notnull => null;
+        public bool IsEnabled(LogLevel logLevel) => false;
+
+        public void Log<TState>(
+            LogLevel logLevel,
+            EventId eventId,
+            TState state,
+            Exception? exception,
+            Func<TState, Exception?, string> formatter)
+        {
+            // No-op
+        }
     }
 }

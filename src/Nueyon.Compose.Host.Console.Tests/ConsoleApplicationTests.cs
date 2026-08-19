@@ -293,9 +293,11 @@ internal sealed class TrackingFlowEngine : IFlowEngine
     public List<string> AllInputs { get; } = new();
 
     public Task<StoryWorkspace> ExecuteAsync(
+        FlowExecutionContext executionContext,
         StoryWorkspace workspace,
         CancellationToken cancellationToken = default)
     {
+        ArgumentNullException.ThrowIfNull(executionContext);
         ExecutionCount++;
         LastInputContent = workspace.Input.Content;
         AllInputs.Add(workspace.Input.Content);
@@ -329,6 +331,7 @@ internal sealed class TrackingFlowEngine : IFlowEngine
 internal sealed class FailingFlowEngine : IFlowEngine
 {
     public Task<StoryWorkspace> ExecuteAsync(
+        FlowExecutionContext executionContext,
         StoryWorkspace workspace,
         CancellationToken cancellationToken = default) =>
         throw new InvalidOperationException("Simulated flow engine failure for testing.");
@@ -344,9 +347,11 @@ internal sealed class CustomFlowEngine : IFlowEngine
     private readonly IReadOnlyList<Idea> _ideas;
 
     public Task<StoryWorkspace> ExecuteAsync(
+        FlowExecutionContext executionContext,
         StoryWorkspace workspace,
         CancellationToken cancellationToken = default)
     {
+        ArgumentNullException.ThrowIfNull(executionContext);
         workspace.Ideas = _ideas;
         return Task.FromResult(workspace);
     }
@@ -360,9 +365,11 @@ internal sealed class CancellationObservingFlowEngine : IFlowEngine
     public bool ReceivedCancellationToken { get; private set; }
 
     public Task<StoryWorkspace> ExecuteAsync(
+        FlowExecutionContext executionContext,
         StoryWorkspace workspace,
         CancellationToken cancellationToken = default)
     {
+        ArgumentNullException.ThrowIfNull(executionContext);
         ReceivedCancellationToken = !cancellationToken.Equals(default);
 
         var ideas = new List<Idea>

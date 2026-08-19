@@ -1,4 +1,5 @@
 using Microsoft.Agents.AI;
+using Microsoft.Extensions.Logging;
 using Nueyon.Compose.Application.Agents;
 using Nueyon.Compose.Application.Validation;
 using Nueyon.Compose.Domain;
@@ -57,9 +58,13 @@ public static class IdeaAgentFactory
     /// Creates an IdeaAgent backed by OpenAI.
     /// </summary>
     /// <param name="apiKey">The OpenAI API key. If null or empty, reads from OPENAI_API_KEY environment variable.</param>
+    /// <param name="logger">The logger for structured diagnostic logging.</param>
     /// <returns>A configured IdeaAgent instance.</returns>
     /// <exception cref="InvalidOperationException">Thrown when API key is not provided and not found in environment.</exception>
-    public static IAgent<ChatInput, IReadOnlyList<Idea>> CreateOpenAIIdeaAgent(string? apiKey = null)
+    /// <exception cref="ArgumentNullException">Thrown when logger is null.</exception>
+    public static IAgent<ChatInput, IReadOnlyList<Idea>> CreateOpenAIIdeaAgent(
+        string? apiKey = null,
+        ILogger<IdeaAgent>? logger = null)
     {
         // Get API key from parameter or environment
         apiKey ??= Environment.GetEnvironmentVariable("OPENAI_API_KEY");
@@ -70,10 +75,12 @@ public static class IdeaAgentFactory
                 "OpenAI API key is required. Provide it as a parameter or set the OPENAI_API_KEY environment variable.");
         }
 
+        ArgumentNullException.ThrowIfNull(logger, nameof(logger));
+
         // Create the OpenAI-backed AIAgent
         var aiAgent = OpenAIAgentFactory.CreateOpenAIAgent(apiKey, ModelName, SystemInstruction);
 
         // Create and return the IdeaAgent
-        return new IdeaAgent(aiAgent);
+        return new IdeaAgent(aiAgent, logger);
     }
 }
