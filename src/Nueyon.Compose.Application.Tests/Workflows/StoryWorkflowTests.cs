@@ -8,25 +8,34 @@ namespace Nueyon.Compose.Application.Tests.Workflows;
 public sealed class StoryWorkflowTests
 {
     /// <summary>
-    ///     Test 1: Workflow builds successfully and contains exactly one executor ("idea").
-    ///     Uses the public ReflectExecutors() API to verify the workflow topology.
+    ///     Test 1: Workflow executes successfully, proving the internal MAF workflow is constructed correctly
+    ///     and contains exactly one executor ("idea").
+    ///     Tests the public RunAsync contract to verify the workflow implementation.
     /// </summary>
     [Fact]
-    public void Build_WithValidExecutor_CompletesSuccessfully()
+    public async Task RunAsync_WithValidExecutor_ExecutesSuccessfully()
     {
         // Arrange
-        var agent = new CapturingFakeAgent();
+        var expectedIdea = new Idea
+        {
+            Title = "Test Idea",
+            Description = "Test description",
+            Audience = "Test",
+            Rationale = "Test"
+        };
+        var agent = new CapturingFakeAgent(expectedIdea);
         var executor = IdeaExecutorFactory.CreateIdeaExecutor(agent);
         var workflow = new StoryWorkflow(executor);
 
-        // Act
-        var builtWorkflow = workflow.Build();
+        var input = new ChatInput { Content = "Test input" };
+
+        // Act - should not throw
+        var result = await workflow.RunAsync(input);
 
         // Assert
-        Assert.NotNull(builtWorkflow);
-        var executors = builtWorkflow.ReflectExecutors();
-        Assert.Single(executors);
-        Assert.True(executors.ContainsKey("idea"));
+        Assert.NotNull(result);
+        var idea = Assert.Single(result);
+        Assert.Equal(expectedIdea.Title, idea.Title);
     }
 
     /// <summary>

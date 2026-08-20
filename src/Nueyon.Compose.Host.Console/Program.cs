@@ -40,7 +40,7 @@ services.AddInfrastructure();
 services.AddSingleton<IConsole, SystemConsole>();
 
 // Add workflow services
-services.AddSingleton(provider =>
+services.AddSingleton<IStoryWorkflow>(provider =>
 {
     var agent = provider.GetRequiredService<IAgent<ChatInput, IReadOnlyList<Idea>>>();
     var executor = IdeaExecutorFactory.CreateIdeaExecutor(agent);

@@ -13,11 +13,11 @@ public sealed class ConsoleApplication
     /// <summary>
     ///     Initializes a new instance of the ConsoleApplication.
     /// </summary>
-    /// <param name="storyWorkflow">The Idea workflow to generate content ideas.</param>
+    /// <param name="storyWorkflow">The application-level workflow to generate content ideas.</param>
     /// <param name="logger">The logger for diagnostics.</param>
     /// <param name="console">The console interface for input/output.</param>
     /// <exception cref="ArgumentNullException">Thrown when storyWorkflow, logger, or console is null.</exception>
-    public ConsoleApplication(StoryWorkflow storyWorkflow, ILogger<ConsoleApplication> logger, IConsole console)
+    public ConsoleApplication(IStoryWorkflow storyWorkflow, ILogger<ConsoleApplication> logger, IConsole console)
     {
         _storyWorkflow = storyWorkflow ?? throw new ArgumentNullException(nameof(storyWorkflow));
         _logger = logger ?? throw new ArgumentNullException(nameof(logger));
@@ -26,7 +26,7 @@ public sealed class ConsoleApplication
 
     private readonly IConsole _console;
     private readonly ILogger<ConsoleApplication> _logger;
-    private readonly StoryWorkflow _storyWorkflow;
+    private readonly IStoryWorkflow _storyWorkflow;
 
     /// <summary>
     ///     Runs the interactive console application.

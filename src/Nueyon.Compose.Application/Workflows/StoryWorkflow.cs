@@ -8,7 +8,7 @@ namespace Nueyon.Compose.Application.Workflows;
 ///     It currently contains only the Idea step; additional workflow steps will be added
 ///     in later migrations.
 /// </summary>
-public sealed class StoryWorkflow
+public sealed class StoryWorkflow : IStoryWorkflow
 {
     /// <summary>
     ///     Initializes a new instance of the StoryWorkflow with the specified executor.
@@ -19,18 +19,6 @@ public sealed class StoryWorkflow
         _ideaExecutor = ideaExecutor ?? throw new ArgumentNullException(nameof(ideaExecutor));
 
     private readonly FunctionExecutor<ChatInput, Idea[]> _ideaExecutor;
-
-    /// <summary>
-    ///     Builds and returns a new MAF Workflow instance.
-    ///     Constructs a single-executor workflow with IdeaExecutor as both the entry point and output.
-    ///     Each invocation creates a fresh workflow to support multiple independent executions.
-    /// </summary>
-    /// <returns>A newly constructed MAF Workflow.</returns>
-    public Workflow Build()
-    {
-        var builder = new WorkflowBuilder(_ideaExecutor);
-        return builder.Build();
-    }
 
     /// <summary>
     ///     Executes the story workflow with the provided input.
@@ -53,6 +41,18 @@ public sealed class StoryWorkflow
             cancellationToken: cancellationToken);
 
         return ExtractResult(run);
+    }
+
+    /// <summary>
+    ///     Builds and returns a new MAF Workflow instance.
+    ///     Constructs a single-executor workflow with IdeaExecutor as both the entry point and output.
+    ///     Each invocation creates a fresh workflow to support multiple independent executions.
+    /// </summary>
+    /// <returns>A newly constructed MAF Workflow.</returns>
+    private Workflow Build()
+    {
+        var builder = new WorkflowBuilder(_ideaExecutor);
+        return builder.Build();
     }
 
     private static Idea[] ExtractResult(Run run)
