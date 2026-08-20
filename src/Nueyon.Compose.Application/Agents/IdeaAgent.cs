@@ -41,14 +41,14 @@ public sealed class IdeaAgent : IAgent<ChatInput, IReadOnlyList<Idea>>
     /// <exception cref="ArgumentNullException">Thrown when executionContext or input is null.</exception>
     /// <exception cref="InvalidOperationException">Thrown when the agent response is not valid JSON.</exception>
     public async Task<IReadOnlyList<Idea>> ExecuteAsync(
-        FlowExecutionContext executionContext,
+        AgentExecutionContext executionContext,
         ChatInput input,
         CancellationToken cancellationToken = default)
     {
         ArgumentNullException.ThrowIfNull(executionContext);
         ArgumentNullException.ThrowIfNull(input);
 
-        var agentName = "IdeaAgent";
+        const string agentName = "IdeaAgent";
         var stopwatch = Stopwatch.StartNew();
 
         try
@@ -138,14 +138,14 @@ public sealed class IdeaAgent : IAgent<ChatInput, IReadOnlyList<Idea>>
     ///     Parses the JSON response from the model into a list of Idea objects.
     ///     The expected response format is:
     ///     {
-    ///     "ideas": [
-    ///     {
-    ///     "title": "...",
-    ///     "description": "...",
-    ///     "audience": "...",
-    ///     "rationale": "..."
-    ///     }
-    ///     ]
+    ///       "ideas": [
+    ///         {
+    ///           "title": "...",
+    ///           "description": "...",
+    ///           "audience": "...",
+    ///           "rationale": "..."
+    ///         }
+    ///       ]
     ///     }
     /// </summary>
     /// <param name="json">The JSON string to parse.</param>

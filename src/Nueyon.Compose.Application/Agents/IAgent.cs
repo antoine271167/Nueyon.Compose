@@ -5,7 +5,7 @@ namespace Nueyon.Compose.Application.Agents;
 public interface IAgent<in TInput, TOutput>
 {
     Task<TOutput> ExecuteAsync(
-        FlowExecutionContext executionContext,
+        AgentExecutionContext executionContext,
         TInput input,
         CancellationToken cancellationToken = default);
 }

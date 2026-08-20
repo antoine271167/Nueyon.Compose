@@ -17,7 +17,7 @@ public sealed class FakeIdeaAgent : IAgent<ChatInput, IReadOnlyList<Idea>>
     /// <param name="cancellationToken">The cancellation token.</param>
     /// <returns>A read-only list containing exactly one example idea.</returns>
     public Task<IReadOnlyList<Idea>> ExecuteAsync(
-        FlowExecutionContext executionContext,
+        AgentExecutionContext executionContext,
         ChatInput input,
         CancellationToken cancellationToken = default)
     {

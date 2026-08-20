@@ -170,7 +170,7 @@ public sealed class StoryWorkflowTests
         public CancellationToken? CapturedCancellationToken { get; private set; }
 
         public Task<IReadOnlyList<Idea>> ExecuteAsync(
-            FlowExecutionContext executionContext,
+            AgentExecutionContext executionContext,
             ChatInput input,
             CancellationToken cancellationToken = default)
         {
@@ -193,7 +193,7 @@ public sealed class StoryWorkflowTests
             exceptionToThrow ?? throw new ArgumentNullException(nameof(exceptionToThrow));
 
         public Task<IReadOnlyList<Idea>> ExecuteAsync(
-            FlowExecutionContext executionContext,
+            AgentExecutionContext executionContext,
             ChatInput input,
             CancellationToken cancellationToken = default) =>
             Task.FromException<IReadOnlyList<Idea>>(_exceptionToThrow);

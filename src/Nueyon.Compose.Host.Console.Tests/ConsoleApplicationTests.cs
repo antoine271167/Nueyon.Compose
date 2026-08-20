@@ -286,7 +286,7 @@ public sealed class ConsoleApplicationTests
             Audience = "Test Audience",
             Rationale = "To verify abstraction boundary"
         };
-        var userInput = "abstraction test topic";
+        const string userInput = "abstraction test topic";
         var input = new[] { userInput, "/exit" };
         var console = new FakeConsole(input);
         var workflow = new FakeStoryWorkflow(expectedIdea);
@@ -369,7 +369,7 @@ internal sealed class TrackingFakeAgent : IAgent<ChatInput, IReadOnlyList<Idea>>
     public bool WasCalled => ExecutionCount > 0;
 
     public Task<IReadOnlyList<Idea>> ExecuteAsync(
-        FlowExecutionContext executionContext,
+        AgentExecutionContext executionContext,
         ChatInput input,
         CancellationToken cancellationToken = default)
     {
@@ -401,7 +401,7 @@ internal sealed class TrackingFakeAgent : IAgent<ChatInput, IReadOnlyList<Idea>>
 internal sealed class FailingFakeAgent : IAgent<ChatInput, IReadOnlyList<Idea>>
 {
     public Task<IReadOnlyList<Idea>> ExecuteAsync(
-        FlowExecutionContext executionContext,
+        AgentExecutionContext executionContext,
         ChatInput input,
         CancellationToken cancellationToken = default) =>
         throw new InvalidOperationException("Simulated agent failure for testing.");
@@ -415,7 +415,7 @@ internal sealed class CustomFakeAgent(IEnumerable<Idea> ideas) : IAgent<ChatInpu
     private readonly IReadOnlyList<Idea> _ideas = ideas.ToList().AsReadOnly();
 
     public Task<IReadOnlyList<Idea>> ExecuteAsync(
-        FlowExecutionContext executionContext,
+        AgentExecutionContext executionContext,
         ChatInput input,
         CancellationToken cancellationToken = default)
     {
@@ -433,7 +433,7 @@ internal sealed class CancellationObservingFakeAgent : IAgent<ChatInput, IReadOn
     public bool ReceivedCancellationToken { get; private set; }
 
     public Task<IReadOnlyList<Idea>> ExecuteAsync(
-        FlowExecutionContext executionContext,
+        AgentExecutionContext executionContext,
         ChatInput input,
         CancellationToken cancellationToken = default)
     {

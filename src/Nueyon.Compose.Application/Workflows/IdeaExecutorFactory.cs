@@ -34,7 +34,7 @@ public static class IdeaExecutorFactory
             IWorkflowContext context,
             CancellationToken cancellationToken)
         {
-            var flowContext = new FlowExecutionContext(Guid.NewGuid());
+            var flowContext = new AgentExecutionContext(Guid.NewGuid());
             var ideas = await agent.ExecuteAsync(flowContext, input, cancellationToken);
             return [.. ideas];
         }
