@@ -4,10 +4,9 @@ using Nueyon.Compose.Domain;
 namespace Nueyon.Compose.Application.Workflows;
 
 /// <summary>
-///     A MAF Workflow that generates content ideas from user input using the Idea Agent.
-///     The workflow contains a single executor (via FunctionExecutor) that transforms ChatInput
-///     into a list of Idea objects. This is the minimal workflow designed for learning
-///     and understanding the MAF Workflow model.
+///     StoryWorkflow represents the application-level workflow for creating a story.
+///     It currently contains only the Idea step; additional workflow steps will be added
+///     in later migrations.
 /// </summary>
 public sealed class StoryWorkflow
 {
@@ -34,7 +33,7 @@ public sealed class StoryWorkflow
     }
 
     /// <summary>
-    ///     Executes the workflow with the provided input.
+    ///     Executes the story workflow with the provided input.
     /// </summary>
     /// <param name="input">The chat input to process.</param>
     /// <param name="cancellationToken">The cancellation token to cancel the operation.</param>
