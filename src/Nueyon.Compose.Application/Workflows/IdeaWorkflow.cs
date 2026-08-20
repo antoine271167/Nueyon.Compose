@@ -20,24 +20,17 @@ public sealed class IdeaWorkflow
         _ideaExecutor = ideaExecutor ?? throw new ArgumentNullException(nameof(ideaExecutor));
 
     private readonly FunctionExecutor<ChatInput, Idea[]> _ideaExecutor;
-    private Workflow? _workflow;
 
     /// <summary>
-    ///     Builds and returns the underlying MAF Workflow instance.
+    ///     Builds and returns a new MAF Workflow instance.
     ///     Constructs a single-executor workflow with IdeaExecutor as both the entry point and output.
+    ///     Each invocation creates a fresh workflow to support multiple independent executions.
     /// </summary>
-    /// <returns>The constructed MAF Workflow.</returns>
+    /// <returns>A newly constructed MAF Workflow.</returns>
     public Workflow Build()
     {
-        if (_workflow != null)
-        {
-            return _workflow;
-        }
-
         var builder = new WorkflowBuilder(_ideaExecutor);
-        _workflow = builder.Build();
-
-        return _workflow;
+        return builder.Build();
     }
 
     /// <summary>

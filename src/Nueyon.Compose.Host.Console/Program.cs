@@ -2,7 +2,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using Nueyon.Compose.Application.Flow;
+using Nueyon.Compose.Application.Agents;
+using Nueyon.Compose.Application.Workflows;
+using Nueyon.Compose.Domain;
 using Nueyon.Compose.Host.Console;
 using Nueyon.Compose.Infrastructure;
 using Nueyon.Compose.Infrastructure.Options;
@@ -37,9 +39,13 @@ services.AddInfrastructure();
 // Add console abstraction
 services.AddSingleton<IConsole, SystemConsole>();
 
-// Add application services
-services.AddSingleton<StoryFlowEngine>();
-services.AddSingleton<IFlowEngine>(provider => provider.GetRequiredService<StoryFlowEngine>());
+// Add workflow services
+services.AddSingleton(provider =>
+{
+    var agent = provider.GetRequiredService<IAgent<ChatInput, IReadOnlyList<Idea>>>();
+    var executor = IdeaExecutorFactory.CreateIdeaExecutor(agent);
+    return new IdeaWorkflow(executor);
+});
 
 // Add console application
 services.AddSingleton<ConsoleApplication>();

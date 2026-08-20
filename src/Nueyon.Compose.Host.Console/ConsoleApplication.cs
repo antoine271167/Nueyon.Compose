@@ -1,31 +1,31 @@
 using Microsoft.Extensions.Logging;
-using Nueyon.Compose.Application.Flow;
+using Nueyon.Compose.Application.Workflows;
 using Nueyon.Compose.Domain;
 
 namespace Nueyon.Compose.Host.Console;
 
 /// <summary>
 ///     The interactive console application for Nueyon.Compose.
-///     Orchestrates user input, flow execution, and result presentation.
+///     Orchestrates user input, workflow execution, and result presentation.
 /// </summary>
 public sealed class ConsoleApplication
 {
     /// <summary>
     ///     Initializes a new instance of the ConsoleApplication.
     /// </summary>
-    /// <param name="flowEngine">The flow engine to execute the Compose flow.</param>
+    /// <param name="ideaWorkflow">The Idea workflow to generate content ideas.</param>
     /// <param name="logger">The logger for diagnostics.</param>
     /// <param name="console">The console interface for input/output.</param>
-    /// <exception cref="ArgumentNullException">Thrown when flowEngine, logger, or console is null.</exception>
-    public ConsoleApplication(IFlowEngine flowEngine, ILogger<ConsoleApplication> logger, IConsole console)
+    /// <exception cref="ArgumentNullException">Thrown when ideaWorkflow, logger, or console is null.</exception>
+    public ConsoleApplication(IdeaWorkflow ideaWorkflow, ILogger<ConsoleApplication> logger, IConsole console)
     {
-        _flowEngine = flowEngine ?? throw new ArgumentNullException(nameof(flowEngine));
+        _ideaWorkflow = ideaWorkflow ?? throw new ArgumentNullException(nameof(ideaWorkflow));
         _logger = logger ?? throw new ArgumentNullException(nameof(logger));
         _console = console ?? throw new ArgumentNullException(nameof(console));
     }
 
     private readonly IConsole _console;
-    private readonly IFlowEngine _flowEngine;
+    private readonly IdeaWorkflow _ideaWorkflow;
     private readonly ILogger<ConsoleApplication> _logger;
 
     /// <summary>
@@ -139,7 +139,7 @@ public sealed class ConsoleApplication
     }
 
     /// <summary>
-    ///     Executes the Compose flow with the provided user input.
+    ///     Executes the Idea workflow with the provided user input.
     /// </summary>
     /// <param name="userInput">The user's idea or topic.</param>
     /// <param name="cancellationToken">The cancellation token.</param>
@@ -149,22 +149,20 @@ public sealed class ConsoleApplication
         _console.WriteLine("Processing...");
         _console.WriteLine("");
 
-        var executionContext = new FlowExecutionContext(Guid.NewGuid());
         var chatInput = new ChatInput { Content = userInput };
-        var workspace = new StoryWorkspace { Input = chatInput };
 
-        var result = await _flowEngine.ExecuteAsync(executionContext, workspace, cancellationToken);
+        var ideas = await _ideaWorkflow.RunAsync(chatInput, cancellationToken);
 
-        DisplayResult(result);
+        DisplayResult(ideas);
     }
 
     /// <summary>
-    ///     Displays the result of the Compose flow execution.
+    ///     Displays the result of the Idea workflow execution.
     /// </summary>
-    /// <param name="workspace">The workspace containing the generated ideas.</param>
-    private void DisplayResult(StoryWorkspace workspace)
+    /// <param name="ideas">The generated ideas.</param>
+    private void DisplayResult(IReadOnlyList<Idea> ideas)
     {
-        if (workspace.Ideas.Count == 0)
+        if (ideas.Count == 0)
         {
             _console.WriteLine("No ideas were generated.");
             _console.WriteLine("");
@@ -175,9 +173,9 @@ public sealed class ConsoleApplication
         _console.WriteLine("-----");
         _console.WriteLine("");
 
-        for (var i = 0; i < workspace.Ideas.Count; i++)
+        for (var i = 0; i < ideas.Count; i++)
         {
-            var idea = workspace.Ideas[i];
+            var idea = ideas[i];
             _console.WriteLine($"{i + 1}. {idea.Title}");
             _console.WriteLine($"   {idea.Description}");
             _console.WriteLine("");
