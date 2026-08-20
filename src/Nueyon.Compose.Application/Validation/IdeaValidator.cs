@@ -22,7 +22,8 @@ public sealed class IdeaValidator : IIdeaValidator
     public bool IsValid(IReadOnlyList<Idea> ideas)
     {
         // Null or empty list is invalid
-        if (ideas.Count == 0)
+        // ReSharper disable once ConditionIsAlwaysTrueOrFalseAccordingToNullableAPIContract
+        if (ideas == null || ideas.Count == 0)
         {
             return false;
         }
