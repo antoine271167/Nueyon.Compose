@@ -8,9 +8,9 @@ namespace Nueyon.Compose.Application.Tests.Workflows;
 public sealed class StoryWorkflowTests
 {
     /// <summary>
-    ///     Test 1: Workflow executes successfully, proving the internal MAF workflow is constructed correctly
-    ///     and contains exactly one executor ("idea").
-    ///     Tests the public RunAsync contract to verify the workflow implementation.
+    ///     Test 1: Workflow executes successfully with a valid executor.
+    ///     Verifies that the public RunAsync contract correctly processes input through the executor
+    ///     and returns the expected result.
     /// </summary>
     [Fact]
     public async Task RunAsync_WithValidExecutor_ExecutesSuccessfully()
