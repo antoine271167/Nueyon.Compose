@@ -1,4 +1,5 @@
 using Nueyon.Compose.Application.Agents;
+using Nueyon.Compose.Application.Tests.Agents;
 using Nueyon.Compose.Application.Workflows;
 using Nueyon.Compose.Domain;
 using Xunit;
@@ -8,40 +9,9 @@ namespace Nueyon.Compose.Application.Tests.Workflows;
 public sealed class StoryWorkflowTests
 {
     /// <summary>
-    ///     Test 1: Workflow executes successfully with a valid executor.
-    ///     Verifies that the public RunAsync contract correctly processes input through the executor
-    ///     and returns the expected result.
-    /// </summary>
-    [Fact]
-    public async Task RunAsync_WithValidExecutor_ExecutesSuccessfully()
-    {
-        // Arrange
-        var expectedIdea = new Idea
-        {
-            Title = "Test Idea",
-            Description = "Test description",
-            Audience = "Test",
-            Rationale = "Test"
-        };
-        var agent = new CapturingFakeAgent(expectedIdea);
-        var executor = IdeaExecutorFactory.CreateIdeaExecutor(agent);
-        var workflow = new StoryWorkflow(executor);
-
-        var input = new ChatInput { Content = "Test input" };
-
-        // Act - should not throw
-        var result = await workflow.RunAsync(input);
-
-        // Assert
-        Assert.NotNull(result);
-        var idea = Assert.Single(result);
-        Assert.Equal(expectedIdea.Title, idea.Title);
-    }
-
-    /// <summary>
-    ///     Test 2: Workflow executes successfully without error.
-    ///     Given a ChatInput and a fake agent returning one known Idea,
-    ///     verifies that the workflow executes to completion.
+    ///     Test: Workflow executes successfully with valid input and a fake agent.
+    ///     Verifies that the public RunAsync contract correctly processes ChatInput through the executor
+    ///     and returns the expected result with all properties intact.
     /// </summary>
     [Fact]
     public async Task RunAsync_WithValidInput_ExecutesSuccessfully()
@@ -74,7 +44,7 @@ public sealed class StoryWorkflowTests
     }
 
     /// <summary>
-    ///     Test 3: Workflow correctly passes the input to the executor and agent.
+    ///     Test: Workflow correctly passes the input to the executor and agent.
     ///     Uses a capturing fake agent to verify that the ChatInput is correctly
     ///     transmitted through the executor to the agent.
     /// </summary>
@@ -104,7 +74,7 @@ public sealed class StoryWorkflowTests
     }
 
     /// <summary>
-    ///     Test 4: The cancellation token is structurally propagated through the workflow to the agent.
+    ///     Test: The cancellation token is structurally propagated through the workflow to the agent.
     ///     MAF wraps the caller's token in an internal linked token rather than passing it unchanged.
     ///     This test verifies that the agent receives a valid (non-default) cancellation token,
     ///     proving the plumbing exists from RunAsync through the executor to the agent.
@@ -138,7 +108,7 @@ public sealed class StoryWorkflowTests
     }
 
     /// <summary>
-    ///     Test 5: An agent failure surfaces as an InvalidOperationException at the workflow boundary.
+    ///     Test: An agent failure surfaces as an InvalidOperationException at the workflow boundary.
     ///     MAF swallows executor-level exceptions internally; the observable failure is that
     ///     the workflow produces no output, which ExtractResult turns into an InvalidOperationException.
     /// </summary>
@@ -154,6 +124,35 @@ public sealed class StoryWorkflowTests
 
         // Act & Assert
         await Assert.ThrowsAsync<InvalidOperationException>(() => workflow.RunAsync(input));
+    }
+
+    /// <summary>
+    ///     Test: Integration test with real StoryWorkflow, real MAF workflow, and a fake agent.
+    ///     Verifies the complete execution path from ChatInput through the workflow to Idea output.
+    ///     This test exercises the actual composition without requiring a real LLM.
+    /// </summary>
+    [Fact]
+    public async Task RunAsync_WithFakeAgent_IntegrationTest()
+    {
+        // Arrange
+        var agent = new FakeIdeaAgent();
+        var executor = IdeaExecutorFactory.CreateIdeaExecutor(agent);
+        var workflow = new StoryWorkflow(executor);
+
+        var input = new ChatInput { Content = "Compose a story about a curious cat" };
+
+        // Act
+        var result = await workflow.RunAsync(input);
+
+        // Assert
+        Assert.NotNull(result);
+        var idea = Assert.Single(result);
+        Assert.NotNull(idea.Title);
+        Assert.NotNull(idea.Description);
+        Assert.NotNull(idea.Audience);
+        Assert.NotNull(idea.Rationale);
+        // Verify it's the expected fake idea
+        Assert.Equal("Example Idea", idea.Title);
     }
 
     /// <summary>
