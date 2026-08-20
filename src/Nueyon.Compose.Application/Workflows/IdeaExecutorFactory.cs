@@ -5,18 +5,17 @@ using Nueyon.Compose.Domain;
 namespace Nueyon.Compose.Application.Workflows;
 
 /// <summary>
-/// A factory method for creating the Idea executor used in the MAF Workflow.
-/// 
-/// Creates a FunctionExecutor that adapts the workflow message model (ChatInput) 
-/// to the existing agent abstraction.
+///     A factory method for creating the Idea executor used in the MAF Workflow.
+///     Creates a FunctionExecutor that adapts the workflow message model (ChatInput)
+///     to the existing agent abstraction.
 /// </summary>
 public static class IdeaExecutorFactory
 {
     /// <summary>
-    /// Creates a FunctionExecutor that invokes the existing Idea Agent.
-    /// The return value from the handler is automatically yielded as output.
-    /// MAF requires a concrete array type as the output; the result from the agent
-    /// is converted to Idea[] to satisfy this constraint.
+    ///     Creates a FunctionExecutor that invokes the existing Idea Agent.
+    ///     The return value from the handler is automatically yielded as output.
+    ///     MAF requires a concrete array type as the output; the result from the agent
+    ///     is converted to Idea[] to satisfy this constraint.
     /// </summary>
     /// <param name="agent">The agent to invoke for generating ideas.</param>
     /// <returns>A FunctionExecutor that transforms ChatInput to Idea[].</returns>
@@ -27,8 +26,8 @@ public static class IdeaExecutorFactory
         ArgumentNullException.ThrowIfNull(agent);
 
         return new FunctionExecutor<ChatInput, Idea[]>(
-            id: "idea",
-            handlerAsync: HandleAsync);
+            "idea",
+            HandleAsync);
 
         async ValueTask<Idea[]> HandleAsync(
             ChatInput input,
@@ -41,4 +40,3 @@ public static class IdeaExecutorFactory
         }
     }
 }
-

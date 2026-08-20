@@ -9,14 +9,14 @@ namespace Nueyon.Compose.Application.Workflows;
 ///     into a list of Idea objects. This is the minimal workflow designed for learning
 ///     and understanding the MAF Workflow model.
 /// </summary>
-public sealed class IdeaWorkflow
+public sealed class StoryWorkflow
 {
     /// <summary>
-    ///     Initializes a new instance of the IdeaWorkflow with the specified executor.
+    ///     Initializes a new instance of the StoryWorkflow with the specified executor.
     /// </summary>
     /// <param name="ideaExecutor">The executor to run in the workflow.</param>
     /// <exception cref="ArgumentNullException">Thrown when ideaExecutor is null.</exception>
-    public IdeaWorkflow(FunctionExecutor<ChatInput, Idea[]> ideaExecutor) =>
+    public StoryWorkflow(FunctionExecutor<ChatInput, Idea[]> ideaExecutor) =>
         _ideaExecutor = ideaExecutor ?? throw new ArgumentNullException(nameof(ideaExecutor));
 
     private readonly FunctionExecutor<ChatInput, Idea[]> _ideaExecutor;

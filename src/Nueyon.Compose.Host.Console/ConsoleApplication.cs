@@ -13,20 +13,20 @@ public sealed class ConsoleApplication
     /// <summary>
     ///     Initializes a new instance of the ConsoleApplication.
     /// </summary>
-    /// <param name="ideaWorkflow">The Idea workflow to generate content ideas.</param>
+    /// <param name="storyWorkflow">The Idea workflow to generate content ideas.</param>
     /// <param name="logger">The logger for diagnostics.</param>
     /// <param name="console">The console interface for input/output.</param>
-    /// <exception cref="ArgumentNullException">Thrown when ideaWorkflow, logger, or console is null.</exception>
-    public ConsoleApplication(IdeaWorkflow ideaWorkflow, ILogger<ConsoleApplication> logger, IConsole console)
+    /// <exception cref="ArgumentNullException">Thrown when storyWorkflow, logger, or console is null.</exception>
+    public ConsoleApplication(StoryWorkflow storyWorkflow, ILogger<ConsoleApplication> logger, IConsole console)
     {
-        _ideaWorkflow = ideaWorkflow ?? throw new ArgumentNullException(nameof(ideaWorkflow));
+        _storyWorkflow = storyWorkflow ?? throw new ArgumentNullException(nameof(storyWorkflow));
         _logger = logger ?? throw new ArgumentNullException(nameof(logger));
         _console = console ?? throw new ArgumentNullException(nameof(console));
     }
 
     private readonly IConsole _console;
-    private readonly IdeaWorkflow _ideaWorkflow;
     private readonly ILogger<ConsoleApplication> _logger;
+    private readonly StoryWorkflow _storyWorkflow;
 
     /// <summary>
     ///     Runs the interactive console application.
@@ -151,7 +151,7 @@ public sealed class ConsoleApplication
 
         var chatInput = new ChatInput { Content = userInput };
 
-        var ideas = await _ideaWorkflow.RunAsync(chatInput, cancellationToken);
+        var ideas = await _storyWorkflow.RunAsync(chatInput, cancellationToken);
 
         DisplayResult(ideas);
     }

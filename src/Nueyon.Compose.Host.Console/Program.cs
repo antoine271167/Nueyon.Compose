@@ -44,7 +44,7 @@ services.AddSingleton(provider =>
 {
     var agent = provider.GetRequiredService<IAgent<ChatInput, IReadOnlyList<Idea>>>();
     var executor = IdeaExecutorFactory.CreateIdeaExecutor(agent);
-    return new IdeaWorkflow(executor);
+    return new StoryWorkflow(executor);
 });
 
 // Add console application

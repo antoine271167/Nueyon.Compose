@@ -18,7 +18,7 @@ public sealed class ConsoleApplicationTests
         var console = new FakeConsole(input);
         var agent = new TrackingFakeAgent();
         var executor = IdeaExecutorFactory.CreateIdeaExecutor(agent);
-        var workflow = new IdeaWorkflow(executor);
+        var workflow = new StoryWorkflow(executor);
         var logger = new MockLogger<ConsoleApplication>();
         var app = new ConsoleApplication(workflow, logger, console);
 
@@ -44,7 +44,7 @@ public sealed class ConsoleApplicationTests
         var console = new FakeConsole(input);
         var agent = new TrackingFakeAgent();
         var executor = IdeaExecutorFactory.CreateIdeaExecutor(agent);
-        var workflow = new IdeaWorkflow(executor);
+        var workflow = new StoryWorkflow(executor);
         var logger = new MockLogger<ConsoleApplication>();
         var app = new ConsoleApplication(workflow, logger, console);
 
@@ -70,7 +70,7 @@ public sealed class ConsoleApplicationTests
         var console = new FakeConsole(input);
         var agent = new TrackingFakeAgent();
         var executor = IdeaExecutorFactory.CreateIdeaExecutor(agent);
-        var workflow = new IdeaWorkflow(executor);
+        var workflow = new StoryWorkflow(executor);
         var logger = new MockLogger<ConsoleApplication>();
         var app = new ConsoleApplication(workflow, logger, console);
 
@@ -94,7 +94,7 @@ public sealed class ConsoleApplicationTests
         var console = new FakeConsole(input);
         var agent = new TrackingFakeAgent();
         var executor = IdeaExecutorFactory.CreateIdeaExecutor(agent);
-        var workflow = new IdeaWorkflow(executor);
+        var workflow = new StoryWorkflow(executor);
         var logger = new MockLogger<ConsoleApplication>();
         var app = new ConsoleApplication(workflow, logger, console);
 
@@ -121,7 +121,7 @@ public sealed class ConsoleApplicationTests
         var console = new FakeConsole(input);
         var agent = new TrackingFakeAgent();
         var executor = IdeaExecutorFactory.CreateIdeaExecutor(agent);
-        var workflow = new IdeaWorkflow(executor);
+        var workflow = new StoryWorkflow(executor);
         var logger = new MockLogger<ConsoleApplication>();
         var app = new ConsoleApplication(workflow, logger, console);
 
@@ -145,7 +145,7 @@ public sealed class ConsoleApplicationTests
         var console = new FakeConsole(input);
         var agent = new TrackingFakeAgent();
         var executor = IdeaExecutorFactory.CreateIdeaExecutor(agent);
-        var workflow = new IdeaWorkflow(executor);
+        var workflow = new StoryWorkflow(executor);
         var logger = new MockLogger<ConsoleApplication>();
         var app = new ConsoleApplication(workflow, logger, console);
 
@@ -168,7 +168,7 @@ public sealed class ConsoleApplicationTests
         var console = new FakeConsole(input);
         var agent = new FailingFakeAgent();
         var executor = IdeaExecutorFactory.CreateIdeaExecutor(agent);
-        var workflow = new IdeaWorkflow(executor);
+        var workflow = new StoryWorkflow(executor);
         var logger = new MockLogger<ConsoleApplication>();
         var app = new ConsoleApplication(workflow, logger, console);
 
@@ -190,8 +190,7 @@ public sealed class ConsoleApplicationTests
         // Arrange
         var input = new[] { "test topic", "/exit" };
         var console = new FakeConsole(input);
-        var agent = new CustomFakeAgent(new[]
-        {
+        var agent = new CustomFakeAgent([
             new Idea
             {
                 Title = "First idea",
@@ -206,9 +205,9 @@ public sealed class ConsoleApplicationTests
                 Audience = "Test",
                 Rationale = "Test"
             }
-        });
+        ]);
         var executor = IdeaExecutorFactory.CreateIdeaExecutor(agent);
-        var workflow = new IdeaWorkflow(executor);
+        var workflow = new StoryWorkflow(executor);
         var logger = new MockLogger<ConsoleApplication>();
         var app = new ConsoleApplication(workflow, logger, console);
 
@@ -235,7 +234,7 @@ public sealed class ConsoleApplicationTests
         var console = new FakeConsole(input);
         var agent = new CustomFakeAgent(Array.Empty<Idea>());
         var executor = IdeaExecutorFactory.CreateIdeaExecutor(agent);
-        var workflow = new IdeaWorkflow(executor);
+        var workflow = new StoryWorkflow(executor);
         var logger = new MockLogger<ConsoleApplication>();
         var app = new ConsoleApplication(workflow, logger, console);
 
@@ -259,7 +258,7 @@ public sealed class ConsoleApplicationTests
         var console = new FakeConsole(input);
         var agent = new CancellationObservingFakeAgent();
         var executor = IdeaExecutorFactory.CreateIdeaExecutor(agent);
-        var workflow = new IdeaWorkflow(executor);
+        var workflow = new StoryWorkflow(executor);
         var logger = new MockLogger<ConsoleApplication>();
         var app = new ConsoleApplication(workflow, logger, console);
         var cts = new CancellationTokenSource();
@@ -277,12 +276,10 @@ public sealed class ConsoleApplicationTests
 ///     Fake console implementation that accepts pre-determined input
 ///     and captures output for testing assertions.
 /// </summary>
-internal sealed class FakeConsole : IConsole
+internal sealed class FakeConsole(IEnumerable<string> inputLines) : IConsole
 {
-    public FakeConsole(IEnumerable<string> inputLines) => _inputQueue = new Queue<string?>(inputLines);
-
-    private readonly Queue<string?> _inputQueue;
-    private readonly List<string> _output = new();
+    private readonly Queue<string?> _inputQueue = new(inputLines);
+    private readonly List<string> _output = [];
 
     public string? ReadLine()
     {
@@ -391,7 +388,7 @@ internal sealed class CancellationObservingFakeAgent : IAgent<ChatInput, IReadOn
         ArgumentNullException.ThrowIfNull(executionContext);
         ArgumentNullException.ThrowIfNull(input);
 
-        ReceivedCancellationToken = !cancellationToken.Equals(default);
+        ReceivedCancellationToken = !cancellationToken.Equals(CancellationToken.None);
 
         var ideas = new List<Idea>
         {

@@ -5,7 +5,7 @@ using Xunit;
 
 namespace Nueyon.Compose.Application.Tests.Workflows;
 
-public sealed class IdeaWorkflowTests
+public sealed class StoryWorkflowTests
 {
     /// <summary>
     ///     Test 1: Workflow builds successfully and contains exactly one executor ("idea").
@@ -17,7 +17,7 @@ public sealed class IdeaWorkflowTests
         // Arrange
         var agent = new CapturingFakeAgent();
         var executor = IdeaExecutorFactory.CreateIdeaExecutor(agent);
-        var workflow = new IdeaWorkflow(executor);
+        var workflow = new StoryWorkflow(executor);
 
         // Act
         var builtWorkflow = workflow.Build();
@@ -48,7 +48,7 @@ public sealed class IdeaWorkflowTests
 
         var agent = new CapturingFakeAgent(expectedIdea);
         var executor = IdeaExecutorFactory.CreateIdeaExecutor(agent);
-        var workflow = new IdeaWorkflow(executor);
+        var workflow = new StoryWorkflow(executor);
 
         var input = new ChatInput { Content = "Test input" };
 
@@ -81,7 +81,7 @@ public sealed class IdeaWorkflowTests
             Rationale = "r"
         });
         var executor = IdeaExecutorFactory.CreateIdeaExecutor(agent);
-        var workflow = new IdeaWorkflow(executor);
+        var workflow = new StoryWorkflow(executor);
 
         const string expectedContent = "This is the user's input";
         var input = new ChatInput { Content = expectedContent };
@@ -112,7 +112,7 @@ public sealed class IdeaWorkflowTests
             Rationale = "r"
         });
         var executor = IdeaExecutorFactory.CreateIdeaExecutor(agent);
-        var workflow = new IdeaWorkflow(executor);
+        var workflow = new StoryWorkflow(executor);
 
         var input = new ChatInput { Content = "Test input" };
         using var cts = new CancellationTokenSource();
@@ -139,13 +139,12 @@ public sealed class IdeaWorkflowTests
         // Arrange
         var agent = new FailingFakeAgent(new InvalidOperationException("Test agent failure"));
         var executor = IdeaExecutorFactory.CreateIdeaExecutor(agent);
-        var workflow = new IdeaWorkflow(executor);
+        var workflow = new StoryWorkflow(executor);
 
         var input = new ChatInput { Content = "Test input" };
 
         // Act & Assert
-        await Assert.ThrowsAsync<InvalidOperationException>(
-            () => workflow.RunAsync(input));
+        await Assert.ThrowsAsync<InvalidOperationException>(() => workflow.RunAsync(input));
     }
 
     /// <summary>
