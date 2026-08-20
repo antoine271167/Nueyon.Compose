@@ -132,7 +132,7 @@ public sealed class StoryWorkflowTests
     ///     This test exercises the actual composition without requiring a real LLM.
     /// </summary>
     [Fact]
-    public async Task RunAsync_WithFakeAgent_IntegrationTest()
+    public async Task RunAsync_WithFakeAgent_ExecutesEndToEnd()
     {
         // Arrange
         var agent = new FakeIdeaAgent();
