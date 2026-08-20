@@ -16,10 +16,10 @@ public sealed class IdeaWorkflow
     /// </summary>
     /// <param name="ideaExecutor">The executor to run in the workflow.</param>
     /// <exception cref="ArgumentNullException">Thrown when ideaExecutor is null.</exception>
-    public IdeaWorkflow(FunctionExecutor<ChatInput, IReadOnlyList<Idea>> ideaExecutor) =>
+    public IdeaWorkflow(FunctionExecutor<ChatInput, Idea[]> ideaExecutor) =>
         _ideaExecutor = ideaExecutor ?? throw new ArgumentNullException(nameof(ideaExecutor));
 
-    private readonly FunctionExecutor<ChatInput, IReadOnlyList<Idea>> _ideaExecutor;
+    private readonly FunctionExecutor<ChatInput, Idea[]> _ideaExecutor;
     private Workflow? _workflow;
 
     /// <summary>
@@ -34,11 +34,7 @@ public sealed class IdeaWorkflow
             return _workflow;
         }
 
-        // Create a workflow builder starting with the idea executor
         var builder = new WorkflowBuilder(_ideaExecutor);
-
-        // Build the workflow.
-        // The executor is configured as both the entry point and the output source.
         _workflow = builder.Build();
 
         return _workflow;
@@ -59,35 +55,25 @@ public sealed class IdeaWorkflow
 
         var workflow = Build();
 
-        // Run the workflow with the input using the static InProcessExecution API
         var run = await InProcessExecution.RunAsync(
             workflow,
             input,
             cancellationToken: cancellationToken);
 
-        // Extract the output from the emitted events
-        var result = ExtractResult(run);
-
-        return result;
+        return ExtractResult(run);
     }
 
-    /// <summary>
-    ///     Extracts the workflow output from the emitted events.
-    /// </summary>
-    private static IReadOnlyList<Idea> ExtractResult(Run run)
+    private static Idea[] ExtractResult(Run run)
     {
-        // Find the output event containing ideas
         foreach (var @event in run.OutgoingEvents)
         {
-            // WorkflowOutputEvent represents output yielded by executors
-            // Check if this is an IReadOnlyList<Idea>
-            if (@event is WorkflowOutputEvent { Data: IReadOnlyList<Idea> ideas })
+            if (@event is ExecutorCompletedEvent { ExecutorId: "idea", Data: Idea[] ideas })
             {
                 return ideas;
             }
         }
 
-        // If no output was found, return an empty list
-        return [];
+        throw new InvalidOperationException(
+            "The Idea Workflow completed without producing an Idea result.");
     }
 }

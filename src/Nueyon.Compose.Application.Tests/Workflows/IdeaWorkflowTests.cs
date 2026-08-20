@@ -8,8 +8,8 @@ namespace Nueyon.Compose.Application.Tests.Workflows;
 public sealed class IdeaWorkflowTests
 {
     /// <summary>
-    ///     Test 1: Workflow can be constructed and built successfully.
-    ///     Verifies that the workflow contains exactly one executor and can be built without errors.
+    ///     Test 1: Workflow builds successfully and contains exactly one executor ("idea").
+    ///     Uses the public ReflectExecutors() API to verify the workflow topology.
     /// </summary>
     [Fact]
     public void Build_WithValidExecutor_CompletesSuccessfully()
@@ -24,7 +24,9 @@ public sealed class IdeaWorkflowTests
 
         // Assert
         Assert.NotNull(builtWorkflow);
-        // The workflow should be built successfully
+        var executors = builtWorkflow.ReflectExecutors();
+        Assert.Single(executors);
+        Assert.True(executors.ContainsKey("idea"));
     }
 
     /// <summary>
@@ -53,8 +55,13 @@ public sealed class IdeaWorkflowTests
         // Act - should not throw
         var result = await workflow.RunAsync(input);
 
-        // Assert - at minimum, should complete and return an IReadOnlyList
+        // Assert
         Assert.NotNull(result);
+        var idea = Assert.Single(result);
+        Assert.Equal(expectedIdea.Title, idea.Title);
+        Assert.Equal(expectedIdea.Description, idea.Description);
+        Assert.Equal(expectedIdea.Audience, idea.Audience);
+        Assert.Equal(expectedIdea.Rationale, idea.Rationale);
     }
 
     /// <summary>
@@ -66,7 +73,13 @@ public sealed class IdeaWorkflowTests
     public async Task RunAsync_WithValidInput_PassesInputToAgent()
     {
         // Arrange
-        var agent = new CapturingFakeAgent();
+        var agent = new CapturingFakeAgent(new Idea
+        {
+            Title = "Captured",
+            Description = "d",
+            Audience = "a",
+            Rationale = "r"
+        });
         var executor = IdeaExecutorFactory.CreateIdeaExecutor(agent);
         var workflow = new IdeaWorkflow(executor);
 
@@ -82,60 +95,57 @@ public sealed class IdeaWorkflowTests
     }
 
     /// <summary>
-    ///     Test 4: Cancellation is propagated to the agent.
-    ///     Verifies that when a cancellation token is provided, it's passed to the agent.
-    ///     Note: CancellationToken is a value type, so we compare by value not reference.
+    ///     Test 4: The cancellation token is structurally propagated through the workflow to the agent.
+    ///     MAF wraps the caller's token in an internal linked token rather than passing it unchanged.
+    ///     This test verifies that the agent receives a valid (non-default) cancellation token,
+    ///     proving the plumbing exists from RunAsync through the executor to the agent.
     /// </summary>
     [Fact]
     public async Task RunAsync_WithCancellationToken_PropagatesTokenToAgent()
     {
         // Arrange
-        var agent = new CapturingFakeAgent();
+        var agent = new CapturingFakeAgent(new Idea
+        {
+            Title = "Captured",
+            Description = "d",
+            Audience = "a",
+            Rationale = "r"
+        });
         var executor = IdeaExecutorFactory.CreateIdeaExecutor(agent);
         var workflow = new IdeaWorkflow(executor);
 
         var input = new ChatInput { Content = "Test input" };
-        var cts = new CancellationTokenSource();
+        using var cts = new CancellationTokenSource();
 
         // Act
         await workflow.RunAsync(input, cts.Token);
 
-        // Assert
-        // The cancellation token should reach the agent
+        // Assert: MAF provides its own linked token to the handler; the agent must receive it
         Assert.NotNull(agent.CapturedCancellationToken);
-        // CancellationToken is a struct - test that it reached the agent (not a default token)
+        // The captured token is MAF's internal linked token (not the exact same instance),
+        // but it must be a valid, non-default, non-cancelled token
         Assert.NotEqual(CancellationToken.None, agent.CapturedCancellationToken.Value);
+        Assert.False(agent.CapturedCancellationToken.Value.IsCancellationRequested);
     }
 
     /// <summary>
-    ///     Test 5: Workflow handles agent failures gracefully.
-    ///     Configures the agent to fail and verifies that the workflow either
-    ///     surfaces the failure or handles it appropriately.
+    ///     Test 5: An agent failure surfaces as an InvalidOperationException at the workflow boundary.
+    ///     MAF swallows executor-level exceptions internally; the observable failure is that
+    ///     the workflow produces no output, which ExtractResult turns into an InvalidOperationException.
     /// </summary>
     [Fact]
-    public async Task RunAsync_WhenAgentFails_HandlesFail()
+    public async Task RunAsync_WhenAgentFails_ThrowsInvalidOperationException()
     {
         // Arrange
-        const string expectedMessage = "Test agent failure";
-        var agent = new FailingFakeAgent(new InvalidOperationException(expectedMessage));
+        var agent = new FailingFakeAgent(new InvalidOperationException("Test agent failure"));
         var executor = IdeaExecutorFactory.CreateIdeaExecutor(agent);
         var workflow = new IdeaWorkflow(executor);
 
         var input = new ChatInput { Content = "Test input" };
 
-        // Act - the workflow should either throw or complete with an error indicator
-        // Test that we can call it without crashing the test harness
-        try
-        {
-            var result = await workflow.RunAsync(input);
-            // If it doesn't throw, verify that result is an empty list (indicating failure)
-            Assert.NotNull(result);
-        }
-        catch (InvalidOperationException ex)
-        {
-            // If it throws, that's also acceptable - the failure is propagated
-            Assert.Equal(expectedMessage, ex.Message);
-        }
+        // Act & Assert
+        await Assert.ThrowsAsync<InvalidOperationException>(
+            () => workflow.RunAsync(input));
     }
 
     /// <summary>
