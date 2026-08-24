@@ -35,6 +35,28 @@ public sealed class IdeaSelectionExecutorTests
         Assert.Same(firstIdea, selectedIdea.Idea);
     }
 
+    [Fact]
+    public async Task ExecuteAsync_WithNoIdeas_ThrowsInvalidOperationException()
+    {
+        // Arrange
+        var executor =
+            IdeaSelectionExecutorFactory.CreateIdeaSelectionExecutor();
+
+        var workflow = new WorkflowBuilder(executor).Build();
+
+        // Act
+        var exception = await Assert.ThrowsAsync<InvalidOperationException>(async () =>
+        {
+            await InProcessExecution.RunAsync(
+                workflow, Array.Empty<Idea>());
+        });
+
+        // Assert
+        Assert.Equal(
+            "Cannot select an idea because no ideas were generated.",
+            exception.Message);
+    }
+
     private static Idea CreateIdea(string title) =>
         new()
         {
