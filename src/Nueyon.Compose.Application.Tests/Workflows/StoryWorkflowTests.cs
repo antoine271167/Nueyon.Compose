@@ -27,7 +27,8 @@ public sealed class StoryWorkflowTests
 
         var agent = new CapturingFakeAgent(expectedIdea);
         var executor = IdeaExecutorFactory.CreateIdeaExecutor(agent);
-        var workflow = new StoryWorkflow(executor);
+        var selectionExecutor = IdeaSelectionExecutorFactory.CreateIdeaSelectionExecutor();
+        var workflow = new StoryWorkflow(executor, selectionExecutor);
 
         var input = new ChatInput { Content = "Test input" };
 
@@ -60,7 +61,8 @@ public sealed class StoryWorkflowTests
             Rationale = "r"
         });
         var executor = IdeaExecutorFactory.CreateIdeaExecutor(agent);
-        var workflow = new StoryWorkflow(executor);
+        var selectionExecutor = IdeaSelectionExecutorFactory.CreateIdeaSelectionExecutor();
+        var workflow = new StoryWorkflow(executor, selectionExecutor);
 
         const string expectedContent = "This is the user's input";
         var input = new ChatInput { Content = expectedContent };
@@ -91,7 +93,8 @@ public sealed class StoryWorkflowTests
             Rationale = "r"
         });
         var executor = IdeaExecutorFactory.CreateIdeaExecutor(agent);
-        var workflow = new StoryWorkflow(executor);
+        var selectionExecutor = IdeaSelectionExecutorFactory.CreateIdeaSelectionExecutor();
+        var workflow = new StoryWorkflow(executor, selectionExecutor);
 
         var input = new ChatInput { Content = "Test input" };
         using var cts = new CancellationTokenSource();
@@ -118,7 +121,8 @@ public sealed class StoryWorkflowTests
         // Arrange
         var agent = new FailingFakeAgent(new InvalidOperationException("Test agent failure"));
         var executor = IdeaExecutorFactory.CreateIdeaExecutor(agent);
-        var workflow = new StoryWorkflow(executor);
+        var selectionExecutor = IdeaSelectionExecutorFactory.CreateIdeaSelectionExecutor();
+        var workflow = new StoryWorkflow(executor, selectionExecutor);
 
         var input = new ChatInput { Content = "Test input" };
 
@@ -137,7 +141,8 @@ public sealed class StoryWorkflowTests
         // Arrange
         var agent = new FakeIdeaAgent();
         var executor = IdeaExecutorFactory.CreateIdeaExecutor(agent);
-        var workflow = new StoryWorkflow(executor);
+        var selectionExecutor = IdeaSelectionExecutorFactory.CreateIdeaSelectionExecutor();
+        var workflow = new StoryWorkflow(executor, selectionExecutor);
 
         var input = new ChatInput { Content = "Compose a story about a curious cat" };
 

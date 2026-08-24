@@ -18,7 +18,8 @@ public sealed class ConsoleApplicationTests
         var console = new FakeConsole(input);
         var agent = new TrackingFakeAgent();
         var executor = IdeaExecutorFactory.CreateIdeaExecutor(agent);
-        var workflow = new StoryWorkflow(executor);
+        var selectionExecutor = IdeaSelectionExecutorFactory.CreateIdeaSelectionExecutor();
+        var workflow = new StoryWorkflow(executor, selectionExecutor);
         var logger = new MockLogger<ConsoleApplication>();
         var app = new ConsoleApplication(workflow, logger, console);
 
@@ -44,7 +45,8 @@ public sealed class ConsoleApplicationTests
         var console = new FakeConsole(input);
         var agent = new TrackingFakeAgent();
         var executor = IdeaExecutorFactory.CreateIdeaExecutor(agent);
-        var workflow = new StoryWorkflow(executor);
+        var selectionExecutor = IdeaSelectionExecutorFactory.CreateIdeaSelectionExecutor();
+        var workflow = new StoryWorkflow(executor, selectionExecutor);
         var logger = new MockLogger<ConsoleApplication>();
         var app = new ConsoleApplication(workflow, logger, console);
 
@@ -70,7 +72,8 @@ public sealed class ConsoleApplicationTests
         var console = new FakeConsole(input);
         var agent = new TrackingFakeAgent();
         var executor = IdeaExecutorFactory.CreateIdeaExecutor(agent);
-        var workflow = new StoryWorkflow(executor);
+        var selectionExecutor = IdeaSelectionExecutorFactory.CreateIdeaSelectionExecutor();
+        var workflow = new StoryWorkflow(executor, selectionExecutor);
         var logger = new MockLogger<ConsoleApplication>();
         var app = new ConsoleApplication(workflow, logger, console);
 
@@ -94,7 +97,8 @@ public sealed class ConsoleApplicationTests
         var console = new FakeConsole(input);
         var agent = new TrackingFakeAgent();
         var executor = IdeaExecutorFactory.CreateIdeaExecutor(agent);
-        var workflow = new StoryWorkflow(executor);
+        var selectionExecutor = IdeaSelectionExecutorFactory.CreateIdeaSelectionExecutor();
+        var workflow = new StoryWorkflow(executor, selectionExecutor);
         var logger = new MockLogger<ConsoleApplication>();
         var app = new ConsoleApplication(workflow, logger, console);
 
@@ -121,7 +125,8 @@ public sealed class ConsoleApplicationTests
         var console = new FakeConsole(input);
         var agent = new TrackingFakeAgent();
         var executor = IdeaExecutorFactory.CreateIdeaExecutor(agent);
-        var workflow = new StoryWorkflow(executor);
+        var selectionExecutor = IdeaSelectionExecutorFactory.CreateIdeaSelectionExecutor();
+        var workflow = new StoryWorkflow(executor, selectionExecutor);
         var logger = new MockLogger<ConsoleApplication>();
         var app = new ConsoleApplication(workflow, logger, console);
 
@@ -145,7 +150,8 @@ public sealed class ConsoleApplicationTests
         var console = new FakeConsole(input);
         var agent = new TrackingFakeAgent();
         var executor = IdeaExecutorFactory.CreateIdeaExecutor(agent);
-        var workflow = new StoryWorkflow(executor);
+        var selectionExecutor = IdeaSelectionExecutorFactory.CreateIdeaSelectionExecutor();
+        var workflow = new StoryWorkflow(executor, selectionExecutor);
         var logger = new MockLogger<ConsoleApplication>();
         var app = new ConsoleApplication(workflow, logger, console);
 
@@ -168,7 +174,8 @@ public sealed class ConsoleApplicationTests
         var console = new FakeConsole(input);
         var agent = new FailingFakeAgent();
         var executor = IdeaExecutorFactory.CreateIdeaExecutor(agent);
-        var workflow = new StoryWorkflow(executor);
+        var selectionExecutor = IdeaSelectionExecutorFactory.CreateIdeaSelectionExecutor();
+        var workflow = new StoryWorkflow(executor, selectionExecutor);
         var logger = new MockLogger<ConsoleApplication>();
         var app = new ConsoleApplication(workflow, logger, console);
 
@@ -182,7 +189,7 @@ public sealed class ConsoleApplicationTests
     }
 
     /// <summary>
-    ///     Test: Result display shows ideas correctly.
+    ///     Test: Result display shows the selected idea correctly.
     /// </summary>
     [Fact]
     public async Task RunAsync_DisplaysResultsCorrectly()
@@ -207,7 +214,8 @@ public sealed class ConsoleApplicationTests
             }
         ]);
         var executor = IdeaExecutorFactory.CreateIdeaExecutor(agent);
-        var workflow = new StoryWorkflow(executor);
+        var selectionExecutor = IdeaSelectionExecutorFactory.CreateIdeaSelectionExecutor();
+        var workflow = new StoryWorkflow(executor, selectionExecutor);
         var logger = new MockLogger<ConsoleApplication>();
         var app = new ConsoleApplication(workflow, logger, console);
 
@@ -219,12 +227,10 @@ public sealed class ConsoleApplicationTests
         Assert.Equal(0, exitCode);
         Assert.Contains("1. First idea", output);
         Assert.Contains("First description", output);
-        Assert.Contains("2. Second idea", output);
-        Assert.Contains("Second description", output);
     }
 
     /// <summary>
-    ///     Test: Empty results are handled correctly.
+    ///     Test: Empty results from agent cause workflow to fail gracefully.
     /// </summary>
     [Fact]
     public async Task RunAsync_WithEmptyResults_DisplaysNoIdeasMessage()
@@ -234,7 +240,8 @@ public sealed class ConsoleApplicationTests
         var console = new FakeConsole(input);
         var agent = new CustomFakeAgent(Array.Empty<Idea>());
         var executor = IdeaExecutorFactory.CreateIdeaExecutor(agent);
-        var workflow = new StoryWorkflow(executor);
+        var selectionExecutor = IdeaSelectionExecutorFactory.CreateIdeaSelectionExecutor();
+        var workflow = new StoryWorkflow(executor, selectionExecutor);
         var logger = new MockLogger<ConsoleApplication>();
         var app = new ConsoleApplication(workflow, logger, console);
 
@@ -244,7 +251,7 @@ public sealed class ConsoleApplicationTests
         // Assert
         var output = console.GetOutput();
         Assert.Equal(0, exitCode);
-        Assert.Contains("No ideas were generated", output);
+        Assert.Contains("Unable to process the request", output);
     }
 
     /// <summary>
@@ -258,7 +265,8 @@ public sealed class ConsoleApplicationTests
         var console = new FakeConsole(input);
         var agent = new CancellationObservingFakeAgent();
         var executor = IdeaExecutorFactory.CreateIdeaExecutor(agent);
-        var workflow = new StoryWorkflow(executor);
+        var selectionExecutor = IdeaSelectionExecutorFactory.CreateIdeaSelectionExecutor();
+        var workflow = new StoryWorkflow(executor, selectionExecutor);
         var logger = new MockLogger<ConsoleApplication>();
         var app = new ConsoleApplication(workflow, logger, console);
         var cts = new CancellationTokenSource();

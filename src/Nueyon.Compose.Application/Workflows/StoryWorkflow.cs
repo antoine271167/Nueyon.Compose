@@ -14,11 +14,22 @@ public sealed class StoryWorkflow : IStoryWorkflow
     ///     Initializes a new instance of the StoryWorkflow with the specified executor.
     /// </summary>
     /// <param name="ideaExecutor">The executor to run in the workflow.</param>
+    /// <param name="ideaSelectionExecutor">The executor to select an idea from the generated ideas.</param>
     /// <exception cref="ArgumentNullException">Thrown when ideaExecutor is null.</exception>
-    public StoryWorkflow(FunctionExecutor<ChatInput, Idea[]> ideaExecutor) =>
-        _ideaExecutor = ideaExecutor ?? throw new ArgumentNullException(nameof(ideaExecutor));
+    public StoryWorkflow(
+        FunctionExecutor<ChatInput, Idea[]> ideaExecutor,
+        FunctionExecutor<Idea[], SelectedIdea> ideaSelectionExecutor)
+    {
+        _ideaExecutor = ideaExecutor ??
+                        throw new ArgumentNullException(nameof(ideaExecutor));
+
+        _ideaSelectionExecutor = ideaSelectionExecutor ??
+                                 throw new ArgumentNullException(nameof(ideaSelectionExecutor));
+    }
 
     private readonly FunctionExecutor<ChatInput, Idea[]> _ideaExecutor;
+
+    private readonly FunctionExecutor<Idea[], SelectedIdea> _ideaSelectionExecutor;
 
     /// <summary>
     ///     Executes the story workflow with the provided input.
@@ -52,6 +63,9 @@ public sealed class StoryWorkflow : IStoryWorkflow
     private Workflow Build()
     {
         var builder = new WorkflowBuilder(_ideaExecutor);
+
+        builder.AddEdge(_ideaExecutor, _ideaSelectionExecutor);
+
         return builder.Build();
     }
 
@@ -59,13 +73,17 @@ public sealed class StoryWorkflow : IStoryWorkflow
     {
         foreach (var @event in run.OutgoingEvents)
         {
-            if (@event is ExecutorCompletedEvent { ExecutorId: "idea", Data: Idea[] ideas })
+            if (@event is ExecutorCompletedEvent
+                {
+                    ExecutorId: "idea-selection",
+                    Data: SelectedIdea selectedIdea
+                })
             {
-                return ideas;
+                return [selectedIdea.Idea];
             }
         }
 
         throw new InvalidOperationException(
-            "The Idea Workflow completed without producing an Idea result.");
+            "The Story Workflow completed without producing a selected Idea result.");
     }
 }
