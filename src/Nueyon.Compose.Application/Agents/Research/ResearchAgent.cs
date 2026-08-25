@@ -8,8 +8,7 @@ using Nueyon.Compose.Domain;
 namespace Nueyon.Compose.Application.Agents.Research;
 
 /// <summary>
-///     A research harness agent powered by Microsoft Agent Framework and OpenAI.
-///     Produces research material for a selected content idea.
+///     An agent that develops research material for a selected content idea.
 /// </summary>
 public sealed class ResearchAgent : IAgent<ResearchInput, ResearchResult>
 {
@@ -72,6 +71,11 @@ public sealed class ResearchAgent : IAgent<ResearchInput, ResearchResult>
 
             return research;
         }
+        catch (OperationCanceledException) when (cancellationToken.IsCancellationRequested)
+        {
+            stopwatch.Stop();
+            throw;
+        }
         catch (Exception ex)
         {
             stopwatch.Stop();
@@ -93,7 +97,7 @@ public sealed class ResearchAgent : IAgent<ResearchInput, ResearchResult>
 
         return
             $"""
-             Research the following content idea.
+             Develop useful background material for the following content idea.
 
              Original user input:
              {input.Input.Content}
@@ -104,20 +108,24 @@ public sealed class ResearchAgent : IAgent<ResearchInput, ResearchResult>
              Audience: {idea.Audience}
              Rationale: {idea.Rationale}
 
-             Produce useful research material that can be used as input for
-             creating the eventual story or article.
+             Use your existing knowledge to identify relevant context, concepts,
+             perspectives, supporting details, and potential angles that could be
+             useful when creating the eventual story or article.
+
+             Do not claim to have searched external sources or verified information.
+             Do not invent citations or sources.
              """;
     }
 
     /// <summary>
     ///     Creates agent run options with structured JSON output configured
-    ///     for ResearchResponse.
+    ///     for ResearchResult.
     /// </summary>
     private static ChatClientAgentRunOptions CreateAgentRunOptions()
     {
-        var responseFormat = ChatResponseFormat.ForJsonSchema<ResearchResponse>(
+        var responseFormat = ChatResponseFormat.ForJsonSchema<ResearchResult>(
             null,
-            nameof(ResearchResponse));
+            nameof(ResearchResult));
 
         var chatOptions = new ChatOptions
         {
@@ -159,7 +167,7 @@ public sealed class ResearchAgent : IAgent<ResearchInput, ResearchResult>
                 PropertyNameCaseInsensitive = true
             };
 
-            var response = JsonSerializer.Deserialize<ResearchResponse>(
+            var response = JsonSerializer.Deserialize<ResearchResult>(
                 json,
                 options);
 
