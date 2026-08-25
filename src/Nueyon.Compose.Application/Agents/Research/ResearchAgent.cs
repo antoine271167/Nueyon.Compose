@@ -183,10 +183,7 @@ public sealed class ResearchAgent : IAgent<ResearchInput, ResearchResult>
                     "Research response content is empty.");
             }
 
-            return new ResearchResult
-            {
-                Content = response.Content
-            };
+            return response;
         }
         catch (JsonException ex)
         {
