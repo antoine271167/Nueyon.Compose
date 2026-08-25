@@ -49,19 +49,7 @@ services.AddSingleton<IStoryWorkflow>(provider =>
     var researchAgent =
         provider.GetRequiredService<IAgent<ResearchInput, ResearchResult>>();
 
-    var ideaExecutor =
-        IdeaExecutorFactory.CreateIdeaExecutor(ideaAgent);
-
-    var selectionExecutor =
-        IdeaSelectionExecutorFactory.CreateIdeaSelectionExecutor();
-
-    var researchExecutor =
-        ResearchExecutorFactory.CreateResearchExecutor(researchAgent);
-
-    return new StoryWorkflow(
-        ideaExecutor,
-        selectionExecutor,
-        researchExecutor);
+    return new StoryWorkflow(ideaAgent, researchAgent);
 });
 
 // Add console application

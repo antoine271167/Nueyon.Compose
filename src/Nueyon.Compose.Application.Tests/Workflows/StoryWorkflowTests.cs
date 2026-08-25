@@ -29,14 +29,7 @@ public sealed class StoryWorkflowTests
         var ideaAgent = new CapturingFakeAgent(expectedIdea);
         var researchAgent = new FakeResearchAgent(expectedResearch);
 
-        var ideaExecutor = IdeaExecutorFactory.CreateIdeaExecutor(ideaAgent);
-        var selectionExecutor = IdeaSelectionExecutorFactory.CreateIdeaSelectionExecutor();
-        var researchExecutor = ResearchExecutorFactory.CreateResearchExecutor(researchAgent);
-
-        var workflow = new StoryWorkflow(
-            ideaExecutor,
-            selectionExecutor,
-            researchExecutor);
+        var workflow = new StoryWorkflow(ideaAgent, researchAgent);
 
         var input = new ChatInput { Content = "Test input" };
 
@@ -79,14 +72,7 @@ public sealed class StoryWorkflowTests
 
         var researchAgent = new CapturingFakeResearchAgent(researchResult);
 
-        var ideaExecutor = IdeaExecutorFactory.CreateIdeaExecutor(ideaAgent);
-        var selectionExecutor = IdeaSelectionExecutorFactory.CreateIdeaSelectionExecutor();
-        var researchExecutor = ResearchExecutorFactory.CreateResearchExecutor(researchAgent);
-
-        var workflow = new StoryWorkflow(
-            ideaExecutor,
-            selectionExecutor,
-            researchExecutor);
+        var workflow = new StoryWorkflow(ideaAgent, researchAgent);
 
         const string expectedContent = "This is the user's input";
         var input = new ChatInput
@@ -127,14 +113,7 @@ public sealed class StoryWorkflowTests
                 Content = "Test research content"
             });
 
-        var ideaExecutor = IdeaExecutorFactory.CreateIdeaExecutor(ideaAgent);
-        var selectionExecutor = IdeaSelectionExecutorFactory.CreateIdeaSelectionExecutor();
-        var researchExecutor = ResearchExecutorFactory.CreateResearchExecutor(researchAgent);
-
-        var workflow = new StoryWorkflow(
-            ideaExecutor,
-            selectionExecutor,
-            researchExecutor);
+        var workflow = new StoryWorkflow(ideaAgent, researchAgent);
 
         var input = new ChatInput
         {
@@ -170,14 +149,7 @@ public sealed class StoryWorkflowTests
                 Content = "Test research content"
             });
 
-        var ideaExecutor = IdeaExecutorFactory.CreateIdeaExecutor(ideaAgent);
-        var selectionExecutor = IdeaSelectionExecutorFactory.CreateIdeaSelectionExecutor();
-        var researchExecutor = ResearchExecutorFactory.CreateResearchExecutor(researchAgent);
-
-        var workflow = new StoryWorkflow(
-            ideaExecutor,
-            selectionExecutor,
-            researchExecutor);
+        var workflow = new StoryWorkflow(ideaAgent, researchAgent);
 
         var input = new ChatInput
         {
@@ -206,14 +178,7 @@ public sealed class StoryWorkflowTests
 
         var researchAgent = new FakeResearchAgent(researchResult);
 
-        var ideaExecutor = IdeaExecutorFactory.CreateIdeaExecutor(ideaAgent);
-        var selectionExecutor = IdeaSelectionExecutorFactory.CreateIdeaSelectionExecutor();
-        var researchExecutor = ResearchExecutorFactory.CreateResearchExecutor(researchAgent);
-
-        var workflow = new StoryWorkflow(
-            ideaExecutor,
-            selectionExecutor,
-            researchExecutor);
+        var workflow = new StoryWorkflow(ideaAgent, researchAgent);
 
         var input = new ChatInput
         {

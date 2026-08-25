@@ -1,36 +1,33 @@
 using Microsoft.Agents.AI.Workflows;
+using Nueyon.Compose.Application.Agents;
+using Nueyon.Compose.Application.Agents.Research;
 using Nueyon.Compose.Domain;
 
 namespace Nueyon.Compose.Application.Workflows;
 
 /// <summary>
 ///     StoryWorkflow represents the application-level workflow for creating a story.
+///     Owns the Microsoft Agent Framework executor construction and workflow assembly.
 /// </summary>
 public sealed class StoryWorkflow : IStoryWorkflow
 {
     /// <summary>
-    ///     Initializes a new instance of the StoryWorkflow with the specified executors.
+    ///     Initializes a new instance of the StoryWorkflow with the specified agent dependencies.
+    ///     Internally constructs and manages the Microsoft Agent Framework executors.
     /// </summary>
     public StoryWorkflow(
-        FunctionExecutor<ChatInput, Idea[]> ideaExecutor,
-        FunctionExecutor<Idea[], SelectedIdea> ideaSelectionExecutor,
-        FunctionExecutor<SelectedIdea, ResearchResult> researchExecutor)
+        IAgent<ChatInput, IReadOnlyList<Idea>> ideaAgent,
+        IAgent<ResearchInput, ResearchResult> researchAgent)
     {
-        _ideaExecutor = ideaExecutor ??
-                        throw new ArgumentNullException(nameof(ideaExecutor));
+        ArgumentNullException.ThrowIfNull(ideaAgent);
+        ArgumentNullException.ThrowIfNull(researchAgent);
 
-        _ideaSelectionExecutor = ideaSelectionExecutor ??
-                                 throw new ArgumentNullException(nameof(ideaSelectionExecutor));
-
-        _researchExecutor = researchExecutor ??
-                            throw new ArgumentNullException(nameof(researchExecutor));
+        _ideaAgent = ideaAgent;
+        _researchAgent = researchAgent;
     }
 
-    private readonly FunctionExecutor<ChatInput, Idea[]> _ideaExecutor;
-
-    private readonly FunctionExecutor<Idea[], SelectedIdea> _ideaSelectionExecutor;
-
-    private readonly FunctionExecutor<SelectedIdea, ResearchResult> _researchExecutor;
+    private readonly IAgent<ChatInput, IReadOnlyList<Idea>> _ideaAgent;
+    private readonly IAgent<ResearchInput, ResearchResult> _researchAgent;
 
     /// <summary>
     ///     Executes the story workflow with the provided input.
@@ -56,12 +53,99 @@ public sealed class StoryWorkflow : IStoryWorkflow
     /// </summary>
     private Workflow Build()
     {
-        var builder = new WorkflowBuilder(_ideaExecutor);
+        var ideaExecutor = CreateIdeaExecutor();
+        var ideaSelectionExecutor = CreateIdeaSelectionExecutor();
+        var researchExecutor = CreateResearchExecutor();
 
-        builder.AddEdge(_ideaExecutor, _ideaSelectionExecutor);
-        builder.AddEdge(_ideaSelectionExecutor, _researchExecutor);
+        var builder = new WorkflowBuilder(ideaExecutor);
+
+        builder.AddEdge(ideaExecutor, ideaSelectionExecutor);
+        builder.AddEdge(ideaSelectionExecutor, researchExecutor);
 
         return builder.Build();
+    }
+
+    /// <summary>
+    ///     Creates the Idea generation executor.
+    /// </summary>
+    private FunctionExecutor<ChatInput, Idea[]> CreateIdeaExecutor()
+    {
+        return new FunctionExecutor<ChatInput, Idea[]>(
+            "idea",
+            async (input, context, cancellationToken) =>
+            {
+                await context.QueueStateUpdateAsync(
+                    StoryWorkflowState.ChatInputKey,
+                    input,
+                    StoryWorkflowState.ScopeName,
+                    cancellationToken);
+
+                var executionContext = new AgentExecutionContext(Guid.NewGuid());
+
+                var ideas = await _ideaAgent.ExecuteAsync(
+                    executionContext,
+                    input,
+                    cancellationToken);
+
+                return ideas.ToArray();
+            });
+    }
+
+    /// <summary>
+    ///     Creates the Idea selection executor (deterministically selects the first idea).
+    /// </summary>
+    private static FunctionExecutor<Idea[], SelectedIdea> CreateIdeaSelectionExecutor()
+    {
+        return new FunctionExecutor<Idea[], SelectedIdea>(
+            "idea-selection",
+            Handle);
+
+        static SelectedIdea Handle(
+            Idea[] ideas,
+            IWorkflowContext context,
+            CancellationToken cancellationToken)
+        {
+            ArgumentNullException.ThrowIfNull(ideas);
+
+            if (ideas.Length == 0)
+            {
+                throw new InvalidOperationException(
+                    "Cannot select an idea because no ideas were generated.");
+            }
+
+            return new SelectedIdea(ideas[0]);
+        }
+    }
+
+    /// <summary>
+    ///     Creates the Research executor.
+    /// </summary>
+    private FunctionExecutor<SelectedIdea, ResearchResult> CreateResearchExecutor()
+    {
+        return new FunctionExecutor<SelectedIdea, ResearchResult>(
+            "research",
+            async (selectedIdea, context, cancellationToken) =>
+            {
+                var input = await context.ReadStateAsync<ChatInput>(
+                                StoryWorkflowState.ChatInputKey,
+                                StoryWorkflowState.ScopeName,
+                                cancellationToken)
+                            ?? throw new InvalidOperationException(
+                                "ChatInput was not found in the StoryWorkflow state.");
+
+                var researchInput = new ResearchInput
+                {
+                    Input = input,
+                    SelectedIdea = selectedIdea
+                };
+
+                var executionContext = new AgentExecutionContext(Guid.NewGuid());
+
+                return await _researchAgent.ExecuteAsync(
+                    executionContext,
+                    researchInput,
+                    cancellationToken);
+            });
     }
 
     private static StoryWorkflowResult ExtractResult(
