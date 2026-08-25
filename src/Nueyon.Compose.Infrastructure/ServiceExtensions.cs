@@ -4,6 +4,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Nueyon.Compose.Application.Agents;
 using Nueyon.Compose.Application.Agents.Idea;
+using Nueyon.Compose.Application.Agents.Research;
 using Nueyon.Compose.Application.Validation;
 using Nueyon.Compose.Domain;
 using Nueyon.Compose.Infrastructure.Agents;
@@ -14,13 +15,14 @@ using Nueyon.Compose.Infrastructure.Options;
 namespace Nueyon.Compose.Infrastructure;
 
 /// <summary>
-/// Extension methods for registering Infrastructure services into the dependency injection container.
+///     Extension methods for registering Infrastructure services into the dependency injection container.
 /// </summary>
 public static class InfrastructureServiceExtensions
 {
     /// <summary>
-    /// Adds OpenAI-backed infrastructure services to the dependency injection container.
-    /// Configures OpenAI options, validates configuration, and registers the Idea Agent with LoopAgent-backed validation/retry logic.
+    ///     Adds OpenAI-backed infrastructure services to the dependency injection container.
+    ///     Configures OpenAI options, validates configuration, and registers the Idea Agent with LoopAgent-backed
+    ///     validation/retry logic.
     /// </summary>
     /// <param name="services">The service collection to add services to.</param>
     /// <returns>The service collection for chaining.</returns>
@@ -55,7 +57,7 @@ public static class InfrastructureServiceExtensions
                 options.Model,
                 GetSystemInstructions());
 
-            // Create the loop evaluator for validation and retry decision making
+            // Create the loop evaluator for validation and retry decision-making
             var evaluator = provider.GetRequiredService<IdeaValidationLoopEvaluator>();
 
             // Create LoopAgent configuration with max 3 iterations (matching original IdeaHarness behavior)
@@ -72,14 +74,61 @@ public static class InfrastructureServiceExtensions
             return new IdeaAgent(loopAgent, logger);
         });
 
+        // Register the Research Agent
+        services.AddSingleton<IAgent<ResearchInput, ResearchResult>>(provider =>
+        {
+            var options = provider.GetRequiredService<IOptions<OpenAiOptions>>().Value;
+            options.Validate();
+
+            var logger = provider.GetRequiredService<ILogger<ResearchAgent>>();
+
+            var baseAiAgent = OpenAIAgentFactory.CreateOpenAIAgent(
+                options.ApiKey,
+                options.Model,
+                GetResearchSystemInstructions());
+
+            return new ResearchAgent(baseAiAgent, logger);
+        });
+
         return services;
     }
 
     /// <summary>
-    /// Gets the system instructions for the Idea Agent.
+    ///     Gets the system instructions for the Research Agent.
     /// </summary>
     /// <returns>The system instructions string.</returns>
-    private static string GetSystemInstructions() => """
+    private static string GetResearchSystemInstructions() =>
+        """
+        You are the Research Agent in Nueyon.Compose.
+
+        Your job is to research and develop useful background material for
+        a selected content idea.
+
+        Use the original user input to understand the user's intent and context.
+        Use the selected idea as the specific subject to investigate.
+
+        Produce relevant, concrete research material that can later be used by
+        another agent to create a high-quality story or article.
+
+        Focus on:
+        - important facts and context
+        - useful concepts and terminology
+        - relevant arguments or perspectives
+        - interesting supporting details
+        - potential angles worth exploring
+
+        Return only valid JSON.
+        Do not use Markdown.
+        Do not wrap the JSON in ``` fences.
+        Do not include explanations outside the JSON.
+        """;
+
+    /// <summary>
+    ///     Gets the system instructions for the Idea Agent.
+    /// </summary>
+    /// <returns>The system instructions string.</returns>
+    private static string GetSystemInstructions() =>
+        """
         You are the Idea Agent in Nueyon.Compose.
 
         Your job is to transform a user's idea or thought into one or more concrete content ideas.
