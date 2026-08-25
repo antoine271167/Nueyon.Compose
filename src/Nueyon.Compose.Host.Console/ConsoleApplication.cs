@@ -138,47 +138,43 @@ public sealed class ConsoleApplication
         return input;
     }
 
-    /// <summary>
-    ///     Executes the Idea workflow with the provided user input.
-    /// </summary>
-    /// <param name="userInput">The user's idea or topic.</param>
-    /// <param name="cancellationToken">The cancellation token.</param>
-    private async Task ExecuteFlowAsync(string userInput, CancellationToken cancellationToken)
+    private async Task ExecuteFlowAsync(
+        string userInput,
+        CancellationToken cancellationToken)
     {
         _console.WriteLine("");
         _console.WriteLine("Processing...");
         _console.WriteLine("");
 
-        var chatInput = new ChatInput { Content = userInput };
+        var chatInput = new ChatInput
+        {
+            Content = userInput
+        };
 
-        var ideas = await _storyWorkflow.RunAsync(chatInput, cancellationToken);
+        var result = await _storyWorkflow.RunAsync(
+            chatInput,
+            cancellationToken);
 
-        DisplayResult(ideas);
+        DisplayResult(result);
     }
 
-    /// <summary>
-    ///     Displays the result of the Idea workflow execution.
-    /// </summary>
-    /// <param name="ideas">The generated ideas.</param>
-    private void DisplayResult(IReadOnlyList<Idea> ideas)
+    private void DisplayResult(StoryWorkflowResult result)
     {
-        if (ideas.Count == 0)
-        {
-            _console.WriteLine("No ideas were generated.");
-            _console.WriteLine("");
-            return;
-        }
+        ArgumentNullException.ThrowIfNull(result);
 
-        _console.WriteLine("Ideas");
-        _console.WriteLine("-----");
+        var idea = result.SelectedIdea.Idea;
+
+        _console.WriteLine("Selected Idea");
+        _console.WriteLine("-------------");
+        _console.WriteLine("");
+        _console.WriteLine(idea.Title);
+        _console.WriteLine(idea.Description);
         _console.WriteLine("");
 
-        for (var i = 0; i < ideas.Count; i++)
-        {
-            var idea = ideas[i];
-            _console.WriteLine($"{i + 1}. {idea.Title}");
-            _console.WriteLine($"   {idea.Description}");
-            _console.WriteLine("");
-        }
+        _console.WriteLine("Research");
+        _console.WriteLine("--------");
+        _console.WriteLine("");
+        _console.WriteLine(result.Research.Content);
+        _console.WriteLine("");
     }
 }

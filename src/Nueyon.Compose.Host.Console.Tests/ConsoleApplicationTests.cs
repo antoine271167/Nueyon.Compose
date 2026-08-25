@@ -1,5 +1,7 @@
+using Microsoft.Agents.AI.Workflows;
 using Microsoft.Extensions.Logging;
 using Nueyon.Compose.Application.Agents;
+using Nueyon.Compose.Application.Agents.Research;
 using Nueyon.Compose.Application.Workflows;
 using Nueyon.Compose.Domain;
 
@@ -19,7 +21,8 @@ public sealed class ConsoleApplicationTests
         var agent = new TrackingFakeAgent();
         var executor = IdeaExecutorFactory.CreateIdeaExecutor(agent);
         var selectionExecutor = IdeaSelectionExecutorFactory.CreateIdeaSelectionExecutor();
-        var workflow = new StoryWorkflow(executor, selectionExecutor);
+        var researchExecutor = CreateResearchExecutor();
+        var workflow = new StoryWorkflow(executor, selectionExecutor, researchExecutor);
         var logger = new MockLogger<ConsoleApplication>();
         var app = new ConsoleApplication(workflow, logger, console);
 
@@ -30,7 +33,7 @@ public sealed class ConsoleApplicationTests
         Assert.Equal(0, exitCode);
         Assert.True(agent.WasCalled);
         Assert.Equal("artificial intelligence", agent.LastInputContent);
-        Assert.Contains("Ideas", console.GetOutput());
+        Assert.Contains("Selected Idea", console.GetOutput());
         Assert.Contains("Test Idea", console.GetOutput());
     }
 
@@ -46,7 +49,8 @@ public sealed class ConsoleApplicationTests
         var agent = new TrackingFakeAgent();
         var executor = IdeaExecutorFactory.CreateIdeaExecutor(agent);
         var selectionExecutor = IdeaSelectionExecutorFactory.CreateIdeaSelectionExecutor();
-        var workflow = new StoryWorkflow(executor, selectionExecutor);
+        var researchExecutor = CreateResearchExecutor();
+        var workflow = new StoryWorkflow(executor, selectionExecutor, researchExecutor);
         var logger = new MockLogger<ConsoleApplication>();
         var app = new ConsoleApplication(workflow, logger, console);
 
@@ -73,7 +77,8 @@ public sealed class ConsoleApplicationTests
         var agent = new TrackingFakeAgent();
         var executor = IdeaExecutorFactory.CreateIdeaExecutor(agent);
         var selectionExecutor = IdeaSelectionExecutorFactory.CreateIdeaSelectionExecutor();
-        var workflow = new StoryWorkflow(executor, selectionExecutor);
+        var researchExecutor = CreateResearchExecutor();
+        var workflow = new StoryWorkflow(executor, selectionExecutor, researchExecutor);
         var logger = new MockLogger<ConsoleApplication>();
         var app = new ConsoleApplication(workflow, logger, console);
 
@@ -98,7 +103,8 @@ public sealed class ConsoleApplicationTests
         var agent = new TrackingFakeAgent();
         var executor = IdeaExecutorFactory.CreateIdeaExecutor(agent);
         var selectionExecutor = IdeaSelectionExecutorFactory.CreateIdeaSelectionExecutor();
-        var workflow = new StoryWorkflow(executor, selectionExecutor);
+        var researchExecutor = CreateResearchExecutor();
+        var workflow = new StoryWorkflow(executor, selectionExecutor, researchExecutor);
         var logger = new MockLogger<ConsoleApplication>();
         var app = new ConsoleApplication(workflow, logger, console);
 
@@ -126,7 +132,8 @@ public sealed class ConsoleApplicationTests
         var agent = new TrackingFakeAgent();
         var executor = IdeaExecutorFactory.CreateIdeaExecutor(agent);
         var selectionExecutor = IdeaSelectionExecutorFactory.CreateIdeaSelectionExecutor();
-        var workflow = new StoryWorkflow(executor, selectionExecutor);
+        var researchExecutor = CreateResearchExecutor();
+        var workflow = new StoryWorkflow(executor, selectionExecutor, researchExecutor);
         var logger = new MockLogger<ConsoleApplication>();
         var app = new ConsoleApplication(workflow, logger, console);
 
@@ -151,7 +158,8 @@ public sealed class ConsoleApplicationTests
         var agent = new TrackingFakeAgent();
         var executor = IdeaExecutorFactory.CreateIdeaExecutor(agent);
         var selectionExecutor = IdeaSelectionExecutorFactory.CreateIdeaSelectionExecutor();
-        var workflow = new StoryWorkflow(executor, selectionExecutor);
+        var researchExecutor = CreateResearchExecutor();
+        var workflow = new StoryWorkflow(executor, selectionExecutor, researchExecutor);
         var logger = new MockLogger<ConsoleApplication>();
         var app = new ConsoleApplication(workflow, logger, console);
 
@@ -175,7 +183,8 @@ public sealed class ConsoleApplicationTests
         var agent = new FailingFakeAgent();
         var executor = IdeaExecutorFactory.CreateIdeaExecutor(agent);
         var selectionExecutor = IdeaSelectionExecutorFactory.CreateIdeaSelectionExecutor();
-        var workflow = new StoryWorkflow(executor, selectionExecutor);
+        var researchExecutor = CreateResearchExecutor();
+        var workflow = new StoryWorkflow(executor, selectionExecutor, researchExecutor);
         var logger = new MockLogger<ConsoleApplication>();
         var app = new ConsoleApplication(workflow, logger, console);
 
@@ -215,7 +224,8 @@ public sealed class ConsoleApplicationTests
         ]);
         var executor = IdeaExecutorFactory.CreateIdeaExecutor(agent);
         var selectionExecutor = IdeaSelectionExecutorFactory.CreateIdeaSelectionExecutor();
-        var workflow = new StoryWorkflow(executor, selectionExecutor);
+        var researchExecutor = CreateResearchExecutor();
+        var workflow = new StoryWorkflow(executor, selectionExecutor, researchExecutor);
         var logger = new MockLogger<ConsoleApplication>();
         var app = new ConsoleApplication(workflow, logger, console);
 
@@ -225,7 +235,8 @@ public sealed class ConsoleApplicationTests
         // Assert
         var output = console.GetOutput();
         Assert.Equal(0, exitCode);
-        Assert.Contains("1. First idea", output);
+        Assert.Contains("Selected Idea", output);
+        Assert.Contains("First idea", output);
         Assert.Contains("First description", output);
     }
 
@@ -241,7 +252,8 @@ public sealed class ConsoleApplicationTests
         var agent = new CustomFakeAgent(Array.Empty<Idea>());
         var executor = IdeaExecutorFactory.CreateIdeaExecutor(agent);
         var selectionExecutor = IdeaSelectionExecutorFactory.CreateIdeaSelectionExecutor();
-        var workflow = new StoryWorkflow(executor, selectionExecutor);
+        var researchExecutor = CreateResearchExecutor();
+        var workflow = new StoryWorkflow(executor, selectionExecutor, researchExecutor);
         var logger = new MockLogger<ConsoleApplication>();
         var app = new ConsoleApplication(workflow, logger, console);
 
@@ -266,7 +278,8 @@ public sealed class ConsoleApplicationTests
         var agent = new CancellationObservingFakeAgent();
         var executor = IdeaExecutorFactory.CreateIdeaExecutor(agent);
         var selectionExecutor = IdeaSelectionExecutorFactory.CreateIdeaSelectionExecutor();
-        var workflow = new StoryWorkflow(executor, selectionExecutor);
+        var researchExecutor = CreateResearchExecutor();
+        var workflow = new StoryWorkflow(executor, selectionExecutor, researchExecutor);
         var logger = new MockLogger<ConsoleApplication>();
         var app = new ConsoleApplication(workflow, logger, console);
         var cts = new CancellationTokenSource();
@@ -309,6 +322,12 @@ public sealed class ConsoleApplicationTests
         Assert.Equal(userInput, workflow.CapturedInput?.Content);
         Assert.Contains(expectedIdea.Title, console.GetOutput());
         Assert.Contains(expectedIdea.Description, console.GetOutput());
+    }
+
+    private static FunctionExecutor<SelectedIdea, ResearchResult> CreateResearchExecutor()
+    {
+        var researchAgent = new TrackingFakeResearchAgent();
+        return ResearchExecutorFactory.CreateResearchExecutor(researchAgent);
     }
 }
 
@@ -354,15 +373,21 @@ internal sealed class FakeStoryWorkflow(Idea ideaToReturn) : IStoryWorkflow
 {
     public ChatInput? CapturedInput { get; private set; }
 
-    public Task<IReadOnlyList<Idea>> RunAsync(
+    public Task<StoryWorkflowResult> RunAsync(
         ChatInput input,
         CancellationToken cancellationToken = default)
     {
         ArgumentNullException.ThrowIfNull(input);
 
         CapturedInput = input;
-        var ideas = new List<Idea> { ideaToReturn }.AsReadOnly();
-        return Task.FromResult<IReadOnlyList<Idea>>(ideas);
+        var selectedIdea = new SelectedIdea(ideaToReturn);
+        var result = new StoryWorkflowResult
+        {
+            Input = input,
+            SelectedIdea = selectedIdea,
+            Research = new ResearchResult { Content = "Test research" }
+        };
+        return Task.FromResult(result);
     }
 }
 
@@ -462,6 +487,24 @@ internal sealed class CancellationObservingFakeAgent : IAgent<ChatInput, IReadOn
         };
 
         return Task.FromResult<IReadOnlyList<Idea>>(ideas.AsReadOnly());
+    }
+}
+
+/// <summary>
+///     Fake research agent that always returns a simple research result.
+/// </summary>
+internal sealed class TrackingFakeResearchAgent : IAgent<ResearchInput, ResearchResult>
+{
+    public Task<ResearchResult> ExecuteAsync(
+        AgentExecutionContext executionContext,
+        ResearchInput input,
+        CancellationToken cancellationToken = default)
+    {
+        ArgumentNullException.ThrowIfNull(executionContext);
+        ArgumentNullException.ThrowIfNull(input);
+
+        var result = new ResearchResult { Content = "Test research result" };
+        return Task.FromResult(result);
     }
 }
 

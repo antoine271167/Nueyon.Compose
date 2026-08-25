@@ -45,16 +45,18 @@ public sealed class IdeaSelectionExecutorTests
         var workflow = new WorkflowBuilder(executor).Build();
 
         // Act
-        var exception = await Assert.ThrowsAsync<InvalidOperationException>(async () =>
-        {
-            await InProcessExecution.RunAsync(
-                workflow, Array.Empty<Idea>());
-        });
+        var run = await InProcessExecution.RunAsync(
+            workflow, Array.Empty<Idea>());
 
         // Assert
+        // When an executor fails, it produces an ExecutorFailedEvent in OutgoingEvents
+        var failedEvent = Assert.Single(
+            run.OutgoingEvents
+                .OfType<ExecutorFailedEvent>());
+
         Assert.Equal(
-            "Cannot select an idea because no ideas were generated.",
-            exception.Message);
+            "idea-selection",
+            failedEvent.ExecutorId);
     }
 
     private static Idea CreateIdea(string title) =>

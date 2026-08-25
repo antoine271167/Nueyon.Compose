@@ -1,7 +1,6 @@
 using System.Text.Json;
 using Microsoft.Agents.AI;
 using Nueyon.Compose.Application.Validation;
-using Nueyon.Compose.Domain;
 
 #pragma warning disable MAAI001 // Type is for evaluation purposes only and is subject to change or removal in future updates.
 
@@ -69,7 +68,7 @@ public sealed class IdeaValidationLoopEvaluator : LoopEvaluator
             }
 
             // Parse the JSON response into ideas for validation
-            IReadOnlyList<Idea> ideas;
+            IReadOnlyList<Domain.Idea> ideas;
             try
             {
                 ideas = ParseIdeasFromJson(responseText);
@@ -136,7 +135,7 @@ public sealed class IdeaValidationLoopEvaluator : LoopEvaluator
     /// <param name="json">The JSON string to parse.</param>
     /// <returns>A read-only list of parsed Idea objects.</returns>
     /// <exception cref="InvalidOperationException">Thrown when the JSON is invalid or cannot be deserialized.</exception>
-    private static IReadOnlyList<Idea> ParseIdeasFromJson(string json)
+    private static IReadOnlyList<Domain.Idea> ParseIdeasFromJson(string json)
     {
         if (string.IsNullOrWhiteSpace(json))
         {

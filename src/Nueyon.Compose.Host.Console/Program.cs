@@ -3,6 +3,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Nueyon.Compose.Application.Agents;
+using Nueyon.Compose.Application.Agents.Research;
 using Nueyon.Compose.Application.Workflows;
 using Nueyon.Compose.Domain;
 using Nueyon.Compose.Host.Console;
@@ -42,10 +43,25 @@ services.AddSingleton<IConsole, SystemConsole>();
 // Add workflow services
 services.AddSingleton<IStoryWorkflow>(provider =>
 {
-    var agent = provider.GetRequiredService<IAgent<ChatInput, IReadOnlyList<Idea>>>();
-    var executor = IdeaExecutorFactory.CreateIdeaExecutor(agent);
-    var selectionExecutor = IdeaSelectionExecutorFactory.CreateIdeaSelectionExecutor();
-    return new StoryWorkflow(executor, selectionExecutor);
+    var ideaAgent =
+        provider.GetRequiredService<IAgent<ChatInput, IReadOnlyList<Idea>>>();
+
+    var researchAgent =
+        provider.GetRequiredService<IAgent<ResearchInput, ResearchResult>>();
+
+    var ideaExecutor =
+        IdeaExecutorFactory.CreateIdeaExecutor(ideaAgent);
+
+    var selectionExecutor =
+        IdeaSelectionExecutorFactory.CreateIdeaSelectionExecutor();
+
+    var researchExecutor =
+        ResearchExecutorFactory.CreateResearchExecutor(researchAgent);
+
+    return new StoryWorkflow(
+        ideaExecutor,
+        selectionExecutor,
+        researchExecutor);
 });
 
 // Add console application

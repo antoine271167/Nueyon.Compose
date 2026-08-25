@@ -1,4 +1,5 @@
 using Nueyon.Compose.Application.Agents;
+using Nueyon.Compose.Application.Agents.Research;
 using Nueyon.Compose.Application.Tests.Agents;
 using Nueyon.Compose.Application.Workflows;
 using Nueyon.Compose.Domain;
@@ -8,11 +9,6 @@ namespace Nueyon.Compose.Application.Tests.Workflows;
 
 public sealed class StoryWorkflowTests
 {
-    /// <summary>
-    ///     Test: Workflow executes successfully with valid input and a fake agent.
-    ///     Verifies that the public RunAsync contract correctly processes ChatInput through the executor
-    ///     and returns the expected result with all properties intact.
-    /// </summary>
     [Fact]
     public async Task RunAsync_WithValidInput_ExecutesSuccessfully()
     {
@@ -25,153 +21,229 @@ public sealed class StoryWorkflowTests
             Rationale = "To verify workflow execution"
         };
 
-        var agent = new CapturingFakeAgent(expectedIdea);
-        var executor = IdeaExecutorFactory.CreateIdeaExecutor(agent);
+        var expectedResearch = new ResearchResult
+        {
+            Content = "Test research content"
+        };
+
+        var ideaAgent = new CapturingFakeAgent(expectedIdea);
+        var researchAgent = new FakeResearchAgent(expectedResearch);
+
+        var ideaExecutor = IdeaExecutorFactory.CreateIdeaExecutor(ideaAgent);
         var selectionExecutor = IdeaSelectionExecutorFactory.CreateIdeaSelectionExecutor();
-        var workflow = new StoryWorkflow(executor, selectionExecutor);
+        var researchExecutor = ResearchExecutorFactory.CreateResearchExecutor(researchAgent);
+
+        var workflow = new StoryWorkflow(
+            ideaExecutor,
+            selectionExecutor,
+            researchExecutor);
 
         var input = new ChatInput { Content = "Test input" };
 
-        // Act - should not throw
+        // Act
         var result = await workflow.RunAsync(input);
 
         // Assert
         Assert.NotNull(result);
-        var idea = Assert.Single(result);
-        Assert.Equal(expectedIdea.Title, idea.Title);
-        Assert.Equal(expectedIdea.Description, idea.Description);
-        Assert.Equal(expectedIdea.Audience, idea.Audience);
-        Assert.Equal(expectedIdea.Rationale, idea.Rationale);
+
+        Assert.Equal(input, result.Input);
+
+        Assert.NotNull(result.SelectedIdea);
+        Assert.Equal(expectedIdea.Title, result.SelectedIdea.Idea.Title);
+        Assert.Equal(expectedIdea.Description, result.SelectedIdea.Idea.Description);
+        Assert.Equal(expectedIdea.Audience, result.SelectedIdea.Idea.Audience);
+        Assert.Equal(expectedIdea.Rationale, result.SelectedIdea.Idea.Rationale);
+
+        Assert.NotNull(result.Research);
+        Assert.Equal(expectedResearch.Content, result.Research.Content);
     }
 
-    /// <summary>
-    ///     Test: Workflow correctly passes the input to the executor and agent.
-    ///     Uses a capturing fake agent to verify that the ChatInput is correctly
-    ///     transmitted through the executor to the agent.
-    /// </summary>
     [Fact]
     public async Task RunAsync_WithValidInput_PassesInputToAgent()
     {
         // Arrange
-        var agent = new CapturingFakeAgent(new Idea
+        var expectedIdea = new Idea
         {
             Title = "Captured",
-            Description = "d",
-            Audience = "a",
-            Rationale = "r"
-        });
-        var executor = IdeaExecutorFactory.CreateIdeaExecutor(agent);
+            Description = "Description",
+            Audience = "Audience",
+            Rationale = "Rationale"
+        };
+
+        var ideaAgent = new CapturingFakeAgent(expectedIdea);
+
+        var researchResult = new ResearchResult
+        {
+            Content = "Test research content"
+        };
+
+        var researchAgent = new CapturingFakeResearchAgent(researchResult);
+
+        var ideaExecutor = IdeaExecutorFactory.CreateIdeaExecutor(ideaAgent);
         var selectionExecutor = IdeaSelectionExecutorFactory.CreateIdeaSelectionExecutor();
-        var workflow = new StoryWorkflow(executor, selectionExecutor);
+        var researchExecutor = ResearchExecutorFactory.CreateResearchExecutor(researchAgent);
+
+        var workflow = new StoryWorkflow(
+            ideaExecutor,
+            selectionExecutor,
+            researchExecutor);
 
         const string expectedContent = "This is the user's input";
-        var input = new ChatInput { Content = expectedContent };
+        var input = new ChatInput
+        {
+            Content = expectedContent
+        };
 
         // Act
         await workflow.RunAsync(input);
 
         // Assert
-        Assert.NotNull(agent.CapturedInput);
-        Assert.Equal(expectedContent, agent.CapturedInput.Content);
+        Assert.NotNull(researchAgent.CapturedInput);
+
+        Assert.NotNull(researchAgent.CapturedInput.Input);
+        Assert.Equal(expectedContent, researchAgent.CapturedInput.Input.Content);
+
+        Assert.NotNull(researchAgent.CapturedInput.SelectedIdea);
+        Assert.Equal(
+            expectedIdea.Title,
+            researchAgent.CapturedInput.SelectedIdea.Idea.Title);
     }
 
-    /// <summary>
-    ///     Test: The cancellation token is structurally propagated through the workflow to the agent.
-    ///     MAF wraps the caller's token in an internal linked token rather than passing it unchanged.
-    ///     This test verifies that the agent receives a valid (non-default) cancellation token,
-    ///     proving the plumbing exists from RunAsync through the executor to the agent.
-    /// </summary>
     [Fact]
     public async Task RunAsync_WithCancellationToken_PropagatesTokenToAgent()
     {
         // Arrange
-        var agent = new CapturingFakeAgent(new Idea
+        var ideaAgent = new CapturingFakeAgent(new Idea
         {
             Title = "Captured",
-            Description = "d",
-            Audience = "a",
-            Rationale = "r"
+            Description = "Description",
+            Audience = "Audience",
+            Rationale = "Rationale"
         });
-        var executor = IdeaExecutorFactory.CreateIdeaExecutor(agent);
-        var selectionExecutor = IdeaSelectionExecutorFactory.CreateIdeaSelectionExecutor();
-        var workflow = new StoryWorkflow(executor, selectionExecutor);
 
-        var input = new ChatInput { Content = "Test input" };
+        var researchAgent = new CapturingFakeResearchAgent(
+            new ResearchResult
+            {
+                Content = "Test research content"
+            });
+
+        var ideaExecutor = IdeaExecutorFactory.CreateIdeaExecutor(ideaAgent);
+        var selectionExecutor = IdeaSelectionExecutorFactory.CreateIdeaSelectionExecutor();
+        var researchExecutor = ResearchExecutorFactory.CreateResearchExecutor(researchAgent);
+
+        var workflow = new StoryWorkflow(
+            ideaExecutor,
+            selectionExecutor,
+            researchExecutor);
+
+        var input = new ChatInput
+        {
+            Content = "Test input"
+        };
+
         using var cts = new CancellationTokenSource();
 
         // Act
         await workflow.RunAsync(input, cts.Token);
 
-        // Assert: MAF provides its own linked token to the handler; the agent must receive it
-        Assert.NotNull(agent.CapturedCancellationToken);
-        // The captured token is MAF's internal linked token (not the exact same instance),
-        // but it must be a valid, non-default, non-cancelled token
-        Assert.NotEqual(CancellationToken.None, agent.CapturedCancellationToken.Value);
-        Assert.False(agent.CapturedCancellationToken.Value.IsCancellationRequested);
+        // Assert
+        Assert.NotNull(researchAgent.CapturedCancellationToken);
+
+        Assert.NotEqual(
+            CancellationToken.None,
+            researchAgent.CapturedCancellationToken.Value);
+
+        Assert.False(
+            researchAgent.CapturedCancellationToken.Value.IsCancellationRequested);
     }
 
-    /// <summary>
-    ///     Test: An agent failure surfaces as an InvalidOperationException at the workflow boundary.
-    ///     MAF swallows executor-level exceptions internally; the observable failure is that
-    ///     the workflow produces no output, which ExtractResult turns into an InvalidOperationException.
-    /// </summary>
     [Fact]
     public async Task RunAsync_WhenAgentFails_ThrowsInvalidOperationException()
     {
         // Arrange
-        var agent = new FailingFakeAgent(new InvalidOperationException("Test agent failure"));
-        var executor = IdeaExecutorFactory.CreateIdeaExecutor(agent);
-        var selectionExecutor = IdeaSelectionExecutorFactory.CreateIdeaSelectionExecutor();
-        var workflow = new StoryWorkflow(executor, selectionExecutor);
+        var ideaAgent = new FailingFakeAgent(
+            new InvalidOperationException("Test agent failure"));
 
-        var input = new ChatInput { Content = "Test input" };
+        var researchAgent = new FakeResearchAgent(
+            new ResearchResult
+            {
+                Content = "Test research content"
+            });
+
+        var ideaExecutor = IdeaExecutorFactory.CreateIdeaExecutor(ideaAgent);
+        var selectionExecutor = IdeaSelectionExecutorFactory.CreateIdeaSelectionExecutor();
+        var researchExecutor = ResearchExecutorFactory.CreateResearchExecutor(researchAgent);
+
+        var workflow = new StoryWorkflow(
+            ideaExecutor,
+            selectionExecutor,
+            researchExecutor);
+
+        var input = new ChatInput
+        {
+            Content = "Test input"
+        };
 
         // Act & Assert
         await Assert.ThrowsAsync<InvalidOperationException>(() => workflow.RunAsync(input));
     }
 
     /// <summary>
-    ///     Test: Integration test with real StoryWorkflow, real MAF workflow, and a fake agent.
-    ///     Verifies the complete execution path from ChatInput through the workflow to Idea output.
-    ///     This test exercises the actual composition without requiring a real LLM.
+    ///     Integration test with the real StoryWorkflow, real MAF workflow,
+    ///     and fake agents. Verifies the complete execution path from
+    ///     ChatInput through idea generation, idea selection, and research.
     /// </summary>
     [Fact]
     public async Task RunAsync_WithFakeAgent_ExecutesEndToEnd()
     {
         // Arrange
-        var agent = new FakeIdeaAgent();
-        var executor = IdeaExecutorFactory.CreateIdeaExecutor(agent);
-        var selectionExecutor = IdeaSelectionExecutorFactory.CreateIdeaSelectionExecutor();
-        var workflow = new StoryWorkflow(executor, selectionExecutor);
+        var ideaAgent = new FakeIdeaAgent();
 
-        var input = new ChatInput { Content = "Compose a story about a curious cat" };
+        var researchResult = new ResearchResult
+        {
+            Content = "Example research content"
+        };
+
+        var researchAgent = new FakeResearchAgent(researchResult);
+
+        var ideaExecutor = IdeaExecutorFactory.CreateIdeaExecutor(ideaAgent);
+        var selectionExecutor = IdeaSelectionExecutorFactory.CreateIdeaSelectionExecutor();
+        var researchExecutor = ResearchExecutorFactory.CreateResearchExecutor(researchAgent);
+
+        var workflow = new StoryWorkflow(
+            ideaExecutor,
+            selectionExecutor,
+            researchExecutor);
+
+        var input = new ChatInput
+        {
+            Content = "Compose a story about a curious cat"
+        };
 
         // Act
         var result = await workflow.RunAsync(input);
 
         // Assert
         Assert.NotNull(result);
-        var idea = Assert.Single(result);
-        Assert.NotNull(idea.Title);
-        Assert.NotNull(idea.Description);
-        Assert.NotNull(idea.Audience);
-        Assert.NotNull(idea.Rationale);
-        // Verify it's the expected fake idea
-        Assert.Equal("Example Idea", idea.Title);
+
+        Assert.Equal(input, result.Input);
+
+        Assert.NotNull(result.SelectedIdea);
+        Assert.NotNull(result.SelectedIdea.Idea);
+        Assert.Equal("Example Idea", result.SelectedIdea.Idea.Title);
+        Assert.NotNull(result.SelectedIdea.Idea.Description);
+        Assert.NotNull(result.SelectedIdea.Idea.Audience);
+        Assert.NotNull(result.SelectedIdea.Idea.Rationale);
+
+        Assert.NotNull(result.Research);
+        Assert.Equal("Example research content", result.Research.Content);
     }
 
-    /// <summary>
-    ///     A fake agent that captures the input and cancellation token for verification.
-    /// </summary>
     private sealed class CapturingFakeAgent(Idea? ideaToReturn = null) : IAgent<ChatInput, IReadOnlyList<Idea>>
     {
         private readonly IReadOnlyList<Idea>? _ideaToReturn = ideaToReturn is not null
             ? new List<Idea> { ideaToReturn }.AsReadOnly()
             : [];
-
-        public ChatInput? CapturedInput { get; private set; }
-
-        public CancellationToken? CapturedCancellationToken { get; private set; }
 
         public Task<IReadOnlyList<Idea>> ExecuteAsync(
             AgentExecutionContext executionContext,
@@ -181,17 +253,44 @@ public sealed class StoryWorkflowTests
             ArgumentNullException.ThrowIfNull(executionContext);
             ArgumentNullException.ThrowIfNull(input);
 
-            CapturedInput = input;
-            CapturedCancellationToken = cancellationToken;
-
             return Task.FromResult(_ideaToReturn!);
         }
     }
 
-    /// <summary>
-    ///     A fake agent that always throws the specified exception.
-    /// </summary>
-    private sealed class FailingFakeAgent(Exception exceptionToThrow) : IAgent<ChatInput, IReadOnlyList<Idea>>
+    private sealed class FakeResearchAgent(
+        ResearchResult researchResult) : IAgent<ResearchInput, ResearchResult>
+    {
+        public Task<ResearchResult> ExecuteAsync(
+            AgentExecutionContext executionContext,
+            ResearchInput input,
+            CancellationToken cancellationToken = default) =>
+            Task.FromResult(researchResult);
+    }
+
+    private sealed class CapturingFakeResearchAgent(
+        ResearchResult researchResult) : IAgent<ResearchInput, ResearchResult>
+    {
+        public ResearchInput? CapturedInput { get; private set; }
+
+        public CancellationToken? CapturedCancellationToken { get; private set; }
+
+        public Task<ResearchResult> ExecuteAsync(
+            AgentExecutionContext executionContext,
+            ResearchInput input,
+            CancellationToken cancellationToken = default)
+        {
+            ArgumentNullException.ThrowIfNull(executionContext);
+            ArgumentNullException.ThrowIfNull(input);
+
+            CapturedInput = input;
+            CapturedCancellationToken = cancellationToken;
+
+            return Task.FromResult(researchResult);
+        }
+    }
+
+    private sealed class FailingFakeAgent(Exception exceptionToThrow)
+        : IAgent<ChatInput, IReadOnlyList<Idea>>
     {
         private readonly Exception _exceptionToThrow =
             exceptionToThrow ?? throw new ArgumentNullException(nameof(exceptionToThrow));
