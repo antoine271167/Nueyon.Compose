@@ -2,7 +2,7 @@ using System.Runtime.CompilerServices;
 using System.Text.Json;
 using Microsoft.Agents.AI;
 using Microsoft.Extensions.AI;
-using Nueyon.Compose.Application.Agents;
+using Nueyon.Compose.Application.Agents.Idea;
 using Nueyon.Compose.Application.Validation;
 using Nueyon.Compose.Domain;
 using Xunit;

@@ -2,6 +2,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Nueyon.Compose.Application.Agents;
+using Nueyon.Compose.Application.Agents.Idea;
 using Nueyon.Compose.Application.Validation;
 using Nueyon.Compose.Domain;
 using Nueyon.Compose.Infrastructure.Options;

@@ -5,40 +5,37 @@ namespace Nueyon.Compose.Application.Workflows;
 
 /// <summary>
 ///     StoryWorkflow represents the application-level workflow for creating a story.
-///     It currently contains only the Idea step; additional workflow steps will be added
-///     in later migrations.
 /// </summary>
 public sealed class StoryWorkflow : IStoryWorkflow
 {
     /// <summary>
-    ///     Initializes a new instance of the StoryWorkflow with the specified executor.
+    ///     Initializes a new instance of the StoryWorkflow with the specified executors.
     /// </summary>
-    /// <param name="ideaExecutor">The executor to run in the workflow.</param>
-    /// <param name="ideaSelectionExecutor">The executor to select an idea from the generated ideas.</param>
-    /// <exception cref="ArgumentNullException">Thrown when ideaExecutor is null.</exception>
     public StoryWorkflow(
         FunctionExecutor<ChatInput, Idea[]> ideaExecutor,
-        FunctionExecutor<Idea[], SelectedIdea> ideaSelectionExecutor)
+        FunctionExecutor<Idea[], SelectedIdea> ideaSelectionExecutor,
+        FunctionExecutor<SelectedIdea, ResearchResult> researchExecutor)
     {
         _ideaExecutor = ideaExecutor ??
                         throw new ArgumentNullException(nameof(ideaExecutor));
 
         _ideaSelectionExecutor = ideaSelectionExecutor ??
                                  throw new ArgumentNullException(nameof(ideaSelectionExecutor));
+
+        _researchExecutor = researchExecutor ??
+                            throw new ArgumentNullException(nameof(researchExecutor));
     }
 
     private readonly FunctionExecutor<ChatInput, Idea[]> _ideaExecutor;
 
     private readonly FunctionExecutor<Idea[], SelectedIdea> _ideaSelectionExecutor;
 
+    private readonly FunctionExecutor<SelectedIdea, ResearchResult> _researchExecutor;
+
     /// <summary>
     ///     Executes the story workflow with the provided input.
     /// </summary>
-    /// <param name="input">The chat input to process.</param>
-    /// <param name="cancellationToken">The cancellation token to cancel the operation.</param>
-    /// <returns>The result of the workflow execution containing the generated ideas.</returns>
-    /// <exception cref="ArgumentNullException">Thrown when input is null.</exception>
-    public async Task<IReadOnlyList<Idea>> RunAsync(
+    public async Task<StoryWorkflowResult> RunAsync(
         ChatInput input,
         CancellationToken cancellationToken = default)
     {
@@ -51,39 +48,73 @@ public sealed class StoryWorkflow : IStoryWorkflow
             input,
             cancellationToken: cancellationToken);
 
-        return ExtractResult(run);
+        return ExtractResult(input, run);
     }
 
     /// <summary>
-    ///     Builds and returns a new MAF Workflow instance.
-    ///     Constructs a single-executor workflow with IdeaExecutor as both the entry point and output.
-    ///     Each invocation creates a fresh workflow to support multiple independent executions.
+    ///     Builds a new MAF workflow for each execution.
     /// </summary>
-    /// <returns>A newly constructed MAF Workflow.</returns>
     private Workflow Build()
     {
         var builder = new WorkflowBuilder(_ideaExecutor);
 
         builder.AddEdge(_ideaExecutor, _ideaSelectionExecutor);
+        builder.AddEdge(_ideaSelectionExecutor, _researchExecutor);
 
         return builder.Build();
     }
 
-    private static Idea[] ExtractResult(Run run)
+    private static StoryWorkflowResult ExtractResult(
+        ChatInput input,
+        Run run)
     {
+        SelectedIdea? selectedIdea = null;
+        ResearchResult? research = null;
+
         foreach (var @event in run.OutgoingEvents)
         {
-            if (@event is ExecutorCompletedEvent
+            if (@event is not ExecutorCompletedEvent completedEvent)
+            {
+                continue;
+            }
+
+            switch (completedEvent)
+            {
+                case
                 {
                     ExecutorId: "idea-selection",
-                    Data: SelectedIdea selectedIdea
-                })
-            {
-                return [selectedIdea.Idea];
+                    Data: SelectedIdea result
+                }:
+                    selectedIdea = result;
+                    break;
+
+                case
+                {
+                    ExecutorId: "research",
+                    Data: ResearchResult result
+                }:
+                    research = result;
+                    break;
             }
         }
 
-        throw new InvalidOperationException(
-            "The Story Workflow completed without producing a selected Idea result.");
+        if (selectedIdea is null)
+        {
+            throw new InvalidOperationException(
+                "The Story Workflow completed without producing a selected Idea result.");
+        }
+
+        if (research is null)
+        {
+            throw new InvalidOperationException(
+                "The Story Workflow completed without producing a Research result.");
+        }
+
+        return new StoryWorkflowResult
+        {
+            Input = input,
+            SelectedIdea = selectedIdea,
+            Research = research
+        };
     }
 }

@@ -1,6 +1,7 @@
 using Microsoft.Agents.AI;
 using Microsoft.Extensions.Logging;
 using Nueyon.Compose.Application.Agents;
+using Nueyon.Compose.Application.Agents.Idea;
 using Nueyon.Compose.Application.Validation;
 using Nueyon.Compose.Domain;
 

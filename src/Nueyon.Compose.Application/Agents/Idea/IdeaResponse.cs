@@ -1,7 +1,7 @@
 using System.Text.Json.Serialization;
 using Nueyon.Compose.Domain;
 
-namespace Nueyon.Compose.Application.Agents;
+namespace Nueyon.Compose.Application.Agents.Idea;
 
 /// <summary>
 /// The structured response format for the Idea Agent.

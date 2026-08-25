@@ -1,5 +1,5 @@
 using System.Reflection;
-using Nueyon.Compose.Application.Agents;
+using Nueyon.Compose.Application.Agents.Idea;
 using Nueyon.Compose.Domain;
 using Xunit;
 

@@ -5,7 +5,7 @@ using Nueyon.Compose.Domain;
 
 #pragma warning disable MAAI001 // Type is for evaluation purposes only and is subject to change or removal in future updates.
 
-namespace Nueyon.Compose.Application.Agents;
+namespace Nueyon.Compose.Application.Agents.Idea;
 
 /// <summary>
 ///     A Nueyon-specific evaluator for the Microsoft Agent Framework LoopAgent.

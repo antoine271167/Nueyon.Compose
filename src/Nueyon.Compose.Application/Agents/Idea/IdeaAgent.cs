@@ -5,7 +5,7 @@ using Microsoft.Extensions.AI;
 using Microsoft.Extensions.Logging;
 using Nueyon.Compose.Domain;
 
-namespace Nueyon.Compose.Application.Agents;
+namespace Nueyon.Compose.Application.Agents.Idea;
 
 /// <summary>
 ///     A real IDEA agent powered by Microsoft Agent Framework and OpenAI.
