@@ -83,6 +83,11 @@ public sealed class IdeaAgent : IAgent<ChatInput, IReadOnlyList<Domain.Idea>>
 
             return ideas;
         }
+        catch (OperationCanceledException) when (cancellationToken.IsCancellationRequested)
+        {
+            stopwatch.Stop();
+            throw;
+        }
         catch (Exception ex)
         {
             stopwatch.Stop();
