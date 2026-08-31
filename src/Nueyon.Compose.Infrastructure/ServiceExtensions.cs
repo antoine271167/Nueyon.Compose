@@ -60,7 +60,6 @@ public static class InfrastructureServiceExtensions
             // Create the loop evaluator for validation and retry decision-making
             var evaluator = provider.GetRequiredService<IdeaValidationLoopEvaluator>();
 
-            // Create LoopAgent configuration with max 3 iterations (matching original IdeaHarness behavior)
             var loopOptions = new LoopAgentOptions
             {
                 MaxIterations = 3

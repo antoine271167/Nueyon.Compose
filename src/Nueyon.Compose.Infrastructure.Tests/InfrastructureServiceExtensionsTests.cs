@@ -1,8 +1,7 @@
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
 using Nueyon.Compose.Application.Agents;
 using Nueyon.Compose.Application.Agents.Idea;
+using Nueyon.Compose.Application.Agents.Research;
 using Nueyon.Compose.Application.Validation;
 using Nueyon.Compose.Domain;
 using Nueyon.Compose.Infrastructure.Options;
@@ -92,8 +91,9 @@ public sealed class InfrastructureServiceExtensionsTests
         var provider = services.BuildServiceProvider();
 
         // Act & Assert
-        var exception = Assert.Throws<InvalidOperationException>(
-            () => provider.GetRequiredService<IAgent<ChatInput, IReadOnlyList<Idea>>>());
+        var exception =
+            Assert.Throws<InvalidOperationException>(
+                provider.GetRequiredService<IAgent<ChatInput, IReadOnlyList<Idea>>>);
         Assert.Contains("API key", exception.Message);
     }
 
@@ -113,8 +113,9 @@ public sealed class InfrastructureServiceExtensionsTests
         var provider = services.BuildServiceProvider();
 
         // Act & Assert
-        var exception = Assert.Throws<InvalidOperationException>(
-            () => provider.GetRequiredService<IAgent<ChatInput, IReadOnlyList<Idea>>>());
+        var exception =
+            Assert.Throws<InvalidOperationException>(
+                provider.GetRequiredService<IAgent<ChatInput, IReadOnlyList<Idea>>>);
         Assert.Contains("model", exception.Message);
     }
 
@@ -122,8 +123,8 @@ public sealed class InfrastructureServiceExtensionsTests
     public void AddInfrastructure_ThrowsWhenServicesIsNull()
     {
         // Act & Assert
-        var exception = Assert.Throws<ArgumentNullException>(
-            () => InfrastructureServiceExtensions.AddInfrastructure(null!));
+        var exception =
+            Assert.Throws<ArgumentNullException>(() => InfrastructureServiceExtensions.AddInfrastructure(null!));
         Assert.Equal("services", exception.ParamName);
     }
 
@@ -145,6 +146,51 @@ public sealed class InfrastructureServiceExtensionsTests
         // Act
         var agent1 = provider.GetRequiredService<IAgent<ChatInput, IReadOnlyList<Idea>>>();
         var agent2 = provider.GetRequiredService<IAgent<ChatInput, IReadOnlyList<Idea>>>();
+
+        // Assert
+        Assert.Same(agent1, agent2);
+    }
+
+    [Fact]
+    public void AddInfrastructure_RegistersResearchAgent()
+    {
+        // Arrange
+        var services = new ServiceCollection();
+        services.AddLogging();
+        services.Configure<OpenAiOptions>(opt =>
+        {
+            opt.ApiKey = "test-key";
+            opt.Model = "gpt-4o-mini";
+        });
+
+        // Act
+        services.AddInfrastructure();
+        var provider = services.BuildServiceProvider();
+
+        // Assert
+        var agent = provider.GetRequiredService<IAgent<ResearchInput, ResearchResult>>();
+        Assert.NotNull(agent);
+        Assert.IsType<ResearchAgent>(agent);
+    }
+
+    [Fact]
+    public void AddInfrastructure_ResearchAgentIsSingleton()
+    {
+        // Arrange
+        var services = new ServiceCollection();
+        services.AddLogging();
+        services.Configure<OpenAiOptions>(opt =>
+        {
+            opt.ApiKey = "test-key";
+            opt.Model = "gpt-4o-mini";
+        });
+
+        services.AddInfrastructure();
+        var provider = services.BuildServiceProvider();
+
+        // Act
+        var agent1 = provider.GetRequiredService<IAgent<ResearchInput, ResearchResult>>();
+        var agent2 = provider.GetRequiredService<IAgent<ResearchInput, ResearchResult>>();
 
         // Assert
         Assert.Same(agent1, agent2);
