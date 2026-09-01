@@ -82,29 +82,29 @@ public sealed class SynthesizerAgent(
     private static string CreateUserMessage(SynthesisInput input) =>
         // The input is research, not an article. Instruct the model accordingly.
         $"""
-         You are the Synthesizer in Nueyon.Compose.
-
-         The input you receive is research material produced by a Research agent.
-         Do NOT write an article, social-media post, or any final consumer-facing
-         content. Instead, produce a concise editorial synthesis that a separate
-         Narrative agent can use to craft the final story.
-
+         Do NOT write an article, social-media post, or any other final consumer-facing content. Instead, produce a concise editorial synthesis that a separate Narrative agent can use to craft the final story.
+         
          Your synthesis MUST:
+         
          - Determine the central thesis or message supported by the research.
          - Identify the most important insights.
          - Preserve important facts and supporting evidence.
          - Surface meaningful nuances, uncertainty, or contradictions.
          - NOT invent facts or add information not supported by the research.
          - NOT produce final article text or promotional copy.
-
-         Prefer clear headings such as:
+         
+         The complete editorial synthesis MUST be returned in the Content property of the response.
+         
+         The Content value should be clear and well-structured. You may use headings such as:
+         
          - Core thesis
          - Key insights
          - Supporting evidence
          - Nuances
-
-         Research input:
-         {input.Research.Content}
+         
+         Return only the structured response defined by the output schema.
+         
+         Research input:{input.Research.Content}
          """;
 
     private static ChatClientAgentRunOptions CreateAgentRunOptions()
