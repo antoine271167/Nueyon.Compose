@@ -313,10 +313,7 @@ public sealed class ConsoleApplicationTests
         Assert.Contains(expectedIdea.Description, console.GetOutput());
     }
 
-    private static IAgent<ResearchInput, ResearchResult> CreateResearchAgent()
-    {
-        return new TrackingFakeResearchAgent();
-    }
+    private static TrackingFakeResearchAgent CreateResearchAgent() => new();
 }
 
 /// <summary>
@@ -497,12 +494,8 @@ internal sealed class TrackingFakeResearchAgent : IAgent<ResearchInput, Research
     }
 }
 
-internal sealed class FakeSynthesizerAgent : IAgent<SynthesisInput, SynthesisResult>
+internal sealed class FakeSynthesizerAgent(SynthesisResult result) : IAgent<SynthesisInput, SynthesisResult>
 {
-    private readonly SynthesisResult _result;
-
-    public FakeSynthesizerAgent(SynthesisResult result) => _result = result;
-
     public Task<SynthesisResult> ExecuteAsync(
         AgentExecutionContext executionContext,
         SynthesisInput input,
@@ -511,7 +504,7 @@ internal sealed class FakeSynthesizerAgent : IAgent<SynthesisInput, SynthesisRes
         ArgumentNullException.ThrowIfNull(executionContext);
         ArgumentNullException.ThrowIfNull(input);
 
-        return Task.FromResult(_result);
+        return Task.FromResult(result);
     }
 }
 

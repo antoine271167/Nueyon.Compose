@@ -37,8 +37,7 @@ public sealed class StoryWorkflow : IStoryWorkflow
     ///     Executes the story workflow with the provided input.
     /// </summary>
     public async Task<StoryWorkflowResult> RunAsync(
-        ChatInput input,
-        CancellationToken cancellationToken = default)
+        ChatInput input, CancellationToken cancellationToken = default)
     {
         ArgumentNullException.ThrowIfNull(input);
 
@@ -75,9 +74,8 @@ public sealed class StoryWorkflow : IStoryWorkflow
     /// <summary>
     ///     Creates the Idea generation executor.
     /// </summary>
-    private FunctionExecutor<ChatInput, Idea[]> CreateIdeaExecutor()
-    {
-        return new FunctionExecutor<ChatInput, Idea[]>(
+    private FunctionExecutor<ChatInput, Idea[]> CreateIdeaExecutor() =>
+        new(
             "idea",
             async (input, context, cancellationToken) =>
             {
@@ -96,7 +94,6 @@ public sealed class StoryWorkflow : IStoryWorkflow
 
                 return ideas.ToArray();
             });
-    }
 
     /// <summary>
     ///     Creates the Idea selection executor (deterministically selects the first idea).
@@ -127,9 +124,8 @@ public sealed class StoryWorkflow : IStoryWorkflow
     /// <summary>
     ///     Creates the Research executor.
     /// </summary>
-    private FunctionExecutor<SelectedIdea, ResearchResult> CreateResearchExecutor()
-    {
-        return new FunctionExecutor<SelectedIdea, ResearchResult>(
+    private FunctionExecutor<SelectedIdea, ResearchResult> CreateResearchExecutor() =>
+        new(
             "research",
             async (selectedIdea, context, cancellationToken) =>
             {
@@ -153,11 +149,9 @@ public sealed class StoryWorkflow : IStoryWorkflow
                     researchInput,
                     cancellationToken);
             });
-    }
 
-    private FunctionExecutor<ResearchResult, SynthesisResult> CreateSynthesisExecutor()
-    {
-        return new FunctionExecutor<ResearchResult, SynthesisResult>(
+    private FunctionExecutor<ResearchResult, SynthesisResult> CreateSynthesisExecutor() =>
+        new(
             "synthesis",
             async (research, _, cancellationToken) =>
             {
@@ -165,12 +159,11 @@ public sealed class StoryWorkflow : IStoryWorkflow
 
                 var executionContext = new AgentExecutionContext(Guid.NewGuid());
 
-                return await _synthesizer!.ExecuteAsync(
+                return await _synthesizer.ExecuteAsync(
                     executionContext,
                     input,
                     cancellationToken);
             });
-    }
 
     private static StoryWorkflowResult ExtractResult(
         ChatInput input,

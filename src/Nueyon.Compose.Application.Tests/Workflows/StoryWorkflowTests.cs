@@ -228,12 +228,8 @@ public sealed class StoryWorkflowTests
         }
     }
 
-    private sealed class FakeSynthesizerAgent : IAgent<SynthesisInput, SynthesisResult>
+    private sealed class FakeSynthesizerAgent(SynthesisResult result) : IAgent<SynthesisInput, SynthesisResult>
     {
-        private readonly SynthesisResult _result;
-
-        public FakeSynthesizerAgent(SynthesisResult result) => _result = result;
-
         public Task<SynthesisResult> ExecuteAsync(
             AgentExecutionContext executionContext,
             SynthesisInput input,
@@ -242,7 +238,7 @@ public sealed class StoryWorkflowTests
             ArgumentNullException.ThrowIfNull(executionContext);
             ArgumentNullException.ThrowIfNull(input);
 
-            return Task.FromResult(_result);
+            return Task.FromResult(result);
         }
     }
 

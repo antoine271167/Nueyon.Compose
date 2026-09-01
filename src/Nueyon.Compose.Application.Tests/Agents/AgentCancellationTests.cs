@@ -3,6 +3,7 @@ using Microsoft.Extensions.AI;
 using Microsoft.Extensions.Logging;
 using Nueyon.Compose.Application.Agents.Idea;
 using Nueyon.Compose.Application.Agents.Research;
+using Nueyon.Compose.Application.Agents.Synthesis;
 using Nueyon.Compose.Application.Workflows;
 using Nueyon.Compose.Domain;
 using Xunit;
@@ -158,7 +159,7 @@ public sealed class AgentCancellationTests
         var result = await researchAgent.ExecuteAsync(executionContext, input, CancellationToken.None);
 
         // Assert
-        Assert.NotNull(result);
+        Assert.Equal("Test research content", result.Content);
         Assert.False(logCapture.HasErrorLogs, "Successful execution should not produce error logs");
         Assert.True(logCapture.HasInfoLogs, "Successful execution should produce info logs");
     }
@@ -170,7 +171,7 @@ public sealed class AgentCancellationTests
         var logCapture = new LogCapture();
         var chatClient = new CancellationThrowingChatClient();
         var aiAgent = chatClient.AsAIAgent("Test", "TestAgent");
-        var synthesizer = new Nueyon.Compose.Application.Agents.Synthesis.SynthesizerAgent(aiAgent, logCapture);
+        var synthesizer = new SynthesizerAgent(aiAgent, logCapture);
         var executionContext = new AgentExecutionContext(Guid.NewGuid());
         var input = CreateTestSynthesisInput();
 
@@ -193,7 +194,7 @@ public sealed class AgentCancellationTests
         var logCapture = new LogCapture();
         var chatClient = new ExceptionThrowingChatClient(new InvalidOperationException("Unexpected error"));
         var aiAgent = chatClient.AsAIAgent("Test", "TestAgent");
-        var synthesizer = new Nueyon.Compose.Application.Agents.Synthesis.SynthesizerAgent(aiAgent, logCapture);
+        var synthesizer = new SynthesizerAgent(aiAgent, logCapture);
         var executionContext = new AgentExecutionContext(Guid.NewGuid());
         var input = CreateTestSynthesisInput();
 
@@ -219,7 +220,7 @@ public sealed class AgentCancellationTests
             """;
         var chatClient = new FakeChatClient(responseJson);
         var aiAgent = chatClient.AsAIAgent("Test", "TestAgent");
-        var synthesizer = new Nueyon.Compose.Application.Agents.Synthesis.SynthesizerAgent(aiAgent, logCapture);
+        var synthesizer = new SynthesizerAgent(aiAgent, logCapture);
         var executionContext = new AgentExecutionContext(Guid.NewGuid());
         var input = CreateTestSynthesisInput();
 
@@ -227,7 +228,7 @@ public sealed class AgentCancellationTests
         var result = await synthesizer.ExecuteAsync(executionContext, input, CancellationToken.None);
 
         // Assert
-        Assert.NotNull(result);
+        Assert.Equal("Test synthesis content", result.Content);
         Assert.False(logCapture.HasErrorLogs, "Successful execution should not produce error logs");
         Assert.True(logCapture.HasInfoLogs, "Successful execution should produce info logs");
     }
@@ -337,7 +338,7 @@ public sealed class AgentCancellationTests
         }
     }
 
-    private sealed class LogCapture : ILogger<IdeaAgent>, ILogger<ResearchAgent>, ILogger<Nueyon.Compose.Application.Agents.Synthesis.SynthesizerAgent>
+    private sealed class LogCapture : ILogger<IdeaAgent>, ILogger<ResearchAgent>, ILogger<SynthesizerAgent>
     {
         public bool HasErrorLogs { get; private set; }
         public bool HasInfoLogs { get; private set; }

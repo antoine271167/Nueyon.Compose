@@ -104,7 +104,8 @@ public sealed class SynthesizerAgent(
          
          Return only the structured response defined by the output schema.
          
-         Research input:{input.Research.Content}
+         Research input:
+         {input.Research.Content}
          """;
 
     private static ChatClientAgentRunOptions CreateAgentRunOptions()
