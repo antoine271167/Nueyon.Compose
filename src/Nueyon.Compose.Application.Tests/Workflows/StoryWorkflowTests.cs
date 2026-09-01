@@ -28,8 +28,9 @@ public sealed class StoryWorkflowTests
 
         var ideaAgent = new CapturingFakeAgent(expectedIdea);
         var researchAgent = new FakeResearchAgent(expectedResearch);
+        var synthesizer = new FakeSynthesizerAgent(new SynthesisResult("synthesis content"));
 
-        var workflow = new StoryWorkflow(ideaAgent, researchAgent);
+        var workflow = new StoryWorkflow(ideaAgent, researchAgent, synthesizer);
 
         var input = new ChatInput { Content = "Test input" };
 
@@ -71,8 +72,9 @@ public sealed class StoryWorkflowTests
         };
 
         var researchAgent = new CapturingFakeResearchAgent(researchResult);
+        var synthesizer = new FakeSynthesizerAgent(new SynthesisResult("synthesis content"));
 
-        var workflow = new StoryWorkflow(ideaAgent, researchAgent);
+        var workflow = new StoryWorkflow(ideaAgent, researchAgent, synthesizer);
 
         const string expectedContent = "This is the user's input";
         var input = new ChatInput
@@ -112,8 +114,9 @@ public sealed class StoryWorkflowTests
             {
                 Content = "Test research content"
             });
+        var synthesizer = new FakeSynthesizerAgent(new SynthesisResult("synthesis content"));
 
-        var workflow = new StoryWorkflow(ideaAgent, researchAgent);
+        var workflow = new StoryWorkflow(ideaAgent, researchAgent, synthesizer);
 
         var input = new ChatInput
         {
@@ -149,7 +152,9 @@ public sealed class StoryWorkflowTests
                 Content = "Test research content"
             });
 
-        var workflow = new StoryWorkflow(ideaAgent, researchAgent);
+        var synthesizer = new FakeSynthesizerAgent(new SynthesisResult("synthesis content"));
+
+        var workflow = new StoryWorkflow(ideaAgent, researchAgent, synthesizer);
 
         var input = new ChatInput
         {
@@ -177,8 +182,9 @@ public sealed class StoryWorkflowTests
         };
 
         var researchAgent = new FakeResearchAgent(researchResult);
+        var synthesizer = new FakeSynthesizerAgent(new SynthesisResult("synthesis content"));
 
-        var workflow = new StoryWorkflow(ideaAgent, researchAgent);
+        var workflow = new StoryWorkflow(ideaAgent, researchAgent, synthesizer);
 
         var input = new ChatInput
         {
@@ -219,6 +225,24 @@ public sealed class StoryWorkflowTests
             ArgumentNullException.ThrowIfNull(input);
 
             return Task.FromResult(_ideaToReturn!);
+        }
+    }
+
+    private sealed class FakeSynthesizerAgent : IAgent<SynthesisInput, SynthesisResult>
+    {
+        private readonly SynthesisResult _result;
+
+        public FakeSynthesizerAgent(SynthesisResult result) => _result = result;
+
+        public Task<SynthesisResult> ExecuteAsync(
+            AgentExecutionContext executionContext,
+            SynthesisInput input,
+            CancellationToken cancellationToken = default)
+        {
+            ArgumentNullException.ThrowIfNull(executionContext);
+            ArgumentNullException.ThrowIfNull(input);
+
+            return Task.FromResult(_result);
         }
     }
 

@@ -18,10 +18,11 @@ public sealed class StoryWorkflow : IStoryWorkflow
     public StoryWorkflow(
         IAgent<ChatInput, IReadOnlyList<Idea>> ideaAgent,
         IAgent<ResearchInput, ResearchResult> researchAgent,
-        IAgent<SynthesisInput, SynthesisResult>? synthesizer = null)
+        IAgent<SynthesisInput, SynthesisResult> synthesizer)
     {
         ArgumentNullException.ThrowIfNull(ideaAgent);
         ArgumentNullException.ThrowIfNull(researchAgent);
+        ArgumentNullException.ThrowIfNull(synthesizer);
 
         _ideaAgent = ideaAgent;
         _researchAgent = researchAgent;
@@ -30,7 +31,7 @@ public sealed class StoryWorkflow : IStoryWorkflow
 
     private readonly IAgent<ChatInput, IReadOnlyList<Idea>> _ideaAgent;
     private readonly IAgent<ResearchInput, ResearchResult> _researchAgent;
-    private readonly IAgent<SynthesisInput, SynthesisResult>? _synthesizer;
+    private readonly IAgent<SynthesisInput, SynthesisResult> _synthesizer;
 
     /// <summary>
     ///     Executes the story workflow with the provided input.
@@ -59,22 +60,14 @@ public sealed class StoryWorkflow : IStoryWorkflow
         var ideaExecutor = CreateIdeaExecutor();
         var ideaSelectionExecutor = CreateIdeaSelectionExecutor();
         var researchExecutor = CreateResearchExecutor();
-        FunctionExecutor<ResearchResult, SynthesisResult>? synthesisExecutor = null;
-
-        if (_synthesizer is not null)
-        {
-            synthesisExecutor = CreateSynthesisExecutor();
-        }
+        var synthesisExecutor = CreateSynthesisExecutor();
 
         var builder = new WorkflowBuilder(ideaExecutor);
 
         builder.AddEdge(ideaExecutor, ideaSelectionExecutor);
         builder.AddEdge(ideaSelectionExecutor, researchExecutor);
 
-        if (synthesisExecutor is not null)
-        {
-            builder.AddEdge(researchExecutor, synthesisExecutor);
-        }
+        builder.AddEdge(researchExecutor, synthesisExecutor);
 
         return builder.Build();
     }
@@ -233,17 +226,19 @@ public sealed class StoryWorkflow : IStoryWorkflow
                 "The Story Workflow completed without producing a Research result.");
         }
 
+        if (synthesis is null)
+        {
+            throw new InvalidOperationException(
+                "The Story Workflow completed without producing a Synthesis result.");
+        }
+
         var result = new StoryWorkflowResult
         {
             Input = input,
             SelectedIdea = selectedIdea,
-            Research = research
+            Research = research,
+            Synthesis = synthesis
         };
-
-        if (synthesis is not null)
-        {
-            result.Synthesis = synthesis;
-        }
 
         return result;
     }
