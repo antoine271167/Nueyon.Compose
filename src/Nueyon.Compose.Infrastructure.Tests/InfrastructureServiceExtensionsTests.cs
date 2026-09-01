@@ -2,6 +2,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Nueyon.Compose.Application.Agents;
 using Nueyon.Compose.Application.Agents.Idea;
 using Nueyon.Compose.Application.Agents.Research;
+using Nueyon.Compose.Application.Agents.Synthesis;
 using Nueyon.Compose.Application.Validation;
 using Nueyon.Compose.Domain;
 using Nueyon.Compose.Infrastructure.Options;
@@ -174,6 +175,28 @@ public sealed class InfrastructureServiceExtensionsTests
     }
 
     [Fact]
+    public void AddInfrastructure_RegistersSynthesizerAgent()
+    {
+        // Arrange
+        var services = new ServiceCollection();
+        services.AddLogging();
+        services.Configure<OpenAiOptions>(opt =>
+        {
+            opt.ApiKey = "test-key";
+            opt.Model = "gpt-4o-mini";
+        });
+
+        // Act
+        services.AddInfrastructure();
+        var provider = services.BuildServiceProvider();
+
+        // Assert
+        var agent = provider.GetRequiredService<IAgent<SynthesisInput, SynthesisResult>>();
+        Assert.NotNull(agent);
+        Assert.IsType<SynthesizerAgent>(agent);
+    }
+
+    [Fact]
     public void AddInfrastructure_ResearchAgentIsSingleton()
     {
         // Arrange
@@ -191,6 +214,29 @@ public sealed class InfrastructureServiceExtensionsTests
         // Act
         var agent1 = provider.GetRequiredService<IAgent<ResearchInput, ResearchResult>>();
         var agent2 = provider.GetRequiredService<IAgent<ResearchInput, ResearchResult>>();
+
+        // Assert
+        Assert.Same(agent1, agent2);
+    }
+
+    [Fact]
+    public void AddInfrastructure_SynthesizerAgentIsSingleton()
+    {
+        // Arrange
+        var services = new ServiceCollection();
+        services.AddLogging();
+        services.Configure<OpenAiOptions>(opt =>
+        {
+            opt.ApiKey = "test-key";
+            opt.Model = "gpt-4o-mini";
+        });
+
+        services.AddInfrastructure();
+        var provider = services.BuildServiceProvider();
+
+        // Act
+        var agent1 = provider.GetRequiredService<IAgent<SynthesisInput, SynthesisResult>>();
+        var agent2 = provider.GetRequiredService<IAgent<SynthesisInput, SynthesisResult>>();
 
         // Assert
         Assert.Same(agent1, agent2);

@@ -5,6 +5,7 @@ using Microsoft.Extensions.Options;
 using Nueyon.Compose.Application.Agents;
 using Nueyon.Compose.Application.Agents.Idea;
 using Nueyon.Compose.Application.Agents.Research;
+using Nueyon.Compose.Application.Agents.Synthesis;
 using Nueyon.Compose.Application.Validation;
 using Nueyon.Compose.Domain;
 using Nueyon.Compose.Infrastructure.Agents;
@@ -89,6 +90,22 @@ public static class InfrastructureServiceExtensions
             return new ResearchAgent(baseAiAgent, logger);
         });
 
+        // Register the Synthesizer Agent
+        services.AddSingleton<IAgent<SynthesisInput, SynthesisResult>>(provider =>
+        {
+            var options = provider.GetRequiredService<IOptions<OpenAiOptions>>().Value;
+            options.Validate();
+
+            var logger = provider.GetRequiredService<ILogger<SynthesizerAgent>>();
+
+            var baseAiAgent = OpenAIAgentFactory.CreateOpenAIAgent(
+                options.ApiKey,
+                options.Model,
+                GetSynthesisSystemInstructions());
+
+            return new SynthesizerAgent(baseAiAgent, logger);
+        });
+
         return services;
     }
 
@@ -139,6 +156,33 @@ public static class InfrastructureServiceExtensions
         - a clear description
         - a specific target audience
         - a clear rationale explaining why the idea is worth pursuing
+
+        Return only valid JSON.
+        Do not use Markdown.
+        Do not wrap the JSON in ``` fences.
+        Do not include explanations outside the JSON.
+        """;
+
+    private static string GetSynthesisSystemInstructions() =>
+        """
+        You are the Synthesizer Agent in Nueyon.Compose.
+
+        Your job is to read research produced by the Research Agent and produce a concise
+        editorial synthesis (a brief) that captures the meaning of the research. Do NOT
+        produce a final article, social-media post, or any consumer-facing content.
+
+        The synthesis must:
+        - Determine the central thesis or message supported by the research.
+        - Identify the most important insights.
+        - Preserve important facts and supporting evidence.
+        - Surface meaningful nuances, uncertainty, or contradictions.
+        - Not invent facts or add information not supported by the research.
+
+        Prefer clear headings such as:
+        - Core thesis
+        - Key insights
+        - Supporting evidence
+        - Nuances
 
         Return only valid JSON.
         Do not use Markdown.

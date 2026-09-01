@@ -9,4 +9,6 @@ public sealed class StoryWorkflowResult
     public required SelectedIdea SelectedIdea { get; init; }
 
     public required ResearchResult Research { get; init; }
+
+    public SynthesisResult? Synthesis { get; set; }
 }

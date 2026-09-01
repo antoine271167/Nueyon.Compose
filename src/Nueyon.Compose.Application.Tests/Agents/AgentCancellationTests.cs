@@ -163,6 +163,75 @@ public sealed class AgentCancellationTests
         Assert.True(logCapture.HasInfoLogs, "Successful execution should produce info logs");
     }
 
+    [Fact]
+    public async Task SynthesizerAgent_WhenCancellationTokenCancelled_PropagatesCancellationWithoutLogging()
+    {
+        // Arrange
+        var logCapture = new LogCapture();
+        var chatClient = new CancellationThrowingChatClient();
+        var aiAgent = chatClient.AsAIAgent("Test", "TestAgent");
+        var synthesizer = new Nueyon.Compose.Application.Agents.Synthesis.SynthesizerAgent(aiAgent, logCapture);
+        var executionContext = new AgentExecutionContext(Guid.NewGuid());
+        var input = CreateTestSynthesisInput();
+
+        var cts = new CancellationTokenSource();
+        await cts.CancelAsync();
+
+        // Act & Assert
+        var ex = await Assert.ThrowsAsync<OperationCanceledException>(() =>
+            synthesizer.ExecuteAsync(executionContext, input, cts.Token));
+
+        // Verify that cancellation was not logged as an error
+        Assert.False(logCapture.HasErrorLogs, "Cancellation should not be logged as error");
+        Assert.IsType<OperationCanceledException>(ex);
+    }
+
+    [Fact]
+    public async Task SynthesizerAgent_WhenUnexpectedExceptionThrown_LogsErrorAndRethrows()
+    {
+        // Arrange
+        var logCapture = new LogCapture();
+        var chatClient = new ExceptionThrowingChatClient(new InvalidOperationException("Unexpected error"));
+        var aiAgent = chatClient.AsAIAgent("Test", "TestAgent");
+        var synthesizer = new Nueyon.Compose.Application.Agents.Synthesis.SynthesizerAgent(aiAgent, logCapture);
+        var executionContext = new AgentExecutionContext(Guid.NewGuid());
+        var input = CreateTestSynthesisInput();
+
+        // Act & Assert
+        var ex = await Assert.ThrowsAsync<InvalidOperationException>(() =>
+            synthesizer.ExecuteAsync(executionContext, input, CancellationToken.None));
+
+        // Verify that the unexpected exception was logged as an error
+        Assert.True(logCapture.HasErrorLogs, "Unexpected exception should be logged as error");
+        Assert.Equal("Unexpected error", ex.Message);
+    }
+
+    [Fact]
+    public async Task SynthesizerAgent_WhenCompletedSuccessfully_LogsCompletionWithoutErrors()
+    {
+        // Arrange
+        var logCapture = new LogCapture();
+        const string responseJson =
+            """
+            {
+              "content": "Test synthesis content"
+            }
+            """;
+        var chatClient = new FakeChatClient(responseJson);
+        var aiAgent = chatClient.AsAIAgent("Test", "TestAgent");
+        var synthesizer = new Nueyon.Compose.Application.Agents.Synthesis.SynthesizerAgent(aiAgent, logCapture);
+        var executionContext = new AgentExecutionContext(Guid.NewGuid());
+        var input = CreateTestSynthesisInput();
+
+        // Act
+        var result = await synthesizer.ExecuteAsync(executionContext, input, CancellationToken.None);
+
+        // Assert
+        Assert.NotNull(result);
+        Assert.False(logCapture.HasErrorLogs, "Successful execution should not produce error logs");
+        Assert.True(logCapture.HasInfoLogs, "Successful execution should produce info logs");
+    }
+
     private static ResearchInput CreateTestResearchInput()
     {
         var idea = new Idea
@@ -177,6 +246,12 @@ public sealed class AgentCancellationTests
             Input = new ChatInput { Content = "Test input" },
             SelectedIdea = new SelectedIdea(idea)
         };
+    }
+
+    private static SynthesisInput CreateTestSynthesisInput()
+    {
+        var research = new ResearchResult { Content = "Test research" };
+        return new SynthesisInput(research);
     }
 
     private sealed class FakeChatClient(params string[] responses) : IChatClient
@@ -262,7 +337,7 @@ public sealed class AgentCancellationTests
         }
     }
 
-    private sealed class LogCapture : ILogger<IdeaAgent>, ILogger<ResearchAgent>
+    private sealed class LogCapture : ILogger<IdeaAgent>, ILogger<ResearchAgent>, ILogger<Nueyon.Compose.Application.Agents.Synthesis.SynthesizerAgent>
     {
         public bool HasErrorLogs { get; private set; }
         public bool HasInfoLogs { get; private set; }

@@ -17,17 +17,20 @@ public sealed class StoryWorkflow : IStoryWorkflow
     /// </summary>
     public StoryWorkflow(
         IAgent<ChatInput, IReadOnlyList<Idea>> ideaAgent,
-        IAgent<ResearchInput, ResearchResult> researchAgent)
+        IAgent<ResearchInput, ResearchResult> researchAgent,
+        IAgent<SynthesisInput, SynthesisResult>? synthesizer = null)
     {
         ArgumentNullException.ThrowIfNull(ideaAgent);
         ArgumentNullException.ThrowIfNull(researchAgent);
 
         _ideaAgent = ideaAgent;
         _researchAgent = researchAgent;
+        _synthesizer = synthesizer;
     }
 
     private readonly IAgent<ChatInput, IReadOnlyList<Idea>> _ideaAgent;
     private readonly IAgent<ResearchInput, ResearchResult> _researchAgent;
+    private readonly IAgent<SynthesisInput, SynthesisResult>? _synthesizer;
 
     /// <summary>
     ///     Executes the story workflow with the provided input.
@@ -56,11 +59,22 @@ public sealed class StoryWorkflow : IStoryWorkflow
         var ideaExecutor = CreateIdeaExecutor();
         var ideaSelectionExecutor = CreateIdeaSelectionExecutor();
         var researchExecutor = CreateResearchExecutor();
+        FunctionExecutor<ResearchResult, SynthesisResult>? synthesisExecutor = null;
+
+        if (_synthesizer is not null)
+        {
+            synthesisExecutor = CreateSynthesisExecutor();
+        }
 
         var builder = new WorkflowBuilder(ideaExecutor);
 
         builder.AddEdge(ideaExecutor, ideaSelectionExecutor);
         builder.AddEdge(ideaSelectionExecutor, researchExecutor);
+
+        if (synthesisExecutor is not null)
+        {
+            builder.AddEdge(researchExecutor, synthesisExecutor);
+        }
 
         return builder.Build();
     }
@@ -148,12 +162,30 @@ public sealed class StoryWorkflow : IStoryWorkflow
             });
     }
 
+    private FunctionExecutor<ResearchResult, SynthesisResult> CreateSynthesisExecutor()
+    {
+        return new FunctionExecutor<ResearchResult, SynthesisResult>(
+            "synthesis",
+            async (research, _, cancellationToken) =>
+            {
+                var input = new SynthesisInput(research);
+
+                var executionContext = new AgentExecutionContext(Guid.NewGuid());
+
+                return await _synthesizer!.ExecuteAsync(
+                    executionContext,
+                    input,
+                    cancellationToken);
+            });
+    }
+
     private static StoryWorkflowResult ExtractResult(
         ChatInput input,
         Run run)
     {
         SelectedIdea? selectedIdea = null;
         ResearchResult? research = null;
+        SynthesisResult? synthesis = null;
 
         foreach (var @event in run.OutgoingEvents)
         {
@@ -167,17 +199,24 @@ public sealed class StoryWorkflow : IStoryWorkflow
                 case
                 {
                     ExecutorId: "idea-selection",
-                    Data: SelectedIdea result
+                    Data: SelectedIdea selected
                 }:
-                    selectedIdea = result;
+                    selectedIdea = selected;
                     break;
 
                 case
                 {
                     ExecutorId: "research",
-                    Data: ResearchResult result
+                    Data: ResearchResult researchResult
                 }:
-                    research = result;
+                    research = researchResult;
+                    break;
+                case
+                {
+                    ExecutorId: "synthesis",
+                    Data: SynthesisResult synthesisResult
+                }:
+                    synthesis = synthesisResult;
                     break;
             }
         }
@@ -194,11 +233,18 @@ public sealed class StoryWorkflow : IStoryWorkflow
                 "The Story Workflow completed without producing a Research result.");
         }
 
-        return new StoryWorkflowResult
+        var result = new StoryWorkflowResult
         {
             Input = input,
             SelectedIdea = selectedIdea,
             Research = research
         };
+
+        if (synthesis is not null)
+        {
+            result.Synthesis = synthesis;
+        }
+
+        return result;
     }
 }
