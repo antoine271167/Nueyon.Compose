@@ -15,13 +15,13 @@ public sealed class IdeaValidatorTests
     public void IsValid_WithSingleValidIdea_ReturnsTrue()
     {
         // Arrange
-        var idea = new Idea
-        {
-            Title = "Test Title",
-            Description = "Test Description",
-            Audience = "Test Audience",
-            Rationale = "Test Rationale"
-        };
+        var idea = new Idea(
+            "Test Title",
+            "Test Description",
+            "Test Audience",
+            "Test Rationale"
+        );
+
         var ideas = new[] { idea };
 
         // Act
@@ -38,20 +38,20 @@ public sealed class IdeaValidatorTests
     public void IsValid_WithMultipleValidIdeas_ReturnsTrue()
     {
         // Arrange
-        var idea1 = new Idea
-        {
-            Title = "Title 1",
-            Description = "Description 1",
-            Audience = "Audience 1",
-            Rationale = "Rationale 1"
-        };
-        var idea2 = new Idea
-        {
-            Title = "Title 2",
-            Description = "Description 2",
-            Audience = "Audience 2",
-            Rationale = "Rationale 2"
-        };
+        var idea1 = new Idea(
+            "Title 1",
+            "Description 1",
+            "Audience 1",
+            "Rationale 1"
+        );
+
+        var idea2 = new Idea(
+            "Title 2",
+            "Description 2",
+            "Audience 2",
+            "Rationale 2"
+        );
+
         var ideas = new[] { idea1, idea2 };
 
         // Act
@@ -97,13 +97,13 @@ public sealed class IdeaValidatorTests
     public void IsValid_WithMissingTitle_ReturnsFalse()
     {
         // Arrange
-        var idea = new Idea
-        {
-            Title = "",
-            Description = "Test Description",
-            Audience = "Test Audience",
-            Rationale = "Test Rationale"
-        };
+        var idea = new Idea(
+            "",
+            "Test Description",
+            "Test Audience",
+            "Test Rationale"
+        );
+
         var ideas = new[] { idea };
 
         // Act
@@ -120,13 +120,13 @@ public sealed class IdeaValidatorTests
     public void IsValid_WithNullTitle_ReturnsFalse()
     {
         // Arrange
-        var idea = new Idea
-        {
-            Title = null!,
-            Description = "Test Description",
-            Audience = "Test Audience",
-            Rationale = "Test Rationale"
-        };
+        var idea = new Idea(
+            null!,
+            "Test Description",
+            "Test Audience",
+            "Test Rationale"
+        );
+
         var ideas = new[] { idea };
 
         // Act
@@ -143,13 +143,13 @@ public sealed class IdeaValidatorTests
     public void IsValid_WithWhitespaceTitle_ReturnsFalse()
     {
         // Arrange
-        var idea = new Idea
-        {
-            Title = "   ",
-            Description = "Test Description",
-            Audience = "Test Audience",
-            Rationale = "Test Rationale"
-        };
+        var idea = new Idea(
+            "   ",
+            "Test Description",
+            "Test Audience",
+            "Test Rationale"
+        );
+
         var ideas = new[] { idea };
 
         // Act
@@ -166,13 +166,13 @@ public sealed class IdeaValidatorTests
     public void IsValid_WithMissingDescription_ReturnsFalse()
     {
         // Arrange
-        var idea = new Idea
-        {
-            Title = "Test Title",
-            Description = "",
-            Audience = "Test Audience",
-            Rationale = "Test Rationale"
-        };
+        var idea = new Idea(
+            "Test Title",
+            "",
+            "Test Audience",
+            "Test Rationale"
+        );
+
         var ideas = new[] { idea };
 
         // Act
@@ -189,13 +189,13 @@ public sealed class IdeaValidatorTests
     public void IsValid_WithMissingAudience_ReturnsFalse()
     {
         // Arrange
-        var idea = new Idea
-        {
-            Title = "Test Title",
-            Description = "Test Description",
-            Audience = "",
-            Rationale = "Test Rationale"
-        };
+        var idea = new Idea(
+            "Test Title",
+            "Test Description",
+            "",
+            "Test Rationale"
+        );
+
         var ideas = new[] { idea };
 
         // Act
@@ -212,13 +212,13 @@ public sealed class IdeaValidatorTests
     public void IsValid_WithMissingRationale_ReturnsFalse()
     {
         // Arrange
-        var idea = new Idea
-        {
-            Title = "Test Title",
-            Description = "Test Description",
-            Audience = "Test Audience",
-            Rationale = ""
-        };
+        var idea = new Idea(
+            "Test Title",
+            "Test Description",
+            "Test Audience",
+            ""
+        );
+
         var ideas = new[] { idea };
 
         // Act
@@ -235,20 +235,20 @@ public sealed class IdeaValidatorTests
     public void IsValid_WithOneValidAndOneInvalidIdea_ReturnsFalse()
     {
         // Arrange
-        var validIdea = new Idea
-        {
-            Title = "Title 1",
-            Description = "Description 1",
-            Audience = "Audience 1",
-            Rationale = "Rationale 1"
-        };
-        var invalidIdea = new Idea
-        {
-            Title = "Title 2",
-            Description = "Description 2",
-            Audience = "",
-            Rationale = "Rationale 2"
-        };
+        var validIdea = new Idea(
+            "Title 1",
+            "Description 1",
+            "Audience 1",
+            "Rationale 1"
+        );
+
+        var invalidIdea = new Idea(
+            "Title 2",
+            "Description 2",
+            "",
+            "Rationale 2"
+        );
+
         var ideas = new[] { validIdea, invalidIdea };
 
         // Act

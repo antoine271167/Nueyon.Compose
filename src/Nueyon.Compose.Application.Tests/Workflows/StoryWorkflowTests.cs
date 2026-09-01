@@ -13,18 +13,16 @@ public sealed class StoryWorkflowTests
     public async Task RunAsync_WithValidInput_ExecutesSuccessfully()
     {
         // Arrange
-        var expectedIdea = new Idea
-        {
-            Title = "Test Idea",
-            Description = "A test idea for verification",
-            Audience = "Test Audience",
-            Rationale = "To verify workflow execution"
-        };
+        var expectedIdea = new Idea(
+            "Test Idea",
+            "A test idea for verification",
+            "Test Audience",
+            "To verify workflow execution"
+        );
 
-        var expectedResearch = new ResearchResult
-        {
-            Content = "Test research content"
-        };
+        var expectedResearch = new ResearchResult(
+            "Test research content"
+        );
 
         var ideaAgent = new CapturingFakeAgent(expectedIdea);
         var researchAgent = new FakeResearchAgent(expectedResearch);
@@ -32,7 +30,7 @@ public sealed class StoryWorkflowTests
 
         var workflow = new StoryWorkflow(ideaAgent, researchAgent, synthesizer);
 
-        var input = new ChatInput { Content = "Test input" };
+        var input = new ChatInput("Test input");
 
         // Act
         var result = await workflow.RunAsync(input);
@@ -56,20 +54,16 @@ public sealed class StoryWorkflowTests
     public async Task RunAsync_WithValidInput_PassesInputToAgent()
     {
         // Arrange
-        var expectedIdea = new Idea
-        {
-            Title = "Captured",
-            Description = "Description",
-            Audience = "Audience",
-            Rationale = "Rationale"
-        };
+        var expectedIdea = new Idea(
+            "Captured",
+            "Description",
+            "Audience",
+            "Rationale"
+        );
 
         var ideaAgent = new CapturingFakeAgent(expectedIdea);
 
-        var researchResult = new ResearchResult
-        {
-            Content = "Test research content"
-        };
+        var researchResult = new ResearchResult("Test research content");
 
         var researchAgent = new CapturingFakeResearchAgent(researchResult);
         var synthesizer = new FakeSynthesizerAgent(new SynthesisResult("synthesis content"));
@@ -77,10 +71,7 @@ public sealed class StoryWorkflowTests
         var workflow = new StoryWorkflow(ideaAgent, researchAgent, synthesizer);
 
         const string expectedContent = "This is the user's input";
-        var input = new ChatInput
-        {
-            Content = expectedContent
-        };
+        var input = new ChatInput(expectedContent);
 
         // Act
         await workflow.RunAsync(input);
@@ -101,27 +92,24 @@ public sealed class StoryWorkflowTests
     public async Task RunAsync_WithCancellationToken_PropagatesTokenToAgent()
     {
         // Arrange
-        var ideaAgent = new CapturingFakeAgent(new Idea
-        {
-            Title = "Captured",
-            Description = "Description",
-            Audience = "Audience",
-            Rationale = "Rationale"
-        });
+        var ideaAgent = new CapturingFakeAgent(new Idea(
+            "Captured",
+            "Description",
+            "Audience",
+            "Rationale"));
 
         var researchAgent = new CapturingFakeResearchAgent(
-            new ResearchResult
-            {
-                Content = "Test research content"
-            });
+            new ResearchResult(
+                "Test research content"
+            ));
+
         var synthesizer = new FakeSynthesizerAgent(new SynthesisResult("synthesis content"));
 
         var workflow = new StoryWorkflow(ideaAgent, researchAgent, synthesizer);
 
-        var input = new ChatInput
-        {
-            Content = "Test input"
-        };
+        var input = new ChatInput(
+            "Test input"
+        );
 
         using var cts = new CancellationTokenSource();
 
@@ -147,19 +135,13 @@ public sealed class StoryWorkflowTests
             new InvalidOperationException("Test agent failure"));
 
         var researchAgent = new FakeResearchAgent(
-            new ResearchResult
-            {
-                Content = "Test research content"
-            });
+            new ResearchResult("Test research content"));
 
         var synthesizer = new FakeSynthesizerAgent(new SynthesisResult("synthesis content"));
 
         var workflow = new StoryWorkflow(ideaAgent, researchAgent, synthesizer);
 
-        var input = new ChatInput
-        {
-            Content = "Test input"
-        };
+        var input = new ChatInput("Test input");
 
         // Act & Assert
         await Assert.ThrowsAsync<InvalidOperationException>(() => workflow.RunAsync(input));
@@ -176,20 +158,14 @@ public sealed class StoryWorkflowTests
         // Arrange
         var ideaAgent = new FakeIdeaAgent();
 
-        var researchResult = new ResearchResult
-        {
-            Content = "Example research content"
-        };
+        var researchResult = new ResearchResult("Example research content");
 
         var researchAgent = new FakeResearchAgent(researchResult);
         var synthesizer = new FakeSynthesizerAgent(new SynthesisResult("synthesis content"));
 
         var workflow = new StoryWorkflow(ideaAgent, researchAgent, synthesizer);
 
-        var input = new ChatInput
-        {
-            Content = "Compose a story about a curious cat"
-        };
+        var input = new ChatInput("Compose a story about a curious cat");
 
         // Act
         var result = await workflow.RunAsync(input);

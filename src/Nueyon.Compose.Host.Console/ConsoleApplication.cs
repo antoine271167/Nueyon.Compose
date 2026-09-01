@@ -146,10 +146,7 @@ public sealed class ConsoleApplication
         _console.WriteLine("Processing...");
         _console.WriteLine("");
 
-        var chatInput = new ChatInput
-        {
-            Content = userInput
-        };
+        var chatInput = new ChatInput(userInput);
 
         var result = await _storyWorkflow.RunAsync(
             chatInput,

@@ -28,7 +28,7 @@ public sealed class AgentCancellationTests
         var aiAgent = chatClient.AsAIAgent("Test", "TestAgent");
         var ideaAgent = new IdeaAgent(aiAgent, logCapture);
         var executionContext = new AgentExecutionContext(Guid.NewGuid());
-        var input = new ChatInput { Content = "Test input" };
+        var input = new ChatInput("Test input");
 
         var cts = new CancellationTokenSource();
         await cts.CancelAsync();
@@ -74,7 +74,7 @@ public sealed class AgentCancellationTests
         var aiAgent = chatClient.AsAIAgent("Test", "TestAgent");
         var ideaAgent = new IdeaAgent(aiAgent, logCapture);
         var executionContext = new AgentExecutionContext(Guid.NewGuid());
-        var input = new ChatInput { Content = "Test input" };
+        var input = new ChatInput("Test input");
 
         // Act & Assert
         var ex = await Assert.ThrowsAsync<InvalidOperationException>(() =>
@@ -127,7 +127,7 @@ public sealed class AgentCancellationTests
         var aiAgent = chatClient.AsAIAgent("Test", "TestAgent");
         var ideaAgent = new IdeaAgent(aiAgent, logCapture);
         var executionContext = new AgentExecutionContext(Guid.NewGuid());
-        var input = new ChatInput { Content = "Test input" };
+        var input = new ChatInput("Test input");
 
         // Act
         var result = await ideaAgent.ExecuteAsync(executionContext, input, CancellationToken.None);
@@ -235,23 +235,20 @@ public sealed class AgentCancellationTests
 
     private static ResearchInput CreateTestResearchInput()
     {
-        var idea = new Idea
-        {
-            Title = "Test Idea",
-            Description = "Test Description",
-            Audience = "Test Audience",
-            Rationale = "Test Rationale"
-        };
-        return new ResearchInput
-        {
-            Input = new ChatInput { Content = "Test input" },
-            SelectedIdea = new SelectedIdea(idea)
-        };
+        var idea = new Idea(
+            "Test Idea",
+            "Test Description",
+            "Test Audience",
+            "Test Rationale");
+
+        return new ResearchInput(
+            new ChatInput("Test input"),
+            new SelectedIdea(idea));
     }
 
     private static SynthesisInput CreateTestSynthesisInput()
     {
-        var research = new ResearchResult { Content = "Test research" };
+        var research = new ResearchResult("Test research");
         return new SynthesisInput(research);
     }
 

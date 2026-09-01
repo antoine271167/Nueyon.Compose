@@ -136,11 +136,9 @@ public sealed class StoryWorkflow : IStoryWorkflow
                             ?? throw new InvalidOperationException(
                                 "ChatInput was not found in the StoryWorkflow state.");
 
-                var researchInput = new ResearchInput
-                {
-                    Input = input,
-                    SelectedIdea = selectedIdea
-                };
+                var researchInput = new ResearchInput(
+                    input,
+                    selectedIdea);
 
                 var executionContext = new AgentExecutionContext(Guid.NewGuid());
 
@@ -225,13 +223,11 @@ public sealed class StoryWorkflow : IStoryWorkflow
                 "The Story Workflow completed without producing a Synthesis result.");
         }
 
-        var result = new StoryWorkflowResult
-        {
-            Input = input,
-            SelectedIdea = selectedIdea,
-            Research = research,
-            Synthesis = synthesis
-        };
+        var result = new StoryWorkflowResult(
+            input,
+            selectedIdea,
+            research,
+            synthesis);
 
         return result;
     }
