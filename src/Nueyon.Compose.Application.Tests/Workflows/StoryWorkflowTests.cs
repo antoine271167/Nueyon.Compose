@@ -214,11 +214,40 @@ public sealed class StoryWorkflowTests
         Assert.Equal("complete article content", result.Compose.Content);
     }
 
+    [Fact]
+    public async Task RunAsync_VerifiesNarrativeToBoundary()
+    {
+        // Arrange
+        const string narrativeContent = "narrative content";
+
+        var ideaAgent = new CapturingFakeAgent(new Idea(
+            "Test Idea",
+            "Test description",
+            "Test audience",
+            "Test rationale"));
+
+        var researchAgent = new FakeResearchAgent(new ResearchResult("research content"));
+        var synthesizer = new FakeSynthesizerAgent(new SynthesisResult("synthesis content"));
+        var narrativeAgent = new FakeNarrativeAgent(new NarrativeResult(narrativeContent));
+        var composeAgent = new CapturingFakeComposeAgent(new ComposeResult("composed content"));
+
+        var workflow = new StoryWorkflow(ideaAgent, researchAgent, synthesizer, narrativeAgent, composeAgent);
+        var input = new ChatInput("Test input");
+
+        // Act
+        await workflow.RunAsync(input);
+
+        // Assert
+        Assert.NotNull(composeAgent.CapturedInput);
+        Assert.Equal(narrativeContent, composeAgent.CapturedInput.Narrative.Content);
+        Assert.Equal(ContentFormat.Article, composeAgent.CapturedInput.Format);
+    }
+
     private sealed class CapturingFakeAgent(Idea? ideaToReturn = null) : IAgent<ChatInput, IReadOnlyList<Idea>>
     {
         private readonly IReadOnlyList<Idea>? _ideaToReturn = ideaToReturn is not null
             ? new List<Idea> { ideaToReturn }.AsReadOnly()
-            : [];
+            : null;
 
         public Task<IReadOnlyList<Idea>> ExecuteAsync(
             AgentExecutionContext executionContext,
@@ -314,6 +343,24 @@ public sealed class StoryWorkflowTests
         {
             ArgumentNullException.ThrowIfNull(executionContext);
             ArgumentNullException.ThrowIfNull(input);
+
+            return Task.FromResult(result);
+        }
+    }
+
+    private sealed class CapturingFakeComposeAgent(ComposeResult result) : IAgent<ComposeInput, ComposeResult>
+    {
+        public ComposeInput? CapturedInput { get; private set; }
+
+        public Task<ComposeResult> ExecuteAsync(
+            AgentExecutionContext executionContext,
+            ComposeInput input,
+            CancellationToken cancellationToken = default)
+        {
+            ArgumentNullException.ThrowIfNull(executionContext);
+            ArgumentNullException.ThrowIfNull(input);
+
+            CapturedInput = input;
 
             return Task.FromResult(result);
         }
