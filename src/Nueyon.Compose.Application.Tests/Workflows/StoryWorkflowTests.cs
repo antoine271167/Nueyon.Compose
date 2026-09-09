@@ -28,8 +28,9 @@ public sealed class StoryWorkflowTests
         var researchAgent = new FakeResearchAgent(expectedResearch);
         var synthesizer = new FakeSynthesizerAgent(new SynthesisResult("synthesis content"));
         var narrativeAgent = new FakeNarrativeAgent(new NarrativeResult("narrative content"));
+        var composeAgent = new FakeComposeAgent(new ComposeResult("complete article content"));
 
-        var workflow = new StoryWorkflow(ideaAgent, researchAgent, synthesizer, narrativeAgent);
+        var workflow = new StoryWorkflow(ideaAgent, researchAgent, synthesizer, narrativeAgent, composeAgent);
 
         var input = new ChatInput("Test input");
 
@@ -55,6 +56,9 @@ public sealed class StoryWorkflowTests
 
         Assert.NotNull(result.Narrative);
         Assert.Equal("narrative content", result.Narrative.Content);
+
+        Assert.NotNull(result.Compose);
+        Assert.Equal("complete article content", result.Compose.Content);
     }
 
     [Fact]
@@ -75,8 +79,9 @@ public sealed class StoryWorkflowTests
         var researchAgent = new CapturingFakeResearchAgent(researchResult);
         var synthesizer = new FakeSynthesizerAgent(new SynthesisResult("synthesis content"));
         var narrativeAgent = new FakeNarrativeAgent(new NarrativeResult("narrative content"));
+        var composeAgent = new FakeComposeAgent(new ComposeResult("complete article content"));
 
-        var workflow = new StoryWorkflow(ideaAgent, researchAgent, synthesizer, narrativeAgent);
+        var workflow = new StoryWorkflow(ideaAgent, researchAgent, synthesizer, narrativeAgent, composeAgent);
 
         const string expectedContent = "This is the user's input";
         var input = new ChatInput(expectedContent);
@@ -113,8 +118,9 @@ public sealed class StoryWorkflowTests
 
         var synthesizer = new FakeSynthesizerAgent(new SynthesisResult("synthesis content"));
         var narrativeAgent = new FakeNarrativeAgent(new NarrativeResult("narrative content"));
+        var composeAgent = new FakeComposeAgent(new ComposeResult("complete article content"));
 
-        var workflow = new StoryWorkflow(ideaAgent, researchAgent, synthesizer, narrativeAgent);
+        var workflow = new StoryWorkflow(ideaAgent, researchAgent, synthesizer, narrativeAgent, composeAgent);
 
         var input = new ChatInput(
             "Test input"
@@ -148,8 +154,9 @@ public sealed class StoryWorkflowTests
 
         var synthesizer = new FakeSynthesizerAgent(new SynthesisResult("synthesis content"));
         var narrativeAgent = new FakeNarrativeAgent(new NarrativeResult("narrative content"));
+        var composeAgent = new FakeComposeAgent(new ComposeResult("complete article content"));
 
-        var workflow = new StoryWorkflow(ideaAgent, researchAgent, synthesizer, narrativeAgent);
+        var workflow = new StoryWorkflow(ideaAgent, researchAgent, synthesizer, narrativeAgent, composeAgent);
 
         var input = new ChatInput("Test input");
 
@@ -173,8 +180,9 @@ public sealed class StoryWorkflowTests
         var researchAgent = new FakeResearchAgent(researchResult);
         var synthesizer = new FakeSynthesizerAgent(new SynthesisResult("synthesis content"));
         var narrativeAgent = new FakeNarrativeAgent(new NarrativeResult("narrative content"));
+        var composeAgent = new FakeComposeAgent(new ComposeResult("complete article content"));
 
-        var workflow = new StoryWorkflow(ideaAgent, researchAgent, synthesizer, narrativeAgent);
+        var workflow = new StoryWorkflow(ideaAgent, researchAgent, synthesizer, narrativeAgent, composeAgent);
 
         var input = new ChatInput("Compose a story about a curious cat");
 
@@ -195,6 +203,15 @@ public sealed class StoryWorkflowTests
 
         Assert.NotNull(result.Research);
         Assert.Equal("Example research content", result.Research.Content);
+
+        Assert.NotNull(result.Synthesis);
+        Assert.Equal("synthesis content", result.Synthesis.Content);
+
+        Assert.NotNull(result.Narrative);
+        Assert.Equal("narrative content", result.Narrative.Content);
+
+        Assert.NotNull(result.Compose);
+        Assert.Equal("complete article content", result.Compose.Content);
     }
 
     private sealed class CapturingFakeAgent(Idea? ideaToReturn = null) : IAgent<ChatInput, IReadOnlyList<Idea>>
@@ -286,5 +303,19 @@ public sealed class StoryWorkflowTests
             ChatInput input,
             CancellationToken cancellationToken = default) =>
             Task.FromException<IReadOnlyList<Idea>>(_exceptionToThrow);
+    }
+
+    private sealed class FakeComposeAgent(ComposeResult result) : IAgent<ComposeInput, ComposeResult>
+    {
+        public Task<ComposeResult> ExecuteAsync(
+            AgentExecutionContext executionContext,
+            ComposeInput input,
+            CancellationToken cancellationToken = default)
+        {
+            ArgumentNullException.ThrowIfNull(executionContext);
+            ArgumentNullException.ThrowIfNull(input);
+
+            return Task.FromResult(result);
+        }
     }
 }

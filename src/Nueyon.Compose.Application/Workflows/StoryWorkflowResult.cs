@@ -7,4 +7,5 @@ public sealed record StoryWorkflowResult(
     SelectedIdea SelectedIdea,
     ResearchResult Research,
     SynthesisResult Synthesis,
-    NarrativeResult Narrative);
+    NarrativeResult Narrative,
+    ComposeResult Compose);

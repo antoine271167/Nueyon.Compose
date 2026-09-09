@@ -19,23 +19,27 @@ public sealed class StoryWorkflow : IStoryWorkflow
         IAgent<ChatInput, IReadOnlyList<Idea>> ideaAgent,
         IAgent<ResearchInput, ResearchResult> researchAgent,
         IAgent<SynthesisInput, SynthesisResult> synthesizer,
-        IAgent<NarrativeInput, NarrativeResult> narrativeAgent)
+        IAgent<NarrativeInput, NarrativeResult> narrativeAgent,
+        IAgent<ComposeInput, ComposeResult> composeAgent)
     {
         ArgumentNullException.ThrowIfNull(ideaAgent);
         ArgumentNullException.ThrowIfNull(researchAgent);
         ArgumentNullException.ThrowIfNull(synthesizer);
         ArgumentNullException.ThrowIfNull(narrativeAgent);
+        ArgumentNullException.ThrowIfNull(composeAgent);
 
         _ideaAgent = ideaAgent;
         _researchAgent = researchAgent;
         _synthesizer = synthesizer;
         _narrativeAgent = narrativeAgent;
+        _composeAgent = composeAgent;
     }
 
     private readonly IAgent<ChatInput, IReadOnlyList<Idea>> _ideaAgent;
     private readonly IAgent<ResearchInput, ResearchResult> _researchAgent;
     private readonly IAgent<SynthesisInput, SynthesisResult> _synthesizer;
     private readonly IAgent<NarrativeInput, NarrativeResult> _narrativeAgent;
+    private readonly IAgent<ComposeInput, ComposeResult> _composeAgent;
 
     /// <summary>
     ///     Executes the story workflow with the provided input.
@@ -65,6 +69,7 @@ public sealed class StoryWorkflow : IStoryWorkflow
         var researchExecutor = CreateResearchExecutor();
         var synthesisExecutor = CreateSynthesisExecutor();
         var narrativeExecutor = CreateNarrativeExecutor();
+        var composeExecutor = CreateComposeExecutor();
 
         var builder = new WorkflowBuilder(ideaExecutor);
 
@@ -73,6 +78,7 @@ public sealed class StoryWorkflow : IStoryWorkflow
 
         builder.AddEdge(researchExecutor, synthesisExecutor);
         builder.AddEdge(synthesisExecutor, narrativeExecutor);
+        builder.AddEdge(narrativeExecutor, composeExecutor);
 
         return builder.Build();
     }
@@ -184,6 +190,21 @@ public sealed class StoryWorkflow : IStoryWorkflow
                     cancellationToken);
             });
 
+    private FunctionExecutor<NarrativeResult, ComposeResult> CreateComposeExecutor() =>
+        new(
+            "compose",
+            async (narrative, _, cancellationToken) =>
+            {
+                var input = new ComposeInput(narrative, ContentFormat.Article);
+
+                var executionContext = new AgentExecutionContext(Guid.NewGuid());
+
+                return await _composeAgent.ExecuteAsync(
+                    executionContext,
+                    input,
+                    cancellationToken);
+            });
+
     private static StoryWorkflowResult ExtractResult(
         ChatInput input,
         Run run)
@@ -192,6 +213,7 @@ public sealed class StoryWorkflow : IStoryWorkflow
         ResearchResult? research = null;
         SynthesisResult? synthesis = null;
         NarrativeResult? narrative = null;
+        ComposeResult? compose = null;
 
         foreach (var @event in run.OutgoingEvents)
         {
@@ -231,6 +253,13 @@ public sealed class StoryWorkflow : IStoryWorkflow
                 }:
                     narrative = narrativeResult;
                     break;
+                case
+                {
+                    ExecutorId: "compose",
+                    Data: ComposeResult composeResult
+                }:
+                    compose = composeResult;
+                    break;
             }
         }
 
@@ -258,12 +287,19 @@ public sealed class StoryWorkflow : IStoryWorkflow
                 "The Story Workflow completed without producing a Narrative result.");
         }
 
+        if (compose is null)
+        {
+            throw new InvalidOperationException(
+                "The Story Workflow completed without producing a Compose result.");
+        }
+
         var result = new StoryWorkflowResult(
             input,
             selectedIdea,
             research,
             synthesis,
-            narrative);
+            narrative,
+            compose);
 
         return result;
     }

@@ -3,6 +3,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Nueyon.Compose.Application.Agents;
+using Nueyon.Compose.Application.Agents.Compose;
 using Nueyon.Compose.Application.Agents.Idea;
 using Nueyon.Compose.Application.Agents.Narrative;
 using Nueyon.Compose.Application.Agents.Research;
@@ -123,6 +124,22 @@ public static class InfrastructureServiceExtensions
             return new NarrativeAgent(baseAiAgent, logger);
         });
 
+        // Register the Compose Agent
+        services.AddSingleton<IAgent<ComposeInput, ComposeResult>>(provider =>
+        {
+            var options = provider.GetRequiredService<IOptions<OpenAiOptions>>().Value;
+            options.Validate();
+
+            var logger = provider.GetRequiredService<ILogger<ComposeAgent>>();
+
+            var baseAiAgent = OpenAIAgentFactory.CreateOpenAIAgent(
+                options.ApiKey,
+                options.Model,
+                GetComposeSystemInstructions());
+
+            return new ComposeAgent(baseAiAgent, logger);
+        });
+
         return services;
     }
 
@@ -228,6 +245,24 @@ public static class InfrastructureServiceExtensions
         Do not write final content or platform-specific content.
 
         Preserve the facts, evidence, nuances, uncertainty, and meaning contained in the synthesis.
+
+        Return only valid JSON.
+        Do not use Markdown.
+        Do not wrap JSON in code fences.
+        Do not include explanations outside the JSON.
+        """;
+
+    private static string GetComposeSystemInstructions() =>
+        """
+        You are the Compose Agent in Nueyon.Compose.
+
+        Transform the supplied narrative into finished content for the requested format.
+
+        For Article format, produce a complete article with appropriate title, introduction, body, transitions, and conclusion where appropriate.
+
+        Do not merely copy or paraphrase the narrative.
+        Do not research or invent facts.
+        Preserve the narrative's facts, evidence, nuances, uncertainty, and intended meaning.
 
         Return only valid JSON.
         Do not use Markdown.

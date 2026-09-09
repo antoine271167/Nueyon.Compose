@@ -55,7 +55,10 @@ services.AddSingleton<IStoryWorkflow>(provider =>
     var narrativeAgent =
         provider.GetRequiredService<IAgent<NarrativeInput, NarrativeResult>>();
 
-    return new StoryWorkflow(ideaAgent, researchAgent, synthesizer, narrativeAgent);
+    var composeAgent =
+        provider.GetRequiredService<IAgent<ComposeInput, ComposeResult>>();
+
+    return new StoryWorkflow(ideaAgent, researchAgent, synthesizer, narrativeAgent, composeAgent);
 });
 
 // Add console application
