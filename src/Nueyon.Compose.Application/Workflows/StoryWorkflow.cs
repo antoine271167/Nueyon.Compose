@@ -16,7 +16,7 @@ public sealed class StoryWorkflow : IStoryWorkflow
     ///     Internally constructs and manages the Microsoft Agent Framework executors.
     /// </summary>
     public StoryWorkflow(
-        IAgent<ChatInput, IReadOnlyList<Idea>> ideaAgent,
+        IAgent<StoryInput, IReadOnlyList<Idea>> ideaAgent,
         IAgent<ResearchInput, ResearchResult> researchAgent,
         IAgent<SynthesisInput, SynthesisResult> synthesizer,
         IAgent<NarrativeInput, NarrativeResult> narrativeAgent,
@@ -35,7 +35,7 @@ public sealed class StoryWorkflow : IStoryWorkflow
         _composeAgent = composeAgent;
     }
 
-    private readonly IAgent<ChatInput, IReadOnlyList<Idea>> _ideaAgent;
+    private readonly IAgent<StoryInput, IReadOnlyList<Idea>> _ideaAgent;
     private readonly IAgent<ResearchInput, ResearchResult> _researchAgent;
     private readonly IAgent<SynthesisInput, SynthesisResult> _synthesizer;
     private readonly IAgent<NarrativeInput, NarrativeResult> _narrativeAgent;
@@ -45,7 +45,7 @@ public sealed class StoryWorkflow : IStoryWorkflow
     ///     Executes the story workflow with the provided input.
     /// </summary>
     public async Task<StoryWorkflowResult> RunAsync(
-        ChatInput input, CancellationToken cancellationToken = default)
+        StoryInput input, CancellationToken cancellationToken = default)
     {
         ArgumentNullException.ThrowIfNull(input);
 
@@ -86,7 +86,7 @@ public sealed class StoryWorkflow : IStoryWorkflow
     /// <summary>
     ///     Creates the Idea generation executor.
     /// </summary>
-    private FunctionExecutor<ChatInput, Idea[]> CreateIdeaExecutor() =>
+    private FunctionExecutor<StoryInput, Idea[]> CreateIdeaExecutor() =>
         new(
             "idea",
             async (input, context, cancellationToken) =>
@@ -141,12 +141,12 @@ public sealed class StoryWorkflow : IStoryWorkflow
             "research",
             async (selectedIdea, context, cancellationToken) =>
             {
-                var input = await context.ReadStateAsync<ChatInput>(
+                var input = await context.ReadStateAsync<StoryInput>(
                                 StoryWorkflowState.ChatInputKey,
                                 StoryWorkflowState.ScopeName,
                                 cancellationToken)
                             ?? throw new InvalidOperationException(
-                                "ChatInput was not found in the StoryWorkflow state.");
+                                "StoryInput was not found in the StoryWorkflow state.");
 
                 var researchInput = new ResearchInput(
                     input,
@@ -206,7 +206,7 @@ public sealed class StoryWorkflow : IStoryWorkflow
             });
 
     private static StoryWorkflowResult ExtractResult(
-        ChatInput input,
+        StoryInput input,
         Run run)
     {
         SelectedIdea? selectedIdea = null;

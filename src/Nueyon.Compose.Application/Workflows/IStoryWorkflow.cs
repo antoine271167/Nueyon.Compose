@@ -5,6 +5,6 @@ namespace Nueyon.Compose.Application.Workflows;
 public interface IStoryWorkflow
 {
     Task<StoryWorkflowResult> RunAsync(
-        ChatInput input,
+        StoryInput input,
         CancellationToken cancellationToken = default);
 }

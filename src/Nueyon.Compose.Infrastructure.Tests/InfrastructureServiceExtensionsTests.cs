@@ -51,7 +51,7 @@ public sealed class InfrastructureServiceExtensionsTests
         var provider = services.BuildServiceProvider();
 
         // Assert
-        var agent = provider.GetRequiredService<IAgent<ChatInput, IReadOnlyList<Idea>>>();
+        var agent = provider.GetRequiredService<IAgent<StoryInput, IReadOnlyList<Idea>>>();
         Assert.NotNull(agent);
         Assert.IsType<IdeaAgent>(agent);
     }
@@ -95,7 +95,7 @@ public sealed class InfrastructureServiceExtensionsTests
         // Act & Assert
         var exception =
             Assert.Throws<InvalidOperationException>(
-                provider.GetRequiredService<IAgent<ChatInput, IReadOnlyList<Idea>>>);
+                provider.GetRequiredService<IAgent<StoryInput, IReadOnlyList<Idea>>>);
         Assert.Contains("API key", exception.Message);
     }
 
@@ -117,7 +117,7 @@ public sealed class InfrastructureServiceExtensionsTests
         // Act & Assert
         var exception =
             Assert.Throws<InvalidOperationException>(
-                provider.GetRequiredService<IAgent<ChatInput, IReadOnlyList<Idea>>>);
+                provider.GetRequiredService<IAgent<StoryInput, IReadOnlyList<Idea>>>);
         Assert.Contains("model", exception.Message);
     }
 
@@ -146,8 +146,8 @@ public sealed class InfrastructureServiceExtensionsTests
         var provider = services.BuildServiceProvider();
 
         // Act
-        var agent1 = provider.GetRequiredService<IAgent<ChatInput, IReadOnlyList<Idea>>>();
-        var agent2 = provider.GetRequiredService<IAgent<ChatInput, IReadOnlyList<Idea>>>();
+        var agent1 = provider.GetRequiredService<IAgent<StoryInput, IReadOnlyList<Idea>>>();
+        var agent2 = provider.GetRequiredService<IAgent<StoryInput, IReadOnlyList<Idea>>>();
 
         // Assert
         Assert.Same(agent1, agent2);

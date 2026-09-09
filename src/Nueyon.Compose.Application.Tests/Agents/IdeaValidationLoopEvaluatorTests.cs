@@ -80,7 +80,7 @@ public sealed class IdeaValidationLoopEvaluatorBehavioralTests
         var loopOptions = new LoopAgentOptions { MaxIterations = 10 };
         var loopAgent = new LoopAgent(agent, _evaluator, loopOptions);
 
-        var input = new ChatInput("Test input");
+        var input = new StoryInput("Test input");
 
         // Act
         var result = await loopAgent.RunAsync(input.Content, null, null, CancellationToken.None);
@@ -105,7 +105,7 @@ public sealed class IdeaValidationLoopEvaluatorBehavioralTests
         var loopOptions = new LoopAgentOptions { MaxIterations = 10 };
         var loopAgent = new LoopAgent(agent, _evaluator, loopOptions);
 
-        var input = new ChatInput("Test input");
+        var input = new StoryInput("Test input");
 
         // Act
         var result = await loopAgent.RunAsync(input.Content, null, null, CancellationToken.None);
@@ -131,7 +131,7 @@ public sealed class IdeaValidationLoopEvaluatorBehavioralTests
         var loopOptions = new LoopAgentOptions { MaxIterations = 10 };
         var loopAgent = new LoopAgent(agent, _evaluator, loopOptions);
 
-        var input = new ChatInput("Test input");
+        var input = new StoryInput("Test input");
 
         // Act
         var result = await loopAgent.RunAsync(input.Content, null, null, CancellationToken.None);
@@ -155,7 +155,7 @@ public sealed class IdeaValidationLoopEvaluatorBehavioralTests
         var loopOptions = new LoopAgentOptions { MaxIterations = 4 };
         var loopAgent = new LoopAgent(agent, _evaluator, loopOptions);
 
-        var input = new ChatInput("Test input");
+        var input = new StoryInput("Test input");
 
         // Act & Assert
         var exception = await Assert.ThrowsAsync<InvalidOperationException>(() =>
@@ -182,7 +182,7 @@ public sealed class IdeaValidationLoopEvaluatorBehavioralTests
         var loopOptions = new LoopAgentOptions { MaxIterations = 4 };
         var loopAgent = new LoopAgent(agent, _evaluator, loopOptions);
 
-        var input = new ChatInput("Test input");
+        var input = new StoryInput("Test input");
 
         // Act & Assert
         await Assert.ThrowsAsync<InvalidOperationException>(() =>
@@ -205,7 +205,7 @@ public sealed class IdeaValidationLoopEvaluatorBehavioralTests
         var loopOptions = new LoopAgentOptions { MaxIterations = 10 };
         var loopAgent = new LoopAgent(agent, _evaluator, loopOptions);
 
-        var input = new ChatInput("Test input");
+        var input = new StoryInput("Test input");
 
         // Act
         var result = await loopAgent.RunAsync(input.Content, null, null, CancellationToken.None);
@@ -230,7 +230,7 @@ public sealed class IdeaValidationLoopEvaluatorBehavioralTests
         var loopOptions = new LoopAgentOptions { MaxIterations = 10 };
         var loopAgent = new LoopAgent(agent, _evaluator, loopOptions);
 
-        var input = new ChatInput("Test input");
+        var input = new StoryInput("Test input");
 
         // Act
         var result = await loopAgent.RunAsync(input.Content, null, null, CancellationToken.None);
@@ -255,7 +255,7 @@ public sealed class IdeaValidationLoopEvaluatorBehavioralTests
         var loopOptions = new LoopAgentOptions { MaxIterations = 4 };
         var loopAgent = new LoopAgent(agent, _evaluator, loopOptions);
 
-        var input = new ChatInput("Test input");
+        var input = new StoryInput("Test input");
 
         // Act & Assert
         var exception = await Assert.ThrowsAsync<InvalidOperationException>(() =>
@@ -282,7 +282,7 @@ public sealed class IdeaValidationLoopEvaluatorBehavioralTests
         var loopOptions = new LoopAgentOptions { MaxIterations = 4 };
         var loopAgent = new LoopAgent(agent, _evaluator, loopOptions);
 
-        var input = new ChatInput("Test input");
+        var input = new StoryInput("Test input");
 
         // Act & Assert
         var exception = await Assert.ThrowsAsync<InvalidOperationException>(() =>

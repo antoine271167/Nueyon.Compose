@@ -373,10 +373,10 @@ internal sealed class FakeConsole(IEnumerable<string> inputLines) : IConsole
 /// </summary>
 internal sealed class FakeStoryWorkflow(Idea ideaToReturn) : IStoryWorkflow
 {
-    public ChatInput? CapturedInput { get; private set; }
+    public StoryInput? CapturedInput { get; private set; }
 
     public Task<StoryWorkflowResult> RunAsync(
-        ChatInput input,
+        StoryInput input,
         CancellationToken cancellationToken = default)
     {
         ArgumentNullException.ThrowIfNull(input);
@@ -398,7 +398,7 @@ internal sealed class FakeStoryWorkflow(Idea ideaToReturn) : IStoryWorkflow
 /// <summary>
 ///     Tracking fake agent that counts executions and records inputs.
 /// </summary>
-internal sealed class TrackingFakeAgent : IAgent<ChatInput, IReadOnlyList<Idea>>
+internal sealed class TrackingFakeAgent : IAgent<StoryInput, IReadOnlyList<Idea>>
 {
     public int ExecutionCount { get; private set; }
     public string? LastInputContent { get; private set; }
@@ -407,7 +407,7 @@ internal sealed class TrackingFakeAgent : IAgent<ChatInput, IReadOnlyList<Idea>>
 
     public Task<IReadOnlyList<Idea>> ExecuteAsync(
         AgentExecutionContext executionContext,
-        ChatInput input,
+        StoryInput input,
         CancellationToken cancellationToken = default)
     {
         ArgumentNullException.ThrowIfNull(executionContext);
@@ -434,11 +434,11 @@ internal sealed class TrackingFakeAgent : IAgent<ChatInput, IReadOnlyList<Idea>>
 /// <summary>
 ///     Fake agent that always throws an exception.
 /// </summary>
-internal sealed class FailingFakeAgent : IAgent<ChatInput, IReadOnlyList<Idea>>
+internal sealed class FailingFakeAgent : IAgent<StoryInput, IReadOnlyList<Idea>>
 {
     public Task<IReadOnlyList<Idea>> ExecuteAsync(
         AgentExecutionContext executionContext,
-        ChatInput input,
+        StoryInput input,
         CancellationToken cancellationToken = default) =>
         throw new InvalidOperationException("Simulated agent failure for testing.");
 }
@@ -446,13 +446,13 @@ internal sealed class FailingFakeAgent : IAgent<ChatInput, IReadOnlyList<Idea>>
 /// <summary>
 ///     Custom fake agent that returns specified ideas.
 /// </summary>
-internal sealed class CustomFakeAgent(IEnumerable<Idea> ideas) : IAgent<ChatInput, IReadOnlyList<Idea>>
+internal sealed class CustomFakeAgent(IEnumerable<Idea> ideas) : IAgent<StoryInput, IReadOnlyList<Idea>>
 {
     private readonly IReadOnlyList<Idea> _ideas = ideas.ToList().AsReadOnly();
 
     public Task<IReadOnlyList<Idea>> ExecuteAsync(
         AgentExecutionContext executionContext,
-        ChatInput input,
+        StoryInput input,
         CancellationToken cancellationToken = default)
     {
         ArgumentNullException.ThrowIfNull(executionContext);
@@ -464,13 +464,13 @@ internal sealed class CustomFakeAgent(IEnumerable<Idea> ideas) : IAgent<ChatInpu
 /// <summary>
 ///     Fake agent that observes and records the cancellation token.
 /// </summary>
-internal sealed class CancellationObservingFakeAgent : IAgent<ChatInput, IReadOnlyList<Idea>>
+internal sealed class CancellationObservingFakeAgent : IAgent<StoryInput, IReadOnlyList<Idea>>
 {
     public bool ReceivedCancellationToken { get; private set; }
 
     public Task<IReadOnlyList<Idea>> ExecuteAsync(
         AgentExecutionContext executionContext,
-        ChatInput input,
+        StoryInput input,
         CancellationToken cancellationToken = default)
     {
         ArgumentNullException.ThrowIfNull(executionContext);

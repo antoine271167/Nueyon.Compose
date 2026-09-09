@@ -47,7 +47,7 @@ public static class InfrastructureServiceExtensions
 
         // Register the Idea Agent with LoopAgent-backed validation and retry logic
         // The agent is created as a LoopAgent wrapping the OpenAI AIAgent
-        services.AddSingleton<IAgent<ChatInput, IReadOnlyList<Idea>>>(provider =>
+        services.AddSingleton<IAgent<StoryInput, IReadOnlyList<Idea>>>(provider =>
         {
             var options = provider.GetRequiredService<IOptions<OpenAiOptions>>().Value;
             options.Validate();

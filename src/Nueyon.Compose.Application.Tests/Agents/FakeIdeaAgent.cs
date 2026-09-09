@@ -7,7 +7,7 @@ namespace Nueyon.Compose.Application.Tests.Agents;
 ///     A deterministic fake IDEA agent that always returns the same example idea.
 ///     Used for testing the flow architecture without requiring a real LLM.
 /// </summary>
-public sealed class FakeIdeaAgent : IAgent<ChatInput, IReadOnlyList<Idea>>
+public sealed class FakeIdeaAgent : IAgent<StoryInput, IReadOnlyList<Idea>>
 {
     /// <summary>
     ///     Executes the fake agent by returning a single deterministic example idea.
@@ -18,7 +18,7 @@ public sealed class FakeIdeaAgent : IAgent<ChatInput, IReadOnlyList<Idea>>
     /// <returns>A read-only list containing exactly one example idea.</returns>
     public Task<IReadOnlyList<Idea>> ExecuteAsync(
         AgentExecutionContext executionContext,
-        ChatInput input,
+        StoryInput input,
         CancellationToken cancellationToken = default)
     {
         ArgumentNullException.ThrowIfNull(executionContext);

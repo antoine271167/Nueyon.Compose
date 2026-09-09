@@ -32,7 +32,7 @@ public sealed class StoryWorkflowTests
 
         var workflow = new StoryWorkflow(ideaAgent, researchAgent, synthesizer, narrativeAgent, composeAgent);
 
-        var input = new ChatInput("Test input");
+        var input = new StoryInput("Test input");
 
         // Act
         var result = await workflow.RunAsync(input);
@@ -84,7 +84,7 @@ public sealed class StoryWorkflowTests
         var workflow = new StoryWorkflow(ideaAgent, researchAgent, synthesizer, narrativeAgent, composeAgent);
 
         const string expectedContent = "This is the user's input";
-        var input = new ChatInput(expectedContent);
+        var input = new StoryInput(expectedContent);
 
         // Act
         await workflow.RunAsync(input);
@@ -122,7 +122,7 @@ public sealed class StoryWorkflowTests
 
         var workflow = new StoryWorkflow(ideaAgent, researchAgent, synthesizer, narrativeAgent, composeAgent);
 
-        var input = new ChatInput(
+        var input = new StoryInput(
             "Test input"
         );
 
@@ -158,7 +158,7 @@ public sealed class StoryWorkflowTests
 
         var workflow = new StoryWorkflow(ideaAgent, researchAgent, synthesizer, narrativeAgent, composeAgent);
 
-        var input = new ChatInput("Test input");
+        var input = new StoryInput("Test input");
 
         // Act & Assert
         await Assert.ThrowsAsync<InvalidOperationException>(() => workflow.RunAsync(input));
@@ -167,7 +167,7 @@ public sealed class StoryWorkflowTests
     /// <summary>
     ///     Integration test with the real StoryWorkflow, real MAF workflow,
     ///     and fake agents. Verifies the complete execution path from
-    ///     ChatInput through idea generation, idea selection, and research.
+    ///     StoryInput through idea generation, idea selection, and research.
     /// </summary>
     [Fact]
     public async Task RunAsync_WithFakeAgent_ExecutesEndToEnd()
@@ -184,7 +184,7 @@ public sealed class StoryWorkflowTests
 
         var workflow = new StoryWorkflow(ideaAgent, researchAgent, synthesizer, narrativeAgent, composeAgent);
 
-        var input = new ChatInput("Compose a story about a curious cat");
+        var input = new StoryInput("Compose a story about a curious cat");
 
         // Act
         var result = await workflow.RunAsync(input);
@@ -232,7 +232,7 @@ public sealed class StoryWorkflowTests
         var composeAgent = new CapturingFakeComposeAgent(new ComposeResult("composed content"));
 
         var workflow = new StoryWorkflow(ideaAgent, researchAgent, synthesizer, narrativeAgent, composeAgent);
-        var input = new ChatInput("Test input");
+        var input = new StoryInput("Test input");
 
         // Act
         await workflow.RunAsync(input);
@@ -243,7 +243,7 @@ public sealed class StoryWorkflowTests
         Assert.Equal(ContentFormat.Article, composeAgent.CapturedInput.Format);
     }
 
-    private sealed class CapturingFakeAgent(Idea? ideaToReturn = null) : IAgent<ChatInput, IReadOnlyList<Idea>>
+    private sealed class CapturingFakeAgent(Idea? ideaToReturn = null) : IAgent<StoryInput, IReadOnlyList<Idea>>
     {
         private readonly IReadOnlyList<Idea>? _ideaToReturn = ideaToReturn is not null
             ? new List<Idea> { ideaToReturn }.AsReadOnly()
@@ -251,7 +251,7 @@ public sealed class StoryWorkflowTests
 
         public Task<IReadOnlyList<Idea>> ExecuteAsync(
             AgentExecutionContext executionContext,
-            ChatInput input,
+            StoryInput input,
             CancellationToken cancellationToken = default)
         {
             ArgumentNullException.ThrowIfNull(executionContext);
@@ -322,14 +322,14 @@ public sealed class StoryWorkflowTests
     }
 
     private sealed class FailingFakeAgent(Exception exceptionToThrow)
-        : IAgent<ChatInput, IReadOnlyList<Idea>>
+        : IAgent<StoryInput, IReadOnlyList<Idea>>
     {
         private readonly Exception _exceptionToThrow =
             exceptionToThrow ?? throw new ArgumentNullException(nameof(exceptionToThrow));
 
         public Task<IReadOnlyList<Idea>> ExecuteAsync(
             AgentExecutionContext executionContext,
-            ChatInput input,
+            StoryInput input,
             CancellationToken cancellationToken = default) =>
             Task.FromException<IReadOnlyList<Idea>>(_exceptionToThrow);
     }

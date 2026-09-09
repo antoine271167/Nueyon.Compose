@@ -29,7 +29,7 @@ public sealed class AgentCancellationTests
         var aiAgent = chatClient.AsAIAgent("Test", "TestAgent");
         var ideaAgent = new IdeaAgent(aiAgent, logCapture);
         var executionContext = new AgentExecutionContext(Guid.NewGuid());
-        var input = new ChatInput("Test input");
+        var input = new StoryInput("Test input");
 
         var cts = new CancellationTokenSource();
         await cts.CancelAsync();
@@ -75,7 +75,7 @@ public sealed class AgentCancellationTests
         var aiAgent = chatClient.AsAIAgent("Test", "TestAgent");
         var ideaAgent = new IdeaAgent(aiAgent, logCapture);
         var executionContext = new AgentExecutionContext(Guid.NewGuid());
-        var input = new ChatInput("Test input");
+        var input = new StoryInput("Test input");
 
         // Act & Assert
         var ex = await Assert.ThrowsAsync<InvalidOperationException>(() =>
@@ -128,7 +128,7 @@ public sealed class AgentCancellationTests
         var aiAgent = chatClient.AsAIAgent("Test", "TestAgent");
         var ideaAgent = new IdeaAgent(aiAgent, logCapture);
         var executionContext = new AgentExecutionContext(Guid.NewGuid());
-        var input = new ChatInput("Test input");
+        var input = new StoryInput("Test input");
 
         // Act
         var result = await ideaAgent.ExecuteAsync(executionContext, input, CancellationToken.None);
@@ -312,7 +312,7 @@ public sealed class AgentCancellationTests
             "Test Rationale");
 
         return new ResearchInput(
-            new ChatInput("Test input"),
+            new StoryInput("Test input"),
             new SelectedIdea(idea));
     }
 

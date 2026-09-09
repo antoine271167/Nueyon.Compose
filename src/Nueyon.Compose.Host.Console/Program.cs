@@ -44,7 +44,7 @@ services.AddSingleton<IConsole, SystemConsole>();
 services.AddSingleton<IStoryWorkflow>(provider =>
 {
     var ideaAgent =
-        provider.GetRequiredService<IAgent<ChatInput, IReadOnlyList<Idea>>>();
+        provider.GetRequiredService<IAgent<StoryInput, IReadOnlyList<Idea>>>();
 
     var researchAgent =
         provider.GetRequiredService<IAgent<ResearchInput, ResearchResult>>();

@@ -3,7 +3,7 @@
 namespace Nueyon.Compose.Application.Workflows;
 
 public sealed record StoryWorkflowResult(
-    ChatInput Input,
+    StoryInput Input,
     SelectedIdea SelectedIdea,
     ResearchResult Research,
     SynthesisResult Synthesis,

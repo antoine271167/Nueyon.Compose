@@ -12,7 +12,7 @@ namespace Nueyon.Compose.Application.Agents.Idea;
 ///     Transforms a user's idea or thought into one or more concrete content ideas.
 ///     Provides observability through structured logging of agent invocation lifecycle events.
 /// </summary>
-public sealed class IdeaAgent : IAgent<ChatInput, IReadOnlyList<Domain.Idea>>
+public sealed class IdeaAgent : IAgent<StoryInput, IReadOnlyList<Domain.Idea>>
 {
     /// <summary>
     ///     Initializes a new instance of the IdeaAgent with the specified AIAgent and logger.
@@ -42,7 +42,7 @@ public sealed class IdeaAgent : IAgent<ChatInput, IReadOnlyList<Domain.Idea>>
     /// <exception cref="InvalidOperationException">Thrown when the agent response is not valid JSON.</exception>
     public async Task<IReadOnlyList<Domain.Idea>> ExecuteAsync(
         AgentExecutionContext executionContext,
-        ChatInput input,
+        StoryInput input,
         CancellationToken cancellationToken = default)
     {
         ArgumentNullException.ThrowIfNull(executionContext);
