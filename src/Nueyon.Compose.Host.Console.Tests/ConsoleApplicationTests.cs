@@ -331,19 +331,6 @@ public sealed class ConsoleApplicationTests
     }
 
     private static TrackingFakeResearchAgent CreateResearchAgent() => new();
-
-    private static StoryWorkflow CreateWorkflow(
-        IAgent<ChatInput, IReadOnlyList<Idea>> ideaAgent,
-        IAgent<ResearchInput, ResearchResult>? researchAgent = null,
-        IAgent<SynthesisInput, SynthesisResult>? synthesizer = null,
-        IAgent<NarrativeInput, NarrativeResult>? narrativeAgent = null,
-        IAgent<ComposeInput, ComposeResult>? composeAgent = null) =>
-        new(
-            ideaAgent,
-            researchAgent ?? CreateResearchAgent(),
-            synthesizer ?? new FakeSynthesizerAgent(new SynthesisResult("synthesis content")),
-            narrativeAgent ?? new FakeNarrativeAgent(new NarrativeResult("narrative content")),
-            composeAgent ?? new FakeComposeAgent(new ComposeResult("complete article content")));
 }
 
 /// <summary>
