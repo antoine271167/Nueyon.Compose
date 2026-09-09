@@ -20,7 +20,8 @@ public sealed class ConsoleApplicationTests
         var agent = new TrackingFakeAgent();
         var researchAgent = CreateResearchAgent();
         var synthesizer = new FakeSynthesizerAgent(new SynthesisResult("synthesis content"));
-        var workflow = new StoryWorkflow(agent, researchAgent, synthesizer);
+        var narrativeAgent = new FakeNarrativeAgent(new NarrativeResult("narrative content"));
+        var workflow = new StoryWorkflow(agent, researchAgent, synthesizer, narrativeAgent);
         var logger = new MockLogger<ConsoleApplication>();
         var app = new ConsoleApplication(workflow, logger, console);
 
@@ -47,7 +48,8 @@ public sealed class ConsoleApplicationTests
         var agent = new TrackingFakeAgent();
         var researchAgent = CreateResearchAgent();
         var synthesizer = new FakeSynthesizerAgent(new SynthesisResult("synthesis content"));
-        var workflow = new StoryWorkflow(agent, researchAgent, synthesizer);
+        var narrativeAgent = new FakeNarrativeAgent(new NarrativeResult("narrative content"));
+        var workflow = new StoryWorkflow(agent, researchAgent, synthesizer, narrativeAgent);
         var logger = new MockLogger<ConsoleApplication>();
         var app = new ConsoleApplication(workflow, logger, console);
 
@@ -74,7 +76,8 @@ public sealed class ConsoleApplicationTests
         var agent = new TrackingFakeAgent();
         var researchAgent = CreateResearchAgent();
         var synthesizer = new FakeSynthesizerAgent(new SynthesisResult("synthesis content"));
-        var workflow = new StoryWorkflow(agent, researchAgent, synthesizer);
+        var narrativeAgent = new FakeNarrativeAgent(new NarrativeResult("narrative content"));
+        var workflow = new StoryWorkflow(agent, researchAgent, synthesizer, narrativeAgent);
         var logger = new MockLogger<ConsoleApplication>();
         var app = new ConsoleApplication(workflow, logger, console);
 
@@ -99,7 +102,8 @@ public sealed class ConsoleApplicationTests
         var agent = new TrackingFakeAgent();
         var researchAgent = CreateResearchAgent();
         var synthesizer = new FakeSynthesizerAgent(new SynthesisResult("synthesis content"));
-        var workflow = new StoryWorkflow(agent, researchAgent, synthesizer);
+        var narrativeAgent = new FakeNarrativeAgent(new NarrativeResult("narrative content"));
+        var workflow = new StoryWorkflow(agent, researchAgent, synthesizer, narrativeAgent);
         var logger = new MockLogger<ConsoleApplication>();
         var app = new ConsoleApplication(workflow, logger, console);
 
@@ -127,7 +131,8 @@ public sealed class ConsoleApplicationTests
         var agent = new TrackingFakeAgent();
         var researchAgent = CreateResearchAgent();
         var synthesizer = new FakeSynthesizerAgent(new SynthesisResult("synthesis content"));
-        var workflow = new StoryWorkflow(agent, researchAgent, synthesizer);
+        var narrativeAgent = new FakeNarrativeAgent(new NarrativeResult("narrative content"));
+        var workflow = new StoryWorkflow(agent, researchAgent, synthesizer, narrativeAgent);
         var logger = new MockLogger<ConsoleApplication>();
         var app = new ConsoleApplication(workflow, logger, console);
 
@@ -152,7 +157,8 @@ public sealed class ConsoleApplicationTests
         var agent = new TrackingFakeAgent();
         var researchAgent = CreateResearchAgent();
         var synthesizer = new FakeSynthesizerAgent(new SynthesisResult("synthesis content"));
-        var workflow = new StoryWorkflow(agent, researchAgent, synthesizer);
+        var narrativeAgent = new FakeNarrativeAgent(new NarrativeResult("narrative content"));
+        var workflow = new StoryWorkflow(agent, researchAgent, synthesizer, narrativeAgent);
         var logger = new MockLogger<ConsoleApplication>();
         var app = new ConsoleApplication(workflow, logger, console);
 
@@ -176,7 +182,8 @@ public sealed class ConsoleApplicationTests
         var agent = new FailingFakeAgent();
         var researchAgent = CreateResearchAgent();
         var synthesizer = new FakeSynthesizerAgent(new SynthesisResult("synthesis content"));
-        var workflow = new StoryWorkflow(agent, researchAgent, synthesizer);
+        var narrativeAgent = new FakeNarrativeAgent(new NarrativeResult("narrative content"));
+        var workflow = new StoryWorkflow(agent, researchAgent, synthesizer, narrativeAgent);
         var logger = new MockLogger<ConsoleApplication>();
         var app = new ConsoleApplication(workflow, logger, console);
 
@@ -214,7 +221,8 @@ public sealed class ConsoleApplicationTests
         ]);
         var researchAgent = CreateResearchAgent();
         var synthesizer = new FakeSynthesizerAgent(new SynthesisResult("synthesis content"));
-        var workflow = new StoryWorkflow(agent, researchAgent, synthesizer);
+        var narrativeAgent = new FakeNarrativeAgent(new NarrativeResult("narrative content"));
+        var workflow = new StoryWorkflow(agent, researchAgent, synthesizer, narrativeAgent);
         var logger = new MockLogger<ConsoleApplication>();
         var app = new ConsoleApplication(workflow, logger, console);
 
@@ -241,7 +249,8 @@ public sealed class ConsoleApplicationTests
         var agent = new CustomFakeAgent(Array.Empty<Idea>());
         var researchAgent = CreateResearchAgent();
         var synthesizer = new FakeSynthesizerAgent(new SynthesisResult("synthesis content"));
-        var workflow = new StoryWorkflow(agent, researchAgent, synthesizer);
+        var narrativeAgent = new FakeNarrativeAgent(new NarrativeResult("narrative content"));
+        var workflow = new StoryWorkflow(agent, researchAgent, synthesizer, narrativeAgent);
         var logger = new MockLogger<ConsoleApplication>();
         var app = new ConsoleApplication(workflow, logger, console);
 
@@ -266,7 +275,8 @@ public sealed class ConsoleApplicationTests
         var agent = new CancellationObservingFakeAgent();
         var researchAgent = CreateResearchAgent();
         var synthesizer = new FakeSynthesizerAgent(new SynthesisResult("synthesis content"));
-        var workflow = new StoryWorkflow(agent, researchAgent, synthesizer);
+        var narrativeAgent = new FakeNarrativeAgent(new NarrativeResult("narrative content"));
+        var workflow = new StoryWorkflow(agent, researchAgent, synthesizer, narrativeAgent);
         var logger = new MockLogger<ConsoleApplication>();
         var app = new ConsoleApplication(workflow, logger, console);
         var cts = new CancellationTokenSource();
@@ -311,6 +321,17 @@ public sealed class ConsoleApplicationTests
     }
 
     private static TrackingFakeResearchAgent CreateResearchAgent() => new();
+
+    private static StoryWorkflow CreateWorkflow(
+        IAgent<ChatInput, IReadOnlyList<Idea>> ideaAgent,
+        IAgent<ResearchInput, ResearchResult>? researchAgent = null,
+        IAgent<SynthesisInput, SynthesisResult>? synthesizer = null,
+        IAgent<NarrativeInput, NarrativeResult>? narrativeAgent = null) =>
+        new(
+            ideaAgent,
+            researchAgent ?? CreateResearchAgent(),
+            synthesizer ?? new FakeSynthesizerAgent(new SynthesisResult("synthesis content")),
+            narrativeAgent ?? new FakeNarrativeAgent(new NarrativeResult("narrative content")));
 }
 
 /// <summary>
@@ -367,7 +388,8 @@ internal sealed class FakeStoryWorkflow(Idea ideaToReturn) : IStoryWorkflow
             input,
             selectedIdea,
             new ResearchResult("Test research"),
-            new SynthesisResult("test synthesis")
+            new SynthesisResult("test synthesis"),
+            new NarrativeResult("test narrative")
         );
         return Task.FromResult(result);
     }
@@ -493,6 +515,20 @@ internal sealed class FakeSynthesizerAgent(SynthesisResult result) : IAgent<Synt
     public Task<SynthesisResult> ExecuteAsync(
         AgentExecutionContext executionContext,
         SynthesisInput input,
+        CancellationToken cancellationToken = default)
+    {
+        ArgumentNullException.ThrowIfNull(executionContext);
+        ArgumentNullException.ThrowIfNull(input);
+
+        return Task.FromResult(result);
+    }
+}
+
+internal sealed class FakeNarrativeAgent(NarrativeResult result) : IAgent<NarrativeInput, NarrativeResult>
+{
+    public Task<NarrativeResult> ExecuteAsync(
+        AgentExecutionContext executionContext,
+        NarrativeInput input,
         CancellationToken cancellationToken = default)
     {
         ArgumentNullException.ThrowIfNull(executionContext);

@@ -18,20 +18,24 @@ public sealed class StoryWorkflow : IStoryWorkflow
     public StoryWorkflow(
         IAgent<ChatInput, IReadOnlyList<Idea>> ideaAgent,
         IAgent<ResearchInput, ResearchResult> researchAgent,
-        IAgent<SynthesisInput, SynthesisResult> synthesizer)
+        IAgent<SynthesisInput, SynthesisResult> synthesizer,
+        IAgent<NarrativeInput, NarrativeResult> narrativeAgent)
     {
         ArgumentNullException.ThrowIfNull(ideaAgent);
         ArgumentNullException.ThrowIfNull(researchAgent);
         ArgumentNullException.ThrowIfNull(synthesizer);
+        ArgumentNullException.ThrowIfNull(narrativeAgent);
 
         _ideaAgent = ideaAgent;
         _researchAgent = researchAgent;
         _synthesizer = synthesizer;
+        _narrativeAgent = narrativeAgent;
     }
 
     private readonly IAgent<ChatInput, IReadOnlyList<Idea>> _ideaAgent;
     private readonly IAgent<ResearchInput, ResearchResult> _researchAgent;
     private readonly IAgent<SynthesisInput, SynthesisResult> _synthesizer;
+    private readonly IAgent<NarrativeInput, NarrativeResult> _narrativeAgent;
 
     /// <summary>
     ///     Executes the story workflow with the provided input.
@@ -60,6 +64,7 @@ public sealed class StoryWorkflow : IStoryWorkflow
         var ideaSelectionExecutor = CreateIdeaSelectionExecutor();
         var researchExecutor = CreateResearchExecutor();
         var synthesisExecutor = CreateSynthesisExecutor();
+        var narrativeExecutor = CreateNarrativeExecutor();
 
         var builder = new WorkflowBuilder(ideaExecutor);
 
@@ -67,6 +72,7 @@ public sealed class StoryWorkflow : IStoryWorkflow
         builder.AddEdge(ideaSelectionExecutor, researchExecutor);
 
         builder.AddEdge(researchExecutor, synthesisExecutor);
+        builder.AddEdge(synthesisExecutor, narrativeExecutor);
 
         return builder.Build();
     }
@@ -163,6 +169,21 @@ public sealed class StoryWorkflow : IStoryWorkflow
                     cancellationToken);
             });
 
+    private FunctionExecutor<SynthesisResult, NarrativeResult> CreateNarrativeExecutor() =>
+        new(
+            "narrative",
+            async (synthesis, _, cancellationToken) =>
+            {
+                var input = new NarrativeInput(synthesis);
+
+                var executionContext = new AgentExecutionContext(Guid.NewGuid());
+
+                return await _narrativeAgent.ExecuteAsync(
+                    executionContext,
+                    input,
+                    cancellationToken);
+            });
+
     private static StoryWorkflowResult ExtractResult(
         ChatInput input,
         Run run)
@@ -170,6 +191,7 @@ public sealed class StoryWorkflow : IStoryWorkflow
         SelectedIdea? selectedIdea = null;
         ResearchResult? research = null;
         SynthesisResult? synthesis = null;
+        NarrativeResult? narrative = null;
 
         foreach (var @event in run.OutgoingEvents)
         {
@@ -202,6 +224,13 @@ public sealed class StoryWorkflow : IStoryWorkflow
                 }:
                     synthesis = synthesisResult;
                     break;
+                case
+                {
+                    ExecutorId: "narrative",
+                    Data: NarrativeResult narrativeResult
+                }:
+                    narrative = narrativeResult;
+                    break;
             }
         }
 
@@ -223,11 +252,18 @@ public sealed class StoryWorkflow : IStoryWorkflow
                 "The Story Workflow completed without producing a Synthesis result.");
         }
 
+        if (narrative is null)
+        {
+            throw new InvalidOperationException(
+                "The Story Workflow completed without producing a Narrative result.");
+        }
+
         var result = new StoryWorkflowResult(
             input,
             selectedIdea,
             research,
-            synthesis);
+            synthesis,
+            narrative);
 
         return result;
     }

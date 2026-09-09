@@ -27,8 +27,9 @@ public sealed class StoryWorkflowTests
         var ideaAgent = new CapturingFakeAgent(expectedIdea);
         var researchAgent = new FakeResearchAgent(expectedResearch);
         var synthesizer = new FakeSynthesizerAgent(new SynthesisResult("synthesis content"));
+        var narrativeAgent = new FakeNarrativeAgent(new NarrativeResult("narrative content"));
 
-        var workflow = new StoryWorkflow(ideaAgent, researchAgent, synthesizer);
+        var workflow = new StoryWorkflow(ideaAgent, researchAgent, synthesizer, narrativeAgent);
 
         var input = new ChatInput("Test input");
 
@@ -48,6 +49,12 @@ public sealed class StoryWorkflowTests
 
         Assert.NotNull(result.Research);
         Assert.Equal(expectedResearch.Content, result.Research.Content);
+
+        Assert.NotNull(result.Synthesis);
+        Assert.Equal("synthesis content", result.Synthesis.Content);
+
+        Assert.NotNull(result.Narrative);
+        Assert.Equal("narrative content", result.Narrative.Content);
     }
 
     [Fact]
@@ -67,8 +74,9 @@ public sealed class StoryWorkflowTests
 
         var researchAgent = new CapturingFakeResearchAgent(researchResult);
         var synthesizer = new FakeSynthesizerAgent(new SynthesisResult("synthesis content"));
+        var narrativeAgent = new FakeNarrativeAgent(new NarrativeResult("narrative content"));
 
-        var workflow = new StoryWorkflow(ideaAgent, researchAgent, synthesizer);
+        var workflow = new StoryWorkflow(ideaAgent, researchAgent, synthesizer, narrativeAgent);
 
         const string expectedContent = "This is the user's input";
         var input = new ChatInput(expectedContent);
@@ -104,8 +112,9 @@ public sealed class StoryWorkflowTests
             ));
 
         var synthesizer = new FakeSynthesizerAgent(new SynthesisResult("synthesis content"));
+        var narrativeAgent = new FakeNarrativeAgent(new NarrativeResult("narrative content"));
 
-        var workflow = new StoryWorkflow(ideaAgent, researchAgent, synthesizer);
+        var workflow = new StoryWorkflow(ideaAgent, researchAgent, synthesizer, narrativeAgent);
 
         var input = new ChatInput(
             "Test input"
@@ -138,8 +147,9 @@ public sealed class StoryWorkflowTests
             new ResearchResult("Test research content"));
 
         var synthesizer = new FakeSynthesizerAgent(new SynthesisResult("synthesis content"));
+        var narrativeAgent = new FakeNarrativeAgent(new NarrativeResult("narrative content"));
 
-        var workflow = new StoryWorkflow(ideaAgent, researchAgent, synthesizer);
+        var workflow = new StoryWorkflow(ideaAgent, researchAgent, synthesizer, narrativeAgent);
 
         var input = new ChatInput("Test input");
 
@@ -162,8 +172,9 @@ public sealed class StoryWorkflowTests
 
         var researchAgent = new FakeResearchAgent(researchResult);
         var synthesizer = new FakeSynthesizerAgent(new SynthesisResult("synthesis content"));
+        var narrativeAgent = new FakeNarrativeAgent(new NarrativeResult("narrative content"));
 
-        var workflow = new StoryWorkflow(ideaAgent, researchAgent, synthesizer);
+        var workflow = new StoryWorkflow(ideaAgent, researchAgent, synthesizer, narrativeAgent);
 
         var input = new ChatInput("Compose a story about a curious cat");
 
@@ -209,6 +220,20 @@ public sealed class StoryWorkflowTests
         public Task<SynthesisResult> ExecuteAsync(
             AgentExecutionContext executionContext,
             SynthesisInput input,
+            CancellationToken cancellationToken = default)
+        {
+            ArgumentNullException.ThrowIfNull(executionContext);
+            ArgumentNullException.ThrowIfNull(input);
+
+            return Task.FromResult(result);
+        }
+    }
+
+    private sealed class FakeNarrativeAgent(NarrativeResult result) : IAgent<NarrativeInput, NarrativeResult>
+    {
+        public Task<NarrativeResult> ExecuteAsync(
+            AgentExecutionContext executionContext,
+            NarrativeInput input,
             CancellationToken cancellationToken = default)
         {
             ArgumentNullException.ThrowIfNull(executionContext);

@@ -4,6 +4,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Nueyon.Compose.Application.Agents;
 using Nueyon.Compose.Application.Agents.Idea;
+using Nueyon.Compose.Application.Agents.Narrative;
 using Nueyon.Compose.Application.Agents.Research;
 using Nueyon.Compose.Application.Agents.Synthesis;
 using Nueyon.Compose.Application.Validation;
@@ -106,6 +107,22 @@ public static class InfrastructureServiceExtensions
             return new SynthesizerAgent(baseAiAgent, logger);
         });
 
+        // Register the Narrative Agent
+        services.AddSingleton<IAgent<NarrativeInput, NarrativeResult>>(provider =>
+        {
+            var options = provider.GetRequiredService<IOptions<OpenAiOptions>>().Value;
+            options.Validate();
+
+            var logger = provider.GetRequiredService<ILogger<NarrativeAgent>>();
+
+            var baseAiAgent = OpenAIAgentFactory.CreateOpenAIAgent(
+                options.ApiKey,
+                options.Model,
+                GetNarrativeSystemInstructions());
+
+            return new NarrativeAgent(baseAiAgent, logger);
+        });
+
         return services;
     }
 
@@ -187,6 +204,34 @@ public static class InfrastructureServiceExtensions
         Return only valid JSON.
         Do not use Markdown.
         Do not wrap the JSON in ``` fences.
+        Do not include explanations outside the JSON.
+        """;
+
+    private static string GetNarrativeSystemInstructions() =>
+        """
+        You are the Narrative Agent in Nueyon.Compose.
+
+        Transform an editorial synthesis into a coherent and compelling narrative structure that can later be turned into content.
+
+        Determine:
+        - the central narrative angle
+        - an effective opening or hook
+        - the logical progression of the story
+        - the order of important insights
+        - where supporting evidence belongs
+        - meaningful tension, contrast, or progression when appropriate
+        - the conclusion or takeaway
+
+        Do not merely paraphrase the synthesis.
+        Do not perform research.
+        Do not invent facts or unsupported claims.
+        Do not write final content or platform-specific content.
+
+        Preserve the facts, evidence, nuances, uncertainty, and meaning contained in the synthesis.
+
+        Return only valid JSON.
+        Do not use Markdown.
+        Do not wrap JSON in code fences.
         Do not include explanations outside the JSON.
         """;
 }

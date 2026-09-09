@@ -6,4 +6,5 @@ public sealed record StoryWorkflowResult(
     ChatInput Input,
     SelectedIdea SelectedIdea,
     ResearchResult Research,
-    SynthesisResult Synthesis);
+    SynthesisResult Synthesis,
+    NarrativeResult Narrative);
