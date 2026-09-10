@@ -4,6 +4,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Nueyon.Compose.Application.Agents;
 using Nueyon.Compose.Application.Agents.Research;
+using Nueyon.Compose.Application.Services;
 using Nueyon.Compose.Application.Workflows;
 using Nueyon.Compose.Domain;
 using Nueyon.Compose.Host.Console;
@@ -36,6 +37,9 @@ services.AddLogging(builder =>
 
 // Add infrastructure (OpenAI integration)
 services.AddInfrastructure();
+
+// Add source context loader
+services.AddSingleton<ISourceContextLoader, SourceContextLoader>();
 
 // Add console abstraction
 services.AddSingleton<IConsole, SystemConsole>();

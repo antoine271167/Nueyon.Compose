@@ -1,6 +1,7 @@
 using Microsoft.Extensions.Logging;
 using Nueyon.Compose.Application.Agents;
 using Nueyon.Compose.Application.Agents.Research;
+using Nueyon.Compose.Application.Services;
 using Nueyon.Compose.Application.Workflows;
 using Nueyon.Compose.Domain;
 
@@ -15,8 +16,9 @@ public sealed class ConsoleApplicationTests
     public async Task RunAsync_WithValidInput_ExecutesWorkflowAndDisplaysResults()
     {
         // Arrange
-        var input = new[] { "artificial intelligence", "/exit" };
-        var console = new FakeConsole(input);
+        const string testContent = "artificial intelligence";
+        var console = new FakeConsole(Array.Empty<string>());
+        var loader = new FakeSourceContextLoader(new StoryInput(testContent));
         var agent = new TrackingFakeAgent();
         var researchAgent = CreateResearchAgent();
         var synthesizer = new FakeSynthesizerAgent(new SynthesisResult("synthesis content"));
@@ -24,7 +26,7 @@ public sealed class ConsoleApplicationTests
         var composeAgent = new FakeComposeAgent(new ComposeResult("complete article content"));
         var workflow = new StoryWorkflow(agent, researchAgent, synthesizer, narrativeAgent, composeAgent);
         var logger = new MockLogger<ConsoleApplication>();
-        var app = new ConsoleApplication(workflow, logger, console);
+        var app = new ConsoleApplication(loader, workflow, logger, console);
 
         // Act
         var exitCode = await app.RunAsync();
@@ -32,20 +34,20 @@ public sealed class ConsoleApplicationTests
         // Assert
         Assert.Equal(0, exitCode);
         Assert.True(agent.WasCalled);
-        Assert.Equal("artificial intelligence", agent.LastInputContent);
+        Assert.Equal(testContent, agent.LastInputContent);
         Assert.Contains("Selected Idea", console.GetOutput());
         Assert.Contains("Test Idea", console.GetOutput());
     }
 
     /// <summary>
-    ///     Test: Multiple inputs are processed independently.
+    ///     Test: Application handles missing directory gracefully.
     /// </summary>
     [Fact]
-    public async Task RunAsync_WithMultipleInputs_ExecutesWorkflowForEach()
+    public async Task RunAsync_WithMissingDirectory_ReturnsErrorExitCode()
     {
         // Arrange
-        var input = new[] { "topic one", "topic two", "/exit" };
-        var console = new FakeConsole(input);
+        var console = new FakeConsole(Array.Empty<string>());
+        var loader = new FakeSourceContextLoader(null, new DirectoryNotFoundException("Directory not found"));
         var agent = new TrackingFakeAgent();
         var researchAgent = CreateResearchAgent();
         var synthesizer = new FakeSynthesizerAgent(new SynthesisResult("synthesis content"));
@@ -53,55 +55,28 @@ public sealed class ConsoleApplicationTests
         var composeAgent = new FakeComposeAgent(new ComposeResult("complete article content"));
         var workflow = new StoryWorkflow(agent, researchAgent, synthesizer, narrativeAgent, composeAgent);
         var logger = new MockLogger<ConsoleApplication>();
-        var app = new ConsoleApplication(workflow, logger, console);
+        var app = new ConsoleApplication(loader, workflow, logger, console);
 
         // Act
         var exitCode = await app.RunAsync();
 
         // Assert
-        Assert.Equal(0, exitCode);
-        Assert.Equal(2, agent.ExecutionCount);
-        Assert.Equal(2, agent.AllInputs.Count);
-        Assert.Equal("topic one", agent.AllInputs[0]);
-        Assert.Equal("topic two", agent.AllInputs[1]);
-    }
-
-    /// <summary>
-    ///     Test: Empty input does not invoke the workflow.
-    /// </summary>
-    [Fact]
-    public async Task RunAsync_WithEmptyInput_DoesNotExecuteWorkflow()
-    {
-        // Arrange
-        var input = new[] { "", "   ", "/exit" };
-        var console = new FakeConsole(input);
-        var agent = new TrackingFakeAgent();
-        var researchAgent = CreateResearchAgent();
-        var synthesizer = new FakeSynthesizerAgent(new SynthesisResult("synthesis content"));
-        var narrativeAgent = new FakeNarrativeAgent(new NarrativeResult("narrative content"));
-        var composeAgent = new FakeComposeAgent(new ComposeResult("complete article content"));
-        var workflow = new StoryWorkflow(agent, researchAgent, synthesizer, narrativeAgent, composeAgent);
-        var logger = new MockLogger<ConsoleApplication>();
-        var app = new ConsoleApplication(workflow, logger, console);
-
-        // Act
-        var exitCode = await app.RunAsync();
-
-        // Assert
-        Assert.Equal(0, exitCode);
+        Assert.Equal(1, exitCode);
         Assert.Equal(0, agent.ExecutionCount);
-        Assert.Contains("Please enter an idea or topic", console.GetOutput());
+        Assert.Contains("Error", console.GetOutput());
     }
 
     /// <summary>
-    ///     Test: /exit command terminates the application.
+    ///     Test: Application handles no Markdown files gracefully.
     /// </summary>
     [Fact]
-    public async Task RunAsync_WithExitCommand_TerminatesCleanly()
+    public async Task RunAsync_WithNoMarkdownFiles_ReturnsErrorExitCode()
     {
         // Arrange
-        var input = new[] { "/exit" };
-        var console = new FakeConsole(input);
+        var console = new FakeConsole(Array.Empty<string>());
+        var loader = new FakeSourceContextLoader(
+            null,
+            new InvalidOperationException("No Markdown files found"));
         var agent = new TrackingFakeAgent();
         var researchAgent = CreateResearchAgent();
         var synthesizer = new FakeSynthesizerAgent(new SynthesisResult("synthesis content"));
@@ -109,294 +84,170 @@ public sealed class ConsoleApplicationTests
         var composeAgent = new FakeComposeAgent(new ComposeResult("complete article content"));
         var workflow = new StoryWorkflow(agent, researchAgent, synthesizer, narrativeAgent, composeAgent);
         var logger = new MockLogger<ConsoleApplication>();
-        var app = new ConsoleApplication(workflow, logger, console);
+        var app = new ConsoleApplication(loader, workflow, logger, console);
 
         // Act
         var exitCode = await app.RunAsync();
 
         // Assert
-        Assert.Equal(0, exitCode);
+        Assert.Equal(1, exitCode);
         Assert.Equal(0, agent.ExecutionCount);
-        Assert.Contains("Goodbye", console.GetOutput());
+        Assert.Contains("Error", console.GetOutput());
     }
 
     /// <summary>
-    ///     Test: /exit is case-insensitive.
-    /// </summary>
-    [Theory]
-    [InlineData("/EXIT")]
-    [InlineData("/Exit")]
-    [InlineData("/eXiT")]
-    public async Task RunAsync_WithVariousCasesOfExit_Terminates(string exitCommand)
-    {
-        // Arrange
-        var input = new[] { exitCommand };
-        var console = new FakeConsole(input);
-        var agent = new TrackingFakeAgent();
-        var researchAgent = CreateResearchAgent();
-        var synthesizer = new FakeSynthesizerAgent(new SynthesisResult("synthesis content"));
-        var narrativeAgent = new FakeNarrativeAgent(new NarrativeResult("narrative content"));
-        var composeAgent = new FakeComposeAgent(new ComposeResult("complete article content"));
-        var workflow = new StoryWorkflow(agent, researchAgent, synthesizer, narrativeAgent, composeAgent);
-        var logger = new MockLogger<ConsoleApplication>();
-        var app = new ConsoleApplication(workflow, logger, console);
-
-        // Act
-        var exitCode = await app.RunAsync();
-
-        // Assert
-        Assert.Equal(0, exitCode);
-        Assert.Equal(0, agent.ExecutionCount);
-        Assert.Contains("Goodbye", console.GetOutput());
-    }
-
-    /// <summary>
-    ///     Test: Whitespace around /exit is trimmed and recognized.
+    ///     Test: Application cancellation returns proper exit code.
     /// </summary>
     [Fact]
-    public async Task RunAsync_WithWhitespaceAroundExit_Terminates()
+    public async Task RunAsync_WithCancellation_ReturnsCancellationExitCode()
     {
         // Arrange
-        var input = new[] { "   /exit   " };
-        var console = new FakeConsole(input);
-        var agent = new TrackingFakeAgent();
-        var researchAgent = CreateResearchAgent();
-        var synthesizer = new FakeSynthesizerAgent(new SynthesisResult("synthesis content"));
-        var narrativeAgent = new FakeNarrativeAgent(new NarrativeResult("narrative content"));
-        var composeAgent = new FakeComposeAgent(new ComposeResult("complete article content"));
-        var workflow = new StoryWorkflow(agent, researchAgent, synthesizer, narrativeAgent, composeAgent);
-        var logger = new MockLogger<ConsoleApplication>();
-        var app = new ConsoleApplication(workflow, logger, console);
-
-        // Act
-        var exitCode = await app.RunAsync();
-
-        // Assert
-        Assert.Equal(0, exitCode);
-        Assert.Equal(0, agent.ExecutionCount);
-    }
-
-    /// <summary>
-    ///     Test: Workflow failures do not crash the application.
-    /// </summary>
-    [Fact]
-    public async Task RunAsync_WhenWorkflowFails_ContinuesExecution()
-    {
-        // Arrange
-        var input = new[] { "topic", "/exit" };
-        var console = new FakeConsole(input);
-        var agent = new FailingFakeAgent();
-        var researchAgent = CreateResearchAgent();
-        var synthesizer = new FakeSynthesizerAgent(new SynthesisResult("synthesis content"));
-        var narrativeAgent = new FakeNarrativeAgent(new NarrativeResult("narrative content"));
-        var composeAgent = new FakeComposeAgent(new ComposeResult("complete article content"));
-        var workflow = new StoryWorkflow(agent, researchAgent, synthesizer, narrativeAgent, composeAgent);
-        var logger = new MockLogger<ConsoleApplication>();
-        var app = new ConsoleApplication(workflow, logger, console);
-
-        // Act
-        var exitCode = await app.RunAsync();
-
-        // Assert
-        Assert.Equal(0, exitCode);
-        Assert.Contains("Unable to process the request", console.GetOutput());
-        Assert.Contains("Goodbye", console.GetOutput());
-    }
-
-    /// <summary>
-    ///     Test: Result display shows the selected idea correctly.
-    /// </summary>
-    [Fact]
-    public async Task RunAsync_DisplaysResultsCorrectly()
-    {
-        // Arrange
-        var input = new[] { "test topic", "/exit" };
-        var console = new FakeConsole(input);
-        var agent = new CustomFakeAgent([
-            new Idea(
-                "First idea",
-                "First description",
-                "Test",
-                "Test"
-            ),
-            new Idea(
-                "Second idea",
-                "Second description",
-                "Test",
-                "Test"
-            )
-        ]);
-        var researchAgent = CreateResearchAgent();
-        var synthesizer = new FakeSynthesizerAgent(new SynthesisResult("synthesis content"));
-        var narrativeAgent = new FakeNarrativeAgent(new NarrativeResult("narrative content"));
-        var composeAgent = new FakeComposeAgent(new ComposeResult("complete article content"));
-        var workflow = new StoryWorkflow(agent, researchAgent, synthesizer, narrativeAgent, composeAgent);
-        var logger = new MockLogger<ConsoleApplication>();
-        var app = new ConsoleApplication(workflow, logger, console);
-
-        // Act
-        var exitCode = await app.RunAsync();
-
-        // Assert
-        var output = console.GetOutput();
-        Assert.Equal(0, exitCode);
-        Assert.Contains("Selected Idea", output);
-        Assert.Contains("First idea", output);
-        Assert.Contains("First description", output);
-    }
-
-    /// <summary>
-    ///     Test: Empty results from agent cause workflow to fail gracefully.
-    /// </summary>
-    [Fact]
-    public async Task RunAsync_WithEmptyResults_DisplaysNoIdeasMessage()
-    {
-        // Arrange
-        var input = new[] { "test topic", "/exit" };
-        var console = new FakeConsole(input);
-        var agent = new CustomFakeAgent(Array.Empty<Idea>());
-        var researchAgent = CreateResearchAgent();
-        var synthesizer = new FakeSynthesizerAgent(new SynthesisResult("synthesis content"));
-        var narrativeAgent = new FakeNarrativeAgent(new NarrativeResult("narrative content"));
-        var composeAgent = new FakeComposeAgent(new ComposeResult("complete article content"));
-        var workflow = new StoryWorkflow(agent, researchAgent, synthesizer, narrativeAgent, composeAgent);
-        var logger = new MockLogger<ConsoleApplication>();
-        var app = new ConsoleApplication(workflow, logger, console);
-
-        // Act
-        var exitCode = await app.RunAsync();
-
-        // Assert
-        var output = console.GetOutput();
-        Assert.Equal(0, exitCode);
-        Assert.Contains("Unable to process the request", output);
-    }
-
-    /// <summary>
-    ///     Test: Cancellation token is passed through to the workflow.
-    /// </summary>
-    [Fact]
-    public async Task RunAsync_PassesCancellationTokenToWorkflow()
-    {
-        // Arrange
-        var input = new[] { "test topic", "/exit" };
-        var console = new FakeConsole(input);
-        var agent = new CancellationObservingFakeAgent();
-        var researchAgent = CreateResearchAgent();
-        var synthesizer = new FakeSynthesizerAgent(new SynthesisResult("synthesis content"));
-        var narrativeAgent = new FakeNarrativeAgent(new NarrativeResult("narrative content"));
-        var composeAgent = new FakeComposeAgent(new ComposeResult("complete article content"));
-        var workflow = new StoryWorkflow(agent, researchAgent, synthesizer, narrativeAgent, composeAgent);
-        var logger = new MockLogger<ConsoleApplication>();
-        var app = new ConsoleApplication(workflow, logger, console);
+        var console = new FakeConsole(Array.Empty<string>());
         var cts = new CancellationTokenSource();
+        cts.Cancel();
+        var loader = new FakeCancellableSourceContextLoader(cts.Token);
+        var agent = new TrackingFakeAgent();
+        var researchAgent = CreateResearchAgent();
+        var synthesizer = new FakeSynthesizerAgent(new SynthesisResult("synthesis content"));
+        var narrativeAgent = new FakeNarrativeAgent(new NarrativeResult("narrative content"));
+        var composeAgent = new FakeComposeAgent(new ComposeResult("complete article content"));
+        var workflow = new StoryWorkflow(agent, researchAgent, synthesizer, narrativeAgent, composeAgent);
+        var logger = new MockLogger<ConsoleApplication>();
+        var app = new ConsoleApplication(loader, workflow, logger, console);
 
         // Act
         var exitCode = await app.RunAsync(cts.Token);
 
         // Assert
-        Assert.Equal(0, exitCode);
-        Assert.True(agent.ReceivedCancellationToken);
+        Assert.Equal(130, exitCode);
+        Assert.Equal(0, agent.ExecutionCount);
     }
 
     /// <summary>
-    ///     Test: ConsoleApplication works against IStoryWorkflow abstraction without MAF or real implementations.
-    ///     Proves the boundary between ConsoleApplication and workflow is correctly abstracted.
+    ///     Test: Workflow results are displayed correctly.
     /// </summary>
     [Fact]
-    public async Task RunAsync_WithFakeStoryWorkflow_ExecutesWorkflowAndDisplaysResults()
+    public async Task RunAsync_DisplaysAllWorkflowResults()
     {
         // Arrange
-        var expectedIdea = new Idea(
-            "Fake Workflow Idea",
-            "Generated by fake workflow",
-            "Test Audience",
-            "To verify abstraction boundary"
-        );
-        const string userInput = "abstraction test topic";
-        var input = new[] { userInput, "/exit" };
-        var console = new FakeConsole(input);
-        var workflow = new FakeStoryWorkflow(expectedIdea);
+        const string testContent = "test input";
+        var console = new FakeConsole(Array.Empty<string>());
+        var loader = new FakeSourceContextLoader(new StoryInput(testContent));
+        var agent = new TrackingFakeAgent();
+        var researchAgent = CreateResearchAgent();
+        var synthesizer = new FakeSynthesizerAgent(new SynthesisResult("synthesis content"));
+        var narrativeAgent = new FakeNarrativeAgent(new NarrativeResult("narrative content"));
+        var composeAgent = new FakeComposeAgent(new ComposeResult("complete article content"));
+        var workflow = new StoryWorkflow(agent, researchAgent, synthesizer, narrativeAgent, composeAgent);
         var logger = new MockLogger<ConsoleApplication>();
-        var app = new ConsoleApplication(workflow, logger, console);
+        var app = new ConsoleApplication(loader, workflow, logger, console);
 
         // Act
         var exitCode = await app.RunAsync();
 
         // Assert
         Assert.Equal(0, exitCode);
-        Assert.Equal(userInput, workflow.CapturedInput?.Content);
-        Assert.Contains(expectedIdea.Title, console.GetOutput());
-        Assert.Contains(expectedIdea.Description, console.GetOutput());
+        var output = console.GetOutput();
+        Assert.Contains("Selected Idea", output);
+        Assert.Contains("Research", output);
+        Assert.Contains("Synthesis", output);
+        Assert.Contains("Narrative", output);
+        Assert.Contains("Compose", output);
     }
 
-    private static TrackingFakeResearchAgent CreateResearchAgent() => new();
+    [Fact]
+    public async Task RunAsync_WithWorkflowFailure_ReturnsErrorExitCode()
+    {
+        // Arrange
+        var console = new FakeConsole(Array.Empty<string>());
+        var loader = new FakeSourceContextLoader(new StoryInput("test"));
+        var failingAgent = new FailingFakeAgent();
+        var researchAgent = CreateResearchAgent();
+        var synthesizer = new FakeSynthesizerAgent(new SynthesisResult("synthesis content"));
+        var narrativeAgent = new FakeNarrativeAgent(new NarrativeResult("narrative content"));
+        var composeAgent = new FakeComposeAgent(new ComposeResult("complete article content"));
+        var workflow = new StoryWorkflow(failingAgent, researchAgent, synthesizer, narrativeAgent, composeAgent);
+        var logger = new MockLogger<ConsoleApplication>();
+        var app = new ConsoleApplication(loader, workflow, logger, console);
+
+        // Act
+        var exitCode = await app.RunAsync();
+
+        // Assert
+        Assert.Equal(1, exitCode);
+    }
+
+    /// <summary>
+    ///     Helper method to create a fake research agent.
+    /// </summary>
+    private static FakeResearchAgent CreateResearchAgent()
+    {
+        return new FakeResearchAgent(new ResearchResult("Test research result"));
+    }
 }
 
 /// <summary>
-///     Fake console implementation that accepts pre-determined input
-///     and captures output for testing assertions.
+///     Fake console for testing that buffers output.
 /// </summary>
-internal sealed class FakeConsole(IEnumerable<string> inputLines) : IConsole
+internal sealed class FakeConsole(string[] inputLines) : IConsole
 {
-    private readonly Queue<string?> _inputQueue = new(inputLines);
-    private readonly List<string> _output = [];
+    private int _inputIndex;
+    private readonly List<string> _output = new();
+
+    public void Write(string? value)
+    {
+        _output.Add(value ?? string.Empty);
+    }
+
+    public void WriteLine(string? value = null)
+    {
+        _output.Add(value ?? string.Empty);
+        _output.Add("\n");
+    }
 
     public string? ReadLine()
     {
-        if (_inputQueue.Count == 0)
-        {
-            return null;
-        }
-
-        var line = _inputQueue.Dequeue();
-        _output.Add($"[INPUT] {line}");
-        return line;
+        return _inputIndex < inputLines.Length ? inputLines[_inputIndex++] : null;
     }
 
-    public void Write(string value)
-    {
-        _output.Add(value);
-    }
-
-    public void WriteLine(string value)
-    {
-        _output.Add(value);
-    }
-
-    public string GetOutput() => string.Join("\n", _output);
+    public string GetOutput() => string.Concat(_output);
 }
 
 /// <summary>
-///     Minimal fake implementation of IStoryWorkflow for testing the abstraction boundary.
-///     Does not use MAF, StoryWorkflow, IdeaExecutorFactory, or IdeaAgent.
+///     Fake source context loader that returns predetermined content.
 /// </summary>
-internal sealed class FakeStoryWorkflow(Idea ideaToReturn) : IStoryWorkflow
+internal sealed class FakeSourceContextLoader(StoryInput? content, Exception? exception = null) : ISourceContextLoader
 {
-    public StoryInput? CapturedInput { get; private set; }
-
-    public Task<StoryWorkflowResult> RunAsync(
-        StoryInput input,
+    public Task<StoryInput> LoadAsync(
+        string directory,
         CancellationToken cancellationToken = default)
     {
-        ArgumentNullException.ThrowIfNull(input);
+        if (exception is not null)
+        {
+            return Task.FromException<StoryInput>(exception);
+        }
 
-        CapturedInput = input;
-        var selectedIdea = new SelectedIdea(ideaToReturn);
-        var result = new StoryWorkflowResult(
-            input,
-            selectedIdea,
-            new ResearchResult("Test research"),
-            new SynthesisResult("test synthesis"),
-            new NarrativeResult("test narrative"),
-            new ComposeResult("Test composed article")
-        );
-        return Task.FromResult(result);
+        return Task.FromResult(content ?? throw new InvalidOperationException("No content configured"));
     }
 }
 
 /// <summary>
-///     Tracking fake agent that counts executions and records inputs.
+///     Fake source context loader that throws on cancellation.
+/// </summary>
+internal sealed class FakeCancellableSourceContextLoader(CancellationToken cancellationToThrow) : ISourceContextLoader
+{
+    public Task<StoryInput> LoadAsync(
+        string directory,
+        CancellationToken cancellationToken = default)
+    {
+        return cancellationToThrow.IsCancellationRequested
+            ? Task.FromException<StoryInput>(new OperationCanceledException())
+            : Task.FromResult(new StoryInput("test"));
+    }
+}
+
+/// <summary>
+///     Tracking fake idea agent that captures invocation details.
 /// </summary>
 internal sealed class TrackingFakeAgent : IAgent<StoryInput, IReadOnlyList<Idea>>
 {
@@ -495,8 +346,15 @@ internal sealed class CancellationObservingFakeAgent : IAgent<StoryInput, IReadO
 /// <summary>
 ///     Fake research agent that always returns a simple research result.
 /// </summary>
-internal sealed class TrackingFakeResearchAgent : IAgent<ResearchInput, ResearchResult>
+internal sealed class FakeResearchAgent : IAgent<ResearchInput, ResearchResult>
 {
+    private readonly ResearchResult _result;
+
+    public FakeResearchAgent(ResearchResult result)
+    {
+        _result = result;
+    }
+
     public Task<ResearchResult> ExecuteAsync(
         AgentExecutionContext executionContext,
         ResearchInput input,
@@ -505,8 +363,7 @@ internal sealed class TrackingFakeResearchAgent : IAgent<ResearchInput, Research
         ArgumentNullException.ThrowIfNull(executionContext);
         ArgumentNullException.ThrowIfNull(input);
 
-        var result = new ResearchResult("Test research result");
-        return Task.FromResult(result);
+        return Task.FromResult(_result);
     }
 }
 
