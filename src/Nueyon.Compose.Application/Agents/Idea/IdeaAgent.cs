@@ -70,7 +70,34 @@ public sealed class IdeaAgent : IAgent<StoryInput, IReadOnlyList<Domain.Idea>>
 
                  --- END SOURCE MATERIAL ---
 
-                 Create content ideas from this source material.
+                 Read and understand the complete source material. Identify the most interesting story, insight, discovery, experience, argument, or transformation actually present in the source. Generate multiple possible content ideas grounded in the material.
+
+                 For each idea, focus on what is genuinely present in the source—do not invent facts, experiences, or conclusions not meaningfully supported by the material.
+
+                 Prefer ideas that reveal:
+                 - An unexpected discovery or realization
+                 - A change in thinking or perspective
+                 - A problem and how it was solved
+                 - An assumption that turned out to be wrong
+                 - An important decision or trade-off
+                 - A lesson learned from concrete experience
+                 - A surprising outcome
+                 - An interesting contradiction
+                 - A transformation from one idea or approach into another
+
+                 Prefer specific, source-grounded stories over generic topics or unsupported themes. Do not introduce themes such as ethics, human oversight, authenticity, disruption, the future of AI, productivity, or accessibility unless the source itself contains meaningful material supporting those themes.
+
+                 Distinguish between a topic (what something is about) and an editorial idea (something worth saying about that topic). A strong idea must have a reason to exist based on the source.
+
+                 Return the strongest editorial opportunity first. Evaluate ideas using these criteria:
+                 1. Specificity
+                 2. Strength of the underlying story or insight
+                 3. Evidence in the source material
+                 4. Reader value
+                 5. Originality
+                 6. Potential for a coherent narrative
+
+                 Return all generated ideas ordered by strength.
                  """;
 
             // Run the agent with structured output options configured

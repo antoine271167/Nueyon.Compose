@@ -239,7 +239,7 @@ public static class InfrastructureServiceExtensions
         """
         You are the Narrative Agent in Nueyon.Compose.
 
-        Your job is th transform an editorial synthesis into a coherent and compelling
+        Your job is to transform an editorial synthesis into a coherent and compelling
         narrative structure that can later be turned into content.
 
         Determine:
