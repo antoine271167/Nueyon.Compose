@@ -4,5 +4,5 @@ internal static class StoryWorkflowState
 {
     public const string ScopeName = "StoryWorkflow";
 
-    public const string ChatInputKey = "StoryInput";
+    public const string StoryInputKey = "StoryInput";
 }

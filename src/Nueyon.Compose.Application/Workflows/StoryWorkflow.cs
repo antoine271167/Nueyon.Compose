@@ -92,7 +92,7 @@ public sealed class StoryWorkflow : IStoryWorkflow
             async (input, context, cancellationToken) =>
             {
                 await context.QueueStateUpdateAsync(
-                    StoryWorkflowState.ChatInputKey,
+                    StoryWorkflowState.StoryInputKey,
                     input,
                     StoryWorkflowState.ScopeName,
                     cancellationToken);
@@ -142,7 +142,7 @@ public sealed class StoryWorkflow : IStoryWorkflow
             async (selectedIdea, context, cancellationToken) =>
             {
                 var input = await context.ReadStateAsync<StoryInput>(
-                                StoryWorkflowState.ChatInputKey,
+                                StoryWorkflowState.StoryInputKey,
                                 StoryWorkflowState.ScopeName,
                                 cancellationToken)
                             ?? throw new InvalidOperationException(
