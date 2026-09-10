@@ -102,9 +102,9 @@ public sealed class ConsoleApplicationTests
     public async Task RunAsync_WithCancellation_ReturnsCancellationExitCode()
     {
         // Arrange
-        var console = new FakeConsole(Array.Empty<string>());
+        var console = new FakeConsole([]);
         var cts = new CancellationTokenSource();
-        cts.Cancel();
+        await cts.CancelAsync();
         var loader = new FakeCancellableSourceContextLoader(cts.Token);
         var agent = new TrackingFakeAgent();
         var researchAgent = CreateResearchAgent();
@@ -180,10 +180,7 @@ public sealed class ConsoleApplicationTests
     /// <summary>
     ///     Helper method to create a fake research agent.
     /// </summary>
-    private static FakeResearchAgent CreateResearchAgent()
-    {
-        return new FakeResearchAgent(new ResearchResult("Test research result"));
-    }
+    private static FakeResearchAgent CreateResearchAgent() => new(new ResearchResult("Test research result"));
 }
 
 /// <summary>
@@ -191,8 +188,8 @@ public sealed class ConsoleApplicationTests
 /// </summary>
 internal sealed class FakeConsole(string[] inputLines) : IConsole
 {
+    private readonly List<string> _output = [];
     private int _inputIndex;
-    private readonly List<string> _output = new();
 
     public void Write(string? value)
     {
@@ -205,10 +202,7 @@ internal sealed class FakeConsole(string[] inputLines) : IConsole
         _output.Add("\n");
     }
 
-    public string? ReadLine()
-    {
-        return _inputIndex < inputLines.Length ? inputLines[_inputIndex++] : null;
-    }
+    public string? ReadLine() => _inputIndex < inputLines.Length ? inputLines[_inputIndex++] : null;
 
     public string GetOutput() => string.Concat(_output);
 }
@@ -238,12 +232,10 @@ internal sealed class FakeCancellableSourceContextLoader(CancellationToken cance
 {
     public Task<StoryInput> LoadAsync(
         string directory,
-        CancellationToken cancellationToken = default)
-    {
-        return cancellationToThrow.IsCancellationRequested
+        CancellationToken cancellationToken = default) =>
+        cancellationToThrow.IsCancellationRequested
             ? Task.FromException<StoryInput>(new OperationCanceledException())
             : Task.FromResult(new StoryInput("test"));
-    }
 }
 
 /// <summary>
@@ -253,7 +245,7 @@ internal sealed class TrackingFakeAgent : IAgent<StoryInput, IReadOnlyList<Idea>
 {
     public int ExecutionCount { get; private set; }
     public string? LastInputContent { get; private set; }
-    public List<string> AllInputs { get; } = new();
+    public List<string> AllInputs { get; } = [];
     public bool WasCalled => ExecutionCount > 0;
 
     public Task<IReadOnlyList<Idea>> ExecuteAsync(
@@ -295,66 +287,10 @@ internal sealed class FailingFakeAgent : IAgent<StoryInput, IReadOnlyList<Idea>>
 }
 
 /// <summary>
-///     Custom fake agent that returns specified ideas.
-/// </summary>
-internal sealed class CustomFakeAgent(IEnumerable<Idea> ideas) : IAgent<StoryInput, IReadOnlyList<Idea>>
-{
-    private readonly IReadOnlyList<Idea> _ideas = ideas.ToList().AsReadOnly();
-
-    public Task<IReadOnlyList<Idea>> ExecuteAsync(
-        AgentExecutionContext executionContext,
-        StoryInput input,
-        CancellationToken cancellationToken = default)
-    {
-        ArgumentNullException.ThrowIfNull(executionContext);
-        ArgumentNullException.ThrowIfNull(input);
-        return Task.FromResult(_ideas);
-    }
-}
-
-/// <summary>
-///     Fake agent that observes and records the cancellation token.
-/// </summary>
-internal sealed class CancellationObservingFakeAgent : IAgent<StoryInput, IReadOnlyList<Idea>>
-{
-    public bool ReceivedCancellationToken { get; private set; }
-
-    public Task<IReadOnlyList<Idea>> ExecuteAsync(
-        AgentExecutionContext executionContext,
-        StoryInput input,
-        CancellationToken cancellationToken = default)
-    {
-        ArgumentNullException.ThrowIfNull(executionContext);
-        ArgumentNullException.ThrowIfNull(input);
-
-        ReceivedCancellationToken = !cancellationToken.Equals(CancellationToken.None);
-
-        var ideas = new List<Idea>
-        {
-            new(
-                "Test Idea",
-                "Test description",
-                "Test Audience",
-                "For testing purposes"
-            )
-        };
-
-        return Task.FromResult<IReadOnlyList<Idea>>(ideas.AsReadOnly());
-    }
-}
-
-/// <summary>
 ///     Fake research agent that always returns a simple research result.
 /// </summary>
-internal sealed class FakeResearchAgent : IAgent<ResearchInput, ResearchResult>
+internal sealed class FakeResearchAgent(ResearchResult result) : IAgent<ResearchInput, ResearchResult>
 {
-    private readonly ResearchResult _result;
-
-    public FakeResearchAgent(ResearchResult result)
-    {
-        _result = result;
-    }
-
     public Task<ResearchResult> ExecuteAsync(
         AgentExecutionContext executionContext,
         ResearchInput input,
@@ -363,7 +299,7 @@ internal sealed class FakeResearchAgent : IAgent<ResearchInput, ResearchResult>
         ArgumentNullException.ThrowIfNull(executionContext);
         ArgumentNullException.ThrowIfNull(input);
 
-        return Task.FromResult(_result);
+        return Task.FromResult(result);
     }
 }
 
