@@ -80,32 +80,106 @@ public sealed class SynthesizerAgent(
     }
 
     private static string CreateUserMessage(SynthesisInput input) =>
-        // The input is research, not an article. Instruct the model accordingly.
         $"""
-         Do NOT write an article, social-media post, or any other final consumer-facing content. Instead, produce a concise editorial synthesis that a separate Narrative agent can use to craft the final story.
-         
-         Your synthesis MUST:
-         
-         - Determine the central thesis or message supported by the research.
-         - Identify the most important insights.
-         - Preserve important facts and supporting evidence.
-         - Surface meaningful nuances, uncertainty, or contradictions.
-         - NOT invent facts or add information not supported by the research.
-         - NOT produce final article text or promotional copy.
-         
-         The complete editorial synthesis MUST be returned in the Content property of the response.
-         
-         The Content value should be clear and well-structured. You may use headings such as:
-         
-         - Core thesis
-         - Key insights
-         - Supporting evidence
-         - Nuances
-         
-         Return only the structured response defined by the output schema.
-         
-         Research input:
+         Your task is to synthesize research material into a coherent editorial brief.
+
+         SYNTHESIS MEANS:
+         A synthesis is NOT a summary, paraphrase, or simplified restatement.
+         A synthesis is NOT an outline, article, or final content.
+         A synthesis is NOT a chance to add interpretive flourish, generic framing, or unsupported context.
+
+         Synthesis means: extracting the actual backbone of the research, identifying what story or insight truly lives there, and clarifying what the evidence actually supports.
+
+         Your synthesis will be handed to a downstream agent who will structure it into a compelling narrative. Your job is to do the analytical groundwork with precision and honesty.
+
+         ---
+
+         STEP 1: Read the research completely and carefully.
+
+         Understand:
+         - What concrete facts, decisions, problems, and transformations are present?
+         - What is the author or source actually claiming or demonstrating?
+         - Where is the evidence strong? Where is it thin or ambiguous?
+         - What contradictions, tensions, or nuances exist?
+         - What information is present? What is conspicuously absent?
+
+         STEP 2: Identify the editorial thesis.
+
+         The editorial thesis is NOT a generic topic.
+         The editorial thesis is NOT "AI ethics" or "the future of AI" or "productivity" unless the research materially and specifically supports that claim.
+
+         The editorial thesis is the actual story or insight that the research reveals:
+         - A discovery or realization
+         - A change in thinking or approach
+         - A problem and how it was solved
+         - A trade-off or decision
+         - A lesson grounded in concrete experience
+         - A surprising outcome or contradiction
+         - A transformation from one idea to another
+
+         The thesis must be:
+         - Specific to this research (not generic)
+         - Grounded in evidence present in the material
+         - The strongest, most important claim the research supports
+
+         STEP 3: Extract and organize supporting evidence.
+
+         Gather from the research:
+         - Concrete facts, details, and specifics
+         - Decisions made and why they mattered
+         - Problems encountered and how they were addressed
+         - Cause-and-effect relationships
+         - Contradictions and tensions
+         - What the source learned or discovered
+         - Important context necessary to understand the thesis
+
+         Preserve nuance: If the research shows complexity, ambiguity, or multiple perspectives, keep that intact. Do not flatten it into certainty.
+
+         Identify gaps: If the thesis requires information not present in the research, note the gap clearly. Example: "The research shows that X happened, but does not explain why."
+
+         STEP 4: Distinguish evidence from interpretation.
+
+         Be explicit:
+         - What does the research explicitly state?
+         - What can reasonably be inferred from the research?
+         - What is uncertain or contested?
+         - Where are you making assumptions?
+
+         Do NOT:
+         - Turn inferences into stated facts
+         - Treat assumptions as evidence
+         - Add generic knowledge to fill perceived gaps
+         - Invent missing details or context
+
+         STEP 5: Organize for clarity.
+
+         Structure your synthesis using these sections (or similar):
+         - The Editorial Thesis: State clearly what this research reveals
+         - The Central Story or Insight: Explain what makes this compelling
+         - Supporting Evidence: The concrete facts and details that establish credibility
+         - Important Context: What does the reader need to know to understand this?
+         - Nuances and Tensions: What complications or contradictions should the narrative account for?
+         - Gaps: What is missing from the research that this story would benefit from?
+
+         ---
+
+         DO NOT:
+         - Write narrative prose, article text, or platform-specific content
+         - Perform additional research or add facts from general knowledge
+         - Use generic conclusions like "X is changing the world" or "this matters for human oversight"
+         - Invent a story not present in the research
+         - Oversimplify or smooth over contradictions
+         - Create promotional or persuasive language
+
+         ---
+
+         Research material:
+
          {input.Research.Content}
+
+         ---
+
+         Return your synthesis in clear, well-structured prose. Be specific, honest, and grounded in the research. Every claim should be traceable to evidence in the material.
          """;
 
     private static ChatClientAgentRunOptions CreateAgentRunOptions()
