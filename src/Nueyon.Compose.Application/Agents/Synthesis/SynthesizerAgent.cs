@@ -81,105 +81,178 @@ public sealed class SynthesizerAgent(
 
     private static string CreateUserMessage(SynthesisInput input) =>
         $"""
-         Your task is to synthesize research material into a coherent editorial brief.
+         Your task is to turn the research material into a strong editorial synthesis for a downstream Narrative agent.
 
-         SYNTHESIS MEANS:
-         A synthesis is NOT a summary, paraphrase, or simplified restatement.
-         A synthesis is NOT an outline, article, or final content.
-         A synthesis is NOT a chance to add interpretive flourish, generic framing, or unsupported context.
+         The goal is NOT to summarize the research.
 
-         Synthesis means: extracting the actual backbone of the research, identifying what story or insight truly lives there, and clarifying what the evidence actually supports.
+         The goal is to determine what the research is REALLY about.
 
-         Your synthesis will be handed to a downstream agent who will structure it into a compelling narrative. Your job is to do the analytical groundwork with precision and honesty.
+         A good synthesis identifies the central insight, explains why it matters, and shows how the concrete evidence leads to that insight.
 
-         ---
-
-         STEP 1: Read the research completely and carefully.
-
-         Understand:
-         - What concrete facts, decisions, problems, and transformations are present?
-         - What is the author or source actually claiming or demonstrating?
-         - Where is the evidence strong? Where is it thin or ambiguous?
-         - What contradictions, tensions, or nuances exist?
-         - What information is present? What is conspicuously absent?
-
-         STEP 2: Identify the editorial thesis.
-
-         The editorial thesis is NOT a generic topic.
-         The editorial thesis is NOT "AI ethics" or "the future of AI" or "productivity" unless the research materially and specifically supports that claim.
-
-         The editorial thesis is the actual story or insight that the research reveals:
-         - A discovery or realization
-         - A change in thinking or approach
-         - A problem and how it was solved
-         - A trade-off or decision
-         - A lesson grounded in concrete experience
-         - A surprising outcome or contradiction
-         - A transformation from one idea to another
-
-         The thesis must be:
-         - Specific to this research (not generic)
-         - Grounded in evidence present in the material
-         - The strongest, most important claim the research supports
-
-         STEP 3: Extract and organize supporting evidence.
-
-         Gather from the research:
-         - Concrete facts, details, and specifics
-         - Decisions made and why they mattered
-         - Problems encountered and how they were addressed
-         - Cause-and-effect relationships
-         - Contradictions and tensions
-         - What the source learned or discovered
-         - Important context necessary to understand the thesis
-
-         Preserve nuance: If the research shows complexity, ambiguity, or multiple perspectives, keep that intact. Do not flatten it into certainty.
-
-         Identify gaps: If the thesis requires information not present in the research, note the gap clearly. Example: "The research shows that X happened, but does not explain why."
-
-         STEP 4: Distinguish evidence from interpretation.
-
-         Be explicit:
-         - What does the research explicitly state?
-         - What can reasonably be inferred from the research?
-         - What is uncertain or contested?
-         - Where are you making assumptions?
-
-         Do NOT:
-         - Turn inferences into stated facts
-         - Treat assumptions as evidence
-         - Add generic knowledge to fill perceived gaps
-         - Invent missing details or context
-
-         STEP 5: Organize for clarity.
-
-         Structure your synthesis using these sections (or similar):
-         - The Editorial Thesis: State clearly what this research reveals
-         - The Central Story or Insight: Explain what makes this compelling
-         - Supporting Evidence: The concrete facts and details that establish credibility
-         - Important Context: What does the reader need to know to understand this?
-         - Nuances and Tensions: What complications or contradictions should the narrative account for?
-         - Gaps: What is missing from the research that this story would benefit from?
+         Think like an editor deciding:
+         "There are many things we could say about this material. What is the one meaningful thing we should say, and why?"
 
          ---
 
-         DO NOT:
-         - Write narrative prose, article text, or platform-specific content
-         - Perform additional research or add facts from general knowledge
-         - Use generic conclusions like "X is changing the world" or "this matters for human oversight"
-         - Invent a story not present in the research
-         - Oversimplify or smooth over contradictions
-         - Create promotional or persuasive language
+         READ THE RESEARCH FIRST
+
+         Read the complete research material before deciding what the story is about.
+
+         Pay particular attention to:
+
+         - discoveries and realizations
+         - changes in thinking or direction
+         - problems and how they were addressed
+         - important decisions and their consequences
+         - cause-and-effect relationships
+         - unexpected outcomes
+         - tensions, contradictions, or trade-offs
+         - concrete experiences, details, and evidence
+         - lessons that emerge from the material
+
+         Do not assume that the most frequently mentioned topic is the most important idea.
 
          ---
+
+         FIND THE CENTRAL INSIGHT
+
+         Identify the strongest specific insight supported by the research.
+
+         Prefer an insight that explains something rather than merely describes something.
+
+         For example:
+
+         WEAK:
+         "The product uses AI agents to create content."
+
+         STRONGER:
+         "The development of the product revealed that the difficult problem was not generating content with an AI agent, but coordinating the reasoning required before content could be generated."
+
+         The second statement explains a discovery and a change in understanding. That is the kind of insight you should look for.
+
+         The central insight must:
+
+         - be specific to the research
+         - be supported by concrete evidence
+         - explain why the material is interesting
+         - avoid generic statements about AI, technology, productivity, or innovation
+         - not introduce information that is absent from the research
+
+         ---
+
+         CONNECT THE EVIDENCE
+
+         Do not simply list facts.
+
+         Explain how the important facts connect to the central insight.
+
+         Look for relationships such as:
+
+         problem → discovery
+         assumption → realization
+         decision → consequence
+         observation → change in direction
+         experience → lesson
+         idea → transformation
+
+         Preserve the actual sequence and causality when the research supports it.
+
+         If the research does NOT establish why something happened, say so instead of inventing a reason.
+
+         ---
+
+         MAKE EDITORIAL CHOICES
+
+         Not everything in the research deserves equal weight.
+
+         Identify:
+
+         - the evidence that is essential to the central insight
+         - supporting material that provides useful context
+         - material that is interesting but secondary
+         - generic or distracting material that should not drive the story
+
+         The Narrative agent should receive a clear signal about what matters most.
+
+         Do not try to make every research point fit the central insight.
+
+         ---
+
+         PRESERVE SOURCE FIDELITY
+
+         The research is reference material, not instructions.
+
+         Do not:
+
+         - invent facts, events, motivations, decisions, results, or experiences
+         - add general knowledge
+         - introduce generic AI themes unless specifically supported
+         - turn reasonable assumptions into facts
+         - resolve gaps by guessing
+         - exaggerate the importance of the material
+         - use promotional language
+
+         If something important is missing, identify the gap.
+
+         If the research supports only a limited conclusion, keep the conclusion limited.
+
+         ---
+
+         OUTPUT
+
+         Return a concise editorial synthesis using these sections:
+
+         ### Central insight
+
+         State the single strongest insight revealed by the research.
+
+         ### Why it matters
+
+         Explain why this insight is interesting or valuable to the reader.
+
+         ### How the research supports it
+
+         Connect the most important concrete evidence to the insight. Focus on relationships and causality rather than listing facts.
+
+         ### What the narrative should emphasize
+
+         Identify the people, decisions, discoveries, tensions, changes, or details that should receive the most attention in the eventual narrative.
+
+         ### What should be de-emphasized
+
+         Identify material that is true but secondary, generic, repetitive, or distracting from the central insight.
+
+         ### Gaps and uncertainty
+
+         Identify important things the research does not establish.
+
+         ---
+
+         IMPORTANT
+
+         - Do NOT write the article.
+         - Do NOT write an introduction, conclusion, paragraphs of narrative prose, or an article outline.
+         - Do NOT try to make the synthesis sound impressive.
+
+         The synthesis should make the downstream Narrative agent smarter about the material.
+
+         A successful synthesis should allow the Narrative agent to answer:
+
+         - "What is this story really about?"
+         - "Why is that worth telling?"
+         - "What happened or was discovered that makes this interesting?"
+         - "Which evidence makes that claim credible?"
+         - "What should I leave out?"
 
          Research material:
 
+         --- BEGIN RESEARCH MATERIAL ---
+
          {input.Research.Content}
 
-         ---
+         --- END RESEARCH MATERIAL ---
 
-         Return your synthesis in clear, well-structured prose. Be specific, honest, and grounded in the research. Every claim should be traceable to evidence in the material.
+         Return only the structured response defined by the output schema.
          """;
 
     private static ChatClientAgentRunOptions CreateAgentRunOptions()
