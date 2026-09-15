@@ -369,6 +369,31 @@ public sealed class IdeaAgent : IAgent<StoryInput, IReadOnlyList<Domain.Idea>>
                  - describe the editorial idea clearly
                  - identify the intended audience
                  - explain why the idea is worth exploring
+                 - document the concrete evidence from the source that supports the idea
+
+                 EVIDENCE REQUIREMENT
+
+                 Every idea MUST include an Evidence field that contains:
+
+                 - Concrete facts, events, decisions, changes, or statements from the source that
+                   support the idea
+                 - Specific examples or quotes that demonstrate why the idea is valid
+                 - A summary of what the source explicitly establishes about the idea
+
+                 Evidence MUST NOT contain:
+
+                 - Generic reasoning
+                 - Invented facts or events
+                 - Invented motivations or feedback
+                 - Invented user reactions
+                 - Invented causal relationships
+                 - Assumptions presented as facts
+
+                 If the evidence for an idea is weak or thin, describe it as weak rather than
+                 inventing missing details.
+
+                 The first idea must have the strongest evidence because the workflow
+                 deterministically selects it.
 
                  Return all ideas ordered from strongest to weakest.
 
@@ -458,7 +483,8 @@ public sealed class IdeaAgent : IAgent<StoryInput, IReadOnlyList<Domain.Idea>>
     ///     "title": "...",
     ///     "description": "...",
     ///     "audience": "...",
-    ///     "rationale": "..."
+    ///     "rationale": "...",
+    ///     "evidence": "..."
     ///     }
     ///     ]
     ///     }

@@ -17,7 +17,8 @@ public sealed class StoryWorkflowTests
             "Test Idea",
             "A test idea for verification",
             "Test Audience",
-            "To verify workflow execution"
+            "To verify workflow execution",
+            "The source material provides concrete support for this idea."
         );
 
         var expectedResearch = new ResearchResult(
@@ -69,7 +70,8 @@ public sealed class StoryWorkflowTests
             "Captured",
             "Description",
             "Audience",
-            "Rationale"
+            "Rationale",
+            "Evidence from source material."
         );
 
         var ideaAgent = new CapturingFakeAgent(expectedIdea);
@@ -109,7 +111,8 @@ public sealed class StoryWorkflowTests
             "Captured",
             "Description",
             "Audience",
-            "Rationale"));
+            "Rationale",
+            "Evidence from source."));
 
         var researchAgent = new CapturingFakeResearchAgent(
             new ResearchResult(
@@ -224,7 +227,8 @@ public sealed class StoryWorkflowTests
             "Test Idea",
             "Test description",
             "Test audience",
-            "Test rationale"));
+            "Test rationale",
+            "Test evidence."));
 
         var researchAgent = new FakeResearchAgent(new ResearchResult("research content"));
         var synthesizer = new FakeSynthesizerAgent(new SynthesisResult("synthesis content"));
@@ -364,5 +368,68 @@ public sealed class StoryWorkflowTests
 
             return Task.FromResult(result);
         }
+    }
+
+    [Fact]
+    public async Task RunAsync_WithIdea_PreservesEvidenceInSelectedIdea()
+    {
+        // Arrange
+        const string expectedEvidence = "The source explicitly states this important fact.";
+
+        var expectedIdea = new Idea(
+            "Test Idea",
+            "Test description",
+            "Test audience",
+            "Test rationale",
+            expectedEvidence);
+
+        var ideaAgent = new CapturingFakeAgent(expectedIdea);
+        var researchAgent = new CapturingFakeResearchAgent(new ResearchResult("research content"));
+        var synthesizer = new FakeSynthesizerAgent(new SynthesisResult("synthesis content"));
+        var narrativeAgent = new FakeNarrativeAgent(new NarrativeResult("narrative content"));
+        var composeAgent = new FakeComposeAgent(new ComposeResult("composed content"));
+
+        var workflow = new StoryWorkflow(ideaAgent, researchAgent, synthesizer, narrativeAgent, composeAgent);
+        var input = new StoryInput("Test input");
+
+        // Act
+        await workflow.RunAsync(input);
+
+        // Assert
+        Assert.NotNull(researchAgent.CapturedInput);
+        Assert.NotNull(researchAgent.CapturedInput.SelectedIdea);
+        Assert.Equal(expectedEvidence, researchAgent.CapturedInput.SelectedIdea.Idea.Evidence);
+    }
+
+    [Fact]
+    public async Task RunAsync_WithIdea_SelectedIdeaContainsAllProperties()
+    {
+        // Arrange
+        const string title = "Evidence Test Idea";
+        const string description = "Testing evidence preservation";
+        const string audience = "Testing Team";
+        const string rationale = "To verify the experiment";
+        const string evidence = "The source provides concrete evidence: specific event X happened.";
+
+        var expectedIdea = new Idea(title, description, audience, rationale, evidence);
+        var ideaAgent = new CapturingFakeAgent(expectedIdea);
+        var researchAgent = new CapturingFakeResearchAgent(new ResearchResult("research content"));
+        var synthesizer = new FakeSynthesizerAgent(new SynthesisResult("synthesis content"));
+        var narrativeAgent = new FakeNarrativeAgent(new NarrativeResult("narrative content"));
+        var composeAgent = new FakeComposeAgent(new ComposeResult("composed content"));
+
+        var workflow = new StoryWorkflow(ideaAgent, researchAgent, synthesizer, narrativeAgent, composeAgent);
+        var input = new StoryInput("Test input");
+
+        // Act
+        var result = await workflow.RunAsync(input);
+
+        // Assert
+        Assert.NotNull(result.SelectedIdea);
+        Assert.Equal(title, result.SelectedIdea.Idea.Title);
+        Assert.Equal(description, result.SelectedIdea.Idea.Description);
+        Assert.Equal(audience, result.SelectedIdea.Idea.Audience);
+        Assert.Equal(rationale, result.SelectedIdea.Idea.Rationale);
+        Assert.Equal(evidence, result.SelectedIdea.Idea.Evidence);
     }
 }

@@ -56,7 +56,8 @@ public sealed class IdeaAgentResponseParsingTests
                   "title": "First idea",
                   "description": "First description",
                   "audience": "Developers",
-                  "rationale": "Useful because..."
+                  "rationale": "Useful because...",
+                  "evidence": "The source material supports this idea."
                 }
               ]
             }
@@ -72,6 +73,7 @@ public sealed class IdeaAgentResponseParsingTests
         Assert.Equal("First description", result[0].Description);
         Assert.Equal("Developers", result[0].Audience);
         Assert.Equal("Useful because...", result[0].Rationale);
+        Assert.Equal("The source material supports this idea.", result[0].Evidence);
     }
 
     /// <summary>
@@ -90,13 +92,15 @@ public sealed class IdeaAgentResponseParsingTests
                   "title": "Idea 1",
                   "description": "Description 1",
                   "audience": "Audience 1",
-                  "rationale": "Rationale 1"
+                  "rationale": "Rationale 1",
+                  "evidence": "Evidence 1"
                 },
                 {
                   "title": "Idea 2",
                   "description": "Description 2",
                   "audience": "Audience 2",
-                  "rationale": "Rationale 2"
+                  "rationale": "Rationale 2",
+                  "evidence": "Evidence 2"
                 }
               ]
             }
@@ -166,7 +170,8 @@ public sealed class IdeaAgentResponseParsingTests
                 "title": "Wrong shape",
                 "description": "This is a bare array",
                 "audience": "Should fail",
-                "rationale": "Because the contract requires a wrapper"
+                "rationale": "Because the contract requires a wrapper",
+                "evidence": "This won't help"
               }
             ]
             """;
@@ -242,7 +247,8 @@ public sealed class IdeaAgentResponseParsingTests
                   "TITLE": "Title Test",
                   "DESCRIPTION": "Desc Test",
                   "AUDIENCE": "Audience Test",
-                  "RATIONALE": "Rationale Test"
+                  "RATIONALE": "Rationale Test",
+                  "EVIDENCE": "Evidence Test"
                 }
               ]
             }
@@ -274,6 +280,7 @@ public sealed class IdeaAgentResponseParsingTests
                   "description": "Description",
                   "audience": "Audience",
                   "rationale": "Rationale",
+                  "evidence": "Evidence",
                   "extra_field": "This should be ignored",
                   "another_extra": 42
                 }

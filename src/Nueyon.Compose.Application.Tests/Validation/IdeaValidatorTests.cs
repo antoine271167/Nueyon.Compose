@@ -19,7 +19,8 @@ public sealed class IdeaValidatorTests
             "Test Title",
             "Test Description",
             "Test Audience",
-            "Test Rationale"
+            "Test Rationale",
+            "Test Evidence"
         );
 
         var ideas = new[] { idea };
@@ -42,14 +43,16 @@ public sealed class IdeaValidatorTests
             "Title 1",
             "Description 1",
             "Audience 1",
-            "Rationale 1"
+            "Rationale 1",
+            "Evidence 1"
         );
 
         var idea2 = new Idea(
             "Title 2",
             "Description 2",
             "Audience 2",
-            "Rationale 2"
+            "Rationale 2",
+            "Evidence 2"
         );
 
         var ideas = new[] { idea1, idea2 };
@@ -101,7 +104,8 @@ public sealed class IdeaValidatorTests
             "",
             "Test Description",
             "Test Audience",
-            "Test Rationale"
+            "Test Rationale",
+            "Test Evidence"
         );
 
         var ideas = new[] { idea };
@@ -124,7 +128,8 @@ public sealed class IdeaValidatorTests
             null!,
             "Test Description",
             "Test Audience",
-            "Test Rationale"
+            "Test Rationale",
+            "Test Evidence"
         );
 
         var ideas = new[] { idea };
@@ -147,7 +152,8 @@ public sealed class IdeaValidatorTests
             "   ",
             "Test Description",
             "Test Audience",
-            "Test Rationale"
+            "Test Rationale",
+            "Test Evidence"
         );
 
         var ideas = new[] { idea };
@@ -170,7 +176,8 @@ public sealed class IdeaValidatorTests
             "Test Title",
             "",
             "Test Audience",
-            "Test Rationale"
+            "Test Rationale",
+            "Test Evidence"
         );
 
         var ideas = new[] { idea };
@@ -193,7 +200,8 @@ public sealed class IdeaValidatorTests
             "Test Title",
             "Test Description",
             "",
-            "Test Rationale"
+            "Test Rationale",
+            "Test Evidence"
         );
 
         var ideas = new[] { idea };
@@ -216,7 +224,8 @@ public sealed class IdeaValidatorTests
             "Test Title",
             "Test Description",
             "Test Audience",
-            ""
+            "",
+            "Test Evidence"
         );
 
         var ideas = new[] { idea };
@@ -239,14 +248,16 @@ public sealed class IdeaValidatorTests
             "Title 1",
             "Description 1",
             "Audience 1",
-            "Rationale 1"
+            "Rationale 1",
+            "Evidence 1"
         );
 
         var invalidIdea = new Idea(
             "Title 2",
             "Description 2",
             "",
-            "Rationale 2"
+            "Rationale 2",
+            "Evidence 2"
         );
 
         var ideas = new[] { validIdea, invalidIdea };

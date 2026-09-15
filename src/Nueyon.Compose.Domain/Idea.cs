@@ -4,4 +4,5 @@ public sealed record Idea(
     string Title,
     string Description,
     string Audience,
-    string Rationale);
+    string Rationale,
+    string Evidence);

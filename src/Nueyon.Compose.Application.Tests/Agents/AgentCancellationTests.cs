@@ -309,7 +309,8 @@ public sealed class AgentCancellationTests
             "Test Idea",
             "Test Description",
             "Test Audience",
-            "Test Rationale");
+            "Test Rationale",
+            "Test Evidence");
 
         return new ResearchInput(
             new StoryInput("Test input"),

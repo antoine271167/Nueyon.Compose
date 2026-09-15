@@ -266,7 +266,8 @@ internal sealed class TrackingFakeAgent : IAgent<StoryInput, IReadOnlyList<Idea>
                 "Test Idea",
                 "Test description",
                 "Test Audience",
-                "For testing purposes"
+                "For testing purposes",
+                "Evidence from test source."
             )
         };
 

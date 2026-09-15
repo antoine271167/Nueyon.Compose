@@ -11,7 +11,8 @@ namespace Nueyon.Compose.Application.Agents.Idea;
 ///                 "title": "...",
 ///                 "description": "...",
 ///                 "audience": "...",
-///                 "rationale": "..."
+///                 "rationale": "...",
+///                 "evidence": "..."
 ///             }
 ///         ]
 ///     }

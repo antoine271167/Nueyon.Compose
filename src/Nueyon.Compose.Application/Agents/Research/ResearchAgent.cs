@@ -115,6 +115,35 @@ public sealed class ResearchAgent : IAgent<ResearchInput, ResearchResult>
              Description: {idea.Description}
              Audience: {idea.Audience}
              Rationale: {idea.Rationale}
+             Evidence: {idea.Evidence}
+
+             ---
+
+             EVIDENCE VERIFICATION
+
+             Treat the Evidence supplied above as the evidence basis from the previous stage.
+
+             Your first step is to verify this evidence against the source material.
+
+             Do NOT expand the Evidence into facts that the source does not support.
+
+             Do NOT assume that the supplied Evidence is automatically fact.
+
+             Classify each element of the supplied Evidence as:
+
+             FACT
+             Information explicitly supported by the source.
+
+             INTERPRETATION
+             A reasonable conclusion from the source that is not explicitly stated.
+
+             UNKNOWN
+             Information that the source does not establish.
+
+             If the supplied Evidence contains claims that are not supported by the source,
+             note them as UNKNOWN or INTERPRETATION.
+
+             If the supplied Evidence is weak or contradicted by the source, report that.
 
              ---
 
