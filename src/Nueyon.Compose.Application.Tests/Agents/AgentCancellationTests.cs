@@ -119,7 +119,8 @@ public sealed class AgentCancellationTests
                   "title": "Test Idea",
                   "description": "Test Description",
                   "audience": "Test Audience",
-                  "rationale": "Test Rationale"
+                  "rationale": "Test Rationale",
+                  "evidence": "The source material supports this idea."
                 }
               ]
             }
