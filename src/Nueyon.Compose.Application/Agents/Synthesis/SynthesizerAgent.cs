@@ -199,45 +199,45 @@ public sealed class SynthesizerAgent(
           ---
 
           OUTPUT
-          
+
           Return the synthesis as plain text inside the Content property.
-          
+
           The Content property MUST be a single string.
-          
+
           Inside that string, use these Markdown headings:
-          
+
           ### Central insight
-          
+
           State the single strongest insight revealed by the research.
-          
+
           ### Why it matters
-          
+
           Explain why this insight is interesting or valuable to the reader.
-          
+
           ### How the research supports it
-          
+
           Connect the most important concrete evidence to the insight. Focus on relationships and causality rather than listing facts.
-          
+
           ### What the narrative should emphasize
-          
+
           Identify the people, decisions, discoveries, tensions, changes, or details that should receive the most attention in the eventual narrative.
-          
+
           ### What should be de-emphasized
-          
+
           Identify material that is true but secondary, generic, repetitive, or distracting from the central insight.
-          
+
           ### Gaps and uncertainty
-          
+
           Identify important things the research does not establish.
-          
+
           IMPORTANT:
-          
+
           These headings and their content belong inside the single Content string.
-          
+
           Do NOT create additional JSON properties for these sections.
-          
+
           The expected response shape is:
-          
+
           ```
           {
             "content": "### Central insight\n...\n\n### Why it matters\n..."

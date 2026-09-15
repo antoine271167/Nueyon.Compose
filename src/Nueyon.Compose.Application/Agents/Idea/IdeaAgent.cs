@@ -70,34 +70,149 @@ public sealed class IdeaAgent : IAgent<StoryInput, IReadOnlyList<Domain.Idea>>
 
                  --- END SOURCE MATERIAL ---
 
-                 Read and understand the complete source material. Identify the most interesting story, insight, discovery, experience, argument, or transformation actually present in the source. Generate multiple possible content ideas grounded in the material.
+                 Read and understand the complete source material before generating ideas.
 
-                 For each idea, focus on what is genuinely present in the source—do not invent facts, experiences, or conclusions not meaningfully supported by the material.
+                 TASK
 
-                 Prefer ideas that reveal:
-                 - An unexpected discovery or realization
-                 - A change in thinking or perspective
-                 - A problem and how it was solved
-                 - An assumption that turned out to be wrong
-                 - An important decision or trade-off
-                 - A lesson learned from concrete experience
-                 - A surprising outcome
-                 - An interesting contradiction
-                 - A transformation from one idea or approach into another
+                 Identify the strongest editorial opportunities actually present in the source.
+                 Generate multiple possible content ideas and order them from strongest to weakest.
 
-                 Prefer specific, source-grounded stories over generic topics or unsupported themes. Do not introduce themes such as ethics, human oversight, authenticity, disruption, the future of AI, productivity, or accessibility unless the source itself contains meaningful material supporting those themes.
+                 An editorial idea is not the same as the topic of the source.
 
-                 Distinguish between a topic (what something is about) and an editorial idea (something worth saying about that topic). A strong idea must have a reason to exist based on the source.
+                 A topic describes what the source is about.
+                 An editorial idea identifies something specific that is worth saying about that topic.
 
-                 Return the strongest editorial opportunity first. Evaluate ideas using these criteria:
+                 FIRST: FIND THE INTERESTING PART
+
+                 Before generating ideas, look for the most meaningful thing that happened,
+                 changed, was discovered, or was learned.
+
+                 Pay particular attention to:
+
+                 - an initial assumption that changed
+                 - an unexpected discovery or realization
+                 - a problem that revealed a deeper problem
+                 - an initial approach that led to a different approach
+                 - a decision or trade-off
+                 - an unexpected outcome
+                 - a contradiction or tension
+                 - a concrete lesson learned from experience
+                 - a transformation in the author's thinking, approach, or product
+
+                 When the source contains a genuine development journey, prefer that journey
+                 over a description of the resulting product.
+
+                 For example:
+
+                 Weak:
+                 "Nuëyon.Compose is an AI-native content creation system."
+
+                 Stronger:
+                 "Building an AI agent revealed that the harder problem was orchestrating
+                 multiple capabilities rather than making a single agent smarter."
+
+                 The stronger idea is preferable because it contains a discovery and a change
+                 in understanding, provided that the source actually supports it.
+
+                 SECOND: COMPARE POSSIBLE STORIES
+
+                 Do not automatically choose the most visible or recent product change as
+                 the strongest idea.
+
+                 A product evolution, feature, architecture, or name change may be a valid
+                 editorial idea, but only if the source contains a meaningful story or
+                 insight behind it.
+
+                 When choosing between ideas, prefer the one that gives the reader the
+                 strongest combination of:
+
+                 - a specific situation or experience
+                 - a meaningful insight, discovery, tension, decision, or change
+                 - evidence in the source
+                 - useful or interesting reader value
+                 - potential for a coherent narrative
+
+                 Do not choose a generic product overview when the source contains a deeper
+                 and more specific story.
+
+                 THIRD: PRESERVE SOURCE FIDELITY
+
+                 Every idea must be supported by the source material.
+
+                 Do not invent:
+
+                 - facts
+                 - experiences
+                 - motivations
+                 - user feedback
+                 - customer reactions
+                 - market research
+                 - competitor influence
+                 - causal relationships
+                 - conclusions
+
+                 Do not turn an inference into a fact.
+
+                 For example, if the source says:
+
+                 "I was uncertain whether 'Story' belonged in the name."
+
+                 You may conclude:
+
+                 "The author questioned whether 'Story' was too narrow for the product."
+
+                 You may NOT conclude:
+
+                 "Users felt that 'Story' was too narrow."
+
+                 You may NOT conclude:
+
+                 "User feedback caused the name change."
+
+                 unless the source explicitly provides that evidence.
+
+                 Do not introduce generic themes such as ethics, human oversight,
+                 authenticity, disruption, the future of AI, productivity, accessibility,
+                 market trends, or customer demand unless the source contains meaningful
+                 evidence for them.
+
+                 Do not manufacture a development journey when one does not exist.
+
+                 FOURTH: ORDER THE IDEAS
+
+                 Evaluate each candidate using:
+
                  1. Specificity
                  2. Strength of the underlying story or insight
-                 3. Evidence in the source material
+                 3. Evidence in the source
                  4. Reader value
                  5. Originality
-                 6. Potential for a coherent narrative
+                 6. Narrative potential
 
-                 Return all generated ideas ordered by strength.
+                 The ordering is an editorial judgment, not a chronological ordering.
+
+                 The FIRST idea is especially important because the current workflow
+                 deterministically selects the first idea.
+
+                 Therefore, the first idea must be the single strongest editorial opportunity.
+
+                 If the source contains a genuine discovery, change in thinking, problem/
+                 realization, decision, tension, or transformation, strongly prefer that
+                 over a descriptive product overview.
+
+                 Do not put a generic topic first simply because it is easier to write about.
+
+                 OUTPUT
+
+                 Generate multiple possible editorial ideas.
+
+                 For each idea:
+                 - provide a clear and compelling title
+                 - describe the editorial idea clearly
+                 - identify the intended audience
+                 - explain why the idea is worth exploring
+
+                 Return all ideas ordered from strongest to weakest.
                  """;
 
             // Run the agent with structured output options configured
