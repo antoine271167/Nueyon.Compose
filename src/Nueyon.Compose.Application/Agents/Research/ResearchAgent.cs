@@ -131,51 +131,59 @@ public sealed class ResearchAgent : IAgent<ResearchInput, ResearchResult>
 
              The source material is the primary and authoritative source.
 
-             Think of your task as reconstructing the chain:
+             Your most important responsibility is to preserve the distinction
+             between what the source establishes, what can reasonably be inferred,
+             and what the source does not establish.
 
-             INITIAL SITUATION
-             → WHAT HAPPENED
-             → WHAT PROBLEM OR TENSION APPEARED
-             → WHAT WAS DISCOVERED
-             → WHAT CHANGED
-             → WHAT DECISION FOLLOWED
-             → WHAT WAS BUILT OR CHANGED AS A RESULT
-             → WHAT WAS LEARNED
+             Think of the research as reconstructing the evidence behind the
+             selected editorial idea.
 
-             Only include steps that are actually supported by the source.
+             ---
 
              STEP 1 — IDENTIFY THE STARTING POINT
 
              Find the concrete starting point for the selected idea.
 
              Extract:
+
              - What was the original goal?
              - What was initially being attempted?
              - What assumptions or expectations are explicitly described?
              - What was the situation before anything changed?
 
-             STEP 2 — IDENTIFY THE DEVELOPMENT OR CONFLICT
+             Only report what the source actually establishes.
 
-             Find what happened that made the original approach insufficient,
-             changed the direction, or revealed something unexpected.
+             ---
 
-             Extract:
+             STEP 2 — IDENTIFY WHAT HAPPENED
+
+             Find the concrete events, experiences, changes, or observations
+             described in the source.
+
+             Look for:
+
              - Problems explicitly encountered
              - Limitations explicitly discovered
-             - Decisions that had to be made
+             - Decisions that were made
              - Trade-offs explicitly described
              - Moments where the author's thinking changed
              - Unexpected discoveries
              - Contradictions or tensions
+             - Changes to architecture, product, workflow, or direction
 
              Do not invent a problem merely because one would normally exist.
+
+             Do not assume that a change had a particular cause unless the source
+             establishes that cause.
+
+             ---
 
              STEP 3 — IDENTIFY THE CHANGE IN THINKING
 
              Determine whether the source describes a change from one way of
              thinking to another.
 
-             If it does, capture:
+             If it does, identify:
 
              BEFORE:
              What did the author originally think or intend?
@@ -186,35 +194,87 @@ public sealed class ResearchAgent : IAgent<ResearchInput, ResearchResult>
              AFTER:
              What did the author conclude, change, or understand differently?
 
-             If the source does not explicitly establish one of these stages,
-             mark it as UNKNOWN rather than filling the gap.
+             Only include a causal relationship when the source supports it.
 
-             STEP 4 — IDENTIFY THE CONSEQUENCES
+             If the source establishes the BEFORE and AFTER but does not establish
+             what caused the change, do not invent the cause.
 
-             Extract what actually changed as a consequence of the discovery.
+             Mark the missing cause as UNKNOWN.
+
+             ---
+
+             STEP 4 — IDENTIFY CONSEQUENCES
+
+             Extract what actually changed as a consequence of the events,
+             discoveries, or decisions.
 
              Look for:
+
              - Architecture changes
              - Design decisions
              - Product decisions
              - Workflow changes
              - Naming or positioning decisions
              - New components or responsibilities
-             - Things that were deliberately removed or deferred
-             - Trade-offs
+             - Things deliberately removed or deferred
+             - Explicit trade-offs
+             - Explicit lessons
 
-             Distinguish clearly between:
+             Be careful with causality.
 
-             FACT:
-             Explicitly supported by the source.
+             If the source says that A happened and later B happened, that does
+             NOT automatically mean A caused B.
 
-             INTERPRETATION:
-             A reasonable interpretation directly supported by the source.
+             Only state A → B when the source explicitly supports that relationship.
 
-             UNKNOWN:
-             The source does not establish this.
+             ---
 
-             Never present an INTERPRETATION or UNKNOWN as a FACT.
+             STEP 5 — CLASSIFY THE EVIDENCE
+
+             Every important claim must belong to exactly one of these categories.
+
+             FACT
+
+             Information explicitly supported by the source material.
+
+             Examples:
+             - A specific decision was made.
+             - A specific component was added.
+             - A product name changed.
+             - The author explicitly questioned something.
+             - A specific architectural change occurred.
+
+             INTERPRETATION
+
+             A reasonable conclusion that can be drawn from the source, but that
+             is not explicitly stated as a fact.
+
+             Interpretations must remain clearly identified as interpretations.
+
+             UNKNOWN
+
+             Information that the source does not establish.
+
+             This includes missing:
+
+             - Causes
+             - Motivations
+             - Feedback
+             - Reactions
+             - Results
+             - Measurements
+             - Alternatives
+             - Decision criteria
+             - Relationships between events
+             - Reasons for decisions
+
+             Never turn an INTERPRETATION into a FACT.
+
+             Never turn an UNKNOWN into a FACT or an INTERPRETATION.
+
+             When uncertain, classify the information as UNKNOWN.
+
+             ---
 
              IMPORTANT EVIDENCE RULE
 
@@ -222,22 +282,49 @@ public sealed class ResearchAgent : IAgent<ResearchInput, ResearchResult>
              feedback, reaction, or change must be traceable to something
              explicitly present in the source material.
 
-             Do not infer that "feedback", "users", "stakeholders", "discussions",
-             "requirements", or "user needs" existed unless the source explicitly
-             says so.
+             Do not infer that:
+
+             - users existed
+             - users provided feedback
+             - stakeholders were involved
+             - discussions occurred
+             - requirements existed
+             - customer reactions occurred
+             - market research occurred
+             - a decision had a particular motivation
+
+             unless the source explicitly says so.
 
              For example:
 
-             Source:
+             SOURCE:
+
              "The author considered whether the name StoryFlow was too narrow."
 
-             Allowed:
+             FACT:
+
              "The author questioned whether StoryFlow was too narrow."
 
-             Not allowed:
+             INTERPRETATION:
+
+             "The product identity may have been moving toward a broader concept."
+
+             UNKNOWN:
+
+             "The source does not establish why the author considered StoryFlow
+             too narrow."
+
+             "The source does not establish whether users influenced the decision."
+
+             NOT ALLOWED:
+
              "Users felt StoryFlow was too narrow."
+
              "User feedback caused the name change."
+
              "Discussions with users revealed that a broader name was needed."
+
+             unless the source explicitly states those things.
 
              If the source describes a decision but does not explain its cause,
              report the decision without assigning a cause.
@@ -245,15 +332,15 @@ public sealed class ResearchAgent : IAgent<ResearchInput, ResearchResult>
              If the source does not identify who influenced a decision, do not
              invent an actor.
 
-             When uncertain whether a claim is supported, classify it as UNKNOWN
-             rather than interpreting it as fact.
+             ---
 
-             STEP 5 — FIND THE EVIDENCE
+             STEP 6 — FIND THE EVIDENCE FOR THE SELECTED IDEA
 
-             For each important part of the selected idea, identify the concrete
-             evidence in the source.
+             For each important part of the selected editorial idea, identify the
+             concrete evidence in the source.
 
              Prefer:
+
              - Specific events
              - Specific decisions
              - Specific technical details
@@ -263,40 +350,86 @@ public sealed class ResearchAgent : IAgent<ResearchInput, ResearchResult>
              - Explicit lessons
 
              Avoid vague statements such as:
+
              "AI is changing software development."
+
              "Orchestration is increasingly important."
+
              "Multi-agent systems are the future."
 
              These are not useful research unless the source itself provides
              concrete evidence for them.
 
-             STEP 6 — IDENTIFY THE ACTUAL LESSON
+             ---
+
+             STEP 7 — IDENTIFY THE ACTUAL LESSON
 
              Determine what lesson the author can legitimately draw from the
              experience.
 
-             Prefer a lesson that emerges from the specific events in the source.
+             Prefer a lesson that emerges from specific events in the source.
 
              Do not replace a specific lesson with a generic industry statement.
 
              For example:
 
              WEAK:
+
              "AI orchestration is important for modern applications."
 
              STRONGER:
+
              "The attempt to build a single AI agent exposed that the real
              complexity was coordinating different responsibilities, which led
              to an orchestration-based architecture."
 
              Only use the stronger interpretation if the source supports it.
 
-             STEP 7 — IDENTIFY GAPS
+             If the source does not establish the lesson, classify the proposed
+             lesson as an INTERPRETATION or UNKNOWN rather than presenting it
+             as an established fact.
+
+             ---
+
+             STEP 8 — IDENTIFY THE DEVELOPMENT SEQUENCE
+
+             Where supported by the source, reconstruct the following sequence:
+
+             INITIAL SITUATION
+             →
+             WHAT HAPPENED
+             →
+             PROBLEM OR TENSION
+             →
+             DISCOVERY
+             →
+             CHANGE IN THINKING
+             →
+             DECISION
+             →
+             CONSEQUENCE
+             →
+             LESSON
+
+             Do not force every stage into the sequence.
+
+             If a stage is not supported by the source, mark it as UNKNOWN.
+
+             Do not manufacture a narrative journey.
+
+             If the source contains a genuine development journey, preserve it.
+
+             If the source does not contain a genuine journey, do not create one.
+
+             ---
+
+             STEP 9 — IDENTIFY GAPS
 
              Explicitly identify information that would be useful but is not
              present in the source.
 
              Examples:
+
              - The source describes that a problem occurred but not exactly what
                caused it.
              - The source describes an architectural change but not its measured
@@ -305,15 +438,20 @@ public sealed class ResearchAgent : IAgent<ResearchInput, ResearchResult>
                considered.
              - The source mentions feedback but does not explain who provided it
                or what specifically was said.
+             - The source describes two events but does not establish a causal
+               relationship between them.
 
              Do not fill these gaps with generic knowledge.
 
-             STEP 8 — EXCLUDE GENERIC EXPANSION
+             ---
+
+             STEP 10 — EXCLUDE GENERIC EXPANSION
 
              Before producing the result, remove anything that does not directly
              help explain the selected editorial idea.
 
              In particular, do not add generic discussion of:
+
              - The history of AI
              - The future of AI
              - AI disruption
@@ -328,18 +466,83 @@ public sealed class ResearchAgent : IAgent<ResearchInput, ResearchResult>
              unless the source explicitly contains relevant evidence and it is
              necessary to the selected idea.
 
-             IMPORTANT:
-
              The purpose of this research is NOT to make the subject sound more
              impressive.
 
-             The purpose is to give the next agent enough source-grounded evidence
-             to tell the most interesting story that is actually present.
+             The purpose is to preserve the evidence needed to tell the most
+             interesting story that is actually present.
 
-             Preserve the author's specific journey, discoveries, decisions,
-             uncertainties, and changes in thinking.
+             ---
 
-             Do not turn the author's experience into a generic industry article.
+             OUTPUT STRUCTURE
+
+             Return the research as plain text inside the Content property.
+
+             The Content property MUST be a single string.
+
+             Inside that string, use exactly these Markdown headings:
+
+             ### Facts
+
+             List only information explicitly supported by the source material.
+
+             Do not include interpretations or assumptions here.
+
+             ### Interpretations
+
+             List reasonable conclusions supported by the source but not
+             explicitly stated as facts.
+
+             Keep these clearly distinguishable from facts.
+
+             ### Unknowns
+
+             List important information that the source does not establish.
+
+             Include missing causes, motivations, feedback, reactions, results,
+             measurements, alternatives, decision criteria, and causal
+             relationships where relevant.
+
+             ### Development sequence
+
+             Describe the supported sequence from the initial situation through
+             events, problems, discoveries, changes in thinking, decisions,
+             consequences, and lessons.
+
+             Only include stages supported by the source.
+
+             ### Editorial relevance
+
+             Explain which facts and evidence are most relevant to the selected
+             editorial idea and why.
+
+             Keep this specific to the selected idea.
+
+             Do not turn this into a generic discussion of the subject.
+
+             ---
+
+             FINAL EVIDENCE CHECK
+
+             Before returning the result, check every important claim.
+
+             Ask:
+
+             1. Is this explicitly supported by the source?
+                → Put it under Facts.
+
+             2. Is this a reasonable conclusion but not explicitly stated?
+                → Put it under Interpretations.
+
+             3. Is there not enough information to establish it?
+                → Put it under Unknowns.
+
+             Never place an Interpretation or Unknown under Facts.
+
+             If there is any doubt, prefer Unknown over an unsupported claim.
+
+             The research must be useful to the downstream Synthesis Agent without
+             requiring that agent to guess which statements are facts.
 
              Do not write polished article prose.
 
@@ -347,10 +550,9 @@ public sealed class ResearchAgent : IAgent<ResearchInput, ResearchResult>
 
              Do not introduce facts from your general knowledge.
 
-             Focus on source-grounded evidence, specificity, and the causal
-             sequence of the story.
+             Do not turn the author's experience into a generic industry article.
 
-             Return only the research material.
+             Return only the structured response defined by the output schema.
              """;
     }
 

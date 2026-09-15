@@ -75,12 +75,19 @@ public sealed class IdeaAgent : IAgent<StoryInput, IReadOnlyList<Domain.Idea>>
                  TASK
 
                  Identify the strongest editorial opportunities actually present in the source.
+
                  Generate multiple possible content ideas and order them from strongest to weakest.
 
                  An editorial idea is not the same as the topic of the source.
 
                  A topic describes what the source is about.
                  An editorial idea identifies something specific that is worth saying about that topic.
+
+                 The goal is NOT to find the most interesting subject you can imagine.
+
+                 The goal is to find the most interesting story or insight that the source contains enough evidence to actually support.
+
+                 ---
 
                  FIRST: FIND THE INTERESTING PART
 
@@ -97,10 +104,10 @@ public sealed class IdeaAgent : IAgent<StoryInput, IReadOnlyList<Domain.Idea>>
                  - an unexpected outcome
                  - a contradiction or tension
                  - a concrete lesson learned from experience
-                 - a transformation in the author's thinking, approach, or product
+                 - a transformation in the author's thinking, approach, architecture, or product
 
-                 When the source contains a genuine development journey, prefer that journey
-                 over a description of the resulting product.
+                 When the source contains a genuine development journey, strongly prefer that
+                 journey over a description of the resulting product.
 
                  For example:
 
@@ -114,28 +121,124 @@ public sealed class IdeaAgent : IAgent<StoryInput, IReadOnlyList<Domain.Idea>>
                  The stronger idea is preferable because it contains a discovery and a change
                  in understanding, provided that the source actually supports it.
 
-                 SECOND: COMPARE POSSIBLE STORIES
+                 ---
+
+                 SECOND: TEST WHETHER THE STORY IS ACTUALLY THERE
+
+                 For every candidate idea, ask:
+
+                 1. What is the starting situation?
+                 2. What happened?
+                 3. What problem, tension, or uncertainty appeared?
+                 4. What was discovered or realized?
+                 5. Did the author's thinking change?
+                 6. Was a decision or change made?
+                 7. What consequence followed?
+                 8. What evidence in the source supports the idea?
+                 9. What important information is missing?
+
+                 You do NOT need every element for an idea to be valid.
+
+                 However, an idea must contain enough concrete evidence to be developed into
+                 meaningful content without inventing missing events, motivations, feedback,
+                 causes, or conclusions.
+
+                 An idea that sounds compelling but depends on information that is not present
+                 in the source is weaker than a less ambitious idea that is strongly supported.
+
+                 IMPORTANT:
+
+                 Do not confuse:
+
+                 "this would make a good story"
+
+                 with:
+
+                 "the source contains enough evidence to tell this story."
+
+                 Only the second qualifies as a strong editorial opportunity.
+
+                 If an idea depends on several unknowns, lower its ranking.
+
+                 ---
+
+                 THIRD: DISTINGUISH FACT FROM INTERPRETATION
+
+                 When evaluating an idea, distinguish carefully between:
+
+                 FACT:
+                 Something explicitly stated or demonstrated in the source.
+
+                 INTERPRETATION:
+                 A reasonable conclusion that can be drawn from the source but is not
+                 explicitly stated.
+
+                 UNKNOWN:
+                 Something the source does not establish.
+
+                 An editorial idea may contain an interpretation, but the interpretation must
+                 be grounded in concrete facts from the source.
+
+                 Do not build the strongest idea around an unsupported interpretation when a
+                 better-supported idea exists.
+
+                 For example:
+
+                 SOURCE:
+
+                 "I was uncertain whether 'Story' belonged in the name."
+
+                 Supported idea:
+
+                 "The author questioned whether the product was too narrowly defined by the
+                 word 'Story'."
+
+                 Unsupported idea:
+
+                 "Users felt that StoryFlow was too narrow."
+
+                 Also unsupported:
+
+                 "User feedback caused the product to be renamed Compose."
+
+                 The latter claims require evidence that may not exist in the source.
+
+                 ---
+
+                 FOURTH: COMPARE POSSIBLE STORIES
 
                  Do not automatically choose the most visible or recent product change as
                  the strongest idea.
 
                  A product evolution, feature, architecture, or name change may be a valid
-                 editorial idea, but only if the source contains a meaningful story or
-                 insight behind it.
+                 editorial idea, but only if the source contains a meaningful story or insight
+                 behind it.
 
                  When choosing between ideas, prefer the one that gives the reader the
                  strongest combination of:
 
                  - a specific situation or experience
                  - a meaningful insight, discovery, tension, decision, or change
-                 - evidence in the source
+                 - concrete evidence in the source
                  - useful or interesting reader value
                  - potential for a coherent narrative
+                 - low dependence on unsupported assumptions
+
+                 A genuine experience or development journey should normally outrank a
+                 descriptive product overview.
+
+                 A specific discovery should normally outrank a generic statement about the
+                 product.
+
+                 A well-supported narrow insight should normally outrank a broad but weakly
+                 supported interpretation.
 
                  Do not choose a generic product overview when the source contains a deeper
                  and more specific story.
 
-                 THIRD: PRESERVE SOURCE FIDELITY
+                 ---
+
+                 FIFTH: PRESERVE SOURCE FIDELITY
 
                  Every idea must be supported by the source material.
 
@@ -148,71 +251,128 @@ public sealed class IdeaAgent : IAgent<StoryInput, IReadOnlyList<Domain.Idea>>
                  - customer reactions
                  - market research
                  - competitor influence
+                 - discussions
+                 - stakeholders
+                 - requirements
                  - causal relationships
+                 - outcomes
                  - conclusions
 
                  Do not turn an inference into a fact.
 
-                 For example, if the source says:
+                 Do not assume that two events are causally related simply because one happened
+                 before the other.
 
-                 "I was uncertain whether 'Story' belonged in the name."
+                 Do not assume that a product decision was caused by user feedback unless the
+                 source explicitly says so.
 
-                 You may conclude:
-
-                 "The author questioned whether 'Story' was too narrow for the product."
-
-                 You may NOT conclude:
-
-                 "Users felt that 'Story' was too narrow."
-
-                 You may NOT conclude:
-
-                 "User feedback caused the name change."
-
-                 unless the source explicitly provides that evidence.
-
-                 Do not introduce generic themes such as ethics, human oversight,
-                 authenticity, disruption, the future of AI, productivity, accessibility,
-                 market trends, or customer demand unless the source contains meaningful
-                 evidence for them.
+                 Do not assume that a naming decision reflects a change in product strategy
+                 unless the source establishes that relationship.
 
                  Do not manufacture a development journey when one does not exist.
 
-                 FOURTH: ORDER THE IDEAS
+                 If the source contains a genuine development journey, preserve it.
 
-                 Evaluate each candidate using:
+                 If the source does not contain a genuine journey, choose the strongest
+                 supported insight instead.
 
-                 1. Specificity
-                 2. Strength of the underlying story or insight
-                 3. Evidence in the source
-                 4. Reader value
-                 5. Originality
-                 6. Narrative potential
+                 Do not introduce generic themes such as:
+
+                 - ethics
+                 - human oversight
+                 - authenticity
+                 - disruption
+                 - the future of AI
+                 - productivity
+                 - accessibility
+                 - market trends
+                 - customer demand
+                 - innovation
+
+                 unless the source contains meaningful evidence for them.
+
+                 ---
+
+                 SIXTH: RANK THE IDEAS
+
+                 Evaluate each candidate using these criteria:
+
+                 1. Source evidence
+                    How strongly is the idea supported by concrete material in the source?
+
+                 2. Story or insight strength
+                    Does the idea contain a meaningful discovery, tension, decision,
+                    transformation, or lesson?
+
+                 3. Specificity
+                    Is the idea specific rather than a generic description of the topic?
+
+                 4. Narrative potential
+                    Can the idea be developed into a coherent story without inventing
+                    missing events?
+
+                 5. Reader value
+                    Does the idea provide something useful, interesting, surprising, or
+                    thought-provoking to the intended audience?
+
+                 6. Originality
+                    Does the idea reveal something more specific than the obvious topic?
+
+                 7. Assumption risk
+                    How much would a downstream agent have to guess or infer in order to
+                    develop the idea?
+
+                 Strong ideas score high on evidence and story strength and low on assumption
+                 risk.
 
                  The ordering is an editorial judgment, not a chronological ordering.
 
                  The FIRST idea is especially important because the current workflow
                  deterministically selects the first idea.
 
-                 Therefore, the first idea must be the single strongest editorial opportunity.
+                 Therefore, the first idea must be the single strongest editorial opportunity
+                 that can actually be supported by the source.
 
-                 If the source contains a genuine discovery, change in thinking, problem/
-                 realization, decision, tension, or transformation, strongly prefer that
-                 over a descriptive product overview.
+                 Do NOT put an idea first merely because it sounds impressive.
 
-                 Do not put a generic topic first simply because it is easier to write about.
+                 Do NOT put a generic topic first because it is easy to write.
+
+                 Do NOT put a product or naming change first if the source does not contain
+                 enough evidence to explain why that change mattered.
+
+                 ---
+
+                 SEVENTH: FINAL VALIDATION
+
+                 Before returning the ideas, perform this check on the first-ranked idea:
+
+                 - Can I point to concrete evidence in the source for the core claim?
+                 - Does the source contain enough material to explain why this idea matters?
+                 - Does the idea depend on invented people, feedback, motivations, or events?
+                 - Does the idea assume a causal relationship that the source does not establish?
+                 - Could a downstream Narrative agent develop this idea without making things up?
+
+                 If the answer to the last question is no, the idea is not strong enough to
+                 rank first.
+
+                 Prefer a smaller, strongly supported idea over a larger, speculative one.
+
+                 ---
 
                  OUTPUT
 
                  Generate multiple possible editorial ideas.
 
                  For each idea:
+
                  - provide a clear and compelling title
                  - describe the editorial idea clearly
                  - identify the intended audience
                  - explain why the idea is worth exploring
 
                  Return all ideas ordered from strongest to weakest.
+
+                 The first idea must be the strongest source-grounded editorial opportunity.
                  """;
 
             // Run the agent with structured output options configured
