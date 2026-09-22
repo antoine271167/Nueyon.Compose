@@ -161,6 +161,52 @@ public sealed class SynthesizerAgent(
 
           ---
 
+          TREAT UNKNOWNs AS HARD BOUNDARIES
+
+          The research may contain explicit UNKNOWN items.
+
+          An UNKNOWN is not missing information that you should complete.
+
+          It is a boundary on what the available source allows you to claim.
+
+          When an UNKNOWN concerns a cause, motivation, feedback, reaction, result, or relationship between events:
+
+          - do not turn the UNKNOWN into a fact
+          - do not imply that the missing relationship exists
+          - do not create a plausible explanation to make the story stronger
+          - do not use wording that causes the reader to infer the missing relationship
+          - if the relationship is important to the central insight, explicitly preserve the uncertainty in the synthesis
+
+          For example:
+
+          Research:
+          - FACT: A happened.
+          - FACT: Later B happened.
+          - UNKNOWN: The source does not establish why B happened.
+
+          Incorrect:
+          "A happened, which led to B."
+
+          Also incorrect:
+          "The experience of A ultimately resulted in B."
+
+          Correct:
+          "A happened, and later B happened. The available research does not establish whether A caused B."
+
+          The same rule applies to:
+
+          - motivations
+          - user feedback
+          - reactions
+          - decision criteria
+          - outcomes
+          - relationships between events
+          - any other explicitly identified UNKNOWN
+
+          Do not use an UNKNOWN as an invitation to reason beyond the evidence.
+
+          ---
+
           MAKE EDITORIAL CHOICES
 
           Not everything in the research deserves equal weight.
@@ -191,6 +237,8 @@ public sealed class SynthesizerAgent(
           - resolve gaps by guessing
           - exaggerate the importance of the material
           - use promotional language
+          - create causal relationships that the research does not establish
+          - convert UNKNOWN findings into interpretations presented as facts
 
           If something important is missing, identify the gap.
 
@@ -218,6 +266,8 @@ public sealed class SynthesizerAgent(
 
           Connect the most important concrete evidence to the insight. Focus on relationships and causality rather than listing facts.
 
+          Do not invent relationships between facts. If an important relationship is explicitly marked UNKNOWN in the research, preserve that uncertainty.
+
           ### What the narrative should emphasize
 
           Identify the people, decisions, discoveries, tensions, changes, or details that should receive the most attention in the eventual narrative.
@@ -229,6 +279,8 @@ public sealed class SynthesizerAgent(
           ### Gaps and uncertainty
 
           Identify important things the research does not establish.
+
+          Preserve explicit UNKNOWN findings from the research when they materially affect the interpretation of the story.
 
           IMPORTANT:
 
@@ -251,6 +303,8 @@ public sealed class SynthesizerAgent(
           - Do NOT write the article.
           - Do NOT write an introduction, conclusion, paragraphs of narrative prose, or an article outline.
           - Do NOT try to make the synthesis sound impressive.
+          - Do NOT fill gaps in the research with plausible explanations.
+          - Do NOT turn temporal sequence into causality unless the research establishes that causality.
 
           The synthesis should make the downstream Narrative agent smarter about the material.
 
@@ -260,6 +314,9 @@ public sealed class SynthesizerAgent(
           - "Why is that worth telling?"
           - "What happened or was discovered that makes this interesting?"
           - "Which evidence makes that claim credible?"
+          - "What is known?"
+          - "What is interpretation?"
+          - "What remains unknown?"
           - "What should I leave out?"
 
           Research material:

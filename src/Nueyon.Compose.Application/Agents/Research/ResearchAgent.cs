@@ -164,8 +164,10 @@ public sealed class ResearchAgent : IAgent<ResearchInput, ResearchResult>
              between what the source establishes, what can reasonably be inferred,
              and what the source does not establish.
 
-             Think of the research as reconstructing the evidence behind the
-             selected editorial idea.
+             Think of the research as mapping the evidence behind the selected
+             editorial idea.
+
+             Do not improve, complete, or dramatize the source material.
 
              ---
 
@@ -207,35 +209,35 @@ public sealed class ResearchAgent : IAgent<ResearchInput, ResearchResult>
 
              ---
 
-             STEP 3 — IDENTIFY THE CHANGE IN THINKING
+             STEP 3 — IDENTIFY CHANGES IN THINKING
 
-             Determine whether the source describes a change from one way of
-             thinking to another.
+             Determine whether the source explicitly describes a change from one
+             way of thinking to another.
 
              If it does, identify:
 
              BEFORE:
              What did the author originally think or intend?
 
-             DISCOVERY:
-             What caused the author to reconsider that position?
+             CHANGE:
+             What changed in the author's thinking or intention?
 
              AFTER:
              What did the author conclude, change, or understand differently?
 
-             Only include a causal relationship when the source supports it.
+             Only describe a cause for the change when the source supports it.
 
-             If the source establishes the BEFORE and AFTER but does not establish
-             what caused the change, do not invent the cause.
+             If the source establishes BEFORE and AFTER but does not establish why
+             the change occurred, preserve the change but classify the reason as UNKNOWN.
 
-             Mark the missing cause as UNKNOWN.
+             Do not invent a discovery, realization, motivation, or experience to
+             explain a change merely because one would make the sequence more coherent.
 
              ---
 
              STEP 4 — IDENTIFY CONSEQUENCES
 
-             Extract what actually changed as a consequence of the events,
-             discoveries, or decisions.
+             Extract what actually changed after events, discoveries, or decisions.
 
              Look for:
 
@@ -249,12 +251,19 @@ public sealed class ResearchAgent : IAgent<ResearchInput, ResearchResult>
              - Explicit trade-offs
              - Explicit lessons
 
-             Be careful with causality.
+             Separate sequence from causality.
 
-             If the source says that A happened and later B happened, that does
-             NOT automatically mean A caused B.
+             If the source says that A happened and later B happened, that does NOT
+             automatically mean A caused B.
 
              Only state A → B when the source explicitly supports that relationship.
+
+             If the source establishes that B happened after A but does not establish
+             that A caused B, record:
+
+             A happened.
+             Later B happened.
+             Relationship: UNKNOWN.
 
              ---
 
@@ -420,9 +429,14 @@ public sealed class ResearchAgent : IAgent<ResearchInput, ResearchResult>
 
              ---
 
-             STEP 8 — IDENTIFY THE DEVELOPMENT SEQUENCE
+             STEP 8 — MAP THE DEVELOPMENT SEQUENCE
 
-             Where supported by the source, reconstruct the following sequence:
+             Describe the development of the subject only to the extent that the
+             source supports it.
+
+             The sequence is an evidence map, NOT a reconstructed story.
+
+             Where supported, identify:
 
              INITIAL SITUATION
              →
@@ -430,9 +444,7 @@ public sealed class ResearchAgent : IAgent<ResearchInput, ResearchResult>
              →
              PROBLEM OR TENSION
              →
-             DISCOVERY
-             →
-             CHANGE IN THINKING
+             DISCOVERY OR CHANGE
              →
              DECISION
              →
@@ -442,13 +454,50 @@ public sealed class ResearchAgent : IAgent<ResearchInput, ResearchResult>
 
              Do not force every stage into the sequence.
 
-             If a stage is not supported by the source, mark it as UNKNOWN.
+             For every transition between stages, ask:
 
-             Do not manufacture a narrative journey.
+             1. Are both events or states explicitly supported?
+             2. Is the relationship between them explicitly supported?
+             3. Is the relationship causal, or is it only chronological?
 
-             If the source contains a genuine development journey, preserve it.
+             If the events are supported but their relationship is not established,
+             preserve the events and mark the relationship as UNKNOWN.
 
-             If the source does not contain a genuine journey, do not create one.
+             For example:
+
+             FACT:
+             StoryFlow was the original product name.
+
+             FACT:
+             The author later explored alternative names.
+
+             UNKNOWN:
+             The source does not establish why the author reconsidered the name.
+
+             FACT:
+             Compose was eventually selected.
+
+             Do NOT transform this into:
+
+             "StoryFlow was considered limiting, which led to the decision to choose
+             Compose."
+
+             unless the source explicitly establishes that causal relationship.
+
+             Do not manufacture:
+
+             - motivations
+             - discoveries
+             - turning points
+             - reasons for decisions
+             - user reactions
+             - feedback
+             - consequences
+             - lessons
+
+             simply to make the sequence coherent.
+
+             If a stage or transition is unsupported, mark it as UNKNOWN.
 
              ---
 
@@ -534,11 +583,14 @@ public sealed class ResearchAgent : IAgent<ResearchInput, ResearchResult>
 
              ### Development sequence
 
-             Describe the supported sequence from the initial situation through
+             Map the supported sequence from the initial situation through
              events, problems, discoveries, changes in thinking, decisions,
              consequences, and lessons.
 
-             Only include stages supported by the source.
+             Do not reconstruct a coherent story when the source does not support
+             one.
+
+             Preserve unsupported transitions as UNKNOWN.
 
              ### Editorial relevance
 
@@ -566,7 +618,15 @@ public sealed class ResearchAgent : IAgent<ResearchInput, ResearchResult>
              3. Is there not enough information to establish it?
                 → Put it under Unknowns.
 
+             4. Does a development-sequence transition claim that one event caused
+                another?
+                → Keep the transition only if the source explicitly supports it.
+                Otherwise mark the relationship as UNKNOWN.
+
              Never place an Interpretation or Unknown under Facts.
+
+             Never convert an UNKNOWN relationship into a causal relationship merely
+             because the sequence would otherwise be less coherent.
 
              If there is any doubt, prefer Unknown over an unsupported claim.
 
