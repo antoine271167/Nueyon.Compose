@@ -109,6 +109,7 @@ public sealed class ResearchAgent : IAgent<ResearchInput, ResearchResult>
 
              --- END SOURCE MATERIAL ---
 
+
              SELECTED EDITORIAL IDEA
 
              Title: {idea.Title}
@@ -117,115 +118,505 @@ public sealed class ResearchAgent : IAgent<ResearchInput, ResearchResult>
              Rationale: {idea.Rationale}
              Evidence: {idea.Evidence}
 
+
              ---
 
-             EVIDENCE VERIFICATION
+             # CRITICAL RULE 1 — THE SELECTED IDEA IS A HYPOTHESIS
 
-             Treat the Evidence supplied above as a hypothesis from the previous stage,
-             not as established fact.
+             The Selected Editorial Idea is an editorial hypothesis, framing, or question.
 
-             Your first step is to verify this evidence against the source material.
+             It is NOT evidence.
 
-             Do NOT expand the supplied Evidence into facts that the source does not
-             support.
+             Do not assume that the Selected Idea is correct.
 
-             Do NOT assume that supplied Evidence is automatically correct.
+             Do not use any wording from the Selected Idea as evidence for itself.
 
-             Classify each element of the supplied Evidence as:
+             The source material is the only evidence.
+
+             This applies to EVERY part of the Selected Idea:
+
+             - Title
+             - Description
+             - Audience
+             - Rationale
+             - Evidence
+
+             If the Selected Idea says or implies:
+
+             - a strategic shift
+             - a motivation
+             - a realization
+             - a consequence
+             - a user need
+             - customer feedback
+             - a decision rationale
+             - a causal relationship
+             - a broader product direction
+             - a broader business implication
+
+             do NOT treat that claim as established.
+
+             Verify it independently against the source.
+
+             The Selected Idea may be:
+
+             - fully supported
+             - partially supported
+             - supported only as an interpretation
+             - unsupported
+             - contradicted by the source
+
+             Do not force the research to support it.
+
+             If the source does not support an important part of the Selected Idea, preserve that uncertainty.
+
+             The research must follow the source, not the framing of the Selected Idea.
+
+
+             ---
+
+             # CRITICAL RULE 2 — FACTS ARE THE FOUNDATION
+
+             The reasoning chain MUST be:
+
+             SOURCE → FACTS → INTERPRETATIONS → DERIVED VIEWS
+
+             The Selected Idea is NOT part of this reasoning chain.
+
+             The Selected Idea may only determine which source-supported information is relevant to investigate.
+
+             It may NOT supply missing meaning.
+
+             It may NOT supply missing causality.
+
+             It may NOT supply missing motivation.
+
+             It may NOT supply missing strategy.
+
+             It may NOT supply missing consequences.
+
+             It may NOT supply missing user needs.
+
+             It may NOT supply missing significance.
+
+             Think of the Selected Idea as a filter for relevance, not a source of meaning.
+
+             Research should be deliberately conservative.
+
+             When choosing between a richer statement and a narrower source-supported statement, always choose the narrower statement.
+
+             It is acceptable for the research to be incomplete, plain, or less interesting than the original source.
+
+             Do not make the research more coherent, impressive, strategic, or meaningful than the source.
+
+             Research is an evidence-preservation stage, not a storytelling stage.
+
+             Intelligence, interpretation, narrative meaning, and editorial expression belong to downstream stages.
+
+             When in doubt, preserve the evidence rather than improve the story.
+
+
+             ---
+
+             # CRITICAL RULE 3 — INTERPRETATIONS ARE SEMANTIC COMPRESSION ONLY
+
+             An Interpretation is a concise statement that compresses or summarizes meaning already explicitly established by one or more Facts.
+
+             It is NOT general reasoning from Facts.
+
+             It is NOT a plausible conclusion.
+
+             It is NOT an explanation of why something happened.
+
+             It is NOT an assessment of significance.
+
+             It is NOT an editorial judgment.
+
+             It is NOT an inference about strategy, motivation, users, benefits, impact, or broader meaning.
+
+             An Interpretation may only express meaning that is already explicitly represented in the supporting Facts.
+
+             The Interpretation must add NO new semantic content.
+
+             The rule is:
+
+             FACTS → SEMANTIC COMPRESSION
+
+             NOT:
+
+             FACTS → REASONING → INTERPRETATION
+
+             If the model has to reason beyond what the Facts explicitly establish, the result is not an Interpretation.
+
+             It is either:
+
+             - another Fact, if the source explicitly establishes it
+             - UNKNOWN, if the source does not establish it
+
+             An Interpretation must NOT introduce:
+
+             - a new motivation
+             - a new cause
+             - a new consequence
+             - a new strategic intention
+             - a new benefit
+             - a new improvement
+             - a new evaluation
+             - a new user need
+             - a new customer reaction
+             - a new market demand
+             - a new business objective
+             - a broader significance
+             - a stronger claim than the Facts support
+
+             Do not infer a reason from a decision.
+
+             Do not infer a cause from a sequence.
+
+             Do not infer a benefit from an architectural change.
+
+             Do not infer strategy from a product change.
+
+             Do not infer user needs from product decisions.
+
+             Do not infer market demand from product direction.
+
+             Do not infer improvement merely because something changed.
+
+             Do not infer intent from behavior.
+
+             Do not infer significance from relevance.
+
+             Do not infer success from completion.
+
+             Do not infer failure from change.
+
+             Do not infer a lesson merely because one would be useful.
+
+             ## SEMANTIC COMPRESSION TEST
+
+             For every Interpretation:
+
+             1. Identify the specific Fact or Facts supporting it.
+             2. Remove the Selected Idea completely.
+             3. Read only those supporting Facts.
+             4. Ask:
+
+                "Is the meaning expressed by this Interpretation already explicitly present in these Facts?"
+
+             If NO:
+             Do not include the Interpretation.
+
+             If YES, ask:
+
+                "Does the Interpretation add any new semantic content?"
+
+             New semantic content includes, but is not limited to:
+
+             - a cause
+             - a motivation
+             - an intention
+             - a consequence
+             - a benefit
+             - an impact
+             - an evaluation
+             - a strategic meaning
+             - a user implication
+             - a market implication
+             - a business implication
+             - a broader lesson
+             - a stronger certainty
+             - a broader actor scope
+
+             If YES:
+             Do not include the Interpretation.
+
+             If NO:
+             The Interpretation may be included.
+
+             IMPORTANT:
+
+             If an Interpretation is more interesting than its supporting Facts because it explains,
+             evaluates, generalizes, or gives significance to them, it is NOT semantic compression.
+
+             Remove it.
+
+             If an Interpretation can simply be replaced by the supporting Facts without losing
+             any explicitly established meaning, prefer the Facts and omit the Interpretation.
+
+             Interpretations should therefore be sparse.
+
+             It is acceptable to have no Interpretations.
+
+             When in doubt, classify the claim as UNKNOWN or leave it as a Fact rather than
+             creating an Interpretation.
+
+
+             ### Example
+
+             FACTS:
+
+             - The source states that StoryFlow was the initial product concept.
+             - The source explicitly states that the product later evolved toward composing
+               different forms of content.
+
+             VALID INTERPRETATION:
+
+             "The product concept evolved from the initial StoryFlow concept toward composing
+             different forms of content."
+
+             This is valid only because the source explicitly establishes that evolution.
+
+             INVALID:
+
+             "The evolution was a strategic shift toward a more flexible product."
+
+             This adds strategic meaning and an evaluation of flexibility.
+
+             INVALID:
+
+             "The evolution happened because users needed more content formats."
+
+             This adds motivation and user needs.
+
+             INVALID:
+
+             "The evolution improved the effectiveness of the product."
+
+             This adds an outcome and evaluation.
+
+             INVALID:
+
+             "The evolution demonstrates the limitations of individual AI agents."
+
+             This adds a broader conclusion unless explicitly established by the source.
+
+             INVALID:
+
+             "The evolution reflects changing market demands."
+
+             This adds a market implication.
+
+             INVALID:
+
+             "The development journey shows an important lesson about AI architecture."
+
+             This adds broader significance.
+
+             ### IMPORTANT DISTINCTION
+
+             These two statements are NOT equivalent:
+
+             "The work evolved from experimenting with individual AI agents toward developing an orchestrator."
+
+             "The work evolved from experimenting with individual AI agents toward developing an orchestrator
+             because this was a more effective strategy."
+
+             The first may be valid if the source explicitly establishes the evolution.
+
+             The second introduces a reason and evaluation and is therefore invalid unless explicitly
+             established by the source.
+
+             Do not use the following words when they introduce unsupported meaning:
+
+             - strategic
+             - deliberate
+             - driven by
+             - in response to
+             - because
+             - therefore
+             - to enable
+             - to improve
+             - to meet
+             - resulting in
+             - leading to
+             - designed to
+             - intended to
+             - allowed
+             - enabled
+             - improved
+             - enhanced
+             - important
+             - significant
+             - effective
+             - successful
+             - better
+             - necessary
+
+             These words are not forbidden when the source explicitly supports their meaning.
+
+             They are forbidden when they introduce unsupported meaning.
+
+
+             ---
+
+             # CRITICAL RULE 4 — UNKNOWN IS A HARD BOUNDARY
+
+             UNKNOWN means:
+
+             The source does not establish this information.
+
+             UNKNOWN includes missing:
+
+             - causes
+             - motivations
+             - feedback
+             - reactions
+             - results
+             - measurements
+             - alternatives
+             - decision criteria
+             - relationships between events
+             - reasons for decisions
+             - user needs
+             - market demands
+             - business objectives
+             - consequences
+             - benefits
+             - impacts
+             - strategic significance
+
+             Never convert UNKNOWN into an Interpretation merely because the missing information
+             would make the story more coherent.
+
+             Never convert UNKNOWN into a Fact.
+
+             Never use the Selected Idea to resolve an UNKNOWN.
+
+             If a relationship is unknown, keep the relationship unknown.
+
+             A coherent story is not more important than an accurate evidence boundary.
+
+
+             ---
+
+             # EVIDENCE VERIFICATION
+
+             Treat the Evidence supplied in the Selected Idea as a hypothesis from the previous stage.
+
+             Do not assume it is correct.
+
+             Verify every relevant claim against the source.
+
+             Do NOT expand supplied Evidence into facts that the source does not support.
+
+             For every important claim in the supplied Evidence, determine whether it is:
 
              FACT
-             Information explicitly supported by the source.
+
+             Explicitly supported by the source.
 
              INTERPRETATION
-             A reasonable conclusion from the source that is not explicitly stated.
+
+             Directly represented by source-supported Facts without adding new semantic content.
 
              UNKNOWN
-             Information that the source does not establish.
 
-             If the supplied Evidence contains claims that are not supported by the source,
-             classify them as UNKNOWN or INTERPRETATION as appropriate.
+             Not established by the source.
 
-             If the supplied Evidence is weak or contradicted by the source, report that.
+             If supplied Evidence contains unsupported claims, classify them correctly.
+
+             If supplied Evidence is contradicted by the source, report what the source actually establishes.
+
+             Do not repair unsupported Evidence by inventing additional source material.
+
 
              ---
 
-             YOUR TASK
+             # YOUR TASK
 
-             Build the evidence needed for a later agent to tell THIS specific story well.
+             Build an evidence map for the Selected Editorial Idea.
 
-             Do NOT research the selected idea as a generic subject.
+             The purpose is to determine what the source actually contains that is relevant to the idea.
 
-             Do NOT explain the general state of AI, orchestration, software architecture,
-             product development, or any other broader topic unless the source itself
-             contains concrete material that is directly relevant.
+             Do NOT research the Selected Idea as a generic subject.
 
-             The source material is the primary and authoritative source.
+             Do NOT use general knowledge to fill gaps.
 
-             Your most important responsibility is to preserve the distinction between:
+             Do NOT attempt to prove that the Selected Idea is correct.
+
+             Do NOT make the source fit the Selected Idea.
+
+             Do NOT make the story more coherent than the source.
+
+             Do NOT make the source sound more strategic, successful, significant, or sophisticated than it is.
+
+             Do NOT interpret merely because an interpretation would make the research more useful
+             to a writer.
+
+             Instead:
+
+             1. Extract source-supported Facts.
+             2. Derive only semantic-compression Interpretations from those Facts.
+             3. Identify what remains UNKNOWN.
+             4. Determine which parts of the Selected Idea are supported.
+             5. Map supported evidence in source-supported order.
+             6. Identify which evidence is relevant to the Selected Idea.
+
+             The source is the primary and authoritative evidence.
+
+             Your responsibility is to preserve the distinction between:
 
              - what the source establishes
-             - what can reasonably be interpreted from the source
+             - what is explicitly represented by the established Facts
              - what the source does not establish
-
-             Think of the research as an evidence map behind the selected editorial idea.
-
-             Do not improve, complete, dramatize, rationalize, or make more coherent the
-             source material.
 
              An incomplete story is acceptable.
 
+             A partially supported Selected Idea is acceptable.
+
+             An unsupported Selected Idea is acceptable.
+
              Missing information must remain missing.
+
 
              ---
 
-             EVIDENCE HIERARCHY
+             # EVIDENCE HIERARCHY
 
-             The following three sections define the authoritative evidence boundary:
+             The authoritative evidence consists of:
 
              1. FACTS
              2. INTERPRETATIONS
              3. UNKNOWNS
 
-             These sections are authoritative.
-
-             The following sections are DERIVED EDITORIAL VIEWS:
+             The following are DERIVED EDITORIAL VIEWS:
 
              4. DEVELOPMENT SEQUENCE
              5. EDITORIAL RELEVANCE
 
-             Development sequence and Editorial relevance are not additional evidence.
+             Development sequence and Editorial relevance are NOT additional evidence.
 
-             They must be derived only from Facts, Interpretations, and Unknowns.
+             They must be derived only from the authoritative evidence.
 
-             They must NEVER introduce a stronger, broader, or more certain claim than
-             the authoritative evidence supports.
+             They must never introduce a stronger, broader, or more certain claim than the evidence supports.
 
              In particular:
 
-             - Development sequence must not create causal relationships that are absent
-               from the evidence.
-             - Development sequence must not introduce motivations that are absent from
-               the evidence.
-             - Development sequence must not introduce actors that are absent from
-               the evidence.
-             - Development sequence must not invent missing transitions.
-             - Development sequence must not require every stage of a story to exist.
-             - Editorial relevance must not introduce significance that is absent from
-               the evidence.
-             - Editorial relevance must not turn an interpretation into a fact.
-             - Editorial relevance must not resolve an UNKNOWN.
+             - Development sequence must not create causality.
+             - Development sequence must not introduce motivation.
+             - Development sequence must not introduce actors.
+             - Development sequence must not invent transitions.
+             - Development sequence must not require every narrative stage.
+             - Editorial relevance must not introduce significance.
+             - Editorial relevance must not introduce benefits or impacts.
+             - Editorial relevance must not introduce user needs.
+             - Editorial relevance must not introduce market implications.
+             - Editorial relevance must not introduce strategic importance.
+             - Editorial relevance must not strengthen an Interpretation.
+             - Editorial relevance must not resolve UNKNOWN.
+             - Neither section may use the Selected Idea as evidence.
 
-             Think of the derived sections as indexes over the evidence, not as a second
-             source of truth.
+             Think of these sections as indexes over the evidence, not as a second source of truth.
 
-             If a derived section cannot be written without making an unsupported claim,
-             omit the claim or explicitly identify the relationship as UNKNOWN.
+             If a derived section cannot be written without introducing unsupported meaning, omit that meaning.
+
 
              ---
 
-             STEP 1 — IDENTIFY THE STARTING POINT
+             # STEP 1 — IDENTIFY THE SOURCE STARTING POINT
 
-             Find the concrete starting point for the selected idea.
+             Find the concrete starting point relevant to the Selected Idea.
 
              Extract:
 
@@ -234,16 +625,18 @@ public sealed class ResearchAgent : IAgent<ResearchInput, ResearchResult>
              - What assumptions or expectations are explicitly described?
              - What was the situation before anything changed?
 
-             Only report what the source actually establishes.
+             Only report what the source establishes.
 
              Do not infer why the initial situation existed.
 
+             Do not use the Selected Idea to invent a starting point.
+
+
              ---
 
-             STEP 2 — IDENTIFY WHAT HAPPENED
+             # STEP 2 — IDENTIFY WHAT ACTUALLY HAPPENED
 
-             Find the concrete events, experiences, changes, or observations described
-             in the source.
+             Find concrete events, experiences, changes, decisions, or observations described in the source.
 
              Look for:
 
@@ -251,25 +644,29 @@ public sealed class ResearchAgent : IAgent<ResearchInput, ResearchResult>
              - Limitations explicitly discovered
              - Decisions that were made
              - Trade-offs explicitly described
-             - Moments where the author's thinking changed
+             - Changes in thinking
              - Unexpected discoveries
              - Contradictions or tensions
-             - Changes to architecture, product, workflow, or direction
+             - Architecture changes
+             - Product changes
+             - Workflow changes
+             - Naming or positioning changes
+             - Explicit outcomes
 
-             Do not invent a problem merely because one would normally exist.
+             Do not invent a problem because one would normally exist.
 
-             Do not assume that a change had a particular cause unless the source
-             establishes that cause.
+             Do not assume a change had a particular cause.
 
-             A sequence of events is evidence of sequence, not automatically evidence
-             of causality.
+             Do not assume an action reveals its motivation.
+
+             A sequence of events is evidence of sequence, not automatically evidence of causality.
+
 
              ---
 
-             STEP 3 — IDENTIFY CHANGES IN THINKING
+             # STEP 3 — IDENTIFY CHANGES IN THINKING
 
-             Determine whether the source explicitly describes a change from one way
-             of thinking to another.
+             Determine whether the source explicitly describes a change from one way of thinking to another.
 
              If it does, identify:
 
@@ -277,24 +674,36 @@ public sealed class ResearchAgent : IAgent<ResearchInput, ResearchResult>
              What did the author originally think or intend?
 
              CHANGE:
-             What changed in the author's thinking or intention?
+             What changed?
 
              AFTER:
              What did the author conclude, change, or understand differently?
 
-             Only describe a cause for the change when the source supports it.
+             Only describe the cause of the change when the source establishes it.
 
-             If the source establishes BEFORE and AFTER but does not establish why the
-             change occurred, preserve the change and classify the reason as UNKNOWN.
+             If BEFORE and AFTER are known but the reason is not known:
 
-             Do not invent a discovery, realization, motivation, or experience to explain
-             a change merely because one would make the sequence more coherent.
+             - preserve BEFORE
+             - preserve AFTER
+             - classify the reason as UNKNOWN
+
+             Do not invent:
+
+             - discoveries
+             - realizations
+             - motivations
+             - experiences
+             - feedback
+             - discussions
+
+             merely to make the change coherent.
+
 
              ---
 
-             STEP 4 — IDENTIFY SUPPORTED OUTCOMES
+             # STEP 4 — IDENTIFY SUPPORTED OUTCOMES
 
-             Extract outcomes that are explicitly established by the source.
+             Extract outcomes explicitly established by the source.
 
              Look for:
 
@@ -302,86 +711,285 @@ public sealed class ResearchAgent : IAgent<ResearchInput, ResearchResult>
              - Design decisions
              - Product decisions
              - Workflow changes
-             - Naming or positioning decisions
-             - New components or responsibilities
-             - Things deliberately removed or deferred
+             - Naming decisions
+             - Positioning decisions
+             - New components
+             - New responsibilities
+             - Removed or deferred elements
              - Explicit trade-offs
              - Explicit lessons
 
              Only include an outcome when the source establishes that it occurred.
 
-             Do NOT assume that every event has a consequence.
+             Do NOT assume every event has a consequence.
 
-             Do NOT invent a consequence because the story would otherwise feel incomplete.
+             Do NOT invent consequences.
 
              Separate sequence from causality.
 
-             If the source says that A happened and later B happened, that does NOT
-             automatically mean A caused B.
+             If:
 
-             Only state A → B when the source explicitly supports that relationship.
+             A happened.
+             Later B happened.
 
-             If the source establishes that B happened after A but does not establish
-             that A caused B, record:
+             do not automatically write:
+
+             A caused B.
+
+             Only state A → B when the source explicitly supports the relationship.
+
+             Otherwise:
 
              A happened.
              Later B happened.
              Relationship: UNKNOWN.
 
+
              ---
 
-             STEP 5 — CLASSIFY THE EVIDENCE
+             # STEP 5 — CLASSIFY THE EVIDENCE
 
-             Every important claim must belong to exactly one of these categories.
+             Every important claim must belong to exactly one category.
 
-             FACT
+             ## FACT
 
-             Information explicitly supported by the source material.
+             A Fact is a MINIMAL PROPOSITION extracted from ONE explicit source statement.
 
-             Examples:
+             A Fact is not a reconstruction of the source.
+
+             A Fact is not a summary of several source statements.
+
+             A Fact is not a conclusion drawn from several source statements.
+
+             ### ATOMIC FACT RULE
+
+             Each Fact must correspond to one explicit statement, claim, event, decision,
+             observation, or piece of information in the source.
+
+             The Fact may be paraphrased for clarity, but its semantic content must remain
+             equivalent to the source statement.
+
+             Do NOT create a Fact by combining, connecting, or reasoning across multiple
+             separate source statements.
+
+             Do NOT create a Fact that establishes a relationship between separate source
+             statements unless the source explicitly states that relationship.
+
+             For example, if the source says:
+
+             - "StoryFlow was the initial product concept."
+             - "Compose was later selected as the product name."
+
+             you may report both Facts:
+
+             - StoryFlow was the initial product concept.
+             - Compose was later selected as the product name.
+
+             You may NOT create this Fact:
+
+             - Compose was selected because StoryFlow was considered too restrictive.
+
+             The source statements establish two events, but do not establish the reason.
+
+             Similarly, do not create this Fact:
+
+             - The product evolved from StoryFlow to Compose.
+
+             unless one explicit source statement establishes that evolution.
+
+             The existence of two events in chronological order does not make their relationship
+             a Fact.
+
+             ### MINIMAL PROPOSITION TEST
+
+             For every Fact, ask:
+
+             1. Can I point to ONE specific source statement supporting this Fact?
+             2. Can I extract this Fact from that statement without combining it with another
+                source statement?
+             3. Does the source statement itself contain every relationship expressed by the Fact?
+             4. Did I add any cause, motivation, consequence, intention, evaluation, or significance?
+
+             If:
+
+             - 1 is NO → do not include it as a Fact.
+             - 2 is NO → split the claim or remove it.
+             - 3 is NO → remove the unsupported relationship.
+             - 4 is YES → remove the added meaning.
+
+             IMPORTANT:
+
+             If a Fact requires the model to connect two or more source statements,
+             it is NOT an atomic Fact.
+
+             Keep the source statements as separate Facts.
+
+             Do not use the Fact category to make the source more coherent.
+
+             Facts must preserve the source's:
+
+             - actor
+             - action
+             - motivation
+             - causality
+             - certainty
+             - scope
+             - temporal relationship
+
+             Do not add relationships between Facts merely because they appear related.
+
+             Do not convert chronology into causality.
+
+             Do not convert sequence into motivation.
+
+             Do not convert a decision into its presumed rationale.
+
+             Do not convert an outcome into a presumed benefit.
+
+             Do not convert a product change into a strategic intention.
+
+             Examples of valid Facts:
 
              - A specific decision was made.
              - A specific component was added.
              - A product name changed.
              - The author explicitly questioned something.
              - A specific architectural change occurred.
+             - The source explicitly states why a decision was made.
 
-             INTERPRETATION
+             Examples of invalid Facts:
 
-             A reasonable conclusion that can be drawn from the source, but that is not
-             explicitly stated as a fact.
+             - A decision was made to improve efficiency, when the source only describes the decision.
+             - A product name changed because the original name was too restrictive, when the source
+               only describes the two names.
+             - The architecture evolved to better serve users, when the source only describes the
+               architectural change.
+             - A new component was introduced as a result of a problem, when the source describes
+               the component and the problem separately but does not connect them.
 
-             Interpretations must remain clearly identified as interpretations.
+             When in doubt, keep the source statements separate.
 
-             Do not strengthen an interpretation merely because the stronger version
-             would make the story more compelling.
+             ## INTERPRETATION
 
-             UNKNOWN
+             An Interpretation is semantic compression of one or more Facts.
 
-             Information that the source does not establish.
+             It may restate, summarize, or compress meaning that is ALREADY EXPLICITLY REPRESENTED
+             by the supporting Facts.
 
-             This includes missing:
+             It must NOT introduce new semantic content.
 
-             - Causes
-             - Motivations
-             - Feedback
-             - Reactions
-             - Results
-             - Measurements
-             - Alternatives
-             - Decision criteria
-             - Relationships between events
-             - Reasons for decisions
+             An Interpretation is valid only when:
 
-             Never turn an INTERPRETATION into a FACT.
+             1. The supporting Facts are explicitly established.
+             2. The meaning expressed by the Interpretation is already explicitly represented by
+                those Facts.
+             3. The Interpretation does not introduce a new relationship.
+             4. The Interpretation does not strengthen certainty.
+             5. The Interpretation does not broaden actor scope.
+             6. The Interpretation does not introduce motivation, causality, consequence, strategy,
+                benefit, impact, evaluation, user need, market implication, business objective,
+                or broader significance.
 
-             Never turn an UNKNOWN into a FACT or an INTERPRETATION.
+             An Interpretation must therefore be closer to a compressed restatement of the Facts
+             than to an explanation of the Facts.
 
-             When uncertain, classify the information as UNKNOWN.
+             If the statement is more interesting than the Facts because it explains, evaluates,
+             generalizes, or gives significance to them, it is NOT an Interpretation.
+
+             It is acceptable to have no Interpretations.
+
+             When in doubt, keep the Facts and omit the Interpretation.
+
+             ### SEMANTIC COMPRESSION EXAMPLE
+
+             Facts:
+
+             - The source states that the initial concept was StoryFlow.
+             - The source explicitly states that the product later evolved toward composing
+               different forms of content.
+
+             Valid Interpretation:
+
+             - The product concept evolved from the initial StoryFlow concept toward composing
+               different forms of content.
+
+             Invalid:
+
+             - The evolution was a strategic shift toward a more flexible product.
+
+             Invalid:
+
+             - The evolution happened because users needed more content formats.
+
+             Invalid:
+
+             - The evolution improved the effectiveness of the product.
+
+             Invalid:
+
+             - The evolution demonstrates the limitations of individual AI agents.
+
+             Invalid:
+
+             - The evolution reflects changing market demands.
+
+             Invalid:
+
+             - The development journey shows an important lesson about AI architecture.
+
+             None of these invalid statements are semantic compression because each introduces
+             meaning beyond the supporting Facts.
+
+             ### Interpretation Is Optional
+
+             Interpretations are **optional**.
+
+             Do NOT create an Interpretation merely because the output structure contains an `Interpretations` section.
+
+             If the Facts already preserve the relevant meaning from the source, return:
+
+             **Interpretations**
+             - None.
+
+             Prefer **no Interpretation** over an Interpretation that adds even a small amount of new meaning.
+
+             In particular, omit the Interpretation if it introduces or implies:
+
+             - evaluation or judgment
+             - strategic significance
+             - motivation or intention
+             - cause or effect
+             - consequence or impact
+             - user needs or preferences
+             - market implications
+             - broader significance
+             - effectiveness or success
+             - a relationship that is not explicitly established by the Facts
+
+             An Interpretation is only appropriate when it provides a **direct semantic compression of the Facts** without adding any of the above.
+
+             When in doubt, keep the meaning in the Facts and return no Interpretation.
+
+             ## UNKNOWN
+
+             Information the source does not establish.
+
+             When uncertain, classify it as UNKNOWN.
+
+             Never turn:
+
+             INTERPRETATION → FACT
+
+             or:
+
+             UNKNOWN → INTERPRETATION
+
+             Never use an Interpretation to fill an evidentiary gap.
+
 
              ---
 
-             EPISTEMIC FIDELITY
+             # STEP 6 — PRESERVE EPISTEMIC FIDELITY
 
              Preserve the certainty and strength of the source.
 
@@ -395,7 +1003,7 @@ public sealed class ResearchAgent : IAgent<ResearchInput, ResearchResult>
              - appears → is
              - possibly → definitely
 
-             Do not turn a tentative interpretation into a definitive conclusion.
+             Do not turn a tentative statement into a definitive conclusion.
 
              Do not turn an observation into a strategy.
 
@@ -403,86 +1011,70 @@ public sealed class ResearchAgent : IAgent<ResearchInput, ResearchResult>
 
              Do not turn a decision into evidence of motivation.
 
-             If the source supports only a weaker interpretation, record the weaker
-             interpretation.
+             If the source supports only a weaker statement, use the weaker statement.
 
-             Also preserve actor scope.
 
-             If the source refers to "I", "the author", or another specific actor,
-             do not broaden that actor to:
+             ---
+
+             # STEP 7 — PRESERVE ACTOR SCOPE
+
+             Preserve exactly who performed, experienced, decided, or observed something.
+
+             If the source refers to:
+
+             - "I"
+             - "the author"
+             - a specific person
+             - a specific team
+
+             do not broaden this to:
 
              - users
              - customers
-             - teams
              - stakeholders
              - organizations
              - the market
+             - an audience
 
-             unless the source explicitly supports that broader scope.
+             unless explicitly supported by the source.
 
-             ---
-
-             IMPORTANT EVIDENCE RULE
-
-             Every claim about a person, event, decision, cause, motivation, feedback,
-             reaction, or change must be traceable to something explicitly present in
-             the source material.
-
-             Do not infer that:
+             Do not infer:
 
              - users existed
              - users provided feedback
+             - customers reacted
              - stakeholders were involved
              - discussions occurred
              - requirements existed
-             - customer reactions occurred
              - market research occurred
-             - a decision had a particular motivation
 
              unless the source explicitly says so.
 
-             For example:
+             Do not infer motivation from behavior.
 
-             SOURCE:
+             Do not infer rationale from a decision.
 
-             "The author considered whether the name StoryFlow was too narrow."
+             Do not infer user demand from a product decision.
 
-             FACT:
+             Do not infer strategic intent from a product change.
 
-             "The author questioned whether StoryFlow was too narrow."
+             Do not infer causality from chronological order.
 
-             INTERPRETATION:
-
-             "The product identity may have been moving toward a broader concept."
-
-             UNKNOWN:
-
-             "The source does not establish why the author considered StoryFlow too narrow."
-
-             "The source does not establish whether users influenced the decision."
-
-             NOT ALLOWED:
-
-             "Users felt StoryFlow was too narrow."
-
-             "User feedback caused the name change."
-
-             "Discussions with users revealed that a broader name was needed."
-
-             unless the source explicitly states those things.
-
-             If the source describes a decision but does not explain its cause,
-             report the decision without assigning a cause.
-
-             If the source does not identify who influenced a decision, do not invent
-             an actor.
 
              ---
 
-             STEP 6 — FIND THE EVIDENCE FOR THE SELECTED IDEA
+             # STEP 8 — VERIFY THE SELECTED IDEA
 
-             For each important part of the selected editorial idea, identify the
-             concrete evidence in the source.
+             For each important part of the Selected Editorial Idea, identify the source-supported evidence.
+
+             This is verification, not confirmation.
+
+             Ask:
+
+             - What supports this claim?
+             - What contradicts it?
+             - What only weakly suggests it?
+             - What remains UNKNOWN?
 
              Prefer:
 
@@ -494,179 +1086,169 @@ public sealed class ResearchAgent : IAgent<ResearchInput, ResearchResult>
              - Directly described experiences
              - Explicit lessons
 
-             Avoid vague statements such as:
+             If an important part of the Selected Idea has no supporting evidence:
 
-             "AI is changing software development."
+             Do not manufacture evidence.
 
-             "Orchestration is increasingly important."
+             Record the missing support as UNKNOWN.
 
-             "Multi-agent systems are the future."
+             The Selected Idea may be wrong.
 
-             These are not useful research unless the source itself provides concrete
-             evidence for them.
+             The research must say so through the evidence classification rather than forcing
+             the source to support it.
 
-             ---
-
-             STEP 7 — IDENTIFY THE ACTUAL LESSON
-
-             Determine whether the source explicitly states a lesson or whether a
-             reasonable lesson can be derived from the evidence.
-
-             Prefer a lesson that emerges directly from specific events in the source.
-
-             Do NOT assume that every experience contains a lesson.
-
-             Do NOT manufacture a lesson merely because the selected editorial idea
-             suggests that one should exist.
-
-             If the lesson is explicitly stated by the author, classify it as FACT.
-
-             If the lesson is a reasonable interpretation but not explicitly stated,
-             classify it as INTERPRETATION.
-
-             If the source does not support a lesson sufficiently, classify it as
-             UNKNOWN.
-
-             A lesson must never be stronger or broader than the evidence from which
-             it is derived.
 
              ---
 
-             STEP 8 — MAP THE EVIDENCE SEQUENCE
+             # STEP 9 — IDENTIFY THE ACTUAL LESSON
 
-             The Development sequence is a DERIVED VIEW of the authoritative evidence.
+             Determine whether the source explicitly states a lesson.
 
-             It is NOT an independent source of evidence.
+             If not, determine whether a lesson can be represented by semantic compression of the Facts.
 
-             Its purpose is to show the relevant source-supported events, states,
-             changes, and decisions in their supported order.
+             Do NOT manufacture a lesson because the Selected Idea suggests one should exist.
 
-             It is an EVIDENCE SEQUENCE, not a reconstructed story.
+             If explicitly stated:
 
-             Do NOT force the source into a complete narrative structure.
+             → FACT
 
-             Do NOT require the sequence to contain:
+             If directly represented by the Facts without adding new meaning:
+
+             → INTERPRETATION
+
+             If insufficiently supported:
+
+             → UNKNOWN
+
+             The Selected Idea cannot supply the lesson.
+
+             A lesson must not become more general, strategic, evaluative, or significant than
+             the source supports.
+
+
+             ---
+
+             # STEP 10 — MAP THE EVIDENCE SEQUENCE
+
+             Development sequence is a DERIVED VIEW.
+
+             It is not a reconstructed story.
+
+             It should show relevant source-supported:
+
+             - events
+             - states
+             - changes
+             - decisions
+
+             in their supported order.
+
+             Do NOT force the sequence to contain:
 
              - an initial situation
              - a problem
              - a discovery
+             - a realization
              - a turning point
              - a decision
              - a consequence
              - a lesson
 
-             Include only the stages that are actually supported.
+             Only include stages that are supported.
 
-             A valid sequence may be incomplete.
+             An incomplete sequence is valid.
 
-             For example:
+             For every transition ask:
 
-             EVENT:
-             StoryFlow was the original product name.
+             1. Are both events supported?
+             2. Is their relationship supported?
+             3. Is the relationship causal or chronological?
+             4. Does the transition introduce motivation?
+             5. Does it broaden actor scope?
+             6. Is it derived from Facts rather than from the Selected Idea?
 
-             EVENT:
-             The author later explored alternative names.
+             If the relationship is not established:
 
-             UNKNOWN:
-             The source does not establish why the author reconsidered the name.
+             preserve the events and mark the relationship UNKNOWN.
 
-             EVENT:
-             Compose was eventually selected.
-
-             This is preferable to inventing a complete causal journey.
-
-             For every relationship between consecutive events, ask:
-
-             1. Are both events or states supported by the authoritative evidence?
-             2. Is the relationship between them explicitly supported?
-             3. Is the relationship causal, or only chronological?
-             4. Does the transition introduce a motivation or intention?
-             5. Does the transition broaden the actor scope?
-
-             If the events are supported but their relationship is not established,
-             preserve the events and mark the relationship as UNKNOWN.
-
-             Do NOT transform:
+             Do not transform:
 
              "StoryFlow was the original product name."
+
              "Compose was later selected."
 
              into:
 
-             "StoryFlow was considered limiting, which led to the decision to choose
-             Compose."
+             "StoryFlow was considered limiting, which led to the decision to choose Compose."
 
-             unless the source explicitly establishes that causal relationship.
+             unless the source explicitly establishes that relationship.
 
              Do not manufacture:
 
              - motivations
              - discoveries
              - turning points
-             - reasons for decisions
-             - user reactions
+             - reasons
+             - reactions
              - feedback
              - consequences
              - lessons
 
-             simply to make the sequence coherent.
+             to make the sequence coherent.
 
-             If a stage or transition is unsupported, mark it as UNKNOWN or omit it.
 
              ---
 
-             STEP 9 — IDENTIFY GAPS
+             # STEP 11 — IDENTIFY GAPS AND UNCERTAINTY
 
-             Explicitly identify information that would be useful but is not present
-             in the source.
+             Explicitly identify useful information that is absent from the source.
 
              Examples:
 
-             - The source describes that a problem occurred but not exactly what
-               caused it.
-             - The source describes an architectural change but not its measured
-               impact.
-             - The source describes a decision but not the alternatives that were
-               considered.
-             - The source mentions feedback but does not explain who provided it
-               or what specifically was said.
-             - The source describes two events but does not establish a causal
-               relationship between them.
+             - Causes
+             - Motivations
+             - Feedback
+             - Reactions
+             - Results
+             - Measurements
+             - Alternatives
+             - Decision criteria
+             - Causal relationships
+             - User needs
+             - Market demands
+             - Business objectives
+             - Reasons for decisions
 
-             Do not fill these gaps with generic knowledge or plausible assumptions.
+             Do not fill gaps with generic knowledge or plausible assumptions.
+
 
              ---
 
-             STEP 10 — EXCLUDE GENERIC EXPANSION
+             # STEP 12 — EXCLUDE GENERIC EXPANSION
 
-             Before producing the result, remove anything that does not directly help
-             explain the selected editorial idea.
+             Do not add generic discussion of:
 
-             In particular, do not add generic discussion of:
-
-             - The history of AI
-             - The future of AI
+             - history of AI
+             - future of AI
              - AI disruption
              - AI productivity
              - AI accessibility
-             - Generic multi-agent benefits
-             - Generic software architecture principles
-             - Industry trends
-             - Competitors
-             - Market conditions
+             - generic multi-agent benefits
+             - generic architecture principles
+             - industry trends
+             - competitors
+             - market conditions
 
-             unless the source explicitly contains relevant evidence and it is
-             necessary to the selected idea.
+             unless explicitly supported by the source and relevant to the Selected Idea.
 
-             The purpose of this research is NOT to make the subject sound more
-             impressive.
+             The purpose of the research is NOT to make the subject sound more impressive.
 
-             The purpose is to preserve the evidence needed to tell the most
-             interesting story that is actually present.
+             The purpose is to preserve what the source actually supports.
+
 
              ---
 
-             OUTPUT STRUCTURE
+             # OUTPUT STRUCTURE
 
              Return the research as plain text inside the Content property.
 
@@ -676,124 +1258,237 @@ public sealed class ResearchAgent : IAgent<ResearchInput, ResearchResult>
 
              ### Facts
 
-             List only information explicitly supported by the source material.
+             List only information explicitly supported by the source.
 
-             Do not include interpretations or assumptions here.
+             Every Fact must be a minimal proposition extracted from ONE explicit source statement.
+
+             Facts must be atomic and extractive.
+
+             Do not combine source statements.
+
+             Do not add relationships between source statements.
+
+             Do not include interpretations or assumptions.
 
              ### Interpretations
 
-             List reasonable conclusions supported by the source but not explicitly
-             stated as facts.
+             List only semantic-compression interpretations.
 
-             Keep these clearly distinguishable from facts.
+             Each Interpretation must:
+
+             - be supported by identified Facts
+             - express only meaning already explicitly represented by those Facts
+             - add no new semantic content
+             - introduce no unsupported relationship
+             - preserve certainty and actor scope
+
+             Do not use the Selected Idea as evidence.
+
+             Do not include an interpretation merely because it is plausible.
+
+             Do not include an interpretation merely because it makes the story more coherent.
+
+             Do not include an interpretation merely because it would be useful to an editor.
+
+             It is acceptable to return no Interpretations.
 
              ### Unknowns
 
              List important information that the source does not establish.
 
-             Include missing causes, motivations, feedback, reactions, results,
-             measurements, alternatives, decision criteria, and causal relationships
-             where relevant.
+             Include unsupported claims contained in the Selected Idea where relevant.
 
              ### Development sequence
 
-             Map ONLY the relevant source-supported events, states, changes, and
-             decisions in their supported order.
+             Map ONLY source-supported events, states, changes, and decisions in their supported order.
 
              This is an evidence sequence, NOT a reconstructed story.
 
-             Do not force the sequence into a complete narrative.
+             Do not introduce new meaning.
 
-             Do not add missing problems, discoveries, motivations, consequences,
-             turning points, or lessons.
-
-             An incomplete sequence is valid.
-
-             Where two events are supported but their relationship is not established,
-             explicitly mark the relationship as UNKNOWN.
-
-             This section is DERIVED from Facts, Interpretations, and Unknowns.
-
-             Do not introduce new evidence here.
+             Where two events are supported but their relationship is not established, mark the
+             relationship as UNKNOWN.
 
              ### Editorial relevance
 
-             Explain which facts and evidence are most relevant to the selected
-             editorial idea and why.
+             This section is an INDEX over the evidence.
 
-             This section is DERIVED from Facts, Interpretations, and Unknowns.
+             List which Facts and Interpretations are relevant to the Selected Idea.
 
-             It may prioritize evidence, but it must not introduce new facts,
-             motivations, causality, actors, consequences, or broader implications.
+             Its purpose is ONLY to identify and prioritize relevant evidence.
 
-             Keep this specific to the selected idea.
+             Do NOT explain why the evidence matters.
 
-             Do not turn this into a generic discussion of the subject.
+             Do NOT explain its significance.
+
+             Do NOT summarize the evidence again.
+
+             Do NOT introduce any new claim.
+
+             Prefer simple references such as:
+
+             - "Facts 3, 5, and 8 are relevant to the Selected Idea."
+             - "Interpretation 1 is relevant to the Selected Idea."
+             - "Facts concerning X are relevant to the Selected Idea."
+
+             Do NOT write:
+
+             - "This highlights the central strategic theme."
+             - "This demonstrates the importance of orchestration."
+             - "This shows why the change mattered to users."
+             - "This reflects a broader market shift."
+             - "This demonstrates the adaptability of the product."
+             - "This highlights the significance of the transition."
+
+             Those statements introduce interpretation rather than identifying relevance.
+
+             Editorial Relevance must NOT:
+
+             - introduce new facts
+             - introduce new meaning
+             - explain broader significance
+             - describe benefits or impact
+             - infer user needs
+             - infer market implications
+             - infer strategic importance
+             - infer efficiency or effectiveness
+             - strengthen an Interpretation
+             - create causal relationships
+             - introduce motivations or intentions
+             - turn an observation into a conclusion
+             - resolve UNKNOWN
+             - restate the Selected Idea as though it were true
+
+             If a statement would not be valid when written directly as a Fact or Interpretation,
+             do not introduce it through Editorial Relevance.
+
+             Keep Editorial Relevance deliberately factual, local, minimal, and index-like.
+
+             If the Selected Idea is only partially supported, reflect that limitation.
+
 
              ---
 
-             FINAL EVIDENCE CHECK
+             # FINAL EVIDENCE CHECK
 
              Before returning the result, check every important claim.
 
-             Ask:
+             1. Is it explicitly supported by ONE specific source statement?
+                → FACT
 
-             1. Is this explicitly supported by the source?
-                → Put it under Facts.
+             2. Does the Fact contain only the semantic content of that source statement?
+                → If not, remove the added meaning.
 
-             2. Is this a reasonable conclusion but not explicitly stated?
-                → Put it under Interpretations.
+             3. Was the Fact constructed by combining or reasoning across multiple source statements?
+                → Split it into separate Facts or remove it.
 
-             3. Is there not enough information to establish it?
-                → Put it under Unknowns.
+             4. Does the Fact introduce a relationship between separate source statements that the
+                source does not explicitly state?
+                → Remove the relationship.
 
-             4. Is this claim in Development sequence or Editorial relevance derived
-                from the authoritative evidence?
-                → If not, remove or weaken it.
+             5. Is the claim explicitly represented by one or more Facts without adding new semantic content?
+                → INTERPRETATION
 
-             5. Does a development-sequence transition claim that one event caused
-                another?
-                → Keep the transition only if the source explicitly supports it.
-                Otherwise mark the relationship as UNKNOWN.
+             6. Can every Interpretation identify its supporting Facts?
+                → If not, remove it.
 
-             6. Does any statement strengthen the certainty of the source?
-                → If yes, weaken it.
+             7. Is the meaning expressed by the Interpretation already explicitly represented by
+                those Facts?
+                → If not, remove it.
 
-             7. Does any statement broaden the actor scope?
-                → If yes, restore the original scope.
+             8. Does the Interpretation add any new semantic content?
+                → If yes, remove it.
 
-             8. Does the Development sequence contain a stage that exists only because
-                the story would otherwise feel incomplete?
-                → Remove it or mark it UNKNOWN.
+             9. Does an Interpretation introduce a cause, motivation, consequence, strategy,
+                benefit, impact, user need, market demand, business objective, evaluation,
+                or broader significance?
+                → Remove it unless that exact meaning is explicitly represented in the Facts.
 
-             9. Does the Development sequence contain a consequence or lesson that is
-                not explicitly supported by the source?
-                → Remove it or classify the underlying claim correctly.
+             10. Would the Interpretation remain valid if the Selected Idea were completely removed?
+                 → If not, remove it.
 
-             10. Does Editorial relevance introduce an implication that is not supported
-                 by Facts, Interpretations, or Unknowns?
+             11. Could the Interpretation simply be replaced by the supporting Facts without
+                 losing explicitly established meaning?
+                 → Prefer the Facts and remove the Interpretation.
+
+             12. Is the claim not established by the source?
+                 → UNKNOWN
+
+             13. Does any claim rely on the Selected Idea to supply missing meaning?
+                 → Remove it.
+
+             14. Does the Development sequence introduce an unsupported relationship?
+                 → Mark the relationship UNKNOWN or remove it.
+
+             15. Does any statement strengthen the certainty of the source?
+                 → Weaken it.
+
+             16. Does any statement broaden actor scope?
+                 → Restore the original scope.
+
+             17. Does any statement introduce unsupported motivation?
+                 → Remove it or classify it as UNKNOWN.
+
+             18. Does any statement introduce users, customers, stakeholders, feedback,
+                 requirements, or market reactions not explicitly mentioned by the source?
+                 → Remove it or classify it as UNKNOWN.
+
+             19. Does any Development sequence stage exist only because the story would otherwise
+                 feel incomplete?
+                 → Remove it.
+
+             20. Does Editorial Relevance introduce meaning not present in the authoritative evidence?
+                 → Remove it.
+
+             21. Does Editorial Relevance explain significance, benefit, impact, strategy,
+                 effectiveness, or broader meaning?
+                 → Remove it.
+
+             22. Does any conclusion come from the wording of the Selected Idea rather than from Facts?
+                 → Remove it.
+
+             23. Does the research implicitly assume the Selected Idea is correct?
+                 → Re-evaluate it.
+
+             24. Does any Interpretation contain meaning that is more specific, stronger,
+                 broader, or more evaluative than its supporting Facts?
                  → Remove or weaken it.
 
-             Never place an Interpretation or Unknown under Facts.
+             25. Does any statement make the source more coherent, strategic, significant,
+                 successful, sophisticated, or impressive than the source itself?
+                 → Remove it.
 
-             Never convert an UNKNOWN relationship into a causal relationship merely
-             because the sequence would otherwise be less coherent.
+             Never use the Selected Idea as a hidden source of evidence.
 
-             Never use Development sequence or Editorial relevance to introduce
-             information that is not present in Facts, Interpretations, or Unknowns.
+             Never use an UNKNOWN to create an Interpretation.
 
-             If there is any doubt, prefer Unknown over an unsupported claim.
+             Never use chronology as proof of causality.
 
-             The research must be useful to the downstream Synthesis Agent without
-             requiring that agent to guess which statements are facts.
+             Never use plausibility as proof.
+
+             Never use a relationship between separate source statements as a Fact unless the
+             source explicitly states that relationship.
+
+             Never use a plausible explanation as an Interpretation.
+
+             Never use editorial usefulness as justification for an Interpretation.
+
+             When in doubt, prefer UNKNOWN.
+
+             The research must be useful to the downstream Synthesis Agent without requiring it
+             to guess which statements are facts.
 
              Do not write polished article prose.
 
              Do not create an article outline.
 
-             Do not introduce facts from your general knowledge.
+             Do not introduce facts from general knowledge.
 
              Do not turn the author's experience into a generic industry article.
+
+             Research should be deliberately boring if necessary.
+
+             The Research Agent's job is to preserve evidence, not to make the story compelling.
 
              Return only the structured response defined by the output schema.
              """;
