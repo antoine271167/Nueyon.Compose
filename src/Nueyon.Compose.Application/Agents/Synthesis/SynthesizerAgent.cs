@@ -81,713 +81,302 @@ public sealed class SynthesizerAgent(
 
     private static string CreateUserMessage(SynthesisInput input) =>
         $$"""
-          Your task is to turn the research material into a strong editorial synthesis
+          Your task is to turn the Research material into a concise editorial synthesis
           for a downstream Narrative agent.
 
-          The goal is NOT to summarize the research.
+          The goal is NOT to summarize the Research.
 
-          The goal is to identify what the research actually supports as the central
-          insight and give the Narrative agent clear editorial direction.
-
-          The synthesis may:
-
-          - select
-          - prioritize
-          - organize
-          - connect
-          - interpret
-
-          information that is already present in the research.
-
-          However, the synthesis MUST NOT introduce semantic information that is not
-          supported by the research.
-
-          CORE PRINCIPLE:
-
-          THE SYNTHESIS MAY INTERPRET THE RESEARCH,
-          BUT MUST NOT ENRICH, STRENGTHEN, BROADEN, RESOLVE, OR COMPLETE IT.
-
-          The research is both:
-
-          1. the evidence from which the synthesis is constructed
-          2. the boundary of what the synthesis may claim
-
-          The synthesis is NOT a second research phase.
-
-          Do not use general knowledge, plausibility, common sense, or editorial
-          expectations to fill gaps in the research.
+          The goal is to identify the strongest insight that the Research actually supports
+          and give the Narrative agent clear guidance about what evidence matters.
 
           ---
 
-          READ THE RESEARCH FIRST
+          ## SEMANTIC CONTRACT
 
-          Read the complete research material before deciding what the story is about.
+          The Research is the boundary of what the Synthesis may claim.
 
-          First determine what the research actually establishes.
+          Follow these rules:
 
-          Pay particular attention to:
+          1. FACTS ARE THE EVIDENCE
 
-          - Facts
-          - Interpretations
-          - Unknowns
-          - Development Sequence
-          - Editorial Relevance
-          - documented decisions
-          - documented changes
-          - documented consequences
-          - documented cause-and-effect relationships
-          - concrete experiences and details
-          - uncertainty and gaps
+             Research Facts are the primary and authoritative evidence.
 
-          Do not decide what the story is about from an assumed narrative angle.
+             Every substantive claim in the Synthesis must be supported by one or more
+             Research Facts.
 
-          The research determines what can actually be said.
+             You may select, prioritize, organize, compress, and explain Facts.
 
-          The Development Sequence is a derived evidence view.
+             You may NOT add information that is not supported by the Facts.
 
-          It may help organize supported events, states, changes, and decisions, but it
-          is NOT additional evidence.
+          2. INTERPRETATIONS ARE HYPOTHESES
 
-          Editorial Relevance is also a derived view.
+             Research Interpretations are conclusions proposed by the Research agent.
 
-          It identifies evidence relevant to the selected editorial idea, but it does
-          NOT establish new facts, relationships, motivations, consequences, or
-          significance.
+             They are NOT independent evidence.
 
-          Neither derived section may be used as proof of something that is not
-          established by Facts, Interpretations, or Unknowns.
+             Before using an Interpretation, verify that the same meaning is directly
+             supported by the Facts.
 
-          ---
+             If it adds meaning beyond the Facts, ignore it.
 
-          EVIDENCE HIERARCHY
+             It is completely acceptable to use no Research Interpretations.
 
-          The research contains three authoritative evidence categories:
+          3. UNKNOWNS REMAIN UNKNOWN
 
-          FACT:
+             An Unknown is a hard boundary.
 
-          Explicitly supported by the source.
+             Do not resolve, explain, infer, or indirectly imply information that the
+             Research identifies as unknown.
 
-          INTERPRETATION:
+          4. SELECTED IDEA IS NOT EVIDENCE
 
-          Meaning derived from the source material but not necessarily stated
-          literally as a fact.
+             The Selected Idea is an editorial hypothesis.
 
-          UNKNOWN:
+             It may help determine which Facts are relevant.
 
-          The research does not establish the information.
+             It may NOT be used to establish that its own claims are true.
 
-          These distinctions are part of the meaning of the research.
+             The reasoning must always be:
 
-          Preserve them throughout the synthesis.
+                 FACTS → SUPPORTED SYNTHESIS
 
-          In addition:
+             Never:
 
-          DEVELOPMENT SEQUENCE:
+                 SELECTED IDEA → CONCLUSION → SUPPORTING FACTS
 
-          A derived ordering of source-supported events, states, changes, and
-          decisions.
+          5. DO NOT ADD MEANING
 
-          EDITORIAL RELEVANCE:
+             Do not introduce unsupported:
 
-          A derived prioritization of evidence for the editorial idea.
+             - facts
+             - actors
+             - motivations
+             - intentions
+             - causes
+             - consequences
+             - reactions
+             - strategic meaning
+             - user or customer meaning
+             - market meaning
+             - broader significance
 
-          These derived sections are NOT additional evidence.
+             Do not turn chronology into causality.
 
-          Do not use either derived section to introduce information that is absent
-          from Facts, Interpretations, and Unknowns.
+             Do not turn a personal experience into a general trend.
 
-          ---
+             Do not make a documented decision appear more deliberate or strategic than
+             the Research establishes.
 
-          RESEARCH IS THE SEMANTIC BOUNDARY
+          6. PRESERVE THE STRENGTH OF THE EVIDENCE
 
-          The synthesis may reorganize and interpret the research, but every claim
-          in the synthesis must remain semantically supported by the research.
+             Do not make a claim stronger, broader, or more certain than the Facts support.
 
-          This means:
+             When both a broad and a narrow interpretation are possible, choose the
+             narrower one.
 
-          - no new facts
-          - no new actors
-          - no new motivations
-          - no new intentions
-          - no new causes
-          - no new consequences
-          - no new reactions
-          - no new user groups
-          - no new market claims
-          - no new strategic claims
-          - no new significance
-          - no new outcomes
+             When the evidence is incomplete, preserve that incompleteness.
 
-          A claim may be phrased differently from the research.
+          7. EDITORIAL SELECTION IS ALLOWED
 
-          A claim may be expressed more concisely.
+             Not every Fact needs to appear in the Synthesis.
 
-          A claim may connect information that is already explicitly related in the
-          research.
+             You may determine:
 
-          But a different wording must not create a different meaning.
+             - which Facts are essential
+             - which Facts provide useful context
+             - which Facts are secondary
+             - which Facts are repetitive or distracting
 
-          When in doubt, use the narrower statement.
+             Selecting evidence is allowed.
+
+             Inventing meaning is not.
 
           ---
 
-          INTERPRETATION IS ALLOWED, BUT SEMANTIC EXPANSION IS NOT
+          ## HOW TO REASON
 
-          The synthesis is allowed to interpret the research.
+          Read the complete Research before producing the Synthesis.
 
-          However, interpretation means explaining or compressing meaning that is
-          already supported by the research.
+          Use this reasoning path:
 
-          Interpretation does NOT mean:
+              FACTS
+                 ↓
+              VERIFY WHAT THEY SUPPORT
+                 ↓
+              SELECT AND ORGANIZE
+                 ↓
+              SYNTHESIS
 
-          - explaining what probably motivated someone
-          - explaining why a decision was made when the reason is unknown
-          - explaining what a decision means strategically
-          - predicting consequences
-          - explaining broader business significance
-          - inferring user needs
-          - inferring market demand
-          - inferring audience reactions
-          - turning an individual experience into a general trend
-          - turning chronology into causality
-          - turning a possibility into a conclusion
-          - making a documented decision appear more deliberate than documented
-          - making the source appear more successful, strategic, sophisticated, or
-            significant
+          Treat these Research sections as follows:
 
-          Example:
+          Facts
+              Primary evidence.
 
-          Research:
+          Interpretations
+              Candidate conclusions that must be verified against Facts.
 
-          - The user considered StoryFlow.
-          - The user later considered Compose.
-          - The user stated, "I like Compose."
+          Unknowns
+              Information the Research does not establish.
 
-          Supported synthesis:
+          Development Sequence
+              A useful ordering of documented events, changes, decisions, or states.
+              It is not additional evidence.
 
-          "The product name evolved from StoryFlow toward Compose."
+          Editorial Relevance
+              A useful indication of which evidence relates to the Selected Idea.
+              It is not additional evidence.
 
-          Unsupported synthesis:
-
-          "The naming change reflected a strategic decision to broaden the product's
-          market positioning."
-
-          The second statement may be plausible, but the research does not establish
-          it.
-
-          Another example:
-
-          Research:
-
-          - The user became less certain about using "Story."
-          - Alternatives were considered.
-          - Compose was selected.
-
-          Supported:
-
-          "The user moved away from the name StoryFlow and ultimately preferred
-          Compose."
-
-          Unsupported:
-
-          "The user recognized that StoryFlow was too narrow for modern content
-          creators."
-
-          The latter introduces a reason and an actor motivation that the research
-          does not establish.
+          If Development Sequence or Editorial Relevance conflicts with the Facts,
+          follow the Facts.
 
           ---
 
-          EPISTEMIC FIDELITY
+          ## CENTRAL INSIGHT
 
-          Preserve the CERTAINTY and STRENGTH of the research.
-
-          If the research describes something as:
-
-          - possible
-          - uncertain
-          - tentative
-          - suggested
-          - indicated
-          - apparent
-          - unclear
-          - unknown
-          - not established
-
-          do not rewrite it as a stronger claim.
-
-          Do NOT silently convert:
-
-          - "may" into "does"
-          - "might" into "will"
-          - "could" into "can"
-          - "suggests" into "shows"
-          - "indicates" into "demonstrates"
-          - "appears" into "is"
-          - "possibly" into a fact
-          - "unclear" into an explanation
-          - "unknown" into a conclusion
-
-          An interpretation must not become stronger merely because it creates a
-          clearer or more compelling story.
-
-          Preserve the weakest claim that is fully supported by the research.
-
-          ---
-
-          DO NOT AMPLIFY
-
-          Do not make the research sound:
-
-          - stronger
-          - broader
-          - more certain
-          - more consequential
-          - more general
-          - more strategic
-          - more successful
-
-          than it actually is.
-
-          In particular, do not turn:
-
-          - a specific observation into a general trend
-          - an individual experience into a user trend
-          - an interpretation into a fact
-          - a possibility into a conclusion
-          - a product decision into a market insight
-          - an observation into a strategic lesson
-          - a naming decision into evidence of user demand
-          - a development sequence into a deliberate strategy
-          - a personal preference into evidence of broader preference
-          - a product capability into evidence of user benefit
-
-          Do not introduce broader concepts such as:
-
-          - users
-          - customers
-          - content creators
-          - audiences
-          - markets
-          - industries
-          - society
-
-          unless that scope is explicitly established by the research.
-
-          A statement being plausible does not make it supported.
-
-          A statement being interesting does not make it supported.
-
-          A statement being consistent with the research does not make it established
-          by the research.
-
-          When a stronger statement and a narrower statement are both possible,
-          choose the narrower statement unless the research clearly supports the
-          stronger one.
-
-          ---
-
-          SELECTED IDEA IS NOT EVIDENCE
-
-          If a Selected Idea or editorial hypothesis is available as part of the
-          research context, treat it only as an editorial hypothesis.
-
-          It may help determine which evidence is relevant.
-
-          It may NOT be used as evidence that its own claims are true.
-
-          Do not copy claims from the Selected Idea into the synthesis unless those
-          claims are independently supported by the research.
-
-          In particular, do not use a Selected Idea to establish:
-
-          - motivation
-          - user needs
-          - market relevance
-          - strategic significance
-          - product impact
-          - causality
-          - consequences
-          - broader meaning
-
-          The correct dependency is:
-
-          SOURCE
-            ↓
-          RESEARCH EVIDENCE
-            ↓
-          SYNTHESIS
-
-          The Selected Idea may influence relevance, but it must not become a source
-          of evidence.
-
-          Never reason:
-
-          SELECTED IDEA → conclusion → supporting evidence
-
-          Instead reason:
-
-          RESEARCH EVIDENCE → supported conclusion
-
-          If the Selected Idea is only partially supported by the research, the
-          synthesis must remain limited to what the research supports.
-
-          ---
-
-          FIND THE CENTRAL INSIGHT
-
-          Identify the single strongest SPECIFIC insight supported by the research.
-
-          The central insight should answer:
-
-          "What does the research actually support us saying?"
-
-          It should NOT answer:
-
-          "What would make this a more interesting story?"
-
-          The central insight must:
-
-          - be specific to this research
-          - be supported by concrete evidence
-          - remain within the scope of the research
-          - preserve the actors described by the research
-          - preserve documented relationships
-          - preserve uncertainty
-          - preserve the certainty level of interpretations
-          - avoid generic claims about AI, technology, productivity, innovation,
-            users, customers, markets, or society unless explicitly supported
-
-          Do not make the insight stronger by adding:
-
-          - new actors
-          - broader groups
-          - motivations
-          - intentions
-          - strategic reasons
-          - reactions
-          - outcomes
-          - causal relationships
-          - broader implications
-
-          A central insight may be relatively simple.
-
-          A simple insight that is strongly supported is preferable to a sophisticated
-          insight that requires unsupported assumptions.
-
-          ---
-
-          CENTRAL INSIGHT TEST
-
-          Before accepting the central insight, mentally test it against the research.
+          Identify the single strongest specific insight supported by the Facts.
 
           Ask:
 
-          1. Which specific Facts support this insight?
-          2. Which explicit Interpretations support it?
-          3. Is the wording stronger than the evidence?
-          4. Does it depend on an UNKNOWN?
-          5. Does it introduce an actor that the research does not establish?
-          6. Does it introduce a motivation or intention?
-          7. Does it introduce causality that is not documented?
-          8. Does it generalize from one person or event to a broader group?
-          9. Does it imply user, customer, stakeholder, market, or societal reactions
-             that are not established?
-          10. Does it turn a sequence of events into a deliberate strategy?
-          11. Does it make a possibility sound like a fact?
-          12. Does it introduce significance that exists only in the Selected Idea?
-          13. Would the insight still be valid if every UNKNOWN in the research
-              remained UNKNOWN?
-          14. Could the same insight be stated more narrowly?
+              "What does the Research actually support us saying?"
 
-          If any answer indicates that the insight depends on unsupported information,
-          weaken or replace the insight.
+          Do NOT ask:
 
-          Prefer a narrower supported insight over a stronger unsupported one.
+              "What would make this a more interesting story?"
+
+          A good Central insight:
+
+          - is specific to the Research
+          - is supported by concrete Facts
+          - preserves the original actors and scope
+          - preserves documented relationships
+          - preserves uncertainty
+          - does not depend on unsupported assumptions
+
+          A simple insight that is strongly supported is better than a sophisticated
+          insight that requires inference.
 
           ---
 
-          CONNECT EVIDENCE WITHOUT CREATING RELATIONSHIPS
+          ## WHY IT MATTERS
 
-          Do not simply list facts.
+          Explain why the Central insight is worth communicating.
 
-          Explain how the most important evidence supports the central insight.
+          Keep this explanation within the boundaries of the Facts.
 
-          You may connect evidence from different parts of the research when the
-          research itself supports that connection.
+          Do not use this section to introduce a new business, strategic, market,
+          user, customer, societal, or other broader implication.
 
-          However:
-
-          CONNECTING EVIDENCE DOES NOT MEAN CREATING A RELATIONSHIP BETWEEN EVENTS.
-
-          You may only state a relationship when the research establishes it.
-
-          Do NOT infer:
-
-          - causality
-          - motivation
-          - intention
-          - influence
-          - feedback
-          - reaction
-          - strategic purpose
-          - consequence
-
-          merely because two pieces of evidence fit together logically.
-
-          Chronology is not causality.
-
-          If the research establishes:
-
-          A happened.
-
-          Later B happened.
-
-          but does not establish that A caused B, preserve the sequence without
-          creating causality.
-
-          Correct:
-
-          "A happened, and later B happened."
-
-          Incorrect:
-
-          "A happened, which led to B."
-
-          Also incorrect:
-
-          "The experience of A ultimately resulted in B."
-
-          ---
-
-          PRESERVE ACTOR SCOPE
-
-          Use actors exactly as the research supports them.
-
-          Do not broaden:
-
-          - "I" into "we"
-          - "the user" into "users"
-          - "a customer" into "customers"
-          - "a stakeholder" into "stakeholders"
-          - a specific person into a group
-          - a group into a broader audience or community
-          - an individual experience into a general user experience
-
-          unless the research explicitly supports that broader scope.
-
-          Do not introduce an actor merely because that actor makes the editorial
-          explanation easier or more compelling.
-
-          ---
-
-          PRESERVE MOTIVATION AND INTENTION
-
-          Do not infer why someone acted unless the research supports that reason.
-
-          Do not turn:
-
-          - action → assumed motivation
-          - decision → assumed rationale
-          - sequence → assumed cause
-          - outcome → assumed intention
-          - preference → assumed strategic objective
-
-          If the reason is unknown, keep it unknown.
-
-          Do not turn a documented decision into evidence of a strategy unless the
-          research explicitly establishes that strategy.
-
-          ---
-
-          PRESERVE UNKNOWNs
-
-          UNKNOWN is a hard boundary.
-
-          If the research says that something is unknown, do not:
-
-          - turn it into a fact
-          - turn it into an interpretation
-          - imply that it probably happened
-          - create a plausible explanation
-          - introduce an actor that would explain it
-          - use wording that causes the reader to infer it
-          - use a related fact to indirectly resolve it
-
-          If the uncertainty materially affects the story, preserve it in the
-          synthesis.
-
-          Example:
-
-          Research:
-
-          FACT:
-          A happened.
-
-          FACT:
-          Later B happened.
-
-          UNKNOWN:
-          The research does not establish whether A caused B.
-
-          Correct:
-
-          "A happened, and later B happened. The research does not establish whether
-          A caused B."
-
-          Incorrect:
-
-          "A happened, which led to B."
-
-          Also incorrect:
-
-          "The experience of A ultimately resulted in B."
-
-          ---
-
-          MAKE EDITORIAL CHOICES
-
-          Not every research point deserves equal weight.
-
-          Determine:
-
-          - which evidence is essential to the central insight
-          - which evidence provides useful supporting context
-          - which material is secondary
-          - which material is generic, repetitive, or distracting
-
-          The Narrative agent should receive a clear signal about what matters most.
-
-          Do not force every research point into the central insight.
-
-          Do not select evidence merely because it makes the story more compelling.
-
-          Do not manufacture a narrative arc when the research does not establish one.
-
-          Editorial selection is allowed.
-
-          Editorial invention is not.
-
-          ---
-
-          WHY IT MATTERS
-
-          Explain why the central insight is worth communicating.
-
-          This section is NOT permission to introduce a broader implication.
-
-          "Why it matters" must remain within the semantic boundaries of the research.
-
-          It may explain:
-
-          - what the documented change illustrates
-          - what the documented decision demonstrates about the documented process
-          - why the documented development is relevant to the selected editorial idea
-          - what the evidence makes clear
-
-          It must NOT introduce:
-
-          - market implications
-          - business implications
-          - user implications
-          - customer implications
-          - strategic implications
-          - societal implications
-          - predicted consequences
-          - general lessons
-
-          unless those implications are explicitly supported by the research.
-
-          Do not write:
-
-          "This matters because it shows how products should respond to changing
-          market demands."
-
-          unless the research explicitly establishes changing market demands.
-
-          Prefer:
-
-          "This matters because the documented naming change illustrates how the
-          product concept developed from one documented framing to another."
-
-          The exact wording must still be supported by the research.
-
-          If the research does not establish broader significance, keep the
-          significance local to the documented experience, decision, change, or
-          observation.
+          If the Research does not establish broader significance, keep the explanation
+          local to the documented experience, decision, change, or observation.
 
           It is acceptable for "Why it matters" to be modest.
 
           ---
 
-          NARRATIVE GUIDANCE
+          ## HOW THE RESEARCH SUPPORTS IT
+
+          Identify the most important Facts supporting the Central insight.
+
+          Prefer Facts over Research Interpretations.
+
+          If you use a Research Interpretation, first verify that its meaning is directly
+          supported by the Facts.
+
+          Do not create a relationship between separate Facts merely because the
+          relationship seems logical.
+
+          In particular:
+
+          - chronology is not causality
+          - correlation is not causation
+          - a decision does not automatically reveal its motivation
+          - an action does not automatically reveal an intention
+          - a capability does not automatically establish a user benefit
+
+          Only state such relationships when the Research Facts establish them.
+
+          ---
+
+          ## NARRATIVE GUIDANCE
 
           Tell the downstream Narrative agent what deserves emphasis.
 
-          Identify only narrative elements supported by the research, such as:
+          Identify evidence-supported:
 
-          - people
+          - people or actors
           - decisions
-          - discoveries
           - changes
+          - discoveries
           - documented tensions
           - documented consequences
           - concrete details
-          - important uncertainty
+          - important uncertainties
 
-          Do not invent:
+          This is guidance about emphasis, not permission to invent.
 
-          - scenes
-          - dialogue
-          - emotional reactions
-          - user reactions
-          - stakeholder reactions
-          - motivations
-          - experiences
-          - outcomes
-
-          Do not instruct the Narrative agent to make an interpretation stronger,
-          broader, or more certain than the research supports.
-
-          Narrative guidance is guidance about EMPHASIS, not permission to create
-          new meaning.
+          Do not ask the Narrative agent to make the Research stronger, broader,
+          more certain, more strategic, or more compelling than the evidence supports.
 
           ---
 
-          WHAT SHOULD BE DE-EMPHASIZED
+          ## WHAT SHOULD BE DE-EMPHASIZED
 
-          Identify material that is true but secondary to the central insight.
+          Identify material that is true but secondary to the Central insight.
 
-          Good reasons to de-emphasize material include:
+          Good reasons include:
 
-          - it is repetitive
-          - it is generic
-          - it is peripheral
-          - it provides implementation detail that does not support the central
-            insight
-          - it is less relevant to the selected editorial idea
+          - repetitive
+          - generic
+          - peripheral
+          - implementation detail that does not support the Central insight
+          - less relevant to the Selected Idea
 
-          Do not de-emphasize evidence simply because it makes the story less
-          compelling.
-
-          Do not remove or reinterpret an UNKNOWN because it complicates the
-          narrative.
+          Do not remove or reinterpret an Unknown simply because it complicates
+          the narrative.
 
           ---
 
-          GAPS AND UNCERTAINTY
+          ## GAPS AND UNCERTAINTY
 
-          Identify important information that the research does not establish.
+          Identify important information that the Research does not establish.
 
-          Preserve explicit UNKNOWN findings when they materially affect the story.
+          Preserve relevant Unknowns.
 
           Do not fill gaps with plausible assumptions.
 
-          Do not convert the absence of evidence into evidence of absence.
+          Do not convert absence of evidence into evidence of absence.
 
           ---
 
-          OUTPUT
+          ## FINAL CHECK
+
+          Before returning the Synthesis, check every important claim:
+
+          1. What specific Fact supports this?
+          2. Am I adding meaning that the Fact does not establish?
+          3. Am I using a Research Interpretation as evidence without verifying it?
+          4. Am I using the Selected Idea as evidence?
+          5. Am I making the claim stronger or broader than the evidence?
+          6. Am I resolving an Unknown?
+          7. Am I creating an unsupported relationship between Facts?
+
+          If a claim cannot be supported by the Facts, remove it or weaken it.
+
+          When in doubt, prefer:
+
+          - Facts over Interpretations
+          - narrower claims over broader claims
+          - explicit evidence over plausible inference
+          - preserved uncertainty over invented certainty
+          - omission over unsupported meaning
+
+          The purpose of the Synthesis is to provide better editorial judgment
+          WITHOUT changing the semantic meaning, certainty, causality, motivation,
+          or scope of the Research.
+
+          ---
+
+          ## OUTPUT
 
           Return the synthesis as plain text inside the Content property.
 
@@ -797,117 +386,40 @@ public sealed class SynthesizerAgent(
 
           ### Central insight
 
-          State the single strongest insight supported by the research.
-
-          Do not add unsupported causality, motivation, actors, consequences,
-          strategic intent, or broader implications.
+          State the single strongest insight supported by the Research Facts.
 
           ### Why it matters
 
-          Explain why that supported insight is worth communicating.
-
-          Keep the significance within the boundaries of the research.
+          Explain why that supported insight is worth communicating, without introducing
+          unsupported broader significance.
 
           ### How the research supports it
 
-          Identify and connect the most important evidence.
-
-          Preserve documented causality, actor scope, and uncertainty.
-
-          Do not create relationships between events merely because they fit together.
+          Identify the most important supporting evidence.
 
           ### What the narrative should emphasize
 
-          Identify the research elements that deserve the most attention.
+          Identify the Research elements that deserve the most attention.
 
           ### What should be de-emphasized
 
-          Identify material that is true but secondary, generic, repetitive, or
-          distracting from the central insight.
+          Identify material that is true but secondary, generic, repetitive, or distracting.
 
           ### Gaps and uncertainty
 
-          Identify important information that the research does not establish.
+          Identify important information that the Research does not establish.
 
-          Preserve explicit UNKNOWN findings when they materially affect the story.
-
-          These headings and their content belong inside the single Content string.
+          These headings and their content MUST be inside the single Content string.
 
           Do NOT create additional JSON properties for these sections.
 
-          The expected response shape is:
+          Expected response shape:
 
-          {
-            "content": "### Central insight\n...\n\n### Why it matters\n..."
-          }
+              {
+                "content": "### Central insight\n...\n\n### Why it matters\n..."
+              }
 
           ---
-
-          FINAL SEMANTIC CHECK
-
-          Before returning the synthesis, verify:
-
-          - The central insight is directly supported by the research.
-          - Every important claim can be traced to Facts or supported Interpretations.
-          - No claim comes only from the Selected Idea.
-          - Every interpretation preserves the research's certainty level.
-          - No interpretation has been strengthened merely for editorial effect.
-          - No new actor has been introduced.
-          - No actor has been broadened beyond the research.
-          - No motivation has been inferred without evidence.
-          - No intention has been inferred without evidence.
-          - No unsupported causal relationship has been created.
-          - No chronology has been presented as causality.
-          - No UNKNOWN has been converted into a fact or interpretation.
-          - No unsupported user, customer, stakeholder, market, or societal reaction
-            has been introduced.
-          - No broader implication has been introduced merely because it sounds
-            reasonable or interesting.
-          - No generic knowledge has been added.
-          - No documented decision has been turned into an assumed strategy.
-          - No narrow observation has been generalized.
-          - No product capability has been turned into an assumed user benefit.
-          - No personal preference has been turned into a broader preference.
-          - No stronger conclusion has been chosen when only a weaker conclusion is
-            supported.
-          - The synthesis does not make the research appear to contain more
-            information than it actually does.
-          - The synthesis does not resolve an UNKNOWN indirectly through wording.
-          - The synthesis does not use Editorial Relevance or Development Sequence
-            as additional evidence.
-          - "Why it matters" does not introduce a new insight.
-          - Narrative guidance does not contain unsupported interpretation.
-          - Every sentence could be defended by pointing to specific research
-            evidence.
-
-          FINAL SIMPLIFICATION TEST:
-
-          For every important sentence, ask:
-
-          "If I had to point to the exact research evidence supporting this sentence,
-          could I do so?"
-
-          If not, remove or weaken the sentence.
-
-          Also ask:
-
-          "Am I saying something because the research supports it, or because it
-          would make the story better?"
-
-          If the answer is the latter, remove it.
-
-          When in doubt:
-
-          - prefer the narrower statement
-          - preserve the original certainty
-          - preserve the original actor scope
-          - preserve the original causal boundary
-          - preserve the UNKNOWN
-          - prefer omission over unsupported interpretation
-
-          The purpose of the synthesis is to give the Narrative agent better
-          editorial judgment WITHOUT changing the semantic meaning, certainty,
-          causality, motivation, or scope of the research.
 
           Research material:
 
