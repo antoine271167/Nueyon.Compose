@@ -1,6 +1,7 @@
 using Microsoft.Agents.AI.Workflows;
 using Nueyon.Compose.Application.Agents;
 using Nueyon.Compose.Application.Agents.Research;
+using Nueyon.Compose.Application.Agents.Synthesis;
 using Nueyon.Compose.Domain;
 
 namespace Nueyon.Compose.Application.Workflows;
@@ -35,11 +36,12 @@ public sealed class StoryWorkflow : IStoryWorkflow
         _composeAgent = composeAgent;
     }
 
+    private readonly IAgent<ComposeInput, ComposeResult> _composeAgent;
+
     private readonly IAgent<StoryInput, IReadOnlyList<Idea>> _ideaAgent;
+    private readonly IAgent<NarrativeInput, NarrativeResult> _narrativeAgent;
     private readonly IAgent<ResearchInput, ResearchResult> _researchAgent;
     private readonly IAgent<SynthesisInput, SynthesisResult> _synthesizer;
-    private readonly IAgent<NarrativeInput, NarrativeResult> _narrativeAgent;
-    private readonly IAgent<ComposeInput, ComposeResult> _composeAgent;
 
     /// <summary>
     ///     Executes the story workflow with the provided input.
@@ -165,7 +167,8 @@ public sealed class StoryWorkflow : IStoryWorkflow
             "synthesis",
             async (research, _, cancellationToken) =>
             {
-                var input = new SynthesisInput(research);
+                var synthesisResearch = SynthesisResearchFilter.ExtractFactsAndUnknowns(research.Content);
+                var input = new SynthesisInput(new ResearchResult(synthesisResearch));
 
                 var executionContext = new AgentExecutionContext(Guid.NewGuid());
 

@@ -89,6 +89,10 @@ public sealed class SynthesizerAgent(
           The goal is to identify the strongest insight that the Research actually supports
           and give the Narrative agent clear guidance about what evidence matters.
 
+          The supplied research material contains only Facts and Unknowns. Facts are the
+          evidence. Unknowns are hard boundaries. Do not infer information that is not
+          contained in the Facts.
+
           ---
 
           ## SEMANTIC CONTRACT
@@ -108,27 +112,14 @@ public sealed class SynthesizerAgent(
 
              You may NOT add information that is not supported by the Facts.
 
-          2. INTERPRETATIONS ARE HYPOTHESES
-
-             Research Interpretations are conclusions proposed by the Research agent.
-
-             They are NOT independent evidence.
-
-             Before using an Interpretation, verify that the same meaning is directly
-             supported by the Facts.
-
-             If it adds meaning beyond the Facts, ignore it.
-
-             It is completely acceptable to use no Research Interpretations.
-
-          3. UNKNOWNS REMAIN UNKNOWN
+          2. UNKNOWNS REMAIN UNKNOWN
 
              An Unknown is a hard boundary.
 
              Do not resolve, explain, infer, or indirectly imply information that the
              Research identifies as unknown.
 
-          4. SELECTED IDEA IS NOT EVIDENCE
+          3. SELECTED IDEA IS NOT EVIDENCE
 
              The Selected Idea is an editorial hypothesis.
 
@@ -144,7 +135,7 @@ public sealed class SynthesizerAgent(
 
                  SELECTED IDEA → CONCLUSION → SUPPORTING FACTS
 
-          5. DO NOT ADD MEANING
+          4. DO NOT ADD MEANING
 
              Do not introduce unsupported:
 
@@ -167,7 +158,7 @@ public sealed class SynthesizerAgent(
              Do not make a documented decision appear more deliberate or strategic than
              the Research establishes.
 
-          6. PRESERVE THE STRENGTH OF THE EVIDENCE
+          5. PRESERVE THE STRENGTH OF THE EVIDENCE
 
              Do not make a claim stronger, broader, or more certain than the Facts support.
 
@@ -176,7 +167,7 @@ public sealed class SynthesizerAgent(
 
              When the evidence is incomplete, preserve that incompleteness.
 
-          7. EDITORIAL SELECTION IS ALLOWED
+          6. EDITORIAL SELECTION IS ALLOWED
 
              Not every Fact needs to appear in the Synthesis.
 
@@ -212,22 +203,8 @@ public sealed class SynthesizerAgent(
           Facts
               Primary evidence.
 
-          Interpretations
-              Candidate conclusions that must be verified against Facts.
-
           Unknowns
               Information the Research does not establish.
-
-          Development Sequence
-              A useful ordering of documented events, changes, decisions, or states.
-              It is not additional evidence.
-
-          Editorial Relevance
-              A useful indication of which evidence relates to the Selected Idea.
-              It is not additional evidence.
-
-          If Development Sequence or Editorial Relevance conflicts with the Facts,
-          follow the Facts.
 
           ---
 
@@ -354,17 +331,15 @@ public sealed class SynthesizerAgent(
 
           1. What specific Fact supports this?
           2. Am I adding meaning that the Fact does not establish?
-          3. Am I using a Research Interpretation as evidence without verifying it?
-          4. Am I using the Selected Idea as evidence?
-          5. Am I making the claim stronger or broader than the evidence?
-          6. Am I resolving an Unknown?
-          7. Am I creating an unsupported relationship between Facts?
+          3. Am I using the Selected Idea as evidence?
+          4. Am I making the claim stronger or broader than the evidence?
+          5. Am I resolving an Unknown?
+          6. Am I creating an unsupported relationship between Facts?
 
           If a claim cannot be supported by the Facts, remove it or weaken it.
 
           When in doubt, prefer:
 
-          - Facts over Interpretations
           - narrower claims over broader claims
           - explicit evidence over plausible inference
           - preserved uncertainty over invented certainty
