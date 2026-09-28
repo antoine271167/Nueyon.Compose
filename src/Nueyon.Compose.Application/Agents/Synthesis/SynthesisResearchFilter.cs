@@ -39,7 +39,7 @@ public static class SynthesisResearchFilter
 
         if (unknowns is not null)
         {
-            sections.Add($"### Gaps and uncertainty{Environment.NewLine}{Environment.NewLine}{unknowns}");
+            sections.Add($"### Unknowns{Environment.NewLine}{Environment.NewLine}{unknowns}");
         }
 
         return string.Join($"{Environment.NewLine}{Environment.NewLine}", sections);

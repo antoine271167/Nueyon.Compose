@@ -79,7 +79,7 @@ public sealed class SynthesisResearchFilterTests
 
         // Assert
         Assert.Contains("### Facts", result, StringComparison.Ordinal);
-        Assert.Contains("### Gaps and uncertainty", result, StringComparison.Ordinal);
+        Assert.Contains("### Unknowns", result, StringComparison.Ordinal);
     }
 
     [Fact]
@@ -99,7 +99,7 @@ public sealed class SynthesisResearchFilterTests
         // Assert
         Assert.Contains("### Facts", result, StringComparison.Ordinal);
         Assert.Contains("Fact one. Fact two.", result, StringComparison.Ordinal);
-        Assert.DoesNotContain("### Gaps and uncertainty", result, StringComparison.Ordinal);
+        Assert.DoesNotContain("### Unknowns", result, StringComparison.Ordinal);
     }
 
     [Fact]
@@ -127,13 +127,22 @@ public sealed class SynthesisResearchFilterTests
         var result = SynthesisResearchFilter.ExtractFactsAndUnknowns(research);
 
         // Assert
-        Assert.Contains(
-            "Fact one.\r\nFact two spans\r\nmultiple lines.\r\n\r\n- Fact three as a bullet.",
-            result,
-            StringComparison.Ordinal);
-        Assert.Contains(
-            "Unknown one.\r\nUnknown two spans\r\nmultiple lines.",
-            result,
-            StringComparison.Ordinal);
+        var expectedFacts = string.Join(
+            Environment.NewLine,
+            "Fact one.",
+            "Fact two spans",
+            "multiple lines.",
+            string.Empty,
+            "- Fact three as a bullet.");
+        var expectedUnknowns = string.Join(
+            Environment.NewLine,
+            "Unknown one.",
+            "Unknown two spans",
+            "multiple lines.");
+
+        Assert.Contains("### Facts", result, StringComparison.Ordinal);
+        Assert.Contains("### Unknowns", result, StringComparison.Ordinal);
+        Assert.Contains(expectedFacts, result, StringComparison.Ordinal);
+        Assert.Contains(expectedUnknowns, result, StringComparison.Ordinal);
     }
 }

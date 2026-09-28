@@ -82,6 +82,9 @@ public sealed class SynthesizerAgentBoundaryTests
             "Facts 1 is relevant to the Selected Idea.",
             messageText,
             StringComparison.Ordinal);
+
+        Assert.Contains("### Facts", messageText, StringComparison.Ordinal);
+        Assert.Contains("### Unknowns", messageText, StringComparison.Ordinal);
     }
 
     private sealed class MessageCapturingChatClient : IChatClient
