@@ -247,6 +247,139 @@ public sealed class StoryWorkflowTests
         Assert.Equal(ContentFormat.Article, composeAgent.CapturedInput.Format);
     }
 
+    [Fact]
+    public async Task RunAsync_WithIdea_PreservesEvidenceInSelectedIdea()
+    {
+        // Arrange
+        const string expectedEvidence = "The source explicitly states this important fact.";
+
+        var expectedIdea = new Idea(
+            "Test Idea",
+            "Test description",
+            "Test audience",
+            "Test rationale",
+            expectedEvidence);
+
+        var ideaAgent = new CapturingFakeAgent(expectedIdea);
+        var researchAgent = new CapturingFakeResearchAgent(new ResearchResult("research content"));
+        var synthesizer = new FakeSynthesizerAgent(new SynthesisResult("synthesis content"));
+        var narrativeAgent = new FakeNarrativeAgent(new NarrativeResult("narrative content"));
+        var composeAgent = new FakeComposeAgent(new ComposeResult("composed content"));
+
+        var workflow = new StoryWorkflow(ideaAgent, researchAgent, synthesizer, narrativeAgent, composeAgent);
+        var input = new StoryInput("Test input");
+
+        // Act
+        await workflow.RunAsync(input);
+
+        // Assert
+        Assert.NotNull(researchAgent.CapturedInput);
+        Assert.NotNull(researchAgent.CapturedInput.SelectedIdea);
+        Assert.Equal(expectedEvidence, researchAgent.CapturedInput.SelectedIdea.Idea.Evidence);
+    }
+
+    [Fact]
+    public async Task RunAsync_WithIdea_SelectedIdeaContainsAllProperties()
+    {
+        // Arrange
+        const string title = "Evidence Test Idea";
+        const string description = "Testing evidence preservation";
+        const string audience = "Testing Team";
+        const string rationale = "To verify the experiment";
+        const string evidence = "The source provides concrete evidence: specific event X happened.";
+
+        var expectedIdea = new Idea(title, description, audience, rationale, evidence);
+        var ideaAgent = new CapturingFakeAgent(expectedIdea);
+        var researchAgent = new CapturingFakeResearchAgent(new ResearchResult("research content"));
+        var synthesizer = new FakeSynthesizerAgent(new SynthesisResult("synthesis content"));
+        var narrativeAgent = new FakeNarrativeAgent(new NarrativeResult("narrative content"));
+        var composeAgent = new FakeComposeAgent(new ComposeResult("composed content"));
+
+        var workflow = new StoryWorkflow(ideaAgent, researchAgent, synthesizer, narrativeAgent, composeAgent);
+        var input = new StoryInput("Test input");
+
+        // Act
+        var result = await workflow.RunAsync(input);
+
+        // Assert
+        Assert.NotNull(result.SelectedIdea);
+        Assert.Equal(title, result.SelectedIdea.Idea.Title);
+        Assert.Equal(description, result.SelectedIdea.Idea.Description);
+        Assert.Equal(audience, result.SelectedIdea.Idea.Audience);
+        Assert.Equal(rationale, result.SelectedIdea.Idea.Rationale);
+        Assert.Equal(evidence, result.SelectedIdea.Idea.Evidence);
+    }
+
+    [Fact]
+    public async Task RunAsync_WithValidInput_AllAgentsReceiveSameExecutionId()
+    {
+        // Arrange
+        var ideaAgent = new ExecutionContextCapturingIdeaAgent(new Idea(
+            "Test Idea",
+            "Description",
+            "Audience",
+            "Rationale",
+            "Evidence from source material."));
+
+        var researchAgent = new ExecutionContextCapturingResearchAgent(new ResearchResult("research content"));
+        var synthesizer = new ExecutionContextCapturingSynthesizerAgent(new SynthesisResult("synthesis content"));
+        var narrativeAgent = new ExecutionContextCapturingNarrativeAgent(new NarrativeResult("narrative content"));
+        var composeAgent = new ExecutionContextCapturingComposeAgent(new ComposeResult("composed content"));
+
+        var workflow = new StoryWorkflow(ideaAgent, researchAgent, synthesizer, narrativeAgent, composeAgent);
+
+        var input = new StoryInput("Test input");
+
+        // Act
+        await workflow.RunAsync(input);
+
+        // Assert
+        Assert.NotNull(ideaAgent.CapturedExecutionContext);
+        Assert.NotNull(researchAgent.CapturedExecutionContext);
+        Assert.NotNull(synthesizer.CapturedExecutionContext);
+        Assert.NotNull(narrativeAgent.CapturedExecutionContext);
+        Assert.NotNull(composeAgent.CapturedExecutionContext);
+
+        var executionId = ideaAgent.CapturedExecutionContext.ExecutionId;
+
+        Assert.NotEqual(Guid.Empty, executionId);
+        Assert.Equal(executionId, researchAgent.CapturedExecutionContext.ExecutionId);
+        Assert.Equal(executionId, synthesizer.CapturedExecutionContext.ExecutionId);
+        Assert.Equal(executionId, narrativeAgent.CapturedExecutionContext.ExecutionId);
+        Assert.Equal(executionId, composeAgent.CapturedExecutionContext.ExecutionId);
+    }
+
+    [Fact]
+    public async Task RunAsync_CalledTwice_ProducesDifferentExecutionIds()
+    {
+        // Arrange
+        var ideaAgent = new ExecutionContextCapturingIdeaAgent(new Idea(
+            "Test Idea",
+            "Description",
+            "Audience",
+            "Rationale",
+            "Evidence from source material."));
+
+        var researchAgent = new ExecutionContextCapturingResearchAgent(new ResearchResult("research content"));
+        var synthesizer = new ExecutionContextCapturingSynthesizerAgent(new SynthesisResult("synthesis content"));
+        var narrativeAgent = new ExecutionContextCapturingNarrativeAgent(new NarrativeResult("narrative content"));
+        var composeAgent = new ExecutionContextCapturingComposeAgent(new ComposeResult("composed content"));
+
+        var workflow = new StoryWorkflow(ideaAgent, researchAgent, synthesizer, narrativeAgent, composeAgent);
+
+        var input = new StoryInput("Test input");
+
+        // Act
+        await workflow.RunAsync(input);
+        var firstExecutionId = ideaAgent.CapturedExecutionContext!.ExecutionId;
+
+        await workflow.RunAsync(input);
+        var secondExecutionId = ideaAgent.CapturedExecutionContext!.ExecutionId;
+
+        // Assert
+        Assert.NotEqual(firstExecutionId, secondExecutionId);
+    }
+
     private sealed class CapturingFakeAgent(Idea? ideaToReturn = null) : IAgent<StoryInput, IReadOnlyList<Idea>>
     {
         private readonly IReadOnlyList<Idea>? _ideaToReturn = ideaToReturn is not null
@@ -370,66 +503,100 @@ public sealed class StoryWorkflowTests
         }
     }
 
-    [Fact]
-    public async Task RunAsync_WithIdea_PreservesEvidenceInSelectedIdea()
+    private sealed class ExecutionContextCapturingIdeaAgent(Idea ideaToReturn)
+        : IAgent<StoryInput, IReadOnlyList<Idea>>
     {
-        // Arrange
-        const string expectedEvidence = "The source explicitly states this important fact.";
+        private readonly IReadOnlyList<Idea> _ideaToReturn = new List<Idea> { ideaToReturn }.AsReadOnly();
 
-        var expectedIdea = new Idea(
-            "Test Idea",
-            "Test description",
-            "Test audience",
-            "Test rationale",
-            expectedEvidence);
+        public AgentExecutionContext? CapturedExecutionContext { get; private set; }
 
-        var ideaAgent = new CapturingFakeAgent(expectedIdea);
-        var researchAgent = new CapturingFakeResearchAgent(new ResearchResult("research content"));
-        var synthesizer = new FakeSynthesizerAgent(new SynthesisResult("synthesis content"));
-        var narrativeAgent = new FakeNarrativeAgent(new NarrativeResult("narrative content"));
-        var composeAgent = new FakeComposeAgent(new ComposeResult("composed content"));
+        public Task<IReadOnlyList<Idea>> ExecuteAsync(
+            AgentExecutionContext executionContext,
+            StoryInput input,
+            CancellationToken cancellationToken = default)
+        {
+            ArgumentNullException.ThrowIfNull(executionContext);
+            ArgumentNullException.ThrowIfNull(input);
 
-        var workflow = new StoryWorkflow(ideaAgent, researchAgent, synthesizer, narrativeAgent, composeAgent);
-        var input = new StoryInput("Test input");
+            CapturedExecutionContext = executionContext;
 
-        // Act
-        await workflow.RunAsync(input);
-
-        // Assert
-        Assert.NotNull(researchAgent.CapturedInput);
-        Assert.NotNull(researchAgent.CapturedInput.SelectedIdea);
-        Assert.Equal(expectedEvidence, researchAgent.CapturedInput.SelectedIdea.Idea.Evidence);
+            return Task.FromResult(_ideaToReturn);
+        }
     }
 
-    [Fact]
-    public async Task RunAsync_WithIdea_SelectedIdeaContainsAllProperties()
+    private sealed class ExecutionContextCapturingResearchAgent(ResearchResult result)
+        : IAgent<ResearchInput, ResearchResult>
     {
-        // Arrange
-        const string title = "Evidence Test Idea";
-        const string description = "Testing evidence preservation";
-        const string audience = "Testing Team";
-        const string rationale = "To verify the experiment";
-        const string evidence = "The source provides concrete evidence: specific event X happened.";
+        public AgentExecutionContext? CapturedExecutionContext { get; private set; }
 
-        var expectedIdea = new Idea(title, description, audience, rationale, evidence);
-        var ideaAgent = new CapturingFakeAgent(expectedIdea);
-        var researchAgent = new CapturingFakeResearchAgent(new ResearchResult("research content"));
-        var synthesizer = new FakeSynthesizerAgent(new SynthesisResult("synthesis content"));
-        var narrativeAgent = new FakeNarrativeAgent(new NarrativeResult("narrative content"));
-        var composeAgent = new FakeComposeAgent(new ComposeResult("composed content"));
+        public Task<ResearchResult> ExecuteAsync(
+            AgentExecutionContext executionContext,
+            ResearchInput input,
+            CancellationToken cancellationToken = default)
+        {
+            ArgumentNullException.ThrowIfNull(executionContext);
+            ArgumentNullException.ThrowIfNull(input);
 
-        var workflow = new StoryWorkflow(ideaAgent, researchAgent, synthesizer, narrativeAgent, composeAgent);
-        var input = new StoryInput("Test input");
+            CapturedExecutionContext = executionContext;
 
-        // Act
-        var result = await workflow.RunAsync(input);
+            return Task.FromResult(result);
+        }
+    }
 
-        // Assert
-        Assert.NotNull(result.SelectedIdea);
-        Assert.Equal(title, result.SelectedIdea.Idea.Title);
-        Assert.Equal(description, result.SelectedIdea.Idea.Description);
-        Assert.Equal(audience, result.SelectedIdea.Idea.Audience);
-        Assert.Equal(rationale, result.SelectedIdea.Idea.Rationale);
-        Assert.Equal(evidence, result.SelectedIdea.Idea.Evidence);
+    private sealed class ExecutionContextCapturingSynthesizerAgent(SynthesisResult result)
+        : IAgent<SynthesisInput, SynthesisResult>
+    {
+        public AgentExecutionContext? CapturedExecutionContext { get; private set; }
+
+        public Task<SynthesisResult> ExecuteAsync(
+            AgentExecutionContext executionContext,
+            SynthesisInput input,
+            CancellationToken cancellationToken = default)
+        {
+            ArgumentNullException.ThrowIfNull(executionContext);
+            ArgumentNullException.ThrowIfNull(input);
+
+            CapturedExecutionContext = executionContext;
+
+            return Task.FromResult(result);
+        }
+    }
+
+    private sealed class ExecutionContextCapturingNarrativeAgent(NarrativeResult result)
+        : IAgent<NarrativeInput, NarrativeResult>
+    {
+        public AgentExecutionContext? CapturedExecutionContext { get; private set; }
+
+        public Task<NarrativeResult> ExecuteAsync(
+            AgentExecutionContext executionContext,
+            NarrativeInput input,
+            CancellationToken cancellationToken = default)
+        {
+            ArgumentNullException.ThrowIfNull(executionContext);
+            ArgumentNullException.ThrowIfNull(input);
+
+            CapturedExecutionContext = executionContext;
+
+            return Task.FromResult(result);
+        }
+    }
+
+    private sealed class ExecutionContextCapturingComposeAgent(ComposeResult result)
+        : IAgent<ComposeInput, ComposeResult>
+    {
+        public AgentExecutionContext? CapturedExecutionContext { get; private set; }
+
+        public Task<ComposeResult> ExecuteAsync(
+            AgentExecutionContext executionContext,
+            ComposeInput input,
+            CancellationToken cancellationToken = default)
+        {
+            ArgumentNullException.ThrowIfNull(executionContext);
+            ArgumentNullException.ThrowIfNull(input);
+
+            CapturedExecutionContext = executionContext;
+
+            return Task.FromResult(result);
+        }
     }
 }

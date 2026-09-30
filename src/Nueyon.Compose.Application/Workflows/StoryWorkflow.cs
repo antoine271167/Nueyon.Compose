@@ -51,7 +51,9 @@ public sealed class StoryWorkflow : IStoryWorkflow
     {
         ArgumentNullException.ThrowIfNull(input);
 
-        var workflow = Build();
+        var executionContext = new AgentExecutionContext(Guid.NewGuid());
+
+        var workflow = Build(executionContext);
 
         var run = await InProcessExecution.RunAsync(
             workflow,
@@ -64,14 +66,14 @@ public sealed class StoryWorkflow : IStoryWorkflow
     /// <summary>
     ///     Builds a new MAF workflow for each execution.
     /// </summary>
-    private Workflow Build()
+    private Workflow Build(AgentExecutionContext executionContext)
     {
-        var ideaExecutor = CreateIdeaExecutor();
+        var ideaExecutor = CreateIdeaExecutor(executionContext);
         var ideaSelectionExecutor = CreateIdeaSelectionExecutor();
-        var researchExecutor = CreateResearchExecutor();
-        var synthesisExecutor = CreateSynthesisExecutor();
-        var narrativeExecutor = CreateNarrativeExecutor();
-        var composeExecutor = CreateComposeExecutor();
+        var researchExecutor = CreateResearchExecutor(executionContext);
+        var synthesisExecutor = CreateSynthesisExecutor(executionContext);
+        var narrativeExecutor = CreateNarrativeExecutor(executionContext);
+        var composeExecutor = CreateComposeExecutor(executionContext);
 
         var builder = new WorkflowBuilder(ideaExecutor);
 
@@ -88,7 +90,7 @@ public sealed class StoryWorkflow : IStoryWorkflow
     /// <summary>
     ///     Creates the Idea generation executor.
     /// </summary>
-    private FunctionExecutor<StoryInput, Idea[]> CreateIdeaExecutor() =>
+    private FunctionExecutor<StoryInput, Idea[]> CreateIdeaExecutor(AgentExecutionContext executionContext) =>
         new(
             "idea",
             async (input, context, cancellationToken) =>
@@ -98,8 +100,6 @@ public sealed class StoryWorkflow : IStoryWorkflow
                     input,
                     StoryWorkflowState.ScopeName,
                     cancellationToken);
-
-                var executionContext = new AgentExecutionContext(Guid.NewGuid());
 
                 var ideas = await _ideaAgent.ExecuteAsync(
                     executionContext,
@@ -138,7 +138,8 @@ public sealed class StoryWorkflow : IStoryWorkflow
     /// <summary>
     ///     Creates the Research executor.
     /// </summary>
-    private FunctionExecutor<SelectedIdea, ResearchResult> CreateResearchExecutor() =>
+    private FunctionExecutor<SelectedIdea, ResearchResult> CreateResearchExecutor(
+        AgentExecutionContext executionContext) =>
         new(
             "research",
             async (selectedIdea, context, cancellationToken) =>
@@ -154,15 +155,14 @@ public sealed class StoryWorkflow : IStoryWorkflow
                     input,
                     selectedIdea);
 
-                var executionContext = new AgentExecutionContext(Guid.NewGuid());
-
                 return await _researchAgent.ExecuteAsync(
                     executionContext,
                     researchInput,
                     cancellationToken);
             });
 
-    private FunctionExecutor<ResearchResult, SynthesisResult> CreateSynthesisExecutor() =>
+    private FunctionExecutor<ResearchResult, SynthesisResult> CreateSynthesisExecutor(
+        AgentExecutionContext executionContext) =>
         new(
             "synthesis",
             async (research, _, cancellationToken) =>
@@ -170,22 +170,19 @@ public sealed class StoryWorkflow : IStoryWorkflow
                 var synthesisResearch = SynthesisResearchFilter.ExtractFactsAndUnknowns(research.Content);
                 var input = new SynthesisInput(new ResearchResult(synthesisResearch));
 
-                var executionContext = new AgentExecutionContext(Guid.NewGuid());
-
                 return await _synthesizer.ExecuteAsync(
                     executionContext,
                     input,
                     cancellationToken);
             });
 
-    private FunctionExecutor<SynthesisResult, NarrativeResult> CreateNarrativeExecutor() =>
+    private FunctionExecutor<SynthesisResult, NarrativeResult> CreateNarrativeExecutor(
+        AgentExecutionContext executionContext) =>
         new(
             "narrative",
             async (synthesis, _, cancellationToken) =>
             {
                 var input = new NarrativeInput(synthesis);
-
-                var executionContext = new AgentExecutionContext(Guid.NewGuid());
 
                 return await _narrativeAgent.ExecuteAsync(
                     executionContext,
@@ -193,14 +190,13 @@ public sealed class StoryWorkflow : IStoryWorkflow
                     cancellationToken);
             });
 
-    private FunctionExecutor<NarrativeResult, ComposeResult> CreateComposeExecutor() =>
+    private FunctionExecutor<NarrativeResult, ComposeResult> CreateComposeExecutor(
+        AgentExecutionContext executionContext) =>
         new(
             "compose",
             async (narrative, _, cancellationToken) =>
             {
                 var input = new ComposeInput(narrative, ContentFormat.Article);
-
-                var executionContext = new AgentExecutionContext(Guid.NewGuid());
 
                 return await _composeAgent.ExecuteAsync(
                     executionContext,
