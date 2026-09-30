@@ -439,6 +439,11 @@ public sealed class IdeaAgent : IAgent<StoryInput, IReadOnlyList<Domain.Idea>>
     }
 
     /// <summary>
+    ///     Gets the system instructions used to configure this agent's underlying AI agent.
+    /// </summary>
+    public static string GetSystemInstructions() => IdeaAgentInstructions.GetSystemInstructions();
+
+    /// <summary>
     ///     Creates ChatClientAgentRunOptions with structured JSON output configured for IdeaResponse.
     /// </summary>
     /// <returns>Configured ChatClientAgentRunOptions with ResponseFormat set.</returns>
