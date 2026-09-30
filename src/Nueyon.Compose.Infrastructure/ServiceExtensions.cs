@@ -55,7 +55,7 @@ public static class InfrastructureServiceExtensions
             var logger = provider.GetRequiredService<ILogger<IdeaAgent>>();
 
             // Create the base OpenAI AIAgent
-            var baseAiAgent = OpenAIAgentFactory.CreateOpenAIAgent(
+            var baseAiAgent = OpenAiAgentFactory.CreateOpenAiAgent(
                 options.ApiKey,
                 options.Model,
                 IdeaAgent.GetSystemInstructions());
@@ -84,7 +84,7 @@ public static class InfrastructureServiceExtensions
 
             var logger = provider.GetRequiredService<ILogger<ResearchAgent>>();
 
-            var baseAiAgent = OpenAIAgentFactory.CreateOpenAIAgent(
+            var baseAiAgent = OpenAiAgentFactory.CreateOpenAiAgent(
                 options.ApiKey,
                 options.Model,
                 ResearchAgent.GetSystemInstructions());
@@ -100,7 +100,7 @@ public static class InfrastructureServiceExtensions
 
             var logger = provider.GetRequiredService<ILogger<SynthesizerAgent>>();
 
-            var baseAiAgent = OpenAIAgentFactory.CreateOpenAIAgent(
+            var baseAiAgent = OpenAiAgentFactory.CreateOpenAiAgent(
                 options.ApiKey,
                 options.Model,
                 SynthesizerAgent.GetSystemInstructions());
@@ -116,7 +116,7 @@ public static class InfrastructureServiceExtensions
 
             var logger = provider.GetRequiredService<ILogger<NarrativeAgent>>();
 
-            var baseAiAgent = OpenAIAgentFactory.CreateOpenAIAgent(
+            var baseAiAgent = OpenAiAgentFactory.CreateOpenAiAgent(
                 options.ApiKey,
                 options.Model,
                 NarrativeAgent.GetSystemInstructions());
@@ -132,7 +132,7 @@ public static class InfrastructureServiceExtensions
 
             var logger = provider.GetRequiredService<ILogger<ComposeAgent>>();
 
-            var baseAiAgent = OpenAIAgentFactory.CreateOpenAIAgent(
+            var baseAiAgent = OpenAiAgentFactory.CreateOpenAiAgent(
                 options.ApiKey,
                 options.Model,
                 ComposeAgent.GetSystemInstructions());
