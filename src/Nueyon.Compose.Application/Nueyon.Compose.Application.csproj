@@ -17,4 +17,8 @@
 	<ProjectReference Include="..\Nueyon.Compose.Domain\Nueyon.Compose.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+	<InternalsVisibleTo Include="Nueyon.Compose.Application.Tests" />
+  </ItemGroup>
+
 </Project>
