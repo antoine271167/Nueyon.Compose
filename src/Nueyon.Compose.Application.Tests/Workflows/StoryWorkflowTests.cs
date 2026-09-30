@@ -104,6 +104,79 @@ public sealed class StoryWorkflowTests
     }
 
     [Fact]
+    public async Task RunAsync_WithFullResearchSections_PassesOnlyFactsAndUnknownsToSynthesizer()
+    {
+        // Arrange
+        var ideaAgent = new CapturingFakeAgent(new Idea(
+            "Captured",
+            "Description",
+            "Audience",
+            "Rationale",
+            "Evidence from source."));
+
+        const string fullResearch =
+            """
+            ### Facts
+
+            The author renamed the product from StoryFlow to Compose.
+
+            ### Interpretations
+
+            The rename reflects a shift in product positioning.
+
+            ### Unknowns
+
+            The exact date of the rename is not established.
+
+            ### Development sequence
+
+            The rename occurred after the initial launch.
+
+            ### Editorial relevance
+
+            Facts 1 is relevant to the Selected Idea.
+            """;
+
+        var researchAgent = new FakeResearchAgent(new ResearchResult(fullResearch));
+        var synthesizer = new CapturingFakeSynthesizerAgent(new SynthesisResult("synthesis content"));
+        var narrativeAgent = new FakeNarrativeAgent(new NarrativeResult("narrative content"));
+        var composeAgent = new FakeComposeAgent(new ComposeResult("complete article content"));
+
+        var workflow = new StoryWorkflow(ideaAgent, researchAgent, synthesizer, narrativeAgent, composeAgent);
+
+        var input = new StoryInput("Test input");
+
+        // Act
+        await workflow.RunAsync(input);
+
+        // Assert
+        Assert.NotNull(synthesizer.CapturedInput);
+        var synthesisResearchContent = synthesizer.CapturedInput.Research.Content;
+
+        Assert.Contains(
+            "The author renamed the product from StoryFlow to Compose.",
+            synthesisResearchContent,
+            StringComparison.Ordinal);
+        Assert.Contains(
+            "The exact date of the rename is not established.",
+            synthesisResearchContent,
+            StringComparison.Ordinal);
+
+        Assert.DoesNotContain(
+            "The rename reflects a shift in product positioning.",
+            synthesisResearchContent,
+            StringComparison.Ordinal);
+        Assert.DoesNotContain(
+            "The rename occurred after the initial launch.",
+            synthesisResearchContent,
+            StringComparison.Ordinal);
+        Assert.DoesNotContain(
+            "Facts 1 is relevant to the Selected Idea.",
+            synthesisResearchContent,
+            StringComparison.Ordinal);
+    }
+
+    [Fact]
     public async Task RunAsync_WithCancellationToken_PropagatesTokenToAgent()
     {
         // Arrange
@@ -407,6 +480,24 @@ public sealed class StoryWorkflowTests
         {
             ArgumentNullException.ThrowIfNull(executionContext);
             ArgumentNullException.ThrowIfNull(input);
+
+            return Task.FromResult(result);
+        }
+    }
+
+    private sealed class CapturingFakeSynthesizerAgent(SynthesisResult result) : IAgent<SynthesisInput, SynthesisResult>
+    {
+        public SynthesisInput? CapturedInput { get; private set; }
+
+        public Task<SynthesisResult> ExecuteAsync(
+            AgentExecutionContext executionContext,
+            SynthesisInput input,
+            CancellationToken cancellationToken = default)
+        {
+            ArgumentNullException.ThrowIfNull(executionContext);
+            ArgumentNullException.ThrowIfNull(input);
+
+            CapturedInput = input;
 
             return Task.FromResult(result);
         }
