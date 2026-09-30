@@ -321,6 +321,37 @@ public sealed class StoryWorkflowTests
     }
 
     [Fact]
+    public async Task RunAsync_VerifiesSynthesisToNarrativeBoundary()
+    {
+        // Arrange
+        const string synthesisContent = "distinctive synthesis content";
+
+        var ideaAgent = new CapturingFakeAgent(new Idea(
+            "Test Idea",
+            "Test description",
+            "Test audience",
+            "Test rationale",
+            "Test evidence."));
+
+        var researchAgent = new FakeResearchAgent(new ResearchResult("research content"));
+        var synthesizer = new CapturingFakeSynthesizerAgent(new SynthesisResult(synthesisContent));
+        var narrativeAgent = new CapturingFakeNarrativeAgent(new NarrativeResult("narrative content"));
+        var composeAgent = new FakeComposeAgent(new ComposeResult("composed content"));
+
+        var workflow = new StoryWorkflow(ideaAgent, researchAgent, synthesizer, narrativeAgent, composeAgent);
+        var input = new StoryInput("Test input");
+
+        // Act
+        await workflow.RunAsync(input);
+
+        // Assert
+        Assert.NotNull(narrativeAgent.CapturedInput);
+        Assert.Equal(
+            synthesisContent,
+            narrativeAgent.CapturedInput.Synthesis.Content);
+    }
+
+    [Fact]
     public async Task RunAsync_WithIdea_PreservesEvidenceInSelectedIdea()
     {
         // Arrange
@@ -512,6 +543,24 @@ public sealed class StoryWorkflowTests
         {
             ArgumentNullException.ThrowIfNull(executionContext);
             ArgumentNullException.ThrowIfNull(input);
+
+            return Task.FromResult(result);
+        }
+    }
+
+    private sealed class CapturingFakeNarrativeAgent(NarrativeResult result) : IAgent<NarrativeInput, NarrativeResult>
+    {
+        public NarrativeInput? CapturedInput { get; private set; }
+
+        public Task<NarrativeResult> ExecuteAsync(
+            AgentExecutionContext executionContext,
+            NarrativeInput input,
+            CancellationToken cancellationToken = default)
+        {
+            ArgumentNullException.ThrowIfNull(executionContext);
+            ArgumentNullException.ThrowIfNull(input);
+
+            CapturedInput = input;
 
             return Task.FromResult(result);
         }
