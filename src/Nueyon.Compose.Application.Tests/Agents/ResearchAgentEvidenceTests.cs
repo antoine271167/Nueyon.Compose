@@ -109,7 +109,7 @@ public sealed class ResearchAgentEvidenceTests
         var messageText = userMessage.Text ?? string.Empty;
         // Verify the Evidence Verification section is present
         Assert.Contains("EVIDENCE VERIFICATION", messageText, StringComparison.Ordinal);
-        Assert.Contains("verify this evidence against the source material", messageText, StringComparison.Ordinal);
+        Assert.Contains("Verify every relevant claim against the source", messageText, StringComparison.Ordinal);
         Assert.Contains("FACT", messageText, StringComparison.Ordinal);
         Assert.Contains("INTERPRETATION", messageText, StringComparison.Ordinal);
         Assert.Contains("UNKNOWN", messageText, StringComparison.Ordinal);
