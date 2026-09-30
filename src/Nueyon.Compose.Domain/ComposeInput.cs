@@ -1,5 +1,5 @@
 namespace Nueyon.Compose.Domain;
 
 public sealed record ComposeInput(
-    NarrativeResult Narrative,
+    NarrativeForCompose Narrative,
     ContentFormat Format);

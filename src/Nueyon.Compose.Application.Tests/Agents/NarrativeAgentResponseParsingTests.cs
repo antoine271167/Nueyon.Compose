@@ -30,7 +30,7 @@ public sealed class NarrativeAgentResponseParsingTests
         var aiAgent = chatClient.AsAIAgent("Test", "TestAgent");
         var narrativeAgent = new NarrativeAgent(aiAgent, logCapture);
         var executionContext = new AgentExecutionContext(Guid.NewGuid());
-        var input = new NarrativeInput(new SynthesisResult("Test synthesis"));
+        var input = new NarrativeInput(new SynthesisForNarrative("Test synthesis"));
 
         // Act & Assert
         var ex = await Assert.ThrowsAsync<InvalidOperationException>(() =>
@@ -58,7 +58,7 @@ public sealed class NarrativeAgentResponseParsingTests
         var aiAgent = chatClient.AsAIAgent("Test", "TestAgent");
         var narrativeAgent = new NarrativeAgent(aiAgent, logCapture);
         var executionContext = new AgentExecutionContext(Guid.NewGuid());
-        var input = new NarrativeInput(new SynthesisResult("Test synthesis"));
+        var input = new NarrativeInput(new SynthesisForNarrative("Test synthesis"));
 
         // Act & Assert
         var ex = await Assert.ThrowsAsync<InvalidOperationException>(() =>
@@ -86,7 +86,7 @@ public sealed class NarrativeAgentResponseParsingTests
         var aiAgent = chatClient.AsAIAgent("Test", "TestAgent");
         var narrativeAgent = new NarrativeAgent(aiAgent, logCapture);
         var executionContext = new AgentExecutionContext(Guid.NewGuid());
-        var input = new NarrativeInput(new SynthesisResult("Test synthesis"));
+        var input = new NarrativeInput(new SynthesisForNarrative("Test synthesis"));
 
         // Act & Assert
         var ex = await Assert.ThrowsAsync<InvalidOperationException>(() =>
@@ -109,7 +109,7 @@ public sealed class NarrativeAgentResponseParsingTests
         var aiAgent = chatClient.AsAIAgent("Test", "TestAgent");
         var narrativeAgent = new NarrativeAgent(aiAgent, logCapture);
         var executionContext = new AgentExecutionContext(Guid.NewGuid());
-        var input = new NarrativeInput(new SynthesisResult("Test synthesis"));
+        var input = new NarrativeInput(new SynthesisForNarrative("Test synthesis"));
 
         // Act & Assert
         var ex = await Assert.ThrowsAsync<InvalidOperationException>(() =>
@@ -132,7 +132,7 @@ public sealed class NarrativeAgentResponseParsingTests
         var aiAgent = chatClient.AsAIAgent("Test", "TestAgent");
         var narrativeAgent = new NarrativeAgent(aiAgent, logCapture);
         var executionContext = new AgentExecutionContext(Guid.NewGuid());
-        var input = new NarrativeInput(new SynthesisResult("Test synthesis"));
+        var input = new NarrativeInput(new SynthesisForNarrative("Test synthesis"));
 
         // Act & Assert
         var ex = await Assert.ThrowsAsync<InvalidOperationException>(() =>

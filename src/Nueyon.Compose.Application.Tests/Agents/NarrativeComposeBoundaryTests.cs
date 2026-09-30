@@ -22,7 +22,7 @@ public sealed class NarrativeComposeBoundaryTests
         const string distinctiveSynthesisText =
             "Distinctive synthesis marker: the rename occurred in a single unrecorded commit.";
 
-        var synthesisResult = new SynthesisResult(distinctiveSynthesisText);
+        var synthesisResult = new SynthesisForNarrative(distinctiveSynthesisText);
 
         var messageCaptureClient = new MessageCapturingChatClient();
         var aiAgent = messageCaptureClient.AsAIAgent("Test", "NarrativeAgent");
@@ -49,7 +49,7 @@ public sealed class NarrativeComposeBoundaryTests
         const string distinctiveNarrativeText =
             "Distinctive narrative marker: the migration finished before the audit began.";
 
-        var narrativeResult = new NarrativeResult(distinctiveNarrativeText);
+        var narrativeResult = new NarrativeForCompose(distinctiveNarrativeText);
 
         var messageCaptureClient = new MessageCapturingChatClient();
         var aiAgent = messageCaptureClient.AsAIAgent("Test", "ComposeAgent");

@@ -48,7 +48,7 @@ public sealed class SynthesizerAgentBoundaryTests
         var aiAgent = messageCaptureClient.AsAIAgent("Test", "SynthesizerAgent");
         var synthesizerAgent = new SynthesizerAgent(aiAgent, logCapture);
 
-        var input = new SynthesisInput(new ResearchResult(filteredResearch));
+        var input = new SynthesisInput(new ResearchForSynthesis(filteredResearch));
         var executionContext = new AgentExecutionContext(Guid.NewGuid());
 
         // Act

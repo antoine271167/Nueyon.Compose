@@ -168,7 +168,7 @@ public sealed class StoryWorkflow : IStoryWorkflow
             async (research, _, cancellationToken) =>
             {
                 var synthesisResearch = SynthesisResearchFilter.ExtractFactsAndUnknowns(research.Content);
-                var input = new SynthesisInput(new ResearchResult(synthesisResearch));
+                var input = new SynthesisInput(new ResearchForSynthesis(synthesisResearch));
 
                 return await _synthesizer.ExecuteAsync(
                     executionContext,
@@ -182,7 +182,7 @@ public sealed class StoryWorkflow : IStoryWorkflow
             "narrative",
             async (synthesis, _, cancellationToken) =>
             {
-                var input = new NarrativeInput(synthesis);
+                var input = new NarrativeInput(new SynthesisForNarrative(synthesis.Content));
 
                 return await _narrativeAgent.ExecuteAsync(
                     executionContext,
@@ -196,7 +196,7 @@ public sealed class StoryWorkflow : IStoryWorkflow
             "compose",
             async (narrative, _, cancellationToken) =>
             {
-                var input = new ComposeInput(narrative, ContentFormat.Article);
+                var input = new ComposeInput(new NarrativeForCompose(narrative.Content), ContentFormat.Article);
 
                 return await _composeAgent.ExecuteAsync(
                     executionContext,

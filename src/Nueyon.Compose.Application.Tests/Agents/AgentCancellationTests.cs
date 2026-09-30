@@ -320,13 +320,13 @@ public sealed class AgentCancellationTests
 
     private static SynthesisInput CreateTestSynthesisInput()
     {
-        var research = new ResearchResult("Test research");
+        var research = new ResearchForSynthesis("Test research");
         return new SynthesisInput(research);
     }
 
     private static NarrativeInput CreateTestNarrativeInput()
     {
-        var synthesis = new SynthesisResult("Test synthesis");
+        var synthesis = new SynthesisForNarrative("Test synthesis");
         return new NarrativeInput(synthesis);
     }
 
@@ -413,7 +413,8 @@ public sealed class AgentCancellationTests
         }
     }
 
-    private sealed class LogCapture : ILogger<IdeaAgent>, ILogger<ResearchAgent>, ILogger<SynthesizerAgent>, ILogger<NarrativeAgent>
+    private sealed class LogCapture : ILogger<IdeaAgent>, ILogger<ResearchAgent>, ILogger<SynthesizerAgent>,
+        ILogger<NarrativeAgent>
     {
         public bool HasErrorLogs { get; private set; }
         public bool HasInfoLogs { get; private set; }

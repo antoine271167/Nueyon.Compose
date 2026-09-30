@@ -31,7 +31,7 @@ public sealed class ComposeAgentResponseParsingTests
         var composeAgent = new ComposeAgent(aiAgent, logCapture);
         var executionContext = new AgentExecutionContext(Guid.NewGuid());
         var input = new ComposeInput(
-            new NarrativeResult("Test narrative"),
+            new NarrativeForCompose("Test narrative"),
             ContentFormat.Article);
 
         // Act & Assert
@@ -61,7 +61,7 @@ public sealed class ComposeAgentResponseParsingTests
         var composeAgent = new ComposeAgent(aiAgent, logCapture);
         var executionContext = new AgentExecutionContext(Guid.NewGuid());
         var input = new ComposeInput(
-            new NarrativeResult("Test narrative"),
+            new NarrativeForCompose("Test narrative"),
             ContentFormat.Article);
 
         // Act & Assert
@@ -91,7 +91,7 @@ public sealed class ComposeAgentResponseParsingTests
         var composeAgent = new ComposeAgent(aiAgent, logCapture);
         var executionContext = new AgentExecutionContext(Guid.NewGuid());
         var input = new ComposeInput(
-            new NarrativeResult("Test narrative"),
+            new NarrativeForCompose("Test narrative"),
             ContentFormat.Article);
 
         // Act & Assert
@@ -116,7 +116,7 @@ public sealed class ComposeAgentResponseParsingTests
         var composeAgent = new ComposeAgent(aiAgent, logCapture);
         var executionContext = new AgentExecutionContext(Guid.NewGuid());
         var input = new ComposeInput(
-            new NarrativeResult("Test narrative"),
+            new NarrativeForCompose("Test narrative"),
             ContentFormat.Article);
 
         // Act & Assert
@@ -141,7 +141,7 @@ public sealed class ComposeAgentResponseParsingTests
         var composeAgent = new ComposeAgent(aiAgent, logCapture);
         var executionContext = new AgentExecutionContext(Guid.NewGuid());
         var input = new ComposeInput(
-            new NarrativeResult("Test narrative"),
+            new NarrativeForCompose("Test narrative"),
             ContentFormat.Article);
 
         // Act & Assert
@@ -171,7 +171,7 @@ public sealed class ComposeAgentResponseParsingTests
         var composeAgent = new ComposeAgent(aiAgent, logCapture);
         var executionContext = new AgentExecutionContext(Guid.NewGuid());
         var input = new ComposeInput(
-            new NarrativeResult("Test narrative"),
+            new NarrativeForCompose("Test narrative"),
             ContentFormat.Article);
 
         // Act
