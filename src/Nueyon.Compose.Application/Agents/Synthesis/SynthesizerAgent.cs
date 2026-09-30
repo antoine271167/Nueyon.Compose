@@ -79,6 +79,11 @@ public sealed class SynthesizerAgent(
         }
     }
 
+    /// <summary>
+    ///     Gets the system instructions used to configure this agent's underlying AI agent.
+    /// </summary>
+    public static string GetSystemInstructions() => SynthesizerAgentInstructions.GetSystemInstructions();
+
     private static string CreateUserMessage(SynthesisInput input) =>
         $"""
          Turn the Research material into a concise evidence-based synthesis for

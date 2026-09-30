@@ -91,6 +91,11 @@ public sealed class ResearchAgent : IAgent<ResearchInput, ResearchResult>
         }
     }
 
+    /// <summary>
+    ///     Gets the system instructions used to configure this agent's underlying AI agent.
+    /// </summary>
+    public static string GetSystemInstructions() => ResearchAgentInstructions.GetSystemInstructions();
+
     private static string CreateUserMessage(ResearchInput input)
     {
         var idea = input.SelectedIdea.Idea;
