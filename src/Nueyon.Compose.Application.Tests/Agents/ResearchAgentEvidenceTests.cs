@@ -61,7 +61,7 @@ public sealed class ResearchAgentEvidenceTests
             .FirstOrDefault(m => m.Role == ChatRole.User);
 
         Assert.NotNull(userMessage);
-        var messageText = userMessage.Text ?? string.Empty;
+        var messageText = userMessage.Text;
         Assert.Contains(evidenceText, messageText, StringComparison.Ordinal);
         Assert.Contains(ideaTitle, messageText, StringComparison.Ordinal);
         Assert.Contains(ideaDescription, messageText, StringComparison.Ordinal);
@@ -106,7 +106,7 @@ public sealed class ResearchAgentEvidenceTests
             .FirstOrDefault(m => m.Role == ChatRole.User);
 
         Assert.NotNull(userMessage);
-        var messageText = userMessage.Text ?? string.Empty;
+        var messageText = userMessage.Text;
         // Verify the Evidence Verification section is present
         Assert.Contains("EVIDENCE VERIFICATION", messageText, StringComparison.Ordinal);
         Assert.Contains("Verify every relevant claim against the source", messageText, StringComparison.Ordinal);
@@ -128,7 +128,7 @@ public sealed class ResearchAgentEvidenceTests
             CapturedMessages.Clear();
             CapturedMessages.AddRange(messages);
 
-            // Return a minimal valid research response
+            // Return minimal valid research response
             const string responseJson =
                 """
                 {
