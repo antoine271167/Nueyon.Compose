@@ -32,7 +32,7 @@ public sealed class ComposeAgentResponseParsingTests
         var executionContext = new AgentExecutionContext(Guid.NewGuid());
         var input = new ComposeInput(
             new NarrativeForCompose("Test narrative"),
-            ContentFormat.Article);
+            new CompositionSpec(ContentFormat.Article));
 
         // Act & Assert
         var ex = await Assert.ThrowsAsync<InvalidOperationException>(() =>
@@ -62,7 +62,7 @@ public sealed class ComposeAgentResponseParsingTests
         var executionContext = new AgentExecutionContext(Guid.NewGuid());
         var input = new ComposeInput(
             new NarrativeForCompose("Test narrative"),
-            ContentFormat.Article);
+            new CompositionSpec(ContentFormat.Article));
 
         // Act & Assert
         var ex = await Assert.ThrowsAsync<InvalidOperationException>(() =>
@@ -92,7 +92,7 @@ public sealed class ComposeAgentResponseParsingTests
         var executionContext = new AgentExecutionContext(Guid.NewGuid());
         var input = new ComposeInput(
             new NarrativeForCompose("Test narrative"),
-            ContentFormat.Article);
+            new CompositionSpec(ContentFormat.Article));
 
         // Act & Assert
         var ex = await Assert.ThrowsAsync<InvalidOperationException>(() =>
@@ -117,7 +117,7 @@ public sealed class ComposeAgentResponseParsingTests
         var executionContext = new AgentExecutionContext(Guid.NewGuid());
         var input = new ComposeInput(
             new NarrativeForCompose("Test narrative"),
-            ContentFormat.Article);
+            new CompositionSpec(ContentFormat.Article));
 
         // Act & Assert
         var ex = await Assert.ThrowsAsync<InvalidOperationException>(() =>
@@ -142,7 +142,7 @@ public sealed class ComposeAgentResponseParsingTests
         var executionContext = new AgentExecutionContext(Guid.NewGuid());
         var input = new ComposeInput(
             new NarrativeForCompose("Test narrative"),
-            ContentFormat.Article);
+            new CompositionSpec(ContentFormat.Article));
 
         // Act & Assert
         var ex = await Assert.ThrowsAsync<InvalidOperationException>(() =>
@@ -172,7 +172,7 @@ public sealed class ComposeAgentResponseParsingTests
         var executionContext = new AgentExecutionContext(Guid.NewGuid());
         var input = new ComposeInput(
             new NarrativeForCompose("Test narrative"),
-            ContentFormat.Article);
+            new CompositionSpec(ContentFormat.Article));
 
         // Act
         var result = await composeAgent.ExecuteAsync(executionContext, input, CancellationToken.None);

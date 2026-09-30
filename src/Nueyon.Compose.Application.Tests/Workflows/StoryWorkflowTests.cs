@@ -317,7 +317,7 @@ public sealed class StoryWorkflowTests
         // Assert
         Assert.NotNull(composeAgent.CapturedInput);
         Assert.Equal(narrativeContent, composeAgent.CapturedInput.Narrative.Content);
-        Assert.Equal(ContentFormat.Article, composeAgent.CapturedInput.Format);
+        Assert.Equal(ContentFormat.Article, composeAgent.CapturedInput.Composition.Format);
     }
 
     [Fact]

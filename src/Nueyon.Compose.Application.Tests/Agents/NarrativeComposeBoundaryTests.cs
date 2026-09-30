@@ -55,7 +55,7 @@ public sealed class NarrativeComposeBoundaryTests
         var aiAgent = messageCaptureClient.AsAIAgent("Test", "ComposeAgent");
         var composeAgent = new ComposeAgent(aiAgent, new LogCapture<ComposeAgent>());
 
-        var input = new ComposeInput(narrativeResult, ContentFormat.Article);
+        var input = new ComposeInput(narrativeResult, new CompositionSpec(ContentFormat.Article));
         var executionContext = new AgentExecutionContext(Guid.NewGuid());
 
         // Act

@@ -86,30 +86,21 @@ public sealed class ComposeAgent(
 
     private static string CreateUserMessage(ComposeInput input)
     {
-        var formatInstruction = input.Format switch
+        var format = input.Composition.Format;
+
+        if (format != ContentFormat.Article)
         {
-            ContentFormat.Article =>
-                """
-                For Article, produce a complete article with:
-                - a title
-                - an introduction
-                - a coherent body structure
-                - natural transitions
-                - a conclusion where appropriate
-
-                All of these elements must be derived from the supplied Narrative.
-                Do not introduce new subject matter merely to make the article feel
-                more complete.
-                """,
-
-            _ => throw new InvalidOperationException(
-                $"Unsupported content format: {input.Format}")
-        };
+            throw new InvalidOperationException(
+                $"Unsupported content format: {format}");
+        }
 
         return $"""
-                Transform the supplied Narrative into finished content for the requested format.
+                Transform the supplied Narrative into finished content for the requested
+                CompositionSpec format: {format}.
 
-                {formatInstruction}
+                The CompositionSpec controls HOW the content is structured and presented.
+                The Narrative controls WHAT the content says.
+                Do not use the CompositionSpec as a source of meaning.
 
                 ---
 

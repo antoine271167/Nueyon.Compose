@@ -196,7 +196,9 @@ public sealed class StoryWorkflow : IStoryWorkflow
             "compose",
             async (narrative, _, cancellationToken) =>
             {
-                var input = new ComposeInput(new NarrativeForCompose(narrative.Content), ContentFormat.Article);
+                var input = new ComposeInput(
+                    new NarrativeForCompose(narrative.Content),
+                    new CompositionSpec(ContentFormat.Article));
 
                 return await _composeAgent.ExecuteAsync(
                     executionContext,
