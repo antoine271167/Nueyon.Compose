@@ -182,6 +182,37 @@ public sealed class ComposeAgentResponseParsingTests
         Assert.Equal("This is a complete article with title, introduction, body, and conclusion.", result.Content);
     }
 
+    /// <summary>
+    ///     Test: Valid response with LinkedInPost format
+    ///     Expected: returns ComposeResult with content
+    /// </summary>
+    [Fact]
+    public async Task ExecuteAsync_WithLinkedInPostFormat_ReturnsComposeResult()
+    {
+        // Arrange
+        var logCapture = new LogCapture();
+        const string responseJson =
+            """
+            {
+              "content": "This is a complete LinkedIn post with hook and body."
+            }
+            """;
+        var chatClient = new FakeChatClient(responseJson);
+        var aiAgent = chatClient.AsAIAgent("Test", "TestAgent");
+        var composeAgent = new ComposeAgent(aiAgent, logCapture);
+        var executionContext = new AgentExecutionContext(Guid.NewGuid());
+        var input = new ComposeInput(
+            new NarrativeForCompose("Test narrative"),
+            new CompositionSpec(ContentFormat.LinkedInPost));
+
+        // Act
+        var result = await composeAgent.ExecuteAsync(executionContext, input, CancellationToken.None);
+
+        // Assert
+        Assert.NotNull(result);
+        Assert.Equal("This is a complete LinkedIn post with hook and body.", result.Content);
+    }
+
     private sealed class FakeChatClient(params string[] responses) : IChatClient
     {
         private readonly Queue<string> _responses = new(responses);

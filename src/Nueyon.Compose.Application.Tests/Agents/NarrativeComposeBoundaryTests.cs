@@ -69,6 +69,39 @@ public sealed class NarrativeComposeBoundaryTests
         Assert.Contains(distinctiveNarrativeText, userMessage.Text, StringComparison.Ordinal);
     }
 
+    [Fact]
+    public async Task ComposeAgent_ExecuteAsync_LinkedInPost_IncludesLinkedInGuidanceInUserMessage()
+    {
+        // Arrange
+        const string distinctiveNarrativeText =
+            "Distinctive narrative marker: the rollout finished before the review began.";
+
+        var narrativeResult = new NarrativeForCompose(distinctiveNarrativeText);
+
+        var messageCaptureClient = new MessageCapturingChatClient();
+        var aiAgent = messageCaptureClient.AsAIAgent("Test", "ComposeAgent");
+        var composeAgent = new ComposeAgent(aiAgent, new LogCapture<ComposeAgent>());
+
+        var input = new ComposeInput(narrativeResult, new CompositionSpec(ContentFormat.LinkedInPost));
+        var executionContext = new AgentExecutionContext(Guid.NewGuid());
+
+        // Act
+        await composeAgent.ExecuteAsync(executionContext, input, CancellationToken.None);
+
+        // Assert
+        var userMessage = messageCaptureClient.CapturedMessages
+            .FirstOrDefault(m => m.Role == ChatRole.User);
+
+        Assert.NotNull(userMessage);
+        Assert.Contains(distinctiveNarrativeText, userMessage.Text, StringComparison.Ordinal);
+        Assert.Contains("LinkedInPost", userMessage.Text, StringComparison.Ordinal);
+        Assert.Contains("ATTENTION + READABILITY + ENGAGEMENT + FACTUAL INTEGRITY", userMessage.Text, StringComparison.Ordinal);
+        Assert.Contains(
+            "Attention must come from the way the supplied meaning is expressed, not from invented significance.",
+            userMessage.Text,
+            StringComparison.Ordinal);
+    }
+
     private sealed class MessageCapturingChatClient : IChatClient
     {
         public List<ChatMessage> CapturedMessages { get; } = new();
