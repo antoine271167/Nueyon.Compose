@@ -198,7 +198,7 @@ public sealed class StoryWorkflow : IStoryWorkflow
             {
                 var input = new ComposeInput(
                     new NarrativeForCompose(narrative.Content),
-                    new CompositionSpec(ContentFormat.LinkedInPost));
+                    new CompositionSpec(ContentFormat.Article));
 
                 return await _composeAgent.ExecuteAsync(
                     executionContext,
