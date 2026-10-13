@@ -415,6 +415,46 @@ public sealed class StoryWorkflowTests
     }
 
     [Fact]
+    public async Task RunAsync_WithIdea_PassesSelectedIdeaToNarrativeAgent()
+    {
+        // Arrange
+        const string distinctiveTitle = "Distinctive narrative-propagation title";
+        const string distinctiveDescription = "Distinctive narrative-propagation description";
+        const string distinctiveAudience = "Distinctive narrative-propagation audience";
+        const string distinctiveRationale = "Distinctive narrative-propagation rationale";
+        const string distinctiveEvidence = "Distinctive narrative-propagation evidence";
+        const string distinctiveSynthesisContent = "Distinctive narrative-propagation synthesis content";
+
+        var expectedIdea = new Idea(
+            distinctiveTitle,
+            distinctiveDescription,
+            distinctiveAudience,
+            distinctiveRationale,
+            distinctiveEvidence);
+
+        var ideaAgent = new CapturingFakeAgent(expectedIdea);
+        var researchAgent = new FakeResearchAgent(new ResearchResult("research content"));
+        var synthesizer = new FakeSynthesizerAgent(new SynthesisResult(distinctiveSynthesisContent));
+        var narrativeAgent = new CapturingFakeNarrativeAgent(new NarrativeResult("narrative content"));
+        var composeAgent = new FakeComposeAgent(new ComposeResult("composed content"));
+
+        var workflow = new StoryWorkflow(ideaAgent, researchAgent, synthesizer, narrativeAgent, composeAgent);
+        var input = new StoryInput("Test input");
+
+        // Act
+        await workflow.RunAsync(input);
+
+        // Assert
+        Assert.NotNull(narrativeAgent.CapturedInput);
+        Assert.Equal(distinctiveTitle, narrativeAgent.CapturedInput.SelectedIdea.Title);
+        Assert.Equal(distinctiveDescription, narrativeAgent.CapturedInput.SelectedIdea.Description);
+        Assert.Equal(distinctiveAudience, narrativeAgent.CapturedInput.SelectedIdea.Audience);
+        Assert.Equal(distinctiveRationale, narrativeAgent.CapturedInput.SelectedIdea.Rationale);
+        Assert.Equal(distinctiveEvidence, narrativeAgent.CapturedInput.SelectedIdea.Evidence);
+        Assert.Equal(distinctiveSynthesisContent, narrativeAgent.CapturedInput.Synthesis.Content);
+    }
+
+    [Fact]
     public async Task RunAsync_WithValidInput_AllAgentsReceiveSameExecutionId()
     {
         // Arrange

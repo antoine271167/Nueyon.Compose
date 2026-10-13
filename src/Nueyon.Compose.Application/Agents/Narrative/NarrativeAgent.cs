@@ -93,9 +93,13 @@ public sealed class NarrativeAgent(
           ## Input
           
           ### Selected Idea
-          
-          {input.SelectedIdea.Content}
-          
+
+          Title: {input.SelectedIdea.Title}
+          Description: {input.SelectedIdea.Description}
+          Audience: {input.SelectedIdea.Audience}
+          Rationale: {input.SelectedIdea.Rationale}
+          Evidence: {input.SelectedIdea.Evidence}
+
           ### Synthesis
           
           {input.Synthesis.Content}

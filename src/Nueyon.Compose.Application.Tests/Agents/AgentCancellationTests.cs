@@ -326,8 +326,15 @@ public sealed class AgentCancellationTests
 
     private static NarrativeInput CreateTestNarrativeInput()
     {
+        var idea = new Idea(
+            "Test Idea",
+            "Test Description",
+            "Test Audience",
+            "Test Rationale",
+            "Test Evidence");
+
         var synthesis = new SynthesisForNarrative("Test synthesis");
-        return new NarrativeInput(synthesis);
+        return new NarrativeInput(idea, synthesis);
     }
 
     private sealed class FakeChatClient(params string[] responses) : IChatClient

@@ -22,13 +22,26 @@ public sealed class NarrativeComposeBoundaryTests
         const string distinctiveSynthesisText =
             "Distinctive synthesis marker: the rename occurred in a single unrecorded commit.";
 
+        const string distinctiveTitle = "Distinctive idea title marker";
+        const string distinctiveDescription = "Distinctive idea description marker";
+        const string distinctiveAudience = "Distinctive idea audience marker";
+        const string distinctiveRationale = "Distinctive idea rationale marker";
+        const string distinctiveEvidence = "Distinctive idea evidence marker";
+
+        var selectedIdea = new Idea(
+            distinctiveTitle,
+            distinctiveDescription,
+            distinctiveAudience,
+            distinctiveRationale,
+            distinctiveEvidence);
+
         var synthesisResult = new SynthesisForNarrative(distinctiveSynthesisText);
 
         var messageCaptureClient = new MessageCapturingChatClient();
         var aiAgent = messageCaptureClient.AsAIAgent("Test", "NarrativeAgent");
         var narrativeAgent = new NarrativeAgent(aiAgent, new LogCapture<NarrativeAgent>());
 
-        var input = new NarrativeInput(synthesisResult);
+        var input = new NarrativeInput(selectedIdea, synthesisResult);
         var executionContext = new AgentExecutionContext(Guid.NewGuid());
 
         // Act
@@ -40,6 +53,11 @@ public sealed class NarrativeComposeBoundaryTests
 
         Assert.NotNull(userMessage);
         Assert.Contains(distinctiveSynthesisText, userMessage.Text, StringComparison.Ordinal);
+        Assert.Contains(distinctiveTitle, userMessage.Text, StringComparison.Ordinal);
+        Assert.Contains(distinctiveDescription, userMessage.Text, StringComparison.Ordinal);
+        Assert.Contains(distinctiveAudience, userMessage.Text, StringComparison.Ordinal);
+        Assert.Contains(distinctiveRationale, userMessage.Text, StringComparison.Ordinal);
+        Assert.Contains(distinctiveEvidence, userMessage.Text, StringComparison.Ordinal);
     }
 
     [Fact]

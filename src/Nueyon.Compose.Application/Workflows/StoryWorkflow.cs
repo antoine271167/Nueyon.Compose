@@ -151,6 +151,12 @@ public sealed class StoryWorkflow : IStoryWorkflow
                             ?? throw new InvalidOperationException(
                                 "StoryInput was not found in the StoryWorkflow state.");
 
+                await context.QueueStateUpdateAsync(
+                    StoryWorkflowState.SelectedIdeaKey,
+                    selectedIdea.Idea,
+                    StoryWorkflowState.ScopeName,
+                    cancellationToken);
+
                 var researchInput = new ResearchInput(
                     input,
                     selectedIdea);
@@ -180,9 +186,16 @@ public sealed class StoryWorkflow : IStoryWorkflow
         AgentExecutionContext executionContext) =>
         new(
             "narrative",
-            async (synthesis, _, cancellationToken) =>
+            async (synthesis, context, cancellationToken) =>
             {
-                var input = new NarrativeInput(new SynthesisForNarrative(synthesis.Content));
+                var selectedIdea = await context.ReadStateAsync<Idea>(
+                                        StoryWorkflowState.SelectedIdeaKey,
+                                        StoryWorkflowState.ScopeName,
+                                        cancellationToken)
+                                    ?? throw new InvalidOperationException(
+                                        "Selected Idea was not found in the StoryWorkflow state.");
+
+                var input = new NarrativeInput(selectedIdea, new SynthesisForNarrative(synthesis.Content));
 
                 return await _narrativeAgent.ExecuteAsync(
                     executionContext,
