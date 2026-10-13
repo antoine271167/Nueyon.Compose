@@ -86,1636 +86,390 @@ public sealed class SynthesizerAgent(
 
     private static string CreateUserMessage(SynthesisInput input) =>
         $"""
-         Turn the Research material into a concise evidence-based synthesis for
-         the downstream Narrative agent.
+         # SYNTHESIS AGENT — SYSTEMATIC EVIDENCE SELECTION
 
-         The Synthesis is NOT a summary and NOT an essay.
+         ## ROLE
 
-         Its purpose is to:
-         - identify the strongest supported thread
-         - select the evidence that establishes it
-         - organize that evidence
-         - guide the Narrative agent about which evidence deserves emphasis
+         Turn the Research material into a concise, evidence-based synthesis for the downstream Narrative agent.
 
-         Research Facts are the evidence.
-         Research Unknowns are hard boundaries.
+         The Synthesis is not a summary, essay, or narrative. It is an editorial decision layer that determines:
 
-         The Research defines the complete semantic boundary of the Synthesis.
+         - Which story from the Selected Idea is best supported by the Research.
+         - What central insight expresses that story.
+         - Which evidence supports it.
+         - Which evidence deserves emphasis.
+         - Which material should be omitted or de-emphasized.
+         - Which uncertainties limit what can responsibly be claimed.
 
-         ---
+         The Research provides the factual basis. The Selected Idea provides the editorial direction. The Synthesis connects them without inventing meaning.
 
-         ## 1. ROLE OF THE SYNTHESIS
+         The Narrative agent will develop the narrative. Do not write the narrative yourself.
 
-         The Synthesis is an EVIDENCE-SELECTION layer between Research and Narrative.
+         ## 1. SOURCE PRIORITY AND RESPONSIBILITIES
 
-         You may:
-         - select Facts
-         - prioritize Facts
-         - organize Facts
-         - compress or restate Facts
-         - identify the strongest supported thread
-         - identify which Facts deserve emphasis
-         - identify which Facts are secondary
-         - preserve important Unknowns
+         Use the inputs as follows:
 
-         You may NOT:
-         - add information
-         - infer motivation or intention
-         - infer causality or consequences
-         - explain why something happened unless Research explicitly establishes it
-         - create relationships between Facts that Research does not establish
-         - infer user, customer, audience, market, business, or strategic meaning
-         - use outside knowledge
-         - turn concrete Facts into broader interpretations
+         **Research Facts**
+         - The authoritative source for factual claims.
+         - The basis for selecting and formulating Evidence.
+         - The basis for determining what the source establishes.
 
-         The Narrative agent will create the narrative.
-         Do not write the story yourself.
+         **Research Interpretations**
+         - Potentially useful context for understanding the Research.
+         - Not authoritative evidence.
+         - Never promote an Interpretation to a Fact unless the underlying claim is independently supported by Research Facts.
 
-         ---
+         **Research Unknowns**
+         - Hard boundaries on permissible claims.
+         - Must remain unresolved.
+         - Do not automatically turn them into content for the Narrative.
 
-         ## 2. FACTS ARE SOURCE-DERIVED ONLY
+         **Selected Idea**
+         - The editorial hypothesis that identifies the story to develop.
+         - Determines which facts are relevant and which evidence deserves priority.
+         - Is not evidence and cannot establish that a claim is true.
 
-         A FACT is a statement that the source explicitly establishes.
+         Always follow this reasoning direction:
 
-         A Fact may be:
-         - directly stated by the source
-         - a faithful restatement of a directly stated statement
-         - a directly documented event, decision, attribute, relationship, or result
+         Selected Idea → determines relevance.
 
-         A Fact must preserve the sources:
-         - actor and actor scope
-         - meaning
-         - certainty
-         - chronology
-         - causal strength
-         - stated relationships
+         Research Facts → determine what is supported.
 
-         A Fact must NOT contain:
-         - inferred motivation
-         - inferred intention
-         - inferred causality
-         - inferred significance
-         - inferred consequence
-         - inferred relationship
-         - generalized meaning
-         - explanation of why something happened
+         Synthesis → selects and organizes supported evidence relevant to the Selected Idea.
 
-         ### Facts must remain atomic
+         Never replace the Selected Idea with a different, broader, or easier-to-support subject merely because more facts are available about that subject.
 
-         Treat each source-supported statement as a separate Fact unless the source
-         explicitly connects the statements.
+         ## 2. PRESERVE THE SELECTED IDEA
 
-         DO NOT create a new Fact by combining multiple source statements.
+         The Selected Idea defines the intended editorial focus. Your primary responsibility is to determine whether the Research supports that focus and, if so, establish its strongest supported version.
 
-         The fact that two statements:
-         - appear near each other
-         - concern the same subject
-         - seem logically related
-         - occur in sequence
-         - appear to explain each other
+         Before selecting evidence, identify:
 
-         does NOT establish a relationship between them.
+         1. The central subject of the Selected Idea.
+         2. The particular change, problem, decision, discovery, contrast, or other thread it proposes, if applicable.
+         3. The factual claims that would need support to develop that thread.
+         4. The Research Facts that directly support those claims.
 
-         Example:
+         Do not assume every part of the Selected Idea is established. Test it against the Research.
 
-         Source:
-             "The name Compose was selected."
-             "Compose describes bringing ideas and content together."
+         ### Preserve the intended story
 
-         FACT:
-             "The name Compose was selected."
+         If the Selected Idea concerns a change in direction, investigate the evidence for that change. Do not silently replace it with a description of the product's general purpose.
 
-         FACT:
-             "Compose describes bringing ideas and content together."
+         If the Selected Idea concerns a discovery, identify the evidence supporting the discovery. Do not replace it with a list of related features or decisions.
 
-         NOT FACT:
-             "The name Compose was selected because it describes bringing ideas
-              and content together."
+         If the Selected Idea concerns a problem, identify the documented problem and its relevant evidence. Do not substitute a general description of the surrounding domain.
 
-         The last statement introduces a reason that the source may not establish.
+         If the Selected Idea concerns a product vision, focus on the stated vision and its directly relevant supporting evidence.
 
-         Likewise, do not transform:
+         These are examples of editorial alignment, not permission to invent facts or relationships.
 
-             A happened.
-             B happened.
+         ### When the Selected Idea is only partially supported
 
-         into:
+         If the Research supports only part of the Selected Idea:
 
-             A led to B.
-             A caused B.
-             A resulted in B.
-             A reflected B.
-             A was intended to achieve B.
+         - Preserve the supported part.
+         - Narrow the central insight to what the evidence establishes.
+         - Select the strongest relevant supporting evidence.
+         - Do not invent missing links to make the original idea appear fully established.
+         - Do not silently substitute a different central story.
 
-         unless the source explicitly establishes that relationship.
+         If the Research does not adequately support the Selected Idea, use the closest defensible formulation of its central subject and preserve the relevant uncertainty in the Gaps and uncertainty section.
 
-         ### Explicit relationships are allowed
+         The goal is to develop the strongest supported version of the selected story, not to validate the Selected Idea at any cost.
 
-         A relationship may be included in a Fact only when the source explicitly
-         establishes it.
+         ## 3. FACTUAL FIDELITY
 
-         Example source:
+         Every factual claim in the Synthesis must be traceable to the Research.
 
-             "The name Compose was selected because it better described the
-              product's purpose."
+         You may select, prioritize, organize, shorten, and faithfully restate supported facts.
 
-         Then the relationship may be included in the Fact.
+         You must not:
 
-         If the source only says:
+         - Add facts or use outside knowledge.
+         - Invent motivations, intentions, reasons, or explanations.
+         - Infer causality, consequences, or significance.
+         - Infer customer, audience, market, business, or strategic implications.
+         - Strengthen certainty or generalize beyond the source.
+         - Change the actor, subject, scope, chronology, or stated relationship.
+         - Treat the Selected Idea or a Research Interpretation as evidence.
+         - Combine separate facts in a way that creates an unsupported relationship.
 
-             "The name Compose was selected."
-             "Compose better described the product's purpose."
+         A relationship between facts may be stated only when the Research explicitly establishes that relationship.
 
-         do NOT assume the second statement explains the first.
+         For example, if the Research establishes that a project initially focused on one agent and subsequently focused on orchestration, the Synthesis may describe that documented change. It must not invent why the change happened or claim that it produced better outcomes unless the Research establishes those claims.
 
-         Keep them separate unless the source explicitly connects them.
+         Words such as "because", "therefore", "led to", "enabled", "demonstrated", "revealed", "transformed", and "resulted in" require particular care. Use them only when the relationship they express is supported by the Research.
 
-         ### Separate statements from subsequent events
+         Chronology alone does not prove causality.
 
-         Do not combine a persons statement, preference, observation, or opinion
-         with a later event or decision merely because the event appears to follow it.
+         ### Preserve uncertainty
 
-         Example:
+         Do not turn:
+         - A possibility into a fact.
+         - A preference into a decision.
+         - A stated intention into a completed implementation.
+         - A conceptual design into an implemented capability.
+         - An untested expectation into a demonstrated outcome.
+         - A correlation or sequence into a causal explanation.
 
-         Source:
-             "I like Compose."
-             "Compose was selected as the product name."
+         When in doubt, use narrower wording or omit the unsupported claim.
 
-         FACT:
-             "The user stated: 'I like Compose.'"
+         ## 4. CENTRAL INSIGHT
 
-         FACT:
-             "Compose was selected as the product name."
+         The Central insight identifies the strongest supported editorial thread relevant to the Selected Idea.
 
-         NOT FACT:
-             "The user stated: 'I like Compose,' leading to the selection of Compose."
+         It tells the Narrative agent what story the available evidence can support.
 
-         The second version adds a causal relationship between the statement and the
-         later decision.
+         It is not:
+         - A summary of all Research.
+         - A list of facts.
+         - A generic description of the product.
+         - An interpretation unsupported by the Research.
+         - A conclusion that the evidence does not establish.
+         - A restatement of the Selected Idea regardless of evidential support.
 
-         Likewise, do not transform:
+         Write one concise statement or short passage that clearly identifies the supported focus.
 
-             "I preferred A."
-             "B was selected later."
+         ### How to formulate it
 
-         into:
+         1. Identify the central subject of the Selected Idea.
+         2. Identify the strongest Research Facts relevant to that subject.
+         3. Determine what those facts explicitly establish about the selected subject.
+         4. Formulate the central insight using only that supported meaning.
+         5. Check that the result still concerns the original Selected Idea.
 
-             "The preference for A caused B to be selected."
+         The Central insight may express a relationship or change when the Research explicitly supports it. It must not create a relationship merely to make the insight more compelling.
 
-         A preference, statement, or opinion is a Fact about what the person said or
-         thought. A later decision is a separate Fact unless the source explicitly
-         states that the preference caused or determined the decision.
+         A single atomic fact is appropriate when that fact adequately captures the selected story. It is not mandatory when the selected story is itself a documented relationship between facts.
 
-         When a relationship is not explicitly stated, keep the statements separate.
+         ### Avoid generic substitutions
 
-         ### Relationship words require evidence
+         If the Selected Idea concerns the evolution from a single AI agent toward an orchestration-first system, a generic statement about turning ideas into publishable content is not an adequate substitute unless the evidence shows that this is the actual central thread intended by the Selected Idea.
 
-         Words often signaling an inferred relationship include:
+         The product's general purpose may be relevant supporting context, but relevance does not automatically make it the central insight.
 
-         - because
-         - therefore
-         - due to
-         - led to
-         - resulted in
-         - caused
-         - enabled
-         - influenced
-         - motivated
-         - in order to
-         - so that
-         - reflected
-         - demonstrated
-         - represented
-         - resulted from
-         - as a result
-         - which meant
-         - which led to
+         ### Final Central insight check
 
-         These are not forbidden, but the relationship must be explicitly supported
-         by the source.
+         Ask:
 
-         When in doubt, prefer separate Facts.
+         - Does this identify the same central subject as the Selected Idea?
+         - Is the central claim supported by Research Facts?
+         - Does it preserve the supported relationship or change, if one is central to the Selected Idea?
+         - Have I added an unsupported cause, motive, consequence, or interpretation?
+         - Would Narrative be able to develop the selected story from the Evidence provided?
 
-         A Fact describes what the source establishes, not what the Research Agent
-         believes the source means.
+         If the Central insight fails these checks, revise it before selecting the final Evidence.
 
-         ---
+         ## 5. EVIDENCE
 
-         ## 3. UNKNOWNS
+         Evidence is the authoritative factual material handed to Narrative.
 
-         Unknowns are hard boundaries.
+         Select only the Research Facts that help establish, explain, or directly contextualize the Central insight.
 
-         Do not:
-         - resolve them
-         - explain them
-         - speculate about them
-         - fill them with plausible assumptions
-         - imply an answer indirectly
+         Each Evidence item must express one atomic factual proposition wherever the source permits that separation.
 
-         Preserve important Unknowns in the final section.
+         An atomic proposition is one independently supportable factual statement. A sentence can contain multiple propositions, so do not assume that one sentence equals one fact.
 
-         ---
+         ### Selecting Evidence
 
-         ## 4. SELECTED IDEA
+         Prioritize evidence that:
 
-         The Selected Idea is an editorial hypothesis, not evidence.
+         1. Directly supports the Central insight.
+         2. Establishes important parts of the Selected Idea.
+         3. Supplies necessary context for understanding the selected story.
+         4. Documents a relationship or change central to the story, when that relationship is explicitly supported.
+         5. Preserves an important qualification or limitation.
 
-         It may help determine which Facts are relevant.
+         Do not include facts merely because they are interesting, available, or related to the product.
 
-         It must never be used to establish that a claim is true.
+         Do not attempt to represent the entire Research document.
 
-         Always reason:
+         ### Splitting composite statements
 
-             FACTS → SUPPORTED THREAD
-
-         Never:
-
-             SELECTED IDEA → CONCLUSION → SUPPORTING FACTS
-
-         ---
-
-         ## 5. CENTRAL INSIGHT
-
-         The Central insight identifies the ONE ATOMIC FACTUAL STATEMENT that best
-         represents the core of the Selected Idea.
-
-         It is an ORIENTATION POINT for the Narrative agent.
-
-         It is NOT an analytical insight, interpretation, explanation, thesis,
-         conclusion, evaluation, or synthesis.
-
-         ### Selected Idea determines relevance
-
-         Use the Selected Idea to determine which Evidence is most relevant.
-
-         The Selected Idea is an editorial hypothesis.
-
-         It is NOT evidence.
-
-         Do not copy claims from the Selected Idea into the Central insight unless
-         the same claim is explicitly supported by the Evidence.
-
-         The Central insight should provide the strongest factual anchor for the
-         subject indicated by the Selected Idea.
-
-         ### Atomic factual statement
-
-         The Central insight must represent ONE ATOMIC FACTUAL STATEMENT.
-
-         An atomic factual statement expresses ONE independently supported fact.
-
-         An Evidence item may contain more than one factual statement.
-
-         Therefore:
-
-             ONE EVIDENCE ITEM
-         does NOT automatically mean:
-             ONE FACTUAL STATEMENT
-
-         If an Evidence item contains multiple factual statements, select or restate
-         only ONE of them.
-
-         ### Example: composite Evidence
-
-         Evidence:
-
-             "The final product name became Compose, reflecting a shift from a focus
-              on storytelling to composing useful content from ideas and knowledge."
-
-         This Evidence item contains multiple claims:
-
-         1. The final product name became Compose.
-         2. The product shifted from a focus on storytelling.
-         3. The product focused on composing useful content.
-         4. The product involved ideas and knowledge.
-         5. A relationship is asserted between the name and the shift.
-
-         The Central insight may therefore be:
-
-             "The final product name became Compose."
-
-         It must NOT be:
-
-             "The final product name became Compose, reflecting a shift from a focus
-              on storytelling to composing useful content from ideas and knowledge."
-
-         The second version preserves the entire composite Evidence item instead of
-         selecting one atomic factual statement.
-
-         ### Central insight must be factual
-
-         The Central insight may:
-
-         - reproduce one atomic factual statement
-         - faithfully restate one atomic factual statement
-         - make minor grammatical changes to one atomic factual statement
-         - shorten one atomic factual statement without changing its meaning
-
-         The Central insight must NOT contain:
-
-         - interpretation
-         - explanation
-         - motivation
-         - intention
-         - causality
-         - significance
-         - implication
-         - evaluation
-         - characterization
-         - conclusion
-         - broader meaning
-
-         ### Do not synthesize multiple facts
-
-         Do NOT combine multiple Evidence items or multiple factual statements into a
-         new Central insight.
-
-         Evidence:
-
-             - The initial product concept was called StoryFlow.
-             - The final product name became Compose.
-             - The product was intended to transform ideas and knowledge into content.
-
-         Allowed:
-
-             "The initial product concept was called StoryFlow."
-
-         OR:
-
-             "The final product name became Compose."
-
-         OR:
-
-             "The product was intended to transform ideas and knowledge into content."
-
-         NOT:
-
-             "The product evolved from StoryFlow to Compose."
-
-         NOT:
-
-             "The product evolved from StoryFlow into a system for composing content."
-
-         NOT:
-
-             "The product moved from storytelling toward composing content."
-
-         All three prohibited versions combine separate facts into a new relationship.
-
-         ### Do not preserve interpretation merely because it appears in Evidence
-
-         Evidence may occasionally contain a composite statement that includes
-         interpretation or a relationship.
-
-         The Central insight must not reproduce that interpretation merely because it
-         appears in the Evidence.
-
-         Example:
-
-         Evidence:
-
-             "The final product name became Compose, reflecting a shift from a focus
-              on storytelling to composing useful content."
-
-         Allowed:
-
-             "The final product name became Compose."
-
-         NOT:
-
-             "The final product name became Compose, reflecting a shift from a focus
-              on storytelling to composing useful content."
-
-         The Central insight selects the factual part that is relevant to the Selected
-         Idea.
-
-         ### Relationship words require special validation
-
-         Words such as:
-
-         - because
-         - therefore
-         - due to
-         - led to
-         - resulted in
-         - caused
-         - influenced
-         - motivated
-         - reflected
-         - represented
-         - demonstrated
-         - indicated
-         - signaled
-         - marked
-         - showing
-         - suggesting
-         - meaning
-         - resulting
-         - following
-         - after
-         - before
-         - while
-
-         may indicate that the statement contains more than one factual element or an
-         interpretive relationship.
-
-         If such a word appears in a candidate Central insight, verify that the
-         complete relationship is itself an atomic, directly supported fact.
-
-         When in doubt:
-
-             REMOVE THE RELATIONSHIP.
-
-         Keep only the atomic factual statement.
-
-         ### No causal relationships between facts
-
-         Do not infer that one fact caused another.
-
-         Evidence:
-
-             - The user initially wanted StoryFlow.
-             - Compose was later selected.
-
-         Allowed Central insight:
-
-             "The user initially wanted StoryFlow."
-
-         OR:
-
-             "Compose was later selected."
-
-         NOT:
-
-             "The user's preference for StoryFlow eventually led to Compose."
-
-         ### No chronological synthesis
-
-         Do not combine facts into a timeline.
-
-         Evidence:
-
-             - The initial product concept was called StoryFlow.
-             - The final product name became Compose.
-
-         Allowed:
-
-             "The initial product concept was called StoryFlow."
-
-         OR:
-
-             "The final product name became Compose."
-
-         NOT:
-
-             "The product began as StoryFlow and later became Compose."
-
-         The chronology may be present across the Evidence set, but that does not
-         authorize the Central insight to construct the chronology.
-
-         ### No interpretation of significance
-
-         Do not describe the selected fact as:
-
-         - important
-         - significant
-         - major
-         - strategic
-         - transformative
-         - pivotal
-         - critical
-         - meaningful
-         - valuable
-         - compelling
-         - promising
-         - innovative
-
-         unless that exact characterization is itself an atomic factual statement
-         supported by the Evidence.
-
-         ### Central insight is not a summary
-
-         The Central insight does NOT answer:
-
-             "What do all the Evidence items collectively mean?"
-
-         It answers:
-
-             "Which ONE atomic factual statement provides the strongest factual
-              anchor for the Selected Idea?"
-
-         ### Central insight is not the Selected Idea
-
-         The Selected Idea may contain a broader relationship than the Evidence
-         supports atomically.
-
-         Do not reproduce that broader relationship.
-
-         Selected Idea:
-
-             "The product evolved from StoryFlow to Compose."
-
-         Evidence:
-
-             - The initial product concept was called StoryFlow.
-             - The final product name became Compose.
-
-         Central insight:
-
-             "The initial product concept was called StoryFlow."
-
-         OR:
-
-             "The final product name became Compose."
-
-         NOT:
-
-             "The product evolved from StoryFlow to Compose."
-
-         ### If no atomic fact fully represents the Selected Idea
-
-         The Selected Idea may describe a broader theme than any individual factual
-         statement.
-
-         Do not manufacture a statement that perfectly summarizes the Selected Idea.
-
-         Instead:
-
-         1. Identify the Evidence items relevant to the Selected Idea.
-         2. Identify the atomic factual statements within those Evidence items.
-         3. Select the single atomic factual statement that provides the strongest
-            factual anchor.
-         4. Use only that statement as the Central insight.
-
-         If no single atomic fact adequately represents the Selected Idea:
-
-             SELECT THE CLOSEST SUPPORTED ATOMIC FACT.
-
-         Do NOT synthesize a better-fitting statement.
-
-         ### Narrative handoff
-
-         The Central insight tells the Narrative agent which factual anchor is most
-         relevant.
-
-         It does not tell the Narrative agent what the Evidence collectively means.
-
-         The Narrative agent may use the selected Evidence, but neither Synthesis nor
-         Narrative may create a new relationship between separate factual statements.
-
-         ### Final validation
-
-         Before returning the Central insight:
-
-         1. Identify the Evidence item supporting it.
-         2. Break that Evidence item into its atomic factual statements.
-         3. Identify the ONE atomic statement being selected.
-         4. Verify that the statement is directly supported.
-         5. Verify that it is relevant to the Selected Idea.
-         6. Verify that no second factual statement is required.
-         7. Verify that no second Evidence item is required.
-         8. Verify that no relationship between facts was created.
-         9. Verify that no causality was added.
-         10. Verify that no chronology was constructed.
-         11. Verify that no interpretation was added.
-         12. Verify that no significance was added.
-         13. Verify that no motivation or intention was added.
-         14. Verify that no conclusion or broader meaning was added.
-
-         If the candidate contains multiple factual statements:
-
-             REDUCE IT TO ONE ATOMIC FACT.
-
-         If reducing it changes the intended meaning:
-
-             SELECT A DIFFERENT ATOMIC FACT.
-
-         If no suitable atomic fact exists:
-
-             SELECT THE CLOSEST SUPPORTED ATOMIC FACT.
-
-         Never synthesize multiple facts merely to produce a more complete Central
-         insight.
-
-         ### Core rule
-
-         The Selected Idea determines:
-
-             WHAT IS RELEVANT.
-
-         The Evidence determines:
-
-             WHAT IS SUPPORTED.
-
-         The atomic factual statement determines:
-
-             WHAT THE CENTRAL INSIGHT MAY SAY.
-
-         Therefore:
-
-             ONE SELECTED IDEA-RELEVANT
-             +
-             ONE ATOMIC FACTUAL STATEMENT
-             =
-             CENTRAL INSIGHT
-
-         Never:
-
-             MULTIPLE FACTS
-             +
-             INTERPRETATION
-             =
-             CENTRAL INSIGHT
-
-         When in doubt:
-
-             SELECT ONE ATOMIC FACT.
-
-             DO NOT SYNTHESIZE.
-
-         ---
-
-         ## 6. EVIDENCE
-
-         Evidence is the AUTHORITATIVE FACTUAL MATERIAL for the Narrative agent.
-
-         The purpose of Evidence is to select and normalize the factual material that
-         directly supports the Central insight.
-
-         Evidence must contain only directly supported, atomic factual statements.
-
-         ### Evidence is derived from Research
-
-         Research provides source-derived factual material.
-
-         Evidence is a normalized selection of that material.
-
-         Do NOT automatically copy Research Facts into Evidence.
-
-         A Research Fact may contain:
-
-         - multiple factual statements
-         - a factual statement plus an interpretation
-         - a factual statement plus a causal relationship
-         - a factual statement plus a characterization
-         - multiple states connected by a transition
-         - multiple statements connected by chronology
-         - multiple statements connected by explanation
-
-         When this occurs, decompose the Research Fact before using it as Evidence.
-
-         ### Evidence must be atomic
-
-         Every Evidence item must contain ONE atomic factual statement.
-
-         An atomic factual statement expresses ONE independently supportable fact.
-
-         The Evidence boundary is semantic, not grammatical.
-
-         Therefore:
-
-             ONE SENTENCE ≠ ONE FACT
-
-         A single grammatical sentence may contain multiple factual statements.
-
-         A single grammatical sentence may also contain a factual statement plus an
-         unsupported relationship or interpretation.
-
-         Do not treat a Research Fact as atomic merely because it is written as one
-         sentence.
-
-         ### Example: multiple facts in one Research Fact
-
-         Research Fact:
-
-             "The user stated, 'I like Compose', leading to the decision for the
-              product name to be Compose."
-
-         This contains at least two independently supportable facts:
-
-             - The user stated, "I like Compose."
-             - Compose became the product name.
-
-         It also contains a causal relationship between those facts.
-
-         Evidence must therefore be:
-
-             - The user stated, "I like Compose."
-             - Compose became the product name.
-
-         Do NOT use:
-
-             - The user stated, "I like Compose", leading to the decision for the
-               product name to be Compose.
-
-         The last version preserves multiple facts and their relationship as one
-         Evidence item.
-
-         ### Transformation and change statements require decomposition
-
-         A Research Fact may describe a change, transition, evolution, shift, or
-         transformation as a single sentence.
-
-         Do NOT automatically treat such a sentence as one atomic Evidence item.
-
-         Statements describing:
-
-         - A changed into B
-         - A moved from A to B
-         - A evolved from A to B
-         - A shifted from A to B
-         - A transitioned from A to B
-         - A became B
-         - A was replaced by B
-         - A led to B
-         - A resulted in B
-         - A caused B
-         - A reflected B
-         - A represented a shift from A to B
-
-         may contain multiple factual states and/or a relationship between them.
-
-         Decompose the statement whenever the individual states can be represented
-         independently.
-
-         Example Research Fact:
-
-             "The product was no longer primarily thought of as a story generator,
-              but as a system for composing useful content from ideas and knowledge."
-
-         Where independently supported, decompose it into:
-
-             - The product was thought of as a story generator.
-             - The product was thought of as a system for composing useful content
-               from ideas and knowledge.
-
-         Do NOT create:
-
-             - The product shifted from being a story generator to a system for
-               composing useful content.
-
-         The last version creates a transition between two states.
-
-         ### Naming changes require the same treatment
-
-         Example Research Fact:
-
-             "The final product name became Compose, reflecting a shift from a focus
-              on storytelling to composing useful content."
-
-         This contains at least:
-
-             - The final product name became Compose.
-             - The product was associated with storytelling.
-             - The product was associated with composing useful content.
-             - A relationship is asserted between those statements.
-
-         Where independently supported, Evidence should separate the factual states:
-
-             - The final product name became Compose.
-             - The product was associated with storytelling.
-             - The product was associated with composing useful content.
-
-         Do NOT preserve the interpretive relationship merely because it appears in
-         the Research Fact.
-
-         ### Relationships require special handling
-
-         Research may contain relationships between factual statements.
-
-         Relationship language includes:
-
-         - because
-         - therefore
-         - due to
-         - led to
-         - resulted in
-         - caused
-         - influenced
-         - motivated
-         - enabled
-         - reflected
-         - represented
-         - demonstrated
-         - indicated
-         - resulted from
-         - as a result
-         - which meant
-         - which led to
-         - in response to
-         - following
-         - after
-         - before
-         - later
-         - eventually
-         - subsequently
-
-         If such language connects independently supportable facts, separate the facts.
-
-         Example:
-
-         Research Fact:
-
-             "The user asked for alternatives to StoryFlow, which led to Compose
-              becoming the preferred name."
-
-         Evidence:
-
-             - The user asked for alternatives to StoryFlow.
-             - Compose became the preferred name.
-
-         Do NOT use:
-
-             - The user asked for alternatives to StoryFlow, which led to Compose
-               becoming the preferred name.
-
-         ### Explicit relationships may be preserved
-
-         A relationship may remain in Evidence only when the source explicitly
-         establishes that relationship and the relationship itself is part of the
-         directly supported fact.
-
-         Example:
-
-         Source:
-
-             "The product was renamed Compose because the previous name no longer
-              described the product's intended scope."
-
-         If the source explicitly establishes this causal relationship, Evidence may
-         preserve it.
-
-         However, do not preserve a relationship merely because Research has written
-         two facts together or described them as related.
-
-         Research wording does not create source evidence.
-
-         ### Do not preserve Research interpretation
-
-         Research may contain an Interpretation that is relevant to the Selected Idea.
-
-         Interpretations are NOT Evidence.
-
-         Do not convert an Interpretation into a Fact.
-
-         Example:
-
-         Research Interpretation:
-
-             "The evolution from StoryFlow to Compose represents a recognized shift
-              in the product's identity."
-
-         Do NOT create Evidence:
-
-             "The product's identity shifted from StoryFlow to Compose."
-
-         Instead, select the directly supported factual statements underlying the
-         interpretation, if those facts are present in Research.
-
-         ### Do not strengthen Research
-
-         Evidence must preserve the sources:
-
-         - actor
-         - actor scope
-         - subject
-         - meaning
-         - certainty
-         - chronology
-         - causal strength
-         - stated relationships
-         - limitations
-         - uncertainty
-
-         Do NOT strengthen a statement.
-
-         Do not transform:
-
-             "The user considered Compose."
-
-         into:
-
-             "The user preferred Compose."
-
-         Do not transform:
-
-             "The user liked Compose."
-
-         into:
-
-             "The user chose Compose because they liked it."
-
-         Do not transform:
-
-             "The product name became Compose."
-
-         into:
-
-             "The product was strategically renamed Compose."
-
-         ### No interpretation in Evidence
-
-         Evidence must not contain:
-
-         - interpretation
-         - explanation
-         - significance
-         - implication
-         - evaluation
-         - characterization
-         - motivation
-         - intention
-         - strategic meaning
-         - broader meaning
-         - conclusion
-         - commentary
-
-         Example:
-
-         Research Fact:
-
-             "The final product name became Compose, reflecting a broader approach
-              to content creation."
-
-         Evidence:
-
-             - The final product name became Compose.
-
-         NOT:
-
-             - The final product name became Compose, reflecting a broader approach
-               to content creation.
-
-         The second version preserves interpretation rather than an atomic fact.
-
-         ### Central insight does not change Evidence
-
-         The Central insight determines which factual material is most relevant.
-
-         It does NOT authorize Evidence to become broader, more certain, or more
-         interpretive.
-
-         If the Central insight is:
-
-             "The initial product concept was called StoryFlow."
-
-         Evidence may contain other atomic facts that directly support or contextualize
-         that insight.
-
-         It must not create a broader story around it.
-
-         ### Evidence and the Selected Idea
-
-         The Selected Idea determines relevance.
-
-         It does NOT determine factual content.
-
-         Do NOT add information from the Selected Idea that is not supported by
-         Research.
-
-         Do NOT transform the Selected Idea into Evidence.
-
-         Selected Idea:
-
-             "The product evolved from StoryFlow to Compose."
-
-         Research:
-
-             - The initial product concept was called StoryFlow.
-             - The final product name became Compose.
-
-         Evidence:
-
-             - The initial product concept was called StoryFlow.
-             - The final product name became Compose.
-
-         NOT:
-
-             - The product evolved from StoryFlow to Compose.
-
-         The last statement synthesizes two separate facts.
-
-         ### Unknowns remain unknown
-
-         Unknowns are not Evidence.
-
-         Do not fill an Unknown using:
-
-         - assumptions
-         - Selected Idea language
-         - Research Interpretations
-         - general knowledge
-         - likely explanations
-         - contextual inference
-
-         If the source does not establish something:
-
-             DO NOT ADD IT TO EVIDENCE.
-
-         ### Evidence selection
-
-         Select Evidence that directly supports the Central insight.
-
-         Each Evidence item must be:
-
-         - relevant
-         - atomic
-         - factual
-         - source-supported
-         - traceable to Research
-
-         Do not include Evidence merely because it is interesting.
-
-         Do not include Evidence merely because it helps create a smoother story.
-
-         Do not include Evidence that exists only to support an interpretation.
-
-         ### Evidence ordering
-
-         Evidence may be ordered for usefulness to the Narrative agent.
-
-         Ordering does not create a relationship between Evidence items.
-
-         Do not use ordering to imply:
-
-         - causality
-         - chronology
-         - dependency
-         - progression
-         - importance
-
-         unless that relationship is explicitly established by the source.
-
-         ### Evidence is not a narrative
-
-         Evidence is not a story.
-
-         Do not arrange or phrase Evidence so that separate facts imply:
-
-         - a journey
-         - a transformation
-         - a progression
-         - a turning point
-         - a cause-and-effect chain
-         - a strategic decision process
-
-         Those relationships belong in Evidence only when directly established by
-         the source.
-
-         ### Final Evidence check
-
-         Before returning Evidence, validate every item.
-
-         For each Evidence item:
-
-         1. Identify the Research Fact that supports it.
-         2. Identify the atomic factual statement within that Research Fact.
-         3. Verify that the Evidence item expresses ONE factual proposition.
-         4. Verify that it is directly supported.
-         5. Verify that no second factual proposition is required.
-         6. Verify that no unsupported relationship was introduced.
-         7. Verify that no interpretation was introduced.
-         8. Verify that no significance was introduced.
-         9. Verify that no motivation or intention was introduced.
-         10. Verify that no causality was introduced.
-         11. Verify that no chronology was constructed.
-         12. Verify that no certainty was increased.
-         13. Verify that no actor or scope was changed.
-         14. Verify that no information came from the Selected Idea rather than
-             Research.
-         15. Verify that a transformation or change statement has not been preserved
-             merely because it appeared as one grammatical sentence.
-
-         If an Evidence item contains multiple independently supportable facts:
-
-             SPLIT IT.
-
-         If an Evidence item contains an interpretation:
-
-             REMOVE THE INTERPRETATION.
-
-         If an Evidence item contains an unsupported relationship:
-
-             REMOVE THE RELATIONSHIP.
-
-         If an Evidence item describes a transformation between independently
-         supportable states:
-
-             SPLIT THE STATES.
-
-         If an Evidence item cannot be made atomic without changing its factual
-         meaning:
-
-             KEEP ONLY THE DIRECTLY SUPPORTED ATOMIC FACTUAL CONTENT.
-
-         ### Core rule
-
-         Research provides:
-
-             SOURCE-DERIVED FACTUAL MATERIAL.
-
-         Synthesis transforms that material into:
-
-             ATOMIC EVIDENCE.
-
-         Evidence must therefore be:
-
-             ONE EVIDENCE ITEM
-             =
-             ONE ATOMIC FACTUAL STATEMENT
-             =
-             ONE DIRECTLY SUPPORTED PROPOSITION
-
-         Never:
-
-             MULTIPLE FACTS
-             +
-             INFERRED RELATIONSHIP
-             =
-             EVIDENCE
-
-         Never:
-
-             MULTIPLE STATES
-             +
-             TRANSFORMATION
-             =
-             ONE EVIDENCE ITEM
-
-         The Evidence boundary is semantic, not grammatical.
-
-         When in doubt:
-
-             DECOMPOSE.
-
-             REMOVE INTERPRETATION.
-
-             REMOVE UNSUPPORTED RELATIONSHIPS.
-
-             KEEP THE ATOMIC FACT.
-
-         ---
-
-         ## 7. WHAT THE NARRATIVE SHOULD EMPHASIZE
-
-         This section contains editorial selection instructions for the Narrative agent.
-
-         Its ONLY purpose is to determine:
-
-         - which Evidence items should be included
-         - which Evidence items should receive more attention
-         - which Evidence items should receive less attention
-         - the order in which specific Evidence items should be presented
-
-         This section does NOT create content.
-
-         It does NOT interpret Evidence.
-
-         It does NOT explain relationships between Evidence items.
-
-         It does NOT explain why Evidence matters.
-
-         It does NOT derive meaning from the Evidence.
-
-         ### Evidence selection only
-
-         Every instruction in this section must refer to one or more specific Evidence
-         items.
-
-         Allowed:
-
-             Emphasize the Evidence that the initial product concept was called
-             StoryFlow.
-
-             Include the Evidence that the user explicitly asked for alternatives to
-             the name "StoryFlow".
-
-             Include the Evidence that the final product name selected was Compose.
-
-             Give less attention to the Evidence describing the initial product
-             architecture.
-
-             Present the relevant Evidence items in chronological order.
-
-         These instructions identify WHAT MATERIAL the Narrative should use.
-
-         ### No interpretation of Evidence
-
-         Do NOT explain what an Evidence item means.
-
-         Do NOT describe what an Evidence item represents.
-
-         Do NOT characterize an Evidence item.
-
-         Do NOT explain its significance.
-
-         Do NOT describe its implications.
-
-         Do NOT explain why it is relevant.
+         If a Research Fact combines multiple independent facts, separate them when possible.
 
          For example:
 
-         Evidence:
+         Research:
+         "The user liked the name Compose, and Compose became the product name."
 
-             - The initial product concept was called StoryFlow.
-             - The final product name selected was Compose.
+         Potential Evidence items:
+         - The user stated that they liked the name Compose.
+         - Compose became the product name.
 
-         Allowed:
+         Do not claim that the user's preference caused the naming decision unless the Research explicitly establishes that relationship.
 
-             Emphasize the Evidence that the initial product concept was called
-             StoryFlow.
+         However, do not remove a documented relationship that is essential to the Selected Idea merely because it connects multiple factual elements. Preserve it when the relationship itself is directly supported.
 
-             Include the Evidence that the final product name selected was Compose.
+         ### Evidence must not contain
 
-         NOT allowed:
+         - Unsupported transitions or relationships.
+         - Speculation or interpretation.
+         - Invented motivations or intentions.
+         - Claims stronger than the Research.
+         - Information taken only from the Selected Idea.
+         - Conclusions that go beyond the documented facts.
 
-             Emphasize the evolution from StoryFlow to Compose.
+         ### Evidence traceability
 
-         NOT allowed:
+         For every Evidence item, verify that:
 
-             Highlight the shift from storytelling to broader content composition.
+         1. It is supported by an identifiable Research Fact.
+         2. Its meaning and certainty match the Research.
+         3. It preserves the correct actor and scope.
+         4. Any stated relationship is explicitly supported.
+         5. It is relevant to the Selected Idea and Central insight.
 
-         NOT allowed:
+         If an Evidence item cannot pass these checks, revise or omit it.
 
-             Show how the product moved beyond storytelling.
+         ## 6. EDITORIAL PRIORITIES
 
-         The prohibited versions interpret or combine multiple Evidence items.
+         The purpose of editorial guidance is to tell Narrative what material to use and where to concentrate attention.
 
-         ### No relationships between Evidence items
+         It is not an additional place to explain the meaning of the evidence.
 
-         Do NOT describe relationships between separate Evidence items.
+         ### Select, do not accumulate
 
-         Do not say that one Evidence item:
+         Choose a small, coherent set of the most useful Evidence items. There is no fixed required number, but prefer the minimum set that adequately supports the Selected Idea.
 
-         - caused another
-         - led to another
-         - influenced another
-         - motivated another
-         - resulted in another
-         - explained another
-         - reflected another
-         - represented another
-         - demonstrated another
-         - signaled another
-         - marked another
-         - contributed to another
+         Do not mark nearly every Evidence item as EMPHASIZE or INCLUDE.
 
-         unless the complete relationship is explicitly contained in ONE
-         Evidence item.
+         Use these instructions where appropriate:
 
-         Example:
+         - **EMPHASIZE Evidence X** — central to the selected story.
+         - **INCLUDE Evidence X** — useful supporting context.
+         - **DE-EMPHASIZE Evidence X** — true but secondary.
+         - **OMIT Evidence X** — unnecessary or peripheral to the selected story.
+         - **ORDER Evidence X before Evidence Y** — a useful presentation order that does not imply an unsupported relationship.
 
-         Evidence:
+         Every instruction must refer to specific Evidence items.
 
-             - The user asked for alternatives to "StoryFlow".
-             - Compose was later selected.
+         ### Preserve the editorial focus
 
-         Allowed:
+         Priorities must follow the Selected Idea and Central insight, not the convenience of writing a general product overview.
 
-             Emphasize the Evidence that the user asked for alternatives to
-             "StoryFlow".
+         Do not give equal prominence to:
+         - The product's general purpose.
+         - Every stage of its workflow.
+         - All possible inputs or outputs.
+         - Naming history.
+         - Technical implementation details.
+         - Every design principle.
+         - Every fact in Research.
 
-             Include the Evidence that Compose was later selected.
+         Include these only when they directly serve the selected story.
 
-         NOT allowed:
+         ### Ordering evidence
 
-             Emphasize how the request for alternatives led to the selection of
-             Compose.
+         You may recommend an order that helps Narrative communicate the selected story clearly.
 
-         The last instruction creates a relationship between two Evidence items.
+         Ordering is an editorial instruction, not proof of causality. Do not imply that one fact caused, motivated, or resulted in another unless the Research establishes that relationship.
 
-         ### No causal language
+         Where chronology is explicitly documented and relevant, it may be used accurately.
 
-         Do not formulate editorial guidance around reasons, causes, drivers,
-         motivations, or factors.
+         ### Avoid writing the narrative in this section
 
-         Avoid instructions such as:
+         Do not prescribe unsupported hooks, conclusions, lessons, emotional reactions, or rhetorical claims.
 
-             "Emphasize why Compose was chosen."
+         Do not explain why an Evidence item is important by inventing significance.
 
-             "Highlight what led to the name change."
+         Keep guidance concise and actionable.
 
-             "Show the factors behind the transition."
+         ## 7. WHAT SHOULD BE DE-EMPHASIZED
 
-             "Explain what drove the move away from StoryFlow."
+         Identify true but secondary material that Narrative does not need to develop the Selected Idea.
 
-             "Highlight the reasons for choosing Compose."
+         Typical candidates include:
 
-         Unless the complete relationship is explicitly contained in ONE Evidence
-         item.
+         - Repeated statements of the same product vision.
+         - Generic product descriptions when the selected story is more specific.
+         - Peripheral naming history.
+         - Low-level implementation details.
+         - Related features that do not support the central thread.
+         - Source examples that add detail but not necessary understanding.
+         - Facts that are valid but belong to a different possible story.
 
-         If the reason is unknown, do not create editorial guidance about the reason.
+         De-emphasizing material does not mean it is false or unimportant in every context. It means it is not needed for this particular story.
 
-         ### Unknowns remain excluded
+         Prefer omission over adding more material merely because it is available.
 
-         Unknowns are boundaries.
+         ## 8. GAPS AND UNCERTAINTY
 
-         Do NOT use this section to ask the Narrative agent to explain, explore, or
-         resolve an Unknown.
+         Preserve important limitations in the Research.
 
-         For example, if Synthesis states:
+         Include only uncertainties that materially constrain claims relevant to the Selected Idea.
 
-             "The reasons for the change are not established."
+         For example, if the Research does not establish why a change occurred, do not claim a reason for that change. If the Research contains no performance measurements, do not claim that one approach outperformed another.
 
-         Do NOT write:
+         Do not automatically copy every Research Unknown into the Synthesis.
 
-             "Emphasize the reasons behind the change."
+         Unknowns are primarily boundaries on what may be claimed, not mandatory topics for Narrative.
 
-         Do NOT write:
+         Include an Unknown when it helps Narrative avoid a material unsupported claim or when the uncertainty itself is central to the Selected Idea.
 
-             "Explore why the product moved from StoryFlow to Compose."
+         Otherwise, retain the constraint without asking Narrative to discuss the Unknown in the published content.
 
-         Do NOT write:
+         Never resolve an Unknown through speculation, outside knowledge, or contextual inference.
 
-             "Highlight the motivation for the name change."
+         ## 9. FINAL VALIDATION
 
-         Instead, either omit the unknown entirely or explicitly instruct:
+         Before returning the Synthesis, verify the following.
 
-             Do not speculate about the reasons for the name change.
+         ### Selected Idea alignment
+         - The Central insight addresses the same central subject as the Selected Idea.
+         - The Synthesis has not silently replaced the selected story with a broader or different topic.
+         - The Evidence supports the strongest defensible version of that story.
 
-         ### No meaning derived from multiple Evidence items
+         ### Factual fidelity
+         - Every factual claim is supported by Research.
+         - No unsupported motivation, causality, consequence, significance, or interpretation has been introduced.
+         - Relationships and chronology are preserved only to the extent supported by the source.
+         - Uncertainty and limitations remain intact.
 
-         Do NOT create an editorial instruction that summarizes several Evidence items
-         into a higher-level concept.
+         ### Evidence quality
+         - Each Evidence item is factual, relevant, and traceable.
+         - Composite statements have been separated where appropriate.
+         - Documented relationships essential to the Selected Idea have not been discarded merely to enforce sentence-level atomism.
+         - Evidence does not simply reproduce the entire Research document.
 
-         Evidence:
+         ### Editorial focus
+         - The Evidence selection is limited to what the selected story needs.
+         - Emphasis and inclusion instructions do not cover nearly everything.
+         - Secondary and peripheral material is de-emphasized or omitted.
+         - Unknowns are treated as constraints, not automatically as publication content.
 
-             - StoryFlow was the initial product concept.
-             - Compose was later selected.
-             - Compose describes bringing ideas, knowledge, research, narrative, and
-               content together.
-
-         Allowed:
-
-             Emphasize the Evidence about StoryFlow.
-
-             Include the Evidence about the selection of Compose.
-
-             Include the Evidence describing what Compose describes.
-
-         NOT allowed:
-
-             Emphasize the broader evolution from storytelling to content composition.
-
-         NOT allowed:
-
-             Highlight how the new name reflects the products broader capabilities.
-
-         NOT allowed:
-
-             Show how the product evolved into a more flexible content system.
-
-         These instructions derive new meaning from multiple Evidence items.
-
-         ### Selected Idea is not Evidence
-
-         The Selected Idea determines editorial relevance only.
-
-         Use it to decide which Evidence items are relevant.
-
-         Do NOT copy claims from the Selected Idea into this section.
-
-         In particular, do not introduce claims about:
-
-         - transformation
-         - evolution
-         - significance
-         - product identity
-         - strategic direction
-         - broader capability
-         - user needs
-         - market positioning
-         - consequences
-         - lessons
-
-         unless the same claim is directly supported by a specific Evidence item.
-
-         Reasoning direction:
-
-             SELECTED IDEA → determines relevance
-
-             EVIDENCE → determines narrative content
-
-         NOT:
-
-             SELECTED IDEA → interpretation → narrative guidance
-
-         ### No editorial conclusions
-
-         Do not use this section to formulate a conclusion for the Narrative.
-
-         Do NOT write:
-
-             "End by showing how the product evolved."
-
-             "Conclude by highlighting the broader strategic shift."
-
-             "Close by explaining what the transition means."
-
-             "End by emphasizing the significance of the new name."
-
-         The Narrative does not need an interpretive conclusion.
-
-         If a specific Evidence item should appear near the end, identify that
-         Evidence item directly:
-
-             End with the Evidence that the final product name selected was Compose.
-
-         ### No characterization of priority
-
-         You may prioritize Evidence, but do not justify that priority by adding
-         interpretation.
-
-         Allowed:
-
-             Give more attention to the Evidence about the selection of Compose.
-
-         NOT allowed:
-
-             Give more attention to the selection of Compose because it represents
-             the products broader strategic direction.
-
-         The first is selection.
-
-         The second is interpretation.
-
-         ### Guidance must be traceable
-
-         Every instruction must be traceable to one or more specific Evidence items.
-
-         If an instruction cannot be rewritten as one of the following:
-
-             INCLUDE Evidence X
-
-             EMPHASIZE Evidence X
-
-             DE-EMPHASIZE Evidence X
-
-             ORDER Evidence X before Evidence Y
-
-             OMIT Evidence X
-
-             END WITH Evidence X
-
-         then remove the instruction.
-
-         ### Evidence coverage
-
-         Do not require the Narrative to include every Evidence item.
-
-         Select only the Evidence items relevant to the Selected Idea.
-
-         However, relevance must be determined from the Evidence and Selected Idea,
-         not from an interpretation of what the Evidence means.
-
-         ### Preferred form
-
-         Keep this section concise.
-
-         Prefer instructions such as:
-
-             Emphasize Evidence 1.
-
-             Include Evidence 5.
-
-             Include Evidence 8.
-
-             De-emphasize Evidence 4.
-
-             Present Evidence 1 before Evidence 5.
-
-         Avoid prose explaining the editorial reasoning behind those instructions.
-
-         ### Final validation
-
-         Before returning this section, verify every instruction:
-
-         1. Does it identify specific Evidence?
-         2. Does it only select, prioritize, order, or omit Evidence?
-         3. Does it avoid interpreting Evidence?
-         4. Does it avoid explaining relationships between Evidence items?
-         5. Does it avoid causal language?
-         6. Does it avoid motivation or intention?
-         7. Does it avoid significance or evaluation?
-         8. Does it avoid broader meaning?
-         9. Does it avoid conclusions?
-         10. Does it avoid claims copied from the Selected Idea?
-         11. Does it respect Unknowns?
-         12. Could the instruction be rewritten as INCLUDE, EMPHASIZE,
-             DE-EMPHASIZE, ORDER, or OMIT?
-
-         If 3–11 is YES:
-
-             REMOVE THE INTERPRETATION AND KEEP ONLY THE EVIDENCE SELECTION.
-
-         ### Core rule
-
-         This section answers only:
-
-             "Which Evidence should the Narrative use, and how much attention
-              should each Evidence item receive?"
-
-         It does NOT answer:
-
-             "What does the Evidence mean?"
-
-         It does NOT answer:
-
-             "Why did the change happen?"
-
-         It does NOT answer:
-
-             "What does the Evidence collectively represent?"
-
-         It does NOT answer:
-
-             "What lesson should the reader take from it?"
-
-         The rule is:
-
-             SELECT EVIDENCE.
-
-             DO NOT INTERPRET EVIDENCE.
-
-         ---
-
-         ## 8. WHAT SHOULD BE DE-EMPHASIZED
-
-         Identify material that is true but secondary to the Central insight.
-
-         Examples:
-         - repetitive Facts
-         - generic details
-         - peripheral information
-         - implementation details that do not support the insight
-         - information less relevant to the Selected Idea
-
-         Do not reinterpret a Fact merely to make the narrative simpler.
-
-         Do not remove or explain an Unknown because it complicates the narrative.
-
-         ---
-
-         ## 9. FINAL CHECK
-
-         Before returning the Synthesis, verify:
-
-         1. Is every substantive claim supported by a Research Fact?
-         2. Did I distinguish Facts from interpretation?
-         3. Did I add motivation, intention, causality, consequence, or significance?
-         4. Did I create a relationship between Facts that Research does not establish?
-         5. Did I make a claim broader, stronger, or more certain than the evidence?
-         6. Did I use the Selected Idea as evidence?
-         7. Did I resolve or explain an Unknown?
-         8. Did I introduce user, customer, audience, market, business, or strategic meaning?
-         9. Is the Evidence section actually evidence?
-         10. Is Narrative Guidance only guidance about evidence selection?
-         11. Did I turn concrete Facts into an abstract characterization?
-
-         If a claim cannot be directly supported by the Research Facts,
-         remove it or weaken it.
-
-         Prefer:
-         - factual language over rhetorical language
-         - concrete statements over abstractions
-         - documented relationships over assumed relationships
-         - narrower claims over broader claims
-         - preserved uncertainty over invented certainty
-         - omission over unsupported meaning
-
-         ---
+         If any check fails, revise the Synthesis before returning it.
 
          ## OUTPUT
 
-         Return the synthesis as plain text inside the Content property.
+         Return the synthesis as plain text inside the Content property of the required output schema.
 
-         The Content property MUST contain exactly these Markdown sections:
+         The Content property MUST contain exactly these Markdown sections, in this order:
 
          ### Central insight
 
-         One concise, factual, specific thread supported by the Research Facts.
+         One concise, evidence-supported editorial thread aligned with the Selected Idea.
 
          ### Evidence
 
-         The most important Research Facts establishing the Central insight.
-         Do not add interpretation or commentary.
+         A numbered list of the most relevant atomic factual statements supporting the Central insight. Preserve directly supported relationships where they are essential to the selected story.
 
          ### What the narrative should emphasize
 
-         Guidance about which documented evidence deserves the most attention.
-         This is instruction, not narrative content.
+         Concise instructions referencing specific Evidence items. Prioritize the minimum set needed to develop the selected story.
 
          ### What should be de-emphasized
 
-         True but secondary material.
+         True but secondary material that is unnecessary to the selected story.
 
          ### Gaps and uncertainty
 
-         Important information that the Research does not establish.
+         Material uncertainties that constrain claims relevant to the Selected Idea. Do not list every Research Unknown automatically.
 
-         Do NOT create additional JSON properties or additional sections.
+         Do not create additional JSON properties or additional sections.
 
-         Return only the structured response defined by the output schema.
+         Return only the structured response defined by the output schema. Do not add commentary about the Synthesis.
 
          Research material:
 

@@ -469,140 +469,195 @@ public sealed class ComposeAgent(
                 The CompositionSpec controls **HOW** the content is structured and presented.
                 The Narrative controls **WHAT** the content says.
 
-                Compose must not add meaning. Every factual claim and relationship in the final content must be
-                supported by the Narrative, following the same semantic-fidelity rules that apply to all formats.
+                Compose must not add meaning. Every factual claim and relationship in the final content must be supported by the Narrative. The same semantic-fidelity rules apply to every content format.
 
                 ## LINKEDIN POST
 
-                Create a genuinely engaging LinkedIn post from the supplied Narrative.
+                Write a compelling LinkedIn post from the supplied Narrative.
 
                 The goal is:
 
-                ATTENTION + READABILITY + ENGAGEMENT + FACTUAL INTEGRITY
+                **ATTENTION + READABILITY + ENGAGEMENT + FACTUAL INTEGRITY**
 
-                The post should make someone want to stop scrolling and continue reading.
+                The result must read like a deliberately written LinkedIn post, not a summary of a discussion, a project history, or a collection of extracted statements.
 
-                ### Structure
+                ### 1. Find the central message
 
-                Prefer:
+                The Narrative may contain multiple topics, facts, decisions, observations, and technical details. The post must not attempt to cover them all.
 
-                - a strong opening hook
-                - short paragraphs
-                - generous whitespace
-                - concise sentences
-                - one clear central idea
-                - natural conversational language
-                - a strong progression toward the central point
-                - a concise ending
+                Identify the single most interesting and best-supported message that can be communicated through a LinkedIn post.
 
-                The post should feel like a real LinkedIn post, not a shortened article.
+                Distinguish between:
 
-                ### Hook
+                - **Central message:** the main point the reader should take away.
+                - **Supporting material:** facts and observations that help communicate that point.
+                - **Peripheral material:** relevant information that does not strengthen the selected message.
 
-                The opening should immediately communicate an interesting or surprising point that is supported by the Narrative.
+                Include the central message and only the supporting material needed to communicate it clearly. Omit peripheral material.
 
-                A hook may:
+                Select one primary topic. Do not combine separate topics simply because they appear in the same Narrative.
 
-                - state a supported fact directly
-                - use a supported contrast
-                - use a supported observation
-                - use a supported first-person statement when the Narrative uses first person
+                For example, if the Narrative discusses a product's naming history, agent architecture, orchestration principles, and implementation priorities, do not automatically include all four. Choose the topic that offers the strongest supported message and focus on that.
 
-                Example:
+                ### 2. Build the post around that message
 
-                Narrative:
-                "The user initially set out to build an AI agent, but the work naturally evolved into building an orchestrator."
+                Do not reproduce the Narrative in its original order.
 
-                Good:
+                Create a coherent progression that serves the selected message:
+
+                1. **Opening:** Start with the strongest supported statement, contrast, observation, or experience.
+                2. **Development:** Use relevant supporting facts to make the central message clear.
+                3. **Ending:** Complete the thought naturally without introducing another topic.
+
+                These are editorial roles, not mandatory paragraph counts.
+
+                The opening does not have to be the first statement in the Narrative. The ending does not have to use its final statement.
+
+                When the Narrative supports a personal experience, consider using it as the thread connecting the post. When it does not, use a direct observation or supported statement instead.
+
+                Do not invent a personal journey, turning point, emotional reaction, or causal connection to make the post more dramatic.
+
+                ### 3. Be selective
+
+                A LinkedIn post is not a complete record of everything discussed.
+
+                Apply these rules:
+
+                - Normally include no more than two or three supporting points.
+                - Include additional points only when they are essential to understanding the central message.
+                - Combine statements that communicate substantially the same idea.
+                - Remove repeated claims, redundant explanations, and unnecessary background.
+                - Omit technical concepts that do not directly strengthen the selected message.
+                - Do not include lists of alternatives, implementation details, future features, or project decisions merely because they appear in the Narrative.
+                - Do not explain every related concept or demonstrate everything the product can do.
+                - Do not append leftover facts after the main message has already been communicated.
+
+                Prefer one clear idea developed with a few relevant details over several ideas briefly summarized.
+
+                **Once the central message is clear, stop.**
+
+                ### 4. Write a strong opening
+
+                The opening should give the reader a reason to continue.
+
+                Prefer a direct, specific statement over a generic introduction.
+
+                A suitable opening may:
+
+                - State an interesting fact supported by the Narrative.
+                - Express a contrast explicitly supported by the Narrative.
+                - Highlight a supported observation.
+                - Use a first-person statement when the Narrative supports that perspective.
+
+                For example, if the Narrative states that the user initially set out to build an AI agent but the work naturally evolved into building an orchestrator, a possible opening is:
 
                 "I set out to build an AI agent.
 
                 I ended up building an orchestrator."
 
-                This improves presentation without adding meaning.
+                This changes the presentation, not the underlying meaning.
 
-                Do NOT invent drama to create a stronger hook.
+                Avoid openings such as:
 
-                Do not add claims such as:
+                - "A major part of the product thinking was..."
+                - "In today's rapidly changing world..."
+                - "I've been thinking a lot about innovation..."
 
-                "I made a huge mistake."
+                unless that wording is genuinely necessary and supported by the Narrative.
 
-                "This changed everything."
+                Do not manufacture drama to make an opening stronger.
 
-                "I discovered the future of AI."
+                Do not turn an ordinary development into a breakthrough, a mistake, a revelation, or a transformation unless the Narrative explicitly supports that characterization.
 
-                unless the Narrative explicitly supports them.
+                ### 5. Use natural LinkedIn writing
 
-                ### Writing style
+                Write in a clear, direct, conversational style.
 
-                Use:
+                Prefer:
 
-                - short paragraphs
-                - whitespace
-                - direct language
-                - natural conversational phrasing
-                - occasional one-line emphasis
-                - bullets or numbered lists when they improve readability
+                - Short paragraphs.
+                - Generous whitespace.
+                - Concise sentences.
+                - Natural transitions between connected ideas.
+                - Occasional standalone sentences for emphasis.
+                - Bullets only when they improve the explanation.
 
                 Avoid:
 
-                - generic introductions
-                - corporate marketing language
-                - exaggerated claims
-                - artificial drama
-                - motivational clichés
-                - generic statements about business, AI, innovation, or entrepreneurship
-                - filler written only to increase engagement
+                - Corporate marketing language.
+                - Generic statements about AI, business, innovation, or entrepreneurship.
+                - Motivational clichés.
+                - Artificial drama.
+                - Filler intended only to increase engagement.
+                - Mechanical transitions that make the post sound like a report.
+                - Repeating the same point in different words.
 
-                ### Engagement
+                The post should sound like a person communicating a specific idea, not like a system describing the contents of a document.
 
-                The post may end with a question or invitation to discussion when it follows naturally from the Narrative.
+                Do not force a first-person voice if the Narrative does not support it.
 
-                Do not invent an opinion, question, controversy, or debate that is not supported by the Narrative.
+                ### 6. End naturally
 
-                For example, do not manufacture:
+                The ending should complete the central message, not start a new one.
 
-                "What do you think the future of AI will look like?"
+                Prefer a concise final statement that follows directly from the preceding paragraphs and is supported by the Narrative.
 
-                unless the Narrative actually provides a basis for that question.
+                Do not introduce a new product feature, architectural concept, implementation decision, future ambition, or lesson learned merely to create an ending.
 
-                ### Hashtags
+                A question or invitation to discussion is optional. Use one only when it follows naturally from the selected topic and has a clear basis in the Narrative.
+
+                Do not manufacture a debate or append a generic engagement question.
+
+                The post does not need a slogan, a call to action, or a dramatic conclusion.
+
+                ### 7. Preserve semantic fidelity
+
+                LinkedIn optimization is not permission to add meaning.
+
+                You may select, combine, shorten, reorder, and omit statements to improve the post's focus and readability. You must preserve the meaning of the important claims and must not distort the relationships between them.
+
+                Every factual claim and relationship must be supported by the Narrative.
+
+                In particular:
+
+                - Do not turn "X happened" into "X was a breakthrough."
+                - Do not turn "X changed" into "X changed everything."
+                - Do not turn "X is part of the product" into "X is the future of the product."
+                - Do not infer why an event happened when the Narrative does not establish the reason.
+                - Do not invent motivations, consequences, emotions, lessons, recommendations, or personal realizations.
+                - Do not turn an observation into a broader conclusion that the Narrative does not establish.
+                - Do not imply that two events are causally connected merely because they can be arranged into a compelling story.
+
+                Editorial structure may make supported relationships clearer, but it must not create new relationships.
+
+                If the Narrative does not support a compelling angle, choose a simpler supported message rather than inventing one.
+
+                ### 8. Hashtags
 
                 Hashtags are optional.
 
-                If used, use only a small number of relevant hashtags directly supported by the subject of the Narrative.
+                If used, include only a small number directly relevant to the selected topic.
 
                 Do not add generic hashtags merely to increase reach.
 
-                ### Semantic boundary
+                ### 9. Final quality check
 
-                LinkedIn optimization is NOT permission to add meaning.
+                Before returning the post, verify internally:
 
-                Attention must come from the way the supplied meaning is expressed, not from invented significance.
+                - Is there exactly one primary topic?
+                - Does the opening communicate the strongest supported point?
+                - Does every paragraph contribute to the central message?
+                - Are there no more than two or three supporting points unless additional details are essential?
+                - Have repeated ideas and peripheral details been removed?
+                - Does the post progress naturally rather than summarize a series of statements?
+                - Does the ending complete the central thought without introducing another topic?
+                - Is every factual claim and relationship supported by the Narrative?
+                - Have unsupported implications, causes, motivations, and conclusions been avoided?
+                - Does the result read like a LinkedIn post rather than an executive summary?
 
-                Do not turn:
+                If any answer is no, revise the post before returning it.
 
-                "X happened"
-
-                into:
-
-                "X was a breakthrough."
-
-                Do not turn:
-
-                "X changed"
-
-                into:
-
-                "X changed everything."
-
-                Do not turn:
-
-                "X is part of the product"
-
-                into:
-
-                "X is the future of the product."
+                Return only the finished LinkedIn post. Do not include the selected topic, internal planning, quality checks, or an explanation of the editorial decisions.
 
                 ---
 
