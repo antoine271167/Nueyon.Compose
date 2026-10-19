@@ -320,8 +320,9 @@ public sealed class AgentCancellationTests
 
     private static SynthesisInput CreateTestSynthesisInput()
     {
+        var idea = new Idea("Test Idea", "Description", "Audience", "Rationale", "Evidence");
         var research = new ResearchForSynthesis("Test research");
-        return new SynthesisInput(research);
+        return new SynthesisInput(idea, research);
     }
 
     private static NarrativeInput CreateTestNarrativeInput()

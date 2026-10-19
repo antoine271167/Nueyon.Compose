@@ -177,6 +177,40 @@ public sealed class StoryWorkflowTests
     }
 
     [Fact]
+    public async Task RunAsync_PassesSelectedIdeaToSynthesizer()
+    {
+        // Arrange
+        const string ideaTitle = "Distinct Idea Title";
+        const string ideaDescription = "Distinct Description";
+        const string ideaAudience = "Product Managers";
+        const string ideaRationale = "Distinct Rationale";
+        const string ideaEvidence = "Source evidence here.";
+
+        var expectedIdea = new Idea(ideaTitle, ideaDescription, ideaAudience, ideaRationale, ideaEvidence);
+
+        var ideaAgent = new CapturingFakeAgent(expectedIdea);
+        var researchAgent = new FakeResearchAgent(new ResearchResult("Test research content"));
+        var synthesizer = new CapturingFakeSynthesizerAgent(new SynthesisResult("synthesis content"));
+        var narrativeAgent = new FakeNarrativeAgent(new NarrativeResult("narrative content"));
+        var composeAgent = new FakeComposeAgent(new ComposeResult("complete article content"));
+
+        var workflow = new StoryWorkflow(ideaAgent, researchAgent, synthesizer, narrativeAgent, composeAgent);
+        var input = new StoryInput("Test input");
+
+        // Act
+        await workflow.RunAsync(input);
+
+        // Assert
+        Assert.NotNull(synthesizer.CapturedInput);
+        Assert.NotNull(synthesizer.CapturedInput.SelectedIdea);
+        Assert.Equal(ideaTitle, synthesizer.CapturedInput.SelectedIdea.Title);
+        Assert.Equal(ideaDescription, synthesizer.CapturedInput.SelectedIdea.Description);
+        Assert.Equal(ideaAudience, synthesizer.CapturedInput.SelectedIdea.Audience);
+        Assert.Equal(ideaRationale, synthesizer.CapturedInput.SelectedIdea.Rationale);
+        Assert.Equal(ideaEvidence, synthesizer.CapturedInput.SelectedIdea.Evidence);
+    }
+
+    [Fact]
     public async Task RunAsync_WithCancellationToken_PropagatesTokenToAgent()
     {
         // Arrange

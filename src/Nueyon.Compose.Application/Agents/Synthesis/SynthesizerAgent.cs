@@ -427,6 +427,18 @@ public sealed class SynthesizerAgent(
 
          Do not create additional sections or JSON properties. Do not add commentary outside the required structured response.
 
+         ## SELECTED IDEA
+
+         **Title:** {input.SelectedIdea.Title}
+
+         **Description:** {input.SelectedIdea.Description}
+
+         **Audience:** {input.SelectedIdea.Audience}
+
+         **Rationale:** {input.SelectedIdea.Rationale}
+
+         **Evidence:** {input.SelectedIdea.Evidence}
+
          ## RESEARCH MATERIAL
 
          --- BEGIN RESEARCH MATERIAL ---

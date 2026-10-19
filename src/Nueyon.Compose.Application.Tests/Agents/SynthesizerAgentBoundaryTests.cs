@@ -48,7 +48,14 @@ public sealed class SynthesizerAgentBoundaryTests
         var aiAgent = messageCaptureClient.AsAIAgent("Test", "SynthesizerAgent");
         var synthesizerAgent = new SynthesizerAgent(aiAgent, logCapture);
 
-        var input = new SynthesisInput(new ResearchForSynthesis(filteredResearch));
+        var selectedIdea = new Idea(
+            "Compose Rename",
+            "The product was renamed from StoryFlow to Compose",
+            "Editorial Team",
+            "To illustrate naming decisions",
+            "Documentation shows the name change."
+        );
+        var input = new SynthesisInput(selectedIdea, new ResearchForSynthesis(filteredResearch));
         var executionContext = new AgentExecutionContext(Guid.NewGuid());
 
         // Act
@@ -85,6 +92,63 @@ public sealed class SynthesizerAgentBoundaryTests
 
         Assert.Contains("### Facts", messageText, StringComparison.Ordinal);
         Assert.Contains("### Unknowns", messageText, StringComparison.Ordinal);
+    }
+
+    [Fact]
+    public async Task ExecuteAsync_IncludesSelectedIdeaInUserMessage()
+    {
+        // Arrange
+        const string distinctIdeaTitle = "Distinctive Idea Title";
+        const string distinctDescription = "Distinctive Description Content";
+        const string distinctAudience = "Marketing Leaders";
+        const string distinctRationale = "Distinctive Rationale Content";
+        const string distinctEvidence = "Source provides evidence.";
+        const string researchContent = "### Facts\nSome research fact.";
+
+        var logCapture = new LogCapture();
+        var messageCaptureClient = new MessageCapturingChatClient();
+        var aiAgent = messageCaptureClient.AsAIAgent("Test", "SynthesizerAgent");
+        var synthesizerAgent = new SynthesizerAgent(aiAgent, logCapture);
+
+        var selectedIdea = new Idea(distinctIdeaTitle, distinctDescription, distinctAudience, distinctRationale, distinctEvidence);
+        var input = new SynthesisInput(selectedIdea, new ResearchForSynthesis(researchContent));
+        var executionContext = new AgentExecutionContext(Guid.NewGuid());
+
+        // Act
+        await synthesizerAgent.ExecuteAsync(executionContext, input, CancellationToken.None);
+
+        // Assert
+        var userMessage = messageCaptureClient.CapturedMessages
+            .FirstOrDefault(m => m.Role == ChatRole.User);
+
+        Assert.NotNull(userMessage);
+        var messageText = userMessage.Text;
+
+        // Verify the Selected Idea section exists and is separate from Research
+        Assert.Contains("## SELECTED IDEA", messageText, StringComparison.Ordinal);
+        Assert.Contains("## RESEARCH MATERIAL", messageText, StringComparison.Ordinal);
+
+        // Verify the Selected Idea appears before Research Material
+        var selectedIdeaIndex = messageText.IndexOf("## SELECTED IDEA", StringComparison.Ordinal);
+        var researchMaterialIndex = messageText.IndexOf("## RESEARCH MATERIAL", StringComparison.Ordinal);
+        Assert.True(selectedIdeaIndex < researchMaterialIndex, "Selected Idea should appear before Research Material");
+
+        // Verify all Selected Idea fields are present with their actual values
+        Assert.Contains(distinctIdeaTitle, messageText, StringComparison.Ordinal);
+        Assert.Contains(distinctDescription, messageText, StringComparison.Ordinal);
+        Assert.Contains(distinctAudience, messageText, StringComparison.Ordinal);
+        Assert.Contains(distinctRationale, messageText, StringComparison.Ordinal);
+        Assert.Contains(distinctEvidence, messageText, StringComparison.Ordinal);
+
+        // Verify field labels are present
+        Assert.Contains("**Title:**", messageText, StringComparison.Ordinal);
+        Assert.Contains("**Description:**", messageText, StringComparison.Ordinal);
+        Assert.Contains("**Audience:**", messageText, StringComparison.Ordinal);
+        Assert.Contains("**Rationale:**", messageText, StringComparison.Ordinal);
+        Assert.Contains("**Evidence:**", messageText, StringComparison.Ordinal);
+
+        // Verify Research content is still present
+        Assert.Contains(researchContent, messageText, StringComparison.Ordinal);
     }
 
     private sealed class MessageCapturingChatClient : IChatClient

@@ -171,10 +171,17 @@ public sealed class StoryWorkflow : IStoryWorkflow
         AgentExecutionContext executionContext) =>
         new(
             "synthesis",
-            async (research, _, cancellationToken) =>
+            async (research, context, cancellationToken) =>
             {
+                var selectedIdea = await context.ReadStateAsync<Idea>(
+                                        StoryWorkflowState.SelectedIdeaKey,
+                                        StoryWorkflowState.ScopeName,
+                                        cancellationToken)
+                                    ?? throw new InvalidOperationException(
+                                        "Selected Idea was not found in the StoryWorkflow state.");
+
                 var synthesisResearch = SynthesisResearchFilter.ExtractFactsAndUnknowns(research.Content);
-                var input = new SynthesisInput(new ResearchForSynthesis(synthesisResearch));
+                var input = new SynthesisInput(selectedIdea, new ResearchForSynthesis(synthesisResearch));
 
                 return await _synthesizer.ExecuteAsync(
                     executionContext,
