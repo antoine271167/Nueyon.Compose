@@ -86,242 +86,183 @@ public sealed class NarrativeAgent(
 
     private static string CreateUserMessage(NarrativeInput input) =>
         $"""
-         # Narrative — User Prompt
+         # NARRATIVE USER PROMPT
 
-         Create a concise editorial brief that enables Compose to produce compelling, well-written content in the requested output format.
+         ## ROLE
 
-         ## Input
+         Create a concise editorial brief that turns the Selected Idea and Synthesis into one clear, coherent story direction for the Compose stage.
+
+         You are defining **what the story is about and how it should develop**, not writing the final article or LinkedIn post.
+
+         The Compose stage will decide how to express the story for the requested content format.
+
+         ## INPUT
 
          ### Selected Idea
 
-         Title: {input.SelectedIdea.Title}
-         Description: {input.SelectedIdea.Description}
-         Audience: {input.SelectedIdea.Audience}
-         Rationale: {input.SelectedIdea.Rationale}
-         Evidence: {input.SelectedIdea.Evidence}
+         **Title**
+         {input.SelectedIdea.Title}
+
+         **Description**
+         {input.SelectedIdea.Description}
+
+         **Audience**
+         {input.SelectedIdea.Audience}
+
+         **Rationale**
+         {input.SelectedIdea.Rationale}
+
+         **Evidence**
+         {input.SelectedIdea.Evidence}
 
          ### Synthesis
 
          {input.Synthesis.Content}
 
-         ## Objective
+         ## OBJECTIVE
 
-         Turn the Selected Idea and its supporting Synthesis into one clear, compelling, focused story direction that Compose can express in the requested content format.
+         Define one focused story that:
 
-         **The Selected Idea defines what the story is about. Synthesis provides the evidence and context from which the story can be developed. Neither the availability of facts nor the plausibility of an interpretation permits unsupported claims or unnecessary expansion of the story.**
+         - Preserves the central subject and intended direction of the Selected Idea.
+         - Uses the Synthesis to establish what can be stated and which supporting details are relevant.
+         - Gives the reader enough context to understand the subject before presenting the central insight.
+         - Develops the idea in a logical progression rather than presenting disconnected facts.
+         - Gives Compose a clear foundation for producing engaging, natural, publishable content.
 
-         The goal is not merely to summarize the available information. Identify the most compelling story the evidence supports, preserve its factual boundaries, and give Compose enough editorial direction to communicate it effectively.
+         The result must be a story brief, not a research summary, evidence inventory, source report, or finished piece of writing.
 
-         ## Instructions
+         ## INSTRUCTIONS
 
          ### 1. Preserve the Selected Idea
 
-         - Identify the central point of the Selected Idea.
-         - Preserve its original meaning, focus, and intended message.
-         - Do not replace it with a broader topic suggested by Synthesis.
-         - Do not turn an insight about one specific development into a general explanation of the entire product or project.
-         - Treat the Selected Idea as the editorial objective, not as a rigid prescription of how the story must be told.
-         - If the Selected Idea contains an unsupported assertion, preserve its intended subject while narrowing the claim to what the evidence establishes.
+         The Selected Idea determines the subject and central direction of the story.
 
-         ### 2. Select Supporting Evidence
+         Use the Synthesis to develop that idea, not to replace it with a different topic simply because other information is available.
 
-         Use Synthesis to identify the facts, interpretations, examples, and context that can responsibly support the story.
+         Keep the story focused on one central idea. Include supporting details only when they help the reader understand that idea.
 
-         - Select details for both their evidential value and their ability to make the story clearer, more concrete, interesting, or memorable.
-         - Prefer the strongest illustrative details over a comprehensive list of related facts.
-         - Include context when it materially improves the reader's understanding of the central insight.
-         - Exclude details that do not strengthen the story, even when they are factually correct or relevant to the wider project.
-         - Do not include every product feature, workflow stage, architectural decision, naming decision, or implementation detail simply because it appears in Synthesis.
-         - Do not introduce facts or conclusions that are not supported by the input.
-         - Do not treat an item marked for emphasis in Synthesis as mandatory if including it would dilute the Selected Idea.
-         - If Synthesis contains a claim that conflicts with its own stated uncertainties or exceeds the underlying evidence, do not repeat the unsupported claim. Preserve only the defensible information.
+         Do not introduce additional topics that compete with the main story.
 
-         ### 3. Verify Claims and Relationships
+         ### 2. Establish the Reader's Context
 
-         Before using a factual statement in the story, determine exactly what the available evidence establishes.
+         Identify what the reader needs to understand before the central insight makes sense.
+
+         Start the story direction with the relevant situation, subject, experience, problem, development, or observation supported by the inputs.
+
+         Do not begin with an abstract conclusion that assumes the reader already knows the background.
+
+         Do not invent a personal experience, project history, problem, conflict, or starting assumption merely to create a more dramatic opening.
+
+         ### 3. Develop a Clear Story Progression
+
+         Organize the story into a natural progression:
+
+         1. **Context:** Establish the subject and the relevant background.
+         2. **Development:** Explain the key detail, change, discovery, contrast, or relationship that makes the subject interesting, if supported by the inputs.
+         3. **Central insight:** Make clear what the available material supports the reader in understanding.
+         4. **Resolution:** Identify the natural endpoint of the story, without inventing an outcome, recommendation, lesson, or conclusion.
+
+         These are conceptual stages, not mandatory sections in the final content. Use only the stages that fit the material.
+
+         Do not force every story into a personal journey, problem-and-solution structure, or transformation narrative.
+
+         ### 4. Use Evidence Selectively
+
+         Select the most relevant information from the Synthesis to support the story.
+
+         Prioritize details that explain the subject, establish necessary context, or help the reader follow the central idea.
+
+         Do not reproduce the Synthesis in full. Do not include facts simply because they are available.
 
          Distinguish between:
+         - What the input explicitly states.
+         - What can reasonably be rephrased without changing its meaning.
+         - What remains unknown or unsupported.
 
-         - **Established fact:** A statement directly supported by the Research as represented in Synthesis.
-         - **Documented relationship:** A connection, sequence, or relationship between facts that the source explicitly establishes.
-         - **Interpretation:** A meaning or explanation that goes beyond the directly stated facts.
-         - **Unknown:** A matter the available evidence does not establish.
+         Use the first two to shape the story. Treat the third as a boundary, not as content that must be discussed.
 
-         Use established facts and documented relationships as the factual foundation of the story. Interpretations may inform editorial judgment, but must not be presented as established facts unless independently supported.
+         ### 5. Preserve Meaning and Certainty
 
-         #### Validate compound claims
+         The Selected Idea and Synthesis are the boundaries of the story's meaning.
 
-         A statement may combine several individually supported facts while asserting an unsupported relationship between them.
+         Do not invent or infer:
+         - Facts, events, experiences, or outcomes.
+         - Motivations, intentions, or reasons that are not explicitly supported.
+         - Causal relationships that the inputs do not establish.
+         - Broader trends, implications, lessons, or recommendations.
+         - Claims about effectiveness, superiority, success, or impact without supporting evidence.
+         - Actors, collaborators, teams, or collective ownership that the inputs do not establish.
 
-         For every compound claim, check:
+         Preserve the original scope and level of certainty. A possibility must not become a fact, and a specific observation must not become a universal claim.
 
-         1. Is each factual component supported by the input?
-         2. Is the relationship between those components also supported?
-         3. Does the statement preserve the original actors, scope, chronology, and level of certainty?
-         4. Does the wording introduce a motivation, cause, intention, consequence, or conclusion that the evidence does not establish?
+         If information is missing, do not fill the gap with a plausible explanation.
 
-         If the individual facts are supported but their relationship is not, do not assert that relationship.
+         ### 6. Preserve Point of View and Ownership
 
-         For example, suppose the evidence establishes that an initial implementation supports Article only and separately states that the first implementation should remain small.
+         Represent who did, observed, decided, experienced, or developed something accurately.
 
-         You may report those facts independently. You must not conclude that Article was chosen specifically to validate the orchestration architecture unless the evidence explicitly establishes that reason.
+         Do not turn an individual's work into team work. Do not invent a first-person experience or attribute intentions to the author.
 
-         Likewise, if the evidence establishes that a project evolved from an AI agent toward an orchestrator, you may describe that documented evolution. You must not invent the technical problems, realization, motivation, or decision process that supposedly caused it.
+         Use first-person framing only when the inputs support the author's personal involvement and that perspective is relevant to the story.
 
-         **A plausible explanation is not an established explanation. Two supported facts do not automatically support the relationship between them.**
+         Avoid unnecessary references to a project, team, or source as if reporting what its documentation says. When the inputs support a direct statement, identify the actual subject and express the supported development directly.
 
-         #### Preserve uncertainty
+         ### 7. Define the Story, Not the Writing Style
 
-         - Do not invent motivations, reasons for decisions, causal relationships, results, metrics, comparisons, or outcomes.
-         - Do not claim that an approach is better than an alternative unless the input provides supporting evidence.
-         - Do not turn a possibility into a fact, a preference into a decision, or an intention into a completed implementation.
-         - Do not turn a conceptual design into an implemented capability.
-         - Do not turn an untested expectation into a demonstrated outcome.
-         - Do not attribute an action or decision to a team, individual, or role unless the evidence supports that attribution.
-         - Do not strengthen an uncertain chronology into a precise historical sequence.
-         - Do not generalize beyond the source.
+         Do not prescribe a finished opening sentence, rhetorical hook, paragraph structure, headline, or publication-specific style.
 
-         When a claim is only partially supported, narrow it to the supported portion or omit it.
+         Do not instruct Compose to quote the source material or reproduce particular phrases verbatim.
 
-         Do not add uncertainty disclaimers to the published story merely because the source contains unknowns. Record only the limitations that materially constrain what Compose may claim.
+         Identify the central insight and the sequence of ideas that make it understandable. Compose is responsible for turning that direction into effective writing for the requested format.
 
-         ### 4. Define a Compelling Story Progression
+         The story direction should work whether Compose produces an article or a LinkedIn post.
 
-         Describe how the central idea can develop into a coherent, engaging story.
+         ### 8. Avoid Research-Report Framing
 
-         Identify the most effective progression supported by the evidence. Where appropriate, consider:
+         The story is intended for a reader, not an auditor reviewing the underlying material.
 
-         1. **Starting point:** The situation, assumption, question, or problem that makes the story worth exploring.
-         2. **Key development:** The change, discovery, contrast, example, or insight that advances the story.
-         3. **Significance:** What the reader can understand or take away from the development.
+         Do not make the story about:
+         - What the documentation records or fails to record.
+         - What the research or synthesis says.
+         - Which evidence is missing from the inputs.
+         - A list of caveats included merely to demonstrate caution.
+         - The process by which the source material was assembled.
 
-         These are editorial possibilities, not mandatory story beats. Use the progression that best serves the Selected Idea.
+         Use uncertainty and evidence limitations to control what can be claimed. Mention a limitation in the story direction only when it is itself materially relevant to the central subject and explicitly supported by the inputs.
 
-         - Prefer a meaningful development over a chronological inventory of events.
-         - Identify a useful contrast, tension, concrete example, or surprising implication when the evidence supports it.
-         - Ensure the story has a clear through-line and a meaningful payoff.
-         - Select the strongest available detail that makes the central insight understandable or memorable.
-         - Do not manufacture conflict, surprise, failure, realization, emotional reaction, or resolution to make the story more dramatic.
-         - Do not invent an obstacle, turning point, lesson learned, or successful outcome.
-         - Do not imply that an event caused another event merely because the sequence would make a more satisfying story.
-         - Do not force the story into a beginning-development-conclusion structure when the evidence supports a different progression.
+         Do not manufacture a defensive disclaimer or a conclusion about what cannot be proven.
 
-         The objective is compelling storytelling grounded in evidence, not a dramatic reconstruction of events the source does not establish.
+         ## OUTPUT FORMAT
 
-         ### 5. Keep the Story Focused Without Making It Shallow
-
-         - Build the brief around one central idea.
-         - Prefer a compelling, coherent story over a comprehensive project summary.
-         - Include secondary details when they materially strengthen the reader's understanding of the central idea.
-         - Do not exclude useful context merely to make the story shorter.
-         - Do not add secondary themes merely because they are interesting or relevant to the wider project.
-         - Include product or implementation details only when they help explain, substantiate, or illustrate the central story.
-         - Do not instruct Compose to explain the complete architecture, every workflow stage, the entire product vision, or the full development history unless the Selected Idea specifically concerns those subjects.
-         - Do not require every detail identified as relevant in Synthesis to appear in the story.
-         - Prefer a small number of meaningful, well-supported details over a catalogue of facts.
-
-         A detail should earn its place by helping the reader understand, appreciate, or remember the central insight.
-
-         ### 6. Define the Story's Meaning, Not Its Presentation
-
-         Narrative is format-independent. Compose determines how the story is expressed in the requested content format.
-
-         - Define the story's meaning, progression, evidence, and essential context independently of the eventual output format.
-         - Do not assume that Compose will produce an article, LinkedIn post, newsletter, or any other specific format.
-         - Do not prescribe platform-specific hooks, paragraph lengths, formatting conventions, calls to action, or content structures.
-         - Do not optimize the story for the length or conventions of a particular publishing platform.
-         - Give Compose the editorial substance it needs to adapt the story to the requested format without changing its meaning.
-
-         Narrative should identify what makes the story worth telling. Compose should decide how best to present it.
-
-         ### 7. Define the Brief, Not the Final Content
-
-         - Do not write publication-ready paragraphs, an introduction, a conclusion, or a complete draft.
-         - Do not prescribe the content of every paragraph.
-         - Identify the central message, essential story progression, and most valuable supporting details.
-         - Give Compose sufficient editorial direction to produce engaging content independently.
-         - Keep the brief concise, specific, and useful.
-         - Concision must not come at the expense of essential context or a meaningful story progression.
-
-         ## Output Format
+         Return the editorial brief using exactly these sections:
 
          ### Selected Story
-
-         State the central story in 1–2 sentences.
-
-         Preserve the original meaning of the Selected Idea and identify the main insight the content should communicate.
-
-         The statement must describe the strongest defensible version of the story, not combine the central insight with every relevant product or implementation detail.
+         State the central story in one concise paragraph. Identify the subject, the main development or insight, and why it is a coherent story direction for the intended audience. Do not add unsupported significance.
 
          ### Story Progression
+         Provide 3–4 concise bullet points describing the logical progression of the story, from the context the reader needs to the central insight and its natural endpoint.
 
-         Provide 3–4 concise bullet points describing the essential progression of the story.
-
-         Each point must advance the same central idea. Include the strongest supporting details where they materially improve the story.
-
-         For every point:
-
-         - Use only facts and relationships supported by the input.
-         - Preserve uncertainty about motivations, causes, attribution, chronology, and outcomes.
-         - Avoid turning contextual information into an additional central theme.
-         - Identify a useful example or contrast when it helps make the story more compelling.
-         - Do not prescribe platform-specific presentation.
-
-         The points should provide an editorial direction, not a mandatory checklist of everything Compose must include.
+         Each bullet must contribute a distinct step. Avoid repetition and do not turn the bullets into instructions to report sources or limitations.
 
          ### Critical Constraints
+         List only the specific factual boundaries that Compose must respect to tell this story accurately. Include this section only when there are meaningful constraints beyond the general requirement to preserve the inputs' meaning.
 
-         List the essential factual boundaries and unsupported claims that Compose must avoid.
+         Do not use this section to repeat the story, summarize missing information, or list generic warnings.
 
-         Prioritize specific risks identified in the input, such as:
+         ## FINAL VALIDATION
 
-         - An unknown motivation that could be mistaken for an established reason.
-         - A causal relationship that the source does not establish.
-         - An attribution or historical sequence that remains uncertain.
-         - An untested expectation that could be presented as a proven result.
-         - A conceptual capability that could be mistaken for an implemented feature.
+         Before returning the brief, verify that:
 
-         State the boundary precisely enough for Compose to apply it.
+         - The story remains faithful to the Selected Idea.
+         - Every substantive statement is supported by the inputs.
+         - The reader receives sufficient context before the central insight.
+         - The story has one clear focus and a logical progression.
+         - The point of view, actors, and ownership are represented accurately.
+         - Unknowns and limitations constrain the story without becoming unnecessary content.
+         - The brief describes the story to tell, rather than how the source material was documented.
+         - Compose has enough direction to write naturally without being forced to repeat source wording.
 
-         Do not list every Research Unknown. Include only constraints that materially affect the story.
-
-         If no additional constraints are necessary, state that explicitly.
-
-         ## Final Validation
-
-         Before producing the output, verify that:
-
-         ### Editorial alignment
-
-         - The Selected Story preserves the original Selected Idea.
-         - The Selected Idea, not the breadth of Synthesis, determines the story's focus.
-         - The story direction is compelling, coherent, and supported by the available evidence.
-         - Supporting details have been selected for their explanatory and narrative value, not merely their relevance.
-         - Unnecessary project, product, and architecture details have been excluded without removing essential context.
-         - The progression offers a meaningful development and payoff where the evidence supports them.
-
-         ### Factual reasoning
-
-         - Every factual claim is supported by the input.
-         - Each compound claim has been checked for support for both its individual facts and the relationships it asserts.
-         - No unsupported meaning, motivation, causality, attribution, chronology, or conclusion has been introduced.
-         - Interpretations have not been silently promoted to established facts.
-         - Uncertainty is preserved wherever it materially affects the claims Compose may make.
-         - No unsupported explanation has been added merely to make the story more compelling.
-
-         ### Downstream usability
-
-         - Compose receives enough evidence and context to write a compelling piece of content.
-         - Critical constraints identify the specific claims that must not be made.
-         - The brief remains independent of the eventual output format.
-         - Compose retains freedom to choose the presentation, structure, and style appropriate to the requested format.
-         - The brief is an editorial direction, not a rigid outline or a disguised draft.
-
-         If any check fails, revise the brief before returning it.
-
-         **Priority rule:** Preserve the Selected Idea while developing the most compelling story the evidence supports. Select details for their explanatory and narrative value. Validate both individual facts and the relationships between them. Never invent a motivation, cause, event, or outcome to improve the story, and never sacrifice meaningful storytelling merely to make the brief shorter.
-
-         Research and Synthesis provide the boundaries of what can be claimed. Within those boundaries, choose the story direction that gives Compose the best opportunity to produce clear, engaging, memorable content.
+         Return only the editorial brief. Do not include commentary about your process or the quality of the inputs.
          """;
 
     private static ChatClientAgentRunOptions CreateAgentRunOptions()
