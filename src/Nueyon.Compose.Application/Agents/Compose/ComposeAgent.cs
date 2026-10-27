@@ -822,6 +822,13 @@ public sealed class ComposeAgent(
          - Are actors and ownership represented accurately?
          - Have architectural concepts been kept separate from unprovided implementation details?
 
+         ### Do not manufacture a reader takeaway
+
+         - Do not automatically end with advice, a recommendation, a universal principle, or a call to action.
+         - The subject of the content determines its ending. When the content describes a company's product philosophy or development direction, conclude by clarifying that philosophy or direction. Do not turn it into advice for the audience unless the Narrative explicitly establishes that purpose and the source supports the recommendation.
+         - Do not infer that an approach produces repeatability, reliability, productivity, performance improvements, or other benefits merely because the source describes its design.
+         - Do not restate the central claim multiple times to create a conclusion. Each paragraph must advance the explanation, add necessary context, or clarify a distinct aspect of the story. Remove paragraphs that only repeat an already established point.
+
          ### Story and context
 
          - Can a reader unfamiliar with the subject understand the opening?
