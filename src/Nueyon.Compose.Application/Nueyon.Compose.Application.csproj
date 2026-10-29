@@ -18,6 +18,10 @@
   </ItemGroup>
 
   <ItemGroup>
+	<EmbeddedResource Include="Prompts\**\*.prompt.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
 	<InternalsVisibleTo Include="Nueyon.Compose.Application.Tests" />
   </ItemGroup>
 
