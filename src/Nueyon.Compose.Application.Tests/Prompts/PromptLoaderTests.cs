@@ -101,6 +101,10 @@ public class PromptLoaderTests
     [Theory]
     [InlineData("input.Synthesis.Content")]
     [InlineData("Source_Content")]
+    [InlineData("1Name")]
+    [InlineData("Name-With-Hyphen")]
+    [InlineData("Name With Space")]
+    [InlineData("")]
     public void RenderTemplate_UnsupportedPlaceholderName_ThrowsNamingPromptAndExpression(string name)
     {
         var ex = Assert.Throws<InvalidOperationException>(() =>
@@ -130,6 +134,28 @@ public class PromptLoaderTests
             ("Name", "{{input.Content}} {{A_B}}"));
 
         Assert.Equal("{{input.Content}} {{A_B}}", result);
+    }
+
+    [Theory]
+    [InlineData("{{UnexpectedToken}}")]
+    [InlineData("{{input.Content}}")]
+    [InlineData("{{A_B}}")]
+    [InlineData("{{Name-With-Hyphen}}")]
+    [InlineData("{{Name}}")]
+    public void RenderTemplate_ValueWithTokenLikeText_IsPreservedLiterally(string value)
+    {
+        var result = PromptLoader.RenderTemplate("X/Test.prompt.txt", "a {{Name}} b", ("Name", value));
+
+        Assert.Equal("a " + value + " b", result);
+    }
+
+    [Theory]
+    [InlineData("{{Name}}", "Name", "v")]
+    [InlineData("{{SourceContent}}", "SourceContent", "v")]
+    [InlineData("{{Token123}}", "Token123", "v")]
+    public void RenderTemplate_ValidPlaceholder_IsReplaced(string template, string name, string value)
+    {
+        Assert.Equal(value, PromptLoader.RenderTemplate("X/Test.prompt.txt", template, (name, value)));
     }
 
     [Fact]

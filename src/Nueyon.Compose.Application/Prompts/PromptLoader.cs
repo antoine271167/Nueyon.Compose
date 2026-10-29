@@ -12,8 +12,8 @@ internal static partial class PromptLoader
     private const string ResourcePrefix = "Nueyon.Compose.Application.Prompts.";
     private static readonly Assembly _assembly = typeof(PromptLoader).Assembly;
 
-    // Matches placeholder-like expressions in a template, including unsupported names (dots, underscores).
-    [GeneratedRegex(@"\{\{([A-Za-z_][A-Za-z0-9_.]*)\}\}")]
+    // Matches every complete double-brace expression on one line; the content is validated separately.
+    [GeneratedRegex(@"\{\{([^{}\r\n]*)\}\}")]
     private static partial Regex TokenRegex();
 
     // The only supported token name shape.
