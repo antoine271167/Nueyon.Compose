@@ -115,7 +115,7 @@ public sealed class NarrativeComposeBoundaryTests
         Assert.Contains("LinkedInPost", userMessage.Text, StringComparison.Ordinal);
         Assert.Contains("ATTENTION + READABILITY + ENGAGEMENT + FACTUAL INTEGRITY", userMessage.Text, StringComparison.Ordinal);
         Assert.Contains(
-            "Attention must come from the way the supplied meaning is expressed, not from invented significance.",
+            "Write a LinkedIn post that is easy to read in a professional social feed",
             userMessage.Text,
             StringComparison.Ordinal);
     }

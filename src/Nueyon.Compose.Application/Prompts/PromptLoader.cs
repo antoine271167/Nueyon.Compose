@@ -12,8 +12,13 @@ internal static partial class PromptLoader
     private const string ResourcePrefix = "Nueyon.Compose.Application.Prompts.";
     private static readonly Assembly _assembly = typeof(PromptLoader).Assembly;
 
-    [GeneratedRegex(@"\{\{([A-Za-z][A-Za-z0-9]*)\}\}")]
+    // Matches placeholder-like expressions in a template, including unsupported names (dots, underscores).
+    [GeneratedRegex(@"\{\{([A-Za-z_][A-Za-z0-9_.]*)\}\}")]
     private static partial Regex TokenRegex();
+
+    // The only supported token name shape.
+    [GeneratedRegex(@"^[A-Za-z][A-Za-z0-9]*$")]
+    private static partial Regex ValidNameRegex();
 
     /// <summary>
     ///     Loads a prompt template as UTF-8 text.
@@ -40,9 +45,17 @@ internal static partial class PromptLoader
     /// <exception cref="InvalidOperationException">
     ///     Thrown when the template contains a token without a supplied value, or a supplied value is not used.
     /// </exception>
-    public static string Render(string promptPath, params (string Name, string Value)[] values)
+    public static string Render(string promptPath, params (string Name, string Value)[] values) =>
+        RenderTemplate(promptPath, Load(promptPath), values);
+
+    /// <summary>
+    ///     Renders the given template text. Only the template is scanned for <c>{{Name}}</c> expressions;
+    ///     names outside <c>[A-Za-z][A-Za-z0-9]*</c> (for example dotted or underscored) are rejected.
+    ///     All other braces are ordinary text, and inserted values are never scanned.
+    /// </summary>
+    internal static string RenderTemplate(string promptPath, string template,
+        params (string Name, string Value)[] values)
     {
-        var template = Load(promptPath);
         var lookup = new Dictionary<string, string>(StringComparer.Ordinal);
         foreach (var (name, value) in values)
         {
@@ -56,10 +69,17 @@ internal static partial class PromptLoader
 
         var used = new HashSet<string>(StringComparer.Ordinal);
         var missing = new SortedSet<string>(StringComparer.Ordinal);
+        var malformed = new SortedSet<string>(StringComparer.Ordinal);
 
         var rendered = TokenRegex().Replace(template, match =>
         {
             var name = match.Groups[1].Value;
+            if (!ValidNameRegex().IsMatch(name))
+            {
+                malformed.Add(match.Value);
+                return match.Value;
+            }
+
             if (lookup.TryGetValue(name, out var value))
             {
                 used.Add(name);
@@ -69,6 +89,12 @@ internal static partial class PromptLoader
             missing.Add(name);
             return match.Value;
         });
+
+        if (malformed.Count > 0)
+        {
+            throw new InvalidOperationException(
+                $"Prompt '{promptPath}' has unsupported placeholders: {string.Join(", ", malformed)}.");
+        }
 
         if (missing.Count > 0)
         {

@@ -6,20 +6,19 @@ namespace Nueyon.Compose.Application.Tests.Prompts;
 public class PromptLoaderTests
 {
     public static IEnumerable<object[]> AllPrompts =>
-    new[]
-    {
-        new object[] { "Idea/Idea.system.prompt.txt" },
-        new object[] { "Idea/Idea.user.prompt.txt" },
-        new object[] { "Research/Research.system.prompt.txt" },
-        new object[] { "Research/Research.user.prompt.txt" },
-        new object[] { "Synthesis/Synthesis.system.prompt.txt" },
-        new object[] { "Synthesis/Synthesis.user.prompt.txt" },
-        new object[] { "Narrative/Narrative.system.prompt.txt" },
-        new object[] { "Narrative/Narrative.user.prompt.txt" },
-        new object[] { "Compose/Compose.system.prompt.txt" },
-        new object[] { "Compose/Compose.article.user.prompt.txt" },
-        new object[] { "Compose/Compose.linkedin.user.prompt.txt" }
-    };
+    [
+        ["Idea/Idea.system.prompt.txt"],
+        ["Idea/Idea.user.prompt.txt"],
+        ["Research/Research.system.prompt.txt"],
+        ["Research/Research.user.prompt.txt"],
+        ["Synthesis/Synthesis.system.prompt.txt"],
+        ["Synthesis/Synthesis.user.prompt.txt"],
+        ["Narrative/Narrative.system.prompt.txt"],
+        ["Narrative/Narrative.user.prompt.txt"],
+        ["Compose/Compose.system.prompt.txt"],
+        ["Compose/Compose.article.user.prompt.txt"],
+        ["Compose/Compose.linkedin.user.prompt.txt"]
+    ];
 
     [Theory]
     [MemberData(nameof(AllPrompts))]
@@ -80,13 +79,57 @@ public class PromptLoaderTests
     }
 
     [Fact]
-    public void Render_InsertedValue_IsNotProcessedRecursively()
+    public void Render_ValueContainingDifferentTokenLikeText_IsKeptLiterally()
+    {
+        var result = PromptLoader.Render(
+            "Idea/Idea.user.prompt.txt",
+            ("SourceContent", "before {{UnexpectedToken}} after"));
+
+        Assert.Contains("before {{UnexpectedToken}} after", result);
+    }
+
+    [Fact]
+    public void Render_ValueContainingOwnTokenName_IsNotReExpanded()
     {
         var template = PromptLoader.Load("Idea/Idea.user.prompt.txt");
 
         var result = PromptLoader.Render("Idea/Idea.user.prompt.txt", ("SourceContent", "{{SourceContent}}"));
 
         Assert.Equal(template, result);
+    }
+
+    [Theory]
+    [InlineData("input.Synthesis.Content")]
+    [InlineData("Source_Content")]
+    public void RenderTemplate_UnsupportedPlaceholderName_ThrowsNamingPromptAndExpression(string name)
+    {
+        var ex = Assert.Throws<InvalidOperationException>(() =>
+            PromptLoader.RenderTemplate("X/Test.prompt.txt", "a {{" + name + "}} b"));
+
+        Assert.Contains("{{" + name + "}}", ex.Message);
+        Assert.Contains("X/Test.prompt.txt", ex.Message);
+    }
+
+    [Fact]
+    public void RenderTemplate_JsonAndSingleBraces_AreOrdinaryText()
+    {
+        var result = PromptLoader.RenderTemplate(
+            "X/Test.prompt.txt",
+            "{\"a\": {\"b\": 1}} {x} {{Name}}",
+            ("Name", "v"));
+
+        Assert.Equal("{\"a\": {\"b\": 1}} {x} v", result);
+    }
+
+    [Fact]
+    public void RenderTemplate_ValueWithUnsupportedPlaceholderText_IsNotRejected()
+    {
+        var result = PromptLoader.RenderTemplate(
+            "X/Test.prompt.txt",
+            "{{Name}}",
+            ("Name", "{{input.Content}} {{A_B}}"));
+
+        Assert.Equal("{{input.Content}} {{A_B}}", result);
     }
 
     [Fact]
