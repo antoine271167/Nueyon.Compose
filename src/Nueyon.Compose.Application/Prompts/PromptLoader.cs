@@ -46,7 +46,12 @@ internal static partial class PromptLoader
         var lookup = new Dictionary<string, string>(StringComparer.Ordinal);
         foreach (var (name, value) in values)
         {
-            lookup[name] = value;
+            if (!lookup.TryAdd(name, value))
+            {
+                throw new ArgumentException(
+                    $"Prompt '{promptPath}' was given token '{name}' more than once.",
+                    nameof(values));
+            }
         }
 
         var used = new HashSet<string>(StringComparer.Ordinal);
