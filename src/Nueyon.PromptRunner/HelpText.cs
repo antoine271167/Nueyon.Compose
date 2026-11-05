@@ -70,6 +70,7 @@ internal static class HelpText
           A '{' followed by anything else (quote, space, newline) is literal, so JSON such as
           {"a": 1} or an object opened with '{' and a newline needs no escaping.
           For literal text that would look like a placeholder (e.g. {1,2}), write {{1,2}}.
+          Escapes are processed left to right: {{{input.Title}}} renders {Hello}; {{{{x}}}} renders {{x}}.
 
         YAML DATA
           Any structure of nested mappings. Referenced leaves must be scalars

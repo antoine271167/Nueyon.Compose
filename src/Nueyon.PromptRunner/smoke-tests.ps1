@@ -75,6 +75,32 @@ try {
 	$r = Run @('--system', $sys, '--user', $usr, '--data', $badYaml, '--validate'); Check 'invalid YAML exit 1' ($r.Code -eq 1) $r
 	$r = Run @('--system', "$tmp/none.md", '--user', $usr, '--data', $yml, '--validate'); Check 'missing file exit 1' ($r.Code -eq 1) $r
 
+	# Escape regression: assert the exact rendered user prompt.
+	$escYaml = W 'esc.yaml' "input:`n  Title: Hello`n  B: World`n"
+	$escSys = W 'esc.sys.md' 'x'
+	$escCases = @(
+		@('{input.Title}', 'Hello'),
+		@('{{input.Title}}', '{input.Title}'),
+		@('{{literal}}', '{literal}'),
+		@('{{{input.Title}}}', '{Hello}'),
+		@('{{"title": "example"}}', '{"title": "example"}'),
+		@('{"title": "example"}', '{"title": "example"}'),
+		@('{input.Title}{input.B}', 'HelloWorld'),
+		@('{{a}} {{b}} {input.Title}', '{a} {b} Hello'),
+		@('{"k": "{input.Title}"}', '{"k": "Hello"}'),
+		@('{{{{x}}}}', '{{x}}')
+	)
+	$ei = 0
+	foreach ($ec in $escCases) {
+		$ei++
+		$eu = W "esc$ei.md" $ec[0]
+		$r = Run @('--system', $escSys, '--user', $eu, '--data', $escYaml, '--print-rendered')
+		$parts = $r.Out -split "===== USER =====`n"
+		$actual = ''
+		if ($parts.Count -gt 1) { $actual = ($parts[1] -split "`n===== END =====")[0].TrimEnd("`r", "`n") }
+		Check "escape exact: $($ec[0]) => $($ec[1])" (($r.Code -eq 0) -and ($actual -ceq $ec[1])) $r
+	}
+
 	# Rendering errors: exit 2, filename, line number, offending expression.
 	$cases = @(
 		@{ n = 'missing'; t = '{input.nope}'; m = '\{input\.nope\}' },
