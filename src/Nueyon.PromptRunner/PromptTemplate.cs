@@ -8,8 +8,11 @@ internal sealed class RenderException(string message) : Exception(message);
 
 internal static partial class PromptTemplate
 {
-    // Alternatives: escaped open brace, escaped close brace, valid placeholder, malformed placeholder-like token.
-    [GeneratedRegex(@"\{\{|\}\}|\{(?<path>[A-Za-z_][A-Za-z0-9_]*(?:\.[A-Za-z0-9_]+)*)\}|\{(?<bad>[A-Za-z0-9_.\-]*)\}")]
+    // Alternatives: escaped braces, valid placeholder, malformed placeholder attempt.
+    // A '{' followed directly by a letter, digit, '_', '.' or '}' is a placeholder attempt and must be valid.
+    // Any other '{' (e.g. followed by a quote, whitespace or newline, as in JSON) is literal text.
+    [GeneratedRegex(
+        @"\{\{|\}\}|\{(?<path>[A-Za-z_][A-Za-z0-9_]*(?:\.[A-Za-z0-9_]+)*)\}|\{(?<bad>[A-Za-z0-9_.][^\s{}""]*\}?|\})")]
     private static partial Regex TokenRegex();
 
     public static object? LoadYaml(string text) => new DeserializerBuilder().Build().Deserialize<object?>(text);

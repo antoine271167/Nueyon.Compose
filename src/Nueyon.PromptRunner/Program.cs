@@ -9,7 +9,7 @@ return await Run(args);
 
 static async Task<int> Run(string[] args)
 {
-    string? system = null, user = null, data = null;
+    var options = new Dictionary<string, string>(StringComparer.Ordinal);
     var validate = false;
     var printRendered = false;
 
@@ -35,30 +35,31 @@ static async Task<int> Run(string[] args)
             case "--system":
             case "--user":
             case "--data":
+            case "--config":
+                var name = args[i];
                 if (i + 1 >= args.Length || args[i + 1].StartsWith("--", StringComparison.Ordinal))
                 {
-                    return Fail(1, $"Missing value for {args[i]}.");
+                    return Fail(1, $"Missing value for {name}.");
                 }
 
-                var value = args[++i];
-                if (args[i - 1] == "--system")
+                if (!options.TryAdd(name, args[++i]))
                 {
-                    system = value;
-                }
-                else if (args[i - 1] == "--user")
-                {
-                    user = value;
-                }
-                else
-                {
-                    data = value;
+                    return Fail(1, $"Duplicate argument {name}.");
                 }
 
                 break;
             default:
-                return Fail(1, $"Unknown argument '{args[i]}'. Use --help.");
+                return Fail(1,
+                    args[i].StartsWith("--", StringComparison.Ordinal)
+                        ? $"Unknown argument '{args[i]}'. Use --help."
+                        : $"Unexpected positional argument '{args[i]}'. Use --help.");
         }
     }
+
+    options.TryGetValue("--system", out var system);
+    options.TryGetValue("--user", out var user);
+    options.TryGetValue("--data", out var data);
+    options.TryGetValue("--config", out var explicitConfig);
 
     if (system is null || user is null || data is null)
     {
@@ -115,13 +116,19 @@ static async Task<int> Run(string[] args)
     string provider, model;
     try
     {
-        var configPath = Path.Combine(AppContext.BaseDirectory, "appsettings.json");
+        var cwdConfig = Path.Combine(Directory.GetCurrentDirectory(), "appsettings.json");
+        var configPath = explicitConfig is not null
+            ? Path.GetFullPath(explicitConfig)
+            : File.Exists(cwdConfig)
+                ? cwdConfig
+                : Path.Combine(AppContext.BaseDirectory, "appsettings.json");
         using var doc = JsonDocument.Parse(File.ReadAllText(configPath));
         var llm = doc.RootElement.GetProperty("Llm");
         provider = llm.GetProperty("Provider").GetString() ?? "";
         model = llm.GetProperty("Model").GetString() ?? "";
     }
-    catch (Exception ex) when (ex is IOException or JsonException or KeyNotFoundException or InvalidOperationException)
+    catch (Exception ex) when (ex is IOException or JsonException or KeyNotFoundException or InvalidOperationException
+                                   or UnauthorizedAccessException or ArgumentException or NotSupportedException)
     {
         return Fail(1, $"Invalid or missing appsettings.json (Llm:Provider, Llm:Model required): {ex.Message}");
     }

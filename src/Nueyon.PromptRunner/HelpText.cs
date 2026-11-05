@@ -9,7 +9,7 @@ internal static class HelpText
         Pipeline: Load -> Render -> Execute -> Output
 
         USAGE
-          Nueyon.PromptRunner --system <path> --user <path> --data <path> [--validate | --print-rendered]
+          Nueyon.PromptRunner --system <path> --user <path> --data <path> [--config <path>] [--validate | --print-rendered]
           Nueyon.PromptRunner --help | --help-templates | --example
 
         REQUIRED (for running, --validate and --print-rendered)
@@ -18,6 +18,7 @@ internal static class HelpText
           --data <path>       YAML file with placeholder values
 
         OPTIONAL
+          --config <path>     LLM configuration file (see CONFIGURATION)
           --help              Show this help
           --help-templates    Explain placeholder and YAML syntax
           --example           Show a complete working example
@@ -32,8 +33,17 @@ internal static class HelpText
           Normal run: stdout contains only the model's response. Errors and diagnostics go to stderr.
 
         CONFIGURATION
-          appsettings.json next to the executable: Llm:Provider (only "OpenAI") and Llm:Model.
+          JSON file with Llm:Provider (only "OpenAI") and Llm:Model, read on every run.
+          Precedence: 1) --config <path> (must exist; no fallback if invalid)
+                      2) appsettings.json in the current working directory
+                      3) appsettings.json next to the executable
           Credentials: environment variable OPENAI_API_KEY.
+
+        ARGUMENT RULES
+          Each of --system, --user, --data, --config may be given once; duplicates are an error.
+          Unknown options, positional arguments and missing values are errors (exit 1).
+          --validate and --print-rendered cannot be combined.
+          Informational options (--help, --help-templates, --example) need no other arguments.
 
         EXIT CODES
           0 success
@@ -52,15 +62,19 @@ internal static class HelpText
                             the first segment must not start with a digit.
           Example: {input.SelectedIdea.Title}
 
-        LITERAL BRACES
+        LITERAL BRACES AND MALFORMED PLACEHOLDERS
           {{ renders as {   and   }} renders as }
-          Single braces not forming a placeholder (e.g. {"a": 1} or a lone '{') stay literal.
-          Note: '{}' or '{some-text}' is treated as a malformed placeholder; write {{}} or {{some-text}}.
+          A '{' directly followed by a letter, digit, '_', '.' or '}' is a placeholder attempt and
+          must be a valid placeholder, otherwise rendering fails (exit 2). Errors, for example:
+          {input.Title!}  {input..Title}  {input.Title  {input.Title-name}  {}
+          A '{' followed by anything else (quote, space, newline) is literal, so JSON such as
+          {"a": 1} or an object opened with '{' and a newline needs no escaping.
+          For literal text that would look like a placeholder (e.g. {1,2}), write {{1,2}}.
 
         YAML DATA
           Any structure of nested mappings. Referenced leaves must be scalars
           (string, number, boolean). Multiline strings (| or >) are supported and inserted verbatim.
-          Scalars are inserted as written in the YAML text.
+          Scalars are inserted as written in the YAML text; null, mapping and list values fail.
 
         ERRORS
           Missing values, null values, mappings/lists, and malformed placeholders fail with exit code 2
