@@ -74,7 +74,12 @@ internal static class HelpText
         YAML DATA
           Any structure of nested mappings. Referenced leaves must be scalars
           (string, number, boolean). Multiline strings (| or >) are supported and inserted verbatim.
-          Scalars are inserted as written in the YAML text; null, mapping and list values fail.
+          YAML is deserialized before rendering. Every scalar becomes its text value:
+          strings (including multiline | and > blocks) are inserted with their parsed content;
+          numbers and booleans keep their YAML notation (1.50 stays 1.50, True stays True,
+          true stays true); no number or culture formatting is applied. Quote or normalize
+          values in the YAML if a specific representation is required.
+          Null values fail; mappings and lists cannot be inserted and fail.
 
         ERRORS
           Missing values, null values, mappings/lists, and malformed placeholders fail with exit code 2

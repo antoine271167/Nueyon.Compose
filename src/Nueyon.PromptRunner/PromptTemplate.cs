@@ -1,4 +1,3 @@
-using System.Globalization;
 using System.Text.RegularExpressions;
 using YamlDotNet.Serialization;
 
@@ -34,7 +33,7 @@ internal static partial class PromptTemplate
             if (m.Groups["bad"].Success)
             {
                 throw new RenderException(
-                    $"{fileLabel}: malformed placeholder '{m.Value}' at line {LineOf(template, m.Index)}. Use {{a.b.c}} or escape literal braces as {{{{ and }}}}.");
+                    $"{fileLabel}: malformed placeholder '{m.Value}' at line {LineOf(template, m.Index)}. Expected syntax: {{path.to.value}} (escape literal braces as {{{{ and }}}}).");
             }
 
             return Resolve(m.Groups["path"].Value, data, fileLabel, LineOf(template, m.Index));
@@ -56,8 +55,6 @@ internal static partial class PromptTemplate
         return current switch
         {
             string s => s,
-            IFormattable f => f.ToString(null, CultureInfo.InvariantCulture),
-            bool b => b ? "true" : "false",
             null => throw new RenderException($"{fileLabel}: placeholder '{{{path}}}' at line {line} is null."),
             _ => throw new RenderException(
                 $"{fileLabel}: placeholder '{{{path}}}' at line {line} refers to a mapping or list; only scalar values are supported.")
