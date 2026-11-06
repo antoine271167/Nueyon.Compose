@@ -1,0 +1,36 @@
+{
+  "experiment": "001",
+  "gitCommit": "de6b479fb7dd4175b803834f3428528de73a2dd6",
+  "dotnetSdk": "10.0.401",
+  "provider": "OpenAI",
+  "requestedModel": "gpt-5-mini",
+  "modelConfiguration": "Compose console appsettings.json, no effective override",
+  "startedUtc": "2026-11-06T14:11:53.0477068+00:00",
+  "endedUtc": "2026-11-06T14:12:28.9390492+00:00",
+  "exitCode": 0,
+  "command": "dotnet .build/Nueyon.PromptRunner.dll --system prompts/runner/Idea.system.prompt.txt --user prompts/runner/Idea.user.prompt.txt --data experiment-001.yaml --config appsettings.json",
+  "validationFlags": [
+    "--validate",
+    "--print-rendered"
+  ],
+  "validationExitCodes": [
+    0,
+    0
+  ],
+  "renderMatchesCompose": true,
+  "sourceMapping": "StoryInput.Content -> SourceContent (one complete Markdown source inside Compose console source markers)",
+  "requestOptions": "PromptRunner SDK defaults, no response schema and no Compose validation loop",
+  "apiResponseMetadata": "PromptRunner exposes response text only",
+  "sha256": {
+    "input/Noeyon-Product-Strategy-reconstructed.md": "DB7A9CF4768684C025D02028980E16CCE8805832E1013A5B6098C00D29E8F2D0",
+    "prompts/original/Idea.system.prompt.txt": "E98B756C9088B8646408F0C857AEDBD1E2B8E453C5AD1982C17E62F2FCBAA2BE",
+    "prompts/original/Idea.user.prompt.txt": "D6EE3975D46331A956FE70ED1C90BCDA513CF91574A1CF34173682A8D427F43F",
+    "prompts/runner/Idea.system.prompt.txt": "E98B756C9088B8646408F0C857AEDBD1E2B8E453C5AD1982C17E62F2FCBAA2BE",
+    "prompts/runner/Idea.user.prompt.txt": "B492E117EB8FF03D792920D14DA1EB0F0930C7AF0CD4351EE082F115B500929C",
+    "experiment-001.yaml": "123A9F5492D426CE08A85D0582C736DE45FD629DA25F327BB1E5C2F93EAFC8D8",
+    "appsettings.json": "CB3305B5C79245E78A943511A1D55357B80436BD1E9BB2B3FF448EC0C6272B5C",
+    "results/baseline/system.rendered.txt": "E98B756C9088B8646408F0C857AEDBD1E2B8E453C5AD1982C17E62F2FCBAA2BE",
+    "results/baseline/user.rendered.txt": "ED58DE728511B0EFFE1F9188775C866DF3D61591AC17BEC6017ACD8B87D580CC",
+    "results/baseline/raw-output.txt": "B32AE0ECA2140555CE4A36AB34DAE40546B01565E9BEB3EAAB7C941DBBAF00C7"
+  }
+}

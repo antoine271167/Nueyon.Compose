@@ -1,0 +1,21 @@
+{
+  "experimentId": "NC-2026-11-03-001",
+  "iteration": 1,
+  "problem": "Narrative inherited an obsolete agent-to-orchestrator storyline",
+  "targetPrompt": "src/Nueyon.Compose.Application/Prompts/Narrative/Narrative.user.prompt.txt",
+  "baselineRun": "baseline/outputs/baseline-attempt-002-console.log",
+  "candidateRun": "experiment-001/outputs/candidate-console.log",
+  "candidateExecutionId": "2f4c7280-a580-4332-b3b9-2f5acdf3dbe8",
+  "candidateExitCode": 0,
+  "model": "gpt-5-mini",
+  "decision": "REGRESSION",
+  "promoted": false,
+  "candidatePromptSha256": "8DA0F5632748452A42133563032BDBE6451C53BA51BE58CC2879C05C3AFB08B9",
+  "build": "Passed, 0 warnings, 0 errors",
+  "tests": {
+    "passed": 165,
+    "failed": 0,
+    "skipped": 0,
+    "domainTests": "No tests discovered"
+  }
+}

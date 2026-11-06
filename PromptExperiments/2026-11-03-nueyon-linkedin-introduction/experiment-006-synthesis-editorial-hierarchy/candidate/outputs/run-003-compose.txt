@@ -1,0 +1,12 @@
+
+Useful AI applications often require more than a single LLM call: they need a coordinated, multi‑stage process to turn ideas and accumulated knowledge into clear, structured content.
+
+Nuëyon.Compose is Nuëyon’s first concrete embodiment of an orchestration‑first technical direction. It treats content creation as an AI‑native, staged workflow where specialized agents handle distinct stages and an orchestration layer coordinates their work.
+
+The pipeline is explicit: Idea → Discover & Select → Research → Synthesize → Narrative → Compose. That sequence is focused on transforming inputs (ideas and accumulated knowledge) into useful, well‑structured content rather than relying on a single, general‑purpose model to do everything.
+
+Stage 1 is deliberately scoped to establish and validate the core workflow — an initial, focused implementation intended to show how an orchestration‑centered approach can be operationalized, not to serve as a finished platform or as proof that the approach is superior.
+
+What this means in practice is a clear product direction: prioritize orchestration and staged coordination of specialized capabilities when the goal is structured content production. Compose stands as an initial, testable embodiment of that direction rather than a final verdict on its efficacy.
+
+#AI #Orchestration

@@ -1,0 +1,65 @@
+{
+  "experimentId": "NC-2026-11-04-006",
+  "name": "Synthesis Editorial Hierarchy",
+  "date": "2026-11-04",
+  "decision": "REGRESSION; candidate not promoted; production prompt restored byte-for-byte",
+  "hypothesis": "Explicitly separating Primary message, Primary subject, Supporting themes, Contextual details, and Explicit exclusions in Synthesis will preserve company-level editorial hierarchy through Narrative and LinkedIn Compose.",
+  "repository": {
+    "path": "C:\\Workspaces\\Nueyon.Compose",
+    "branch": "main",
+    "head": "be882989a7b7956e1b57199f143e7cf434fbe4e5",
+    "preexistingUntracked": ["PromptExperiments/", "prompts/"],
+    "commitsOrPushes": false
+  },
+  "configuration": {
+    "model": "gpt-5-mini",
+    "provider": "OpenAI",
+    "outputFormat": "LinkedInPost",
+    "runtime": ".NET SDK 10.0.401",
+    "temperatureOverride": null,
+    "seed": null,
+    "executionCommand": "dotnet Nueyon.Compose.Host.Console.dll",
+    "workingDirectory": "src/Nueyon.Compose.Host.Console/bin/Debug/net10.0",
+    "instructionFileIsRuntimeInput": false
+  },
+  "conditions": {
+    "baseline": "Three completed runs reused from Experiment 005 baseline; original Synthesis user and system prompts, Narrative, Compose, input, model and runtime configuration matched.",
+    "candidate": "Three new full-pipeline runs; only Synthesis.user.prompt.txt changed. The configured response schema and all other prompts/configuration remained unchanged.",
+    "executionIds": [
+      "c52e87e0-a118-48f3-8a6b-8154d653945b",
+      "48d801c9-0c90-4bdd-a19b-380616fb908a",
+      "2422dad7-9ce8-4189-a27d-da116ccb72c4"
+    ]
+  },
+  "hashesSha256": {
+    "productionSynthesisUserAfterRollback": "5D9556B075425A589F4CC92BA1D34A0385FAECC458FE55AA8EB3D3124933BF5D",
+    "baselineSynthesisUser": "5D9556B075425A589F4CC92BA1D34A0385FAECC458FE55AA8EB3D3124933BF5D",
+    "candidateSynthesisUser": "8F1E90E09E9F2028E41C9888B407368294B5E1A46580F3D1C86F5D2E65DF0589",
+    "synthesisSystemUnchanged": "97D123AA4DF38E855F509363B415F42EB93BE02C65E1D597A96C07E301460DE4",
+    "sourceInput": "DB7A9CF4768684C025D02028980E16CCE8805832E1013A5B6098C00D29E8F2D0",
+    "originalWorkflowInstruction": "9711363973E35E3FFE440CDA2BE73C0A77101DFFC2F21B77CA6B957B725A5AB"
+  },
+  "scores": {
+    "narrativeBaseline": [7, 5, 6],
+    "narrativeCandidate": [4, 5, 4],
+    "narrativeBaselineMean": 6.0,
+    "narrativeCandidateMean": 4.33,
+    "composeBaseline": [7, 4, 6],
+    "composeCandidate": [5, 5, 3],
+    "composeBaselineMean": 5.67,
+    "composeCandidateMean": 4.33,
+    "rubricMaximum": 10
+  },
+  "buildCandidate": "Passed; 0 warnings, 0 errors",
+  "buildRestored": "Passed; 0 warnings, 0 errors",
+  "testsRestored": "165 passed, 0 failed, 0 skipped; Domain test assembly had no discoverable tests",
+  "promotion": "Rejected. Production Synthesis user prompt restored from frozen byte snapshot and hash verified.",
+  "limitations": [
+    "Baseline runs are reused from Experiment 005 (2026-11-04); all baseline condition files and configuration were verified equivalent, but they were not rerun as part of this experiment.",
+    "No seed or temperature override is configured. Three samples are descriptive and not statistically conclusive.",
+    "The provider may change the backend behind the gpt-5-mini alias.",
+    "The console captures the selected first Idea, not all Idea candidates. Research has no configured external retrieval source.",
+    "The original workflow instruction is archived as context; the console application consumes Markdown in data/input and has no separate instruction-file argument.",
+    "The rubric scores are editorial judgments; full console logs and extracted outputs are preserved for independent review."
+  ]
+}

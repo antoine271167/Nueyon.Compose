@@ -1,0 +1,92 @@
+{
+  "experimentId": "NC-2026-11-04-008",
+  "name": "Editorial Ordering Control",
+  "date": "2026-11-04",
+  "result": "Ordering effect observed in this small sample; Company-first factual/editorial gates failed; no production change",
+  "repository": {
+    "path": "C:\\Workspaces\\Nueyon.Compose",
+    "branch": "main",
+    "head": "be882989a7b7956e1b57199f143e7cf434fbe4e5",
+    "preexistingUntracked": [
+      "PromptExperiments/",
+      "prompts/"
+    ],
+    "commitsOrPushes": false
+  },
+  "configuration": {
+    "provider": "OpenAI",
+    "model": "gpt-5-mini",
+    "outputFormat": "LinkedInPost",
+    "dotnetSdk": "10.0.401",
+    "targetRuntime": "net10.0",
+    "temperatureOverride": null,
+    "seed": null,
+    "executionCommand": "dotnet Nueyon.Compose.Host.Console.dll",
+    "instructionFileIsRuntimeInput": false
+  },
+  "source": {
+    "originalSha256": "DB7A9CF4768684C025D02028980E16CCE8805832E1013A5B6098C00D29E8F2D0",
+    "companyFirstSha256": "644E7FBB312D69CB7B9E665F92B1D554A88887D4F8B72934B51A50AF9B81AD56",
+    "technicalFirstSha256": "8D3C075E9A5D73CD003EFD5E39378784A1A353119192DB24D2222BACCE7FFB71",
+    "all14SectionBodiesIdentical": true,
+    "onlySectionOrderChanged": true
+  },
+  "runOrder": [
+    "A-001",
+    "B-001",
+    "A-002",
+    "B-002",
+    "A-003",
+    "B-003"
+  ],
+  "runCountPerCondition": 3,
+  "hardGateA": {
+    "allGatesPass": 0,
+    "total": 3
+  },
+  "scores": {
+    "rubricMaximum": 2,
+    "factualA": [
+      1,
+      0,
+      1
+    ],
+    "factualAMean": 0.67,
+    "editorialA": [
+      0,
+      1,
+      0
+    ],
+    "editorialAMean": 0.33,
+    "factualB": [
+      0,
+      0,
+      0
+    ],
+    "factualBMean": 0.0,
+    "editorialB": [
+      2,
+      2,
+      2
+    ],
+    "editorialBMean": 2.0
+  },
+  "changes": {
+    "productionPromptsChanged": false,
+    "codeChanged": false,
+    "schemasChanged": false,
+    "configurationChanged": false,
+    "architectureChanged": false,
+    "buildRun": false,
+    "testsRun": false,
+    "committed": false,
+    "pushed": false
+  },
+  "limitations": [
+    "Three samples per condition are descriptive, not statistically conclusive.",
+    "No seed or temperature override; gpt-5-mini alias may route to a changing backend.",
+    "Research has no separate external retrieval source.",
+    "Console exposes only the selected Idea.",
+    "Scores are qualitative editorial judgments; text lineage does not prove internal causal process."
+  ]
+}

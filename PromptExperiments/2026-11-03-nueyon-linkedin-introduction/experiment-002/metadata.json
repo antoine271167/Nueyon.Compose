@@ -1,0 +1,22 @@
+{
+  "experimentId": "NC-2026-11-03-001",
+  "iteration": 2,
+  "problem": "Narrative narrows a company introduction to technical framing",
+  "targetPrompt": "src/Nueyon.Compose.Application/Prompts/Narrative/Narrative.user.prompt.txt",
+  "candidatePrompt": "prompt-changes/Narrative.user.prompt.candidate.txt",
+  "candidatePromptSha256": "D2EC188AB3E37EB7E1081D25C36E6C274DEAD0CEDEB2635A1DF4BA7A77D53377",
+  "control": "Original production prompts in baseline/prompts; same source and execution configuration",
+  "candidateRun": "outputs/candidate-console.log",
+  "candidateExecutionId": "03543bd3-c337-487f-9ea5-fd643027de6e",
+  "candidateExitCode": 0,
+  "model": "gpt-5-mini",
+  "decision": "REGRESSION",
+  "promoted": false,
+  "build": "Passed, 0 warnings, 0 errors",
+  "tests": {
+    "passed": 165,
+    "failed": 0,
+    "skipped": 0,
+    "domainTests": "No tests discovered"
+  }
+}

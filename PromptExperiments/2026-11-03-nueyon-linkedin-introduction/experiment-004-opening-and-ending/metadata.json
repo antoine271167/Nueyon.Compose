@@ -1,0 +1,102 @@
+{
+  "experimentId": "NC-2026-11-03-002",
+  "iteration": 1,
+  "problem": "Generic LinkedIn opening and repeated conclusion",
+  "targetPrompt": "src/Nueyon.Compose.Application/Prompts/Compose/Compose.linkedin.user.prompt.txt",
+  "candidatePrompt": "prompt-changes/Compose.linkedin.user.prompt.candidate.txt",
+  "candidatePromptSha256": "D26FEDB5C0B038DA086B880448AA2987A12D8B6A14C8E8F1A066C5725C14EAFC",
+  "decision": "REGRESSION",
+  "promoted": false,
+  "samplingPlan": {
+    "baselineRuns": 3,
+    "candidateRuns": 3,
+    "seed": "Not configured"
+  },
+  "runs": [
+    {
+      "condition": "baseline",
+      "log": "baseline/outputs/run-001-console.log",
+      "executionId": "a4df0e7d-e66b-4f7f-a700-a4e37015dd8b",
+      "exitCode": 0,
+      "durationsMs": {
+        "IdeaAgent": 35625,
+        "ResearchAgent": 68058,
+        "SynthesizerAgent": 27457,
+        "NarrativeAgent": 10745,
+        "ComposeAgent": 17677
+      }
+    },
+    {
+      "condition": "baseline",
+      "log": "baseline/outputs/run-002-console.log",
+      "executionId": "00495eb7-7e0b-4a34-9e61-deb7c9e35daa",
+      "exitCode": 0,
+      "durationsMs": {
+        "IdeaAgent": 34966,
+        "ResearchAgent": 69848,
+        "SynthesizerAgent": 31222,
+        "NarrativeAgent": 14743,
+        "ComposeAgent": 19645
+      }
+    },
+    {
+      "condition": "baseline",
+      "log": "baseline/outputs/run-003-console.log",
+      "executionId": "46fcbc80-adb2-4f98-a339-4066bc35832f",
+      "exitCode": 0,
+      "durationsMs": {
+        "IdeaAgent": 31741,
+        "ResearchAgent": 70672,
+        "SynthesizerAgent": 25724,
+        "NarrativeAgent": 15931,
+        "ComposeAgent": 12594
+      }
+    },
+    {
+      "condition": "candidate",
+      "log": "outputs/run-001-console.log",
+      "executionId": "39199a03-3895-4176-950f-3f5f778e0b5d",
+      "exitCode": 0,
+      "durationsMs": {
+        "IdeaAgent": 36862,
+        "ResearchAgent": 62709,
+        "SynthesizerAgent": 30091,
+        "NarrativeAgent": 13199,
+        "ComposeAgent": 20166
+      }
+    },
+    {
+      "condition": "candidate",
+      "log": "outputs/run-002-console.log",
+      "executionId": "d5cbfa3d-2e0e-4179-baf8-37a240e9a4b6",
+      "exitCode": 0,
+      "durationsMs": {
+        "IdeaAgent": 29166,
+        "ResearchAgent": 64827,
+        "SynthesizerAgent": 37660,
+        "NarrativeAgent": 14060,
+        "ComposeAgent": 15012
+      }
+    },
+    {
+      "condition": "candidate",
+      "log": "outputs/run-003-console.log",
+      "executionId": "e288c7f0-cd3f-433b-bad8-a15247e2fea2",
+      "exitCode": 0,
+      "durationsMs": {
+        "IdeaAgent": 24834,
+        "ResearchAgent": 70769,
+        "SynthesizerAgent": 38088,
+        "NarrativeAgent": 16588,
+        "ComposeAgent": 17204
+      }
+    }
+  ],
+  "build": "Passed, 0 warnings, 0 errors",
+  "tests": {
+    "passed": 165,
+    "failed": 0,
+    "skipped": 0,
+    "domainTests": "No tests discovered"
+  }
+}

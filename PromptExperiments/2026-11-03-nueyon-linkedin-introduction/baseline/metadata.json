@@ -1,0 +1,76 @@
+{
+  "experimentId": "NC-2026-11-03-001",
+  "name": "Nuëyon LinkedIn introduction",
+  "objective": "Develop a compelling, factually grounded LinkedIn introduction to Nuëyon",
+  "originalInput": "baseline/input/Noeyon-Product-Strategy-reconstructed.md",
+  "originalInputSha256": "DB7A9CF4768684C025D02028980E16CCE8805832E1013A5B6098C00D29E8F2D0",
+  "originalInstruction": "baseline/input/original-instruction.txt",
+  "originalInstructionSha256": "9711363973E35E3FFE440CDA2BE73C0A77101DFFC2F21B77CA6AB957B725A5AB",
+  "gitBranch": "main",
+  "gitCommit": "be882989a7b7956e1b57199f143e7cf434fbe4e5",
+  "executionConfiguration": {
+    "runtime": ".NET SDK 10.0.401",
+    "provider": "OpenAI",
+    "model": "gpt-5-mini",
+    "apiKeyConfigured": true,
+    "apiKeyRecorded": false,
+    "temperature": "Not explicitly configured",
+    "inputMechanism": "Markdown files in data/input, copied to host output",
+    "composeFormat": "LinkedInPost",
+    "logging": "Console; Information for Microsoft.Agents"
+  },
+  "startTimestampUtc": "2026-11-03T19:59:52Z",
+  "promptSnapshotDirectory": "baseline/prompts",
+  "baselineCommand": "dotnet Nueyon.Compose.Host.Console.dll from src/Nueyon.Compose.Host.Console/bin/Debug/net10.0",
+  "knownLimitations": [
+    "Console exposes only the deterministically selected first Idea, not all Idea candidates.",
+    "No separately configured external retrieval provider was found in application wiring.",
+    "Model-side nondeterminism may vary between executions."
+  ],
+  "baselineRun": {
+    "status": "Completed",
+    "attempt": 2,
+    "executionId": "11d706a5-37b0-46a4-b43c-44a9bcafb14d",
+    "exitCode": 0,
+    "log": "baseline/outputs/baseline-attempt-002-console.log",
+    "capturedStages": [
+      "Idea selected",
+      "Research",
+      "Synthesis",
+      "Narrative",
+      "Compose"
+    ],
+    "ideaDurationMs": 35483,
+    "researchDurationMs": 76789,
+    "synthesisDurationMs": 25421,
+    "narrativeDurationMs": 17705,
+    "composeDurationMs": 12523
+  },
+  "baselineAttempts": [
+    {
+      "attempt": 1,
+      "status": "Interrupted by user; no stage outputs",
+      "log": "baseline/outputs/baseline-console.log",
+      "executionId": "711e15f5-bd64-46b9-8b0a-48fa8aec1621"
+    },
+    {
+      "attempt": 2,
+      "status": "Completed",
+      "exitCode": 0,
+      "executionId": "11d706a5-37b0-46a4-b43c-44a9bcafb14d",
+      "log": "baseline/outputs/baseline-attempt-002-console.log",
+      "ideaDurationMs": 35483,
+      "researchDurationMs": 76789,
+      "synthesisDurationMs": 25421,
+      "narrativeDurationMs": 17705,
+      "composeDurationMs": 12523
+    }
+  ],
+  "finalBuild": "Passed, 0 warnings, 0 errors",
+  "finalTests": {
+    "passed": 165,
+    "failed": 0,
+    "skipped": 0,
+    "domainTests": "No tests discovered"
+  }
+}

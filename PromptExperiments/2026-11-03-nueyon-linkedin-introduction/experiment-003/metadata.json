@@ -1,0 +1,28 @@
+{
+  "experimentId": "NC-2026-11-03-001",
+  "iteration": 3,
+  "problem": "Synthesis over-narrows a company introduction",
+  "targetPrompt": "src/Nueyon.Compose.Application/Prompts/Synthesis/Synthesis.system.prompt.txt",
+  "candidatePrompt": "prompt-changes/Synthesis.system.prompt.candidate.txt",
+  "candidatePromptSha256": "E6BD6EA774EB81F3E2B08ACC471269175197E0480CD9520A2C46F754E4F42662",
+  "candidateRun": "outputs/candidate-console.log",
+  "candidateExecutionId": "d5bfdc35-a9cd-4cc2-b2c7-77f26c1ab093",
+  "candidateExitCode": 0,
+  "model": "gpt-5-mini",
+  "decision": "REGRESSION",
+  "promoted": false,
+  "build": "Passed, 0 warnings, 0 errors",
+  "tests": {
+    "passed": 165,
+    "failed": 0,
+    "skipped": 0,
+    "domainTests": "No tests discovered"
+  },
+  "stageDurationsMs": {
+    "idea": 38220,
+    "research": 86217,
+    "synthesis": 45862,
+    "narrative": 19550,
+    "compose": 24281
+  }
+}

@@ -1,0 +1,28 @@
+
+### Central insight
+Nuëyon.Compose is presented as a concrete implementation of Nuëyon’s orchestration-first principle: a coordinated, staged six-step content workflow (Idea → Discover and Select → Research → Synthesize → Narrative → Compose) that structures specialized stages/agents to turn ideas and accumulated knowledge into finished content rather than relying on single-prompt LLM generation.
+
+### Evidence
+1. The source states the company principle: “An important principle behind Nuëyon is that useful AI applications often need a coordinated process rather than one general-purpose agent trying to do everything.” (Research Fact 5).
+2. The source says this orchestration approach is “central to the development of Nuëyon.Compose.” (Fact 6).
+3. Compose’s stated purpose is to “turn ideas and accumulated knowledge into useful, well-structured content through an AI-native orchestration workflow.” (Fact 7).
+4. The source lists the explicit six-stage content workflow: Idea → Discover and Select → Research → Synthesize → Narrative → Compose. (Fact 8).
+5. The source emphasizes process over single-prompt generation: “The key principle is that content should be developed from researched and organized source material rather than generated from a blank prompt without a structured process.” (Fact 15).
+6. The source states that “Compose is therefore not simply intended to be another text generator.” (Fact 18).
+7. The source identifies “the coordination of specialized agents and workflows” as an important element of Nuëyon’s technical direction, linking the staged workflow to an agentized/coordination model. (Fact 20).
+8. The source frames Nuëyon.Compose as the first concrete step that gives the broader vision a concrete expression. (Fact 36).
+
+### What the narrative should emphasize
+- Primarily emphasize Evidence 1 and 4: the company principle (Evidence 1) and the six-stage workflow as the concrete expression of that principle (Evidence 4). Those two items establish the core claim that Compose embodies an orchestration-first approach.
+- Use Evidence 3 and 5–7 as supporting detail to explain what that orchestration means in practice: Compose’s purpose to convert ideas + organized knowledge into content (3), its explicit rejection of blank-prompt text-generation (5,6), and the role of coordinating specialized agents (7) to operationalize the stages.
+- Make clear, where useful, that Compose is presented as an intentional product choice (Evidence 8) rather than a completed, validated outcome; leave claims of comparative performance or empirical benefits out of the central narrative unless new evidence is available.
+
+### What should be de-emphasized
+- Do not treat broader roadmap ambitions, future formats, or reusing the workflow across unrelated product areas as part of this core story; those are peripheral to demonstrating Compose as a concrete orchestration expression (research items describing later roadmap stages and portfolio expansion are secondary).
+- Technical implementation details (agent types, orchestration mechanisms, data schemas) and commercial/launch specifics are unnecessary to establish the central insight and should be avoided unless factual implementation evidence is provided.
+- Avoid framing the story as evidence that orchestration is empirically superior to single-agent or single-prompt approaches; the source does not provide validation for comparative claims.
+
+### Gaps and uncertainty
+- Release and availability: the research does not establish whether Nuëyon.Compose has been released or is commercially available (Research Unknown 1 / Facts 29, 32).
+- No documented comparative validation: the source explicitly warns against presenting the architecture as proof of superior performance; there is no evidence that the orchestration-first approach outperforms single general-purpose agents (Research Unknown 2 / Fact 33).
+- Lack of empirical validation: the research does not document user testing, customer feedback, or performance metrics that would demonstrate Compose’s effectiveness in practice (Research Unknown 3).
