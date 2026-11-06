@@ -1,0 +1,43 @@
+{
+  "runId": "03-product-docs-r2",
+  "ideaQuality": {
+    "scores": {
+      "brontrouw": 1,
+      "redactioneelDoel": 1,
+      "focus": 2,
+      "onderscheidendeInvalshoek": 2,
+      "redactioneleAantrekkingskracht": 2
+    },
+    "total": 8,
+    "passed": false,
+    "reasons": {
+      "brontrouw": "De drie families zijn als officieel aanbevolen gedocumenteerd. Description en Rationale schrijven updates samen toe aan de GitHub CLI-deploymentworkflow, terwijl Homebrew afzonderlijk naar homebrew-core verwijst.",
+      "redactioneelDoel": "Het praktische ondersteuningscriterium past, maar Audience maakt macOS expliciet onderdeel van een Linux/BSD-opdracht.",
+      "focus": "De drie pakketfamilies worden met één criterium behandeld.",
+      "onderscheidendeInvalshoek": "Het idee maakt herkomst van onderhoud tot een concreet onderscheid tussen routes.",
+      "redactioneleAantrekkingskracht": "De lezer krijgt een beslispunt over ondersteuning, met expliciete grenzen rond SLA en beveiliging."
+    },
+    "references": [
+      "Recommended (Official) › Debian en RPM, regels 3–13 en 36–47",
+      "Homebrew, regels 120–135",
+      "Precompiled binaries en Community (Unofficial), regels 138–149"
+    ]
+  },
+  "downstreamViability": {
+    "passed": false,
+    "centralMessage": "Kies een expliciet onderhouden officiële gh-pakketroute op basis van de pakketfamilie.",
+    "steps": [
+      {
+        "content": "Beschrijft apt en de RPM-tools en koppelt hun pakketupdates aan de GitHub CLI-deploymentworkflow.",
+        "reference": "Debian en RPM, regels 5–119"
+      },
+      {
+        "content": "Noemt brew install/upgrade en homebrew-core, en contrasteert communitypakketten met officiële onderhoudsverantwoordelijkheid.",
+        "reference": "Homebrew en Community (Unofficial), regels 120–149"
+      }
+    ],
+    "attribution": "Idea trekt één updateworkflow over alle routes. Narrative maakt in de hoofdboodschap het juiste onderscheid, maar trekt in Development de projectworkflow opnieuw over de drie families en formuleert de drie pakketroutes als uitputtend zonder de aparte officiële binaries te begrenzen."
+  },
+  "severeFidelityError": false,
+  "passed": false
+}

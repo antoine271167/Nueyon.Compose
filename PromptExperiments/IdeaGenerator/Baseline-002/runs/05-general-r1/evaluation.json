@@ -1,0 +1,57 @@
+{
+  "runId": "05-general-r1",
+  "ideaQuality": {
+    "scores": {
+      "brontrouw": 0,
+      "redactioneelDoel": 0,
+      "focus": 2,
+      "onderscheidendeInvalshoek": 2,
+      "redactioneleAantrekkingskracht": 1
+    },
+    "total": 5,
+    "passed": false,
+    "reasons": {
+      "brontrouw": "Rationale en Evidence laten de lezer geloven dat licentiebehoud en de verplichte zin gelden voor verspreiding van publiekdomeinteksten in het algemeen. §1.C en §1.E onderscheiden hergebruik zonder Gutenberg-verwijzingen expliciet van verspreiding mét de naam.",
+      "redactioneelDoel": "Idea gaat over de uitgeverslicentie voor hergebruikers en behandelt geen gedachtegang uit Lincolns rede.",
+      "focus": "De licentie-invalshoek is intern coherent en kiest één onderwerp.",
+      "onderscheidendeInvalshoek": "Idea ziet een specifiek verschil tussen de status van een werk en het gebruik van de Gutenberg-naam, maar geeft de voorwaarde onvoldoende juist weer.",
+      "redactioneleAantrekkingskracht": "Er is een praktische vraag, maar een deel van de aantrekkingskracht berust op een te brede verplichting."
+    },
+    "references": [
+      "Lincoln’s Gettysburg Address, regels 38–68",
+      "Full Project Gutenberg License, §1.B–E, regels 127–171",
+      "Full Project Gutenberg License, §1.E.4–5, regels 200–208"
+    ]
+  },
+  "downstreamViability": {
+    "passed": false,
+    "centralMessage": "De Narrative volgt de licentie-invalshoek en onderscheidt Amerikaanse publieke-domeinstatus van voorwaarden bij gebruik van de Gutenberg-naam.",
+    "steps": [
+      {
+        "content": "Introduceert de Amerikaanse publieke-domeinstatus en de voorwaarden rond het merk.",
+        "reference": "Full Project Gutenberg License, §1.B–D, regels 127–162"
+      },
+      {
+        "content": "Beschrijft de uitzonderingsroute zonder verwijzingen en de regels bij verspreiding met de naam.",
+        "reference": "Full Project Gutenberg License, §1.C en §1.E, regels 137–152 en 164–171"
+      }
+    ],
+    "attribution": "Onderwerpkeuze ontstaat in Idea. Narrative herstelt deels de uitzondering voor ongebonden hergebruik, maar introduceert een onjuiste keuze tussen licentietekst behouden en de zin tonen."
+  },
+  "severeFidelityError": true,
+  "severeFidelityDetail": [
+    {
+      "stage": "Idea",
+      "passage": "Project Gutenberg requires retention of its license text",
+      "reference": "Full Project Gutenberg License, §1.C en §1.E, regels 137–152 en 164–171",
+      "effect": "Verandert de centrale praktische les door de uitzondering voor publiek domein in de VS zonder Gutenberg-verwijzingen weg te laten."
+    },
+    {
+      "stage": "Narrative",
+      "passage": "requires either retaining the full Project Gutenberg License ... or prominently displaying a specified sentence",
+      "reference": "Full Project Gutenberg License, §1.E.1 en §1.E.4–5, regels 164–171 en 200–208",
+      "effect": "Presenteert behoud en zichtbare vermelding ten onrechte als uitwisselbare routes bij verspreiding met de Gutenberg-naam."
+    }
+  ],
+  "passed": false
+}

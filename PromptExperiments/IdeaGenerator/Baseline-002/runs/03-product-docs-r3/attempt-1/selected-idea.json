@@ -1,0 +1,10 @@
+{
+  "Idea": {
+    "Title": "How to choose the right way to install gh on Linux: official packages, community builds, and one strongly discouraged path",
+    "Description": "The source cleanly divides installation methods into three classes—Recommended (official Debian/RPM/Homebrew/precompiled), Community (distribution-maintained or third‑party packages), and Discouraged (Snap). A practical explainer can help readers decide which class to use based on support expectations and platform availability, using only the facts and warnings given in the document.",
+    "Audience": "Linux desktop users, developers, and sysadmins deciding how to install GitHub CLI (gh) on their systems.",
+    "Rationale": "The document itself organizes installation options into Recommended, Community (Unofficial), and Discouraged sections and repeats who maintains each package. That structure supports a focused piece that translates those categories into practical decision criteria (which installers are maintained by GitHub CLI maintainers, which are community-maintained, and which to avoid). This helps readers make an evidence-based choice without adding external claims.",
+    "Evidence": "• The header sections: ‘Recommended (Official)’, ‘Community (Unofficial)’, and ‘Discouraged’.  \n• Explicit statements that Debian/RPM/Homebrew packages are “supported by the GitHub CLI maintainers” and updated via the project’s deployment workflow (links to cli.github.com and deployment workflow).  \n• The Community section begins with an IMPORTANT note: “The GitHub CLI team does not maintain the following packages… We are unable to provide support…” and then lists many distro-specific packages.  \n• The Discouraged section contains a WARNING: the team “actively discourages use of the following methods” and specifically states “never installing gh as a snap” with a link to issues describing problems."
+  },
+  "selection": "StoryWorkflow.cs:134"
+}

@@ -1,0 +1,10 @@
+{
+  "Idea": {
+    "Title": "A generic “Preserve Editorial Intent” rule can shift emphasis and introduce unsupported claims — a controlled prompt experiment",
+    "Description": "In a controlled comparison where the only change was adding a reusable Narrative instruction to “Preserve Editorial Intent from the Synthesis,” candidate runs consistently shifted the top-level message away from company identity/audience and made orchestration the central positioning, while also introducing unsupported audience and validation claims. The change was the proximate variable and the experiment led to a rollback.",
+    "Audience": "Prompt engineers, editorial leads, AI content governance teams, product communicators",
+    "Rationale": "This experiment provides concrete evidence that adding a broadly worded, reusable editorial-hierarchy rule can produce stable and undesirable editorial drift. That is directly relevant to teams who must balance reusable prompt heuristics against fragile narrative emphasis and factual restraint. The outcome (do not promote; byte-for-byte rollback) shows this is an operational risk worth documenting and addressing.",
+    "Evidence": "Explicit facts: the only modified file in candidate runs was Narrative.user.prompt.txt (candidate added a “Preserve Editorial Intent from the Synthesis” section); three baseline runs (reused) vs three candidate runs were executed; Narrative mean score fell from 6.00 to 4.00 and Compose mean from 5.67 to 3.33; candidate outputs subordinated company identity/audience and made orchestration central; candidate runs introduced unsupported validation/audience framing and failed the factual/editorial-restraint gate (D) in every run; decision: candidate not promoted and production prompt restored byte-for-byte to baseline (SHA-256 match). Interpretation vs unknown: it is reasonable to attribute the drift to the prompt change because all other inputs were held constant, but experiment limitations (model alias variability, no explicit seed, only three runs) are noted and mean the result is strong but not statistically conclusive."
+  },
+  "selection": "StoryWorkflow.cs:134"
+}

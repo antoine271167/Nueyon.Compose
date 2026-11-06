@@ -1,0 +1,43 @@
+{
+  "runId": "03-product-docs-r1",
+  "ideaQuality": {
+    "scores": {
+      "brontrouw": 1,
+      "redactioneelDoel": 1,
+      "focus": 2,
+      "onderscheidendeInvalshoek": 2,
+      "redactioneleAantrekkingskracht": 2
+    },
+    "total": 8,
+    "passed": false,
+    "reasons": {
+      "brontrouw": "De officiële rubricering en Debian/RPM-steun kloppen. Description suggereert één updateketen voor de officiële routes; Homebrew heeft een apart updatepad en de sectie over binaries noemt geen ondersteunings- of updategarantie. Rationale kan herhaalbaarheid en updatecadans niet uit de bron afleiden.",
+      "redactioneelDoel": "De keuzehulp raakt het doel, maar biedt een Linux/BSD-publiek een officiële standaard zonder het toepassingsgebied per systeem te begrenzen.",
+      "focus": "Eén praktisch keuzecriterium, namelijk wie de route onderhoudt.",
+      "onderscheidendeInvalshoek": "De officiële versus community-status maakt de kanalen betekenisvol onderscheidbaar.",
+      "redactioneleAantrekkingskracht": "De lezer krijgt een concreet criterium voor installatie en updates."
+    },
+    "references": [
+      "Recommended (Official) › Debian en RPM, regels 3–13 en 36–47",
+      "Homebrew en Precompiled binaries, regels 120–140",
+      "Community (Unofficial), regels 142–149; FreeBSD en MidnightBSD, regels 244–257 en 302–317"
+    ]
+  },
+  "downstreamViability": {
+    "passed": false,
+    "centralMessage": "Gebruik de officieel aanbevolen gh-routes als uitgangspunt en onderscheid communitypakketten.",
+    "steps": [
+      {
+        "content": "Ordent Debian/RPM, Homebrew en binaries onder de officiële kop.",
+        "reference": "Recommended (Official), regels 3–13, 36–47 en 120–140"
+      },
+      {
+        "content": "Onderscheidt de verantwoordelijkheid voor communityroutes.",
+        "reference": "Community (Unofficial), regels 142–149"
+      }
+    ],
+    "attribution": "Idea laat de Linux/BSD-afbakening en ondersteuning per route open. Narrative houdt de brede doelgroep aan en past de deploymentworkflow expliciet toe op de gezamenlijke lijst, terwijl Homebrew een aparte updatebron heeft en binaries alleen als beschikbaar per architectuur worden beschreven."
+  },
+  "severeFidelityError": false,
+  "passed": false
+}

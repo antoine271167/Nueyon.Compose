@@ -1,0 +1,10 @@
+{
+  "Idea": {
+    "Title": "Control Narrative first — Narrative is the most recurrent visible locus of company→product hierarchy drift",
+    "Description": "Across experiments 007–009 the earliest observable stage that departs from the requested company-first introduction is most often Narrative. Treating Narrative as the primary control point (not just Idea or Compose) is the strongest editorial lever for preserving a company-first story.",
+    "Audience": "Content editors, editorial leads, experiment designers, prompt engineers responsible for multi-stage pipelines.",
+    "Rationale": "Why it matters: If Narrative is where upstream company-first framing commonly shifts toward a product- or orchestration-first story, then interventions targeted at Narrative (and the Synthesis→Narrative handoff) are likely to be more effective than fixes applied only at Idea or only at Compose. Focusing effort on Narrative prompt design, inputs, and evaluation can reduce downstream re-framing and factual escalation. Gaps / uncertainty: the report also shows Idea and Synthesis sometimes initiate drift (so Narrative is not the sole root cause); this idea relies on observable frequency rather than proven causation.",
+    "Evidence": "Cross-experiment patterns and per-run localization: the report states “Narrative is the most recurrent first visible hierarchy shift” and identifies Narrative as the earliest observable signal in multiple runs (Experiment 007 candidates 001–002; Experiment 008 A-002; Experiment 009 baseline 002/003 and candidates 001–003). The method defines “first drift” as the earliest observable stage that departs from the requested company-first editorial hierarchy."
+  },
+  "selection": "StoryWorkflow.cs:134"
+}

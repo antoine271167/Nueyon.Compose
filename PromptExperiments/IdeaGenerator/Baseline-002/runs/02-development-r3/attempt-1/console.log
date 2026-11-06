@@ -1,0 +1,176 @@
+
+========================================
+          Nueyon.Compose
+       AI Idea Composition
+========================================
+
+Loading Markdown files from: data/input
+
+Processing...
+
+info: Nueyon.Compose.Application.Agents.Idea.IdeaAgent[0]
+      Agent IdeaAgent invocation started with ExecutionId 4dc675bc-5038-4239-b081-fecf98c8fdb9
+info: Nueyon.Compose.Application.Agents.Idea.IdeaAgent[0]
+      Agent IdeaAgent invocation completed in 17688ms with ExecutionId 4dc675bc-5038-4239-b081-fecf98c8fdb9
+info: Nueyon.Compose.Application.Agents.Research.ResearchAgent[0]
+      Agent ResearchAgent invocation started with ExecutionId 4dc675bc-5038-4239-b081-fecf98c8fdb9
+info: Nueyon.Compose.Application.Agents.Research.ResearchAgent[0]
+      Agent ResearchAgent invocation completed in 52586ms with ExecutionId 4dc675bc-5038-4239-b081-fecf98c8fdb9
+info: Nueyon.Compose.Application.Agents.Synthesis.SynthesizerAgent[0]
+      Agent SynthesizerAgent invocation started with ExecutionId 4dc675bc-5038-4239-b081-fecf98c8fdb9
+info: Nueyon.Compose.Application.Agents.Synthesis.SynthesizerAgent[0]
+      Agent SynthesizerAgent invocation completed in 21348ms with ExecutionId 4dc675bc-5038-4239-b081-fecf98c8fdb9
+info: Nueyon.Compose.Application.Agents.Narrative.NarrativeAgent[0]
+      Agent NarrativeAgent invocation started with ExecutionId 4dc675bc-5038-4239-b081-fecf98c8fdb9
+info: Nueyon.Compose.Application.Agents.Narrative.NarrativeAgent[0]
+      Agent NarrativeAgent invocation completed in 16537ms with ExecutionId 4dc675bc-5038-4239-b081-fecf98c8fdb9
+info: Nueyon.Compose.Application.Agents.Compose.ComposeAgent[0]
+      Agent ComposeAgent invocation started with ExecutionId 4dc675bc-5038-4239-b081-fecf98c8fdb9
+info: Nueyon.Compose.Application.Agents.Compose.ComposeAgent[0]
+      Agent ComposeAgent invocation completed in 15342ms with ExecutionId 4dc675bc-5038-4239-b081-fecf98c8fdb9
+Selected Idea
+-------------
+
+A generic "preserve editorial intent" instruction failed: prompt-level guardrails didn't prevent editorial drift
+A small, generic addition to the Narrative user prompt that asked the agent to preserve Synthesis editorial hierarchy did not keep the intended company-level emphasis. Instead, candidate runs consistently demoted Nu�yon's company identity/audience and elevated orchestration into the central message, while also introducing unsupported audience and validation claims. The experiment concluded the candidate prompt must not be promoted and production was restored.
+
+Research
+--------
+
+### Facts
+1. Date: 2026-11-04.
+2. Decision: Candidate not promoted; production Narrative user prompt restored byte-for-byte to baseline.
+3. Objective: Test whether a reusable editorial-hierarchy rule in the Narrative Agent prompt keeps Synthesis's primary message, central subject, intended audience, and theme hierarchy intact.
+4. The expected result was a company introduction centered on Nu�yon's AI-first ambition for other AI-first businesses, with Nu�yon.Compose as its first concrete product direction and orchestration as supporting explanation.
+5. The frozen baseline Narrative system prompt and user prompt matched the production versions before the experiment; the baseline user prompt SHA-256 was 475A9DB1CA028EBC927C99ECDD3DAB061B0616ED06FB1278879992D2E8DD795A.
+6. All 11 prompt files in the prior Experiment 004 baseline snapshot matched the current production prompt files by SHA-256.
+7. No Research, Synthesis, Compose, Idea, configuration, or C# file was changed.
+8. Baseline condition reused three completed baseline runs from experiment-004-opening-and-ending/baseline to preserve the prior baseline condition.
+9. Candidate condition executed three new runs with only src/Nueyon.Compose.Application/Prompts/Narrative/Narrative.user.prompt.txt changed; all other prompt files and workflow inputs remained identical.
+10. Provider/model: OpenAI / gpt-5-mini; .NET SDK 10.0.401; temperature and seed not explicitly configured; API key configured through user secrets and not recorded.
+11. Compose format used: LinkedInPost.
+12. The application reads Markdown files from data/input and has no separate runtime argument for original-instruction.txt.
+13. Each run completed all workflow stages and exited 0; full console logs, extracted Narrative outputs, and final Compose outputs are saved under this experiment's baseline/outputs/ and candidate/outputs/.
+14. The candidate prompt added one generic section titled "Preserve Editorial Intent from the Synthesis." 
+15. That section tells Narrative to identify the primary message, supporting themes, and contextual details; preserve audience scope and relative emphasis; keep technical details subordinate when Synthesis does; and retain uncertainty when the source is ambiguous.
+16. The added section contains no Nu�yon-specific wording or this story's details.
+17. Narrative scores by condition: baseline mean 6.00/10 (range 5-7; sample SD 1.00); candidate mean 4.00/10 (range 4-4; sample SD 0.00).
+18. Compose scores by condition: baseline mean 5.67/10 (range 4-7; sample SD 1.53); candidate mean 3.33/10 (range 3-4; sample SD 0.58).
+19. Candidate Narrative outputs were readable and coherent but consistently subordinated company identity and audience scope while making orchestration the central positioning.
+20. Candidate Narrative samples introduced unsupported validation or audience framing.
+21. Candidate final Compose outputs remained readable but did not restore the intended editorial hierarchy.
+22. Candidate Compose run 1 included editorial meta-text ("The post's purpose is simple") and a claim that the workflow would be validated before expansion.
+23. Candidate Compose run 2 generalized about what useful AI requires and named founders/product leaders.
+24. Candidate Compose run 3 opened by reframing content creation as an orchestration problem and expanded to architecture tradeoffs and validation focus.
+25. All three candidate Narrative runs and all three candidate Compose runs failed the gate that orchestration remain a supporting explanation (criterion C).
+26. No candidate run passed the factual/editorial restraint gate (criterion D).
+27. The experiment report states: "Candidate was worse on mean score for both Narrative and Compose, failed the orchestration hierarchy and factual restraint gates in every run, and introduced regressions." 
+28. Build and tests after rollback: dotnet build src/Nueyon.Compose.slnx - passed, 0 warnings, 0 errors; dotnet test src/Nueyon.Compose.slnx --no-build - 165 passed, 0 failed, 0 skipped.
+29. Rollback verification: production prompt SHA-256 475A9DB1CA028EBC927C99ECDD3DAB061B0616ED06FB1278879992D2E8DD795A matches the frozen baseline exactly.
+30. No commit or push was made.
+31. Each condition had three runs.
+32. Limitation: Baseline runs were produced on 2026-11-03; candidate runs were produced on 2026-11-04; the model provider may change the backend behind an alias.
+33. Limitation: No seed or temperature override was available; three runs per condition show consistency in these samples, not statistical significance.
+34. Limitation: Idea and Research outputs vary between runs; the console captures the selected first Idea, not every Idea candidate.
+35. The baseline Synthesis pairs company identity with Compose in its top-level emphasis and also contains a later description calling orchestration "central to the product direction." 
+36. The report states: "This internal tension may have reinforced the technical angle." 
+37. The report states: "This does not change the controlled result: the candidate prompt was not sufficient to protect the supplied editorial intent, and this experiment did not change Synthesis because that was outside scope."
+
+### Interpretations
+1. [derived from Facts 17,18,25,26] The candidate prompt addition coincided with lower average scores for Narrative and Compose and with repeated failures of the orchestration-supporting-explanation gate and the factual/editorial-restraint gate.
+2. [derived from Facts 27,29,30] The experiment's decision to not promote and to restore the production prompt was taken after observing worse mean scores, gate failures, and regressions, and rollback verification confirmed the baseline prompt was restored.
+
+### Unknowns
+1. The specific mechanism(s) by which the candidate prompt addition produced the observed editorial drift (e.g., why orchestration became central) is UNKNOWN.
+2. Whether the baseline Synthesis's internal tension (Facts 35-36) caused, contributed to, or amplified the candidate outputs' technical emphasis is UNKNOWN.
+3. Whether different wording, placement, or specificity of an editorial-intent guardrail would have prevented the observed drift is UNKNOWN.
+4. Whether additional runs, temperature/seed control, or a different model backend would materially change the observed results is UNKNOWN.
+5. Whether the candidate prompt change would produce similar failures for different source inputs, different audiences, or other editorial tasks is UNKNOWN.
+6. Whether the candidate prompt introduced any unintended prompt-engineering errors (beyond content/clarity) that affected model behavior is UNKNOWN.
+7. Whether the observed unsupported claims (validation/commitment language and named audience) reflect a reproducible bias in the model when presented with such a generic instruction is UNKNOWN.
+
+### Development sequence
+1. Initial plan/starting point: Objective defined to test whether a reusable editorial-hierarchy rule in the Narrative Agent prompt preserves Synthesis editorial hierarchy (Fact 3).
+2. Baseline verification: Baseline prompt and repository state were verified; baseline prompts matched production by SHA-256 (Facts 5,6,7).
+3. Baseline runs: Three baseline runs were reused from a prior experiment to preserve baseline condition (Facts 8,31).
+4. Candidate change: The candidate Narrative user prompt was modified to add a generic section titled "Preserve Editorial Intent from the Synthesis" that instructs Narrative to preserve message, audience scope, emphasis, subordinate technical details, and uncertainty (Facts 14,15,16,9).
+5. Candidate runs: Three candidate runs were executed with only that prompt change; each run completed the workflow (Facts 9,13,31).
+6. Observed outputs and scoring: Candidate Narrative mean 4.00/10 vs baseline 6.00/10; candidate Compose mean 3.33/10 vs baseline 5.67/10; candidate outputs subordinated company identity and elevated orchestration; candidate runs introduced unsupported additions (Facts 17-21,23-26).
+   Relationship between the prompt change (step 4) and the observed outputs/scores (step 6): UNKNOWN.
+7. Decision and rollback: The report records the decision not to promote the candidate prompt, production prompt restored byte-for-byte, rollback SHA verified, and no commit/push made (Facts 2,27,29,30).
+8. Limitations noted after the run: timing of baseline vs candidate runs, lack of seed/temperature control, small sample size, and possible model-backend variability (Facts 32-34).
+
+### Editorial relevance
+- Facts 14-16 (prompt change text and scope) are relevant to the Selected Idea.
+- Facts 17-18 (Narrative and Compose mean scores by condition) are relevant to the Selected Idea.
+- Facts 19-21 (description of candidate output behavior and failure to restore editorial hierarchy) are relevant to the Selected Idea.
+- Facts 22-24 (per-run examples of candidate Compose outputs) are relevant to the Selected Idea.
+- Facts 25-26 (criterion C and D gate failures) are relevant to the Selected Idea.
+- Facts 27-30 (decision not to promote, rollback verification, build/tests, no commit) are relevant to the Selected Idea.
+- Facts 31-34 (three runs per condition and listed limitations) are relevant to assessing the Selected Idea's evidence strength.
+- Facts 35-37 (baseline Synthesis content, the report's note that the internal tension may have reinforced the technical angle, and the report's statement that the candidate prompt was not sufficient) are relevant to the Selected Idea.
+- Interpretation 1 (candidate prompt addition coincided with lower scores and gate failures) is relevant to the Selected Idea.
+- Interpretation 2 (decision and rollback followed observed regressions and failures) is relevant to the Selected Idea.
+
+Synthesis
+---------
+
+### Central insight
+Adding a single, generic "Preserve Editorial Intent from the Synthesis" section to the Narrative user prompt coincided with consistent editorial drift across three candidate runs-Nu�yon's company identity and audience scope were subordinated, orchestration was elevated to the central message, and unsupported audience/validation claims appeared-so the candidate prompt was rejected and the production prompt was rolled back.
+
+### Evidence
+1. The experiment changed only one file: Narrative.user.prompt.txt; all other prompt files and inputs were identical between baseline and candidate conditions, and baseline reused three prior baseline runs (Research Facts 8-9, 31). 
+2. The candidate prompt added one generic section titled "Preserve Editorial Intent from the Synthesis," which instructs Narrative to identify and preserve primary message, supporting themes, audience scope, emphasis, and uncertainty; that section contained no Nu�yon-specific wording (Facts 14-16). 
+3. Narrative and Compose scoring declined under the candidate prompt: Narrative baseline mean 6.00/10 (range 5-7) vs candidate mean 4.00/10 (range 4-4); Compose baseline mean 5.67/10 (range 4-7) vs candidate mean 3.33/10 (range 3-4) (Facts 17-18). 
+4. Candidate Narrative outputs were readable and coherent but consistently subordinated company identity and audience scope while making orchestration the central positioning (Fact 19). 
+5. Candidate outputs introduced unsupported additions to audience or validation language: examples include editorial meta-text and validation claims in Compose run 1, naming founders/product leaders in Compose run 2, and reframing content creation as an orchestration/architecture problem in Compose run 3 (Facts 20-24). 
+6. All three candidate Narrative runs and all three candidate Compose runs failed the gate that orchestration remain a supporting explanation (criterion C), and no candidate run passed the factual/editorial restraint gate (criterion D) (Facts 25-26). 
+7. The experiment report summary states the candidate was worse on mean score for both Narrative and Compose, failed the orchestration-hierarchy and factual-restraint gates in every run, and introduced regressions (Fact 27). 
+8. Decision and rollback: the candidate prompt was not promoted; production Narrative user prompt was restored byte-for-byte to the frozen baseline (SHA match), and the repo/build/tests remained green after rollback (Facts 2, 29, 28). 
+
+### What the narrative should emphasize
+- Emphasize Evidence 1-3 (the isolation of the prompt change and the explicit added instruction) together with Evidence 4-6 (the consistent behavioral changes and gate failures): these items establish that the single, generic guardrail coincided with a reproducible shift in editorial outcomes in this test and that the change failed the project's acceptance criteria. 
+- Use one concrete example from Evidence 5 (e.g., Compose run 3 reframing content creation as an orchestration problem) to make the drift tangible for readers; do not present this example as a proof of mechanism-only as an observed output. 
+- Preserve the documented relationship that only the user prompt text changed (Evidence 1) and that the project decision was to reject and rollback the candidate (Evidence 8). The narrative should describe these as observed facts, not as causal explanations. 
+
+### What should be de-emphasized
+- Do not expand the story into a full product or architecture overview (e.g., Compose format details, build/test mechanics, or SHA internals). The successful build/tests and exact SHA match (Facts 28-29) are verification details for the rollback decision and need not be central to the narrative. 
+- De-emphasize speculative explanations about why the drift occurred or whether different wording would have avoided it-the experiment did not establish mechanisms (Research Unknowns) and such arguments would exceed the evidence. 
+
+### Gaps and uncertainty
+- The specific mechanism(s) by which the generic prompt addition produced the observed editorial drift is UNKNOWN (Research Unknown 1). 
+- It is UNKNOWN whether the baseline Synthesis's internal tension (pairing company identity with orchestration in different places) caused or amplified the shift (Unknown 2 / Fact 35-36). 
+- It is UNKNOWN whether different wording, placement, or a more specific guardrail would have prevented the failure, or whether different model seeds, temperatures, more runs, or a different backend would change the result (Unknowns 3-4; Facts 32-33). 
+- The experiment used three runs per condition; results show a consistent signal in these samples but are not statistically broad conclusions about all prompt changes, inputs, audiences, or editorial tasks (Facts 31, 33; Research Unknowns 4-5).
+
+Narrative
+---------
+
+Selected Story
+A single, generic addition to the Narrative user prompt-an extra section titled "Preserve Editorial Intent from the Synthesis"-coincided with consistent editorial drift in three candidate runs: Nu�yon's company identity and audience scope were subordinated, orchestration was elevated to the central message, and unsupported audience/validation language appeared. The experiment changed only that one prompt file, produced measurable declines in Narrative and Compose scores compared with baseline, and led to the candidate prompt being rejected and the production prompt restored. The reader should understand that, in this controlled test, one narrowly scoped prompt change produced reproducible regressions in editorial outcomes and was not promoted; the results show a clear signal in these runs but do not establish broader causality or generality.
+
+Story Progression
+- Context: Explain the audience (prompt engineers, workflow owners, content-product and editorial ops managers) and the specific intervention-a single, generic "Preserve Editorial Intent from the Synthesis" section added to Narrative.user.prompt.txt while all other inputs and prompt files remained identical.
+- Development: Present the concrete observations that make the shift tangible: only the user prompt text changed; Narrative mean score fell from 6.00 to 4.00 and Compose mean fell from 5.67 to 3.33; all three candidate Narrative and Compose runs failed the acceptance gates that kept orchestration as a supporting explanation and that enforced factual/editorial restraint; and candidate outputs consistently demoted company identity, elevated orchestration, and added unsupported audience/validation claims (example: Compose run 3 reframed content creation as an orchestration/architecture problem).
+- Endpoint: Close with the supported outcome-because the candidate prompt produced consistent regressions under the experiment's acceptance criteria, the candidate was rejected and the production Narrative prompt was rolled back; the results indicate a reproducible signal in this test but do not prove mechanism or broad generality.
+
+Critical Constraints
+- Do not attribute the prompt change's effect to a specific cause or actor; state only that the single prompt file changed and the observed outputs followed.
+- Do not invent or imply a team, collective decision-maker, or who approved or executed the rollback beyond the documented outcome that the candidate was not promoted and production was restored.
+- Do not claim causal mechanisms (e.g., wording, placement, model seed, temperature, or backend) unless supported by additional evidence; treat the mechanism as unknown.
+- Do not generalize the experiment's result beyond the tested runs: do not present the outcome as a broad proof that all similar guardrails will fail or succeed.
+- Do not present the supplied example(s) as proof of mechanism-use them only as observed outputs that make the drift concrete.
+
+Compose
+-------
+
+For prompt engineers, workflow owners, content-product leads, and editorial ops managers: a single, narrowly scoped prompt change produced a clear, reproducible shift in editorial outcomes in a controlled test.
+
+What changed: every input and prompt file stayed the same except for one addition - a single, generic section titled Preserve Editorial Intent from the Synthesis was added to the Narrative user prompt file.
+
+What happened next: three candidate runs using that modified user prompt showed consistent editorial drift and measurable score declines. Narrative mean score dropped from 6.00 to 4.00; Compose mean score dropped from 5.67 to 3.33. All three candidate runs failed the acceptance gates that keep orchestration as a supporting explanation and that enforce factual/editorial restraint. Candidate outputs repeatedly downplayed the company's identity, elevated orchestration to a central message, and introduced unsupported audience or validation language. For example, one Compose run reframed content creation as an orchestration/architecture problem rather than keeping orchestration as a supporting explanation.
+
+Outcome: because the candidate prompt produced consistent regressions under the experiment's acceptance criteria, the candidate prompt was rejected and the production Narrative prompt was restored. The test shows a reproducible signal in these runs; it does not establish why the change produced those effects or that the result will generalize beyond this experiment.
+
+The clear, narrow result: in this controlled case, a single generic prompt addition correlated with reproducible shifts in output and lower quality scores. The mechanism and broader applicability remain open questions.
+

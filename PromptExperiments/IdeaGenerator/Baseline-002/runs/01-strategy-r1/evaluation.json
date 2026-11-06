@@ -1,0 +1,34 @@
+{
+  "runId": "01-strategy-r1",
+  "ideaQuality": {
+    "scores": {
+      "brontrouw": 1,
+      "redactioneelDoel": 1,
+      "focus": 2,
+      "onderscheidendeInvalshoek": 1,
+      "redactioneleAantrekkingskracht": 1
+    },
+    "total": 6,
+    "passed": false,
+    "reasons": {
+      "brontrouw": "Bedrijfsidentiteit, productrichting en fase zijn herleidbaar. Het Audience-veld voegt potentiële samenwerkingspartners en een algemeen LinkedIn-publiek toe. De als citaat gepresenteerde identiteitszin in Evidence normaliseert ook de bronformulering; de betekenis blijft behouden.",
+      "redactioneelDoel": "Het bedrijfsverhaal staat centraal met Compose als eerste richting, maar het bredere LinkedIn-publiek valt buiten de afgebakende doelgroep.",
+      "focus": "Eén lijn: Nuëyon introduceert zijn productambitie voor AI-first bedrijven via Compose.",
+      "onderscheidendeInvalshoek": "Het idee kiest de overgang van bedrijfsidentiteit naar een eerste concrete richting, maar werkt het specifieke verband tussen herbruikbare producten en Compose beperkt uit.",
+      "redactioneleAantrekkingskracht": "Een duidelijke introductiebelofte, voornamelijk op het niveau van de vijf vragen uit de briefing."
+    },
+    "references": ["§1, regels 6–16", "§3, regels 34–44", "§12, regels 207–223", "§13, regels 225–241"]
+  },
+  "downstreamViability": {
+    "passed": true,
+    "centralMessage": "Nuëyon is een AI-first bedrijf in een vroege fase, met Compose als eerste concrete invulling voor andere AI-first bedrijven.",
+    "steps": [
+      {"content": "Introduceert de vroege bedrijfsidentiteit en de richting van herbruikbare producten voor AI-first bedrijven.", "reference": "§1, regels 6–16; §3, regels 34–44"},
+      {"content": "Maakt de ambitie concreet met de beoogde, smalle Compose-workflow van bronmateriaal naar gestructureerde content.", "reference": "§5, regels 58–85"},
+      {"content": "Begrenst de roadmap als richting en vermijdt claims over tractie, productgereedheid en bewezen prestaties.", "reference": "§13, regels 225–241"}
+    ],
+    "attribution": "De bredere doelgroep verschijnt in Idea. Narrative behoudt de kern en beperkt de doelgroep weer tot AI-first bedrijven."
+  },
+  "severeFidelityError": false,
+  "passed": false
+}

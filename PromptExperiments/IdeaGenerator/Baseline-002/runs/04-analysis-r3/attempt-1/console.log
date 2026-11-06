@@ -1,0 +1,164 @@
+
+========================================
+          Nueyon.Compose
+       AI Idea Composition
+========================================
+
+Loading Markdown files from: data/input
+
+Processing...
+
+info: Nueyon.Compose.Application.Agents.Idea.IdeaAgent[0]
+      Agent IdeaAgent invocation started with ExecutionId b020be52-f5fb-4997-9040-12b40c254065
+info: Nueyon.Compose.Application.Agents.Idea.IdeaAgent[0]
+      Agent IdeaAgent invocation completed in 25112ms with ExecutionId b020be52-f5fb-4997-9040-12b40c254065
+info: Nueyon.Compose.Application.Agents.Research.ResearchAgent[0]
+      Agent ResearchAgent invocation started with ExecutionId b020be52-f5fb-4997-9040-12b40c254065
+info: Nueyon.Compose.Application.Agents.Research.ResearchAgent[0]
+      Agent ResearchAgent invocation completed in 47459ms with ExecutionId b020be52-f5fb-4997-9040-12b40c254065
+info: Nueyon.Compose.Application.Agents.Synthesis.SynthesizerAgent[0]
+      Agent SynthesizerAgent invocation started with ExecutionId b020be52-f5fb-4997-9040-12b40c254065
+info: Nueyon.Compose.Application.Agents.Synthesis.SynthesizerAgent[0]
+      Agent SynthesizerAgent invocation completed in 23289ms with ExecutionId b020be52-f5fb-4997-9040-12b40c254065
+info: Nueyon.Compose.Application.Agents.Narrative.NarrativeAgent[0]
+      Agent NarrativeAgent invocation started with ExecutionId b020be52-f5fb-4997-9040-12b40c254065
+info: Nueyon.Compose.Application.Agents.Narrative.NarrativeAgent[0]
+      Agent NarrativeAgent invocation completed in 20072ms with ExecutionId b020be52-f5fb-4997-9040-12b40c254065
+info: Nueyon.Compose.Application.Agents.Compose.ComposeAgent[0]
+      Agent ComposeAgent invocation started with ExecutionId b020be52-f5fb-4997-9040-12b40c254065
+info: Nueyon.Compose.Application.Agents.Compose.ComposeAgent[0]
+      Agent ComposeAgent invocation completed in 12118ms with ExecutionId b020be52-f5fb-4997-9040-12b40c254065
+Selected Idea
+-------------
+
+Narrative is the recurrent failure point - target Narrative to preserve a company-first story
+Across multiple experiments the first visible editorial hierarchy break most often appears in the Narrative stage: Narrative frequently reframes a company-first brief into a product/orchestration-first story or introduces unsupported audience/validation language. Use the Narrative stage as the controlled intervention point in the next trial to test whether preserving the companyproduct relationship at Narrative reduces downstream drift.
+
+Research
+--------
+
+### Facts
+1. The report states: "Narrative is the most recurrent first visible hierarchy shift in the available records." (Cross-experiment patterns)
+2. Experiment 007 Candidate 001: the report lists the earliest supported localization as Narrative. (First observable drift by run - Experiment 007)
+3. Experiment 007 Candidate 002: the report lists the earliest supported localization as Narrative. (First observable drift by run - Experiment 007)
+4. Experiment 007 Candidate 003: the report lists the earliest supported localization as Synthesis. (First observable drift by run - Experiment 007)
+5. Experiment 008 A-002: the report lists Narrative as the first factual breach. (First observable signal/deviation - Experiment 008)
+6. Experiment 008 A-001: the report lists Idea as the earliest observable signal/deviation. (First observable signal/deviation - Experiment 008)
+7. Experiment 009 Baseline 002: the report lists Narrative as the first clear editorial shift. (Experiment 009 table)
+8. Experiment 009 Baseline 003: the report lists Narrative as the first clear editorial shift. (Experiment 009 table)
+9. Experiment 009 Candidate 001: the report lists Narrative as the earliest observable material deviation. (Experiment 009 table)
+10. Experiment 009 Candidate 002: the report lists Narrative as the earliest observable material deviation. (Experiment 009 table)
+11. Experiment 009 Candidate 003: the report lists Narrative as the earliest observable material deviation. (Experiment 009 table)
+12. The report documents its evidence basis and method as: reviewed the Master Workflow, baseline prompt snapshots, Experiment 006/007 traceability artifacts, all Experiment 008 run manifests/reports/stage outputs, and Experiment 009 evaluation/integrity artifacts and full five-stage run outputs. (Evidence basis and method)
+13. The report defines "first drift" as the earliest observable stage that departs from the requested company-first editorial hierarchy, introduces unsupported material, or makes a materially stronger claim; it does not imply internal model causation. (Evidence basis and method)
+14. The report states: "Drift is not confined to Idea." (Cross-experiment patterns)
+15. The report states that "Compose can amplify, add factual strength, or simply inherit" upstream framing and gives examples such as "orchestration-first," "reliably converts," and "predictable and repeatable." (Cross-experiment patterns)
+16. The report states two source-supported propositions that compete editorially: "Nu�yon is an AI-first company; orchestration is central to Compose's design." (Cross-experiment patterns)
+17. The Format-agnostic architecture audit observed that frozen Idea, Research, and Narrative prompts include references to supported formats, article-writing roles, or Article/LinkedIn compatibility. (Format-agnostic architecture audit - Observed)
+18. The report's "Interpretation and uncertainty" section states that format references are an instruction-boundary inconsistency and a plausible source of format priming but that this does not demonstrate that these references caused orchestration drift or a weak hook in any given run. (Format-agnostic architecture audit - Interpretation and uncertainty)
+19. The report's "Implication for the next focused trial" recommends a single controlled upstream-boundary trial and states: "Targets the first stage supported by the evidence for the chosen failure (Narrative is the most recurrent locus; compare its actual input Synthesis before changing it)." (Implication for the next focused trial)
+20. The report recommends that the next trial separately evaluate three dimensions: (a) factual claims, audience, certainty, and source support; (b) company-first story hierarchy; and (c) editorial quality (opening interest, clarity, narrative progression, concise readable prose, and strength of formulation), and that a result passes only if both content integrity and editorial quality pass. (Implication for the next focused trial)
+21. The report states: "Do not infer that another Idea-only change or a Compose-only style change will address every failure." (Implication for the next focused trial)
+22. The report records that Experiment 007 is a traceability report stored inside the Experiment 006 directory and that Experiment 007 artifacts lack Idea or Research extracts. (Executive findings 1)
+23. The report states: "Experiment 009 shows that a company-first selected Idea is not sufficient." (Executive findings 3)
+24. The report records an evidence limitation for Experiment 009: its saved evaluation summarizes six runs but does not assign a formal first-failure stage to each dimension; localization for some runs is lower confidence. (Experiment 009 evidence limitation)
+
+### Interpretations
+1. [derived from Facts 1, 2, 3, 5, 7, 8, 9-11] Across the reviewed runs, Narrative frequently appears as the earliest observable stage that departs from the requested company-first editorial hierarchy.
+2. [derived from Facts 1, 17, 19, 20] The report's documented recommendation is to treat Narrative as the controlled intervention point in a next trial that compares Synthesis inputs and then evaluates factual integrity, company-first hierarchy preservation, and editorial quality.
+
+### Unknowns
+1. Whether Narrative is the root cause of most pipeline drift (causation) is UNKNOWN; the report explicitly states it does not demonstrate causation and recommends a controlled trial.
+2. Whether upstream format references (format leakage) actually caused orchestration drift in any specific run is UNKNOWN; the report says format references are a plausible source of priming but do not demonstrate causation. (See Fact 18)
+3. Which specific Narrative prompt or input changes would be effective at preventing downstream reframing is UNKNOWN; the report recommends a controlled trial to test interventions. (Implication and trial recommendation)
+4. Whether preserving a company-first selected Idea alone is sufficient to prevent downstream drift in general is UNKNOWN; the report records that Experiment 009 candidate Idea changes did not demonstrate improvement but does not generalize sufficiency. (Facts 23 and 24)
+5. The precise causal chain for runs where Idea or Synthesis (rather than Narrative) were the earliest observable drift points is UNKNOWN. (Facts 4, 6, 14)
+6. Which component(s) of the pipeline (Idea, Research, Synthesis, Narrative, Compose) most often produce the first unsupported factual claims versus the first editorial-hierarchy shifts is partially unknown at high confidence for some runs because Experiment 009's saved evaluation does not assign a formal first-failure stage to each dimension. (Fact 24)
+
+### Development sequence
+1. The report documents that the author reviewed Master Workflow, baseline prompt snapshots, Experiment 006/007 artifacts, Experiment 008 runs, and Experiment 009 artifacts and full outputs. (Fact 12)
+2. For specific runs the report records the earliest observable localization of drift: Experiment 007 Candidate 001  Narrative; Candidate 002  Narrative; Candidate 003  Synthesis. (Facts 2-4)
+3. For Experiment 008 the report records earliest signals in multiple runs including A-001  Idea and A-002  Narrative. (Facts 6 and 5)
+4. For Experiment 009 the report records baseline and candidate runs with earliest observable deviations frequently at Narrative (Baseline 002, Baseline 003, Candidate 001-003). (Facts 7-11)
+5. The report derives the cross-experiment pattern that Narrative is the most recurrent first visible hierarchy shift in the available records. (Fact 1)
+6. The report records observed prompt-format references in upstream prompts (Idea/Research/Narrative). (Fact 17)
+7. Based on the documented observations and pattern, the report recommends a controlled upstream-boundary trial that targets Narrative as the first stage supported by the evidence and prescribes evaluation criteria for that trial. (Facts 19-21)
+
+Note on relationships: the sequence above preserves the report's order of review, per-run observations, the cross-experiment pattern, the observed format references, and the report's recommendation. Causal explanations for why specific runs drifted are UNKNOWN. (See Unknowns 1, 2, 5.)
+
+### Editorial relevance
+- Facts 1, 2, 3, 5, 7, 8, 9, 10, 11 (per-run localizations and the cross-experiment summary) are relevant to the Selected Idea.
+- Facts 12 and 13 (evidence basis and definition of "first drift") are relevant to the Selected Idea.
+- Facts 15 and 17-18 (Compose amplification examples and format-agnostic audit observations/uncertainty) are relevant to the Selected Idea.
+- Facts 19-21 (the report's recommendation to target Narrative, trial design guidance, and evaluation criteria) are relevant to the Selected Idea.
+- Interpretations 1 and 2 are relevant to the Selected Idea.
+
+Synthesis
+---------
+
+### Central insight
+Across the reviewed experiments, the Narrative stage is the most frequently observed first stage where the requested company-first editorial hierarchy breaks, so the next controlled trial should target Narrative inputs to test whether constraining Narrative reduces downstream reframing.
+
+### Evidence
+1. The report states: "Narrative is the most recurrent first visible hierarchy shift in the available records." (Research Fact 1).
+2. Experiment 007 produced runs where the earliest supported localization of drift was Narrative (Candidate 001 and Candidate 002) (Research Facts 2-3).
+3. Experiment 008 includes a run (A-002) where Narrative is listed as the first factual breach (Research Fact 5).
+4. Multiple Experiment 009 runs list Narrative as the earliest observable material deviation (Baseline 002, Baseline 003, Candidate 001, Candidate 002, Candidate 003) (Research Facts 7-11).
+5. The report documents its evidence basis and method (reviewed Master Workflow, baseline prompt snapshots, Experiment 006/007 artifacts, all Experiment 008 manifests/reports/outputs, and Experiment 009 evaluation/integrity artifacts and full five-stage run outputs) (Research Fact 12), establishing that the localization claims are based on a multi-experiment review.
+6. The report defines "first drift" as the earliest observable stage that departs from the requested company-first editorial hierarchy and explicitly notes this definition "does not imply internal model causation" (Research Fact 13).
+7. The report also states that drift is not confined to a single stage (e.g., Idea or Synthesis can appear first in some runs) (Research Fact 14), so Narrative is the most recurrent observed locus but not the sole locus across all runs.
+8. Based on the pattern above, the report recommends a single controlled upstream-boundary trial that "targets the first stage supported by the evidence for the chosen failure (Narrative is the most recurrent locus; compare its actual input Synthesis before changing it)." (Research Fact 19).
+9. The report records that Experiment 009 demonstrates a company-first selected Idea is not by itself sufficient to prevent downstream reframing (Research Fact 23).
+
+### What the narrative should emphasize
+- Emphasize the two core evidence items: Evidence 1 (the cross-experiment statement that Narrative is the most recurrent first visible hierarchy shift) and Evidence 8 (the report's explicit recommendation to run a controlled trial targeting Narrative inputs).
+- Optionally, use one concrete clarifying detail to illustrate the pattern: cite that multiple specific runs across Experiments 007-009 list Narrative as the earliest observable drift (Evidence 2-4 and 4), showing the pattern appears across separate experiment series. Also note that Compose can amplify upstream framing (Research Fact 15) as a descriptive example of how Narrative-stage reframing can propagate downstream (optional supporting detail only).
+
+### What should be de-emphasized
+- Do not treat Narrative as the sole cause of pipeline drift; the report records runs where Idea or Synthesis drift first and explicitly warns against assuming a single fix will resolve every failure (Research Facts 14 and 21).
+- De-emphasize unrelated product history, naming, full architecture, or exhaustive workflow descriptions; they are not necessary to justify targeting Narrative in the proposed trial (these are peripheral to the central evidence cited above).
+
+### Gaps and uncertainty
+- Causation is unknown: the report explicitly states it does not demonstrate that Narrative is the root cause of most pipeline drift (Research Unknown 1; Research Fact 13).
+- Which specific Narrative prompt or input changes would be effective at preventing downstream reframing is unknown and requires the recommended controlled trial (Research Unknown 3).
+- Whether preserving a company-first selected Idea alone is sufficient to prevent downstream drift is unknown; Experiment 009 indicates it is not sufficient in those runs but does not establish general sufficiency (Research Unknown 4; Research Fact 23).
+- Evidence limitations: Experiment 009's saved evaluation summarizes multiple runs but does not assign a formal first-failure stage to each dimension for every run, so localization confidence is lower for some runs (Research Fact 24).
+
+Narrative
+---------
+
+Selected Story
+
+Within the Nu�yon.Compose five-stage pipeline, the Narrative stage is the most frequently observed point where a company-first Selected Idea is reframed into a product- or orchestration-first story. Multiple runs across Experiments 007-009 list Narrative as the earliest observable hierarchy shift, and the report recommends running a single controlled trial that targets Narrative inputs to test whether constraining or reworking Narrative preserves the requested companyproduct framing. The reader should understand this as a testable, evidence-guided intervention based on recurrent observation-not proof of causation or a guaranteed fix.
+
+Story Progression
+
+- Context: The pipeline starts from a company-first Selected Idea and applies high-impact editorial choices at Narrative (story selection, hook, audience framing) before Compose turns the narrative into final content. The audience for this story is prompt engineers, workflow architects, content editors, and experiment designers responsible for the pipeline.
+
+- Development: Cross-experiment records show Narrative as the most recurrent first visible hierarchy shift (examples include Experiment 007 Candidate 001-002, Experiment 008 A-002, and multiple Experiment 009 runs). In several runs Narrative reframed the brief toward orchestration/product-first language, and that reframing propagated into Compose outputs in some cases.
+
+- Endpoint: The supported conclusion is a focused next step: run a controlled, upstream-bound trial that constrains or reworks Narrative inputs and compares downstream outputs to unchanged runs to evaluate whether this reduces downstream reframing. This trial is a test of an intervention suggested by observed patterns, not proof that Narrative is the root cause.
+
+Critical Constraints
+
+- Do not claim Narrative is the sole cause of pipeline drift; evidence shows other stages can precede drift in some runs.
+- Do not attribute decisions, intentions, or results to an unspecified team or collective actor.
+- Do not assert causation or claim the trial will necessarily succeed; treat the trial as an experiment to test a hypothesis.
+- Do not claim implementation, benefits, or improved outcomes unless directly supported by trial results.
+- Avoid exhaustive technical or product-history detail; keep architecture and workflow descriptions only as necessary to explain Narrative's editorial role.
+
+Compose
+-------
+
+In Nu�yon.Compose's five-stage pipeline, the Narrative stage is where a company-first idea most often shifts toward a product- or orchestration-first story.
+
+The pipeline begins with a company-first Selected Idea, then Narrative applies high-impact editorial choices - story selection, hook, audience framing - before Compose turns that narrative into final content. Those editorial choices can change what the final output emphasizes.
+
+Across multiple runs (notably Experiments 007-009, including specific candidates such as 007 Candidate 001-002 and 008 A-002), Narrative was the most frequently observed site of the earliest visible hierarchy shift. In several runs that shift moved downstream and appeared in Compose outputs.
+
+That pattern is a recurring observation, not proof of causation. Other stages have preceded reframing in some runs, so Narrative is not the sole possible source of drift.
+
+A focused next step: run a single controlled, upstream-bound trial that constrains or reworks Narrative inputs and compares downstream outputs to unchanged runs. That trial tests the specific hypothesis that tighter Narrative inputs will preserve the companyproduct framing; it's an experiment to generate evidence, not a guarantee of success.
+
+For prompt engineers, workflow architects, content editors, and experiment designers managing this pipeline, this is a narrowly scoped, testable intervention that follows a consistent pattern in recent runs and aims to clarify whether Narrative-level edits can reduce downstream reframing.
+

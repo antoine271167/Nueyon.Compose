@@ -1,0 +1,51 @@
+{
+  "runId": "02-development-r1",
+  "ideaQuality": {
+    "scores": {
+      "brontrouw": 0,
+      "redactioneelDoel": 2,
+      "focus": 2,
+      "onderscheidendeInvalshoek": 2,
+      "redactioneleAantrekkingskracht": 2
+    },
+    "total": 8,
+    "passed": false,
+    "reasons": {
+      "brontrouw": "De titel schrijft de consistente drift stellig toe aan de promptzin. Het verslag vergelijkt hergebruikte baseline-runs met later uitgevoerde kandidaat-runs en benoemt wisselende upstream-uitvoer en een onvastgelegde modelversie. Ook is de toeschrijving aan een team in Rationale onbelegd.",
+      "redactioneelDoel": "De ene Narrative-wijziging, geobserveerde uitkomst en afwijzing vormen de gevraagde ontwikkelles.",
+      "focus": "Alle velden dragen dezelfde vraag over de mislukte beschermingsregel.",
+      "onderscheidendeInvalshoek": "Het contrast tussen de bedoeling van de instructie en de lagere scores ordent de casus.",
+      "redactioneleAantrekkingskracht": "De concrete paradox en de onderbouwde rollback geven een reden om verder te lezen."
+    },
+    "references": [
+      "Controlled comparison and configuration, regels 19–25",
+      "Prompt change, regels 28–32",
+      "Narrative outputs en Final Compose outputs, regels 48–72",
+      "Build, tests, and promotion decision, regels 86–94",
+      "Limitations, regels 96–100"
+    ]
+  },
+  "downstreamViability": {
+    "passed": true,
+    "centralMessage": "In deze proef viel één algemene Narrative-instructie samen met terugkerende verschuivingen en een rollback.",
+    "steps": [
+      {
+        "content": "Legt de bedoeling en precieze wijziging van de Narrative-userprompt vast.",
+        "reference": "Prompt change, regels 28–32"
+      },
+      {
+        "content": "Verbindt lagere gemiddelden en terugkerende verschuivingen met de afwijzing en byte-identieke rollback.",
+        "reference": "Run scores, regels 48–72; Build, tests, and promotion decision, regels 86–94"
+      }
+    ],
+    "attribution": "De te stellige causaliteit en de verwijzing naar een team zitten in het Idea. Narrative brengt de causaliteit expliciet terug tot de waargenomen samenhang en laat het team weg."
+  },
+  "severeFidelityError": true,
+  "severeFidelityDetail": {
+    "stage": "Idea",
+    "passage": "A single generic ‘Preserve Editorial Intent’ instruction caused consistent editorial drift and failed promotion",
+    "reference": "Controlled comparison and configuration, regels 19–22; Limitations, regels 96–100",
+    "effect": "De titel maakt oorzakelijkheid tot de centrale les, terwijl de historische vergelijking model- en upstreamvariatie niet uitsluit."
+  },
+  "passed": false
+}

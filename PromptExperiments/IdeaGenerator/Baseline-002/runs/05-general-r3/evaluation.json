@@ -1,0 +1,57 @@
+{
+  "runId": "05-general-r3",
+  "ideaQuality": {
+    "scores": {
+      "brontrouw": 0,
+      "redactioneelDoel": 0,
+      "focus": 2,
+      "onderscheidendeInvalshoek": 1,
+      "redactioneleAantrekkingskracht": 0
+    },
+    "total": 3,
+    "passed": false,
+    "reasons": {
+      "brontrouw": "Description maakt licentiebehoud en andere verplichtingen algemeen voor hergebruik van publiekdomeinteksten. §1.C en §1.E maken de Gutenberg-verwijzing bepalend voor de beschreven Amerikaanse uitzondering. Evidence laat die grens weg.",
+      "redactioneelDoel": "Het Idea gebruikt de rede als voorbeeldbestand voor een licentieuitleg. Het verklaart geen betekenisvolle gedachte uit de rede.",
+      "focus": "De voorwaarden voor hergebruik vormen één intern herkenbaar onderwerp.",
+      "onderscheidendeInvalshoek": "De voorwaarden zijn concreet, maar de invalshoek blijft een opsomming van rechten en plichten en mist het onderscheid dat ze toepasselijk maakt.",
+      "redactioneleAantrekkingskracht": "De belofte om onbedoelde niet-naleving te voorkomen berust op een te breed voorgestelde verplichting."
+    },
+    "references": [
+      "Lincoln’s Gettysburg Address, regels 38–68",
+      "Full Project Gutenberg License, §1.C en §1.E, regels 137–171",
+      "Full Project Gutenberg License, §1.E.6–9, regels 210–265"
+    ]
+  },
+  "downstreamViability": {
+    "passed": false,
+    "centralMessage": "De Narrative wil licentievoorwaarden voor hergebruik van het Gettysburg-eBook uitleggen, maar behandelt die als algemene voorwaarden voor publiekdomeinhergebruik.",
+    "steps": [
+      {
+        "content": "Beschrijft verplichte vermelding en het behoud van de licentie.",
+        "reference": "Full Project Gutenberg License, §1.E.1 en §1.E.4–5, regels 164–171 en 200–208. De werkingssfeer ontbreekt in de Narrative."
+      },
+      {
+        "content": "Werkt formaat en vergoedingsregels uit.",
+        "reference": "Full Project Gutenberg License, §1.E.6–9, regels 210–265. De Narrative voegt verschillende betalingsroutes samen."
+      }
+    ],
+    "attribution": "Idea kiest de licentie en laat de uitzondering bij verwijderde Gutenberg-verwijzingen weg. Narrative versterkt dat tot een bewering dat toestemming vereist is om de vermelding weg te laten en behandelt de royalty als kenmerk van zowel §1.E.8 als §1.E.9."
+  },
+  "severeFidelityError": true,
+  "severeFidelityDetail": [
+    {
+      "stage": "Idea",
+      "passage": "mandatory conditions accompany that freedom",
+      "reference": "Full Project Gutenberg License, §1.C en §1.E, regels 137–152 en 164–171",
+      "effect": "Maakt voorwaarden voor gemerkte verspreiding tot algemene hergebruikvoorwaarden voor publiekdomeinteksten."
+    },
+    {
+      "stage": "Narrative",
+      "passage": "distributors who wish to deviate (for example, to omit the required notices ...) must seek permission",
+      "reference": "Full Project Gutenberg License, §1.C, regels 137–152; §1.E, regel 164; §1.E.9, regels 260–265",
+      "effect": "Keert de centrale Amerikaanse uitzondering voor onbeschermd werk zonder Gutenberg-verwijzingen om tot een toestemmingsplicht."
+    }
+  ],
+  "passed": false
+}

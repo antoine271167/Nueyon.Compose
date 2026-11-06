@@ -1,0 +1,254 @@
+
+========================================
+          Nueyon.Compose
+       AI Idea Composition
+========================================
+
+Loading Markdown files from: data/input
+
+Processing...
+
+info: Nueyon.Compose.Application.Agents.Idea.IdeaAgent[0]
+      Agent IdeaAgent invocation started with ExecutionId a141ffbf-ef50-4298-affa-52d8eea5e4b1
+info: Nueyon.Compose.Application.Agents.Idea.IdeaAgent[0]
+      Agent IdeaAgent invocation completed in 32787ms with ExecutionId a141ffbf-ef50-4298-affa-52d8eea5e4b1
+info: Nueyon.Compose.Application.Agents.Research.ResearchAgent[0]
+      Agent ResearchAgent invocation started with ExecutionId a141ffbf-ef50-4298-affa-52d8eea5e4b1
+info: Nueyon.Compose.Application.Agents.Research.ResearchAgent[0]
+      Agent ResearchAgent invocation completed in 55050ms with ExecutionId a141ffbf-ef50-4298-affa-52d8eea5e4b1
+info: Nueyon.Compose.Application.Agents.Synthesis.SynthesizerAgent[0]
+      Agent SynthesizerAgent invocation started with ExecutionId a141ffbf-ef50-4298-affa-52d8eea5e4b1
+info: Nueyon.Compose.Application.Agents.Synthesis.SynthesizerAgent[0]
+      Agent SynthesizerAgent invocation completed in 26388ms with ExecutionId a141ffbf-ef50-4298-affa-52d8eea5e4b1
+info: Nueyon.Compose.Application.Agents.Narrative.NarrativeAgent[0]
+      Agent NarrativeAgent invocation started with ExecutionId a141ffbf-ef50-4298-affa-52d8eea5e4b1
+info: Nueyon.Compose.Application.Agents.Narrative.NarrativeAgent[0]
+      Agent NarrativeAgent invocation completed in 22897ms with ExecutionId a141ffbf-ef50-4298-affa-52d8eea5e4b1
+info: Nueyon.Compose.Application.Agents.Compose.ComposeAgent[0]
+      Agent ComposeAgent invocation started with ExecutionId a141ffbf-ef50-4298-affa-52d8eea5e4b1
+info: Nueyon.Compose.Application.Agents.Compose.ComposeAgent[0]
+      Agent ComposeAgent invocation completed in 13255ms with ExecutionId a141ffbf-ef50-4298-affa-52d8eea5e4b1
+Selected Idea
+-------------
+
+Prefer the official GitHub CLI packages (Debian/RPM/Homebrew) - they're the supported install path
+The strongest editorial story the source supports is that GitHub CLI provides official packages (Debian, RPM, Homebrew) that are explicitly maintained by the CLI maintainers and updated via a CI deployment workflow - and these are the recommended, supported installation methods.
+
+Research
+--------
+
+### Facts
+1. The document contains a "Recommended (Official)" section.
+2. The "Recommended (Official)" section contains a "Debian" subsection that states: "Debian packages are hosted on the GitHub CLI marketing site for various operating systems including: Debian, Raspberry Pi, Ubuntu Linux."
+3. The Debian subsection states: "These packages are supported by the GitHub CLI maintainers with updates powered by [GitHub CLI deployment workflow]."
+4. The Debian subsection provides the following apt-based install sequence:
+
+```bash
+(type -p wget >/dev/null || (sudo apt update && sudo apt install wget -y)) \
+	&& sudo mkdir -p -m 755 /etc/apt/keyrings \
+	&& out=$(mktemp) && wget -nv -O$out https://cli.github.com/packages/githubcli-archive-keyring.gpg \
+	&& cat $out | sudo tee /etc/apt/keyrings/githubcli-archive-keyring.gpg > /dev/null \
+	&& sudo chmod go+r /etc/apt/keyrings/githubcli-archive-keyring.gpg \
+	&& sudo mkdir -p -m 755 /etc/apt/sources.list.d \
+	&& echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null \
+	&& sudo apt update \
+	&& sudo apt install gh -y
+```
+
+5. The Debian subsection provides the following upgrade commands:
+
+```bash
+sudo apt update
+sudo apt install gh
+```
+
+6. The "Recommended (Official)" section contains an "RPM" subsection that states: "RPM packages are hosted on the GitHub CLI marketing site for various operating systems including: Amazon Linux 2, CentOS, Fedora, Red Hat Enterprise Linux, openSUSE, SUSE."
+7. The RPM subsection states: "These packages are supported by the GitHub CLI maintainers with updates powered by [GitHub CLI deployment workflow]."
+8. The RPM subsection includes a DNF5 note and provides these DNF5 install commands (the source marks these commands as applying to DNF5 only):
+
+```bash
+sudo dnf install dnf5-plugins
+sudo dnf config-manager addrepo --from-repofile=https://cli.github.com/packages/rpm/gh-cli.repo
+sudo dnf install gh --repo gh-cli
+```
+
+9. The RPM subsection includes a DNF4 note and provides these DNF4 install commands (the source marks these commands as applying to DNF4 only):
+
+```bash
+sudo dnf install 'dnf-command(config-manager)'
+sudo dnf config-manager --add-repo https://cli.github.com/packages/rpm/gh-cli.repo
+sudo dnf install gh --repo gh-cli
+```
+
+10. The RPM subsection provides Amazon Linux 2 (yum) install commands:
+
+```bash
+type -p yum-config-manager >/dev/null || sudo yum install yum-utils
+sudo yum-config-manager --add-repo https://cli.github.com/packages/rpm/gh-cli.repo
+sudo yum install gh
+```
+
+11. The RPM subsection provides openSUSE/SUSE (zypper) install commands:
+
+```bash
+sudo zypper addrepo https://cli.github.com/packages/rpm/gh-cli.repo
+sudo zypper ref
+sudo zypper install gh
+```
+
+12. The "Recommended (Official)" section contains a "Homebrew" subsection that states: "Homebrew is a free and open-source software package management system that simplifies the installation of software on Apple's operating system, macOS, as well as Linux."
+13. The Homebrew subsection states: "The GitHub CLI formulae is supported by the GitHub CLI maintainers with help from our friends at Homebrew with updated powered by [homebrew/homebrew-core]."
+14. The Homebrew subsection provides the install command:
+
+```bash
+brew install gh
+```
+
+15. The Homebrew subsection provides the upgrade command:
+
+```bash
+brew upgrade gh
+```
+
+16. The "Precompiled binaries" subsection states: "GitHub CLI releases contain precompiled binaries for `386`, `amd64`, `arm64`, and `armv6` architectures."
+17. The document contains a "Community (Unofficial)" section with an IMPORTANT note that states: "The GitHub CLI team does not maintain the following packages or repositories. We are unable to provide support for these installation methods or any guarantees of stability, security, or availability for these installation methods."
+18. The Alpine subsection states: "The GitHub CLI package is supported by the Alpine Linux community with updates powered by alpine/aports." and provides the install command:
+
+```bash
+apk add github-cli
+```
+
+19. The Android/Termux subsection states: "The GitHub CLI package is supported by the Termux community with updates powered by termux/termux-packages." and provides the install/upgrade command:
+
+```bash
+pkg install gh
+```
+
+20. The Arch Linux subsection states: "The GitHub CLI package is supported by the Arch Linux community with updates powered by Arch Linux packaging." and provides the install command:
+
+```bash
+sudo pacman -S github-cli
+```
+
+21. The Conda subsection states: "The GitHub CLI package is supported by the Conda community with updates powered by conda-forge/gh-feedstock." and provides the install command:
+
+```bash
+conda install gh --channel conda-forge
+```
+
+22. The Webi subsection states: "The GitHub CLI package is supported by the Webi community" and provides the install command and an upgrade example:
+
+```bash
+curl -sS https://webi.sh/gh | sh
+```
+
+and
+
+```bash
+webi gh@stable
+```
+
+23. The document contains a "Discouraged" section with a WARNING that states: "The GitHub CLI team actively discourages use of the following methods of installation." and the document specifically states: "our team suggests never installing gh as a snap."
+
+### Interpretations
+1. [derived from Facts 1, 2, 6, 12] The document groups Debian, RPM, and Homebrew under a labeled "Recommended (Official)" section.
+2. [derived from Facts 3, 7, 13, 16] The document explicitly states that the Debian packages, RPM packages, and Homebrew formulae are supported by the GitHub CLI maintainers and that updates are powered by the project's deployment workflows or homebrew/homebrew-core.
+3. [derived from Facts 17 and 18-22] The document distinguishes a set of community-maintained installation methods (Community (Unofficial)) and states that the GitHub CLI team does not maintain those packages and cannot provide support or guarantees for them.
+
+### Unknowns
+1. The document does not state what specific support, service-level commitments, or guarantees (if any) "supported by the GitHub CLI maintainers" entails for Debian, RPM, or Homebrew packages. (For example: response times, security auditing responsibilities, or formal SLAs are not specified.)
+2. The document does not provide comparative data on update frequency between the official (Debian/RPM/Homebrew) packages and the community-maintained packages.
+3. The document does not state whether the official packages undergo specific security audits beyond the general statements about maintainer support and deployment workflow.
+4. The document does not define criteria used to classify an installation method as "Recommended (Official)" versus "Community (Unofficial)."
+5. The document does not state whether packages listed as "Community (Unofficial)" are coordinated with the GitHub CLI maintainers in any way.
+6. The document does not quantify the meaning of the warning against Snap beyond the statement that the team "actively discourages" snaps and references an external issue link.
+
+### Development sequence
+1. The document presents a top-level section labeled "Recommended (Official)" (Fact 1).
+2. Within "Recommended (Official)", the document presents a "Debian" subsection that states where Debian packages are hosted and that those packages are supported by the GitHub CLI maintainers with updates powered by the deployment workflow, and it provides install and upgrade commands (Facts 2-5).
+3. Within "Recommended (Official)", the document presents an "RPM" subsection that states where RPM packages are hosted and that those packages are supported by the GitHub CLI maintainers with updates powered by the deployment workflow, and it provides platform-specific install commands (Facts 6-11).
+4. Within "Recommended (Official)", the document presents a "Homebrew" subsection that describes Homebrew and states the GitHub CLI formulae is supported by the maintainers with updates powered by homebrew/homebrew-core, and it provides install and upgrade commands (Facts 12-15).
+5. The document includes a "Precompiled binaries" subsection listing architectures for which releases contain binaries (Fact 16).
+6. The document then presents a "Community (Unofficial)" section that states the GitHub CLI team does not maintain the listed packages and cannot provide support or guarantees for them, and it lists multiple community package options with their install commands (Facts 17-22).
+7. The document concludes by presenting a "Discouraged" section that warns against certain installation methods and explicitly discourages installing gh as a snap (Fact 23).
+
+(Relationships between these presented sections are the document's ordering; any causal or motivational relationship between them is UNKNOWN.)
+
+### Editorial relevance
+- Facts 1, 2, 3, 6, 7, 12, 13, and 16 are relevant to the Selected Idea.
+- Facts 4, 5, 8, 9, 10, 11, 14, and 15 (the provided install/upgrade commands for Debian, RPM, and Homebrew) are relevant to the Selected Idea.
+- Facts 17 and 23 (the Community (Unofficial) note and the Discouraged/Snap warning) are relevant to the Selected Idea.
+- Facts 18-22 (representative community-package entries and install commands) are relevant as contrasts to the official/supported methods.
+- Interpretations 1, 2, and 3 are relevant to the Selected Idea.
+
+Synthesis
+---------
+
+### Central insight
+
+The project's official, recommended install paths are the Debian, RPM, and Homebrew packages - each is explicitly labeled as "supported by the GitHub CLI maintainers" (the Debian and RPM pages state updates are "powered by [GitHub CLI deployment workflow]"; the Homebrew formulae are supported by maintainers with updates via homebrew/homebrew-core).
+
+### Evidence
+
+1. The documentation contains a distinct "Recommended (Official)" section that groups the official install methods. (Research Fact 1)
+2. Debian: the Debian subsection states Debian packages are hosted on the GitHub CLI marketing site and that "These packages are supported by the GitHub CLI maintainers with updates powered by [GitHub CLI deployment workflow]." (Research Facts 2-3)
+3. Debian (concrete example): the Debian subsection publishes an apt-based install sequence that configures the GitHub CLI apt repository and installs gh. (Research Fact 4)
+4. RPM: the RPM subsection states RPM packages are hosted on the GitHub CLI marketing site for multiple RPM-based distributions and that "These packages are supported by the GitHub CLI maintainers with updates powered by [GitHub CLI deployment workflow]." It also provides DNF/YUM/Zypper install commands for those distributions. (Research Facts 6-11)
+5. Homebrew: the Homebrew subsection states "The GitHub CLI formulae is supported by the GitHub CLI maintainers with help from our friends at Homebrew" and indicates updates are powered by homebrew/homebrew-core; it provides the brew install gh and brew upgrade gh commands. (Research Facts 12-15)
+6. Contrast with community packages: the document has a "Community (Unofficial)" section that explicitly says the GitHub CLI team does not maintain those packages and cannot provide support or guarantees for them. (Research Fact 17)
+7. The documentation includes a "Discouraged" section that specifically warns against installing gh as a snap. (Research Fact 23)
+
+### What the narrative should emphasize
+
+- Emphasize the label and grouping in the documentation: the existence of a dedicated "Recommended (Official)" section (Evidence 1) and the maintainers' explicit support statements for Debian, RPM, and Homebrew (Evidence 2, 4, 5) are the core proof that these are the repository- and formula-backed, recommended install paths. Preserve the documented distinction that Debian and RPM updates are described as powered by the GitHub CLI deployment workflow while Homebrew updates are described as coming via homebrew/homebrew-core (Evidence 2, 4, 5).
+
+- Use the Debian apt example (Evidence 3) as a single concrete illustration of what an "official" install flow looks like; Narrative may show one short command snippet or summarize it, but does not need to reproduce every platform-specific command.
+
+### What should be de-emphasized
+
+- Community / unofficial packages and their install commands (Research Facts 18-22) - they are important to list for completeness but are not needed to make the central point that Debian/RPM/Homebrew are the documented, maintainer-supported install paths (Evidence 6).
+- Low-level packaging command variations across every RPM distribution (the DNF4 vs DNF5 vs yum vs zypper differences in Evidence 4) - these are operational details that don't change the core editorial claim and can be abbreviated or placed in a separate "How to install" sidebar if desired.
+- Other product details (precompiled binaries, broader packaging history, or roadmap) that do not bear on which install paths are officially supported.
+
+### Gaps and uncertainty
+
+- The documentation does not define what "supported by the GitHub CLI maintainers" means in practice (no specified response times, SLAs, or precise maintenance responsibilities). (Research Unknown 1)
+- The documentation does not provide comparative data on update frequency between the official packages and community-maintained packages. (Research Unknown 2)
+- The documentation does not state whether the official packages undergo specific security audits beyond the maintainers' support statements. (Research Unknown 3)
+- The documentation does not define the criteria used to classify a method as "Recommended (Official)" versus "Community (Unofficial)." (Research Unknown 4)
+
+Narrative should report these unknowns as constraints on claims about what "supported" implies (avoid asserting guarantees about update timeliness, security audit coverage, or formal SLAs unless additional evidence is provided).
+
+Narrative
+---------
+
+Selected Story
+
+The GitHub CLI's officially recommended install paths are the Debian, RPM, and Homebrew packages; each is explicitly labeled as "supported by the GitHub CLI maintainers," with Debian and RPM updates described as powered by the GitHub CLI deployment workflow and Homebrew updates flowing via homebrew/homebrew-core. The central point for readers who must choose how to install gh is simple and concrete: these three package families are the maintainer-supported, documented installation routes, while community packages are explicitly listed as unofficial and not maintained by the maintainers.
+
+Story Progression
+
+- Context: Developers, sysadmins, and package-maintenance teams choosing how to install gh need a reliable, maintainer-backed option; the project's documentation groups a small set of methods as the official, recommended install paths.
+
+- Development: The documentation identifies three supported package families - Debian (apt repository and an example apt install flow), RPM (DNF/YUM/Zypper options for RPM-based distributions), and Homebrew (brew install/upgrade with updates via homebrew/homebrew-core) - and states that these are supported by the GitHub CLI maintainers and updated through the project's deployment workflows. This is contrasted with a separate "Community (Unofficial)" section that says those packages are not maintained by the maintainers.
+
+- Endpoint: The supported conclusion is that, if a reader wants an installation path explicitly maintained and updated by the GitHub CLI maintainers, the Debian, RPM, and Homebrew packages are the documented, official routes to use; other community packages are not maintainer-supported.
+
+Critical Constraints
+
+- Do not claim or imply what "supported by the GitHub CLI maintainers" means in operational terms (no implied SLAs, response times, or formal support guarantees).
+- Do not assert comparative claims about update frequency, security auditing, or reliability versus community packages unless additional evidence is provided.
+- Do not invent a decision-maker, team judgment, or motivation that the inputs do not establish.
+- Do not infer causality (for example, do not state that the deployment workflow causes faster updates) or claim benefits that the sources do not document.
+
+Compose
+-------
+
+Choosing how to install the GitHub CLI? If you want an installation route that the project maintainers mark as supported, there are three clear options to pick from.
+
+They are the Debian packages (via an apt repository with an example apt install flow), RPM packages (DNF/YUM/Zypper options for RPM-based distributions), and Homebrew (brew install/upgrade). Updates for the Debian and RPM packages are handled through the GitHub CLI deployment workflows; Homebrew updates flow through homebrew/homebrew-core.
+
+Other packages appear in a separate Community (Unofficial) section and are explicitly listed as not maintained by the GitHub CLI maintainers.
+
+In short: for an install path explicitly maintained and updated by the GitHub CLI maintainers, use the Debian, RPM, or Homebrew packages. Community packages are unofficial.
+

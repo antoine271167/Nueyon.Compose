@@ -1,0 +1,44 @@
+{
+  "runId": "04-analysis-r3",
+  "ideaQuality": {
+    "scores": {
+      "brontrouw": 1,
+      "redactioneelDoel": 1,
+      "focus": 2,
+      "onderscheidendeInvalshoek": 2,
+      "redactioneleAantrekkingskracht": 2
+    },
+    "total": 8,
+    "passed": false,
+    "reasons": {
+      "brontrouw": "De recurrentie en voorgestelde vervolgproef zijn herleidbaar. Evidence noemt Narrative het ‘highest-leverage control point’ zonder vergelijkende interventiedata en schrijft ‘immediate, directional focus’ toe aan 009 baseline 002 terwijl de tabel die formulering bij kandidaat 002 plaatst. De proef blijft in Description een toets en geen bewezen oplossing.",
+      "redactioneelDoel": "Het Idea noemt een zinvolle diagnostische conclusie en de onzekerheid, maar de titel en uitwerking zetten het voorgestelde controlemiddel naast de feitelijke diagnose als tweede doel.",
+      "focus": "De interventie blijft verbonden aan één probleem, de verschuiving van bedrijfs- naar productverhaal.",
+      "onderscheidendeInvalshoek": "De koppeling tussen de gelokaliseerde breuk en een afzonderlijk te toetsen grens is concreet.",
+      "redactioneleAantrekkingskracht": "Het Idea geeft een specifieke aanleiding om de traces en een begrensde vervolgvraag te begrijpen."
+    },
+    "references": [
+      "Method, regels 25–29",
+      "First observable drift by run, regels 31–63, specifiek regels 57 en 60",
+      "Cross-experiment patterns, regels 65–72",
+      "Interpretation and uncertainty en Implication for the next focused trial, regels 84–95"
+    ]
+  },
+  "downstreamViability": {
+    "passed": false,
+    "centralMessage": "Narrative is vaak het eerste zichtbare punt waarop de hiërarchie verandert en vormt een toetsbaar aandachtspunt voor de volgende proef.",
+    "steps": [
+      {
+        "content": "Verbindt de waargenomen verschuiving aan eerdere experimenten en laat zien dat Compose die soms overneemt.",
+        "reference": "First observable drift by run en Cross-experiment patterns, regels 31–69"
+      },
+      {
+        "content": "Stelt een gecontroleerde vervolgproef voor en markeert die als toets van een hypothese.",
+        "reference": "Implication for the next focused trial, regels 88–95"
+      }
+    ],
+    "attribution": "De onjuiste 009-citaattoewijzing blijft beperkt tot Idea. Narrative behandelt 008 A-002 als voorbeeld van een eerste hiërarchieverschuiving, terwijl regel 47 daar een eerste feitelijke breuk benoemt. Ze behandelt een company-first Selected Idea ook als algemeen uitgangspunt van de pipeline, terwijl de analyse productgerichte selecties documenteert (regels 41–50)."
+  },
+  "severeFidelityError": false,
+  "passed": false
+}
