@@ -2,165 +2,89 @@ using System.Text.Json;
 using Microsoft.Agents.AI;
 using Nueyon.Compose.Application.Validation;
 
-#pragma warning disable MAAI001 // Type is for evaluation purposes only and is subject to change or removal in future updates.
+#pragma warning disable MAAI001 // LoopAgent APIs are experimental.
 
 namespace Nueyon.Compose.Application.Agents.Idea;
 
-/// <summary>
-///     A Nueyon-specific evaluator for the Microsoft Agent Framework LoopAgent.
-///     This evaluator integrates Idea validation into the loop decision process.
-///     After each agent iteration, it parses the agent's text response into Ideas,
-///     validates them using IdeaValidator, and decides whether to re-invoke the agent.
-///     The evaluator is stateless and safe for concurrent use.
-/// </summary>
-public sealed class IdeaValidationLoopEvaluator : LoopEvaluator
+/// <summary>Validates each generation before allowing the Idea loop to return it.</summary>
+public sealed class IdeaValidationLoopEvaluator(IIdeaValidator validator) : LoopEvaluator
 {
-    /// <summary>
-    ///     Initializes a new instance of IdeaValidationLoopEvaluator.
-    /// </summary>
-    /// <param name="validator">The validator to use for inspecting generated ideas.</param>
-    /// <exception cref="ArgumentNullException">Thrown when validator is null.</exception>
-    public IdeaValidationLoopEvaluator(IIdeaValidator validator) =>
-        _validator = validator ?? throw new ArgumentNullException(nameof(validator));
+    // Retain structural-only validation for callers that use the evaluator outside production.
 
-    private readonly IIdeaValidator _validator;
+    public IdeaValidationLoopEvaluator(IIdeaValidator validator, IdeaSemanticJudge judge) : this(validator) =>
+        _judge = judge ?? throw new ArgumentNullException(nameof(judge));
 
-    /// <summary>
-    ///     Evaluates the agent's response and decides whether to re-invoke the agent
-    ///     based on idea validation.
-    ///     The evaluation logic:
-    ///     1. Extract and parse the JSON from the LoopContext.LastResponse.Text
-    ///     2. Convert to IReadOnlyList&lt;Idea&gt;
-    ///     3. Pass to IdeaValidator.IsValid()
-    ///     4. If valid, return LoopEvaluation.Stop() (success - no more attempts needed)
-    ///     5. If invalid:
-    ///     a. If at the final iteration (Iteration == MaxIterations), throw InvalidOperationException
-    ///     b. Otherwise, return LoopEvaluation.Continue() to retry with feedback
-    ///     Note: Parsing happens here for validation, and again in IdeaAgent for the final
-    ///     output. This duplication is acceptable to maintain clean architecture.
-    /// </summary>
-    /// <param name="context">The current loop context containing the agent response and state.</param>
-    /// <param name="cancellationToken">The cancellation token.</param>
-    /// <returns>A LoopEvaluation indicating whether to continue or stop the loop.</returns>
-    /// <exception cref="InvalidOperationException">
-    ///     Thrown when the agent fails to produce valid ideas after the maximum number
-    ///     of attempts.
-    /// </exception>
-    public override ValueTask<LoopEvaluation> EvaluateAsync(
+    private const int MaxAttempts = 3;
+    internal const string SourceContentKey = "Nueyon.Compose.Idea.SourceContent";
+    private readonly IdeaSemanticJudge? _judge;
+
+    private readonly IIdeaValidator _validator = validator ?? throw new ArgumentNullException(nameof(validator));
+
+    public LoopAgent Wrap(AIAgent generator) => new(generator, this, new LoopAgentOptions
+    {
+        // MAF returns at its cap before calling the evaluator. Leave room to judge attempt three.
+        MaxIterations = MaxAttempts + 1,
+        NonStreamingReturnsLastResponseOnly = true
+    });
+
+    public override async ValueTask<LoopEvaluation> EvaluateAsync(
         LoopContext context,
         CancellationToken cancellationToken = default)
     {
+        ArgumentNullException.ThrowIfNull(context);
+        cancellationToken.ThrowIfCancellationRequested();
+
+        var responseText = context.LastResponse.Text;
+        IReadOnlyList<Domain.Idea> ideas;
         try
         {
-            ArgumentNullException.ThrowIfNull(context);
-
-            // Extract the text response from the agent's last iteration
-            var responseText = context.LastResponse.Text;
-
-            if (string.IsNullOrWhiteSpace(responseText))
-            {
-                // Empty response is invalid - check if at final attempt
-                return ValueTask.FromResult(context.Iteration >= 3
-                    ? throw new InvalidOperationException("Idea agent failed to produce valid ideas after 3 attempts.")
-                    :
-                    // Not at final attempt - ask the agent to try again
-                    LoopEvaluation.Continue("The agent provided an empty response. Please generate content ideas."));
-            }
-
-            // Parse the JSON response into ideas for validation
-            IReadOnlyList<Domain.Idea> ideas;
-            try
-            {
-                ideas = ParseIdeasFromJson(responseText);
-            }
-            catch (InvalidOperationException ex)
-            {
-                // Parsing failed - check if at final attempt
-                if (context.Iteration >= 3)
-                {
-                    throw new InvalidOperationException("Idea agent failed to produce valid ideas after 3 attempts.",
-                        ex);
-                }
-
-                // Not at final attempt - ask the agent to try again with feedback
-                return ValueTask.FromResult(LoopEvaluation.Continue(
-                    $"Failed to parse the response: {ex.Message} " +
-                    "Please respond with valid JSON containing an array of ideas with Title, Description, Audience, and Rationale fields."));
-            }
-
-            // Validate the ideas using the existing deterministic validator
-            var isValid = _validator.IsValid(ideas);
-
-            if (isValid)
-            {
-                // Ideas are valid - stop the loop and return success
-                return ValueTask.FromResult(LoopEvaluation.Stop());
-            }
-
-            // Ideas are invalid - check if at final attempt
-            // Since iterations are 0-indexed and MaxIterations=3, the final iteration is 3 (not 2)
-            if (context.Iteration >= 3)
-            {
-                throw new InvalidOperationException("Idea agent failed to produce valid ideas after 3 attempts.");
-            }
-
-            // Not at final attempt - continue the loop for another attempt with feedback
-            const string feedback = "The generated ideas do not meet validation requirements. " +
-                                    "Ensure each idea has a non-empty Title, Description, Audience, and Rationale.";
-
-            return ValueTask.FromResult(LoopEvaluation.Continue(feedback));
+            ideas = IdeaAgent.ParseIdeasFromJson(responseText);
         }
-        catch (Exception exception)
+        catch (InvalidOperationException ex)
         {
-            return ValueTask.FromException<LoopEvaluation>(exception);
+            return Reject(context,
+                "Return a valid JSON object with an ideas array matching the response schema.", ex);
         }
+
+        if (!_validator.IsValid(ideas))
+        {
+            return Reject(context,
+                "Return at least one idea, each with a non-empty title, description, audience, and rationale.");
+        }
+
+        if (_judge is null)
+        {
+            return LoopEvaluation.Stop();
+        }
+
+        if (context.RunOptions?.AdditionalProperties is not { } properties ||
+            !properties.TryGetValue(SourceContentKey, out var value) || value is not string sourceContent)
+        {
+            throw new InvalidOperationException("The original source is unavailable for Idea validation.");
+        }
+
+        var issues = await _judge.FindBlockingIssuesAsync(sourceContent, ideas, cancellationToken);
+        if (issues.Count == 0)
+        {
+            return LoopEvaluation.Stop();
+        }
+
+        var feedback = "Regenerate the ranked ideas using the original source. Address these blocking issues: " +
+                       JsonSerializer.Serialize(issues);
+        return Reject(context, feedback);
     }
 
-    /// <summary>
-    ///     Parses the JSON response from the model into a list of Idea objects.
-    ///     The expected response format is:
-    ///     {
-    ///     "ideas": [
-    ///     {
-    ///     "title": "...",
-    ///     "description": "...",
-    ///     "audience": "...",
-    ///     "rationale": "..."
-    ///     }
-    ///     ]
-    ///     }
-    ///     This mirrors the parsing logic in IdeaAgent. The duplication is intentional
-    ///     to maintain separation between the validation loop logic and the agent result processing.
-    /// </summary>
-    /// <param name="json">The JSON string to parse.</param>
-    /// <returns>A read-only list of parsed Idea objects.</returns>
-    /// <exception cref="InvalidOperationException">Thrown when the JSON is invalid or cannot be deserialized.</exception>
-    private static IReadOnlyList<Domain.Idea> ParseIdeasFromJson(string json)
+    private static LoopEvaluation Reject(LoopContext context, string feedback, Exception? innerException = null)
     {
-        if (string.IsNullOrWhiteSpace(json))
-        {
-            throw new InvalidOperationException("Agent response is empty.");
-        }
-
-        try
-        {
-            var options = new JsonSerializerOptions
-            {
-                PropertyNameCaseInsensitive = true
-            };
-
-            var response = JsonSerializer.Deserialize<IdeaResponse>(json, options)
-                           ?? throw new InvalidOperationException("Deserialization resulted in null response.");
-
-            return response.Ideas ?? throw new InvalidOperationException("Response ideas property is null.");
-        }
-        catch (JsonException ex)
+        // MAF counts completed generations starting at one, including the initial generation.
+        if (context.Iteration >= MaxAttempts)
         {
             throw new InvalidOperationException(
-                $"Failed to parse agent response as JSON: {ex.Message}",
-                ex);
+                $"Idea agent failed to produce valid ideas after {MaxAttempts} attempts. {feedback}", innerException);
         }
+
+        return LoopEvaluation.Continue(feedback);
     }
 }
 
-#pragma warning restore MAAI001 // Type is for evaluation purposes only and is subject to change or removal in future updates.
+#pragma warning restore MAAI001

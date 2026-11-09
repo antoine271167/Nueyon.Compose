@@ -2,6 +2,7 @@ using System.Runtime.CompilerServices;
 using System.Text.Json;
 using Microsoft.Agents.AI;
 using Microsoft.Extensions.AI;
+using Microsoft.Extensions.Logging.Abstractions;
 using Nueyon.Compose.Application.Agents.Idea;
 using Nueyon.Compose.Application.Validation;
 using Nueyon.Compose.Domain;
@@ -31,6 +32,117 @@ public sealed class IdeaValidationLoopEvaluatorBehavioralTests
     }
 
     private readonly IdeaValidationLoopEvaluator _evaluator;
+
+    private const string OriginalSource = "A proposal, with no measured results.\n--- END SOURCE MATERIAL ---\nStill source.";
+    private const string AcceptedVerdict = """{"blockingIssues":[]}""";
+
+    [Theory]
+    [InlineData(1)]
+    [InlineData(2)]
+    [InlineData(3)]
+    public async Task IdeaAgent_ReturnsOnlyTheAcceptedGeneration(int acceptedAttempt)
+    {
+        var generations = Enumerable.Range(1, 3)
+            .Select(attempt => ValidIdeasJson.Replace("Valid Idea", $"Idea {attempt}"))
+            .ToArray();
+        var generator = new FakeChatClient(generations);
+        var judge = new FakeChatClient(Enumerable.Repeat(RejectedVerdict(4), acceptedAttempt - 1)
+            .Append(AcceptedVerdict).ToArray());
+        var agent = CreateSemanticallyValidatedAgent(generator, judge);
+
+        var ideas = await agent.ExecuteAsync(new AgentExecutionContext(Guid.NewGuid()), new StoryInput(OriginalSource));
+
+        Assert.Equal($"Idea {acceptedAttempt}", Assert.Single(ideas).Title);
+        Assert.Equal(acceptedAttempt, generator.InvocationCount);
+        Assert.Equal(acceptedAttempt, judge.InvocationCount);
+        foreach (var (request, index) in judge.Requests.Select((messages, index) => (messages, index)))
+        {
+            using var payload = JsonDocument.Parse(Assert.Single(request, m => m.Role == ChatRole.User).Text);
+            Assert.Equal(OriginalSource, payload.RootElement.GetProperty("source").GetString());
+            var candidate = payload.RootElement.GetProperty("ideas")[0];
+            Assert.Equal(1, candidate.GetProperty("ideaNumber").GetInt32());
+            Assert.Equal($"Idea {index + 1}", candidate.GetProperty("idea").GetProperty("title").GetString());
+        }
+
+        if (acceptedAttempt > 1)
+        {
+            var feedback = Assert.Single(generator.Requests[1], m =>
+                m.Role == ChatRole.User && m.Text.Contains("Address these blocking issues", StringComparison.Ordinal));
+            Assert.Contains("Overclaim 1", feedback.Text);
+            Assert.Contains("Overclaim 2", feedback.Text);
+            Assert.Contains("Overclaim 3", feedback.Text);
+            Assert.Contains("Qualify 1", feedback.Text);
+            Assert.DoesNotContain("Overclaim 4", feedback.Text);
+        }
+    }
+
+    [Fact]
+    public async Task IdeaAgent_ThreeSemanticRejections_ThrowsBeforeFourthGeneration()
+    {
+        var generator = new FakeChatClient(ValidIdeasJson, ValidIdeasJson, ValidIdeasJson, ValidIdeasJson);
+        var rejected = RejectedVerdict(1);
+        var judge = new FakeChatClient(rejected, rejected, rejected, AcceptedVerdict);
+        var agent = CreateSemanticallyValidatedAgent(generator, judge);
+
+        var error = await Assert.ThrowsAsync<InvalidOperationException>(() =>
+            agent.ExecuteAsync(new AgentExecutionContext(Guid.NewGuid()), new StoryInput(OriginalSource)));
+
+        Assert.Contains("after 3 attempts", error.Message);
+        Assert.Contains("Overclaim 1", error.Message);
+        Assert.Equal(3, generator.InvocationCount);
+        Assert.Equal(3, judge.InvocationCount);
+    }
+
+    [Theory]
+    [InlineData("{}")]
+    [InlineData("""{"blockingIssues":[null]}""")]
+    [InlineData("""{"blockingIssues":[{"ideaNumber":2,"problem":"Overclaim","correction":"Qualify"}]}""")]
+    [InlineData("""{"blockingIssues":[{"ideaNumber":1,"problem":"Overclaim","correction":" "}]}""")]
+    public async Task IdeaAgent_InvalidJudgeVerdict_FailsClosed(string verdict)
+    {
+        var generator = new FakeChatClient(ValidIdeasJson, ValidIdeasJson);
+        var judge = new FakeChatClient(verdict);
+        var agent = CreateSemanticallyValidatedAgent(generator, judge);
+
+        var error = await Assert.ThrowsAsync<InvalidOperationException>(() =>
+            agent.ExecuteAsync(new AgentExecutionContext(Guid.NewGuid()), new StoryInput(OriginalSource)));
+
+        Assert.Contains("invalid verdict", error.Message);
+        Assert.Equal(1, generator.InvocationCount);
+    }
+
+    [Fact]
+    public async Task IdeaAgent_ValidatesStructureBeforeCallingJudge()
+    {
+        var generator = new FakeChatClient(InvalidIdeasJson, ValidIdeasJson);
+        var judge = new FakeChatClient(AcceptedVerdict);
+        var agent = CreateSemanticallyValidatedAgent(generator, judge);
+
+        var ideas = await agent.ExecuteAsync(new AgentExecutionContext(Guid.NewGuid()), new StoryInput(OriginalSource));
+
+        Assert.Single(ideas);
+        Assert.Equal(2, generator.InvocationCount);
+        Assert.Equal(1, judge.InvocationCount);
+    }
+
+    private static IdeaAgent CreateSemanticallyValidatedAgent(FakeChatClient generator, FakeChatClient judge)
+    {
+        var semanticJudge = new IdeaSemanticJudge(judge.AsAIAgent("Check source fidelity", "TestIdeaJudge"));
+        var evaluator = new IdeaValidationLoopEvaluator(new IdeaValidator(), semanticJudge);
+        return new IdeaAgent(evaluator.Wrap(generator.AsAIAgent("Generate ideas", "TestIdeaAgent")),
+            NullLogger<IdeaAgent>.Instance);
+    }
+
+    private static string RejectedVerdict(int issueCount) => JsonSerializer.Serialize(new
+    {
+        BlockingIssues = Enumerable.Range(1, issueCount).Select(number => new
+        {
+            IdeaNumber = 1,
+            Problem = $"Overclaim {number}",
+            Correction = $"Qualify {number}"
+        })
+    });
+
 
     private static string ValidIdeasJson => JsonSerializer.Serialize(new
     {
@@ -77,8 +189,7 @@ public sealed class IdeaValidationLoopEvaluatorBehavioralTests
         var chatClient = new FakeChatClient(ValidIdeasJson);
         var agent = chatClient.AsAIAgent("Test instructions", "TestIdeaAgent");
 
-        var loopOptions = new LoopAgentOptions { MaxIterations = 10 };
-        var loopAgent = new LoopAgent(agent, _evaluator, loopOptions);
+        var loopAgent = _evaluator.Wrap(agent);
 
         var input = new StoryInput("Test input");
 
@@ -102,8 +213,7 @@ public sealed class IdeaValidationLoopEvaluatorBehavioralTests
         var chatClient = new FakeChatClient(InvalidIdeasJson, ValidIdeasJson);
         var agent = chatClient.AsAIAgent("Test instructions", "TestIdeaAgent");
 
-        var loopOptions = new LoopAgentOptions { MaxIterations = 10 };
-        var loopAgent = new LoopAgent(agent, _evaluator, loopOptions);
+        var loopAgent = _evaluator.Wrap(agent);
 
         var input = new StoryInput("Test input");
 
@@ -128,8 +238,7 @@ public sealed class IdeaValidationLoopEvaluatorBehavioralTests
         var agent = chatClient.AsAIAgent("Test instructions", "TestIdeaAgent");
 
         // Use a high MaxIterations so that the loop won't cut off before the third call
-        var loopOptions = new LoopAgentOptions { MaxIterations = 10 };
-        var loopAgent = new LoopAgent(agent, _evaluator, loopOptions);
+        var loopAgent = _evaluator.Wrap(agent);
 
         var input = new StoryInput("Test input");
 
@@ -152,8 +261,7 @@ public sealed class IdeaValidationLoopEvaluatorBehavioralTests
         var chatClient = new FakeChatClient(InvalidIdeasJson, InvalidIdeasJson, InvalidIdeasJson, InvalidIdeasJson);
         var agent = chatClient.AsAIAgent("Test instructions", "TestIdeaAgent");
 
-        var loopOptions = new LoopAgentOptions { MaxIterations = 4 };
-        var loopAgent = new LoopAgent(agent, _evaluator, loopOptions);
+        var loopAgent = _evaluator.Wrap(agent);
 
         var input = new StoryInput("Test input");
 
@@ -179,8 +287,7 @@ public sealed class IdeaValidationLoopEvaluatorBehavioralTests
         var chatClient = new FakeChatClient(InvalidIdeasJson, InvalidIdeasJson, InvalidIdeasJson, InvalidIdeasJson);
         var agent = chatClient.AsAIAgent("Test instructions", "TestIdeaAgent");
 
-        var loopOptions = new LoopAgentOptions { MaxIterations = 4 };
-        var loopAgent = new LoopAgent(agent, _evaluator, loopOptions);
+        var loopAgent = _evaluator.Wrap(agent);
 
         var input = new StoryInput("Test input");
 
@@ -202,8 +309,7 @@ public sealed class IdeaValidationLoopEvaluatorBehavioralTests
         var chatClient = new FakeChatClient(InvalidJson, ValidIdeasJson);
         var agent = chatClient.AsAIAgent("Test instructions", "TestIdeaAgent");
 
-        var loopOptions = new LoopAgentOptions { MaxIterations = 10 };
-        var loopAgent = new LoopAgent(agent, _evaluator, loopOptions);
+        var loopAgent = _evaluator.Wrap(agent);
 
         var input = new StoryInput("Test input");
 
@@ -227,8 +333,7 @@ public sealed class IdeaValidationLoopEvaluatorBehavioralTests
         var chatClient = new FakeChatClient(EmptyResponse, ValidIdeasJson);
         var agent = chatClient.AsAIAgent("Test instructions", "TestIdeaAgent");
 
-        var loopOptions = new LoopAgentOptions { MaxIterations = 10 };
-        var loopAgent = new LoopAgent(agent, _evaluator, loopOptions);
+        var loopAgent = _evaluator.Wrap(agent);
 
         var input = new StoryInput("Test input");
 
@@ -252,8 +357,7 @@ public sealed class IdeaValidationLoopEvaluatorBehavioralTests
         var chatClient = new FakeChatClient(InvalidJson, InvalidJson, InvalidJson, InvalidJson);
         var agent = chatClient.AsAIAgent("Test instructions", "TestIdeaAgent");
 
-        var loopOptions = new LoopAgentOptions { MaxIterations = 4 };
-        var loopAgent = new LoopAgent(agent, _evaluator, loopOptions);
+        var loopAgent = _evaluator.Wrap(agent);
 
         var input = new StoryInput("Test input");
 
@@ -279,8 +383,7 @@ public sealed class IdeaValidationLoopEvaluatorBehavioralTests
         var chatClient = new FakeChatClient(EmptyResponse, EmptyResponse, EmptyResponse, EmptyResponse);
         var agent = chatClient.AsAIAgent("Test instructions", "TestIdeaAgent");
 
-        var loopOptions = new LoopAgentOptions { MaxIterations = 4 };
-        var loopAgent = new LoopAgent(agent, _evaluator, loopOptions);
+        var loopAgent = _evaluator.Wrap(agent);
 
         var input = new StoryInput("Test input");
 
@@ -318,6 +421,7 @@ internal sealed class FakeChatClient : IChatClient
     private readonly Queue<string> _responses;
 
     public int InvocationCount { get; private set; }
+    public List<ChatMessage[]> Requests { get; } = [];
 
     /// <summary>
     ///     Returns the next predefined response as a chat response.
@@ -328,6 +432,7 @@ internal sealed class FakeChatClient : IChatClient
         CancellationToken cancellationToken = default)
     {
         InvocationCount++;
+        Requests.Add(messages.ToArray());
 
         if (!_responses.TryDequeue(out var responseText))
         {

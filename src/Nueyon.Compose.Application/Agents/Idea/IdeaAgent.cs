@@ -64,7 +64,7 @@ public sealed class IdeaAgent : IAgent<StoryInput, IReadOnlyList<Domain.Idea>>
                 ("SourceContent", input.Content));
 
             // Run the agent with structured output options configured
-            var options = CreateAgentRunOptions();
+            var options = CreateAgentRunOptions(input.Content);
             var response = await _agent.RunAsync(userMessage, null, options, cancellationToken);
 
             var responseText = ExtractResponseText(response);
@@ -109,8 +109,9 @@ public sealed class IdeaAgent : IAgent<StoryInput, IReadOnlyList<Domain.Idea>>
     /// <summary>
     ///     Creates ChatClientAgentRunOptions with structured JSON output configured for IdeaResponse.
     /// </summary>
+    /// <param name="sourceContent">Original source passed to the loop evaluator.</param>
     /// <returns>Configured ChatClientAgentRunOptions with ResponseFormat set.</returns>
-    private static ChatClientAgentRunOptions CreateAgentRunOptions()
+    private static ChatClientAgentRunOptions CreateAgentRunOptions(string sourceContent)
     {
         var responseFormat = ChatResponseFormat.ForJsonSchema<IdeaResponse>(
             null,
@@ -121,7 +122,13 @@ public sealed class IdeaAgent : IAgent<StoryInput, IReadOnlyList<Domain.Idea>>
             ResponseFormat = responseFormat
         };
 
-        return new ChatClientAgentRunOptions(chatOptions);
+        return new ChatClientAgentRunOptions(chatOptions)
+        {
+            AdditionalProperties = new AdditionalPropertiesDictionary
+            {
+                [IdeaValidationLoopEvaluator.SourceContentKey] = sourceContent
+            }
+        };
     }
 
     /// <summary>
@@ -160,7 +167,7 @@ public sealed class IdeaAgent : IAgent<StoryInput, IReadOnlyList<Domain.Idea>>
     /// <param name="json">The JSON string to parse.</param>
     /// <returns>A read-only list of parsed Idea objects.</returns>
     /// <exception cref="InvalidOperationException">Thrown when the JSON is not valid or cannot be deserialized.</exception>
-    private static IReadOnlyList<Domain.Idea> ParseIdeasFromJson(string json)
+    internal static IReadOnlyList<Domain.Idea> ParseIdeasFromJson(string json)
     {
         if (string.IsNullOrWhiteSpace(json))
         {

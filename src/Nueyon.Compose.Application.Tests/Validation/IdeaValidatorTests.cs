@@ -8,6 +8,12 @@ public sealed class IdeaValidatorTests
 {
     private readonly IdeaValidator _validator = new();
 
+    [Fact]
+    public void IsValid_NullIdea_ReturnsFalse()
+    {
+        Assert.False(_validator.IsValid([null!]));
+    }
+
     /// <summary>
     ///     Test: A list containing one fully populated Idea returns true.
     /// </summary>

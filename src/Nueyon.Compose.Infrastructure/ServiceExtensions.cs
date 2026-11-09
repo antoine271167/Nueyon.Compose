@@ -1,4 +1,4 @@
-﻿using Microsoft.Agents.AI;
+using Microsoft.Agents.AI;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
@@ -41,8 +41,15 @@ public static class InfrastructureServiceExtensions
         // Register the Idea Validation Loop Evaluator (stateless, safe for concurrent use)
         services.AddSingleton<IdeaValidationLoopEvaluator>(provider =>
         {
+            var options = provider.GetRequiredService<IOptions<OpenAiOptions>>().Value;
+            options.Validate();
+
+            var judge = new IdeaSemanticJudge(OpenAiAgentFactory.CreateOpenAiAgent(
+                options.ApiKey,
+                options.Model,
+                IdeaSemanticJudge.GetSystemInstructions()));
             var validator = provider.GetRequiredService<IIdeaValidator>();
-            return new IdeaValidationLoopEvaluator(validator);
+            return new IdeaValidationLoopEvaluator(validator, judge);
         });
 
         // Register the Idea Agent with LoopAgent-backed validation and retry logic
@@ -63,17 +70,8 @@ public static class InfrastructureServiceExtensions
             // Create the loop evaluator for validation and retry decision-making
             var evaluator = provider.GetRequiredService<IdeaValidationLoopEvaluator>();
 
-            var loopOptions = new LoopAgentOptions
-            {
-                MaxIterations = 3
-            };
-
-            // Create the LoopAgent that wraps the base OpenAI agent
-            // The evaluator will decide when ideas are valid and the loop should stop
-            var loopAgent = new LoopAgent(baseAiAgent, evaluator, loopOptions);
-
             // Return the IdeaAgent that uses the loop-backed agent
-            return new IdeaAgent(loopAgent, logger);
+            return new IdeaAgent(evaluator.Wrap(baseAiAgent), logger);
         });
 
         // Register the Research Agent
