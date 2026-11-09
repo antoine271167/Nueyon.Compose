@@ -1,0 +1,20 @@
+{
+  "id": "01-strategy",
+  "startedUtc": "2026-11-09T20:15:25.4685052+00:00",
+  "model": "gpt-5-mini",
+  "command": "dotnet",
+  "arguments": [
+    "C:/Users/antoi/AppData/Local/Temp/nueyon-prompt-runner-exp004-558ad28687e8411fbdcfc1667f0fcd86/Nueyon.PromptRunner.dll",
+    "--system",
+    "PromptExperiments/IdeaGenerator/experiment-004/Idea.system.prompt.txt",
+    "--user",
+    "PromptExperiments/IdeaGenerator/experiment-004/Idea.user.candidate.prompt.txt",
+    "--data",
+    "PromptExperiments/IdeaGenerator/experiment-004/runs/01-strategy/input.yaml",
+    "--config",
+    "PromptExperiments/IdeaGenerator/experiment-004/appsettings.json"
+  ],
+  "status": "finished",
+  "seconds": 38.59,
+  "exitCode": 0
+}

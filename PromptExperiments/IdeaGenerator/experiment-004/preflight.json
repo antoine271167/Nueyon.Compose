@@ -1,0 +1,52 @@
+{
+  "model": "gpt-5-mini",
+  "sdk": "10.0.401",
+  "provider": "OpenAI",
+  "runnerDllSha256": "0D4C3C83BE4AAD3CD4EC506CE5DCDBB0CC5001D00758C1571B2EBA6D233129BF",
+  "productionPromptHashes": {
+    "C:\\Workspaces\\Nueyon.Compose\\src\\Nueyon.Compose.Application\\Prompts\\Narrative\\Narrative.user.prompt.txt": "475A9DB1CA028EBC927C99ECDD3DAB061B0616ED06FB1278879992D2E8DD795A",
+    "C:\\Workspaces\\Nueyon.Compose\\src\\Nueyon.Compose.Application\\Prompts\\Research\\Research.user.prompt.txt": "9093D5AB42F5300B2C79C9678DAA905767975B8F0014530A08701C9616367728",
+    "C:\\Workspaces\\Nueyon.Compose\\src\\Nueyon.Compose.Application\\Prompts\\Compose\\Compose.system.prompt.txt": "D9EA52BEB6DD9ADA3CC16413492522D5D449E0B7EA41F23A71C9345DBABF171C",
+    "C:\\Workspaces\\Nueyon.Compose\\src\\Nueyon.Compose.Application\\Prompts\\Synthesis\\Synthesis.system.prompt.txt": "97D123AA4DF38E855F509363B415F42EB93BE02C65E1D597A96C07E301460DE4",
+    "C:\\Workspaces\\Nueyon.Compose\\src\\Nueyon.Compose.Application\\Prompts\\Synthesis\\Synthesis.user.prompt.txt": "5D9556B075425A589F4CC92BA1D34A0385FAECC458FE55AA8EB3D3124933BF5D",
+    "C:\\Workspaces\\Nueyon.Compose\\src\\Nueyon.Compose.Application\\Prompts\\Compose\\Compose.linkedin.user.prompt.txt": "86F4EBE7FE5FF11155911519830609A2F52CB720D572CF71662F878E64B113DA",
+    "C:\\Workspaces\\Nueyon.Compose\\src\\Nueyon.Compose.Application\\Prompts\\Idea\\Idea.system.prompt.txt": "E98B756C9088B8646408F0C857AEDBD1E2B8E453C5AD1982C17E62F2FCBAA2BE",
+    "C:\\Workspaces\\Nueyon.Compose\\src\\Nueyon.Compose.Application\\Prompts\\PromptLoader.cs": "6770D49FD1583E5D2B4A2CE2D17683262ADAFECE5A536C09F885358DC9F32181",
+    "C:\\Workspaces\\Nueyon.Compose\\src\\Nueyon.Compose.Application\\Prompts\\Idea\\Idea.user.prompt.txt": "D6EE3975D46331A956FE70ED1C90BCDA513CF91574A1CF34173682A8D427F43F",
+    "C:\\Workspaces\\Nueyon.Compose\\src\\Nueyon.Compose.Application\\Prompts\\Narrative\\Narrative.system.prompt.txt": "6658043519128531E2CF5B5BB9084901C4F5A8B25B74CEB3D3004C26AAD34C95",
+    "C:\\Workspaces\\Nueyon.Compose\\src\\Nueyon.Compose.Application\\Prompts\\Research\\Research.system.prompt.txt": "D3A28B5429CF5866EC9A23D24EB216033B1B09C85AF3436ED4CB297FC5B4078E",
+    "C:\\Workspaces\\Nueyon.Compose\\src\\Nueyon.Compose.Application\\Prompts\\Compose\\Compose.article.user.prompt.txt": "23BCF0510239905DFF25C2B2414E5E8AF10076DD0445393B3CAF523C38A64278"
+  },
+  "runs": [
+    {
+      "id": "01-strategy",
+      "yamlSha256": "B1E8A1B068281FFA6002D06052457EE76CEA132A3D0937070DC93D853DFAC0C4",
+      "sourceSha256": "DB7A9CF4768684C025D02028980E16CCE8805832E1013A5B6098C00D29E8F2D0",
+      "renderedSha256": "BA6F0C78E9ECDA97DF00FBC4B2B763008215C291C157B433EDD6EA2BCAD2CB2E",
+      "source": "Noeyon-Product-Strategy-reconstructed.md"
+    },
+    {
+      "id": "02-experiment-005",
+      "yamlSha256": "143F0E3CCC61FB9091354522E11E098895DDC7A4C7FF3C27058A0524E69F1BBD",
+      "sourceSha256": "511CA385D3F2011EFD99C23F4526255EEEADB996300D8126A6F091FF425AB2BF",
+      "renderedSha256": "0640783D82D67CA556DB6008D049320AA03F6FE3DE791090B07FD1662B209D72",
+      "source": "experiment-005-report.md"
+    },
+    {
+      "id": "03-experiment-010",
+      "yamlSha256": "8B0DB0E5C0281F63D5C489EDE53C1B2A384ACBFF6F87A28381E552339CD99927",
+      "sourceSha256": "E981BF43A0F8BE96F0AF192D14A5BDCAB93878CDA7179BF4947C8684253FE23C",
+      "renderedSha256": "DBC7A96E9F39465C802C3D136A4F46D0814A6CE1FD33B3E6D40555240C714CD8",
+      "source": "experiment-010-report.md"
+    }
+  ],
+  "runnerMode": "generic",
+  "head": "9c7af69f27b45c1d5b3dbdd828a8d19b23d5c85b",
+  "validation": "YAML and placeholder resolution, followed by rendered source comparison with 003",
+  "files": {
+    "PromptExperiments/IdeaGenerator/experiment-004/appsettings.json": "F51CDDF3F43959A5258D6B7D83BA1D071EEB8C8E3FA25C843E939F378405C234",
+    "PromptExperiments/IdeaGenerator/experiment-004/Idea.user.candidate.prompt.txt": "F5641B4E387F00BDBC9A362FD4E8B347625C969A647F7EEF898DB5CC2C4A1BF5",
+    "PromptExperiments/IdeaGenerator/experiment-004/Idea.system.prompt.txt": "E98B756C9088B8646408F0C857AEDBD1E2B8E453C5AD1982C17E62F2FCBAA2BE",
+    "src/Nueyon.PromptRunner/Program.cs": "3137028188DBEFC2A814849C716685696F8AC5EC5B09E6F372D1A93AFF837E51"
+  }
+}
