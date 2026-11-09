@@ -30,7 +30,7 @@ public sealed class IdeaValidator : IIdeaValidator
 
         // Check that each idea has all required non-empty fields
         return ideas.All(idea =>
-            !string.IsNullOrWhiteSpace(idea.Title) && !string.IsNullOrWhiteSpace(idea.Description) &&
+            idea is not null && !string.IsNullOrWhiteSpace(idea.Title) && !string.IsNullOrWhiteSpace(idea.Description) &&
             !string.IsNullOrWhiteSpace(idea.Audience) && !string.IsNullOrWhiteSpace(idea.Rationale));
     }
 }

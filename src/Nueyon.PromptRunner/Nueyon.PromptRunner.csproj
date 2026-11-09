@@ -9,7 +9,6 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Agents.AI.OpenAI" Version="1.17.0" />
-    <ProjectReference Include="../Nueyon.Compose.Application/Nueyon.Compose.Application.csproj" />
     <PackageReference Include="YamlDotNet" Version="16.3.0" />
   </ItemGroup>
 

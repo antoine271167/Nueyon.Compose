@@ -12,15 +12,16 @@ public sealed class IdeaSemanticJudge(AIAgent agent)
 
     private readonly AIAgent _agent = agent ?? throw new ArgumentNullException(nameof(agent));
 
+    private const int MaxBlockingIssues = 3;
+
     public static string GetSystemInstructions() => PromptLoader.Load("Idea/IdeaValidation.system.prompt.txt");
 
     internal async Task<IReadOnlyList<BlockingIssue>> FindBlockingIssuesAsync(
         string sourceContent,
-        IReadOnlyList<Domain.Idea> ideas,
+        Domain.Idea selectedIdea,
         CancellationToken cancellationToken)
     {
-        var rankedIdeas = ideas.Select((idea, index) => new { ideaNumber = index + 1, idea });
-        var message = JsonSerializer.Serialize(new { source = sourceContent, ideas = rankedIdeas }, _jsonOptions);
+        var message = JsonSerializer.Serialize(new { source = sourceContent, idea = selectedIdea }, _jsonOptions);
         var options = new ChatClientAgentRunOptions(new ChatOptions
         {
             ResponseFormat = ChatResponseFormat.ForJsonSchema<Verdict>(_jsonOptions, nameof(Verdict))
@@ -43,6 +44,12 @@ public sealed class IdeaSemanticJudge(AIAgent agent)
                 "Idea semantic validation returned an invalid verdict: missing blocker list.");
         }
 
+        if (issues.Count > MaxBlockingIssues)
+        {
+            throw new InvalidOperationException(
+                $"Idea semantic validation returned an invalid verdict: more than {MaxBlockingIssues} blockers.");
+        }
+
         foreach (var issue in issues)
         {
             if (issue is null || string.IsNullOrWhiteSpace(issue.Problem) ||
@@ -51,15 +58,9 @@ public sealed class IdeaSemanticJudge(AIAgent agent)
                 throw new InvalidOperationException(
                     "Idea semantic validation returned an invalid verdict: each blocker needs a problem and correction.");
             }
-
-            if (issue.IdeaNumber < 1 || issue.IdeaNumber > ideas.Count)
-            {
-                throw new InvalidOperationException(
-                    $"Idea semantic validation returned an invalid verdict: idea number {issue.IdeaNumber} is outside 1–{ideas.Count}.");
-            }
         }
 
-        return issues.Take(3).ToArray();
+        return issues.ToArray();
     }
 
     private sealed record Verdict
@@ -69,7 +70,6 @@ public sealed class IdeaSemanticJudge(AIAgent agent)
 
     internal sealed record BlockingIssue
     {
-        public required int IdeaNumber { get; init; }
         public required string Problem { get; init; }
         public required string Correction { get; init; }
     }

@@ -46,10 +46,10 @@ public sealed class IdeaValidationLoopEvaluator(IIdeaValidator validator) : Loop
                 "Return a valid JSON object with an ideas array matching the response schema.", ex);
         }
 
-        if (!_validator.IsValid(ideas))
+        if (ideas.Count == 0 || !_validator.IsValid([ideas[0]]))
         {
             return Reject(context,
-                "Return at least one idea, each with a non-empty title, description, audience, and rationale.");
+                "Return at least one idea; the first idea needs a non-empty title, description, audience, and rationale.");
         }
 
         if (_judge is null)
@@ -63,13 +63,14 @@ public sealed class IdeaValidationLoopEvaluator(IIdeaValidator validator) : Loop
             throw new InvalidOperationException("The original source is unavailable for Idea validation.");
         }
 
-        var issues = await _judge.FindBlockingIssuesAsync(sourceContent, ideas, cancellationToken);
+        var issues = await _judge.FindBlockingIssuesAsync(sourceContent, ideas[0], cancellationToken);
         if (issues.Count == 0)
         {
             return LoopEvaluation.Stop();
         }
 
-        var feedback = "Regenerate the ranked ideas using the original source. Address these blocking issues: " +
+        var feedback = "Regenerate the ranked ideas using the original source; the first idea is the one developed. " +
+                       "Address these blocking issues in the first idea: " +
                        JsonSerializer.Serialize(issues);
         return Reject(context, feedback);
     }

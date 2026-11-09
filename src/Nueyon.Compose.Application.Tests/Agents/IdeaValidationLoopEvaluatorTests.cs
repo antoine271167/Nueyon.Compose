@@ -46,7 +46,7 @@ public sealed class IdeaValidationLoopEvaluatorBehavioralTests
             .Select(attempt => ValidIdeasJson.Replace("Valid Idea", $"Idea {attempt}"))
             .ToArray();
         var generator = new FakeChatClient(generations);
-        var judge = new FakeChatClient(Enumerable.Repeat(RejectedVerdict(4), acceptedAttempt - 1)
+        var judge = new FakeChatClient(Enumerable.Repeat(RejectedVerdict(3), acceptedAttempt - 1)
             .Append(AcceptedVerdict).ToArray());
         var agent = CreateSemanticallyValidatedAgent(generator, judge);
 
@@ -59,9 +59,8 @@ public sealed class IdeaValidationLoopEvaluatorBehavioralTests
         {
             using var payload = JsonDocument.Parse(Assert.Single(request, m => m.Role == ChatRole.User).Text);
             Assert.Equal(OriginalSource, payload.RootElement.GetProperty("source").GetString());
-            var candidate = payload.RootElement.GetProperty("ideas")[0];
-            Assert.Equal(1, candidate.GetProperty("ideaNumber").GetInt32());
-            Assert.Equal($"Idea {index + 1}", candidate.GetProperty("idea").GetProperty("title").GetString());
+            Assert.False(payload.RootElement.TryGetProperty("ideas", out _));
+            Assert.Equal($"Idea {index + 1}", payload.RootElement.GetProperty("idea").GetProperty("title").GetString());
         }
 
         if (acceptedAttempt > 1)
@@ -72,8 +71,65 @@ public sealed class IdeaValidationLoopEvaluatorBehavioralTests
             Assert.Contains("Overclaim 2", feedback.Text);
             Assert.Contains("Overclaim 3", feedback.Text);
             Assert.Contains("Qualify 1", feedback.Text);
-            Assert.DoesNotContain("Overclaim 4", feedback.Text);
         }
+    }
+
+    [Theory]
+    [InlineData("Second", """{"title":"Second","description":"d","audience":"a","rationale":"r","evidence":"e"}""")]
+    [InlineData("", """{"title":"","description":"d","audience":" ","rationale":"r","evidence":"e"}""")]
+    [InlineData(null, """{"title":42,"description":["x"],"audience":null,"rationale":{},"evidence":false}""")]
+    public async Task IdeaAgent_JudgesOnlyTheFirstIdea_AndKeepsAlternatives(string? secondTitle, string second)
+    {
+        var generation = $$"""
+            {"ideas":[{"title":"First","description":"d","audience":"a","rationale":"r","evidence":"e"},{{second}}]}
+            """;
+        var generator = new FakeChatClient(generation);
+        var judge = new FakeChatClient(AcceptedVerdict);
+        var agent = CreateSemanticallyValidatedAgent(generator, judge);
+
+        var ideas = await agent.ExecuteAsync(new AgentExecutionContext(Guid.NewGuid()), new StoryInput(OriginalSource));
+
+        Assert.Equal(secondTitle is null ? ["First"] : ["First", secondTitle], ideas.Select(i => i.Title));
+        Assert.Equal(1, generator.InvocationCount);
+        using var payload = JsonDocument.Parse(Assert.Single(Assert.Single(judge.Requests), m => m.Role == ChatRole.User).Text);
+        Assert.Equal(OriginalSource, payload.RootElement.GetProperty("source").GetString());
+        Assert.Equal("First", payload.RootElement.GetProperty("idea").GetProperty("title").GetString());
+        Assert.DoesNotContain("Second", payload.RootElement.GetRawText());
+    }
+
+    [Theory]
+    [InlineData("""{"title":42,"description":"d","audience":"a","rationale":"r"}""")]
+    [InlineData("null")]
+    public async Task IdeaAgent_InvalidFirstIdeaWithValidSecond_RetriesWithoutFallback(string first)
+    {
+        var invalidFirst =
+            $$"""{"ideas":[{{first}},{"title":"Second","description":"d","audience":"a","rationale":"r"}]}""";
+        var generator = new FakeChatClient(invalidFirst, ValidIdeasJson);
+        var judge = new FakeChatClient(AcceptedVerdict);
+        var agent = CreateSemanticallyValidatedAgent(generator, judge);
+
+        var ideas = await agent.ExecuteAsync(new AgentExecutionContext(Guid.NewGuid()), new StoryInput(OriginalSource));
+
+        Assert.Equal("Valid Idea", Assert.Single(ideas).Title);
+        Assert.Equal(2, generator.InvocationCount);
+        using var payload = JsonDocument.Parse(Assert.Single(Assert.Single(judge.Requests), m => m.Role == ChatRole.User).Text);
+        Assert.Equal("Valid Idea", payload.RootElement.GetProperty("idea").GetProperty("title").GetString());
+    }
+
+    [Fact]
+    public async Task IdeaAgent_StructurallyEmptyFirstIdeaWithValidSecond_IsRejected()
+    {
+        const string emptyFirst =
+            """{"ideas":[{"title":"","description":"d","audience":"a","rationale":"r"},{"title":"Second","description":"d","audience":"a","rationale":"r"}]}""";
+        var generator = new FakeChatClient(emptyFirst, ValidIdeasJson);
+        var judge = new FakeChatClient(AcceptedVerdict);
+        var agent = CreateSemanticallyValidatedAgent(generator, judge);
+
+        var ideas = await agent.ExecuteAsync(new AgentExecutionContext(Guid.NewGuid()), new StoryInput(OriginalSource));
+
+        Assert.Equal("Valid Idea", Assert.Single(ideas).Title);
+        Assert.Equal(2, generator.InvocationCount);
+        Assert.Equal(1, judge.InvocationCount);
     }
 
     [Fact]
@@ -96,8 +152,8 @@ public sealed class IdeaValidationLoopEvaluatorBehavioralTests
     [Theory]
     [InlineData("{}")]
     [InlineData("""{"blockingIssues":[null]}""")]
-    [InlineData("""{"blockingIssues":[{"ideaNumber":2,"problem":"Overclaim","correction":"Qualify"}]}""")]
-    [InlineData("""{"blockingIssues":[{"ideaNumber":1,"problem":"Overclaim","correction":" "}]}""")]
+    [InlineData("""{"blockingIssues":[{"problem":"Overclaim","correction":" "}]}""")]
+    [InlineData("""{"blockingIssues":[{"problem":"1","correction":"1"},{"problem":"2","correction":"2"},{"problem":"3","correction":"3"},{"problem":"4","correction":"4"}]}""")]
     public async Task IdeaAgent_InvalidJudgeVerdict_FailsClosed(string verdict)
     {
         var generator = new FakeChatClient(ValidIdeasJson, ValidIdeasJson);
@@ -125,6 +181,28 @@ public sealed class IdeaValidationLoopEvaluatorBehavioralTests
         Assert.Equal(1, judge.InvocationCount);
     }
 
+    [Fact]
+    public async Task IdeaAgent_CancellationDuringSemanticJudge_PropagatesWithoutRetry()
+    {
+        using var cts = new CancellationTokenSource();
+        var generator = new FakeChatClient(ValidIdeasJson, ValidIdeasJson);
+        var judge = new FakeChatClient(AcceptedVerdict)
+        {
+            OnGetResponse = token =>
+            {
+                cts.Cancel();
+                token.ThrowIfCancellationRequested();
+            }
+        };
+        var agent = CreateSemanticallyValidatedAgent(generator, judge);
+
+        await Assert.ThrowsAnyAsync<OperationCanceledException>(() =>
+            agent.ExecuteAsync(new AgentExecutionContext(Guid.NewGuid()), new StoryInput(OriginalSource), cts.Token));
+
+        Assert.Equal(1, generator.InvocationCount);
+        Assert.Equal(1, judge.InvocationCount);
+    }
+
     private static IdeaAgent CreateSemanticallyValidatedAgent(FakeChatClient generator, FakeChatClient judge)
     {
         var semanticJudge = new IdeaSemanticJudge(judge.AsAIAgent("Check source fidelity", "TestIdeaJudge"));
@@ -137,7 +215,6 @@ public sealed class IdeaValidationLoopEvaluatorBehavioralTests
     {
         BlockingIssues = Enumerable.Range(1, issueCount).Select(number => new
         {
-            IdeaNumber = 1,
             Problem = $"Overclaim {number}",
             Correction = $"Qualify {number}"
         })
@@ -424,6 +501,11 @@ internal sealed class FakeChatClient : IChatClient
     public List<ChatMessage[]> Requests { get; } = [];
 
     /// <summary>
+    ///     Optional callback invoked with the supplied token after the invocation count is incremented.
+    /// </summary>
+    public Action<CancellationToken>? OnGetResponse { get; init; }
+
+    /// <summary>
     ///     Returns the next predefined response as a chat response.
     /// </summary>
     public async Task<ChatResponse> GetResponseAsync(
@@ -432,6 +514,7 @@ internal sealed class FakeChatClient : IChatClient
         CancellationToken cancellationToken = default)
     {
         InvocationCount++;
+        OnGetResponse?.Invoke(cancellationToken);
         Requests.Add(messages.ToArray());
 
         if (!_responses.TryDequeue(out var responseText))

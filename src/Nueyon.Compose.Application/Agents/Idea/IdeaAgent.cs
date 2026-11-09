@@ -1,5 +1,6 @@
 using System.Diagnostics;
 using System.Text.Json;
+using System.Text.Json.Serialization;
 using Microsoft.Agents.AI;
 using Microsoft.Extensions.AI;
 using Microsoft.Extensions.Logging;
@@ -165,7 +166,10 @@ public sealed class IdeaAgent : IAgent<StoryInput, IReadOnlyList<Domain.Idea>>
     ///     }
     /// </summary>
     /// <param name="json">The JSON string to parse.</param>
-    /// <returns>A read-only list of parsed Idea objects.</returns>
+    /// <returns>
+    ///     A read-only list of parsed Idea objects in ranked order. Only the first idea is developed, so an
+    ///     alternative that cannot be deserialized is omitted; the first idea must always parse.
+    /// </returns>
     /// <exception cref="InvalidOperationException">Thrown when the JSON is not valid or cannot be deserialized.</exception>
     internal static IReadOnlyList<Domain.Idea> ParseIdeasFromJson(string json)
     {
@@ -181,15 +185,45 @@ public sealed class IdeaAgent : IAgent<StoryInput, IReadOnlyList<Domain.Idea>>
                 PropertyNameCaseInsensitive = true
             };
 
-            var response = JsonSerializer.Deserialize<IdeaResponse>(json, options)
+            var response = JsonSerializer.Deserialize<RawIdeaResponse>(json, options)
                            ?? throw new InvalidOperationException("Deserialization resulted in null response.");
+            var rawIdeas = response.Ideas ?? throw new InvalidOperationException("Response ideas property is null.");
 
-            return response.Ideas ?? throw new InvalidOperationException("Response ideas property is null.");
+            var ideas = new List<Domain.Idea>(rawIdeas.Count);
+            for (var i = 0; i < rawIdeas.Count; i++)
+            {
+                Domain.Idea? idea = null;
+                try
+                {
+                    idea = rawIdeas[i].Deserialize<Domain.Idea>(options);
+                }
+                catch (JsonException) when (i > 0)
+                {
+                    // Alternatives are not developed; an unreadable one must not hide a valid first idea.
+                }
+
+                if (idea is not null)
+                {
+                    ideas.Add(idea);
+                }
+                else if (i == 0)
+                {
+                    throw new InvalidOperationException("The first idea is null.");
+                }
+            }
+
+            return ideas;
         }
         catch (JsonException ex)
         {
             throw new InvalidOperationException(
                 $"Failed to parse agent response as JSON: {ex.Message}", ex);
         }
+    }
+
+    private sealed record RawIdeaResponse
+    {
+        [JsonPropertyName("ideas")]
+        public required IReadOnlyList<JsonElement> Ideas { get; init; }
     }
 }

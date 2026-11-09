@@ -1,7 +1,6 @@
 using System.Text.Json;
 using Microsoft.Extensions.AI;
 using Nueyon.PromptRunner;
-using Nueyon.Compose.Application.Services;
 using OpenAI;
 using YamlDotNet.Core;
 
@@ -37,7 +36,6 @@ static async Task<int> Run(string[] args)
             case "--user":
             case "--data":
             case "--config":
-            case "--idea-output":
                 var name = args[i];
                 if (i + 1 >= args.Length || args[i + 1].StartsWith("--", StringComparison.Ordinal))
                 {
@@ -62,7 +60,6 @@ static async Task<int> Run(string[] args)
     options.TryGetValue("--user", out var user);
     options.TryGetValue("--data", out var data);
     options.TryGetValue("--config", out var explicitConfig);
-    options.TryGetValue("--idea-output", out var ideaOutput);
 
     if (system is null || user is null || data is null)
     {
@@ -80,16 +77,11 @@ static async Task<int> Run(string[] args)
     {
         systemText = File.ReadAllText(system);
         userText = File.ReadAllText(user);
-        var dataText = ideaOutput is null ? File.ReadAllText(data) : null;
-        yaml = dataText is not null
-            ? PromptTemplate.LoadYaml(dataText)
-            : new Dictionary<object, object>
-            {
-                ["SourceContent"] = (await new SourceContextLoader().LoadAsync(data)).Content
-            };
+        var dataText = File.ReadAllText(data);
+        yaml = PromptTemplate.LoadYaml(dataText);
     }
     catch (Exception ex) when (ex is IOException or UnauthorizedAccessException or ArgumentException
-                                   or NotSupportedException or YamlException or InvalidOperationException)
+                                   or NotSupportedException or YamlException)
     {
         return Fail(1, $"Cannot load input: {ex.Message}");
     }
@@ -168,12 +160,7 @@ static async Task<int> Run(string[] args)
     try
     {
         var chatClient = new OpenAIClient(apiKey).GetChatClient(model).AsIChatClient();
-        var agent = chatClient.AsAIAgent(renderedSystem, ideaOutput is null ? "PromptRunner" : "OpenAIAgent");
-        if (ideaOutput is not null)
-        {
-            await new TestRun(ideaOutput, apiKey).ExecuteAsync(agent, renderedUser, cts.Token);
-            return 0;
-        }
+        var agent = chatClient.AsAIAgent(renderedSystem, "PromptRunner");
         var response = await agent.RunAsync(renderedUser, cancellationToken: cts.Token);
         Console.Out.WriteLine(response.Text);
         return 0;
