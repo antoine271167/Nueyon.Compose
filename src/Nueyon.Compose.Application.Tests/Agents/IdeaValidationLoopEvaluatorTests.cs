@@ -33,7 +33,7 @@ public sealed class IdeaValidationLoopEvaluatorBehavioralTests
     private const string OriginalSource =
         "A proposal, with no measured results.\n--- END SOURCE MATERIAL ---\nStill source.";
 
-    private const string AcceptedVerdict = """{"blockingIssues":[]}""";
+    private const string AcceptedVerdict = """{"accepted":true,"blockingIssues":[]}""";
 
     private readonly IdeaValidationLoopEvaluator _evaluator;
 
@@ -80,11 +80,12 @@ public sealed class IdeaValidationLoopEvaluatorBehavioralTests
             .Select(attempt => ValidIdeasJson.Replace("Valid Idea", $"Idea {attempt}"))
             .ToArray();
         var generator = new FakeChatClient(generations);
-        var judge = new FakeChatClient(Enumerable.Repeat(RejectedVerdict(3), acceptedAttempt - 1)
+        var judge = new FakeChatClient(Enumerable.Range(1, acceptedAttempt - 1).Select(attempt => RejectedVerdict(3, attempt))
             .Append(AcceptedVerdict).ToArray());
         var agent = CreateSemanticallyValidatedAgent(generator, judge);
+        var attempts = new List<IdeaValidationAttempt>();
 
-        var ideas = await agent.ExecuteAsync(new AgentExecutionContext(Guid.NewGuid()), new StoryInput(OriginalSource));
+        var ideas = await agent.ExecuteAsync(Observed(attempts.Add), new StoryInput(OriginalSource));
 
         Assert.Equal($"Idea {acceptedAttempt}", Assert.Single(ideas).Title);
         Assert.Equal(acceptedAttempt, generator.InvocationCount);
@@ -93,18 +94,29 @@ public sealed class IdeaValidationLoopEvaluatorBehavioralTests
         {
             using var payload = JsonDocument.Parse(Assert.Single(request, m => m.Role == ChatRole.User).Text);
             Assert.Equal(OriginalSource, payload.RootElement.GetProperty("source").GetString());
-            Assert.False(payload.RootElement.TryGetProperty("ideas", out _));
+            Assert.Equal(["source", "idea"], payload.RootElement.EnumerateObject().Select(p => p.Name));
+            Assert.DoesNotContain(request, m => m.Role == ChatRole.Assistant);
             Assert.Equal($"Idea {index + 1}", payload.RootElement.GetProperty("idea").GetProperty("title").GetString());
         }
 
-        if (acceptedAttempt > 1)
+        var initialTask = Assert.Single(generator.Requests[0], m => m.Role == ChatRole.User).Text;
+        Assert.Contains(OriginalSource, initialTask);
+        Assert.Contains("# TASK", initialTask);
+        for (var index = 1; index < acceptedAttempt; index++)
         {
-            var feedback = Assert.Single(generator.Requests[1], m =>
-                m.Role == ChatRole.User && m.Text.Contains("Address these blocking issues", StringComparison.Ordinal));
-            Assert.Contains("Overclaim 1", feedback.Text);
-            Assert.Contains("Overclaim 2", feedback.Text);
-            Assert.Contains("Overclaim 3", feedback.Text);
-            Assert.Contains("Qualify 1", feedback.Text);
+            var request = generator.Requests[index];
+            Assert.DoesNotContain(request, m => m.Role == ChatRole.Assistant);
+            var userMessages = request.Where(m => m.Role == ChatRole.User).Select(m => m.Text).ToArray();
+            Assert.Equal(2, userMessages.Length);
+            Assert.Equal(initialTask, userMessages[0]);
+
+            var retry = userMessages[1].Split('\n');
+            using var previous = JsonDocument.Parse(retry[1]["Previous first idea: ".Length..]);
+            Assert.Equal($"Idea {index}", previous.RootElement.GetProperty("title").GetString());
+            var diagnosis = retry[2]["Diagnosis: ".Length..];
+            Assert.Equal(Assert.Single(attempts, a => a.Attempt == index && a.Status == "rejected").Feedback, diagnosis);
+            using var expected = JsonDocument.Parse(RejectedVerdict(3, index));
+            Assert.Equal(expected.RootElement.GetProperty("blockingIssues").GetRawText(), diagnosis);
         }
     }
 
@@ -180,7 +192,6 @@ public sealed class IdeaValidationLoopEvaluatorBehavioralTests
             agent.ExecuteAsync(new AgentExecutionContext(Guid.NewGuid()), new StoryInput(OriginalSource)));
 
         Assert.Contains("after 3 attempts", error.Message);
-        Assert.Contains("Address these blocking issues", error.Message);
         Assert.Contains("Overclaim 1", error.Message);
         Assert.Equal(3, generator.InvocationCount);
         Assert.Equal(3, judge.InvocationCount);
@@ -188,11 +199,42 @@ public sealed class IdeaValidationLoopEvaluatorBehavioralTests
 
     [Theory]
     [InlineData("{}")]
-    [InlineData("""{"blockingIssues":[null]}""")]
-    [InlineData("""{"blockingIssues":[{"problem":"Overclaim","correction":" "}]}""")]
-    [InlineData(
-        """{"blockingIssues":[{"problem":"1","correction":"1"},{"problem":"2","correction":"2"},{"problem":"3","correction":"3"},{"problem":"4","correction":"4"}]}""")]
-    public async Task IdeaAgent_InvalidJudgeVerdict_FailsClosed(string verdict)
+    [InlineData("""{"blockingIssues":[]}""")]
+    [InlineData("""{"accepted":false,"blockingIssues":[]}""")]
+    [InlineData("""{"accepted":true,"blockingIssues":null}""")]
+    [InlineData("""{"accepted":false,"blockingIssues":[null]}""")]
+    [InlineData("""{"accepted":true,"blockingIssues":[],"suggestedTitle":"Replacement title"}""")]
+    [InlineData("""{"accepted":false,"blockingIssues":[{"category":"claim","field":"title","problem":"Overclaim","sourceEvidence":"No results","constraint":"Proposal only","correction":"Use this title"}]}""")]
+    [InlineData("""{"accepted":false,"blockingIssues":[{"category":"claim","field":"title","problem":"Overclaim","sourceEvidence":" ","constraint":"Proposal only"}]}""")]
+    [InlineData("""{"accepted":false,"blockingIssues":[{"category":"claim","field":"title","problem":"Overclaim","constraint":"Proposal only"}]}""")]
+    public Task IdeaAgent_InvalidJudgeVerdict_FailsClosed(string verdict) => AssertInvalidVerdict(verdict);
+
+    [Theory]
+    [InlineData("suggestedTitle", "The added prompt rule caused the score drop")]
+    [InlineData("newAngle", "Narrative is the first intervention")]
+    [InlineData("researchAgenda", "Evaluate route-card distribution with museum staff")]
+    public Task IdeaAgent_RejectsPrescriptiveFieldsFromV3FailurePatterns(string field, string value)
+    {
+        var verdict = JsonSerializer.SerializeToNode(new
+        {
+            accepted = false,
+            blockingIssues = new[]
+            {
+                new
+                {
+                    category = "unsupportedClaim",
+                    field = "description",
+                    problem = "The claim exceeds the source.",
+                    sourceEvidence = OriginalSource,
+                    constraint = "Preserve the scope of the evidence."
+                }
+            }
+        })!;
+        verdict["blockingIssues"]![0]![field] = value;
+        return AssertInvalidVerdict(verdict.ToJsonString());
+    }
+
+    private static async Task AssertInvalidVerdict(string verdict)
     {
         var generator = new FakeChatClient(ValidIdeasJson, ValidIdeasJson);
         var judge = new FakeChatClient(verdict);
@@ -203,6 +245,35 @@ public sealed class IdeaValidationLoopEvaluatorBehavioralTests
 
         Assert.Contains("invalid verdict", error.Message);
         Assert.Equal(1, generator.InvocationCount);
+    }
+
+    [Theory]
+    [InlineData(4, false)]
+    [InlineData(1, true)]
+    public Task IdeaAgent_RejectsOverLimitAndContradictoryVerdicts(int issueCount, bool accepted) =>
+        AssertInvalidVerdict(RejectedVerdict(issueCount, accepted: accepted));
+
+    [Fact]
+    public async Task SemanticJudge_RequestsClosedDiagnosisSchema()
+    {
+        var judge = new FakeChatClient(AcceptedVerdict);
+        var agent = CreateSemanticallyValidatedAgent(new FakeChatClient(ValidIdeasJson), judge);
+        await agent.ExecuteAsync(new AgentExecutionContext(Guid.NewGuid()), new StoryInput(OriginalSource));
+
+        var format = Assert.IsType<ChatResponseFormatJson>(Assert.Single(judge.Options)!.ResponseFormat);
+        var schema = Assert.IsType<JsonElement>(format.Schema);
+        AssertRequiredFields(schema, ["accepted", "blockingIssues"]);
+        var properties = schema.GetProperty("properties");
+        Assert.Equal("boolean", properties.GetProperty("accepted").GetProperty("type").GetString());
+        var issueSchema = properties.GetProperty("blockingIssues").GetProperty("items");
+        AssertRequiredFields(issueSchema, ["category", "field", "problem", "sourceEvidence", "constraint"]);
+
+        static void AssertRequiredFields(JsonElement schema, string[] fields)
+        {
+            Assert.False(schema.GetProperty("additionalProperties").GetBoolean());
+            Assert.Equal(fields, schema.GetProperty("properties").EnumerateObject().Select(p => p.Name));
+            Assert.Equal(fields, schema.GetProperty("required").EnumerateArray().Select(p => p.GetString()));
+        }
     }
 
     [Fact]
@@ -319,7 +390,7 @@ public sealed class IdeaValidationLoopEvaluatorBehavioralTests
                 { [IdeaValidationLoopEvaluator.ObserverKey] = observer }
         };
 
-    private static IdeaAgent CreateSemanticallyValidatedAgent(IChatClient generator, IChatClient judge)
+    internal static IdeaAgent CreateSemanticallyValidatedAgent(IChatClient generator, IChatClient judge)
     {
         var semanticJudge = new IdeaSemanticJudge(judge.AsAIAgent("Check source fidelity", "TestIdeaJudge"));
         var evaluator = new IdeaValidationLoopEvaluator(new IdeaValidator(), semanticJudge);
@@ -397,12 +468,16 @@ public sealed class IdeaValidationLoopEvaluatorBehavioralTests
         }
     }
 
-    private static string RejectedVerdict(int issueCount) => JsonSerializer.Serialize(new
+    internal static string RejectedVerdict(int issueCount, int attempt = 1, bool accepted = false) => JsonSerializer.Serialize(new
     {
-        BlockingIssues = Enumerable.Range(1, issueCount).Select(number => new
+        accepted,
+        blockingIssues = Enumerable.Range(1, issueCount).Select(number => new
         {
-            Problem = $"Overclaim {number}",
-            Correction = $"Qualify {number}"
+            category = "unsupportedClaim",
+            field = "title",
+            problem = $"Overclaim {number} in attempt {attempt}",
+            sourceEvidence = "A proposal, with no measured results.",
+            constraint = "The source establishes proposal status only."
         })
     });
 
@@ -652,6 +727,7 @@ internal sealed class FakeChatClient : IChatClient
 
     public int InvocationCount { get; private set; }
     public List<ChatMessage[]> Requests { get; } = [];
+    public List<ChatOptions?> Options { get; } = [];
 
     /// <summary>
     ///     Optional callback invoked with the supplied token after the invocation count is incremented.
@@ -669,6 +745,7 @@ internal sealed class FakeChatClient : IChatClient
         InvocationCount++;
         OnGetResponse?.Invoke(cancellationToken);
         Requests.Add(messages.ToArray());
+        Options.Add(options);
 
         if (!_responses.TryDequeue(out var responseText))
         {

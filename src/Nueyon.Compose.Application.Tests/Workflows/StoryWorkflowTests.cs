@@ -1,4 +1,5 @@
 using Nueyon.Compose.Application.Agents;
+using Nueyon.Compose.Application.Agents.Idea;
 using Nueyon.Compose.Application.Agents.Research;
 using Nueyon.Compose.Application.Tests.Agents;
 using Nueyon.Compose.Application.Workflows;
@@ -9,6 +10,30 @@ namespace Nueyon.Compose.Application.Tests.Workflows;
 
 public sealed class StoryWorkflowTests
 {
+    [Fact]
+    public async Task RunAsync_WithThreeRejectedIdeas_FailsWithoutResearchHandoff()
+    {
+        const string generation =
+            """{"ideas":[{"title":"Measured results","description":"The proposal worked","audience":"Readers","rationale":"Share the result"}]}""";
+        var generator = new FakeChatClient(generation, generation, generation);
+        var rejected = IdeaValidationLoopEvaluatorBehavioralTests.RejectedVerdict(1);
+        var judge = new FakeChatClient(rejected, rejected, rejected);
+        var ideaAgent = IdeaValidationLoopEvaluatorBehavioralTests.CreateSemanticallyValidatedAgent(generator, judge);
+        var research = new CapturingFakeResearchAgent(new ResearchResult("research"));
+        var workflow = new StoryWorkflow(ideaAgent, research,
+            new FakeSynthesizerAgent(new SynthesisResult("synthesis")),
+            new FakeNarrativeAgent(new NarrativeResult("narrative")),
+            new FakeComposeAgent(new ComposeResult("article")));
+
+        var error = await Record.ExceptionAsync(() =>
+            workflow.RunAsync(new StoryInput("A proposal, with no measured results.")));
+
+        Assert.NotNull(error);
+        Assert.Contains("Idea agent failed to produce valid ideas after 3 attempts.", error.ToString());
+        Assert.Equal(IdeaValidationLoopEvaluator.MaxAttempts, judge.InvocationCount);
+        Assert.Null(research.CapturedInput);
+    }
+
     [Fact]
     public async Task RunAsync_WithValidInput_ExecutesSuccessfully()
     {

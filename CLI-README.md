@@ -64,12 +64,26 @@ generator and three semantic judge calls per source**, plus transport retries (t
 discovery `validation` object exposes this as `maxAttempts`). Do not invoke the
 workflow or an agent without appropriate cost authorization.
 
+Every Idea retry starts from the original source and task, the previous first
+idea when it can be parsed, and the latest diagnosis. The semantic judge
+independently evaluates the current first idea against the original source.
+Exhausting the attempts fails the Idea stage before Research can run.
+
+Custom Idea validation prompts and judge fixtures must use
+`{"accepted":true,"blockingIssues":[]}` for acceptance. Rejection uses
+`accepted: false` and one to three blockers, each with `category`, `field`,
+`problem`, `sourceEvidence`, and `constraint`. Legacy `problem`/`correction`
+verdicts fail validation. Replay archived v3 experiments at their recorded
+code revision.
+
 `--capture-inputs <dir>` is `run workflow`-only and creates a unique `run-<id>` child
 containing `<agent>.json` at each agent boundary. `--trace <json>` is Idea-only.
 The trace schema is included in Idea JSON discovery. Its `status` is `accepted`,
 `exhausted`, or `incomplete`; `attempts` contain the raw generator `response`,
 one-based `attempt`, zero-based `retry`, `status` (`accepted`, `rejected`, or
-`incomplete`), and nullable validation `feedback`. A model/judge failure can leave
+`incomplete`), and nullable validation `feedback`. Semantic rejection feedback is
+a JSON-encoded blocker array inside the existing string field. Consumers that
+parse the previous correction text must update. A model/judge failure can leave
 an incomplete attempt or an empty list. An accepted first idea is available in
 the result file; rejected feedback is recorded only in the opt-in trace, never in
 error messages or default logs. Top-level `accepted` means the result was published;

@@ -335,6 +335,32 @@ public sealed class CliTests
     }
 
     [Fact]
+    public async Task ExhaustedIdeaValidationWritesTraceWithoutPublishingResult()
+    {
+        using var directory = new TempDirectory();
+        const string diagnosis =
+            """[{"category":"scope","field":"audience","problem":"Audience shifted to staff","sourceEvidence":"Notice for visitors","constraint":"Visitor-facing notice"}]""";
+        var (code, _, error) = await RunIdea(directory, Services(context =>
+        {
+            for (var attempt = 1; attempt <= IdeaValidationLoopEvaluator.MaxAttempts; attempt++)
+            {
+                Observe(context, new IdeaValidationAttempt(attempt, "rejected generation", "rejected", diagnosis));
+            }
+
+            throw new InvalidOperationException("Idea validation exhausted.");
+        }));
+
+        Assert.Equal(1, code);
+        Assert.Contains("No result was produced.", error);
+        Assert.False(File.Exists(directory.Output));
+        using var trace = JsonDocument.Parse(File.ReadAllText(directory.Trace));
+        Assert.Equal("exhausted", trace.RootElement.GetProperty("status").GetString());
+        var attempts = trace.RootElement.GetProperty("attempts").EnumerateArray().ToArray();
+        Assert.Equal([1, 2, 3], attempts.Select(a => a.GetProperty("attempt").GetInt32()));
+        Assert.All(attempts, a => Assert.Equal(diagnosis, a.GetProperty("feedback").GetString()));
+    }
+
+    [Fact]
     public async Task ResultFailureAfterValidationKeepsTheExistingFileAndWritesIncompleteTrace()
     {
         using var directory = new TempDirectory();

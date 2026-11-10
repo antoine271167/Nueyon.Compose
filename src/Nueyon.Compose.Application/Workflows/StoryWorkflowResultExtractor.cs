@@ -1,3 +1,4 @@
+using System.Runtime.ExceptionServices;
 using Microsoft.Agents.AI.Workflows;
 using Nueyon.Compose.Domain;
 
@@ -26,6 +27,11 @@ internal static class StoryWorkflowResultExtractor
 
         foreach (var @event in run.OutgoingEvents)
         {
+            if (@event is ExecutorFailedEvent { ExecutorId: "idea", Data: { } error })
+            {
+                ExceptionDispatchInfo.Throw(error);
+            }
+
             if (@event is not ExecutorCompletedEvent completedEvent)
             {
                 continue;
