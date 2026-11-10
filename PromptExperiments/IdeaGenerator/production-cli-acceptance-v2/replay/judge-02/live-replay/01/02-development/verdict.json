@@ -1,0 +1,12 @@
+{
+  "mode": "live",
+  "modelAlias": "gpt-5-mini",
+  "modelSnapshot": null,
+  "credentialsConfigured": true,
+  "blockingIssues": [
+    {
+      "problem": "Insufficiently scoped headline and rationale: the idea implies a generalizable risk from adding generic editorial guardrails, but the source evidence is a single controlled change in one pipeline (Experiment 005) with three runs per condition, one prompt diff, gpt-5-mini, and explicit limitations (no seed/temperature, possible backend changes, not statistically significant).",
+      "correction": "Reframe the title and description to constrain the claim to this experiment and explicitly document the tested setting and limitations. For example, change the headline to: \u0022In Experiment 005 on Nueyon.Compose, adding a generic \u0027Preserve Editorial Intent\u0027 rule shifted emphasis and introduced unsupported claims.\u0022 In the description and rationale, add a short methods sentence naming the tested scope (Nueyon.Compose Narrative.user.prompt.txt change only; candidate vs baseline; OpenAI gpt-5-mini; LinkedInPost format; three runs per condition) and include the source\u0027s limitations (no seed/temperature, small sample size \u2014 three runs per condition \u2014 and possible backend/model alias drift). Remove or qualify any wording that implies a universal or statistically established effect (e.g., replace broad statements like \u0022can backfire\u0022 presented as general guidance with \u0022did backfire in this experiment\u0022 or \u0022may pose a risk in similar settings; further testing required\u0022). Also recommend that downstream guidance advise replicating the change (A/B or targeted runs using the rubric and hard gates) before promotion. This correction preserves the experiment\u0027s observed result while making its scope and uncertainty explicit, addressing the requirement that a general takeaway identify the particular trial and tested setting."
+    }
+  ]
+}

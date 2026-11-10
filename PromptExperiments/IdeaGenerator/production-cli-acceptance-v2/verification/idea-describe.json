@@ -1,0 +1,268 @@
+{
+  "name": "idea",
+  "description": "Generate and validate ranked ideas.",
+  "inputType": "StoryInput",
+  "outputType": "IReadOnlyList`1",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "content": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "content"
+    ],
+    "additionalProperties": false,
+    "description": "Input for the 'idea' agent: the JSON read by 'run idea --input'."
+  },
+  "outputSchema": {
+    "type": "array",
+    "items": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "title": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "description": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "audience": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "rationale": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "evidence": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "title",
+        "description",
+        "audience",
+        "rationale",
+        "evidence"
+      ],
+      "additionalProperties": false
+    },
+    "description": "Result of the 'idea' agent: the JSON written by 'run idea --output'."
+  },
+  "traceSchema": {
+    "type": "object",
+    "properties": {
+      "status": {
+        "type": "string"
+      },
+      "attempts": {
+        "type": "array",
+        "items": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "properties": {
+            "attempt": {
+              "type": [
+                "string",
+                "integer"
+              ],
+              "pattern": "^-?(?:0|[1-9]\\d*)$"
+            },
+            "response": {
+              "type": "string"
+            },
+            "status": {
+              "type": "string"
+            },
+            "feedback": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "retry": {
+              "type": [
+                "string",
+                "integer"
+              ],
+              "pattern": "^-?(?:0|[1-9]\\d*)$"
+            }
+          },
+          "required": [
+            "attempt",
+            "response",
+            "status",
+            "feedback"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    "required": [
+      "status",
+      "attempts"
+    ],
+    "additionalProperties": false,
+    "description": "Opt-in Idea validation trace written by 'run idea --trace'."
+  },
+  "validation": {
+    "kind": "idea-validation-loop",
+    "appliesTo": "firstRankedIdea",
+    "alternativesValidated": false,
+    "structural": {
+      "requiredNonEmptyFields": [
+        "title",
+        "description",
+        "audience",
+        "rationale"
+      ]
+    },
+    "semantic": {
+      "enabled": true,
+      "judge": "IdeaSemanticJudge",
+      "blocking": true
+    },
+    "maxAttempts": 3
+  },
+  "commands": [
+    {
+      "kind": "RunAgent",
+      "path": [
+        "run"
+      ],
+      "takesAgent": true,
+      "description": "Run one agent from JSON.",
+      "options": [
+        {
+          "name": "--input",
+          "valueType": "json file",
+          "required": true,
+          "description": "Input JSON file.",
+          "formats": null,
+          "agents": null
+        },
+        {
+          "name": "--output",
+          "valueType": "json file",
+          "required": true,
+          "description": "New output JSON file.",
+          "formats": null,
+          "agents": null
+        },
+        {
+          "name": "--prompts",
+          "valueType": "directory",
+          "required": false,
+          "description": "Use a complete disk prompt set; the selected prompt source is reported on stderr.",
+          "formats": null,
+          "agents": null
+        },
+        {
+          "name": "--trace",
+          "valueType": "json file",
+          "required": false,
+          "description": "New Idea validation trace file.",
+          "formats": null,
+          "agents": [
+            "idea"
+          ]
+        }
+      ],
+      "examples": [
+        "run idea --input .\\idea.json --output .\\idea-result.json --trace .\\idea-trace.json"
+      ],
+      "syntax": "run <agent>",
+      "requiresRuntime": true
+    },
+    {
+      "kind": "AgentsDescribe",
+      "path": [
+        "agents",
+        "describe"
+      ],
+      "takesAgent": true,
+      "description": "Describe an agent.",
+      "options": [
+        {
+          "name": "--format",
+          "valueType": "text|json",
+          "required": false,
+          "description": "Output format (default text).",
+          "formats": [
+            "text",
+            "json"
+          ],
+          "agents": null
+        }
+      ],
+      "examples": [
+        "agents describe idea --format json"
+      ],
+      "syntax": "agents describe <agent>",
+      "requiresRuntime": false
+    },
+    {
+      "kind": "AgentsSchema",
+      "path": [
+        "agents",
+        "schema"
+      ],
+      "takesAgent": true,
+      "description": "Export the standalone input JSON schema.",
+      "options": [
+        {
+          "name": "--format",
+          "valueType": "json",
+          "required": true,
+          "description": "Output format; must be json.",
+          "formats": [
+            "json"
+          ],
+          "agents": null
+        }
+      ],
+      "examples": [
+        "agents schema idea --format json"
+      ],
+      "syntax": "agents schema <agent>",
+      "requiresRuntime": false
+    }
+  ],
+  "exitCodes": [
+    {
+      "code": 0,
+      "meaning": "success"
+    },
+    {
+      "code": 1,
+      "meaning": "runtime or configuration failure (also input errors when run without arguments)"
+    },
+    {
+      "code": 2,
+      "meaning": "usage or input error"
+    },
+    {
+      "code": 130,
+      "meaning": "cancelled"
+    }
+  ]
+}

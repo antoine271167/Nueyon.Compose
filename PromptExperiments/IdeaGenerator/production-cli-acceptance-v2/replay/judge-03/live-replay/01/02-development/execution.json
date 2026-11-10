@@ -1,0 +1,82 @@
+{
+  "revision": "243459c4fce3089cbead721e997c4bf4f460bf54",
+  "sdk": "10.0.401",
+  "modelAlias": "gpt-5-mini",
+  "modelSnapshot": null,
+  "cwd": "C:\\Workspaces\\Nueyon.Compose",
+  "command": [
+    "dotnet",
+    "run",
+    "--no-build",
+    "--project",
+    "C:\\Workspaces\\Nueyon.Compose\\PromptExperiments\\IdeaGenerator\\production-cli-acceptance-v2\\harness\\JudgeReplay.csproj",
+    "--",
+    "live",
+    "C:\\Workspaces\\Nueyon.Compose\\PromptExperiments\\IdeaGenerator\\production-cli-acceptance-v2\\candidates\\judge-03\\prompts",
+    "C:\\Workspaces\\Nueyon.Compose\\PromptExperiments\\IdeaGenerator\\production-cli-acceptance-v2\\cases\\02-development\\idea-input.json",
+    "C:\\Workspaces\\Nueyon.Compose\\PromptExperiments\\IdeaGenerator\\production-cli-acceptance-v1\\02-development\\idea-result.json"
+  ],
+  "startedAt": "2026-11-10T20:58:18.9212463+00:00",
+  "endedAt": "2026-11-10T20:58:49.8912716+00:00",
+  "exitCode": 0,
+  "inputs": [
+    {
+      "Path": "C:\\Workspaces\\Nueyon.Compose\\PromptExperiments\\IdeaGenerator\\production-cli-acceptance-v2\\cases\\02-development\\idea-input.json",
+      "Hash": "7D07098F3CD31BB714FAC180D4885BD7A35F9163FD176534F96EBF6E688900BE"
+    },
+    {
+      "Path": "C:\\Workspaces\\Nueyon.Compose\\PromptExperiments\\IdeaGenerator\\production-cli-acceptance-v1\\02-development\\idea-result.json",
+      "Hash": "8056B35AB534D7C696A1801BF53012F2EDDB0C6F954287BA4720C353321FA023"
+    }
+  ],
+  "prompts": [
+    {
+      "Path": "C:\\Workspaces\\Nueyon.Compose\\PromptExperiments\\IdeaGenerator\\production-cli-acceptance-v2\\candidates\\judge-03\\prompts\\Compose\\Compose.article.user.prompt.txt",
+      "Hash": "23BCF0510239905DFF25C2B2414E5E8AF10076DD0445393B3CAF523C38A64278"
+    },
+    {
+      "Path": "C:\\Workspaces\\Nueyon.Compose\\PromptExperiments\\IdeaGenerator\\production-cli-acceptance-v2\\candidates\\judge-03\\prompts\\Compose\\Compose.linkedin.user.prompt.txt",
+      "Hash": "86F4EBE7FE5FF11155911519830609A2F52CB720D572CF71662F878E64B113DA"
+    },
+    {
+      "Path": "C:\\Workspaces\\Nueyon.Compose\\PromptExperiments\\IdeaGenerator\\production-cli-acceptance-v2\\candidates\\judge-03\\prompts\\Compose\\Compose.system.prompt.txt",
+      "Hash": "D9EA52BEB6DD9ADA3CC16413492522D5D449E0B7EA41F23A71C9345DBABF171C"
+    },
+    {
+      "Path": "C:\\Workspaces\\Nueyon.Compose\\PromptExperiments\\IdeaGenerator\\production-cli-acceptance-v2\\candidates\\judge-03\\prompts\\Idea\\Idea.system.prompt.txt",
+      "Hash": "E98B756C9088B8646408F0C857AEDBD1E2B8E453C5AD1982C17E62F2FCBAA2BE"
+    },
+    {
+      "Path": "C:\\Workspaces\\Nueyon.Compose\\PromptExperiments\\IdeaGenerator\\production-cli-acceptance-v2\\candidates\\judge-03\\prompts\\Idea\\Idea.user.prompt.txt",
+      "Hash": "D6EE3975D46331A956FE70ED1C90BCDA513CF91574A1CF34173682A8D427F43F"
+    },
+    {
+      "Path": "C:\\Workspaces\\Nueyon.Compose\\PromptExperiments\\IdeaGenerator\\production-cli-acceptance-v2\\candidates\\judge-03\\prompts\\Idea\\IdeaValidation.system.prompt.txt",
+      "Hash": "90F7E753AE58B0B2838AA43DFBBF2E0EE4AA736C6E66EAAC5487821410CD2E02"
+    },
+    {
+      "Path": "C:\\Workspaces\\Nueyon.Compose\\PromptExperiments\\IdeaGenerator\\production-cli-acceptance-v2\\candidates\\judge-03\\prompts\\Narrative\\Narrative.system.prompt.txt",
+      "Hash": "6658043519128531E2CF5B5BB9084901C4F5A8B25B74CEB3D3004C26AAD34C95"
+    },
+    {
+      "Path": "C:\\Workspaces\\Nueyon.Compose\\PromptExperiments\\IdeaGenerator\\production-cli-acceptance-v2\\candidates\\judge-03\\prompts\\Narrative\\Narrative.user.prompt.txt",
+      "Hash": "475A9DB1CA028EBC927C99ECDD3DAB061B0616ED06FB1278879992D2E8DD795A"
+    },
+    {
+      "Path": "C:\\Workspaces\\Nueyon.Compose\\PromptExperiments\\IdeaGenerator\\production-cli-acceptance-v2\\candidates\\judge-03\\prompts\\Research\\Research.system.prompt.txt",
+      "Hash": "D3A28B5429CF5866EC9A23D24EB216033B1B09C85AF3436ED4CB297FC5B4078E"
+    },
+    {
+      "Path": "C:\\Workspaces\\Nueyon.Compose\\PromptExperiments\\IdeaGenerator\\production-cli-acceptance-v2\\candidates\\judge-03\\prompts\\Research\\Research.user.prompt.txt",
+      "Hash": "9093D5AB42F5300B2C79C9678DAA905767975B8F0014530A08701C9616367728"
+    },
+    {
+      "Path": "C:\\Workspaces\\Nueyon.Compose\\PromptExperiments\\IdeaGenerator\\production-cli-acceptance-v2\\candidates\\judge-03\\prompts\\Synthesis\\Synthesis.system.prompt.txt",
+      "Hash": "97D123AA4DF38E855F509363B415F42EB93BE02C65E1D597A96C07E301460DE4"
+    },
+    {
+      "Path": "C:\\Workspaces\\Nueyon.Compose\\PromptExperiments\\IdeaGenerator\\production-cli-acceptance-v2\\candidates\\judge-03\\prompts\\Synthesis\\Synthesis.user.prompt.txt",
+      "Hash": "5D9556B075425A589F4CC92BA1D34A0385FAECC458FE55AA8EB3D3124933BF5D"
+    }
+  ]
+}

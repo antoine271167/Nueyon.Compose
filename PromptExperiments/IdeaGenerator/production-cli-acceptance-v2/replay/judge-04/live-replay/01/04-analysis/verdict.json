@@ -1,0 +1,16 @@
+{
+  "mode": "live",
+  "modelAlias": "gpt-5-mini",
+  "modelSnapshot": null,
+  "credentialsConfigured": true,
+  "blockingIssues": [
+    {
+      "problem": "Idea omits the source-required precondition to inspect the Narrative\u2019s input before intervening. The report\u2019s Implication for the next focused trial, point 1, explicitly says to \u201Ccompare its actual input Synthesis before changing it.\u201D The idea proposes a Narrative-focused control but does not require comparing Synthesis output first or selecting the target only when evidence supports Narrative as the first-failure locus.",
+      "correction": "Add an explicit precondition: before changing Narrative, extract and compare the Synthesis output (the Narrative\u2019s immediate input) for the affected runs and only apply the Narrative gate if that comparison supports Narrative as the first-visible failure for the chosen failure mode. If Synthesis shows the first-visible drift, prioritize Synthesis interventions instead."
+    },
+    {
+      "problem": "Idea does not preserve the source\u2019s constraint on changing format-related prompts during the trial. The report\u2019s Implication point 3 instructs to \u201Cremove output-format reasoning from the tested upstream decision boundary only if the hypothesis specifically targets that leakage; otherwise hold prompts constant to avoid confounding hierarchy and format-awareness changes.\u201D",
+      "correction": "State that the trial will hold upstream format-related prompt text constant unless the trial hypothesis explicitly tests format-leakage. If the Narrative-focused trial is not testing format leakage, the Narrative prompts must not be altered to remove or add output-format reasoning so the experiment does not confound hierarchy vs. format effects."
+    }
+  ]
+}

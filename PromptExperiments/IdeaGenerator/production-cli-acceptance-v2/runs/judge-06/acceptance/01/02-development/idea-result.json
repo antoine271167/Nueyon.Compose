@@ -1,0 +1,37 @@
+[
+  {
+    "title": "In Experiment 005, adding a generic \u201Cpreserve editorial intent\u201D instruction worsened editorial fidelity in this configuration",
+    "description": "Within the specific conditions of Experiment 005, inserting a reusable Narrative section titled \u201CPreserve Editorial Intent from the Synthesis\u201D correlated with systematic regressions: all three candidate Narrative runs deprioritized the company-level identity/audience, made orchestration the central message, and introduced unsupported elaborations. The candidate prompt was not promoted and production prompt was restored byte-for-byte. These observations are specific to this experiment\u2019s prompt wording, model alias, and sample size and are not claimed as broadly generalizable.",
+    "audience": "Prompt engineers, content-ops leads, and teams running controlled prompt experiments",
+    "rationale": "Why it matters (limited to this experiment): In this controlled comparison (three runs per condition, gpt-5-mini model alias, identical pipeline and inputs except for one Narrative user prompt change), the added generic preservation instruction correlated with lower Narrative and Compose scores and with repeated failures of editorial restraint. This shows that, in this configuration and with this exact wording, a seemingly plausible reusable rule did not protect the intended editorial hierarchy and instead coincided with stable regressions; results may differ with other wording, larger samples, or a different model backend.",
+    "evidence": "Candidate prompt added a \u201CPreserve Editorial Intent from the Synthesis\u201D section. Narrative mean score fell from 6.00 to 4.00/10 (baseline vs candidate); Compose mean fell from 5.67 to 3.33/10. All three candidate Narrative runs subordinated company identity/audience and made orchestration central; candidate runs also introduced unsupported validation/audience claims and failed the D (factual/editorial restraint) gate in every run. Decision: candidate not promoted; production prompt restored byte-for-byte (SHA verified). The report notes limitations: three runs per condition and possible model-backend variability."
+  },
+  {
+    "title": "Treat factual/editorial-restraint as a hard gate: this experiment used it to reject prompt changes",
+    "description": "Experiment 005 applied a strict D-criterion (no unsupported audience, need, benefit, capability, launch status, or commitment) as a hard promotion gate. The candidate prompt repeatedly violated this gate (adding validation intent and implied audience/commitments), which directly caused rejection despite readable and coherent prose.",
+    "audience": "Content governance teams, editorial reviewers, and pipeline QA owners",
+    "rationale": "Why it matters (experiment-scoped): A clearly defined, hard editorial-restraint criterion made the promotion decision decisive and auditable in this runbook: even when other dimensions (readability, coherence) remained acceptable, introducing unsupported factual or commitment-level claims was immediate grounds for rejection under the established policy for this experiment.",
+    "evidence": "Scoring rubric defined D (factual/editorial restraint) as a hard gate. Candidate Narrative and Compose runs repeatedly scored 0 on D due to introduced validation intent and named audience claims. The final decision cites failing the restraint gate in every run as a primary reason not to promote the candidate."
+  },
+  {
+    "title": "A reproducible A\u2013E rubric plus fidelity metrics supports controlled prompt-change evaluation",
+    "description": "The experiment compared baseline vs candidate using an explicit A\u2013E scoring rubric (identity/audience, first product direction, theme hierarchy, factual restraint, LinkedIn suitability) and readability/coherence/source-fidelity ratings to make an evidence-based promotion decision.",
+    "audience": "Prompt engineering teams, ML ops, and experimenters who must evaluate prompt changes",
+    "rationale": "Why it matters (within the experiment): Using a repeatable rubric with domain-specific criteria made trade-offs visible (which dimensions regressed and which held), supported a reproducible decision, and provided diagnostic signals for remediation under the experiment\u2019s constraints (three runs per condition, fixed pipeline).",
+    "evidence": "Experiment reused three baseline runs and ran three candidate runs with only one prompt file changed; provider was gpt-5-mini. The report includes run-by-run A\u2013E tables, aggregated means, and separate readability/coherence/source-fidelity scores that informed the \u0027do not promote\u0027 decision. The report also records limitations (sample size, model-alias backend variability)."
+  },
+  {
+    "title": "Source ambiguity in the baseline Synthesis plausibly amplified the prompt change\u2019s effect (interpretation, not proven)",
+    "description": "The baseline Synthesis contained both a top-level emphasis on company identity and a later description calling orchestration \u201Ccentral to the product direction.\u201D The report suggests this internal tension may have made the candidate preservation instruction more likely to surface orchestration as the dominant message in the outputs.",
+    "audience": "Narrative designers, content strategists, and prompt authors refining source clarity",
+    "rationale": "Why it matters (as a plausible interpretation): When the source itself mixes emphases, a generic preservation rule might amplify whichever element the model finds prominent; resolving internal source tensions could be required before adding high-level preservation instructions. This is an interpretation grounded in the experiment\u2019s observations but not proven causal evidence.",
+    "evidence": "Report text: \u0027The baseline Synthesis pairs company identity with Compose in its top-level emphasis, but also contains a later description calling orchestration \u201Ccentral to the product direction.\u201D That internal tension may have reinforced the technical angle.\u0027 Candidate outputs made orchestration central across runs. The report explicitly frames this as a possible amplification rather than established causation."
+  },
+  {
+    "title": "Byte-for-byte prompt snapshots and rollback verification were used to keep production safe",
+    "description": "Experiment 005 documented operational controls: storing and hash-checking baseline and candidate prompt snapshots, reusing frozen baseline runs, and restoring the production prompt exactly after a failing candidate evaluation.",
+    "audience": "Release engineers, DevOps for content systems, and platform reliability teams",
+    "rationale": "Why it matters (operational practice): Treating prompt text as a verifiable production artifact and enabling exact rollback preserves auditability and prevents accidental promotion of regressive prompt changes in this experiment\u2019s workflow.",
+    "evidence": "Baseline and production prompt SHA-256 values were recorded and matched after rollback. Baseline and candidate prompt files, diffs, and output artifacts were saved under experiment directories. The decision record states \u0027production prompt restored byte-for-byte\u0027 and that no commit or push was made."
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "mode": "live",
+  "modelAlias": "gpt-5-mini",
+  "modelSnapshot": null,
+  "credentialsConfigured": true,
+  "blockingIssues": [
+    {
+      "problem": "Overgeneralization: the idea\u0027s title and rationale state a general lesson about generic editorial-hierarchy rules (\u201Ccan backfire\u201D and that this affects whether prompt edits can be safely rolled into production) without limiting that claim to the specific prompt, model, workflow, and dataset tested in Experiment 005. The source explicitly limits generality (see Limitations) and reports a single controlled comparison of one prompt change in one system.",
+      "correction": "Narrow the claim to the documented experiment and scope. For example, change the title to: \u201CExperiment 005 \u2014 In this prompt/agent context, adding a generic \u2018Preserve Editorial Intent\u2019 section shifted emphasis and introduced unsupported claims.\u201D Revise the rationale to say: \u201CIn this experiment and configuration, the broadly-worded editorial rule altered emphasis and introduced unsupported assertions; teams should validate similar edits in their own systems before promoting them.\u201D"
+    }
+  ]
+}

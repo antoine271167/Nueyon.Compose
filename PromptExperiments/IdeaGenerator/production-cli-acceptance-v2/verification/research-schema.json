@@ -1,0 +1,63 @@
+{
+  "type": "object",
+  "properties": {
+    "input": {
+      "type": "object",
+      "properties": {
+        "content": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "content"
+      ],
+      "additionalProperties": false
+    },
+    "selectedIdea": {
+      "type": "object",
+      "properties": {
+        "idea": {
+          "type": "object",
+          "properties": {
+            "title": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "audience": {
+              "type": "string"
+            },
+            "rationale": {
+              "type": "string"
+            },
+            "evidence": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "title",
+            "description",
+            "audience",
+            "rationale",
+            "evidence"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "idea"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "input",
+    "selectedIdea"
+  ],
+  "additionalProperties": false,
+  "description": "Input for the 'research' agent: the JSON read by 'run research --input'."
+}
