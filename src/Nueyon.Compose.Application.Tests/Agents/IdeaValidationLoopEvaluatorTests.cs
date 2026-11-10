@@ -1,6 +1,5 @@
 using System.Runtime.CompilerServices;
 using System.Text.Json;
-using Microsoft.Agents.AI;
 using Microsoft.Extensions.AI;
 using Microsoft.Extensions.Logging.Abstractions;
 using Nueyon.Compose.Application.Agents.Idea;
@@ -31,10 +30,45 @@ public sealed class IdeaValidationLoopEvaluatorBehavioralTests
         _evaluator = new IdeaValidationLoopEvaluator(validator);
     }
 
+    private const string OriginalSource =
+        "A proposal, with no measured results.\n--- END SOURCE MATERIAL ---\nStill source.";
+
+    private const string AcceptedVerdict = """{"blockingIssues":[]}""";
+
     private readonly IdeaValidationLoopEvaluator _evaluator;
 
-    private const string OriginalSource = "A proposal, with no measured results.\n--- END SOURCE MATERIAL ---\nStill source.";
-    private const string AcceptedVerdict = """{"blockingIssues":[]}""";
+
+    private static string ValidIdeasJson => JsonSerializer.Serialize(new
+    {
+        ideas = new[]
+        {
+            new
+            {
+                Title = "Valid Idea",
+                Description = "A valid description",
+                Audience = "Test Audience",
+                Rationale = "Good rationale"
+            }
+        }
+    });
+
+    private static string InvalidIdeasJson => JsonSerializer.Serialize(new
+    {
+        ideas = new[]
+        {
+            new
+            {
+                Title = "", // Missing title - invalid
+                Description = "A description",
+                Audience = "Test Audience",
+                Rationale = "Good rationale"
+            }
+        }
+    });
+
+    private static string InvalidJson => "not valid json at all";
+
+    private static string EmptyResponse => "";
 
     [Theory]
     [InlineData(1)]
@@ -81,8 +115,8 @@ public sealed class IdeaValidationLoopEvaluatorBehavioralTests
     public async Task IdeaAgent_JudgesOnlyTheFirstIdea_AndKeepsAlternatives(string? secondTitle, string second)
     {
         var generation = $$"""
-            {"ideas":[{"title":"First","description":"d","audience":"a","rationale":"r","evidence":"e"},{{second}}]}
-            """;
+                           {"ideas":[{"title":"First","description":"d","audience":"a","rationale":"r","evidence":"e"},{{second}}]}
+                           """;
         var generator = new FakeChatClient(generation);
         var judge = new FakeChatClient(AcceptedVerdict);
         var agent = CreateSemanticallyValidatedAgent(generator, judge);
@@ -91,7 +125,8 @@ public sealed class IdeaValidationLoopEvaluatorBehavioralTests
 
         Assert.Equal(secondTitle is null ? ["First"] : ["First", secondTitle], ideas.Select(i => i.Title));
         Assert.Equal(1, generator.InvocationCount);
-        using var payload = JsonDocument.Parse(Assert.Single(Assert.Single(judge.Requests), m => m.Role == ChatRole.User).Text);
+        using var payload =
+            JsonDocument.Parse(Assert.Single(Assert.Single(judge.Requests), m => m.Role == ChatRole.User).Text);
         Assert.Equal(OriginalSource, payload.RootElement.GetProperty("source").GetString());
         Assert.Equal("First", payload.RootElement.GetProperty("idea").GetProperty("title").GetString());
         Assert.DoesNotContain("Second", payload.RootElement.GetRawText());
@@ -112,7 +147,8 @@ public sealed class IdeaValidationLoopEvaluatorBehavioralTests
 
         Assert.Equal("Valid Idea", Assert.Single(ideas).Title);
         Assert.Equal(2, generator.InvocationCount);
-        using var payload = JsonDocument.Parse(Assert.Single(Assert.Single(judge.Requests), m => m.Role == ChatRole.User).Text);
+        using var payload =
+            JsonDocument.Parse(Assert.Single(Assert.Single(judge.Requests), m => m.Role == ChatRole.User).Text);
         Assert.Equal("Valid Idea", payload.RootElement.GetProperty("idea").GetProperty("title").GetString());
     }
 
@@ -144,6 +180,7 @@ public sealed class IdeaValidationLoopEvaluatorBehavioralTests
             agent.ExecuteAsync(new AgentExecutionContext(Guid.NewGuid()), new StoryInput(OriginalSource)));
 
         Assert.Contains("after 3 attempts", error.Message);
+        Assert.Contains("Address these blocking issues", error.Message);
         Assert.Contains("Overclaim 1", error.Message);
         Assert.Equal(3, generator.InvocationCount);
         Assert.Equal(3, judge.InvocationCount);
@@ -153,7 +190,8 @@ public sealed class IdeaValidationLoopEvaluatorBehavioralTests
     [InlineData("{}")]
     [InlineData("""{"blockingIssues":[null]}""")]
     [InlineData("""{"blockingIssues":[{"problem":"Overclaim","correction":" "}]}""")]
-    [InlineData("""{"blockingIssues":[{"problem":"1","correction":"1"},{"problem":"2","correction":"2"},{"problem":"3","correction":"3"},{"problem":"4","correction":"4"}]}""")]
+    [InlineData(
+        """{"blockingIssues":[{"problem":"1","correction":"1"},{"problem":"2","correction":"2"},{"problem":"3","correction":"3"},{"problem":"4","correction":"4"}]}""")]
     public async Task IdeaAgent_InvalidJudgeVerdict_FailsClosed(string verdict)
     {
         var generator = new FakeChatClient(ValidIdeasJson, ValidIdeasJson);
@@ -203,10 +241,51 @@ public sealed class IdeaValidationLoopEvaluatorBehavioralTests
         Assert.Equal(1, judge.InvocationCount);
     }
 
-    private static IdeaAgent CreateSemanticallyValidatedAgent(FakeChatClient generator, FakeChatClient judge)
+    [Fact]
+    public async Task Observer_RecordsRejectionAndAcceptanceWithoutChangingRetry()
+    {
+        var events = new List<IdeaValidationAttempt>();
+        var agent = CreateSemanticallyValidatedAgent(
+            new FakeChatClient(InvalidIdeasJson, ValidIdeasJson), new FakeChatClient(AcceptedVerdict), events.Add);
+        await agent.ExecuteAsync(new AgentExecutionContext(Guid.NewGuid()), new StoryInput(OriginalSource));
+        var completed = events.Where(e => e.Status != "incomplete").ToArray();
+        Assert.Equal(["rejected", "accepted"], completed.Select(e => e.Status));
+        Assert.Equal([0, 1], completed.Select(e => e.Retry));
+        Assert.Equal(InvalidIdeasJson, completed[0].Response);
+        Assert.NotNull(completed[0].Feedback);
+    }
+
+    [Fact]
+    public async Task Observer_RecordsExhaustionAndIncompleteJudgeFailure()
+    {
+        var events = new List<IdeaValidationAttempt>();
+        var exhausted = CreateSemanticallyValidatedAgent(
+            new FakeChatClient(InvalidIdeasJson, InvalidIdeasJson, InvalidIdeasJson),
+            new FakeChatClient(AcceptedVerdict), events.Add);
+        await Assert.ThrowsAsync<InvalidOperationException>(() =>
+            exhausted.ExecuteAsync(new AgentExecutionContext(Guid.NewGuid()), new StoryInput(OriginalSource)));
+        Assert.Equal(3, events.Last().Attempt);
+        Assert.Equal("rejected", events.Last().Status);
+
+        events.Clear();
+        var failedJudge = CreateSemanticallyValidatedAgent(
+            new FakeChatClient(ValidIdeasJson), new FakeChatClient("{}"), events.Add);
+        await Assert.ThrowsAsync<InvalidOperationException>(() =>
+            failedJudge.ExecuteAsync(new AgentExecutionContext(Guid.NewGuid()), new StoryInput(OriginalSource)));
+        Assert.Equal("incomplete", events.Last().Status);
+        Assert.Equal(ValidIdeasJson, events.Last().Response);
+    }
+
+    private static IdeaAgent CreateSemanticallyValidatedAgent(FakeChatClient generator, FakeChatClient judge,
+        Action<IdeaValidationAttempt>? observer = null)
     {
         var semanticJudge = new IdeaSemanticJudge(judge.AsAIAgent("Check source fidelity", "TestIdeaJudge"));
         var evaluator = new IdeaValidationLoopEvaluator(new IdeaValidator(), semanticJudge);
+        if (observer is not null)
+        {
+            evaluator.Observe(observer);
+        }
+
         return new IdeaAgent(evaluator.Wrap(generator.AsAIAgent("Generate ideas", "TestIdeaAgent")),
             NullLogger<IdeaAgent>.Instance);
     }
@@ -219,39 +298,6 @@ public sealed class IdeaValidationLoopEvaluatorBehavioralTests
             Correction = $"Qualify {number}"
         })
     });
-
-
-    private static string ValidIdeasJson => JsonSerializer.Serialize(new
-    {
-        ideas = new[]
-        {
-            new
-            {
-                Title = "Valid Idea",
-                Description = "A valid description",
-                Audience = "Test Audience",
-                Rationale = "Good rationale"
-            }
-        }
-    });
-
-    private static string InvalidIdeasJson => JsonSerializer.Serialize(new
-    {
-        ideas = new[]
-        {
-            new
-            {
-                Title = "", // Missing title - invalid
-                Description = "A description",
-                Audience = "Test Audience",
-                Rationale = "Good rationale"
-            }
-        }
-    });
-
-    private static string InvalidJson => "not valid json at all";
-
-    private static string EmptyResponse => "";
 
     /// <summary>
     ///     Test: Valid Idea on first attempt

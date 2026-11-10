@@ -29,6 +29,12 @@ internal static partial class PromptLoader
     {
         ArgumentException.ThrowIfNullOrWhiteSpace(promptPath);
 
+        if (PromptDirectory.Current is { } directory)
+        {
+            return File.ReadAllText(Path.Combine(directory, promptPath.Replace('/', Path.DirectorySeparatorChar)),
+                new UTF8Encoding(false));
+        }
+
         var resourceName = ResourcePrefix + promptPath.Replace('/', '.').Replace('\\', '.');
         using var stream = _assembly.GetManifestResourceStream(resourceName)
                            ?? throw new FileNotFoundException(

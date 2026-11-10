@@ -22,11 +22,20 @@
 	</ItemGroup>
 
 	<ItemGroup>
+		<InternalsVisibleTo Include="Nueyon.Compose.Host.Console.Tests" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<ProjectReference Include="..\Nueyon.Compose.Application\Nueyon.Compose.Application.csproj" />
 		<ProjectReference Include="..\Nueyon.Compose.Infrastructure\Nueyon.Compose.Infrastructure.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>
+		<None Include="..\Nueyon.Compose.Application\Prompts\**\*.prompt.txt">
+			<Link>Prompts\%(RecursiveDir)%(Filename)%(Extension)</Link>
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+			<CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+		</None>
 		<None Update="appsettings.json">
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</None>

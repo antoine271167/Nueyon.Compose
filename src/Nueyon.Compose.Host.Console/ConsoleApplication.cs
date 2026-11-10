@@ -31,9 +31,10 @@ public sealed class ConsoleApplication
         _console = console ?? throw new ArgumentNullException(nameof(console));
     }
 
-    private readonly ISourceContextLoader _sourceContextLoader;
     private readonly IConsole _console;
     private readonly ILogger<ConsoleApplication> _logger;
+
+    private readonly ISourceContextLoader _sourceContextLoader;
     private readonly IStoryWorkflow _storyWorkflow;
 
     /// <summary>
@@ -42,14 +43,18 @@ public sealed class ConsoleApplication
     ///     executes the workflow, and displays results.
     /// </summary>
     /// <param name="cancellationToken">The cancellation token to cancel the operation.</param>
+    /// <param name="inputDirectory">The directory to load Markdown files from.</param>
+    /// <param name="errorsToStandardError">Whether to write errors to standard error.</param>
+    /// <param name="describeError">A function to describe an exception.</param>
+    /// <param name="inputErrorExitCode">The exit code to return for input errors.</param>
     /// <returns>The exit code (0 for success, 1 for error, 130 for cancellation).</returns>
-    public async Task<int> RunAsync(CancellationToken cancellationToken = default)
+    public async Task<int> RunAsync(CancellationToken cancellationToken = default, string inputDirectory = "data/input",
+        bool errorsToStandardError = false, Func<Exception, string>? describeError = null,
+        int? inputErrorExitCode = null)
     {
         try
         {
             DisplayWelcomeMessage();
-
-            const string inputDirectory = "data/input";
 
             StoryInput input;
             try
@@ -62,15 +67,15 @@ public sealed class ConsoleApplication
             {
                 _logger.LogError(ex, "Input directory not found.");
                 _console.WriteLine("");
-                _console.WriteLine($"Error: {ex.Message}");
-                return 1;
+                WriteError($"Error: {ex.Message}", errorsToStandardError);
+                return inputErrorExitCode ?? (errorsToStandardError ? 2 : 1);
             }
             catch (InvalidOperationException ex)
             {
                 _logger.LogError(ex, "No Markdown files found in input directory.");
                 _console.WriteLine("");
-                _console.WriteLine($"Error: {ex.Message}");
-                return 1;
+                WriteError($"Error: {ex.Message}", errorsToStandardError);
+                return inputErrorExitCode ?? (errorsToStandardError ? 2 : 1);
             }
 
             await ExecuteFlowAsync(input, cancellationToken);
@@ -81,15 +86,28 @@ public sealed class ConsoleApplication
         {
             _logger.LogInformation("Application cancelled.");
             _console.WriteLine("");
-            _console.WriteLine("Operation cancelled.");
+            WriteError("Operation cancelled.", errorsToStandardError);
             return 130;
         }
         catch (Exception ex)
         {
             _logger.LogError(ex, "An unexpected error occurred.");
             _console.WriteLine("");
-            _console.WriteLine("An unexpected error occurred. Please try again.");
+            WriteError(describeError?.Invoke(ex) ?? "An unexpected error occurred. Please try again.",
+                errorsToStandardError);
             return 1;
+        }
+    }
+
+    private void WriteError(string message, bool errorsToStandardError)
+    {
+        if (errorsToStandardError)
+        {
+            System.Console.Error.WriteLine(message);
+        }
+        else
+        {
+            _console.WriteLine(message);
         }
     }
 
@@ -115,6 +133,8 @@ public sealed class ConsoleApplication
 
         var result = await _storyWorkflow.RunAsync(input, cancellationToken);
 
+        // An interrupted run must not present its result as a success.
+        cancellationToken.ThrowIfCancellationRequested();
         DisplayResult(result);
     }
 

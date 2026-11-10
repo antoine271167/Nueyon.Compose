@@ -5,6 +5,25 @@ namespace Nueyon.Compose.Application.Tests.Prompts;
 
 public class PromptLoaderTests
 {
+[Fact]
+public void DirectoryScope_UsesDiskStrictlyAndRestoresEmbeddedPrompts()
+{
+    var directory = Path.Combine(Path.GetTempPath(), $"nueyon-prompt-test-{Guid.NewGuid():N}");
+    Directory.CreateDirectory(Path.Combine(directory, "Idea"));
+    try
+    {
+        File.WriteAllText(Path.Combine(directory, "Idea", "Idea.system.prompt.txt"), "disk prompt");
+        var embedded = PromptLoader.Load("Idea/Idea.system.prompt.txt");
+        using (PromptDirectory.Use(directory))
+        {
+            Assert.Equal("disk prompt", PromptLoader.Load("Idea/Idea.system.prompt.txt"));
+            Assert.Throws<FileNotFoundException>(() => PromptLoader.Load("Idea/Idea.user.prompt.txt"));
+        }
+        Assert.Equal(embedded, PromptLoader.Load("Idea/Idea.system.prompt.txt"));
+    }
+    finally { Directory.Delete(directory, true); }
+}
+
     public static IEnumerable<object[]> AllPrompts =>
     [
         ["Idea/Idea.system.prompt.txt"],
