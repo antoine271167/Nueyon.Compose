@@ -1,0 +1,199 @@
+{
+  "name": "research",
+  "description": "Research a selected idea.",
+  "inputType": "ResearchInput",
+  "outputType": "ResearchResult",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "input": {
+        "type": "object",
+        "properties": {
+          "content": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "content"
+        ],
+        "additionalProperties": false
+      },
+      "selectedIdea": {
+        "type": "object",
+        "properties": {
+          "idea": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "audience": {
+                "type": "string"
+              },
+              "rationale": {
+                "type": "string"
+              },
+              "evidence": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "required": [
+              "title",
+              "description",
+              "audience",
+              "rationale",
+              "evidence"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "idea"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "required": [
+      "input",
+      "selectedIdea"
+    ],
+    "additionalProperties": false,
+    "description": "Input for the 'research' agent: the JSON read by 'run research --input'."
+  },
+  "outputSchema": {
+    "type": "object",
+    "properties": {
+      "content": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "content"
+    ],
+    "additionalProperties": false,
+    "description": "Result of the 'research' agent: the JSON written by 'run research --output'."
+  },
+  "traceSchema": null,
+  "validation": {
+    "kind": "json-contract",
+    "description": "JSON contract validation only; the agent may apply further runtime validation."
+  },
+  "commands": [
+    {
+      "kind": "RunAgent",
+      "path": [
+        "run"
+      ],
+      "takesAgent": true,
+      "description": "Run one agent from JSON.",
+      "options": [
+        {
+          "name": "--input",
+          "valueType": "json file",
+          "required": true,
+          "description": "Input JSON file.",
+          "formats": null,
+          "agents": null
+        },
+        {
+          "name": "--output",
+          "valueType": "json file",
+          "required": true,
+          "description": "New output JSON file.",
+          "formats": null,
+          "agents": null
+        },
+        {
+          "name": "--prompts",
+          "valueType": "directory",
+          "required": false,
+          "description": "Use a complete disk prompt set; the selected prompt source is reported on stderr.",
+          "formats": null,
+          "agents": null
+        }
+      ],
+      "examples": [
+        "run research --input .\\research.json --output .\\research-result.json"
+      ],
+      "syntax": "run <agent>",
+      "requiresRuntime": true
+    },
+    {
+      "kind": "AgentsDescribe",
+      "path": [
+        "agents",
+        "describe"
+      ],
+      "takesAgent": true,
+      "description": "Describe an agent.",
+      "options": [
+        {
+          "name": "--format",
+          "valueType": "text|json",
+          "required": false,
+          "description": "Output format (default text).",
+          "formats": [
+            "text",
+            "json"
+          ],
+          "agents": null
+        }
+      ],
+      "examples": [
+        "agents describe research --format json"
+      ],
+      "syntax": "agents describe <agent>",
+      "requiresRuntime": false
+    },
+    {
+      "kind": "AgentsSchema",
+      "path": [
+        "agents",
+        "schema"
+      ],
+      "takesAgent": true,
+      "description": "Export the standalone input JSON schema.",
+      "options": [
+        {
+          "name": "--format",
+          "valueType": "json",
+          "required": true,
+          "description": "Output format; must be json.",
+          "formats": [
+            "json"
+          ],
+          "agents": null
+        }
+      ],
+      "examples": [
+        "agents schema research --format json"
+      ],
+      "syntax": "agents schema <agent>",
+      "requiresRuntime": false
+    }
+  ],
+  "exitCodes": [
+    {
+      "code": 0,
+      "meaning": "success"
+    },
+    {
+      "code": 1,
+      "meaning": "runtime or configuration failure (also input errors when run without arguments)"
+    },
+    {
+      "code": 2,
+      "meaning": "usage or input error"
+    },
+    {
+      "code": 130,
+      "meaning": "cancelled"
+    }
+  ]
+}

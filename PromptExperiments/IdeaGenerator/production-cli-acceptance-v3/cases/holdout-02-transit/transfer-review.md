@@ -1,0 +1,17 @@
+# Night-bus transfer review: test the timetable at Harbor Junction first
+
+The municipal transport committee reviewed the September transfers from the
+last inbound train to the night bus at Harbor Junction. Staff observed
+17 missed transfers in the four weeks they logged. In 14 of those cases,
+the bus had already left when a train arriving within its published time
+reached the platform. Logs for the other three show train delays. The review
+covers Harbor Junction only. It did not test whether a schedule change would
+improve transfers.
+
+The committee's explicit first trial is to move the last night bus departure
+at Harbor Junction five minutes later for two weeks, without changing
+departures at other stations. Dispatchers will log completed transfers and
+onward delays before the committee decides whether to retain the change.
+Better signs were discussed, but the committee set them aside for this
+trial. The public briefing should explain the specific mismatch and what the
+temporary timetable test will measure.

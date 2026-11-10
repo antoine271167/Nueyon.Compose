@@ -1,0 +1,98 @@
+{
+  "revision": "83c732d330fbca4bebd4b2c239ef9ac55a471a39",
+  "sdk": "10.0.401",
+  "cwd": "C:\\Workspaces\\Nueyon.Compose",
+  "command": [
+    "dotnet",
+    "C:\\Workspaces\\Nueyon.Compose\\PromptExperiments\\IdeaGenerator\\production-cli-acceptance-v3\\harness\\bin\\Debug\\net10.0\\FeedbackLoop.dll",
+    "live",
+    "C:\\Workspaces\\Nueyon.Compose\\src\\Nueyon.Compose.Host.Console\\bin\\Debug\\net10.0",
+    "C:\\Workspaces\\Nueyon.Compose\\PromptExperiments\\IdeaGenerator\\production-cli-acceptance-v3\\candidates\\pair-01\\prompts",
+    "C:\\Workspaces\\Nueyon.Compose\\PromptExperiments\\IdeaGenerator\\production-cli-acceptance-v3\\cases\\02-development\\idea-input.json",
+    "C:\\Workspaces\\Nueyon.Compose\\PromptExperiments\\IdeaGenerator\\production-cli-acceptance-v3\\fixtures\\02-development.json"
+  ],
+  "modelAlias": "gpt-5-mini",
+  "modelSnapshot": null,
+  "maxIdeaAttempts": 3,
+  "reservedModelCalls": 3,
+  "startedAt": "2026-11-10T21:19:50.3383561+00:00",
+  "inputs": {
+    "cases/02-development/idea-input.json": "7D07098F3CD31BB714FAC180D4885BD7A35F9163FD176534F96EBF6E688900BE",
+    "fixtures/02-development.json": "90E7C2DC663C7FF7FDB2B903DBF1AA143EF6C612E69A749674558E0820B3E637"
+  },
+  "prompts": [
+    {
+      "path": "Compose/Compose.article.user.prompt.txt",
+      "production": "23BCF0510239905DFF25C2B2414E5E8AF10076DD0445393B3CAF523C38A64278",
+      "candidate": "23BCF0510239905DFF25C2B2414E5E8AF10076DD0445393B3CAF523C38A64278"
+    },
+    {
+      "path": "Compose/Compose.linkedin.user.prompt.txt",
+      "production": "86F4EBE7FE5FF11155911519830609A2F52CB720D572CF71662F878E64B113DA",
+      "candidate": "86F4EBE7FE5FF11155911519830609A2F52CB720D572CF71662F878E64B113DA"
+    },
+    {
+      "path": "Compose/Compose.system.prompt.txt",
+      "production": "D9EA52BEB6DD9ADA3CC16413492522D5D449E0B7EA41F23A71C9345DBABF171C",
+      "candidate": "D9EA52BEB6DD9ADA3CC16413492522D5D449E0B7EA41F23A71C9345DBABF171C"
+    },
+    {
+      "path": "Idea/Idea.system.prompt.txt",
+      "production": "E98B756C9088B8646408F0C857AEDBD1E2B8E453C5AD1982C17E62F2FCBAA2BE",
+      "candidate": "9F414EEDAB03A0EEFEE9753860A2516E046A47E586599A48279CAA7AA4187EC5"
+    },
+    {
+      "path": "Idea/Idea.user.prompt.txt",
+      "production": "D6EE3975D46331A956FE70ED1C90BCDA513CF91574A1CF34173682A8D427F43F",
+      "candidate": "67ECD97A2F1B79E8A463FBF330E04A8FE193BC62E30377ECA8DA92A2821D3380"
+    },
+    {
+      "path": "Idea/IdeaValidation.system.prompt.txt",
+      "production": "CE1AFF97FF3B2C5DC9ABAFEBF5A0D3534DE57FF9056A7E137FACEA49E9BA15DA",
+      "candidate": "60F7E33A4C47306830D1368EEDE07DFC3D66A9AF8AB27AD2C8E03402BE01155F"
+    },
+    {
+      "path": "Narrative/Narrative.system.prompt.txt",
+      "production": "6658043519128531E2CF5B5BB9084901C4F5A8B25B74CEB3D3004C26AAD34C95",
+      "candidate": "6658043519128531E2CF5B5BB9084901C4F5A8B25B74CEB3D3004C26AAD34C95"
+    },
+    {
+      "path": "Narrative/Narrative.user.prompt.txt",
+      "production": "475A9DB1CA028EBC927C99ECDD3DAB061B0616ED06FB1278879992D2E8DD795A",
+      "candidate": "475A9DB1CA028EBC927C99ECDD3DAB061B0616ED06FB1278879992D2E8DD795A"
+    },
+    {
+      "path": "PromptDirectory.cs",
+      "production": "8D3973C6EFC6E9105F23FB585E7BB3BE62E62F28954432E2E5941E4F5BC170FE",
+      "candidate": "8D3973C6EFC6E9105F23FB585E7BB3BE62E62F28954432E2E5941E4F5BC170FE"
+    },
+    {
+      "path": "PromptLoader.cs",
+      "production": "65A3FD6F3CA9D2FB1368A2B35EB11D5BC7942ECD405BAB3044C62D391DBA00F2",
+      "candidate": "65A3FD6F3CA9D2FB1368A2B35EB11D5BC7942ECD405BAB3044C62D391DBA00F2"
+    },
+    {
+      "path": "Research/Research.system.prompt.txt",
+      "production": "D3A28B5429CF5866EC9A23D24EB216033B1B09C85AF3436ED4CB297FC5B4078E",
+      "candidate": "D3A28B5429CF5866EC9A23D24EB216033B1B09C85AF3436ED4CB297FC5B4078E"
+    },
+    {
+      "path": "Research/Research.user.prompt.txt",
+      "production": "9093D5AB42F5300B2C79C9678DAA905767975B8F0014530A08701C9616367728",
+      "candidate": "9093D5AB42F5300B2C79C9678DAA905767975B8F0014530A08701C9616367728"
+    },
+    {
+      "path": "Synthesis/Synthesis.system.prompt.txt",
+      "production": "97D123AA4DF38E855F509363B415F42EB93BE02C65E1D597A96C07E301460DE4",
+      "candidate": "97D123AA4DF38E855F509363B415F42EB93BE02C65E1D597A96C07E301460DE4"
+    },
+    {
+      "path": "Synthesis/Synthesis.user.prompt.txt",
+      "production": "5D9556B075425A589F4CC92BA1D34A0385FAECC458FE55AA8EB3D3124933BF5D",
+      "candidate": "5D9556B075425A589F4CC92BA1D34A0385FAECC458FE55AA8EB3D3124933BF5D"
+    }
+  ],
+  "executableSha256": "E67B22BD23E55F0F1B27FA22C4F1C365E78EF80EF4AED4337D2641C387BB4FB0",
+  "exitCode": 0,
+  "endedAt": "2026-11-10T21:20:36.1821037+00:00"
+}

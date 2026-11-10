@@ -1,0 +1,26 @@
+{
+  "case": "02-development",
+  "expected": [
+    "rejected",
+    "rejected",
+    "accepted"
+  ],
+  "observed": [
+    "rejected",
+    "rejected",
+    "accepted"
+  ],
+  "corrections": [
+    {
+      "attempt": 1,
+      "sourceFaithful": false,
+      "reason": "Terechte afwijzing van de generieke claim. De letterlijke correctie ‘prompt reduced’ en ‘rule worsened downstream outputs’ houdt de causale toeschrijving echter in stand. ‘Teams should validate similar safeguards in their own pipelines’ voegt ook een aanbeveling toe. De bron draagt de geobserveerde scoreverschillen, beperkingen en niet-promotie."
+    },
+    {
+      "attempt": 2,
+      "sourceFaithful": true,
+      "reason": "Wijst de causale betekenis van ‘worsened’ in de titel aan en vervangt die door ‘was associated with’ binnen de proef. De correctie behoudt de gedocumenteerde beperkingen."
+    }
+  ],
+  "accepted": false
+}

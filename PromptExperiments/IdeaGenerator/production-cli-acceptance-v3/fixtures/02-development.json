@@ -1,0 +1,34 @@
+{
+  "origins": [
+    "PromptExperiments\\IdeaGenerator\\production-cli-acceptance-v2/runs/judge-06/acceptance/01/02-development/idea-trace.json#1",
+    "PromptExperiments\\IdeaGenerator\\production-cli-acceptance-v2/runs/judge-06/acceptance/01/02-development/idea-result.json"
+  ],
+  "ideas": [
+    {
+      "title": "A generic “preserve editorial intent” prompt can reduce, not improve, editorial fidelity",
+      "description": "Adding a reusable Narrative instruction to “preserve editorial intent” produced consistent editorial drift: company identity and audience scope were deprioritized, orchestration became the central message, unsupported claims appeared, and the candidate prompt failed promotion. The experiment shows that a single, generic preservation rule can worsen downstream outputs rather than protect a supplied hierarchy.",
+      "audience": "Prompt engineers, content ops leads, product/content managers responsible for automated content pipelines",
+      "rationale": "Why it matters: Teams testing prompt-level editorial safeguards need to know that a plausible, reusable rule can produce systematic regressions; relying on a single generic rule without targeted alignment to the existing Synthesis risks displacing the intended top-level message. Gaps and uncertainty: the experiment used three runs per condition (not statistically conclusive) and the result may depend on exact wording, model backend variability, or Synthesis content not modified in this experiment.",
+      "evidence": "Candidate prompt added a new “Preserve Editorial Intent from the Synthesis” section. Narrative mean score fell from 6.00 to 4.00/10; Compose mean fell from 5.67 to 3.33/10. All three candidate Narrative runs subordinated company identity/audience and made orchestration central; all candidate runs introduced unsupported claims and failed the D (factual/editorial restraint) gate. Decision: candidate not promoted; production prompt restored byte-for-byte."
+    },
+    {
+      "title": "In Experiment 005, adding a generic “preserve editorial intent” instruction worsened editorial fidelity in this configuration",
+      "description": "Within the specific conditions of Experiment 005, inserting a reusable Narrative section titled “Preserve Editorial Intent from the Synthesis” correlated with systematic regressions: all three candidate Narrative runs deprioritized the company-level identity/audience, made orchestration the central message, and introduced unsupported elaborations. The candidate prompt was not promoted and production prompt was restored byte-for-byte. These observations are specific to this experiment’s prompt wording, model alias, and sample size and are not claimed as broadly generalizable.",
+      "audience": "Prompt engineers, content-ops leads, and teams running controlled prompt experiments",
+      "rationale": "Why it matters (limited to this experiment): In this controlled comparison (three runs per condition, gpt-5-mini model alias, identical pipeline and inputs except for one Narrative user prompt change), the added generic preservation instruction correlated with lower Narrative and Compose scores and with repeated failures of editorial restraint. This shows that, in this configuration and with this exact wording, a seemingly plausible reusable rule did not protect the intended editorial hierarchy and instead coincided with stable regressions; results may differ with other wording, larger samples, or a different model backend.",
+      "evidence": "Candidate prompt added a “Preserve Editorial Intent from the Synthesis” section. Narrative mean score fell from 6.00 to 4.00/10 (baseline vs candidate); Compose mean fell from 5.67 to 3.33/10. All three candidate Narrative runs subordinated company identity/audience and made orchestration central; candidate runs also introduced unsupported validation/audience claims and failed the D (factual/editorial restraint) gate in every run. Decision: candidate not promoted; production prompt restored byte-for-byte (SHA verified). The report notes limitations: three runs per condition and possible model-backend variability."
+    },
+    {
+      "title": "A safeguard on paper, lower scores in Experiment 005",
+      "description": "Compare the three archived baseline runs with the three candidate runs that included a Narrative instruction intended to preserve editorial hierarchy. Explain the observed hierarchy and score differences and the decision to leave the candidate out of production.",
+      "audience": "Readers working on editorial prompt experiments",
+      "rationale": "The contrast between the intended safeguard and the recorded output gives a concrete account of why this candidate was not promoted. The small, non-contemporaneous samples, variation in earlier outputs and possible backend changes limit attribution.",
+      "evidence": "Run scores: Narrative averaged 6.00 versus 4.00 and Compose 5.67 versus 3.33, baseline versus candidate. Every candidate Narrative run made orchestration central. The report records the non-promotion, the tension in baseline Synthesis, and the three-run limit."
+    }
+  ],
+  "expected": [
+    "rejected",
+    "rejected",
+    "accepted"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Find where the story first changes before choosing what to fix",
+  "description": "Use the saved pipeline examples to show why the next controlled trial should target the earliest stage supported by the evidence for the chosen failure. Where Narrative appears to be the first shift, inspect the actual Synthesis it received before changing Narrative.",
+  "audience": "People investigating editorial drift in the Nuëyon.Compose pipeline",
+  "rationale": "The same company-first story can change at different points. Localizing the selected failure first gives the team a way to choose one focused trial while keeping observation and causation separate.",
+  "evidence": "The report locates the first visible hierarchy break in Narrative in 007 candidates 001–002 and in Synthesis in candidate 003. Some 008 company-first runs change at Idea. The next-trial recommendation says to target the first evidence-supported stage for the chosen failure and compare Narrative with its actual Synthesis input before changing it."
+}
