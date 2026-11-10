@@ -1,0 +1,7 @@
+{
+  "exitCode": 0,
+  "startedAt": "2026-11-10T21:34:19.3904667+01:00",
+  "endedAt": "2026-11-10T21:35:54.7409825+01:00",
+  "command": "dotnet run --no-build --project ./src/Nueyon.Compose.Host.Console -- run idea --input PromptExperiments/IdeaGenerator/production-cli-acceptance-v1/04-analysis/idea-input.json --output PromptExperiments/IdeaGenerator/production-cli-acceptance-v1/04-analysis/idea-result.json --trace PromptExperiments/IdeaGenerator/production-cli-acceptance-v1/04-analysis/idea-trace.json --prompts PromptExperiments/IdeaGenerator/production-cli-acceptance-v1/prompts",
+  "stderr": "Prompts: disk (C:\\Workspaces\\Nueyon.Compose\\PromptExperiments\\IdeaGenerator\\production-cli-acceptance-v1\\prompts)."
+}
