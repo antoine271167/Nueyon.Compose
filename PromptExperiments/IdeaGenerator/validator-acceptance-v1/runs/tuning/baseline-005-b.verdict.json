@@ -1,0 +1,12 @@
+{
+  "accepted": false,
+  "blockingIssues": [
+    {
+      "category": "Overstated causation",
+      "field": "rationale",
+      "problem": "The rationale asserts that the added hierarchy rule \"caused the shift toward orchestration\" as a definitive causal claim. The source supports a controlled correlation (the only prompt change was that rule and candidate runs shifted), but it also records alternative contributing factors and limitations (internal tension in the baseline Synthesis and possible model/backend variability). The idea therefore overstates the degree of causal certainty the experiment supports.",
+      "sourceEvidence": "The report states the only prompt change was the added \"Preserve Editorial Intent\" section and documents that candidate outputs \"subordinated company identity and audience scope while making orchestration the central positioning.\" It also notes that \"The baseline Synthesis pairs company identity with Compose... but also contains a later description calling orchestration 'central to the product direction.' That internal tension may have reinforced the technical angle.\" Under Limitations it records that \"the model provider may change the backend behind an alias.\"",
+      "constraint": "When presenting causes, preserve the experiment's attribution and uncertainty: the report shows a controlled correlation but acknowledges possible contributing factors and backend variability. The rationale must not claim sole or definitive causation beyond what the source permits."
+    }
+  ]
+}

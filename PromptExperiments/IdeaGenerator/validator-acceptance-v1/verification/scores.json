@@ -1,0 +1,427 @@
+{
+  "cases": [
+    {
+      "phase": "tuning",
+      "condition": "baseline",
+      "case": "005-a",
+      "expectedAccepted": true,
+      "result": "TN",
+      "accepted": true,
+      "blockers": []
+    },
+    {
+      "phase": "tuning",
+      "condition": "baseline",
+      "case": "005-b",
+      "expectedAccepted": false,
+      "result": "TP",
+      "accepted": false,
+      "blockers": [
+        {
+          "category": "Overstated causation",
+          "field": "rationale",
+          "problem": "The rationale asserts that the added hierarchy rule \"caused the shift toward orchestration\" as a definitive causal claim. The source supports a controlled correlation (the only prompt change was that rule and candidate runs shifted), but it also records alternative contributing factors and limitations (internal tension in the baseline Synthesis and possible model/backend variability). The idea therefore overstates the degree of causal certainty the experiment supports.",
+          "sourceEvidence": "The report states the only prompt change was the added \"Preserve Editorial Intent\" section and documents that candidate outputs \"subordinated company identity and audience scope while making orchestration the central positioning.\" It also notes that \"The baseline Synthesis pairs company identity with Compose... but also contains a later description calling orchestration 'central to the product direction.' That internal tension may have reinforced the technical angle.\" Under Limitations it records that \"the model provider may change the backend behind an alias.\"",
+          "constraint": "When presenting causes, preserve the experiment's attribution and uncertainty: the report shows a controlled correlation but acknowledges possible contributing factors and backend variability. The rationale must not claim sole or definitive causation beyond what the source permits."
+        }
+      ]
+    },
+    {
+      "phase": "tuning",
+      "condition": "baseline",
+      "case": "010-a",
+      "expectedAccepted": true,
+      "result": "TN",
+      "accepted": true,
+      "blockers": []
+    },
+    {
+      "phase": "tuning",
+      "condition": "baseline",
+      "case": "010-b",
+      "expectedAccepted": false,
+      "result": "FN",
+      "accepted": true,
+      "blockers": []
+    },
+    {
+      "phase": "tuning",
+      "condition": "baseline",
+      "case": "museum-a",
+      "expectedAccepted": true,
+      "result": "TN",
+      "accepted": true,
+      "blockers": []
+    },
+    {
+      "phase": "tuning",
+      "condition": "baseline",
+      "case": "museum-b",
+      "expectedAccepted": false,
+      "result": "FN",
+      "accepted": true,
+      "blockers": []
+    },
+    {
+      "phase": "tuning",
+      "condition": "baseline",
+      "case": "library-a",
+      "expectedAccepted": true,
+      "result": "TN",
+      "accepted": true,
+      "blockers": []
+    },
+    {
+      "phase": "tuning",
+      "condition": "baseline",
+      "case": "library-b",
+      "expectedAccepted": false,
+      "result": "TP",
+      "accepted": false,
+      "blockers": [
+        {
+          "category": "Unsupported / contradictory timing claim",
+          "field": "description",
+          "problem": "The description tells borrowers they may collect reserved tools “at any time during desk opening hours,” which is not stated in the source and contradicts the source statement that the pickup window printed on each confirmation still applies.",
+          "sourceEvidence": "\"The pickup window printed on each confirmation still applies.\" (source). The source does not say pickups may be made at any time during desk opening hours.",
+          "constraint": "Must preserve the source condition that the pickup window on each confirmation governs when a borrower may collect their reservation; do not broaden or replace it with an unsupported generalization about desk opening hours."
+        }
+      ]
+    },
+    {
+      "phase": "tuning",
+      "condition": "baseline",
+      "case": "seedbank-a",
+      "expectedAccepted": true,
+      "result": "TN",
+      "accepted": true,
+      "blockers": []
+    },
+    {
+      "phase": "tuning",
+      "condition": "baseline",
+      "case": "seedbank-b",
+      "expectedAccepted": false,
+      "result": "TP",
+      "accepted": false,
+      "blockers": [
+        {
+          "category": "Unsubstantiated motivation/causal claim",
+          "field": "rationale",
+          "problem": "The rationale asserts the committee continued the trial 'because the germination results convinced it that the dry cupboard was promising.' The source records that the committee chose to continue with the same two lots, but does not state the committee's motive or claim that the cupboard caused an improvement.",
+          "sourceEvidence": "Source: 'At its March meeting, the committee chose to keep the same two lots in the cupboard for another six months and repeat the germination check.' Also: 'The notes give no claim that the cupboard caused an improvement and no promise of better garden results.'",
+          "constraint": "The idea must not attribute a specific motivation to the committee or imply a causal effect (that the cupboard caused improved germination) unless the source explicitly states it; any explanation of the committee's decision must preserve the source's uncertainty and attribution."
+        }
+      ]
+    },
+    {
+      "phase": "tuning",
+      "condition": "candidate",
+      "case": "005-a",
+      "expectedAccepted": true,
+      "result": "TN",
+      "accepted": true,
+      "blockers": []
+    },
+    {
+      "phase": "tuning",
+      "condition": "candidate",
+      "case": "005-b",
+      "expectedAccepted": false,
+      "result": "TP",
+      "accepted": false,
+      "blockers": [
+        {
+          "category": "Unsupported causal claim",
+          "field": "rationale",
+          "problem": "The rationale asserts that the added hierarchy rule \"caused\" the shift toward orchestration across candidate runs; the source documents a temporal association but does not establish causation.",
+          "sourceEvidence": "The report describes the prompt change (adding a \"Preserve Editorial Intent\" section) and then records that candidate outputs \"consistently subordinated company identity and audience scope while making orchestration the central positioning.\" It concludes the candidate prompt \"was not sufficient to protect the supplied editorial intent,\" but does not provide evidence isolating the new rule as the causal mechanism.",
+          "constraint": "The source only supports that the prompt change correlated with the observed shift and that the candidate failed the gates; any account must preserve uncertainty and attribution (e.g., describe an association or hypothesis), not present a causal claim as established fact."
+        }
+      ]
+    },
+    {
+      "phase": "tuning",
+      "condition": "candidate",
+      "case": "010-a",
+      "expectedAccepted": true,
+      "result": "TN",
+      "accepted": true,
+      "blockers": []
+    },
+    {
+      "phase": "tuning",
+      "condition": "candidate",
+      "case": "010-b",
+      "expectedAccepted": false,
+      "result": "TP",
+      "accepted": false,
+      "blockers": [
+        {
+          "category": "Prescriptive overreach",
+          "field": "title",
+          "problem": "The title states a definitive action — 'Fix Narrative first' — implying Narrative should always be the first target. The source recommends targeting the first stage supported by evidence and only notes that Narrative is the most recurrent locus; it cautions that Narrative is not always the root cause.",
+          "sourceEvidence": "The report's 'Implication for the next focused trial' recommends: 'Targets the first stage supported by the evidence for the chosen failure (Narrative is the most recurrent locus; compare its actual input Synthesis before changing it).' It also says: 'This is a diagnostic recommendation, not a prompt rewrite or a claim that Narrative is the sole cause.' The report further warns: 'Do not infer that another Idea-only change or a Compose-only style change will address every failure.'",
+          "constraint": "Keep recommendations conditional and evidence-bound: present Narrative as the most frequent candidate for targeting, but not as a universal first fix; preserve the report's conditional language about selecting the first evidence-supported stage."
+        }
+      ]
+    },
+    {
+      "phase": "tuning",
+      "condition": "candidate",
+      "case": "museum-a",
+      "expectedAccepted": true,
+      "result": "TN",
+      "accepted": true,
+      "blockers": []
+    },
+    {
+      "phase": "tuning",
+      "condition": "candidate",
+      "case": "museum-b",
+      "expectedAccepted": false,
+      "result": "TP",
+      "accepted": false,
+      "blockers": [
+        {
+          "category": "Audience unsupported",
+          "field": "audience",
+          "problem": "The idea identifies the primary audience as “Museum operations managers evaluating whether the pilot should continue,” but the source is explicitly a visitor-facing note and does not present the piece as addressed to managers.",
+          "sourceEvidence": "Source opening line: “This note is for visitors whose plans included the sculpture garden.” Also: “The note is intended to help visitors adapt their visit when the garden is closed.”",
+          "constraint": "The source’s stated purpose and framing are visitor-facing; the idea cannot reassign the primary audience to museum managers without additional source evidence that the piece was intended for or would serve that audience."
+        },
+        {
+          "category": "Insufficient evidence for managerial evaluation",
+          "field": "audience",
+          "problem": "Framing the piece for managers evaluating whether to continue the pilot implies it will support a decision, but the source lacks the outcome data such a decision would require.",
+          "sourceEvidence": "Source reports distribution counts only (“The desk counted 38 copies handed out.”) and explicitly states: “Staff recorded no systematic counts of how many visitors completed the route and did not track visitor satisfaction.”",
+          "constraint": "The source provides only limited distribution data and explicitly notes absence of completion and satisfaction metrics; it does not contain the outcome or evaluative evidence needed to inform a decision about continuing the pilot."
+        }
+      ]
+    },
+    {
+      "phase": "tuning",
+      "condition": "candidate",
+      "case": "library-a",
+      "expectedAccepted": true,
+      "result": "TN",
+      "accepted": true,
+      "blockers": []
+    },
+    {
+      "phase": "tuning",
+      "condition": "candidate",
+      "case": "library-b",
+      "expectedAccepted": false,
+      "result": "TP",
+      "accepted": false,
+      "blockers": [
+        {
+          "category": "Timing/availability mismatch",
+          "field": "description",
+          "problem": "The description tells borrowers to collect their reserved tools \"at any time during desk opening hours,\" which contradicts the source statement that the pickup window printed on each confirmation still applies.",
+          "sourceEvidence": "Source: \"The pickup window printed on each confirmation still applies.\"",
+          "constraint": "The notice must preserve that borrowers are bound by the pickup window shown on their confirmation; it cannot state or imply they may collect at any time during desk opening hours unless the source explicitly allows that."
+        }
+      ]
+    },
+    {
+      "phase": "tuning",
+      "condition": "candidate",
+      "case": "seedbank-a",
+      "expectedAccepted": true,
+      "result": "TN",
+      "accepted": true,
+      "blockers": []
+    },
+    {
+      "phase": "tuning",
+      "condition": "candidate",
+      "case": "seedbank-b",
+      "expectedAccepted": false,
+      "result": "TP",
+      "accepted": false,
+      "blockers": [
+        {
+          "category": "Unsupported inference about motivation",
+          "field": "rationale",
+          "problem": "The rationale asserts the committee continued the trial “because the germination results convinced it that the dry cupboard was promising,” but the source does not document that motive and explicitly notes no claim that the cupboard caused an improvement.",
+          "sourceEvidence": "Source states only that “At its March meeting, the committee chose to keep the same two lots in the cupboard for another six months and repeat the germination check.” It also states “The notes give no claim that the cupboard caused an improvement and no promise of better garden results,” and documents limits on inference (different harvest lots, temperature logged only in the new cupboard, no paired comparison, no garden performance measured).",
+          "constraint": "Do not present the committee’s motive or an implied causal judgment about the cupboard as established fact; the piece must stick to the documented decision and the uncertainty about causation and committee reasoning."
+        }
+      ]
+    },
+    {
+      "phase": "holdout",
+      "condition": "baseline",
+      "case": "ferry-a",
+      "expectedAccepted": true,
+      "result": "TN",
+      "accepted": true,
+      "blockers": []
+    },
+    {
+      "phase": "holdout",
+      "condition": "baseline",
+      "case": "ferry-b",
+      "expectedAccepted": false,
+      "result": "TP",
+      "accepted": false,
+      "blockers": [
+        {
+          "category": "Factual mismatch",
+          "field": "description",
+          "problem": "The description claims \"The same boarding change applies to weekday sailings,\" which contradicts the source. The source explicitly states that weekday sailings continue to board at Pier 1.",
+          "sourceEvidence": "Source: \"From 6 through 21 June, weekend sailings board at Pier 2 while the ramp at Pier 1 is repaired. Weekday sailings continue boarding at Pier 1.\"",
+          "constraint": "Do not assert any boarding change for weekday sailings; preserve the source's statement that weekday sailings continue boarding at Pier 1."
+        }
+      ]
+    },
+    {
+      "phase": "holdout",
+      "condition": "candidate",
+      "case": "ferry-a",
+      "expectedAccepted": true,
+      "result": "TN",
+      "accepted": true,
+      "blockers": []
+    },
+    {
+      "phase": "holdout",
+      "condition": "candidate",
+      "case": "ferry-b",
+      "expectedAccepted": false,
+      "result": "TP",
+      "accepted": false,
+      "blockers": [
+        {
+          "category": "Contradiction with source",
+          "field": "description",
+          "problem": "The description asserts that the same boarding change applies to weekday sailings, but the source states weekday sailings continue to board at Pier 1.",
+          "sourceEvidence": "Source: \"From 6 through 21 June, weekend sailings board at Pier 2 while the ramp at Pier 1 is repaired. Weekday sailings continue boarding at Pier 1.\"",
+          "constraint": "Do not state or imply that weekday sailings are moved; the piece must preserve the source's boundary that only weekend sailings (6–21 June) board at Pier 2 while weekday sailings remain at Pier 1."
+        }
+      ]
+    },
+    {
+      "phase": "repeat",
+      "condition": "baseline",
+      "case": "005-b",
+      "expectedAccepted": false,
+      "result": "TP",
+      "accepted": false,
+      "blockers": [
+        {
+          "category": "Unsupported causal claim",
+          "field": "rationale",
+          "problem": "The rationale asserts that the added \"Preserve Editorial Intent\" rule caused the shift toward orchestration across the candidate runs. The source documents a temporal association (the candidate prompt included that rule and candidate outputs shifted emphasis) but does not establish that the added rule was the cause; it explicitly notes alternative explanations (internal tension in the baseline Synthesis) and concludes the candidate prompt was \"not sufficient\" rather than proven causal.",
+          "sourceEvidence": "Source: Prompt change section describes the added generic section. Analysis and run-score sections report that candidate outputs \"consistently subordinated company identity and audience scope while making orchestration the central positioning\" and that \"The baseline Synthesis pairs company identity with Compose... but also contains a later description calling orchestration 'central to the product direction.' That internal tension may have reinforced the technical angle.\" The decision states the candidate prompt \"was not sufficient to protect the supplied editorial intent.\" No passage asserts a demonstrated causal link from the added rule to the observed shift.",
+          "constraint": "Do not present the prompt edit as the proven cause of the editorial shift; preserve the source's attribution of uncertainty and mention alternative explanations or limit the claim to observed correlation."
+        }
+      ]
+    },
+    {
+      "phase": "repeat",
+      "condition": "baseline",
+      "case": "010-b",
+      "expectedAccepted": false,
+      "result": "FN",
+      "accepted": true,
+      "blockers": []
+    },
+    {
+      "phase": "repeat",
+      "condition": "candidate",
+      "case": "005-b",
+      "expectedAccepted": false,
+      "result": "TP",
+      "accepted": false,
+      "blockers": [
+        {
+          "category": "unsupported causal claim",
+          "field": "rationale",
+          "problem": "The rationale asserts that the added hierarchy rule \"caused the shift toward orchestration,\" which states causation beyond what the source supports.",
+          "sourceEvidence": "The report shows the candidate prompt was the only prompt-file change and that candidate outputs \"consistently subordinated company identity and audience scope while making orchestration the central positioning.\" It also states \"the candidate prompt was not sufficient to protect the supplied editorial intent.\" However, the Limitations section notes potential confounders: \"the model provider may change the backend behind an alias,\" \"No seed or temperature override was available,\" and \"three runs per condition show consistency in these samples, not statistical significance.\" The report therefore supports a strong association between the prompt change and the observed shift but does not establish definitive causation.",
+          "constraint": "When explaining why the candidate was not promoted, preserve the source's attribution and uncertainty: present the prompt change as the proximate, observed correlate and the experiment's conclusion (the candidate prompt failed to protect the editorial hierarchy), but do not assert definitive causal proof given the stated limitations and lack of statistical certainty."
+        }
+      ]
+    },
+    {
+      "phase": "repeat",
+      "condition": "candidate",
+      "case": "010-b",
+      "expectedAccepted": false,
+      "result": "FN",
+      "accepted": true,
+      "blockers": []
+    }
+  ],
+  "metrics": [
+    {
+      "phase": "holdout",
+      "condition": "baseline",
+      "tp": 1,
+      "fp": 0,
+      "tn": 1,
+      "fn": 0,
+      "errors": 0,
+      "precision": 1,
+      "recall": 1
+    },
+    {
+      "phase": "holdout",
+      "condition": "candidate",
+      "tp": 1,
+      "fp": 0,
+      "tn": 1,
+      "fn": 0,
+      "errors": 0,
+      "precision": 1,
+      "recall": 1
+    },
+    {
+      "phase": "repeat",
+      "condition": "baseline",
+      "tp": 1,
+      "fp": 0,
+      "tn": 0,
+      "fn": 1,
+      "errors": 0,
+      "precision": 1,
+      "recall": 0.5
+    },
+    {
+      "phase": "repeat",
+      "condition": "candidate",
+      "tp": 1,
+      "fp": 0,
+      "tn": 0,
+      "fn": 1,
+      "errors": 0,
+      "precision": 1,
+      "recall": 0.5
+    },
+    {
+      "phase": "tuning",
+      "condition": "baseline",
+      "tp": 3,
+      "fp": 0,
+      "tn": 5,
+      "fn": 2,
+      "errors": 0,
+      "precision": 1,
+      "recall": 0.6
+    },
+    {
+      "phase": "tuning",
+      "condition": "candidate",
+      "tp": 5,
+      "fp": 0,
+      "tn": 5,
+      "fn": 0,
+      "errors": 0,
+      "precision": 1,
+      "recall": 1
+    }
+  ]
+}

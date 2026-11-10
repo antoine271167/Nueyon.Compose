@@ -1,0 +1,12 @@
+{
+  "accepted": false,
+  "blockingIssues": [
+    {
+      "category": "Unsupported causal claim",
+      "field": "rationale",
+      "problem": "The rationale asserts that the added \"Preserve Editorial Intent\" rule caused the shift toward orchestration across the candidate runs. The source documents a temporal association (the candidate prompt included that rule and candidate outputs shifted emphasis) but does not establish that the added rule was the cause; it explicitly notes alternative explanations (internal tension in the baseline Synthesis) and concludes the candidate prompt was \"not sufficient\" rather than proven causal.",
+      "sourceEvidence": "Source: Prompt change section describes the added generic section. Analysis and run-score sections report that candidate outputs \"consistently subordinated company identity and audience scope while making orchestration the central positioning\" and that \"The baseline Synthesis pairs company identity with Compose... but also contains a later description calling orchestration 'central to the product direction.' That internal tension may have reinforced the technical angle.\" The decision states the candidate prompt \"was not sufficient to protect the supplied editorial intent.\" No passage asserts a demonstrated causal link from the added rule to the observed shift.",
+      "constraint": "Do not present the prompt edit as the proven cause of the editorial shift; preserve the source's attribution of uncertainty and mention alternative explanations or limit the claim to observed correlation."
+    }
+  ]
+}

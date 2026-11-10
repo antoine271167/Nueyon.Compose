@@ -1,0 +1,12 @@
+{
+  "accepted": false,
+  "blockingIssues": [
+    {
+      "category": "Unsupported / contradictory timing claim",
+      "field": "description",
+      "problem": "The description tells borrowers they may collect reserved tools “at any time during desk opening hours,” which is not stated in the source and contradicts the source statement that the pickup window printed on each confirmation still applies.",
+      "sourceEvidence": "\"The pickup window printed on each confirmation still applies.\" (source). The source does not say pickups may be made at any time during desk opening hours.",
+      "constraint": "Must preserve the source condition that the pickup window on each confirmation governs when a borrower may collect their reservation; do not broaden or replace it with an unsupported generalization about desk opening hours."
+    }
+  ]
+}
