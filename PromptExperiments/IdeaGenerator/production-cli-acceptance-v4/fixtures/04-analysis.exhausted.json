@@ -1,0 +1,69 @@
+{
+  "ideas": [
+    {
+      "title": "Narrative is the recurrent locus of editorial hierarchy drift — make Narrative the primary control point for company‑first framing",
+      "description": "Across experiments 007–009 the Narrative stage is the most common first-visible place where a company-first editorial hierarchy breaks and unsupported claims are introduced. Prioritizing a Narrative-focused gate or intervention offers the strongest, evidence-backed opportunity to prevent downstream reframing toward product/technical-first stories.",
+      "audience": "Internal content/experiment teams, prompt engineers, editorial leads working on Nuëyon.Compose pipeline orchestration and quality control.",
+      "rationale": "Why it matters: The report documents Narrative as the first observable hierarchy shift in many runs (007 runs 001–002; 008 A-002; 009 baseline 002/003 and candidates 001–003). Because Narrative directly crafts the reader-facing through-line, targeting it can block recurring downstream amplifications in Compose. Gaps and uncertainty: Narrative is not the sole origin — some runs show Idea or Synthesis as the first drift (e.g., 007 candidate 003, 008 Idea-origin runs), so a Narrative-only fix may not eliminate all failures. A controlled test is required to confirm impact and to avoid missing upstream causes.",
+      "evidence": "Explicit statements in the report: “Narrative is the most recurrent first visible hierarchy shift in the available records.” Localized examples: Experiment 007 — Narrative first in candidate 001–002; Experiment 008 A-002 — Narrative invents founders and product leads; Experiment 009 — Narrative is the first clear editorial shift in baseline 002 and 003 and in candidate 001–003. The report also notes that Narrative failures then persist into Compose in multiple runs."
+    },
+    {
+      "title": "Narrative is the recurrent locus of editorial hierarchy drift — make Narrative the primary control point for company‑first framing",
+      "description": "Across experiments 007–009 the Narrative stage is the most common first-visible place where a company-first editorial hierarchy breaks and unsupported claims are introduced. Prioritizing a Narrative-focused gate or intervention offers the strongest, evidence-backed opportunity to prevent downstream reframing toward product/technical-first stories.",
+      "audience": "Internal content/experiment teams, prompt engineers, editorial leads working on Nuëyon.Compose pipeline orchestration and quality control.",
+      "rationale": "Why it matters: The report documents Narrative as the first observable hierarchy shift in many runs (007 runs 001–002; 008 A-002; 009 baseline 002/003 and candidates 001–003). Because Narrative directly crafts the reader-facing through-line, targeting it can block recurring downstream amplifications in Compose. Gaps and uncertainty: Narrative is not the sole origin — some runs show Idea or Synthesis as the first drift (e.g., 007 candidate 003, 008 Idea-origin runs), so a Narrative-only fix may not eliminate all failures. A controlled test is required to confirm impact and to avoid missing upstream causes.",
+      "evidence": "Explicit statements in the report: “Narrative is the most recurrent first visible hierarchy shift in the available records.” Localized examples: Experiment 007 — Narrative first in candidate 001–002; Experiment 008 A-002 — Narrative invents founders and product leads; Experiment 009 — Narrative is the first clear editorial shift in baseline 002 and 003 and in candidate 001–003. The report also notes that Narrative failures then persist into Compose in multiple runs."
+    },
+    {
+      "title": "Narrative is the recurrent locus of editorial hierarchy drift — make Narrative the primary control point for company‑first framing",
+      "description": "Across experiments 007–009 the Narrative stage is the most common first-visible place where a company-first editorial hierarchy breaks and unsupported claims are introduced. Prioritizing a Narrative-focused gate or intervention offers the strongest, evidence-backed opportunity to prevent downstream reframing toward product/technical-first stories.",
+      "audience": "Internal content/experiment teams, prompt engineers, editorial leads working on Nuëyon.Compose pipeline orchestration and quality control.",
+      "rationale": "Why it matters: The report documents Narrative as the first observable hierarchy shift in many runs (007 runs 001–002; 008 A-002; 009 baseline 002/003 and candidates 001–003). Because Narrative directly crafts the reader-facing through-line, targeting it can block recurring downstream amplifications in Compose. Gaps and uncertainty: Narrative is not the sole origin — some runs show Idea or Synthesis as the first drift (e.g., 007 candidate 003, 008 Idea-origin runs), so a Narrative-only fix may not eliminate all failures. A controlled test is required to confirm impact and to avoid missing upstream causes.",
+      "evidence": "Explicit statements in the report: “Narrative is the most recurrent first visible hierarchy shift in the available records.” Localized examples: Experiment 007 — Narrative first in candidate 001–002; Experiment 008 A-002 — Narrative invents founders and product leads; Experiment 009 — Narrative is the first clear editorial shift in baseline 002 and 003 and in candidate 001–003. The report also notes that Narrative failures then persist into Compose in multiple runs."
+    }
+  ],
+  "expected": [
+    "rejected",
+    "rejected",
+    "rejected"
+  ],
+  "verdicts": [
+    {
+      "blockingIssues": [
+        {
+          "constraint": "Intervention selection depends on the earliest supported deviation in the chosen case. Recurrence establishes neither cause nor preventive effect.",
+          "field": "title, description",
+          "sourceEvidence": "Cross-experiment patterns and Implication for the next focused trial describe varying first drift across Idea, Synthesis and Narrative and inspecting actual Synthesis before changing Narrative.",
+          "problem": "Narrative is made the primary intervention and prevention is claimed from recurrence.",
+          "category": "editorialPurpose"
+        }
+      ],
+      "accepted": false
+    },
+    {
+      "blockingIssues": [
+        {
+          "constraint": "Intervention selection depends on the earliest supported deviation in the chosen case. Recurrence establishes neither cause nor preventive effect.",
+          "field": "title, description",
+          "sourceEvidence": "Cross-experiment patterns and Implication for the next focused trial describe varying first drift across Idea, Synthesis and Narrative and inspecting actual Synthesis before changing Narrative.",
+          "problem": "Narrative is made the primary intervention and prevention is claimed from recurrence.",
+          "category": "editorialPurpose"
+        }
+      ],
+      "accepted": false
+    },
+    {
+      "blockingIssues": [
+        {
+          "constraint": "Intervention selection depends on the earliest supported deviation in the chosen case. Recurrence establishes neither cause nor preventive effect.",
+          "field": "title, description",
+          "sourceEvidence": "Cross-experiment patterns and Implication for the next focused trial describe varying first drift across Idea, Synthesis and Narrative and inspecting actual Synthesis before changing Narrative.",
+          "problem": "Narrative is made the primary intervention and prevention is claimed from recurrence.",
+          "category": "editorialPurpose"
+        }
+      ],
+      "accepted": false
+    }
+  ],
+  "error": "InvalidOperationException: Idea agent failed to produce valid ideas after 3 attempts."
+}

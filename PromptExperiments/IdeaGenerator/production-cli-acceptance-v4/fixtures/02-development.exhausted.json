@@ -1,0 +1,69 @@
+{
+  "ideas": [
+    {
+      "title": "A generic “preserve editorial intent” prompt can reduce, not improve, editorial fidelity",
+      "description": "Adding a reusable Narrative instruction to “preserve editorial intent” produced consistent editorial drift: company identity and audience scope were deprioritized, orchestration became the central message, unsupported claims appeared, and the candidate prompt failed promotion. The experiment shows that a single, generic preservation rule can worsen downstream outputs rather than protect a supplied hierarchy.",
+      "audience": "Prompt engineers, content ops leads, product/content managers responsible for automated content pipelines",
+      "rationale": "Why it matters: Teams testing prompt-level editorial safeguards need to know that a plausible, reusable rule can produce systematic regressions; relying on a single generic rule without targeted alignment to the existing Synthesis risks displacing the intended top-level message. Gaps and uncertainty: the experiment used three runs per condition (not statistically conclusive) and the result may depend on exact wording, model backend variability, or Synthesis content not modified in this experiment.",
+      "evidence": "Candidate prompt added a new “Preserve Editorial Intent from the Synthesis” section. Narrative mean score fell from 6.00 to 4.00/10; Compose mean fell from 5.67 to 3.33/10. All three candidate Narrative runs subordinated company identity/audience and made orchestration central; all candidate runs introduced unsupported claims and failed the D (factual/editorial restraint) gate. Decision: candidate not promoted; production prompt restored byte-for-byte."
+    },
+    {
+      "title": "A generic “preserve editorial intent” prompt can reduce, not improve, editorial fidelity",
+      "description": "Adding a reusable Narrative instruction to “preserve editorial intent” produced consistent editorial drift: company identity and audience scope were deprioritized, orchestration became the central message, unsupported claims appeared, and the candidate prompt failed promotion. The experiment shows that a single, generic preservation rule can worsen downstream outputs rather than protect a supplied hierarchy.",
+      "audience": "Prompt engineers, content ops leads, product/content managers responsible for automated content pipelines",
+      "rationale": "Why it matters: Teams testing prompt-level editorial safeguards need to know that a plausible, reusable rule can produce systematic regressions; relying on a single generic rule without targeted alignment to the existing Synthesis risks displacing the intended top-level message. Gaps and uncertainty: the experiment used three runs per condition (not statistically conclusive) and the result may depend on exact wording, model backend variability, or Synthesis content not modified in this experiment.",
+      "evidence": "Candidate prompt added a new “Preserve Editorial Intent from the Synthesis” section. Narrative mean score fell from 6.00 to 4.00/10; Compose mean fell from 5.67 to 3.33/10. All three candidate Narrative runs subordinated company identity/audience and made orchestration central; all candidate runs introduced unsupported claims and failed the D (factual/editorial restraint) gate. Decision: candidate not promoted; production prompt restored byte-for-byte."
+    },
+    {
+      "title": "A generic “preserve editorial intent” prompt can reduce, not improve, editorial fidelity",
+      "description": "Adding a reusable Narrative instruction to “preserve editorial intent” produced consistent editorial drift: company identity and audience scope were deprioritized, orchestration became the central message, unsupported claims appeared, and the candidate prompt failed promotion. The experiment shows that a single, generic preservation rule can worsen downstream outputs rather than protect a supplied hierarchy.",
+      "audience": "Prompt engineers, content ops leads, product/content managers responsible for automated content pipelines",
+      "rationale": "Why it matters: Teams testing prompt-level editorial safeguards need to know that a plausible, reusable rule can produce systematic regressions; relying on a single generic rule without targeted alignment to the existing Synthesis risks displacing the intended top-level message. Gaps and uncertainty: the experiment used three runs per condition (not statistically conclusive) and the result may depend on exact wording, model backend variability, or Synthesis content not modified in this experiment.",
+      "evidence": "Candidate prompt added a new “Preserve Editorial Intent from the Synthesis” section. Narrative mean score fell from 6.00 to 4.00/10; Compose mean fell from 5.67 to 3.33/10. All three candidate Narrative runs subordinated company identity/audience and made orchestration central; all candidate runs introduced unsupported claims and failed the D (factual/editorial restraint) gate. Decision: candidate not promoted; production prompt restored byte-for-byte."
+    }
+  ],
+  "expected": [
+    "rejected",
+    "rejected",
+    "rejected"
+  ],
+  "verdicts": [
+    {
+      "blockingIssues": [
+        {
+          "constraint": "Observed scores and non-promotion apply to this candidate and sample. The comparison does not establish a general causal effect.",
+          "field": "title, description, rationale",
+          "sourceEvidence": "Experiment 005 Limitations describes three runs per condition, non-contemporaneous baselines and possible backend variability. Analysis notes tension already in Synthesis.",
+          "problem": "The idea attributes worse fidelity to a generic rule and generalizes beyond this candidate comparison.",
+          "category": "sourceFidelity"
+        }
+      ],
+      "accepted": false
+    },
+    {
+      "blockingIssues": [
+        {
+          "constraint": "Observed scores and non-promotion apply to this candidate and sample. The comparison does not establish a general causal effect.",
+          "field": "title, description, rationale",
+          "sourceEvidence": "Experiment 005 Limitations describes three runs per condition, non-contemporaneous baselines and possible backend variability. Analysis notes tension already in Synthesis.",
+          "problem": "The idea attributes worse fidelity to a generic rule and generalizes beyond this candidate comparison.",
+          "category": "sourceFidelity"
+        }
+      ],
+      "accepted": false
+    },
+    {
+      "blockingIssues": [
+        {
+          "constraint": "Observed scores and non-promotion apply to this candidate and sample. The comparison does not establish a general causal effect.",
+          "field": "title, description, rationale",
+          "sourceEvidence": "Experiment 005 Limitations describes three runs per condition, non-contemporaneous baselines and possible backend variability. Analysis notes tension already in Synthesis.",
+          "problem": "The idea attributes worse fidelity to a generic rule and generalizes beyond this candidate comparison.",
+          "category": "sourceFidelity"
+        }
+      ],
+      "accepted": false
+    }
+  ],
+  "error": "InvalidOperationException: Idea agent failed to produce valid ideas after 3 attempts."
+}

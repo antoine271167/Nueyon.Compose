@@ -1,0 +1,80 @@
+{
+  "diagnosesEmitted": 0,
+  "missedBlockers": 6,
+  "scope": "Independent source review; no accepted verdict is treated as evidence of editorial quality.",
+  "diagnosisQuality": "unobserved",
+  "attempts": [
+    {
+      "case": "01-strategy",
+      "attempt": 1,
+      "actualVerdict": "accepted",
+      "expectedVerdict": "accepted",
+      "verdictCorrect": true,
+      "reason": "Company introduction, source-supported primary business audience and early status are preserved.",
+      "diagnoses": [],
+      "diagnosisQuality": "unobserved"
+    },
+    {
+      "case": "02-development",
+      "attempt": 1,
+      "actualVerdict": "accepted",
+      "expectedVerdict": "rejected",
+      "verdictCorrect": false,
+      "reason": "Missed causal attribution and generalization in title, description and rationale.",
+      "diagnoses": [],
+      "diagnosisQuality": "unobserved"
+    },
+    {
+      "case": "04-analysis",
+      "attempt": 1,
+      "actualVerdict": "accepted",
+      "expectedVerdict": "rejected",
+      "verdictCorrect": false,
+      "reason": "Missed mandatory Narrative priority and unsupported promise of highest payoff.",
+      "diagnoses": [],
+      "diagnosisQuality": "unobserved"
+    },
+    {
+      "case": "holdout-01-museum",
+      "attempt": 1,
+      "actualVerdict": "accepted",
+      "expectedVerdict": "rejected",
+      "verdictCorrect": false,
+      "reason": "Missed explicit visitor purpose replaced by internal pilot evaluation and a measurement agenda.",
+      "diagnoses": [],
+      "diagnosisQuality": "unobserved"
+    },
+    {
+      "case": "holdout-02-transit",
+      "attempt": 1,
+      "actualVerdict": "accepted",
+      "expectedVerdict": "rejected",
+      "verdictCorrect": false,
+      "reason": "Missed shift away from a public briefing and omission of the central missed-transfer mismatch.",
+      "diagnoses": [],
+      "diagnosisQuality": "unobserved"
+    },
+    {
+      "case": "holdout-03-library",
+      "attempt": 1,
+      "actualVerdict": "accepted",
+      "expectedVerdict": "rejected",
+      "verdictCorrect": false,
+      "reason": "Missed explicit broadening of audience to the general public and extra drafting scope.",
+      "diagnoses": [],
+      "diagnosisQuality": "unobserved"
+    },
+    {
+      "case": "holdout-04-seedbank",
+      "attempt": 1,
+      "actualVerdict": "accepted",
+      "expectedVerdict": "rejected",
+      "verdictCorrect": false,
+      "reason": "Missed unsupported attribution of committee motivation to the germination results.",
+      "diagnoses": [],
+      "diagnosisQuality": "unobserved"
+    }
+  ],
+  "correctVerdicts": 1,
+  "repairAttempts": 0
+}

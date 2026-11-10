@@ -1,0 +1,74 @@
+[
+  {
+    "error": "InvalidOperationException: Idea agent failed to produce valid ideas after 3 attempts.",
+    "generatorCalls": 3,
+    "fixture": "02-development.exhausted",
+    "attempts": [
+      "rejected",
+      "rejected",
+      "rejected"
+    ],
+    "judgeCalls": 3,
+    "passed": true
+  },
+  {
+    "error": null,
+    "generatorCalls": 3,
+    "fixture": "02-development",
+    "attempts": [
+      "rejected",
+      "rejected",
+      "accepted"
+    ],
+    "judgeCalls": 3,
+    "passed": true
+  },
+  {
+    "error": "InvalidOperationException: Idea agent failed to produce valid ideas after 3 attempts.",
+    "generatorCalls": 3,
+    "fixture": "04-analysis.exhausted",
+    "attempts": [
+      "rejected",
+      "rejected",
+      "rejected"
+    ],
+    "judgeCalls": 3,
+    "passed": true
+  },
+  {
+    "error": null,
+    "generatorCalls": 3,
+    "fixture": "04-analysis",
+    "attempts": [
+      "rejected",
+      "rejected",
+      "accepted"
+    ],
+    "judgeCalls": 3,
+    "passed": true
+  },
+  {
+    "error": "InvalidOperationException: Idea agent failed to produce valid ideas after 3 attempts.",
+    "generatorCalls": 3,
+    "fixture": "holdout-01-museum.exhausted",
+    "attempts": [
+      "rejected",
+      "rejected",
+      "rejected"
+    ],
+    "judgeCalls": 3,
+    "passed": true
+  },
+  {
+    "error": null,
+    "generatorCalls": 3,
+    "fixture": "holdout-01-museum",
+    "attempts": [
+      "rejected",
+      "rejected",
+      "accepted"
+    ],
+    "judgeCalls": 3,
+    "passed": true
+  }
+]

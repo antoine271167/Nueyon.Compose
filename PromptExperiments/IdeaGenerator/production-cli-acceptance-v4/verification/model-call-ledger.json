@@ -1,0 +1,277 @@
+{
+  "reservedLogicalCalls": 42.0,
+  "providerBilledCalls": null,
+  "tokens": null,
+  "transportRetries": null,
+  "maximumLogicalCalls": 48,
+  "runs": [
+    {
+      "case": "01-strategy",
+      "startedAt": "2026-11-10T22:50:24.4727301+01:00",
+      "stage": "acceptance",
+      "calls": [
+        {
+          "attempt": 1,
+          "status": "response-recorded",
+          "role": "generator"
+        },
+        {
+          "attempt": 1,
+          "status": "accepted",
+          "role": "judge"
+        }
+      ],
+      "modelAlias": "gpt-5-mini",
+      "command": [
+        "dotnet",
+        "C:\\Workspaces\\Nueyon.Compose/src/Nueyon.Compose.Host.Console/bin/Debug/net10.0/Nueyon.Compose.Host.Console.dll",
+        "run",
+        "idea",
+        "--input",
+        "C:\\Workspaces\\Nueyon.Compose\\PromptExperiments\\IdeaGenerator\\production-cli-acceptance-v4/cases/01-strategy/idea-input.json",
+        "--output",
+        "C:\\Workspaces\\Nueyon.Compose\\PromptExperiments\\IdeaGenerator\\production-cli-acceptance-v4/runs/acceptance/01-strategy/idea-result.json",
+        "--trace",
+        "C:\\Workspaces\\Nueyon.Compose\\PromptExperiments\\IdeaGenerator\\production-cli-acceptance-v4/runs/acceptance/01-strategy/idea-trace.json",
+        "--prompts",
+        "C:\\Workspaces\\Nueyon.Compose\\PromptExperiments\\IdeaGenerator\\production-cli-acceptance-v4/prompts"
+      ],
+      "endedAt": "2026-11-10T22:51:12.0570204+01:00",
+      "observedLogicalCalls": 2,
+      "traceStatus": "accepted",
+      "exitCode": 0,
+      "reserved": 6,
+      "resolvedModel": null
+    },
+    {
+      "case": "02-development",
+      "startedAt": "2026-11-10T22:51:12.3856646+01:00",
+      "stage": "acceptance",
+      "calls": [
+        {
+          "attempt": 1,
+          "status": "response-recorded",
+          "role": "generator"
+        },
+        {
+          "attempt": 1,
+          "status": "accepted",
+          "role": "judge"
+        }
+      ],
+      "modelAlias": "gpt-5-mini",
+      "command": [
+        "dotnet",
+        "C:\\Workspaces\\Nueyon.Compose/src/Nueyon.Compose.Host.Console/bin/Debug/net10.0/Nueyon.Compose.Host.Console.dll",
+        "run",
+        "idea",
+        "--input",
+        "C:\\Workspaces\\Nueyon.Compose\\PromptExperiments\\IdeaGenerator\\production-cli-acceptance-v4/cases/02-development/idea-input.json",
+        "--output",
+        "C:\\Workspaces\\Nueyon.Compose\\PromptExperiments\\IdeaGenerator\\production-cli-acceptance-v4/runs/acceptance/02-development/idea-result.json",
+        "--trace",
+        "C:\\Workspaces\\Nueyon.Compose\\PromptExperiments\\IdeaGenerator\\production-cli-acceptance-v4/runs/acceptance/02-development/idea-trace.json",
+        "--prompts",
+        "C:\\Workspaces\\Nueyon.Compose\\PromptExperiments\\IdeaGenerator\\production-cli-acceptance-v4/prompts"
+      ],
+      "endedAt": "2026-11-10T22:52:11.3619467+01:00",
+      "observedLogicalCalls": 2,
+      "traceStatus": "accepted",
+      "exitCode": 0,
+      "reserved": 6,
+      "resolvedModel": null
+    },
+    {
+      "case": "04-analysis",
+      "startedAt": "2026-11-10T22:52:11.6601109+01:00",
+      "stage": "acceptance",
+      "calls": [
+        {
+          "attempt": 1,
+          "status": "response-recorded",
+          "role": "generator"
+        },
+        {
+          "attempt": 1,
+          "status": "accepted",
+          "role": "judge"
+        }
+      ],
+      "modelAlias": "gpt-5-mini",
+      "command": [
+        "dotnet",
+        "C:\\Workspaces\\Nueyon.Compose/src/Nueyon.Compose.Host.Console/bin/Debug/net10.0/Nueyon.Compose.Host.Console.dll",
+        "run",
+        "idea",
+        "--input",
+        "C:\\Workspaces\\Nueyon.Compose\\PromptExperiments\\IdeaGenerator\\production-cli-acceptance-v4/cases/04-analysis/idea-input.json",
+        "--output",
+        "C:\\Workspaces\\Nueyon.Compose\\PromptExperiments\\IdeaGenerator\\production-cli-acceptance-v4/runs/acceptance/04-analysis/idea-result.json",
+        "--trace",
+        "C:\\Workspaces\\Nueyon.Compose\\PromptExperiments\\IdeaGenerator\\production-cli-acceptance-v4/runs/acceptance/04-analysis/idea-trace.json",
+        "--prompts",
+        "C:\\Workspaces\\Nueyon.Compose\\PromptExperiments\\IdeaGenerator\\production-cli-acceptance-v4/prompts"
+      ],
+      "endedAt": "2026-11-10T22:52:53.0291102+01:00",
+      "observedLogicalCalls": 2,
+      "traceStatus": "accepted",
+      "exitCode": 0,
+      "reserved": 6,
+      "resolvedModel": null
+    },
+    {
+      "case": "holdout-01-museum",
+      "startedAt": "2026-11-10T22:53:11.0082063+01:00",
+      "stage": "holdout",
+      "calls": [
+        {
+          "attempt": 1,
+          "status": "response-recorded",
+          "role": "generator"
+        },
+        {
+          "attempt": 1,
+          "status": "accepted",
+          "role": "judge"
+        }
+      ],
+      "modelAlias": "gpt-5-mini",
+      "command": [
+        "dotnet",
+        "C:\\Workspaces\\Nueyon.Compose/src/Nueyon.Compose.Host.Console/bin/Debug/net10.0/Nueyon.Compose.Host.Console.dll",
+        "run",
+        "idea",
+        "--input",
+        "C:\\Workspaces\\Nueyon.Compose\\PromptExperiments\\IdeaGenerator\\production-cli-acceptance-v4/cases/holdout-01-museum/idea-input.json",
+        "--output",
+        "C:\\Workspaces\\Nueyon.Compose\\PromptExperiments\\IdeaGenerator\\production-cli-acceptance-v4/runs/holdout/holdout-01-museum/idea-result.json",
+        "--trace",
+        "C:\\Workspaces\\Nueyon.Compose\\PromptExperiments\\IdeaGenerator\\production-cli-acceptance-v4/runs/holdout/holdout-01-museum/idea-trace.json",
+        "--prompts",
+        "C:\\Workspaces\\Nueyon.Compose\\PromptExperiments\\IdeaGenerator\\production-cli-acceptance-v4/prompts"
+      ],
+      "endedAt": "2026-11-10T22:53:48.4564509+01:00",
+      "observedLogicalCalls": 2,
+      "traceStatus": "accepted",
+      "exitCode": 0,
+      "reserved": 6,
+      "resolvedModel": null
+    },
+    {
+      "case": "holdout-02-transit",
+      "startedAt": "2026-11-10T22:53:48.7860913+01:00",
+      "stage": "holdout",
+      "calls": [
+        {
+          "attempt": 1,
+          "status": "response-recorded",
+          "role": "generator"
+        },
+        {
+          "attempt": 1,
+          "status": "accepted",
+          "role": "judge"
+        }
+      ],
+      "modelAlias": "gpt-5-mini",
+      "command": [
+        "dotnet",
+        "C:\\Workspaces\\Nueyon.Compose/src/Nueyon.Compose.Host.Console/bin/Debug/net10.0/Nueyon.Compose.Host.Console.dll",
+        "run",
+        "idea",
+        "--input",
+        "C:\\Workspaces\\Nueyon.Compose\\PromptExperiments\\IdeaGenerator\\production-cli-acceptance-v4/cases/holdout-02-transit/idea-input.json",
+        "--output",
+        "C:\\Workspaces\\Nueyon.Compose\\PromptExperiments\\IdeaGenerator\\production-cli-acceptance-v4/runs/holdout/holdout-02-transit/idea-result.json",
+        "--trace",
+        "C:\\Workspaces\\Nueyon.Compose\\PromptExperiments\\IdeaGenerator\\production-cli-acceptance-v4/runs/holdout/holdout-02-transit/idea-trace.json",
+        "--prompts",
+        "C:\\Workspaces\\Nueyon.Compose\\PromptExperiments\\IdeaGenerator\\production-cli-acceptance-v4/prompts"
+      ],
+      "endedAt": "2026-11-10T22:54:33.6665722+01:00",
+      "observedLogicalCalls": 2,
+      "traceStatus": "accepted",
+      "exitCode": 0,
+      "reserved": 6,
+      "resolvedModel": null
+    },
+    {
+      "case": "holdout-03-library",
+      "startedAt": "2026-11-10T22:54:34.0390703+01:00",
+      "stage": "holdout",
+      "calls": [
+        {
+          "attempt": 1,
+          "status": "response-recorded",
+          "role": "generator"
+        },
+        {
+          "attempt": 1,
+          "status": "accepted",
+          "role": "judge"
+        }
+      ],
+      "modelAlias": "gpt-5-mini",
+      "command": [
+        "dotnet",
+        "C:\\Workspaces\\Nueyon.Compose/src/Nueyon.Compose.Host.Console/bin/Debug/net10.0/Nueyon.Compose.Host.Console.dll",
+        "run",
+        "idea",
+        "--input",
+        "C:\\Workspaces\\Nueyon.Compose\\PromptExperiments\\IdeaGenerator\\production-cli-acceptance-v4/cases/holdout-03-library/idea-input.json",
+        "--output",
+        "C:\\Workspaces\\Nueyon.Compose\\PromptExperiments\\IdeaGenerator\\production-cli-acceptance-v4/runs/holdout/holdout-03-library/idea-result.json",
+        "--trace",
+        "C:\\Workspaces\\Nueyon.Compose\\PromptExperiments\\IdeaGenerator\\production-cli-acceptance-v4/runs/holdout/holdout-03-library/idea-trace.json",
+        "--prompts",
+        "C:\\Workspaces\\Nueyon.Compose\\PromptExperiments\\IdeaGenerator\\production-cli-acceptance-v4/prompts"
+      ],
+      "endedAt": "2026-11-10T22:55:21.4519387+01:00",
+      "observedLogicalCalls": 2,
+      "traceStatus": "accepted",
+      "exitCode": 0,
+      "reserved": 6,
+      "resolvedModel": null
+    },
+    {
+      "case": "holdout-04-seedbank",
+      "startedAt": "2026-11-10T22:55:21.7600121+01:00",
+      "stage": "holdout",
+      "calls": [
+        {
+          "attempt": 1,
+          "status": "response-recorded",
+          "role": "generator"
+        },
+        {
+          "attempt": 1,
+          "status": "accepted",
+          "role": "judge"
+        }
+      ],
+      "modelAlias": "gpt-5-mini",
+      "command": [
+        "dotnet",
+        "C:\\Workspaces\\Nueyon.Compose/src/Nueyon.Compose.Host.Console/bin/Debug/net10.0/Nueyon.Compose.Host.Console.dll",
+        "run",
+        "idea",
+        "--input",
+        "C:\\Workspaces\\Nueyon.Compose\\PromptExperiments\\IdeaGenerator\\production-cli-acceptance-v4/cases/holdout-04-seedbank/idea-input.json",
+        "--output",
+        "C:\\Workspaces\\Nueyon.Compose\\PromptExperiments\\IdeaGenerator\\production-cli-acceptance-v4/runs/holdout/holdout-04-seedbank/idea-result.json",
+        "--trace",
+        "C:\\Workspaces\\Nueyon.Compose\\PromptExperiments\\IdeaGenerator\\production-cli-acceptance-v4/runs/holdout/holdout-04-seedbank/idea-trace.json",
+        "--prompts",
+        "C:\\Workspaces\\Nueyon.Compose\\PromptExperiments\\IdeaGenerator\\production-cli-acceptance-v4/prompts"
+      ],
+      "endedAt": "2026-11-10T22:55:59.1875639+01:00",
+      "observedLogicalCalls": 2,
+      "traceStatus": "accepted",
+      "exitCode": 0,
+      "reserved": 6,
+      "resolvedModel": null
+    }
+  ],
+  "actualCost": null,
+  "observedLogicalCalls": 14.0
+}

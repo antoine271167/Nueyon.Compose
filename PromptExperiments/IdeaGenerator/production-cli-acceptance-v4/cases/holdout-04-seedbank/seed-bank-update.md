@@ -1,0 +1,7 @@
+# Seed bank donor update: continue the storage trial on its present scale
+
+The community seed bank needs a donor update explaining its decision on a small storage trial. This is an account of the trial and its limited continuation, not an invitation to buy seed.
+
+In February, volunteers tested two retained lots, one of bean Alder and one of bean Reed, after six months in the new dry cupboard. In a germination check, 18 of 20 Alder seeds and 14 of 20 Reed seeds sprouted. Last year's notebook records 16 of 20 Alder and 15 of 20 Reed in an older room. The years used different harvest lots. Temperature was logged only in the new cupboard. No paired comparison of the same lot in both places was run. Neither growing-season yield nor performance in gardens was measured.
+
+At its March meeting, the committee chose to keep the same two lots in the cupboard for another six months and repeat the germination check. It has not approved moving other varieties into the cupboard. A volunteer proposed replacing the older room, but the committee deferred that decision. The donor update should explain what was observed and why the decision remains a limited continuation. The notes give no claim that the cupboard caused an improvement and no promise of better garden results.

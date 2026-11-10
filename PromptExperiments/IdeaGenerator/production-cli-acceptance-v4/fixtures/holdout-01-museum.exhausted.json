@@ -1,0 +1,69 @@
+{
+  "ideas": [
+    {
+      "title": "Printed indoor routes keep museum visitors satisfied during weather closures",
+      "description": "Show how a free sculpture route gives visitors a satisfying fallback when a flooded garden is closed. In the museum's two April openings, the front desk issued 38 printed routes.",
+      "audience": "Museum visitors planning to see the sculpture garden",
+      "rationale": "The handout count demonstrates that the substitute route protects the visitor experience. The museum can use the story to explain the indoor option during temporary closures.",
+      "evidence": "The museum handed out 38 printed routes at two April Sunday openings. The route follows step-free public corridors from the desk to the café."
+    },
+    {
+      "title": "Printed indoor routes keep museum visitors satisfied during weather closures",
+      "description": "Show how a free sculpture route gives visitors a satisfying fallback when a flooded garden is closed. In the museum's two April openings, the front desk issued 38 printed routes.",
+      "audience": "Museum visitors planning to see the sculpture garden",
+      "rationale": "The handout count demonstrates that the substitute route protects the visitor experience. The museum can use the story to explain the indoor option during temporary closures.",
+      "evidence": "The museum handed out 38 printed routes at two April Sunday openings. The route follows step-free public corridors from the desk to the café."
+    },
+    {
+      "title": "Printed indoor routes keep museum visitors satisfied during weather closures",
+      "description": "Show how a free sculpture route gives visitors a satisfying fallback when a flooded garden is closed. In the museum's two April openings, the front desk issued 38 printed routes.",
+      "audience": "Museum visitors planning to see the sculpture garden",
+      "rationale": "The handout count demonstrates that the substitute route protects the visitor experience. The museum can use the story to explain the indoor option during temporary closures.",
+      "evidence": "The museum handed out 38 printed routes at two April Sunday openings. The route follows step-free public corridors from the desk to the café."
+    }
+  ],
+  "expected": [
+    "rejected",
+    "rejected",
+    "rejected"
+  ],
+  "verdicts": [
+    {
+      "blockingIssues": [
+        {
+          "constraint": "The evidence supports availability of a visitor alternative during high water, without a demonstrated satisfaction outcome.",
+          "field": "title, description",
+          "sourceEvidence": "The museum counted 38 copies at two wet Sunday openings, did not systematically count completed routes and did not track satisfaction. The route is offered for high-water garden closures.",
+          "problem": "Visitor satisfaction and broad weather-closure benefits are asserted without supporting measurements.",
+          "category": "sourceFidelity"
+        }
+      ],
+      "accepted": false
+    },
+    {
+      "blockingIssues": [
+        {
+          "constraint": "The evidence supports availability of a visitor alternative during high water, without a demonstrated satisfaction outcome.",
+          "field": "title, description",
+          "sourceEvidence": "The museum counted 38 copies at two wet Sunday openings, did not systematically count completed routes and did not track satisfaction. The route is offered for high-water garden closures.",
+          "problem": "Visitor satisfaction and broad weather-closure benefits are asserted without supporting measurements.",
+          "category": "sourceFidelity"
+        }
+      ],
+      "accepted": false
+    },
+    {
+      "blockingIssues": [
+        {
+          "constraint": "The evidence supports availability of a visitor alternative during high water, without a demonstrated satisfaction outcome.",
+          "field": "title, description",
+          "sourceEvidence": "The museum counted 38 copies at two wet Sunday openings, did not systematically count completed routes and did not track satisfaction. The route is offered for high-water garden closures.",
+          "problem": "Visitor satisfaction and broad weather-closure benefits are asserted without supporting measurements.",
+          "category": "sourceFidelity"
+        }
+      ],
+      "accepted": false
+    }
+  ],
+  "error": "InvalidOperationException: Idea agent failed to produce valid ideas after 3 attempts."
+}
