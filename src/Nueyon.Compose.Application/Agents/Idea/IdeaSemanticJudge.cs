@@ -9,7 +9,10 @@ namespace Nueyon.Compose.Application.Agents.Idea;
 /// <summary>Checks generated ideas against the unchanged source using a separate model call.</summary>
 public sealed class IdeaSemanticJudge(AIAgent agent)
 {
-    internal static readonly JsonSerializerOptions JsonOptions = new(JsonSerializerDefaults.Web);
+    internal static readonly JsonSerializerOptions JsonOptions = new(JsonSerializerDefaults.Web)
+    {
+        AllowDuplicateProperties = false
+    };
 
     private readonly AIAgent _agent = agent ?? throw new ArgumentNullException(nameof(agent));
 

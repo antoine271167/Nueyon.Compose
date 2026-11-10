@@ -47,7 +47,8 @@ public sealed class IdeaValidationLoopEvaluatorBehavioralTests
                 Title = "Valid Idea",
                 Description = "A valid description",
                 Audience = "Test Audience",
-                Rationale = "Good rationale"
+                Rationale = "Good rationale",
+                Evidence = "A proposal, with no measured results."
             }
         }
     });
@@ -71,21 +72,36 @@ public sealed class IdeaValidationLoopEvaluatorBehavioralTests
     private static string EmptyResponse => "";
 
     [Theory]
-    [InlineData(1)]
-    [InlineData(2)]
-    [InlineData(3)]
-    public async Task IdeaAgent_ReturnsOnlyTheAcceptedGeneration(int acceptedAttempt)
+    [InlineData(1, false)]
+    [InlineData(2, false)]
+    [InlineData(3, false)]
+    [InlineData(2, true)]
+    public async Task IdeaAgent_ReturnsOnlyTheAcceptedGeneration(int acceptedAttempt, bool wrongEditorialDirection)
     {
+        const string directionVerdict = """
+                                        {"accepted":false,"blockingIssues":[{"category":"editorialPurpose","field":"description","problem":"The editorial direction is wrong: the idea treats this as a results story.","sourceEvidence":"A proposal, with no measured results.","constraint":"The editorial purpose is to explain the proposal."}]}
+                                        """;
+        var source = wrongEditorialDirection
+            ? $"{OriginalSource}\nEditorial purpose: explain the proposal."
+            : OriginalSource;
         var generations = Enumerable.Range(1, 3)
             .Select(attempt => ValidIdeasJson.Replace("Valid Idea", $"Idea {attempt}"))
             .ToArray();
+        if (wrongEditorialDirection)
+        {
+            generations[0] = generations[0].Replace("A valid description", "Explain the results achieved.");
+            generations[1] = generations[1].Replace("A valid description", "Explain what the proposal aims to do.");
+        }
+
         var generator = new FakeChatClient(generations);
-        var judge = new FakeChatClient(Enumerable.Range(1, acceptedAttempt - 1).Select(attempt => RejectedVerdict(3, attempt))
-            .Append(AcceptedVerdict).ToArray());
+        var rejectedVerdicts = Enumerable.Range(1, acceptedAttempt - 1)
+            .Select(attempt => wrongEditorialDirection ? directionVerdict : RejectedVerdict(3, attempt))
+            .ToArray();
+        var judge = new FakeChatClient([.. rejectedVerdicts, AcceptedVerdict]);
         var agent = CreateSemanticallyValidatedAgent(generator, judge);
         var attempts = new List<IdeaValidationAttempt>();
 
-        var ideas = await agent.ExecuteAsync(Observed(attempts.Add), new StoryInput(OriginalSource));
+        var ideas = await agent.ExecuteAsync(Observed(attempts.Add), new StoryInput(source));
 
         Assert.Equal($"Idea {acceptedAttempt}", Assert.Single(ideas).Title);
         Assert.Equal(acceptedAttempt, generator.InvocationCount);
@@ -93,14 +109,14 @@ public sealed class IdeaValidationLoopEvaluatorBehavioralTests
         foreach (var (request, index) in judge.Requests.Select((messages, index) => (messages, index)))
         {
             using var payload = JsonDocument.Parse(Assert.Single(request, m => m.Role == ChatRole.User).Text);
-            Assert.Equal(OriginalSource, payload.RootElement.GetProperty("source").GetString());
+            Assert.Equal(source, payload.RootElement.GetProperty("source").GetString());
             Assert.Equal(["source", "idea"], payload.RootElement.EnumerateObject().Select(p => p.Name));
             Assert.DoesNotContain(request, m => m.Role == ChatRole.Assistant);
             Assert.Equal($"Idea {index + 1}", payload.RootElement.GetProperty("idea").GetProperty("title").GetString());
         }
 
         var initialTask = Assert.Single(generator.Requests[0], m => m.Role == ChatRole.User).Text;
-        Assert.Contains(OriginalSource, initialTask);
+        Assert.Contains(source, initialTask);
         Assert.Contains("# TASK", initialTask);
         for (var index = 1; index < acceptedAttempt; index++)
         {
@@ -110,12 +126,24 @@ public sealed class IdeaValidationLoopEvaluatorBehavioralTests
             Assert.Equal(2, userMessages.Length);
             Assert.Equal(initialTask, userMessages[0]);
 
-            var retry = userMessages[1].Split('\n');
-            using var previous = JsonDocument.Parse(retry[1]["Previous first idea: ".Length..]);
-            Assert.Equal($"Idea {index}", previous.RootElement.GetProperty("title").GetString());
-            var diagnosis = retry[2]["Diagnosis: ".Length..];
+            var retry = userMessages[1];
+            Assert.Contains("Preserve the original editorial purpose and use the original source as your evidence.", retry);
+            Assert.Contains("revise it in first place", retry);
+            Assert.Contains("Preserve all valid aspects and change only what is needed to fix the diagnosed problems.", retry);
+            Assert.Contains("Do not add new claims or a research agenda.", retry);
+            Assert.Contains("Change the editorial angle only if the diagnosis explicitly identifies the previous editorial direction as wrong.", retry);
+            Assert.Contains("make the smallest source-supported change that restores the original editorial purpose.", retry);
+
+            var lines = retry.Split('\n');
+            Assert.StartsWith("Previous first idea: ", lines[^2]);
+            using var previous = JsonDocument.Parse(lines[^2]["Previous first idea: ".Length..]);
+            using var previousJudgeInput = JsonDocument.Parse(
+                Assert.Single(judge.Requests[index - 1], m => m.Role == ChatRole.User).Text);
+            Assert.Equal(previousJudgeInput.RootElement.GetProperty("idea").GetRawText(), previous.RootElement.GetRawText());
+            Assert.StartsWith("Diagnosis: ", lines[^1]);
+            var diagnosis = lines[^1]["Diagnosis: ".Length..];
             Assert.Equal(Assert.Single(attempts, a => a.Attempt == index && a.Status == "rejected").Feedback, diagnosis);
-            using var expected = JsonDocument.Parse(RejectedVerdict(3, index));
+            using var expected = JsonDocument.Parse(rejectedVerdicts[index - 1]);
             Assert.Equal(expected.RootElement.GetProperty("blockingIssues").GetRawText(), diagnosis);
         }
     }
@@ -159,6 +187,10 @@ public sealed class IdeaValidationLoopEvaluatorBehavioralTests
 
         Assert.Equal("Valid Idea", Assert.Single(ideas).Title);
         Assert.Equal(2, generator.InvocationCount);
+        var retry = Assert.Single(generator.Requests[1], m => m.Role == ChatRole.User &&
+                                                            m.Text.Contains("Previous first idea:")).Text;
+        Assert.Contains("If no previous first idea is available, generate the list from the original task and source", retry);
+        Assert.Contains("Previous first idea: null", retry);
         using var payload =
             JsonDocument.Parse(Assert.Single(Assert.Single(judge.Requests), m => m.Role == ChatRole.User).Text);
         Assert.Equal("Valid Idea", payload.RootElement.GetProperty("idea").GetProperty("title").GetString());
@@ -187,12 +219,13 @@ public sealed class IdeaValidationLoopEvaluatorBehavioralTests
         var rejected = RejectedVerdict(1);
         var judge = new FakeChatClient(rejected, rejected, rejected, AcceptedVerdict);
         var agent = CreateSemanticallyValidatedAgent(generator, judge);
+        var attempts = new List<IdeaValidationAttempt>();
 
         var error = await Assert.ThrowsAsync<InvalidOperationException>(() =>
-            agent.ExecuteAsync(new AgentExecutionContext(Guid.NewGuid()), new StoryInput(OriginalSource)));
+            agent.ExecuteAsync(Observed(attempts.Add), new StoryInput(OriginalSource)));
 
-        Assert.Contains("after 3 attempts", error.Message);
-        Assert.Contains("Overclaim 1", error.Message);
+        Assert.Equal("Idea agent failed to produce valid ideas after 3 attempts.", error.Message);
+        Assert.Contains("Overclaim 1", attempts[^1].Feedback);
         Assert.Equal(3, generator.InvocationCount);
         Assert.Equal(3, judge.InvocationCount);
     }
@@ -201,12 +234,17 @@ public sealed class IdeaValidationLoopEvaluatorBehavioralTests
     [InlineData("{}")]
     [InlineData("""{"blockingIssues":[]}""")]
     [InlineData("""{"accepted":false,"blockingIssues":[]}""")]
+    [InlineData("""{"accepted":false,"accepted":true,"blockingIssues":[]}""")]
     [InlineData("""{"accepted":true,"blockingIssues":null}""")]
     [InlineData("""{"accepted":false,"blockingIssues":[null]}""")]
     [InlineData("""{"accepted":true,"blockingIssues":[],"suggestedTitle":"Replacement title"}""")]
     [InlineData("""{"accepted":false,"blockingIssues":[{"category":"claim","field":"title","problem":"Overclaim","sourceEvidence":"No results","constraint":"Proposal only","correction":"Use this title"}]}""")]
     [InlineData("""{"accepted":false,"blockingIssues":[{"category":"claim","field":"title","problem":"Overclaim","sourceEvidence":" ","constraint":"Proposal only"}]}""")]
     [InlineData("""{"accepted":false,"blockingIssues":[{"category":"claim","field":"title","problem":"Overclaim","constraint":"Proposal only"}]}""")]
+    [InlineData("""{"accepted":false,"blockingIssues":[{"category":"claim","field":"title","problem":"Overclaim","sourceEvidence":"No results"}]}""")]
+    [InlineData("""{"accepted":false,"blockingIssues":[{"category":"claim","field":"title","problem":"Overclaim","sourceEvidence":"No results","constraint":" "}]}""")]
+    [InlineData("""{"accepted":false,"blockingIssues":[{"category":"claim","field":"title","problem":"Overclaim","sourceEvidence":"No results","sourceEvidence":"Published results","constraint":"Proposal only"}]}""")]
+    [InlineData("""{"accepted":false,"blockingIssues":[{"category":"claim","field":"title","problem":"Overclaim","sourceEvidence":"No results","constraint":"Results supported","constraint":"Proposal only"}]}""")]
     public Task IdeaAgent_InvalidJudgeVerdict_FailsClosed(string verdict) => AssertInvalidVerdict(verdict);
 
     [Theory]
