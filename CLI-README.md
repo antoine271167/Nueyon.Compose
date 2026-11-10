@@ -72,8 +72,14 @@ one-based `attempt`, zero-based `retry`, `status` (`accepted`, `rejected`, or
 `incomplete`), and nullable validation `feedback`. A model/judge failure can leave
 an incomplete attempt or an empty list. An accepted first idea is available in
 the result file; rejected feedback is recorded only in the opt-in trace, never in
-error messages or default logs. A failed trace write never replaces the original
-failure or cancellation.
+error messages or default logs. Top-level `accepted` means the result was published;
+a per-attempt `accepted` only means that generation passed validation. The accepted
+trace is written after the atomic result publication, which is the commit point (it is
+finished even if Ctrl+C arrives afterwards). A trace for a failure before publication
+is best effort and never replaces the original failure or cancellation. If only the
+trace write fails after publication, the result is kept, stderr reports
+`The result was written, but the requested trace could not be written.`, and the exit
+code is `1`.
 
 **Diagnostics:** configuration problems (missing/malformed `appsettings*.json`,
 missing `OpenAI:ApiKey` or `OpenAI:Model`) print an actionable `Configuration error`
@@ -88,16 +94,17 @@ source and generated content. Store them in access-controlled local locations,
 exclude them from version control, and delete them when no longer needed. Neither
 capture nor trace is enabled by default. Result and trace paths must not exist;
 files are written via a temporary file and an atomic no-overwrite move. Capture
-files also never overwrite existing files. A trace can remain even when the
-result cannot be written.
+files also never overwrite existing files.
 
 Both runtime commands accept `--prompts <dir>` for a complete prompt tree. It is
 strict: every embedded prompt, including the Idea judge prompt, must exist there;
-no disk/embedded mixing occurs. Without it, the host uses
+no disk/embedded mixing occurs, and an explicit directory never falls back. Without it, the host uses
 `src\Nueyon.Compose.Application\Prompts` when launched from the repository root,
 otherwise the `Prompts` directory next to the executable if present, otherwise
 embedded prompts. Disk templates are read on each process execution. To pick up
 edits while using `--no-build`, run from the repository root or pass `--prompts`
 explicitly. Configuration first uses `appsettings.json` in the working directory,
 then the repository host project, then the executable directory. Normal runtime
-configuration and credentials are still required for model calls.
+configuration and credentials are still required for model calls. Runtime commands
+report the selected source on stderr before running: `Prompts: disk (<resolved path>).`
+or `Prompts: embedded (no disk prompt directory found).` Discovery and help report nothing.

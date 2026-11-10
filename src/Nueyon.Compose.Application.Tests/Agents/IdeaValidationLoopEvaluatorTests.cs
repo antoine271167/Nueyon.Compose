@@ -246,8 +246,8 @@ public sealed class IdeaValidationLoopEvaluatorBehavioralTests
     {
         var events = new List<IdeaValidationAttempt>();
         var agent = CreateSemanticallyValidatedAgent(
-            new FakeChatClient(InvalidIdeasJson, ValidIdeasJson), new FakeChatClient(AcceptedVerdict), events.Add);
-        await agent.ExecuteAsync(new AgentExecutionContext(Guid.NewGuid()), new StoryInput(OriginalSource));
+            new FakeChatClient(InvalidIdeasJson, ValidIdeasJson), new FakeChatClient(AcceptedVerdict));
+        await agent.ExecuteAsync(Observed(events.Add), new StoryInput(OriginalSource));
         var completed = events.Where(e => e.Status != "incomplete").ToArray();
         Assert.Equal(["rejected", "accepted"], completed.Select(e => e.Status));
         Assert.Equal([0, 1], completed.Select(e => e.Retry));
@@ -261,33 +261,140 @@ public sealed class IdeaValidationLoopEvaluatorBehavioralTests
         var events = new List<IdeaValidationAttempt>();
         var exhausted = CreateSemanticallyValidatedAgent(
             new FakeChatClient(InvalidIdeasJson, InvalidIdeasJson, InvalidIdeasJson),
-            new FakeChatClient(AcceptedVerdict), events.Add);
+            new FakeChatClient(AcceptedVerdict));
         await Assert.ThrowsAsync<InvalidOperationException>(() =>
-            exhausted.ExecuteAsync(new AgentExecutionContext(Guid.NewGuid()), new StoryInput(OriginalSource)));
+            exhausted.ExecuteAsync(Observed(events.Add),
+                new StoryInput(OriginalSource)));
         Assert.Equal(3, events.Last().Attempt);
         Assert.Equal("rejected", events.Last().Status);
 
         events.Clear();
         var failedJudge = CreateSemanticallyValidatedAgent(
-            new FakeChatClient(ValidIdeasJson), new FakeChatClient("{}"), events.Add);
+            new FakeChatClient(ValidIdeasJson), new FakeChatClient("{}"));
         await Assert.ThrowsAsync<InvalidOperationException>(() =>
-            failedJudge.ExecuteAsync(new AgentExecutionContext(Guid.NewGuid()), new StoryInput(OriginalSource)));
+            failedJudge.ExecuteAsync(Observed(events.Add),
+                new StoryInput(OriginalSource)));
         Assert.Equal("incomplete", events.Last().Status);
         Assert.Equal(ValidIdeasJson, events.Last().Response);
     }
 
-    private static IdeaAgent CreateSemanticallyValidatedAgent(FakeChatClient generator, FakeChatClient judge,
-        Action<IdeaValidationAttempt>? observer = null)
+    [Fact]
+    public async Task Observer_KeepsConcurrentRunsOfTheSameAgentSeparate()
+    {
+        var generator = new OverlappingChatClient();
+        var judge = new StaticChatClient(AcceptedVerdict);
+        var agent = CreateSemanticallyValidatedAgent(generator, judge);
+        var first = new List<IdeaValidationAttempt>();
+        var second = new List<IdeaValidationAttempt>();
+
+        await Task.WhenAll(
+            agent.ExecuteAsync(Observed(first.Add), new StoryInput("source-A")),
+            agent.ExecuteAsync(Observed(second.Add), new StoryInput("source-B")));
+
+        Assert.True(generator.Overlapped);
+        Assert.All(first, a => Assert.Contains("source-A", a.Response));
+        Assert.All(second, a => Assert.Contains("source-B", a.Response));
+        Assert.Equal(["rejected", "accepted"], first.Where(a => a.Status != "incomplete").Select(a => a.Status));
+        Assert.Equal(["rejected", "accepted"], second.Where(a => a.Status != "incomplete").Select(a => a.Status));
+    }
+
+    [Fact]
+    public async Task RunWithoutObserver_DoesNotReportToAnotherRunsObserver()
+    {
+        var events = new List<IdeaValidationAttempt>();
+        var agent = CreateSemanticallyValidatedAgent(
+            new FakeChatClient(ValidIdeasJson, ValidIdeasJson), new FakeChatClient(AcceptedVerdict, AcceptedVerdict));
+
+        await agent.ExecuteAsync(Observed(events.Add), new StoryInput(OriginalSource));
+        var observed = events.Count;
+        await agent.ExecuteAsync(new AgentExecutionContext(Guid.NewGuid()), new StoryInput(OriginalSource));
+
+        Assert.Equal(observed, events.Count);
+    }
+
+    private static AgentExecutionContext Observed(Action<IdeaValidationAttempt> observer) =>
+        new(Guid.NewGuid())
+        {
+            AdditionalProperties = new Dictionary<string, object?>
+                { [IdeaValidationLoopEvaluator.ObserverKey] = observer }
+        };
+
+    private static IdeaAgent CreateSemanticallyValidatedAgent(IChatClient generator, IChatClient judge)
     {
         var semanticJudge = new IdeaSemanticJudge(judge.AsAIAgent("Check source fidelity", "TestIdeaJudge"));
         var evaluator = new IdeaValidationLoopEvaluator(new IdeaValidator(), semanticJudge);
-        if (observer is not null)
-        {
-            evaluator.Observe(observer);
-        }
 
         return new IdeaAgent(evaluator.Wrap(generator.AsAIAgent("Generate ideas", "TestIdeaAgent")),
             NullLogger<IdeaAgent>.Instance);
+    }
+
+    private sealed class StaticChatClient(string response) : IChatClient
+    {
+        public Task<ChatResponse> GetResponseAsync(IEnumerable<ChatMessage> messages,
+            ChatOptions? options = null, CancellationToken cancellationToken = default) =>
+            Task.FromResult(new ChatResponse([new ChatMessage(ChatRole.Assistant, response)]));
+
+        public IAsyncEnumerable<ChatResponseUpdate> GetStreamingResponseAsync(IEnumerable<ChatMessage> messages,
+            ChatOptions? options = null, CancellationToken cancellationToken = default) =>
+            throw new NotImplementedException();
+
+        public object? GetService(Type serviceType, object? serviceKey = null) => null;
+
+        public void Dispose()
+        {
+        }
+    }
+
+    // Holds each run's first generation until both runs are in flight, then rejects it once and accepts the retry.
+    private sealed class OverlappingChatClient : IChatClient
+    {
+        private readonly TaskCompletionSource _bothStarted = new(TaskCreationOptions.RunContinuationsAsynchronously);
+        private readonly Dictionary<string, int> _calls = [];
+        private int _started;
+
+        public bool Overlapped => _bothStarted.Task.IsCompletedSuccessfully;
+
+        public async Task<ChatResponse> GetResponseAsync(IEnumerable<ChatMessage> messages,
+            ChatOptions? options = null, CancellationToken cancellationToken = default)
+        {
+            var text = string.Join("\n", messages.Select(m => m.Text));
+            var source = text.Contains("source-A", StringComparison.Ordinal) ? "source-A" : "source-B";
+            int call;
+            lock (_calls)
+            {
+                call = _calls[source] = _calls.GetValueOrDefault(source) + 1;
+            }
+
+            if (call == 1)
+            {
+                if (Interlocked.Increment(ref _started) == 2)
+                {
+                    _bothStarted.SetResult();
+                }
+
+                await _bothStarted.Task.WaitAsync(TimeSpan.FromSeconds(10), cancellationToken);
+            }
+
+            var title = call == 1 ? "" : "Valid Idea";
+            var json = JsonSerializer.Serialize(new
+            {
+                ideas = new[]
+                {
+                    new { Title = title, Description = source, Audience = "Test Audience", Rationale = "Good" }
+                }
+            });
+            return new ChatResponse([new ChatMessage(ChatRole.Assistant, json)]);
+        }
+
+        public IAsyncEnumerable<ChatResponseUpdate> GetStreamingResponseAsync(IEnumerable<ChatMessage> messages,
+            ChatOptions? options = null, CancellationToken cancellationToken = default) =>
+            throw new NotImplementedException();
+
+        public object? GetService(Type serviceType, object? serviceKey = null) => null;
+
+        public void Dispose()
+        {
+        }
     }
 
     private static string RejectedVerdict(int issueCount) => JsonSerializer.Serialize(new

@@ -23,7 +23,11 @@ public static class Cli
         Encoder = JavaScriptEncoder.UnsafeRelaxedJsonEscaping
     };
 
-    public static async Task<int> RunAsync(string[] args)
+    public static Task<int> RunAsync(string[] args) => RunAsync(args, null);
+
+    // The factory lets tests supply offline services to the otherwise unchanged runtime path.
+    internal static async Task<int> RunAsync(string[] args,
+        Func<string?, StageTracker, ServiceProvider>? createServices)
     {
         // No arguments keep the original behavior: run the workflow, with input errors reported as exit code 1.
         var legacy = args.Length == 0;
@@ -59,7 +63,7 @@ public static class Cli
                     System.Console.WriteLine(CliContracts.DescribeAll().ToJsonString(_print));
                     return 0;
                 default:
-                    return await RunRuntimeAsync(parsed, legacy);
+                    return await RunRuntimeAsync(parsed, legacy, createServices ?? CreateServices);
             }
         }
         catch (UsageException ex)
@@ -224,7 +228,8 @@ public static class Cli
         System.Console.WriteLine("Exit codes: " +
                                  string.Join(", ", CliContracts.ExitCodes.Select(c => $"{c.Code} {c.Meaning}")) + ".");
 
-    private static async Task<int> RunRuntimeAsync(Parsed parsed, bool legacy)
+    private static async Task<int> RunRuntimeAsync(Parsed parsed, bool legacy,
+        Func<string?, StageTracker, ServiceProvider> createServices)
     {
         var tracker = new StageTracker();
         using var cts = new CancellationTokenSource();
@@ -279,6 +284,7 @@ public static class Cli
             }
 
             var promptPath = ResolvePrompts(parsed.Options.GetValueOrDefault("--prompts"));
+            await System.Console.Error.WriteLineAsync(DescribePrompts(promptPath));
             using var promptScope = promptPath is null ? null : PromptDirectory.Use(promptPath);
             string? capture = null;
             if (parsed.Options.TryGetValue("--capture-inputs", out var captureRoot))
@@ -288,10 +294,10 @@ public static class Cli
             }
 
             var attempts = new List<IdeaValidationAttempt>();
-            var traceWritten = false;
+            var published = false;
             try
             {
-                await using var services = CreateServices(capture, tracker);
+                await using var services = createServices(capture, tracker);
                 if (parsed.Agent is null)
                 {
                     return await services.GetRequiredService<ConsoleApplication>().RunAsync(cts.Token, sourceDirectory,
@@ -299,9 +305,10 @@ public static class Cli
                         legacy ? CliContracts.NoArguments.InputErrorExitCode : 2);
                 }
 
-                if (trace is not null)
-                {
-                    services.GetRequiredService<IdeaValidationLoopEvaluator>().Observe(attempt =>
+                // Scoped to this invocation: nothing is registered on the shared evaluator.
+                Action<IdeaValidationAttempt>? observer = trace is null
+                    ? null
+                    : attempt =>
                     {
                         if (attempts.Count > 0 && attempts[^1].Attempt == attempt.Attempt)
                         {
@@ -311,25 +318,41 @@ public static class Cli
                         {
                             attempts.Add(attempt);
                         }
-                    });
-                }
+                    };
 
                 tracker.Stage = parsed.Agent.Name;
-                var result = await parsed.Agent.ExecuteAsync(services, input!, cts.Token);
+                var context = new AgentExecutionContext(Guid.NewGuid())
+                {
+                    AdditionalProperties = observer is null
+                        ? null
+                        : new Dictionary<string, object?> { [IdeaValidationLoopEvaluator.ObserverKey] = observer }
+                };
+                var result = await parsed.Agent.ExecuteAsync(services, input!, context, cts.Token);
                 // Do not report success when interrupted before the result is persisted.
                 cts.Token.ThrowIfCancellationRequested();
+                await WriteNewAsync(output!, result, parsed.Agent.OutputType, cts.Token);
+
+                // The published result is the commit point: the requested trace is finished even if cancelled now.
+                published = true;
                 if (trace is not null)
                 {
-                    await WriteNewAsync(trace, new IdeaTrace("accepted", attempts), null, cts.Token);
-                    traceWritten = true;
+                    try
+                    {
+                        await WriteNewAsync(trace, new IdeaTrace("accepted", attempts));
+                    }
+                    catch (Exception)
+                    {
+                        await System.Console.Error.WriteLineAsync(
+                            "The result was written, but the requested trace could not be written.");
+                        return 1;
+                    }
                 }
 
-                await WriteNewAsync(output!, result, parsed.Agent.OutputType, cts.Token);
                 return 0;
             }
             catch (Exception ex) when (ex is not (UsageException or ConfigurationException))
             {
-                if (trace is not null && !traceWritten)
+                if (trace is not null && !published)
                 {
                     await TryWriteTraceAsync(trace, attempts);
                 }
@@ -444,10 +467,16 @@ public static class Cli
         }
     }
 
-    internal static string? ResolvePrompts(string? explicitPath)
+    internal static string DescribePrompts(string? promptPath) =>
+        promptPath is null
+            ? "Prompts: embedded (no disk prompt directory found)."
+            : $"Prompts: disk ({promptPath}).";
+
+    internal static string? ResolvePrompts(string? explicitPath, string? workingDirectory = null,
+        string? baseDirectory = null)
     {
-        var source = Path.Combine(Directory.GetCurrentDirectory(), CliContracts.SourcePromptPath);
-        var adjacent = Path.Combine(AppContext.BaseDirectory, "Prompts");
+        var source = Path.Combine(workingDirectory ?? Directory.GetCurrentDirectory(), CliContracts.SourcePromptPath);
+        var adjacent = Path.Combine(baseDirectory ?? AppContext.BaseDirectory, "Prompts");
         var path = explicitPath ?? (Directory.Exists(source) ? source : Directory.Exists(adjacent) ? adjacent : null);
         if (path is null)
         {

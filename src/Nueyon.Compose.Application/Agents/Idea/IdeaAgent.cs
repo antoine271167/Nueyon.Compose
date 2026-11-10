@@ -65,7 +65,11 @@ public sealed class IdeaAgent : IAgent<StoryInput, IReadOnlyList<Domain.Idea>>
                 ("SourceContent", input.Content));
 
             // Run the agent with structured output options configured
-            var options = CreateAgentRunOptions(input.Content);
+            var observer = executionContext.AdditionalProperties is { } extra &&
+                           extra.TryGetValue(IdeaValidationLoopEvaluator.ObserverKey, out var value)
+                ? value as Action<IdeaValidationAttempt>
+                : null;
+            var options = CreateAgentRunOptions(input.Content, observer);
             var response = await _agent.RunAsync(userMessage, null, options, cancellationToken);
 
             var responseText = ExtractResponseText(response);
@@ -111,8 +115,10 @@ public sealed class IdeaAgent : IAgent<StoryInput, IReadOnlyList<Domain.Idea>>
     ///     Creates ChatClientAgentRunOptions with structured JSON output configured for IdeaResponse.
     /// </summary>
     /// <param name="sourceContent">Original source passed to the loop evaluator.</param>
+    /// <param name="observer">Optional observer scoped to this invocation.</param>
     /// <returns>Configured ChatClientAgentRunOptions with ResponseFormat set.</returns>
-    private static ChatClientAgentRunOptions CreateAgentRunOptions(string sourceContent)
+    private static ChatClientAgentRunOptions CreateAgentRunOptions(string sourceContent,
+        Action<IdeaValidationAttempt>? observer)
     {
         var responseFormat = ChatResponseFormat.ForJsonSchema<IdeaResponse>(
             null,
@@ -123,12 +129,18 @@ public sealed class IdeaAgent : IAgent<StoryInput, IReadOnlyList<Domain.Idea>>
             ResponseFormat = responseFormat
         };
 
+        var properties = new AdditionalPropertiesDictionary
+        {
+            [IdeaValidationLoopEvaluator.SourceContentKey] = sourceContent
+        };
+        if (observer is not null)
+        {
+            properties[IdeaValidationLoopEvaluator.ObserverKey] = observer;
+        }
+
         return new ChatClientAgentRunOptions(chatOptions)
         {
-            AdditionalProperties = new AdditionalPropertiesDictionary
-            {
-                [IdeaValidationLoopEvaluator.SourceContentKey] = sourceContent
-            }
+            AdditionalProperties = properties
         };
     }
 

@@ -71,6 +71,10 @@ public abstract class AgentContract(string name, string description, object vali
     public abstract object ReadInput(string json);
     public abstract Task<object> ExecuteAsync(IServiceProvider services, object input, CancellationToken token);
 
+    // Subclasses written against the three-argument form keep working; they simply ignore the context.
+    internal virtual Task<object> ExecuteAsync(IServiceProvider services, object input,
+        AgentExecutionContext context, CancellationToken token) => ExecuteAsync(services, input, token);
+
     public JsonNode InputSchema() =>
         CliContracts.ExportSchema(InputType, $"Input for the '{Name}' agent: the JSON read by 'run {Name} --input'.");
 
@@ -106,9 +110,13 @@ public sealed class AgentContract<TInput, TOutput>(string name, string descripti
     public IAgent<TInput, TOutput> Resolve(IServiceProvider services, IAgentDecorator decorator) =>
         decorator.Decorate(Name, services.GetRequiredService<IAgent<TInput, TOutput>>());
 
-    public override async Task<object> ExecuteAsync(IServiceProvider services, object input, CancellationToken token) =>
+    public override Task<object> ExecuteAsync(IServiceProvider services, object input, CancellationToken token) =>
+        ExecuteAsync(services, input, new AgentExecutionContext(Guid.NewGuid()), token);
+
+    internal override async Task<object> ExecuteAsync(IServiceProvider services, object input,
+        AgentExecutionContext context, CancellationToken token) =>
         (await services.GetRequiredService<IAgent<TInput, TOutput>>()
-            .ExecuteAsync(new AgentExecutionContext(Guid.NewGuid()), (TInput)input, token))!;
+            .ExecuteAsync(context, (TInput)input, token))!;
 }
 
 public static class CliContracts
@@ -161,7 +169,8 @@ public static class CliContracts
         [IdeaContract, ResearchContract, SynthesisContract, NarrativeContract, ComposeContract];
 
     private static readonly CliOption
-        _prompts = new("--prompts", "directory", false, "Use a complete disk prompt set.");
+        _prompts = new("--prompts", "directory", false,
+            "Use a complete disk prompt set; the selected prompt source is reported on stderr.");
 
     public static readonly CliCommand[] Commands =
     [

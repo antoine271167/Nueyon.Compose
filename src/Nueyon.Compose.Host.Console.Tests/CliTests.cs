@@ -33,8 +33,17 @@ public sealed class CliTests
     public async Task DiscoveryDoesNotNeedConfiguration()
     {
         Assert.Equal(0, (await Invoke("--help")).Code);
-        Assert.Equal(0, (await Invoke("agents", "describe", "IDEA", "--format", "json")).Code);
-        Assert.Equal(0, (await Invoke("agents", "schema", "compose", "--format", "json")).Code);
+        foreach (var args in new[]
+                 {
+                     new[] { "agents", "describe", "IDEA", "--format", "json" },
+                     ["agents", "schema", "compose", "--format", "json"],
+                     ["describe", "--format", "json"], ["run", "idea", "--help"]
+                 })
+        {
+            var (code, _, error) = await InvokeAll(args);
+            Assert.Equal(0, code);
+            Assert.DoesNotContain("Prompts:", error);
+        }
     }
 
     [Fact]
@@ -227,21 +236,16 @@ public sealed class CliTests
     [Fact]
     public async Task MissingExplicitPromptSetFailsBeforeRuntime()
     {
-        var directory = Path.Combine(Path.GetTempPath(), $"nueyon-cli-test-{Guid.NewGuid():N}");
-        Directory.CreateDirectory(directory);
-        try
-        {
-            var input = Path.Combine(directory, "input.json");
-            await File.WriteAllTextAsync(input, """{"content":"source"}""");
-            Assert.Equal(2, await Cli.RunAsync([
-                "run", "idea", "--input", input, "--output",
-                Path.Combine(directory, "result.json"), "--prompts", directory
-            ]));
-        }
-        finally
-        {
-            Directory.Delete(directory, true);
-        }
+        using var directory = new TempDirectory();
+        await File.WriteAllTextAsync(directory.Input, """{"content":"source"}""");
+
+        var (code, _, error) = await InvokeWith(Services(_ => [Sample]), "run", "idea", "--input", directory.Input,
+            "--output", directory.Output, "--prompts", directory.Path);
+
+        Assert.Equal(2, code);
+        Assert.Contains("Input error: Prompt file is missing", error);
+        Assert.DoesNotContain("Prompts:", error);
+        Assert.False(File.Exists(directory.Output));
     }
 
     [Fact]
@@ -251,16 +255,7 @@ public sealed class CliTests
         Directory.CreateDirectory(directory);
         try
         {
-            const string prefix = "Nueyon.Compose.Application.Prompts.";
-            foreach (var resource in typeof(PromptDirectory).Assembly.GetManifestResourceNames()
-                         .Where(n => n.StartsWith(prefix)))
-            {
-                var name = resource[prefix.Length..];
-                var separator = name.IndexOf('.');
-                var group = Path.Combine(directory, name[..separator]);
-                Directory.CreateDirectory(group);
-                File.WriteAllText(Path.Combine(group, name[(separator + 1)..]), "test");
-            }
+            CreatePromptSet(directory);
 
             Assert.Equal(directory, Cli.ResolvePrompts(directory));
             Assert.NotNull(Cli.ResolvePrompts(null));
@@ -268,6 +263,151 @@ public sealed class CliTests
         finally
         {
             Directory.Delete(directory, true);
+        }
+    }
+
+    [Fact]
+    public void PromptSourceFollowsPrecedence()
+    {
+        using var root = new TempDirectory();
+        var working = Path.Combine(root.Path, "work");
+        var baseDirectory = Path.Combine(root.Path, "bin");
+        Directory.CreateDirectory(working);
+        Directory.CreateDirectory(baseDirectory);
+        Assert.Null(Cli.ResolvePrompts(null, working, baseDirectory));
+        Assert.Contains("embedded", Cli.DescribePrompts(null));
+
+        var adjacent = Path.Combine(baseDirectory, "Prompts");
+        CreatePromptSet(adjacent);
+        Assert.Equal(adjacent, Cli.ResolvePrompts(null, working, baseDirectory));
+
+        var source = Path.Combine(working, CliContracts.SourcePromptPath);
+        CreatePromptSet(source);
+        Assert.Equal(source, Cli.ResolvePrompts(null, working, baseDirectory));
+        Assert.Equal($"Prompts: disk ({source}).", Cli.DescribePrompts(source));
+
+        var explicitSet = Path.Combine(root.Path, "explicit");
+        CreatePromptSet(explicitSet);
+        Assert.Equal(explicitSet, Cli.ResolvePrompts(explicitSet, working, baseDirectory));
+    }
+
+    [Fact]
+    public async Task RuntimeReportsExplicitPromptDirectoryOnStandardError()
+    {
+        using var directory = new TempDirectory();
+        var prompts = Path.Combine(directory.Path, "prompts");
+        CreatePromptSet(prompts);
+        await File.WriteAllTextAsync(directory.Input, """{"content":"source"}""");
+
+        var (code, _, error) = await InvokeWith(Services(_ => [Sample]), "run", "idea", "--input", directory.Input,
+            "--output", directory.Output, "--prompts", prompts);
+
+        Assert.Equal(0, code);
+        Assert.Contains($"Prompts: disk ({prompts}).", error);
+
+        // A blank explicit value is a usage error, not a request for discovery.
+        var (blankCode, _, blankError) = await InvokeWith(Services(_ => [Sample]), "run", "idea", "--input",
+            directory.Input, "--output", Path.Combine(directory.Path, "other.json"), "--prompts", " ");
+        Assert.Equal(2, blankCode);
+        Assert.DoesNotContain("Prompts:", blankError);
+    }
+
+    [Fact]
+    public async Task AcceptedTraceIsWrittenAfterTheResult()
+    {
+        using var directory = new TempDirectory();
+        var (code, _, _) = await RunIdea(directory, Services(context =>
+        {
+            Observe(context, new IdeaValidationAttempt(1, "first", "rejected", "fix it"));
+            Observe(context, new IdeaValidationAttempt(2, "second", "accepted", null));
+            return [Sample];
+        }));
+
+        Assert.Equal(0, code);
+        using var trace = JsonDocument.Parse(File.ReadAllText(directory.Trace));
+        Assert.Equal("accepted", trace.RootElement.GetProperty("status").GetString());
+        var attempts = trace.RootElement.GetProperty("attempts").EnumerateArray().ToArray();
+        Assert.Equal(["rejected", "accepted"], attempts.Select(a => a.GetProperty("status").GetString()));
+        Assert.Equal(["first", "second"], attempts.Select(a => a.GetProperty("response").GetString()));
+        Assert.Equal("fix it", attempts[0].GetProperty("feedback").GetString());
+        Assert.True(File.Exists(directory.Output));
+        Assert.DoesNotContain(Directory.GetFiles(directory.Path), f => f.EndsWith(".tmp"));
+    }
+
+    [Fact]
+    public async Task ResultFailureAfterValidationKeepsTheExistingFileAndWritesIncompleteTrace()
+    {
+        using var directory = new TempDirectory();
+        var (code, _, error) = await RunIdea(directory, Services(context =>
+        {
+            Observe(context, new IdeaValidationAttempt(1, "response", "accepted", null));
+            File.WriteAllText(directory.Output, "existing");
+            return [Sample];
+        }));
+
+        Assert.Equal(1, code);
+        Assert.Equal("existing", File.ReadAllText(directory.Output));
+        using var trace = JsonDocument.Parse(File.ReadAllText(directory.Trace));
+        Assert.Equal("incomplete", trace.RootElement.GetProperty("status").GetString());
+        Assert.Equal("accepted",
+            Assert.Single(trace.RootElement.GetProperty("attempts").EnumerateArray()).GetProperty("status")
+                .GetString());
+        Assert.Contains("Runtime error in stage 'idea'", error);
+        Assert.Contains("No result was produced.", error);
+        Assert.DoesNotContain("The result was written", error);
+        Assert.DoesNotContain(Directory.GetFiles(directory.Path), f => f.EndsWith(".tmp"));
+    }
+
+    [Fact]
+    public async Task TraceFailureAfterPublicationKeepsTheResultAndReportsTruthfully()
+    {
+        using var directory = new TempDirectory();
+        var (code, _, error) = await RunIdea(directory, Services(_ =>
+        {
+            File.WriteAllText(directory.Trace, "existing");
+            return [Sample];
+        }));
+
+        Assert.Equal(1, code);
+        Assert.Equal("existing", File.ReadAllText(directory.Trace));
+        using var result = JsonDocument.Parse(File.ReadAllText(directory.Output));
+        Assert.Equal("t", result.RootElement[0].GetProperty("title").GetString());
+        Assert.Contains("The result was written, but the requested trace could not be written.", error);
+        Assert.DoesNotContain("No result was produced", error);
+        Assert.DoesNotContain(Directory.GetFiles(directory.Path), f => f.EndsWith(".tmp"));
+    }
+
+    private static readonly Idea Sample = new("t", "d", "a", "r", "e");
+
+    private static void Observe(AgentExecutionContext context, IdeaValidationAttempt attempt) =>
+        ((Action<IdeaValidationAttempt>)context.AdditionalProperties![IdeaValidationLoopEvaluator.ObserverKey]!)(
+            attempt);
+
+    private static Func<string?, Cli.StageTracker, ServiceProvider> Services(
+        Func<AgentExecutionContext, IReadOnlyList<Idea>> idea) =>
+        (_, _) => new ServiceCollection()
+            .AddSingleton<IAgent<StoryInput, IReadOnlyList<Idea>>>(new ContextAgent(idea))
+            .BuildServiceProvider();
+
+    private static async Task<(int Code, string Out, string Error)> RunIdea(TempDirectory directory,
+        Func<string?, Cli.StageTracker, ServiceProvider> services)
+    {
+        await File.WriteAllTextAsync(directory.Input, """{"content":"source"}""");
+        return await InvokeWith(services, "run", "idea", "--input", directory.Input, "--output", directory.Output,
+            "--trace", directory.Trace);
+    }
+
+    private static void CreatePromptSet(string directory)
+    {
+        const string prefix = "Nueyon.Compose.Application.Prompts.";
+        foreach (var resource in typeof(PromptDirectory).Assembly.GetManifestResourceNames()
+                     .Where(n => n.StartsWith(prefix)))
+        {
+            var name = resource[prefix.Length..];
+            var separator = name.IndexOf('.');
+            var group = Path.Combine(directory, name[..separator]);
+            Directory.CreateDirectory(group);
+            File.WriteAllText(Path.Combine(group, name[(separator + 1)..]), "test");
         }
     }
 
@@ -455,7 +595,11 @@ public sealed class CliTests
         return (code, output);
     }
 
-    private static async Task<(int Code, string Out, string Error)> InvokeAll(params string[] args)
+    private static Task<(int Code, string Out, string Error)> InvokeAll(params string[] args) =>
+        InvokeWith(null, args);
+
+    private static async Task<(int Code, string Out, string Error)> InvokeWith(
+        Func<string?, Cli.StageTracker, ServiceProvider>? services, params string[] args)
     {
         var originalOut = System.Console.Out;
         var originalError = System.Console.Error;
@@ -465,13 +609,34 @@ public sealed class CliTests
         System.Console.SetError(error);
         try
         {
-            return (await Cli.RunAsync(args), output.ToString(), error.ToString());
+            return (await Cli.RunAsync(args, services), output.ToString(), error.ToString());
         }
         finally
         {
             System.Console.SetOut(originalOut);
             System.Console.SetError(originalError);
         }
+    }
+
+    private sealed class TempDirectory : IDisposable
+    {
+        public TempDirectory() => Directory.CreateDirectory(Path);
+
+        public string Path { get; } =
+            System.IO.Path.Combine(System.IO.Path.GetTempPath(), $"nueyon-cli-test-{Guid.NewGuid():N}");
+
+        public string Input => System.IO.Path.Combine(Path, "input.json");
+        public string Output => System.IO.Path.Combine(Path, "result.json");
+        public string Trace => System.IO.Path.Combine(Path, "trace.json");
+
+        public void Dispose() => Directory.Delete(Path, true);
+    }
+
+    private sealed class ContextAgent(Func<AgentExecutionContext, IReadOnlyList<Idea>> func)
+        : IAgent<StoryInput, IReadOnlyList<Idea>>
+    {
+        public Task<IReadOnlyList<Idea>> ExecuteAsync(AgentExecutionContext executionContext, StoryInput input,
+            CancellationToken cancellationToken = default) => Task.FromResult(func(executionContext));
     }
 
     private sealed class FuncAgent<TInput, TOutput>(Func<TInput, TOutput> func) : IAgent<TInput, TOutput>
