@@ -6,6 +6,7 @@ using Nueyon.Compose.Application.Agents.Idea;
 using Nueyon.Compose.Application.Agents.Research;
 using Nueyon.Compose.Application.Prompts;
 using Nueyon.Compose.Domain;
+using Nueyon.Compose.Infrastructure.Options;
 
 namespace Nueyon.Compose.Host.Console.Tests;
 
@@ -415,10 +416,17 @@ public sealed class CliTests
             .AddSingleton<IAgent<StoryInput, IReadOnlyList<Idea>>>(new ContextAgent(idea))
             .BuildServiceProvider();
 
+    private static Func<string?, Cli.StageTracker, ServiceProvider> ServicesWithMode(string mode,
+        Func<AgentExecutionContext, IReadOnlyList<Idea>> idea) =>
+        (_, _) => new ServiceCollection()
+            .AddSingleton<IAgent<StoryInput, IReadOnlyList<Idea>>>(new ContextAgent(idea))
+            .Configure<IdeaWorkflowOptions>(o => o.Mode = mode)
+            .BuildServiceProvider();
+
     private static async Task<(int Code, string Out, string Error)> RunIdea(TempDirectory directory,
-        Func<string?, Cli.StageTracker, ServiceProvider> services)
+        Func<string?, Cli.StageTracker, ServiceProvider> services, string source = "source")
     {
-        await File.WriteAllTextAsync(directory.Input, """{"content":"source"}""");
+        await File.WriteAllTextAsync(directory.Input, $$"""{"content":"{{source}}"}""");
         return await InvokeWith(services, "run", "idea", "--input", directory.Input, "--output", directory.Output,
             "--trace", directory.Trace);
     }
@@ -429,11 +437,11 @@ public sealed class CliTests
         foreach (var resource in typeof(PromptDirectory).Assembly.GetManifestResourceNames()
                      .Where(n => n.StartsWith(prefix)))
         {
-            var name = resource[prefix.Length..];
-            var separator = name.IndexOf('.');
-            var group = Path.Combine(directory, name[..separator]);
+            var parts = resource[prefix.Length..].Split('.');
+            var start = Math.Max(1, Array.FindIndex(parts, 1, p => p.StartsWith(parts[0], StringComparison.Ordinal)));
+            var group = Path.Combine([directory, .. parts[..start]]);
             Directory.CreateDirectory(group);
-            File.WriteAllText(Path.Combine(group, name[(separator + 1)..]), "test");
+            File.WriteAllText(Path.Combine(group, string.Join('.', parts[start..])), "test");
         }
     }
 
@@ -560,6 +568,124 @@ public sealed class CliTests
         }
         finally
         {
+            Directory.Delete(directory, true);
+        }
+    }
+
+    [Fact]
+    public async Task DiscoveryDescribesDefaultLegacyAndBothProfilesWithoutCredentials()
+    {
+        var (code, output) = await Invoke("agents", "describe", "idea", "--format", "json");
+        Assert.Equal(0, code);
+        using var document = JsonDocument.Parse(output);
+        var validation = document.RootElement.GetProperty("validation");
+        Assert.Equal(3, validation.GetProperty("maxAttempts").GetInt32());
+        Assert.Equal("Legacy", validation.GetProperty("mode").GetProperty("default").GetString());
+        Assert.Equal("IdeaWorkflow:Mode", validation.GetProperty("mode").GetProperty("setting").GetString());
+        var profiles = validation.GetProperty("profiles").EnumerateArray().ToArray();
+        Assert.Equal(["Legacy", "Simplified"], profiles.Select(p => p.GetProperty("mode").GetString()));
+        Assert.Equal([3, 2], profiles.Select(p => p.GetProperty("maxAttempts").GetInt32()));
+        Assert.Equal(["title", "description", "audience", "rationale"],
+            validation.GetProperty("structural").GetProperty("requiredNonEmptyFields").EnumerateArray()
+                .Select(f => f.GetString()));
+    }
+
+    [Fact]
+    public async Task SimplifiedExhaustionReportsDiagnosisWithoutTheSourceAndTracesTwoAttempts()
+    {
+        using var directory = new TempDirectory();
+        var blocker = new IdeaValidationBlocker("unsupportedClaim", "title", "Title claims a measured result");
+        var (code, _, error) = await RunIdea(directory, ServicesWithMode("Simplified", context =>
+        {
+            Observe(context, new IdeaValidationAttempt(1, "first", "rejected", "[]"));
+            Observe(context, new IdeaValidationAttempt(2, "second", "rejected", "[]"));
+            throw new AggregateException(new InvalidOperationException("wrapper",
+                new IdeaValidationException("exhausted", 2, IdeaValidationFailureKind.Semantic, "diagnosis",
+                    [blocker])));
+        }), "TOP-SECRET-SOURCE");
+
+        Assert.Equal(1, code);
+        Assert.Contains("after 2 attempts", error);
+        Assert.Contains("unsupportedClaim", error);
+        Assert.Contains("title", error);
+        Assert.Contains("Title claims a measured result", error);
+        Assert.Contains("Idea workflow mode: Simplified (2 generations).", error);
+        Assert.DoesNotContain("TOP-SECRET-SOURCE", error);
+        Assert.DoesNotContain("wrapper", error);
+        Assert.False(File.Exists(directory.Output));
+        using var trace = JsonDocument.Parse(File.ReadAllText(directory.Trace));
+        Assert.Equal("exhausted", trace.RootElement.GetProperty("status").GetString());
+        Assert.Equal([1, 2],
+            trace.RootElement.GetProperty("attempts").EnumerateArray().Select(a => a.GetProperty("attempt").GetInt32()));
+    }
+
+    [Fact]
+    public async Task SimplifiedSecondAttemptRejectionIsExhaustedEvenWithoutATypedException()
+    {
+        using var directory = new TempDirectory();
+        await RunIdea(directory, ServicesWithMode("Simplified", context =>
+        {
+            Observe(context, new IdeaValidationAttempt(1, "first", "rejected", "[]"));
+            Observe(context, new IdeaValidationAttempt(2, "second", "rejected", "[]"));
+            throw new InvalidOperationException("stop");
+        }));
+
+        using var trace = JsonDocument.Parse(File.ReadAllText(directory.Trace));
+        Assert.Equal("exhausted", trace.RootElement.GetProperty("status").GetString());
+    }
+
+    [Fact]
+    public async Task SimplifiedFirstAttemptFailureIsIncompleteInTheTrace()
+    {
+        using var directory = new TempDirectory();
+        await RunIdea(directory, ServicesWithMode("Simplified", context =>
+        {
+            Observe(context, new IdeaValidationAttempt(1, "first", "rejected", "[]"));
+            throw new InvalidOperationException("judge failed");
+        }));
+
+        using var trace = JsonDocument.Parse(File.ReadAllText(directory.Trace));
+        Assert.Equal("incomplete", trace.RootElement.GetProperty("status").GetString());
+    }
+
+    [Fact]
+    public void StructuralFailureDiagnosticNamesTheProblemWithoutExceptionDump()
+    {
+        var failure = new IdeaValidationException("exhausted", 2, IdeaValidationFailureKind.Structural,
+            "title is empty\nsecond line");
+        var message = Cli.Diagnose(new AggregateException(failure), new Cli.StageTracker { Stage = "idea" });
+
+        Assert.Contains("Structural validation failed: title is empty second line", message);
+        Assert.Contains("after 2 attempts", message);
+        Assert.DoesNotContain("AggregateException", message);
+        Assert.DoesNotContain("\n", message);
+    }
+
+    [Theory]
+    [InlineData("Unknown")]
+    [InlineData("")]
+    public async Task InvalidIdeaModeIsAConfigurationErrorBeforeRuntime(string mode)
+    {
+        var directory = Path.Combine(Path.GetTempPath(), $"nueyon-cli-test-{Guid.NewGuid():N}");
+        Directory.CreateDirectory(directory);
+        var original = Directory.GetCurrentDirectory();
+        try
+        {
+            await File.WriteAllTextAsync(Path.Combine(directory, "appsettings.json"),
+                $$$"""{"OpenAI":{"ApiKey":"offline-placeholder","Model":"offline-placeholder"},"IdeaWorkflow":{"Mode":"{{{mode}}}"}}""");
+            var input = Path.Combine(directory, "input.json");
+            await File.WriteAllTextAsync(input, """{"content":"source"}""");
+            Directory.SetCurrentDirectory(directory);
+            var (code, _, error) = await InvokeAll("run", "idea", "--input", input, "--output",
+                Path.Combine(directory, "result.json"));
+            Assert.Equal(1, code);
+            Assert.Contains("Configuration error", error);
+            Assert.Contains("IdeaWorkflow", error);
+            Assert.False(File.Exists(Path.Combine(directory, "result.json")));
+        }
+        finally
+        {
+            Directory.SetCurrentDirectory(original);
             Directory.Delete(directory, true);
         }
     }

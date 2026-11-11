@@ -59,8 +59,10 @@ ideas in the Idea result may contain null fields, which that output schema adver
 other result schemas are strict.
 
 The Idea agent uses the production structural and semantic validation loop: the
-first idea must pass both; alternatives are not judged. It can make up to **three
-generator and three semantic judge calls per source**, plus transport retries (the
+first idea must pass both; alternatives are not judged. In the default `Legacy` mode it
+can make up to **three
+generator and three semantic judge calls per source** (`Simplified`: at most two
+generations and two judge calls), plus transport retries (the
 discovery `validation` object exposes this as `maxAttempts`). Do not invoke the
 workflow or an agent without appropriate cost authorization.
 
@@ -68,6 +70,28 @@ Every Idea retry starts from the original source and task, the previous first
 idea when it can be parsed, and the latest diagnosis. The semantic judge
 independently evaluates the current first idea against the original source.
 Exhausting the attempts fails the Idea stage before Research can run.
+
+### Idea workflow mode
+
+`IdeaWorkflow:Mode` (environment variable `IdeaWorkflow__Mode`; `appsettings.json`
+sets `Legacy` explicitly) selects the Idea profile for the whole process. Invalid or
+empty values are a configuration error before any model call.
+
+| Mode | Prompts | Generations | Judge |
+|---|---|---|---|
+| `Legacy` (default) | `Prompts/Idea/*.prompt.txt` | 3 | mandatory |
+| `Simplified` | `Prompts/Idea/Simplified/*.prompt.txt` | 2 total, one shared repair for structural and semantic failures | mandatory, blockers limited to `sourceContradiction`, `unsupportedClaim`, `editorialPurpose` and fields `title`, `description`, `audience`, `rationale`, `evidence` |
+
+Rollback: unset `IdeaWorkflow__Mode` or set it to `Legacy`; this restores the original
+prompts and three generations. `--prompts` must contain the complete set of the
+selected mode (no fallback). A failed Idea stage shows the category, field and problem
+of the last blocker (never the source); full blockers are in the optional `--trace`.
+
+Known misses: the offline tests use fake model clients and prove budgets, isolation
+and fail-closed handling only; they do not show that the Simplified judge detects any
+given source problem (for example the experiment 005 or 010 cases), and a parser can
+not guarantee semantic correctness. No live model or experiment runs were made for
+this change.
 
 Custom Idea validation prompts and judge fixtures must use
 `{"accepted":true,"blockingIssues":[]}` for acceptance. Rejection uses
@@ -99,7 +123,11 @@ code is `1`.
 missing `OpenAI:ApiKey` or `OpenAI:Model`) print an actionable `Configuration error`
 on stderr, exit `1`. Other runtime failures print only a sanitized stage and category
 (for example `Runtime error in stage 'research': the model service request failed
-(HTTP 429)`), never keys, prompts, model output or exception messages. Ctrl+C is
+(HTTP 429)`), never keys, prompts, full model output, the source or exception messages.
+The one exception is a typed Idea validation stop: it prints a single bounded line
+(300 characters per field) with the judge's category, field and `problem`, and that
+text is model-generated, so treat stderr from such a run as potentially sensitive.
+Ctrl+C is
 installed before input is read; an interrupted run exits `130` and does not report
 success before the result is written.
 
@@ -112,7 +140,10 @@ files also never overwrite existing files.
 
 Both runtime commands accept `--prompts <dir>` for a complete prompt tree. It is
 strict: every embedded prompt, including the Idea judge prompt, must exist there;
-no disk/embedded mixing occurs, and an explicit directory never falls back. Without it, the host uses
+no disk/embedded mixing occurs, and an explicit directory never falls back. The complete
+set now includes the `Idea/Simplified/` subdirectory (`Idea.system`, `Idea.user`,
+`IdeaValidation.system`), so an older override tree must copy that subtree in, even if
+you only use `Legacy`; a missing file is an error, never a fallback. Without it, the host uses
 `src\Nueyon.Compose.Application\Prompts` when launched from the repository root,
 otherwise the `Prompts` directory next to the executable if present, otherwise
 embedded prompts. Disk templates are read on each process execution. To pick up

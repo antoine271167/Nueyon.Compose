@@ -122,6 +122,77 @@ public sealed class InfrastructureServiceExtensionsTests
     }
 
     [Fact]
+    public void AddInfrastructure_WithoutIdeaWorkflowOptions_DefaultsToLegacyWithMandatoryJudge()
+    {
+        var provider = BuildProvider(null);
+
+        var evaluator = provider.GetRequiredService<IdeaValidationLoopEvaluator>();
+        Assert.Equal(IdeaWorkflowMode.Legacy, evaluator.Mode);
+        Assert.Equal(3, evaluator.EffectiveMaxAttempts);
+        Assert.IsType<IdeaAgent>(provider.GetRequiredService<IAgent<StoryInput, IReadOnlyList<Idea>>>());
+    }
+
+    [Theory]
+    [InlineData("Legacy", IdeaWorkflowMode.Legacy, 3)]
+    [InlineData("Simplified", IdeaWorkflowMode.Simplified, 2)]
+    [InlineData("simplified", IdeaWorkflowMode.Simplified, 2)]
+    public void AddInfrastructure_SelectsImmutableModeAndBudgetPerProvider(string value, IdeaWorkflowMode mode,
+        int attempts)
+    {
+        var provider = BuildProvider(value);
+
+        var evaluator = provider.GetRequiredService<IdeaValidationLoopEvaluator>();
+        Assert.Equal(mode, evaluator.Mode);
+        Assert.Equal(attempts, evaluator.EffectiveMaxAttempts);
+        Assert.IsType<IdeaAgent>(provider.GetRequiredService<IAgent<StoryInput, IReadOnlyList<Idea>>>());
+
+        // A second provider with another mode is unaffected by the first (no global mutable mode).
+        var other = BuildProvider(mode == IdeaWorkflowMode.Legacy ? "Simplified" : "Legacy");
+        Assert.NotEqual(mode, other.GetRequiredService<IdeaValidationLoopEvaluator>().Mode);
+        Assert.Equal(mode, evaluator.Mode);
+    }
+
+    [Theory]
+    [InlineData("")]
+    [InlineData("   ")]
+    [InlineData("Strict")]
+    [InlineData("1")]
+    public void AddInfrastructure_InvalidIdeaMode_FailsWhenResolvingAgent(string value)
+    {
+        var provider = BuildProvider(value);
+
+        Assert.Throws<InvalidOperationException>(provider.GetRequiredService<IdeaValidationLoopEvaluator>);
+        Assert.Throws<InvalidOperationException>(provider.GetRequiredService<IAgent<StoryInput, IReadOnlyList<Idea>>>);
+    }
+
+    [Fact]
+    public void IdeaWorkflowOptions_ValidateRejectsNullAndUnknownModes()
+    {
+        Assert.Equal(IdeaWorkflowMode.Legacy, new IdeaWorkflowOptions().ResolveMode());
+        Assert.Throws<InvalidOperationException>(() => new IdeaWorkflowOptions { Mode = null }.Validate());
+        Assert.Throws<InvalidOperationException>(() => new IdeaWorkflowOptions { Mode = "" }.Validate());
+        Assert.Throws<InvalidOperationException>(() => new IdeaWorkflowOptions { Mode = "Other" }.Validate());
+    }
+
+    private static ServiceProvider BuildProvider(string? mode)
+    {
+        var services = new ServiceCollection();
+        services.AddLogging();
+        services.Configure<OpenAiOptions>(opt =>
+        {
+            opt.ApiKey = "test-key";
+            opt.Model = "gpt-4o-mini";
+        });
+        if (mode is not null)
+        {
+            services.Configure<IdeaWorkflowOptions>(opt => opt.Mode = mode);
+        }
+
+        services.AddInfrastructure();
+        return services.BuildServiceProvider();
+    }
+
+    [Fact]
     public void AddInfrastructure_ThrowsWhenServicesIsNull()
     {
         // Act & Assert

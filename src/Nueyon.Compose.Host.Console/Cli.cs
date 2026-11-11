@@ -294,10 +294,20 @@ public static class Cli
             }
 
             var attempts = new List<IdeaValidationAttempt>();
+            var maxAttempts = IdeaValidationLoopEvaluator.MaxAttempts;
             var published = false;
             try
             {
                 await using var services = createServices(capture, tracker);
+                var ideaMode = services.GetService<IOptions<IdeaWorkflowOptions>>()?.Value.ResolveMode() ??
+                               IdeaWorkflowMode.Legacy;
+                maxAttempts = ideaMode.MaxAttempts();
+                if (ideaMode != IdeaWorkflowMode.Legacy)
+                {
+                    await System.Console.Error.WriteLineAsync(
+                        $"Idea workflow mode: {ideaMode} ({maxAttempts} generations).");
+                }
+
                 if (parsed.Agent is null)
                 {
                     return await services.GetRequiredService<ConsoleApplication>().RunAsync(cts.Token, sourceDirectory,
@@ -354,7 +364,7 @@ public static class Cli
             {
                 if (trace is not null && !published)
                 {
-                    await TryWriteTraceAsync(trace, attempts);
+                    await TryWriteTraceAsync(trace, attempts, maxAttempts, ex);
                 }
 
                 if (ex is OperationCanceledException && cts.IsCancellationRequested)
@@ -372,9 +382,11 @@ public static class Cli
         }
     }
 
-    private static async Task TryWriteTraceAsync(string trace, List<IdeaValidationAttempt> attempts)
+    private static async Task TryWriteTraceAsync(string trace, List<IdeaValidationAttempt> attempts, int maxAttempts,
+        Exception failure)
     {
-        var exhausted = attempts.Count > 0 && attempts[^1].Attempt == IdeaValidationLoopEvaluator.MaxAttempts &&
+        var exhausted = FindValidationFailure(failure) is not null ||
+                        attempts.Count > 0 && attempts[^1].Attempt == maxAttempts &&
                         attempts[^1].Status == "rejected";
         try
         {
@@ -387,10 +399,57 @@ public static class Cli
         }
     }
 
+    // The workflow may wrap the typed failure, so the whole exception tree is searched.
+    internal static IdeaValidationException? FindValidationFailure(Exception ex)
+    {
+        for (var current = ex; current is not null; current = current.InnerException)
+        {
+            if (current is IdeaValidationException validation)
+            {
+                return validation;
+            }
+
+            if (current is AggregateException aggregate)
+            {
+                foreach (var inner in aggregate.InnerExceptions)
+                {
+                    if (FindValidationFailure(inner) is { } found)
+                    {
+                        return found;
+                    }
+                }
+            }
+        }
+
+        return null;
+    }
+
+    private static string DescribeValidationFailure(IdeaValidationException failure, string stage)
+    {
+        var attempts = failure.AttemptCount == 1 ? "1 attempt" : $"{failure.AttemptCount} attempts";
+        var details = failure.Kind == IdeaValidationFailureKind.Structural
+            ? $"Structural validation failed: {Limit(failure.Diagnosis)}"
+            : "Semantic validation rejected the first idea: " + string.Join("; ", failure.Blockers.Select(b =>
+                $"[{Limit(b.Category, 40)}] {Limit(b.Field, 40)}: {Limit(b.Problem)}"));
+        return $"Idea validation failed{stage} after {attempts}. {details} No result was produced.";
+
+        // Single line and bounded: a diagnosis is model output and must not flood or reproduce the source.
+        static string Limit(string text, int length = 300)
+        {
+            var line = string.Join(' ', text.Split((char[]?)null, StringSplitOptions.RemoveEmptyEntries));
+            return line.Length <= length ? line : line[..length] + "…";
+        }
+    }
+
     /// <summary>A sanitized description: never the exception message, which can quote payloads or secrets.</summary>
     internal static string Diagnose(Exception ex, StageTracker? tracker)
     {
         var stage = tracker?.Stage is { } name ? $" in stage '{name}'" : "";
+        if (FindValidationFailure(ex) is { } validation)
+        {
+            return DescribeValidationFailure(validation, stage);
+        }
+
         for (var current = ex; current is not null; current = current.InnerException)
         {
             switch (current)
@@ -490,9 +549,11 @@ public static class Cli
             foreach (var resource in typeof(PromptDirectory).Assembly.GetManifestResourceNames()
                          .Where(n => n.StartsWith(prefix, StringComparison.Ordinal)))
             {
-                var relative = resource[prefix.Length..];
-                var separator = relative.IndexOf('.');
-                var file = Path.Combine(path, relative[..separator], relative[(separator + 1)..]);
+                // Resource names flatten directories into dots. By convention a file name starts with its area
+                // name (Idea/Simplified/IdeaValidation.system.prompt.txt), which marks where the file name begins.
+                var parts = resource[prefix.Length..].Split('.');
+                var start = Math.Max(1, Array.FindIndex(parts, 1, p => p.StartsWith(parts[0], StringComparison.Ordinal)));
+                var file = Path.Combine([path, .. parts[..start], string.Join('.', parts[start..])]);
                 if (!File.Exists(file))
                 {
                     throw new UsageException($"Prompt file is missing: {file}");
@@ -540,6 +601,7 @@ public static class Cli
 
         var services = new ServiceCollection();
         services.Configure<OpenAiOptions>(configuration.GetSection("OpenAI"));
+        services.Configure<IdeaWorkflowOptions>(configuration.GetSection(IdeaWorkflowOptions.SectionName));
         services.AddLogging(builder => builder.ClearProviders());
         services.AddInfrastructure();
         services.AddSingleton<ISourceContextLoader, SourceContextLoader>();
@@ -551,6 +613,7 @@ public static class Cli
         try
         {
             provider.GetRequiredService<IOptions<OpenAiOptions>>().Value.Validate();
+            provider.GetRequiredService<IOptions<IdeaWorkflowOptions>>().Value.Validate();
         }
         catch (InvalidOperationException ex)
         {

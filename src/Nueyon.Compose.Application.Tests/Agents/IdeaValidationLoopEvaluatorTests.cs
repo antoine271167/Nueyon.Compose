@@ -221,10 +221,12 @@ public sealed class IdeaValidationLoopEvaluatorBehavioralTests
         var agent = CreateSemanticallyValidatedAgent(generator, judge);
         var attempts = new List<IdeaValidationAttempt>();
 
-        var error = await Assert.ThrowsAsync<InvalidOperationException>(() =>
+        var error = await Assert.ThrowsAsync<IdeaValidationException>(() =>
             agent.ExecuteAsync(Observed(attempts.Add), new StoryInput(OriginalSource)));
 
         Assert.Equal("Idea agent failed to produce valid ideas after 3 attempts.", error.Message);
+        Assert.Equal(3, error.AttemptCount);
+        Assert.Equal(IdeaValidationFailureKind.Semantic, error.Kind);
         Assert.Contains("Overclaim 1", attempts[^1].Feedback);
         Assert.Equal(3, generator.InvocationCount);
         Assert.Equal(3, judge.InvocationCount);
@@ -371,9 +373,11 @@ public sealed class IdeaValidationLoopEvaluatorBehavioralTests
         var exhausted = CreateSemanticallyValidatedAgent(
             new FakeChatClient(InvalidIdeasJson, InvalidIdeasJson, InvalidIdeasJson),
             new FakeChatClient(AcceptedVerdict));
-        await Assert.ThrowsAsync<InvalidOperationException>(() =>
+        var failure = await Assert.ThrowsAsync<IdeaValidationException>(() =>
             exhausted.ExecuteAsync(Observed(events.Add),
                 new StoryInput(OriginalSource)));
+        Assert.Equal(3, failure.AttemptCount);
+        Assert.Equal(IdeaValidationFailureKind.Structural, failure.Kind);
         Assert.Equal(3, events.Last().Attempt);
         Assert.Equal("rejected", events.Last().Status);
 
@@ -609,12 +613,14 @@ public sealed class IdeaValidationLoopEvaluatorBehavioralTests
         var input = new StoryInput("Test input");
 
         // Act & Assert
-        var exception = await Assert.ThrowsAsync<InvalidOperationException>(() =>
+        var exception = await Assert.ThrowsAsync<IdeaValidationException>(() =>
             loopAgent.RunAsync(input.Content, null, null, CancellationToken.None));
 
         Assert.Contains(
             "Idea agent failed to produce valid ideas after 3 attempts.",
             exception.Message);
+        Assert.Equal(3, exception.AttemptCount);
+        Assert.Equal(IdeaValidationFailureKind.Structural, exception.Kind);
 
         Assert.Equal(3, chatClient.InvocationCount);
     }
@@ -635,9 +641,10 @@ public sealed class IdeaValidationLoopEvaluatorBehavioralTests
         var input = new StoryInput("Test input");
 
         // Act & Assert
-        await Assert.ThrowsAsync<InvalidOperationException>(() =>
+        var failure = await Assert.ThrowsAsync<IdeaValidationException>(() =>
             loopAgent.RunAsync(input.Content, null, null, CancellationToken.None));
 
+        Assert.Equal(3, failure.AttemptCount);
         Assert.Equal(3, chatClient.InvocationCount);
     }
 
@@ -705,12 +712,14 @@ public sealed class IdeaValidationLoopEvaluatorBehavioralTests
         var input = new StoryInput("Test input");
 
         // Act & Assert
-        var exception = await Assert.ThrowsAsync<InvalidOperationException>(() =>
+        var exception = await Assert.ThrowsAsync<IdeaValidationException>(() =>
             loopAgent.RunAsync(input.Content, null, null, CancellationToken.None));
 
         Assert.Contains(
             "Idea agent failed to produce valid ideas after 3 attempts.",
             exception.Message);
+        Assert.Equal(3, exception.AttemptCount);
+        Assert.Equal(IdeaValidationFailureKind.Structural, exception.Kind);
 
         Assert.Equal(3, chatClient.InvocationCount);
     }
@@ -731,12 +740,14 @@ public sealed class IdeaValidationLoopEvaluatorBehavioralTests
         var input = new StoryInput("Test input");
 
         // Act & Assert
-        var exception = await Assert.ThrowsAsync<InvalidOperationException>(() =>
+        var exception = await Assert.ThrowsAsync<IdeaValidationException>(() =>
             loopAgent.RunAsync(input.Content, null, null, CancellationToken.None));
 
         Assert.Contains(
             "Idea agent failed to produce valid ideas after 3 attempts.",
             exception.Message);
+        Assert.Equal(3, exception.AttemptCount);
+        Assert.Equal(IdeaValidationFailureKind.Structural, exception.Kind);
 
         Assert.Equal(3, chatClient.InvocationCount);
     }

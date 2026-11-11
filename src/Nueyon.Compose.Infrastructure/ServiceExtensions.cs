@@ -43,11 +43,12 @@ public static class InfrastructureServiceExtensions
         {
             var options = provider.GetRequiredService<IOptions<OpenAiOptions>>().Value;
             options.Validate();
+            var mode = ResolveIdeaMode(provider);
 
             var judge = new IdeaSemanticJudge(OpenAiAgentFactory.CreateOpenAiAgent(
                 options.ApiKey,
                 options.Model,
-                IdeaSemanticJudge.GetSystemInstructions()));
+                IdeaSemanticJudge.GetSystemInstructions(mode)), mode);
             var validator = provider.GetRequiredService<IIdeaValidator>();
             return new IdeaValidationLoopEvaluator(validator, judge);
         });
@@ -58,6 +59,7 @@ public static class InfrastructureServiceExtensions
         {
             var options = provider.GetRequiredService<IOptions<OpenAiOptions>>().Value;
             options.Validate();
+            var mode = ResolveIdeaMode(provider);
 
             var logger = provider.GetRequiredService<ILogger<IdeaAgent>>();
 
@@ -65,13 +67,13 @@ public static class InfrastructureServiceExtensions
             var baseAiAgent = OpenAiAgentFactory.CreateOpenAiAgent(
                 options.ApiKey,
                 options.Model,
-                IdeaAgent.GetSystemInstructions());
+                IdeaAgent.GetSystemInstructions(mode));
 
             // Create the loop evaluator for validation and retry decision-making
             var evaluator = provider.GetRequiredService<IdeaValidationLoopEvaluator>();
 
             // Return the IdeaAgent that uses the loop-backed agent
-            return new IdeaAgent(evaluator.Wrap(baseAiAgent), logger);
+            return new IdeaAgent(evaluator.Wrap(baseAiAgent), logger, evaluator.Mode);
         });
 
         // Register the Research Agent
@@ -140,4 +142,8 @@ public static class InfrastructureServiceExtensions
 
         return services;
     }
+
+    // Read once per provider through the options pipeline; a provider without configuration runs Legacy.
+    private static IdeaWorkflowMode ResolveIdeaMode(IServiceProvider provider) =>
+        (provider.GetService<IOptions<IdeaWorkflowOptions>>()?.Value ?? new IdeaWorkflowOptions()).ResolveMode();
 }

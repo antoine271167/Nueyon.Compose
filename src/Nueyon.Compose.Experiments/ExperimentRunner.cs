@@ -47,7 +47,8 @@ public static class FreezeVerifier
     {
         var assembly = typeof(IdeaAgent).Assembly;
         var prefix = "Nueyon.Compose.Application.Prompts.Idea.";
-        var resources = assembly.GetManifestResourceNames().Where(n => n.StartsWith(prefix, StringComparison.Ordinal) && n.EndsWith(".prompt.txt", StringComparison.Ordinal)).ToArray();
+        // The experiment baseline is the Legacy set; the Simplified prompts live in a subdirectory.
+        var resources = assembly.GetManifestResourceNames().Where(n => n.StartsWith(prefix, StringComparison.Ordinal) && !n.StartsWith(prefix + "Simplified.", StringComparison.Ordinal) && n.EndsWith(".prompt.txt", StringComparison.Ordinal)).ToArray();
         if (resources.Length == 0) throw new InvalidDataException("No embedded Idea prompts.");
         var dir = Path.Combine(root, "prompts", "baseline", "Idea");
         var files = Directory.GetFiles(dir, "*.prompt.txt");

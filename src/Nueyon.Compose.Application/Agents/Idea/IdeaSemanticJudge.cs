@@ -7,18 +7,35 @@ using Nueyon.Compose.Application.Prompts;
 namespace Nueyon.Compose.Application.Agents.Idea;
 
 /// <summary>Checks generated ideas against the unchanged source using a separate model call.</summary>
-public sealed class IdeaSemanticJudge(AIAgent agent)
+public sealed class IdeaSemanticJudge
 {
+    private static readonly string[] SimplifiedCategories = ["sourceContradiction", "unsupportedClaim", "editorialPurpose"];
+    private static readonly string[] SimplifiedFields = ["title", "description", "audience", "rationale", "evidence"];
+
     internal static readonly JsonSerializerOptions JsonOptions = new(JsonSerializerDefaults.Web)
     {
         AllowDuplicateProperties = false
     };
 
-    private readonly AIAgent _agent = agent ?? throw new ArgumentNullException(nameof(agent));
+    private readonly AIAgent _agent;
 
     private const int MaxBlockingIssues = 3;
 
-    public static string GetSystemInstructions() => PromptLoader.Load("Idea/IdeaValidation.system.prompt.txt");
+    public IdeaSemanticJudge(AIAgent agent) : this(agent, IdeaWorkflowMode.Legacy)
+    {
+    }
+
+    public IdeaSemanticJudge(AIAgent agent, IdeaWorkflowMode mode)
+    {
+        _agent = agent ?? throw new ArgumentNullException(nameof(agent));
+        Mode = Enum.IsDefined(mode) ? mode : throw new ArgumentOutOfRangeException(nameof(mode));
+    }
+
+    public IdeaWorkflowMode Mode { get; }
+
+    public static string GetSystemInstructions() => GetSystemInstructions(IdeaWorkflowMode.Legacy);
+
+    public static string GetSystemInstructions(IdeaWorkflowMode mode) => IdeaPrompts.JudgeSystem(mode);
 
     internal async Task<IReadOnlyList<BlockingIssue>> FindBlockingIssuesAsync(
         string sourceContent,
@@ -68,6 +85,14 @@ public sealed class IdeaSemanticJudge(AIAgent agent)
             {
                 throw new InvalidOperationException(
                     "Idea semantic validation returned an invalid verdict: each blocker needs a complete diagnosis.");
+            }
+
+            if (Mode == IdeaWorkflowMode.Simplified &&
+                (!SimplifiedCategories.Contains(issue.Category, StringComparer.Ordinal) ||
+                 !SimplifiedFields.Contains(issue.Field, StringComparer.Ordinal)))
+            {
+                throw new InvalidOperationException(
+                    "Idea semantic validation returned an invalid verdict: a blocker category or field is not allowed.");
             }
         }
 
