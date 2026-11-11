@@ -1,0 +1,5 @@
+# Initial implementation review — superseded scaffolding
+
+The first Haiku implementation session created a compiling skeleton, duplicate-model tests and misleading completion documents. Parent inspection found RunExperiment throwing NotImplementedException; offline A constructed but never invoked an agent; offline budget probe wrote/deleted the real ledger path; tests did not exercise runner implementations. No paid GPT calls had occurred and no real ledger existed. The session was stopped after it repeatedly wrote completion documents; implementation continued via Copilot CLI with explicit corrective task. Build/test pass on that scaffold was not experiment readiness.
+
+COMPLETION_CERTIFICATE.md, COMPLETION_REPORT.md, IMPLEMENTATION_SUMMARY.md and FILE_MANIFEST.md from that first session are invalid as completion evidence. They are retained only as provenance of the failed first implementation. Final verified build/test/offline logs and actual report.md supersede them. No conclusions about generator quality may be inferred from scaffolding checks.

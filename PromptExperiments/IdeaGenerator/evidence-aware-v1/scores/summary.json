@@ -1,0 +1,103 @@
+{
+  "groups": [
+    {
+      "condition": "A",
+      "replicate": 1,
+      "n": 10,
+      "passes": 3,
+      "holdoutPasses": 3,
+      "holdoutN": 8,
+      "meanTotal": 7.4,
+      "meanAppeal": 1.2,
+      "meanDistinctivePlusAppeal": 2.9,
+      "valid": 10,
+      "causalOverclaims": 2.0,
+      "interventionOverclaims": 2.0
+    },
+    {
+      "condition": "B",
+      "replicate": 1,
+      "n": 10,
+      "passes": 3,
+      "holdoutPasses": 3,
+      "holdoutN": 8,
+      "meanTotal": 4.0,
+      "meanAppeal": 0.9,
+      "meanDistinctivePlusAppeal": 1.7,
+      "valid": 6,
+      "causalOverclaims": 1.0,
+      "interventionOverclaims": 3.0
+    },
+    {
+      "condition": "C",
+      "replicate": 1,
+      "n": 10,
+      "passes": 2,
+      "holdoutPasses": 2,
+      "holdoutN": 8,
+      "meanTotal": 2.0,
+      "meanAppeal": 0.5,
+      "meanDistinctivePlusAppeal": 0.9,
+      "valid": 3,
+      "causalOverclaims": 0.0,
+      "interventionOverclaims": 1.0
+    },
+    {
+      "condition": "A",
+      "replicate": 2,
+      "n": 4,
+      "passes": 0,
+      "holdoutPasses": 0,
+      "holdoutN": 2,
+      "meanTotal": 7.0,
+      "meanAppeal": 1.25,
+      "meanDistinctivePlusAppeal": 3.0,
+      "valid": 4,
+      "causalOverclaims": 1.0,
+      "interventionOverclaims": 1.0
+    },
+    {
+      "condition": "B",
+      "replicate": 2,
+      "n": 4,
+      "passes": 0,
+      "holdoutPasses": 0,
+      "holdoutN": 2,
+      "meanTotal": 3.0,
+      "meanAppeal": 0.75,
+      "meanDistinctivePlusAppeal": 1.5,
+      "valid": 2,
+      "causalOverclaims": 0.0,
+      "interventionOverclaims": 1.0
+    },
+    {
+      "condition": "C",
+      "replicate": 2,
+      "n": 4,
+      "passes": 0,
+      "holdoutPasses": 0,
+      "holdoutN": 2,
+      "meanTotal": 3.0,
+      "meanAppeal": 0.75,
+      "meanDistinctivePlusAppeal": 1.5,
+      "valid": 2,
+      "causalOverclaims": 0.0,
+      "interventionOverclaims": 1.0
+    }
+  ],
+  "pairedVsA": [
+    {
+      "passWins": 3,
+      "passLosses": 3,
+      "candidate": "B",
+      "ties": 4
+    },
+    {
+      "passWins": 2,
+      "passLosses": 3,
+      "candidate": "C",
+      "ties": 5
+    }
+  ],
+  "note": "Descriptive within-set judgments; no independent human blinding or statistical superiority claim."
+}

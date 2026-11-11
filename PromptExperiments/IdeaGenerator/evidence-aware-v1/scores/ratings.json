@@ -1,0 +1,1832 @@
+[
+  {
+    "id": "005",
+    "condition": "A",
+    "replicate": 1,
+    "valid": true,
+    "status": "success",
+    "vector": [
+      0,
+      2,
+      2,
+      2,
+      1
+    ],
+    "rawVector": [
+      0,
+      2,
+      2,
+      2,
+      1
+    ],
+    "rawTotal": 7.0,
+    "causal": 1,
+    "intervention": 0,
+    "supportGrades": [
+      0,
+      0,
+      2,
+      0,
+      2
+    ],
+    "supportUnitDefinition": "Principal proposition/grounding relationship per first-idea field, in title-description-audience-rationale-evidence order.2 full,1 partial,0 unsupported. Limited editorial audit, not exhaustive sentence coverage.",
+    "exactGroundingQuotes": 0,
+    "groundingCount": 0,
+    "source": "cases/005.txt",
+    "result": "runs/005/1/A/final.json",
+    "sourcePurpose": "Explain the actual observed editorial hierarchy experiment and rejection, not a universal causal prompt law",
+    "sourceBoundary": "Non-concurrent small samples, upstream/backend variability; no proof generic rules cause drift",
+    "selectedIdea": {
+      "title": "A small, generic ‘preserve editorial intent’ prompt can displace the intended editorial hierarchy",
+      "description": "The experiment shows that adding a single, story‑agnostic instruction intended to preserve Synthesis’s editorial hierarchy instead caused outputs to subordinate the company-level message and make orchestration the central positioning, producing repeatable regressions and a rollback decision.",
+      "audience": "Product and editorial teams responsible for prompt governance, prompt engineers, and content ops leads.",
+      "rationale": "This is the strongest editorial opportunity because it identifies a clear, evidence-backed risk: a narrowly scoped prompt change intended to protect editorial intent can have the opposite effect. That finding is actionable for teams who must decide whether to deploy reusable editorial rules and how to validate them before promotion.",
+      "evidence": "• Source: experiment-005-report.md — “The candidate added one generic section, **‘Preserve Editorial Intent from the Synthesis.’**”\n• Outcome: Narrative mean score fell from 6.00/10 (baseline) to 4.00/10 (candidate); Compose mean fell from 5.67/10 to 3.33/10.\n• Observed symptom: candidate outputs “subordinated company identity and audience scope while making orchestration the central positioning.”\n• Decision: “Do not promote. Candidate was worse on mean score… failed the orchestration hierarchy and factual restraint gates in every run, and introduced regressions. The production prompt was restored.”\n• Limitation noted in source: three runs per condition; provider alias may change. These constrain statistical claims but do not negate the reproducible failure in this experiment."
+    },
+    "notes": "scores/review-notes.md (005 replicate1)",
+    "evaluator": "Work assistant source comparison, unblinded; no scoring-model calls/human reviewer"
+  },
+  {
+    "id": "005",
+    "condition": "B",
+    "replicate": 1,
+    "valid": false,
+    "status": "failed",
+    "vector": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "rawVector": [
+      0,
+      1,
+      0,
+      1,
+      1
+    ],
+    "rawTotal": 3.0,
+    "causal": 1,
+    "intervention": 1,
+    "supportGrades": [
+      0,
+      0,
+      1,
+      0,
+      2
+    ],
+    "supportUnitDefinition": "Principal proposition/grounding relationship per first-idea field, in title-description-audience-rationale-evidence order.2 full,1 partial,0 unsupported. Limited editorial audit, not exhaustive sentence coverage.",
+    "exactGroundingQuotes": 2,
+    "groundingCount": 5,
+    "source": "cases/005.txt",
+    "result": "runs/005/1/B/final.json",
+    "sourcePurpose": "Explain the actual observed editorial hierarchy experiment and rejection, not a universal causal prompt law",
+    "sourceBoundary": "Non-concurrent small samples, upstream/backend variability; no proof generic rules cause drift",
+    "selectedIdea": {
+      "title": "Post‑mortem + Action Guide: Why a Generic 'Preserve Editorial Intent' Rule Backfired",
+      "description": "Produce an internal post‑mortem and practical guide that (1) analyzes Experiment 005's failure modes, (2) surfaces concrete prompt design patterns that preserved identity/audience primacy in the baseline, (3) proposes small, testable prompt changes and automated checks (rubric augmentations + regression examples) to prevent orchestration from becoming the dominant message, and (4) bundles reproducible artifacts (baseline/candidate outputs, prompt diff) so teams can run the same regression checks before promotion.",
+      "audience": "Nuëyon editorial, Narrative and Compose prompt-engineering teams, product managers and release decision-makers who gate prompt promotions",
+      "rationale": "The candidate added a generic 'Preserve Editorial Intent' section but the candidate runs systematically lowered company-identity/audience emphasis and made orchestration central; the experiment provides clear comparative scores and saved artifacts (baseline/candidate outputs and prompt diff) suitable for a reproducible post‑mortem and actionable guidance. Emphasize concrete examples, a tightened rubric, and small unit tests that would have caught the regressions in this experiment.",
+      "evidence": "The candidate added one generic section, **“Preserve Editorial Intent from the Synthesis.”** It tells Narrative to identify the primary message, supporting themes, and contextual details; preserve audience scope and relative emphasis; keep technical details subordinate when Synthesis does; and retain uncertainty when the source is ambiguous."
+    },
+    "notes": "scores/review-notes.md (005 replicate1)",
+    "evaluator": "Work assistant source comparison, unblinded; no scoring-model calls/human reviewer"
+  },
+  {
+    "id": "005",
+    "condition": "C",
+    "replicate": 1,
+    "valid": false,
+    "status": "blocked",
+    "vector": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "rawVector": null,
+    "rawTotal": null,
+    "causal": 0,
+    "intervention": 0,
+    "supportGrades": null,
+    "supportUnitDefinition": "Principal proposition/grounding relationship per first-idea field, in title-description-audience-rationale-evidence order.2 full,1 partial,0 unsupported. Limited editorial audit, not exhaustive sentence coverage.",
+    "exactGroundingQuotes": 0,
+    "groundingCount": 0,
+    "source": "cases/005.txt",
+    "result": "runs/005/1/C/final.json",
+    "sourcePurpose": "Explain the actual observed editorial hierarchy experiment and rejection, not a universal causal prompt law",
+    "sourceBoundary": "Non-concurrent small samples, upstream/backend variability; no proof generic rules cause drift",
+    "selectedIdea": null,
+    "notes": "scores/review-notes.md (005 replicate1)",
+    "evaluator": "Work assistant source comparison, unblinded; no scoring-model calls/human reviewer"
+  },
+  {
+    "id": "010",
+    "condition": "A",
+    "replicate": 1,
+    "valid": true,
+    "status": "success",
+    "vector": [
+      1,
+      2,
+      2,
+      2,
+      2
+    ],
+    "rawVector": [
+      1,
+      2,
+      2,
+      2,
+      2
+    ],
+    "rawTotal": 9.0,
+    "causal": 0,
+    "intervention": 1,
+    "supportGrades": [
+      2,
+      2,
+      2,
+      0,
+      2
+    ],
+    "supportUnitDefinition": "Principal proposition/grounding relationship per first-idea field, in title-description-audience-rationale-evidence order.2 full,1 partial,0 unsupported. Limited editorial audit, not exhaustive sentence coverage.",
+    "exactGroundingQuotes": 0,
+    "groundingCount": 0,
+    "source": "cases/010.txt",
+    "result": "runs/010/1/A/final.json",
+    "sourcePurpose": "Run-specific diagnosis of observable pipeline drift and conditional next experiment",
+    "sourceBoundary": "Visibility not root cause, Narrative recurrence not greatest-payoff unconditional intervention",
+    "selectedIdea": {
+      "title": "Narrative is the recurring first visible point of editorial hierarchy drift",
+      "description": "Across Experiments 007–009 the Narrative stage is the most frequent earliest stage where a company-first editorial hierarchy breaks, introducing unsupported audiences, stronger factual claims, or an orchestration-centered through-line that displaces the intended company introduction.",
+      "audience": "Content workflow owners, editorial leads, and experiment designers working on Nuëyon.Compose pipelines",
+      "rationale": "This is the strongest, best-supported single editorial opportunity because it identifies a concrete locus where upstream intentions (company-first) most often fail in tangible, reproducible ways. Focusing interventions at Narrative (rather than only Idea or Compose) targets the stage that most commonly converts a permissible technical description into a higher-risk editorial claim or hierarchy inversion.",
+      "evidence": "Experiment report summary: Narrative is the earliest observable hierarchy shift in multiple runs (007 runs 001–002, 009 baseline 002/003, and candidates 001–003). Cross-experiment patterns state “Narrative is the most recurrent first visible hierarchy shift.” Specific examples: Experiment 007 candidate 001 turns Synthesis’s orchestration detail into a through-line at Narrative; Experiment 009 candidate runs show Narrative inventing founders/operators and anchoring public identity in orchestration. The report’s methodology explicitly localizes first visible drift by stage, with Narrative listed most often."
+    },
+    "notes": "scores/review-notes.md (010 replicate1)",
+    "evaluator": "Work assistant source comparison, unblinded; no scoring-model calls/human reviewer"
+  },
+  {
+    "id": "010",
+    "condition": "B",
+    "replicate": 1,
+    "valid": false,
+    "status": "failed",
+    "vector": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "rawVector": [
+      0,
+      1,
+      1,
+      2,
+      1
+    ],
+    "rawTotal": 5.0,
+    "causal": 0,
+    "intervention": 1,
+    "supportGrades": [
+      0,
+      1,
+      1,
+      0,
+      2
+    ],
+    "supportUnitDefinition": "Principal proposition/grounding relationship per first-idea field, in title-description-audience-rationale-evidence order.2 full,1 partial,0 unsupported. Limited editorial audit, not exhaustive sentence coverage.",
+    "exactGroundingQuotes": 1,
+    "groundingCount": 5,
+    "source": "cases/010.txt",
+    "result": "runs/010/1/B/final.json",
+    "sourcePurpose": "Run-specific diagnosis of observable pipeline drift and conditional next experiment",
+    "sourceBoundary": "Visibility not root cause, Narrative recurrence not greatest-payoff unconditional intervention",
+    "selectedIdea": {
+      "title": "Controlled Narrative-stage trial to preserve a company-first introduction and strengthen the LinkedIn hook",
+      "description": "Run a controlled upstream-boundary experiment that modifies only the Narrative-stage instructions (compare the unchanged Synthesis input) to enforce Nuëyon-as-company → Compose-as-first-product priority, remove upstream format reasoning where it leaks, and measure both factual fidelity and editorial quality (opening hook, clarity, narrative progression) across repeated full-pipeline runs.",
+      "audience": "Nuëyon.Compose prompt-experiment team, prompt engineers, and content leads preparing the LinkedIn company-page introduction",
+      "rationale": "Narrative is the most recurrent locus of hierarchy drift and editorial weakening; a focused Narrative-stage intervention (with Synthesis held constant) is therefore the highest-leverage, evidence-backed way to test whether preserving story selection upstream prevents downstream Compose amplification of an orchestration-first technical frame.",
+      "evidence": "The next useful experiment should be **one controlled upstream-boundary trial** that: 1. Targets the first stage supported by the evidence for the chosen failure (Narrative is the most recurrent locus; compare its actual input Synthesis before changing it)."
+    },
+    "notes": "scores/review-notes.md (010 replicate1)",
+    "evaluator": "Work assistant source comparison, unblinded; no scoring-model calls/human reviewer"
+  },
+  {
+    "id": "010",
+    "condition": "C",
+    "replicate": 1,
+    "valid": false,
+    "status": "blocked",
+    "vector": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "rawVector": null,
+    "rawTotal": null,
+    "causal": 0,
+    "intervention": 0,
+    "supportGrades": null,
+    "supportUnitDefinition": "Principal proposition/grounding relationship per first-idea field, in title-description-audience-rationale-evidence order.2 full,1 partial,0 unsupported. Limited editorial audit, not exhaustive sentence coverage.",
+    "exactGroundingQuotes": 0,
+    "groundingCount": 0,
+    "source": "cases/010.txt",
+    "result": "runs/010/1/C/final.json",
+    "sourcePurpose": "Run-specific diagnosis of observable pipeline drift and conditional next experiment",
+    "sourceBoundary": "Visibility not root cause, Narrative recurrence not greatest-payoff unconditional intervention",
+    "selectedIdea": null,
+    "notes": "scores/review-notes.md (010 replicate1)",
+    "evaluator": "Work assistant source comparison, unblinded; no scoring-model calls/human reviewer"
+  },
+  {
+    "id": "ceramics",
+    "condition": "A",
+    "replicate": 1,
+    "valid": true,
+    "status": "success",
+    "vector": [
+      2,
+      1,
+      2,
+      2,
+      1
+    ],
+    "rawVector": [
+      2,
+      1,
+      2,
+      2,
+      1
+    ],
+    "rawTotal": 8.0,
+    "causal": 0,
+    "intervention": 0,
+    "supportGrades": [
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "supportUnitDefinition": "Principal proposition/grounding relationship per first-idea field, in title-description-audience-rationale-evidence order.2 full,1 partial,0 unsupported. Limited editorial audit, not exhaustive sentence coverage.",
+    "exactGroundingQuotes": 0,
+    "groundingCount": 0,
+    "source": "cases/ceramics.txt",
+    "result": "runs/ceramics/1/A/final.json",
+    "sourcePurpose": "Help householders decide what to bring to a first repair table",
+    "sourceBoundary": "No food-contact repairs or promised repair success; no comparative evidence",
+    "selectedIdea": {
+      "title": "How Eastmere’s ceramics table frames safety and realistic outcomes through explicit boundaries",
+      "description": "The collective uses specific rules — what it will accept, how assessments are handled, and how results are communicated — to balance safety, volunteer capacity and owner expectations rather than promising full restoration or food-safe repairs.",
+      "audience": "Local residents considering bringing broken ceramics; community repair organisers studying volunteer-run service design.",
+      "rationale": "The source documents a compact policy set that both protects users (no food-contact items) and prepares owners for visible or partial repairs (discussion before work; some objects may be unrepaired or show seams). That combination is a clear editorial hook for a piece explaining how small repair groups manage risk and expectations in practice without making unsupported claims about motivations or outcomes.",
+      "evidence": "• Booking policy: “People may book a fifteen-minute assessment between 10:00 and 13:00; walk-ins will be seen only if a booking slot is free.”\n• Scope: “The team will look at decorative ceramics such as vases and figurines.”\n• Safety constraint: “It will not accept objects used for eating or drinking, because its adhesives are not certified for food contact.”\n• Expectation-setting: “If the volunteers think a repair is feasible, they will discuss the likely appearance and the material contribution with the owner before doing any work.”\n• Outcome transparency: “Some objects will leave with visible seams; some will leave unrepaired.”\n• Illustration note: “A cracked vase on the notice is an illustration, not an example from the event.”"
+    },
+    "notes": "scores/review-notes.md (ceramics replicate1)",
+    "evaluator": "Work assistant source comparison, unblinded; no scoring-model calls/human reviewer"
+  },
+  {
+    "id": "ceramics",
+    "condition": "B",
+    "replicate": 1,
+    "valid": true,
+    "status": "success",
+    "vector": [
+      2,
+      2,
+      1,
+      1,
+      2
+    ],
+    "rawVector": [
+      2,
+      2,
+      1,
+      1,
+      2
+    ],
+    "rawTotal": 8.0,
+    "causal": 0,
+    "intervention": 0,
+    "supportGrades": [
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "supportUnitDefinition": "Principal proposition/grounding relationship per first-idea field, in title-description-audience-rationale-evidence order.2 full,1 partial,0 unsupported. Limited editorial audit, not exhaustive sentence coverage.",
+    "exactGroundingQuotes": 5,
+    "groundingCount": 5,
+    "source": "cases/ceramics.txt",
+    "result": "runs/ceramics/1/B/final.json",
+    "sourcePurpose": "Help householders decide what to bring to a first repair table",
+    "sourceBoundary": "No food-contact repairs or promised repair success; no comparative evidence",
+    "selectedIdea": {
+      "title": "Should you bring that broken vase? — A householder's guide to Eastmere's ceramics repair table",
+      "description": "Practical preview for local householders: how to book a fifteen-minute assessment (10:00–13:00), the walk-in policy, the types of ceramics the team will look at (decorative items such as vases and figurines), the exclusion of eating/drinking ware because adhesives are not food‑contact certified, that the assessment is free, and what repair outcomes to expect (volunteers will discuss appearance and material contribution; some items may show visible seams or be left unrepaired).",
+      "audience": "Householders in Eastmere who are wondering whether a broken decorative ceramic is worth bringing to the community hall session.",
+      "rationale": "The notice explicitly addresses householders deciding whether to bring broken objects and lists operational details and likely outcomes, so an explanatory preview will directly meet stated reader need and set realistic expectations for the event (which is the collective's first ceramics table and has no prior ceramics metrics).",
+      "evidence": "The assessment is free; volunteers will discuss likely appearance and the material contribution with the owner before doing any work; some objects will leave with visible seams; some will leave unrepaired."
+    },
+    "notes": "scores/review-notes.md (ceramics replicate1)",
+    "evaluator": "Work assistant source comparison, unblinded; no scoring-model calls/human reviewer"
+  },
+  {
+    "id": "ceramics",
+    "condition": "C",
+    "replicate": 1,
+    "valid": true,
+    "status": "success",
+    "vector": [
+      2,
+      2,
+      1,
+      1,
+      2
+    ],
+    "rawVector": [
+      2,
+      2,
+      1,
+      1,
+      2
+    ],
+    "rawTotal": 8.0,
+    "causal": 0,
+    "intervention": 0,
+    "supportGrades": [
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "supportUnitDefinition": "Principal proposition/grounding relationship per first-idea field, in title-description-audience-rationale-evidence order.2 full,1 partial,0 unsupported. Limited editorial audit, not exhaustive sentence coverage.",
+    "exactGroundingQuotes": 5,
+    "groundingCount": 5,
+    "source": "cases/ceramics.txt",
+    "result": "runs/ceramics/1/C/final.json",
+    "sourcePurpose": "Help householders decide what to bring to a first repair table",
+    "sourceBoundary": "No food-contact repairs or promised repair success; no comparative evidence",
+    "selectedIdea": {
+      "title": "Should you bring that broken vase? — A householder's guide to Eastmere's ceramics repair table",
+      "description": "Practical preview for local householders: how to book a fifteen-minute assessment (10:00–13:00), the walk-in policy, the types of ceramics the team will look at (decorative items such as vases and figurines), the exclusion of eating/drinking ware because adhesives are not food‑contact certified, that the assessment is free, and what repair outcomes to expect (volunteers will discuss appearance and material contribution; some items may show visible seams or be left unrepaired).",
+      "audience": "Householders in Eastmere who are wondering whether a broken decorative ceramic is worth bringing to the community hall session.",
+      "rationale": "The notice explicitly addresses householders wondering whether to bring broken objects and lists operational details and likely outcomes, so an explanatory preview will directly meet stated reader need and set realistic expectations for the event (which is the collective's first ceramics table and has no prior ceramics metrics).",
+      "evidence": "The assessment is free; volunteers will discuss likely appearance and the material contribution with the owner before doing any work; some objects will leave with visible seams; some will leave unrepaired."
+    },
+    "notes": "scores/review-notes.md (ceramics replicate1)",
+    "evaluator": "Work assistant source comparison, unblinded; no scoring-model calls/human reviewer"
+  },
+  {
+    "id": "choir",
+    "condition": "A",
+    "replicate": 1,
+    "valid": true,
+    "status": "success",
+    "vector": [
+      1,
+      0,
+      1,
+      2,
+      1
+    ],
+    "rawVector": [
+      1,
+      0,
+      1,
+      2,
+      1
+    ],
+    "rawTotal": 5.0,
+    "causal": 0,
+    "intervention": 0,
+    "supportGrades": [
+      2,
+      0,
+      0,
+      0,
+      2
+    ],
+    "supportUnitDefinition": "Principal proposition/grounding relationship per first-idea field, in title-description-audience-rationale-evidence order.2 full,1 partial,0 unsupported. Limited editorial audit, not exhaustive sentence coverage.",
+    "exactGroundingQuotes": 0,
+    "groundingCount": 0,
+    "source": "cases/choir.txt",
+    "result": "runs/choir/1/A/final.json",
+    "sourcePurpose": "Invitation to hesitant adult singers for a taster, not a funding evaluation",
+    "sourceBoundary": "No proven confidence gain, no causal claim about flexible start",
+    "selectedIdea": {
+      "title": "Small, explicit choices to reduce entry friction: Moorfield Choir’s newcomer-first setup and what it reveals",
+      "description": "Moorfield’s public notice and rehearsal practices show a deliberate, low-friction approach for hesitant adults (no auditions, no music-reading requirement, a listening option during a shared warm-up, a late-entry window, and a free first taster). Member responses from an October rehearsal single out “welcome” as the dominant reason people return, but the choir has not measured the effect of these choices. The story: community groups can design concrete, low-cost practices to make attendance easier and more imaginable — and should pair them with basic measurement to understand their impact.",
+      "audience": "Community choir leaders, volunteer arts organisers, local cultural participation coordinators.",
+      "rationale": "Why it matters: Many community groups struggle to attract tentative newcomers. The Moorfield example provides an evidence-grounded illustration of practical steps that explicitly lower social and logistical barriers and language that helps a hesitant person ‘picture the evening’. Reporting that members cite welcome most often gives this approach immediate relevance. It also highlights a common follow-on gap: operational choices are made without measurement, so their actual effect remains unknown. This idea is useful because it translates concrete, replicable practices into an agenda (design low-friction experiences + measure them) that other groups can apply.",
+      "evidence": "Explicit facts: the notice states there are “no auditions and no requirement to read music”; “the first twenty minutes are a shared warm-up; newcomers may listen before joining in”; session begins at 19:00 with quiet entry allowed until 19:20; “A first taster is free”; the notice is “intended to help a hesitant newcomer picture the evening and decide whether to come.” Member feedback: after the October rehearsal 12 of 19 answered a short question about returning; 8 mentioned the welcome, 3 mentioned the songs, and 1 mentioned both. Limitations/interpretation: the source does not measure attendance changes tied to these policies, nor does it report any pre/post confidence survey or comparison with a fixed-start rehearsal — so causal impact is unknown."
+    },
+    "notes": "scores/review-notes.md (choir replicate1)",
+    "evaluator": "Work assistant source comparison, unblinded; no scoring-model calls/human reviewer"
+  },
+  {
+    "id": "choir",
+    "condition": "B",
+    "replicate": 1,
+    "valid": true,
+    "status": "success",
+    "vector": [
+      2,
+      2,
+      1,
+      1,
+      2
+    ],
+    "rawVector": [
+      2,
+      2,
+      1,
+      1,
+      2
+    ],
+    "rawTotal": 8.0,
+    "causal": 0,
+    "intervention": 0,
+    "supportGrades": [
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "supportUnitDefinition": "Principal proposition/grounding relationship per first-idea field, in title-description-audience-rationale-evidence order.2 full,1 partial,0 unsupported. Limited editorial audit, not exhaustive sentence coverage.",
+    "exactGroundingQuotes": 5,
+    "groundingCount": 5,
+    "source": "cases/choir.txt",
+    "result": "runs/choir/1/B/final.json",
+    "sourcePurpose": "Invitation to hesitant adult singers for a taster, not a funding evaluation",
+    "sourceBoundary": "No proven confidence gain, no causal claim about flexible start",
+    "selectedIdea": {
+      "title": "What to expect at Moorfield choir's Wednesday taster — a short guide for hesitant adults",
+      "description": "A concise, practical preview that lets a hesitant newcomer picture the evening: date and start time, no auditions or need to read music, a shared twenty-minute warm-up with an option to listen before joining, a late-entry window until 19:20 for people arriving from work, a free first taster and the ordinary weekly contribution from the second visit. The copy is explicit about low barriers and step-by-step flow so readers can decide whether to come.",
+      "audience": "Adults who are unsure about singing in a group (hesitant newcomers) — people deciding whether to attend a first taster.",
+      "rationale": "The source frames the notice specifically to help hesitant newcomers picture the evening and decide whether to come, and it lists concrete, low-barrier features and logistics that reduce uncertainty about attending.",
+      "evidence": "The notice text and follow-up rehearsal notes supply the specific logistics and the organisers' stated intent, and the rehearsal feedback shows 'welcome' is the most-cited reason people mention when asked about returning — all consistent with producing a practical taster preview aimed at hesitant adults."
+    },
+    "notes": "scores/review-notes.md (choir replicate1)",
+    "evaluator": "Work assistant source comparison, unblinded; no scoring-model calls/human reviewer"
+  },
+  {
+    "id": "choir",
+    "condition": "C",
+    "replicate": 1,
+    "valid": true,
+    "status": "success",
+    "vector": [
+      2,
+      2,
+      1,
+      1,
+      2
+    ],
+    "rawVector": [
+      2,
+      2,
+      1,
+      1,
+      2
+    ],
+    "rawTotal": 8.0,
+    "causal": 0,
+    "intervention": 0,
+    "supportGrades": [
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "supportUnitDefinition": "Principal proposition/grounding relationship per first-idea field, in title-description-audience-rationale-evidence order.2 full,1 partial,0 unsupported. Limited editorial audit, not exhaustive sentence coverage.",
+    "exactGroundingQuotes": 5,
+    "groundingCount": 5,
+    "source": "cases/choir.txt",
+    "result": "runs/choir/1/C/final.json",
+    "sourcePurpose": "Invitation to hesitant adult singers for a taster, not a funding evaluation",
+    "sourceBoundary": "No proven confidence gain, no causal claim about flexible start",
+    "selectedIdea": {
+      "title": "What to expect at Moorfield choir's Wednesday taster — a short guide for hesitant adults",
+      "description": "A concise, practical preview that lets a hesitant newcomer picture the evening: date and start time, no auditions or need to read music, a shared twenty-minute warm-up with an option to listen before joining, a late-entry window until 19:20 for people arriving from work, a free first taster and the ordinary weekly contribution from the second visit. The copy is explicit about low barriers and step-by-step flow and is intended to help readers decide whether to come.",
+      "audience": "Adults who are unsure about singing in a group (hesitant newcomers) — people deciding whether to attend a first taster.",
+      "rationale": "The source explicitly frames the notice to help hesitant newcomers picture the evening and decide whether to come; the editorial will foreground those low-barrier logistics to reflect that stated intent (without claiming measured behavioural effects).",
+      "evidence": "The notice text supplies the operational details and the organisers' stated intent; rehearsal feedback (from 12 respondents) showing 'welcome' as the most-cited reason for returning and notes about late-train absences provide supporting context for emphasising a welcoming atmosphere and practical access arrangements."
+    },
+    "notes": "scores/review-notes.md (choir replicate1)",
+    "evaluator": "Work assistant source comparison, unblinded; no scoring-model calls/human reviewer"
+  },
+  {
+    "id": "wetland",
+    "condition": "A",
+    "replicate": 1,
+    "valid": true,
+    "status": "success",
+    "vector": [
+      1,
+      2,
+      2,
+      2,
+      2
+    ],
+    "rawVector": [
+      1,
+      2,
+      2,
+      2,
+      2
+    ],
+    "rawTotal": 9.0,
+    "causal": 0,
+    "intervention": 0,
+    "supportGrades": [
+      2,
+      2,
+      2,
+      0,
+      2
+    ],
+    "supportUnitDefinition": "Principal proposition/grounding relationship per first-idea field, in title-description-audience-rationale-evidence order.2 full,1 partial,0 unsupported. Limited editorial audit, not exhaustive sentence coverage.",
+    "exactGroundingQuotes": 0,
+    "groundingCount": 0,
+    "source": "cases/wetland.txt",
+    "result": "runs/wetland/1/A/final.json",
+    "sourcePurpose": "Explain what this season observations can tell local walkers",
+    "sourceBoundary": "No habitat intervention priority or causal recovery attribution",
+    "selectedIdea": {
+      "title": "What volunteer sighting counts at Alder Mere can — and can’t — tell us about reed-warbler numbers",
+      "description": "Use the autumn note to explain a single central point: raw sighting tallies (41 on the east boardwalk vs 18 on the west) are useful observations but, as recorded here, cannot be treated as direct measures of bird abundance without accounting for differing route coverage, times of day, and repeat detections.",
+      "audience": "Reserve staff, volunteer recorders, interested walkers and local conservation-minded readers.",
+      "rationale": "Why it matters: Readers who care about local wildlife often see simple counts and assume they indicate population differences. This piece would show how methodological details in the note (different visit frequencies, different hours, unequal distances, and the absence of a pre-cutting baseline) limit what the data can support, and why the reserve is rightly cautious about using the counts to justify habitat interventions. Gaps and uncertainty: The source does not provide route distances, detection effort per visit, whether sightings are repeat individuals, or statistical methods for adjusting counts — all of which would be needed to turn sightings into abundance estimates.",
+      "evidence": "Facts from the note: volunteers logged 41 reed-warbler sightings from the east route and 18 from the west; the east route was visited on six mornings, the west on three afternoons; observers used the same written recording sheet but worked at different hours and did not cover the same distance; counts are described as 'sightings, not identified individual birds'; the reserve team will compare route coverage before deciding whether the counts can inform habitat intervention."
+    },
+    "notes": "scores/review-notes.md (wetland replicate1)",
+    "evaluator": "Work assistant source comparison, unblinded; no scoring-model calls/human reviewer"
+  },
+  {
+    "id": "wetland",
+    "condition": "B",
+    "replicate": 1,
+    "valid": false,
+    "status": "failed",
+    "vector": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "rawVector": [
+      2,
+      2,
+      1,
+      2,
+      2
+    ],
+    "rawTotal": 9.0,
+    "causal": 0,
+    "intervention": 0,
+    "supportGrades": [
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "supportUnitDefinition": "Principal proposition/grounding relationship per first-idea field, in title-description-audience-rationale-evidence order.2 full,1 partial,0 unsupported. Limited editorial audit, not exhaustive sentence coverage.",
+    "exactGroundingQuotes": 4,
+    "groundingCount": 5,
+    "source": "cases/wetland.txt",
+    "result": "runs/wetland/1/B/final.json",
+    "sourcePurpose": "Explain what this season observations can tell local walkers",
+    "sourceBoundary": "No habitat intervention priority or causal recovery attribution",
+    "selectedIdea": {
+      "title": "East vs West: What the Counts Can — and Can't — Tell Walkers",
+      "description": "A readable visitor-facing account that compares the logged reed-warbler sightings on the east boardwalk and the west bank, explains the recording caveats (different visit counts, times of day, coverage, and that sightings are not unique individuals), notes the recent reed-cutting on the west bank and lack of pre-cutting survey, and points readers to the included map so they can notice patterns themselves. It avoids making a habitat-management recommendation and clarifies that the reserve team will first compare route coverage before using counts to inform interventions.",
+      "audience": "Alder Mere walkers and volunteer recorders (reserve visitors who read the seasonal note and the volunteers who logged the sightings).",
+      "rationale": "The source supplies raw counts and several methodological caveats (different timing and distance covered, sightings vs individuals, recent reed-cutting and no pre-cutting survey), plus a map and the explicit intent to inform visitors rather than recommend management. That combination supports a piece whose value is helping visitors interpret what the numbers likely reflect and what they do not.",
+      "evidence": "Volunteers logged 41 reed-warbler sightings from the east route and 18 from the west; these are sightings (not identified individual birds); the east route was visited on six mornings, the west on three afternoons; reeds were cut near part of the west bank in February with no pre-cutting survey; the note includes a map and is intended as a readable account for visitors rather than a habitat recommendation."
+    },
+    "notes": "scores/review-notes.md (wetland replicate1)",
+    "evaluator": "Work assistant source comparison, unblinded; no scoring-model calls/human reviewer"
+  },
+  {
+    "id": "wetland",
+    "condition": "C",
+    "replicate": 1,
+    "valid": false,
+    "status": "blocked",
+    "vector": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "rawVector": null,
+    "rawTotal": null,
+    "causal": 0,
+    "intervention": 0,
+    "supportGrades": null,
+    "supportUnitDefinition": "Principal proposition/grounding relationship per first-idea field, in title-description-audience-rationale-evidence order.2 full,1 partial,0 unsupported. Limited editorial audit, not exhaustive sentence coverage.",
+    "exactGroundingQuotes": 0,
+    "groundingCount": 0,
+    "source": "cases/wetland.txt",
+    "result": "runs/wetland/1/C/final.json",
+    "sourcePurpose": "Explain what this season observations can tell local walkers",
+    "sourceBoundary": "No habitat intervention priority or causal recovery attribution",
+    "selectedIdea": null,
+    "notes": "scores/review-notes.md (wetland replicate1)",
+    "evaluator": "Work assistant source comparison, unblinded; no scoring-model calls/human reviewer"
+  },
+  {
+    "id": "bakery",
+    "condition": "A",
+    "replicate": 1,
+    "valid": true,
+    "status": "success",
+    "vector": [
+      1,
+      1,
+      2,
+      2,
+      1
+    ],
+    "rawVector": [
+      1,
+      1,
+      2,
+      2,
+      1
+    ],
+    "rawTotal": 7.0,
+    "causal": 0,
+    "intervention": 0,
+    "supportGrades": [
+      2,
+      0,
+      2,
+      1,
+      2
+    ],
+    "supportUnitDefinition": "Principal proposition/grounding relationship per first-idea field, in title-description-audience-rationale-evidence order.2 full,1 partial,0 unsupported. Limited editorial audit, not exhaustive sentence coverage.",
+    "exactGroundingQuotes": 0,
+    "groundingCount": 0,
+    "source": "cases/bakery.txt",
+    "result": "runs/bakery/1/A/final.json",
+    "sourcePurpose": "Give existing customers practical access to the evening loaf trial",
+    "sourceBoundary": "Reservations not extra production; no savings demand or waste reduction measured",
+    "selectedIdea": {
+      "title": "Evening pickup trial structured to add convenience without extra baking",
+      "description": "Vale Street Bakery's four-week evening collection trial adds a reserved pickup option while explicitly using loaves from the day’s normal bake and not producing an extra evening batch; the announcement explains the reservation and pickup logistics and notes that operational effects (waste, revenue) have not been measured. The trial therefore offers an additional convenience for regular customers without increasing daily production volumes, with a review planned after four weeks.",
+      "audience": "Local customers, small bakery owners and managers, operations-minded readers",
+      "rationale": "This is the strongest, source-supported story because the announcement documents a clear operational choice: offering evening collection using existing production rather than adding another bake. That choice is central to understanding what the trial can realistically show (customer demand patterns) and what it will not reveal (impacts on production volume or profitability) without further measurement.",
+      "evidence": "Explicit statements in the announcement: “reserved loaves come from that day’s normal bake” and “the bakery will not make an extra evening batch.” Logistics given: reserve by telephone before noon; collect 17:30–18:30 at the side door on Tuesdays and Thursdays. The update also says its useful job is to make the new collection choice easy to understand for people who already buy there and that a review is planned after four weeks but no commitment has been made to extend the trial. The baker has not calculated waste or revenue changes."
+    },
+    "notes": "scores/review-notes.md (bakery replicate1)",
+    "evaluator": "Work assistant source comparison, unblinded; no scoring-model calls/human reviewer"
+  },
+  {
+    "id": "bakery",
+    "condition": "B",
+    "replicate": 1,
+    "valid": true,
+    "status": "success",
+    "vector": [
+      2,
+      2,
+      2,
+      1,
+      2
+    ],
+    "rawVector": [
+      2,
+      2,
+      2,
+      1,
+      2
+    ],
+    "rawTotal": 9.0,
+    "causal": 0,
+    "intervention": 0,
+    "supportGrades": [
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "supportUnitDefinition": "Principal proposition/grounding relationship per first-idea field, in title-description-audience-rationale-evidence order.2 full,1 partial,0 unsupported. Limited editorial audit, not exhaustive sentence coverage.",
+    "exactGroundingQuotes": 5,
+    "groundingCount": 5,
+    "source": "cases/bakery.txt",
+    "result": "runs/bakery/1/B/final.json",
+    "sourcePurpose": "Give existing customers practical access to the evening loaf trial",
+    "sourceBoundary": "Reservations not extra production; no savings demand or waste reduction measured",
+    "selectedIdea": {
+      "title": "How to reserve and collect evening loaves — Vale Street Bakery's 4-week trial (starts 24 Nov)",
+      "description": "A concise how-to for regular customers explaining how to reserve a loaf by telephone before noon on Tuesdays and Thursdays and collect it from 17:30–18:30 at the side door; sets expectations about the trial (reserved loaves come from that day's normal bake; no extra evening batch) and the unchanged Saturday counter hours.",
+      "audience": "Regular customers of Vale Street Bakery",
+      "rationale": "The update itself says its useful job is to make the new collection choice easy to understand for existing customers; a short practical guide will make the reservation/collection steps and limits explicit during the four-week trial.",
+      "evidence": "During two informal evenings in October, staff handed over 14 and 11 reserved loaves. Three loaves were left uncollected on the second evening and were donated with the ordinary surplus the next morning."
+    },
+    "notes": "scores/review-notes.md (bakery replicate1)",
+    "evaluator": "Work assistant source comparison, unblinded; no scoring-model calls/human reviewer"
+  },
+  {
+    "id": "bakery",
+    "condition": "C",
+    "replicate": 1,
+    "valid": false,
+    "status": "failed",
+    "vector": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "rawVector": [
+      2,
+      2,
+      2,
+      1,
+      2
+    ],
+    "rawTotal": 9.0,
+    "causal": 0,
+    "intervention": 0,
+    "supportGrades": [
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "supportUnitDefinition": "Principal proposition/grounding relationship per first-idea field, in title-description-audience-rationale-evidence order.2 full,1 partial,0 unsupported. Limited editorial audit, not exhaustive sentence coverage.",
+    "exactGroundingQuotes": 5,
+    "groundingCount": 5,
+    "source": "cases/bakery.txt",
+    "result": "runs/bakery/1/C/final.json",
+    "sourcePurpose": "Give existing customers practical access to the evening loaf trial",
+    "sourceBoundary": "Reservations not extra production; no savings demand or waste reduction measured",
+    "selectedIdea": {
+      "title": "How to reserve and collect evening loaves — Vale Street Bakery's 4-week trial (starts 24 Nov)",
+      "description": "A concise how-to for regular customers explaining how to reserve a loaf by telephone before noon on Tuesdays and Thursdays and collect it from 17:30–18:30 at the side door; sets expectations about the trial (reserved loaves come from that day's normal bake; no extra evening batch) and the unchanged Saturday counter hours.",
+      "audience": "Regular customers of Vale Street Bakery",
+      "rationale": "The update itself says its useful job is to make the new collection choice easy to understand for existing customers; a short practical guide will make the reservation/collection steps and limits explicit during the four-week trial.",
+      "evidence": "During two informal evenings in October, staff handed over 14 and 11 reserved loaves. Three loaves were left uncollected on the second evening and were donated with the ordinary surplus the next morning."
+    },
+    "notes": "scores/review-notes.md (bakery replicate1)",
+    "evaluator": "Work assistant source comparison, unblinded; no scoring-model calls/human reviewer"
+  },
+  {
+    "id": "textile",
+    "condition": "A",
+    "replicate": 1,
+    "valid": true,
+    "status": "success",
+    "vector": [
+      2,
+      2,
+      2,
+      1,
+      1
+    ],
+    "rawVector": [
+      2,
+      2,
+      2,
+      1,
+      1
+    ],
+    "rawTotal": 8.0,
+    "causal": 0,
+    "intervention": 0,
+    "supportGrades": [
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "supportUnitDefinition": "Principal proposition/grounding relationship per first-idea field, in title-description-audience-rationale-evidence order.2 full,1 partial,0 unsupported. Limited editorial audit, not exhaustive sentence coverage.",
+    "exactGroundingQuotes": 0,
+    "groundingCount": 0,
+    "source": "cases/textile.txt",
+    "result": "runs/textile/1/A/final.json",
+    "sourcePurpose": "Introduce a cooperative and its first repair service for member housing associations",
+    "sourceBoundary": "Tool architecture not sole purpose; pilot not live service or achieved savings",
+    "selectedIdea": {
+      "title": "Common Thread is a cooperative of housing associations organising a shared repair service, with a curtain-repair pilot as the concrete first step",
+      "description": "Central claim: Four housing associations have formed a cooperative whose stated purpose is to run a shared repair service governed collectively; the immediate, concrete step is a curtain-repair pilot (planned for January) that will be reviewed by members before any expansion. The shared inventory is presented in the introduction as a practical example of how the service might be organised, not the main product.",
+      "audience": "Housing association executives and operations leads considering membership or partnership",
+      "rationale": "Why it matters: Potential members need a clear, source-grounded explanation of what joining would mean — a member-governed cooperative focused on shared repair work rather than a commercial tech product — and what the first commitment looks like (a single curtain-repair pilot to be reviewed before expansion). This idea supports an introductory piece aimed at informing membership decisions and setting accurate expectations about scope and pace. Gaps/uncertainties to flag for readers: no agreed price list, savings estimate or turnaround promises; the pilot has not yet accepted tenant repairs.",
+      "evidence": "Facts from source: \"Common Thread is a new cooperative set up by four housing associations\"; \"ambition is a shared repair service, with the associations setting priorities together\"; \"A curtain repair pilot is its first planned service\"; \"The pilot is planned for January and has not yet accepted repairs from tenants\"; \"No price list, savings estimate or turnaround promise has been agreed.\""
+    },
+    "notes": "scores/review-notes.md (textile replicate1)",
+    "evaluator": "Work assistant source comparison, unblinded; no scoring-model calls/human reviewer"
+  },
+  {
+    "id": "textile",
+    "condition": "B",
+    "replicate": 1,
+    "valid": true,
+    "status": "success",
+    "vector": [
+      1,
+      2,
+      1,
+      1,
+      1
+    ],
+    "rawVector": [
+      1,
+      2,
+      1,
+      1,
+      1
+    ],
+    "rawTotal": 6.0,
+    "causal": 0,
+    "intervention": 0,
+    "supportGrades": [
+      2,
+      1,
+      2,
+      2,
+      2
+    ],
+    "supportUnitDefinition": "Principal proposition/grounding relationship per first-idea field, in title-description-audience-rationale-evidence order.2 full,1 partial,0 unsupported. Limited editorial audit, not exhaustive sentence coverage.",
+    "exactGroundingQuotes": 5,
+    "groundingCount": 5,
+    "source": "cases/textile.txt",
+    "result": "runs/textile/1/B/final.json",
+    "sourcePurpose": "Introduce a cooperative and its first repair service for member housing associations",
+    "sourceBoundary": "Tool architecture not sole purpose; pilot not live service or achieved savings",
+    "selectedIdea": {
+      "title": "Member onboarding brief: explain purpose, the curtain-pilot and the inventory example",
+      "description": "A concise introductory brief for housing associations considering joining Common Thread that states the cooperative purpose (shared repair service), explains the concrete first step (a curtain-repair pilot planned for January), frames the shared inventory as an illustrative organising tool, and sets expectations about unresolved items (no agreed prices, savings or turnaround yet) and membership review before expansion.",
+      "audience": "Other member housing associations considering participation (senior managers and decision-makers who will decide whether to join and what to commit).",
+      "rationale": "Because Common Thread is presented as a cooperative for shared repair priorities rather than a separate tech business, potential members need a clear, short explanation of collective purpose, the pilot's concrete timing and scope, and what the inventory demonstrates so they can evaluate participation without assuming commercial commitments.",
+      "evidence": "Two caretakers have entered sample items in a shared inventory. That inventory is intended to help a repairer locate an item and see its fabric and dimensions."
+    },
+    "notes": "scores/review-notes.md (textile replicate1)",
+    "evaluator": "Work assistant source comparison, unblinded; no scoring-model calls/human reviewer"
+  },
+  {
+    "id": "textile",
+    "condition": "C",
+    "replicate": 1,
+    "valid": false,
+    "status": "failed",
+    "vector": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "rawVector": [
+      1,
+      2,
+      1,
+      1,
+      1
+    ],
+    "rawTotal": 6.0,
+    "causal": 0,
+    "intervention": 0,
+    "supportGrades": [
+      2,
+      1,
+      2,
+      2,
+      2
+    ],
+    "supportUnitDefinition": "Principal proposition/grounding relationship per first-idea field, in title-description-audience-rationale-evidence order.2 full,1 partial,0 unsupported. Limited editorial audit, not exhaustive sentence coverage.",
+    "exactGroundingQuotes": 5,
+    "groundingCount": 5,
+    "source": "cases/textile.txt",
+    "result": "runs/textile/1/C/final.json",
+    "sourcePurpose": "Introduce a cooperative and its first repair service for member housing associations",
+    "sourceBoundary": "Tool architecture not sole purpose; pilot not live service or achieved savings",
+    "selectedIdea": {
+      "title": "Member onboarding brief: explain purpose, the curtain-pilot and the inventory example",
+      "description": "A concise introductory brief for housing associations considering joining Common Thread that states the cooperative purpose (shared repair service), explains the concrete first step (a curtain-repair pilot planned for January), frames the shared inventory as an illustrative organising tool, and sets expectations about unresolved items (no agreed prices, savings or turnaround yet) and membership review before expansion.",
+      "audience": "Other member housing associations considering participation.",
+      "rationale": "Because Common Thread is presented as a cooperative for shared repair priorities rather than a separate tech business, potential members need a clear, short explanation of collective purpose, the pilot's concrete timing and scope, and what the inventory demonstrates so they can evaluate participation without assuming commercial commitments.",
+      "evidence": "Two caretakers have entered sample items in a shared inventory. That inventory is intended to help a repairer locate an item and see its fabric and dimensions."
+    },
+    "notes": "scores/review-notes.md (textile replicate1)",
+    "evaluator": "Work assistant source comparison, unblinded; no scoring-model calls/human reviewer"
+  },
+  {
+    "id": "observatory",
+    "condition": "A",
+    "replicate": 1,
+    "valid": true,
+    "status": "success",
+    "vector": [
+      2,
+      2,
+      2,
+      1,
+      1
+    ],
+    "rawVector": [
+      2,
+      2,
+      2,
+      1,
+      1
+    ],
+    "rawTotal": 8.0,
+    "causal": 0,
+    "intervention": 0,
+    "supportGrades": [
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "supportUnitDefinition": "Principal proposition/grounding relationship per first-idea field, in title-description-audience-rationale-evidence order.2 full,1 partial,0 unsupported. Limited editorial audit, not exhaustive sentence coverage.",
+    "exactGroundingQuotes": 0,
+    "groundingCount": 0,
+    "source": "cases/observatory.txt",
+    "result": "runs/observatory/1/A/final.json",
+    "sourcePurpose": "Tell ticket holders what happens under different sky conditions",
+    "sourceBoundary": "No guaranteed viewing/refund beyond stated transfer; no equipment purchase motive",
+    "selectedIdea": {
+      "title": "Clarifying visitor expectations: Hilltop Observatory's December update makes sky viewing explicitly weather-dependent",
+      "description": "The observatory's ticket-holder message centers on setting realistic expectations: every evening includes an indoor session, dome observing only happens when the sky is sufficiently clear, clouds can mean no sky viewing at all, and staff do not promise guaranteed views.",
+      "audience": "Prospective visitors, ticket-holders, local community members planning visits",
+      "rationale": "This is the strongest straightforward editorial opportunity because the source is explicitly written for ticket-holders and is focused on what attendees should expect. A short piece can explain exactly what the evening will and won't include, reduce potential confusion or disappointment, and clarify the limited remedies offered (one transfer request) without inventing motivations or outcomes.",
+      "evidence": "Facts from source: 'Each evening includes an indoor session about how the telescope works.' 'When the sky is clear enough, staff will also guide small groups through the observing dome.' 'Clouds can mean there is no sky viewing at all.' 'The indoor session still takes place.' 'No claim about ... guaranteed views has been made by the staff.' (All statements are quoted/paraphrased from the ticket-holder update in the source.)"
+    },
+    "notes": "scores/review-notes.md (observatory replicate1)",
+    "evaluator": "Work assistant source comparison, unblinded; no scoring-model calls/human reviewer"
+  },
+  {
+    "id": "observatory",
+    "condition": "B",
+    "replicate": 1,
+    "valid": true,
+    "status": "success",
+    "vector": [
+      1,
+      0,
+      1,
+      2,
+      1
+    ],
+    "rawVector": [
+      1,
+      0,
+      1,
+      2,
+      1
+    ],
+    "rawTotal": 5.0,
+    "causal": 0,
+    "intervention": 0,
+    "supportGrades": [
+      0,
+      2,
+      1,
+      0,
+      2
+    ],
+    "supportUnitDefinition": "Principal proposition/grounding relationship per first-idea field, in title-description-audience-rationale-evidence order.2 full,1 partial,0 unsupported. Limited editorial audit, not exhaustive sentence coverage.",
+    "exactGroundingQuotes": 5,
+    "groundingCount": 5,
+    "source": "cases/observatory.txt",
+    "result": "runs/observatory/1/B/final.json",
+    "sourcePurpose": "Tell ticket holders what happens under different sky conditions",
+    "sourceBoundary": "No guaranteed viewing/refund beyond stated transfer; no equipment purchase motive",
+    "selectedIdea": {
+      "title": "Audit: Why Hilltop Observatory bought a new camera — and what evidence (if any) shows it improves observations",
+      "description": "Investigative feature examining the trustees' July approval and the published minutes (which list amount and supplier but not a reason for the model choice), the staff's side-by-side images from the new camera presented without a controlled comparison, and what that combination means for transparency to ticket-holders and the local community. Clearly note the observatory's communications limit: the ticket-holder update is not a technical review and staff have not claimed improved discovery rates.",
+      "audience": "Holders of tickets for Hilltop Observatory events and local community members who follow the observatory's public communications",
+      "rationale": "Published records and public displays provide procurement facts (purchase approved, amount and supplier published) but omit rationale and controlled-performance evidence; because the ticket-holder update is explicitly not a technical review, there is a documentary gap that an accountability-oriented story can illuminate for those receiving the observatory's communications.",
+      "evidence": "The observatory replaced one camera in September. The trustees approved the purchase in July, and the published minutes give the amount and supplier but no reason for choosing that model. Staff have displayed two images from the new camera alongside older pictures, without a controlled comparison. This ticket-holder update is meant to explain what an evening offers and how weather affects it. It is not the observatory's annual technical review. No claim about improved discovery rates or guaranteed views has been made by the staff."
+    },
+    "notes": "scores/review-notes.md (observatory replicate1)",
+    "evaluator": "Work assistant source comparison, unblinded; no scoring-model calls/human reviewer"
+  },
+  {
+    "id": "observatory",
+    "condition": "C",
+    "replicate": 1,
+    "valid": false,
+    "status": "failed",
+    "vector": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "rawVector": [
+      1,
+      0,
+      1,
+      2,
+      1
+    ],
+    "rawTotal": 5.0,
+    "causal": 0,
+    "intervention": 0,
+    "supportGrades": [
+      0,
+      2,
+      1,
+      0,
+      2
+    ],
+    "supportUnitDefinition": "Principal proposition/grounding relationship per first-idea field, in title-description-audience-rationale-evidence order.2 full,1 partial,0 unsupported. Limited editorial audit, not exhaustive sentence coverage.",
+    "exactGroundingQuotes": 5,
+    "groundingCount": 5,
+    "source": "cases/observatory.txt",
+    "result": "runs/observatory/1/C/final.json",
+    "sourcePurpose": "Tell ticket holders what happens under different sky conditions",
+    "sourceBoundary": "No guaranteed viewing/refund beyond stated transfer; no equipment purchase motive",
+    "selectedIdea": {
+      "title": "Audit: Why Hilltop Observatory bought a new camera — and what evidence (if any) shows it improves observations",
+      "description": "Investigative feature examining the trustees' July approval and the published minutes (which list amount and supplier but not a reason for the model choice), the staff's side-by-side images from the new camera presented without a controlled comparison, and what that combination means for transparency to ticket-holders and the local community. Clearly note the observatory's communications limit: the ticket-holder update is not a technical review and staff have not claimed improved discovery rates.",
+      "audience": "Holders of tickets for Hilltop Observatory events and local community members who follow the observatory's public communications",
+      "rationale": "Published records and public displays provide procurement facts (purchase approved, amount and supplier published) but omit rationale and controlled-performance evidence; because the ticket-holder update is explicitly not a technical review, there is a documentary gap that an accountability-oriented story can illuminate for those receiving the observatory's communications.",
+      "evidence": "The observatory replaced one camera in September. The trustees approved the purchase in July, and the published minutes give the amount and supplier but no reason for choosing that model. Staff have displayed two images from the new camera alongside older pictures, without a controlled comparison. This ticket-holder update is meant to explain what an evening offers and how weather affects it. It is not the observatory's annual technical review. No claim about improved discovery rates or guaranteed views has been made by the staff."
+    },
+    "notes": "scores/review-notes.md (observatory replicate1)",
+    "evaluator": "Work assistant source comparison, unblinded; no scoring-model calls/human reviewer"
+  },
+  {
+    "id": "orchard",
+    "condition": "A",
+    "replicate": 1,
+    "valid": true,
+    "status": "success",
+    "vector": [
+      2,
+      2,
+      2,
+      1,
+      1
+    ],
+    "rawVector": [
+      2,
+      2,
+      2,
+      1,
+      1
+    ],
+    "rawTotal": 8.0,
+    "causal": 0,
+    "intervention": 0,
+    "supportGrades": [
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "supportUnitDefinition": "Principal proposition/grounding relationship per first-idea field, in title-description-audience-rationale-evidence order.2 full,1 partial,0 unsupported. Limited editorial audit, not exhaustive sentence coverage.",
+    "exactGroundingQuotes": 0,
+    "groundingCount": 0,
+    "source": "cases/orchard.txt",
+    "result": "runs/orchard/1/A/final.json",
+    "sourcePurpose": "Tell volunteer pickers how this year harvest will be recorded",
+    "sourceBoundary": "Not efficiency proof or reason for scheduling decision; missing fruit not zero",
+    "selectedIdea": {
+      "title": "Standardizing harvest records by weighing full crates at the shed",
+      "description": "The circular implements a concrete change in how harvest is recorded: pickers bring each full crate to the shed to be weighed before storage, and the document’s main purpose is to ensure volunteers use the same record so the end-of-season account is understandable.",
+      "audience": "Orchard volunteers and harvest coordinators responsible for collecting, recording, and reconciling harvest data.",
+      "rationale": "Explaining this single procedural change — crate-by-crate weighing at the shed and the circular’s emphasis on a shared record — is the strongest, evidence-backed editorial story in the source. It helps readers understand what the committee actually changed, why the circular exists (to standardize records), and what immediate effects on data collection are expected. Useful downstream angles: how the rule changes daily workflow, what volunteers must do differently, and what data will now be available. Important uncertainty: the source does not report whether the change was piloted, how volunteers were trained, or whether it will measurably improve accuracy or completeness.",
+      "evidence": "Facts from source: “Pickers will bring each full crate to the shed, where it will be weighed before storage.”; “The main job of the circular is to help volunteers use the same record, so the end-of-season account is understandable.” Related facts: windfalls are recorded separately and fruit still on the trees will remain unweighed (both limit what the weighing captures). Interpretation: the weighing rule is intended to standardize records — that interpretation follows directly from the circular’s stated purpose but the source does not report outcomes."
+    },
+    "notes": "scores/review-notes.md (orchard replicate1)",
+    "evaluator": "Work assistant source comparison, unblinded; no scoring-model calls/human reviewer"
+  },
+  {
+    "id": "orchard",
+    "condition": "B",
+    "replicate": 1,
+    "valid": false,
+    "status": "failed",
+    "vector": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "rawVector": [
+      2,
+      2,
+      1,
+      2,
+      1
+    ],
+    "rawTotal": 8.0,
+    "causal": 0,
+    "intervention": 0,
+    "supportGrades": [
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "supportUnitDefinition": "Principal proposition/grounding relationship per first-idea field, in title-description-audience-rationale-evidence order.2 full,1 partial,0 unsupported. Limited editorial audit, not exhaustive sentence coverage.",
+    "exactGroundingQuotes": 4,
+    "groundingCount": 5,
+    "source": "cases/orchard.txt",
+    "result": "runs/orchard/1/B/final.json",
+    "sourcePurpose": "Tell volunteer pickers how this year harvest will be recorded",
+    "sourceBoundary": "Not efficiency proof or reason for scheduling decision; missing fruit not zero",
+    "selectedIdea": {
+      "title": "Explainer for volunteers: How to record and interpret this season’s harvest weights",
+      "description": "A short, practical explainer and FAQ for pickers and record-keepers that (a) restates the new requirement to bring each full crate to the shed for weighing before storage, (b) clarifies that fruit left on the trees is unweighed and blank entries mean ‘no weight recorded’ rather than ‘no fruit’, (c) explains that windfalls for pressing are recorded separately from eating apples, and (d) explains why early totals (e.g., first-Saturday weights) are partial and not comparable with last year’s estimate.",
+      "audience": "Wren Orchard volunteers (pickers and shed record-keepers) and committee members responsible for compiling the end-of-season account",
+      "rationale": "The circular’s stated purpose is to get volunteers to use the same record so the end-of-season account is understandable, but the circular also contains early, partial figures and an explicit note that those figures are not comparable with last year’s estimate. A focused explainer will reduce misunderstandings about what recorded weights mean and prevent misinterpretation of early totals.",
+      "evidence": "Key source excerpts to support this explainer: \"Pickers will bring each full crate to the shed, where it will be weighed before storage.\" \"Fruit still on the trees will remain unweighed; blank entries for an area mean that no weight was recorded there, not that it produced no fruit.\" \"Windfalls intended for pressing will be recorded separately from the eating apples.\" \"On the first Saturday, the team weighed 86 kilograms of eating apples and 24 kilograms of windfalls.\" \"Last year's newsletter gave an estimate of 140 kilograms for the entire harvest, using a different method.\" \"Saturday's figures are not a complete harvest total and are not comparable with that estimate.\""
+    },
+    "notes": "scores/review-notes.md (orchard replicate1)",
+    "evaluator": "Work assistant source comparison, unblinded; no scoring-model calls/human reviewer"
+  },
+  {
+    "id": "orchard",
+    "condition": "C",
+    "replicate": 1,
+    "valid": false,
+    "status": "blocked",
+    "vector": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "rawVector": null,
+    "rawTotal": null,
+    "causal": 0,
+    "intervention": 0,
+    "supportGrades": null,
+    "supportUnitDefinition": "Principal proposition/grounding relationship per first-idea field, in title-description-audience-rationale-evidence order.2 full,1 partial,0 unsupported. Limited editorial audit, not exhaustive sentence coverage.",
+    "exactGroundingQuotes": 0,
+    "groundingCount": 0,
+    "source": "cases/orchard.txt",
+    "result": "runs/orchard/1/C/final.json",
+    "sourcePurpose": "Tell volunteer pickers how this year harvest will be recorded",
+    "sourceBoundary": "Not efficiency proof or reason for scheduling decision; missing fruit not zero",
+    "selectedIdea": null,
+    "notes": "scores/review-notes.md (orchard replicate1)",
+    "evaluator": "Work assistant source comparison, unblinded; no scoring-model calls/human reviewer"
+  },
+  {
+    "id": "translation",
+    "condition": "A",
+    "replicate": 1,
+    "valid": true,
+    "status": "success",
+    "vector": [
+      0,
+      0,
+      2,
+      2,
+      1
+    ],
+    "rawVector": [
+      0,
+      0,
+      2,
+      2,
+      1
+    ],
+    "rawTotal": 5.0,
+    "causal": 1,
+    "intervention": 1,
+    "supportGrades": [
+      0,
+      0,
+      0,
+      0,
+      2
+    ],
+    "supportUnitDefinition": "Principal proposition/grounding relationship per first-idea field, in title-description-audience-rationale-evidence order.2 full,1 partial,0 unsupported. Limited editorial audit, not exhaustive sentence coverage.",
+    "exactGroundingQuotes": 0,
+    "groundingCount": 0,
+    "source": "cases/translation.txt",
+    "result": "runs/translation/1/A/final.json",
+    "sourcePurpose": "Explain limited reader access pilot and request feedback on navigation",
+    "sourceBoundary": "No demonstrated comprehension improvement, automation nor expansion commitment",
+    "selectedIdea": {
+      "title": "Partial translation exposes a clear navigation friction: readers struggle to move from translated summaries to Dutch source chapters",
+      "description": "The pilot’s choice to publish translated landing content and summaries while leaving full interview chapters in Dutch created a discoverability and navigation problem that readers already reported. The strongest story is a focused usability lesson: partial multilingual access can raise reader expectation that the full text is available in their language, and the site’s linking/labeling must compensate for that gap.",
+      "audience": "Digital humanities project leads, archivists, UX designers for cultural heritage websites, multilingual content managers",
+      "rationale": "Why it matters: Projects that offer selective translations — summaries but not full texts — risk confusing readers and generating negative navigation feedback; addressing this early can shape design and prioritization before scaling translations. Gaps & uncertainty: The evidence is limited (30 invites, 9 feedback-form opens, 4 comments) and no formal usability or comprehension testing was done, so the scale and specifics of the problem beyond initial reports are unknown.",
+      "evidence": "Facts from source: the landing page and six short summaries are available in English and Polish while longer interview chapters remain in Dutch; each translated summary links to the original chapter and identifies which text is available in which language; 30 invitation links were sent to local reading groups, 9 people opened the feedback form, and 4 submitted comments about finding their way between summaries and interviews; the announcement asks readers for feedback on navigation."
+    },
+    "notes": "scores/review-notes.md (translation replicate1)",
+    "evaluator": "Work assistant source comparison, unblinded; no scoring-model calls/human reviewer"
+  },
+  {
+    "id": "translation",
+    "condition": "B",
+    "replicate": 1,
+    "valid": true,
+    "status": "success",
+    "vector": [
+      0,
+      0,
+      1,
+      2,
+      1
+    ],
+    "rawVector": [
+      0,
+      0,
+      1,
+      2,
+      1
+    ],
+    "rawTotal": 4.0,
+    "causal": 0,
+    "intervention": 1,
+    "supportGrades": [
+      2,
+      1,
+      1,
+      0,
+      2
+    ],
+    "supportUnitDefinition": "Principal proposition/grounding relationship per first-idea field, in title-description-audience-rationale-evidence order.2 full,1 partial,0 unsupported. Limited editorial audit, not exhaustive sentence coverage.",
+    "exactGroundingQuotes": 5,
+    "groundingCount": 5,
+    "source": "cases/translation.txt",
+    "result": "runs/translation/1/B/final.json",
+    "sourcePurpose": "Explain limited reader access pilot and request feedback on navigation",
+    "sourceBoundary": "No demonstrated comprehension improvement, automation nor expansion commitment",
+    "selectedIdea": {
+      "title": "Usability-focused feature: how the North Quay bilingual pilot guides readers between English/Polish summaries and Dutch originals",
+      "description": "A focused editorial feature that documents the pilot’s current multilingual surface (landing page + six short summaries in English and Polish) while longer interview chapters remain in Dutch; it reports the project’s translation approach (two paid translators; no automated system described), summarizes participation metrics (30 invitations, 9 opens, 4 navigation comments) and the project’s explicit request for navigational feedback, and then (within journalistic limits) lays out concrete navigation clarifications and reader-facing signposting the project can adopt before any funded expansion.",
+      "audience": "Project editors and managers, UX/designers charged with the site navigation, the local reading groups and early readers who received invitations or responded, and potential funders assessing whether to support fuller translations.",
+      "rationale": "The source reports a limited access pilot that asks for feedback on navigation and shows early, tangible but small engagement; an editorial piece centered on navigation both serves readers who reported confusion and creates a documented account funders and the project team can use when deciding next steps.",
+      "evidence": "Landing page and six summaries available in both English and Polish while longer chapters remain Dutch; the project used two paid translators and does not describe an automated translation system; 30 invitation links were sent and 9 people opened the feedback form with 4 comments about finding their way between summaries and interviews; no reading-comprehension or language-comparison task was carried out; the announcement asks for feedback on navigation and says further languages/full chapters are possibilities for a later funding application rather than promised additions."
+    },
+    "notes": "scores/review-notes.md (translation replicate1)",
+    "evaluator": "Work assistant source comparison, unblinded; no scoring-model calls/human reviewer"
+  },
+  {
+    "id": "translation",
+    "condition": "C",
+    "replicate": 1,
+    "valid": true,
+    "status": "success",
+    "vector": [
+      0,
+      0,
+      1,
+      2,
+      1
+    ],
+    "rawVector": [
+      0,
+      0,
+      1,
+      2,
+      1
+    ],
+    "rawTotal": 4.0,
+    "causal": 0,
+    "intervention": 1,
+    "supportGrades": [
+      2,
+      1,
+      1,
+      0,
+      2
+    ],
+    "supportUnitDefinition": "Principal proposition/grounding relationship per first-idea field, in title-description-audience-rationale-evidence order.2 full,1 partial,0 unsupported. Limited editorial audit, not exhaustive sentence coverage.",
+    "exactGroundingQuotes": 5,
+    "groundingCount": 5,
+    "source": "cases/translation.txt",
+    "result": "runs/translation/1/C/final.json",
+    "sourcePurpose": "Explain limited reader access pilot and request feedback on navigation",
+    "sourceBoundary": "No demonstrated comprehension improvement, automation nor expansion commitment",
+    "selectedIdea": {
+      "title": "Usability-focused feature: how the North Quay bilingual pilot guides readers between English/Polish summaries and Dutch originals",
+      "description": "A focused editorial feature that documents the pilot’s current multilingual surface (landing page + six short summaries in English and Polish) while longer interview chapters remain in Dutch; it reports the project’s translation approach (two paid translators; no automated system described), summarizes participation metrics (30 invitations, 9 opens, 4 navigation comments) and the project’s explicit request for navigational feedback, and then (within journalistic limits) lays out concrete navigation clarifications and reader-facing signposting the project can adopt prior to any funded expansion.",
+      "audience": "Project editors and managers, the local reading groups and early readers who received invitations or responded, and potential funders assessing whether to support fuller translations.",
+      "rationale": "The source reports a limited access pilot that asks for feedback on navigation and shows early, tangible but small engagement; an editorial piece centered on navigation both serves readers who reported confusion and creates a documented account funders and the project team can use when deciding next steps.",
+      "evidence": "Landing page and six summaries available in both English and Polish while longer chapters remain Dutch; the project used two paid translators and does not describe an automated system; 30 invitation links were sent and 9 people opened the feedback form with 4 comments about finding their way between summaries and interviews; no reading-comprehension or language-comparison task was carried out; the announcement asks for feedback on navigation and says further languages/full chapters are possibilities for a later funding application rather than promised additions."
+    },
+    "notes": "scores/review-notes.md (translation replicate1)",
+    "evaluator": "Work assistant source comparison, unblinded; no scoring-model calls/human reviewer"
+  },
+  {
+    "id": "005",
+    "condition": "A",
+    "replicate": 2,
+    "valid": true,
+    "status": "success",
+    "vector": [
+      0,
+      2,
+      2,
+      2,
+      1
+    ],
+    "rawVector": [
+      0,
+      2,
+      2,
+      2,
+      1
+    ],
+    "rawTotal": 7.0,
+    "causal": 1,
+    "intervention": 0,
+    "supportGrades": [
+      0,
+      0,
+      2,
+      0,
+      2
+    ],
+    "supportUnitDefinition": "Principal proposition/grounding relationship per first-idea field, in title-description-audience-rationale-evidence order.2 full,1 partial,0 unsupported. Limited editorial audit, not exhaustive sentence coverage.",
+    "exactGroundingQuotes": 0,
+    "groundingCount": 0,
+    "source": "cases/005.txt",
+    "result": "runs/005/2/A/final.json",
+    "sourcePurpose": "Explain the actual observed editorial hierarchy experiment and rejection, not a universal causal prompt law",
+    "sourceBoundary": "Non-concurrent small samples, upstream/backend variability; no proof generic rules cause drift",
+    "selectedIdea": {
+      "title": "A small, generic editorial-rule change can flip the editorial hierarchy and derail an output pipeline",
+      "description": "Adding a single reusable instruction — “Preserve Editorial Intent from the Synthesis” — to the Narrative user prompt caused the pipeline to subordinate company identity and audience scope and to make orchestration the central message, producing consistently worse Narrative and Compose scores and a decision to rollback.",
+      "audience": "Prompt engineers, narrative designers, content ops and product communications leads responsible for AI-assisted content pipelines.",
+      "rationale": "This experiment provides direct evidence that even a short, generic editorial instruction can change model behaviour in a stable, repeatable way that matters for publishable output. Teams that modify narrative prompts need objective, task-specific validation (rubrics, multiple runs, gated criteria) because surface-preserving language alone can unintentionally reweight themes and introduce unsupported claims.",
+      "evidence": "- Candidate prompt change: added section titled “Preserve Editorial Intent from the Synthesis.” (prompt-changes/Narrative.user.prompt.diff).  \n- Only Narrative.user.prompt.txt changed; all other prompt files and inputs identical.  \n- Narrative mean score: Baseline 6.00/10 vs Candidate 4.00/10.  \n- Compose mean score: Baseline 5.67/10 vs Candidate 3.33/10.  \n- Candidate runs uniformly lowered A (identity/audience) scores and failed C (theme hierarchy) — orchestration became central in all candidate runs.  \n- Decision: Do not promote; production prompt restored byte-for-byte to baseline (restored SHA-256 matches baseline)."
+    },
+    "notes": "scores/review-notes.md (005 replicate2)",
+    "evaluator": "Work assistant source comparison, unblinded; no scoring-model calls/human reviewer"
+  },
+  {
+    "id": "005",
+    "condition": "B",
+    "replicate": 2,
+    "valid": true,
+    "status": "success",
+    "vector": [
+      1,
+      0,
+      1,
+      2,
+      1
+    ],
+    "rawVector": [
+      1,
+      0,
+      1,
+      2,
+      1
+    ],
+    "rawTotal": 5.0,
+    "causal": 0,
+    "intervention": 1,
+    "supportGrades": [
+      0,
+      1,
+      2,
+      0,
+      2
+    ],
+    "supportUnitDefinition": "Principal proposition/grounding relationship per first-idea field, in title-description-audience-rationale-evidence order.2 full,1 partial,0 unsupported. Limited editorial audit, not exhaustive sentence coverage.",
+    "exactGroundingQuotes": 5,
+    "groundingCount": 5,
+    "source": "cases/005.txt",
+    "result": "runs/005/2/B/final.json",
+    "sourcePurpose": "Explain the actual observed editorial hierarchy experiment and rejection, not a universal causal prompt law",
+    "sourceBoundary": "Non-concurrent small samples, upstream/backend variability; no proof generic rules cause drift",
+    "selectedIdea": {
+      "title": "Refine the generic “Preserve Editorial Intent” guard into a constrained, context-aware Narrative rule",
+      "description": "Replace the single, generic preservation paragraph with a narrowly scoped guard that (a) explicitly preserves company-level primary message and intended audience primacy, (b) treats technical explanations (e.g., orchestration) as subordinate unless the Synthesis unambiguously elevates them, and (c) forbids introducing new audiences, commitments, or validation claims. Ship this change together with a focused test harness that validates the hierarchy against the saved baseline/candidate outputs and the experiment scoring rubric.",
+      "audience": "Prompt engineers, Narrative/Compose owners, and content/QA engineers working on Nueyon.Compose prompt and output pipelines",
+      "rationale": "The candidate prompt added a single, generic preservation instruction but produced stable regressions: it systematically subordinated the company identity and audience while elevating orchestration and also introduced unsupported audience/validation claims. A constrained, context-aware guard plus verification against experiment artifacts is the most direct editorial fix indicated by the experiment.",
+      "evidence": "Artifact and failure traces exist: the candidate prompt diff is saved (`prompt-changes/Narrative.user.prompt.diff`), full outputs and logs are archived (`baseline/outputs/` and `candidate/outputs/`), and the scoring rubric and run scores show the regressions."
+    },
+    "notes": "scores/review-notes.md (005 replicate2)",
+    "evaluator": "Work assistant source comparison, unblinded; no scoring-model calls/human reviewer"
+  },
+  {
+    "id": "005",
+    "condition": "C",
+    "replicate": 2,
+    "valid": true,
+    "status": "success",
+    "vector": [
+      1,
+      0,
+      1,
+      2,
+      1
+    ],
+    "rawVector": [
+      1,
+      0,
+      1,
+      2,
+      1
+    ],
+    "rawTotal": 5.0,
+    "causal": 0,
+    "intervention": 1,
+    "supportGrades": [
+      0,
+      1,
+      2,
+      0,
+      2
+    ],
+    "supportUnitDefinition": "Principal proposition/grounding relationship per first-idea field, in title-description-audience-rationale-evidence order.2 full,1 partial,0 unsupported. Limited editorial audit, not exhaustive sentence coverage.",
+    "exactGroundingQuotes": 5,
+    "groundingCount": 5,
+    "source": "cases/005.txt",
+    "result": "runs/005/2/C/final.json",
+    "sourcePurpose": "Explain the actual observed editorial hierarchy experiment and rejection, not a universal causal prompt law",
+    "sourceBoundary": "Non-concurrent small samples, upstream/backend variability; no proof generic rules cause drift",
+    "selectedIdea": {
+      "title": "Refine the generic “Preserve Editorial Intent” guard into a constrained, context-aware Narrative rule",
+      "description": "Replace the single, generic preservation paragraph with a narrowly scoped guard that (a) explicitly preserves company-level primary message and intended audience primacy, (b) treats technical explanations (e.g., orchestration) as subordinate unless the Synthesis unambiguously elevates them, and (c) forbids introducing new audiences, commitments, or validation claims. Ship this change together with a focused test harness that validates the hierarchy against the saved baseline/candidate outputs and the experiment scoring rubric.",
+      "audience": "Prompt engineers, Narrative/Compose owners, and content/QA engineers working on Nueyon.Compose prompt and output pipelines",
+      "rationale": "The candidate prompt added a single, generic preservation instruction but produced stable regressions: it systematically subordinated the company identity and audience while elevating orchestration and also introduced unsupported audience/validation claims. A constrained, context-aware guard plus verification against experiment artifacts is the most direct editorial fix indicated by the experiment.",
+      "evidence": "Artifact and failure traces exist: the candidate prompt diff is saved (`prompt-changes/Narrative.user.prompt.diff`), full outputs and logs are archived (`baseline/outputs/` and `candidate/outputs/`), and the scoring rubric and run scores show the regressions."
+    },
+    "notes": "scores/review-notes.md (005 replicate2)",
+    "evaluator": "Work assistant source comparison, unblinded; no scoring-model calls/human reviewer"
+  },
+  {
+    "id": "010",
+    "condition": "A",
+    "replicate": 2,
+    "valid": true,
+    "status": "success",
+    "vector": [
+      0,
+      2,
+      2,
+      2,
+      1
+    ],
+    "rawVector": [
+      0,
+      2,
+      2,
+      2,
+      1
+    ],
+    "rawTotal": 7.0,
+    "causal": 0,
+    "intervention": 1,
+    "supportGrades": [
+      2,
+      2,
+      2,
+      0,
+      2
+    ],
+    "supportUnitDefinition": "Principal proposition/grounding relationship per first-idea field, in title-description-audience-rationale-evidence order.2 full,1 partial,0 unsupported. Limited editorial audit, not exhaustive sentence coverage.",
+    "exactGroundingQuotes": 0,
+    "groundingCount": 0,
+    "source": "cases/010.txt",
+    "result": "runs/010/2/A/final.json",
+    "sourcePurpose": "Run-specific diagnosis of observable pipeline drift and conditional next experiment",
+    "sourceBoundary": "Visibility not root cause, Narrative recurrence not greatest-payoff unconditional intervention",
+    "selectedIdea": {
+      "title": "Narrative is the recurring pivot where company-first introductions turn product- or orchestration-led",
+      "description": "Across experiments 007–009 the first observable editorial hierarchy break most often appears in the Narrative stage: upstream chains can remain company-first while Narrative reframes the story around Compose/orchestration or introduces unsupported audiences and validation language. The central editorial opportunity is to treat Narrative as a primary control point for preserving a company-first introduction.",
+      "audience": "Product/content leads, prompt-engineering teams, experiment designers responsible for editorial pipelines",
+      "rationale": "Fixing hierarchy drift at the stage where it most often appears gives the largest editorial leverage. If Narrative recurrently reframes a company intro into a product/orchestration story, targeted rules, prompt boundaries, or evaluation gates at Narrative should reduce downstream amplification and factual overclaiming without requiring broad, speculative upstream changes.",
+      "evidence": "Explicit cross-experiment finding: “Narrative is the most recurrent first visible hierarchy shift in the available records.” Examples: Experiment 007 candidate runs 001–002 show Synthesis preserved Nuëyon/Compose but Narrative turned it into an orchestration through-line; Experiment 009 baseline 002/003 and all three Candidate runs localize first hierarchy shifts at Narrative; Experiment 008 A-002 reports a first factual breach at Narrative. Limitation: some runs shift earlier (Idea or Synthesis), so Narrative is the most frequent but not sole locus of drift; causation is not established."
+    },
+    "notes": "scores/review-notes.md (010 replicate2)",
+    "evaluator": "Work assistant source comparison, unblinded; no scoring-model calls/human reviewer"
+  },
+  {
+    "id": "010",
+    "condition": "B",
+    "replicate": 2,
+    "valid": false,
+    "status": "failed",
+    "vector": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "rawVector": null,
+    "rawTotal": null,
+    "causal": 0,
+    "intervention": 0,
+    "supportGrades": null,
+    "supportUnitDefinition": "Principal proposition/grounding relationship per first-idea field, in title-description-audience-rationale-evidence order.2 full,1 partial,0 unsupported. Limited editorial audit, not exhaustive sentence coverage.",
+    "exactGroundingQuotes": 0,
+    "groundingCount": 0,
+    "source": "cases/010.txt",
+    "result": "runs/010/2/B/final.json",
+    "sourcePurpose": "Run-specific diagnosis of observable pipeline drift and conditional next experiment",
+    "sourceBoundary": "Visibility not root cause, Narrative recurrence not greatest-payoff unconditional intervention",
+    "selectedIdea": null,
+    "notes": "scores/review-notes.md (010 replicate2)",
+    "evaluator": "Work assistant source comparison, unblinded; no scoring-model calls/human reviewer"
+  },
+  {
+    "id": "010",
+    "condition": "C",
+    "replicate": 2,
+    "valid": false,
+    "status": "blocked",
+    "vector": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "rawVector": null,
+    "rawTotal": null,
+    "causal": 0,
+    "intervention": 0,
+    "supportGrades": null,
+    "supportUnitDefinition": "Principal proposition/grounding relationship per first-idea field, in title-description-audience-rationale-evidence order.2 full,1 partial,0 unsupported. Limited editorial audit, not exhaustive sentence coverage.",
+    "exactGroundingQuotes": 0,
+    "groundingCount": 0,
+    "source": "cases/010.txt",
+    "result": "runs/010/2/C/final.json",
+    "sourcePurpose": "Run-specific diagnosis of observable pipeline drift and conditional next experiment",
+    "sourceBoundary": "Visibility not root cause, Narrative recurrence not greatest-payoff unconditional intervention",
+    "selectedIdea": null,
+    "notes": "scores/review-notes.md (010 replicate2)",
+    "evaluator": "Work assistant source comparison, unblinded; no scoring-model calls/human reviewer"
+  },
+  {
+    "id": "ceramics",
+    "condition": "A",
+    "replicate": 2,
+    "valid": true,
+    "status": "success",
+    "vector": [
+      1,
+      2,
+      2,
+      1,
+      2
+    ],
+    "rawVector": [
+      1,
+      2,
+      2,
+      1,
+      2
+    ],
+    "rawTotal": 8.0,
+    "causal": 0,
+    "intervention": 0,
+    "supportGrades": [
+      2,
+      1,
+      2,
+      2,
+      2
+    ],
+    "supportUnitDefinition": "Principal proposition/grounding relationship per first-idea field, in title-description-audience-rationale-evidence order.2 full,1 partial,0 unsupported. Limited editorial audit, not exhaustive sentence coverage.",
+    "exactGroundingQuotes": 0,
+    "groundingCount": 0,
+    "source": "cases/ceramics.txt",
+    "result": "runs/ceramics/2/A/final.json",
+    "sourcePurpose": "Help householders decide what to bring to a first repair table",
+    "sourceBoundary": "No food-contact repairs or promised repair success; no comparative evidence",
+    "selectedIdea": {
+      "title": "Which broken ceramics to bring to Eastmere’s repair table — and what to expect",
+      "description": "A practical, attendee-focused piece that tells householders whether their damaged object is appropriate for the event and sets clear expectations about process and outcomes: decorative ceramics only (vases, figurines), no tableware or drinkware (adhesives not food-safe), a free 15‑minute booked assessment between 10:00–13:00, possible visible seams or unrepaired returns.",
+      "audience": "Local householders considering bringing broken ceramics to the Eastmere community hall session.",
+      "rationale": "The source provides concrete, actionable rules and warnings that directly affect whether someone should bring an object. A short how-to guide reduces wasted trips, prevents health/safety surprises (food-contact restriction), and sets realistic appearance/outcome expectations for owners.",
+      "evidence": "Event on 21 November at the community hall; 15‑minute assessments available 10:00–13:00 (booked; walk-ins only if a slot is free). The team will look at decorative ceramics such as vases and figurines. It will not accept objects used for eating or drinking because its adhesives are not certified for food contact. The assessment is free; volunteers will discuss likely appearance and the material contribution before doing any work. Some objects will leave with visible seams; some will leave unrepaired."
+    },
+    "notes": "scores/review-notes.md (ceramics replicate2)",
+    "evaluator": "Work assistant source comparison, unblinded; no scoring-model calls/human reviewer"
+  },
+  {
+    "id": "ceramics",
+    "condition": "B",
+    "replicate": 2,
+    "valid": false,
+    "status": "failed",
+    "vector": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "rawVector": null,
+    "rawTotal": null,
+    "causal": 0,
+    "intervention": 0,
+    "supportGrades": null,
+    "supportUnitDefinition": "Principal proposition/grounding relationship per first-idea field, in title-description-audience-rationale-evidence order.2 full,1 partial,0 unsupported. Limited editorial audit, not exhaustive sentence coverage.",
+    "exactGroundingQuotes": 0,
+    "groundingCount": 0,
+    "source": "cases/ceramics.txt",
+    "result": "runs/ceramics/2/B/final.json",
+    "sourcePurpose": "Help householders decide what to bring to a first repair table",
+    "sourceBoundary": "No food-contact repairs or promised repair success; no comparative evidence",
+    "selectedIdea": null,
+    "notes": "scores/review-notes.md (ceramics replicate2)",
+    "evaluator": "Work assistant source comparison, unblinded; no scoring-model calls/human reviewer"
+  },
+  {
+    "id": "ceramics",
+    "condition": "C",
+    "replicate": 2,
+    "valid": false,
+    "status": "blocked",
+    "vector": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "rawVector": null,
+    "rawTotal": null,
+    "causal": 0,
+    "intervention": 0,
+    "supportGrades": null,
+    "supportUnitDefinition": "Principal proposition/grounding relationship per first-idea field, in title-description-audience-rationale-evidence order.2 full,1 partial,0 unsupported. Limited editorial audit, not exhaustive sentence coverage.",
+    "exactGroundingQuotes": 0,
+    "groundingCount": 0,
+    "source": "cases/ceramics.txt",
+    "result": "runs/ceramics/2/C/final.json",
+    "sourcePurpose": "Help householders decide what to bring to a first repair table",
+    "sourceBoundary": "No food-contact repairs or promised repair success; no comparative evidence",
+    "selectedIdea": null,
+    "notes": "scores/review-notes.md (ceramics replicate2)",
+    "evaluator": "Work assistant source comparison, unblinded; no scoring-model calls/human reviewer"
+  },
+  {
+    "id": "choir",
+    "condition": "A",
+    "replicate": 2,
+    "valid": true,
+    "status": "success",
+    "vector": [
+      1,
+      0,
+      2,
+      2,
+      1
+    ],
+    "rawVector": [
+      1,
+      0,
+      2,
+      2,
+      1
+    ],
+    "rawTotal": 6.0,
+    "causal": 0,
+    "intervention": 0,
+    "supportGrades": [
+      2,
+      2,
+      0,
+      0,
+      2
+    ],
+    "supportUnitDefinition": "Principal proposition/grounding relationship per first-idea field, in title-description-audience-rationale-evidence order.2 full,1 partial,0 unsupported. Limited editorial audit, not exhaustive sentence coverage.",
+    "exactGroundingQuotes": 0,
+    "groundingCount": 0,
+    "source": "cases/choir.txt",
+    "result": "runs/choir/2/A/final.json",
+    "sourcePurpose": "Invitation to hesitant adult singers for a taster, not a funding evaluation",
+    "sourceBoundary": "No proven confidence gain, no causal claim about flexible start",
+    "selectedIdea": {
+      "title": "Designing a low‑pressure taster: how Moorfield’s notice explicitly aims to lower barriers for hesitant newcomers",
+      "description": "Moorfield’s taster announcement bundles concrete, low‑barrier features (no auditions, no music‑reading requirement, an option to listen during the warm‑up, quiet late entry, and a free first session) and a plain account of what an evening looks like. The central insight: the choir intentionally described the participant experience and removed identifiable friction points to make the offer readable and approachable — while the source records this as intent, not as a measured outcome.",
+      "audience": "Community choir leaders, amateur arts organisers, volunteer coordinators responsible for recruitment and event design.",
+      "rationale": "Why it matters: Small, explicit accommodations and a descriptive notice are low‑cost design choices that organisations can use when trying to invite hesitant adults. The story is useful because the source documents the specific elements a local choir chose and states the notice’s purpose explicitly. Important uncertainty: the source records intent only; the choir has not measured whether these features actually reduced hesitation, increased attendance, or improved retention.",
+      "evidence": "Direct facts from the notice: “no auditions and no requirement to read music”; “the first twenty minutes are a shared warm‑up; newcomers may listen before joining in”; “session begins at 19:00, but someone arriving from work may enter quietly until 19:20”; “A first taster is free; the ordinary weekly contribution applies from the second visit.” The notice’s stated purpose: “intended to help a hesitant newcomer picture the evening and decide whether to come.” The source explicitly notes the choir has not measured the effect."
+    },
+    "notes": "scores/review-notes.md (choir replicate2)",
+    "evaluator": "Work assistant source comparison, unblinded; no scoring-model calls/human reviewer"
+  },
+  {
+    "id": "choir",
+    "condition": "B",
+    "replicate": 2,
+    "valid": true,
+    "status": "success",
+    "vector": [
+      1,
+      2,
+      1,
+      1,
+      2
+    ],
+    "rawVector": [
+      1,
+      2,
+      1,
+      1,
+      2
+    ],
+    "rawTotal": 7.0,
+    "causal": 0,
+    "intervention": 0,
+    "supportGrades": [
+      2,
+      2,
+      2,
+      1,
+      2
+    ],
+    "supportUnitDefinition": "Principal proposition/grounding relationship per first-idea field, in title-description-audience-rationale-evidence order.2 full,1 partial,0 unsupported. Limited editorial audit, not exhaustive sentence coverage.",
+    "exactGroundingQuotes": 5,
+    "groundingCount": 5,
+    "source": "cases/choir.txt",
+    "result": "runs/choir/2/B/final.json",
+    "sourcePurpose": "Invitation to hesitant adult singers for a taster, not a funding evaluation",
+    "sourceBoundary": "No proven confidence gain, no causal claim about flexible start",
+    "selectedIdea": {
+      "title": "A step‑by‑step 'What to expect on your first Wednesday' guide to help hesitant adults decide to try the taster",
+      "description": "A short, vividly practical piece that walks a hesitant adult through the actual evening: who is invited, no auditions/no need to read music, the shared warm‑up with an option to listen, the 19:00 start and quiet entry until 19:20, and the free first taster with normal contribution from visit two — written to reduce uncertainty and lower the barrier to attend.",
+      "audience": "Adults who are unsure about singing in a group and are weighing whether to attend a one‑off taster",
+      "rationale": "The source frames the notice to help a hesitant newcomer 'picture the evening' and the choir's own informal feedback shows 'welcome' was the dominant reason people said they'd return; the committee also retained a later entry window — together these facts make a practical, expectation‑setting feature likely to address the main barrier signalled in the source.",
+      "evidence": "Source provides the taster details (who's invited, practical arrangements and free first visit), the short rehearsal feedback showing welcome as the top return reason, and the committee decision to keep a later entry window — while also noting there has been no formal survey of confidence or a fixed‑start comparison."
+    },
+    "notes": "scores/review-notes.md (choir replicate2)",
+    "evaluator": "Work assistant source comparison, unblinded; no scoring-model calls/human reviewer"
+  },
+  {
+    "id": "choir",
+    "condition": "C",
+    "replicate": 2,
+    "valid": true,
+    "status": "success",
+    "vector": [
+      1,
+      2,
+      1,
+      1,
+      2
+    ],
+    "rawVector": [
+      1,
+      2,
+      1,
+      1,
+      2
+    ],
+    "rawTotal": 7.0,
+    "causal": 0,
+    "intervention": 0,
+    "supportGrades": [
+      2,
+      2,
+      2,
+      1,
+      2
+    ],
+    "supportUnitDefinition": "Principal proposition/grounding relationship per first-idea field, in title-description-audience-rationale-evidence order.2 full,1 partial,0 unsupported. Limited editorial audit, not exhaustive sentence coverage.",
+    "exactGroundingQuotes": 5,
+    "groundingCount": 5,
+    "source": "cases/choir.txt",
+    "result": "runs/choir/2/C/final.json",
+    "sourcePurpose": "Invitation to hesitant adult singers for a taster, not a funding evaluation",
+    "sourceBoundary": "No proven confidence gain, no causal claim about flexible start",
+    "selectedIdea": {
+      "title": "A step‑by‑step 'What to expect on your first Wednesday' guide to help hesitant adults decide to try the taster",
+      "description": "A short, vividly practical piece that walks a hesitant adult through the actual evening: who is invited, no auditions/no need to read music, the shared warm‑up with an option to listen, the 19:00 start and quiet entry until 19:20, and the free first taster with normal contribution from visit two — written to reduce uncertainty and lower the barrier to attend.",
+      "audience": "Adults who are unsure about singing in a group and are weighing whether to attend a one‑off taster",
+      "rationale": "The notice's stated purpose is to help a hesitant newcomer 'picture the evening', and informal rehearsal feedback emphasised the choir's welcome and a later entry window — together these make an expectation‑setting guide a plausible, directly relevant way to reduce uncertainty, while recognising the source provides no causal evidence that this will increase attendance.",
+      "evidence": "Source provides the taster details (who's invited, practical arrangements and free first visit), the short rehearsal feedback showing welcome as the top return reason, the committee decision to keep a later entry window, and an explicit statement that there has been no formal survey of confidence or a fixed‑start comparison."
+    },
+    "notes": "scores/review-notes.md (choir replicate2)",
+    "evaluator": "Work assistant source comparison, unblinded; no scoring-model calls/human reviewer"
+  }
+]

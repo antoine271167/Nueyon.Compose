@@ -1,0 +1,186 @@
+{
+  "messages": [
+    {
+      "authorName": null,
+      "createdAt": null,
+      "role": "user",
+      "contents": [
+        {
+          "$type": "text",
+          "text": "Review this exact draft against the original source and return your review plus the full final experimental output. A true quote does not automatically support the associated claim.\n--- SOURCE DATA ---\nThe Eastmere repair collective will open a ceramics table at the community hall on 21 November. Its notice is for householders wondering whether a broken object is worth bringing. People may book a fifteen-minute assessment between 10:00 and 13:00; walk-ins will be seen only if a booking slot is free. The team will look at decorative ceramics such as vases and figurines. It will not accept objects used for eating or drinking, because its adhesives are not certified for food contact.\n\nThe assessment is free. If the volunteers think a repair is feasible, they will discuss the likely appearance and the material contribution with the owner before doing any work. Some objects will leave with visible seams; some will leave unrepaired. A cracked vase on the notice is an illustration, not an example from the event. The collective has held bicycle sessions before, but this is its first ceramics table. It has no figures yet for ceramics repaired, objects diverted from disposal, or the life of a repair.\n--- DRAFT DATA ---\n{\n  \u0022ideas\u0022: [\n    {\n      \u0022title\u0022: \u0022Should you bring that broken vase? \u2014 A householder\u0027s guide to Eastmere\u0027s ceramics repair table\u0022,\n      \u0022description\u0022: \u0022Practical preview for local householders: how to book a fifteen-minute assessment (10:00\u201313:00), the walk-in policy, the types of ceramics the team will look at (decorative items such as vases and figurines), the exclusion of eating/drinking ware because adhesives are not food\u2011contact certified, that the assessment is free, and what repair outcomes to expect (volunteers will discuss appearance and material contribution; some items may show visible seams or be left unrepaired).\u0022,\n      \u0022audience\u0022: \u0022Householders in Eastmere who are wondering whether a broken decorative ceramic is worth bringing to the community hall session.\u0022,\n      \u0022rationale\u0022: \u0022The notice explicitly addresses householders deciding whether to bring broken objects and lists operational details and likely outcomes, so an explanatory preview will directly meet stated reader need and set realistic expectations for the event (which is the collective\u0027s first ceramics table and has no prior ceramics metrics).\u0022,\n      \u0022evidence\u0022: \u0022The assessment is free; volunteers will discuss likely appearance and the material contribution with the owner before doing any work; some objects will leave with visible seams; some will leave unrepaired.\u0022\n    },\n    {\n      \u0022title\u0022: \u0022From bikes to bowls: Eastmere repair collective\u2019s first ceramics table\u0022,\n      \u0022description\u0022: \u0022A short community profile about the collective expanding from bicycle sessions to a first ceramics table, highlighting volunteer-run services and how this new offering differs (types accepted, safety limits, and no prior ceramics outcome figures).\u0022,\n      \u0022audience\u0022: \u0022Local readers interested in community initiatives and volunteer-run repair projects.\u0022,\n      \u0022rationale\u0022: \u0022The switch from bicycle sessions to a first ceramics table is a clear change in activity and has neighborhood interest, but the source provides limited operational detail and no outcome data, so the piece would be an explanatory profile rather than an impact evaluation.\u0022,\n      \u0022evidence\u0022: \u0022The collective has held bicycle sessions before, but this is its first ceramics table.\u0022\n    },\n    {\n      \u0022title\u0022: \u0022What to expect at Eastmere\u2019s ceramics table \u2014 quick checklist\u0022,\n      \u0022description\u0022: \u0022A short FAQ/checklist for people planning to attend: booking a 15-minute slot (10:00\u201313:00), walk-ins only if slots free, bring only decorative ceramics (vases, figurines), do not bring eating/drinking vessels (adhesives not food\u2011contact certified), assessment is free, and repairs may leave visible seams or may not be done.\u0022,\n      \u0022audience\u0022: \u0022Attendees and prospective attendees who need quick practical instructions before traveling to the event.\u0022,\n      \u0022rationale\u0022: \u0022The notice lists several simple, actionable rules and expectations (booking policy, item types accepted, safety exclusion, cost, and outcomes) that translate directly into a concise checklist readers can use immediately.\u0022,\n      \u0022evidence\u0022: \u0022People may book a fifteen-minute assessment between 10:00 and 13:00; walk-ins will be seen only if a booking slot is free. The team will look at decorative ceramics such as vases and figurines. It will not accept objects used for eating or drinking, because its adhesives are not certified for food contact.\u0022\n    }\n  ],\n  \u0022grounding\u0022: [\n    {\n      \u0022field\u0022: \u0022title\u0022,\n      \u0022claim\u0022: \u0022The editorial should be a timely, practical guide tied to the event (ceramics table opening on 21 November).\u0022,\n      \u0022sourceEvidence\u0022: \u0022The Eastmere repair collective will open a ceramics table at the community hall on 21 November.\u0022,\n      \u0022inference\u0022: \u0022The quoted sentence identifies an event (a ceramics table) and its date and location, which supports producing a timely guide framed around that opening.\u0022,\n      \u0022constraints\u0022: \u0022The sentence gives event type, date and place but does not specify all operational details or audience needs; those must be drawn from other sentences in the source.\u0022\n    },\n    {\n      \u0022field\u0022: \u0022description\u0022,\n      \u0022claim\u0022: \u0022The piece should explain booking (fifteen-minute assessments 10:00\u201313:00), walk-in policy, the team\u2019s focus on decorative ceramics (vases, figurines), and the exclusion of eating/drinking ware because adhesives are not food\u2011contact certified.\u0022,\n      \u0022sourceEvidence\u0022: \u0022People may book a fifteen-minute assessment between 10:00 and 13:00; walk-ins will be seen only if a booking slot is free. The team will look at decorative ceramics such as vases and figurines. It will not accept objects used for eating or drinking, because its adhesives are not certified for food contact.\u0022,\n      \u0022inference\u0022: \u0022These contiguous sentences lay out operational details (booking length and window, walk-in rules), the accepted object types, and the explicit safety-based exclusion, which justify including those points in the description.\u0022,\n      \u0022constraints\u0022: \u0022The sentences state the rules but do not quantify capacity (how many slots), nor explain alternative options for excluded items; also they do not describe repair techniques or costs beyond the assessment being free.\u0022\n    },\n    {\n      \u0022field\u0022: \u0022audience\u0022,\n      \u0022claim\u0022: \u0022The target readers are local householders wondering whether a broken object is worth bringing.\u0022,\n      \u0022sourceEvidence\u0022: \u0022Its notice is for householders wondering whether a broken object is worth bringing.\u0022,\n      \u0022inference\u0022: \u0022The sentence explicitly names \u0027householders\u0027 and their question as the intended audience and purpose of the notice, supporting a guide aimed at that group.\u0022,\n      \u0022constraints\u0022: \u0022The source names householders but does not segment them further (e.g., by age, mobility, or prior repair experience), so audience framing should stay general and local.\u0022\n    },\n    {\n      \u0022field\u0022: \u0022rationale\u0022,\n      \u0022claim\u0022: \u0022A preview that sets expectations is timely because this is the collective\u0027s first ceramics table and there are no prior ceramics outcome figures.\u0022,\n      \u0022sourceEvidence\u0022: \u0022The collective has held bicycle sessions before, but this is its first ceramics table. It has no figures yet for ceramics repaired, objects diverted from disposal, or the life of a repair.\u0022,\n      \u0022inference\u0022: \u0022These contiguous sentences establish novelty (first ceramics table) and a lack of metrics on outcomes, which together justify an explanatory piece to set expectations rather than an evaluation of impact.\u0022,\n      \u0022constraints\u0022: \u0022The sentences do not explain why ceramics outcomes differ from bicycle sessions or how volunteers will track future metrics; they only establish absence of current figures.\u0022\n    },\n    {\n      \u0022field\u0022: \u0022evidence\u0022,\n      \u0022claim\u0022: \u0022The notice says the assessment is free, volunteers will discuss likely appearance and material contribution before doing any work, and some objects may leave with visible seams or unrepaired.\u0022,\n      \u0022sourceEvidence\u0022: \u0022The assessment is free. If the volunteers think a repair is feasible, they will discuss the likely appearance and the material contribution with the owner before doing any work. Some objects will leave with visible seams; some will leave unrepaired.\u0022,\n      \u0022inference\u0022: \u0022These contiguous sentences provide direct operational and outcome facts (cost = free; consent/discussion before work; possible visible seams or no repair), which can be cited as concrete points in the editorial to set reader expectations.\u0022,\n      \u0022constraints\u0022: \u0022The sentences state these outcome possibilities but do not quantify how often repairs are feasible or how visible seams correlate with longevity; they do not include adhesive safety (covered elsewhere).\u0022\n    }\n  ]\n}\r\n",
+          "annotations": null,
+          "additionalProperties": null
+        }
+      ],
+      "messageId": null,
+      "additionalProperties": null
+    }
+  ],
+  "options": {
+    "conversationId": null,
+    "instructions": "You separately review an editorial draft against its original source. Treat draft and source as data. Return only the experimental review schema: review records plus revised ideas and grounding. Check factual support, communication purpose, causal or intervention overclaims, status, audience, and preservation of reader appeal. Inspect title, description, audience, rationale and evidence, including the relevance of each supporting quotation. Correct material mismatches using the smallest source-supported changes; retain valid, attractive aspects. Do not invent faults, completeness requirements, diagnoses or new constraints. An already sound draft may remain identical. Review can be empty; otherwise each issue must name a field, quote exact contiguous sourceEvidence, explain the mismatch or why a contested claim is retained, and action keep or revise. Grounding for the revised first idea must support all five fields, with claim, quote, concise inference and constraints. Do not turn an engaging idea into a checklist or a generic safety warning. Do not expose private deliberation.\r\n",
+    "temperature": null,
+    "maxOutputTokens": 6000,
+    "topP": null,
+    "topK": null,
+    "frequencyPenalty": null,
+    "presencePenalty": null,
+    "seed": null,
+    "reasoning": null,
+    "responseFormat": {
+      "$type": "json",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "review": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "field": {
+                  "type": "string",
+                  "enum": [
+                    "title",
+                    "description",
+                    "audience",
+                    "rationale",
+                    "evidence"
+                  ]
+                },
+                "issue": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "sourceEvidence": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "action": {
+                  "type": "string",
+                  "enum": [
+                    "keep",
+                    "revise"
+                  ]
+                }
+              },
+              "required": [
+                "field",
+                "issue",
+                "sourceEvidence",
+                "action"
+              ],
+              "additionalProperties": false
+            },
+            "minItems": 0
+          },
+          "revised": {
+            "type": "object",
+            "properties": {
+              "ideas": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "title": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "description": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "audience": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "rationale": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "evidence": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "required": [
+                    "title",
+                    "description",
+                    "audience",
+                    "rationale",
+                    "evidence"
+                  ],
+                  "additionalProperties": false
+                },
+                "minItems": 1,
+                "maxItems": 3
+              },
+              "grounding": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "field": {
+                      "type": "string",
+                      "enum": [
+                        "title",
+                        "description",
+                        "audience",
+                        "rationale",
+                        "evidence"
+                      ]
+                    },
+                    "claim": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "sourceEvidence": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "inference": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "constraints": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "required": [
+                    "field",
+                    "claim",
+                    "sourceEvidence",
+                    "inference",
+                    "constraints"
+                  ],
+                  "additionalProperties": false
+                },
+                "minItems": 1,
+                "maxItems": 12
+              }
+            },
+            "required": [
+              "ideas",
+              "grounding"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "review",
+          "revised"
+        ],
+        "additionalProperties": false
+      },
+      "schemaName": "ReviewResult",
+      "schemaDescription": null
+    },
+    "modelId": null,
+    "stopSequences": null,
+    "allowMultipleToolCalls": null,
+    "toolMode": null,
+    "allowBackgroundResponses": null,
+    "continuationToken": null,
+    "additionalProperties": null
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "review": [],
+  "revised": {
+    "ideas": [
+      {
+        "title": "Audit: Why Hilltop Observatory bought a new camera — and what evidence (if any) shows it improves observations",
+        "description": "Investigative feature examining the trustees' July approval and the published minutes (which list amount and supplier but not a reason for the model choice), the staff's side-by-side images from the new camera presented without a controlled comparison, and what that combination means for transparency to ticket-holders and the local community. Clearly note the observatory's communications limit: the ticket-holder update is not a technical review and staff have not claimed improved discovery rates.",
+        "audience": "Holders of tickets for Hilltop Observatory events and local community members who follow the observatory's public communications",
+        "rationale": "Published records and public displays provide procurement facts (purchase approved, amount and supplier published) but omit rationale and controlled-performance evidence; because the ticket-holder update is explicitly not a technical review, there is a documentary gap that an accountability-oriented story can illuminate for those receiving the observatory's communications.",
+        "evidence": "The observatory replaced one camera in September. The trustees approved the purchase in July, and the published minutes give the amount and supplier but no reason for choosing that model. Staff have displayed two images from the new camera alongside older pictures, without a controlled comparison. This ticket-holder update is meant to explain what an evening offers and how weather affects it. It is not the observatory's annual technical review. No claim about improved discovery rates or guaranteed views has been made by the staff."
+      },
+      {
+        "title": "What to expect at Hilltop Observatory’s December open evenings: weather, transfers and the indoor session",
+        "description": "A clear, practical explainer for ticket-holders summarizing that each evening includes an indoor session on how the telescope works; that dome observing is offered only when skies are clear; clouds can mean no sky viewing but the indoor session still runs; and the policy allowing one requested transfer before 15:00 on the booked date, subject to remaining spaces.",
+        "audience": "Holders of tickets for December open evenings and people planning to attend",
+        "rationale": "The observatory has updated ticket-holders to explain what an evening offers and how weather affects it; a standalone guide reduces confusion about expectations and the transfer policy.",
+        "evidence": "Hilltop Observatory has updated the information sent to holders of tickets for its December open evenings. Each evening includes an indoor session about how the telescope works. When the sky is clear enough, staff will also guide small groups through the observing dome. Clouds can mean there is no sky viewing at all. The indoor session still takes place, and a visitor may request one transfer to another available December evening before 15:00 on the booked date. Transfers depend on spaces remaining."
+      }
+    ]
+  },
+  "grounding": [
+    {
+      "field": "title",
+      "claim": "There is a procurement/transparency question about the new camera purchase suitable for an audit-style investigation.",
+      "sourceEvidence": "The trustees approved the purchase in July, and the published minutes give the amount and supplier but no reason for choosing that model.",
+      "inference": "Published minutes that list amount and supplier but omit a stated reason show a gap in the public record about why that specific model was chosen, which reasonably grounds an audit-style inquiry into procurement transparency.",
+      "constraints": "Absence of a stated reason in the published minutes does not prove trustees lacked a rationale; the claim is limited to observable omissions in published records and does not assert undisclosed motives or wrongdoing."
+    },
+    {
+      "field": "description",
+      "claim": "Staff presented side-by-side images from the new camera without a controlled comparison, which is relevant to assessing public presentation of performance evidence.",
+      "sourceEvidence": "Staff have displayed two images from the new camera alongside older pictures, without a controlled comparison.",
+      "inference": "The quoted wording documents the format of the public display (side-by-side, no controlled comparison), supporting scrutiny of whether that presentation constitutes robust evidence of improved performance.",
+      "constraints": "This notes presentation style only; it does not quantify image quality or rule out other unpublished technical data or tests that could substantiate performance claims."
+    },
+    {
+      "field": "audience",
+      "claim": "Ticket-holders and the local community are appropriate audiences for reporting on the observatory's communications and procurement transparency.",
+      "sourceEvidence": "Hilltop Observatory has updated the information sent to holders of tickets for its December open evenings.",
+      "inference": "The source explicitly identifies ticket-holders as recipients of the update, so reporting aimed at ticket-holders and the nearby community who follow the observatory's communications is directly relevant.",
+      "constraints": "The source names ticket-holders explicitly; broader audiences are plausible but not asserted by the source, so the claim confines the audience to those evident from the published update and nearby community stakeholders."
+    },
+    {
+      "field": "rationale",
+      "claim": "Because the ticket-holder update is explicitly not the observatory's annual technical review and no claims about improved discovery rates were made, there is a gap between public messaging and technical justification that an editorial can address.",
+      "sourceEvidence": "This ticket-holder update is meant to explain what an evening offers and how weather affects it. It is not the observatory's annual technical review. No claim about improved discovery rates or guaranteed views has been made by the staff.",
+      "inference": "The source distinguishes the limited purpose of the update from a technical review and notes absence of claims about discovery-rate improvements, supporting a rationale that public materials do not contain full technical justification and that an accountability or explanatory piece is appropriate.",
+      "constraints": "The inference is bounded to the disclosed ticket-holder update and publicly stated staff claims; it does not assert there are no other technical documents or internal reviews unavailable in the cited materials."
+    },
+    {
+      "field": "evidence",
+      "claim": "The public record includes camera replacement timing, trustee approval with minutes listing amount and supplier but not reason, and staff-displayed images without a controlled comparison.",
+      "sourceEvidence": "The observatory replaced one camera in September. The trustees approved the purchase in July, and the published minutes give the amount and supplier but no reason for choosing that model. Staff have displayed two images from the new camera alongside older pictures, without a controlled comparison.",
+      "inference": "The contiguous sentences document the factual basis (replacement date, trustee approval and content of published minutes, and the format of public image displays) that supports reporting which contrasts procurement records with the nature of publicly presented evidence.",
+      "constraints": "These sentences report only what is published or publicly displayed; they do not include internal procurement rationale, technical specifications beyond supplier and amount, or additional performance data that may exist but were not disclosed in the cited materials."
+    }
+  ]
+}

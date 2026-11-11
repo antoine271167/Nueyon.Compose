@@ -1,0 +1,13 @@
+{
+  "status": "failed",
+  "ideas": null,
+  "grounding": null,
+  "review": null,
+  "revised": null,
+  "error": "System.Text.Json.JsonException: JSON deserialization for type \u0027Nueyon.Compose.Experiments.ExperimentIdeaResult\u0027 was missing required properties including: \u0027grounding\u0027.\r\n   at System.Text.Json.ThrowHelper.ThrowJsonException_JsonRequiredPropertyMissing(JsonTypeInfo parent, BitArray assignedOrNotRequiredPropertiesSet)\r\n   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter\u00601.OnTryRead(Utf8JsonReader\u0026 reader, Type typeToConvert, JsonSerializerOptions options, ReadStack\u0026 state, T\u0026 value)\r\n   at System.Text.Json.Serialization.JsonConverter\u00601.TryRead(Utf8JsonReader\u0026 reader, Type typeToConvert, JsonSerializerOptions options, ReadStack\u0026 state, T\u0026 value, Boolean\u0026 isPopulatedValue)\r\n   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo\u00601.ReadJsonAndSetMember(Object obj, ReadStack\u0026 state, Utf8JsonReader\u0026 reader)\r\n   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter\u00601.OnTryRead(Utf8JsonReader\u0026 reader, Type typeToConvert, JsonSerializerOptions options, ReadStack\u0026 state, T\u0026 value)\r\n   at System.Text.Json.Serialization.JsonConverter\u00601.TryRead(Utf8JsonReader\u0026 reader, Type typeToConvert, JsonSerializerOptions options, ReadStack\u0026 state, T\u0026 value, Boolean\u0026 isPopulatedValue)\r\n   at System.Text.Json.Serialization.JsonConverter\u00601.ReadCore(Utf8JsonReader\u0026 reader, T\u0026 value, JsonSerializerOptions options, ReadStack\u0026 state)\r\n   at System.Text.Json.Serialization.Metadata.JsonTypeInfo\u00601.Deserialize(Utf8JsonReader\u0026 reader, ReadStack\u0026 state)\r\n   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan\u00601 utf8Json, JsonTypeInfo\u00601 jsonTypeInfo, Nullable\u00601 actualByteCount)\r\n   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan\u00601 json, JsonTypeInfo\u00601 jsonTypeInfo)\r\n   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)\r\n   at Nueyon.Compose.Experiments.ExperimentValidator.ParseReview(String json, String source) in C:\\Workspaces\\Nueyon.Compose\\src\\Nueyon.Compose.Experiments\\ExperimentModels.cs:line 70\r\n   at Nueyon.Compose.Experiments.ExperimentRunner.RunAsync(CellState cell, Boolean verifyFreeze, CancellationToken cancellationToken) in C:\\Workspaces\\Nueyon.Compose\\src\\Nueyon.Compose.Experiments\\ExperimentRunner.cs:line 141",
+  "callCount": 1,
+  "totalTokensUsed": 4850,
+  "durationMs": 34714,
+  "startedUtc": "2026-11-11T22:09:10.2962576+00:00",
+  "completedUtc": "2026-11-11T22:09:45.0165703+00:00"
+}

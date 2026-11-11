@@ -1,0 +1,71 @@
+{
+  "status": "success",
+  "ideas": [
+    {
+      "title": "Usability-focused feature: how the North Quay bilingual pilot guides readers between English/Polish summaries and Dutch originals",
+      "description": "A focused editorial feature that documents the pilot\u2019s current multilingual surface (landing page \u002B six short summaries in English and Polish) while longer interview chapters remain in Dutch; it reports the project\u2019s translation approach (two paid translators; no automated system described), summarizes participation metrics (30 invitations, 9 opens, 4 navigation comments) and the project\u2019s explicit request for navigational feedback, and then (within journalistic limits) lays out concrete navigation clarifications and reader-facing signposting the project can adopt before any funded expansion.",
+      "audience": "Project editors and managers, UX/designers charged with the site navigation, the local reading groups and early readers who received invitations or responded, and potential funders assessing whether to support fuller translations.",
+      "rationale": "The source reports a limited access pilot that asks for feedback on navigation and shows early, tangible but small engagement; an editorial piece centered on navigation both serves readers who reported confusion and creates a documented account funders and the project team can use when deciding next steps.",
+      "evidence": "Landing page and six summaries available in both English and Polish while longer chapters remain Dutch; the project used two paid translators and does not describe an automated translation system; 30 invitation links were sent and 9 people opened the feedback form with 4 comments about finding their way between summaries and interviews; no reading-comprehension or language-comparison task was carried out; the announcement asks for feedback on navigation and says further languages/full chapters are possibilities for a later funding application rather than promised additions."
+    },
+    {
+      "title": "Reader-facing bilingual primer (English \u0026 Polish) that points clearly to Dutch originals",
+      "description": "Publish a concise primer (in English and Polish) that summarizes what is available, explicitly indicates which chapters remain only in Dutch, explains how translated summaries link to originals, and provides step-by-step navigation instructions and an FAQ addressing the most common confusions reported in the pilot.",
+      "audience": "Multilingual community readers (English- and Polish-speaking), local reading groups, and volunteers/helpers who assist readers.",
+      "rationale": "Clarifying what is available and how to reach the Dutch originals reduces friction for readers and responds directly to the navigation comments already received.",
+      "evidence": "Landing page and six short summaries are now available in both languages; each translated summary links to the original chapter and identifies which text is available in which language; the announcement asks readers for feedback on navigation."
+    },
+    {
+      "title": "Funder-facing memo: pilot metrics, translation model, and costs to complete full translations",
+      "description": "Produce a concise internal memo for potential funders that compiles the pilot\u2019s factual data (which items are translated, the two paid translators and no automated system, invitation/feedback counts, and the lack of formal comprehension testing) and outlines options and estimated resource needs for expanding language coverage or translating full chapters.",
+      "audience": "Potential funders, project leadership, and institutional partners evaluating a funding application.",
+      "rationale": "The source frames additional language/full-chapter translation as a possibility for a later funding application; a memo that aggregates pilot data will support funding decisions without promising outcomes the project has not committed to.",
+      "evidence": "The published account does not describe an automated translation system; the project worked with two paid translators; Thirty invitation links were sent to local reading groups; So far nine people have opened the feedback form, and four have submitted comments; Further languages and full translated chapters remain possibilities for a later funding application."
+    }
+  ],
+  "grounding": [
+    {
+      "field": "title",
+      "claim": "There is a small access pilot offering English and Polish alongside Dutch.",
+      "sourceEvidence": "The North Quay oral-history project has opened a small access pilot for readers who use English or Polish alongside Dutch.",
+      "inference": "The quoted sentence explicitly describes the existence of a small access pilot and names English and Polish as the additional reader languages alongside Dutch, which supports the title\u0027s framing of a bilingual pilot that must guide readers between translated summaries and Dutch originals.",
+      "constraints": "The quote establishes the pilot and languages but does not quantify its scope beyond \u0027small\u0027 and does not itself state which items are translated or how navigation currently works."
+    },
+    {
+      "field": "description",
+      "claim": "The pilot\u0027s landing page and six short summaries are available in both languages, longer interview chapters remain in Dutch, and each translated summary links to the original chapter and identifies available languages.",
+      "sourceEvidence": "Its landing page and six short summaries are now available in both languages. The longer interview chapters remain in Dutch. Each translated summary links to the original chapter and identifies which text is available in which language.",
+      "inference": "These contiguous sentences name exactly which parts are translated (landing page and six summaries), state that longer chapters are not translated, and state the translated summaries link to the originals and indicate language availability \u2014 directly supporting the description\u0027s factual claims about content and linking behavior.",
+      "constraints": "The quote does not describe the visual design, how prominent the language labels are, or specific navigation flows; it only states which items are translated and that links/identifications exist."
+    },
+    {
+      "field": "audience",
+      "claim": "Local reading groups and readers who received invitations or responded are explicit audiences for the pilot and for navigation improvements.",
+      "sourceEvidence": "Thirty invitation links were sent to local reading groups.",
+      "inference": "Sending invitation links to local reading groups shows the project intentionally targeted those groups as pilot participants, supporting an audience that includes local reading groups and the readers they represent.",
+      "constraints": "The quote shows these groups were invited but does not describe their demographics, how representative they are of all readers, or whether other audiences (e.g., wider public or funders) were explicitly targeted by the pilot."
+    },
+    {
+      "field": "rationale",
+      "claim": "The project\u2019s announcement explains limited access and asks readers for feedback on navigation, creating an editorial opportunity to surface and respond to navigation issues.",
+      "sourceEvidence": "The current announcement explains the limited access now available and asks readers for feedback on navigation.",
+      "inference": "Because the project explicitly frames the release as limited and solicits navigation feedback, an editorial piece that documents navigation problems and clarifies options would directly align with the project\u0027s stated need for feedback and serve both readers and the project team.",
+      "constraints": "The quote shows the project asked for feedback but does not guarantee the project intends to act on any particular editorial recommendations or to fund changes; the announcement\u0027s request for feedback may be exploratory rather than a promise of changes."
+    },
+    {
+      "field": "evidence",
+      "claim": "Key pilot facts: two paid translators; no automated translation system described; 30 invitation links sent; 9 opened feedback form; 4 comments about finding their way between summaries and interviews; no reading-comprehension or language comparison task carried out; future translations contingent on later funding application.",
+      "sourceEvidence": "The project worked with two paid translators; the published account does not describe an automated translation system. Thirty invitation links were sent to local reading groups. So far nine people have opened the feedback form, and four have submitted comments about finding their way between summaries and interviews. No reading-comprehension task or language comparison has been carried out. The current announcement explains the limited access now available and asks readers for feedback on navigation. Further languages and full translated chapters remain possibilities for a later funding application, rather than promised additions.",
+      "inference": "This contiguous block enumerates the pilot\u0027s staffing (two paid translators), the absence of a described automated system, the outreach and engagement metrics, the lack of formal evaluation tasks, the solicitation of navigational feedback, and the conditional status of further translations \u2014 collectively supporting the feature\u0027s factual evidence base and the need for navigation-focused reporting.",
+      "constraints": "While comprehensive, the quote does not provide raw timestamps, demographic details of respondents, qualitative content of the four comments beyond their subject (navigation), nor any measures of the severity of reported navigation problems; it also does not report outcomes of any technical or editorial fixes."
+    }
+  ],
+  "review": null,
+  "revised": null,
+  "error": null,
+  "callCount": 1,
+  "totalTokensUsed": 5535,
+  "durationMs": 73012,
+  "startedUtc": "2026-11-11T22:11:21.9648501+00:00",
+  "completedUtc": "2026-11-11T22:12:34.9911874+00:00"
+}

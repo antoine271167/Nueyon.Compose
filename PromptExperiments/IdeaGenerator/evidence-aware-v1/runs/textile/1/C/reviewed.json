@@ -1,0 +1,90 @@
+{
+  "review": [
+    {
+      "field": "audience",
+      "issue": "The draft adds role-specific readers ('senior managers and decision-makers') to the audience for the onboarding brief; the source only identifies 'other member housing associations considering participation' without naming roles.",
+      "sourceEvidence": "Its introductory note is addressed to other member housing associations considering participation.",
+      "action": "revise"
+    },
+    {
+      "field": "audience",
+      "issue": "Idea 2's audience names 'operations leads' in addition to caretakers and repairers; the source documents caretakers and the inventory's use by a repairer but does not mention operations leads.",
+      "sourceEvidence": "Two caretakers have entered sample items in a shared inventory. That inventory is intended to help a repairer locate an item and see its fabric and dimensions.",
+      "action": "revise"
+    },
+    {
+      "field": "audience",
+      "issue": "Idea 3's audience specifies 'Leadership teams and boards of housing associations' while the source only indicates that member associations will review pilot work and does not explicitly name boards or the exact leadership roles.",
+      "sourceEvidence": "Members will review the initial work before considering upholstery or other textile services.",
+      "action": "revise"
+    },
+    {
+      "field": "description",
+      "issue": "Idea 3's description refers to 'trade-offs of committing staff time or stock', but the source does not mention staff time or stock commitments; that phrase is not supported by the provided source.",
+      "sourceEvidence": "No price list, savings estimate or turnaround promise has been agreed. Members will review the initial work before considering upholstery or other textile services.",
+      "action": "revise"
+    }
+  ],
+  "revised": {
+    "ideas": [
+      {
+        "title": "Member onboarding brief: explain purpose, the curtain-pilot and the inventory example",
+        "description": "A concise introductory brief for housing associations considering joining Common Thread that states the cooperative purpose (shared repair service), explains the concrete first step (a curtain-repair pilot planned for January), frames the shared inventory as an illustrative organising tool, and sets expectations about unresolved items (no agreed prices, savings or turnaround yet) and membership review before expansion.",
+        "audience": "Other member housing associations considering participation.",
+        "rationale": "Because Common Thread is presented as a cooperative for shared repair priorities rather than a separate tech business, potential members need a clear, short explanation of collective purpose, the pilot's concrete timing and scope, and what the inventory demonstrates so they can evaluate participation without assuming commercial commitments.",
+        "evidence": "Two caretakers have entered sample items in a shared inventory. That inventory is intended to help a repairer locate an item and see its fabric and dimensions."
+      },
+      {
+        "title": "Operational pilot checklist and inventory template",
+        "description": "A practical one-page checklist and an inventory-entry template for caretakers and repairers covering item entry fields (location, fabric, dimensions, photos), handoff steps, and a short timeline for the January pilot to reduce ambiguity about how the supporting inventory will be used.",
+        "audience": "Caretakers and repairers within member housing associations responsible for the pilot.",
+        "rationale": "Two caretakers have already entered sample items and the inventory is intended to help a repairer locate items, so a standardized template and checklist would make the pilot easier to run and assess.",
+        "evidence": "Two caretakers have entered sample items in a shared inventory. That inventory is intended to help a repairer locate an item and see its fabric and dimensions. The pilot is planned for January and has not yet accepted repairs from tenants."
+      },
+      {
+        "title": "Decision checklist for membership commitments and future service scope",
+        "description": "A short briefing for association leaders listing the outstanding governance and commercial decisions (e.g., pricing, savings estimates, turnaround expectations), the planned member review after the pilot, and the sequence for considering upholstery or other textile services.",
+        "audience": "Leaders within member housing associations weighing membership and future service scope.",
+        "rationale": "The source notes several unresolved items (no price list, savings estimate or turnaround promise) and that members will review pilot results before expanding services, so a decision checklist would surface the choices and timing for leaders.",
+        "evidence": "No price list, savings estimate or turnaround promise has been agreed. Members will review the initial work before considering upholstery or other textile services."
+      }
+    ],
+    "grounding": [
+      {
+        "field": "title",
+        "claim": "Member onboarding brief: explain purpose, the curtain-pilot and the inventory example",
+        "sourceEvidence": "The introduction should help a potential member understand the collective purpose and the concrete first step, with the inventory serving as an example of how the service might be organised.",
+        "inference": "The source explicitly prescribes the introduction's role — to explain collective purpose and the concrete first step while using the inventory as an example — supporting the proposed onboarding-brief title.",
+        "constraints": "The quote prescribes the introduction's intent but does not mandate format or exclusivity; the title is an editorial choice consistent with that intent."
+      },
+      {
+        "field": "description",
+        "claim": "A concise introductory brief for housing associations... states the cooperative purpose, explains the curtain-repair pilot planned for January, frames the inventory as an organising tool, and sets expectations about unresolved items and membership review before expansion.",
+        "sourceEvidence": "The introduction should help a potential member understand the collective purpose and the concrete first step, with the inventory serving as an example of how the service might be organised.",
+        "inference": "That sentence supports describing the introduction as explaining purpose, the concrete first step and using the inventory as an example; the separate source lines about pilot timing and unresolved items fill out the other description points.",
+        "constraints": "While the source prescribes these explanatory goals, it does not provide full text or a required checklist of items; the description bundles several source-supported points into one brief."
+      },
+      {
+        "field": "audience",
+        "claim": "Other member housing associations considering participation.",
+        "sourceEvidence": "Its introductory note is addressed to other member housing associations considering participation.",
+        "inference": "The source explicitly states the introductory note's audience, directly supporting the claim about intended readers of the onboarding brief.",
+        "constraints": "The source does not specify internal roles or job titles within those organisations; adding role labels would be an inference beyond the quoted text."
+      },
+      {
+        "field": "rationale",
+        "claim": "Because Common Thread is presented as a cooperative for shared repair priorities rather than a separate tech business, potential members need a clear, short explanation of collective purpose, the pilot's concrete timing and scope, and what the inventory demonstrates so they can evaluate participation without assuming commercial commitments.",
+        "sourceEvidence": "The cooperative's ambition is a shared repair service, with the associations setting priorities together. A curtain repair pilot is its first planned service, not a separate technology business.",
+        "inference": "These contiguous sentences state the cooperative's ambition and that the curtain pilot is the first planned service and not a tech business; together they justify clarifying purpose, pilot scope and governance in onboarding materials to avoid misinterpretation.",
+        "constraints": "The source establishes ambition and the pilot's role but does not document any existing confusion among members; the rationale is an editorial inference about communication needs consistent with the source."
+      },
+      {
+        "field": "evidence",
+        "claim": "Sample items are already entered in a shared inventory intended to help a repairer locate items and see fabric/dimensions, demonstrating a concrete example to show in the brief.",
+        "sourceEvidence": "Two caretakers have entered sample items in a shared inventory. That inventory is intended to help a repairer locate an item and see its fabric and dimensions.",
+        "inference": "These contiguous sentences document both that sample inventory entries exist and the inventory's intended purpose, supporting inclusion of the inventory as a concrete example in the onboarding brief.",
+        "constraints": "The evidence shows sample entries and stated intent but not how complete or representative those entries are, nor whether the inventory workflow is finalized; the sample may be partial and the pilot has not yet accepted tenant repairs."
+      }
+    ]
+  }
+}

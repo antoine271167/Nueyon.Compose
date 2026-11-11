@@ -1,0 +1,65 @@
+{
+  "review": [
+    {
+      "field": "rationale",
+      "issue": "The draft's rationale for the first idea asserts that an expectation‑setting piece is 'likely to address the main barrier signalled in the source,' which reads as a causal claim. The source reports that 'welcome' was the most‑cited return reason and that the committee kept a later entry window, but it does not provide evidence that an expectation‑setting notice will reduce hesitation or increase attendance.",
+      "sourceEvidence": "After the October rehearsal, twelve of the nineteen people present answered a short question about returning. Eight mentioned the welcome, three mentioned the songs, and one mentioned both. Two people who had missed the previous rehearsal said late trains had played a part. The choir agreed at its monthly meeting to keep the later entry window through December. The minutes record the decision without an account of why it was chosen. There has been no survey of confidence before and after singing and no comparison with a fixed-start rehearsal.",
+      "action": "revise"
+    }
+  ],
+  "revised": {
+    "ideas": [
+      {
+        "title": "A step‑by‑step 'What to expect on your first Wednesday' guide to help hesitant adults decide to try the taster",
+        "description": "A short, vividly practical piece that walks a hesitant adult through the actual evening: who is invited, no auditions/no need to read music, the shared warm‑up with an option to listen, the 19:00 start and quiet entry until 19:20, and the free first taster with normal contribution from visit two — written to reduce uncertainty and lower the barrier to attend.",
+        "audience": "Adults who are unsure about singing in a group and are weighing whether to attend a one‑off taster",
+        "rationale": "The notice's stated purpose is to help a hesitant newcomer 'picture the evening', and informal rehearsal feedback emphasised the choir's welcome and a later entry window — together these make an expectation‑setting guide a plausible, directly relevant way to reduce uncertainty, while recognising the source provides no causal evidence that this will increase attendance.",
+        "evidence": "Source provides the taster details (who's invited, practical arrangements and free first visit), the short rehearsal feedback showing welcome as the top return reason, the committee decision to keep a later entry window, and an explicit statement that there has been no formal survey of confidence or a fixed‑start comparison."
+      },
+      {
+        "title": "Brief internal report for the choir committee summarising rehearsal feedback and the decision to keep the later‑entry window",
+        "description": "A concise two‑panel memo: (1) document the October micro‑survey counts (12 answered; 8 cited welcome, 3 songs, 1 both; two missed due to late trains), (2) note the committee decision to retain later entry through December and that minutes record the decision without explaining why, (3) flag gaps in evidence (no confidence survey, no fixed‑start comparison).",
+        "audience": "Choir committee and volunteer organisers who make access and scheduling decisions",
+        "rationale": "The rehearsal responses and the recorded committee decision are present in the source; packaging those facts and the recorded evidence gaps will support clearer governance and any future, justified operational choices.",
+        "evidence": "The source lists the micro‑survey counts and reasons given by members, records the committee decision to keep the later entry window, and explicitly states there has been no survey comparing confidence or fixed‑start rehearsals."
+      }
+    ],
+    "grounding": [
+      {
+        "field": "title",
+        "claim": "The feature should explicitly aim to help hesitant newcomers picture a first evening so they can decide whether to come.",
+        "sourceEvidence": "The notice is intended to help a hesitant newcomer picture the evening and decide whether to come.",
+        "inference": "The source explicitly states the notice's purpose; framing the piece as a 'what to expect' guide aligns directly with that intent.",
+        "constraints": "This supports framing the piece for hesitant newcomers for this specific taster; it does not prove the framing will change behavior or apply beyond this event."
+      },
+      {
+        "field": "description",
+        "claim": "Include the practical details given in the notice so readers can visualise the evening (who is invited, no auditions/no music‑reading, warm‑up with listening option, start time and late‑entry window, free first taster, normal contribution thereafter).",
+        "sourceEvidence": "Moorfield community choir is inviting adults who are unsure about singing in a group to a Wednesday taster on 25 November. There are no auditions and no requirement to read music. The first twenty minutes are a shared warm-up; newcomers may listen before joining in. The session begins at 19:00, but someone arriving from work may enter quietly until 19:20. A first taster is free; the ordinary weekly contribution applies from the second visit.",
+        "inference": "Each sentence in this block lists a concrete condition or accommodation the notice gives; reproducing these specifics helps the target reader picture the evening as the notice intends.",
+        "constraints": "These details apply to the named taster and could change for other sessions; they do not by themselves demonstrate effectiveness in reducing hesitation."
+      },
+      {
+        "field": "audience",
+        "claim": "The intended audience for the guide should match the invitation's target: adults unsure about singing in a group.",
+        "sourceEvidence": "Moorfield community choir is inviting adults who are unsure about singing in a group to a Wednesday taster on 25 November.",
+        "inference": "The invitation sentence explicitly names the population the taster targets, so the editorial audience should mirror that phrasing.",
+        "constraints": "The quote identifies the taster's target group only; it does not describe subgroups, numbers, or detailed motivations beyond being 'unsure.'"
+      },
+      {
+        "field": "rationale",
+        "claim": "An expectation‑setting guide is a plausible response to the barriers signalled in the source (emphasis on 'welcome' and later entry), but causal effects are untested in the source.",
+        "sourceEvidence": "After the October rehearsal, twelve of the nineteen people present answered a short question about returning. Eight mentioned the welcome, three mentioned the songs, and one mentioned both. Two people who had missed the previous rehearsal said late trains had played a part. The choir agreed at its monthly meeting to keep the later entry window through December. The minutes record the decision without an account of why it was chosen. There has been no survey of confidence before and after singing and no comparison with a fixed-start rehearsal.",
+        "inference": "The micro‑survey shows 'welcome' was most‑cited and the committee kept a later entry window; these facts make a piece emphasising welcome and arrival practicalities directly relevant, but the same passage explicitly reports no formal survey or comparison to support causal claims.",
+        "constraints": "The source gives only informal counts and a recorded committee decision without rationale; it does not establish that an editorial guide will reduce hesitation or increase attendance."
+      },
+      {
+        "field": "evidence",
+        "claim": "The source provides the taster notice, the October rehearsal micro‑survey counts and reasons, the committee's decision to keep the later entry window, and an explicit statement that no formal pre/post confidence survey or fixed‑start comparison exists.",
+        "sourceEvidence": "After the October rehearsal, twelve of the nineteen people present answered a short question about returning. Eight mentioned the welcome, three mentioned the songs, and one mentioned both. Two people who had missed the previous rehearsal said late trains had played a part. The choir agreed at its monthly meeting to keep the later entry window through December. The minutes record the decision without an account of why it was chosen. There has been no survey of confidence before and after singing and no comparison with a fixed-start rehearsal.",
+        "inference": "This contiguous block supplies the micro‑survey counts and reasons, the committee action, and the explicit data gap — together they anchor the editorial opportunity and its limits.",
+        "constraints": "The evidence is limited to an informal short question answered by a subset of attendees, recorded minutes lacking rationale, and an absence of formal surveys; it does not provide broader or causal data."
+      }
+    ]
+  }
+}

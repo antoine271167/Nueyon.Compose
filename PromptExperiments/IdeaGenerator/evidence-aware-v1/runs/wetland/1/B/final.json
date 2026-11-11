@@ -1,0 +1,13 @@
+{
+  "status": "failed",
+  "ideas": null,
+  "grounding": null,
+  "review": null,
+  "revised": null,
+  "error": "System.IO.InvalidDataException: Invalid grounding record.\r\n   at Nueyon.Compose.Experiments.ExperimentValidator.Validate(ExperimentIdeaResult result, String source) in C:\\Workspaces\\Nueyon.Compose\\src\\Nueyon.Compose.Experiments\\ExperimentModels.cs:line 96\r\n   at Nueyon.Compose.Experiments.ExperimentValidator.ParseDraft(String json, String source) in C:\\Workspaces\\Nueyon.Compose\\src\\Nueyon.Compose.Experiments\\ExperimentModels.cs:line 64\r\n   at Nueyon.Compose.Experiments.ExperimentRunner.RunAsync(CellState cell, Boolean verifyFreeze, CancellationToken cancellationToken) in C:\\Workspaces\\Nueyon.Compose\\src\\Nueyon.Compose.Experiments\\ExperimentRunner.cs:line 117",
+  "callCount": 1,
+  "totalTokensUsed": 5531,
+  "durationMs": 56995,
+  "startedUtc": "2026-11-11T22:01:12.1558415+00:00",
+  "completedUtc": "2026-11-11T22:02:09.1667697+00:00"
+}

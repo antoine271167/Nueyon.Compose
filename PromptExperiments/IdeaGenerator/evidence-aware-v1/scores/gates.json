@@ -1,0 +1,45 @@
+[
+  {
+    "condition": "B",
+    "decision": "NO-GO",
+    "checks": {
+      "primaryAtLeast8": false,
+      "holdoutAtLeast7": false,
+      "originalsPassBothReplicates": false,
+      "atLeast3MorePrimaryThanA": false,
+      "noNewCriticalWhereAPasses": false,
+      "editorialMeanAtLeastA": false,
+      "appealAtLeast1Point5": false,
+      "allPlannedCellsValid": false
+    },
+    "newCriticalCases": [
+      "observatory"
+    ],
+    "completeFirstIdeaGateRepairs": 0,
+    "partialFirstIdeaNarrowingAttempts": 0,
+    "note": "Operational scores penalize invalid/blocked outputs; raw quality and scoring sensitivities are separate. No independently blinded human evaluator."
+  },
+  {
+    "condition": "C",
+    "decision": "NO-GO",
+    "checks": {
+      "primaryAtLeast8": false,
+      "holdoutAtLeast7": false,
+      "originalsPassBothReplicates": false,
+      "atLeast3MorePrimaryThanA": false,
+      "noNewCriticalWhereAPasses": false,
+      "editorialMeanAtLeastA": false,
+      "appealAtLeast1Point5": false,
+      "allPlannedCellsValid": false,
+      "atLeast2CompleteFirstIdeaRepairs": false,
+      "noHarmfulOrUnsupportedReview": false,
+      "atLeast2MorePrimaryThanB": false
+    },
+    "newCriticalCases": [
+      "observatory"
+    ],
+    "completeFirstIdeaGateRepairs": 0,
+    "partialFirstIdeaNarrowingAttempts": 1,
+    "note": "Operational scores penalize invalid/blocked outputs; raw quality and scoring sensitivities are separate. No independently blinded human evaluator."
+  }
+]

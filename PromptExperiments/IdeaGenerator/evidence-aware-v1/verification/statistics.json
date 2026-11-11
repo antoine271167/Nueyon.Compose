@@ -1,0 +1,107 @@
+{
+  "primaryRaw": [
+    {
+      "condition": "A",
+      "visible": 10,
+      "rawPasses": 3,
+      "meanRawTotal": 7.4,
+      "meanRawDistinctiveAppeal": 2.9
+    },
+    {
+      "condition": "B",
+      "visible": 10,
+      "rawPasses": 5,
+      "meanRawTotal": 6.5,
+      "meanRawDistinctiveAppeal": 2.9
+    },
+    {
+      "condition": "C",
+      "visible": 6,
+      "rawPasses": 3,
+      "meanRawTotal": 6.666666666666667,
+      "meanRawDistinctiveAppeal": 2.8333333333333335
+    }
+  ],
+  "quotes": [
+    {
+      "condition": "B",
+      "replicate": 1,
+      "visibleOutputs": 10,
+      "quotes": 50.0,
+      "exact": 41.0,
+      "fullSupport": 35,
+      "partialSupport": 7,
+      "unsupported": 8
+    },
+    {
+      "condition": "C",
+      "replicate": 1,
+      "visibleOutputs": 6,
+      "quotes": 30.0,
+      "exact": 30.0,
+      "fullSupport": 23,
+      "partialSupport": 4,
+      "unsupported": 3
+    },
+    {
+      "condition": "B",
+      "replicate": 2,
+      "visibleOutputs": 2,
+      "quotes": 10.0,
+      "exact": 10.0,
+      "fullSupport": 6,
+      "partialSupport": 2,
+      "unsupported": 2
+    },
+    {
+      "condition": "C",
+      "replicate": 2,
+      "visibleOutputs": 2,
+      "quotes": 10.0,
+      "exact": 10.0,
+      "fullSupport": 6,
+      "partialSupport": 2,
+      "unsupported": 2
+    }
+  ],
+  "cReviewedPipelineMeanMs": 103430.25,
+  "cAllPlannedPipelineMeanMs": 84998.71428571429,
+  "perRepCalls": [
+    {
+      "group": "1, A",
+      "calls": 22,
+      "input": 85751.0,
+      "output": 36686.0
+    },
+    {
+      "group": "1, B",
+      "calls": 10,
+      "input": 14105.0,
+      "output": 46273.0
+    },
+    {
+      "group": "1, C",
+      "calls": 6,
+      "input": 13884.0,
+      "output": 21565.0
+    },
+    {
+      "group": "2, A",
+      "calls": 10,
+      "input": 46725.0,
+      "output": 17156.0
+    },
+    {
+      "group": "2, B",
+      "calls": 4,
+      "input": 9378.0,
+      "output": 21078.0
+    },
+    {
+      "group": "2, C",
+      "calls": 2,
+      "input": 7138.0,
+      "output": 7919.0
+    }
+  ]
+}

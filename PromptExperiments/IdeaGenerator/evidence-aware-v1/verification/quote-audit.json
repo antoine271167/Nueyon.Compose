@@ -1,0 +1,920 @@
+[
+  {
+    "condition": "B",
+    "records": [
+      {
+        "whitespaceNormalized": true,
+        "field": "title",
+        "claim": "A post‑mortem + action guide is the strongest editorial opportunity because the candidate prompt explicitly attempted to 'preserve editorial intent' yet caused regressions.",
+        "quote": "The candidate added one generic section, **“Preserve Editorial Intent from the Synthesis.”** It tells Narrative to identify the primary message, supporting themes, and contextual details; preserve audience scope and relative emphasis; keep technical details subordinate when Synthesis does; and retain uncertainty when the source is ambiguous. It contains no Nuëyon-specific wording or this story's details.",
+        "exact": true
+      },
+      {
+        "whitespaceNormalized": false,
+        "field": "description",
+        "claim": "Produce a reproducible post‑mortem that analyzes failure modes, recommends prompt changes, and bundles artifacts for regression testing.",
+        "quote": "Full console logs, extracted Narrative outputs, and final Compose outputs are saved under this experiment's `baseline/outputs/` and `candidate/outputs/`.\n\nThe complete baseline and candidate prompts are saved under `baseline/prompts/Narrative/` and `candidate/prompts/Narrative/`. The exact unified diff is `prompt-changes/Narrative.user.prompt.diff`.",
+        "exact": false
+      },
+      {
+        "whitespaceNormalized": true,
+        "field": "audience",
+        "claim": "The primary audience should be Nuëyon editorial, Narrative and Compose prompt-engineering teams, and product/release decision-makers who gate prompt promotions.",
+        "quote": "For Narrative, criterion E measures whether the brief gives Compose a sound foundation for an introductory LinkedIn post; for Compose, E measures whether the output itself is suitable for that post.",
+        "exact": true
+      },
+      {
+        "whitespaceNormalized": false,
+        "field": "rationale",
+        "claim": "A focused guide is warranted because the candidate prompt reduced baseline fidelity: Narrative mean dropped from 6.00 to 4.00 and Compose from 5.67 to 3.33, and candidate runs consistently made orchestration central while adding unsupported claims.",
+        "quote": "Narrative total: Baseline mean 6.00/10 (range 5–7; sample SD 1.00). Candidate mean 4.00/10 (range 4–4; sample SD 0.00).\n\nCompose total: Baseline mean 5.67/10 (range 4–7; sample SD 1.53). Candidate mean 3.33/10 (range 3–4; sample SD 0.58).\n\nAll three candidate Narrative runs and all three candidate Compose runs failed this gate. Each made orchestration/orchestration-first positioning central.",
+        "exact": false
+      },
+      {
+        "whitespaceNormalized": false,
+        "field": "evidence",
+        "claim": "Experiment 005 concluded the candidate prompt should not be promoted and restored production; the report includes a decision and rollback artifacts.",
+        "quote": "Decision: Do not promote. Candidate was worse on mean score for both Narrative and Compose, failed the orchestration hierarchy and factual restraint gates in every run, and introduced regressions. The production prompt was restored from the saved byte snapshot.",
+        "exact": false
+      }
+    ],
+    "exactCount": 2,
+    "count": 5,
+    "groundingLocation": "schema-location",
+    "id": "005",
+    "replicate": 1
+  },
+  {
+    "condition": "B",
+    "records": [
+      {
+        "whitespaceNormalized": true,
+        "field": "title",
+        "claim": "A ‘Preserve Editorial Intent’ rule already exists in the candidate prompt and is the locus for refinement.",
+        "quote": "The candidate added one generic section, **“Preserve Editorial Intent from the Synthesis.”**",
+        "exact": true
+      },
+      {
+        "whitespaceNormalized": true,
+        "field": "description",
+        "claim": "The candidate prompt failed to preserve the intended editorial hierarchy: company identity and audience were subordinated while orchestration became central.",
+        "quote": "Candidate outputs were readable and coherent, but consistently subordinated company identity and audience scope while making orchestration the central positioning.",
+        "exact": true
+      },
+      {
+        "whitespaceNormalized": true,
+        "field": "audience",
+        "claim": "The practical readers and implementers for this idea are the people who edit and manage the Narrative prompts and related pipeline artifacts.",
+        "quote": "The complete baseline and candidate prompts are saved under `baseline/prompts/Narrative/` and `candidate/prompts/Narrative/`.",
+        "exact": true
+      },
+      {
+        "whitespaceNormalized": true,
+        "field": "rationale",
+        "claim": "Refinement is required because the candidate performed worse and introduced unsupported claims, failing critical gates.",
+        "quote": "Candidate was worse on mean score for both Narrative and Compose, failed the orchestration hierarchy and factual restraint gates in every run, and introduced regressions.",
+        "exact": true
+      },
+      {
+        "whitespaceNormalized": true,
+        "field": "evidence",
+        "claim": "There are concrete artifacts (diff, logs, and outputs) available to implement and validate the proposed guard changes.",
+        "quote": "Full console logs, extracted Narrative outputs, and final Compose outputs are saved under this experiment's `baseline/outputs/` and `candidate/outputs/`.",
+        "exact": true
+      }
+    ],
+    "exactCount": 5,
+    "count": 5,
+    "groundingLocation": "schema-location",
+    "id": "005",
+    "replicate": 2
+  },
+  {
+    "condition": "C",
+    "records": [
+      {
+        "whitespaceNormalized": true,
+        "field": "title",
+        "claim": "A ‘Preserve Editorial Intent’ rule already exists in the candidate prompt and is the locus for refinement.",
+        "quote": "The candidate added one generic section, **“Preserve Editorial Intent from the Synthesis.”**",
+        "exact": true
+      },
+      {
+        "whitespaceNormalized": true,
+        "field": "description",
+        "claim": "The candidate prompt failed to preserve the intended editorial hierarchy: company identity and audience were subordinated while orchestration became central.",
+        "quote": "Candidate outputs were readable and coherent, but consistently subordinated company identity and audience scope while making orchestration the central positioning.",
+        "exact": true
+      },
+      {
+        "whitespaceNormalized": true,
+        "field": "audience",
+        "claim": "The practical implementers for these edits are the people who author and maintain the Narrative prompts and the pipeline that runs them.",
+        "quote": "The complete baseline and candidate prompts are saved under `baseline/prompts/Narrative/` and `candidate/prompts/Narrative/`.",
+        "exact": true
+      },
+      {
+        "whitespaceNormalized": true,
+        "field": "rationale",
+        "claim": "Refinement is required because the candidate performed worse and introduced unsupported claims, failing critical gates.",
+        "quote": "Candidate was worse on mean score for both Narrative and Compose, failed the orchestration hierarchy and factual restraint gates in every run, and introduced regressions.",
+        "exact": true
+      },
+      {
+        "whitespaceNormalized": true,
+        "field": "evidence",
+        "claim": "Concrete artifacts exist to develop and validate the refined guard and its tests.",
+        "quote": "Full console logs, extracted Narrative outputs, and final Compose outputs are saved under this experiment's `baseline/outputs/` and `candidate/outputs/`.",
+        "exact": true
+      }
+    ],
+    "exactCount": 5,
+    "count": 5,
+    "groundingLocation": "schema-location",
+    "id": "005",
+    "replicate": 2
+  },
+  {
+    "condition": "B",
+    "records": [
+      {
+        "whitespaceNormalized": true,
+        "field": "title",
+        "claim": "Focus the next experiment on the Narrative stage because Narrative is the most recurrent first visible hierarchy shift.",
+        "quote": "Narrative is the most recurrent first visible hierarchy shift in the available records.",
+        "exact": true
+      },
+      {
+        "whitespaceNormalized": true,
+        "field": "description",
+        "claim": "The recommended trial should be a 'controlled upstream-boundary trial' that targets Narrative while comparing its input Synthesis and keeping other prompts constant, and should measure both factual fidelity and editorial quality.",
+        "quote": "The next useful experiment should be **one controlled upstream-boundary trial** that: 1. Targets the first stage supported by the evidence for the chosen failure (Narrative is the most recurrent locus; compare its actual input Synthesis before changing it).",
+        "exact": false
+      },
+      {
+        "whitespaceNormalized": false,
+        "field": "audience",
+        "claim": "This experiment is intended for the Nuëyon.Compose prompt-experiment team, prompt engineers, and content leads preparing the LinkedIn company-page introduction.",
+        "quote": "Use these paths as the default locations in future Nuëyon.Compose experiment workflows. Keep `Idea → Research → Synthesis → Narrative → Compose` format-agnostic and generic. Only Compose should receive and apply a requested format such as LinkedIn, Facebook, or article.",
+        "exact": false
+      },
+      {
+        "whitespaceNormalized": false,
+        "field": "rationale",
+        "claim": "A focused Narrative-stage intervention is high-leverage because Narrative recurrently manifests hierarchy drift and editorial quality is inconsistently measured.",
+        "quote": "Narrative is the most recurrent first visible hierarchy shift in the available records. Engagement has been under-measured.",
+        "exact": false
+      },
+      {
+        "whitespaceNormalized": true,
+        "field": "evidence",
+        "claim": "The report explicitly recommends 'one controlled upstream-boundary trial' with concrete steps including targeting Narrative, holding prompts constant, and separately evaluating factuality, hierarchy, and editorial quality.",
+        "quote": "Do not infer that another Idea-only change or a Compose-only style change will address every failure. The next useful experiment should be **one controlled upstream-boundary trial** that: 1. Targets the first stage supported by the evidence for the chosen failure (Narrative is the most recurrent locus; compare its actual input Synthesis before changing it). 2. Tests one explicit rule: preserve the selected company-level subject and product-support relationship through story selection, while keeping technical architecture as supporting evidence when the source’s intended communication is company-first. 3. Removes output-format reasoning from the tested upstream decision boundary only if the hypothesis specifically targets that leakage; otherwise hold prompts constant to avoid confounding hierarchy and format-awareness changes. 4. Uses repeated full-pipeline runs, captures each stage, interleaves conditions if there is a baseline/candidate comparison, and keeps the reconstructed source and execution settings identical. 5. Separately evaluates: (a) factual claims, audience, certainty, and source support; (b) company-first story hierarchy; and (c) editorial quality—opening interest, clarity, narrative progression, concise readable prose, and strength of formulation.",
+        "exact": false
+      }
+    ],
+    "exactCount": 1,
+    "count": 5,
+    "groundingLocation": "schema-location",
+    "id": "010",
+    "replicate": 1
+  },
+  {
+    "condition": "B",
+    "records": [],
+    "exactCount": 0,
+    "count": 0,
+    "groundingLocation": "missing",
+    "id": "010",
+    "replicate": 2
+  },
+  {
+    "condition": "B",
+    "records": [
+      {
+        "whitespaceNormalized": true,
+        "field": "title",
+        "claim": "The bakery is running a four-week evening collection trial starting 24 November.",
+        "quote": "a four-week evening collection trial starting 24 November.",
+        "exact": true
+      },
+      {
+        "whitespaceNormalized": true,
+        "field": "description",
+        "claim": "Customers can reserve a loaf by telephone before noon on Tuesdays and Thursdays and collect it from 17:30 to 18:30 at the side door.",
+        "quote": "On Tuesdays and Thursdays, customers can reserve a loaf by telephone before noon and collect it from 17:30 to 18:30 at the side door.",
+        "exact": true
+      },
+      {
+        "whitespaceNormalized": true,
+        "field": "audience",
+        "claim": "The update is intended for regular customers of Vale Street Bakery.",
+        "quote": "An update for regular customers of Vale Street Bakery introduces a four-week evening collection trial starting 24 November.",
+        "exact": true
+      },
+      {
+        "whitespaceNormalized": true,
+        "field": "rationale",
+        "claim": "The update's stated purpose is to make the new collection choice easy to understand for people who already buy there, so a practical guide is appropriate.",
+        "quote": "The update's useful job is to make the new collection choice easy to understand for people who already buy there.",
+        "exact": true
+      },
+      {
+        "whitespaceNormalized": true,
+        "field": "evidence",
+        "claim": "Informal October evenings handed over 14 and 11 reserved loaves; three uncollected loaves on the second evening were donated the next morning.",
+        "quote": "During two informal evenings in October, staff handed over 14 and 11 reserved loaves. Three loaves were left uncollected on the second evening and were donated with the ordinary surplus the next morning.",
+        "exact": true
+      }
+    ],
+    "exactCount": 5,
+    "count": 5,
+    "groundingLocation": "schema-location",
+    "id": "bakery",
+    "replicate": 1
+  },
+  {
+    "condition": "C",
+    "records": [
+      {
+        "whitespaceNormalized": true,
+        "field": "title",
+        "claim": "The bakery is running a four-week evening collection trial starting 24 November.",
+        "quote": "An update for regular customers of Vale Street Bakery introduces a four-week evening collection trial starting 24 November.",
+        "exact": true
+      },
+      {
+        "whitespaceNormalized": true,
+        "field": "description",
+        "claim": "Customers can reserve a loaf by telephone before noon on Tuesdays and Thursdays and collect it from 17:30 to 18:30 at the side door; reserved loaves come from that day's normal bake and the bakery will not make an extra evening batch; Saturday counter hours continue and the side-door window is not available then.",
+        "quote": "On Tuesdays and Thursdays, customers can reserve a loaf by telephone before noon and collect it from 17:30 to 18:30 at the side door. Reserved loaves come from that day's normal bake. The bakery will not make an extra evening batch. The usual counter and opening hours continue on Saturdays; the side-door window is not available then.",
+        "exact": true
+      },
+      {
+        "whitespaceNormalized": true,
+        "field": "audience",
+        "claim": "The update is intended for regular customers of Vale Street Bakery.",
+        "quote": "An update for regular customers of Vale Street Bakery introduces a four-week evening collection trial starting 24 November.",
+        "exact": true
+      },
+      {
+        "whitespaceNormalized": true,
+        "field": "rationale",
+        "claim": "The update's purpose is to make the new collection choice easy to understand for people who already buy there, so a concise practical guide is appropriate.",
+        "quote": "The update's useful job is to make the new collection choice easy to understand for people who already buy there.",
+        "exact": true
+      },
+      {
+        "whitespaceNormalized": true,
+        "field": "evidence",
+        "claim": "In October informal evenings staff handed over 14 and 11 reserved loaves; three uncollected loaves on the second evening were donated the next morning, but these counts exclude counter shoppers and were not compared with earlier weeks.",
+        "quote": "During two informal evenings in October, staff handed over 14 and 11 reserved loaves. Three loaves were left uncollected on the second evening and were donated with the ordinary surplus the next morning. These counts do not include shoppers who used the counter and were not compared with earlier weeks.",
+        "exact": true
+      }
+    ],
+    "exactCount": 5,
+    "count": 5,
+    "groundingLocation": "root-invalid-location",
+    "id": "bakery",
+    "replicate": 1
+  },
+  {
+    "condition": "B",
+    "records": [
+      {
+        "whitespaceNormalized": true,
+        "field": "title",
+        "claim": "The editorial should be a timely, practical guide tied to the event (ceramics table opening on 21 November).",
+        "quote": "The Eastmere repair collective will open a ceramics table at the community hall on 21 November.",
+        "exact": true
+      },
+      {
+        "whitespaceNormalized": true,
+        "field": "description",
+        "claim": "The piece should explain booking (fifteen-minute assessments 10:00–13:00), walk-in policy, the team’s focus on decorative ceramics (vases, figurines), and the exclusion of eating/drinking ware because adhesives are not food‑contact certified.",
+        "quote": "People may book a fifteen-minute assessment between 10:00 and 13:00; walk-ins will be seen only if a booking slot is free. The team will look at decorative ceramics such as vases and figurines. It will not accept objects used for eating or drinking, because its adhesives are not certified for food contact.",
+        "exact": true
+      },
+      {
+        "whitespaceNormalized": true,
+        "field": "audience",
+        "claim": "The target readers are local householders wondering whether a broken object is worth bringing.",
+        "quote": "Its notice is for householders wondering whether a broken object is worth bringing.",
+        "exact": true
+      },
+      {
+        "whitespaceNormalized": true,
+        "field": "rationale",
+        "claim": "A preview that sets expectations is timely because this is the collective's first ceramics table and there are no prior ceramics outcome figures.",
+        "quote": "The collective has held bicycle sessions before, but this is its first ceramics table. It has no figures yet for ceramics repaired, objects diverted from disposal, or the life of a repair.",
+        "exact": true
+      },
+      {
+        "whitespaceNormalized": true,
+        "field": "evidence",
+        "claim": "The notice says the assessment is free, volunteers will discuss likely appearance and material contribution before doing any work, and some objects may leave with visible seams or unrepaired.",
+        "quote": "The assessment is free. If the volunteers think a repair is feasible, they will discuss the likely appearance and the material contribution with the owner before doing any work. Some objects will leave with visible seams; some will leave unrepaired.",
+        "exact": true
+      }
+    ],
+    "exactCount": 5,
+    "count": 5,
+    "groundingLocation": "schema-location",
+    "id": "ceramics",
+    "replicate": 1
+  },
+  {
+    "condition": "C",
+    "records": [
+      {
+        "whitespaceNormalized": true,
+        "field": "title",
+        "claim": "The editorial should be a timely, practical guide tied to the event (ceramics table opening on 21 November).",
+        "quote": "The Eastmere repair collective will open a ceramics table at the community hall on 21 November.",
+        "exact": true
+      },
+      {
+        "whitespaceNormalized": true,
+        "field": "description",
+        "claim": "The piece should explain booking (fifteen-minute assessments 10:00–13:00), walk-in policy, the team’s focus on decorative ceramics (vases, figurines), and the exclusion of eating/drinking ware because adhesives are not food‑contact certified.",
+        "quote": "People may book a fifteen-minute assessment between 10:00 and 13:00; walk-ins will be seen only if a booking slot is free. The team will look at decorative ceramics such as vases and figurines. It will not accept objects used for eating or drinking, because its adhesives are not certified for food contact.",
+        "exact": true
+      },
+      {
+        "whitespaceNormalized": true,
+        "field": "audience",
+        "claim": "The target readers are local householders wondering whether a broken object is worth bringing.",
+        "quote": "Its notice is for householders wondering whether a broken object is worth bringing.",
+        "exact": true
+      },
+      {
+        "whitespaceNormalized": true,
+        "field": "rationale",
+        "claim": "A preview that sets expectations is timely because this is the collective's first ceramics table and there are no prior ceramics outcome figures.",
+        "quote": "The collective has held bicycle sessions before, but this is its first ceramics table. It has no figures yet for ceramics repaired, objects diverted from disposal, or the life of a repair.",
+        "exact": true
+      },
+      {
+        "whitespaceNormalized": true,
+        "field": "evidence",
+        "claim": "The notice says the assessment is free, volunteers will discuss likely appearance and material contribution before doing any work, and some objects may leave with visible seams or unrepaired.",
+        "quote": "The assessment is free. If the volunteers think a repair is feasible, they will discuss the likely appearance and the material contribution with the owner before doing any work. Some objects will leave with visible seams; some will leave unrepaired.",
+        "exact": true
+      }
+    ],
+    "exactCount": 5,
+    "count": 5,
+    "groundingLocation": "schema-location",
+    "id": "ceramics",
+    "replicate": 1
+  },
+  {
+    "condition": "B",
+    "records": [],
+    "exactCount": 0,
+    "count": 0,
+    "groundingLocation": "missing",
+    "id": "ceramics",
+    "replicate": 2
+  },
+  {
+    "condition": "B",
+    "records": [
+      {
+        "whitespaceNormalized": true,
+        "field": "title",
+        "claim": "The editorial should target hesitant newcomers and present a practical taster guide.",
+        "quote": "The notice is intended to help a hesitant newcomer picture the evening and decide whether to come.",
+        "exact": true
+      },
+      {
+        "whitespaceNormalized": true,
+        "field": "description",
+        "claim": "A practical preview can (accurately) present the session logistics: no auditions, no music-reading required, a 20-minute shared warm-up with an option to listen, a 19:00 start with quiet entry allowed until 19:20, and a free first taster with normal contribution from the second visit.",
+        "quote": "There are no auditions and no requirement to read music. The first twenty minutes are a shared warm-up; newcomers may listen before joining in. The session begins at 19:00, but someone arriving from work may enter quietly until 19:20. A first taster is free; the ordinary weekly contribution applies from the second visit.",
+        "exact": true
+      },
+      {
+        "whitespaceNormalized": true,
+        "field": "audience",
+        "claim": "The primary audience is adults who are unsure about singing in a group.",
+        "quote": "Moorfield community choir is inviting adults who are unsure about singing in a group to a Wednesday taster on 25 November.",
+        "exact": true
+      },
+      {
+        "whitespaceNormalized": true,
+        "field": "rationale",
+        "claim": "The source both expresses intent to reduce newcomer uncertainty and provides concrete low-barrier features that the editorial can foreground to achieve that aim.",
+        "quote": "The notice is intended to help a hesitant newcomer picture the evening and decide whether to come.",
+        "exact": true
+      },
+      {
+        "whitespaceNormalized": true,
+        "field": "evidence",
+        "claim": "The source provides two kinds of supportive evidence for a practical taster guide: (1) explicit logistical details and stated intent in the notice; (2) rehearsal feedback showing 'welcome' is the most-cited reason people mention about returning, plus notes about late-train absences and an unexplained committee decision on late entry.",
+        "quote": "After the October rehearsal, twelve of the nineteen people present answered a short question about returning. Eight mentioned the welcome, three mentioned the songs, and one mentioned both. Two people who had missed the previous rehearsal said late trains had played a part. The choir agreed at its monthly meeting to keep the later entry window through December. The minutes record the decision without an account of why it was chosen. There has been no survey of confidence before and after singing and no comparison with a fixed-start rehearsal.",
+        "exact": true
+      }
+    ],
+    "exactCount": 5,
+    "count": 5,
+    "groundingLocation": "schema-location",
+    "id": "choir",
+    "replicate": 1
+  },
+  {
+    "condition": "C",
+    "records": [
+      {
+        "whitespaceNormalized": true,
+        "field": "title",
+        "claim": "The editorial should target hesitant newcomers and present a practical taster guide.",
+        "quote": "The notice is intended to help a hesitant newcomer picture the evening and decide whether to come.",
+        "exact": true
+      },
+      {
+        "whitespaceNormalized": true,
+        "field": "description",
+        "claim": "A practical preview can accurately present the session logistics: no auditions, no music-reading required, a 20-minute shared warm-up with an option to listen, a 19:00 start with quiet entry allowed until 19:20, and a free first taster with normal contribution from the second visit.",
+        "quote": "There are no auditions and no requirement to read music. The first twenty minutes are a shared warm-up; newcomers may listen before joining in. The session begins at 19:00, but someone arriving from work may enter quietly until 19:20. A first taster is free; the ordinary weekly contribution applies from the second visit.",
+        "exact": true
+      },
+      {
+        "whitespaceNormalized": true,
+        "field": "audience",
+        "claim": "The primary audience is adults who are unsure about singing in a group.",
+        "quote": "Moorfield community choir is inviting adults who are unsure about singing in a group to a Wednesday taster on 25 November.",
+        "exact": true
+      },
+      {
+        "whitespaceNormalized": true,
+        "field": "rationale",
+        "claim": "Foregrounding low-barrier logistics in the editorial aligns with the organisers' stated intent to help hesitant newcomers picture the evening and decide whether to come.",
+        "quote": "The notice is intended to help a hesitant newcomer picture the evening and decide whether to come.",
+        "exact": true
+      },
+      {
+        "whitespaceNormalized": true,
+        "field": "evidence",
+        "claim": "The source provides specific logistics and descriptive rehearsal feedback (including counts) plus an operational decision and an evidence gap, supporting an editorial that explains logistics, highlights the welcoming atmosphere, and notes limits of the available evidence.",
+        "quote": "After the October rehearsal, twelve of the nineteen people present answered a short question about returning. Eight mentioned the welcome, three mentioned the songs, and one mentioned both. Two people who had missed the previous rehearsal said late trains had played a part. The choir agreed at its monthly meeting to keep the later entry window through December. The minutes record the decision without an account of why it was chosen. There has been no survey of confidence before and after singing and no comparison with a fixed-start rehearsal.",
+        "exact": true
+      }
+    ],
+    "exactCount": 5,
+    "count": 5,
+    "groundingLocation": "schema-location",
+    "id": "choir",
+    "replicate": 1
+  },
+  {
+    "condition": "B",
+    "records": [
+      {
+        "whitespaceNormalized": true,
+        "field": "title",
+        "claim": "The feature should explicitly aim to help hesitant newcomers picture a first evening so they can decide whether to come.",
+        "quote": "The notice is intended to help a hesitant newcomer picture the evening and decide whether to come.",
+        "exact": true
+      },
+      {
+        "whitespaceNormalized": true,
+        "field": "description",
+        "claim": "The practical details to include are: invited adults unsure about group singing, no auditions/no music‑reading requirement, first twenty minutes shared warm‑up with option to listen, 19:00 start with quiet entry until 19:20, and a free first taster with normal contribution from the second visit.",
+        "quote": "Moorfield community choir is inviting adults who are unsure about singing in a group to a Wednesday taster on 25 November. There are no auditions and no requirement to read music. The first twenty minutes are a shared warm-up; newcomers may listen before joining in. The session begins at 19:00, but someone arriving from work may enter quietly until 19:20. A first taster is free; the ordinary weekly contribution applies from the second visit.",
+        "exact": true
+      },
+      {
+        "whitespaceNormalized": true,
+        "field": "audience",
+        "claim": "The intended audience is adults who are unsure about singing in a group.",
+        "quote": "Moorfield community choir is inviting adults who are unsure about singing in a group to a Wednesday taster on 25 November.",
+        "exact": true
+      },
+      {
+        "whitespaceNormalized": true,
+        "field": "rationale",
+        "claim": "Focusing the piece on lowering arrival/startup friction is justified because informal feedback emphasised the 'welcome' as the main return reason and the choir chose to retain a later entry window.",
+        "quote": "After the October rehearsal, twelve of the nineteen people present answered a short question about returning. Eight mentioned the welcome, three mentioned the songs, and one mentioned both. Two people who had missed the previous rehearsal said late trains had played a part. The choir agreed at its monthly meeting to keep the later entry window through December.",
+        "exact": true
+      },
+      {
+        "whitespaceNormalized": true,
+        "field": "evidence",
+        "claim": "The source combines the taster notice, short rehearsal feedback with counts, the committee's recorded decision, and an explicit statement that no formal pre/post confidence survey or fixed‑start comparison exists.",
+        "quote": "After the October rehearsal, twelve of the nineteen people present answered a short question about returning. Eight mentioned the welcome, three mentioned the songs, and one mentioned both. Two people who had missed the previous rehearsal said late trains had played a part. The choir agreed at its monthly meeting to keep the later entry window through December. The minutes record the decision without an account of why it was chosen. There has been no survey of confidence before and after singing and no comparison with a fixed-start rehearsal.",
+        "exact": true
+      }
+    ],
+    "exactCount": 5,
+    "count": 5,
+    "groundingLocation": "schema-location",
+    "id": "choir",
+    "replicate": 2
+  },
+  {
+    "condition": "C",
+    "records": [
+      {
+        "whitespaceNormalized": true,
+        "field": "title",
+        "claim": "The feature should explicitly aim to help hesitant newcomers picture a first evening so they can decide whether to come.",
+        "quote": "The notice is intended to help a hesitant newcomer picture the evening and decide whether to come.",
+        "exact": true
+      },
+      {
+        "whitespaceNormalized": true,
+        "field": "description",
+        "claim": "Include the practical details given in the notice so readers can visualise the evening (who is invited, no auditions/no music‑reading, warm‑up with listening option, start time and late‑entry window, free first taster, normal contribution thereafter).",
+        "quote": "Moorfield community choir is inviting adults who are unsure about singing in a group to a Wednesday taster on 25 November. There are no auditions and no requirement to read music. The first twenty minutes are a shared warm-up; newcomers may listen before joining in. The session begins at 19:00, but someone arriving from work may enter quietly until 19:20. A first taster is free; the ordinary weekly contribution applies from the second visit.",
+        "exact": true
+      },
+      {
+        "whitespaceNormalized": true,
+        "field": "audience",
+        "claim": "The intended audience for the guide should match the invitation's target: adults unsure about singing in a group.",
+        "quote": "Moorfield community choir is inviting adults who are unsure about singing in a group to a Wednesday taster on 25 November.",
+        "exact": true
+      },
+      {
+        "whitespaceNormalized": true,
+        "field": "rationale",
+        "claim": "An expectation‑setting guide is a plausible response to the barriers signalled in the source (emphasis on 'welcome' and later entry), but causal effects are untested in the source.",
+        "quote": "After the October rehearsal, twelve of the nineteen people present answered a short question about returning. Eight mentioned the welcome, three mentioned the songs, and one mentioned both. Two people who had missed the previous rehearsal said late trains had played a part. The choir agreed at its monthly meeting to keep the later entry window through December. The minutes record the decision without an account of why it was chosen. There has been no survey of confidence before and after singing and no comparison with a fixed-start rehearsal.",
+        "exact": true
+      },
+      {
+        "whitespaceNormalized": true,
+        "field": "evidence",
+        "claim": "The source provides the taster notice, the October rehearsal micro‑survey counts and reasons, the committee's decision to keep the later entry window, and an explicit statement that no formal pre/post confidence survey or fixed‑start comparison exists.",
+        "quote": "After the October rehearsal, twelve of the nineteen people present answered a short question about returning. Eight mentioned the welcome, three mentioned the songs, and one mentioned both. Two people who had missed the previous rehearsal said late trains had played a part. The choir agreed at its monthly meeting to keep the later entry window through December. The minutes record the decision without an account of why it was chosen. There has been no survey of confidence before and after singing and no comparison with a fixed-start rehearsal.",
+        "exact": true
+      }
+    ],
+    "exactCount": 5,
+    "count": 5,
+    "groundingLocation": "schema-location",
+    "id": "choir",
+    "replicate": 2
+  },
+  {
+    "condition": "B",
+    "records": [
+      {
+        "whitespaceNormalized": true,
+        "field": "title",
+        "claim": "There is a procurement/ transparency question about the new camera purchase suitable for an audit-style investigation.",
+        "quote": "the published minutes give the amount and supplier but no reason for choosing that model.",
+        "exact": true
+      },
+      {
+        "whitespaceNormalized": true,
+        "field": "description",
+        "claim": "Staff have shown images from the new camera alongside older pictures without a controlled comparison, which is relevant evidence to inspect alongside the procurement record.",
+        "quote": "Staff have displayed two images from the new camera alongside older pictures, without a controlled comparison.",
+        "exact": true
+      },
+      {
+        "whitespaceNormalized": true,
+        "field": "audience",
+        "claim": "Ticket-holders and the local community are direct recipients of the observatory's communications and therefore an appropriate audience for this investigation.",
+        "quote": "Hilltop Observatory has updated the information sent to holders of tickets for its December open evenings.",
+        "exact": true
+      },
+      {
+        "whitespaceNormalized": true,
+        "field": "rationale",
+        "claim": "Because the ticket-holder update is explicitly not the observatory's annual technical review and staff made no claims about discovery-rate improvements, there is a gap between technical justification and public messaging that an editorial can address.",
+        "quote": "This ticket-holder update is meant to explain what an evening offers and how weather affects it. It is not the observatory's annual technical review. No claim about improved discovery rates or guaranteed views has been made by the staff.",
+        "exact": true
+      },
+      {
+        "whitespaceNormalized": true,
+        "field": "evidence",
+        "claim": "The observable public record includes: a camera replacement in September; trustee approval in July with published minutes listing amount and supplier but no reason; and staff-displayed images without a controlled comparison.",
+        "quote": "The observatory replaced one camera in September. The trustees approved the purchase in July, and the published minutes give the amount and supplier but no reason for choosing that model. Staff have displayed two images from the new camera alongside older pictures, without a controlled comparison.",
+        "exact": true
+      }
+    ],
+    "exactCount": 5,
+    "count": 5,
+    "groundingLocation": "schema-location",
+    "id": "observatory",
+    "replicate": 1
+  },
+  {
+    "condition": "C",
+    "records": [
+      {
+        "whitespaceNormalized": true,
+        "field": "title",
+        "claim": "There is a procurement/transparency question about the new camera purchase suitable for an audit-style investigation.",
+        "quote": "The trustees approved the purchase in July, and the published minutes give the amount and supplier but no reason for choosing that model.",
+        "exact": true
+      },
+      {
+        "whitespaceNormalized": true,
+        "field": "description",
+        "claim": "Staff presented side-by-side images from the new camera without a controlled comparison, which is relevant to assessing public presentation of performance evidence.",
+        "quote": "Staff have displayed two images from the new camera alongside older pictures, without a controlled comparison.",
+        "exact": true
+      },
+      {
+        "whitespaceNormalized": true,
+        "field": "audience",
+        "claim": "Ticket-holders and the local community are appropriate audiences for reporting on the observatory's communications and procurement transparency.",
+        "quote": "Hilltop Observatory has updated the information sent to holders of tickets for its December open evenings.",
+        "exact": true
+      },
+      {
+        "whitespaceNormalized": true,
+        "field": "rationale",
+        "claim": "Because the ticket-holder update is explicitly not the observatory's annual technical review and no claims about improved discovery rates were made, there is a gap between public messaging and technical justification that an editorial can address.",
+        "quote": "This ticket-holder update is meant to explain what an evening offers and how weather affects it. It is not the observatory's annual technical review. No claim about improved discovery rates or guaranteed views has been made by the staff.",
+        "exact": true
+      },
+      {
+        "whitespaceNormalized": true,
+        "field": "evidence",
+        "claim": "The public record includes camera replacement timing, trustee approval with minutes listing amount and supplier but not reason, and staff-displayed images without a controlled comparison.",
+        "quote": "The observatory replaced one camera in September. The trustees approved the purchase in July, and the published minutes give the amount and supplier but no reason for choosing that model. Staff have displayed two images from the new camera alongside older pictures, without a controlled comparison.",
+        "exact": true
+      }
+    ],
+    "exactCount": 5,
+    "count": 5,
+    "groundingLocation": "root-invalid-location",
+    "id": "observatory",
+    "replicate": 1
+  },
+  {
+    "condition": "B",
+    "records": [
+      {
+        "whitespaceNormalized": true,
+        "field": "title",
+        "claim": "The title asserts the piece will explain the new recording procedure and how to interpret early-season harvest weights for volunteers.",
+        "quote": "The main job of the circular is to help volunteers use the same record, so the end-of-season account is understandable.",
+        "exact": true
+      },
+      {
+        "whitespaceNormalized": true,
+        "field": "description",
+        "claim": "The description's procedural points (weigh full crates at the shed; fruit on trees unweighed; blanks mean unrecorded; windfalls recorded separately) reflect the circular's instructions.",
+        "quote": "Pickers will bring each full crate to the shed, where it will be weighed before storage. Fruit still on the trees will remain unweighed; blank entries for an area mean that no weight was recorded there, not that it produced no fruit. Windfalls intended for pressing will be recorded separately from the eating apples.",
+        "exact": true
+      },
+      {
+        "whitespaceNormalized": true,
+        "field": "audience",
+        "claim": "The intended audience for the piece is volunteers who do the picking and record-keeping, and committee members who compile the end-of-season account.",
+        "quote": "The main job of the circular is to help volunteers use the same record, so the end-of-season account is understandable.",
+        "exact": true
+      },
+      {
+        "whitespaceNormalized": true,
+        "field": "rationale",
+        "claim": "An explainer is warranted because the circular provides early partial figures and explicitly states those figures are not comparable with last year's estimate, creating a risk of misinterpretation.",
+        "quote": "On the first Saturday, the team weighed 86 kilograms of eating apples and 24 kilograms of windfalls. Last year's newsletter gave an estimate of 140 kilograms for the entire harvest, using a different method. Saturday's figures are not a complete harvest total and are not comparable with that estimate.",
+        "exact": true
+      },
+      {
+        "whitespaceNormalized": false,
+        "field": "evidence",
+        "claim": "Supporting facts include the weighing procedure, the meaning of blank entries, separate recording for windfalls, the first-Saturday weights, the previous year's estimate using a different method, the explicit non-comparability statement, and the committee's schedule change and lack of assessment on productivity or waste.",
+        "quote": "Pickers will bring each full crate to the shed, where it will be weighed before storage. Fruit still on the trees will remain unweighed; blank entries for an area mean that no weight was recorded there, not that it produced no fruit. Windfalls intended for pressing will be recorded separately from the eating apples. On the first Saturday, the team weighed 86 kilograms of eating apples and 24 kilograms of windfalls. Last year's newsletter gave an estimate of 140 kilograms for the entire harvest, using a different method. Saturday's figures are not a complete harvest total and are not comparable with that estimate. The committee moved the next picking morning from Sunday to Saturday. The meeting note records the change without a reason. No assessment of volunteer productivity or fruit waste has been completed.",
+        "exact": false
+      }
+    ],
+    "exactCount": 4,
+    "count": 5,
+    "groundingLocation": "schema-location",
+    "id": "orchard",
+    "replicate": 1
+  },
+  {
+    "condition": "B",
+    "records": [
+      {
+        "whitespaceNormalized": true,
+        "field": "title",
+        "claim": "Member onboarding brief: explain purpose, the curtain-pilot and the inventory example",
+        "quote": "Its introductory note is addressed to other member housing associations considering participation.",
+        "exact": true
+      },
+      {
+        "whitespaceNormalized": true,
+        "field": "description",
+        "claim": "A concise introductory brief for housing associations considering joining Common Thread that states the cooperative purpose (shared repair service), explains the concrete first step (a curtain-repair pilot planned for January), frames the shared inventory as an illustrative organising tool, and sets expectations about unresolved items (no agreed prices, savings or turnaround yet) and membership review before expansion.",
+        "quote": "The introduction should help a potential member understand the collective purpose and the concrete first step, with the inventory serving as an example of how the service might be organised.",
+        "exact": true
+      },
+      {
+        "whitespaceNormalized": true,
+        "field": "audience",
+        "claim": "Other member housing associations considering participation (senior managers and decision-makers who will decide whether to join and what to commit).",
+        "quote": "Its introductory note is addressed to other member housing associations considering participation.",
+        "exact": true
+      },
+      {
+        "whitespaceNormalized": true,
+        "field": "rationale",
+        "claim": "Because Common Thread is presented as a cooperative for shared repair priorities rather than a separate tech business, potential members need a clear, short explanation of collective purpose, the pilot's concrete timing and scope, and what the inventory demonstrates so they can evaluate participation without assuming commercial commitments.",
+        "quote": "The cooperative's ambition is a shared repair service, with the associations setting priorities together. A curtain repair pilot is its first planned service, not a separate technology business.",
+        "exact": true
+      },
+      {
+        "whitespaceNormalized": true,
+        "field": "evidence",
+        "claim": "Sample items are already entered in a shared inventory intended to help a repairer locate items and see fabric/dimensions, demonstrating a concrete example to show in the brief.",
+        "quote": "Two caretakers have entered sample items in a shared inventory. That inventory is intended to help a repairer locate an item and see its fabric and dimensions.",
+        "exact": true
+      }
+    ],
+    "exactCount": 5,
+    "count": 5,
+    "groundingLocation": "schema-location",
+    "id": "textile",
+    "replicate": 1
+  },
+  {
+    "condition": "C",
+    "records": [
+      {
+        "whitespaceNormalized": true,
+        "field": "title",
+        "claim": "Member onboarding brief: explain purpose, the curtain-pilot and the inventory example",
+        "quote": "The introduction should help a potential member understand the collective purpose and the concrete first step, with the inventory serving as an example of how the service might be organised.",
+        "exact": true
+      },
+      {
+        "whitespaceNormalized": true,
+        "field": "description",
+        "claim": "A concise introductory brief for housing associations... states the cooperative purpose, explains the curtain-repair pilot planned for January, frames the inventory as an organising tool, and sets expectations about unresolved items and membership review before expansion.",
+        "quote": "The introduction should help a potential member understand the collective purpose and the concrete first step, with the inventory serving as an example of how the service might be organised.",
+        "exact": true
+      },
+      {
+        "whitespaceNormalized": true,
+        "field": "audience",
+        "claim": "Other member housing associations considering participation.",
+        "quote": "Its introductory note is addressed to other member housing associations considering participation.",
+        "exact": true
+      },
+      {
+        "whitespaceNormalized": true,
+        "field": "rationale",
+        "claim": "Because Common Thread is presented as a cooperative for shared repair priorities rather than a separate tech business, potential members need a clear, short explanation of collective purpose, the pilot's concrete timing and scope, and what the inventory demonstrates so they can evaluate participation without assuming commercial commitments.",
+        "quote": "The cooperative's ambition is a shared repair service, with the associations setting priorities together. A curtain repair pilot is its first planned service, not a separate technology business.",
+        "exact": true
+      },
+      {
+        "whitespaceNormalized": true,
+        "field": "evidence",
+        "claim": "Sample items are already entered in a shared inventory intended to help a repairer locate items and see fabric/dimensions, demonstrating a concrete example to show in the brief.",
+        "quote": "Two caretakers have entered sample items in a shared inventory. That inventory is intended to help a repairer locate an item and see its fabric and dimensions.",
+        "exact": true
+      }
+    ],
+    "exactCount": 5,
+    "count": 5,
+    "groundingLocation": "schema-location",
+    "id": "textile",
+    "replicate": 1
+  },
+  {
+    "condition": "B",
+    "records": [
+      {
+        "whitespaceNormalized": true,
+        "field": "title",
+        "claim": "There is a small access pilot offering English and Polish alongside Dutch.",
+        "quote": "The North Quay oral-history project has opened a small access pilot for readers who use English or Polish alongside Dutch.",
+        "exact": true
+      },
+      {
+        "whitespaceNormalized": true,
+        "field": "description",
+        "claim": "The pilot's landing page and six short summaries are available in both languages, longer interview chapters remain in Dutch, and each translated summary links to the original chapter and identifies available languages.",
+        "quote": "Its landing page and six short summaries are now available in both languages. The longer interview chapters remain in Dutch. Each translated summary links to the original chapter and identifies which text is available in which language.",
+        "exact": true
+      },
+      {
+        "whitespaceNormalized": true,
+        "field": "audience",
+        "claim": "Local reading groups and readers who received invitations or responded are explicit audiences for the pilot and for navigation improvements.",
+        "quote": "Thirty invitation links were sent to local reading groups.",
+        "exact": true
+      },
+      {
+        "whitespaceNormalized": true,
+        "field": "rationale",
+        "claim": "The project’s announcement explains limited access and asks readers for feedback on navigation, creating an editorial opportunity to surface and respond to navigation issues.",
+        "quote": "The current announcement explains the limited access now available and asks readers for feedback on navigation.",
+        "exact": true
+      },
+      {
+        "whitespaceNormalized": true,
+        "field": "evidence",
+        "claim": "Key pilot facts: two paid translators; no automated translation system described; 30 invitation links sent; 9 opened feedback form; 4 comments about finding their way between summaries and interviews; no reading-comprehension or language comparison task carried out; future translations contingent on later funding application.",
+        "quote": "The project worked with two paid translators; the published account does not describe an automated translation system. Thirty invitation links were sent to local reading groups. So far nine people have opened the feedback form, and four have submitted comments about finding their way between summaries and interviews. No reading-comprehension task or language comparison has been carried out. The current announcement explains the limited access now available and asks readers for feedback on navigation. Further languages and full translated chapters remain possibilities for a later funding application, rather than promised additions.",
+        "exact": true
+      }
+    ],
+    "exactCount": 5,
+    "count": 5,
+    "groundingLocation": "schema-location",
+    "id": "translation",
+    "replicate": 1
+  },
+  {
+    "condition": "C",
+    "records": [
+      {
+        "whitespaceNormalized": true,
+        "field": "title",
+        "claim": "There is a small access pilot offering English and Polish alongside Dutch.",
+        "quote": "The North Quay oral-history project has opened a small access pilot for readers who use English or Polish alongside Dutch.",
+        "exact": true
+      },
+      {
+        "whitespaceNormalized": true,
+        "field": "description",
+        "claim": "The pilot's landing page and six short summaries are available in both languages, longer interview chapters remain in Dutch, and each translated summary links to the original chapter and identifies available languages.",
+        "quote": "Its landing page and six short summaries are now available in both languages. The longer interview chapters remain in Dutch. Each translated summary links to the original chapter and identifies which text is available in which language.",
+        "exact": true
+      },
+      {
+        "whitespaceNormalized": true,
+        "field": "audience",
+        "claim": "Local reading groups and readers who received invitations or responded are explicit audiences for the pilot and for navigation improvements.",
+        "quote": "Thirty invitation links were sent to local reading groups.",
+        "exact": true
+      },
+      {
+        "whitespaceNormalized": true,
+        "field": "rationale",
+        "claim": "The project’s announcement explains limited access and asks readers for feedback on navigation, creating an editorial opportunity to surface and respond to navigation issues.",
+        "quote": "The current announcement explains the limited access now available and asks readers for feedback on navigation.",
+        "exact": true
+      },
+      {
+        "whitespaceNormalized": true,
+        "field": "evidence",
+        "claim": "Key pilot facts: two paid translators; no automated translation system described; 30 invitation links sent; 9 opened feedback form; 4 comments about navigation; no reading-comprehension or language comparison task carried out; future translations contingent on later funding application.",
+        "quote": "The project worked with two paid translators; the published account does not describe an automated translation system. Thirty invitation links were sent to local reading groups. So far nine people have opened the feedback form, and four have submitted comments about finding their way between summaries and interviews. No reading-comprehension task or language comparison has been carried out. The current announcement explains the limited access now available and asks readers for feedback on navigation. Further languages and full translated chapters remain possibilities for a later funding application, rather than promised additions.",
+        "exact": true
+      }
+    ],
+    "exactCount": 5,
+    "count": 5,
+    "groundingLocation": "schema-location",
+    "id": "translation",
+    "replicate": 1
+  },
+  {
+    "condition": "B",
+    "records": [
+      {
+        "whitespaceNormalized": true,
+        "field": "title",
+        "claim": "The piece should center on comparing east vs west counts and their limits.",
+        "quote": "Volunteers logged 41 reed-warbler sightings from the east route and 18 from the west.",
+        "exact": true
+      },
+      {
+        "whitespaceNormalized": true,
+        "field": "description",
+        "claim": "Describe counts, recording caveats (timing and coverage), recent reed-cutting and absence of a pre-cutting survey, provide the map, avoid recommending management, and state the team's plan to compare route coverage before using counts to inform interventions.",
+        "quote": "The east route was visited on six mornings, the west on three afternoons. Observers followed the same written recording sheet but worked at different hours and did not cover the same distance. Reeds were cut near part of the west bank in February for access to a drainage gate. No pre-cutting survey is available.",
+        "exact": false
+      },
+      {
+        "whitespaceNormalized": true,
+        "field": "audience",
+        "claim": "Target walkers and volunteers who read the seasonal note and who logged the sightings.",
+        "quote": "A seasonal note for walkers at Alder Mere describes this autumn's observations along the east boardwalk and the west bank. Volunteers logged 41 reed-warbler sightings from the east route and 18 from the west.",
+        "exact": true
+      },
+      {
+        "whitespaceNormalized": true,
+        "field": "rationale",
+        "claim": "A readable account helping visitors interpret counts is supported because the team intends an informative (not prescriptive) piece and will compare route coverage before using counts for management.",
+        "quote": "The reserve team has not selected a habitat intervention for next season. It will compare route coverage before deciding whether the counts can inform one. The intended piece is a readable account of what visitors can notice and what the records can tell them, rather than a recommendation to cut or preserve one bank first.",
+        "exact": true
+      },
+      {
+        "whitespaceNormalized": true,
+        "field": "evidence",
+        "claim": "Use the logged counts together with explicit methodological caveats (sightings vs individuals; different visit times and counts) as the factual basis for the piece.",
+        "quote": "Volunteers logged 41 reed-warbler sightings from the east route and 18 from the west. These are sightings, not identified individual birds. The east route was visited on six mornings, the west on three afternoons.",
+        "exact": true
+      }
+    ],
+    "exactCount": 4,
+    "count": 5,
+    "groundingLocation": "schema-location",
+    "id": "wetland",
+    "replicate": 1
+  }
+]
