@@ -1,0 +1,274 @@
+[
+  {
+    "id": "lockers-a",
+    "source": "lockers.txt",
+    "idea": {
+      "title": "What the station locker trial observed",
+      "description": "Explain the July trial and its limits.",
+      "audience": "Station users",
+      "rationale": "The lower report count is encouraging but does not isolate the lockers' effect.",
+      "evidence": "Six stations; reports 18 to 11; staffing and hours changed."
+    },
+    "expectedAccepted": true,
+    "field": null,
+    "reason": "Preserves the stated facts and communication job.",
+    "remit": "source",
+    "critical": false,
+    "provenance": "new synthetic; same-author frozen labels, not independent human review"
+  },
+  {
+    "id": "lockers-b",
+    "source": "lockers.txt",
+    "idea": {
+      "title": "What the station locker trial observed",
+      "description": "Explain the July trial and its limits.",
+      "audience": "Station users",
+      "rationale": "Numbered lockers caused the fall in lost-item reports.",
+      "evidence": "Six stations; reports 18 to 11; staffing and hours changed."
+    },
+    "expectedAccepted": false,
+    "field": "rationale",
+    "reason": "Concurrent staffing and hours changes prevent the note establishing locker causation.",
+    "remit": "source",
+    "critical": true,
+    "provenance": "new synthetic; same-author frozen labels, not independent human review"
+  },
+  {
+    "id": "kiln-a",
+    "source": "kiln.txt",
+    "idea": {
+      "title": "Trace the selected batch before choosing the kiln test",
+      "description": "Explain the case-based troubleshooting exercise.",
+      "audience": "Kiln technicians",
+      "rationale": "Cooling appears often in the records; the chosen batch determines the test stage.",
+      "evidence": "Cracks at cooling and sometimes after shaping; inspect the batch record."
+    },
+    "expectedAccepted": true,
+    "field": null,
+    "reason": "Preserves the stated facts and communication job.",
+    "remit": "both",
+    "critical": false,
+    "provenance": "new synthetic; same-author frozen labels, not independent human review"
+  },
+  {
+    "id": "kiln-b",
+    "source": "kiln.txt",
+    "idea": {
+      "title": "Fix cooling first for the greatest reduction in cracks",
+      "description": "Explain the case-based troubleshooting exercise.",
+      "audience": "Kiln technicians",
+      "rationale": "Cooling appears often in the records; the chosen batch determines the test stage.",
+      "evidence": "Cracks at cooling and sometimes after shaping; inspect the batch record."
+    },
+    "expectedAccepted": false,
+    "field": "title",
+    "reason": "Observed location does not establish greatest intervention benefit or unconditional priority.",
+    "remit": "both",
+    "critical": true,
+    "provenance": "new synthetic; same-author frozen labels, not independent human review"
+  },
+  {
+    "id": "hall-a",
+    "source": "hall.txt",
+    "idea": {
+      "title": "Where Tuesday evening meetings take place in December",
+      "description": "Explain the temporary library hall and side-door entry, with a same-day cancellation check.",
+      "audience": "Residents attending meetings",
+      "rationale": "The notice helps residents reach the right room during the temporary arrangement.",
+      "evidence": "Tuesday evenings in December only; other meetings unchanged."
+    },
+    "expectedAccepted": true,
+    "field": null,
+    "reason": "Preserves the stated facts and communication job.",
+    "remit": "source",
+    "critical": false,
+    "provenance": "new synthetic; same-author frozen labels, not independent human review"
+  },
+  {
+    "id": "hall-b",
+    "source": "hall.txt",
+    "idea": {
+      "title": "Where Tuesday evening meetings take place in December",
+      "description": "Explain that all December meetings move to the library hall through its side door.",
+      "audience": "Residents attending meetings",
+      "rationale": "The notice helps residents reach the right room during the temporary arrangement.",
+      "evidence": "Tuesday evenings in December only; other meetings unchanged."
+    },
+    "expectedAccepted": false,
+    "field": "description",
+    "reason": "The move applies only on Tuesday evenings, not all meetings.",
+    "remit": "source",
+    "critical": true,
+    "provenance": "new synthetic; same-author frozen labels, not independent human review"
+  },
+  {
+    "id": "orchard-a",
+    "source": "orchard.txt",
+    "idea": {
+      "title": "Pruning waits for the requested bird survey",
+      "description": "Explain the deferred pruning timetable.",
+      "audience": "Orchard volunteers",
+      "rationale": "The arborist requested a survey before pruning.",
+      "evidence": "Trustees deferred pruning until February after the survey request."
+    },
+    "expectedAccepted": true,
+    "field": null,
+    "reason": "Preserves the stated facts and communication job.",
+    "remit": "source",
+    "critical": false,
+    "provenance": "new synthetic; same-author frozen labels, not independent human review"
+  },
+  {
+    "id": "orchard-b",
+    "source": "orchard.txt",
+    "idea": {
+      "title": "Pruning waits for the requested bird survey",
+      "description": "Explain the deferred pruning timetable.",
+      "audience": "Orchard volunteers",
+      "rationale": "Trustees deferred pruning to improve the grant application's chances.",
+      "evidence": "Trustees deferred pruning until February after the survey request."
+    },
+    "expectedAccepted": false,
+    "field": "rationale",
+    "reason": "The source links the delay to a survey request, not a grant motive.",
+    "remit": "source",
+    "critical": true,
+    "provenance": "new synthetic; same-author frozen labels, not independent human review"
+  },
+  {
+    "id": "pool-a",
+    "source": "pool.txt",
+    "idea": {
+      "title": "Using the west entrance during pool repairs",
+      "description": "Explain the temporary west entrance and continued ticket validity.",
+      "audience": "Swimmers planning a visit",
+      "rationale": "The notice helps swimmers enter while the east door is closed.",
+      "evidence": "East entrance closed ten days; existing tickets remain valid."
+    },
+    "expectedAccepted": true,
+    "field": null,
+    "reason": "Preserves the stated facts and communication job.",
+    "remit": "editorial",
+    "critical": false,
+    "provenance": "new synthetic; same-author frozen labels, not independent human review"
+  },
+  {
+    "id": "pool-b",
+    "source": "pool.txt",
+    "idea": {
+      "title": "Using the west entrance during pool repairs",
+      "description": "Evaluate whether the facilities team should increase maintenance spending.",
+      "audience": "Swimmers planning a visit",
+      "rationale": "The notice helps swimmers enter while the east door is closed.",
+      "evidence": "East entrance closed ten days; existing tickets remain valid."
+    },
+    "expectedAccepted": false,
+    "field": "description",
+    "reason": "Replaces the practical visitor notice with a separate internal spending evaluation.",
+    "remit": "editorial",
+    "critical": true,
+    "provenance": "new synthetic; same-author frozen labels, not independent human review"
+  },
+  {
+    "id": "bursary-a",
+    "source": "bursary.txt",
+    "idea": {
+      "title": "What the draft bursary would offer",
+      "description": "Explain the proposed awards and the approval condition before applications can open.",
+      "audience": "Prospective applicants",
+      "rationale": "The draft provides an early view of a possible application opportunity.",
+      "evidence": "Draft proposes 25 awards, conditional on March approval."
+    },
+    "expectedAccepted": true,
+    "field": null,
+    "reason": "Preserves the stated facts and communication job.",
+    "remit": "source",
+    "critical": false,
+    "provenance": "new synthetic; same-author frozen labels, not independent human review"
+  },
+  {
+    "id": "bursary-b",
+    "source": "bursary.txt",
+    "idea": {
+      "title": "The bursary has awarded 25 grants",
+      "description": "Explain the proposed awards and the approval condition before applications can open.",
+      "audience": "Prospective applicants",
+      "rationale": "The draft provides an early view of a possible application opportunity.",
+      "evidence": "Draft proposes 25 awards, conditional on March approval."
+    },
+    "expectedAccepted": false,
+    "field": "title",
+    "reason": "A draft proposal is not completed awards.",
+    "remit": "source",
+    "critical": true,
+    "provenance": "new synthetic; same-author frozen labels, not independent human review"
+  },
+  {
+    "id": "nightbus-a",
+    "source": "nightbus.txt",
+    "idea": {
+      "title": "Two night-bus options open for passenger comment",
+      "description": "Explain the consultation choices and feedback deadline.",
+      "audience": "Passengers considering a response",
+      "rationale": "The options give passengers a basis for feedback before the committee chooses.",
+      "evidence": "Two possible routes; feedback closes 21 January; neither approved."
+    },
+    "expectedAccepted": true,
+    "field": null,
+    "reason": "Preserves the stated facts and communication job.",
+    "remit": "editorial",
+    "critical": false,
+    "provenance": "new synthetic; same-author frozen labels, not independent human review"
+  },
+  {
+    "id": "nightbus-b",
+    "source": "nightbus.txt",
+    "idea": {
+      "title": "Two night-bus options open for passenger comment",
+      "description": "Build the case for the committee to choose the first route as its final service.",
+      "audience": "Passengers considering a response",
+      "rationale": "The options give passengers a basis for feedback before the committee chooses.",
+      "evidence": "Two possible routes; feedback closes 21 January; neither approved."
+    },
+    "expectedAccepted": false,
+    "field": "description",
+    "reason": "Replaces a passenger consultation explanation with advocacy for a predetermined choice.",
+    "remit": "editorial",
+    "critical": true,
+    "provenance": "new synthetic; same-author frozen labels, not independent human review"
+  },
+  {
+    "id": "roof-a",
+    "source": "roof.txt",
+    "idea": {
+      "title": "Why the school is checking possible sources of damp",
+      "description": "Explain the observations and planned inspections without choosing a confirmed cause.",
+      "audience": "Parents",
+      "rationale": "The roof is a possible source that warrants checking alongside plumbing.",
+      "evidence": "Three rooms have damp; roof and plumbing are possibilities."
+    },
+    "expectedAccepted": true,
+    "field": null,
+    "reason": "Preserves the stated facts and communication job.",
+    "remit": "source",
+    "critical": false,
+    "provenance": "new synthetic; same-author frozen labels, not independent human review"
+  },
+  {
+    "id": "roof-b",
+    "source": "roof.txt",
+    "idea": {
+      "title": "Why the school is checking possible sources of damp",
+      "description": "Explain the observations and planned inspections without choosing a confirmed cause.",
+      "audience": "Parents",
+      "rationale": "The roof is the confirmed source of damp in the three classrooms.",
+      "evidence": "Three rooms have damp; roof and plumbing are possibilities."
+    },
+    "expectedAccepted": false,
+    "field": "rationale",
+    "reason": "A suggested possible cause is not a confirmed cause.",
+    "remit": "source",
+    "critical": true,
+    "provenance": "new synthetic; same-author frozen labels, not independent human review"
+  }
+]

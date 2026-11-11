@@ -1,0 +1,386 @@
+[
+  {
+    "key": "tuning/baseline/005-b/0",
+    "category": "Unsupported causal claim",
+    "field": "rationale",
+    "problem": "The rationale states that the added hierarchy rule caused the shift toward orchestration in the candidate runs. The source documents a temporal association (the candidate prompt included the new rule and candidate outputs emphasized orchestration) but does not establish causation. The experiment report itself notes limitations that leave open other explanations (e.g., model-backend variability, no temperature/seed control) and frames the result as the candidate prompt being insufficient to preserve editorial intent rather than definitively attributing the shift to the new rule.",
+    "sourceEvidence": "The report records that \"The candidate added one generic section, 'Preserve Editorial Intent from the Synthesis.'\" and that \"Candidate outputs ... consistently subordinated company identity and audience scope while making orchestration the central positioning.\" It also lists limitations: \"the model provider may change the backend behind an alias\" and \"No seed or temperature override was available,\" and concludes \"the candidate prompt was not sufficient to protect the supplied editorial intent.\"",
+    "constraint": "The idea must not present the prompt change as the proven cause of the observed shift. It should describe the association observed in the experiment and preserve the source's attribution and limitations (i.e., report that candidate runs coincided with a shift toward orchestration and that the experiment concluded the candidate prompt failed to preserve intent, without asserting definitive causation)."
+  },
+  {
+    "key": "tuning/editorial/005-b/0",
+    "category": "Rationale",
+    "field": "Causal attribution",
+    "problem": "The idea's rationale asserts that \"The added hierarchy rule caused the shift toward orchestration across the candidate runs.\" The source documents a controlled prompt change and correlated outcome (candidate runs shifted emphasis toward orchestration), but does not assert a definitive causal conclusion. Instead the report states the candidate prompt \"was not sufficient to protect the supplied editorial intent,\" notes baseline internal tension around orchestration, and records limitations (e.g., possible backend changes) that qualify causal certainty.",
+    "sourceEvidence": "\"The candidate added one generic section, 'Preserve Editorial Intent from the Synthesis.'\"; \"Candidate outputs were readable and coherent, but consistently subordinated company identity and audience scope while making orchestration the central positioning.\"; \"The candidate prompt was not sufficient to protect the supplied editorial intent, and this experiment did not change Synthesis because that was outside scope.\"; \"The model provider may change the backend behind an alias.\"",
+    "constraint": "The source supports describing the prompt change as associated with (or insufficient to prevent) the observed shift in emphasis, but does not support presenting the prompt addition as the definitive cause of that shift given the report's stated limitations and internal tensions."
+  },
+  {
+    "key": "tuning/v2/010-b/0",
+    "category": "EDITORIAL_INTENT",
+    "field": "title",
+    "problem": "Title asserts a fixed intervention \"Fix Narrative first in the next pipeline trial,\" which changes the practical task from selecting and testing the first evidence-supported stage to mandating Narrative as the universal first fix.",
+    "sourceEvidence": "Implication for the next focused trial: \"Targets the first stage supported by the evidence for the chosen failure (Narrative is the most recurrent locus; compare its actual input Synthesis before changing it).\" Also: \"This is a diagnostic recommendation, not a prompt rewrite or a claim that Narrative is the sole cause. Experiment 007 already demonstrates Synthesis-origin drift in one run; Experiment 008 demonstrates Idea-origin drift; Experiment 009 shows downstream drift despite a company-first Idea.\"",
+    "constraint": "The next trial must target the first stage supported by the evidence for the chosen failure; Narrative is a common locus but is not prescribed as the universal first fix."
+  },
+  {
+    "key": "tuning/v2/010-b/1",
+    "category": "SOURCE_FIDELITY",
+    "field": "description",
+    "problem": "Description could be read as prescriptive to always check/alter Narrative first rather than to explain how to locate the first evidence-supported stage and conditionally check Narrative against its Synthesis input.",
+    "sourceEvidence": "Implication for the next focused trial: \"Targets the first stage supported by the evidence for the chosen failure (Narrative is the most recurrent locus; compare its actual input Synthesis before changing it).\" And: \"Do not infer that another Idea-only change or a Compose-only style change will address every failure... This is a diagnostic recommendation, not a prompt rewrite or a claim that Narrative is the sole cause.\"",
+    "constraint": "The description must preserve that the procedure is to identify and target the first evidence-supported stage for the specific failure case; checking Narrative against Synthesis is conditional and not universally required as the initial intervention."
+  },
+  {
+    "key": "tuning/source/010-b/0",
+    "category": "Scope / decision motivation",
+    "field": "title",
+    "problem": "The title asserts a universal next-step decision (\u201cFix Narrative first in the next pipeline trial\u201d), but the source does not support a universal rule to always fix Narrative first. The report explicitly says drift can originate in Idea or Synthesis and recommends targeting \u201cthe first stage supported by the evidence for the chosen failure,\u201d noting that Narrative is the most recurrent locus but not always the earliest locus.",
+    "sourceEvidence": "\u201cDrift is not confined to Idea.\u201d; \u201cNarrative is the most recurrent first visible hierarchy shift in the available records.\u201d; \u201cDo not infer that another Idea-only change or a Compose-only style change will address every failure. The next useful experiment should be one controlled upstream-boundary trial that: 1. Targets the first stage supported by the evidence for the chosen failure (Narrative is the most recurrent locus; compare its actual Synthesis input before changing it).\u201d ; \u201cExperiment 007 already demonstrates Synthesis-origin drift in one run; Experiment 008 demonstrates Idea-origin drift; Experiment 009 shows downstream drift despite a company-first Idea.\u201d",
+    "constraint": "The source supports selecting the intervention point based on which stage the evidence actually localizes as first for the chosen failure; it does not support an unconditional rule that Narrative must always be fixed first."
+  },
+  {
+    "key": "tuning/editorial/010-b/0",
+    "category": "Editorial intent mismatch",
+    "field": "Title",
+    "problem": "The title 'Fix Narrative first in the next pipeline trial' asserts that Narrative must be the first and primary intervention for the next trial. The source explicitly recommends targeting whatever stage is supported by the evidence for the chosen failure and documents that the earliest observable drift varies by run (Idea, Synthesis, Narrative, or Compose). Thus the unconditional 'fix Narrative first' claim overgeneralizes and conflicts with the source's recommended decision rule.",
+    "sourceEvidence": "Implication for the next focused trial: 'Targets the first stage supported by the evidence for the chosen failure (Narrative is the most recurrent locus; compare its actual Synthesis input when indicated).' Cross-experiment patterns: 'Drift is not confined to Idea.' and 'Narrative is the most recurrent first visible hierarchy shift in the available records.' (Report sections: Implication for the next focused trial; Cross-experiment patterns.)",
+    "constraint": "The next trial must target the first stage supported by the evidence for the chosen failure; Narrative is identified as the most recurrent locus but is not always the earliest or appropriate intervention point."
+  },
+  {
+    "key": "tuning/editorial/v4-005-good/0",
+    "category": "omission",
+    "field": "rationale/description",
+    "problem": "The idea's stated rationale attributes the failed promotion solely to orchestration becoming central, but the source identifies multiple, explicit grounds for not promoting the candidate (worse mean scores, and a hard failure on factual/editorial restraint that introduced unsupported validation/commitment and audience framing). The idea therefore does not fully perform the source's requested communication job of explaining why the candidate was not promoted.",
+    "sourceEvidence": "From the report: \u201cCandidate mean 4.00/10... Candidate outputs were readable and coherent, but consistently subordinated company identity and audience scope while making orchestration the central positioning. Candidate samples also introduced unsupported validation or audience framing.\u201d; and \u201cNo candidate run passed this gate. The Narrative outputs introduced validation intent/commitment, an audience of founders/product leaders/builders, or a need for coordinated AI. ... This is a hard failure.\u201d; and the decision: \u201cDo not promote. Candidate was worse on mean score for both Narrative and Compose, failed the orchestration hierarchy and factual restraint gates in every run, and introduced regressions.\u201d",
+    "constraint": "Any explanation offered as the reason the candidate was not promoted must account for all primary causes the source report gives: the worse mean scores, the failure of both the orchestration hierarchy and the factual/editorial-restraint (D) gate, and the introduction of regressions (unsupported validation/commitment or audience framing)."
+  },
+  {
+    "key": "holdout/baseline/lockers-b/0",
+    "category": "Unsupported causal claim",
+    "field": "rationale",
+    "problem": "The rationale asserts that numbered lockers caused the decline in lost-item reports, but the source explicitly says it does not isolate a cause and notes other changes (staffing and opening hours) during the trial.",
+    "sourceEvidence": "Source: 'Six stations tried numbered lockers in July; lost-item reports fell from 18 to 11. Staffing and opening hours also changed. The note does not isolate a cause. No decision about expansion has been made.'",
+    "constraint": "The idea must not present the observed drop in lost-item reports as established evidence that numbered lockers were the cause; any causal connection must be framed as unproven or attributed to the source's uncertainty."
+  },
+  {
+    "key": "holdout/v2/lockers-b/0",
+    "category": "Source fidelity",
+    "field": "rationale",
+    "problem": "Claims that numbered lockers caused the fall in lost-item reports (asserts a causal link not supported by the source).",
+    "sourceEvidence": "The source records that six stations tried numbered lockers in July and lost-item reports fell from 18 to 11, but also notes that staffing and opening hours changed and explicitly states the note does not isolate a cause.",
+    "constraint": "The source does not attribute the reduction in lost-item reports to numbered lockers."
+  },
+  {
+    "key": "holdout/source/lockers-b/0",
+    "category": "Unsupported causation",
+    "field": "rationale",
+    "problem": "The idea asserts that numbered lockers caused the fall in lost-item reports; the source does not support a causal attribution and explicitly notes other simultaneous changes.",
+    "sourceEvidence": "\u201cSix stations tried numbered lockers in July; lost-item reports fell from 18 to 11. Staffing and opening hours also changed. The note does not isolate a cause.\u201d",
+    "constraint": "The source does not provide evidence isolating numbered lockers as the cause of the reduction in lost-item reports."
+  },
+  {
+    "key": "holdout/editorial/lockers-b/0",
+    "category": "Attribution / causal claim",
+    "field": "rationale",
+    "problem": "The idea asserts that numbered lockers caused the reduction in lost-item reports, but the source explicitly says the note does not isolate a cause and other changes (staffing and opening hours) also occurred.",
+    "sourceEvidence": "Source: 'Six stations tried numbered lockers in July; lost-item reports fell from 18 to 11. Staffing and opening hours also changed. The note does not isolate a cause.'",
+    "constraint": "Do not present numbered lockers as the proven cause of the reduction in lost-item reports because the source only reports a concurrent decrease and explicitly states it does not isolate a cause."
+  },
+  {
+    "key": "holdout/baseline/kiln-b/0",
+    "category": "Unsupported prioritization / Overstated outcome",
+    "field": "title",
+    "problem": "The title asserts that fixing cooling first will produce the greatest reduction in cracks. The source does not support a claim that prioritizing cooling will have the greatest benefit; it only reports that most cracks were first recorded at cooling and explicitly says the note does not rank intervention benefits.",
+    "sourceEvidence": "\"Most cracks were first recorded at cooling\"; \"two batches already showed cracks after shaping\"; \"The note does not rank intervention benefits.\"",
+    "constraint": "Do not present a specific intervention or sequence (e.g., 'fix cooling first for the greatest reduction') as the preferred or most effective action when the source explicitly declines to rank intervention benefits or provide evidence of relative effectiveness."
+  },
+  {
+    "key": "holdout/v2/kiln-b/0",
+    "category": "SOURCE FIDELITY",
+    "field": "title",
+    "problem": "Claims that 'Fix cooling first' will yield the greatest reduction in cracks \u2014 a ranked benefit not provided by the source.",
+    "sourceEvidence": "Source states 'Most cracks were first recorded at cooling, while two batches already showed cracks after shaping.' and also 'The note does not rank intervention benefits.'",
+    "constraint": "Do not assert or rank intervention benefits; the source explicitly does not provide a ranking of which intervention yields the greatest reduction."
+  },
+  {
+    "key": "holdout/v2/kiln-b/1",
+    "category": "EDITORIAL INTENT",
+    "field": "title",
+    "problem": "Prescribes a fixed intervention ('fix cooling first') that overrides the source task to inspect the selected batch record and test the earliest supported stage.",
+    "sourceEvidence": "Source instructs: 'For the next exercise, inspect the selected batch record and test the earliest supported stage.'",
+    "constraint": "The next exercise must inspect the selected batch record and test the earliest supported stage; do not preselect or mandate a single intervention regardless of the batch record."
+  },
+  {
+    "key": "holdout/source/kiln-b/0",
+    "category": "Causality/Effectiveness",
+    "field": "Intervention benefit ranking",
+    "problem": "The idea's title asserts that 'Fix cooling first' will produce 'the greatest reduction in cracks' \u2014 a specific ranking and causal claim. The source only reports where cracks were first recorded and explicitly states it does not rank intervention benefits; it does not provide evidence that intervening at cooling will yield the largest reduction in cracks.",
+    "sourceEvidence": "\"Most cracks were first recorded at cooling\"; \"The note does not rank intervention benefits.\"",
+    "constraint": "The source does not support claims that intervening at cooling yields the greatest reduction in cracks."
+  },
+  {
+    "key": "holdout/source/kiln-b/1",
+    "category": "Scope/Recommended action",
+    "field": "Test stage selection",
+    "problem": "The idea prescribes prioritizing cooling universally, but the source instructs to inspect the selected batch record and 'test the earliest supported stage.' Because two batches showed cracks after shaping, the earliest supported stage to test may be shaping for some batches rather than cooling; the source therefore does not authorize a blanket 'fix cooling first' instruction.",
+    "sourceEvidence": "\"For the next exercise, inspect the selected batch record and test the earliest supported stage.\"; \"while two batches already showed cracks after shaping\"; \"Most cracks were first recorded at cooling.\"",
+    "constraint": "The source requires selecting the earliest supported stage from the inspected batch record and does not permit universally prioritizing cooling as the first intervention."
+  },
+  {
+    "key": "holdout/editorial/kiln-b/0",
+    "category": "Unsupported prioritization",
+    "field": "Title / central instruction",
+    "problem": "The idea's title asserts a universal priority\u2014\"Fix cooling first for the greatest reduction in cracks\"\u2014which prescribes a single intervention and claims it yields the greatest benefit. The source does not establish such a ranking and instead directs a case-based test of the earliest supported stage from the selected batch record.",
+    "sourceEvidence": "Source: \"Most cracks were first recorded at cooling, while two batches already showed cracks after shaping. For the next exercise, inspect the selected batch record and test the earliest supported stage. The note does not rank intervention benefits.\"",
+    "constraint": "The source requires inspecting the selected batch record and testing the earliest supported stage; it does not rank intervention benefits or state that fixing cooling will yield the greatest reduction in cracks."
+  },
+  {
+    "key": "holdout/baseline/hall-b/0",
+    "category": "Factual inaccuracy",
+    "field": "description",
+    "problem": "The description states that all December meetings move to the library hall, but the source specifies only Tuesday evening meetings in December are at the library hall and that other meetings remain at the usual hall.",
+    "sourceEvidence": "Source: \"The library hall is available on Tuesday evenings in December only; other meetings remain at the usual hall.\"",
+    "constraint": "Do not generalize the temporary venue to all December meetings; the copy must limit the change to Tuesday evening meetings in December and preserve that other meetings stay at the usual hall."
+  },
+  {
+    "key": "holdout/v2/hall-b/0",
+    "category": "Source fidelity",
+    "field": "description",
+    "problem": "Claims that all December meetings move to the library hall, but the source specifies the library hall is available only on Tuesday evenings in December and that other meetings remain at the usual hall.",
+    "sourceEvidence": "\"library hall is available on Tuesday evenings in December only; other meetings remain at the usual hall.\"",
+    "constraint": "Only Tuesday evening meetings in December move to the library hall; other meetings remain at the usual hall."
+  },
+  {
+    "key": "holdout/v2/hall-b/1",
+    "category": "Editorial intent",
+    "field": "description",
+    "problem": "Omits that the booking office may publish same-day cancellations, a fact in the source relevant to instructions for attending the temporary meeting hall.",
+    "sourceEvidence": "\"The booking office publishes same-day cancellations.\"",
+    "constraint": "The notice must acknowledge that the booking office publishes same-day cancellations."
+  },
+  {
+    "key": "holdout/source/hall-b/0",
+    "category": "scope/dates",
+    "field": "description",
+    "problem": "The description asserts that all December meetings move to the library hall, but the source specifies the library hall is available only on Tuesday evenings in December and that other meetings remain at the usual hall.",
+    "sourceEvidence": "The library hall is available on Tuesday evenings in December only; other meetings remain at the usual hall.",
+    "constraint": "The source limits the temporary location change to Tuesday evenings in December only and does not support claiming that all meetings in December move to the library hall."
+  },
+  {
+    "key": "holdout/editorial/hall-b/0",
+    "category": "Factual accuracy / scope",
+    "field": "description",
+    "problem": "The description asserts that \"all December meetings move to the library hall,\" which overstates the source. The source specifies the library hall is available only for Tuesday evenings in December; other meetings remain at the usual hall.",
+    "sourceEvidence": "\"The library hall is available on Tuesday evenings in December only; other meetings remain at the usual hall.\"",
+    "constraint": "The source limits the relocation to Tuesday evenings in December and does not support stating that all December meetings move to the library hall."
+  },
+  {
+    "key": "holdout/baseline/orchard-b/0",
+    "category": "Unsupported causal link / attribution",
+    "field": "rationale",
+    "problem": "The idea states that trustees deferred pruning to improve the grant application's chances. The source does not support this causal link and explicitly notes there is no stated reason tying the deferral to the grant.",
+    "sourceEvidence": "Source passages: 'Trustees deferred pruning until February after the arborist requested a bird survey. A grant application is being prepared separately. No reason linking the deferral to the grant is stated.'",
+    "constraint": "Do not present motives or causal relationships (why the trustees deferred pruning) that the source does not provide; preserve the source's stated uncertainty and attribution."
+  },
+  {
+    "key": "holdout/v2/orchard-b/0",
+    "category": "SOURCE_FIDELITY",
+    "field": "rationale",
+    "problem": "Asserts that trustees deferred pruning to improve the grant application's chances, which introduces an unsupported causal link between the deferral and the grant.",
+    "sourceEvidence": "Source states: 'Trustees deferred pruning until February after the arborist requested a bird survey.' It also states a grant application is being prepared separately and 'No reason linking the deferral to the grant is stated.'",
+    "constraint": "The source does not state that the deferral was intended to improve the grant application's chances."
+  },
+  {
+    "key": "holdout/source/orchard-b/0",
+    "category": "Decision motivation",
+    "field": "rationale",
+    "problem": "The rationale asserts that trustees deferred pruning to improve the grant application's chances, but the source does not link the deferral decision to the grant application.",
+    "sourceEvidence": "\"Trustees deferred pruning until February after the arborist requested a bird survey.\" AND \"A grant application is being prepared separately. No reason linking the deferral to the grant is stated.\"",
+    "constraint": "Do not present the trustees' deferral as motivated by improving the grant application; the source does not provide evidence that the deferral was made for that reason."
+  },
+  {
+    "key": "holdout/editorial/orchard-b/0",
+    "category": "evidence_mismatch",
+    "field": "rationale",
+    "problem": "The idea's rationale asserts that trustees deferred pruning 'to improve the grant application's chances,' which introduces a causal link between the deferral and the grant application that is not supported by the source.",
+    "sourceEvidence": "Source: 'Trustees deferred pruning until February after the arborist requested a bird survey. A grant application is being prepared separately. No reason linking the deferral to the grant is stated.'",
+    "constraint": "Do not state or imply that the deferral was made to improve the grant application's chances; the source supplies no evidence linking the deferral to the grant."
+  },
+  {
+    "key": "holdout/baseline/pool-b/0",
+    "category": "Scope/central claim",
+    "field": "description",
+    "problem": "The description proposes evaluating whether the facilities team should increase maintenance spending, which goes beyond the source's scope and presents a separate policy review as part of this notice.",
+    "sourceEvidence": "Source states: \"The facilities team will separately consider maintenance spending; this notice is not that review.\"",
+    "constraint": "The source confines the notice to temporary entrance instructions for swimmers and explicitly excludes maintenance-spending review; any discussion of spending must be treated as a separate, attributed review and not claimed as part of this notice."
+  },
+  {
+    "key": "holdout/v2/pool-b/0",
+    "category": "Editorial Intent",
+    "field": "description",
+    "problem": "Changes the task from providing swimmers practical entry information to evaluating whether facilities spending should be increased.",
+    "sourceEvidence": "Source: 'Editorial task: help swimmers use the temporary pool entrance.' and 'The facilities team will separately consider maintenance spending; this notice is not that review.'",
+    "constraint": "The notice must not evaluate or recommend changes to facilities maintenance spending; maintenance spending is being considered separately and is outside the scope of this notice."
+  },
+  {
+    "key": "holdout/source/pool-b/0",
+    "category": "Task scope",
+    "field": "description",
+    "problem": "The description calls for evaluating whether the facilities team should increase maintenance spending, which is outside and explicitly excluded by the source. The source defines the editorial task as helping swimmers use the temporary pool entrance and states that maintenance spending will be considered separately and is not the subject of this notice.",
+    "sourceEvidence": "\"Editorial task: help swimmers use the temporary pool entrance.\" and \"The facilities team will separately consider maintenance spending; this notice is not that review.\"",
+    "constraint": "Do not treat maintenance spending or recommendations about increasing it as part of this notice; the content must be limited to guidance about using the temporary entrance."
+  },
+  {
+    "key": "holdout/editorial/pool-b/0",
+    "category": "Central job mismatch",
+    "field": "description",
+    "problem": "The description reframes the task as evaluating whether the facilities team should increase maintenance spending, which changes the communication job away from helping swimmers use the temporary entrance.",
+    "sourceEvidence": "Source: \"Editorial task: help swimmers use the temporary pool entrance.\" and \"The facilities team will separately consider maintenance spending; this notice is not that review.\"",
+    "constraint": "The source assigns the notice the job of informing swimmers how to use the temporary (west) entrance during the east entrance closure and explicitly separates out any maintenance\u2011spending review; the notice must not be presented as an evaluation of maintenance spending."
+  },
+  {
+    "key": "holdout/baseline/bursary-b/0",
+    "category": "Factual contradiction",
+    "field": "title",
+    "problem": "The title asserts that the bursary \"has awarded 25 grants,\" presenting the awards as already made. The source states the board published a draft proposing 25 awards and explicitly says no awards have been made; applications are not open and awards are conditional on approval.",
+    "sourceEvidence": "Source: \"The draft proposes 25 awards; no awards have been made.\" Also: \"The board has published a draft; applications are not open. If approved in March, applications would open in May.\"",
+    "constraint": "Do not present proposed or conditional actions as implemented. Titles must reflect that the 25 awards are proposed/conditional and that applications are not yet open."
+  },
+  {
+    "key": "holdout/v2/bursary-b/0",
+    "category": "Source fidelity",
+    "field": "title",
+    "problem": "The title asserts that 25 grants have been awarded, but the source states the draft only proposes 25 awards and that no awards have been made.",
+    "sourceEvidence": "Source: \"The draft proposes 25 awards; no awards have been made.\" Also: \"applications are not open. If approved in March, applications would open in May.\"",
+    "constraint": "The source only supports stating that 25 awards are proposed and that any awards are conditional on board approval; it does not support saying awards have been made."
+  },
+  {
+    "key": "holdout/source/bursary-b/0",
+    "category": "Status/Outcome",
+    "field": "title",
+    "problem": "The title asserts that 25 grants have been awarded. The source states only that a draft proposes 25 awards and explicitly that no awards have been made; applications are not open and awards are conditional on approval.",
+    "sourceEvidence": "Source: \"The board has published a draft; applications are not open. If approved in March, applications would open in May. The draft proposes 25 awards; no awards have been made.\"",
+    "constraint": "The source only supports that the draft proposes 25 awards and that no awards have been made; it does not support any statement that awards have already been awarded."
+  },
+  {
+    "key": "holdout/editorial/bursary-b/0",
+    "category": "Factual accuracy",
+    "field": "title",
+    "problem": "The title asserts that the bursary \"has awarded 25 grants,\" which directly contradicts the source statement that no awards have been made and that the draft only proposes 25 awards pending approval.",
+    "sourceEvidence": "\"The draft proposes 25 awards; no awards have been made.\" \"applications are not open. If approved in March, applications would open in May.\"",
+    "constraint": "Do not present any awards as having been made; limit statements to the draft's proposal of 25 awards and the conditional approval/timing."
+  },
+  {
+    "key": "holdout/editorial/bursary-b/1",
+    "category": "Editorial intent / communication job",
+    "field": "central angle",
+    "problem": "By framing the piece as if awards have been made, the idea changes the communication job from \"explain the proposed bursary to prospective applicants\" to announcing completed awards, which alters the practical information prospective applicants need (eligibility and how/when to apply).",
+    "sourceEvidence": "\"Editorial task: explain the proposed bursary to prospective applicants.\" \"The board has published a draft; applications are not open.\"",
+    "constraint": "Maintain the original job of explaining a proposed opportunity to prospective applicants, including the approval contingency and application-opening timeline; do not treat the bursary as already awarded."
+  },
+  {
+    "key": "holdout/baseline/nightbus-b/0",
+    "category": "Recommended action conflicts with source",
+    "field": "description",
+    "problem": "The idea's central purpose is to \"build the case for the committee to choose the first route as its final service,\" which recommends a final route and advocates for a specific outcome. The source explicitly defines the editorial task as informing passengers about a consultation and not recommending a final route; it also states neither option is approved and the committee will choose only after reviewing submissions.",
+    "sourceEvidence": "Source: \"Editorial task: inform passengers about a consultation, not recommend a final route.\" Also: \"The committee will choose after reviewing submissions; neither option is approved.\"",
+    "constraint": "The piece must inform passengers about the consultation neutrally and must not advocate that the committee adopt one of the published options as the final service."
+  },
+  {
+    "key": "holdout/v2/nightbus-b/0",
+    "category": "EDITORIAL_INTENT",
+    "field": "description",
+    "problem": "The idea's description advocates for choosing the first route as the final service, which changes the task from informing participants to recommending a decision.",
+    "sourceEvidence": "\"Editorial task: inform passengers about a consultation, not recommend a final route.\"; \"The committee will choose after reviewing submissions; neither option is approved.\"",
+    "constraint": "The source specifies the task is to inform passengers about a consultation and not to recommend a final route; neither option has been approved and the committee will choose after reviewing submissions."
+  },
+  {
+    "key": "holdout/source/nightbus-b/0",
+    "category": "scope/advocacy",
+    "field": "description",
+    "problem": "The description advocates building the case for the committee to choose the first route as the final service, which conflicts with the source brief to inform passengers about a consultation and not recommend a final route.",
+    "sourceEvidence": "Editorial task: inform passengers about a consultation, not recommend a final route. ... The committee will choose after reviewing submissions; neither option is approved.",
+    "constraint": "The editorial brief requires presenting the consultation neutrally and not advocating for selection of a specific route; neither option has been approved and the committee will choose only after reviewing submissions."
+  },
+  {
+    "key": "holdout/editorial/nightbus-b/0",
+    "category": "Purpose mismatch",
+    "field": "description",
+    "problem": "The description proposes campaigning for the committee to choose the first route as its final service, which performs a recommendation/advocacy role rather than the required neutral consultation notice.",
+    "sourceEvidence": "Source states: 'Editorial task: inform passengers about a consultation, not recommend a final route.' It also states that 'neither option is approved' and 'The committee will choose after reviewing submissions.'",
+    "constraint": "The piece must inform passengers about the consultation and not recommend a final route; neither option is approved and the committee will choose after reviewing submissions."
+  },
+  {
+    "key": "holdout/baseline/roof-b/0",
+    "category": "Contradiction with source / Unsupported claim",
+    "field": "rationale",
+    "problem": "Rationale asserts that the roof is the confirmed source of the damp in the three classrooms, but the source explicitly says no cause is confirmed and that the roof is only one possible source alongside plumbing.",
+    "sourceEvidence": "\"The inspector suggests checking the roof as one possible source; plumbing is another possibility. No cause is confirmed.\"",
+    "constraint": "The idea must preserve the source's statement that the cause is unconfirmed and present the roof only as a possible source (not as established fact)."
+  },
+  {
+    "key": "holdout/v2/roof-b/0",
+    "category": "SOURCE_FIDELITY",
+    "field": "rationale",
+    "problem": "Asserts that the roof is the confirmed source of damp in the three classrooms.",
+    "sourceEvidence": "Source: \u201cDamp patches were recorded in three classrooms. The inspector suggests checking the roof as one possible source; plumbing is another possibility. No cause is confirmed. The school has arranged inspections, not repairs.\u201d",
+    "constraint": "The source identifies the roof as one possible source and explicitly states that no cause has been confirmed."
+  },
+  {
+    "key": "holdout/source/roof-b/0",
+    "category": "Attribution/Causality",
+    "field": "rationale",
+    "problem": "Asserts that 'The roof is the confirmed source of damp in the three classrooms.' The source explicitly states no cause has been confirmed and lists the roof only as one possible source alongside plumbing.",
+    "sourceEvidence": "\"Damp patches were recorded in three classrooms. The inspector suggests checking the roof as one possible source; plumbing is another possibility. No cause is confirmed. The school has arranged inspections, not repairs.\"",
+    "constraint": "The source does not support presenting the roof as the confirmed cause; the copy must reflect that the cause is unconfirmed and that both roof and plumbing are identified as possible sources."
+  },
+  {
+    "key": "holdout/editorial/roof-b/0",
+    "category": "Unsupported conclusion",
+    "field": "rationale",
+    "problem": "Rationale asserts that the roof is the confirmed source of the damp, but the source explicitly records the roof only as a possible source and states that no cause has been confirmed.",
+    "sourceEvidence": "\"Damp patches were recorded in three classrooms. The inspector suggests checking the roof as one possible source; plumbing is another possibility. No cause is confirmed. The school has arranged inspections, not repairs.\"",
+    "constraint": "The source supports only presenting the roof as a possible source and that no cause has been confirmed; it does not support stating the roof is the confirmed source."
+  },
+  {
+    "key": "repeat/baseline/005-b/0",
+    "category": "Unsupported causal claim",
+    "field": "rationale",
+    "problem": "The rationale asserts that the added \"Preserve Editorial Intent\" rule caused the shift toward orchestration in the candidate runs. The source documents a controlled change (only the Narrative.user.prompt was changed) and a correlated shift in outputs, but it does not establish definitive causation and explicitly lists limitations (e.g., potential provider backend changes, no seed/temperature control). Framing the change as a proven cause goes beyond the source's supported inference.",
+    "sourceEvidence": "Source notes the single prompt change: \"The candidate added one generic section, 'Preserve Editorial Intent from the Synthesis.'\" It also reports the result: \"Candidate outputs were readable and coherent, but consistently subordinated company identity and audience scope while making orchestration the central positioning.\" The report also records the decision and reasoning: \"Decision: Do not promote... failed the orchestration hierarchy and factual restraint gates in every run...\" However, under Limitations it states: \"the model provider may change the backend behind an alias\" and \"No seed or temperature override was available\" \u2014 indicating the experiment does not prove definitive causation.",
+    "constraint": "When describing causes or root reasons, preserve the source's uncertainty and attribution. Do not present the prompt edit as a proven cause without qualification; state it as the only controlled change correlated with the shift and, where appropriate, note the experiment's limitations."
+  },
+  {
+    "key": "repeat/source/005-b/0",
+    "category": "causality",
+    "field": "rationale",
+    "problem": "The idea's rationale asserts that the added \"Preserve Editorial Intent\" rule caused the shift toward orchestration in the candidate runs. The source documents a controlled comparison where only the Narrative.user.prompt was changed and reports an association between that change and the observed output shift, but it does not establish definitive causation. The experiment report also records limitations that undermine a causal claim (possible model backend changes, no seed/temperature control, small sample), and it notes other possible contributing factors (an internal tension in the baseline Synthesis).",
+    "sourceEvidence": "Prompt change: candidate added one generic section, \u201cPreserve Editorial Intent from the Synthesis.\u201d Controlled comparison/configuration: \u201cCandidate: Three new runs with only src/Nueyon.Compose.Application/Prompts/Narrative/Narrative.user.prompt.txt changed. All other prompt files and workflow inputs remained identical.\u201d Results/analysis: \u201cCandidate outputs were readable and coherent, but consistently subordinated company identity and audience scope while making orchestration the central positioning.\u201d Decision/analysis: \u201cCandidate was worse on mean score... failed the orchestration hierarchy and factual restraint gates... introduced regressions.\u201d Limitations: \u201cthe model provider may change the backend behind an alias.\u201d \u201cNo seed or temperature override was available. Three runs per condition show consistency in these samples, not statistical significance.\u201d \u201cThe baseline Synthesis pairs company identity with Compose... That internal tension may have reinforced the technical angle.\u201d",
+    "constraint": "The source supports an observed association between the prompt change and output shift but does not support a definitive causal claim that the added rule was the cause."
+  },
+  {
+    "key": "repeat/v2/010-b/0",
+    "category": "SOURCE_FIDELITY",
+    "field": "title",
+    "problem": "The title 'Fix Narrative first in the next pipeline trial' asserts an unconditional, default intervention (always fix Narrative first) that is stronger than the source guidance.",
+    "sourceEvidence": "The report's Implication for the next focused trial recommends: 'Targets the first stage supported by the evidence for the chosen failure (Narrative is the most recurrent locus; compare its actual Synthesis input before changing it).' It also notes: 'This is a diagnostic recommendation, not a prompt rewrite or a claim that Narrative is the sole cause. Experiment 007 already demonstrates Synthesis-origin drift in one run; Experiment 008 demonstrates Idea-origin drift; Experiment 009 shows downstream drift despite a company-first Idea.'",
+    "constraint": "The source conditions the intervention: the next trial should target the first stage supported by the evidence (Narrative is often the recurrent locus but not always); the title must not present Narrative-first as an unconditional requirement."
+  },
+  {
+    "key": "repeat/v2/010-b/1",
+    "category": "EDITORIAL_INTENT",
+    "field": "description",
+    "problem": "The description narrows the next trial to 'locate the first evidence-supported stage, checking Narrative against its actual Synthesis input when indicated' but omits other explicit experimental design constraints the source requires for the next focused trial.",
+    "sourceEvidence": "The report specifies a five-part trial design in 'Implication for the next focused trial': (1) 'Targets the first stage supported by the evidence for the chosen failure...'; (2) 'Tests one explicit rule: preserve the selected company-level subject and product-support relationship...'; (3) 'Removes output-format reasoning from the tested upstream decision boundary only if the hypothesis specifically targets that leakage...'; (4) 'Uses repeated full-pipeline runs, captures each stage...'; (5) 'Separately evaluates: (a) factual claims, audience, certainty, and source support; (b) company-first story hierarchy; and (c) editorial quality...'",
+    "constraint": "The source requires the next focused trial to include those explicit experimental controls and evaluation criteria (preserving company-level subject/product relationship rule, conditional removal of format reasoning, repeated full-pipeline runs capturing each stage, and separate evaluations of factuality, hierarchy, and editorial quality)."
+  },
+  {
+    "key": "repeat/editorial/010-b/0",
+    "category": "Editorial intent / task specification",
+    "field": "title",
+    "problem": "The title unconditionally prescribes \"Fix Narrative first\" whereas the source prescribes targeting the first stage supported by evidence and only notes that Narrative is the most recurrent locus; it does not mandate Narrative-first for every trial.",
+    "sourceEvidence": "Implication for the next focused trial: \"Targets the first stage supported by the evidence for the chosen failure (Narrative is the most recurrent locus; compare its actual input Synthesis before changing it).\" Also: \"Do not infer that another Idea-only change or a Compose-only style change will address every failure.\"",
+    "constraint": "The next trial must target the first stage supported by the evidence for the specific failure; Narrative is a frequently observed locus but not an unconditional, universal first intervention."
+  }
+]

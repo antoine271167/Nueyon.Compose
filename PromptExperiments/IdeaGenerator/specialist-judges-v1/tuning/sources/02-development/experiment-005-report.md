@@ -1,0 +1,112 @@
+# Experiment 005 — Editorial Intent Fidelity
+
+**Date:** 2026-11-04  
+**Decision:** Candidate not promoted; production Narrative user prompt restored byte-for-byte to baseline.
+
+## Objective and hypothesis
+
+Test whether a reusable editorial-hierarchy rule in the Narrative Agent prompt keeps Synthesis's primary message, central subject, intended audience, and theme hierarchy intact. The expected result was a company introduction centered on Nuëyon's AI-first ambition for other AI-first businesses, with Nuëyon.Compose as its first concrete product direction and orchestration as supporting explanation.
+
+## Repository and baseline verification
+
+- Checkout: `C:\Workspaces\Nueyon.Compose`
+- Branch and commit: `main`, `be882989a7b7956e1b57199f143e7cf434fbe4e5`
+- Initial status: `main...origin/main`; pre-existing untracked `PromptExperiments/` and `prompts/`; no tracked modifications.
+- The frozen baseline Narrative system prompt and user prompt matched the production versions before the experiment. The baseline user prompt SHA-256 was `475A9DB1CA028EBC927C99ECDD3DAB061B0616ED06FB1278879992D2E8DD795A`.
+- The source input matched the frozen prior input (`DB7A9CF4768684C025D02028980E16CCE8805832E1013A5B6098C00D29E8F2D0`). The archived original instruction was also copied and hash-checked (`9711363973E35E3FFE440CDA2BE73C0A77101DFFC2F21B77CA6AB957B725A5AB`).
+- All 11 prompt files in the prior Experiment 004 baseline snapshot matched the current production prompt files by SHA-256. No Research, Synthesis, Compose, Idea, configuration, or C# file was changed.
+
+## Controlled comparison and configuration
+
+- **Baseline:** Three completed baseline runs reused from `experiment-004-opening-and-ending/baseline`. They used the same commit, source input, prompt snapshots, `gpt-5-mini`, console workflow, and LinkedIn post format. Reusing these preserved the exact prior baseline condition while avoiding unnecessary duplicate model calls.
+- **Candidate:** Three new runs with only `src/Nueyon.Compose.Application/Prompts/Narrative/Narrative.user.prompt.txt` changed. All other prompt files and workflow inputs remained identical.
+- **Provider/model:** OpenAI / `gpt-5-mini`; .NET SDK `10.0.401`; temperature and seed not explicitly configured; API key configured through user secrets and not recorded. Compose format: `LinkedInPost`.
+- **Execution command:** `dotnet Nueyon.Compose.Host.Console.dll` from `src/Nueyon.Compose.Host.Console/bin/Debug/net10.0` for each run.
+- **Input handling:** The application reads Markdown files from `data/input`; it has no separate runtime argument for `original-instruction.txt`. That instruction file is preserved as experiment context, not represented as an additional model input.
+- Each run completed all workflow stages and exited 0. Full console logs, extracted Narrative outputs, and final Compose outputs are saved under this experiment's `baseline/outputs/` and `candidate/outputs/`.
+
+## Prompt change
+
+The candidate added one generic section, **“Preserve Editorial Intent from the Synthesis.”** It tells Narrative to identify the primary message, supporting themes, and contextual details; preserve audience scope and relative emphasis; keep technical details subordinate when Synthesis does; and retain uncertainty when the source is ambiguous. It contains no Nuëyon-specific wording or this story's details.
+
+The complete baseline and candidate prompts are saved under `baseline/prompts/Narrative/` and `candidate/prompts/Narrative/`. The exact unified diff is `prompt-changes/Narrative.user.prompt.diff`.
+
+## Scoring rubric
+
+Each criterion is scored 0–2 (higher is better), for a total out of 10. For Narrative, criterion E measures whether the brief gives Compose a sound foundation for an introductory LinkedIn post; for Compose, E measures whether the output itself is suitable for that post.
+
+- **A — Identity and audience:** Nuëyon's AI-first identity and ambition for other AI-first businesses are primary (2); present but audience scope or primacy is incomplete (1); absent (0).
+- **B — First product direction:** Compose is clearly presented as the first concrete step (2); implied but incomplete (1); absent (0).
+- **C — Theme hierarchy:** Orchestration stays a supporting explanation (2); its relative importance is ambiguous (1); it becomes the central positioning (0).
+- **D — Factual/editorial restraint:** No unsupported audience, need, benefit, capability, traction, launch status, or commitment is added (2); only a minor unsupported implication appears (1); a clear unsupported claim or expansion appears (0). This is a hard promotion gate.
+- **E — LinkedIn suitability:** Clear, focused, publishable company introduction or direction for Compose (2); readable but materially overtechnical, meta, or diffuse (1); unsuitable (0).
+
+Readability, coherence, and source fidelity are also rated separately from 1–5. These are editorial judgments, not automated measurements.
+
+## Run scores
+
+### Narrative outputs
+
+| Condition | Run | A | B | C | D | E | Total / 10 | Readability / 5 | Coherence / 5 | Source fidelity / 5 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| Baseline | 1 | 2 | 2 | 1 | 0 | 2 | 7 | 4 | 4 | 3 |
+| Baseline | 2 | 2 | 2 | 0 | 0 | 1 | 5 | 4 | 4 | 2 |
+| Baseline | 3 | 2 | 2 | 0 | 1 | 1 | 6 | 4 | 4 | 3 |
+| Candidate | 1 | 1 | 2 | 0 | 0 | 1 | 4 | 4 | 4 | 2 |
+| Candidate | 2 | 1 | 2 | 0 | 0 | 1 | 4 | 4 | 4 | 2 |
+| Candidate | 3 | 1 | 2 | 0 | 0 | 1 | 4 | 4 | 4 | 2 |
+
+**Narrative total:** Baseline mean 6.00/10 (range 5–7; sample SD 1.00). Candidate mean 4.00/10 (range 4–4; sample SD 0.00). Candidate outputs were readable and coherent, but consistently subordinated company identity and audience scope while making orchestration the central positioning. Candidate samples also introduced unsupported validation or audience framing.
+
+### Final Compose outputs
+
+| Condition | Run | A | B | C | D | E | Total / 10 | Readability / 5 | Coherence / 5 | Source fidelity / 5 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| Baseline | 1 | 2 | 2 | 1 | 0 | 2 | 7 | 4 | 4 | 3 |
+| Baseline | 2 | 1 | 2 | 0 | 0 | 1 | 4 | 4 | 4 | 2 |
+| Baseline | 3 | 2 | 2 | 0 | 1 | 1 | 6 | 4 | 4 | 3 |
+| Candidate | 1 | 1 | 2 | 0 | 0 | 0 | 3 | 4 | 4 | 2 |
+| Candidate | 2 | 1 | 2 | 0 | 0 | 1 | 4 | 4 | 4 | 2 |
+| Candidate | 3 | 1 | 1 | 0 | 0 | 1 | 3 | 4 | 4 | 2 |
+
+**Compose total:** Baseline mean 5.67/10 (range 4–7; sample SD 1.53). Candidate mean 3.33/10 (range 3–4; sample SD 0.58). Candidate outputs remained readable, but did not restore the intended editorial hierarchy. Run 1 included editorial meta-text (“The post’s purpose is simple”) and a claim that the workflow would be validated before expansion. Run 2 generalized about what useful AI requires and named founders/product leaders. Run 3 opened by reframing content creation as an orchestration problem and expanded to architecture tradeoffs and validation focus.
+
+## Analysis against the required criteria
+
+- **(a) Company identity and ambition for other AI-first businesses:** Baseline narratives stated this more consistently. Candidate narratives mentioned an AI-first company or philosophy but did not preserve the intended audience and company-level ambition as the primary message. Candidate compositions likewise omitted or diluted the audience scope.
+- **(b) Compose as first concrete step:** Candidate narratives retained this. Candidate Compose runs 1–2 did too; run 3 implied Compose's role without clearly calling it the first concrete step.
+- **(c) Orchestration as supporting explanation:** All three candidate Narrative runs and all three candidate Compose runs failed this gate. Each made orchestration/orchestration-first positioning central.
+- **(d) Unsupported additions:** No candidate run passed this gate. The Narrative outputs introduced validation intent/commitment, an audience of founders/product leaders/builders, or a need for coordinated AI. The Compose outputs repeated or extended those additions. This is a hard failure.
+- **(e) Introductory LinkedIn suitability:** Candidate prose was generally readable, but all three Compose outputs were materially less suitable because the company-level message was displaced by technical exposition; one included meta-text and another implied a launch/validation announcement.
+- **Readability and coherence:** Both conditions were generally readable and logically organized (rated 4/5). The change did not improve these qualities.
+- **Source fidelity:** Candidate source-fidelity ratings were consistently lower (2/5) because the editorial hierarchy drift and unsupported elaborations persisted. Variability narrowed, but the stable result was a stable failure, not an improvement.
+
+The baseline Synthesis pairs company identity with Compose in its top-level emphasis, but also contains a later description calling orchestration “central to the product direction.” That internal tension may have reinforced the technical angle. This does not change the controlled result: the candidate prompt was not sufficient to protect the supplied editorial intent, and this experiment did not change Synthesis because that was outside scope.
+
+## Build, tests, and promotion decision
+
+- Candidate prompt build: `dotnet build src/Nueyon.Compose.slnx` — passed, 0 warnings, 0 errors.
+- Restored production build: `dotnet build src/Nueyon.Compose.slnx` — passed, 0 warnings, 0 errors.
+- Restored production tests: `dotnet test src/Nueyon.Compose.slnx --no-build` — 165 passed, 0 failed, 0 skipped (Application 138, Infrastructure 21, Console 6). Domain test project had no discoverable tests.
+- Candidate tests were not run separately; the change was prompt text embedded as a resource, and the final established test command was run against the restored production prompt.
+- **Decision: Do not promote.** Candidate was worse on mean score for both Narrative and Compose, failed the orchestration hierarchy and factual restraint gates in every run, and introduced regressions. The production prompt was restored from the saved byte snapshot.
+- Rollback verification: production prompt SHA-256 `475A9DB1CA028EBC927C99ECDD3DAB061B0616ED06FB1278879992D2E8DD795A`, matching the frozen baseline exactly.
+- No commit or push was made.
+
+## Limitations
+
+- The baseline runs were produced on 2026-11-03; candidate runs were produced on 2026-11-04. The source, all prompts, commit, model alias, and workflow settings matched, but the model provider may change the backend behind an alias.
+- No seed or temperature override was available. Three runs per condition show consistency in these samples, not statistical significance.
+- Idea and Research outputs vary between runs. This is expected in the same full-pipeline comparison; all other stages and inputs were kept constant.
+- The console captures the selected first Idea, not every Idea candidate. Research has no separately configured external retrieval provider.
+- Subjective scores are based on the saved outputs and the explicit rubric above.
+
+## Artifact index
+
+- `baseline/input/` — frozen source and archived instruction context.
+- `baseline/prompts/Narrative/` — exact frozen Narrative system and user prompts.
+- `baseline/outputs/` — three full prior baseline logs plus extracted Narrative and Compose outputs.
+- `candidate/prompts/Narrative/` — candidate prompt snapshot.
+- `candidate/outputs/` — three full candidate logs plus extracted Narrative and Compose outputs.
+- `prompt-changes/` — prompt diff and byte-for-byte rollback snapshot.
+- `metadata.json` — configuration, hashes, execution IDs, stage timings, and decision.

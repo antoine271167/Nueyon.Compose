@@ -1,0 +1,124 @@
+[
+  {
+    "id": "005-a",
+    "source": "02-development/experiment-005-report.md",
+    "idea": {
+      "title": "What Experiment 005 observed about editorial hierarchy",
+      "description": "Explain the comparison of the baseline and candidate runs and why the candidate was not promoted.",
+      "audience": "Readers following the prompt experiment",
+      "rationale": "All three candidate runs made orchestration central. The comparison supports an observation about this sample and leaves attribution open.",
+      "evidence": "Run scores, analysis and limitations."
+    },
+    "expectedAccepted": true,
+    "reason": "All five fields preserve the source's stated claims, readership, and limits.",
+    "provenance": "validator-v1 frozen contrast",
+    "critical": false
+  },
+  {
+    "id": "005-b",
+    "source": "02-development/experiment-005-report.md",
+    "idea": {
+      "title": "What Experiment 005 observed about editorial hierarchy",
+      "description": "Explain the comparison of the baseline and candidate runs and why the candidate was not promoted.",
+      "audience": "Readers following the prompt experiment",
+      "rationale": "The added hierarchy rule caused the shift toward orchestration across the candidate runs.",
+      "evidence": "Run scores, analysis and limitations."
+    },
+    "expectedAccepted": false,
+    "field": "rationale",
+    "reason": "The report observes the shift in the candidate runs, discusses upstream tension and limits the inference to the sample. It does not establish causation.",
+    "provenance": "validator-v1 frozen contrast",
+    "critical": true
+  },
+  {
+    "id": "010-a",
+    "source": "04-analysis/experiment-010-report.md",
+    "idea": {
+      "title": "Trace the first visible drift for the chosen failure",
+      "description": "Explain how the next focused trial should locate the first evidence-supported stage, checking Narrative against its actual Synthesis input when indicated.",
+      "audience": "Readers following the pipeline investigation",
+      "rationale": "Narrative is the most recurrent locus, while some runs show earlier drift. The chosen case determines the intervention point.",
+      "evidence": "Cross-experiment patterns and Implication for the next focused trial."
+    },
+    "expectedAccepted": true,
+    "reason": "All five fields preserve the source's stated claims, readership, and limits.",
+    "provenance": "validator-v1 frozen contrast",
+    "critical": false
+  },
+  {
+    "id": "010-b",
+    "source": "04-analysis/experiment-010-report.md",
+    "idea": {
+      "title": "Fix Narrative first in the next pipeline trial",
+      "description": "Explain how the next focused trial should locate the first evidence-supported stage, checking Narrative against its actual Synthesis input when indicated.",
+      "audience": "Readers following the pipeline investigation",
+      "rationale": "Narrative is the most recurrent locus, while some runs show earlier drift. The chosen case determines the intervention point.",
+      "evidence": "Cross-experiment patterns and Implication for the next focused trial."
+    },
+    "expectedAccepted": false,
+    "field": "title",
+    "reason": "The proposed trial targets the earliest stage supported for the chosen failure. Narrative recurrence does not establish first priority. The title changes the assignment despite the caveat elsewhere.",
+    "provenance": "validator-v1 frozen contrast",
+    "critical": true
+  },
+  {
+    "id": "v4-005-original",
+    "source": "v4-005.txt",
+    "idea": {
+      "title": "A reusable 'preserve editorial intent' prompt fragment can reduce, not restore, editorial fidelity",
+      "description": "Adding a generic editorial-hierarchy instruction to the Narrative prompt (the single change in the candidate) consistently shifted outputs away from the intended company-first message and toward technical orchestration, and it introduced unsupported audience/validation claims — leading to a decision not to promote the change.",
+      "audience": "Prompt engineers, Narrative/Compose pipeline owners, editorial leads responsible for model-generated messaging",
+      "rationale": "This experiment provides clear, source-backed evidence that a well-intentioned, reusable prompt fragment — here titled “Preserve Editorial Intent from the Synthesis.” — can backfire: candidate runs produced stable, repeatable drift (company identity subordinated, orchestration made central) and added unsupported factual claims. The result matters because it shows that adding high-level generic guidance to a production prompt can worsen, rather than improve, editorial outcomes. Gaps and uncertainty: the result is based on three runs per condition (not statistically conclusive), the model alias may map to different backends over time, and the experiment did not include variant fragment designs or story-specific examples that might behave differently.",
+      "evidence": "Candidate change: inserted section “Preserve Editorial Intent from the Synthesis.” (prompt-changes/Narrative.user.prompt.diff). Narrative mean scores dropped from 6.00 to 4.00; Compose mean scores dropped from 5.67 to 3.33. All three candidate Narrative runs and all three candidate Compose runs failed criterion C (orchestration became central) and D (unsupported additions) in every run. Decision: Do not promote; production prompt restored byte-for-byte (rollback SHA-256 matched baseline)."
+    },
+    "expectedAccepted": false,
+    "reason": "Missed causal attribution and generalization in title, description and rationale.",
+    "critical": true,
+    "provenance": "v4 02-development: exact selected first idea"
+  },
+  {
+    "id": "v4-005-good",
+    "source": "v4-005.txt",
+    "idea": {
+      "title": "What Experiment 005 observed about editorial hierarchy",
+      "description": "Explain the comparison of the baseline and candidate runs and why the candidate was not promoted.",
+      "audience": "Readers following the prompt experiment",
+      "rationale": "All three candidate runs made orchestration central. The comparison supports an observation about this sample and leaves attribution open.",
+      "evidence": "Run scores, analysis and limitations."
+    },
+    "expectedAccepted": true,
+    "reason": "Preserves explicit task, facts, and uncertainty; no unsupported central assertion.",
+    "critical": false,
+    "provenance": "Correct source-grounded counterpart for v4 02-development"
+  },
+  {
+    "id": "v4-010-original",
+    "source": "v4-010.txt",
+    "idea": {
+      "title": "Target the Narrative stage: the most recurrent locus of editorial hierarchy drift",
+      "description": "Across the recorded runs, the Narrative stage is the most frequent first observable point where a company-first introduction is reframed into a product- or orchestration-centered story. A focused editorial experiment—and upstream-boundary controls—should therefore prioritize validating Narrative inputs and rules before assuming Idea- or Compose-only fixes will succeed.",
+      "audience": "Product/editorial leads, prompt engineers, experiment designers running the Compose pipeline, and evaluation teams responsible for editorial integrity.",
+      "rationale": "Why it matters: The report’s cross-experiment analysis shows Narrative is repeatedly the first stage that alters story hierarchy or adds unsupported claims; fixing Narrative behavior promises the highest immediate reduction in downstream reframe/amplification. This gives teams a specific control point to test rules that preserve company-first framing while keeping technical details as support. Gaps and uncertainty: Narrative is the most recurrent but not the sole locus—some runs shift in Idea or Synthesis—so Narrative-focused trials should be designed to detect upstream confounds and include baseline comparisons to Idea/Synthesis inputs.",
+      "evidence": "Cross-experiment patterns: “Narrative is the most recurrent first visible hierarchy shift.” Specific examples: Experiment 007 candidate runs 001–002 (Narrative first), Experiment 008 A-002 (Narrative factual breach), Experiment 009 baseline 002/003 and candidates 001–003 (Narrative first). The report also notes exceptions where Idea or Synthesis started the drift, so Narrative is frequent but not exclusive."
+    },
+    "expectedAccepted": false,
+    "reason": "Missed mandatory Narrative priority and unsupported promise of highest payoff.",
+    "critical": true,
+    "provenance": "v4 04-analysis: exact selected first idea"
+  },
+  {
+    "id": "v4-010-good",
+    "source": "v4-010.txt",
+    "idea": {
+      "title": "Trace the first visible drift for the chosen failure",
+      "description": "Explain how the next focused trial should locate the first evidence-supported stage, checking Narrative against its actual Synthesis input when indicated.",
+      "audience": "Readers following the pipeline investigation",
+      "rationale": "Narrative is the most recurrent locus, while some runs show earlier drift. The chosen case determines the intervention point.",
+      "evidence": "Cross-experiment patterns and Implication for the next focused trial."
+    },
+    "expectedAccepted": true,
+    "reason": "Preserves explicit task, facts, and uncertainty; no unsupported central assertion.",
+    "critical": false,
+    "provenance": "Correct source-grounded counterpart for v4 04-analysis"
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "decision": "NO-GO",
+  "gates": {
+    "completeCalls": true,
+    "integrity": true,
+    "zeroFalseAccepts": false,
+    "zeroFalseRejects": false,
+    "allSpecialistDiagnoses": false,
+    "repeatCombined": true,
+    "familySuperiority": false
+  },
+  "independentHumanReview": false,
+  "conditionalPhasesSkipped": [
+    "production implementation",
+    "new C# tests",
+    "full live Idea Agent repair acceptance"
+  ],
+  "reason": "Critical v4 errors missed, correct idea rejected, diagnoses add requirements; no persuasive superiority."
+}
