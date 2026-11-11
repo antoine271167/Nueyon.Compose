@@ -1,0 +1,130 @@
+[
+  {
+    "id": "canal-a",
+    "source": "canal.txt",
+    "idea": {
+      "title": "Gate C for existing Saturday canal repair bookings",
+      "description": "Explain the temporary Gate C entry from 7 to 21 August, with the booked time unchanged and weekdays at Gate A.",
+      "audience": "Holders of existing Saturday repair appointments",
+      "rationale": "The temporary notice may help appointment holders find the correct entrance.",
+      "evidence": "The stated gate, dates and unchanged booking time."
+    },
+    "expectedAccepted": true,
+    "field": null,
+    "reason": "Source-compatible facts and cautious inference preserve the explicit task.",
+    "critical": false,
+    "provenance": "New synthetic holdout, never used to revise prompts"
+  },
+  {
+    "id": "canal-b",
+    "source": "canal.txt",
+    "idea": {
+      "title": "Gate C for existing Saturday canal repair bookings",
+      "description": "Explain that all appointments from 7 to 21 August use Gate C at any time during opening hours.",
+      "audience": "Holders of existing Saturday repair appointments",
+      "rationale": "The temporary notice may help appointment holders find the correct entrance.",
+      "evidence": "The stated gate, dates and unchanged booking time."
+    },
+    "expectedAccepted": false,
+    "field": "description",
+    "reason": "Extends Saturday-only eligibility to weekdays and removes the booked-time condition.",
+    "critical": true,
+    "provenance": "New synthetic holdout, never used to revise prompts"
+  },
+  {
+    "id": "archive-a",
+    "source": "archive.txt",
+    "idea": {
+      "title": "Archive repeats its scan check on the same two batches",
+      "description": "Tell donors the observed counts and the limited repeat check, without claiming improvement over last year.",
+      "audience": "Archive donors",
+      "rationale": "The unpaired observations may warrant caution in interpreting differences; the recorded vote is a separate fact.",
+      "evidence": "27/30 and 24/30; repeat the same batches in three months; purchase deferred."
+    },
+    "expectedAccepted": true,
+    "field": null,
+    "reason": "Source-compatible facts and cautious inference preserve the explicit task.",
+    "critical": false,
+    "provenance": "New synthetic holdout, never used to revise prompts"
+  },
+  {
+    "id": "archive-b",
+    "source": "archive.txt",
+    "idea": {
+      "title": "Archive repeats its scan check on the same two batches",
+      "description": "Tell donors the observed counts and the limited repeat check, without claiming improvement over last year.",
+      "audience": "Archive donors",
+      "rationale": "The board approved repeating the check because the results convinced it that the scanner improves researcher access.",
+      "evidence": "27/30 and 24/30; repeat the same batches in three months; purchase deferred."
+    },
+    "expectedAccepted": false,
+    "field": "rationale",
+    "reason": "Adds an unrecorded board motive and an unmeasured access benefit.",
+    "critical": true,
+    "provenance": "New synthetic holdout, never used to revise prompts"
+  },
+  {
+    "id": "review-a",
+    "source": "review.txt",
+    "idea": {
+      "title": "Use the selected failure to locate the next intervention",
+      "description": "Explain the four rendering and two ingestion observations and the requirement to inspect the preceding input before intervention choice.",
+      "audience": "Engineering teams reading the review",
+      "rationale": "Rendering recurrence makes it a plausible area of interest, while the chosen failure and actual input determine the intervention boundary.",
+      "evidence": "Four rendering cases, two ingestion cases; no cause or payoff ranking."
+    },
+    "expectedAccepted": true,
+    "field": null,
+    "reason": "Source-compatible facts and cautious inference preserve the explicit task.",
+    "critical": false,
+    "provenance": "New synthetic holdout, never used to revise prompts"
+  },
+  {
+    "id": "review-b",
+    "source": "review.txt",
+    "idea": {
+      "title": "Fix rendering first for the greatest immediate reduction in warnings",
+      "description": "Explain the four rendering and two ingestion observations and the requirement to inspect the preceding input before intervention choice.",
+      "audience": "Engineering teams reading the review",
+      "rationale": "Rendering recurrence makes it a plausible area of interest, while the chosen failure and actual input determine the intervention boundary.",
+      "evidence": "Four rendering cases, two ingestion cases; no cause or payoff ranking."
+    },
+    "expectedAccepted": false,
+    "field": "title",
+    "reason": "Promotes recurrent visibility to mandatory priority and highest payoff without evidence.",
+    "critical": true,
+    "provenance": "New synthetic holdout, never used to revise prompts"
+  },
+  {
+    "id": "aquarium-a",
+    "source": "aquarium.txt",
+    "idea": {
+      "title": "An indoor fish trail after a tide-pool cancellation",
+      "description": "Tell affected visitors where to collect the free trail card and to check the same-day notice before travel.",
+      "audience": "Visitors whose booked tide-pool session is cancelled",
+      "rationale": "The step-free indoor route may offer affected visitors a practical alternative during cancellation.",
+      "evidence": "Free reception card; same-day notice; public step-free corridors."
+    },
+    "expectedAccepted": true,
+    "field": null,
+    "reason": "Source-compatible facts and cautious inference preserve the explicit task.",
+    "critical": false,
+    "provenance": "New synthetic holdout, never used to revise prompts"
+  },
+  {
+    "id": "aquarium-b",
+    "source": "aquarium.txt",
+    "idea": {
+      "title": "An indoor fish trail after a tide-pool cancellation",
+      "description": "Tell affected visitors where to collect the free trail card and to check the same-day notice before travel.",
+      "audience": "Aquarium managers evaluating whether the trial should continue",
+      "rationale": "The step-free indoor route may offer affected visitors a practical alternative during cancellation.",
+      "evidence": "Free reception card; same-day notice; public step-free corridors."
+    },
+    "expectedAccepted": false,
+    "field": "audience",
+    "reason": "Replaces explicit affected-visitor readership with an internal evaluation purpose.",
+    "critical": true,
+    "provenance": "New synthetic holdout, never used to revise prompts"
+  }
+]

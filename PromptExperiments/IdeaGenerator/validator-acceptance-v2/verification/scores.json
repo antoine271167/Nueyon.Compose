@@ -1,0 +1,1189 @@
+{
+  "stats": [
+    {
+      "phase": "tuning",
+      "condition": "baseline",
+      "n": 22,
+      "TP": 4,
+      "FP": 0,
+      "TN": 11,
+      "FN": 7,
+      "precision": 1.0,
+      "recall": 0.36363636363636365,
+      "recallWilson95": [
+        0.15166223614131383,
+        0.6462032231083628
+      ]
+    },
+    {
+      "phase": "tuning",
+      "condition": "candidate1",
+      "n": 22,
+      "TP": 4,
+      "FP": 0,
+      "TN": 11,
+      "FN": 7,
+      "precision": 1.0,
+      "recall": 0.36363636363636365,
+      "recallWilson95": [
+        0.15166223614131383,
+        0.6462032231083628
+      ]
+    },
+    {
+      "phase": "tuning",
+      "condition": "candidate2",
+      "n": 22,
+      "TP": 8,
+      "FP": 0,
+      "TN": 11,
+      "FN": 3,
+      "precision": 1.0,
+      "recall": 0.7272727272727273,
+      "recallWilson95": [
+        0.4343497069897537,
+        0.9025411942607853
+      ]
+    },
+    {
+      "phase": "holdout",
+      "condition": "baseline",
+      "n": 8,
+      "TP": 4,
+      "FP": 2,
+      "TN": 2,
+      "FN": 0,
+      "precision": 0.6666666666666666,
+      "recall": 1.0,
+      "recallWilson95": [
+        0.5100999795960008,
+        1.0
+      ]
+    },
+    {
+      "phase": "holdout",
+      "condition": "candidate1",
+      "n": 8,
+      "TP": 4,
+      "FP": 1,
+      "TN": 3,
+      "FN": 0,
+      "precision": 0.8,
+      "recall": 1.0,
+      "recallWilson95": [
+        0.5100999795960008,
+        1.0
+      ]
+    },
+    {
+      "phase": "holdout",
+      "condition": "candidate2",
+      "n": 8,
+      "TP": 4,
+      "FP": 0,
+      "TN": 4,
+      "FN": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "recallWilson95": [
+        0.5100999795960008,
+        1.0
+      ]
+    },
+    {
+      "phase": "repeat",
+      "condition": "baseline",
+      "n": 6,
+      "TP": 2,
+      "FP": 0,
+      "TN": 0,
+      "FN": 4,
+      "precision": 1.0,
+      "recall": 0.3333333333333333,
+      "recallWilson95": [
+        0.09676933255921683,
+        0.7000116786584712
+      ]
+    },
+    {
+      "phase": "repeat",
+      "condition": "candidate1",
+      "n": 6,
+      "TP": 1,
+      "FP": 0,
+      "TN": 0,
+      "FN": 5,
+      "precision": 1.0,
+      "recall": 0.16666666666666666,
+      "recallWilson95": [
+        0.03005258587173032,
+        0.563509436563646
+      ]
+    },
+    {
+      "phase": "repeat",
+      "condition": "candidate2",
+      "n": 6,
+      "TP": 4,
+      "FP": 0,
+      "TN": 0,
+      "FN": 2,
+      "precision": 1.0,
+      "recall": 0.6666666666666666,
+      "recallWilson95": [
+        0.29998832134152864,
+        0.9032306674407831
+      ]
+    },
+    {
+      "phase": "unique",
+      "condition": "baseline",
+      "n": 30,
+      "TP": 8,
+      "FP": 2,
+      "TN": 13,
+      "FN": 7,
+      "precision": 0.8,
+      "recall": 0.5333333333333333,
+      "recallWilson95": [
+        0.3011663015105079,
+        0.7519077474025355
+      ]
+    },
+    {
+      "phase": "unique",
+      "condition": "candidate1",
+      "n": 30,
+      "TP": 8,
+      "FP": 1,
+      "TN": 14,
+      "FN": 7,
+      "precision": 0.8888888888888888,
+      "recall": 0.5333333333333333,
+      "recallWilson95": [
+        0.3011663015105079,
+        0.7519077474025355
+      ]
+    },
+    {
+      "phase": "unique",
+      "condition": "candidate2",
+      "n": 30,
+      "TP": 12,
+      "FP": 0,
+      "TN": 15,
+      "FN": 3,
+      "precision": 1.0,
+      "recall": 0.8,
+      "recallWilson95": [
+        0.5481406466534955,
+        0.9295257935638959
+      ]
+    }
+  ],
+  "rows": [
+    {
+      "phase": "tuning",
+      "condition": "baseline",
+      "id": "005-a",
+      "expectedAccepted": true,
+      "accepted": true,
+      "classification": "TN"
+    },
+    {
+      "phase": "tuning",
+      "condition": "baseline",
+      "id": "005-b",
+      "expectedAccepted": false,
+      "accepted": false,
+      "classification": "TP"
+    },
+    {
+      "phase": "tuning",
+      "condition": "baseline",
+      "id": "010-a",
+      "expectedAccepted": true,
+      "accepted": true,
+      "classification": "TN"
+    },
+    {
+      "phase": "tuning",
+      "condition": "baseline",
+      "id": "010-b",
+      "expectedAccepted": false,
+      "accepted": false,
+      "classification": "TP"
+    },
+    {
+      "phase": "tuning",
+      "condition": "baseline",
+      "id": "museum-a",
+      "expectedAccepted": true,
+      "accepted": true,
+      "classification": "TN"
+    },
+    {
+      "phase": "tuning",
+      "condition": "baseline",
+      "id": "museum-b",
+      "expectedAccepted": false,
+      "accepted": true,
+      "classification": "FN"
+    },
+    {
+      "phase": "tuning",
+      "condition": "baseline",
+      "id": "library-a",
+      "expectedAccepted": true,
+      "accepted": true,
+      "classification": "TN"
+    },
+    {
+      "phase": "tuning",
+      "condition": "baseline",
+      "id": "library-b",
+      "expectedAccepted": false,
+      "accepted": false,
+      "classification": "TP"
+    },
+    {
+      "phase": "tuning",
+      "condition": "baseline",
+      "id": "seedbank-a",
+      "expectedAccepted": true,
+      "accepted": true,
+      "classification": "TN"
+    },
+    {
+      "phase": "tuning",
+      "condition": "baseline",
+      "id": "seedbank-b",
+      "expectedAccepted": false,
+      "accepted": false,
+      "classification": "TP"
+    },
+    {
+      "phase": "tuning",
+      "condition": "baseline",
+      "id": "v4-005-original",
+      "expectedAccepted": false,
+      "accepted": true,
+      "classification": "FN"
+    },
+    {
+      "phase": "tuning",
+      "condition": "baseline",
+      "id": "v4-005-good",
+      "expectedAccepted": true,
+      "accepted": true,
+      "classification": "TN"
+    },
+    {
+      "phase": "tuning",
+      "condition": "baseline",
+      "id": "v4-010-original",
+      "expectedAccepted": false,
+      "accepted": true,
+      "classification": "FN"
+    },
+    {
+      "phase": "tuning",
+      "condition": "baseline",
+      "id": "v4-010-good",
+      "expectedAccepted": true,
+      "accepted": true,
+      "classification": "TN"
+    },
+    {
+      "phase": "tuning",
+      "condition": "baseline",
+      "id": "v4-museum-original",
+      "expectedAccepted": false,
+      "accepted": true,
+      "classification": "FN"
+    },
+    {
+      "phase": "tuning",
+      "condition": "baseline",
+      "id": "v4-museum-good",
+      "expectedAccepted": true,
+      "accepted": true,
+      "classification": "TN"
+    },
+    {
+      "phase": "tuning",
+      "condition": "baseline",
+      "id": "v4-transit-original",
+      "expectedAccepted": false,
+      "accepted": true,
+      "classification": "FN"
+    },
+    {
+      "phase": "tuning",
+      "condition": "baseline",
+      "id": "v4-transit-good",
+      "expectedAccepted": true,
+      "accepted": true,
+      "classification": "TN"
+    },
+    {
+      "phase": "tuning",
+      "condition": "baseline",
+      "id": "v4-library-original",
+      "expectedAccepted": false,
+      "accepted": true,
+      "classification": "FN"
+    },
+    {
+      "phase": "tuning",
+      "condition": "baseline",
+      "id": "v4-library-good",
+      "expectedAccepted": true,
+      "accepted": true,
+      "classification": "TN"
+    },
+    {
+      "phase": "tuning",
+      "condition": "baseline",
+      "id": "v4-seedbank-original",
+      "expectedAccepted": false,
+      "accepted": true,
+      "classification": "FN"
+    },
+    {
+      "phase": "tuning",
+      "condition": "baseline",
+      "id": "v4-seedbank-good",
+      "expectedAccepted": true,
+      "accepted": true,
+      "classification": "TN"
+    },
+    {
+      "phase": "tuning",
+      "condition": "candidate1",
+      "id": "005-a",
+      "expectedAccepted": true,
+      "accepted": true,
+      "classification": "TN"
+    },
+    {
+      "phase": "tuning",
+      "condition": "candidate1",
+      "id": "005-b",
+      "expectedAccepted": false,
+      "accepted": false,
+      "classification": "TP"
+    },
+    {
+      "phase": "tuning",
+      "condition": "candidate1",
+      "id": "010-a",
+      "expectedAccepted": true,
+      "accepted": true,
+      "classification": "TN"
+    },
+    {
+      "phase": "tuning",
+      "condition": "candidate1",
+      "id": "010-b",
+      "expectedAccepted": false,
+      "accepted": true,
+      "classification": "FN"
+    },
+    {
+      "phase": "tuning",
+      "condition": "candidate1",
+      "id": "museum-a",
+      "expectedAccepted": true,
+      "accepted": true,
+      "classification": "TN"
+    },
+    {
+      "phase": "tuning",
+      "condition": "candidate1",
+      "id": "museum-b",
+      "expectedAccepted": false,
+      "accepted": false,
+      "classification": "TP"
+    },
+    {
+      "phase": "tuning",
+      "condition": "candidate1",
+      "id": "library-a",
+      "expectedAccepted": true,
+      "accepted": true,
+      "classification": "TN"
+    },
+    {
+      "phase": "tuning",
+      "condition": "candidate1",
+      "id": "library-b",
+      "expectedAccepted": false,
+      "accepted": true,
+      "classification": "FN"
+    },
+    {
+      "phase": "tuning",
+      "condition": "candidate1",
+      "id": "seedbank-a",
+      "expectedAccepted": true,
+      "accepted": true,
+      "classification": "TN"
+    },
+    {
+      "phase": "tuning",
+      "condition": "candidate1",
+      "id": "seedbank-b",
+      "expectedAccepted": false,
+      "accepted": false,
+      "classification": "TP"
+    },
+    {
+      "phase": "tuning",
+      "condition": "candidate1",
+      "id": "v4-005-original",
+      "expectedAccepted": false,
+      "accepted": true,
+      "classification": "FN"
+    },
+    {
+      "phase": "tuning",
+      "condition": "candidate1",
+      "id": "v4-005-good",
+      "expectedAccepted": true,
+      "accepted": true,
+      "classification": "TN"
+    },
+    {
+      "phase": "tuning",
+      "condition": "candidate1",
+      "id": "v4-010-original",
+      "expectedAccepted": false,
+      "accepted": true,
+      "classification": "FN"
+    },
+    {
+      "phase": "tuning",
+      "condition": "candidate1",
+      "id": "v4-010-good",
+      "expectedAccepted": true,
+      "accepted": true,
+      "classification": "TN"
+    },
+    {
+      "phase": "tuning",
+      "condition": "candidate1",
+      "id": "v4-museum-original",
+      "expectedAccepted": false,
+      "accepted": true,
+      "classification": "FN"
+    },
+    {
+      "phase": "tuning",
+      "condition": "candidate1",
+      "id": "v4-museum-good",
+      "expectedAccepted": true,
+      "accepted": true,
+      "classification": "TN"
+    },
+    {
+      "phase": "tuning",
+      "condition": "candidate1",
+      "id": "v4-transit-original",
+      "expectedAccepted": false,
+      "accepted": true,
+      "classification": "FN"
+    },
+    {
+      "phase": "tuning",
+      "condition": "candidate1",
+      "id": "v4-transit-good",
+      "expectedAccepted": true,
+      "accepted": true,
+      "classification": "TN"
+    },
+    {
+      "phase": "tuning",
+      "condition": "candidate1",
+      "id": "v4-library-original",
+      "expectedAccepted": false,
+      "accepted": false,
+      "classification": "TP"
+    },
+    {
+      "phase": "tuning",
+      "condition": "candidate1",
+      "id": "v4-library-good",
+      "expectedAccepted": true,
+      "accepted": true,
+      "classification": "TN"
+    },
+    {
+      "phase": "tuning",
+      "condition": "candidate1",
+      "id": "v4-seedbank-original",
+      "expectedAccepted": false,
+      "accepted": true,
+      "classification": "FN"
+    },
+    {
+      "phase": "tuning",
+      "condition": "candidate1",
+      "id": "v4-seedbank-good",
+      "expectedAccepted": true,
+      "accepted": true,
+      "classification": "TN"
+    },
+    {
+      "phase": "tuning",
+      "condition": "candidate2",
+      "id": "005-a",
+      "expectedAccepted": true,
+      "accepted": true,
+      "classification": "TN"
+    },
+    {
+      "phase": "tuning",
+      "condition": "candidate2",
+      "id": "005-b",
+      "expectedAccepted": false,
+      "accepted": false,
+      "classification": "TP"
+    },
+    {
+      "phase": "tuning",
+      "condition": "candidate2",
+      "id": "010-a",
+      "expectedAccepted": true,
+      "accepted": true,
+      "classification": "TN"
+    },
+    {
+      "phase": "tuning",
+      "condition": "candidate2",
+      "id": "010-b",
+      "expectedAccepted": false,
+      "accepted": true,
+      "classification": "FN"
+    },
+    {
+      "phase": "tuning",
+      "condition": "candidate2",
+      "id": "museum-a",
+      "expectedAccepted": true,
+      "accepted": true,
+      "classification": "TN"
+    },
+    {
+      "phase": "tuning",
+      "condition": "candidate2",
+      "id": "museum-b",
+      "expectedAccepted": false,
+      "accepted": false,
+      "classification": "TP"
+    },
+    {
+      "phase": "tuning",
+      "condition": "candidate2",
+      "id": "library-a",
+      "expectedAccepted": true,
+      "accepted": true,
+      "classification": "TN"
+    },
+    {
+      "phase": "tuning",
+      "condition": "candidate2",
+      "id": "library-b",
+      "expectedAccepted": false,
+      "accepted": false,
+      "classification": "TP"
+    },
+    {
+      "phase": "tuning",
+      "condition": "candidate2",
+      "id": "seedbank-a",
+      "expectedAccepted": true,
+      "accepted": true,
+      "classification": "TN"
+    },
+    {
+      "phase": "tuning",
+      "condition": "candidate2",
+      "id": "seedbank-b",
+      "expectedAccepted": false,
+      "accepted": false,
+      "classification": "TP"
+    },
+    {
+      "phase": "tuning",
+      "condition": "candidate2",
+      "id": "v4-005-original",
+      "expectedAccepted": false,
+      "accepted": true,
+      "classification": "FN"
+    },
+    {
+      "phase": "tuning",
+      "condition": "candidate2",
+      "id": "v4-005-good",
+      "expectedAccepted": true,
+      "accepted": true,
+      "classification": "TN"
+    },
+    {
+      "phase": "tuning",
+      "condition": "candidate2",
+      "id": "v4-010-original",
+      "expectedAccepted": false,
+      "accepted": true,
+      "classification": "FN"
+    },
+    {
+      "phase": "tuning",
+      "condition": "candidate2",
+      "id": "v4-010-good",
+      "expectedAccepted": true,
+      "accepted": true,
+      "classification": "TN"
+    },
+    {
+      "phase": "tuning",
+      "condition": "candidate2",
+      "id": "v4-museum-original",
+      "expectedAccepted": false,
+      "accepted": false,
+      "classification": "TP"
+    },
+    {
+      "phase": "tuning",
+      "condition": "candidate2",
+      "id": "v4-museum-good",
+      "expectedAccepted": true,
+      "accepted": true,
+      "classification": "TN"
+    },
+    {
+      "phase": "tuning",
+      "condition": "candidate2",
+      "id": "v4-transit-original",
+      "expectedAccepted": false,
+      "accepted": false,
+      "classification": "TP"
+    },
+    {
+      "phase": "tuning",
+      "condition": "candidate2",
+      "id": "v4-transit-good",
+      "expectedAccepted": true,
+      "accepted": true,
+      "classification": "TN"
+    },
+    {
+      "phase": "tuning",
+      "condition": "candidate2",
+      "id": "v4-library-original",
+      "expectedAccepted": false,
+      "accepted": false,
+      "classification": "TP"
+    },
+    {
+      "phase": "tuning",
+      "condition": "candidate2",
+      "id": "v4-library-good",
+      "expectedAccepted": true,
+      "accepted": true,
+      "classification": "TN"
+    },
+    {
+      "phase": "tuning",
+      "condition": "candidate2",
+      "id": "v4-seedbank-original",
+      "expectedAccepted": false,
+      "accepted": false,
+      "classification": "TP"
+    },
+    {
+      "phase": "tuning",
+      "condition": "candidate2",
+      "id": "v4-seedbank-good",
+      "expectedAccepted": true,
+      "accepted": true,
+      "classification": "TN"
+    },
+    {
+      "phase": "holdout",
+      "condition": "baseline",
+      "id": "canal-a",
+      "expectedAccepted": true,
+      "accepted": true,
+      "classification": "TN"
+    },
+    {
+      "phase": "holdout",
+      "condition": "baseline",
+      "id": "canal-b",
+      "expectedAccepted": false,
+      "accepted": false,
+      "classification": "TP"
+    },
+    {
+      "phase": "holdout",
+      "condition": "baseline",
+      "id": "archive-a",
+      "expectedAccepted": true,
+      "accepted": false,
+      "classification": "FP"
+    },
+    {
+      "phase": "holdout",
+      "condition": "baseline",
+      "id": "archive-b",
+      "expectedAccepted": false,
+      "accepted": false,
+      "classification": "TP"
+    },
+    {
+      "phase": "holdout",
+      "condition": "baseline",
+      "id": "review-a",
+      "expectedAccepted": true,
+      "accepted": false,
+      "classification": "FP"
+    },
+    {
+      "phase": "holdout",
+      "condition": "baseline",
+      "id": "review-b",
+      "expectedAccepted": false,
+      "accepted": false,
+      "classification": "TP"
+    },
+    {
+      "phase": "holdout",
+      "condition": "baseline",
+      "id": "aquarium-a",
+      "expectedAccepted": true,
+      "accepted": true,
+      "classification": "TN"
+    },
+    {
+      "phase": "holdout",
+      "condition": "baseline",
+      "id": "aquarium-b",
+      "expectedAccepted": false,
+      "accepted": false,
+      "classification": "TP"
+    },
+    {
+      "phase": "holdout",
+      "condition": "candidate1",
+      "id": "canal-a",
+      "expectedAccepted": true,
+      "accepted": true,
+      "classification": "TN"
+    },
+    {
+      "phase": "holdout",
+      "condition": "candidate1",
+      "id": "canal-b",
+      "expectedAccepted": false,
+      "accepted": false,
+      "classification": "TP"
+    },
+    {
+      "phase": "holdout",
+      "condition": "candidate1",
+      "id": "archive-a",
+      "expectedAccepted": true,
+      "accepted": false,
+      "classification": "FP"
+    },
+    {
+      "phase": "holdout",
+      "condition": "candidate1",
+      "id": "archive-b",
+      "expectedAccepted": false,
+      "accepted": false,
+      "classification": "TP"
+    },
+    {
+      "phase": "holdout",
+      "condition": "candidate1",
+      "id": "review-a",
+      "expectedAccepted": true,
+      "accepted": true,
+      "classification": "TN"
+    },
+    {
+      "phase": "holdout",
+      "condition": "candidate1",
+      "id": "review-b",
+      "expectedAccepted": false,
+      "accepted": false,
+      "classification": "TP"
+    },
+    {
+      "phase": "holdout",
+      "condition": "candidate1",
+      "id": "aquarium-a",
+      "expectedAccepted": true,
+      "accepted": true,
+      "classification": "TN"
+    },
+    {
+      "phase": "holdout",
+      "condition": "candidate1",
+      "id": "aquarium-b",
+      "expectedAccepted": false,
+      "accepted": false,
+      "classification": "TP"
+    },
+    {
+      "phase": "holdout",
+      "condition": "candidate2",
+      "id": "canal-a",
+      "expectedAccepted": true,
+      "accepted": true,
+      "classification": "TN"
+    },
+    {
+      "phase": "holdout",
+      "condition": "candidate2",
+      "id": "canal-b",
+      "expectedAccepted": false,
+      "accepted": false,
+      "classification": "TP"
+    },
+    {
+      "phase": "holdout",
+      "condition": "candidate2",
+      "id": "archive-a",
+      "expectedAccepted": true,
+      "accepted": true,
+      "classification": "TN"
+    },
+    {
+      "phase": "holdout",
+      "condition": "candidate2",
+      "id": "archive-b",
+      "expectedAccepted": false,
+      "accepted": false,
+      "classification": "TP"
+    },
+    {
+      "phase": "holdout",
+      "condition": "candidate2",
+      "id": "review-a",
+      "expectedAccepted": true,
+      "accepted": true,
+      "classification": "TN"
+    },
+    {
+      "phase": "holdout",
+      "condition": "candidate2",
+      "id": "review-b",
+      "expectedAccepted": false,
+      "accepted": false,
+      "classification": "TP"
+    },
+    {
+      "phase": "holdout",
+      "condition": "candidate2",
+      "id": "aquarium-a",
+      "expectedAccepted": true,
+      "accepted": true,
+      "classification": "TN"
+    },
+    {
+      "phase": "holdout",
+      "condition": "candidate2",
+      "id": "aquarium-b",
+      "expectedAccepted": false,
+      "accepted": false,
+      "classification": "TP"
+    },
+    {
+      "phase": "repeat",
+      "condition": "baseline",
+      "id": "005-b",
+      "expectedAccepted": false,
+      "accepted": false,
+      "classification": "TP"
+    },
+    {
+      "phase": "repeat",
+      "condition": "baseline",
+      "id": "010-b",
+      "expectedAccepted": false,
+      "accepted": true,
+      "classification": "FN"
+    },
+    {
+      "phase": "repeat",
+      "condition": "baseline",
+      "id": "museum-b",
+      "expectedAccepted": false,
+      "accepted": false,
+      "classification": "TP"
+    },
+    {
+      "phase": "repeat",
+      "condition": "baseline",
+      "id": "v4-005-original",
+      "expectedAccepted": false,
+      "accepted": true,
+      "classification": "FN"
+    },
+    {
+      "phase": "repeat",
+      "condition": "baseline",
+      "id": "v4-010-original",
+      "expectedAccepted": false,
+      "accepted": true,
+      "classification": "FN"
+    },
+    {
+      "phase": "repeat",
+      "condition": "baseline",
+      "id": "v4-transit-original",
+      "expectedAccepted": false,
+      "accepted": true,
+      "classification": "FN"
+    },
+    {
+      "phase": "repeat",
+      "condition": "candidate1",
+      "id": "005-b",
+      "expectedAccepted": false,
+      "accepted": false,
+      "classification": "TP"
+    },
+    {
+      "phase": "repeat",
+      "condition": "candidate1",
+      "id": "010-b",
+      "expectedAccepted": false,
+      "accepted": true,
+      "classification": "FN"
+    },
+    {
+      "phase": "repeat",
+      "condition": "candidate1",
+      "id": "museum-b",
+      "expectedAccepted": false,
+      "accepted": true,
+      "classification": "FN"
+    },
+    {
+      "phase": "repeat",
+      "condition": "candidate1",
+      "id": "v4-005-original",
+      "expectedAccepted": false,
+      "accepted": true,
+      "classification": "FN"
+    },
+    {
+      "phase": "repeat",
+      "condition": "candidate1",
+      "id": "v4-010-original",
+      "expectedAccepted": false,
+      "accepted": true,
+      "classification": "FN"
+    },
+    {
+      "phase": "repeat",
+      "condition": "candidate1",
+      "id": "v4-transit-original",
+      "expectedAccepted": false,
+      "accepted": true,
+      "classification": "FN"
+    },
+    {
+      "phase": "repeat",
+      "condition": "candidate2",
+      "id": "005-b",
+      "expectedAccepted": false,
+      "accepted": false,
+      "classification": "TP"
+    },
+    {
+      "phase": "repeat",
+      "condition": "candidate2",
+      "id": "010-b",
+      "expectedAccepted": false,
+      "accepted": false,
+      "classification": "TP"
+    },
+    {
+      "phase": "repeat",
+      "condition": "candidate2",
+      "id": "museum-b",
+      "expectedAccepted": false,
+      "accepted": false,
+      "classification": "TP"
+    },
+    {
+      "phase": "repeat",
+      "condition": "candidate2",
+      "id": "v4-005-original",
+      "expectedAccepted": false,
+      "accepted": true,
+      "classification": "FN"
+    },
+    {
+      "phase": "repeat",
+      "condition": "candidate2",
+      "id": "v4-010-original",
+      "expectedAccepted": false,
+      "accepted": true,
+      "classification": "FN"
+    },
+    {
+      "phase": "repeat",
+      "condition": "candidate2",
+      "id": "v4-transit-original",
+      "expectedAccepted": false,
+      "accepted": false,
+      "classification": "TP"
+    }
+  ],
+  "agreement": [
+    {
+      "condition": "baseline",
+      "id": "005-b",
+      "first": false,
+      "repeat": false,
+      "agrees": true
+    },
+    {
+      "condition": "baseline",
+      "id": "010-b",
+      "first": false,
+      "repeat": true,
+      "agrees": false
+    },
+    {
+      "condition": "baseline",
+      "id": "museum-b",
+      "first": true,
+      "repeat": false,
+      "agrees": false
+    },
+    {
+      "condition": "baseline",
+      "id": "v4-005-original",
+      "first": true,
+      "repeat": true,
+      "agrees": true
+    },
+    {
+      "condition": "baseline",
+      "id": "v4-010-original",
+      "first": true,
+      "repeat": true,
+      "agrees": true
+    },
+    {
+      "condition": "baseline",
+      "id": "v4-transit-original",
+      "first": true,
+      "repeat": true,
+      "agrees": true
+    },
+    {
+      "condition": "candidate1",
+      "id": "005-b",
+      "first": false,
+      "repeat": false,
+      "agrees": true
+    },
+    {
+      "condition": "candidate1",
+      "id": "010-b",
+      "first": true,
+      "repeat": true,
+      "agrees": true
+    },
+    {
+      "condition": "candidate1",
+      "id": "museum-b",
+      "first": false,
+      "repeat": true,
+      "agrees": false
+    },
+    {
+      "condition": "candidate1",
+      "id": "v4-005-original",
+      "first": true,
+      "repeat": true,
+      "agrees": true
+    },
+    {
+      "condition": "candidate1",
+      "id": "v4-010-original",
+      "first": true,
+      "repeat": true,
+      "agrees": true
+    },
+    {
+      "condition": "candidate1",
+      "id": "v4-transit-original",
+      "first": true,
+      "repeat": true,
+      "agrees": true
+    },
+    {
+      "condition": "candidate2",
+      "id": "005-b",
+      "first": false,
+      "repeat": false,
+      "agrees": true
+    },
+    {
+      "condition": "candidate2",
+      "id": "010-b",
+      "first": true,
+      "repeat": false,
+      "agrees": false
+    },
+    {
+      "condition": "candidate2",
+      "id": "museum-b",
+      "first": false,
+      "repeat": false,
+      "agrees": true
+    },
+    {
+      "condition": "candidate2",
+      "id": "v4-005-original",
+      "first": true,
+      "repeat": true,
+      "agrees": true
+    },
+    {
+      "condition": "candidate2",
+      "id": "v4-010-original",
+      "first": true,
+      "repeat": true,
+      "agrees": true
+    },
+    {
+      "condition": "candidate2",
+      "id": "v4-transit-original",
+      "first": false,
+      "repeat": false,
+      "agrees": true
+    }
+  ],
+  "models": [
+    "gpt-5-mini-2025-08-07"
+  ],
+  "calls": 108,
+  "usage": {
+    "inputTokenCount": 229416,
+    "cachedInputTokenCount": 97792,
+    "outputTokenCount": 94037,
+    "reasoningTokenCount": 84288,
+    "totalTokenCount": 323453
+  }
+}

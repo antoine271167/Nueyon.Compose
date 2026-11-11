@@ -1,0 +1,175 @@
+{
+  "revision": "525b2ea1cfdbc97e4df6f9cbe9858d29db133eda",
+  "sdk": "10.0.401",
+  "cwd": "C:\\Workspaces\\Nueyon.Compose",
+  "command": [
+    "dotnet",
+    "C:\\Workspaces\\Nueyon.Compose/src/Nueyon.Compose.Host.Console/bin/Debug/net10.0/Nueyon.Compose.Host.Console.dll",
+    "run",
+    "idea",
+    "--input",
+    "C:\\Workspaces\\Nueyon.Compose\\PromptExperiments\\IdeaGenerator\\production-cli-acceptance-v4/cases/holdout-03-library/idea-input.json",
+    "--output",
+    "C:\\Workspaces\\Nueyon.Compose\\PromptExperiments\\IdeaGenerator\\production-cli-acceptance-v4/runs/holdout/holdout-03-library/idea-result.json",
+    "--trace",
+    "C:\\Workspaces\\Nueyon.Compose\\PromptExperiments\\IdeaGenerator\\production-cli-acceptance-v4/runs/holdout/holdout-03-library/idea-trace.json",
+    "--prompts",
+    "C:\\Workspaces\\Nueyon.Compose\\PromptExperiments\\IdeaGenerator\\production-cli-acceptance-v4/prompts"
+  ],
+  "modelAlias": "gpt-5-mini",
+  "resolvedModel": null,
+  "maxIdeaAttempts": 3,
+  "reservedModelCalls": 6,
+  "startedAt": "2026-11-10T21:54:34.0390703+00:00",
+  "inputs": [
+    {
+      "path": "cases\\01-strategy\\idea-input.json",
+      "sha256": "1548017196E0FA2CCD364103E5C62C006EC1AE7B9FCED1196DF02AC9723C5EF7"
+    },
+    {
+      "path": "cases\\01-strategy\\Noeyon-Product-Strategy-reconstructed.md",
+      "sha256": "DB7A9CF4768684C025D02028980E16CCE8805832E1013A5B6098C00D29E8F2D0"
+    },
+    {
+      "path": "cases\\02-development\\experiment-005-report.md",
+      "sha256": "511CA385D3F2011EFD99C23F4526255EEEADB996300D8126A6F091FF425AB2BF"
+    },
+    {
+      "path": "cases\\02-development\\idea-input.json",
+      "sha256": "7D07098F3CD31BB714FAC180D4885BD7A35F9163FD176534F96EBF6E688900BE"
+    },
+    {
+      "path": "cases\\04-analysis\\experiment-010-report.md",
+      "sha256": "E981BF43A0F8BE96F0AF192D14A5BDCAB93878CDA7179BF4947C8684253FE23C"
+    },
+    {
+      "path": "cases\\04-analysis\\idea-input.json",
+      "sha256": "C0CA0309CA8A5E3541689CC3EEB2A5C2E18F2923A9D1CA0D1913B4086ED2313B"
+    },
+    {
+      "path": "cases\\holdout-01-museum\\idea-input.json",
+      "sha256": "04762A2892239B7E25DB050C3CF7ACAE1A3A277B09A84F7F41EE33F30BD0A8B4"
+    },
+    {
+      "path": "cases\\holdout-01-museum\\museum-pilot.md",
+      "sha256": "7CEFC55F53032158319BB119270E8943DD7874BB389884B490AEF3129B340CAB"
+    },
+    {
+      "path": "cases\\holdout-02-transit\\idea-input.json",
+      "sha256": "3782C8A5EDD12AD1CF7E0331E93899AF5C6B0F75214DC5CB1624EDFEEF46CC16"
+    },
+    {
+      "path": "cases\\holdout-02-transit\\transfer-review.md",
+      "sha256": "AD1637E95A21E5FA6EEC838892DB780B7729E78A7B2821AFABD15FC5AC295D1A"
+    },
+    {
+      "path": "cases\\holdout-03-library\\idea-input.json",
+      "sha256": "C787A4E01302C6064A5CEF3BBAC86F5836586693CB697FD9904B506D51390A5F"
+    },
+    {
+      "path": "cases\\holdout-03-library\\library-notice.md",
+      "sha256": "7DA8D6F1F850443084C2665824CC3457D13F8D913A90295C322F81EF46ECFD86"
+    },
+    {
+      "path": "cases\\holdout-04-seedbank\\idea-input.json",
+      "sha256": "FEC392514EFC4CA8F87F0820E9990EEE284CCFFE689E4D91C5B06CB982C55406"
+    },
+    {
+      "path": "cases\\holdout-04-seedbank\\seed-bank-update.md",
+      "sha256": "C5ACD7664510FF989D0B47F1752FADD6B0727A02A97BF5401566ED43172354CA"
+    },
+    {
+      "path": "fixtures\\02-development.exhausted.json",
+      "sha256": "CC8A3885A96D37C65E0974B72C2D07EBC166F3C6CEB6C893F1E9E893A37CA37B"
+    },
+    {
+      "path": "fixtures\\02-development.json",
+      "sha256": "8283DEE90561B5AE76AB7979CC5D0F355C8067C1AD74A3CDDF967D238ACC0593"
+    },
+    {
+      "path": "fixtures\\04-analysis.exhausted.json",
+      "sha256": "B29E7F1424C4FBC26A142D8183DCAF8FD70A5A6B94DE54F0A60CF5B2220072DD"
+    },
+    {
+      "path": "fixtures\\04-analysis.json",
+      "sha256": "FE1A2E8C19FB4C6A5B48D978176ADFBA99CF16541A244BF772DB0B57570BFE84"
+    },
+    {
+      "path": "fixtures\\holdout-01-museum.exhausted.json",
+      "sha256": "B0BF2E7BF1E7A5171453090D13035359F73DA5DCEA7A772E3C7CC899A022BA4C"
+    },
+    {
+      "path": "fixtures\\holdout-01-museum.json",
+      "sha256": "C54EFD4DC6A26D3401F114036212B63E1BE4C3AFD9D986001BB93EA31B1BEA80"
+    },
+    {
+      "path": "prompts\\PromptDirectory.cs",
+      "sha256": "8D3973C6EFC6E9105F23FB585E7BB3BE62E62F28954432E2E5941E4F5BC170FE"
+    },
+    {
+      "path": "prompts\\PromptLoader.cs",
+      "sha256": "65A3FD6F3CA9D2FB1368A2B35EB11D5BC7942ECD405BAB3044C62D391DBA00F2"
+    },
+    {
+      "path": "prompts\\Compose\\Compose.article.user.prompt.txt",
+      "sha256": "23BCF0510239905DFF25C2B2414E5E8AF10076DD0445393B3CAF523C38A64278"
+    },
+    {
+      "path": "prompts\\Compose\\Compose.linkedin.user.prompt.txt",
+      "sha256": "86F4EBE7FE5FF11155911519830609A2F52CB720D572CF71662F878E64B113DA"
+    },
+    {
+      "path": "prompts\\Compose\\Compose.system.prompt.txt",
+      "sha256": "D9EA52BEB6DD9ADA3CC16413492522D5D449E0B7EA41F23A71C9345DBABF171C"
+    },
+    {
+      "path": "prompts\\Idea\\Idea.system.prompt.txt",
+      "sha256": "E98B756C9088B8646408F0C857AEDBD1E2B8E453C5AD1982C17E62F2FCBAA2BE"
+    },
+    {
+      "path": "prompts\\Idea\\Idea.user.prompt.txt",
+      "sha256": "D6EE3975D46331A956FE70ED1C90BCDA513CF91574A1CF34173682A8D427F43F"
+    },
+    {
+      "path": "prompts\\Idea\\IdeaValidation.system.prompt.txt",
+      "sha256": "B4346523C8434B56BF32324DCB2A2521DB37E3A4DB5D965BB643F9D1D9BBE2F7"
+    },
+    {
+      "path": "prompts\\Narrative\\Narrative.system.prompt.txt",
+      "sha256": "6658043519128531E2CF5B5BB9084901C4F5A8B25B74CEB3D3004C26AAD34C95"
+    },
+    {
+      "path": "prompts\\Narrative\\Narrative.user.prompt.txt",
+      "sha256": "475A9DB1CA028EBC927C99ECDD3DAB061B0616ED06FB1278879992D2E8DD795A"
+    },
+    {
+      "path": "prompts\\Research\\Research.system.prompt.txt",
+      "sha256": "D3A28B5429CF5866EC9A23D24EB216033B1B09C85AF3436ED4CB297FC5B4078E"
+    },
+    {
+      "path": "prompts\\Research\\Research.user.prompt.txt",
+      "sha256": "9093D5AB42F5300B2C79C9678DAA905767975B8F0014530A08701C9616367728"
+    },
+    {
+      "path": "prompts\\Synthesis\\Synthesis.system.prompt.txt",
+      "sha256": "97D123AA4DF38E855F509363B415F42EB93BE02C65E1D597A96C07E301460DE4"
+    },
+    {
+      "path": "prompts\\Synthesis\\Synthesis.user.prompt.txt",
+      "sha256": "5D9556B075425A589F4CC92BA1D34A0385FAECC458FE55AA8EB3D3124933BF5D"
+    },
+    {
+      "path": "harness\\FeedbackLoop.csproj",
+      "sha256": "5407A62BE35CE0D8E015E7E4DC5E36112CBD96B9410337F6EE8B63926FC8DD2A"
+    },
+    {
+      "path": "harness\\Program.cs",
+      "sha256": "6EB7048FEEB48F0B275DBC33DE69832797769737890DC648A7976E489D1E548C"
+    }
+  ],
+  "executableSha256": "857A39626EE8A5EE769EBA51F2E0AAF91B6A203C9240491C95D15F8C27EB35F8",
+  "sourceSha256": "C787A4E01302C6064A5CEF3BBAC86F5836586693CB697FD9904B506D51390A5F",
+  "authorization": "User v4 instruction, -AuthorizeModelCalls",
+  "exitCode": 0,
+  "endedAt": "2026-11-10T21:55:21.4519387+00:00"
+}

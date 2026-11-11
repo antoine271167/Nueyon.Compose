@@ -1,0 +1,7 @@
+# Selection before any live holdout call
+
+Tuning complete: 66/66 valid responses. Baseline TP=4 FP=0 TN=11 FN=7; candidate1 TP=4 FP=0 TN=11 FN=7; candidate2 TP=8 FP=0 TN=11 FN=3. Candidate2 wins the prespecified recall-first rule. This selection cannot be changed after holdout. Both candidate prompts remain exactly frozen.
+
+Candidate2 is the selected research candidate, already ineligible for production promotion: it accepts 010-b, v4-005-original and v4-010-original. Its 005-b constraint starts 'Describe the relationship as an observed change or association', prescribing presentation rather than diagnosis only. Its v4-seedbank-original blocker targets the audience/expectations rather than the frozen known motive defect in description. Its extra museum blocker repeats the audience-task issue and does not establish an independent source-fidelity defect. These are recorded separately from correct rejection verdicts.
+
+Candidate1 also fails: seven false accepts, including all v4 originals except library; its museum second blocker inflates 'pilot' to a formal program and invents an explicit-characterisation requirement. Baseline's extra 010 blocker demands exhaustive experiment controls in a short editorial idea, although the core wrong title is correctly caught. These findings cannot be repaired by a good holdout result. Proceed with all three frozen prompts for the planned comparison and six difficult repeats per prompt. No extra candidates, generator calls or budget expansion.

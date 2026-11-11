@@ -1,0 +1,337 @@
+[
+  {
+    "id": "005-a",
+    "source": "02-development/experiment-005-report.md",
+    "idea": {
+      "title": "What Experiment 005 observed about editorial hierarchy",
+      "description": "Explain the comparison of the baseline and candidate runs and why the candidate was not promoted.",
+      "audience": "Readers following the prompt experiment",
+      "rationale": "All three candidate runs made orchestration central. The comparison supports an observation about this sample and leaves attribution open.",
+      "evidence": "Run scores, analysis and limitations."
+    },
+    "expectedAccepted": true,
+    "reason": "All five fields preserve the source's stated claims, readership, and limits.",
+    "provenance": "validator-v1 frozen contrast",
+    "critical": false
+  },
+  {
+    "id": "005-b",
+    "source": "02-development/experiment-005-report.md",
+    "idea": {
+      "title": "What Experiment 005 observed about editorial hierarchy",
+      "description": "Explain the comparison of the baseline and candidate runs and why the candidate was not promoted.",
+      "audience": "Readers following the prompt experiment",
+      "rationale": "The added hierarchy rule caused the shift toward orchestration across the candidate runs.",
+      "evidence": "Run scores, analysis and limitations."
+    },
+    "expectedAccepted": false,
+    "field": "rationale",
+    "reason": "The report observes the shift in the candidate runs, discusses upstream tension and limits the inference to the sample. It does not establish causation.",
+    "provenance": "validator-v1 frozen contrast",
+    "critical": true
+  },
+  {
+    "id": "010-a",
+    "source": "04-analysis/experiment-010-report.md",
+    "idea": {
+      "title": "Trace the first visible drift for the chosen failure",
+      "description": "Explain how the next focused trial should locate the first evidence-supported stage, checking Narrative against its actual Synthesis input when indicated.",
+      "audience": "Readers following the pipeline investigation",
+      "rationale": "Narrative is the most recurrent locus, while some runs show earlier drift. The chosen case determines the intervention point.",
+      "evidence": "Cross-experiment patterns and Implication for the next focused trial."
+    },
+    "expectedAccepted": true,
+    "reason": "All five fields preserve the source's stated claims, readership, and limits.",
+    "provenance": "validator-v1 frozen contrast",
+    "critical": false
+  },
+  {
+    "id": "010-b",
+    "source": "04-analysis/experiment-010-report.md",
+    "idea": {
+      "title": "Fix Narrative first in the next pipeline trial",
+      "description": "Explain how the next focused trial should locate the first evidence-supported stage, checking Narrative against its actual Synthesis input when indicated.",
+      "audience": "Readers following the pipeline investigation",
+      "rationale": "Narrative is the most recurrent locus, while some runs show earlier drift. The chosen case determines the intervention point.",
+      "evidence": "Cross-experiment patterns and Implication for the next focused trial."
+    },
+    "expectedAccepted": false,
+    "field": "title",
+    "reason": "The proposed trial targets the earliest stage supported for the chosen failure. Narrative recurrence does not establish first priority. The title changes the assignment despite the caveat elsewhere.",
+    "provenance": "validator-v1 frozen contrast",
+    "critical": true
+  },
+  {
+    "id": "museum-a",
+    "source": "holdout-01-museum/museum-pilot.md",
+    "idea": {
+      "title": "An indoor sculpture route when the garden closes",
+      "description": "Tell visitors where to pick up the free printed step-free route and to check the same-day notice before travelling.",
+      "audience": "Visitors whose plans included the sculpture garden",
+      "rationale": "The route helps visitors adapt a visit during a high-water closure.",
+      "evidence": "The front desk gives out the route, which ends at the cafe."
+    },
+    "expectedAccepted": true,
+    "reason": "All five fields preserve the source's stated claims, readership, and limits.",
+    "provenance": "validator-v1 frozen contrast",
+    "critical": false
+  },
+  {
+    "id": "museum-b",
+    "source": "holdout-01-museum/museum-pilot.md",
+    "idea": {
+      "title": "An indoor sculpture route when the garden closes",
+      "description": "Tell visitors where to pick up the free printed step-free route and to check the same-day notice before travelling.",
+      "audience": "Museum operations managers evaluating whether the pilot should continue",
+      "rationale": "The route helps visitors adapt a visit during a high-water closure.",
+      "evidence": "The front desk gives out the route, which ends at the cafe."
+    },
+    "expectedAccepted": false,
+    "field": "audience",
+    "reason": "The source explicitly requests practical guidance for visitors who planned to visit the sculpture garden. Staff evaluation changes the intended readership and purpose.",
+    "provenance": "validator-v1 frozen contrast",
+    "critical": true
+  },
+  {
+    "id": "library-a",
+    "source": "holdout-03-library/library-notice.md",
+    "idea": {
+      "title": "Temporary pickup location for existing West Room reservations",
+      "description": "Tell borrowers to collect their reserved tools at the North Desk from 12 to 16 May during their original pickup window. Bring the confirmation and library card.",
+      "audience": "Borrowers with an existing West Room pickup from 12 to 16 May",
+      "rationale": "The notice helps borrowers collect existing reservations during the temporary change. Returns use the usual counter.",
+      "evidence": "The notice specifies dates, unchanged pickup windows and required documents."
+    },
+    "expectedAccepted": true,
+    "reason": "All five fields preserve the source's stated claims, readership, and limits.",
+    "provenance": "validator-v1 frozen contrast",
+    "critical": false
+  },
+  {
+    "id": "library-b",
+    "source": "holdout-03-library/library-notice.md",
+    "idea": {
+      "title": "Temporary pickup location for existing West Room reservations",
+      "description": "Tell borrowers to collect their reserved tools at the North Desk from 12 to 16 May at any time during desk opening hours. Bring the confirmation and library card.",
+      "audience": "Borrowers with an existing West Room pickup from 12 to 16 May",
+      "rationale": "The notice helps borrowers collect existing reservations during the temporary change. Returns use the usual counter.",
+      "evidence": "The notice specifies dates, unchanged pickup windows and required documents."
+    },
+    "expectedAccepted": false,
+    "field": "description",
+    "reason": "The original confirmation window still applies. Replacing it with opening hours materially changes practical instructions.",
+    "provenance": "validator-v1 frozen contrast",
+    "critical": true
+  },
+  {
+    "id": "seedbank-a",
+    "source": "holdout-04-seedbank/seed-bank-update.md",
+    "idea": {
+      "title": "Seed bank keeps its storage trial at two lots",
+      "description": "Update donors on the germination observations and the decision to repeat the check after another six months on the same two lots.",
+      "audience": "Seed bank donors",
+      "rationale": "The counts describe the two lots. The record supports reporting the limited continuation separately from those observations.",
+      "evidence": "18 of 20 Alder and 14 of 20 Reed germinated. The committee continued with the same two lots."
+    },
+    "expectedAccepted": true,
+    "reason": "All five fields preserve the source's stated claims, readership, and limits.",
+    "provenance": "validator-v1 frozen contrast",
+    "critical": false
+  },
+  {
+    "id": "seedbank-b",
+    "source": "holdout-04-seedbank/seed-bank-update.md",
+    "idea": {
+      "title": "Seed bank keeps its storage trial at two lots",
+      "description": "Update donors on the germination observations and the decision to repeat the check after another six months on the same two lots.",
+      "audience": "Seed bank donors",
+      "rationale": "The committee chose to continue the trial because the germination results convinced it that the dry cupboard was promising.",
+      "evidence": "18 of 20 Alder and 14 of 20 Reed germinated. The committee continued with the same two lots."
+    },
+    "expectedAccepted": false,
+    "field": "rationale",
+    "reason": "The source records results and the decision, but no committee motivation. Different harvest lots and absence of a paired test further limit interpretation.",
+    "provenance": "validator-v1 frozen contrast",
+    "critical": true
+  },
+  {
+    "id": "v4-005-original",
+    "source": "v4-005.txt",
+    "idea": {
+      "title": "A reusable 'preserve editorial intent' prompt fragment can reduce, not restore, editorial fidelity",
+      "description": "Adding a generic editorial-hierarchy instruction to the Narrative prompt (the single change in the candidate) consistently shifted outputs away from the intended company-first message and toward technical orchestration, and it introduced unsupported audience/validation claims — leading to a decision not to promote the change.",
+      "audience": "Prompt engineers, Narrative/Compose pipeline owners, editorial leads responsible for model-generated messaging",
+      "rationale": "This experiment provides clear, source-backed evidence that a well-intentioned, reusable prompt fragment — here titled “Preserve Editorial Intent from the Synthesis.” — can backfire: candidate runs produced stable, repeatable drift (company identity subordinated, orchestration made central) and added unsupported factual claims. The result matters because it shows that adding high-level generic guidance to a production prompt can worsen, rather than improve, editorial outcomes. Gaps and uncertainty: the result is based on three runs per condition (not statistically conclusive), the model alias may map to different backends over time, and the experiment did not include variant fragment designs or story-specific examples that might behave differently.",
+      "evidence": "Candidate change: inserted section “Preserve Editorial Intent from the Synthesis.” (prompt-changes/Narrative.user.prompt.diff). Narrative mean scores dropped from 6.00 to 4.00; Compose mean scores dropped from 5.67 to 3.33. All three candidate Narrative runs and all three candidate Compose runs failed criterion C (orchestration became central) and D (unsupported additions) in every run. Decision: Do not promote; production prompt restored byte-for-byte (rollback SHA-256 matched baseline)."
+    },
+    "expectedAccepted": false,
+    "reason": "Missed causal attribution and generalization in title, description and rationale.",
+    "critical": true,
+    "provenance": "v4 02-development: exact selected first idea"
+  },
+  {
+    "id": "v4-005-good",
+    "source": "v4-005.txt",
+    "idea": {
+      "title": "What Experiment 005 observed about editorial hierarchy",
+      "description": "Explain the comparison of the baseline and candidate runs and why the candidate was not promoted.",
+      "audience": "Readers following the prompt experiment",
+      "rationale": "All three candidate runs made orchestration central. The comparison supports an observation about this sample and leaves attribution open.",
+      "evidence": "Run scores, analysis and limitations."
+    },
+    "expectedAccepted": true,
+    "reason": "Preserves explicit task, facts, and uncertainty; no unsupported central assertion.",
+    "critical": false,
+    "provenance": "Correct source-grounded counterpart for v4 02-development"
+  },
+  {
+    "id": "v4-010-original",
+    "source": "v4-010.txt",
+    "idea": {
+      "title": "Target the Narrative stage: the most recurrent locus of editorial hierarchy drift",
+      "description": "Across the recorded runs, the Narrative stage is the most frequent first observable point where a company-first introduction is reframed into a product- or orchestration-centered story. A focused editorial experiment—and upstream-boundary controls—should therefore prioritize validating Narrative inputs and rules before assuming Idea- or Compose-only fixes will succeed.",
+      "audience": "Product/editorial leads, prompt engineers, experiment designers running the Compose pipeline, and evaluation teams responsible for editorial integrity.",
+      "rationale": "Why it matters: The report’s cross-experiment analysis shows Narrative is repeatedly the first stage that alters story hierarchy or adds unsupported claims; fixing Narrative behavior promises the highest immediate reduction in downstream reframe/amplification. This gives teams a specific control point to test rules that preserve company-first framing while keeping technical details as support. Gaps and uncertainty: Narrative is the most recurrent but not the sole locus—some runs shift in Idea or Synthesis—so Narrative-focused trials should be designed to detect upstream confounds and include baseline comparisons to Idea/Synthesis inputs.",
+      "evidence": "Cross-experiment patterns: “Narrative is the most recurrent first visible hierarchy shift.” Specific examples: Experiment 007 candidate runs 001–002 (Narrative first), Experiment 008 A-002 (Narrative factual breach), Experiment 009 baseline 002/003 and candidates 001–003 (Narrative first). The report also notes exceptions where Idea or Synthesis started the drift, so Narrative is frequent but not exclusive."
+    },
+    "expectedAccepted": false,
+    "reason": "Missed mandatory Narrative priority and unsupported promise of highest payoff.",
+    "critical": true,
+    "provenance": "v4 04-analysis: exact selected first idea"
+  },
+  {
+    "id": "v4-010-good",
+    "source": "v4-010.txt",
+    "idea": {
+      "title": "Trace the first visible drift for the chosen failure",
+      "description": "Explain how the next focused trial should locate the first evidence-supported stage, checking Narrative against its actual Synthesis input when indicated.",
+      "audience": "Readers following the pipeline investigation",
+      "rationale": "Narrative is the most recurrent locus, while some runs show earlier drift. The chosen case determines the intervention point.",
+      "evidence": "Cross-experiment patterns and Implication for the next focused trial."
+    },
+    "expectedAccepted": true,
+    "reason": "Preserves explicit task, facts, and uncertainty; no unsupported central assertion.",
+    "critical": false,
+    "provenance": "Correct source-grounded counterpart for v4 04-analysis"
+  },
+  {
+    "id": "v4-museum-original",
+    "source": "v4-museum.txt",
+    "idea": {
+      "title": "A useful pilot that couldn’t be evaluated: the museum route lacked outcome measurement",
+      "description": "The museum created and distributed a printed indoor route for visitors when the sculpture garden flooded, but the pilot recorded distribution (38 copies) and a small operational change (a start sign) while explicitly not tracking whether visitors completed the route or were satisfied. The central point: the experiment produced implementation facts but no outcome data, limiting lessons that can be drawn from the pilot.",
+      "audience": "Museum operations managers, visitor services teams, front‑of‑house supervisors",
+      "rationale": "Many museums run small, low‑cost pilots to handle weather or capacity interruptions. This example shows how a simple intervention can be implemented quickly yet leave a critical evaluation gap — useful evidence for teams planning short pilots to include basic measurement (completion, satisfaction) so they can judge effectiveness and iterate responsibly.",
+      "evidence": "Explicit facts in the source: “the front desk can give visitors a free printed route…”; “In April, the museum handed out the route at two wet Sunday openings. The desk counted 38 copies handed out.” Crucially: “Staff recorded no systematic counts of how many visitors completed the route and did not track visitor satisfaction.” Also: “At the first opening some visitors asked where to start, so a sign was added by the desk at the second.”"
+    },
+    "expectedAccepted": false,
+    "reason": "Missed explicit visitor purpose replaced by internal pilot evaluation and a measurement agenda.",
+    "critical": true,
+    "provenance": "v4 holdout-01-museum: exact selected first idea"
+  },
+  {
+    "id": "v4-museum-good",
+    "source": "v4-museum.txt",
+    "idea": {
+      "title": "An indoor sculpture route when the garden closes",
+      "description": "Tell visitors where to pick up the free printed step-free route and to check the same-day notice before travelling.",
+      "audience": "Visitors whose plans included the sculpture garden",
+      "rationale": "The route helps visitors adapt a visit during a high-water closure.",
+      "evidence": "The front desk gives out the route, which ends at the cafe."
+    },
+    "expectedAccepted": true,
+    "reason": "Preserves explicit task, facts, and uncertainty; no unsupported central assertion.",
+    "critical": false,
+    "provenance": "Correct source-grounded counterpart for v4 holdout-01-museum"
+  },
+  {
+    "id": "v4-transit-original",
+    "source": "v4-transit.txt",
+    "idea": {
+      "title": "A two-week, station-specific timetable trial is the committee’s chosen test for missed night‑bus transfers",
+      "description": "Rather than implementing system-wide changes or immediately altering signage, the committee will run a narrowly scoped, measurable experiment: move the last night‑bus departure at Harbor Junction five minutes later for two weeks (only at that station) and log outcomes before deciding whether to keep the change.",
+      "audience": "Municipal transport officials, transit planners, local reporters covering transport policy",
+      "rationale": "This idea highlights a concrete, evidence‑based decision: a short, local operational trial with predefined measurement (dispatcher logs of completed transfers and onward delays). It is useful to readers who follow how public agencies test fixes, because it shows a limited, testable approach that preserves options while collecting data.",
+      "evidence": "Source states committee's trial: 'move the last night bus departure at Harbor Junction five minutes later for two weeks, without changing departures at other stations.' It adds that 'Dispatchers will log completed transfers and onward delays before the committee decides whether to retain the change.' The source also notes signs were discussed but set aside for this trial."
+    },
+    "expectedAccepted": false,
+    "reason": "Missed shift away from a public briefing and omission of the central missed-transfer mismatch.",
+    "critical": true,
+    "provenance": "v4 holdout-02-transit: exact selected first idea"
+  },
+  {
+    "id": "v4-transit-good",
+    "source": "v4-transit.txt",
+    "idea": {
+      "title": "Why the night-bus connection is being tested at Harbor Junction",
+      "description": "Explain to the public that 14 of 17 logged missed transfers involved a bus already gone when an on-time train arrived; describe the five-minute later last bus for two weeks at this station only.",
+      "audience": "Local public using the train-to-night-bus connection",
+      "rationale": "The logs identify the timing mismatch. The trial will log completed transfers and onward delays before a retention decision, without claiming that the change has already worked.",
+      "evidence": "14 of 17 cases; five-minute, two-week local trial; dispatcher logs."
+    },
+    "expectedAccepted": true,
+    "reason": "Preserves explicit task, facts, and uncertainty; no unsupported central assertion.",
+    "critical": false,
+    "provenance": "Correct source-grounded counterpart for v4 holdout-02-transit"
+  },
+  {
+    "id": "v4-library-original",
+    "source": "v4-library.txt",
+    "idea": {
+      "title": "Clear borrower notice for the temporary West Room pickup relocation (12–16 May)",
+      "description": "Produce a concise, actionable public notice telling borrowers with existing West Room reservations that pickups between 12 and 16 May will be collected at the North Desk, that the printed pickup window on confirmations still applies, and what borrowers must bring; explicitly state that the change affects pickups only and that returns remain at the usual counter.",
+      "audience": "Library patrons with West Room reservations; general public.",
+      "rationale": "The source explicitly states the library \"needs a notice\" for this temporary relocation and lists the exact facts borrowers must know (dates, alternate pickup location, confirmation and library card requirement, exceptions for later pickup dates, and that returns are unchanged). A single clear notice is the most direct editorial opportunity and has high immediate reader value because it solves the concrete communication need the source identifies. Missing/uncertain elements to be resolved during drafting include preferred distribution channels, language for accessibility, and any additional signage or directions inside the building.",
+      "evidence": "Source: \"The library needs a notice for borrowers with an existing tool reservation for pickup at the West Room between 12 and 16 May.\" \"existing West Room reservations will be collected at the North Desk... The pickup window printed on each confirmation still applies. Bring the confirmation and a library card. Borrowers with a later pickup date should use the location on their confirmation. The change applies to pickups only. Returns remain at the usual return counter.\""
+    },
+    "expectedAccepted": false,
+    "reason": "Missed explicit broadening of audience to the general public and extra drafting scope.",
+    "critical": true,
+    "provenance": "v4 holdout-03-library: exact selected first idea"
+  },
+  {
+    "id": "v4-library-good",
+    "source": "v4-library.txt",
+    "idea": {
+      "title": "Temporary pickup location for existing West Room reservations",
+      "description": "Tell borrowers to collect their reserved tools at the North Desk from 12 to 16 May during their original pickup window. Bring the confirmation and library card.",
+      "audience": "Borrowers with an existing West Room pickup from 12 to 16 May",
+      "rationale": "The notice helps borrowers collect existing reservations during the temporary change. Returns use the usual counter.",
+      "evidence": "The notice specifies dates, unchanged pickup windows and required documents."
+    },
+    "expectedAccepted": true,
+    "reason": "Preserves explicit task, facts, and uncertainty; no unsupported central assertion.",
+    "critical": false,
+    "provenance": "Correct source-grounded counterpart for v4 holdout-03-library"
+  },
+  {
+    "id": "v4-seedbank-original",
+    "source": "v4-seedbank.txt",
+    "idea": {
+      "title": "A transparent donor update: explain the limited continuation of the storage trial",
+      "description": "Tell donors the single, supported story: volunteers ran a six‑month germination check on two retained bean lots in a new dry cupboard; results motivated the committee to continue only those same two lots for another six months and not to expand the trial. The update should present the observed numbers, the committee decision, and explicitly state the trial’s limitations and next step (repeat germination check), without claiming causation or promising garden performance.",
+      "audience": "Donors and regular supporters of the community seed bank who expect a plain‑spoken status report on funds/activities.",
+      "rationale": "Why it matters: The source explicitly says a donor update is needed to explain the decision and that the notes give no claim the cupboard caused improvement. A concise, factual update will meet that stated need while avoiding overstated conclusions. Gaps & uncertainty: The source does not record temperature outside the new cupboard, no paired comparison of identical lots was run, different harvest lots were used across years, and no garden‑performance data exist — these limitations should be named in the update so readers understand the evidence boundaries.",
+      "evidence": "Facts from the source: February germination check — Alder 18/20, Reed 14/20 after six months in new cupboard; previous year’s notebook — Alder 16/20, Reed 15/20 in older room (different harvest lots). Temperature logged only in the new cupboard. Committee decision at March meeting: keep same two lots in cupboard for another six months; has not approved moving other varieties; a volunteer proposed replacing the older room but committee deferred. Source explicitly says no claim that the cupboard caused improvement and no promise of better garden results."
+    },
+    "expectedAccepted": false,
+    "reason": "Missed unsupported attribution of committee motivation to the germination results.",
+    "critical": true,
+    "provenance": "v4 holdout-04-seedbank: exact selected first idea"
+  },
+  {
+    "id": "v4-seedbank-good",
+    "source": "v4-seedbank.txt",
+    "idea": {
+      "title": "Seed bank keeps its storage trial at two lots",
+      "description": "Update donors on the germination observations and the decision to repeat the check after another six months on the same two lots.",
+      "audience": "Seed bank donors",
+      "rationale": "The counts describe the two lots. The record supports reporting the limited continuation separately from those observations.",
+      "evidence": "18 of 20 Alder and 14 of 20 Reed germinated. The committee continued with the same two lots."
+    },
+    "expectedAccepted": true,
+    "reason": "Preserves explicit task, facts, and uncertainty; no unsupported central assertion.",
+    "critical": false,
+    "provenance": "Correct source-grounded counterpart for v4 holdout-04-seedbank"
+  }
+]

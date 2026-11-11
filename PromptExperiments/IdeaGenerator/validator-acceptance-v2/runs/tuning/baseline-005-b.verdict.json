@@ -1,0 +1,12 @@
+{
+  "accepted": false,
+  "blockingIssues": [
+    {
+      "category": "Overstated causality",
+      "field": "rationale",
+      "problem": "The rationale asserts that the added \"Preserve Editorial Intent\" rule caused the shift toward orchestration. The source does not establish a definitive causal link — it shows the prompt change was the only intentional variable and that candidate runs exhibited a shift, but also records limitations (possible backend changes, no seed/temperature, three runs only) that prevent a firm causal claim.",
+      "sourceEvidence": "Source: \"The candidate added one generic section, 'Preserve Editorial Intent from the Synthesis.' ... The candidate was worse on mean score for both Narrative and Compose, failed the orchestration hierarchy ... and introduced regressions.\" Also: \"Limitations: ... the model provider may change the backend behind an alias. No seed or temperature override was available. Three runs per condition show consistency in these samples, not statistical significance.\"",
+      "constraint": "Any explanation must preserve the source's uncertainty and attribution: the prompt change is the plausible proximate factor, but the source does not support asserting definitive causation without acknowledging the experiment's stated limitations and uncertainty."
+    }
+  ]
+}

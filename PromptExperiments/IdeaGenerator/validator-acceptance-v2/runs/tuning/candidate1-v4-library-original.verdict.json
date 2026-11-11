@@ -1,0 +1,12 @@
+{
+  "accepted": false,
+  "blockingIssues": [
+    {
+      "category": "unsupported conclusion",
+      "field": "audience",
+      "problem": "The idea lists the audience as \"Library patrons with West Room reservations; general public,\" but the source explicitly frames the notice for borrowers who already reserved a tool. There is no support in the source for treating the general public as an intended audience.",
+      "sourceEvidence": "\"The library needs a notice for borrowers with an existing tool reservation for pickup at the West Room between 12 and 16 May.\"",
+      "constraint": "The source assigns the notice to borrowers with existing reservations; incidental public availability alone does not establish a broader intended audience."
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "condition": "baseline",
+    "recallGate": false,
+    "zeroFalseRejects": false,
+    "allKnownCriticalDetected": false,
+    "diagnosisGate": false,
+    "promoted": false
+  },
+  {
+    "condition": "candidate1",
+    "recallGate": false,
+    "zeroFalseRejects": false,
+    "allKnownCriticalDetected": false,
+    "diagnosisGate": false,
+    "promoted": false
+  },
+  {
+    "condition": "candidate2",
+    "recallGate": false,
+    "zeroFalseRejects": true,
+    "allKnownCriticalDetected": false,
+    "diagnosisGate": false,
+    "promoted": false
+  }
+]

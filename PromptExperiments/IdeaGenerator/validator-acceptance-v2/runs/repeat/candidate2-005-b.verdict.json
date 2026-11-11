@@ -1,0 +1,12 @@
+{
+  "accepted": false,
+  "blockingIssues": [
+    {
+      "category": "Source fidelity",
+      "field": "rationale",
+      "problem": "Asserts a causal link that the added hierarchy rule 'caused the shift toward orchestration' despite the source reporting only an association and noting other possible contributing factors.",
+      "sourceEvidence": "The experiment log describes the prompt change (a new 'Preserve Editorial Intent' section) and documents that candidate outputs 'subordinated company identity and audience scope while making orchestration the central positioning.' It also states 'the candidate prompt was not sufficient to protect the supplied editorial intent' and notes 'The baseline Synthesis pairs company identity with Compose in its top-level emphasis, but also contains a later description calling orchestration \"central to the product direction.\" That internal tension may have reinforced the technical angle.' The report does not claim the added rule was the proven cause of the shift.",
+      "constraint": "The rationale must not state that the added hierarchy rule caused the shift; it may only describe the observed association and acknowledge that the source does not establish a causal conclusion."
+    }
+  ]
+}

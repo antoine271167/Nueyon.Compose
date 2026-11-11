@@ -1,0 +1,12 @@
+{
+  "accepted": false,
+  "blockingIssues": [
+    {
+      "category": "contradiction with source",
+      "field": "description",
+      "problem": "The description says appointments from 7 to 21 August may be attended \"at any time during opening hours,\" which contradicts the source's instruction that Saturday appointment holders must enter Gate C within the time printed on their booking.",
+      "sourceEvidence": "Source: \"From 7 to 21 August they must enter through Gate C, within the time printed on their booking.\"",
+      "constraint": "The source requires arrival within each booking's printed time window; the description cannot broaden this to any time during opening hours."
+    }
+  ]
+}
