@@ -1,0 +1,230 @@
+[
+  {
+    "case": "intro",
+    "model": "gpt-6-luna",
+    "mode": "Simplified",
+    "sourcePath": "C:\\Workspaces\\Nueyon.Compose\\PromptExperiments\\IdeaGenerator\\legacy-simplified-acceptance-2026-11-12\\intro-input.json",
+    "sourceSHA256": "21B9C244EB8B00EAB4C6733B85FE02B887F1AA735015B1A078B3FA5E26649067",
+    "status": "accepted",
+    "exitCode": 0,
+    "seconds": 15.2671585,
+    "generations": 1,
+    "judgeCalls": 1,
+    "logicalCalls": 2,
+    "repairs": 0,
+    "attempts": [
+      {
+        "attempt": 1,
+        "status": "accepted",
+        "feedback": null,
+        "selectedFirstIdea": {
+          "title": "A broad AI-first ambition, grounded in one concrete starting point",
+          "description": "Nuëyon aims to build products and capabilities for other AI-first companies, but its first concrete product direction is Nuëyon.Compose: a structured workflow for turning ideas and accumulated knowledge into content. The contrast between a broad company vision and a focused first product makes the ambition tangible without implying that the wider portfolio already exists.",
+          "audience": "People seeking to understand Nuëyon’s intended identity, audience, and first product direction.",
+          "rationale": "The source identifies the first article’s purpose as introducing the company, while emphasizing that Compose is the first concrete expression of a still-developing vision.",
+          "evidence": "The source states that Nuëyon is an emerging AI-first company intended to serve other AI-first companies, and that Compose is its first concrete product direction. It describes the broader portfolio and operating model as under development; no established customer base or commercially available portfolio is claimed."
+        }
+      }
+    ],
+    "selectedFirstIdea": {
+      "title": "A broad AI-first ambition, grounded in one concrete starting point",
+      "description": "Nuëyon aims to build products and capabilities for other AI-first companies, but its first concrete product direction is Nuëyon.Compose: a structured workflow for turning ideas and accumulated knowledge into content. The contrast between a broad company vision and a focused first product makes the ambition tangible without implying that the wider portfolio already exists.",
+      "audience": "People seeking to understand Nuëyon’s intended identity, audience, and first product direction.",
+      "rationale": "The source identifies the first article’s purpose as introducing the company, while emphasizing that Compose is the first concrete expression of a still-developing vision.",
+      "evidence": "The source states that Nuëyon is an emerging AI-first company intended to serve other AI-first companies, and that Compose is its first concrete product direction. It describes the broader portfolio and operating model as under development; no established customer base or commercially available portfolio is claimed."
+    },
+    "independentReview": {
+      "research": "GO",
+      "angle": "PASS: brede ambitie versus concreet begin is helder en specifiek",
+      "interventionPriority": "PASS: gefocust begin overeenkomstig roadmap, geen nieuwe prioriteit",
+      "editorialIntent": "PASS: Nuëyon primair, Compose concreet begin; doelgroep AI-first bedrijven behouden; geen extra investeerders/partners",
+      "causality": "PASS: ambitie en ontwerp, geen bewezen opbrengst"
+    },
+    "gpt5miniSimplified": {
+      "independentReview": {
+        "fidelity": "PASS met kanttekening",
+        "reason": "Bedrijfsintroductie en herbruikbare producten voor AI-first bedrijven blijven centraal. Audience noemt ook investeerders/partners: ruimere lezersrelevantie, geen bewezen doelgroep; niet als marktfeit overnemen. Geen blokkade van het centrale verhaal.",
+        "research": "YES",
+        "angle": "PASS"
+      },
+      "selectedFirstIdea": {
+        "title": "An AI-first company building reusable products for other AI-first businesses",
+        "description": "Nuëyon positions itself as an AI-first software company whose primary purpose is to develop reusable AI-native products and capabilities for other businesses that place AI at their center, rather than delivering one-off consultancy or bespoke projects.",
+        "audience": "Founders and product leaders at AI-first companies; investors and partners evaluating company positioning.",
+        "rationale": "The company identity and intended market are central to the article’s purpose: introducing Nuëyon and clarifying who it serves. Communicating this distinction (product‑centric, AI‑first, serving AI‑first firms) is the strongest editorial need supported by the source material.",
+        "evidence": "Facts from source: the brief states, “Nuëyon is an emerging AI-first software company… build tools, products, and knowledge for other AI-first companies,” and explicitly contrasts product development with “traditional consultancy or developing bespoke software.” It also says the intended audience is “other AI-first companies” and that precise customer segments and commercial model are not finalized. Inference: the material implies Nuëyon will emphasize reusable, productized capabilities rather than one-off professional services. Important unknowns: actual customer traction, final commercial model, and specific target segments are not provided in the source."
+      },
+      "logicalCalls": 2,
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "accepted",
+          "feedback": null
+        }
+      ],
+      "status": "accepted",
+      "exitCode": 0,
+      "repairs": 0,
+      "generations": 1,
+      "judgeCalls": 1,
+      "seconds": 42.654931,
+      "id": "intro-Simplified"
+    }
+  },
+  {
+    "case": "005",
+    "model": "gpt-6-luna",
+    "mode": "Simplified",
+    "sourcePath": "C:\\Workspaces\\Nueyon.Compose\\PromptExperiments\\IdeaGenerator\\legacy-simplified-acceptance-2026-11-12\\005-input.json",
+    "sourceSHA256": "A02E120F83808A78CCA92B54E0A35296E1523F9AF845D968CAEC23B61406C624",
+    "status": "accepted",
+    "exitCode": 0,
+    "seconds": 21.7081732,
+    "generations": 1,
+    "judgeCalls": 1,
+    "logicalCalls": 2,
+    "repairs": 0,
+    "attempts": [
+      {
+        "attempt": 1,
+        "status": "accepted",
+        "feedback": null,
+        "selectedFirstIdea": {
+          "title": "A reusable editorial rule did not preserve the intended hierarchy",
+          "description": "In this comparison, adding a generic instruction to preserve Synthesis’s editorial intent did not keep the company-level message primary. All three candidate Narrative runs made orchestration central and introduced unsupported framing; all three Compose runs also failed the hierarchy and factual-restraint gates. The candidate scored lower on average in both stages, so it was not promoted and the production prompt was restored. This is evidence about these runs, not proof that the rule will fail in every setting.",
+          "audience": "People designing or evaluating multi-stage AI editorial workflows.",
+          "rationale": "The experiment tests a specific prompt intervention against explicit editorial criteria and records a clear decision. It also shows why a prompt change should be judged by whether it preserves the intended message, not just whether the output reads smoothly.",
+          "evidence": "Fact: The candidate changed only the Narrative user prompt; candidate Narrative and Compose mean scores were lower than baseline, and every candidate run failed the orchestration-hierarchy and factual-restraint gates. The decision was not to promote, and the production prompt was restored byte-for-byte. Inference: The generic rule was insufficient to protect the intended hierarchy in this test. Unknown: Three runs per condition do not establish statistical significance or general performance across settings."
+        }
+      }
+    ],
+    "selectedFirstIdea": {
+      "title": "A reusable editorial rule did not preserve the intended hierarchy",
+      "description": "In this comparison, adding a generic instruction to preserve Synthesis’s editorial intent did not keep the company-level message primary. All three candidate Narrative runs made orchestration central and introduced unsupported framing; all three Compose runs also failed the hierarchy and factual-restraint gates. The candidate scored lower on average in both stages, so it was not promoted and the production prompt was restored. This is evidence about these runs, not proof that the rule will fail in every setting.",
+      "audience": "People designing or evaluating multi-stage AI editorial workflows.",
+      "rationale": "The experiment tests a specific prompt intervention against explicit editorial criteria and records a clear decision. It also shows why a prompt change should be judged by whether it preserves the intended message, not just whether the output reads smoothly.",
+      "evidence": "Fact: The candidate changed only the Narrative user prompt; candidate Narrative and Compose mean scores were lower than baseline, and every candidate run failed the orchestration-hierarchy and factual-restraint gates. The decision was not to promote, and the production prompt was restored byte-for-byte. Inference: The generic rule was insufficient to protect the intended hierarchy in this test. Unknown: Three runs per condition do not establish statistical significance or general performance across settings."
+    },
+    "independentReview": {
+      "research": "GO",
+      "angle": "PASS: leesbare tekst kan redactioneel falen; concrete negatieve proef",
+      "interventionPriority": "PASS: bestaande afwijzing en rollback; geen nieuwe ingreep voorgeschreven",
+      "editorialIntent": "PASS: resultaat van de editorial-intentproef centraal",
+      "causality": "PASS: onvoldoende bescherming in deze runs, geen betrouwbare causaliteit of algemene werking geclaimd"
+    },
+    "gpt5miniSimplified": {
+      "independentReview": {
+        "fidelity": "FAIL",
+        "reason": "“produced ... repeatable degradations” en “can reliably alter” overstijgen drie kandidaat-runs en de niet-gelijktijdige vergelijking. Evidence noemt correlatie, maar herstelt de sterkere titel/description/rationale niet.",
+        "research": "NO",
+        "angle": "PASS"
+      },
+      "selectedFirstIdea": {
+        "title": "Candidate prompt change displaced the intended editorial hierarchy and triggered a rollback",
+        "description": "A single added section in the Narrative user prompt — intended to “Preserve Editorial Intent from the Synthesis” — produced consistent, repeatable degradations in both Narrative and Compose outputs: company-level identity and audience were subordinated while orchestration became central, unsupported claims appeared, and the change was not promoted. The production prompt was restored byte-for-byte.",
+        "audience": "Prompt engineers, editorial leads, release managers",
+        "rationale": "This experiment shows a straightforward operational risk: even a small, generic prompt change can reliably alter high-level emphasis and introduce editorial regressions that fail promotion gates. Teams deciding whether to change system prompts need evidence that a change preserves the intended hierarchy before promoting it.",
+        "evidence": "Facts: the candidate prompt added one generic section titled “Preserve Editorial Intent from the Synthesis” and contained no Nuëyon-specific wording; three candidate Narrative runs scored mean 4.00/10 vs baseline mean 6.00/10; three candidate Compose runs scored mean 3.33/10 vs baseline mean 5.67/10; all candidate Narrative and Compose runs made orchestration central and introduced unsupported additions; decision: “Do not promote. Candidate was worse on mean score… failed the orchestration hierarchy and factual restraint gates in every run,” and production prompt was restored (byte-for-byte SHA match). Inference: the added prompt section correlated with the observed editorial drift and regressions. Unknowns: the exact causal mechanism inside the model that produced the drift (e.g., how the new phrasing interacted with the Synthesis content or model internals)."
+      },
+      "logicalCalls": 2,
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "accepted",
+          "feedback": null
+        }
+      ],
+      "status": "accepted",
+      "exitCode": 0,
+      "repairs": 0,
+      "generations": 1,
+      "judgeCalls": 1,
+      "seconds": 32.0980388,
+      "id": "005-Simplified"
+    }
+  },
+  {
+    "case": "010",
+    "model": "gpt-6-luna",
+    "mode": "Simplified",
+    "sourcePath": "C:\\Workspaces\\Nueyon.Compose\\PromptExperiments\\IdeaGenerator\\legacy-simplified-acceptance-2026-11-12\\010-input.json",
+    "sourceSHA256": "C8A9EF11BD0AD7D5487FCCBC47DA7CA3C735522129C0E3E2D3CDF65F03CE9C32",
+    "status": "accepted",
+    "exitCode": 0,
+    "seconds": 37.08789,
+    "generations": 2,
+    "judgeCalls": 2,
+    "logicalCalls": 4,
+    "repairs": 1,
+    "attempts": [
+      {
+        "attempt": 1,
+        "status": "rejected",
+        "feedback": "[{\"category\":\"unsupportedClaim\",\"field\":\"description\",\"problem\":\"The description includes Compose as a stage where the earliest visible departure from the intended company-first hierarchy appears. The report\\u2019s cited Compose-first case is a factual overclaim, not a hierarchy shift.\",\"sourceEvidence\":\"For Experiment 009 baseline 001, the report identifies Compose as the reported factual failure, while stating the selected Idea and earlier chain remain company-first and the downstream hierarchy score is 2/2.\",\"constraint\":\"Do not present a factual failure at Compose as evidence that the company-first hierarchy first departed there.\"}]",
+        "selectedFirstIdea": {
+          "title": "Pipeline drift has no single, proven starting point",
+          "description": "The earliest visible departure from the intended company-first hierarchy varies across runs: it appears in Idea, Synthesis, Narrative, or Compose. Narrative is the most recurrent first visible hierarchy shift in the reviewed records, but the evidence does not establish it—or any other stage—as a universal root cause.",
+          "audience": "People reviewing Nuëyon.Compose pipeline experiments and stage-level outputs.",
+          "rationale": "The report’s central diagnostic value is locating where departures become observable without overstating what that localization proves.",
+          "evidence": "The report identifies Idea drift in Experiment 008 A-001 and A-003, Synthesis drift in Experiment 007 candidate 003, recurrent Narrative shifts in other runs, and a reported Compose factual failure in Experiment 009 baseline 001. Experiment 007 has no Idea or Research extracts, so those stages cannot be assessed for its runs. These are observed departures, not proof of internal model causation."
+        }
+      },
+      {
+        "attempt": 2,
+        "status": "accepted",
+        "feedback": null,
+        "selectedFirstIdea": {
+          "title": "Pipeline drift has no single, proven starting point",
+          "description": "The earliest visible departure from the intended company-first hierarchy varies across runs: it appears in Idea, Synthesis, or Narrative. Narrative is the most recurrent first visible hierarchy shift in the reviewed records, but the evidence does not establish it—or any other stage—as a universal root cause.",
+          "audience": "People reviewing Nuëyon.Compose pipeline experiments and stage-level outputs.",
+          "rationale": "The report’s central diagnostic value is locating where departures become observable without overstating what that localization proves.",
+          "evidence": "The report identifies Idea drift in Experiment 008 A-001 and A-003, Synthesis drift in Experiment 007 candidate 003, and recurrent Narrative shifts in other runs. Experiment 007 has no Idea or Research extracts, so those stages cannot be assessed for its runs. Experiment 009 baseline 001 has a reported Compose factual failure, but the earlier chain remains company-first and its downstream hierarchy score is 2/2; this is not evidence of a Compose-first hierarchy departure. These are observed departures, not proof of internal model causation."
+        }
+      }
+    ],
+    "selectedFirstIdea": {
+      "title": "Pipeline drift has no single, proven starting point",
+      "description": "The earliest visible departure from the intended company-first hierarchy varies across runs: it appears in Idea, Synthesis, or Narrative. Narrative is the most recurrent first visible hierarchy shift in the reviewed records, but the evidence does not establish it—or any other stage—as a universal root cause.",
+      "audience": "People reviewing Nuëyon.Compose pipeline experiments and stage-level outputs.",
+      "rationale": "The report’s central diagnostic value is locating where departures become observable without overstating what that localization proves.",
+      "evidence": "The report identifies Idea drift in Experiment 008 A-001 and A-003, Synthesis drift in Experiment 007 candidate 003, and recurrent Narrative shifts in other runs. Experiment 007 has no Idea or Research extracts, so those stages cannot be assessed for its runs. Experiment 009 baseline 001 has a reported Compose factual failure, but the earlier chain remains company-first and its downstream hierarchy score is 2/2; this is not evidence of a Compose-first hierarchy departure. These are observed departures, not proof of internal model causation."
+    },
+    "independentReview": {
+      "research": "GO na herstel; eerste poging NO-GO wegens verwarring feitelijke fout/hierarchie",
+      "angle": "PASS: geen enkel bewezen startpunt, specifiek diagnostisch verhaal",
+      "interventionPriority": "PASS: geen automatische Narrative-prioriteit of beloofde opbrengst",
+      "editorialIntent": "PASS na herstel: lokalisatie en bewijsgrenzen centraal",
+      "causality": "PASS: zichtbaarheid wordt geen universele oorzaak"
+    },
+    "gpt5miniSimplified": {
+      "independentReview": {
+        "fidelity": "FAIL",
+        "reason": "Narrative als “locus to target” en correctieve trial/guardrails als evidence-supported intervention worden generiek gekozen. Bron maakt die keuze afhankelijk van bewijs voor de gekozen afwijking en inspectie van upstream Synthesis; root-causevoorbehoud in evidence maakt deze prioriteit niet brongetrouw.",
+        "research": "NO",
+        "angle": "PASS"
+      },
+      "selectedFirstIdea": {
+        "title": "Narrative is the most frequent visible breaking point for company-first hierarchy",
+        "description": "Across experiments 007–009 the Narrative stage most often shows the first observable editorial shift away from the requested company-first introduction, turning upstream company positioning into an orchestration/product-led story. The angle explores why Narrative is the recurrent locus to target for correction or controlled testing.",
+        "audience": "Product/content leads, prompt-engineering experiment designers, evaluation engineers working on Nuëyon.Compose workflows.",
+        "rationale": "The report documents that Narrative is repeatedly the earliest visible stage that departs from the intended company-first hierarchy. Focusing a corrective trial or guardrails on Narrative is a targeted, evidence-supported intervention that avoids assuming Idea is always the origin. Communicating this helps prioritize experiments and evaluation instrumentation.",
+        "evidence": "Facts from the source: “Narrative is the most recurrent first visible hierarchy shift in the available records.” The report lists Narrative as the first observable shift in multiple runs: Experiment 007 candidates 001–002; Experiment 008 A-002; Experiment 009 baseline 002/003 and candidates 001–003. Inference: because Narrative is repeatedly the first visible shift, testing or constraining Narrative is a reasonable next experimental locus. Unknown: whether Narrative is the root cause (it may inherit upstream priming from Idea or Synthesis) or merely the first stage where the divergence becomes observable."
+      },
+      "logicalCalls": 2,
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "accepted",
+          "feedback": null
+        }
+      ],
+      "status": "accepted",
+      "exitCode": 0,
+      "repairs": 0,
+      "generations": 1,
+      "judgeCalls": 1,
+      "seconds": 24.7857856,
+      "id": "010-Simplified"
+    }
+  }
+]
