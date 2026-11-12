@@ -1,0 +1,19 @@
+{
+  "accepted": false,
+  "blockingIssues": [
+    {
+      "category": "evidenceCoverage",
+      "researchLocation": "Research Facts 2\u20135, 13\u201315, and 27; synthesisInput Facts 2\u20135, 13\u201315, and 27",
+      "problem": "The research and its projection report the intended hierarchy and the candidate\u2019s observed failure, but omit a material qualification about the actual Synthesis: it also described orchestration as central. The source says this internal tension may have reinforced the technical angle, which bears on interpreting why the candidate failed to preserve the intended hierarchy.",
+      "sourceQuote": "The baseline Synthesis pairs company identity with Compose in its top-level emphasis, but also contains a later description calling orchestration \u201Ccentral to the product direction.\u201D That internal tension may have reinforced the technical angle.",
+      "constraint": "Retain the observed hierarchy failures and outcome, while noting that the supplied Synthesis itself contained this conflicting emphasis and that the source identifies it as a possible contributing factor."
+    },
+    {
+      "category": "evidenceCoverage",
+      "researchLocation": "Research Facts 16\u201321 and 27; synthesisInput Facts 16\u201321 and 27",
+      "problem": "The reported score comparisons are central evidence for the decision, but the research and projection omit the source\u2019s qualification that the scores were subjective rubric-based judgments. This leaves an important limitation on how to interpret the reported means.",
+      "sourceQuote": "Subjective scores are based on the saved outputs and the explicit rubric above.",
+      "constraint": "Keep the reported scores and outcome, but identify the scores as subjective judgments based on the stated rubric; do not imply they are automated measurements."
+    }
+  ]
+}

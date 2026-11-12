@@ -1,0 +1,14 @@
+{
+  "input": {
+    "content": "# Component inspection comparison\nA supplier reviewed three shipments using two independent acceptance dimensions: dimensional tolerance and surface finish. Shipment Larch met tolerance on all 40 inspected components but 6 had surface scratches; it failed finish acceptance. Shipment Birch had no scratches among 40 inspected components but 4 were outside tolerance; it failed dimensional acceptance. Shipment Hazel passed both dimensions on all 40 inspected components. Passing one dimension does not imply passing the other.\nInspectors selected accessible top-layer components rather than a random sample of the shipments. No counts for uninspected lower layers are available. The supplier replaced packing foam after Larch, but Birch also used a different machining batch; no isolated foam-effect test was done.\nThe report recommends a randomized deeper inspection before changing the acceptance rule. This recommendation has not been tested. It does not recommend dropping either dimension. A separate label-printing delay affected Hazel delivery timing, not either inspected quality dimension."
+  },
+  "selectedIdea": {
+    "idea": {
+      "title": "Why two acceptance dimensions must remain separate",
+      "description": "Use the contrasting shipments to explain separate dimensions and the limits of the sample and proposed follow-up.",
+      "audience": "People interpreting the documented observations.",
+      "rationale": "Separate supported observations from stronger conclusions and preserve the relevant contrast.",
+      "evidence": "Larch and Birch failed for the same reason; the foam change solved shipment quality."
+    }
+  }
+}

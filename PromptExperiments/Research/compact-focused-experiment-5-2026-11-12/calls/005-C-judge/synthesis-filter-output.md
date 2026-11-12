@@ -1,0 +1,17 @@
+### Facts
+
+1. The candidate added a generic “Preserve Editorial Intent from the Synthesis” section to the Narrative user prompt; all other prompt files and workflow inputs remained identical. The experiment states no Research, Synthesis, Compose, Idea, configuration, or C# file was changed (“Prompt change”; “Repository and baseline verification”).
+2. The comparison reused three baseline runs from 2026-11-03 and ran three candidate trials on 2026-11-04 with the same commit, source input, prompt snapshots other than the changed prompt, model alias (`gpt-5-mini`), and workflow settings (“Controlled comparison and configuration”).
+3. Under the experiment’s 0–2 rubric, candidate Narrative runs all scored 0 for theme hierarchy (C) and factual/editorial restraint (D); their mean total was 4.00/10, versus 6.00/10 for baseline. Candidate A scores were 1 in all three runs, versus baseline 2 in all three (“Narrative outputs”; “Analysis against the required criteria”). These are experiment scores, not objective measurements.
+4. Candidate Compose runs also all scored 0 for C and D. Their mean total was 3.33/10, versus 5.67/10 for baseline (“Final Compose outputs”).
+5. The experiment reports that all candidate Narrative runs made orchestration central and added unsupported framing, including validation intent or commitment, an audience such as founders/product leaders/builders, or a need for coordinated AI. Candidate Compose runs likewise failed the hierarchy and restraint gates; examples included validation-before-expansion, founders/product leaders, and technical architecture/validation framing (“Analysis against the required criteria”; “Final Compose outputs”).
+6. Candidate prose was rated readable and coherent (4/5 for both stages), but the experiment found no improvement on those ratings; candidate source-fidelity ratings were 2/5 (“Run scores”; “Analysis against the required criteria”).
+7. The experiment’s decision was not to promote the candidate. It reports that production Narrative user prompt was restored byte-for-byte to the baseline; the restored SHA-256 matched the frozen baseline (“Decision”; “Rollback verification”).
+8. The source notes that baseline Synthesis paired company identity with Compose in its top-level emphasis, but later called orchestration “central to the product direction,” an internal tension that may have reinforced the technical angle (“Analysis against the required criteria”).
+9. Limitations recorded by the experiment: three runs per condition do not establish statistical significance; no seed or temperature override was available; the provider may change the backend behind the model alias; and Idea and Research outputs vary between runs. The scores are described as subjective judgments based on saved outputs and the rubric (“Limitations”; “Scoring rubric”).
+
+### Unknowns
+
+- The results do not establish that the prompt change alone caused the observed differences or that it will fail in other settings. The small sample, lack of controlled seed/temperature, possible provider-backend changes, and run-to-run Idea/Research variation limit that inference (Facts 2, 9).
+- The rubric scores are editorial judgments; the source provides no independent or automated validation of those ratings (Facts 3–6, 9).
+- The experiment did not change Synthesis, so it does not establish whether resolving the stated tension in Synthesis would improve hierarchy fidelity (Fact 8).

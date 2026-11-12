@@ -1,0 +1,69 @@
+{
+  "A": {
+    "calls": 6,
+    "input": 67707,
+    "cached": 13730,
+    "cacheWrite": 53959,
+    "output": 10953,
+    "reasoning": 5812,
+    "total": 78660,
+    "successes": 4,
+    "sensitivitySuccesses": 5,
+    "equalWeighted": 78660,
+    "output4Weighted": 111519,
+    "tokensPerSuccess": 19665,
+    "output4PerSuccess": 27879.75
+  },
+  "B": {
+    "calls": 6,
+    "input": 13432,
+    "cached": 0,
+    "cacheWrite": 11334,
+    "output": 6529,
+    "reasoning": 2189,
+    "total": 19961,
+    "successes": 6,
+    "equalWeighted": 19961,
+    "output4Weighted": 39548,
+    "tokensPerSuccess": 3326.8333333333335,
+    "output4PerSuccess": 6591.333333333333
+  },
+  "C": {
+    "calls": 12,
+    "input": 36664,
+    "cached": 0,
+    "cacheWrite": 34548,
+    "output": 8957,
+    "reasoning": 4467,
+    "total": 45621,
+    "successes": 6,
+    "extraSuccesses": 0,
+    "equalWeighted": 45621,
+    "output4Weighted": 72492,
+    "tokensPerSuccess": 7603.5,
+    "output4PerSuccess": 12082
+  },
+  "savings": {
+    "BvsAGenerationTokens": 0.7462369692346809,
+    "BvsAOutput4": 0.6453698472905962,
+    "COverBTokens": 1.2855067381393717
+  },
+  "calibration": {
+    "calls": 6,
+    "input": 37282,
+    "cached": 0,
+    "cacheWrite": 37264,
+    "output": 6363,
+    "reasoning": 5868,
+    "total": 43645
+  },
+  "repair": {
+    "calls": 2,
+    "input": 11206,
+    "cached": 0,
+    "cacheWrite": 11200,
+    "output": 2573,
+    "reasoning": 1450,
+    "total": 13779
+  }
+}

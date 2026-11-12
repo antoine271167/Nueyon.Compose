@@ -1,0 +1,433 @@
+{
+  "A": {
+    "calls": 6,
+    "input": 67707,
+    "cached": 13730,
+    "cacheWrite": 53959,
+    "output": 10953,
+    "reasoning": 5812,
+    "total": 78660,
+    "successes": 4,
+    "sensitivitySuccesses": 5,
+    "equalWeighted": 78660,
+    "output4Weighted": 111519,
+    "tokensPerSuccess": 19665,
+    "output4PerSuccess": 27879.75
+  },
+  "B": {
+    "calls": 6,
+    "input": 13432,
+    "cached": 0,
+    "cacheWrite": 11334,
+    "output": 6529,
+    "reasoning": 2189,
+    "total": 19961,
+    "successes": 6,
+    "equalWeighted": 19961,
+    "output4Weighted": 39548,
+    "tokensPerSuccess": 3326.8333333333335,
+    "output4PerSuccess": 6591.333333333333
+  },
+  "C": {
+    "calls": 12,
+    "input": 36664,
+    "cached": 0,
+    "cacheWrite": 34548,
+    "output": 8957,
+    "reasoning": 4467,
+    "total": 45621,
+    "successes": 6,
+    "extraSuccesses": 0,
+    "equalWeighted": 45621,
+    "output4Weighted": 72492,
+    "tokensPerSuccess": 7603.5,
+    "output4PerSuccess": 12082
+  },
+  "calibration": {
+    "calls": 6,
+    "input": 37282,
+    "cached": 0,
+    "cacheWrite": 37264,
+    "output": 6363,
+    "reasoning": 5868,
+    "total": 43645
+  },
+  "historicalRepair": {
+    "calls": 2,
+    "input": 11206,
+    "cached": 0,
+    "cacheWrite": 11200,
+    "output": 2573,
+    "reasoning": 1450,
+    "total": 13779
+  },
+  "actualUniqueUsage": {
+    "input": 152859,
+    "cached": 13730,
+    "cacheWrite": 136971,
+    "output": 28846,
+    "reasoning": 17597,
+    "total": 181705
+  },
+  "actualCalls": 26,
+  "hardMax": 42,
+  "unused": 16,
+  "generation": {
+    "evaluator": "Dezelfde assistent die protocol en nieuwe synthetische bronnen opstelde; ongeblindeerd. Nieuwe generaties direct gelezen, niet afgeleid uit Judge-verdicts. Geen onafhankelijke menselijke referentielabels.",
+    "dimensionOrder": [
+      "sourceFidelity",
+      "materialCoverage",
+      "epistemicConsistency",
+      "actualProjectionUsability"
+    ],
+    "rows": [
+      {
+        "case": "intro",
+        "arm": "A",
+        "scores": [
+          2,
+          2,
+          0,
+          0
+        ],
+        "passed": false,
+        "confidence": "medium",
+        "labelCoverage": [
+          true,
+          true,
+          true
+        ],
+        "reason": "Facts 9/12 bewaren eerste concrete product/uitdrukking, maar laatste Unknown ontkent een bronvastgesteld causal relationship tussen ambitie en keuze. Development sequence noemt de gehele relationship UNKNOWN. Bron sectie 11 geeft expliciet because it gives the broader vision a concrete expression als reden voor de eerste stap. Dit reduceert ondersteunde rationale te breed tot onbekend; de Unknown bereikt Synthesis. Empirisch causaal effect blijft terecht onbewezen. Ambiguïteit van causal relationship expliciet in sensitiviteitsanalyse: bij eng empirische lezing A hier alsnog pass."
+      },
+      {
+        "case": "intro",
+        "arm": "B",
+        "scores": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "passed": true,
+        "confidence": "high",
+        "labelCoverage": [
+          true,
+          true,
+          true
+        ],
+        "reason": "Facts 1–6 bewaren ambitie/audience, eerste concrete uitdrukking, ontwikkelstatus portfolio/operating model en niet-finaliseerde commerciële details; Unknowns beperken alleen onbewezen adoptie, effect en levering. Expliciete bronbetekenis wordt niet ontkend."
+      },
+      {
+        "case": "005",
+        "arm": "A",
+        "scores": [
+          2,
+          0,
+          1,
+          0
+        ],
+        "passed": false,
+        "confidence": "high",
+        "labelCoverage": [
+          true,
+          false,
+          false,
+          true
+        ],
+        "reason": "Uitkomsten en Synthesis-spanning trouw; concrete Idea/Research-variatie ontbreekt in het gehele resultaat. Datums staan alleen in Development sequence en verdwijnen in echte projectie; backendonzekerheid blijft wel behouden. Algemene onbekende oorzaak vervangt de expliciete attributiebeperking niet. Geen correcte Fact onwaar genoemd."
+      },
+      {
+        "case": "005",
+        "arm": "B",
+        "scores": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "passed": true,
+        "confidence": "high",
+        "labelCoverage": [
+          true,
+          true,
+          true,
+          true
+        ],
+        "reason": "Facts 2/9 en Unknown 1 bewaren datums, veranderlijke backend en Idea/Research-variatie naast de uitkomsten. Fact 8 en Unknown 3 bewaren Synthesis-spanning zonder bewezen effect. Alles essentieel staat in Facts/Unknowns."
+      },
+      {
+        "case": "010",
+        "arm": "A",
+        "scores": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "passed": true,
+        "confidence": "high",
+        "labelCoverage": [
+          true,
+          true,
+          true
+        ],
+        "reason": "Facts 3/4 bewaren artefactgrens; Facts 5–18 verschillende lokalisaties en expliciete Compose-feitfout met company-first eerdere keten en score 2/2. Geen universele/causale oorsprong geclaimd. Alle essentiële verschillen in projectie."
+      },
+      {
+        "case": "010",
+        "arm": "B",
+        "scores": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "passed": true,
+        "confidence": "high",
+        "labelCoverage": [
+          true,
+          true,
+          true
+        ],
+        "reason": "Facts 1–8 en Unknowns behouden variatie, observatiegrens, ontbrekende extracten en Compose-feitfout versus behouden hiërarchie; geen interne of interventiecausaliteit verzonnen."
+      },
+      {
+        "case": "reservoir",
+        "arm": "A",
+        "scores": [
+          2,
+          2,
+          1,
+          2
+        ],
+        "passed": true,
+        "confidence": "high",
+        "labelCoverage": [
+          true,
+          true,
+          true,
+          true
+        ],
+        "reason": "Alle meetcondities en West-context behouden. Kleine precisiebeperking: Unknown formuleert het ontbrekende April-aantal als below the May threshold in plaats van het broninterval 1.8–2.0; Fact 7 en dezelfde Unknown noemen wel exact het ontbrekende interval. Geen materiële verwarring of causale conclusie."
+      },
+      {
+        "case": "reservoir",
+        "arm": "B",
+        "scores": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "passed": true,
+        "confidence": "high",
+        "labelCoverage": [
+          true,
+          true,
+          true,
+          true
+        ],
+        "reason": "Facts 1–5 omvatten aantallen, demand/threshold, ontbrekende heranalyse en West-tegenproef inclusief separate pump en geen randomized control. Sensor blijft plan. Verkeerde Idea.Evidence niet overgenomen."
+      },
+      {
+        "case": "translation",
+        "arm": "A",
+        "scores": [
+          2,
+          2,
+          1,
+          2
+        ],
+        "passed": true,
+        "confidence": "high",
+        "labelCoverage": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "reason": "Alle betekenis/effect-, sampling- en nauwkeurigheidscontrastpunten behouden. Unknown over onbekende reden voor herzieningen is overmatig voorzichtig bij after staff found incorrect opening hours, maar behoudt de expliciete volgorde en fouten; geen essentiële bronbetekenis ontkend."
+      },
+      {
+        "case": "translation",
+        "arm": "B",
+        "scores": [
+          1,
+          2,
+          2,
+          2
+        ],
+        "passed": true,
+        "confidence": "high",
+        "labelCoverage": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "reason": "Alle essentiële informatie zit in Facts/Unknowns, met onderscheid toegeschreven betekenis, onbewezen effect en verschillende fouten. Development sequence voegt it then supplied en feedback during the pilot toe zonder expliciete datering; kleine ongefundeerde chronologie, geen materieel labelverlies en deze sectie gaat niet naar Synthesis. Niet foutloos noemen."
+      },
+      {
+        "case": "inspection",
+        "arm": "A",
+        "scores": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "passed": true,
+        "confidence": "high",
+        "labelCoverage": [
+          true,
+          true,
+          true,
+          true
+        ],
+        "reason": "Alle dimensionele contrasten, samplinggrens, confounding en ongeteste aanbeveling blijven behouden. Volgorde van presentatie correct onderscheiden van bewezen chronologie. Idea-fouten niet overgenomen."
+      },
+      {
+        "case": "inspection",
+        "arm": "B",
+        "scores": [
+          1,
+          2,
+          2,
+          2
+        ],
+        "passed": true,
+        "confidence": "high",
+        "labelCoverage": [
+          true,
+          true,
+          true,
+          true
+        ],
+        "reason": "Projectie bevat alle twee-dimensiecontrasten en beperkingen; eerste Unknown corrigeert onware Idea-claim in plaats van deze te herhalen. Development sequence suggereert met then een ongedateerde volgorde van aanbeveling; kleine niet-materiële precisiebeperking buiten projectie."
+      }
+    ],
+    "sensitivity": "Strikt: A 4/6, B 6/6. Bij eng empirische lezing van Intro-A causal relationship: A 5/6, B 6/6. B kent in beide lezingen geen materiële regressie tegenover geslaagd A. De aanvullende niet-materiële chronologieproblemen tellen als score 1, niet als achteraf toegevoegd faalcriterium."
+  },
+  "judgeAndRepair": {
+    "naturalB": {
+      "qualitativelyPassed": 6,
+      "accepted": 6,
+      "validVerdicts": 6,
+      "falseRejectsObserved": 0,
+      "materiallyBadInputs": 0,
+      "falseAcceptanceRate": "Niet schatbaar: alle zes B-inputs slagen onder de rubric.",
+      "repairs": 0,
+      "rescues": 0
+    },
+    "historical": [
+      {
+        "case": "intro",
+        "variant": "bad",
+        "expected": "reject",
+        "actual": "accept",
+        "valid": true,
+        "targetDetected": false,
+        "reason": "Te brede Unknown 4 over expliciete concrete-expression-betekenis bereikt de projectie; Judge accepteert zonder issues."
+      },
+      {
+        "case": "intro",
+        "variant": "correct",
+        "expected": "accept",
+        "actual": "accept",
+        "valid": true
+      },
+      {
+        "case": "005",
+        "variant": "bad",
+        "expected": "reject",
+        "actual": "reject",
+        "valid": true,
+        "targetDetected": false,
+        "otherMaterialIssueDetected": true,
+        "reason": "Synthesis-spanning terecht als materiële omissie geïdentificeerd met letterlijk en inhoudelijk passend bronanker. De tweede diagnose over ontbreken van subjective is brongetrouw maar als zelfstandige blocker betwistbaar: bestaande Facts schrijven de scores al aan de bron toe en claimen geen geautomatiseerde meting. Het vooraf gedefinieerde hoofddoel Idea/Research-variatie wordt niet genoemd."
+      },
+      {
+        "case": "005",
+        "variant": "correct",
+        "expected": "accept",
+        "actual": "accept",
+        "valid": true
+      },
+      {
+        "case": "010",
+        "variant": "bad",
+        "expected": "reject",
+        "actual": "accept",
+        "valid": true,
+        "targetDetected": false,
+        "reason": "Compose-feitfout naast behouden eerdere company-first-keten ontbreekt; Judge accepteert."
+      },
+      {
+        "case": "010",
+        "variant": "correct",
+        "expected": "accept",
+        "actual": "accept",
+        "valid": true
+      }
+    ],
+    "repairs": [
+      {
+        "case": "005",
+        "lane": "historical",
+        "attempts": 1,
+        "rejudgeAccepted": true,
+        "scoresBefore": [
+          2,
+          0,
+          1,
+          0
+        ],
+        "scoresAfter": [
+          2,
+          0,
+          1,
+          0
+        ],
+        "labelsBefore": [
+          true,
+          false,
+          false,
+          false
+        ],
+        "labelsAfter": [
+          true,
+          false,
+          true,
+          true
+        ],
+        "diagnosedIssuesResolved": true,
+        "qualitativelyPassed": false,
+        "newMaterialRegressions": false,
+        "strictRepairSuccess": false,
+        "reason": "Fact 4 voegt Synthesis-spanning toe; Fact 8 kwalificeert subjectieve scores; Fact 12 brengt datums naar Facts/projectie. Resultaten, rubricuitkomsten, onzekerheid, rollback en causaliteitsgrenzen behouden. Idea/Research-variatie blijft geheel afwezig, dus geen kwalitatief geslaagde reparatie ondanks geldige acceptatie. Scores blijven 0 op materiële dekking/projectie: binaire 0 verbergt gedeeltelijke verbetering, daarom labeldekking afzonderlijk. Compressie 30 naar 12 Facts verwijdert exacte modelnaam en instructiedetails, maar geen materieel referentiecomponent; geen nieuwe materiële fout gevonden. Het bekende hoofddoel was niet in feedback genoemd; de proef toont geen herstelvermogen voor dat ongediagnosticeerde doel."
+      }
+    ],
+    "historicalTargetHits": 0,
+    "historicalTargets": 3,
+    "historicalAnyMaterialRejects": 1,
+    "historicalCorrectAccepted": 3,
+    "validHistoricalVerdicts": 6,
+    "decisionC": "NO-GO: calibratie, natuurlijke rescue, extra successen en kosten per succes falen; geen bewijs dat een Judge altijd waardeloos is."
+  },
+  "money": {
+    "verifiedTariffsAvailable": false,
+    "formula": "USD = ((input-cached)*p_input + cached*p_cached + output*p_output + cacheWrite*p_write_surcharge)/1000000; cache-write charging must be verified with provider, not assumed.",
+    "weightedUnits": "I+O and I+4O are sensitivity proxies, not actual USD/EUR."
+  },
+  "decision": {
+    "B": "GO uitsluitend voor onafhankelijke vervolgproef, geen promotie",
+    "C": "NO-GO"
+  },
+  "savings": {
+    "BvsAGenerationTokens": 0.7462369692346809,
+    "BvsAOutput4": 0.6453698472905962,
+    "COverBTokens": 1.2855067381393717
+  }
+}

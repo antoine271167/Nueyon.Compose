@@ -1,0 +1,9 @@
+const fs=require('fs'),path=require('path');const out=__dirname,read=n=>JSON.parse(fs.readFileSync(path.join(out,n))),usage=read('usage.json');
+const sum=pred=>usage.ledger.filter(pred).reduce((a,v)=>{a.calls++;for(const k of ['input','cached','cacheWrite','output','reasoning','total'])a[k]+=v[k];return a;},{calls:0,input:0,cached:0,cacheWrite:0,output:0,reasoning:0,total:0});
+const a=sum(v=>v.id.endsWith('-A')),b=sum(v=>v.id.endsWith('-B')),j=sum(v=>v.id.includes('-C-judge')),cal=sum(v=>/-cal-(bad|correct)$/.test(v.id)),repair=sum(v=>/-cal-(repair|rejudge)$/.test(v.id));
+const c=Object.fromEntries(Object.keys(b).map(k=>[k,b[k]+j[k]]));
+const result={A:{...a,successes:4,sensitivitySuccesses:5},B:{...b,successes:6},C:{...c,successes:6,extraSuccesses:0},calibration:cal,historicalRepair:repair,actualUniqueUsage:usage.total,actualCalls:usage.calls,hardMax:42,unused:42-usage.calls,generation:read('generation-assessments.json'),judgeAndRepair:read('judge-repair-assessments.json'),money:{verifiedTariffsAvailable:false,formula:'USD = ((input-cached)*p_input + cached*p_cached + output*p_output + cacheWrite*p_write_surcharge)/1000000; cache-write charging must be verified with provider, not assumed.',weightedUnits:'I+O and I+4O are sensitivity proxies, not actual USD/EUR.'},decision:{B:'GO uitsluitend voor onafhankelijke vervolgproef, geen promotie',C:'NO-GO'}};
+for(const arm of ['A','B','C']){const r=result[arm];r.equalWeighted=r.input+r.output;r.output4Weighted=r.input+4*r.output;r.tokensPerSuccess=r.total/r.successes;r.output4PerSuccess=r.output4Weighted/r.successes;}
+result.savings={BvsAGenerationTokens:1-b.total/a.total,BvsAOutput4:1-result.B.output4Weighted/result.A.output4Weighted,COverBTokens:c.total/b.total-1};
+fs.writeFileSync(path.join(out,'results.json'),JSON.stringify(result,null,2));
+console.log(JSON.stringify({A:result.A,B:result.B,C:result.C,savings:result.savings,calibration:cal,repair},null,2));

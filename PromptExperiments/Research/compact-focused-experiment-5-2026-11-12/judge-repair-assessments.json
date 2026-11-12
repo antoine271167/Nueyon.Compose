@@ -1,0 +1,16 @@
+{
+  "naturalB": {"qualitativelyPassed":6,"accepted":6,"validVerdicts":6,"falseRejectsObserved":0,"materiallyBadInputs":0,"falseAcceptanceRate":"Niet schatbaar: alle zes B-inputs slagen onder de rubric.","repairs":0,"rescues":0},
+  "historical": [
+    {"case":"intro","variant":"bad","expected":"reject","actual":"accept","valid":true,"targetDetected":false,"reason":"Te brede Unknown 4 over expliciete concrete-expression-betekenis bereikt de projectie; Judge accepteert zonder issues."},
+    {"case":"intro","variant":"correct","expected":"accept","actual":"accept","valid":true},
+    {"case":"005","variant":"bad","expected":"reject","actual":"reject","valid":true,"targetDetected":false,"otherMaterialIssueDetected":true,"reason":"Synthesis-spanning terecht als materiële omissie geïdentificeerd met letterlijk en inhoudelijk passend bronanker. De tweede diagnose over ontbreken van subjective is brongetrouw maar als zelfstandige blocker betwistbaar: bestaande Facts schrijven de scores al aan de bron toe en claimen geen geautomatiseerde meting. Het vooraf gedefinieerde hoofddoel Idea/Research-variatie wordt niet genoemd."},
+    {"case":"005","variant":"correct","expected":"accept","actual":"accept","valid":true},
+    {"case":"010","variant":"bad","expected":"reject","actual":"accept","valid":true,"targetDetected":false,"reason":"Compose-feitfout naast behouden eerdere company-first-keten ontbreekt; Judge accepteert."},
+    {"case":"010","variant":"correct","expected":"accept","actual":"accept","valid":true}
+  ],
+  "repairs": [
+    {"case":"005","lane":"historical","attempts":1,"rejudgeAccepted":true,"scoresBefore":[2,0,1,0],"scoresAfter":[2,0,1,0],"labelsBefore":[true,false,false,false],"labelsAfter":[true,false,true,true],"diagnosedIssuesResolved":true,"qualitativelyPassed":false,"newMaterialRegressions":false,"strictRepairSuccess":false,"reason":"Fact 4 voegt Synthesis-spanning toe; Fact 8 kwalificeert subjectieve scores; Fact 12 brengt datums naar Facts/projectie. Resultaten, rubricuitkomsten, onzekerheid, rollback en causaliteitsgrenzen behouden. Idea/Research-variatie blijft geheel afwezig, dus geen kwalitatief geslaagde reparatie ondanks geldige acceptatie. Scores blijven 0 op materiële dekking/projectie: binaire 0 verbergt gedeeltelijke verbetering, daarom labeldekking afzonderlijk. Compressie 30 naar 12 Facts verwijdert exacte modelnaam en instructiedetails, maar geen materieel referentiecomponent; geen nieuwe materiële fout gevonden. Het bekende hoofddoel was niet in feedback genoemd; de proef toont geen herstelvermogen voor dat ongediagnosticeerde doel."}
+  ],
+  "historicalTargetHits":0,"historicalTargets":3,"historicalAnyMaterialRejects":1,"historicalCorrectAccepted":3,"validHistoricalVerdicts":6,
+  "decisionC":"NO-GO: calibratie, natuurlijke rescue, extra successen en kosten per succes falen; geen bewijs dat een Judge altijd waardeloos is."
+}

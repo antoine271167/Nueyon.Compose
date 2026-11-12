@@ -1,0 +1,14 @@
+{
+  "Input": {
+    "Content": "# Reservoir operations note\nDuring May, the East reservoir used a new valve schedule and recorded 8 pressure alerts in 20 operating days. In April it recorded 14 alerts in 20 operating days under the earlier schedule. May also had 30% lower industrial demand and a different alert threshold: 1.8 bar instead of 2.0 bar. The note does not report how many April alerts fell between 1.8 and 2.0 bar.\nThe West reservoir retained the earlier valve schedule and the 2.0 bar threshold in both months; alerts there fell from 12 to 7 while demand fell 28%. It is supplied by a separate pump, so West is contextual contrary evidence, not a randomized control.\nThe operations team described the May East schedule as a promising operational trial, not an established improvement. No randomized assignment or threshold-adjusted reanalysis was performed. Maintenance costs and water quality were not measured.\nA new remote sensor is planned for July; it was not installed during either month."
+  },
+  "SelectedIdea": {
+    "Idea": {
+      "Title": "What the alert decline can tell an operations team",
+      "Description": "Compare the reported East decline with the measurement changes and West observation; distinguish the observed counts from the effectiveness of the new schedule.",
+      "Audience": "People interpreting the documented observations.",
+      "Rationale": "Separate supported observations from stronger conclusions and preserve the relevant contrast.",
+      "Evidence": "The East trial proves the schedule reduced pressure alerts."
+    }
+  }
+}

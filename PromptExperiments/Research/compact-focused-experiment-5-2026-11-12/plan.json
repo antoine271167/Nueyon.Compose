@@ -1,0 +1,22 @@
+{
+  "ids": [
+    "intro",
+    "005",
+    "010",
+    "reservoir",
+    "translation",
+    "inspection"
+  ],
+  "maxCalls": 42,
+  "retries": 0,
+  "maxOutputTokens": 5000,
+  "maxRequestUtf8Bytes": 96000,
+  "stages": [
+    "generation:12 alternating A/B",
+    "candidate judges:6",
+    "calibration judges:6",
+    "candidate repairs and rejudges:0..12",
+    "historical bad repairs and rejudges:0..6"
+  ],
+  "pairedC": "C reuses B initial output; charge B generation to C standalone total"
+}
