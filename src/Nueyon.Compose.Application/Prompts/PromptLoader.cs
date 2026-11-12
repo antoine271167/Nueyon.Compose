@@ -23,7 +23,7 @@ internal static partial class PromptLoader
     /// <summary>
     ///     Loads a prompt template as UTF-8 text.
     /// </summary>
-    /// <param name="promptPath">Path relative to the Prompts directory, e.g. "Idea/Idea.system.prompt.txt".</param>
+    /// <param name="promptPath">Path relative to the Prompts directory, e.g. "Idea/Idea.system.prompt.md".</param>
     /// <exception cref="FileNotFoundException">Thrown when the prompt is not embedded in the assembly.</exception>
     public static string Load(string promptPath)
     {

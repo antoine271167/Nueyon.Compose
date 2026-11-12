@@ -142,7 +142,7 @@ public static class CliContracts
         structural = new { requiredNonEmptyFields = new[] { "title", "description", "audience", "rationale" } },
         semantic = new { enabled = true, judge = "IdeaSemanticJudge", blocking = true },
         maxAttempts = IdeaValidationLoopEvaluator.MaxAttempts,
-        prompts = "Idea/*.prompt.txt"
+        prompts = "Idea/*.prompt.md"
     };
 
     private static readonly object _contractValidation = new

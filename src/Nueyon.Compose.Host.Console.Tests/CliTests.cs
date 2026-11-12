@@ -270,6 +270,36 @@ public sealed class CliTests
     }
 
     [Fact]
+    public async Task IncompleteMarkdownPromptSetFailsBeforeRuntime()
+    {
+        using var directory = new TempDirectory();
+        var prompts = Path.Combine(directory.Path, "prompts");
+        CreatePromptSet(prompts);
+        await File.WriteAllTextAsync(directory.Input, """{"content":"source"}""");
+        var files = Directory.GetFiles(prompts, "*.prompt.md", SearchOption.AllDirectories);
+        Assert.Equal(12, files.Length);
+
+        foreach (var file in files)
+        {
+            File.Move(file, file + ".missing");
+            try
+            {
+                var (code, _, error) = await InvokeWith(Services(_ => throw new InvalidOperationException(
+                        "An incomplete prompt set must fail before execution.")),
+                    "run", "idea", "--input", directory.Input, "--output", directory.Output,
+                    "--prompts", prompts);
+                Assert.Equal(2, code);
+                Assert.Contains("Input error: Prompt file is missing", error);
+                Assert.Contains(file, error);
+            }
+            finally
+            {
+                File.Move(file + ".missing", file);
+            }
+        }
+    }
+
+    [Fact]
     public void PromptSourceFollowsPrecedence()
     {
         using var root = new TempDirectory();

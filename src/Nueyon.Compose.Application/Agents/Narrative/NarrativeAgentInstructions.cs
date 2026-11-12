@@ -11,5 +11,5 @@ internal static class NarrativeAgentInstructions
     ///     Gets the system instructions used to configure the underlying AI agent.
     /// </summary>
     public static string GetSystemInstructions() =>
-        PromptLoader.Load("Narrative/Narrative.system.prompt.txt");
+        PromptLoader.Load("Narrative/Narrative.system.prompt.md");
 }

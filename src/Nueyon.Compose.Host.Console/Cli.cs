@@ -541,7 +541,7 @@ public static class Cli
                          .Where(n => n.StartsWith(prefix, StringComparison.Ordinal)))
             {
                 // Resource names flatten directories into dots. By convention a file name starts with its area
-                // name (Idea/IdeaValidation.system.prompt.txt), which marks where the file name begins.
+                // name (Idea/IdeaValidation.system.prompt.md), which marks where the file name begins.
                 var parts = resource[prefix.Length..].Split('.');
                 var start = Math.Max(1,
                     Array.FindIndex(parts, 1, p => p.StartsWith(parts[0], StringComparison.Ordinal)));

@@ -126,7 +126,9 @@ capture nor trace is enabled by default. Result and trace paths must not exist;
 files are written via a temporary file and an atomic no-overwrite move. Capture
 files also never overwrite existing files.
 
-Both runtime commands accept `--prompts <dir>` for a complete prompt tree. It is
+Both runtime commands accept `--prompts <dir>` for a complete prompt tree made up
+of `*.prompt.md` files in the Idea, Research, Synthesis, Narrative, and Compose
+directories. External overrides must use these filenames too. Validation is
 strict: every embedded prompt, including the Idea judge prompt, must exist there;
 no disk/embedded mixing occurs, and an explicit directory never falls back. The single production tree contains no profile subdirectories. Without an explicit override, the host uses
 `src\Nueyon.Compose.Application\Prompts` when launched from the repository root,

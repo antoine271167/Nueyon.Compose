@@ -454,17 +454,17 @@ public sealed class IdeaProductionWorkflowTests
     [Fact]
     public void Prompts_UseProductionPaths()
     {
-        Assert.Equal(PromptLoader.Load("Idea/Idea.system.prompt.txt"), IdeaAgent.GetSystemInstructions());
-        Assert.Equal(PromptLoader.Load("Idea/IdeaValidation.system.prompt.txt"),
+        Assert.Equal(PromptLoader.Load("Idea/Idea.system.prompt.md"), IdeaAgent.GetSystemInstructions());
+        Assert.Equal(PromptLoader.Load("Idea/IdeaValidation.system.prompt.md"),
             IdeaSemanticJudge.GetSystemInstructions());
-        Assert.Equal(PromptLoader.Render("Idea/Idea.user.prompt.txt", ("SourceContent", "S")),
+        Assert.Equal(PromptLoader.Render("Idea/Idea.user.prompt.md", ("SourceContent", "S")),
             IdeaPrompts.GeneratorUser("S"));
     }
 
     [Theory]
-    [InlineData("Idea.system.prompt.txt", "252D8B75EC2A13E9A05FBF0CD3E047DB5F22F7F8300BF768F9A615DAED75C697")]
-    [InlineData("Idea.user.prompt.txt", "59A7B36E5497FF1BE1D29E0544F9A32686FE76BB09730AB29CF239C475693B26")]
-    [InlineData("IdeaValidation.system.prompt.txt", "F5E3DA8BFF4D599BE3C0D4622AB92AFA38716309789CD5F80B124A2655765A3B")]
+    [InlineData("Idea.system.prompt.md", "252D8B75EC2A13E9A05FBF0CD3E047DB5F22F7F8300BF768F9A615DAED75C697")]
+    [InlineData("Idea.user.prompt.md", "59A7B36E5497FF1BE1D29E0544F9A32686FE76BB09730AB29CF239C475693B26")]
+    [InlineData("IdeaValidation.system.prompt.md", "F5E3DA8BFF4D599BE3C0D4622AB92AFA38716309789CD5F80B124A2655765A3B")]
     public void EmbeddedPrompts_MatchAcceptedBytes(string file, string expectedHash)
     {
         using var stream = typeof(IdeaAgent).Assembly.GetManifestResourceStream(
@@ -480,14 +480,14 @@ public sealed class IdeaProductionWorkflowTests
         Directory.CreateDirectory(Path.Combine(directory, "Idea"));
         try
         {
-            File.WriteAllText(Path.Combine(directory, "Idea", "Idea.system.prompt.txt"), "disk system");
+            File.WriteAllText(Path.Combine(directory, "Idea", "Idea.system.prompt.md"), "disk system");
             using (PromptDirectory.Use(directory))
             {
                 Assert.Equal("disk system", IdeaAgent.GetSystemInstructions());
                 Assert.Throws<FileNotFoundException>(() => IdeaPrompts.GeneratorUser("S"));
                 Assert.Throws<FileNotFoundException>(IdeaSemanticJudge.GetSystemInstructions);
-                File.WriteAllText(Path.Combine(directory, "Idea", "Idea.user.prompt.txt"), "disk {{SourceContent}}");
-                File.WriteAllText(Path.Combine(directory, "Idea", "IdeaValidation.system.prompt.txt"), "disk judge");
+                File.WriteAllText(Path.Combine(directory, "Idea", "Idea.user.prompt.md"), "disk {{SourceContent}}");
+                File.WriteAllText(Path.Combine(directory, "Idea", "IdeaValidation.system.prompt.md"), "disk judge");
                 Assert.Equal("disk S", IdeaPrompts.GeneratorUser("S"));
                 Assert.Equal("disk judge", IdeaSemanticJudge.GetSystemInstructions());
             }
@@ -511,7 +511,7 @@ public sealed class IdeaProductionWorkflowTests
             Assert.Contains(token, judge);
         }
 
-        var user = PromptLoader.Load("Idea/Idea.user.prompt.txt");
+        var user = PromptLoader.Load("Idea/Idea.user.prompt.md");
         Assert.Contains("{{SourceContent}}", user);
         Assert.Contains("strongest first", user);
     }

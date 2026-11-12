@@ -11,5 +11,5 @@ internal static class SynthesizerAgentInstructions
     ///     Gets the system instructions used to configure the underlying AI agent.
     /// </summary>
     public static string GetSystemInstructions() =>
-        PromptLoader.Load("Synthesis/Synthesis.system.prompt.txt");
+        PromptLoader.Load("Synthesis/Synthesis.system.prompt.md");
 }

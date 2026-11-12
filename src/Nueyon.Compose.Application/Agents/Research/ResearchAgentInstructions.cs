@@ -11,5 +11,5 @@ internal static class ResearchAgentInstructions
     ///     Gets the system instructions used to configure the underlying AI agent.
     /// </summary>
     public static string GetSystemInstructions() =>
-        PromptLoader.Load("Research/Research.system.prompt.txt");
+        PromptLoader.Load("Research/Research.system.prompt.md");
 }

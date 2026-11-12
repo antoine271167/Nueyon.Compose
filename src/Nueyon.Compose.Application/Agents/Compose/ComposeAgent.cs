@@ -100,14 +100,14 @@ public sealed class ComposeAgent(
 
     private static string CreateArticleUserMessage(ComposeInput input) =>
         PromptLoader.Render(
-            "Compose/Compose.article.user.prompt.txt",
+            "Compose/Compose.article.user.prompt.md",
             ("Format", input.Composition.Format.ToString()),
             ("NarrativeContent", input.Narrative.Content));
 
 
     private static string CreateLinkedInPostUserMessage(ComposeInput input) =>
         PromptLoader.Render(
-            "Compose/Compose.linkedin.user.prompt.txt",
+            "Compose/Compose.linkedin.user.prompt.md",
             ("Format", input.Composition.Format.ToString()),
             ("NarrativeContent", input.Narrative.Content));
 

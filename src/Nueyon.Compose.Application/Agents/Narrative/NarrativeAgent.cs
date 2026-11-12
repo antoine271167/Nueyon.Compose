@@ -87,7 +87,7 @@ public sealed class NarrativeAgent(
 
     private static string CreateUserMessage(NarrativeInput input) =>
         PromptLoader.Render(
-            "Narrative/Narrative.user.prompt.txt",
+            "Narrative/Narrative.user.prompt.md",
             ("IdeaTitle", input.SelectedIdea.Title),
             ("IdeaDescription", input.SelectedIdea.Description),
             ("IdeaAudience", input.SelectedIdea.Audience),

@@ -87,7 +87,7 @@ public sealed class SynthesizerAgent(
 
     private static string CreateUserMessage(SynthesisInput input) =>
         PromptLoader.Render(
-            "Synthesis/Synthesis.user.prompt.txt",
+            "Synthesis/Synthesis.user.prompt.md",
             ("IdeaTitle", input.SelectedIdea.Title),
             ("IdeaDescription", input.SelectedIdea.Description),
             ("IdeaAudience", input.SelectedIdea.Audience),

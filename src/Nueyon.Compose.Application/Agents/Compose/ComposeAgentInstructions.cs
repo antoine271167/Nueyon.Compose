@@ -11,5 +11,5 @@ internal static class ComposeAgentInstructions
     ///     Gets the system instructions used to configure the underlying AI agent.
     /// </summary>
     public static string GetSystemInstructions() =>
-        PromptLoader.Load("Compose/Compose.system.prompt.txt");
+        PromptLoader.Load("Compose/Compose.system.prompt.md");
 }

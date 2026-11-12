@@ -31,7 +31,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<None Include="..\Nueyon.Compose.Application\Prompts\**\*.prompt.txt">
+		<None Include="..\Nueyon.Compose.Application\Prompts\**\*.prompt.md">
 			<Link>Prompts\%(RecursiveDir)%(Filename)%(Extension)</Link>
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 			<CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>

@@ -102,7 +102,7 @@ public sealed class ResearchAgent : IAgent<ResearchInput, ResearchResult>
         var idea = input.SelectedIdea.Idea;
 
         return PromptLoader.Render(
-            "Research/Research.user.prompt.txt",
+            "Research/Research.user.prompt.md",
             ("SourceContent", input.Input.Content),
             ("IdeaTitle", idea.Title),
             ("IdeaDescription", idea.Description),

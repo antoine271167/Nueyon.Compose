@@ -12,31 +12,32 @@ public void DirectoryScope_UsesDiskStrictlyAndRestoresEmbeddedPrompts()
     Directory.CreateDirectory(Path.Combine(directory, "Idea"));
     try
     {
-        File.WriteAllText(Path.Combine(directory, "Idea", "Idea.system.prompt.txt"), "disk prompt");
-        var embedded = PromptLoader.Load("Idea/Idea.system.prompt.txt");
+        File.WriteAllText(Path.Combine(directory, "Idea", "Idea.system.prompt.md"), "disk prompt");
+        var embedded = PromptLoader.Load("Idea/Idea.system.prompt.md");
         using (PromptDirectory.Use(directory))
         {
-            Assert.Equal("disk prompt", PromptLoader.Load("Idea/Idea.system.prompt.txt"));
-            Assert.Throws<FileNotFoundException>(() => PromptLoader.Load("Idea/Idea.user.prompt.txt"));
+            Assert.Equal("disk prompt", PromptLoader.Load("Idea/Idea.system.prompt.md"));
+            Assert.Throws<FileNotFoundException>(() => PromptLoader.Load("Idea/Idea.user.prompt.md"));
         }
-        Assert.Equal(embedded, PromptLoader.Load("Idea/Idea.system.prompt.txt"));
+        Assert.Equal(embedded, PromptLoader.Load("Idea/Idea.system.prompt.md"));
     }
     finally { Directory.Delete(directory, true); }
 }
 
     public static IEnumerable<object[]> AllPrompts =>
     [
-        ["Idea/Idea.system.prompt.txt"],
-        ["Idea/Idea.user.prompt.txt"],
-        ["Research/Research.system.prompt.txt"],
-        ["Research/Research.user.prompt.txt"],
-        ["Synthesis/Synthesis.system.prompt.txt"],
-        ["Synthesis/Synthesis.user.prompt.txt"],
-        ["Narrative/Narrative.system.prompt.txt"],
-        ["Narrative/Narrative.user.prompt.txt"],
-        ["Compose/Compose.system.prompt.txt"],
-        ["Compose/Compose.article.user.prompt.txt"],
-        ["Compose/Compose.linkedin.user.prompt.txt"]
+        ["Idea/Idea.system.prompt.md"],
+        ["Idea/Idea.user.prompt.md"],
+        ["Idea/IdeaValidation.system.prompt.md"],
+        ["Research/Research.system.prompt.md"],
+        ["Research/Research.user.prompt.md"],
+        ["Synthesis/Synthesis.system.prompt.md"],
+        ["Synthesis/Synthesis.user.prompt.md"],
+        ["Narrative/Narrative.system.prompt.md"],
+        ["Narrative/Narrative.user.prompt.md"],
+        ["Compose/Compose.system.prompt.md"],
+        ["Compose/Compose.article.user.prompt.md"],
+        ["Compose/Compose.linkedin.user.prompt.md"]
     ];
 
     [Theory]
@@ -50,23 +51,23 @@ public void DirectoryScope_UsesDiskStrictlyAndRestoresEmbeddedPrompts()
     public void Load_BackslashSeparatedPath_ReturnsSameTextAsForwardSlash()
     {
         Assert.Equal(
-            PromptLoader.Load("Idea/Idea.system.prompt.txt"),
-            PromptLoader.Load("Idea\\Idea.system.prompt.txt"));
+            PromptLoader.Load("Idea/Idea.system.prompt.md"),
+            PromptLoader.Load("Idea\\Idea.system.prompt.md"));
     }
 
     [Fact]
     public void Load_MissingPrompt_ThrowsWithPromptPath()
     {
-        var ex = Assert.Throws<FileNotFoundException>(() => PromptLoader.Load("Idea/Missing.prompt.txt"));
+        var ex = Assert.Throws<FileNotFoundException>(() => PromptLoader.Load("Idea/Missing.prompt.md"));
 
-        Assert.Contains("Idea/Missing.prompt.txt", ex.Message);
+        Assert.Contains("Idea/Missing.prompt.md", ex.Message);
     }
 
     [Fact]
     public void Render_MissingTokenValue_Throws()
     {
         var ex = Assert.Throws<InvalidOperationException>(() =>
-            PromptLoader.Render("Idea/Idea.user.prompt.txt"));
+            PromptLoader.Render("Idea/Idea.user.prompt.md"));
 
         Assert.Contains("SourceContent", ex.Message);
     }
@@ -75,14 +76,14 @@ public void DirectoryScope_UsesDiskStrictlyAndRestoresEmbeddedPrompts()
     public void Render_UnusedSuppliedToken_Throws()
     {
         Assert.Throws<InvalidOperationException>(() =>
-            PromptLoader.Render("Idea/Idea.user.prompt.txt", ("SourceContent", "x"), ("Other", "y")));
+            PromptLoader.Render("Idea/Idea.user.prompt.md", ("SourceContent", "x"), ("Other", "y")));
     }
 
     [Fact]
     public void Render_DuplicateSuppliedToken_Throws()
     {
         var ex = Assert.Throws<ArgumentException>(() =>
-            PromptLoader.Render("Idea/Idea.user.prompt.txt", ("SourceContent", "a"), ("SourceContent", "b")));
+            PromptLoader.Render("Idea/Idea.user.prompt.md", ("SourceContent", "a"), ("SourceContent", "b")));
 
         Assert.Contains("SourceContent", ex.Message);
     }
@@ -92,7 +93,7 @@ public void DirectoryScope_UsesDiskStrictlyAndRestoresEmbeddedPrompts()
     {
         const string value = "{\"a\": 1}\n# Nu\u00EByon {{SourceContent}} {x}\r\n**md**";
 
-        var result = PromptLoader.Render("Idea/Idea.user.prompt.txt", ("SourceContent", value));
+        var result = PromptLoader.Render("Idea/Idea.user.prompt.md", ("SourceContent", value));
 
         Assert.Contains(value, result);
     }
@@ -101,7 +102,7 @@ public void DirectoryScope_UsesDiskStrictlyAndRestoresEmbeddedPrompts()
     public void Render_ValueContainingDifferentTokenLikeText_IsKeptLiterally()
     {
         var result = PromptLoader.Render(
-            "Idea/Idea.user.prompt.txt",
+            "Idea/Idea.user.prompt.md",
             ("SourceContent", "before {{UnexpectedToken}} after"));
 
         Assert.Contains("before {{UnexpectedToken}} after", result);
@@ -110,9 +111,9 @@ public void DirectoryScope_UsesDiskStrictlyAndRestoresEmbeddedPrompts()
     [Fact]
     public void Render_ValueContainingOwnTokenName_IsNotReExpanded()
     {
-        var template = PromptLoader.Load("Idea/Idea.user.prompt.txt");
+        var template = PromptLoader.Load("Idea/Idea.user.prompt.md");
 
-        var result = PromptLoader.Render("Idea/Idea.user.prompt.txt", ("SourceContent", "{{SourceContent}}"));
+        var result = PromptLoader.Render("Idea/Idea.user.prompt.md", ("SourceContent", "{{SourceContent}}"));
 
         Assert.Equal(template, result);
     }
@@ -127,17 +128,17 @@ public void DirectoryScope_UsesDiskStrictlyAndRestoresEmbeddedPrompts()
     public void RenderTemplate_UnsupportedPlaceholderName_ThrowsNamingPromptAndExpression(string name)
     {
         var ex = Assert.Throws<InvalidOperationException>(() =>
-            PromptLoader.RenderTemplate("X/Test.prompt.txt", "a {{" + name + "}} b"));
+            PromptLoader.RenderTemplate("X/Test.prompt.md", "a {{" + name + "}} b"));
 
         Assert.Contains("{{" + name + "}}", ex.Message);
-        Assert.Contains("X/Test.prompt.txt", ex.Message);
+        Assert.Contains("X/Test.prompt.md", ex.Message);
     }
 
     [Fact]
     public void RenderTemplate_JsonAndSingleBraces_AreOrdinaryText()
     {
         var result = PromptLoader.RenderTemplate(
-            "X/Test.prompt.txt",
+            "X/Test.prompt.md",
             "{\"a\": {\"b\": 1}} {x} {{Name}}",
             ("Name", "v"));
 
@@ -148,7 +149,7 @@ public void DirectoryScope_UsesDiskStrictlyAndRestoresEmbeddedPrompts()
     public void RenderTemplate_ValueWithUnsupportedPlaceholderText_IsNotRejected()
     {
         var result = PromptLoader.RenderTemplate(
-            "X/Test.prompt.txt",
+            "X/Test.prompt.md",
             "{{Name}}",
             ("Name", "{{input.Content}} {{A_B}}"));
 
@@ -163,7 +164,7 @@ public void DirectoryScope_UsesDiskStrictlyAndRestoresEmbeddedPrompts()
     [InlineData("{{Name}}")]
     public void RenderTemplate_ValueWithTokenLikeText_IsPreservedLiterally(string value)
     {
-        var result = PromptLoader.RenderTemplate("X/Test.prompt.txt", "a {{Name}} b", ("Name", value));
+        var result = PromptLoader.RenderTemplate("X/Test.prompt.md", "a {{Name}} b", ("Name", value));
 
         Assert.Equal("a " + value + " b", result);
     }
@@ -174,14 +175,14 @@ public void DirectoryScope_UsesDiskStrictlyAndRestoresEmbeddedPrompts()
     [InlineData("{{Token123}}", "Token123", "v")]
     public void RenderTemplate_ValidPlaceholder_IsReplaced(string template, string name, string value)
     {
-        Assert.Equal(value, PromptLoader.RenderTemplate("X/Test.prompt.txt", template, (name, value)));
+        Assert.Equal(value, PromptLoader.RenderTemplate("X/Test.prompt.md", template, (name, value)));
     }
 
     [Fact]
     public void Render_TokenRepeatedInTemplate_ReplacesEveryOccurrence()
     {
         var result = PromptLoader.Render(
-            "Compose/Compose.linkedin.user.prompt.txt",
+            "Compose/Compose.linkedin.user.prompt.md",
             ("Format", "FMT-MARKER"),
             ("NarrativeContent", "narrative"));
 
@@ -192,7 +193,7 @@ public void DirectoryScope_UsesDiskStrictlyAndRestoresEmbeddedPrompts()
     public void Render_AllTokensSupplied_LeavesNoUnresolvedTokens()
     {
         var result = PromptLoader.Render(
-            "Compose/Compose.linkedin.user.prompt.txt",
+            "Compose/Compose.linkedin.user.prompt.md",
             ("Format", "LinkedInPost"),
             ("NarrativeContent", "narrative"));
 
