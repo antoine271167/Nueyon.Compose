@@ -1,0 +1,7 @@
+{
+  "title": "A reusable editorial rule did not preserve the intended hierarchy",
+  "description": "In this comparison, adding a generic instruction to preserve Synthesis’s editorial intent did not keep the company-level message primary. All three candidate Narrative runs made orchestration central and introduced unsupported framing; all three Compose runs also failed the hierarchy and factual-restraint gates. The candidate scored lower on average in both stages, so it was not promoted and the production prompt was restored. This is evidence about these runs, not proof that the rule will fail in every setting.",
+  "audience": "People designing or evaluating multi-stage AI editorial workflows.",
+  "rationale": "The experiment tests a specific prompt intervention against explicit editorial criteria and records a clear decision. It also shows why a prompt change should be judged by whether it preserves the intended message, not just whether the output reads smoothly.",
+  "evidence": "Fact: The candidate changed only the Narrative user prompt; candidate Narrative and Compose mean scores were lower than baseline, and every candidate run failed the orchestration-hierarchy and factual-restraint gates. The decision was not to promote, and the production prompt was restored byte-for-byte. Inference: The generic rule was insufficient to protect the intended hierarchy in this test. Unknown: Three runs per condition do not establish statistical significance or general performance across settings."
+}
