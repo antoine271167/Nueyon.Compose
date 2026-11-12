@@ -1,0 +1,815 @@
+[
+  {
+    "id": "intro-map",
+    "pair": "intro",
+    "variant": "map",
+    "arm": "map",
+    "finishReason": "stop",
+    "parserValid": false,
+    "content": {
+      "items": [
+        {
+          "id": "I1",
+          "kind": "claim",
+          "proposition": "NuEbyon describes itself as an emerging AI-first software company aiming to build tools, products, and knowledge for other AI-first businesses, with an intended portfolio extending beyond one application.",
+          "sourceFragmentIds": [
+            "F0006",
+            "F0008",
+            "F0012"
+          ],
+          "materiality": "Establishes the broad company ambition and intended audience that make the first product a starting point rather than the whole vision.",
+          "boundary": "States an ambition and intended direction, not an established portfolio or demonstrated business outcome."
+        },
+        {
+          "id": "I2",
+          "kind": "claim",
+          "proposition": "The intended direction is reusable products and capabilities for a broader audience, rather than primarily traditional consultancy or bespoke software for individual clients.",
+          "sourceFragmentIds": [
+            "F0014",
+            "F0040"
+          ],
+          "materiality": "Clarifies the product-oriented character of the company vision.",
+          "boundary": "Does not establish a finalized commercial model, customer segment, or distribution strategy."
+        },
+        {
+          "id": "I3",
+          "kind": "claim",
+          "proposition": "NuEbyon is at an early stage; NuEbyon.Compose is its first concrete product direction, while the broader portfolio and operating model remain under development.",
+          "sourceFragmentIds": [
+            "F0016",
+            "F0060"
+          ],
+          "materiality": "Anchors the broad ambition in one concrete starting point while preserving the distinction between the company vision and its first product direction.",
+          "boundary": "Does not establish that Compose is commercially available or that other products are implemented."
+        },
+        {
+          "id": "I4",
+          "kind": "claim",
+          "proposition": "NuEbyon identifies other AI-first companies—businesses placing AI at the center of products, operations, or business models—as its intended audience, and aims to provide them with tools, capabilities, and knowledge.",
+          "sourceFragmentIds": [
+            "F0036",
+            "F0038"
+          ],
+          "materiality": "Supports describing whom the company intends to serve.",
+          "boundary": "An intended audience is not evidence of customers, market validation, or established demand."
+        },
+        {
+          "id": "I5",
+          "kind": "claim",
+          "proposition": "Compose is designed to turn ideas and accumulated knowledge into useful, well-structured content through an AI-native orchestration workflow, organized as Idea → Discover and Select → Research → Synthesize → Narrative → Compose.",
+          "sourceFragmentIds": [
+            "F0062",
+            "F0066",
+            "F0068",
+            "F0072",
+            "F0073",
+            "F0074",
+            "F0075",
+            "F0076",
+            "F0077"
+          ],
+          "materiality": "Makes the first product direction specific and shows how it relates to the broader ambition.",
+          "boundary": "Describes the product's purpose and designed stages; it does not show that every stage is implemented or that the workflow has demonstrated effectiveness."
+        },
+        {
+          "id": "I6",
+          "kind": "explicitMeaning",
+          "proposition": "The source attributes a content-integrity role to Compose's staged process: content should come from researched and organized source material; upstream stages shape what can truthfully be said, while composition shapes how that material is presented.",
+          "sourceFragmentIds": [
+            "F0079",
+            "F0081"
+          ],
+          "materiality": "Preserves the stated distinction between developing/supporting content and presenting it.",
+          "boundary": "This is a stated process principle, not evidence that outputs are necessarily truthful, complete, or accurate."
+        },
+        {
+          "id": "I7",
+          "kind": "claim",
+          "proposition": "NuEbyon presents coordinated workflows and specialized agents as an architectural direction: complex tasks may be divided among agents with distinct responsibilities, coordinated by an orchestration layer; this approach is central to Compose's development.",
+          "sourceFragmentIds": [
+            "F0048",
+            "F0050",
+            "F0052",
+            "F0054"
+          ],
+          "materiality": "Supports describing orchestration as part of the product direction and its broader technical approach.",
+          "boundary": "The source characterizes an approach and development direction, not a measured advantage over other architectures."
+        },
+        {
+          "id": "I8",
+          "kind": "causalLimit",
+          "proposition": "The source says the strategic needs it identifies have not necessarily been validated and the proposed solutions have not demonstrated effectiveness; it also cautions that the architecture alone is not proof of superior performance, lower costs, or improved productivity.",
+          "sourceFragmentIds": [
+            "F0032",
+            "F0056"
+          ],
+          "materiality": "Prevents the stated rationale or architecture from being converted into claims of validated demand or proven benefits.",
+          "boundary": "Does not establish that the needs or solutions are ineffective; it states that validation or demonstrated effects are not claimed here."
+        },
+        {
+          "id": "I9",
+          "kind": "negativeControl",
+          "proposition": "The source says customer segments, commercial model, and distribution strategy are not finalized, and cautions against implying an established customer base or commercially available portfolio.",
+          "sourceFragmentIds": [
+            "F0042",
+            "F0044"
+          ],
+          "materiality": "Limits any account of the company's current market presence or commercial status.",
+          "boundary": "Does not prove that no customer conversations or other activity exist; it only says not to present an established base or available portfolio as fact."
+        },
+        {
+          "id": "I10",
+          "kind": "negativeControl",
+          "proposition": "Compose's current development focus is a deliberately narrow implementation of its core workflow; automatic publication is not part of the current implementation.",
+          "sourceFragmentIds": [
+            "F0085",
+            "F0179"
+          ],
+          "materiality": "Separates the product's intended content workflow and possible broader offering from current implementation scope.",
+          "boundary": "Does not specify exactly which workflow stages are implemented or imply that publication could never be added."
+        },
+        {
+          "id": "I11",
+          "kind": "claim",
+          "proposition": "The source lists additional directions—including broader content formats, agent orchestration, knowledge processing, social-media automation, CAD automation, and AI-supported entrepreneurship—as explored or potential portfolio areas.",
+          "sourceFragmentIds": [
+            "F0095",
+            "F0097",
+            "F0101",
+            "F0105",
+            "F0109",
+            "F0113",
+            "F0115",
+            "F0189",
+            "F0191"
+          ],
+          "materiality": "Supports the claim that the ambition could extend beyond Compose while preserving the exploratory status of the additional directions.",
+          "boundary": "These are not all implemented, commercially available, or committed products; the source explicitly treats them as possibilities requiring further development and validation."
+        },
+        {
+          "id": "I12",
+          "kind": "causalLimit",
+          "proposition": "The broader structured-knowledge concept has been explored in the content workflow, but its application across the company portfolio remains under development rather than an established company-wide capability.",
+          "sourceFragmentIds": [
+            "F0129"
+          ],
+          "materiality": "Limits how broadly knowledge capabilities can be attributed to NuEbyon today.",
+          "boundary": "Does not deny that a knowledge-layer concept has been explored within the content workflow."
+        },
+        {
+          "id": "I13",
+          "kind": "explicitMeaning",
+          "proposition": "NuEbyon's stated AI-first positioning has two dimensions: AI is intended to be fundamental to its products and central to how the company conceives, develops, and operates them. The stronger AI-only ambition has no defined operational meaning in the source.",
+          "sourceFragmentIds": [
+            "F0151",
+            "F0155",
+            "F0157",
+            "F0159"
+          ],
+          "materiality": "Clarifies the meaning and limits of the identity claim central to the company's positioning.",
+          "boundary": "Does not establish that all activities are already automated or that human involvement will be eliminated; the source explicitly cautions against those implications."
+        },
+        {
+          "id": "I14",
+          "kind": "claim",
+          "proposition": "The roadmap is described as development priorities, not a fixed release schedule: first focus on Compose, then explore expanded content and reusable capabilities, with a broader portfolio as a later possibility.",
+          "sourceFragmentIds": [
+            "F0165",
+            "F0167",
+            "F0169",
+            "F0171",
+            "F0175",
+            "F0183",
+            "F0189",
+            "F0193"
+          ],
+          "materiality": "Preserves the sequence and provisional character of the roadmap.",
+          "boundary": "No launch dates or commercial availability commitments are established."
+        },
+        {
+          "id": "I15",
+          "kind": "explicitMeaning",
+          "proposition": "NuEbyon describes its development principle as starting with a focused problem, establishing a working product, learning through development and use, and expanding when there is a clear reason; Compose is the first step giving the broader vision a concrete expression.",
+          "sourceFragmentIds": [
+            "F0197",
+            "F0199",
+            "F0203",
+            "F0205"
+          ],
+          "materiality": "Connects the focused product starting point to the broader ambition without treating every possible direction as inevitable.",
+          "boundary": "Describes an intended development principle, not a reported result of validated learning or a fixed commitment to expand."
+        }
+      ],
+      "ideaChecks": [
+        {
+          "proposition": "NuEbyon aims to build products and capabilities for other AI-first companies.",
+          "sourceItemIds": [
+            "I1",
+            "I4"
+          ],
+          "status": "supported"
+        },
+        {
+          "proposition": "NuEbyon's first concrete product direction is Compose, a structured workflow intended to turn ideas and accumulated knowledge into content.",
+          "sourceItemIds": [
+            "I3",
+            "I5"
+          ],
+          "status": "supported"
+        },
+        {
+          "proposition": "The broad company ambition is grounded in Compose without implying that the wider portfolio already exists.",
+          "sourceItemIds": [
+            "I1",
+            "I3",
+            "I10",
+            "I11",
+            "I14"
+          ],
+          "status": "supported"
+        }
+      ],
+      "limitations": [
+        "The source is a company-positioning brief describing intentions, proposed directions, and development priorities; it supplies no independent validation or measured product outcomes.",
+        "The source distinguishes Compose's intended workflow from its narrow current implementation but does not specify which individual workflow stages are already implemented.",
+        "The exact operational meaning of the AI-only ambition remains undefined in the source."
+      ]
+    }
+  },
+  {
+    "id": "005-map",
+    "pair": "005",
+    "variant": "map",
+    "arm": "map",
+    "finishReason": "stop",
+    "parserValid": false,
+    "content": {
+      "items": [
+        {
+          "id": "I1",
+          "kind": "explicitMeaning",
+          "proposition": "The experiment’s stated target hierarchy was a company introduction centered on Nuéyon’s AI-first ambition for other AI-first businesses, with Nuéyon.Compose as the first concrete product direction and orchestration as supporting explanation.",
+          "sourceFragmentIds": [
+            "F0008",
+            "F0038",
+            "F0039",
+            "F0040"
+          ],
+          "materiality": "Defines the editorial intent against which the intervention was judged.",
+          "boundary": "This is the experiment’s stated target and scoring rubric, not evidence that the underlying Synthesis consistently expressed that hierarchy."
+        },
+        {
+          "id": "I2",
+          "kind": "claim",
+          "proposition": "The candidate added a generic Narrative instruction to preserve Synthesis’s primary message, audience scope, relative emphasis, and uncertainty; it did not add Nuéyon-specific wording or story details. The candidate runs changed only the Narrative user prompt, with other prompts and workflow inputs held constant.",
+          "sourceFragmentIds": [
+            "F0030",
+            "F0022"
+          ],
+          "materiality": "Establishes what intervention was tested and the reported scope of the comparison.",
+          "boundary": "Does not establish that all influences on model output were identical or that the rule would work in other settings."
+        },
+        {
+          "id": "I3",
+          "kind": "claim",
+          "proposition": "In the three candidate Narrative runs, identity and audience primacy were incomplete (A=1 each), orchestration became central (C=0 each), and factual/editorial restraint failed (D=0 each). Candidate Narrative mean total was 4.00/10 versus 6.00/10 for baseline.",
+          "sourceFragmentIds": [
+            "F0052",
+            "F0053",
+            "F0054",
+            "F0055",
+            "F0056",
+            "F0057",
+            "F0059"
+          ],
+          "materiality": "Directly supports the finding that the candidate did not preserve the target hierarchy in these Narrative samples and scored lower on the rubric.",
+          "boundary": "Scores are editorial judgments under the stated rubric; the comparison does not establish universal prompt performance."
+        },
+        {
+          "id": "I4",
+          "kind": "claim",
+          "proposition": "All three candidate Compose runs made orchestration central (C=0) and failed the factual/editorial restraint gate (D=0); their mean total was 3.33/10 versus 5.67/10 for baseline. The report says the candidate outputs did not restore the intended hierarchy.",
+          "sourceFragmentIds": [
+            "F0065",
+            "F0066",
+            "F0067",
+            "F0068",
+            "F0069",
+            "F0070",
+            "F0072"
+          ],
+          "materiality": "Shows the downstream Compose outputs also failed the hierarchy and restraint criteria, with a lower reported mean.",
+          "boundary": "Does not isolate Compose as the cause: Compose received outputs from the full pipeline."
+        },
+        {
+          "id": "I5",
+          "kind": "claim",
+          "proposition": "The candidate retained the first-product-direction criterion more successfully than the hierarchy and restraint criteria: all three Narrative runs scored B=2, and Compose runs 1–2 scored B=2 while run 3 scored B=1.",
+          "sourceFragmentIds": [
+            "F0055",
+            "F0056",
+            "F0057",
+            "F0068",
+            "F0069",
+            "F0070",
+            "F0077"
+          ],
+          "materiality": "Preserves an independent dimension of partial success rather than treating every editorial criterion as a failure.",
+          "boundary": "Retention of Compose as a product direction does not mean it was consistently identified as the first concrete step in final Compose outputs or that the intended overall hierarchy was preserved."
+        },
+        {
+          "id": "I6",
+          "kind": "claim",
+          "proposition": "The report attributes unsupported additions to every candidate run: Narrative outputs included validation intent or commitment, expanded audience framing, or a need for coordinated AI; Compose outputs repeated or extended such additions. It identifies factual restraint as a hard failure gate.",
+          "sourceFragmentIds": [
+            "F0041",
+            "F0079"
+          ],
+          "materiality": "Supports the stated reason the candidate failed a separate promotion criterion, beyond hierarchy drift.",
+          "boundary": "The source summarizes the additions and does not provide the output text in these fragments for independent reassessment."
+        },
+        {
+          "id": "I7",
+          "kind": "counterexample",
+          "proposition": "The candidate did not reduce every measured quality: candidate Narrative and Compose outputs were generally rated readable and coherent (4/5), and the report says the change did not improve those qualities.",
+          "sourceFragmentIds": [
+            "F0059",
+            "F0072",
+            "F0081"
+          ],
+          "materiality": "Keeps readability and coherence distinct from source fidelity, hierarchy, and promotion outcomes.",
+          "boundary": "Readability and coherence ratings do not establish that the outputs were suitable, faithful, or improved overall."
+        },
+        {
+          "id": "I8",
+          "kind": "causalLimit",
+          "proposition": "The report notes an internal tension in baseline Synthesis: its top-level emphasis pairs company identity with Compose, but a later description calls orchestration central to the product direction. It says this tension may have reinforced the technical angle; Synthesis was not changed.",
+          "sourceFragmentIds": [
+            "F0084"
+          ],
+          "materiality": "Qualifies attribution of the hierarchy drift to the added Narrative rule alone and identifies a relevant upstream ambiguity.",
+          "boundary": "The source presents reinforcement as a possibility, not a demonstrated cause; it does not establish what would have happened with revised Synthesis."
+        },
+        {
+          "id": "I9",
+          "kind": "explicitMeaning",
+          "proposition": "The recorded decision was not to promote the candidate; the production Narrative user prompt was restored byte-for-byte to the baseline, with the restored hash reported as matching the frozen baseline.",
+          "sourceFragmentIds": [
+            "F0004",
+            "F0092",
+            "F0093"
+          ],
+          "materiality": "Establishes the operational outcome and rollback, not just the evaluative result.",
+          "boundary": "A rollback decision does not independently prove the candidate would fail in other contexts."
+        },
+        {
+          "id": "I10",
+          "kind": "causalLimit",
+          "proposition": "The baseline runs were from 2026-11-03 and candidate runs from 2026-11-04; the report notes a provider may change the backend behind the model alias. No seed or temperature override was available, and three runs per condition show consistency in these samples, not statistical significance. Scores are subjective judgments based on the rubric.",
+          "sourceFragmentIds": [
+            "F0098",
+            "F0099",
+            "F0102"
+          ],
+          "materiality": "Limits causal certainty, statistical interpretation, and generalization from the observed score differences.",
+          "boundary": "These limitations do not negate the reported sample outcomes; they constrain how broadly or causally they can be interpreted."
+        }
+      ],
+      "ideaChecks": [
+        {
+          "proposition": "A reusable editorial rule did not preserve the intended hierarchy in this comparison: all three candidate Narrative runs made orchestration central and introduced unsupported framing, and all three Compose runs failed the hierarchy and factual-restraint gates.",
+          "sourceItemIds": [
+            "I1",
+            "I3",
+            "I4",
+            "I6",
+            "I8"
+          ],
+          "status": "supported"
+        },
+        {
+          "proposition": "The candidate scored lower on average in both stages, was not promoted, and the production prompt was restored byte-for-byte.",
+          "sourceItemIds": [
+            "I3",
+            "I4",
+            "I9"
+          ],
+          "status": "supported"
+        },
+        {
+          "proposition": "This is evidence about these runs, not proof the rule will fail in every setting.",
+          "sourceItemIds": [
+            "I2",
+            "I8",
+            "I10"
+          ],
+          "status": "supported"
+        }
+      ],
+      "limitations": [
+        "The score comparisons are reported as subjective editorial judgments under an explicit rubric, not automated measurements.",
+        "The source reports the output-level patterns and summary of unsupported additions, but the cited fragments do not include full candidate output text for independent review.",
+        "The source says the candidate prompt was insufficient to protect the supplied editorial intent in this comparison; upstream Synthesis tension and possible backend variation leave the causal contribution of the prompt change less certain."
+      ]
+    }
+  },
+  {
+    "id": "010-map",
+    "pair": "010",
+    "variant": "map",
+    "arm": "map",
+    "finishReason": "stop",
+    "parserValid": false,
+    "content": {
+      "items": [
+        {
+          "id": "P1",
+          "kind": "claim",
+          "proposition": "The report locates the earliest visible departure at different stages in different runs: Idea in Experiment 008 A-001/A-003, Synthesis in Experiment 007 candidate 003, and Narrative in several other runs. It therefore describes variation, not one shared starting stage.",
+          "sourceFragmentIds": [
+            "F0019",
+            "F0039",
+            "F0045",
+            "F0057",
+            "F0059"
+          ],
+          "materiality": "This variation is the direct basis for the selected Idea that drift has no single observed starting point.",
+          "boundary": "These are localizations from reviewed artifacts, not proof of internal causes or a claim that every run or stage was completely observed."
+        },
+        {
+          "id": "P2",
+          "kind": "claim",
+          "proposition": "The report calls Narrative the “most recurrent first visible hierarchy shift” in the available records, while also noting shifts that begin in Idea or Synthesis and a reported Compose factual issue.",
+          "sourceFragmentIds": [
+            "F0068"
+          ],
+          "materiality": "It preserves Narrative’s recurrence without elevating it to a universal origin.",
+          "boundary": "Recurrence in these reviewed runs does not establish Narrative as a root cause or as the most frequent locus in a broader population."
+        },
+        {
+          "id": "P3",
+          "kind": "causalLimit",
+          "proposition": "The report defines “first drift” as the earliest observable departure, unsupported addition, or materially stronger claim, and explicitly says this “does not imply internal model causation.”",
+          "sourceFragmentIds": [
+            "F0027"
+          ],
+          "materiality": "Without this qualification, stage localization could be misread as evidence that a stage caused the downstream failure.",
+          "boundary": "The report does not establish why a departure appears at a stage or whether preceding stages contributed to it."
+        },
+        {
+          "id": "P4",
+          "kind": "causalLimit",
+          "proposition": "For Experiment 007, the diagnostic package has Synthesis, Narrative, and Compose extracts but no Idea or Research extracts; the report says localization is possible only from Synthesis onward.",
+          "sourceFragmentIds": [
+            "F0018"
+          ],
+          "materiality": "This missing evidence prevents a valid claim about the earliest drift in those runs before Synthesis.",
+          "boundary": "It does not show that Idea or Research were free of drift; those stages are unassessed in this package."
+        },
+        {
+          "id": "P5",
+          "kind": "counterexample",
+          "proposition": "Experiment 009 is reported as a case where all six selected Ideas kept Nuëyon primary and Compose as the first product direction, yet downstream issues included orchestration-centered framing and unsupported claims. The report also says all selected Ideas could look company-first while later stages reframed the story.",
+          "sourceFragmentIds": [
+            "F0020",
+            "F0067"
+          ],
+          "materiality": "This counters the inference that a company-first Idea guarantees the desired hierarchy throughout the pipeline.",
+          "boundary": "The report does not claim that every downstream stage fails whenever an Idea is company-first."
+        },
+        {
+          "id": "P6",
+          "kind": "negativeControl",
+          "proposition": "In Experiment 008 B runs, technical-first framing in Idea was the intended condition. The report distinguishes that expected framing from separate scope or factual breaches, and says the technical-order score is not an endorsement of a company introduction.",
+          "sourceFragmentIds": [
+            "F0027",
+            "F0046",
+            "F0048",
+            "F0050"
+          ],
+          "materiality": "This prevents intended technical-first outputs from being counted as evidence of unintended hierarchy drift in those conditions.",
+          "boundary": "Passing the B condition’s technical-order measure does not establish company-first fidelity, factual accuracy, or editorial quality."
+        },
+        {
+          "id": "P7",
+          "kind": "counterexample",
+          "proposition": "Experiment 009 baseline 001 is reported to have a factual failure in Compose (“reliably converts” was not established), while its earlier chain remained company-first and its downstream hierarchy score was 2/2.",
+          "sourceFragmentIds": [
+            "F0056"
+          ],
+          "materiality": "It demonstrates that factual failure and hierarchy failure can arise independently, and that a Compose factual breach is not itself a Compose-first hierarchy departure.",
+          "boundary": "This one run does not establish how common Compose-origin factual failures are."
+        },
+        {
+          "id": "P8",
+          "kind": "explicitMeaning",
+          "proposition": "The report distinguishes supported product facts from editorial priority: orchestration is supported as central to Compose’s design, while the requested company introduction prioritizes Nuëyon as an AI-first company and uses Compose as supporting product direction.",
+          "sourceFragmentIds": [
+            "F0021",
+            "F0070",
+            "F0071"
+          ],
+          "materiality": "This distinction clarifies why a technically supported statement can still depart from the requested company-first hierarchy.",
+          "boundary": "The report’s stated editorial priority does not make orchestration claims factually false or establish that every company introduction must use the same hierarchy."
+        },
+        {
+          "id": "P9",
+          "kind": "claim",
+          "proposition": "The report observes upstream format references in frozen Idea, Research, and Narrative prompts, despite the stated architecture that upstream stages remain format-independent and Compose determines LinkedIn presentation.",
+          "sourceFragmentIds": [
+            "F0023",
+            "F0078",
+            "F0079",
+            "F0080",
+            "F0081"
+          ],
+          "materiality": "The inconsistency is relevant as a separate architectural observation that could be mistaken for an established explanation of stage drift.",
+          "boundary": "Prompt references alone do not establish that format leakage affected any particular output."
+        },
+        {
+          "id": "P10",
+          "kind": "causalLimit",
+          "proposition": "The report characterizes upstream format references as a “plausible source of format priming” but explicitly says they do not demonstrate causing orchestration drift or a weak hook in a given run.",
+          "sourceFragmentIds": [
+            "F0023",
+            "F0086"
+          ],
+          "materiality": "It preserves the hypothesis while preventing it from being presented as a demonstrated cause.",
+          "boundary": "The report does not provide a controlled test isolating the effect of those references."
+        },
+        {
+          "id": "P11",
+          "kind": "causalLimit",
+          "proposition": "For Experiment 009, the saved evaluation does not formally assign a first-failure stage for each dimension; some localizations rely on named examples and stage-output inspection, and the baseline 003 factual precursor is specifically described as lower confidence.",
+          "sourceFragmentIds": [
+            "F0063"
+          ],
+          "materiality": "This qualifies precision claims about per-run localization, especially when factual and hierarchy departures are distinguished.",
+          "boundary": "The report still offers localizations, but does not present every one as an equally explicit evaluation finding."
+        },
+        {
+          "id": "P12",
+          "kind": "claim",
+          "proposition": "The report says editorial quality and factual/source fidelity are separate: outputs may be source-aligned yet dull or hard to read, and evaluations did not consistently apply a hook, readability, or attention rubric.",
+          "sourceFragmentIds": [
+            "F0022",
+            "F0072"
+          ],
+          "materiality": "It limits conclusions about overall success to the dimensions actually assessed and preserves editorial quality as a distinct dimension.",
+          "boundary": "The qualitative observations are not a consistent comparative score and do not establish that every reviewed output was weak."
+        }
+      ],
+      "ideaChecks": [
+        {
+          "proposition": "The earliest visible departure from the intended company-first hierarchy varies across reviewed runs (Idea, Synthesis, or Narrative); Narrative is the most recurrent first visible hierarchy shift, but the evidence establishes neither it nor another stage as a universal root cause.",
+          "sourceItemIds": [
+            "P1",
+            "P2",
+            "P3",
+            "P4",
+            "P5",
+            "P6",
+            "P7",
+            "P11"
+          ],
+          "status": "qualified"
+        }
+      ],
+      "limitations": [
+        "The map relies on the report’s summaries and cited artifact-review findings; the underlying run artifacts are not separately represented here.",
+        "Experiment 007 lacks Idea and Research extracts, and Experiment 009’s evaluation does not formally stage-assign every failure dimension; these constrain how confidently the earliest point can be identified.",
+        "“No single, proven starting point” is supported as a conclusion about the reviewed evidence, not as a claim that all possible runs or all pipeline configurations have been examined."
+      ]
+    }
+  },
+  {
+    "id": "intro-bad-without",
+    "pair": "intro",
+    "variant": "bad",
+    "arm": "without",
+    "finishReason": "stop",
+    "parserValid": true,
+    "content": {
+      "accepted": true,
+      "blockingIssues": []
+    },
+    "anchors": []
+  },
+  {
+    "id": "intro-bad-with",
+    "pair": "intro",
+    "variant": "bad",
+    "arm": "with",
+    "finishReason": "stop",
+    "parserValid": true,
+    "content": {
+      "accepted": false,
+      "blockingIssues": [
+        {
+          "category": "evidenceCoverage",
+          "researchLocation": "Facts 6–7; Unknowns",
+          "problem": "The projection includes the potentially AI-only positioning but omits the source’s explicit limit on what that means. Without noting that its operational meaning is undefined, the fact could support an unwarrantedly definite interpretation of the company’s operating model.",
+          "sourceQuote": "The broader AI-only ambition expresses a stronger version of this positioning, but its precise operational meaning has not yet been defined in the available source material.",
+          "constraint": "Keep AI-only framed as an ambition whose operational meaning is undefined; do not infer that all activities are automated or that human involvement will be eliminated."
+        }
+      ]
+    },
+    "anchors": [
+      {
+        "quote": "The broader AI-only ambition expresses a stronger version of this positioning, but its precise operational meaning has not yet been defined in the available source material.",
+        "exact": true
+      }
+    ]
+  },
+  {
+    "id": "intro-correct-with",
+    "pair": "intro",
+    "variant": "correct",
+    "arm": "with",
+    "finishReason": "stop",
+    "parserValid": false,
+    "content": {
+      "accepted": false,
+      "blockingIssues": [
+        {
+          "category": "evidenceCoverage",
+          "researchLocation": "synthesisInput: Facts 6–7; Unknowns",
+          "problem": "The projection records the AI-first and potentially AI-only labels but omits the source’s explanation of what AI-first is intended to mean, and that AI-only’s operational meaning is undefined. Because this projection is meant to support an account of the company’s identity, those qualifications matter to how the labels may be interpreted.",
+          "sourceQuote": "NuEbyon\u0019s intended positioning is that of a company built around AI rather than a conventional software company that adds AI as an additional feature.\n\nThis ambition has two related dimensions.\n\nFirst, AI is central to the products NuEbyon intends to build. The products should use AI as a fundamental capability to accomplish useful work.\n\nSecond, the company itself is intended to operate in an AI-first manner, using AI as a central part of how products are conceived, developed, and operated.\n\nThe broader AI-only ambition expresses a stronger version of this positioning, but its precise operational meaning has not yet been defined in the available source material.",
+          "constraint": "Preserve the source’s intended meaning of AI-first and state that AI-only’s operational meaning remains undefined; do not imply that the company already operates entirely through AI or without human involvement."
+        },
+        {
+          "category": "evidenceCoverage",
+          "researchLocation": "synthesisInput: Unknowns 3",
+          "problem": "The projection limits its effectiveness caveat to the broader portfolio. The source also explicitly says the company’s strategic premise is not evidence that identified needs have been validated or that proposed solutions have demonstrated effectiveness. Omitting that broader limit could leave the core product direction open to being represented as validated or effective when the source does not support that conclusion.",
+          "sourceQuote": "This is the strategic premise behind the company, not a claim that every identified need has already been validated or that the proposed solutions have demonstrated their effectiveness.",
+          "constraint": "Retain the source’s qualification that identified needs are not necessarily validated and proposed solutions are not shown here to be effective; do not assert a specific validation or effectiveness outcome."
+        }
+      ]
+    },
+    "anchors": [
+      {
+        "quote": "NuEbyon\u0019s intended positioning is that of a company built around AI rather than a conventional software company that adds AI as an additional feature.\n\nThis ambition has two related dimensions.\n\nFirst, AI is central to the products NuEbyon intends to build. The products should use AI as a fundamental capability to accomplish useful work.\n\nSecond, the company itself is intended to operate in an AI-first manner, using AI as a central part of how products are conceived, developed, and operated.\n\nThe broader AI-only ambition expresses a stronger version of this positioning, but its precise operational meaning has not yet been defined in the available source material.",
+        "exact": false
+      },
+      {
+        "quote": "This is the strategic premise behind the company, not a claim that every identified need has already been validated or that the proposed solutions have demonstrated their effectiveness.",
+        "exact": true
+      }
+    ]
+  },
+  {
+    "id": "intro-correct-without",
+    "pair": "intro",
+    "variant": "correct",
+    "arm": "without",
+    "finishReason": "stop",
+    "parserValid": true,
+    "content": {
+      "accepted": true,
+      "blockingIssues": []
+    },
+    "anchors": []
+  },
+  {
+    "id": "005-bad-without",
+    "pair": "005",
+    "variant": "bad",
+    "arm": "without",
+    "finishReason": "stop",
+    "parserValid": true,
+    "content": {
+      "accepted": false,
+      "blockingIssues": [
+        {
+          "category": "evidenceCoverage",
+          "researchLocation": "research.Facts and synthesisInput.Facts",
+          "problem": "The projection omits the source’s material qualification that the baseline Synthesis itself paired company identity with Compose while later calling orchestration “central.” This tension may have reinforced the technical angle, so readers need it to interpret the intended hierarchy and the observed failure without implying the prompt intervention was tested against an internally unambiguous Synthesis.",
+          "sourceQuote": "The baseline Synthesis pairs company identity with Compose in its top-level emphasis, but also contains a later description calling orchestration “central to the product direction.” That internal tension may have reinforced the technical angle.",
+          "constraint": "Include this source-reported tension and its tentative status as context; do not claim it caused the candidate results or negate the reported outcome."
+        },
+        {
+          "category": "evidenceCoverage",
+          "researchLocation": "research.Unknowns and synthesisInput.Unknowns",
+          "problem": "The projection notes that only the Narrative prompt changed, but omits that Idea and Research outputs varied between runs in this full-pipeline comparison. That variability is relevant to how strongly the observed differences can be attributed to the prompt change; fixed workflow inputs do not mean generated upstream outputs were identical.",
+          "sourceQuote": "Idea and Research outputs vary between runs. This is expected in the same full-pipeline comparison; all other stages and inputs were kept constant.",
+          "constraint": "Preserve the distinction between unchanged configured inputs and varying generated upstream outputs, without asserting that this variation explains the results."
+        }
+      ]
+    },
+    "anchors": [
+      {
+        "quote": "The baseline Synthesis pairs company identity with Compose in its top-level emphasis, but also contains a later description calling orchestration “central to the product direction.” That internal tension may have reinforced the technical angle.",
+        "exact": true
+      },
+      {
+        "quote": "Idea and Research outputs vary between runs. This is expected in the same full-pipeline comparison; all other stages and inputs were kept constant.",
+        "exact": true
+      }
+    ]
+  },
+  {
+    "id": "005-bad-with",
+    "pair": "005",
+    "variant": "bad",
+    "arm": "with",
+    "finishReason": "stop",
+    "parserValid": true,
+    "content": {
+      "accepted": true,
+      "blockingIssues": []
+    },
+    "anchors": []
+  },
+  {
+    "id": "005-correct-with",
+    "pair": "005",
+    "variant": "correct",
+    "arm": "with",
+    "finishReason": "stop",
+    "parserValid": true,
+    "content": {
+      "accepted": true,
+      "blockingIssues": []
+    },
+    "anchors": []
+  },
+  {
+    "id": "005-correct-without",
+    "pair": "005",
+    "variant": "correct",
+    "arm": "without",
+    "finishReason": "stop",
+    "parserValid": true,
+    "content": {
+      "accepted": true,
+      "blockingIssues": []
+    },
+    "anchors": []
+  },
+  {
+    "id": "010-bad-without",
+    "pair": "010",
+    "variant": "bad",
+    "arm": "without",
+    "finishReason": "stop",
+    "parserValid": true,
+    "content": {
+      "accepted": false,
+      "blockingIssues": [
+        {
+          "category": "evidenceCoverage",
+          "researchLocation": "synthesisInput Facts/Unknowns (also repeated in research.content)",
+          "problem": "The projection omits Experiment 009 baseline 001 as an important negative control: the source reports a Compose factual failure while the earlier chain remains company-first and hierarchy scores 2/2. This distinction matters to the selected idea’s focus on hierarchy departures, so the Compose factual failure must not be conflated with a Compose-first hierarchy shift.",
+          "sourceQuote": "Selected Idea and earlier chain remain company-first; the artifact’s score gives downstream hierarchy 2/2.",
+          "constraint": "Include this run as a factual-failure observation distinct from hierarchy drift, and preserve the reported 2/2 hierarchy score; do not count it as a hierarchy-shift stage."
+        }
+      ]
+    },
+    "anchors": [
+      {
+        "quote": "Selected Idea and earlier chain remain company-first; the artifact’s score gives downstream hierarchy 2/2.",
+        "exact": true
+      }
+    ]
+  },
+  {
+    "id": "010-bad-with",
+    "pair": "010",
+    "variant": "bad",
+    "arm": "with",
+    "finishReason": "stop",
+    "parserValid": true,
+    "content": {
+      "accepted": true,
+      "blockingIssues": []
+    },
+    "anchors": []
+  },
+  {
+    "id": "010-correct-with",
+    "pair": "010",
+    "variant": "correct",
+    "arm": "with",
+    "finishReason": "stop",
+    "parserValid": true,
+    "content": {
+      "accepted": true,
+      "blockingIssues": []
+    },
+    "anchors": []
+  },
+  {
+    "id": "010-correct-without",
+    "pair": "010",
+    "variant": "correct",
+    "arm": "without",
+    "finishReason": "stop",
+    "parserValid": true,
+    "content": {
+      "accepted": true,
+      "blockingIssues": []
+    },
+    "anchors": []
+  }
+]

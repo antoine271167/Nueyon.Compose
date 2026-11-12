@@ -1,0 +1,213 @@
+{
+  "items": [
+    {
+      "id": "P1",
+      "kind": "claim",
+      "proposition": "The report locates the earliest visible departure at different stages in different runs: Idea in Experiment 008 A-001/A-003, Synthesis in Experiment 007 candidate 003, and Narrative in several other runs. It therefore describes variation, not one shared starting stage.",
+      "sourceFragmentIds": [
+        "F0019",
+        "F0039",
+        "F0045",
+        "F0057",
+        "F0059"
+      ],
+      "sourceQuotes": [
+        "2. **The first visible editorial hierarchy break varies by run.** In Experiment 007 candidate runs 001\u2013002 it is clearest in Narrative; candidate 003 is already company/product hierarchy drift in Synthesis. In Experiment 008 Company-first runs, selected Idea already changes the hierarchy in A-001 and A-003; A-002 retains the intended hierarchy but adds an unsupported audience at Narrative. Technical-first B runs intentionally start technical, so their first technical framing in Idea is expected by that condition, though factual inflation appears later too.\n",
+        "| Candidate 003 | **Synthesis** | Primary message and subject make Compose/orchestration the story; broader company identity and audience become context. Narrative/Compose inherit it and add a broader single-LLM framing; \u201Ctestable embodiment\u201D is an inference. | Strongest hierarchy break: reads as a technical argument about orchestration rather than a company introduction. | The diagnostic report compares against baseline, which already overweights orchestration. |\n",
+        "| A-001 | **Idea** | Compose is selected as the \u201Cconcrete expression\u201D framing Nu\u00EByon\u2019s identity; later \u201CAI-first builders\u201D substitutes a narrower audience than the source\u2019s other AI-first companies. | Product-led frame begins before Research; Narrative then makes orchestration-centered framing explicit. | Company-first input, 0/2 editorial fidelity in the experiment score. |\n",
+        "| Baseline 002 | **Narrative** (first clear editorial shift) | Orchestration-centered product direction is source-adjacent, but Compose escalates to \u201Cimmediate product direction is orchestration-first.\u201D | Company identity becomes tangible through orchestration; final hierarchy score 0/2. | Evaluation identifies the Narrative phrase and final amplification. |\n",
+        "| Candidate 001 | **Narrative** (hierarchy shift) | Compose describes validation of an \u201Corchestration-first product\u201D as an expression of identity; evaluation records no new audience issue in this run. | Correct Idea does not keep the final company-first story; hierarchy score 1/2. | Candidate Idea prompt was the sole intended prompt change. |\n"
+      ],
+      "materiality": "This variation is the direct basis for the selected Idea that drift has no single observed starting point.",
+      "boundary": "These are localizations from reviewed artifacts, not proof of internal causes or a claim that every run or stage was completely observed."
+    },
+    {
+      "id": "P2",
+      "kind": "claim",
+      "proposition": "The report calls Narrative the \u201Cmost recurrent first visible hierarchy shift\u201D in the available records, while also noting shifts that begin in Idea or Synthesis and a reported Compose factual issue.",
+      "sourceFragmentIds": [
+        "F0068"
+      ],
+      "sourceQuotes": [
+        "- **Narrative is the most recurrent first visible hierarchy shift in the available records.** It is first in 007 runs 001\u2013002, 008 A-002 (factual breach) and 009 baseline 002/003 and candidates 001\u2013003. But it is not a sole root cause: some runs start in Idea or Synthesis, and in 009 baseline 001 the reported factual issue is Compose.\n"
+      ],
+      "materiality": "It preserves Narrative\u2019s recurrence without elevating it to a universal origin.",
+      "boundary": "Recurrence in these reviewed runs does not establish Narrative as a root cause or as the most frequent locus in a broader population."
+    },
+    {
+      "id": "P3",
+      "kind": "causalLimit",
+      "proposition": "The report defines \u201Cfirst drift\u201D as the earliest observable departure, unsupported addition, or materially stronger claim, and explicitly says this \u201Cdoes not imply internal model causation.\u201D",
+      "sourceFragmentIds": [
+        "F0027"
+      ],
+      "sourceQuotes": [
+        "Reviewed the existing Master Workflow, baseline prompt snapshots, Experiment 006/007 traceability artifacts, all Experiment 008 run manifests/reports/stage outputs, and Experiment 009 evaluation/integrity artifacts and full five-stage run outputs. Compared each available run in pipeline order: selected Idea \u2192 Research \u2192 Synthesis \u2192 Narrative \u2192 Compose. For each run, \u201Cfirst drift\u201D means the earliest **observable** stage that departs from the requested company-first editorial hierarchy, introduces unsupported material, or makes a materially stronger claim. It does not imply internal model causation. In technical-first Experiment 008 B runs, technical hierarchy itself is the intended condition; the table identifies any separate scope/factual breach.\n"
+      ],
+      "materiality": "Without this qualification, stage localization could be misread as evidence that a stage caused the downstream failure.",
+      "boundary": "The report does not establish why a departure appears at a stage or whether preceding stages contributed to it."
+    },
+    {
+      "id": "P4",
+      "kind": "causalLimit",
+      "proposition": "For Experiment 007, the diagnostic package has Synthesis, Narrative, and Compose extracts but no Idea or Research extracts; the report says localization is possible only from Synthesis onward.",
+      "sourceFragmentIds": [
+        "F0018"
+      ],
+      "sourceQuotes": [
+        "1. **There is no dedicated \u0060experiment-007/\u0060 execution directory.** Experiment 007 is a traceability report stored inside the Experiment 006 directory. Its three candidate chains have Synthesis, Narrative, and Compose extracts and console logs, but no Idea or Research extracts. We can localize drift only from Synthesis onward for those chains; any claim about the first drift in Idea or Research would be unsupported.\n"
+      ],
+      "materiality": "This missing evidence prevents a valid claim about the earliest drift in those runs before Synthesis.",
+      "boundary": "It does not show that Idea or Research were free of drift; those stages are unassessed in this package."
+    },
+    {
+      "id": "P5",
+      "kind": "counterexample",
+      "proposition": "Experiment 009 is reported as a case where all six selected Ideas kept Nu\u00EByon primary and Compose as the first product direction, yet downstream issues included orchestration-centered framing and unsupported claims. The report also says all selected Ideas could look company-first while later stages reframed the story.",
+      "sourceFragmentIds": [
+        "F0020",
+        "F0067"
+      ],
+      "sourceQuotes": [
+        "3. **Experiment 009 shows that a company-first selected Idea is not sufficient.** The evaluation reports the selected Idea kept Nu\u00EByon primary and Compose as first product direction in all six baseline/candidate runs. The reported issues then appear downstream: orchestration-centered story framing, unsupported audience/validation/outcome language, or a factual overclaim in Compose. Candidate changes to Idea did not demonstrate improvement.\n",
+        "- **Drift is not confined to Idea.** Experiment 008 shows early selection drift can occur in Idea, and Experiment 007 run 003 shifts at Synthesis. Experiment 009 shows all selected Ideas can look company-first while Narrative/Compose later reframe the story.\n"
+      ],
+      "materiality": "This counters the inference that a company-first Idea guarantees the desired hierarchy throughout the pipeline.",
+      "boundary": "The report does not claim that every downstream stage fails whenever an Idea is company-first."
+    },
+    {
+      "id": "P6",
+      "kind": "negativeControl",
+      "proposition": "In Experiment 008 B runs, technical-first framing in Idea was the intended condition. The report distinguishes that expected framing from separate scope or factual breaches, and says the technical-order score is not an endorsement of a company introduction.",
+      "sourceFragmentIds": [
+        "F0027",
+        "F0046",
+        "F0048",
+        "F0050"
+      ],
+      "sourceQuotes": [
+        "Reviewed the existing Master Workflow, baseline prompt snapshots, Experiment 006/007 traceability artifacts, all Experiment 008 run manifests/reports/stage outputs, and Experiment 009 evaluation/integrity artifacts and full five-stage run outputs. Compared each available run in pipeline order: selected Idea \u2192 Research \u2192 Synthesis \u2192 Narrative \u2192 Compose. For each run, \u201Cfirst drift\u201D means the earliest **observable** stage that departs from the requested company-first editorial hierarchy, introduces unsupported material, or makes a materially stronger claim. It does not imply internal model causation. In technical-first Experiment 008 B runs, technical hierarchy itself is the intended condition; the table identifies any separate scope/factual breach.\n",
+        "| B-001 | **Idea** (expected technical-first frame); **Compose** is first noted factual breach | Final Compose asserts most AI content workflows use a \u201Csingle, one-shot prompt,\u201D unsupported by the brief. | Technical frame is stable, as intended for B. This does not satisfy company-first editorial intent and is not evidence of a good company introduction. | The report scores editorial hierarchy 2/2 against B\u2019s technical-first condition, not against the desired company introduction. |\n",
+        "| B-002 | **Idea** (expected technical-first frame); **Idea** also first reported overstatement | Idea\u2019s \u201Claunch\u201D is unsupported; later stages strengthen implementation certainty and future-update claims. | Technical-first framing remains stable. It is condition fidelity, not desired company-intro editorial fidelity. | 0/2 factual score. |\n",
+        "| B-003 | **Idea** (expected technical-first frame); **Idea** first exceeds source scope | Calls orchestration Nu\u00EByon\u2019s \u201Ccore product idea,\u201D whereas the source scopes it to Compose. | Strong technical-first ordering, but the company-level assertion is an editorial and factual-scope overreach. | Technical-order fidelity score is not an endorsement of the claim. |\n"
+      ],
+      "materiality": "This prevents intended technical-first outputs from being counted as evidence of unintended hierarchy drift in those conditions.",
+      "boundary": "Passing the B condition\u2019s technical-order measure does not establish company-first fidelity, factual accuracy, or editorial quality."
+    },
+    {
+      "id": "P7",
+      "kind": "counterexample",
+      "proposition": "Experiment 009 baseline 001 is reported to have a factual failure in Compose (\u201Creliably converts\u201D was not established), while its earlier chain remained company-first and its downstream hierarchy score was 2/2.",
+      "sourceFragmentIds": [
+        "F0056"
+      ],
+      "sourceQuotes": [
+        "| Baseline 001 | **Compose** (reported factual failure) | Final says \u201Crepeatable process that reliably converts\u201D material into publishable content; reliable conversion is not established. | Selected Idea and earlier chain remain company-first; the artifact\u2019s score gives downstream hierarchy 2/2. | The evaluation gives no earlier stage a material failure for this run. |\n"
+      ],
+      "materiality": "It demonstrates that factual failure and hierarchy failure can arise independently, and that a Compose factual breach is not itself a Compose-first hierarchy departure.",
+      "boundary": "This one run does not establish how common Compose-origin factual failures are."
+    },
+    {
+      "id": "P8",
+      "kind": "explicitMeaning",
+      "proposition": "The report distinguishes supported product facts from editorial priority: orchestration is supported as central to Compose\u2019s design, while the requested company introduction prioritizes Nu\u00EByon as an AI-first company and uses Compose as supporting product direction.",
+      "sourceFragmentIds": [
+        "F0021",
+        "F0070",
+        "F0071"
+      ],
+      "sourceQuotes": [
+        "4. **Factual and editorial failures are distinct.** Orchestration is source-supported as a Compose design principle; making it the defining story of a company introduction can still violate the source\u2019s editorial intent. Separately, outputs add unsupported audience groups, validation claims, or performance-like properties.\n",
+        "- **The source supports two true propositions that compete editorially:** Nu\u00EByon is an AI-first company; orchestration is central to Compose\u2019s design. The requested first company introduction prioritizes the former and uses Compose as the supporting first product direction. Technical truth does not decide story priority.\n",
+        "- **Source fidelity and editorial quality need separate gates.** A factually supported orchestration description may still be the wrong lead for this company introduction. Conversely, a company-first idea can fail through unsupported audience, validation, market, or outcome claims.\n"
+      ],
+      "materiality": "This distinction clarifies why a technically supported statement can still depart from the requested company-first hierarchy.",
+      "boundary": "The report\u2019s stated editorial priority does not make orchestration claims factually false or establish that every company introduction must use the same hierarchy."
+    },
+    {
+      "id": "P9",
+      "kind": "claim",
+      "proposition": "The report observes upstream format references in frozen Idea, Research, and Narrative prompts, despite the stated architecture that upstream stages remain format-independent and Compose determines LinkedIn presentation.",
+      "sourceFragmentIds": [
+        "F0023",
+        "F0078",
+        "F0079",
+        "F0080",
+        "F0081"
+      ],
+      "sourceQuotes": [
+        "6. **There is observable upstream format leakage in prompt snapshots.** The Master Workflow says upstream stages should remain format-independent, but frozen Idea, Research, and Narrative prompts include references to supported formats, article-writing roles, or Article/LinkedIn compatibility. The outputs do not prove that these instructions caused a particular drift; they are an architectural inconsistency and a plausible source of format priming.\n",
+        "- The Master Workflow\u2019s Experiment 010 section says earlier agents remain format-independent and Compose determines LinkedIn presentation.\n",
+        "- Frozen Idea system prompt includes \u201Csupported output formats\u201D among possible supporting details, and calls the agent an article writer in its role exclusions.\n",
+        "- Frozen Research system prompt also lists \u201Can article writer\u201D in role exclusions; Research user prompt says not to write polished article prose or an article outline.\n",
+        "- Frozen Narrative system prompt says not to optimize for a particular format but then names articles, LinkedIn posts, newsletters, and other types as compatibility examples. Narrative user prompt explicitly requires the story direction to work for \u201Cboth Article and LinkedIn formats.\u201D\n"
+      ],
+      "materiality": "The inconsistency is relevant as a separate architectural observation that could be mistaken for an established explanation of stage drift.",
+      "boundary": "Prompt references alone do not establish that format leakage affected any particular output."
+    },
+    {
+      "id": "P10",
+      "kind": "causalLimit",
+      "proposition": "The report characterizes upstream format references as a \u201Cplausible source of format priming\u201D but explicitly says they do not demonstrate causing orchestration drift or a weak hook in a given run.",
+      "sourceFragmentIds": [
+        "F0023",
+        "F0086"
+      ],
+      "sourceQuotes": [
+        "6. **There is observable upstream format leakage in prompt snapshots.** The Master Workflow says upstream stages should remain format-independent, but frozen Idea, Research, and Narrative prompts include references to supported formats, article-writing roles, or Article/LinkedIn compatibility. The outputs do not prove that these instructions caused a particular drift; they are an architectural inconsistency and a plausible source of format priming.\n",
+        "This is an instruction-boundary inconsistency and a plausible source of format priming, especially where Idea uses supported formats as an editorial-selection consideration and Narrative reasons about format compatibility. It does **not** demonstrate that these references caused orchestration drift or a weak hook in any given run. Format-independent story content can be relevant to an eventual article; only Compose should choose format-specific structure, voice, length, hook conventions, or platform mechanics under the agreed architecture rule.\n"
+      ],
+      "materiality": "It preserves the hypothesis while preventing it from being presented as a demonstrated cause.",
+      "boundary": "The report does not provide a controlled test isolating the effect of those references."
+    },
+    {
+      "id": "P11",
+      "kind": "causalLimit",
+      "proposition": "For Experiment 009, the saved evaluation does not formally assign a first-failure stage for each dimension; some localizations rely on named examples and stage-output inspection, and the baseline 003 factual precursor is specifically described as lower confidence.",
+      "sourceFragmentIds": [
+        "F0063"
+      ],
+      "sourceQuotes": [
+        "**Experiment 009 evidence limitation:** Its saved evaluation summarizes the six runs but does not assign a formal first-failure stage to each dimension. The table\u2019s per-run localization uses the evaluation\u2019s named examples plus direct stage output inspection; where the exact factual precursor is not explicitly called out (notably baseline 003), the localization is lower confidence. Research outputs are source-bound extraction documents and often repeat input framing; presence of a format or topic in Research alone is not treated as editorial drift unless it introduces unsupported content or changes hierarchy.\n"
+      ],
+      "materiality": "This qualifies precision claims about per-run localization, especially when factual and hierarchy departures are distinguished.",
+      "boundary": "The report still offers localizations, but does not present every one as an equally explicit evaluation finding."
+    },
+    {
+      "id": "P12",
+      "kind": "claim",
+      "proposition": "The report says editorial quality and factual/source fidelity are separate: outputs may be source-aligned yet dull or hard to read, and evaluations did not consistently apply a hook, readability, or attention rubric.",
+      "sourceFragmentIds": [
+        "F0022",
+        "F0072"
+      ],
+      "sourceQuotes": [
+        "5. **The outputs are not consistently strong LinkedIn editorial content even when broadly source-aligned.** Several chains resolve into explanatory process descriptions, architecture-heavy lists, or repeated framing such as \u201Corchestration-focused/first\u201D rather than a specific, engaging company story. This is an editorial-quality concern, not by itself a factual error. The artifact evaluations did not apply a consistent hook/readability/attention rubric to every run, so this observation is qualitative and not a comparative score.\n",
+        "- **Engagement has been under-measured.** Earlier run evaluations mainly score factuality, hierarchy, and condition fidelity. They do not consistently score the opening\u2019s pull, story progression, readability, or memorable phrasing. Current evidence therefore localizes hierarchy drift better than it explains whether any surviving company-first text is compelling.\n"
+      ],
+      "materiality": "It limits conclusions about overall success to the dimensions actually assessed and preserves editorial quality as a distinct dimension.",
+      "boundary": "The qualitative observations are not a consistent comparative score and do not establish that every reviewed output was weak."
+    }
+  ],
+  "ideaChecks": [
+    {
+      "proposition": "The earliest visible departure from the intended company-first hierarchy varies across reviewed runs (Idea, Synthesis, or Narrative); Narrative is the most recurrent first visible hierarchy shift, but the evidence establishes neither it nor another stage as a universal root cause.",
+      "sourceItemIds": [
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "P5",
+        "P6",
+        "P7",
+        "P11"
+      ],
+      "status": "qualified"
+    }
+  ],
+  "limitations": [
+    "The map relies on the report\u2019s summaries and cited artifact-review findings; the underlying run artifacts are not separately represented here.",
+    "Experiment 007 lacks Idea and Research extracts, and Experiment 009\u2019s evaluation does not formally stage-assign every failure dimension; these constrain how confidently the earliest point can be identified.",
+    "\u201CNo single, proven starting point\u201D is supported as a conclusion about the reviewed evidence, not as a claim that all possible runs or all pipeline configurations have been examined."
+  ]
+}

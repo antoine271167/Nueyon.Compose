@@ -1,0 +1,414 @@
+[
+  {
+    "path": "src/Nueyon.Compose.Application/Agents/Compose/ComposeAgent.cs",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Application/Agents/Compose/ComposeAgentInstructions.cs",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Application/Agents/IAgent.cs",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Application/Agents/Idea/IdeaAgent.cs",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Application/Agents/Idea/IdeaAgentInstructions.cs",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Application/Agents/Idea/IdeaPrompts.cs",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Application/Agents/Idea/IdeaResponse.cs",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Application/Agents/Idea/IdeaSemanticJudge.cs",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Application/Agents/Idea/IdeaValidationException.cs",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Application/Agents/Idea/IdeaValidationLoopEvaluator.cs",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Application/Agents/Narrative/NarrativeAgent.cs",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Application/Agents/Narrative/NarrativeAgentInstructions.cs",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Application/Agents/Research/ResearchAgent.cs",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Application/Agents/Research/ResearchAgentInstructions.cs",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Application/Agents/Research/ResearchInput.cs",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Application/Agents/Research/ResearchSemanticJudge.cs",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Application/Agents/Research/ResearchValidationException.cs",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Application/Agents/Synthesis/SynthesisResearchFilter.cs",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Application/Agents/Synthesis/SynthesizerAgent.cs",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Application/Agents/Synthesis/SynthesizerAgentInstructions.cs",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Application/Nueyon.Compose.Application.csproj",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Application/Prompts/Compose/Compose.article.user.prompt.md",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Application/Prompts/Compose/Compose.linkedin.user.prompt.md",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Application/Prompts/Compose/Compose.system.prompt.md",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Application/Prompts/Idea/Idea.system.prompt.md",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Application/Prompts/Idea/Idea.user.prompt.md",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Application/Prompts/Idea/IdeaValidation.system.prompt.md",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Application/Prompts/Narrative/Narrative.system.prompt.md",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Application/Prompts/Narrative/Narrative.user.prompt.md",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Application/Prompts/PromptDirectory.cs",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Application/Prompts/PromptLoader.cs",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Application/Prompts/Research/Research.system.prompt.md",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Application/Prompts/Research/Research.user.prompt.md",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Application/Prompts/Research/ResearchValidation.system.prompt.md",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Application/Prompts/Synthesis/Synthesis.system.prompt.md",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Application/Prompts/Synthesis/Synthesis.user.prompt.md",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Application/Services/ISourceContextLoader.cs",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Application/Services/SourceContextLoader.cs",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Application/Validation/IdeaValidator.cs",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Application/Validation/IIdeaValidator.cs",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Application/Workflows/IStoryWorkflow.cs",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Application/Workflows/SelectedIdea.cs",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Application/Workflows/StoryWorkflow.cs",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Application/Workflows/StoryWorkflowResult.cs",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Application/Workflows/StoryWorkflowResultExtractor.cs",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Application/Workflows/StoryWorkflowState.cs",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Application.Tests/Agents/AgentCancellationTests.cs",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Application.Tests/Agents/ComposeAgentResponseParsingTests.cs",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Application.Tests/Agents/FakeIdeaAgent.cs",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Application.Tests/Agents/IdeaAgentResponseParsingTests.cs",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Application.Tests/Agents/IdeaValidationLoopEvaluatorTests.cs",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Application.Tests/Agents/IdeaWorkflowTests.cs",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Application.Tests/Agents/NarrativeAgentResponseParsingTests.cs",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Application.Tests/Agents/NarrativeComposeBoundaryTests.cs",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Application.Tests/Agents/ResearchAgentEvidenceTests.cs",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Application.Tests/Agents/ResearchJudgeTests.cs",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Application.Tests/Agents/SynthesisResearchFilterTests.cs",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Application.Tests/Agents/SynthesizerAgentBoundaryTests.cs",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Application.Tests/Nueyon.Compose.Application.Tests.csproj",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Application.Tests/Prompts/PromptLoaderTests.cs",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Application.Tests/Services/SourceContextLoaderTests.cs",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Application.Tests/Validation/IdeaValidatorTests.cs",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Application.Tests/Workflows/StoryWorkflowResultExtractorTests.cs",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Application.Tests/Workflows/StoryWorkflowTests.cs",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Domain/AgentExecutionContext.cs",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Domain/ComposeInput.cs",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Domain/ComposeResult.cs",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Domain/CompositionSpec.cs",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Domain/ContentFormat.cs",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Domain/Idea.cs",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Domain/NarrativeForCompose.cs",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Domain/NarrativeInput.cs",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Domain/NarrativeResult.cs",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Domain/Nueyon.Compose.Domain.csproj",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Domain/ResearchForSynthesis.cs",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Domain/ResearchResult.cs",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Domain/StoryInput.cs",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Domain/SynthesisForNarrative.cs",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Domain/SynthesisInput.cs",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Domain/SynthesisResult.cs",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Domain.Tests/Nueyon.Compose.Domain.Tests.csproj",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Host.Console/appsettings.Development.json",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Host.Console/appsettings.json",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Host.Console/Cli.cs",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Host.Console/CliContracts.cs",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Host.Console/ConsoleApplication.cs",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Host.Console/IConsole.cs",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Host.Console/Nueyon.Compose.Host.Console.csproj",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Host.Console/Program.cs",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Host.Console/SystemConsole.cs",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Host.Console.Tests/CliTests.cs",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Host.Console.Tests/ConsoleApplicationTests.cs",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Host.Console.Tests/Nueyon.Compose.Host.Console.Tests.csproj",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Infrastructure/Agents/AgentFactory.cs",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Infrastructure/Agents/OpenAIAgentFactory.cs",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Infrastructure/Nueyon.Compose.Infrastructure.csproj",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Infrastructure/Options/OpenAiOptions.cs",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Infrastructure/ServiceExtensions.cs",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Infrastructure.Tests/InfrastructureServiceExtensionsTests.cs",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Infrastructure.Tests/Nueyon.Compose.Infrastructure.Tests.csproj",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.Infrastructure.Tests/Options/OpenAiOptionsTests.cs",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.sln.DotSettings.user",
+    "ok": true
+  },
+  {
+    "path": "src/Nueyon.Compose.slnx",
+    "ok": true
+  }
+]

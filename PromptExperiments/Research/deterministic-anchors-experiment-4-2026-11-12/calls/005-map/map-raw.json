@@ -1,0 +1,106 @@
+{
+  "items": [
+    {
+      "id": "I1",
+      "kind": "explicitMeaning",
+      "proposition": "The experiment’s stated target hierarchy was a company introduction centered on Nuéyon’s AI-first ambition for other AI-first businesses, with Nuéyon.Compose as the first concrete product direction and orchestration as supporting explanation.",
+      "sourceFragmentIds": ["F0008", "F0038", "F0039", "F0040"],
+      "materiality": "Defines the editorial intent against which the intervention was judged.",
+      "boundary": "This is the experiment’s stated target and scoring rubric, not evidence that the underlying Synthesis consistently expressed that hierarchy."
+    },
+    {
+      "id": "I2",
+      "kind": "claim",
+      "proposition": "The candidate added a generic Narrative instruction to preserve Synthesis’s primary message, audience scope, relative emphasis, and uncertainty; it did not add Nuéyon-specific wording or story details. The candidate runs changed only the Narrative user prompt, with other prompts and workflow inputs held constant.",
+      "sourceFragmentIds": ["F0030", "F0022"],
+      "materiality": "Establishes what intervention was tested and the reported scope of the comparison.",
+      "boundary": "Does not establish that all influences on model output were identical or that the rule would work in other settings."
+    },
+    {
+      "id": "I3",
+      "kind": "claim",
+      "proposition": "In the three candidate Narrative runs, identity and audience primacy were incomplete (A=1 each), orchestration became central (C=0 each), and factual/editorial restraint failed (D=0 each). Candidate Narrative mean total was 4.00/10 versus 6.00/10 for baseline.",
+      "sourceFragmentIds": ["F0052", "F0053", "F0054", "F0055", "F0056", "F0057", "F0059"],
+      "materiality": "Directly supports the finding that the candidate did not preserve the target hierarchy in these Narrative samples and scored lower on the rubric.",
+      "boundary": "Scores are editorial judgments under the stated rubric; the comparison does not establish universal prompt performance."
+    },
+    {
+      "id": "I4",
+      "kind": "claim",
+      "proposition": "All three candidate Compose runs made orchestration central (C=0) and failed the factual/editorial restraint gate (D=0); their mean total was 3.33/10 versus 5.67/10 for baseline. The report says the candidate outputs did not restore the intended hierarchy.",
+      "sourceFragmentIds": ["F0065", "F0066", "F0067", "F0068", "F0069", "F0070", "F0072"],
+      "materiality": "Shows the downstream Compose outputs also failed the hierarchy and restraint criteria, with a lower reported mean.",
+      "boundary": "Does not isolate Compose as the cause: Compose received outputs from the full pipeline."
+    },
+    {
+      "id": "I5",
+      "kind": "claim",
+      "proposition": "The candidate retained the first-product-direction criterion more successfully than the hierarchy and restraint criteria: all three Narrative runs scored B=2, and Compose runs 1–2 scored B=2 while run 3 scored B=1.",
+      "sourceFragmentIds": ["F0055", "F0056", "F0057", "F0068", "F0069", "F0070", "F0077"],
+      "materiality": "Preserves an independent dimension of partial success rather than treating every editorial criterion as a failure.",
+      "boundary": "Retention of Compose as a product direction does not mean it was consistently identified as the first concrete step in final Compose outputs or that the intended overall hierarchy was preserved."
+    },
+    {
+      "id": "I6",
+      "kind": "claim",
+      "proposition": "The report attributes unsupported additions to every candidate run: Narrative outputs included validation intent or commitment, expanded audience framing, or a need for coordinated AI; Compose outputs repeated or extended such additions. It identifies factual restraint as a hard failure gate.",
+      "sourceFragmentIds": ["F0041", "F0079"],
+      "materiality": "Supports the stated reason the candidate failed a separate promotion criterion, beyond hierarchy drift.",
+      "boundary": "The source summarizes the additions and does not provide the output text in these fragments for independent reassessment."
+    },
+    {
+      "id": "I7",
+      "kind": "counterexample",
+      "proposition": "The candidate did not reduce every measured quality: candidate Narrative and Compose outputs were generally rated readable and coherent (4/5), and the report says the change did not improve those qualities.",
+      "sourceFragmentIds": ["F0059", "F0072", "F0081"],
+      "materiality": "Keeps readability and coherence distinct from source fidelity, hierarchy, and promotion outcomes.",
+      "boundary": "Readability and coherence ratings do not establish that the outputs were suitable, faithful, or improved overall."
+    },
+    {
+      "id": "I8",
+      "kind": "causalLimit",
+      "proposition": "The report notes an internal tension in baseline Synthesis: its top-level emphasis pairs company identity with Compose, but a later description calls orchestration central to the product direction. It says this tension may have reinforced the technical angle; Synthesis was not changed.",
+      "sourceFragmentIds": ["F0084"],
+      "materiality": "Qualifies attribution of the hierarchy drift to the added Narrative rule alone and identifies a relevant upstream ambiguity.",
+      "boundary": "The source presents reinforcement as a possibility, not a demonstrated cause; it does not establish what would have happened with revised Synthesis."
+    },
+    {
+      "id": "I9",
+      "kind": "explicitMeaning",
+      "proposition": "The recorded decision was not to promote the candidate; the production Narrative user prompt was restored byte-for-byte to the baseline, with the restored hash reported as matching the frozen baseline.",
+      "sourceFragmentIds": ["F0004", "F0092", "F0093"],
+      "materiality": "Establishes the operational outcome and rollback, not just the evaluative result.",
+      "boundary": "A rollback decision does not independently prove the candidate would fail in other contexts."
+    },
+    {
+      "id": "I10",
+      "kind": "causalLimit",
+      "proposition": "The baseline runs were from 2026-11-03 and candidate runs from 2026-11-04; the report notes a provider may change the backend behind the model alias. No seed or temperature override was available, and three runs per condition show consistency in these samples, not statistical significance. Scores are subjective judgments based on the rubric.",
+      "sourceFragmentIds": ["F0098", "F0099", "F0102"],
+      "materiality": "Limits causal certainty, statistical interpretation, and generalization from the observed score differences.",
+      "boundary": "These limitations do not negate the reported sample outcomes; they constrain how broadly or causally they can be interpreted."
+    }
+  ],
+  "ideaChecks": [
+    {
+      "proposition": "A reusable editorial rule did not preserve the intended hierarchy in this comparison: all three candidate Narrative runs made orchestration central and introduced unsupported framing, and all three Compose runs failed the hierarchy and factual-restraint gates.",
+      "sourceItemIds": ["I1", "I3", "I4", "I6", "I8"],
+      "status": "supported"
+    },
+    {
+      "proposition": "The candidate scored lower on average in both stages, was not promoted, and the production prompt was restored byte-for-byte.",
+      "sourceItemIds": ["I3", "I4", "I9"],
+      "status": "supported"
+    },
+    {
+      "proposition": "This is evidence about these runs, not proof the rule will fail in every setting.",
+      "sourceItemIds": ["I2", "I8", "I10"],
+      "status": "supported"
+    }
+  ],
+  "limitations": [
+    "The score comparisons are reported as subjective editorial judgments under an explicit rubric, not automated measurements.",
+    "The source reports the output-level patterns and summary of unsupported additions, but the cited fragments do not include full candidate output text for independent review.",
+    "The source says the candidate prompt was insufficient to protect the supplied editorial intent in this comparison; upstream Synthesis tension and possible backend variation leave the causal contribution of the prompt change less certain."
+  ]
+}

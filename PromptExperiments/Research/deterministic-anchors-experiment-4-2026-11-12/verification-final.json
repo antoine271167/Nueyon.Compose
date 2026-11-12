@@ -1,0 +1,24 @@
+{
+  "actualCalls": 15,
+  "absoluteCeiling": 18,
+  "plannedCeiling": 15,
+  "withinBudget": true,
+  "allResponseModelsLuna": true,
+  "allHttp200": true,
+  "allFinishStop": true,
+  "allRequestsUnique": true,
+  "freezeBeforeFirstCall": true,
+  "mapAuditBeforeFirstJudge": true,
+  "allFrozenFilesIntact": true,
+  "all103ProtectedSourceFilesIntact": true,
+  "allPairedRequestsMatch": true,
+  "fixturesByteIdentical": true,
+  "requestChecksPass": true,
+  "offlineReplayCount": 12,
+  "onlyAllowedTrackedChanges": true,
+  "sourceChanges": [
+    "src/Nueyon.Compose.Application.Tests/Agents/ResearchJudgeTests.cs",
+    "src/Nueyon.Compose.Application/Agents/Research/ResearchSemanticJudge.cs"
+  ],
+  "decision": "NO-GO"
+}

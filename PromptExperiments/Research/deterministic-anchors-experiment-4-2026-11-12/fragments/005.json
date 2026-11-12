@@ -1,0 +1,678 @@
+{
+  "sourceSha256Utf8": "511ca385d3f2011efd99c23f4526255eeeadb996300d8126a6f091ff425ab2bf",
+  "offsetUnit": "UTF-16 code units",
+  "fragments": [
+    {
+      "id": "F0001",
+      "start": 0,
+      "length": 45,
+      "text": "# Experiment 005 — Editorial Intent Fidelity\n"
+    },
+    {
+      "id": "F0002",
+      "start": 45,
+      "length": 1,
+      "text": "\n"
+    },
+    {
+      "id": "F0003",
+      "start": 46,
+      "length": 23,
+      "text": "**Date:** 2026-11-04  \n"
+    },
+    {
+      "id": "F0004",
+      "start": 69,
+      "length": 107,
+      "text": "**Decision:** Candidate not promoted; production Narrative user prompt restored byte-for-byte to baseline.\n"
+    },
+    {
+      "id": "F0005",
+      "start": 176,
+      "length": 1,
+      "text": "\n"
+    },
+    {
+      "id": "F0006",
+      "start": 177,
+      "length": 28,
+      "text": "## Objective and hypothesis\n"
+    },
+    {
+      "id": "F0007",
+      "start": 205,
+      "length": 1,
+      "text": "\n"
+    },
+    {
+      "id": "F0008",
+      "start": 206,
+      "length": 400,
+      "text": "Test whether a reusable editorial-hierarchy rule in the Narrative Agent prompt keeps Synthesis's primary message, central subject, intended audience, and theme hierarchy intact. The expected result was a company introduction centered on Nuëyon's AI-first ambition for other AI-first businesses, with Nuëyon.Compose as its first concrete product direction and orchestration as supporting explanation.\n"
+    },
+    {
+      "id": "F0009",
+      "start": 606,
+      "length": 1,
+      "text": "\n"
+    },
+    {
+      "id": "F0010",
+      "start": 607,
+      "length": 40,
+      "text": "## Repository and baseline verification\n"
+    },
+    {
+      "id": "F0011",
+      "start": 647,
+      "length": 1,
+      "text": "\n"
+    },
+    {
+      "id": "F0012",
+      "start": 648,
+      "length": 43,
+      "text": "- Checkout: `C:\\Workspaces\\Nueyon.Compose`\n"
+    },
+    {
+      "id": "F0013",
+      "start": 691,
+      "length": 72,
+      "text": "- Branch and commit: `main`, `be882989a7b7956e1b57199f143e7cf434fbe4e5`\n"
+    },
+    {
+      "id": "F0014",
+      "start": 763,
+      "length": 126,
+      "text": "- Initial status: `main...origin/main`; pre-existing untracked `PromptExperiments/` and `prompts/`; no tracked modifications.\n"
+    },
+    {
+      "id": "F0015",
+      "start": 889,
+      "length": 222,
+      "text": "- The frozen baseline Narrative system prompt and user prompt matched the production versions before the experiment. The baseline user prompt SHA-256 was `475A9DB1CA028EBC927C99ECDD3DAB061B0616ED06FB1278879992D2E8DD795A`.\n"
+    },
+    {
+      "id": "F0016",
+      "start": 1111,
+      "length": 257,
+      "text": "- The source input matched the frozen prior input (`DB7A9CF4768684C025D02028980E16CCE8805832E1013A5B6098C00D29E8F2D0`). The archived original instruction was also copied and hash-checked (`9711363973E35E3FFE440CDA2BE73C0A77101DFFC2F21B77CA6AB957B725A5AB`).\n"
+    },
+    {
+      "id": "F0017",
+      "start": 1368,
+      "length": 202,
+      "text": "- All 11 prompt files in the prior Experiment 004 baseline snapshot matched the current production prompt files by SHA-256. No Research, Synthesis, Compose, Idea, configuration, or C# file was changed.\n"
+    },
+    {
+      "id": "F0018",
+      "start": 1570,
+      "length": 1,
+      "text": "\n"
+    },
+    {
+      "id": "F0019",
+      "start": 1571,
+      "length": 43,
+      "text": "## Controlled comparison and configuration\n"
+    },
+    {
+      "id": "F0020",
+      "start": 1614,
+      "length": 1,
+      "text": "\n"
+    },
+    {
+      "id": "F0021",
+      "start": 1615,
+      "length": 330,
+      "text": "- **Baseline:** Three completed baseline runs reused from `experiment-004-opening-and-ending/baseline`. They used the same commit, source input, prompt snapshots, `gpt-5-mini`, console workflow, and LinkedIn post format. Reusing these preserved the exact prior baseline condition while avoiding unnecessary duplicate model calls.\n"
+    },
+    {
+      "id": "F0022",
+      "start": 1945,
+      "length": 191,
+      "text": "- **Candidate:** Three new runs with only `src/Nueyon.Compose.Application/Prompts/Narrative/Narrative.user.prompt.txt` changed. All other prompt files and workflow inputs remained identical.\n"
+    },
+    {
+      "id": "F0023",
+      "start": 2136,
+      "length": 204,
+      "text": "- **Provider/model:** OpenAI / `gpt-5-mini`; .NET SDK `10.0.401`; temperature and seed not explicitly configured; API key configured through user secrets and not recorded. Compose format: `LinkedInPost`.\n"
+    },
+    {
+      "id": "F0024",
+      "start": 2340,
+      "length": 137,
+      "text": "- **Execution command:** `dotnet Nueyon.Compose.Host.Console.dll` from `src/Nueyon.Compose.Host.Console/bin/Debug/net10.0` for each run.\n"
+    },
+    {
+      "id": "F0025",
+      "start": 2477,
+      "length": 250,
+      "text": "- **Input handling:** The application reads Markdown files from `data/input`; it has no separate runtime argument for `original-instruction.txt`. That instruction file is preserved as experiment context, not represented as an additional model input.\n"
+    },
+    {
+      "id": "F0026",
+      "start": 2727,
+      "length": 209,
+      "text": "- Each run completed all workflow stages and exited 0. Full console logs, extracted Narrative outputs, and final Compose outputs are saved under this experiment's `baseline/outputs/` and `candidate/outputs/`.\n"
+    },
+    {
+      "id": "F0027",
+      "start": 2936,
+      "length": 1,
+      "text": "\n"
+    },
+    {
+      "id": "F0028",
+      "start": 2937,
+      "length": 17,
+      "text": "## Prompt change\n"
+    },
+    {
+      "id": "F0029",
+      "start": 2954,
+      "length": 1,
+      "text": "\n"
+    },
+    {
+      "id": "F0030",
+      "start": 2955,
+      "length": 408,
+      "text": "The candidate added one generic section, **“Preserve Editorial Intent from the Synthesis.”** It tells Narrative to identify the primary message, supporting themes, and contextual details; preserve audience scope and relative emphasis; keep technical details subordinate when Synthesis does; and retain uncertainty when the source is ambiguous. It contains no Nuëyon-specific wording or this story's details.\n"
+    },
+    {
+      "id": "F0031",
+      "start": 3363,
+      "length": 1,
+      "text": "\n"
+    },
+    {
+      "id": "F0032",
+      "start": 3364,
+      "length": 197,
+      "text": "The complete baseline and candidate prompts are saved under `baseline/prompts/Narrative/` and `candidate/prompts/Narrative/`. The exact unified diff is `prompt-changes/Narrative.user.prompt.diff`.\n"
+    },
+    {
+      "id": "F0033",
+      "start": 3561,
+      "length": 1,
+      "text": "\n"
+    },
+    {
+      "id": "F0034",
+      "start": 3562,
+      "length": 18,
+      "text": "## Scoring rubric\n"
+    },
+    {
+      "id": "F0035",
+      "start": 3580,
+      "length": 1,
+      "text": "\n"
+    },
+    {
+      "id": "F0036",
+      "start": 3581,
+      "length": 271,
+      "text": "Each criterion is scored 0–2 (higher is better), for a total out of 10. For Narrative, criterion E measures whether the brief gives Compose a sound foundation for an introductory LinkedIn post; for Compose, E measures whether the output itself is suitable for that post.\n"
+    },
+    {
+      "id": "F0037",
+      "start": 3852,
+      "length": 1,
+      "text": "\n"
+    },
+    {
+      "id": "F0038",
+      "start": 3853,
+      "length": 189,
+      "text": "- **A — Identity and audience:** Nuëyon's AI-first identity and ambition for other AI-first businesses are primary (2); present but audience scope or primacy is incomplete (1); absent (0).\n"
+    },
+    {
+      "id": "F0039",
+      "start": 4042,
+      "length": 136,
+      "text": "- **B — First product direction:** Compose is clearly presented as the first concrete step (2); implied but incomplete (1); absent (0).\n"
+    },
+    {
+      "id": "F0040",
+      "start": 4178,
+      "length": 159,
+      "text": "- **C — Theme hierarchy:** Orchestration stays a supporting explanation (2); its relative importance is ambiguous (1); it becomes the central positioning (0).\n"
+    },
+    {
+      "id": "F0041",
+      "start": 4337,
+      "length": 277,
+      "text": "- **D — Factual/editorial restraint:** No unsupported audience, need, benefit, capability, traction, launch status, or commitment is added (2); only a minor unsupported implication appears (1); a clear unsupported claim or expansion appears (0). This is a hard promotion gate.\n"
+    },
+    {
+      "id": "F0042",
+      "start": 4614,
+      "length": 188,
+      "text": "- **E — LinkedIn suitability:** Clear, focused, publishable company introduction or direction for Compose (2); readable but materially overtechnical, meta, or diffuse (1); unsuitable (0).\n"
+    },
+    {
+      "id": "F0043",
+      "start": 4802,
+      "length": 1,
+      "text": "\n"
+    },
+    {
+      "id": "F0044",
+      "start": 4803,
+      "length": 139,
+      "text": "Readability, coherence, and source fidelity are also rated separately from 1–5. These are editorial judgments, not automated measurements.\n"
+    },
+    {
+      "id": "F0045",
+      "start": 4942,
+      "length": 1,
+      "text": "\n"
+    },
+    {
+      "id": "F0046",
+      "start": 4943,
+      "length": 14,
+      "text": "## Run scores\n"
+    },
+    {
+      "id": "F0047",
+      "start": 4957,
+      "length": 1,
+      "text": "\n"
+    },
+    {
+      "id": "F0048",
+      "start": 4958,
+      "length": 22,
+      "text": "### Narrative outputs\n"
+    },
+    {
+      "id": "F0049",
+      "start": 4980,
+      "length": 1,
+      "text": "\n"
+    },
+    {
+      "id": "F0050",
+      "start": 4981,
+      "length": 109,
+      "text": "| Condition | Run | A | B | C | D | E | Total / 10 | Readability / 5 | Coherence / 5 | Source fidelity / 5 |\n"
+    },
+    {
+      "id": "F0051",
+      "start": 5090,
+      "length": 56,
+      "text": "|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|\n"
+    },
+    {
+      "id": "F0052",
+      "start": 5146,
+      "length": 53,
+      "text": "| Baseline | 1 | 2 | 2 | 1 | 0 | 2 | 7 | 4 | 4 | 3 |\n"
+    },
+    {
+      "id": "F0053",
+      "start": 5199,
+      "length": 53,
+      "text": "| Baseline | 2 | 2 | 2 | 0 | 0 | 1 | 5 | 4 | 4 | 2 |\n"
+    },
+    {
+      "id": "F0054",
+      "start": 5252,
+      "length": 53,
+      "text": "| Baseline | 3 | 2 | 2 | 0 | 1 | 1 | 6 | 4 | 4 | 3 |\n"
+    },
+    {
+      "id": "F0055",
+      "start": 5305,
+      "length": 54,
+      "text": "| Candidate | 1 | 1 | 2 | 0 | 0 | 1 | 4 | 4 | 4 | 2 |\n"
+    },
+    {
+      "id": "F0056",
+      "start": 5359,
+      "length": 54,
+      "text": "| Candidate | 2 | 1 | 2 | 0 | 0 | 1 | 4 | 4 | 4 | 2 |\n"
+    },
+    {
+      "id": "F0057",
+      "start": 5413,
+      "length": 54,
+      "text": "| Candidate | 3 | 1 | 2 | 0 | 0 | 1 | 4 | 4 | 4 | 2 |\n"
+    },
+    {
+      "id": "F0058",
+      "start": 5467,
+      "length": 1,
+      "text": "\n"
+    },
+    {
+      "id": "F0059",
+      "start": 5468,
+      "length": 366,
+      "text": "**Narrative total:** Baseline mean 6.00/10 (range 5–7; sample SD 1.00). Candidate mean 4.00/10 (range 4–4; sample SD 0.00). Candidate outputs were readable and coherent, but consistently subordinated company identity and audience scope while making orchestration the central positioning. Candidate samples also introduced unsupported validation or audience framing.\n"
+    },
+    {
+      "id": "F0060",
+      "start": 5834,
+      "length": 1,
+      "text": "\n"
+    },
+    {
+      "id": "F0061",
+      "start": 5835,
+      "length": 26,
+      "text": "### Final Compose outputs\n"
+    },
+    {
+      "id": "F0062",
+      "start": 5861,
+      "length": 1,
+      "text": "\n"
+    },
+    {
+      "id": "F0063",
+      "start": 5862,
+      "length": 109,
+      "text": "| Condition | Run | A | B | C | D | E | Total / 10 | Readability / 5 | Coherence / 5 | Source fidelity / 5 |\n"
+    },
+    {
+      "id": "F0064",
+      "start": 5971,
+      "length": 56,
+      "text": "|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|\n"
+    },
+    {
+      "id": "F0065",
+      "start": 6027,
+      "length": 53,
+      "text": "| Baseline | 1 | 2 | 2 | 1 | 0 | 2 | 7 | 4 | 4 | 3 |\n"
+    },
+    {
+      "id": "F0066",
+      "start": 6080,
+      "length": 53,
+      "text": "| Baseline | 2 | 1 | 2 | 0 | 0 | 1 | 4 | 4 | 4 | 2 |\n"
+    },
+    {
+      "id": "F0067",
+      "start": 6133,
+      "length": 53,
+      "text": "| Baseline | 3 | 2 | 2 | 0 | 1 | 1 | 6 | 4 | 4 | 3 |\n"
+    },
+    {
+      "id": "F0068",
+      "start": 6186,
+      "length": 54,
+      "text": "| Candidate | 1 | 1 | 2 | 0 | 0 | 0 | 3 | 4 | 4 | 2 |\n"
+    },
+    {
+      "id": "F0069",
+      "start": 6240,
+      "length": 54,
+      "text": "| Candidate | 2 | 1 | 2 | 0 | 0 | 1 | 4 | 4 | 4 | 2 |\n"
+    },
+    {
+      "id": "F0070",
+      "start": 6294,
+      "length": 54,
+      "text": "| Candidate | 3 | 1 | 1 | 0 | 0 | 1 | 3 | 4 | 4 | 2 |\n"
+    },
+    {
+      "id": "F0071",
+      "start": 6348,
+      "length": 1,
+      "text": "\n"
+    },
+    {
+      "id": "F0072",
+      "start": 6349,
+      "length": 564,
+      "text": "**Compose total:** Baseline mean 5.67/10 (range 4–7; sample SD 1.53). Candidate mean 3.33/10 (range 3–4; sample SD 0.58). Candidate outputs remained readable, but did not restore the intended editorial hierarchy. Run 1 included editorial meta-text (“The post’s purpose is simple”) and a claim that the workflow would be validated before expansion. Run 2 generalized about what useful AI requires and named founders/product leaders. Run 3 opened by reframing content creation as an orchestration problem and expanded to architecture tradeoffs and validation focus.\n"
+    },
+    {
+      "id": "F0073",
+      "start": 6913,
+      "length": 1,
+      "text": "\n"
+    },
+    {
+      "id": "F0074",
+      "start": 6914,
+      "length": 42,
+      "text": "## Analysis against the required criteria\n"
+    },
+    {
+      "id": "F0075",
+      "start": 6956,
+      "length": 1,
+      "text": "\n"
+    },
+    {
+      "id": "F0076",
+      "start": 6957,
+      "length": 352,
+      "text": "- **(a) Company identity and ambition for other AI-first businesses:** Baseline narratives stated this more consistently. Candidate narratives mentioned an AI-first company or philosophy but did not preserve the intended audience and company-level ambition as the primary message. Candidate compositions likewise omitted or diluted the audience scope.\n"
+    },
+    {
+      "id": "F0077",
+      "start": 7309,
+      "length": 195,
+      "text": "- **(b) Compose as first concrete step:** Candidate narratives retained this. Candidate Compose runs 1–2 did too; run 3 implied Compose's role without clearly calling it the first concrete step.\n"
+    },
+    {
+      "id": "F0078",
+      "start": 7504,
+      "length": 206,
+      "text": "- **(c) Orchestration as supporting explanation:** All three candidate Narrative runs and all three candidate Compose runs failed this gate. Each made orchestration/orchestration-first positioning central.\n"
+    },
+    {
+      "id": "F0079",
+      "start": 7710,
+      "length": 293,
+      "text": "- **(d) Unsupported additions:** No candidate run passed this gate. The Narrative outputs introduced validation intent/commitment, an audience of founders/product leaders/builders, or a need for coordinated AI. The Compose outputs repeated or extended those additions. This is a hard failure.\n"
+    },
+    {
+      "id": "F0080",
+      "start": 8003,
+      "length": 295,
+      "text": "- **(e) Introductory LinkedIn suitability:** Candidate prose was generally readable, but all three Compose outputs were materially less suitable because the company-level message was displaced by technical exposition; one included meta-text and another implied a launch/validation announcement.\n"
+    },
+    {
+      "id": "F0081",
+      "start": 8298,
+      "length": 154,
+      "text": "- **Readability and coherence:** Both conditions were generally readable and logically organized (rated 4/5). The change did not improve these qualities.\n"
+    },
+    {
+      "id": "F0082",
+      "start": 8452,
+      "length": 251,
+      "text": "- **Source fidelity:** Candidate source-fidelity ratings were consistently lower (2/5) because the editorial hierarchy drift and unsupported elaborations persisted. Variability narrowed, but the stable result was a stable failure, not an improvement.\n"
+    },
+    {
+      "id": "F0083",
+      "start": 8703,
+      "length": 1,
+      "text": "\n"
+    },
+    {
+      "id": "F0084",
+      "start": 8704,
+      "length": 448,
+      "text": "The baseline Synthesis pairs company identity with Compose in its top-level emphasis, but also contains a later description calling orchestration “central to the product direction.” That internal tension may have reinforced the technical angle. This does not change the controlled result: the candidate prompt was not sufficient to protect the supplied editorial intent, and this experiment did not change Synthesis because that was outside scope.\n"
+    },
+    {
+      "id": "F0085",
+      "start": 9152,
+      "length": 1,
+      "text": "\n"
+    },
+    {
+      "id": "F0086",
+      "start": 9153,
+      "length": 40,
+      "text": "## Build, tests, and promotion decision\n"
+    },
+    {
+      "id": "F0087",
+      "start": 9193,
+      "length": 1,
+      "text": "\n"
+    },
+    {
+      "id": "F0088",
+      "start": 9194,
+      "length": 97,
+      "text": "- Candidate prompt build: `dotnet build src/Nueyon.Compose.slnx` — passed, 0 warnings, 0 errors.\n"
+    },
+    {
+      "id": "F0089",
+      "start": 9291,
+      "length": 100,
+      "text": "- Restored production build: `dotnet build src/Nueyon.Compose.slnx` — passed, 0 warnings, 0 errors.\n"
+    },
+    {
+      "id": "F0090",
+      "start": 9391,
+      "length": 208,
+      "text": "- Restored production tests: `dotnet test src/Nueyon.Compose.slnx --no-build` — 165 passed, 0 failed, 0 skipped (Application 138, Infrastructure 21, Console 6). Domain test project had no discoverable tests.\n"
+    },
+    {
+      "id": "F0091",
+      "start": 9599,
+      "length": 181,
+      "text": "- Candidate tests were not run separately; the change was prompt text embedded as a resource, and the final established test command was run against the restored production prompt.\n"
+    },
+    {
+      "id": "F0092",
+      "start": 9780,
+      "length": 268,
+      "text": "- **Decision: Do not promote.** Candidate was worse on mean score for both Narrative and Compose, failed the orchestration hierarchy and factual restraint gates in every run, and introduced regressions. The production prompt was restored from the saved byte snapshot.\n"
+    },
+    {
+      "id": "F0093",
+      "start": 10048,
+      "length": 157,
+      "text": "- Rollback verification: production prompt SHA-256 `475A9DB1CA028EBC927C99ECDD3DAB061B0616ED06FB1278879992D2E8DD795A`, matching the frozen baseline exactly.\n"
+    },
+    {
+      "id": "F0094",
+      "start": 10205,
+      "length": 30,
+      "text": "- No commit or push was made.\n"
+    },
+    {
+      "id": "F0095",
+      "start": 10235,
+      "length": 1,
+      "text": "\n"
+    },
+    {
+      "id": "F0096",
+      "start": 10236,
+      "length": 15,
+      "text": "## Limitations\n"
+    },
+    {
+      "id": "F0097",
+      "start": 10251,
+      "length": 1,
+      "text": "\n"
+    },
+    {
+      "id": "F0098",
+      "start": 10252,
+      "length": 233,
+      "text": "- The baseline runs were produced on 2026-11-03; candidate runs were produced on 2026-11-04. The source, all prompts, commit, model alias, and workflow settings matched, but the model provider may change the backend behind an alias.\n"
+    },
+    {
+      "id": "F0099",
+      "start": 10485,
+      "length": 139,
+      "text": "- No seed or temperature override was available. Three runs per condition show consistency in these samples, not statistical significance.\n"
+    },
+    {
+      "id": "F0100",
+      "start": 10624,
+      "length": 150,
+      "text": "- Idea and Research outputs vary between runs. This is expected in the same full-pipeline comparison; all other stages and inputs were kept constant.\n"
+    },
+    {
+      "id": "F0101",
+      "start": 10774,
+      "length": 141,
+      "text": "- The console captures the selected first Idea, not every Idea candidate. Research has no separately configured external retrieval provider.\n"
+    },
+    {
+      "id": "F0102",
+      "start": 10915,
+      "length": 82,
+      "text": "- Subjective scores are based on the saved outputs and the explicit rubric above.\n"
+    },
+    {
+      "id": "F0103",
+      "start": 10997,
+      "length": 1,
+      "text": "\n"
+    },
+    {
+      "id": "F0104",
+      "start": 10998,
+      "length": 18,
+      "text": "## Artifact index\n"
+    },
+    {
+      "id": "F0105",
+      "start": 11016,
+      "length": 1,
+      "text": "\n"
+    },
+    {
+      "id": "F0106",
+      "start": 11017,
+      "length": 70,
+      "text": "- `baseline/input/` — frozen source and archived instruction context.\n"
+    },
+    {
+      "id": "F0107",
+      "start": 11087,
+      "length": 82,
+      "text": "- `baseline/prompts/Narrative/` — exact frozen Narrative system and user prompts.\n"
+    },
+    {
+      "id": "F0108",
+      "start": 11169,
+      "length": 101,
+      "text": "- `baseline/outputs/` — three full prior baseline logs plus extracted Narrative and Compose outputs.\n"
+    },
+    {
+      "id": "F0109",
+      "start": 11270,
+      "length": 62,
+      "text": "- `candidate/prompts/Narrative/` — candidate prompt snapshot.\n"
+    },
+    {
+      "id": "F0110",
+      "start": 11332,
+      "length": 97,
+      "text": "- `candidate/outputs/` — three full candidate logs plus extracted Narrative and Compose outputs.\n"
+    },
+    {
+      "id": "F0111",
+      "start": 11429,
+      "length": 71,
+      "text": "- `prompt-changes/` — prompt diff and byte-for-byte rollback snapshot.\n"
+    },
+    {
+      "id": "F0112",
+      "start": 11500,
+      "length": 86,
+      "text": "- `metadata.json` — configuration, hashes, execution IDs, stage timings, and decision."
+    }
+  ]
+}

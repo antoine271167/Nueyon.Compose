@@ -1,0 +1,19 @@
+{
+  "accepted": false,
+  "blockingIssues": [
+    {
+      "category": "evidenceCoverage",
+      "researchLocation": "research.Facts and synthesisInput.Facts",
+      "problem": "The projection omits the source\u2019s material qualification that the baseline Synthesis itself paired company identity with Compose while later calling orchestration \u201Ccentral.\u201D This tension may have reinforced the technical angle, so readers need it to interpret the intended hierarchy and the observed failure without implying the prompt intervention was tested against an internally unambiguous Synthesis.",
+      "sourceQuote": "The baseline Synthesis pairs company identity with Compose in its top-level emphasis, but also contains a later description calling orchestration \u201Ccentral to the product direction.\u201D That internal tension may have reinforced the technical angle.",
+      "constraint": "Include this source-reported tension and its tentative status as context; do not claim it caused the candidate results or negate the reported outcome."
+    },
+    {
+      "category": "evidenceCoverage",
+      "researchLocation": "research.Unknowns and synthesisInput.Unknowns",
+      "problem": "The projection notes that only the Narrative prompt changed, but omits that Idea and Research outputs varied between runs in this full-pipeline comparison. That variability is relevant to how strongly the observed differences can be attributed to the prompt change; fixed workflow inputs do not mean generated upstream outputs were identical.",
+      "sourceQuote": "Idea and Research outputs vary between runs. This is expected in the same full-pipeline comparison; all other stages and inputs were kept constant.",
+      "constraint": "Preserve the distinction between unchanged configured inputs and varying generated upstream outputs, without asserting that this variation explains the results."
+    }
+  ]
+}

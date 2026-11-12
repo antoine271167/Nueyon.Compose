@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-EjWbFA29TUO7S55B9WhM3DNxbknt6",
+  "object": "chat.completion",
+  "created": 1794518781,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"accepted\":false,\"blockingIssues\":[{\"category\":\"evidenceCoverage\",\"researchLocation\":\"Facts 6–7; Unknowns\",\"problem\":\"The projection includes the potentially AI-only positioning but omits the source’s explicit limit on what that means. Without noting that its operational meaning is undefined, the fact could support an unwarrantedly definite interpretation of the company’s operating model.\",\"sourceQuote\":\"The broader AI-only ambition expresses a stronger version of this positioning, but its precise operational meaning has not yet been defined in the available source material.\",\"constraint\":\"Keep AI-only framed as an ambition whose operational meaning is undefined; do not infer that all activities are automated or that human involvement will be eliminated.\"}]}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 9134,
+    "completion_tokens": 1499,
+    "total_tokens": 10633,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 9131,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1332,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

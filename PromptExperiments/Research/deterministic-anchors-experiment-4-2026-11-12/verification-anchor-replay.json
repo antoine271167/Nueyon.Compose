@@ -1,0 +1,765 @@
+{
+  "method": "Ordinal exact matching; no trim, case folding, newline conversion, Markdown stripping or Unicode normalization. Historical quotations reused, current ID maps new.",
+  "historical": [
+    {
+      "id": "intro",
+      "reusedFromExperiment": 3,
+      "allExact": true,
+      "anchors": [
+        {
+          "item": "S1",
+          "quote": "Nuëyon is an emerging AI-first software company with the ambition to build tools, products, and knowledge for other AI-first companies.",
+          "exact": true
+        },
+        {
+          "item": "S1",
+          "quote": "Nuëyon's intended audience is other AI-first companies: businesses that place AI at the center of their products, operations, or business models.",
+          "exact": true
+        },
+        {
+          "item": "S2",
+          "quote": "Nuëyon.Compose is the first concrete expression of the company's vision.",
+          "exact": true
+        },
+        {
+          "item": "S2",
+          "quote": "Its purpose is to turn ideas and accumulated knowledge into useful, well-structured content through an AI-native orchestration workflow.",
+          "exact": true
+        },
+        {
+          "item": "S2",
+          "quote": "Compose is designed to organize that process into distinct stages:",
+          "exact": true
+        },
+        {
+          "item": "S3",
+          "quote": "Idea → Discover and Select → Research → Synthesize → Narrative → Compose",
+          "exact": true
+        },
+        {
+          "item": "S3",
+          "quote": "The key principle is that content should be developed from researched and organized source material rather than generated from a blank prompt without a structured process.",
+          "exact": true
+        },
+        {
+          "item": "S3",
+          "quote": "The upstream stages determine what can truthfully be said. The final composition stage determines how that material is presented.",
+          "exact": true
+        },
+        {
+          "item": "S4",
+          "quote": "Nuëyon is at an early stage. Nuëyon.Compose is the first concrete product direction, while the broader portfolio and operating model remain under development.",
+          "exact": true
+        },
+        {
+          "item": "S5",
+          "quote": "This is the strategic premise behind the company, not a claim that every identified need has already been validated or that the proposed solutions have demonstrated their effectiveness.",
+          "exact": true
+        },
+        {
+          "item": "S6",
+          "quote": "First, AI is central to the products Nuëyon intends to build. The products should use AI as a fundamental capability to accomplish useful work.",
+          "exact": true
+        },
+        {
+          "item": "S6",
+          "quote": "Second, the company itself is intended to operate in an AI-first manner, using AI as a central part of how products are conceived, developed, and operated.",
+          "exact": true
+        },
+        {
+          "item": "S6",
+          "quote": "The broader AI-only ambition expresses a stronger version of this positioning, but its precise operational meaning has not yet been defined in the available source material.",
+          "exact": true
+        },
+        {
+          "item": "S7",
+          "quote": "Several product directions and capabilities have been explored.",
+          "exact": true
+        },
+        {
+          "item": "S7",
+          "quote": "These areas are possibilities for a broader portfolio, not a list of products that are already available or committed to a delivery schedule.",
+          "exact": true
+        },
+        {
+          "item": "S8",
+          "quote": "The intention is to create software with clear responsibilities and reusable capabilities. The architecture itself should not be presented as proof of superior performance, lower costs, or improved productivity without supporting evidence.",
+          "exact": true
+        },
+        {
+          "item": "S9",
+          "quote": "The company positioning should therefore communicate a clear intended audience without suggesting that Nuëyon already has an established customer base or commercially available portfolio.",
+          "exact": true
+        },
+        {
+          "item": "S9",
+          "quote": "The company is at an early stage. Do not imply an established customer base, commercial traction, or a portfolio of launched products.",
+          "exact": true
+        },
+        {
+          "item": "S10",
+          "quote": "These formats represent the planned direction; they should not all be described as fully implemented or commercially available.",
+          "exact": true
+        },
+        {
+          "item": "S10",
+          "quote": "Publishing and distribution may become part of the broader offering, but automatic publication is not part of the current Compose implementation.",
+          "exact": true
+        },
+        {
+          "item": "S11",
+          "quote": "The roadmap is best understood as a sequence of development priorities rather than a fixed release schedule.",
+          "exact": true
+        },
+        {
+          "item": "S11",
+          "quote": "No specific launch dates or commercial availability commitments have been established in the material summarized here.",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "id": "005",
+      "reusedFromExperiment": 3,
+      "allExact": true,
+      "anchors": [
+        {
+          "item": "S1",
+          "quote": "The candidate added one generic section, **“Preserve Editorial Intent from the Synthesis.”** It tells Narrative to identify the primary message, supporting themes, and contextual details; preserve audience scope and relative emphasis; keep technical details subordinate when Synthesis does; and retain uncertainty when the source is ambiguous.",
+          "exact": true
+        },
+        {
+          "item": "S1",
+          "quote": "**Candidate:** Three new runs with only `src/Nueyon.Compose.Application/Prompts/Narrative/Narrative.user.prompt.txt` changed. All other prompt files and workflow inputs remained identical.",
+          "exact": true
+        },
+        {
+          "item": "S2",
+          "quote": "| Candidate | 1 | 1 | 2 | 0 | 0 | 1 | 4 | 4 | 4 | 2 |",
+          "exact": true
+        },
+        {
+          "item": "S2",
+          "quote": "| Candidate | 2 | 1 | 2 | 0 | 0 | 1 | 4 | 4 | 4 | 2 |",
+          "exact": true
+        },
+        {
+          "item": "S2",
+          "quote": "| Candidate | 3 | 1 | 2 | 0 | 0 | 1 | 4 | 4 | 4 | 2 |",
+          "exact": true
+        },
+        {
+          "item": "S2",
+          "quote": "**Narrative total:** Baseline mean 6.00/10 (range 5–7; sample SD 1.00). Candidate mean 4.00/10 (range 4–4; sample SD 0.00).",
+          "exact": true
+        },
+        {
+          "item": "S3",
+          "quote": "Candidate outputs were readable and coherent, but consistently subordinated company identity and audience scope while making orchestration the central positioning. Candidate samples also introduced unsupported validation or audience framing.",
+          "exact": true
+        },
+        {
+          "item": "S3",
+          "quote": "**(c) Orchestration as supporting explanation:** All three candidate Narrative runs and all three candidate Compose runs failed this gate. Each made orchestration/orchestration-first positioning central.",
+          "exact": true
+        },
+        {
+          "item": "S3",
+          "quote": "**(d) Unsupported additions:** No candidate run passed this gate. The Narrative outputs introduced validation intent/commitment, an audience of founders/product leaders/builders, or a need for coordinated AI.",
+          "exact": true
+        },
+        {
+          "item": "S4",
+          "quote": "| Candidate | 1 | 1 | 2 | 0 | 0 | 0 | 3 | 4 | 4 | 2 |",
+          "exact": true
+        },
+        {
+          "item": "S4",
+          "quote": "| Candidate | 2 | 1 | 2 | 0 | 0 | 1 | 4 | 4 | 4 | 2 |",
+          "exact": true
+        },
+        {
+          "item": "S4",
+          "quote": "| Candidate | 3 | 1 | 1 | 0 | 0 | 1 | 3 | 4 | 4 | 2 |",
+          "exact": true
+        },
+        {
+          "item": "S4",
+          "quote": "**Compose total:** Baseline mean 5.67/10 (range 4–7; sample SD 1.53). Candidate mean 3.33/10 (range 3–4; sample SD 0.58).",
+          "exact": true
+        },
+        {
+          "item": "S4",
+          "quote": "**Decision: Do not promote.** Candidate was worse on mean score for both Narrative and Compose, failed the orchestration hierarchy and factual restraint gates in every run, and introduced regressions.",
+          "exact": true
+        },
+        {
+          "item": "S5",
+          "quote": "**(b) Compose as first concrete step:** Candidate narratives retained this. Candidate Compose runs 1–2 did too; run 3 implied Compose's role without clearly calling it the first concrete step.",
+          "exact": true
+        },
+        {
+          "item": "S5",
+          "quote": "**Readability and coherence:** Both conditions were generally readable and logically organized (rated 4/5). The change did not improve these qualities.",
+          "exact": true
+        },
+        {
+          "item": "S6",
+          "quote": "The baseline Synthesis pairs company identity with Compose in its top-level emphasis, but also contains a later description calling orchestration “central to the product direction.”",
+          "exact": true
+        },
+        {
+          "item": "S6",
+          "quote": "That internal tension may have reinforced the technical angle.",
+          "exact": true
+        },
+        {
+          "item": "S7",
+          "quote": "Variability narrowed, but the stable result was a stable failure, not an improvement.",
+          "exact": true
+        },
+        {
+          "item": "S7",
+          "quote": "**Decision: Do not promote.** Candidate was worse on mean score for both Narrative and Compose, failed the orchestration hierarchy and factual restraint gates in every run, and introduced regressions.",
+          "exact": true
+        },
+        {
+          "item": "S7",
+          "quote": "The production prompt was restored from the saved byte snapshot.",
+          "exact": true
+        },
+        {
+          "item": "S8",
+          "quote": "The baseline runs were produced on 2026-11-03; candidate runs were produced on 2026-11-04. The source, all prompts, commit, model alias, and workflow settings matched, but the model provider may change the backend behind an alias.",
+          "exact": true
+        },
+        {
+          "item": "S8",
+          "quote": "No seed or temperature override was available. Three runs per condition show consistency in these samples, not statistical significance.",
+          "exact": true
+        },
+        {
+          "item": "S8",
+          "quote": "Subjective scores are based on the saved outputs and the explicit rubric above.",
+          "exact": true
+        },
+        {
+          "item": "S9",
+          "quote": "Idea and Research outputs vary between runs. This is expected in the same full-pipeline comparison; all other stages and inputs were kept constant.",
+          "exact": true
+        },
+        {
+          "item": "S9",
+          "quote": "The console captures the selected first Idea, not every Idea candidate. Research has no separately configured external retrieval provider.",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "id": "010",
+      "reusedFromExperiment": 3,
+      "allExact": false,
+      "anchors": [
+        {
+          "item": "P1",
+          "quote": "The first visible editorial hierarchy break varies by run.",
+          "exact": true
+        },
+        {
+          "item": "P1",
+          "quote": "In Experiment 008 Company-first runs, selected Idea already changes the hierarchy in A-001 and A-003",
+          "exact": true
+        },
+        {
+          "item": "P1",
+          "quote": "candidate 003 is already company/product hierarchy drift in Synthesis.",
+          "exact": true
+        },
+        {
+          "item": "P1",
+          "quote": "Narrative is the most recurrent first visible hierarchy shift in the available records.",
+          "exact": true
+        },
+        {
+          "item": "P2",
+          "quote": "Narrative is the most recurrent first visible hierarchy shift in the available records.",
+          "exact": true
+        },
+        {
+          "item": "P2",
+          "quote": "It is first in 007 runs 001–002, 008 A-002 (factual breach) and 009 baseline 002/003 and candidates 001–003.",
+          "exact": true
+        },
+        {
+          "item": "P2",
+          "quote": "But it is not a sole root cause: some runs start in Idea or Synthesis, and in 009 baseline 001 the reported factual issue is Compose.",
+          "exact": true
+        },
+        {
+          "item": "P3",
+          "quote": "A-001 | **Idea** | Compose is selected as the “concrete expression” framing Nuëyon’s identity",
+          "exact": true
+        },
+        {
+          "item": "P3",
+          "quote": "A-003 | **Idea** | Selected Idea calls Compose an “orchestration-first philosophy”",
+          "exact": true
+        },
+        {
+          "item": "P4",
+          "quote": "Candidate 003 | **Synthesis** | Primary message and subject make Compose/orchestration the story; broader company identity and audience become context.",
+          "exact": true
+        },
+        {
+          "item": "P4",
+          "quote": "We can localize drift only from Synthesis onward for those chains",
+          "exact": true
+        },
+        {
+          "item": "P5",
+          "quote": "For each run, “first drift” means the earliest **observable** stage that departs from the requested company-first editorial hierarchy, introduces unsupported material, or makes a materially stronger claim.",
+          "exact": true
+        },
+        {
+          "item": "P5",
+          "quote": "It does not imply internal model causation.",
+          "exact": true
+        },
+        {
+          "item": "P6",
+          "quote": "Experiment 009 shows that a company-first selected Idea is not sufficient.",
+          "exact": true
+        },
+        {
+          "item": "P6",
+          "quote": "The evaluation reports the selected Idea kept Nuëyon primary and Compose as first product direction in all six baseline/candidate runs.",
+          "exact": true
+        },
+        {
+          "item": "P6",
+          "quote": "The reported issues then appear downstream: orchestration-centered story framing, unsupported audience/validation/outcome language, or a factual overclaim in Compose.",
+          "exact": true
+        },
+        {
+          "item": "P7",
+          "quote": "Baseline 001 | **Compose** (reported factual failure)",
+          "exact": true
+        },
+        {
+          "item": "P7",
+          "quote": "Selected Idea and earlier chain remain company-first; the artifact’s score gives downstream hierarchy 2/2.",
+          "exact": true
+        },
+        {
+          "item": "P7",
+          "quote": "reliable conversion is not established.",
+          "exact": true
+        },
+        {
+          "item": "P8",
+          "quote": "Factual and editorial failures are distinct.",
+          "exact": true
+        },
+        {
+          "item": "P8",
+          "quote": "Orchestration is source-supported as a Compose design principle; making it the defining story of a company introduction can still violate the source’s editorial intent.",
+          "exact": true
+        },
+        {
+          "item": "P8",
+          "quote": "The source supports two true propositions that compete editorially: Nuëyon is an AI-first company; orchestration is central to Compose’s design.",
+          "exact": false
+        },
+        {
+          "item": "P9",
+          "quote": "Technical-first B runs intentionally start technical, so their first technical framing in Idea is expected by that condition",
+          "exact": true
+        },
+        {
+          "item": "P9",
+          "quote": "In technical-first Experiment 008 B runs, technical hierarchy itself is the intended condition; the table identifies any separate scope/factual breach.",
+          "exact": true
+        },
+        {
+          "item": "P10",
+          "quote": "Its saved evaluation summarizes the six runs but does not assign a formal first-failure stage to each dimension.",
+          "exact": true
+        },
+        {
+          "item": "P10",
+          "quote": "where the exact factual precursor is not explicitly called out (notably baseline 003), the localization is lower confidence.",
+          "exact": true
+        },
+        {
+          "item": "P11",
+          "quote": "These are direct format references in upstream prompt text.",
+          "exact": true
+        },
+        {
+          "item": "P11",
+          "quote": "This is an instruction-boundary inconsistency and a plausible source of format priming",
+          "exact": true
+        },
+        {
+          "item": "P11",
+          "quote": "It does **not** demonstrate that these references caused orchestration drift or a weak hook in any given run.",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "id": "garden",
+      "reusedFromExperiment": 3,
+      "allExact": true,
+      "anchors": [
+        {
+          "item": "S1",
+          "quote": "The garden board calls the seed library its first practical expression of the neighbourhood-sharing plan.",
+          "exact": true
+        },
+        {
+          "item": "S1",
+          "quote": "This is the board’s stated meaning, not a measured result.",
+          "exact": true
+        },
+        {
+          "item": "S2",
+          "quote": "The library is a pilot; expansion is undecided.",
+          "exact": true
+        },
+        {
+          "item": "S3",
+          "quote": "No visitor survey or sharing-outcome study has been conducted.",
+          "exact": true
+        },
+        {
+          "item": "S4",
+          "quote": "Opening hours are not yet fixed.",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "id": "kiln",
+      "reusedFromExperiment": 3,
+      "allExact": false,
+      "anchors": [
+        {
+          "item": "S1",
+          "quote": "Week A used controller X and recorded 12 cracked tiles in 100. Week B used controller Y and recorded 5 in 100.",
+          "exact": false
+        },
+        {
+          "item": "S2",
+          "quote": "Clay batches and drying humidity differed between weeks.",
+          "exact": true
+        },
+        {
+          "item": "S3",
+          "quote": "A same-controller X check also recorded 5 in 100 after a batch change.",
+          "exact": true
+        },
+        {
+          "item": "S4",
+          "quote": "The team retained Y for a longer trial; it did not conclude that Y caused the reduction.",
+          "exact": true
+        },
+        {
+          "item": "S5",
+          "quote": "The log contains no long-term durability measurements.",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "id": "catalogue",
+      "reusedFromExperiment": 3,
+      "allExact": false,
+      "anchors": [
+        {
+          "item": "S1",
+          "quote": "Batch North preserved the intended shelf order but its printed labels gave wrong years.",
+          "exact": false
+        },
+        {
+          "item": "S2",
+          "quote": "Batch South printed the years correctly but reversed shelf order.",
+          "exact": true
+        },
+        {
+          "item": "S3",
+          "quote": "Batch West had both dimensions correct.",
+          "exact": true
+        },
+        {
+          "item": "S4",
+          "quote": "It recommended checking dates and shelf order separately.",
+          "exact": true
+        },
+        {
+          "item": "S5",
+          "quote": "The audit found no single earliest cause across batches",
+          "exact": true
+        },
+        {
+          "item": "S6",
+          "quote": "a missing intake log prevents attribution for North.",
+          "exact": true
+        },
+        {
+          "item": "S7",
+          "quote": "No reader-comprehension tests were run.",
+          "exact": true
+        }
+      ]
+    }
+  ],
+  "current": [
+    {
+      "id": "intro",
+      "catalogExact": true,
+      "items": 15,
+      "anchorReferences": 56,
+      "entries": [
+        {
+          "id": "I1",
+          "allKnown": true,
+          "unique": true,
+          "quotesExact": true
+        },
+        {
+          "id": "I2",
+          "allKnown": true,
+          "unique": true,
+          "quotesExact": true
+        },
+        {
+          "id": "I3",
+          "allKnown": true,
+          "unique": true,
+          "quotesExact": true
+        },
+        {
+          "id": "I4",
+          "allKnown": true,
+          "unique": true,
+          "quotesExact": true
+        },
+        {
+          "id": "I5",
+          "allKnown": true,
+          "unique": true,
+          "quotesExact": true
+        },
+        {
+          "id": "I6",
+          "allKnown": true,
+          "unique": true,
+          "quotesExact": true
+        },
+        {
+          "id": "I7",
+          "allKnown": true,
+          "unique": true,
+          "quotesExact": true
+        },
+        {
+          "id": "I8",
+          "allKnown": true,
+          "unique": true,
+          "quotesExact": true
+        },
+        {
+          "id": "I9",
+          "allKnown": true,
+          "unique": true,
+          "quotesExact": true
+        },
+        {
+          "id": "I10",
+          "allKnown": true,
+          "unique": true,
+          "quotesExact": true
+        },
+        {
+          "id": "I11",
+          "allKnown": true,
+          "unique": true,
+          "quotesExact": true
+        },
+        {
+          "id": "I12",
+          "allKnown": true,
+          "unique": true,
+          "quotesExact": true
+        },
+        {
+          "id": "I13",
+          "allKnown": true,
+          "unique": true,
+          "quotesExact": true
+        },
+        {
+          "id": "I14",
+          "allKnown": true,
+          "unique": true,
+          "quotesExact": true
+        },
+        {
+          "id": "I15",
+          "allKnown": true,
+          "unique": true,
+          "quotesExact": true
+        }
+      ]
+    },
+    {
+      "id": "005",
+      "catalogExact": true,
+      "items": 10,
+      "anchorReferences": 39,
+      "entries": [
+        {
+          "id": "I1",
+          "allKnown": true,
+          "unique": true,
+          "quotesExact": true
+        },
+        {
+          "id": "I2",
+          "allKnown": true,
+          "unique": true,
+          "quotesExact": true
+        },
+        {
+          "id": "I3",
+          "allKnown": true,
+          "unique": true,
+          "quotesExact": true
+        },
+        {
+          "id": "I4",
+          "allKnown": true,
+          "unique": true,
+          "quotesExact": true
+        },
+        {
+          "id": "I5",
+          "allKnown": true,
+          "unique": true,
+          "quotesExact": true
+        },
+        {
+          "id": "I6",
+          "allKnown": true,
+          "unique": true,
+          "quotesExact": true
+        },
+        {
+          "id": "I7",
+          "allKnown": true,
+          "unique": true,
+          "quotesExact": true
+        },
+        {
+          "id": "I8",
+          "allKnown": true,
+          "unique": true,
+          "quotesExact": true
+        },
+        {
+          "id": "I9",
+          "allKnown": true,
+          "unique": true,
+          "quotesExact": true
+        },
+        {
+          "id": "I10",
+          "allKnown": true,
+          "unique": true,
+          "quotesExact": true
+        }
+      ]
+    },
+    {
+      "id": "010",
+      "catalogExact": true,
+      "items": 12,
+      "anchorReferences": 28,
+      "entries": [
+        {
+          "id": "P1",
+          "allKnown": true,
+          "unique": true,
+          "quotesExact": true
+        },
+        {
+          "id": "P2",
+          "allKnown": true,
+          "unique": true,
+          "quotesExact": true
+        },
+        {
+          "id": "P3",
+          "allKnown": true,
+          "unique": true,
+          "quotesExact": true
+        },
+        {
+          "id": "P4",
+          "allKnown": true,
+          "unique": true,
+          "quotesExact": true
+        },
+        {
+          "id": "P5",
+          "allKnown": true,
+          "unique": true,
+          "quotesExact": true
+        },
+        {
+          "id": "P6",
+          "allKnown": true,
+          "unique": true,
+          "quotesExact": true
+        },
+        {
+          "id": "P7",
+          "allKnown": true,
+          "unique": true,
+          "quotesExact": true
+        },
+        {
+          "id": "P8",
+          "allKnown": true,
+          "unique": true,
+          "quotesExact": true
+        },
+        {
+          "id": "P9",
+          "allKnown": true,
+          "unique": true,
+          "quotesExact": true
+        },
+        {
+          "id": "P10",
+          "allKnown": true,
+          "unique": true,
+          "quotesExact": true
+        },
+        {
+          "id": "P11",
+          "allKnown": true,
+          "unique": true,
+          "quotesExact": true
+        },
+        {
+          "id": "P12",
+          "allKnown": true,
+          "unique": true,
+          "quotesExact": true
+        }
+      ]
+    }
+  ]
+}

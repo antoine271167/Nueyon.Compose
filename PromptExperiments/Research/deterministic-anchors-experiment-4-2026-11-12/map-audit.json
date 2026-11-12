@@ -1,0 +1,67 @@
+{
+  "phase": "after all maps, before all judges",
+  "method": "Unblinded assistant review of every generated entry, controlled source quotes and frozen reference components; not independent human validation. No map repaired.",
+  "maps": [
+    {
+      "id": "intro", "items": 15, "exactAnchors": true,
+      "entries": {
+        "I1": "Company/audience/ambition supported; NuEbyon spelling corruption in paraphrase, exact hydrated quotes intact.",
+        "I2": "Reusable product vs consultancy distinction supported.",
+        "I3": "Early stage and first concrete expression supported; no commercial implementation claim.",
+        "I4": "Intended other AI-first-company audience supported.",
+        "I5": "Workflow/purpose supported, no demonstrated effectiveness.",
+        "I6": "Attributed source-integrity principle supported, no guaranteed truthfulness.",
+        "I7": "Architecture direction supported with measured-benefit boundary.",
+        "I8": "Validation and performance limits accurately preserved.",
+        "I9": "Commercial limits supported; negativeControl is taxonomically loose (not an empirical control).",
+        "I10": "Narrow implementation and excluded automatic publication supported; again not an empirical negative control.",
+        "I11": "Specific portfolio areas now explicitly anchored, provisional status preserved.",
+        "I12": "Company-wide knowledge layer not established; source scoped correctly.",
+        "I13": "AI-first two dimensions and undefined AI-only meaning supported.",
+        "I14": "Roadmap ordering and absence of dates supported; broad framing remains provisional.",
+        "I15": "Explicit broader-vision concrete-expression relation fully present in proposition and F0203, not a measured audience effect."
+      },
+      "referenceCoverage": {"meaning":"full I3/I15", "stage":"full I3/I10/I12", "audience":"full I1/I4", "roadmap":"full I14"},
+      "materialIssues": [], "minorIssues": ["Repeated NuEbyon name corruption in free paraphrases, not quotes; recognizable referent, not silently corrected.", "negativeControl taxonomy does not distinguish source exclusions from empirical controls."]
+    },
+    {
+      "id": "005", "items": 10, "exactAnchors": true,
+      "entries": {
+        "I1": "Stated target and rubric supported, not falsely attributed to consistent Synthesis behavior.",
+        "I2": "Same prompts/inputs supported; boundary about influences does not explicitly preserve actual upstream output variation.",
+        "I3": "Narrative scores/hierarchy/factual additions supported; numerical table fragments lack headers locally but accompanying source paragraph supports means and interpretation.",
+        "I4": "Compose scores and independent failure dimensions preserved, no Compose causation asserted.",
+        "I5": "Partial first-product criterion success preserved.",
+        "I6": "Unsupported additions and hard gate source-supported.",
+        "I7": "Readability distinct from fidelity, supported.",
+        "I8": "Synthesis internal tension and possible reinforcement supported, not proven cause.",
+        "I9": "Non-promotion and restoration supported.",
+        "I10": "Dates/backend/seed/sample and subjectivity limits preserved, but concrete Idea/Research output variation absent."
+      },
+      "referenceCoverage": {"variation":"missing: no entry states Idea and Research outputs vary between runs", "tension":"full I8", "decision":"full I3/I4/I9", "backend":"full I10"},
+      "materialIssues": ["Concrete upstream output variation omitted. General causal caution does not replace this observed source limitation."],
+      "minorIssues": ["Nuéyon spelling corruption in some free paraphrases; hydrated quotes intact."]
+    },
+    {
+      "id": "010", "items": 12, "exactAnchors": true,
+      "entries": {
+        "P1": "Observed stages vary, no universal starting stage asserted.",
+        "P2": "Faithful to source recurrence claim; source mixes factual A-002 example with hierarchy language. Boundary avoids universal cause.",
+        "P3": "Observable not causal distinction retained.",
+        "P4": "Missing Idea/Research extracts and observability limit retained.",
+        "P5": "Company-first Idea insufficient; downstream factual/hierarchy dimensions not collapsed.",
+        "P6": "Intended technical condition distinct from company-first fidelity; reasonable control contrast.",
+        "P7": "Baseline 001 Compose factual failure, preserved company-first earlier chain and 2/2 hierarchy explicitly anchored in full table row F0056.",
+        "P8": "Fact versus editorial-priority distinction supported; Markdown intact.",
+        "P9": "Upstream format references supported, no causal proof.",
+        "P10": "Format priming explicitly only hypothesis.",
+        "P11": "Per-run localization confidence limits retained.",
+        "P12": "Engagement under-measured and qualitative editorial observation preserved."
+      },
+      "referenceCoverage": {"contrast":"full P7", "missing":"full P4", "multiple":"full P1/P2/P3", "dimensions":"full P8/P12"},
+      "materialIssues": [], "minorIssues": ["Source recurrence wording itself mixes dimensions; map remains source-attributed rather than independently validated."]
+    }
+  ],
+  "coverage": {"full":11,"missing":1,"total":12},
+  "conclusion": "3/3 exact provenance maps, 2/3 fully cover frozen reference components. Provenance guarantees do not fix semantic selection or coverage."
+}

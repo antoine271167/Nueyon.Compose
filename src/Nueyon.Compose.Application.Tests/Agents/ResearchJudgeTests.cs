@@ -152,6 +152,28 @@ public sealed class ResearchJudgeTests
     }
 
     [Fact]
+    public async Task NullBlockingIssue_IsTechnicalFailure_WithoutRepairOrDownstreamCalls()
+    {
+        var generator = new FakeChatClient(Generation());
+        var judge = new FakeChatClient("""{"accepted":false,"blockingIssues":[null]}""");
+        var synthesis = new CountingAgent<SynthesisInput, SynthesisResult>(new("synthesis"));
+        var narrative = new CountingAgent<NarrativeInput, NarrativeResult>(new("narrative"));
+        var compose = new CountingAgent<ComposeInput, ComposeResult>(new("compose"));
+        var workflow = new StoryWorkflow(new CountingAgent<StoryInput, IReadOnlyList<Idea>>([Idea]),
+            Create(generator, judge), synthesis, narrative, compose);
+
+        var ex = await Assert.ThrowsAsync<InvalidOperationException>(() => workflow.RunAsync(Input.Input));
+
+        Assert.IsNotType<ResearchValidationException>(ex);
+        Assert.Contains("exact original-source anchor and complete fields", ex.Message);
+        Assert.Equal(1, generator.InvocationCount);
+        Assert.Equal(1, judge.InvocationCount);
+        Assert.Equal(0, synthesis.Calls);
+        Assert.Equal(0, narrative.Calls);
+        Assert.Equal(0, compose.Calls);
+    }
+
+    [Fact]
     public async Task TooManyBlockers_IsTechnicalFailure()
     {
         using var parsed = JsonDocument.Parse(Rejected());

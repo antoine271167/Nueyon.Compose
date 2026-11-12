@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-EjWcyhG2kJ5dw6gh0mD7hEmmHBTFH",
+  "object": "chat.completion",
+  "created": 1794518888,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"accepted\":false,\"blockingIssues\":[{\"category\":\"evidenceCoverage\",\"researchLocation\":\"synthesisInput Facts/Unknowns (also repeated in research.content)\",\"problem\":\"The projection omits Experiment 009 baseline 001 as an important negative control: the source reports a Compose factual failure while the earlier chain remains company-first and hierarchy scores 2/2. This distinction matters to the selected idea’s focus on hierarchy departures, so the Compose factual failure must not be conflated with a Compose-first hierarchy shift.\",\"sourceQuote\":\"Selected Idea and earlier chain remain company-first; the artifact’s score gives downstream hierarchy 2/2.\",\"constraint\":\"Include this run as a factual-failure observation distinct from hierarchy drift, and preserve the reported 2/2 hierarchy score; do not count it as a hierarchy-shift stage.\"}]}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6769,
+    "completion_tokens": 1455,
+    "total_tokens": 8224,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 6766,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1262,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

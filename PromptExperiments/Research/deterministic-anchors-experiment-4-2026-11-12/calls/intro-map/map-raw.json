@@ -1,0 +1,146 @@
+{
+  "items": [
+    {
+      "id": "I1",
+      "kind": "claim",
+      "proposition": "NuEbyon describes itself as an emerging AI-first software company aiming to build tools, products, and knowledge for other AI-first businesses, with an intended portfolio extending beyond one application.",
+      "sourceFragmentIds": ["F0006", "F0008", "F0012"],
+      "materiality": "Establishes the broad company ambition and intended audience that make the first product a starting point rather than the whole vision.",
+      "boundary": "States an ambition and intended direction, not an established portfolio or demonstrated business outcome."
+    },
+    {
+      "id": "I2",
+      "kind": "claim",
+      "proposition": "The intended direction is reusable products and capabilities for a broader audience, rather than primarily traditional consultancy or bespoke software for individual clients.",
+      "sourceFragmentIds": ["F0014", "F0040"],
+      "materiality": "Clarifies the product-oriented character of the company vision.",
+      "boundary": "Does not establish a finalized commercial model, customer segment, or distribution strategy."
+    },
+    {
+      "id": "I3",
+      "kind": "claim",
+      "proposition": "NuEbyon is at an early stage; NuEbyon.Compose is its first concrete product direction, while the broader portfolio and operating model remain under development.",
+      "sourceFragmentIds": ["F0016", "F0060"],
+      "materiality": "Anchors the broad ambition in one concrete starting point while preserving the distinction between the company vision and its first product direction.",
+      "boundary": "Does not establish that Compose is commercially available or that other products are implemented."
+    },
+    {
+      "id": "I4",
+      "kind": "claim",
+      "proposition": "NuEbyon identifies other AI-first companies—businesses placing AI at the center of products, operations, or business models—as its intended audience, and aims to provide them with tools, capabilities, and knowledge.",
+      "sourceFragmentIds": ["F0036", "F0038"],
+      "materiality": "Supports describing whom the company intends to serve.",
+      "boundary": "An intended audience is not evidence of customers, market validation, or established demand."
+    },
+    {
+      "id": "I5",
+      "kind": "claim",
+      "proposition": "Compose is designed to turn ideas and accumulated knowledge into useful, well-structured content through an AI-native orchestration workflow, organized as Idea → Discover and Select → Research → Synthesize → Narrative → Compose.",
+      "sourceFragmentIds": ["F0062", "F0066", "F0068", "F0072", "F0073", "F0074", "F0075", "F0076", "F0077"],
+      "materiality": "Makes the first product direction specific and shows how it relates to the broader ambition.",
+      "boundary": "Describes the product's purpose and designed stages; it does not show that every stage is implemented or that the workflow has demonstrated effectiveness."
+    },
+    {
+      "id": "I6",
+      "kind": "explicitMeaning",
+      "proposition": "The source attributes a content-integrity role to Compose's staged process: content should come from researched and organized source material; upstream stages shape what can truthfully be said, while composition shapes how that material is presented.",
+      "sourceFragmentIds": ["F0079", "F0081"],
+      "materiality": "Preserves the stated distinction between developing/supporting content and presenting it.",
+      "boundary": "This is a stated process principle, not evidence that outputs are necessarily truthful, complete, or accurate."
+    },
+    {
+      "id": "I7",
+      "kind": "claim",
+      "proposition": "NuEbyon presents coordinated workflows and specialized agents as an architectural direction: complex tasks may be divided among agents with distinct responsibilities, coordinated by an orchestration layer; this approach is central to Compose's development.",
+      "sourceFragmentIds": ["F0048", "F0050", "F0052", "F0054"],
+      "materiality": "Supports describing orchestration as part of the product direction and its broader technical approach.",
+      "boundary": "The source characterizes an approach and development direction, not a measured advantage over other architectures."
+    },
+    {
+      "id": "I8",
+      "kind": "causalLimit",
+      "proposition": "The source says the strategic needs it identifies have not necessarily been validated and the proposed solutions have not demonstrated effectiveness; it also cautions that the architecture alone is not proof of superior performance, lower costs, or improved productivity.",
+      "sourceFragmentIds": ["F0032", "F0056"],
+      "materiality": "Prevents the stated rationale or architecture from being converted into claims of validated demand or proven benefits.",
+      "boundary": "Does not establish that the needs or solutions are ineffective; it states that validation or demonstrated effects are not claimed here."
+    },
+    {
+      "id": "I9",
+      "kind": "negativeControl",
+      "proposition": "The source says customer segments, commercial model, and distribution strategy are not finalized, and cautions against implying an established customer base or commercially available portfolio.",
+      "sourceFragmentIds": ["F0042", "F0044"],
+      "materiality": "Limits any account of the company's current market presence or commercial status.",
+      "boundary": "Does not prove that no customer conversations or other activity exist; it only says not to present an established base or available portfolio as fact."
+    },
+    {
+      "id": "I10",
+      "kind": "negativeControl",
+      "proposition": "Compose's current development focus is a deliberately narrow implementation of its core workflow; automatic publication is not part of the current implementation.",
+      "sourceFragmentIds": ["F0085", "F0179"],
+      "materiality": "Separates the product's intended content workflow and possible broader offering from current implementation scope.",
+      "boundary": "Does not specify exactly which workflow stages are implemented or imply that publication could never be added."
+    },
+    {
+      "id": "I11",
+      "kind": "claim",
+      "proposition": "The source lists additional directions—including broader content formats, agent orchestration, knowledge processing, social-media automation, CAD automation, and AI-supported entrepreneurship—as explored or potential portfolio areas.",
+      "sourceFragmentIds": ["F0095", "F0097", "F0101", "F0105", "F0109", "F0113", "F0115", "F0189", "F0191"],
+      "materiality": "Supports the claim that the ambition could extend beyond Compose while preserving the exploratory status of the additional directions.",
+      "boundary": "These are not all implemented, commercially available, or committed products; the source explicitly treats them as possibilities requiring further development and validation."
+    },
+    {
+      "id": "I12",
+      "kind": "causalLimit",
+      "proposition": "The broader structured-knowledge concept has been explored in the content workflow, but its application across the company portfolio remains under development rather than an established company-wide capability.",
+      "sourceFragmentIds": ["F0129"],
+      "materiality": "Limits how broadly knowledge capabilities can be attributed to NuEbyon today.",
+      "boundary": "Does not deny that a knowledge-layer concept has been explored within the content workflow."
+    },
+    {
+      "id": "I13",
+      "kind": "explicitMeaning",
+      "proposition": "NuEbyon's stated AI-first positioning has two dimensions: AI is intended to be fundamental to its products and central to how the company conceives, develops, and operates them. The stronger AI-only ambition has no defined operational meaning in the source.",
+      "sourceFragmentIds": ["F0151", "F0155", "F0157", "F0159"],
+      "materiality": "Clarifies the meaning and limits of the identity claim central to the company's positioning.",
+      "boundary": "Does not establish that all activities are already automated or that human involvement will be eliminated; the source explicitly cautions against those implications."
+    },
+    {
+      "id": "I14",
+      "kind": "claim",
+      "proposition": "The roadmap is described as development priorities, not a fixed release schedule: first focus on Compose, then explore expanded content and reusable capabilities, with a broader portfolio as a later possibility.",
+      "sourceFragmentIds": ["F0165", "F0167", "F0169", "F0171", "F0175", "F0183", "F0189", "F0193"],
+      "materiality": "Preserves the sequence and provisional character of the roadmap.",
+      "boundary": "No launch dates or commercial availability commitments are established."
+    },
+    {
+      "id": "I15",
+      "kind": "explicitMeaning",
+      "proposition": "NuEbyon describes its development principle as starting with a focused problem, establishing a working product, learning through development and use, and expanding when there is a clear reason; Compose is the first step giving the broader vision a concrete expression.",
+      "sourceFragmentIds": ["F0197", "F0199", "F0203", "F0205"],
+      "materiality": "Connects the focused product starting point to the broader ambition without treating every possible direction as inevitable.",
+      "boundary": "Describes an intended development principle, not a reported result of validated learning or a fixed commitment to expand."
+    }
+  ],
+  "ideaChecks": [
+    {
+      "proposition": "NuEbyon aims to build products and capabilities for other AI-first companies.",
+      "sourceItemIds": ["I1", "I4"],
+      "status": "supported"
+    },
+    {
+      "proposition": "NuEbyon's first concrete product direction is Compose, a structured workflow intended to turn ideas and accumulated knowledge into content.",
+      "sourceItemIds": ["I3", "I5"],
+      "status": "supported"
+    },
+    {
+      "proposition": "The broad company ambition is grounded in Compose without implying that the wider portfolio already exists.",
+      "sourceItemIds": ["I1", "I3", "I10", "I11", "I14"],
+      "status": "supported"
+    }
+  ],
+  "limitations": [
+    "The source is a company-positioning brief describing intentions, proposed directions, and development priorities; it supplies no independent validation or measured product outcomes.",
+    "The source distinguishes Compose's intended workflow from its narrow current implementation but does not specify which individual workflow stages are already implemented.",
+    "The exact operational meaning of the AI-only ambition remains undefined in the source."
+  ]
+}

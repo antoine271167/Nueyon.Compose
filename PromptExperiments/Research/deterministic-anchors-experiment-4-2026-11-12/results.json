@@ -1,0 +1,404 @@
+{
+  "decision": "NO-GO",
+  "newLiveCalls": 15,
+  "unusedBudget": 3,
+  "noRetries": true,
+  "noPromotion": true,
+  "enableResearchJudgeChanged": false,
+  "method": "Same unblinded assistant; source-grounded diagnostic review, not independent human scoring or population inference.",
+  "without": {
+    "targetsDetected": 2,
+    "targets": 3,
+    "controlsAccepted": 3,
+    "controls": 3,
+    "parserValid": 6,
+    "verdicts": 6
+  },
+  "with": {
+    "targetsDetected": 0,
+    "targets": 3,
+    "controlsAccepted": 2,
+    "controls": 3,
+    "parserValid": 5,
+    "verdicts": 6
+  },
+  "criteria": {
+    "exactMaps": true,
+    "allVerdictsValid": false,
+    "allWithTargets": false,
+    "allWithControls": false,
+    "strictIncrementalGain": false,
+    "allBlockingDiagnosesMaterial": false,
+    "tokenOverheadWithin80Percent": false,
+    "callsWithin50Percent": true
+  },
+  "costs": {
+    "all": {
+      "calls": 15,
+      "input": 136466,
+      "output": 25029,
+      "total": 161495
+    },
+    "without": {
+      "calls": 6,
+      "input": 37094,
+      "output": 7179,
+      "total": 44273
+    },
+    "withJudges": {
+      "calls": 6,
+      "input": 59510,
+      "output": 10267,
+      "total": 69777
+    },
+    "maps": {
+      "calls": 3,
+      "input": 39862,
+      "output": 7583,
+      "total": 47445
+    },
+    "withAll": {
+      "calls": 9,
+      "input": 99372,
+      "output": 17850,
+      "total": 117222
+    },
+    "extraTokensPercent": 164.77085356763715,
+    "requestChecksPass": true,
+    "freezePass": true
+  },
+  "rows": [
+    {
+      "id": "intro-bad-without",
+      "pair": "intro",
+      "variant": "bad",
+      "arm": "without",
+      "finishReason": "stop",
+      "parserValid": true,
+      "content": {
+        "accepted": true,
+        "blockingIssues": []
+      },
+      "anchors": [],
+      "expectedAccepted": false,
+      "assessment": {
+        "targetDetected": false,
+        "semantic": "False negative: Unknown 4 ignored; accepted despite contradictory concrete-expression relation.",
+        "materiality": "Central relation of selected Idea; not a measured reader effect."
+      }
+    },
+    {
+      "id": "intro-bad-with",
+      "pair": "intro",
+      "variant": "bad",
+      "arm": "with",
+      "finishReason": "stop",
+      "parserValid": true,
+      "content": {
+        "accepted": false,
+        "blockingIssues": [
+          {
+            "category": "evidenceCoverage",
+            "researchLocation": "Facts 6–7; Unknowns",
+            "problem": "The projection includes the potentially AI-only positioning but omits the source’s explicit limit on what that means. Without noting that its operational meaning is undefined, the fact could support an unwarrantedly definite interpretation of the company’s operating model.",
+            "sourceQuote": "The broader AI-only ambition expresses a stronger version of this positioning, but its precise operational meaning has not yet been defined in the available source material.",
+            "constraint": "Keep AI-only framed as an ambition whose operational meaning is undefined; do not infer that all activities are automated or that human involvement will be eliminated."
+          }
+        ]
+      },
+      "anchors": [
+        {
+          "quote": "The broader AI-only ambition expresses a stronger version of this positioning, but its precise operational meaning has not yet been defined in the available source material.",
+          "exact": true
+        }
+      ],
+      "expectedAccepted": false,
+      "assessment": {
+        "targetDetected": false,
+        "semantic": "Valid rejection for a different issue; Unknown 4 not diagnosed. Not a target success.",
+        "issues": [
+          {
+            "index": 0,
+            "sourceSupport": true,
+            "materiality": "Borderline/overstrict under frozen conservative rubric: Facts already say conceived as potentially AI-only, early stage and under development. No assertion of all-automated operations. Explicit definition would add context but consequential mismatch is not demonstrated.",
+            "constraint": "Source-supported boundary, not invented evidence."
+          }
+        ]
+      }
+    },
+    {
+      "id": "intro-correct-with",
+      "pair": "intro",
+      "variant": "correct",
+      "arm": "with",
+      "finishReason": "stop",
+      "parserValid": false,
+      "content": {
+        "accepted": false,
+        "blockingIssues": [
+          {
+            "category": "evidenceCoverage",
+            "researchLocation": "synthesisInput: Facts 6–7; Unknowns",
+            "problem": "The projection records the AI-first and potentially AI-only labels but omits the source’s explanation of what AI-first is intended to mean, and that AI-only’s operational meaning is undefined. Because this projection is meant to support an account of the company’s identity, those qualifications matter to how the labels may be interpreted.",
+            "sourceQuote": "NuEbyon\u0019s intended positioning is that of a company built around AI rather than a conventional software company that adds AI as an additional feature.\n\nThis ambition has two related dimensions.\n\nFirst, AI is central to the products NuEbyon intends to build. The products should use AI as a fundamental capability to accomplish useful work.\n\nSecond, the company itself is intended to operate in an AI-first manner, using AI as a central part of how products are conceived, developed, and operated.\n\nThe broader AI-only ambition expresses a stronger version of this positioning, but its precise operational meaning has not yet been defined in the available source material.",
+            "constraint": "Preserve the source’s intended meaning of AI-first and state that AI-only’s operational meaning remains undefined; do not imply that the company already operates entirely through AI or without human involvement."
+          },
+          {
+            "category": "evidenceCoverage",
+            "researchLocation": "synthesisInput: Unknowns 3",
+            "problem": "The projection limits its effectiveness caveat to the broader portfolio. The source also explicitly says the company’s strategic premise is not evidence that identified needs have been validated or that proposed solutions have demonstrated effectiveness. Omitting that broader limit could leave the core product direction open to being represented as validated or effective when the source does not support that conclusion.",
+            "sourceQuote": "This is the strategic premise behind the company, not a claim that every identified need has already been validated or that the proposed solutions have demonstrated their effectiveness.",
+            "constraint": "Retain the source’s qualification that identified needs are not necessarily validated and proposed solutions are not shown here to be effective; do not assert a specific validation or effectiveness outcome."
+          }
+        ]
+      },
+      "anchors": [
+        {
+          "quote": "NuEbyon\u0019s intended positioning is that of a company built around AI rather than a conventional software company that adds AI as an additional feature.\n\nThis ambition has two related dimensions.\n\nFirst, AI is central to the products NuEbyon intends to build. The products should use AI as a fundamental capability to accomplish useful work.\n\nSecond, the company itself is intended to operate in an AI-first manner, using AI as a central part of how products are conceived, developed, and operated.\n\nThe broader AI-only ambition expresses a stronger version of this positioning, but its precise operational meaning has not yet been defined in the available source material.",
+          "exact": false
+        },
+        {
+          "quote": "This is the strategic premise behind the company, not a claim that every identified need has already been validated or that the proposed solutions have demonstrated their effectiveness.",
+          "exact": true
+        }
+      ],
+      "expectedAccepted": true,
+      "assessment": {
+        "targetDetected": false,
+        "controlAccepted": false,
+        "semantic": "Technical failure plus raw overrejection of correct control.",
+        "issues": [
+          {
+            "index": 0,
+            "sourceSupport": "General meaning source-supported but quote corrupts Nuëyon and apostrophe into NuEbyon and U+0019; not ordinal original-source substring.",
+            "materiality": "Definition may be useful context; no specific unqualified AI-only implementation claim shown."
+          },
+          {
+            "index": 1,
+            "sourceSupport": true,
+            "materiality": "Speculative blocker: purpose/design/intended workflow does not assert validation or effectiveness. Omitted disclaimer alone does not show a material false inference under frozen rubric."
+          }
+        ]
+      }
+    },
+    {
+      "id": "intro-correct-without",
+      "pair": "intro",
+      "variant": "correct",
+      "arm": "without",
+      "finishReason": "stop",
+      "parserValid": true,
+      "content": {
+        "accepted": true,
+        "blockingIssues": []
+      },
+      "anchors": [],
+      "expectedAccepted": true,
+      "assessment": {
+        "controlAccepted": true,
+        "semantic": "Correct acceptance; uncertain implementation/effectiveness not turned into an invented blocker."
+      }
+    },
+    {
+      "id": "005-bad-without",
+      "pair": "005",
+      "variant": "bad",
+      "arm": "without",
+      "finishReason": "stop",
+      "parserValid": true,
+      "content": {
+        "accepted": false,
+        "blockingIssues": [
+          {
+            "category": "evidenceCoverage",
+            "researchLocation": "research.Facts and synthesisInput.Facts",
+            "problem": "The projection omits the source’s material qualification that the baseline Synthesis itself paired company identity with Compose while later calling orchestration “central.” This tension may have reinforced the technical angle, so readers need it to interpret the intended hierarchy and the observed failure without implying the prompt intervention was tested against an internally unambiguous Synthesis.",
+            "sourceQuote": "The baseline Synthesis pairs company identity with Compose in its top-level emphasis, but also contains a later description calling orchestration “central to the product direction.” That internal tension may have reinforced the technical angle.",
+            "constraint": "Include this source-reported tension and its tentative status as context; do not claim it caused the candidate results or negate the reported outcome."
+          },
+          {
+            "category": "evidenceCoverage",
+            "researchLocation": "research.Unknowns and synthesisInput.Unknowns",
+            "problem": "The projection notes that only the Narrative prompt changed, but omits that Idea and Research outputs varied between runs in this full-pipeline comparison. That variability is relevant to how strongly the observed differences can be attributed to the prompt change; fixed workflow inputs do not mean generated upstream outputs were identical.",
+            "sourceQuote": "Idea and Research outputs vary between runs. This is expected in the same full-pipeline comparison; all other stages and inputs were kept constant.",
+            "constraint": "Preserve the distinction between unchanged configured inputs and varying generated upstream outputs, without asserting that this variation explains the results."
+          }
+        ]
+      },
+      "anchors": [
+        {
+          "quote": "The baseline Synthesis pairs company identity with Compose in its top-level emphasis, but also contains a later description calling orchestration “central to the product direction.” That internal tension may have reinforced the technical angle.",
+          "exact": true
+        },
+        {
+          "quote": "Idea and Research outputs vary between runs. This is expected in the same full-pipeline comparison; all other stages and inputs were kept constant.",
+          "exact": true
+        }
+      ],
+      "expectedAccepted": false,
+      "assessment": {
+        "targetDetected": true,
+        "semantic": "Both concrete upstream variation and Synthesis tension found.",
+        "issues": [
+          {
+            "index": 0,
+            "sourceSupport": true,
+            "materiality": "Relevant source-reported ambiguity qualifies interpretation of intervention; possible reinforcement not proven cause."
+          },
+          {
+            "index": 1,
+            "sourceSupport": true,
+            "materiality": "Primary target: fixed configured inputs do not imply identical generated upstream outputs. Generic unknown cause does not preserve actual variation."
+          }
+        ]
+      }
+    },
+    {
+      "id": "005-bad-with",
+      "pair": "005",
+      "variant": "bad",
+      "arm": "with",
+      "finishReason": "stop",
+      "parserValid": true,
+      "content": {
+        "accepted": true,
+        "blockingIssues": []
+      },
+      "anchors": [],
+      "expectedAccepted": false,
+      "assessment": {
+        "targetDetected": false,
+        "semantic": "False negative. Map omitted upstream variation; source still available. Map included Synthesis tension but judge did not block either omission."
+      }
+    },
+    {
+      "id": "005-correct-with",
+      "pair": "005",
+      "variant": "correct",
+      "arm": "with",
+      "finishReason": "stop",
+      "parserValid": true,
+      "content": {
+        "accepted": true,
+        "blockingIssues": []
+      },
+      "anchors": [],
+      "expectedAccepted": true,
+      "assessment": {
+        "controlAccepted": true,
+        "semantic": "Correct acceptance of preserved outcomes, concrete upstream variation and tentative Synthesis influence."
+      }
+    },
+    {
+      "id": "005-correct-without",
+      "pair": "005",
+      "variant": "correct",
+      "arm": "without",
+      "finishReason": "stop",
+      "parserValid": true,
+      "content": {
+        "accepted": true,
+        "blockingIssues": []
+      },
+      "anchors": [],
+      "expectedAccepted": true,
+      "assessment": {
+        "controlAccepted": true,
+        "semantic": "Correct acceptance of same complete historical control."
+      }
+    },
+    {
+      "id": "010-bad-without",
+      "pair": "010",
+      "variant": "bad",
+      "arm": "without",
+      "finishReason": "stop",
+      "parserValid": true,
+      "content": {
+        "accepted": false,
+        "blockingIssues": [
+          {
+            "category": "evidenceCoverage",
+            "researchLocation": "synthesisInput Facts/Unknowns (also repeated in research.content)",
+            "problem": "The projection omits Experiment 009 baseline 001 as an important negative control: the source reports a Compose factual failure while the earlier chain remains company-first and hierarchy scores 2/2. This distinction matters to the selected idea’s focus on hierarchy departures, so the Compose factual failure must not be conflated with a Compose-first hierarchy shift.",
+            "sourceQuote": "Selected Idea and earlier chain remain company-first; the artifact’s score gives downstream hierarchy 2/2.",
+            "constraint": "Include this run as a factual-failure observation distinct from hierarchy drift, and preserve the reported 2/2 hierarchy score; do not count it as a hierarchy-shift stage."
+          }
+        ]
+      },
+      "anchors": [
+        {
+          "quote": "Selected Idea and earlier chain remain company-first; the artifact’s score gives downstream hierarchy 2/2.",
+          "exact": true
+        }
+      ],
+      "expectedAccepted": false,
+      "assessment": {
+        "targetDetected": true,
+        "semantic": "Correct target: Compose factual failure while hierarchy 2/2 remains preserved.",
+        "issues": [
+          {
+            "index": 0,
+            "sourceSupport": true,
+            "materiality": "Relevant counterexample distinguishes factual failure from hierarchy localization. Quote is exact but covers hierarchy only; full original-source row supports the linked Compose factual claim. Not invented.",
+            "constraint": "Keeps dimensions separate; does not prescribe a false hierarchy shift."
+          }
+        ]
+      }
+    },
+    {
+      "id": "010-bad-with",
+      "pair": "010",
+      "variant": "bad",
+      "arm": "with",
+      "finishReason": "stop",
+      "parserValid": true,
+      "content": {
+        "accepted": true,
+        "blockingIssues": []
+      },
+      "anchors": [],
+      "expectedAccepted": false,
+      "assessment": {
+        "targetDetected": false,
+        "semantic": "False negative despite accurate P7 and its exact full-row evidence; missing map claim is not an explanation here."
+      }
+    },
+    {
+      "id": "010-correct-with",
+      "pair": "010",
+      "variant": "correct",
+      "arm": "with",
+      "finishReason": "stop",
+      "parserValid": true,
+      "content": {
+        "accepted": true,
+        "blockingIssues": []
+      },
+      "anchors": [],
+      "expectedAccepted": true,
+      "assessment": {
+        "controlAccepted": true,
+        "semantic": "Correct acceptance with factual/hierarchy contrast preserved."
+      }
+    },
+    {
+      "id": "010-correct-without",
+      "pair": "010",
+      "variant": "correct",
+      "arm": "without",
+      "finishReason": "stop",
+      "parserValid": true,
+      "content": {
+        "accepted": true,
+        "blockingIssues": []
+      },
+      "anchors": [],
+      "expectedAccepted": true,
+      "assessment": {
+        "controlAccepted": true,
+        "semantic": "Correct acceptance of identical contrast control."
+      }
+    }
+  ]
+}

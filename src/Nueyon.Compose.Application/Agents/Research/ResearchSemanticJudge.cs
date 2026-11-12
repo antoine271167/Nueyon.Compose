@@ -58,7 +58,7 @@ public sealed class ResearchSemanticJudge(AIAgent agent)
 
         foreach (var issue in verdict.BlockingIssues)
         {
-            if (!_categories.Contains(issue.Category, StringComparer.Ordinal) ||
+            if (issue is null || !_categories.Contains(issue.Category, StringComparer.Ordinal) ||
                 string.IsNullOrWhiteSpace(issue.Problem) || string.IsNullOrWhiteSpace(issue.ResearchLocation) ||
                 string.IsNullOrWhiteSpace(issue.SourceQuote) || string.IsNullOrWhiteSpace(issue.Constraint) ||
                 !input.Input.Content.Contains(issue.SourceQuote, StringComparison.Ordinal))
