@@ -1,0 +1,182 @@
+[
+  {
+    "independentReview": {
+      "fidelity": "FAIL",
+      "reason": "Titel “prompt made outputs drift” en rationale “direct evidence ... constraints can change” schrijven de verschillen causaal toe aan de wijziging. Bron meldt kleine niet-gelijktijdige vergelijking, upstreamvariatie en modelaliasvariatie.",
+      "research": "NO",
+      "angle": "PASS"
+    },
+    "selectedFirstIdea": {
+      "title": "A small, generic ‘preserve editorial intent’ prompt made outputs drift and failed promotion",
+      "description": "A reusable editorial‑hierarchy instruction added to the Narrative user prompt did not preserve the supplied editorial intent; candidate runs consistently subordinated company identity and audience, made orchestration the central message, introduced unsupported claims, and the change was rejected and rolled back.",
+      "audience": "Prompt engineers, Narrative/Compose maintainers, editorial leads responsible for model-driven outputs",
+      "rationale": "This experiment is direct evidence that even short, generic prompt constraints can change the editorial hierarchy in systematic ways. For teams that control production prompts, the result argues for conservative change, controlled A/B testing, and hard promotion gates rather than assuming harmless reuse of editorial rules.",
+      "evidence": "• Candidate prompt added a single generic section “Preserve Editorial Intent from the Synthesis.” (Prompt diff in prompt-changes/Narrative.user.prompt.diff).\n• Only Narrative.user.prompt.txt was changed; all other files, inputs, and model alias were identical.\n• Candidate Narrative mean score 4.00/10 vs baseline 6.00/10; Compose mean 3.33/10 vs baseline 5.67/10 (tables in Run scores).\n• All three candidate runs made orchestration central and introduced unsupported audience/validation framing (analysis section; failed gates C and D in every candidate run).\n• Decision: “Do not promote.” Candidate not promoted; production prompt restored byte‑for‑byte (rollback SHA-256 match)."
+    },
+    "logicalCalls": 2,
+    "attempts": [
+      {
+        "attempt": 1,
+        "status": "accepted",
+        "feedback": null
+      }
+    ],
+    "status": "accepted",
+    "exitCode": 0,
+    "repairs": 0,
+    "generations": 1,
+    "judgeCalls": 1,
+    "seconds": 31.7456532,
+    "id": "005-Legacy"
+  },
+  {
+    "independentReview": {
+      "fidelity": "FAIL",
+      "reason": "“produced ... repeatable degradations” en “can reliably alter” overstijgen drie kandidaat-runs en de niet-gelijktijdige vergelijking. Evidence noemt correlatie, maar herstelt de sterkere titel/description/rationale niet.",
+      "research": "NO",
+      "angle": "PASS"
+    },
+    "selectedFirstIdea": {
+      "title": "Candidate prompt change displaced the intended editorial hierarchy and triggered a rollback",
+      "description": "A single added section in the Narrative user prompt — intended to “Preserve Editorial Intent from the Synthesis” — produced consistent, repeatable degradations in both Narrative and Compose outputs: company-level identity and audience were subordinated while orchestration became central, unsupported claims appeared, and the change was not promoted. The production prompt was restored byte-for-byte.",
+      "audience": "Prompt engineers, editorial leads, release managers",
+      "rationale": "This experiment shows a straightforward operational risk: even a small, generic prompt change can reliably alter high-level emphasis and introduce editorial regressions that fail promotion gates. Teams deciding whether to change system prompts need evidence that a change preserves the intended hierarchy before promoting it.",
+      "evidence": "Facts: the candidate prompt added one generic section titled “Preserve Editorial Intent from the Synthesis” and contained no Nuëyon-specific wording; three candidate Narrative runs scored mean 4.00/10 vs baseline mean 6.00/10; three candidate Compose runs scored mean 3.33/10 vs baseline mean 5.67/10; all candidate Narrative and Compose runs made orchestration central and introduced unsupported additions; decision: “Do not promote. Candidate was worse on mean score… failed the orchestration hierarchy and factual restraint gates in every run,” and production prompt was restored (byte-for-byte SHA match). Inference: the added prompt section correlated with the observed editorial drift and regressions. Unknowns: the exact causal mechanism inside the model that produced the drift (e.g., how the new phrasing interacted with the Synthesis content or model internals)."
+    },
+    "logicalCalls": 2,
+    "attempts": [
+      {
+        "attempt": 1,
+        "status": "accepted",
+        "feedback": null
+      }
+    ],
+    "status": "accepted",
+    "exitCode": 0,
+    "repairs": 0,
+    "generations": 1,
+    "judgeCalls": 1,
+    "seconds": 32.0980388,
+    "id": "005-Simplified"
+  },
+  {
+    "independentReview": {
+      "fidelity": "FAIL",
+      "reason": "“likeliest to succeed”, “Prioritizing Narrative fixes limits rework” maken zichtbare frequentie tot interventieprioriteit en onbewezen opbrengst. Bron vereist lokalisatie voor de gekozen afwijking en vergelijking met feitelijke upstream-invoer.",
+      "research": "NO",
+      "angle": "PASS"
+    },
+    "selectedFirstIdea": {
+      "title": "Narrative is the recurrent first-visible locus of pipeline hierarchy drift",
+      "description": "Across the inspected runs, the Narrative stage most frequently shows the earliest observable departure from the requested company-first editorial hierarchy — turning a company introduction into a product/architecture-led story or adding unsupported audience/validation language.",
+      "audience": "Content architects, experiment designers, product/content teams operating Nuëyon.Compose pipelines",
+      "rationale": "Why it matters: If Narrative is the stage where the intended company-first story most often becomes product- or orchestration-first, then interventions that preserve story priority are likeliest to succeed when targeted at Narrative (prompt constraints, guardrails, checks). Prioritizing Narrative fixes limits rework downstream and focuses experimentation where the problem appears. Gaps and uncertainty: the evidence localizes the first observable shift but does not prove Narrative is the root cause in every run — some runs shift earlier (Idea or Synthesis) and Compose can amplify issues. A controlled trial is needed to confirm causation before large-scale process changes.",
+      "evidence": "Explicit observations: Narrative is identified as the earliest visible hierarchy shift in Experiment 007 runs 001–002; Experiment 008 A-002; Experiment 009 baseline 002/003 and candidate runs 001–003. Cross-experiment summary states: “Narrative is the most recurrent first visible hierarchy shift in the available records.” The per-run tables show concrete Narrative-level examples (e.g., turning an orchestration product detail into the through-line, inventing audiences, adding validation framing). The report clarifies this is an observable stage-level pattern, not a demonstrated model causal chain."
+    },
+    "logicalCalls": 2,
+    "attempts": [
+      {
+        "attempt": 1,
+        "status": "accepted",
+        "feedback": null
+      }
+    ],
+    "status": "accepted",
+    "exitCode": 0,
+    "repairs": 0,
+    "generations": 1,
+    "judgeCalls": 1,
+    "seconds": 42.9476153,
+    "id": "010-Legacy"
+  },
+  {
+    "independentReview": {
+      "fidelity": "FAIL",
+      "reason": "Narrative als “locus to target” en correctieve trial/guardrails als evidence-supported intervention worden generiek gekozen. Bron maakt die keuze afhankelijk van bewijs voor de gekozen afwijking en inspectie van upstream Synthesis; root-causevoorbehoud in evidence maakt deze prioriteit niet brongetrouw.",
+      "research": "NO",
+      "angle": "PASS"
+    },
+    "selectedFirstIdea": {
+      "title": "Narrative is the most frequent visible breaking point for company-first hierarchy",
+      "description": "Across experiments 007–009 the Narrative stage most often shows the first observable editorial shift away from the requested company-first introduction, turning upstream company positioning into an orchestration/product-led story. The angle explores why Narrative is the recurrent locus to target for correction or controlled testing.",
+      "audience": "Product/content leads, prompt-engineering experiment designers, evaluation engineers working on Nuëyon.Compose workflows.",
+      "rationale": "The report documents that Narrative is repeatedly the earliest visible stage that departs from the intended company-first hierarchy. Focusing a corrective trial or guardrails on Narrative is a targeted, evidence-supported intervention that avoids assuming Idea is always the origin. Communicating this helps prioritize experiments and evaluation instrumentation.",
+      "evidence": "Facts from the source: “Narrative is the most recurrent first visible hierarchy shift in the available records.” The report lists Narrative as the first observable shift in multiple runs: Experiment 007 candidates 001–002; Experiment 008 A-002; Experiment 009 baseline 002/003 and candidates 001–003. Inference: because Narrative is repeatedly the first visible shift, testing or constraining Narrative is a reasonable next experimental locus. Unknown: whether Narrative is the root cause (it may inherit upstream priming from Idea or Synthesis) or merely the first stage where the divergence becomes observable."
+    },
+    "logicalCalls": 2,
+    "attempts": [
+      {
+        "attempt": 1,
+        "status": "accepted",
+        "feedback": null
+      }
+    ],
+    "status": "accepted",
+    "exitCode": 0,
+    "repairs": 0,
+    "generations": 1,
+    "judgeCalls": 1,
+    "seconds": 24.7857856,
+    "id": "010-Simplified"
+  },
+  {
+    "independentReview": {
+      "fidelity": "FAIL",
+      "reason": "Orchestration-first wordt bedrijfsambitie en hoofdverhaal; bronsecties 12–13 verlangen bedrijfsidentiteit eerst. Extra publiek (early partners/observers) is niet expliciet onderbouwd.",
+      "research": "NO",
+      "angle": "PASS"
+    },
+    "selectedFirstIdea": {
+      "title": "Nuëyon.Compose as the concrete expression of Nuëyon’s orchestration-first ambition",
+      "description": "Nuëyon.Compose is presented in the source as the first, focused product that embodies the company's central idea: making AI useful by coordinating intelligence, tools, knowledge and processes through a staged orchestration workflow rather than treating each LLM exchange as an isolated event.",
+      "audience": "LinkedIn readers who need a company introduction: founders, product leaders, and builders at AI-first companies; early partners and interested observers.",
+      "rationale": "This idea directly fits the stated purpose for the first company-page article: introduce Nuëyon, ground its ambition, and use Compose as the concrete example that shows how the company intends to make AI useful. It lets a writer explain company identity (AI-first), the intended audience (other AI-first companies), and the practical expression of that identity (a structured orchestration workflow) without overstating implemented capabilities.",
+      "evidence": "Explicit statements that support this idea: • “Nuëyon.Compose is the first concrete expression of the company's vision.” (Section 5) • The described workflow: “Idea → Discover and Select → Research → Synthesize → Narrative → Compose.” (Section 5) • “The ambition is to make AI useful through products that combine intelligence, tools, context, knowledge, and orchestration.” (Section 2) • Positioning guidance for the first LinkedIn article: “introduce the company, explain its ambition, and establish a clear direction… ground that ambition in Compose as the first concrete direction.” (Section 12) Gaps / uncertainty: The source repeatedly notes Nuëyon is early-stage and that Compose’s implementation is deliberately narrow; it does not claim full implementation of every described component or validated outcomes."
+    },
+    "logicalCalls": 2,
+    "attempts": [
+      {
+        "attempt": 1,
+        "status": "accepted",
+        "feedback": null
+      }
+    ],
+    "status": "accepted",
+    "exitCode": 0,
+    "repairs": 0,
+    "generations": 1,
+    "judgeCalls": 1,
+    "seconds": 49.3705304,
+    "id": "intro-Legacy"
+  },
+  {
+    "independentReview": {
+      "fidelity": "PASS met kanttekening",
+      "reason": "Bedrijfsintroductie en herbruikbare producten voor AI-first bedrijven blijven centraal. Audience noemt ook investeerders/partners: ruimere lezersrelevantie, geen bewezen doelgroep; niet als marktfeit overnemen. Geen blokkade van het centrale verhaal.",
+      "research": "YES",
+      "angle": "PASS"
+    },
+    "selectedFirstIdea": {
+      "title": "An AI-first company building reusable products for other AI-first businesses",
+      "description": "Nuëyon positions itself as an AI-first software company whose primary purpose is to develop reusable AI-native products and capabilities for other businesses that place AI at their center, rather than delivering one-off consultancy or bespoke projects.",
+      "audience": "Founders and product leaders at AI-first companies; investors and partners evaluating company positioning.",
+      "rationale": "The company identity and intended market are central to the article’s purpose: introducing Nuëyon and clarifying who it serves. Communicating this distinction (product‑centric, AI‑first, serving AI‑first firms) is the strongest editorial need supported by the source material.",
+      "evidence": "Facts from source: the brief states, “Nuëyon is an emerging AI-first software company… build tools, products, and knowledge for other AI-first companies,” and explicitly contrasts product development with “traditional consultancy or developing bespoke software.” It also says the intended audience is “other AI-first companies” and that precise customer segments and commercial model are not finalized. Inference: the material implies Nuëyon will emphasize reusable, productized capabilities rather than one-off professional services. Important unknowns: actual customer traction, final commercial model, and specific target segments are not provided in the source."
+    },
+    "logicalCalls": 2,
+    "attempts": [
+      {
+        "attempt": 1,
+        "status": "accepted",
+        "feedback": null
+      }
+    ],
+    "status": "accepted",
+    "exitCode": 0,
+    "repairs": 0,
+    "generations": 1,
+    "judgeCalls": 1,
+    "seconds": 42.654931,
+    "id": "intro-Simplified"
+  }
+]

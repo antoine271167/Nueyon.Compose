@@ -1,0 +1,37 @@
+[
+  {
+    "title": "A small, generic \u2018preserve editorial intent\u2019 prompt made outputs drift and failed promotion",
+    "description": "A reusable editorial\u2011hierarchy instruction added to the Narrative user prompt did not preserve the supplied editorial intent; candidate runs consistently subordinated company identity and audience, made orchestration the central message, introduced unsupported claims, and the change was rejected and rolled back.",
+    "audience": "Prompt engineers, Narrative/Compose maintainers, editorial leads responsible for model-driven outputs",
+    "rationale": "This experiment is direct evidence that even short, generic prompt constraints can change the editorial hierarchy in systematic ways. For teams that control production prompts, the result argues for conservative change, controlled A/B testing, and hard promotion gates rather than assuming harmless reuse of editorial rules.",
+    "evidence": "\u2022 Candidate prompt added a single generic section \u201CPreserve Editorial Intent from the Synthesis.\u201D (Prompt diff in prompt-changes/Narrative.user.prompt.diff).\n\u2022 Only Narrative.user.prompt.txt was changed; all other files, inputs, and model alias were identical.\n\u2022 Candidate Narrative mean score 4.00/10 vs baseline 6.00/10; Compose mean 3.33/10 vs baseline 5.67/10 (tables in Run scores).\n\u2022 All three candidate runs made orchestration central and introduced unsupported audience/validation framing (analysis section; failed gates C and D in every candidate run).\n\u2022 Decision: \u201CDo not promote.\u201D Candidate not promoted; production prompt restored byte\u2011for\u2011byte (rollback SHA-256 match)."
+  },
+  {
+    "title": "An explicit factual/editorial\u2011restraint gate prevented promotion \u2014 the value of hard gates",
+    "description": "The experiment used a rubric with a hard promotion gate for factual/editorial restraint; candidate outputs repeatedly failed that gate (unsupported audience/commitments) and that single criterion alone blocked promotion.",
+    "audience": "Release managers, QA leads, editorial policy owners, product managers overseeing model output governance",
+    "rationale": "The scoring rubric treated factual/editorial restraint (no unsupported claims) as a hard gate. The candidate\u2019s consistent failures on that criterion demonstrate how explicit, single-point checks can protect production from regressions even when other metrics (readability, coherence) look acceptable.",
+    "evidence": "\u2022 Scoring rubric: criterion D (Factual/editorial restraint) is a hard promotion gate (0\u20132 scoring described under Scoring rubric).\n\u2022 Candidate Narrative and Compose runs repeatedly scored 0 or 1 on D; analysis: \u201CNo candidate run passed this gate. The Narrative outputs introduced validation intent/commitment, an audience of founders/product leaders/builders, or a need for coordinated AI.\u201D\n\u2022 Promotion decision cites failure on orchestration hierarchy and factual restraint as reasons: \u201CCandidate was worse\u2026 failed the orchestration hierarchy and factual restraint gates in every run.\u201D"
+  },
+  {
+    "title": "Prompt\u2011only change, controlled experiment: evidence the Narrative prompt alone caused the regression",
+    "description": "The experiment intentionally changed only the Narrative user prompt while keeping commit, inputs, other prompts, and model alias identical; the consistent decline across three candidate runs isolates the prompt change as the primary differing variable.",
+    "audience": "Engineers and researchers running prompt\u2011sensitivity experiments, reproducibility-focused teams",
+    "rationale": "When diagnosing regressions in model outputs, isolating variables is essential. This runset supplies a clear example of a minimal, controlled change (one prompt file) producing stable, repeatable regressions, supporting prompt\u2011first troubleshooting.",
+    "evidence": "\u2022 Repository and baseline verification: all files matched production by SHA\u2011256; only Narrative.user.prompt changed in candidate.\n\u2022 Controlled comparison configuration: baseline reused prior outputs; candidate had three runs with only Narrative.user.prompt changed.\n\u2022 Execution and inputs remained identical (same commit, model alias gpt-5-mini, same console workflow, same Compose format), per Controlled comparison section.\n\u2022 Candidate runs\u2019 scores were consistent (candidate Narrative SD 0.00), suggesting a stable effect from the prompt change."
+  },
+  {
+    "title": "Baseline Synthesis contained an internal tension between company identity and a later \u2018orchestration is central\u2019 line \u2014 a source of framing ambiguity",
+    "description": "The baseline Synthesis paired Nu\u00EByon\u2019s company identity and Compose at top-level emphasis but also included a later line calling orchestration \u201Ccentral to the product direction,\u201D creating an internal emphasis tension that the candidate prompt change amplified.",
+    "audience": "Narrative prompt writers, editorial reviewers, product storytellers",
+    "rationale": "Understanding preexisting ambiguities in a reference Synthesis helps explain why downstream outputs are sensitive to small prompt edits. Highlighting such internal tensions can guide prompt design and Synthesis editing to remove mixed signals before wider distribution.",
+    "evidence": "\u2022 Analysis: \u201CThe baseline Synthesis pairs company identity with Compose in its top-level emphasis, but also contains a later description calling orchestration \u2018central to the product direction.\u2019\u201D\n\u2022 The document notes this internal tension may have \u201Creinforced the technical angle,\u201D though it explicitly states this observation does not change the controlled result.\n\u2022 Baseline runs still showed variability on theme hierarchy (baseline C scores 1,0,0), indicating the baseline Synthesis was not wholly unambiguous."
+  },
+  {
+    "title": "Operational practice: fast rollback with byte\u2011for\u2011byte verification preserved production integrity",
+    "description": "After the candidate failed evaluation, the team restored the production Narrative user prompt byte\u2011for\u2011byte, verified builds and tests passed, and recorded hashes and artifacts \u2014 demonstrating a concise rollback and verification workflow.",
+    "audience": "DevOps engineers, release managers, platform reliability teams",
+    "rationale": "A documented rollback and verification process reduces risk when experiments fail. The artifact list, SHA\u2011256 verification, and successful builds/tests provide a concrete example of conservative operational practice around prompt changes.",
+    "evidence": "\u2022 Decision: \u201CDo not promote.\u201D Production prompt restored from saved byte snapshot; rollback verification: production prompt SHA\u2011256 equals the frozen baseline hash.\n\u2022 Builds: dotnet build passed with 0 warnings/errors; tests: 165 passed, 0 failed/0 skipped.\n\u2022 Artifact index lists baseline/candidate outputs, prompt diffs, and metadata.json capturing hashes and execution IDs."
+  }
+]
