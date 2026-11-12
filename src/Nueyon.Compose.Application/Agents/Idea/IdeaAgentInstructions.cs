@@ -8,7 +8,5 @@ internal static class IdeaAgentInstructions
     /// <summary>
     ///     Gets the system instructions used to configure the underlying AI agent.
     /// </summary>
-    public static string GetSystemInstructions() => GetSystemInstructions(IdeaWorkflowMode.Legacy);
-
-    public static string GetSystemInstructions(IdeaWorkflowMode mode) => IdeaPrompts.GeneratorSystem(mode);
+    public static string GetSystemInstructions() => IdeaPrompts.GeneratorSystem();
 }

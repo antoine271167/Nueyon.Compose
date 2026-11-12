@@ -294,20 +294,11 @@ public static class Cli
             }
 
             var attempts = new List<IdeaValidationAttempt>();
-            var maxAttempts = IdeaValidationLoopEvaluator.MaxAttempts;
+            const int maxAttempts = IdeaValidationLoopEvaluator.MaxAttempts;
             var published = false;
             try
             {
                 await using var services = createServices(capture, tracker);
-                var ideaMode = services.GetService<IOptions<IdeaWorkflowOptions>>()?.Value.ResolveMode() ??
-                               IdeaWorkflowMode.Legacy;
-                maxAttempts = ideaMode.MaxAttempts();
-                if (ideaMode != IdeaWorkflowMode.Legacy)
-                {
-                    await System.Console.Error.WriteLineAsync(
-                        $"Idea workflow mode: {ideaMode} ({maxAttempts} generations).");
-                }
-
                 if (parsed.Agent is null)
                 {
                     return await services.GetRequiredService<ConsoleApplication>().RunAsync(cts.Token, sourceDirectory,
@@ -348,7 +339,7 @@ public static class Cli
                 {
                     try
                     {
-                        await WriteNewAsync(trace, new IdeaTrace("accepted", attempts));
+                        await WriteNewAsync(trace, new IdeaTrace("accepted", attempts), cancellationToken: cts.Token);
                     }
                     catch (Exception)
                     {
@@ -386,8 +377,8 @@ public static class Cli
         Exception failure)
     {
         var exhausted = FindValidationFailure(failure) is not null ||
-                        attempts.Count > 0 && attempts[^1].Attempt == maxAttempts &&
-                        attempts[^1].Status == "rejected";
+                        (attempts.Count > 0 && attempts[^1].Attempt == maxAttempts &&
+                         attempts[^1].Status == "rejected");
         try
         {
             await WriteNewAsync(trace, new IdeaTrace(exhausted ? "exhausted" : "incomplete", attempts));
@@ -550,9 +541,10 @@ public static class Cli
                          .Where(n => n.StartsWith(prefix, StringComparison.Ordinal)))
             {
                 // Resource names flatten directories into dots. By convention a file name starts with its area
-                // name (Idea/Simplified/IdeaValidation.system.prompt.txt), which marks where the file name begins.
+                // name (Idea/IdeaValidation.system.prompt.txt), which marks where the file name begins.
                 var parts = resource[prefix.Length..].Split('.');
-                var start = Math.Max(1, Array.FindIndex(parts, 1, p => p.StartsWith(parts[0], StringComparison.Ordinal)));
+                var start = Math.Max(1,
+                    Array.FindIndex(parts, 1, p => p.StartsWith(parts[0], StringComparison.Ordinal)));
                 var file = Path.Combine([path, .. parts[..start], string.Join('.', parts[start..])]);
                 if (!File.Exists(file))
                 {
@@ -601,7 +593,6 @@ public static class Cli
 
         var services = new ServiceCollection();
         services.Configure<OpenAiOptions>(configuration.GetSection("OpenAI"));
-        services.Configure<IdeaWorkflowOptions>(configuration.GetSection(IdeaWorkflowOptions.SectionName));
         services.AddLogging(builder => builder.ClearProviders());
         services.AddInfrastructure();
         services.AddSingleton<ISourceContextLoader, SourceContextLoader>();
@@ -613,7 +604,6 @@ public static class Cli
         try
         {
             provider.GetRequiredService<IOptions<OpenAiOptions>>().Value.Validate();
-            provider.GetRequiredService<IOptions<IdeaWorkflowOptions>>().Value.Validate();
         }
         catch (InvalidOperationException ex)
         {

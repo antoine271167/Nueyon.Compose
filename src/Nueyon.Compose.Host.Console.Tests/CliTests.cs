@@ -6,13 +6,14 @@ using Nueyon.Compose.Application.Agents.Idea;
 using Nueyon.Compose.Application.Agents.Research;
 using Nueyon.Compose.Application.Prompts;
 using Nueyon.Compose.Domain;
-using Nueyon.Compose.Infrastructure.Options;
 
 namespace Nueyon.Compose.Host.Console.Tests;
 
 [Collection("Console")]
 public sealed class CliTests
 {
+    private static readonly Idea _sample = new("t", "d", "a", "r", "e");
+
     [Fact]
     public async Task InvalidSyntaxIsUsageError()
     {
@@ -240,7 +241,7 @@ public sealed class CliTests
         using var directory = new TempDirectory();
         await File.WriteAllTextAsync(directory.Input, """{"content":"source"}""");
 
-        var (code, _, error) = await InvokeWith(Services(_ => [Sample]), "run", "idea", "--input", directory.Input,
+        var (code, _, error) = await InvokeWith(Services(_ => [_sample]), "run", "idea", "--input", directory.Input,
             "--output", directory.Output, "--prompts", directory.Path);
 
         Assert.Equal(2, code);
@@ -258,6 +259,7 @@ public sealed class CliTests
         {
             CreatePromptSet(directory);
 
+            Assert.False(Directory.Exists(Path.Combine(directory, "Idea", "Simplified")));
             Assert.Equal(directory, Cli.ResolvePrompts(directory));
             Assert.NotNull(Cli.ResolvePrompts(null));
         }
@@ -300,14 +302,14 @@ public sealed class CliTests
         CreatePromptSet(prompts);
         await File.WriteAllTextAsync(directory.Input, """{"content":"source"}""");
 
-        var (code, _, error) = await InvokeWith(Services(_ => [Sample]), "run", "idea", "--input", directory.Input,
+        var (code, _, error) = await InvokeWith(Services(_ => [_sample]), "run", "idea", "--input", directory.Input,
             "--output", directory.Output, "--prompts", prompts);
 
         Assert.Equal(0, code);
         Assert.Contains($"Prompts: disk ({prompts}).", error);
 
         // A blank explicit value is a usage error, not a request for discovery.
-        var (blankCode, _, blankError) = await InvokeWith(Services(_ => [Sample]), "run", "idea", "--input",
+        var (blankCode, _, blankError) = await InvokeWith(Services(_ => [_sample]), "run", "idea", "--input",
             directory.Input, "--output", Path.Combine(directory.Path, "other.json"), "--prompts", " ");
         Assert.Equal(2, blankCode);
         Assert.DoesNotContain("Prompts:", blankError);
@@ -321,11 +323,11 @@ public sealed class CliTests
         {
             Observe(context, new IdeaValidationAttempt(1, "first", "rejected", "fix it"));
             Observe(context, new IdeaValidationAttempt(2, "second", "accepted", null));
-            return [Sample];
+            return [_sample];
         }));
 
         Assert.Equal(0, code);
-        using var trace = JsonDocument.Parse(File.ReadAllText(directory.Trace));
+        using var trace = JsonDocument.Parse(await File.ReadAllTextAsync(directory.Trace));
         Assert.Equal("accepted", trace.RootElement.GetProperty("status").GetString());
         var attempts = trace.RootElement.GetProperty("attempts").EnumerateArray().ToArray();
         Assert.Equal(["rejected", "accepted"], attempts.Select(a => a.GetProperty("status").GetString()));
@@ -354,10 +356,10 @@ public sealed class CliTests
         Assert.Equal(1, code);
         Assert.Contains("No result was produced.", error);
         Assert.False(File.Exists(directory.Output));
-        using var trace = JsonDocument.Parse(File.ReadAllText(directory.Trace));
+        using var trace = JsonDocument.Parse(await File.ReadAllTextAsync(directory.Trace));
         Assert.Equal("exhausted", trace.RootElement.GetProperty("status").GetString());
         var attempts = trace.RootElement.GetProperty("attempts").EnumerateArray().ToArray();
-        Assert.Equal([1, 2, 3], attempts.Select(a => a.GetProperty("attempt").GetInt32()));
+        Assert.Equal([1, 2], attempts.Select(a => a.GetProperty("attempt").GetInt32()));
         Assert.All(attempts, a => Assert.Equal(diagnosis, a.GetProperty("feedback").GetString()));
     }
 
@@ -369,12 +371,12 @@ public sealed class CliTests
         {
             Observe(context, new IdeaValidationAttempt(1, "response", "accepted", null));
             File.WriteAllText(directory.Output, "existing");
-            return [Sample];
+            return [_sample];
         }));
 
         Assert.Equal(1, code);
-        Assert.Equal("existing", File.ReadAllText(directory.Output));
-        using var trace = JsonDocument.Parse(File.ReadAllText(directory.Trace));
+        Assert.Equal("existing", await File.ReadAllTextAsync(directory.Output));
+        using var trace = JsonDocument.Parse(await File.ReadAllTextAsync(directory.Trace));
         Assert.Equal("incomplete", trace.RootElement.GetProperty("status").GetString());
         Assert.Equal("accepted",
             Assert.Single(trace.RootElement.GetProperty("attempts").EnumerateArray()).GetProperty("status")
@@ -392,19 +394,17 @@ public sealed class CliTests
         var (code, _, error) = await RunIdea(directory, Services(_ =>
         {
             File.WriteAllText(directory.Trace, "existing");
-            return [Sample];
+            return [_sample];
         }));
 
         Assert.Equal(1, code);
-        Assert.Equal("existing", File.ReadAllText(directory.Trace));
-        using var result = JsonDocument.Parse(File.ReadAllText(directory.Output));
+        Assert.Equal("existing", await File.ReadAllTextAsync(directory.Trace));
+        using var result = JsonDocument.Parse(await File.ReadAllTextAsync(directory.Output));
         Assert.Equal("t", result.RootElement[0].GetProperty("title").GetString());
         Assert.Contains("The result was written, but the requested trace could not be written.", error);
         Assert.DoesNotContain("No result was produced", error);
         Assert.DoesNotContain(Directory.GetFiles(directory.Path), f => f.EndsWith(".tmp"));
     }
-
-    private static readonly Idea Sample = new("t", "d", "a", "r", "e");
 
     private static void Observe(AgentExecutionContext context, IdeaValidationAttempt attempt) =>
         ((Action<IdeaValidationAttempt>)context.AdditionalProperties![IdeaValidationLoopEvaluator.ObserverKey]!)(
@@ -414,13 +414,6 @@ public sealed class CliTests
         Func<AgentExecutionContext, IReadOnlyList<Idea>> idea) =>
         (_, _) => new ServiceCollection()
             .AddSingleton<IAgent<StoryInput, IReadOnlyList<Idea>>>(new ContextAgent(idea))
-            .BuildServiceProvider();
-
-    private static Func<string?, Cli.StageTracker, ServiceProvider> ServicesWithMode(string mode,
-        Func<AgentExecutionContext, IReadOnlyList<Idea>> idea) =>
-        (_, _) => new ServiceCollection()
-            .AddSingleton<IAgent<StoryInput, IReadOnlyList<Idea>>>(new ContextAgent(idea))
-            .Configure<IdeaWorkflowOptions>(o => o.Mode = mode)
             .BuildServiceProvider();
 
     private static async Task<(int Code, string Out, string Error)> RunIdea(TempDirectory directory,
@@ -573,29 +566,26 @@ public sealed class CliTests
     }
 
     [Fact]
-    public async Task DiscoveryDescribesDefaultLegacyAndBothProfilesWithoutCredentials()
+    public async Task DiscoveryDescribesSingleWorkflowWithoutCredentials()
     {
         var (code, output) = await Invoke("agents", "describe", "idea", "--format", "json");
         Assert.Equal(0, code);
         using var document = JsonDocument.Parse(output);
         var validation = document.RootElement.GetProperty("validation");
-        Assert.Equal(3, validation.GetProperty("maxAttempts").GetInt32());
-        Assert.Equal("Legacy", validation.GetProperty("mode").GetProperty("default").GetString());
-        Assert.Equal("IdeaWorkflow:Mode", validation.GetProperty("mode").GetProperty("setting").GetString());
-        var profiles = validation.GetProperty("profiles").EnumerateArray().ToArray();
-        Assert.Equal(["Legacy", "Simplified"], profiles.Select(p => p.GetProperty("mode").GetString()));
-        Assert.Equal([3, 2], profiles.Select(p => p.GetProperty("maxAttempts").GetInt32()));
+        Assert.Equal(2, validation.GetProperty("maxAttempts").GetInt32());
+        Assert.False(validation.TryGetProperty("mode", out _));
+        Assert.False(validation.TryGetProperty("profiles", out _));
         Assert.Equal(["title", "description", "audience", "rationale"],
             validation.GetProperty("structural").GetProperty("requiredNonEmptyFields").EnumerateArray()
                 .Select(f => f.GetString()));
     }
 
     [Fact]
-    public async Task SimplifiedExhaustionReportsDiagnosisWithoutTheSourceAndTracesTwoAttempts()
+    public async Task IdeaExhaustionReportsDiagnosisWithoutTheSourceAndTracesTwoAttempts()
     {
         using var directory = new TempDirectory();
         var blocker = new IdeaValidationBlocker("unsupportedClaim", "title", "Title claims a measured result");
-        var (code, _, error) = await RunIdea(directory, ServicesWithMode("Simplified", context =>
+        var (code, _, error) = await RunIdea(directory, Services(context =>
         {
             Observe(context, new IdeaValidationAttempt(1, "first", "rejected", "[]"));
             Observe(context, new IdeaValidationAttempt(2, "second", "rejected", "[]"));
@@ -609,42 +599,42 @@ public sealed class CliTests
         Assert.Contains("unsupportedClaim", error);
         Assert.Contains("title", error);
         Assert.Contains("Title claims a measured result", error);
-        Assert.Contains("Idea workflow mode: Simplified (2 generations).", error);
         Assert.DoesNotContain("TOP-SECRET-SOURCE", error);
         Assert.DoesNotContain("wrapper", error);
         Assert.False(File.Exists(directory.Output));
-        using var trace = JsonDocument.Parse(File.ReadAllText(directory.Trace));
+        using var trace = JsonDocument.Parse(await File.ReadAllTextAsync(directory.Trace));
         Assert.Equal("exhausted", trace.RootElement.GetProperty("status").GetString());
         Assert.Equal([1, 2],
-            trace.RootElement.GetProperty("attempts").EnumerateArray().Select(a => a.GetProperty("attempt").GetInt32()));
+            trace.RootElement.GetProperty("attempts").EnumerateArray()
+                .Select(a => a.GetProperty("attempt").GetInt32()));
     }
 
     [Fact]
-    public async Task SimplifiedSecondAttemptRejectionIsExhaustedEvenWithoutATypedException()
+    public async Task IdeaSecondAttemptRejectionIsExhaustedEvenWithoutATypedException()
     {
         using var directory = new TempDirectory();
-        await RunIdea(directory, ServicesWithMode("Simplified", context =>
+        await RunIdea(directory, Services(context =>
         {
             Observe(context, new IdeaValidationAttempt(1, "first", "rejected", "[]"));
             Observe(context, new IdeaValidationAttempt(2, "second", "rejected", "[]"));
             throw new InvalidOperationException("stop");
         }));
 
-        using var trace = JsonDocument.Parse(File.ReadAllText(directory.Trace));
+        using var trace = JsonDocument.Parse(await File.ReadAllTextAsync(directory.Trace));
         Assert.Equal("exhausted", trace.RootElement.GetProperty("status").GetString());
     }
 
     [Fact]
-    public async Task SimplifiedFirstAttemptFailureIsIncompleteInTheTrace()
+    public async Task IdeaFirstAttemptFailureIsIncompleteInTheTrace()
     {
         using var directory = new TempDirectory();
-        await RunIdea(directory, ServicesWithMode("Simplified", context =>
+        await RunIdea(directory, Services(context =>
         {
             Observe(context, new IdeaValidationAttempt(1, "first", "rejected", "[]"));
             throw new InvalidOperationException("judge failed");
         }));
 
-        using var trace = JsonDocument.Parse(File.ReadAllText(directory.Trace));
+        using var trace = JsonDocument.Parse(await File.ReadAllTextAsync(directory.Trace));
         Assert.Equal("incomplete", trace.RootElement.GetProperty("status").GetString());
     }
 
@@ -659,35 +649,6 @@ public sealed class CliTests
         Assert.Contains("after 2 attempts", message);
         Assert.DoesNotContain("AggregateException", message);
         Assert.DoesNotContain("\n", message);
-    }
-
-    [Theory]
-    [InlineData("Unknown")]
-    [InlineData("")]
-    public async Task InvalidIdeaModeIsAConfigurationErrorBeforeRuntime(string mode)
-    {
-        var directory = Path.Combine(Path.GetTempPath(), $"nueyon-cli-test-{Guid.NewGuid():N}");
-        Directory.CreateDirectory(directory);
-        var original = Directory.GetCurrentDirectory();
-        try
-        {
-            await File.WriteAllTextAsync(Path.Combine(directory, "appsettings.json"),
-                $$$"""{"OpenAI":{"ApiKey":"offline-placeholder","Model":"offline-placeholder"},"IdeaWorkflow":{"Mode":"{{{mode}}}"}}""");
-            var input = Path.Combine(directory, "input.json");
-            await File.WriteAllTextAsync(input, """{"content":"source"}""");
-            Directory.SetCurrentDirectory(directory);
-            var (code, _, error) = await InvokeAll("run", "idea", "--input", input, "--output",
-                Path.Combine(directory, "result.json"));
-            Assert.Equal(1, code);
-            Assert.Contains("Configuration error", error);
-            Assert.Contains("IdeaWorkflow", error);
-            Assert.False(File.Exists(Path.Combine(directory, "result.json")));
-        }
-        finally
-        {
-            Directory.SetCurrentDirectory(original);
-            Directory.Delete(directory, true);
-        }
     }
 
     [Fact]
@@ -719,7 +680,7 @@ public sealed class CliTests
     }
 
     [Fact]
-    public async Task NoArgumentsReportsInputErrorToStderrWithLegacyExitCode()
+    public async Task NoArgumentsReportsInputErrorToStderrWithOriginalExitCode()
     {
         var directory = Path.Combine(Path.GetTempPath(), $"nueyon-cli-test-{Guid.NewGuid():N}");
         Directory.CreateDirectory(Path.Combine(directory, CliContracts.DefaultInputDirectory));

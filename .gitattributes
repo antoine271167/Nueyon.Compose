@@ -1,0 +1,2 @@
+# Preserve the exact accepted Idea prompt bytes, including line endings.
+src/Nueyon.Compose.Application/Prompts/Idea/*.prompt.txt -text whitespace=cr-at-eol

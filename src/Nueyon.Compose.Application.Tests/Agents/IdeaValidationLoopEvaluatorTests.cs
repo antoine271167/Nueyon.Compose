@@ -74,7 +74,6 @@ public sealed class IdeaValidationLoopEvaluatorBehavioralTests
     [Theory]
     [InlineData(1, false)]
     [InlineData(2, false)]
-    [InlineData(3, false)]
     [InlineData(2, true)]
     public async Task IdeaAgent_ReturnsOnlyTheAcceptedGeneration(int acceptedAttempt, bool wrongEditorialDirection)
     {
@@ -127,22 +126,24 @@ public sealed class IdeaValidationLoopEvaluatorBehavioralTests
             Assert.Equal(initialTask, userMessages[0]);
 
             var retry = userMessages[1];
-            Assert.Contains("Preserve the original editorial purpose and use the original source as your evidence.", retry);
-            Assert.Contains("revise it in first place", retry);
-            Assert.Contains("Preserve all valid aspects and change only what is needed to fix the diagnosed problems.", retry);
-            Assert.Contains("Do not add new claims or a research agenda.", retry);
-            Assert.Contains("Change the editorial angle only if the diagnosis explicitly identifies the previous editorial direction as wrong.", retry);
-            Assert.Contains("make the smallest source-supported change that restores the original editorial purpose.", retry);
+            Assert.Contains("using only the original source as evidence.", retry);
+            Assert.Contains("keep it in first place", retry);
+            Assert.Contains("change only what is needed to fix the diagnosed problems. Keep everything else.", retry);
+            Assert.Contains("Do not add claims, a research agenda, or new requirements.", retry);
+            Assert.Contains("Change the angle only if the diagnosis explicitly says the angle itself is wrong;", retry);
+            Assert.Contains("then use the closest source-supported angle.", retry);
 
             var lines = retry.Split('\n');
             Assert.StartsWith("Previous first idea: ", lines[^2]);
             using var previous = JsonDocument.Parse(lines[^2]["Previous first idea: ".Length..]);
             using var previousJudgeInput = JsonDocument.Parse(
                 Assert.Single(judge.Requests[index - 1], m => m.Role == ChatRole.User).Text);
-            Assert.Equal(previousJudgeInput.RootElement.GetProperty("idea").GetRawText(), previous.RootElement.GetRawText());
+            Assert.Equal(previousJudgeInput.RootElement.GetProperty("idea").GetRawText(),
+                previous.RootElement.GetRawText());
             Assert.StartsWith("Diagnosis: ", lines[^1]);
             var diagnosis = lines[^1]["Diagnosis: ".Length..];
-            Assert.Equal(Assert.Single(attempts, a => a.Attempt == index && a.Status == "rejected").Feedback, diagnosis);
+            Assert.Equal(Assert.Single(attempts, a => a.Attempt == index && a.Status == "rejected").Feedback,
+                diagnosis);
             using var expected = JsonDocument.Parse(rejectedVerdicts[index - 1]);
             Assert.Equal(expected.RootElement.GetProperty("blockingIssues").GetRawText(), diagnosis);
         }
@@ -188,8 +189,9 @@ public sealed class IdeaValidationLoopEvaluatorBehavioralTests
         Assert.Equal("Valid Idea", Assert.Single(ideas).Title);
         Assert.Equal(2, generator.InvocationCount);
         var retry = Assert.Single(generator.Requests[1], m => m.Role == ChatRole.User &&
-                                                            m.Text.Contains("Previous first idea:")).Text;
-        Assert.Contains("If no previous first idea is available, generate the list from the original task and source", retry);
+                                                              m.Text.Contains("Previous first idea:")).Text;
+        Assert.Contains("If no previous first idea is available, generate the list from the original task and source",
+            retry);
         Assert.Contains("Previous first idea: null", retry);
         using var payload =
             JsonDocument.Parse(Assert.Single(Assert.Single(judge.Requests), m => m.Role == ChatRole.User).Text);
@@ -213,7 +215,7 @@ public sealed class IdeaValidationLoopEvaluatorBehavioralTests
     }
 
     [Fact]
-    public async Task IdeaAgent_ThreeSemanticRejections_ThrowsBeforeFourthGeneration()
+    public async Task IdeaAgent_TwoSemanticRejections_ThrowsBeforeThirdGeneration()
     {
         var generator = new FakeChatClient(ValidIdeasJson, ValidIdeasJson, ValidIdeasJson, ValidIdeasJson);
         var rejected = RejectedVerdict(1);
@@ -224,12 +226,12 @@ public sealed class IdeaValidationLoopEvaluatorBehavioralTests
         var error = await Assert.ThrowsAsync<IdeaValidationException>(() =>
             agent.ExecuteAsync(Observed(attempts.Add), new StoryInput(OriginalSource)));
 
-        Assert.Equal("Idea agent failed to produce valid ideas after 3 attempts.", error.Message);
-        Assert.Equal(3, error.AttemptCount);
+        Assert.Equal("Idea agent failed to produce valid ideas after 2 attempts.", error.Message);
+        Assert.Equal(2, error.AttemptCount);
         Assert.Equal(IdeaValidationFailureKind.Semantic, error.Kind);
         Assert.Contains("Overclaim 1", attempts[^1].Feedback);
-        Assert.Equal(3, generator.InvocationCount);
-        Assert.Equal(3, judge.InvocationCount);
+        Assert.Equal(2, generator.InvocationCount);
+        Assert.Equal(2, judge.InvocationCount);
     }
 
     [Theory]
@@ -240,13 +242,20 @@ public sealed class IdeaValidationLoopEvaluatorBehavioralTests
     [InlineData("""{"accepted":true,"blockingIssues":null}""")]
     [InlineData("""{"accepted":false,"blockingIssues":[null]}""")]
     [InlineData("""{"accepted":true,"blockingIssues":[],"suggestedTitle":"Replacement title"}""")]
-    [InlineData("""{"accepted":false,"blockingIssues":[{"category":"claim","field":"title","problem":"Overclaim","sourceEvidence":"No results","constraint":"Proposal only","correction":"Use this title"}]}""")]
-    [InlineData("""{"accepted":false,"blockingIssues":[{"category":"claim","field":"title","problem":"Overclaim","sourceEvidence":" ","constraint":"Proposal only"}]}""")]
-    [InlineData("""{"accepted":false,"blockingIssues":[{"category":"claim","field":"title","problem":"Overclaim","constraint":"Proposal only"}]}""")]
-    [InlineData("""{"accepted":false,"blockingIssues":[{"category":"claim","field":"title","problem":"Overclaim","sourceEvidence":"No results"}]}""")]
-    [InlineData("""{"accepted":false,"blockingIssues":[{"category":"claim","field":"title","problem":"Overclaim","sourceEvidence":"No results","constraint":" "}]}""")]
-    [InlineData("""{"accepted":false,"blockingIssues":[{"category":"claim","field":"title","problem":"Overclaim","sourceEvidence":"No results","sourceEvidence":"Published results","constraint":"Proposal only"}]}""")]
-    [InlineData("""{"accepted":false,"blockingIssues":[{"category":"claim","field":"title","problem":"Overclaim","sourceEvidence":"No results","constraint":"Results supported","constraint":"Proposal only"}]}""")]
+    [InlineData(
+        """{"accepted":false,"blockingIssues":[{"category":"claim","field":"title","problem":"Overclaim","sourceEvidence":"No results","constraint":"Proposal only","correction":"Use this title"}]}""")]
+    [InlineData(
+        """{"accepted":false,"blockingIssues":[{"category":"claim","field":"title","problem":"Overclaim","sourceEvidence":" ","constraint":"Proposal only"}]}""")]
+    [InlineData(
+        """{"accepted":false,"blockingIssues":[{"category":"claim","field":"title","problem":"Overclaim","constraint":"Proposal only"}]}""")]
+    [InlineData(
+        """{"accepted":false,"blockingIssues":[{"category":"claim","field":"title","problem":"Overclaim","sourceEvidence":"No results"}]}""")]
+    [InlineData(
+        """{"accepted":false,"blockingIssues":[{"category":"claim","field":"title","problem":"Overclaim","sourceEvidence":"No results","constraint":" "}]}""")]
+    [InlineData(
+        """{"accepted":false,"blockingIssues":[{"category":"claim","field":"title","problem":"Overclaim","sourceEvidence":"No results","sourceEvidence":"Published results","constraint":"Proposal only"}]}""")]
+    [InlineData(
+        """{"accepted":false,"blockingIssues":[{"category":"claim","field":"title","problem":"Overclaim","sourceEvidence":"No results","constraint":"Results supported","constraint":"Proposal only"}]}""")]
     public Task IdeaAgent_InvalidJudgeVerdict_FailsClosed(string verdict) => AssertInvalidVerdict(verdict);
 
     [Theory]
@@ -376,9 +385,9 @@ public sealed class IdeaValidationLoopEvaluatorBehavioralTests
         var failure = await Assert.ThrowsAsync<IdeaValidationException>(() =>
             exhausted.ExecuteAsync(Observed(events.Add),
                 new StoryInput(OriginalSource)));
-        Assert.Equal(3, failure.AttemptCount);
+        Assert.Equal(2, failure.AttemptCount);
         Assert.Equal(IdeaValidationFailureKind.Structural, failure.Kind);
-        Assert.Equal(3, events.Last().Attempt);
+        Assert.Equal(2, events.Last().Attempt);
         Assert.Equal("rejected", events.Last().Status);
 
         events.Clear();
@@ -439,6 +448,225 @@ public sealed class IdeaValidationLoopEvaluatorBehavioralTests
 
         return new IdeaAgent(evaluator.Wrap(generator.AsAIAgent("Generate ideas", "TestIdeaAgent")),
             NullLogger<IdeaAgent>.Instance);
+    }
+
+    internal static string RejectedVerdict(int issueCount, int attempt = 1, bool accepted = false) =>
+        JsonSerializer.Serialize(new
+        {
+            accepted,
+            blockingIssues = Enumerable.Range(1, issueCount).Select(number => new
+            {
+                category = "unsupportedClaim",
+                field = "title",
+                problem = $"Overclaim {number} in attempt {attempt}",
+                sourceEvidence = "A proposal, with no measured results.",
+                constraint = "The source establishes proposal status only."
+            })
+        });
+
+    /// <summary>
+    ///     Test: Valid Idea on first attempt
+    ///     Expected: 1 invocation, operation succeeds
+    ///     This proves that when the agent produces valid ideas on the first try,
+    ///     the loop stops immediately without retrying.
+    /// </summary>
+    [Fact]
+    public async Task LoopAgent_ValidIdeaOnFirstAttempt_StopsAfterOneInvocation()
+    {
+        // Arrange
+        var chatClient = new FakeChatClient(ValidIdeasJson);
+        var agent = chatClient.AsAIAgent("Test instructions", "TestIdeaAgent");
+
+        var loopAgent = _evaluator.Wrap(agent);
+
+        var input = new StoryInput("Test input");
+
+        // Act
+        var result = await loopAgent.RunAsync(input.Content, null, null, CancellationToken.None);
+
+        // Assert
+        Assert.Equal(1, chatClient.InvocationCount);
+        Assert.NotNull(result);
+        Assert.NotEmpty(result.Text);
+    }
+
+    /// <summary>
+    ///     Test: Invalid then Valid
+    ///     Expected: 2 invocations, operation succeeds
+    /// </summary>
+    [Fact]
+    public async Task LoopAgent_InvalidThenValid_InvokesAgentTwice()
+    {
+        // Arrange
+        var chatClient = new FakeChatClient(InvalidIdeasJson, ValidIdeasJson);
+        var agent = chatClient.AsAIAgent("Test instructions", "TestIdeaAgent");
+
+        var loopAgent = _evaluator.Wrap(agent);
+
+        var input = new StoryInput("Test input");
+
+        // Act
+        var result = await loopAgent.RunAsync(input.Content, null, null, CancellationToken.None);
+
+        // Assert
+        Assert.Equal(2, chatClient.InvocationCount);
+        Assert.NotNull(result);
+        Assert.NotEmpty(result.Text);
+    }
+
+    /// <summary>
+    ///     Test: Two invalid attempts result in failure
+    ///     Expected: Throws InvalidOperationException with specific message after exactly 2 attempts
+    /// </summary>
+    [Fact]
+    public async Task LoopAgent_TwoInvalidAttempts_ThrowsAfterSecondInvocation()
+    {
+        // Arrange
+        var chatClient = new FakeChatClient(InvalidIdeasJson, InvalidIdeasJson, InvalidIdeasJson, InvalidIdeasJson);
+        var agent = chatClient.AsAIAgent("Test instructions", "TestIdeaAgent");
+
+        var loopAgent = _evaluator.Wrap(agent);
+
+        var input = new StoryInput("Test input");
+
+        // Act & Assert
+        var exception = await Assert.ThrowsAsync<IdeaValidationException>(() =>
+            loopAgent.RunAsync(input.Content, null, null, CancellationToken.None));
+
+        Assert.Contains(
+            "Idea agent failed to produce valid ideas after 2 attempts.",
+            exception.Message);
+        Assert.Equal(2, exception.AttemptCount);
+        Assert.Equal(IdeaValidationFailureKind.Structural, exception.Kind);
+
+        Assert.Equal(2, chatClient.InvocationCount);
+    }
+
+    /// <summary>
+    ///     Test: Verify loop respects MaxIterations limit
+    ///     Expected: Throws InvalidOperationException after exactly 2 iterations, no third attempt
+    /// </summary>
+    [Fact]
+    public async Task LoopAgent_TwoInvalidAttempts_StopsBeforeThirdInvocation()
+    {
+        // Arrange
+        var chatClient = new FakeChatClient(InvalidIdeasJson, InvalidIdeasJson, InvalidIdeasJson, InvalidIdeasJson);
+        var agent = chatClient.AsAIAgent("Test instructions", "TestIdeaAgent");
+
+        var loopAgent = _evaluator.Wrap(agent);
+
+        var input = new StoryInput("Test input");
+
+        // Act & Assert
+        var failure = await Assert.ThrowsAsync<IdeaValidationException>(() =>
+            loopAgent.RunAsync(input.Content, null, null, CancellationToken.None));
+
+        Assert.Equal(2, failure.AttemptCount);
+        Assert.Equal(2, chatClient.InvocationCount);
+    }
+
+    /// <summary>
+    ///     Test: Invalid JSON then Valid
+    ///     Expected: 2 invocations, operation succeeds
+    /// </summary>
+    [Fact]
+    public async Task LoopAgent_InvalidJsonThenValid_RetriesAndSucceeds()
+    {
+        // Arrange
+        var chatClient = new FakeChatClient(InvalidJson, ValidIdeasJson);
+        var agent = chatClient.AsAIAgent("Test instructions", "TestIdeaAgent");
+
+        var loopAgent = _evaluator.Wrap(agent);
+
+        var input = new StoryInput("Test input");
+
+        // Act
+        var result = await loopAgent.RunAsync(input.Content, null, null, CancellationToken.None);
+
+        // Assert
+        Assert.Equal(2, chatClient.InvocationCount);
+        Assert.NotNull(result);
+        Assert.NotEmpty(result.Text);
+    }
+
+    /// <summary>
+    ///     Test: Empty response then Valid
+    ///     Expected: 2 invocations, operation succeeds
+    /// </summary>
+    [Fact]
+    public async Task LoopAgent_EmptyResponseThenValid_RetriesAndSucceeds()
+    {
+        // Arrange
+        var chatClient = new FakeChatClient(EmptyResponse, ValidIdeasJson);
+        var agent = chatClient.AsAIAgent("Test instructions", "TestIdeaAgent");
+
+        var loopAgent = _evaluator.Wrap(agent);
+
+        var input = new StoryInput("Test input");
+
+        // Act
+        var result = await loopAgent.RunAsync(input.Content, null, null, CancellationToken.None);
+
+        // Assert
+        Assert.Equal(2, chatClient.InvocationCount);
+        Assert.NotNull(result);
+        Assert.NotEmpty(result.Text);
+    }
+
+    /// <summary>
+    ///     Test: Two invalid JSON responses result in failure
+    ///     Expected: Throws InvalidOperationException with specific message after exactly 2 attempts
+    /// </summary>
+    [Fact]
+    public async Task LoopAgent_TwoInvalidJsonResponses_FailsAfterSecondInvocation()
+    {
+        // Arrange
+        var chatClient = new FakeChatClient(InvalidJson, InvalidJson, InvalidJson, InvalidJson);
+        var agent = chatClient.AsAIAgent("Test instructions", "TestIdeaAgent");
+
+        var loopAgent = _evaluator.Wrap(agent);
+
+        var input = new StoryInput("Test input");
+
+        // Act & Assert
+        var exception = await Assert.ThrowsAsync<IdeaValidationException>(() =>
+            loopAgent.RunAsync(input.Content, null, null, CancellationToken.None));
+
+        Assert.Contains(
+            "Idea agent failed to produce valid ideas after 2 attempts.",
+            exception.Message);
+        Assert.Equal(2, exception.AttemptCount);
+        Assert.Equal(IdeaValidationFailureKind.Structural, exception.Kind);
+
+        Assert.Equal(2, chatClient.InvocationCount);
+    }
+
+    /// <summary>
+    ///     Test: Two empty responses result in failure
+    ///     Expected: Throws InvalidOperationException with specific message after exactly 2 attempts
+    /// </summary>
+    [Fact]
+    public async Task LoopAgent_TwoEmptyResponses_FailsAfterSecondInvocation()
+    {
+        // Arrange
+        var chatClient = new FakeChatClient(EmptyResponse, EmptyResponse, EmptyResponse, EmptyResponse);
+        var agent = chatClient.AsAIAgent("Test instructions", "TestIdeaAgent");
+
+        var loopAgent = _evaluator.Wrap(agent);
+
+        var input = new StoryInput("Test input");
+
+        // Act & Assert
+        var exception = await Assert.ThrowsAsync<IdeaValidationException>(() =>
+            loopAgent.RunAsync(input.Content, null, null, CancellationToken.None));
+
+        Assert.Contains(
+            "Idea agent failed to produce valid ideas after 2 attempts.",
+            exception.Message);
+        Assert.Equal(2, exception.AttemptCount);
+        Assert.Equal(IdeaValidationFailureKind.Structural, exception.Kind);
+
+        Assert.Equal(2, chatClient.InvocationCount);
     }
 
     private sealed class StaticChatClient(string response) : IChatClient
@@ -508,248 +736,6 @@ public sealed class IdeaValidationLoopEvaluatorBehavioralTests
         public void Dispose()
         {
         }
-    }
-
-    internal static string RejectedVerdict(int issueCount, int attempt = 1, bool accepted = false) => JsonSerializer.Serialize(new
-    {
-        accepted,
-        blockingIssues = Enumerable.Range(1, issueCount).Select(number => new
-        {
-            category = "unsupportedClaim",
-            field = "title",
-            problem = $"Overclaim {number} in attempt {attempt}",
-            sourceEvidence = "A proposal, with no measured results.",
-            constraint = "The source establishes proposal status only."
-        })
-    });
-
-    /// <summary>
-    ///     Test: Valid Idea on first attempt
-    ///     Expected: 1 invocation, operation succeeds
-    ///     This proves that when the agent produces valid ideas on the first try,
-    ///     the loop stops immediately without retrying.
-    /// </summary>
-    [Fact]
-    public async Task LoopAgent_ValidIdeaOnFirstAttempt_StopsAfterOneInvocation()
-    {
-        // Arrange
-        var chatClient = new FakeChatClient(ValidIdeasJson);
-        var agent = chatClient.AsAIAgent("Test instructions", "TestIdeaAgent");
-
-        var loopAgent = _evaluator.Wrap(agent);
-
-        var input = new StoryInput("Test input");
-
-        // Act
-        var result = await loopAgent.RunAsync(input.Content, null, null, CancellationToken.None);
-
-        // Assert
-        Assert.Equal(1, chatClient.InvocationCount);
-        Assert.NotNull(result);
-        Assert.NotEmpty(result.Text);
-    }
-
-    /// <summary>
-    ///     Test: Invalid then Valid
-    ///     Expected: 2 invocations, operation succeeds
-    /// </summary>
-    [Fact]
-    public async Task LoopAgent_InvalidThenValid_InvokesAgentTwice()
-    {
-        // Arrange
-        var chatClient = new FakeChatClient(InvalidIdeasJson, ValidIdeasJson);
-        var agent = chatClient.AsAIAgent("Test instructions", "TestIdeaAgent");
-
-        var loopAgent = _evaluator.Wrap(agent);
-
-        var input = new StoryInput("Test input");
-
-        // Act
-        var result = await loopAgent.RunAsync(input.Content, null, null, CancellationToken.None);
-
-        // Assert
-        Assert.Equal(2, chatClient.InvocationCount);
-        Assert.NotNull(result);
-        Assert.NotEmpty(result.Text);
-    }
-
-    /// <summary>
-    ///     Test: Invalid, Invalid, then Valid
-    ///     Expected: 3 invocations, operation succeeds
-    /// </summary>
-    [Fact]
-    public async Task LoopAgent_TwoInvalidThenValid_InvokesAgentThreeTimes()
-    {
-        // Arrange
-        var chatClient = new FakeChatClient(InvalidIdeasJson, InvalidIdeasJson, ValidIdeasJson);
-        var agent = chatClient.AsAIAgent("Test instructions", "TestIdeaAgent");
-
-        // Use a high MaxIterations so that the loop won't cut off before the third call
-        var loopAgent = _evaluator.Wrap(agent);
-
-        var input = new StoryInput("Test input");
-
-        // Act
-        var result = await loopAgent.RunAsync(input.Content, null, null, CancellationToken.None);
-
-        // Assert
-        Assert.Equal(3, chatClient.InvocationCount);
-        Assert.NotNull(result);
-    }
-
-    /// <summary>
-    ///     Test: Three invalid attempts result in failure
-    ///     Expected: Throws InvalidOperationException with specific message after exactly 3 attempts
-    /// </summary>
-    [Fact]
-    public async Task LoopAgent_ThreeInvalidAttempts_ThrowsAfterThirdInvocation()
-    {
-        // Arrange
-        var chatClient = new FakeChatClient(InvalidIdeasJson, InvalidIdeasJson, InvalidIdeasJson, InvalidIdeasJson);
-        var agent = chatClient.AsAIAgent("Test instructions", "TestIdeaAgent");
-
-        var loopAgent = _evaluator.Wrap(agent);
-
-        var input = new StoryInput("Test input");
-
-        // Act & Assert
-        var exception = await Assert.ThrowsAsync<IdeaValidationException>(() =>
-            loopAgent.RunAsync(input.Content, null, null, CancellationToken.None));
-
-        Assert.Contains(
-            "Idea agent failed to produce valid ideas after 3 attempts.",
-            exception.Message);
-        Assert.Equal(3, exception.AttemptCount);
-        Assert.Equal(IdeaValidationFailureKind.Structural, exception.Kind);
-
-        Assert.Equal(3, chatClient.InvocationCount);
-    }
-
-    /// <summary>
-    ///     Test: Verify loop respects MaxIterations limit
-    ///     Expected: Throws InvalidOperationException after exactly 3 iterations, no fourth attempt
-    /// </summary>
-    [Fact]
-    public async Task LoopAgent_ThreeInvalidAttempts_StopsBeforeFourthInvocation()
-    {
-        // Arrange
-        var chatClient = new FakeChatClient(InvalidIdeasJson, InvalidIdeasJson, InvalidIdeasJson, InvalidIdeasJson);
-        var agent = chatClient.AsAIAgent("Test instructions", "TestIdeaAgent");
-
-        var loopAgent = _evaluator.Wrap(agent);
-
-        var input = new StoryInput("Test input");
-
-        // Act & Assert
-        var failure = await Assert.ThrowsAsync<IdeaValidationException>(() =>
-            loopAgent.RunAsync(input.Content, null, null, CancellationToken.None));
-
-        Assert.Equal(3, failure.AttemptCount);
-        Assert.Equal(3, chatClient.InvocationCount);
-    }
-
-    /// <summary>
-    ///     Test: Invalid JSON then Valid
-    ///     Expected: 2 invocations, operation succeeds
-    /// </summary>
-    [Fact]
-    public async Task LoopAgent_InvalidJsonThenValid_RetriesAndSucceeds()
-    {
-        // Arrange
-        var chatClient = new FakeChatClient(InvalidJson, ValidIdeasJson);
-        var agent = chatClient.AsAIAgent("Test instructions", "TestIdeaAgent");
-
-        var loopAgent = _evaluator.Wrap(agent);
-
-        var input = new StoryInput("Test input");
-
-        // Act
-        var result = await loopAgent.RunAsync(input.Content, null, null, CancellationToken.None);
-
-        // Assert
-        Assert.Equal(2, chatClient.InvocationCount);
-        Assert.NotNull(result);
-        Assert.NotEmpty(result.Text);
-    }
-
-    /// <summary>
-    ///     Test: Empty response then Valid
-    ///     Expected: 2 invocations, operation succeeds
-    /// </summary>
-    [Fact]
-    public async Task LoopAgent_EmptyResponseThenValid_RetriesAndSucceeds()
-    {
-        // Arrange
-        var chatClient = new FakeChatClient(EmptyResponse, ValidIdeasJson);
-        var agent = chatClient.AsAIAgent("Test instructions", "TestIdeaAgent");
-
-        var loopAgent = _evaluator.Wrap(agent);
-
-        var input = new StoryInput("Test input");
-
-        // Act
-        var result = await loopAgent.RunAsync(input.Content, null, null, CancellationToken.None);
-
-        // Assert
-        Assert.Equal(2, chatClient.InvocationCount);
-        Assert.NotNull(result);
-        Assert.NotEmpty(result.Text);
-    }
-
-    /// <summary>
-    ///     Test: Three invalid JSON responses result in failure
-    ///     Expected: Throws InvalidOperationException with specific message after exactly 3 attempts
-    /// </summary>
-    [Fact]
-    public async Task LoopAgent_ThreeInvalidJsonResponses_FailsAfterThirdInvocation()
-    {
-        // Arrange
-        var chatClient = new FakeChatClient(InvalidJson, InvalidJson, InvalidJson, InvalidJson);
-        var agent = chatClient.AsAIAgent("Test instructions", "TestIdeaAgent");
-
-        var loopAgent = _evaluator.Wrap(agent);
-
-        var input = new StoryInput("Test input");
-
-        // Act & Assert
-        var exception = await Assert.ThrowsAsync<IdeaValidationException>(() =>
-            loopAgent.RunAsync(input.Content, null, null, CancellationToken.None));
-
-        Assert.Contains(
-            "Idea agent failed to produce valid ideas after 3 attempts.",
-            exception.Message);
-        Assert.Equal(3, exception.AttemptCount);
-        Assert.Equal(IdeaValidationFailureKind.Structural, exception.Kind);
-
-        Assert.Equal(3, chatClient.InvocationCount);
-    }
-
-    /// <summary>
-    ///     Test: Three empty responses result in failure
-    ///     Expected: Throws InvalidOperationException with specific message after exactly 3 attempts
-    /// </summary>
-    [Fact]
-    public async Task LoopAgent_ThreeEmptyResponses_FailsAfterThirdInvocation()
-    {
-        // Arrange
-        var chatClient = new FakeChatClient(EmptyResponse, EmptyResponse, EmptyResponse, EmptyResponse);
-        var agent = chatClient.AsAIAgent("Test instructions", "TestIdeaAgent");
-
-        var loopAgent = _evaluator.Wrap(agent);
-
-        var input = new StoryInput("Test input");
-
-        // Act & Assert
-        var exception = await Assert.ThrowsAsync<IdeaValidationException>(() =>
-            loopAgent.RunAsync(input.Content, null, null, CancellationToken.None));
-
-        Assert.Contains(
-            "Idea agent failed to produce valid ideas after 3 attempts.",
-            exception.Message);
-        Assert.Equal(3, exception.AttemptCount);
-        Assert.Equal(IdeaValidationFailureKind.Structural, exception.Kind);
-
-        Assert.Equal(3, chatClient.InvocationCount);
     }
 }
 

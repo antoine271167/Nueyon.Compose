@@ -141,29 +141,8 @@ public static class CliContracts
         alternativesValidated = false,
         structural = new { requiredNonEmptyFields = new[] { "title", "description", "audience", "rationale" } },
         semantic = new { enabled = true, judge = "IdeaSemanticJudge", blocking = true },
-        // The default (Legacy) limit; the profiles below describe both selectable modes.
         maxAttempts = IdeaValidationLoopEvaluator.MaxAttempts,
-        mode = new
-        {
-            setting = "IdeaWorkflow:Mode",
-            values = new[] { nameof(IdeaWorkflowMode.Legacy), nameof(IdeaWorkflowMode.Simplified) },
-            @default = nameof(IdeaWorkflowMode.Legacy)
-        },
-        profiles = new[]
-        {
-            new
-            {
-                mode = nameof(IdeaWorkflowMode.Legacy),
-                maxAttempts = IdeaWorkflowModes.LegacyMaxAttempts,
-                prompts = "Idea/*.prompt.txt"
-            },
-            new
-            {
-                mode = nameof(IdeaWorkflowMode.Simplified),
-                maxAttempts = IdeaWorkflowModes.SimplifiedMaxAttempts,
-                prompts = "Idea/Simplified/*.prompt.txt"
-            }
-        }
+        prompts = "Idea/*.prompt.txt"
     };
 
     private static readonly object _contractValidation = new
@@ -290,7 +269,6 @@ public static class CliContracts
             discoveryNeedsConfiguration = false,
             commandsRequiringRuntime = Commands.Where(c => c.RequiresRuntime).Select(c => c.Syntax).ToArray(),
             requiredConfiguration = new[] { "OpenAI:ApiKey", "OpenAI:Model" },
-            optionalConfiguration = new[] { "IdeaWorkflow:Mode (Legacy|Simplified; default Legacy)" },
             configurationSources = new[]
             {
                 "appsettings.json (working directory, then src\\Nueyon.Compose.Host.Console, then executable directory)",

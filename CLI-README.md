@@ -59,10 +59,8 @@ ideas in the Idea result may contain null fields, which that output schema adver
 other result schemas are strict.
 
 The Idea agent uses the production structural and semantic validation loop: the
-first idea must pass both; alternatives are not judged. In the default `Legacy` mode it
-can make up to **three
-generator and three semantic judge calls per source** (`Simplified`: at most two
-generations and two judge calls), plus transport retries (the
+first idea must pass both; alternatives are not judged. It can make at most **two
+generator and two semantic judge calls per source**, plus transport retries (the
 discovery `validation` object exposes this as `maxAttempts`). Do not invoke the
 workflow or an agent without appropriate cost authorization.
 
@@ -71,34 +69,24 @@ idea when it can be parsed, and the latest diagnosis. The semantic judge
 independently evaluates the current first idea against the original source.
 Exhausting the attempts fails the Idea stage before Research can run.
 
-### Idea workflow mode
+### Idea workflow
 
-`IdeaWorkflow:Mode` (environment variable `IdeaWorkflow__Mode`; `appsettings.json`
-sets `Legacy` explicitly) selects the Idea profile for the whole process. Invalid or
-empty values are a configuration error before any model call.
+One production prompt set lives in `Prompts/Idea/`. Structural and semantic failures
+share a single repair budget: two generations total, with a mandatory judge.
+Blockers are limited to `sourceContradiction`, `unsupportedClaim`, `editorialPurpose`
+and fields `title`, `description`, `audience`, `rationale`, `evidence`.
+A failed Idea stage shows the category, field and problem of the last blocker;
+full feedback is available in the optional trace. There is no mode setting.
 
-| Mode | Prompts | Generations | Judge |
-|---|---|---|---|
-| `Legacy` (default) | `Prompts/Idea/*.prompt.txt` | 3 | mandatory |
-| `Simplified` | `Prompts/Idea/Simplified/*.prompt.txt` | 2 total, one shared repair for structural and semantic failures | mandatory, blockers limited to `sourceContradiction`, `unsupportedClaim`, `editorialPurpose` and fields `title`, `description`, `audience`, `rationale`, `evidence` |
-
-Rollback: unset `IdeaWorkflow__Mode` or set it to `Legacy`; this restores the original
-prompts and three generations. `--prompts` must contain the complete set of the
-selected mode (no fallback). A failed Idea stage shows the category, field and problem
-of the last blocker (never the source); full blockers are in the optional `--trace`.
-
-Known misses: the offline tests use fake model clients and prove budgets, isolation
-and fail-closed handling only; they do not show that the Simplified judge detects any
-given source problem (for example the experiment 005 or 010 cases), and a parser can
-not guarantee semantic correctness. No live model or experiment runs were made for
-this change.
+The 12 November Luna comparison yielded three usable final ideas, including one
+repair of case 010. This small assistant-reviewed sample does not establish general
+judge accuracy or downstream quality. See [experiment lessons](docs/idea-experiment-lessons.md).
 
 Custom Idea validation prompts and judge fixtures must use
 `{"accepted":true,"blockingIssues":[]}` for acceptance. Rejection uses
 `accepted: false` and one to three blockers, each with `category`, `field`,
-`problem`, `sourceEvidence`, and `constraint`. Legacy `problem`/`correction`
-verdicts fail validation. Replay archived v3 experiments at their recorded
-code revision.
+`problem`, `sourceEvidence`, and `constraint`. Old `problem`/`correction`
+verdicts fail validation.
 
 `--capture-inputs <dir>` is `run workflow`-only and creates a unique `run-<id>` child
 containing `<agent>.json` at each agent boundary. `--trace <json>` is Idea-only.
@@ -140,10 +128,7 @@ files also never overwrite existing files.
 
 Both runtime commands accept `--prompts <dir>` for a complete prompt tree. It is
 strict: every embedded prompt, including the Idea judge prompt, must exist there;
-no disk/embedded mixing occurs, and an explicit directory never falls back. The complete
-set now includes the `Idea/Simplified/` subdirectory (`Idea.system`, `Idea.user`,
-`IdeaValidation.system`), so an older override tree must copy that subtree in, even if
-you only use `Legacy`; a missing file is an error, never a fallback. Without it, the host uses
+no disk/embedded mixing occurs, and an explicit directory never falls back. The single production tree contains no profile subdirectories. Without an explicit override, the host uses
 `src\Nueyon.Compose.Application\Prompts` when launched from the repository root,
 otherwise the `Prompts` directory next to the executable if present, otherwise
 embedded prompts. Disk templates are read on each process execution. To pick up

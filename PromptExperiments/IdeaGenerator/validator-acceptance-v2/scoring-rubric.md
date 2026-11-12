@@ -1,7 +1,0 @@
-# Application of the pre-live rubric
-
-The authoritative preregistered rules are in protocol.md (hashed before live calls). This file explains their application; it adds no gate.
-
-Score each emitted blocker on: (a) real material mismatch in its named field, (b) full source fidelity of problem/evidence/constraint, (c) non-prescriptivity. Source quotations alone cannot establish (b). Missing optional detail is not a blocker. Invented decision requirements, inflated universal claims and requirements for literal wording invalidate full fidelity. A reasonable interpretation cannot be rejected merely because it is not literal. Explicit source boundaries such as 'pickup must remain within the confirmed window' or prohibiting the exact unsupported assertion are diagnostic, even when written with 'must' or 'do not'. Directing the author to describe/present a different framing, choosing an intervention, or requiring new reporting/tests is prescriptive. Duplicate blockers are flagged separately.
-
-Verdict TP means a bad case was rejected; it does not imply the known critical defect was actually diagnosed. Report critical-defect coverage separately, especially v4 seedbank. A blocker that catches a genuine different material defect may still be source-faithful, but cannot establish coverage of the frozen expected reason. Human scoring is unblinded and by the case author; boundary judgments are documented. No new live model is used as scorer.

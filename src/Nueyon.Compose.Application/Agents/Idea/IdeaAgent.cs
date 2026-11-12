@@ -4,7 +4,6 @@ using System.Text.Json.Serialization;
 using Microsoft.Agents.AI;
 using Microsoft.Extensions.AI;
 using Microsoft.Extensions.Logging;
-using Nueyon.Compose.Application.Prompts;
 using Nueyon.Compose.Domain;
 
 namespace Nueyon.Compose.Application.Agents.Idea;
@@ -22,24 +21,14 @@ public sealed class IdeaAgent : IAgent<StoryInput, IReadOnlyList<Domain.Idea>>
     /// <param name="agent">The Microsoft Agent Framework AIAgent to use for generating ideas.</param>
     /// <param name="logger">The logger for structured diagnostic logging.</param>
     /// <exception cref="ArgumentNullException">Thrown when agent or logger is null.</exception>
-    public IdeaAgent(AIAgent agent, ILogger<IdeaAgent> logger) : this(agent, logger, IdeaWorkflowMode.Legacy)
-    {
-    }
-
-    /// <summary>
-    ///     Initializes an IdeaAgent for the given workflow mode. The mode must match the mode of the evaluator that
-    ///     wrapped <paramref name="agent" />; it selects the generator user prompt.
-    /// </summary>
-    public IdeaAgent(AIAgent agent, ILogger<IdeaAgent> logger, IdeaWorkflowMode mode)
+    public IdeaAgent(AIAgent agent, ILogger<IdeaAgent> logger)
     {
         _agent = agent ?? throw new ArgumentNullException(nameof(agent));
         _logger = logger ?? throw new ArgumentNullException(nameof(logger));
-        _mode = Enum.IsDefined(mode) ? mode : throw new ArgumentOutOfRangeException(nameof(mode));
     }
 
     private readonly AIAgent _agent;
     private readonly ILogger<IdeaAgent> _logger;
-    private readonly IdeaWorkflowMode _mode;
 
     /// <summary>
     ///     Executes the IDEA agent to generate content ideas from the user's input.
@@ -70,7 +59,7 @@ public sealed class IdeaAgent : IAgent<StoryInput, IReadOnlyList<Domain.Idea>>
                 agentName,
                 executionContext.ExecutionId);
 
-            var userMessage = IdeaPrompts.GeneratorUser(_mode, input.Content);
+            var userMessage = IdeaPrompts.GeneratorUser(input.Content);
 
             // Run the agent with structured output options configured
             var observer = executionContext.AdditionalProperties is { } extra &&
@@ -118,10 +107,6 @@ public sealed class IdeaAgent : IAgent<StoryInput, IReadOnlyList<Domain.Idea>>
     ///     Gets the system instructions used to configure this agent's underlying AI agent.
     /// </summary>
     public static string GetSystemInstructions() => IdeaAgentInstructions.GetSystemInstructions();
-
-    /// <summary>Gets the system instructions of the given workflow mode.</summary>
-    public static string GetSystemInstructions(IdeaWorkflowMode mode) =>
-        IdeaAgentInstructions.GetSystemInstructions(mode);
 
     /// <summary>
     ///     Creates ChatClientAgentRunOptions with structured JSON output configured for IdeaResponse.
@@ -247,7 +232,6 @@ public sealed class IdeaAgent : IAgent<StoryInput, IReadOnlyList<Domain.Idea>>
 
     private sealed record RawIdeaResponse
     {
-        [JsonPropertyName("ideas")]
-        public required IReadOnlyList<JsonElement> Ideas { get; init; }
+        [JsonPropertyName("ideas")] public required IReadOnlyList<JsonElement> Ideas { get; init; }
     }
 }

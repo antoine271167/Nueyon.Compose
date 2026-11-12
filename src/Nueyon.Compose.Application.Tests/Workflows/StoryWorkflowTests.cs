@@ -11,7 +11,7 @@ namespace Nueyon.Compose.Application.Tests.Workflows;
 public sealed class StoryWorkflowTests
 {
     [Fact]
-    public async Task RunAsync_WithThreeRejectedIdeas_FailsWithoutResearchHandoff()
+    public async Task RunAsync_WithTwoRejectedIdeas_FailsWithoutResearchHandoff()
     {
         const string generation =
             """{"ideas":[{"title":"Measured results","description":"The proposal worked","audience":"Readers","rationale":"Share the result"}]}""";
@@ -29,7 +29,7 @@ public sealed class StoryWorkflowTests
             workflow.RunAsync(new StoryInput("A proposal, with no measured results.")));
 
         Assert.NotNull(error);
-        Assert.Contains("Idea agent failed to produce valid ideas after 3 attempts.", error.ToString());
+        Assert.Contains("Idea agent failed to produce valid ideas after 2 attempts.", error.ToString());
         Assert.Equal(IdeaValidationLoopEvaluator.MaxAttempts, judge.InvocationCount);
         Assert.Null(research.CapturedInput);
     }

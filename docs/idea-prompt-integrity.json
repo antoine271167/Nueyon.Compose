@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-12",
+  "prompts": [
+    {
+      "productionPath": "src/Nueyon.Compose.Application/Prompts/Idea/Idea.system.prompt.txt",
+      "sha256": "252D8B75EC2A13E9A05FBF0CD3E047DB5F22F7F8300BF768F9A615DAED75C697",
+      "bytes": 1889
+    },
+    {
+      "productionPath": "src/Nueyon.Compose.Application/Prompts/Idea/Idea.user.prompt.txt",
+      "sha256": "59A7B36E5497FF1BE1D29E0544F9A32686FE76BB09730AB29CF239C475693B26",
+      "bytes": 1506
+    },
+    {
+      "productionPath": "src/Nueyon.Compose.Application/Prompts/Idea/IdeaValidation.system.prompt.txt",
+      "sha256": "F5E3DA8BFF4D599BE3C0D4622AB92AFA38716309789CD5F80B124A2655765A3B",
+      "bytes": 2789
+    }
+  ],
+  "judgeUser": "Unchanged JSON serialization of { source = sourceContent, idea = selectedIdea } in IdeaSemanticJudge."
+}

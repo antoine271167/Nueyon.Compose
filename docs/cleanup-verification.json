@@ -1,0 +1,73 @@
+{
+  "date": "2026-11-12",
+  "promptHashMatches": 3,
+  "retainedEvidenceFilesUnchanged": 65,
+  "retainedComparisonFilesByteHashChecked": 43,
+  "remainingProjects": 8,
+  "validProjectReferences": 12,
+  "downstreamAgentsAndPromptsUnchanged": true,
+  "model": "gpt-6-luna",
+  "build": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "tests": {
+    "application": 213,
+    "infrastructure": 22,
+    "console": 36,
+    "total": 271,
+    "domain": "No tests discovered (pre-existing empty project)"
+  },
+  "cliDiscovery": "Single Idea workflow, maxAttempts=2, no mode or profiles",
+  "deletedTrackedFileGroups": {
+    "PromptExperiments/2026-11-03-nueyon-linkedin-introduction": 309,
+    "PromptExperiments/IdeaGenerator/Baseline-002": 165,
+    "PromptExperiments/IdeaGenerator/acceptance-v1": 9,
+    "PromptExperiments/IdeaGenerator/evidence-aware-v1": 415,
+    "PromptExperiments/IdeaGenerator/experiment-001": 18,
+    "PromptExperiments/IdeaGenerator/experiment-003": 59,
+    "PromptExperiments/IdeaGenerator/experiment-004": 27,
+    "PromptExperiments/IdeaGenerator/experiment-005": 28,
+    "PromptExperiments/IdeaGenerator/production-cli-acceptance-v1": 41,
+    "PromptExperiments/IdeaGenerator/production-cli-acceptance-v2": 218,
+    "PromptExperiments/IdeaGenerator/production-cli-acceptance-v3": 123,
+    "PromptExperiments/IdeaGenerator/production-cli-acceptance-v4": 155,
+    "PromptExperiments/IdeaGenerator/specialist-judges-v1": 692,
+    "PromptExperiments/IdeaGenerator/validator-acceptance-v1": 190,
+    "PromptExperiments/IdeaGenerator/validator-acceptance-v2": 718,
+    "PromptExperiments/experiment-010-pipeline-drift-localization": 3,
+    "PromptExperiments/experiment-011-narrative-boundary-editorial-fidelity": 112,
+    "src/Nueyon.Compose.Application.Tests": 1,
+    "src/Nueyon.Compose.Application": 4,
+    "src/Nueyon.Compose.Experiments.Tests": 2,
+    "src/Nueyon.Compose.Experiments": 6,
+    "src/Nueyon.Compose.Infrastructure": 1
+  },
+  "modifiedTrackedFiles": [
+    "CLI-README.md",
+    "src/Nueyon.Compose.Application.Tests/Agents/IdeaValidationLoopEvaluatorTests.cs",
+    "src/Nueyon.Compose.Application.Tests/Workflows/StoryWorkflowTests.cs",
+    "src/Nueyon.Compose.Application/Agents/Idea/IdeaAgent.cs",
+    "src/Nueyon.Compose.Application/Agents/Idea/IdeaAgentInstructions.cs",
+    "src/Nueyon.Compose.Application/Agents/Idea/IdeaPrompts.cs",
+    "src/Nueyon.Compose.Application/Agents/Idea/IdeaSemanticJudge.cs",
+    "src/Nueyon.Compose.Application/Agents/Idea/IdeaValidationLoopEvaluator.cs",
+    "src/Nueyon.Compose.Application/Prompts/Idea/Idea.system.prompt.txt",
+    "src/Nueyon.Compose.Application/Prompts/Idea/Idea.user.prompt.txt",
+    "src/Nueyon.Compose.Application/Prompts/Idea/IdeaValidation.system.prompt.txt",
+    "src/Nueyon.Compose.Host.Console.Tests/CliTests.cs",
+    "src/Nueyon.Compose.Host.Console/Cli.cs",
+    "src/Nueyon.Compose.Host.Console/CliContracts.cs",
+    "src/Nueyon.Compose.Host.Console/appsettings.json",
+    "src/Nueyon.Compose.Infrastructure.Tests/InfrastructureServiceExtensionsTests.cs",
+    "src/Nueyon.Compose.Infrastructure/ServiceExtensions.cs",
+    "src/Nueyon.Compose.slnx"
+  ],
+  "limitations": [
+    "No new live acceptance test or full downstream pipeline test.",
+    "First test run contained two obsolete invalid-mode configuration cases that unexpectedly reached the model client after mode validation removal. Both returned errors. External requests and billing cannot be ruled out; these cases were removed before the final passing run.",
+    "Historical evidence intentionally retains original paths and configuration values as immutable run records."
+  ],
+  "committed": false,
+  "pushed": false
+}
