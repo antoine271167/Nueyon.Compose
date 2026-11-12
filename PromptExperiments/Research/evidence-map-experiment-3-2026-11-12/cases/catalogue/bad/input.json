@@ -1,0 +1,14 @@
+{
+  "Input": {
+    "Content": "Catalogue audit: batch North preserved the intended shelf order but its printed labels gave wrong years. Batch South printed the years correctly but reversed shelf order. Batch West had both dimensions correct. The audit found no single earliest cause across batches; a missing intake log prevents attribution for North. It recommended checking dates and shelf order separately. No reader-comprehension tests were run."
+  },
+  "SelectedIdea": {
+    "Idea": {
+      "Title": "Two audit dimensions need separate checks",
+      "Description": "Two audit dimensions need separate checks",
+      "Audience": "Reviewers",
+      "Rationale": "Preserve observed conclusions and their limits.",
+      "Evidence": "Wrong dates prove shelf-order failure."
+    }
+  }
+}

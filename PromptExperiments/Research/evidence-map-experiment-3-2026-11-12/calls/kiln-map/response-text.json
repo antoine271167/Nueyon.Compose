@@ -1,0 +1,69 @@
+{
+  "items": [
+    {
+      "id": "S1",
+      "kind": "claim",
+      "proposition": "The log records 12 cracked tiles per 100 in week A with controller X and 5 per 100 in week B with controller Y.",
+      "sourceQuotes": [
+        "Week A used controller X and recorded 12 cracked tiles in 100. Week B used controller Y and recorded 5 in 100."
+      ],
+      "materiality": "This is the observed difference motivating the proposed longer trial.",
+      "boundary": "The week-to-week comparison alone does not establish that the controller caused the difference."
+    },
+    {
+      "id": "S2",
+      "kind": "causalLimit",
+      "proposition": "Clay batches and drying humidity differed between the weeks, so the comparison does not isolate controller effects.",
+      "sourceQuotes": [
+        "Clay batches and drying humidity differed between weeks."
+      ],
+      "materiality": "These differences complicate attribution of the recorded crack-rate difference to controller X or Y.",
+      "boundary": "The log does not quantify the effects of the batch or humidity differences."
+    },
+    {
+      "id": "S3",
+      "kind": "counterexample",
+      "proposition": "A check using controller X recorded 5 cracked tiles per 100 after a batch change, showing that the lower rate was also observed without switching to Y.",
+      "sourceQuotes": [
+        "A same-controller X check also recorded 5 in 100 after a batch change."
+      ],
+      "materiality": "This observation further limits an inference that changing to Y explains the lower recorded rate.",
+      "boundary": "The log does not provide enough detail to determine why the rate changed or whether the check is directly comparable to week B."
+    },
+    {
+      "id": "S4",
+      "kind": "explicitMeaning",
+      "proposition": "The team retained Y for a longer trial but explicitly did not conclude that Y caused the reduction.",
+      "sourceQuotes": [
+        "The team retained Y for a longer trial; it did not conclude that Y caused the reduction."
+      ],
+      "materiality": "It distinguishes a decision to continue testing Y from a finding that Y caused the observed reduction.",
+      "boundary": "Retaining Y does not establish that Y is effective or that the longer trial produced a result."
+    },
+    {
+      "id": "S5",
+      "kind": "causalLimit",
+      "proposition": "The log contains no long-term durability measurements.",
+      "sourceQuotes": [
+        "The log contains no long-term durability measurements."
+      ],
+      "materiality": "The recorded cracking figures cannot establish long-term durability.",
+      "boundary": "This absence does not indicate whether either controller improves or worsens durability."
+    }
+  ],
+  "ideaChecks": [
+    {
+      "proposition": "Lower recorded cracking merits another trial, not a causal victory.",
+      "sourceItemIds": [
+        "S1",
+        "S2",
+        "S3",
+        "S4"
+      ],
+      "status": "supported"
+    }
+  ],
+  "limitations": [
+    "The log gives no sample or measurement details beyond the stated counts and rates, so the comparability and precision of the observations cannot be assessed from this source."
+  ]
+}

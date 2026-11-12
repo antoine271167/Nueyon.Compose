@@ -1,0 +1,991 @@
+{
+  "auditedAt": "2026-11-12T20:56:35.668Z",
+  "phase": "All maps complete; no judge calls started",
+  "evaluator": "Same assistant as protocol/labels author; unblinded, no independent human validation; semantic assessments are fallible",
+  "maps": [
+    {
+      "id": "intro",
+      "requirements": [
+        {
+          "id": "meaning",
+          "coverage": "covered",
+          "mapIds": [
+            "S2"
+          ],
+          "assessment": "Equivalent explicit first-concrete-expression proposition; original causal sentence not repeated, not required."
+        },
+        {
+          "id": "stage",
+          "coverage": "covered",
+          "mapIds": [
+            "S4",
+            "S5",
+            "S9",
+            "S10"
+          ],
+          "assessment": "Broad status and absence of proof preserved."
+        },
+        {
+          "id": "audience",
+          "coverage": "covered",
+          "mapIds": [
+            "S1"
+          ],
+          "assessment": "Company and audience preserved."
+        },
+        {
+          "id": "roadmap",
+          "coverage": "covered",
+          "mapIds": [
+            "S11"
+          ],
+          "assessment": "No schedule/commitments."
+        }
+      ],
+      "entries": [
+        {
+          "id": "S1",
+          "sourceSupported": true,
+          "materiality": "relevant to selected conclusion or limits",
+          "anchors": [
+            {
+              "sourceQuote": "Nuëyon is an emerging AI-first software company with the ambition to build tools, products, and knowledge for other AI-first companies.",
+              "exact": true
+            },
+            {
+              "sourceQuote": "Nuëyon's intended audience is other AI-first companies: businesses that place AI at the center of their products, operations, or business models.",
+              "exact": true
+            }
+          ],
+          "assessment": "Proposition and scope supported by original source; anchors support relevant content; boundary avoids stronger causal or implementation claim."
+        },
+        {
+          "id": "S2",
+          "sourceSupported": true,
+          "materiality": "relevant to selected conclusion or limits",
+          "anchors": [
+            {
+              "sourceQuote": "Nuëyon.Compose is the first concrete expression of the company's vision.",
+              "exact": true
+            },
+            {
+              "sourceQuote": "Its purpose is to turn ideas and accumulated knowledge into useful, well-structured content through an AI-native orchestration workflow.",
+              "exact": true
+            },
+            {
+              "sourceQuote": "Compose is designed to organize that process into distinct stages:",
+              "exact": true
+            }
+          ],
+          "assessment": "Proposition and scope supported by original source; anchors support relevant content; boundary avoids stronger causal or implementation claim."
+        },
+        {
+          "id": "S3",
+          "sourceSupported": true,
+          "materiality": "context/boundary; not every detail is obligatory in Research",
+          "anchors": [
+            {
+              "sourceQuote": "Idea → Discover and Select → Research → Synthesize → Narrative → Compose",
+              "exact": true
+            },
+            {
+              "sourceQuote": "The key principle is that content should be developed from researched and organized source material rather than generated from a blank prompt without a structured process.",
+              "exact": true
+            },
+            {
+              "sourceQuote": "The upstream stages determine what can truthfully be said. The final composition stage determines how that material is presented.",
+              "exact": true
+            }
+          ],
+          "assessment": "Proposition and scope supported by original source; anchors support relevant content; boundary avoids stronger causal or implementation claim."
+        },
+        {
+          "id": "S4",
+          "sourceSupported": true,
+          "materiality": "relevant to selected conclusion or limits",
+          "anchors": [
+            {
+              "sourceQuote": "Nuëyon is at an early stage. Nuëyon.Compose is the first concrete product direction, while the broader portfolio and operating model remain under development.",
+              "exact": true
+            }
+          ],
+          "assessment": "Proposition and scope supported by original source; anchors support relevant content; boundary avoids stronger causal or implementation claim."
+        },
+        {
+          "id": "S5",
+          "sourceSupported": true,
+          "materiality": "relevant to selected conclusion or limits",
+          "anchors": [
+            {
+              "sourceQuote": "This is the strategic premise behind the company, not a claim that every identified need has already been validated or that the proposed solutions have demonstrated their effectiveness.",
+              "exact": true
+            }
+          ],
+          "assessment": "Proposition and scope supported by original source; anchors support relevant content; boundary avoids stronger causal or implementation claim."
+        },
+        {
+          "id": "S6",
+          "sourceSupported": true,
+          "materiality": "context/boundary; not every detail is obligatory in Research",
+          "anchors": [
+            {
+              "sourceQuote": "First, AI is central to the products Nuëyon intends to build. The products should use AI as a fundamental capability to accomplish useful work.",
+              "exact": true
+            },
+            {
+              "sourceQuote": "Second, the company itself is intended to operate in an AI-first manner, using AI as a central part of how products are conceived, developed, and operated.",
+              "exact": true
+            },
+            {
+              "sourceQuote": "The broader AI-only ambition expresses a stronger version of this positioning, but its precise operational meaning has not yet been defined in the available source material.",
+              "exact": true
+            }
+          ],
+          "assessment": "Proposition and scope supported by original source; anchors support relevant content; boundary avoids stronger causal or implementation claim."
+        },
+        {
+          "id": "S7",
+          "sourceSupported": true,
+          "materiality": "context/boundary; not every detail is obligatory in Research",
+          "anchors": [
+            {
+              "sourceQuote": "Several product directions and capabilities have been explored.",
+              "exact": true
+            },
+            {
+              "sourceQuote": "These areas are possibilities for a broader portfolio, not a list of products that are already available or committed to a delivery schedule.",
+              "exact": true
+            }
+          ],
+          "assessment": "Proposition is source-true, but quoted generic exploration/availability sentences do not individually anchor the named portfolio areas. Incomplete semantic anchoring, no invented product. Minor relevance granularity, not a Research blocker."
+        },
+        {
+          "id": "S8",
+          "sourceSupported": true,
+          "materiality": "relevant to selected conclusion or limits",
+          "anchors": [
+            {
+              "sourceQuote": "The intention is to create software with clear responsibilities and reusable capabilities. The architecture itself should not be presented as proof of superior performance, lower costs, or improved productivity without supporting evidence.",
+              "exact": true
+            }
+          ],
+          "assessment": "Proposition and scope supported by original source; anchors support relevant content; boundary avoids stronger causal or implementation claim."
+        },
+        {
+          "id": "S9",
+          "sourceSupported": true,
+          "materiality": "context/boundary; not every detail is obligatory in Research",
+          "anchors": [
+            {
+              "sourceQuote": "The company positioning should therefore communicate a clear intended audience without suggesting that Nuëyon already has an established customer base or commercially available portfolio.",
+              "exact": true
+            },
+            {
+              "sourceQuote": "The company is at an early stage. Do not imply an established customer base, commercial traction, or a portfolio of launched products.",
+              "exact": true
+            }
+          ],
+          "assessment": "Source-supported exclusion; kind negativeControl is imprecise: a prohibition is not an empirical negative control. No invented experiment."
+        },
+        {
+          "id": "S10",
+          "sourceSupported": true,
+          "materiality": "context/boundary; not every detail is obligatory in Research",
+          "anchors": [
+            {
+              "sourceQuote": "These formats represent the planned direction; they should not all be described as fully implemented or commercially available.",
+              "exact": true
+            },
+            {
+              "sourceQuote": "Publishing and distribution may become part of the broader offering, but automatic publication is not part of the current Compose implementation.",
+              "exact": true
+            }
+          ],
+          "assessment": "Proposition and scope supported by original source; anchors support relevant content; boundary avoids stronger causal or implementation claim."
+        },
+        {
+          "id": "S11",
+          "sourceSupported": true,
+          "materiality": "relevant to selected conclusion or limits",
+          "anchors": [
+            {
+              "sourceQuote": "The roadmap is best understood as a sequence of development priorities rather than a fixed release schedule.",
+              "exact": true
+            },
+            {
+              "sourceQuote": "No specific launch dates or commercial availability commitments have been established in the material summarized here.",
+              "exact": true
+            }
+          ],
+          "assessment": "Proposition and scope supported by original source; anchors support relevant content; boundary avoids stronger causal or implementation claim."
+        }
+      ],
+      "ideaSeparation": "Idea kept separate; checks do not make it source authority.",
+      "gate": "exact-anchors-pass"
+    },
+    {
+      "id": "005",
+      "requirements": [
+        {
+          "id": "variation",
+          "coverage": "covered",
+          "mapIds": [
+            "S9"
+          ],
+          "assessment": "Explicit varied Idea/Research outputs and causal scope."
+        },
+        {
+          "id": "tension",
+          "coverage": "covered",
+          "mapIds": [
+            "S6"
+          ],
+          "assessment": "Possible Synthesis contribution only."
+        },
+        {
+          "id": "decision",
+          "coverage": "covered",
+          "mapIds": [
+            "S2",
+            "S3",
+            "S4",
+            "S7"
+          ],
+          "assessment": "Both score means, all gates and restore."
+        },
+        {
+          "id": "backend",
+          "coverage": "covered",
+          "mapIds": [
+            "S8"
+          ],
+          "assessment": "Dates, possible backend drift, small sample."
+        }
+      ],
+      "entries": [
+        {
+          "id": "S1",
+          "sourceSupported": true,
+          "materiality": "relevant to selected conclusion or limits",
+          "anchors": [
+            {
+              "sourceQuote": "The candidate added one generic section, **“Preserve Editorial Intent from the Synthesis.”** It tells Narrative to identify the primary message, supporting themes, and contextual details; preserve audience scope and relative emphasis; keep technical details subordinate when Synthesis does; and retain uncertainty when the source is ambiguous.",
+              "exact": true
+            },
+            {
+              "sourceQuote": "**Candidate:** Three new runs with only `src/Nueyon.Compose.Application/Prompts/Narrative/Narrative.user.prompt.txt` changed. All other prompt files and workflow inputs remained identical.",
+              "exact": true
+            }
+          ],
+          "assessment": "Proposition and scope supported by original source; anchors support relevant content; boundary avoids stronger causal or implementation claim."
+        },
+        {
+          "id": "S2",
+          "sourceSupported": true,
+          "materiality": "relevant to selected conclusion or limits",
+          "anchors": [
+            {
+              "sourceQuote": "| Candidate | 1 | 1 | 2 | 0 | 0 | 1 | 4 | 4 | 4 | 2 |",
+              "exact": true
+            },
+            {
+              "sourceQuote": "| Candidate | 2 | 1 | 2 | 0 | 0 | 1 | 4 | 4 | 4 | 2 |",
+              "exact": true
+            },
+            {
+              "sourceQuote": "| Candidate | 3 | 1 | 2 | 0 | 0 | 1 | 4 | 4 | 4 | 2 |",
+              "exact": true
+            },
+            {
+              "sourceQuote": "**Narrative total:** Baseline mean 6.00/10 (range 5–7; sample SD 1.00). Candidate mean 4.00/10 (range 4–4; sample SD 0.00).",
+              "exact": true
+            }
+          ],
+          "assessment": "Proposition and scope supported by original source; anchors support relevant content; boundary avoids stronger causal or implementation claim."
+        },
+        {
+          "id": "S3",
+          "sourceSupported": true,
+          "materiality": "relevant to selected conclusion or limits",
+          "anchors": [
+            {
+              "sourceQuote": "Candidate outputs were readable and coherent, but consistently subordinated company identity and audience scope while making orchestration the central positioning. Candidate samples also introduced unsupported validation or audience framing.",
+              "exact": true
+            },
+            {
+              "sourceQuote": "**(c) Orchestration as supporting explanation:** All three candidate Narrative runs and all three candidate Compose runs failed this gate. Each made orchestration/orchestration-first positioning central.",
+              "exact": true
+            },
+            {
+              "sourceQuote": "**(d) Unsupported additions:** No candidate run passed this gate. The Narrative outputs introduced validation intent/commitment, an audience of founders/product leaders/builders, or a need for coordinated AI.",
+              "exact": true
+            }
+          ],
+          "assessment": "Proposition and scope supported by original source; anchors support relevant content; boundary avoids stronger causal or implementation claim."
+        },
+        {
+          "id": "S4",
+          "sourceSupported": true,
+          "materiality": "relevant to selected conclusion or limits",
+          "anchors": [
+            {
+              "sourceQuote": "| Candidate | 1 | 1 | 2 | 0 | 0 | 0 | 3 | 4 | 4 | 2 |",
+              "exact": true
+            },
+            {
+              "sourceQuote": "| Candidate | 2 | 1 | 2 | 0 | 0 | 1 | 4 | 4 | 4 | 2 |",
+              "exact": true
+            },
+            {
+              "sourceQuote": "| Candidate | 3 | 1 | 1 | 0 | 0 | 1 | 3 | 4 | 4 | 2 |",
+              "exact": true
+            },
+            {
+              "sourceQuote": "**Compose total:** Baseline mean 5.67/10 (range 4–7; sample SD 1.53). Candidate mean 3.33/10 (range 3–4; sample SD 0.58).",
+              "exact": true
+            },
+            {
+              "sourceQuote": "**Decision: Do not promote.** Candidate was worse on mean score for both Narrative and Compose, failed the orchestration hierarchy and factual restraint gates in every run, and introduced regressions.",
+              "exact": true
+            }
+          ],
+          "assessment": "Proposition and scope supported by original source; anchors support relevant content; boundary avoids stronger causal or implementation claim."
+        },
+        {
+          "id": "S5",
+          "sourceSupported": true,
+          "materiality": "relevant to selected conclusion or limits",
+          "anchors": [
+            {
+              "sourceQuote": "**(b) Compose as first concrete step:** Candidate narratives retained this. Candidate Compose runs 1–2 did too; run 3 implied Compose's role without clearly calling it the first concrete step.",
+              "exact": true
+            },
+            {
+              "sourceQuote": "**Readability and coherence:** Both conditions were generally readable and logically organized (rated 4/5). The change did not improve these qualities.",
+              "exact": true
+            }
+          ],
+          "assessment": "Proposition and scope supported by original source; anchors support relevant content; boundary avoids stronger causal or implementation claim."
+        },
+        {
+          "id": "S6",
+          "sourceSupported": true,
+          "materiality": "relevant to selected conclusion or limits",
+          "anchors": [
+            {
+              "sourceQuote": "The baseline Synthesis pairs company identity with Compose in its top-level emphasis, but also contains a later description calling orchestration “central to the product direction.”",
+              "exact": true
+            },
+            {
+              "sourceQuote": "That internal tension may have reinforced the technical angle.",
+              "exact": true
+            }
+          ],
+          "assessment": "Proposition and scope supported by original source; anchors support relevant content; boundary avoids stronger causal or implementation claim."
+        },
+        {
+          "id": "S7",
+          "sourceSupported": true,
+          "materiality": "relevant to selected conclusion or limits",
+          "anchors": [
+            {
+              "sourceQuote": "Variability narrowed, but the stable result was a stable failure, not an improvement.",
+              "exact": true
+            },
+            {
+              "sourceQuote": "**Decision: Do not promote.** Candidate was worse on mean score for both Narrative and Compose, failed the orchestration hierarchy and factual restraint gates in every run, and introduced regressions.",
+              "exact": true
+            },
+            {
+              "sourceQuote": "The production prompt was restored from the saved byte snapshot.",
+              "exact": true
+            }
+          ],
+          "assessment": "Proposition and scope supported by original source; anchors support relevant content; boundary avoids stronger causal or implementation claim."
+        },
+        {
+          "id": "S8",
+          "sourceSupported": true,
+          "materiality": "relevant to selected conclusion or limits",
+          "anchors": [
+            {
+              "sourceQuote": "The baseline runs were produced on 2026-11-03; candidate runs were produced on 2026-11-04. The source, all prompts, commit, model alias, and workflow settings matched, but the model provider may change the backend behind an alias.",
+              "exact": true
+            },
+            {
+              "sourceQuote": "No seed or temperature override was available. Three runs per condition show consistency in these samples, not statistical significance.",
+              "exact": true
+            },
+            {
+              "sourceQuote": "Subjective scores are based on the saved outputs and the explicit rubric above.",
+              "exact": true
+            }
+          ],
+          "assessment": "Proposition and scope supported by original source; anchors support relevant content; boundary avoids stronger causal or implementation claim."
+        },
+        {
+          "id": "S9",
+          "sourceSupported": true,
+          "materiality": "relevant to selected conclusion or limits",
+          "anchors": [
+            {
+              "sourceQuote": "Idea and Research outputs vary between runs. This is expected in the same full-pipeline comparison; all other stages and inputs were kept constant.",
+              "exact": true
+            },
+            {
+              "sourceQuote": "The console captures the selected first Idea, not every Idea candidate. Research has no separately configured external retrieval provider.",
+              "exact": true
+            }
+          ],
+          "assessment": "Proposition and scope supported by original source; anchors support relevant content; boundary avoids stronger causal or implementation claim."
+        }
+      ],
+      "ideaSeparation": "Idea kept separate; checks do not make it source authority.",
+      "gate": "exact-anchors-pass"
+    },
+    {
+      "id": "010",
+      "requirements": [
+        {
+          "id": "contrast",
+          "coverage": "covered",
+          "mapIds": [
+            "P7"
+          ],
+          "assessment": "Correct factual-versus-hierarchy distinction, valid direct anchors."
+        },
+        {
+          "id": "missing",
+          "coverage": "covered",
+          "mapIds": [
+            "P4"
+          ],
+          "assessment": "No earlier-stage localization; missing extracts stated in limitations."
+        },
+        {
+          "id": "multiple",
+          "coverage": "covered",
+          "mapIds": [
+            "P1",
+            "P2",
+            "P3",
+            "P4",
+            "P5"
+          ],
+          "assessment": "Variable observed stages, no causal inference."
+        },
+        {
+          "id": "dimensions",
+          "coverage": "partial",
+          "mapIds": [
+            "P8"
+          ],
+          "assessment": "Factual/editorial distinction covered; secondary reference qualification about nonuniform engagement measurement absent. That secondary qualification is peripheral to selected Idea, not scored as a material missing historical target. P8 has one invalid anchor."
+        }
+      ],
+      "entries": [
+        {
+          "id": "P1",
+          "sourceSupported": true,
+          "materiality": "relevant to selected conclusion or limits",
+          "anchors": [
+            {
+              "sourceQuote": "The first visible editorial hierarchy break varies by run.",
+              "exact": true
+            },
+            {
+              "sourceQuote": "In Experiment 008 Company-first runs, selected Idea already changes the hierarchy in A-001 and A-003",
+              "exact": true
+            },
+            {
+              "sourceQuote": "candidate 003 is already company/product hierarchy drift in Synthesis.",
+              "exact": true
+            },
+            {
+              "sourceQuote": "Narrative is the most recurrent first visible hierarchy shift in the available records.",
+              "exact": true
+            }
+          ],
+          "assessment": "Proposition and scope supported by original source; anchors support relevant content; boundary avoids stronger causal or implementation claim."
+        },
+        {
+          "id": "P2",
+          "sourceSupported": true,
+          "materiality": "relevant to selected conclusion or limits",
+          "anchors": [
+            {
+              "sourceQuote": "Narrative is the most recurrent first visible hierarchy shift in the available records.",
+              "exact": true
+            },
+            {
+              "sourceQuote": "It is first in 007 runs 001–002, 008 A-002 (factual breach) and 009 baseline 002/003 and candidates 001–003.",
+              "exact": true
+            },
+            {
+              "sourceQuote": "But it is not a sole root cause: some runs start in Idea or Synthesis, and in 009 baseline 001 the reported factual issue is Compose.",
+              "exact": true
+            }
+          ],
+          "assessment": "Proposition and scope supported by original source; anchors support relevant content; boundary avoids stronger causal or implementation claim."
+        },
+        {
+          "id": "P3",
+          "sourceSupported": true,
+          "materiality": "relevant to selected conclusion or limits",
+          "anchors": [
+            {
+              "sourceQuote": "A-001 | **Idea** | Compose is selected as the “concrete expression” framing Nuëyon’s identity",
+              "exact": true
+            },
+            {
+              "sourceQuote": "A-003 | **Idea** | Selected Idea calls Compose an “orchestration-first philosophy”",
+              "exact": true
+            }
+          ],
+          "assessment": "Proposition and scope supported by original source; anchors support relevant content; boundary avoids stronger causal or implementation claim."
+        },
+        {
+          "id": "P4",
+          "sourceSupported": true,
+          "materiality": "relevant to selected conclusion or limits",
+          "anchors": [
+            {
+              "sourceQuote": "Candidate 003 | **Synthesis** | Primary message and subject make Compose/orchestration the story; broader company identity and audience become context.",
+              "exact": true
+            },
+            {
+              "sourceQuote": "We can localize drift only from Synthesis onward for those chains",
+              "exact": true
+            }
+          ],
+          "assessment": "Proposition and scope supported by original source; anchors support relevant content; boundary avoids stronger causal or implementation claim."
+        },
+        {
+          "id": "P5",
+          "sourceSupported": true,
+          "materiality": "relevant to selected conclusion or limits",
+          "anchors": [
+            {
+              "sourceQuote": "For each run, “first drift” means the earliest **observable** stage that departs from the requested company-first editorial hierarchy, introduces unsupported material, or makes a materially stronger claim.",
+              "exact": true
+            },
+            {
+              "sourceQuote": "It does not imply internal model causation.",
+              "exact": true
+            }
+          ],
+          "assessment": "Proposition and scope supported by original source; anchors support relevant content; boundary avoids stronger causal or implementation claim."
+        },
+        {
+          "id": "P6",
+          "sourceSupported": true,
+          "materiality": "relevant to selected conclusion or limits",
+          "anchors": [
+            {
+              "sourceQuote": "Experiment 009 shows that a company-first selected Idea is not sufficient.",
+              "exact": true
+            },
+            {
+              "sourceQuote": "The evaluation reports the selected Idea kept Nuëyon primary and Compose as first product direction in all six baseline/candidate runs.",
+              "exact": true
+            },
+            {
+              "sourceQuote": "The reported issues then appear downstream: orchestration-centered story framing, unsupported audience/validation/outcome language, or a factual overclaim in Compose.",
+              "exact": true
+            }
+          ],
+          "assessment": "Proposition and scope supported by original source; anchors support relevant content; boundary avoids stronger causal or implementation claim."
+        },
+        {
+          "id": "P7",
+          "sourceSupported": true,
+          "materiality": "relevant to selected conclusion or limits",
+          "anchors": [
+            {
+              "sourceQuote": "Baseline 001 | **Compose** (reported factual failure)",
+              "exact": true
+            },
+            {
+              "sourceQuote": "Selected Idea and earlier chain remain company-first; the artifact’s score gives downstream hierarchy 2/2.",
+              "exact": true
+            },
+            {
+              "sourceQuote": "reliable conversion is not established.",
+              "exact": true
+            }
+          ],
+          "assessment": "Proposition and scope supported by original source; anchors support relevant content; boundary avoids stronger causal or implementation claim."
+        },
+        {
+          "id": "P8",
+          "sourceSupported": true,
+          "materiality": "relevant to selected conclusion or limits",
+          "anchors": [
+            {
+              "sourceQuote": "Factual and editorial failures are distinct.",
+              "exact": true
+            },
+            {
+              "sourceQuote": "Orchestration is source-supported as a Compose design principle; making it the defining story of a company introduction can still violate the source’s editorial intent.",
+              "exact": true
+            },
+            {
+              "sourceQuote": "The source supports two true propositions that compete editorially: Nuëyon is an AI-first company; orchestration is central to Compose’s design.",
+              "exact": false
+            }
+          ],
+          "assessment": "Last quote removes source bold markers around its opening claim. Exact anchor invalid; proposition is nevertheless supported by other valid P8 quotes and source. Never normalize for acceptance."
+        },
+        {
+          "id": "P9",
+          "sourceSupported": true,
+          "materiality": "relevant to selected conclusion or limits",
+          "anchors": [
+            {
+              "sourceQuote": "Technical-first B runs intentionally start technical, so their first technical framing in Idea is expected by that condition",
+              "exact": true
+            },
+            {
+              "sourceQuote": "In technical-first Experiment 008 B runs, technical hierarchy itself is the intended condition; the table identifies any separate scope/factual breach.",
+              "exact": true
+            }
+          ],
+          "assessment": "Proposition and scope supported by original source; anchors support relevant content; boundary avoids stronger causal or implementation claim."
+        },
+        {
+          "id": "P10",
+          "sourceSupported": true,
+          "materiality": "relevant to selected conclusion or limits",
+          "anchors": [
+            {
+              "sourceQuote": "Its saved evaluation summarizes the six runs but does not assign a formal first-failure stage to each dimension.",
+              "exact": true
+            },
+            {
+              "sourceQuote": "where the exact factual precursor is not explicitly called out (notably baseline 003), the localization is lower confidence.",
+              "exact": true
+            }
+          ],
+          "assessment": "Proposition and scope supported by original source; anchors support relevant content; boundary avoids stronger causal or implementation claim."
+        },
+        {
+          "id": "P11",
+          "sourceSupported": true,
+          "materiality": "relevant to selected conclusion or limits",
+          "anchors": [
+            {
+              "sourceQuote": "These are direct format references in upstream prompt text.",
+              "exact": true
+            },
+            {
+              "sourceQuote": "This is an instruction-boundary inconsistency and a plausible source of format priming",
+              "exact": true
+            },
+            {
+              "sourceQuote": "It does **not** demonstrate that these references caused orchestration drift or a weak hook in any given run.",
+              "exact": true
+            }
+          ],
+          "assessment": "Proposition and scope supported by original source; anchors support relevant content; boundary avoids stronger causal or implementation claim."
+        }
+      ],
+      "ideaSeparation": "Idea kept separate; checks do not make it source authority.",
+      "gate": "exact-anchors-fail"
+    },
+    {
+      "id": "garden",
+      "requirements": [
+        {
+          "id": "meaning",
+          "coverage": "covered",
+          "mapIds": [
+            "S1",
+            "S3"
+          ],
+          "assessment": "Attributed meaning separated from unmeasured increase; Idea Evidence marked unsupported."
+        },
+        {
+          "id": "limits",
+          "coverage": "covered",
+          "mapIds": [
+            "S2",
+            "S3",
+            "S4"
+          ],
+          "assessment": "Pilot, undecided expansion, no studies, hours."
+        }
+      ],
+      "entries": [
+        {
+          "id": "S1",
+          "sourceSupported": true,
+          "materiality": "relevant to selected conclusion or limits",
+          "anchors": [
+            {
+              "sourceQuote": "The garden board calls the seed library its first practical expression of the neighbourhood-sharing plan.",
+              "exact": true
+            },
+            {
+              "sourceQuote": "This is the board’s stated meaning, not a measured result.",
+              "exact": true
+            }
+          ],
+          "assessment": "Proposition and scope supported by original source; anchors support relevant content; boundary avoids stronger causal or implementation claim."
+        },
+        {
+          "id": "S2",
+          "sourceSupported": true,
+          "materiality": "relevant to selected conclusion or limits",
+          "anchors": [
+            {
+              "sourceQuote": "The library is a pilot; expansion is undecided.",
+              "exact": true
+            }
+          ],
+          "assessment": "Proposition and scope supported by original source; anchors support relevant content; boundary avoids stronger causal or implementation claim."
+        },
+        {
+          "id": "S3",
+          "sourceSupported": true,
+          "materiality": "relevant to selected conclusion or limits",
+          "anchors": [
+            {
+              "sourceQuote": "No visitor survey or sharing-outcome study has been conducted.",
+              "exact": true
+            }
+          ],
+          "assessment": "Proposition and scope supported by original source; anchors support relevant content; boundary avoids stronger causal or implementation claim."
+        },
+        {
+          "id": "S4",
+          "sourceSupported": true,
+          "materiality": "peripheral operational detail; correctly not an obligatory blocker",
+          "anchors": [
+            {
+              "sourceQuote": "Opening hours are not yet fixed.",
+              "exact": true
+            }
+          ],
+          "assessment": "Proposition and scope supported by original source; anchors support relevant content; boundary avoids stronger causal or implementation claim."
+        }
+      ],
+      "ideaSeparation": "Idea kept separate; checks do not make it source authority.",
+      "gate": "exact-anchors-pass"
+    },
+    {
+      "id": "kiln",
+      "requirements": [
+        {
+          "id": "confounder",
+          "coverage": "covered",
+          "mapIds": [
+            "S2"
+          ],
+          "assessment": "Batch and humidity limits."
+        },
+        {
+          "id": "negative",
+          "coverage": "covered",
+          "mapIds": [
+            "S3"
+          ],
+          "assessment": "Same-X lower count counters exclusive controller account, no cause inferred."
+        },
+        {
+          "id": "decision",
+          "coverage": "covered",
+          "mapIds": [
+            "S4",
+            "S5"
+          ],
+          "assessment": "Continue trial, no causal/durability proof."
+        }
+      ],
+      "entries": [
+        {
+          "id": "S1",
+          "sourceSupported": true,
+          "materiality": "relevant to selected conclusion or limits",
+          "anchors": [
+            {
+              "sourceQuote": "Week A used controller X and recorded 12 cracked tiles in 100. Week B used controller Y and recorded 5 in 100.",
+              "exact": false
+            }
+          ],
+          "assessment": "Capitalizes Week A whereas originalSource has week A after colon. Otherwise accurate observed counts; exact anchor invalid."
+        },
+        {
+          "id": "S2",
+          "sourceSupported": true,
+          "materiality": "relevant to selected conclusion or limits",
+          "anchors": [
+            {
+              "sourceQuote": "Clay batches and drying humidity differed between weeks.",
+              "exact": true
+            }
+          ],
+          "assessment": "Proposition and scope supported by original source; anchors support relevant content; boundary avoids stronger causal or implementation claim."
+        },
+        {
+          "id": "S3",
+          "sourceSupported": true,
+          "materiality": "relevant to selected conclusion or limits",
+          "anchors": [
+            {
+              "sourceQuote": "A same-controller X check also recorded 5 in 100 after a batch change.",
+              "exact": true
+            }
+          ],
+          "assessment": "Proposition and scope supported by original source; anchors support relevant content; boundary avoids stronger causal or implementation claim."
+        },
+        {
+          "id": "S4",
+          "sourceSupported": true,
+          "materiality": "relevant to selected conclusion or limits",
+          "anchors": [
+            {
+              "sourceQuote": "The team retained Y for a longer trial; it did not conclude that Y caused the reduction.",
+              "exact": true
+            }
+          ],
+          "assessment": "Proposition and scope supported by original source; anchors support relevant content; boundary avoids stronger causal or implementation claim."
+        },
+        {
+          "id": "S5",
+          "sourceSupported": true,
+          "materiality": "relevant to selected conclusion or limits",
+          "anchors": [
+            {
+              "sourceQuote": "The log contains no long-term durability measurements.",
+              "exact": true
+            }
+          ],
+          "assessment": "Proposition and scope supported by original source; anchors support relevant content; boundary avoids stronger causal or implementation claim."
+        }
+      ],
+      "ideaSeparation": "No evidence leakage in map; Idea Evidence claim Y reduced cracks is not separately itemized in ideaChecks (coverage limitation); main map expressly denies causal conclusion.",
+      "gate": "exact-anchors-fail"
+    },
+    {
+      "id": "catalogue",
+      "requirements": [
+        {
+          "id": "contrast",
+          "coverage": "covered",
+          "mapIds": [
+            "S1"
+          ],
+          "assessment": "Correct North contrast but quote capitalizes batch, invalid exact anchor."
+        },
+        {
+          "id": "reverse",
+          "coverage": "covered",
+          "mapIds": [
+            "S2",
+            "S3"
+          ],
+          "assessment": "South and West preserved."
+        },
+        {
+          "id": "limits",
+          "coverage": "covered",
+          "mapIds": [
+            "S5",
+            "S6",
+            "S7"
+          ],
+          "assessment": "Causation and no comprehension evidence."
+        }
+      ],
+      "entries": [
+        {
+          "id": "S1",
+          "sourceSupported": true,
+          "materiality": "relevant to selected conclusion or limits",
+          "anchors": [
+            {
+              "sourceQuote": "Batch North preserved the intended shelf order but its printed labels gave wrong years.",
+              "exact": false
+            }
+          ],
+          "assessment": "Capitalizes Batch North whereas source has batch North after colon; accurate proposition but invalid exact anchor."
+        },
+        {
+          "id": "S2",
+          "sourceSupported": true,
+          "materiality": "relevant to selected conclusion or limits",
+          "anchors": [
+            {
+              "sourceQuote": "Batch South printed the years correctly but reversed shelf order.",
+              "exact": true
+            }
+          ],
+          "assessment": "Proposition and scope supported by original source; anchors support relevant content; boundary avoids stronger causal or implementation claim."
+        },
+        {
+          "id": "S3",
+          "sourceSupported": true,
+          "materiality": "relevant to selected conclusion or limits",
+          "anchors": [
+            {
+              "sourceQuote": "Batch West had both dimensions correct.",
+              "exact": true
+            }
+          ],
+          "assessment": "Proposition and scope supported by original source; anchors support relevant content; boundary avoids stronger causal or implementation claim."
+        },
+        {
+          "id": "S4",
+          "sourceSupported": true,
+          "materiality": "relevant to selected conclusion or limits",
+          "anchors": [
+            {
+              "sourceQuote": "It recommended checking dates and shelf order separately.",
+              "exact": true
+            }
+          ],
+          "assessment": "Proposition and scope supported by original source; anchors support relevant content; boundary avoids stronger causal or implementation claim."
+        },
+        {
+          "id": "S5",
+          "sourceSupported": true,
+          "materiality": "relevant to selected conclusion or limits",
+          "anchors": [
+            {
+              "sourceQuote": "The audit found no single earliest cause across batches",
+              "exact": true
+            }
+          ],
+          "assessment": "Proposition and scope supported by original source; anchors support relevant content; boundary avoids stronger causal or implementation claim."
+        },
+        {
+          "id": "S6",
+          "sourceSupported": true,
+          "materiality": "relevant to selected conclusion or limits",
+          "anchors": [
+            {
+              "sourceQuote": "a missing intake log prevents attribution for North.",
+              "exact": true
+            }
+          ],
+          "assessment": "Proposition and scope supported by original source; anchors support relevant content; boundary avoids stronger causal or implementation claim."
+        },
+        {
+          "id": "S7",
+          "sourceSupported": true,
+          "materiality": "relevant to selected conclusion or limits",
+          "anchors": [
+            {
+              "sourceQuote": "No reader-comprehension tests were run.",
+              "exact": true
+            }
+          ],
+          "assessment": "No tests is an evidence limit, not an empirical negative control. Kind is imprecise; does not invent test results."
+        }
+      ],
+      "ideaSeparation": "Idea kept separate; checks do not make it source authority.",
+      "gate": "exact-anchors-fail"
+    }
+  ],
+  "summary": "All six target concepts materially mapped; 21/22 frozen reference components fully covered and one partially covered (secondary engagement qualifier). Three maps have invalid exact quotes; intro S7 named examples incompletely anchored. No material source invention found. Strict map gate fails. No map modified; raw maps go unchanged to judges."
+}

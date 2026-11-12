@@ -1,0 +1,691 @@
+{
+  "attempts": 18,
+  "rows": [
+    {
+      "id": "intro-map",
+      "stage": "mapper",
+      "model": "gpt-6-luna",
+      "status": 200,
+      "inputTokens": 3986,
+      "outputTokens": 2702,
+      "totalTokens": 6688,
+      "usage": {
+        "prompt_tokens": 3986,
+        "completion_tokens": 2702,
+        "total_tokens": 6688,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 3983,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 512,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      }
+    },
+    {
+      "id": "intro-bad",
+      "stage": "judge",
+      "model": "gpt-6-luna",
+      "status": 200,
+      "inputTokens": 7454,
+      "outputTokens": 1147,
+      "totalTokens": 8601,
+      "usage": {
+        "prompt_tokens": 7454,
+        "completion_tokens": 1147,
+        "total_tokens": 8601,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 7451,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1116,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "verdict": {
+        "accepted": true,
+        "blockingIssues": []
+      },
+      "rawVerdict": {
+        "accepted": true,
+        "blockingIssues": []
+      },
+      "anchors": []
+    },
+    {
+      "id": "intro-correct",
+      "stage": "judge",
+      "model": "gpt-6-luna",
+      "status": 200,
+      "inputTokens": 7466,
+      "outputTokens": 2607,
+      "totalTokens": 10073,
+      "usage": {
+        "prompt_tokens": 7466,
+        "completion_tokens": 2607,
+        "total_tokens": 10073,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 7463,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 2561,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "verdict": {
+        "accepted": true,
+        "blockingIssues": []
+      },
+      "rawVerdict": {
+        "accepted": true,
+        "blockingIssues": []
+      },
+      "anchors": []
+    },
+    {
+      "id": "005-map",
+      "stage": "mapper",
+      "model": "gpt-6-luna",
+      "status": 200,
+      "inputTokens": 3969,
+      "outputTokens": 3328,
+      "totalTokens": 7297,
+      "usage": {
+        "prompt_tokens": 3969,
+        "completion_tokens": 3328,
+        "total_tokens": 7297,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 3966,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1009,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      }
+    },
+    {
+      "id": "005-bad",
+      "stage": "judge",
+      "model": "gpt-6-luna",
+      "status": 200,
+      "inputTokens": 8078,
+      "outputTokens": 2497,
+      "totalTokens": 10575,
+      "usage": {
+        "prompt_tokens": 8078,
+        "completion_tokens": 2497,
+        "total_tokens": 10575,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 8075,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 2120,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "verdict": {
+        "accepted": false,
+        "blockingIssues": [
+          {
+            "category": "evidenceCoverage",
+            "researchLocation": "Research Unknowns; synthesisInput Unknowns",
+            "problem": "The projection omits the source’s explicit qualification that the supplied Synthesis itself had conflicting emphasis, and its tentative interpretation that this may have reinforced the technical angle. This matters when characterizing the hierarchy failure: the observed result remains supported, but the source gives a possible contributing context that should not disappear from the account.",
+            "sourceQuote": "The baseline Synthesis pairs company identity with Compose in its top-level emphasis, but also contains a later description calling orchestration “central to the product direction.” That internal tension may have reinforced the technical angle.",
+            "constraint": "Preserve the reported hierarchy failure while noting the source’s tentative Synthesis-tension explanation; do not present it as an established cause."
+          },
+          {
+            "category": "evidenceCoverage",
+            "researchLocation": "Research Unknowns; synthesisInput Unknowns",
+            "problem": "The projection omits the reported variation in Idea and Research outputs between runs. Because Compose is downstream in a full-pipeline comparison, this is a relevant limit on attributing Compose differences solely to the Narrative prompt, even though the source does not claim that upstream variation caused the results.",
+            "sourceQuote": "Idea and Research outputs vary between runs. This is expected in the same full-pipeline comparison; all other stages and inputs were kept constant.",
+            "constraint": "Include the reported upstream-stage variation as a limitation on causal attribution; do not claim it caused the Compose results."
+          }
+        ]
+      },
+      "rawVerdict": {
+        "accepted": false,
+        "blockingIssues": [
+          {
+            "category": "evidenceCoverage",
+            "researchLocation": "Research Unknowns; synthesisInput Unknowns",
+            "problem": "The projection omits the source’s explicit qualification that the supplied Synthesis itself had conflicting emphasis, and its tentative interpretation that this may have reinforced the technical angle. This matters when characterizing the hierarchy failure: the observed result remains supported, but the source gives a possible contributing context that should not disappear from the account.",
+            "sourceQuote": "The baseline Synthesis pairs company identity with Compose in its top-level emphasis, but also contains a later description calling orchestration “central to the product direction.” That internal tension may have reinforced the technical angle.",
+            "constraint": "Preserve the reported hierarchy failure while noting the source’s tentative Synthesis-tension explanation; do not present it as an established cause."
+          },
+          {
+            "category": "evidenceCoverage",
+            "researchLocation": "Research Unknowns; synthesisInput Unknowns",
+            "problem": "The projection omits the reported variation in Idea and Research outputs between runs. Because Compose is downstream in a full-pipeline comparison, this is a relevant limit on attributing Compose differences solely to the Narrative prompt, even though the source does not claim that upstream variation caused the results.",
+            "sourceQuote": "Idea and Research outputs vary between runs. This is expected in the same full-pipeline comparison; all other stages and inputs were kept constant.",
+            "constraint": "Include the reported upstream-stage variation as a limitation on causal attribution; do not claim it caused the Compose results."
+          }
+        ]
+      },
+      "anchors": [
+        {
+          "quote": "The baseline Synthesis pairs company identity with Compose in its top-level emphasis, but also contains a later description calling orchestration “central to the product direction.” That internal tension may have reinforced the technical angle.",
+          "exact": true
+        },
+        {
+          "quote": "Idea and Research outputs vary between runs. This is expected in the same full-pipeline comparison; all other stages and inputs were kept constant.",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "id": "005-correct",
+      "stage": "judge",
+      "model": "gpt-6-luna",
+      "status": 200,
+      "inputTokens": 8328,
+      "outputTokens": 1129,
+      "totalTokens": 9457,
+      "usage": {
+        "prompt_tokens": 8328,
+        "completion_tokens": 1129,
+        "total_tokens": 9457,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 8325,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1094,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "verdict": {
+        "accepted": true,
+        "blockingIssues": []
+      },
+      "rawVerdict": {
+        "accepted": true,
+        "blockingIssues": []
+      },
+      "anchors": []
+    },
+    {
+      "id": "010-map",
+      "stage": "mapper",
+      "model": "gpt-6-luna",
+      "status": 200,
+      "inputTokens": 4905,
+      "outputTokens": 2914,
+      "totalTokens": 7819,
+      "usage": {
+        "prompt_tokens": 4905,
+        "completion_tokens": 2914,
+        "total_tokens": 7819,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 4902,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 784,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      }
+    },
+    {
+      "id": "010-bad",
+      "stage": "judge",
+      "model": "gpt-6-luna",
+      "status": 200,
+      "inputTokens": 8619,
+      "outputTokens": 1333,
+      "totalTokens": 9952,
+      "usage": {
+        "prompt_tokens": 8619,
+        "completion_tokens": 1333,
+        "total_tokens": 9952,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 8616,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1130,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "verdict": {
+        "accepted": false,
+        "blockingIssues": [
+          {
+            "category": "evidenceCoverage",
+            "researchLocation": "Facts; Development sequence — Experiment 009",
+            "problem": "The projection omits the relevant negative control in Experiment 009 baseline 001: Compose has a reported factual failure, but the earlier chain remains company-first and downstream hierarchy scores 2/2. This distinction matters because the selected idea explicitly uses the run to show that a Compose factual failure is not evidence of a Compose-first hierarchy departure. Without it, the projection does not preserve this boundary between factual failure and hierarchy drift.",
+            "sourceQuote": "Selected Idea and earlier chain remain company-first; the artifact’s score gives downstream hierarchy 2/2.",
+            "constraint": "Include the baseline 001 counterexample, preserving that its Compose issue is factual and does not constitute a reported hierarchy departure; do not imply that every late-stage failure is hierarchy drift."
+          }
+        ]
+      },
+      "rawVerdict": {
+        "accepted": false,
+        "blockingIssues": [
+          {
+            "category": "evidenceCoverage",
+            "researchLocation": "Facts; Development sequence — Experiment 009",
+            "problem": "The projection omits the relevant negative control in Experiment 009 baseline 001: Compose has a reported factual failure, but the earlier chain remains company-first and downstream hierarchy scores 2/2. This distinction matters because the selected idea explicitly uses the run to show that a Compose factual failure is not evidence of a Compose-first hierarchy departure. Without it, the projection does not preserve this boundary between factual failure and hierarchy drift.",
+            "sourceQuote": "Selected Idea and earlier chain remain company-first; the artifact’s score gives downstream hierarchy 2/2.",
+            "constraint": "Include the baseline 001 counterexample, preserving that its Compose issue is factual and does not constitute a reported hierarchy departure; do not imply that every late-stage failure is hierarchy drift."
+          }
+        ]
+      },
+      "anchors": [
+        {
+          "quote": "Selected Idea and earlier chain remain company-first; the artifact’s score gives downstream hierarchy 2/2.",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "id": "010-correct",
+      "stage": "judge",
+      "model": "gpt-6-luna",
+      "status": 200,
+      "inputTokens": 8799,
+      "outputTokens": 1802,
+      "totalTokens": 10601,
+      "usage": {
+        "prompt_tokens": 8799,
+        "completion_tokens": 1802,
+        "total_tokens": 10601,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 8796,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1761,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "verdict": {
+        "accepted": true,
+        "blockingIssues": []
+      },
+      "rawVerdict": {
+        "accepted": true,
+        "blockingIssues": []
+      },
+      "anchors": []
+    },
+    {
+      "id": "garden-map",
+      "stage": "mapper",
+      "model": "gpt-6-luna",
+      "status": 200,
+      "inputTokens": 605,
+      "outputTokens": 943,
+      "totalTokens": 1548,
+      "usage": {
+        "prompt_tokens": 605,
+        "completion_tokens": 943,
+        "total_tokens": 1548,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 273,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      }
+    },
+    {
+      "id": "garden-bad",
+      "stage": "judge",
+      "model": "gpt-6-luna",
+      "status": 200,
+      "inputTokens": 1294,
+      "outputTokens": 379,
+      "totalTokens": 1673,
+      "usage": {
+        "prompt_tokens": 1294,
+        "completion_tokens": 379,
+        "total_tokens": 1673,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 1291,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 231,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "verdict": {
+        "accepted": false,
+        "blockingIssues": [
+          {
+            "category": "epistemicAccuracy",
+            "researchLocation": "Research → Unknowns; synthesisInput → Unknowns",
+            "problem": "The clause that the source does not establish that the library expresses the sharing plan denies the board’s explicitly attributed meaning. The source distinguishes that stated meaning from a measured result; the separate uncertainty about whether sharing increased is accurate.",
+            "sourceQuote": "The garden board calls the seed library its first practical expression of the neighbourhood-sharing plan.",
+            "constraint": "Retain that the board describes the library as the plan’s first practical expression, while separately noting that this is not a measured result and that increased sharing is not established."
+          }
+        ]
+      },
+      "rawVerdict": {
+        "accepted": false,
+        "blockingIssues": [
+          {
+            "category": "epistemicAccuracy",
+            "researchLocation": "Research → Unknowns; synthesisInput → Unknowns",
+            "problem": "The clause that the source does not establish that the library expresses the sharing plan denies the board’s explicitly attributed meaning. The source distinguishes that stated meaning from a measured result; the separate uncertainty about whether sharing increased is accurate.",
+            "sourceQuote": "The garden board calls the seed library its first practical expression of the neighbourhood-sharing plan.",
+            "constraint": "Retain that the board describes the library as the plan’s first practical expression, while separately noting that this is not a measured result and that increased sharing is not established."
+          }
+        ]
+      },
+      "anchors": [
+        {
+          "quote": "The garden board calls the seed library its first practical expression of the neighbourhood-sharing plan.",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "id": "garden-correct",
+      "stage": "judge",
+      "model": "gpt-6-luna",
+      "status": 200,
+      "inputTokens": 1286,
+      "outputTokens": 343,
+      "totalTokens": 1629,
+      "usage": {
+        "prompt_tokens": 1286,
+        "completion_tokens": 343,
+        "total_tokens": 1629,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 1283,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 320,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "verdict": {
+        "accepted": true,
+        "blockingIssues": []
+      },
+      "rawVerdict": {
+        "accepted": true,
+        "blockingIssues": []
+      },
+      "anchors": []
+    },
+    {
+      "id": "kiln-map",
+      "stage": "mapper",
+      "model": "gpt-6-luna",
+      "status": 200,
+      "inputTokens": 634,
+      "outputTokens": 945,
+      "totalTokens": 1579,
+      "usage": {
+        "prompt_tokens": 634,
+        "completion_tokens": 945,
+        "total_tokens": 1579,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 233,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      }
+    },
+    {
+      "id": "kiln-bad",
+      "stage": "judge",
+      "model": "gpt-6-luna",
+      "status": 200,
+      "inputTokens": 1330,
+      "outputTokens": 594,
+      "totalTokens": 1924,
+      "usage": {
+        "prompt_tokens": 1330,
+        "completion_tokens": 594,
+        "total_tokens": 1924,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 1327,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 382,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "verdict": {
+        "accepted": false,
+        "blockingIssues": [
+          {
+            "category": "evidenceCoverage",
+            "researchLocation": "synthesisInput — Facts and Unknowns",
+            "problem": "The projection reports the rate difference and says its cause is unknown, but omits material source context: batches and humidity differed, and controller X also recorded 5/100 after a batch change. It also omits the team’s explicit statement that it did not conclude Y caused the reduction. These details qualify how the observed difference can be interpreted; the broad uncertainty statement does not preserve them.",
+            "sourceQuote": "Clay batches and drying humidity differed between weeks. A same-controller X check also recorded 5 in 100 after a batch change. The team retained Y for a longer trial; it did not conclude that Y caused the reduction.",
+            "constraint": "Preserve the differing conditions, the same-controller X observation, and the team’s stated causal limit. Do not infer from these facts which factor caused the rates or that the observations are directly comparable."
+          }
+        ]
+      },
+      "rawVerdict": {
+        "accepted": false,
+        "blockingIssues": [
+          {
+            "category": "evidenceCoverage",
+            "researchLocation": "synthesisInput — Facts and Unknowns",
+            "problem": "The projection reports the rate difference and says its cause is unknown, but omits material source context: batches and humidity differed, and controller X also recorded 5/100 after a batch change. It also omits the team’s explicit statement that it did not conclude Y caused the reduction. These details qualify how the observed difference can be interpreted; the broad uncertainty statement does not preserve them.",
+            "sourceQuote": "Clay batches and drying humidity differed between weeks. A same-controller X check also recorded 5 in 100 after a batch change. The team retained Y for a longer trial; it did not conclude that Y caused the reduction.",
+            "constraint": "Preserve the differing conditions, the same-controller X observation, and the team’s stated causal limit. Do not infer from these facts which factor caused the rates or that the observations are directly comparable."
+          }
+        ]
+      },
+      "anchors": [
+        {
+          "quote": "Clay batches and drying humidity differed between weeks. A same-controller X check also recorded 5 in 100 after a batch change. The team retained Y for a longer trial; it did not conclude that Y caused the reduction.",
+          "exact": true
+        }
+      ]
+    },
+    {
+      "id": "kiln-correct",
+      "stage": "judge",
+      "model": "gpt-6-luna",
+      "status": 200,
+      "inputTokens": 1382,
+      "outputTokens": 175,
+      "totalTokens": 1557,
+      "usage": {
+        "prompt_tokens": 1382,
+        "completion_tokens": 175,
+        "total_tokens": 1557,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 1379,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 152,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "verdict": {
+        "accepted": true,
+        "blockingIssues": []
+      },
+      "rawVerdict": {
+        "accepted": true,
+        "blockingIssues": []
+      },
+      "anchors": []
+    },
+    {
+      "id": "catalogue-map",
+      "stage": "mapper",
+      "model": "gpt-6-luna",
+      "status": 200,
+      "inputTokens": 610,
+      "outputTokens": 1238,
+      "totalTokens": 1848,
+      "usage": {
+        "prompt_tokens": 610,
+        "completion_tokens": 1238,
+        "total_tokens": 1848,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 358,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      }
+    },
+    {
+      "id": "catalogue-bad",
+      "stage": "judge",
+      "model": "gpt-6-luna",
+      "status": 200,
+      "inputTokens": 1403,
+      "outputTokens": 1159,
+      "totalTokens": 2562,
+      "usage": {
+        "prompt_tokens": 1403,
+        "completion_tokens": 1159,
+        "total_tokens": 2562,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 1400,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 896,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "error": "System.InvalidOperationException: Research judge diagnosis needs an exact original-source anchor and complete fields.\r\n   at Nueyon.Compose.Application.Agents.Research.ResearchSemanticJudge.EvaluateAsync(ResearchInput input, ResearchResult research, CancellationToken cancellationToken) in C:\\Workspaces\\Nueyon.Compose\\src\\Nueyon.Compose.Application\\Agents\\Research\\ResearchSemanticJudge.cs:line 66\r\n   at Program.<Main>$(String[] args) in C:\\Workspaces\\Nueyon.Compose\\PromptExperiments\\Research\\evidence-map-experiment-3-2026-11-12\\runner\\Program.cs:line 68",
+      "rawVerdict": {
+        "accepted": false,
+        "blockingIssues": [
+          {
+            "category": "selectedIdeaRelevance",
+            "researchLocation": "selectedIdea.evidence",
+            "problem": "The claim that wrong dates prove shelf-order failure is contradicted by the source: North had wrong years while preserving the intended shelf order, and South had correct years despite reversed shelf order. The audit's recommendation for separate checks does not establish that one error proves the other.",
+            "sourceQuote": "Batch North preserved the intended shelf order but its printed labels gave wrong years. Batch South printed the years correctly but reversed shelf order.",
+            "constraint": "Do not claim that a date error proves a shelf-order error; preserve that the source reports different outcomes for the two dimensions."
+          },
+          {
+            "category": "evidenceCoverage",
+            "researchLocation": "research.content Facts; synthesisInput Facts",
+            "problem": "The projection omits North's contrasting outcome: its shelf order was preserved even though its printed years were wrong. This is material because it directly bears on the selected idea's claim about the relationship between date and shelf-order errors.",
+            "sourceQuote": "Batch North preserved the intended shelf order but its printed labels gave wrong years.",
+            "constraint": "Include North's reported date and shelf-order outcomes when representing the audit's evidence about the two dimensions."
+          }
+        ]
+      },
+      "anchors": [
+        {
+          "quote": "Batch North preserved the intended shelf order but its printed labels gave wrong years. Batch South printed the years correctly but reversed shelf order.",
+          "exact": false
+        },
+        {
+          "quote": "Batch North preserved the intended shelf order but its printed labels gave wrong years.",
+          "exact": false
+        }
+      ]
+    },
+    {
+      "id": "catalogue-correct",
+      "stage": "judge",
+      "model": "gpt-6-luna",
+      "status": 200,
+      "inputTokens": 1419,
+      "outputTokens": 235,
+      "totalTokens": 1654,
+      "usage": {
+        "prompt_tokens": 1419,
+        "completion_tokens": 235,
+        "total_tokens": 1654,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 1416,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 212,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "verdict": {
+        "accepted": true,
+        "blockingIssues": []
+      },
+      "rawVerdict": {
+        "accepted": true,
+        "blockingIssues": []
+      },
+      "anchors": []
+    }
+  ],
+  "totals": {
+    "inputTokens": 71567,
+    "outputTokens": 25470,
+    "totalTokens": 97037
+  }
+}

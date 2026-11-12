@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-EjW7Hm76TuSWlMPn3tDkDZMNHMqod",
+  "object": "chat.completion",
+  "created": 1794516923,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"items\": [\n    {\n      \"id\": \"S1\",\n      \"kind\": \"claim\",\n      \"proposition\": \"The log records 12 cracked tiles per 100 in week A with controller X and 5 per 100 in week B with controller Y.\",\n      \"sourceQuotes\": [\n        \"Week A used controller X and recorded 12 cracked tiles in 100. Week B used controller Y and recorded 5 in 100.\"\n      ],\n      \"materiality\": \"This is the observed difference motivating the proposed longer trial.\",\n      \"boundary\": \"The week-to-week comparison alone does not establish that the controller caused the difference.\"\n    },\n    {\n      \"id\": \"S2\",\n      \"kind\": \"causalLimit\",\n      \"proposition\": \"Clay batches and drying humidity differed between the weeks, so the comparison does not isolate controller effects.\",\n      \"sourceQuotes\": [\n        \"Clay batches and drying humidity differed between weeks.\"\n      ],\n      \"materiality\": \"These differences complicate attribution of the recorded crack-rate difference to controller X or Y.\",\n      \"boundary\": \"The log does not quantify the effects of the batch or humidity differences.\"\n    },\n    {\n      \"id\": \"S3\",\n      \"kind\": \"counterexample\",\n      \"proposition\": \"A check using controller X recorded 5 cracked tiles per 100 after a batch change, showing that the lower rate was also observed without switching to Y.\",\n      \"sourceQuotes\": [\n        \"A same-controller X check also recorded 5 in 100 after a batch change.\"\n      ],\n      \"materiality\": \"This observation further limits an inference that changing to Y explains the lower recorded rate.\",\n      \"boundary\": \"The log does not provide enough detail to determine why the rate changed or whether the check is directly comparable to week B.\"\n    },\n    {\n      \"id\": \"S4\",\n      \"kind\": \"explicitMeaning\",\n      \"proposition\": \"The team retained Y for a longer trial but explicitly did not conclude that Y caused the reduction.\",\n      \"sourceQuotes\": [\n        \"The team retained Y for a longer trial; it did not conclude that Y caused the reduction.\"\n      ],\n      \"materiality\": \"It distinguishes a decision to continue testing Y from a finding that Y caused the observed reduction.\",\n      \"boundary\": \"Retaining Y does not establish that Y is effective or that the longer trial produced a result.\"\n    },\n    {\n      \"id\": \"S5\",\n      \"kind\": \"causalLimit\",\n      \"proposition\": \"The log contains no long-term durability measurements.\",\n      \"sourceQuotes\": [\n        \"The log contains no long-term durability measurements.\"\n      ],\n      \"materiality\": \"The recorded cracking figures cannot establish long-term durability.\",\n      \"boundary\": \"This absence does not indicate whether either controller improves or worsens durability.\"\n    }\n  ],\n  \"ideaChecks\": [\n    {\n      \"proposition\": \"Lower recorded cracking merits another trial, not a causal victory.\",\n      \"sourceItemIds\": [\n        \"S1\",\n        \"S2\",\n        \"S3\",\n        \"S4\"\n      ],\n      \"status\": \"supported\"\n    }\n  ],\n  \"limitations\": [\n    \"The log gives no sample or measurement details beyond the stated counts and rates, so the comparability and precision of the observations cannot be assessed from this source.\"\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 634,
+    "completion_tokens": 945,
+    "total_tokens": 1579,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 233,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

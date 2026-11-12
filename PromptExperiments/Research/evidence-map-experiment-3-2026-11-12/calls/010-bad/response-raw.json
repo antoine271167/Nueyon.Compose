@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-EjW9WwDKyL3O5fvjQh4V8ek4SZrWw",
+  "object": "chat.completion",
+  "created": 1794517062,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"accepted\":false,\"blockingIssues\":[{\"category\":\"evidenceCoverage\",\"researchLocation\":\"Facts; Development sequence — Experiment 009\",\"problem\":\"The projection omits the relevant negative control in Experiment 009 baseline 001: Compose has a reported factual failure, but the earlier chain remains company-first and downstream hierarchy scores 2/2. This distinction matters because the selected idea explicitly uses the run to show that a Compose factual failure is not evidence of a Compose-first hierarchy departure. Without it, the projection does not preserve this boundary between factual failure and hierarchy drift.\",\"sourceQuote\":\"Selected Idea and earlier chain remain company-first; the artifact’s score gives downstream hierarchy 2/2.\",\"constraint\":\"Include the baseline 001 counterexample, preserving that its Compose issue is factual and does not constitute a reported hierarchy departure; do not imply that every late-stage failure is hierarchy drift.\"}]}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 8619,
+    "completion_tokens": 1333,
+    "total_tokens": 9952,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 8616,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1130,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

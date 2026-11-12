@@ -1,0 +1,68 @@
+{
+  "frozenAt": "2026-11-12T20:53:59.375Z",
+  "head": "0dc334bf3441f91e29b005751900b3dc05907dcf",
+  "model": "gpt-6-luna",
+  "maxCalls": 18,
+  "retries": 0,
+  "pairs": [
+    {
+      "id": "intro",
+      "group": "historical"
+    },
+    {
+      "id": "005",
+      "group": "historical"
+    },
+    {
+      "id": "010",
+      "group": "historical"
+    },
+    {
+      "id": "garden",
+      "group": "new-holdout"
+    },
+    {
+      "id": "kiln",
+      "group": "new-holdout"
+    },
+    {
+      "id": "catalogue",
+      "group": "new-holdout"
+    }
+  ],
+  "files": {
+    "PromptExperiments/Research/evidence-map-experiment-3-2026-11-12/before-hashes.json": "0708e732130c3c6ca475fbbe95f8cc7f5abeebb9067158bb31ce449427a6ffba",
+    "PromptExperiments/Research/evidence-map-experiment-3-2026-11-12/cases/005/bad/input.json": "c3daedd85de17677b55d33d18bc3affc58e809ca7a2c060062251798921f282b",
+    "PromptExperiments/Research/evidence-map-experiment-3-2026-11-12/cases/005/bad/research-result.json": "e52db9e7925687ee7c1033918815db05e24d98688e25bbc810138feab8f6a04d",
+    "PromptExperiments/Research/evidence-map-experiment-3-2026-11-12/cases/005/correct/input.json": "c3daedd85de17677b55d33d18bc3affc58e809ca7a2c060062251798921f282b",
+    "PromptExperiments/Research/evidence-map-experiment-3-2026-11-12/cases/005/correct/research-result.json": "097b9deaade551eb38c69e6d2fd73d8d8d2c3c39fda72b68b1398970bf553152",
+    "PromptExperiments/Research/evidence-map-experiment-3-2026-11-12/cases/010/bad/input.json": "d7a2bdfc484f6c6ef48b0fc560ebc61f97a85e423a683d49032a609121bfe520",
+    "PromptExperiments/Research/evidence-map-experiment-3-2026-11-12/cases/010/bad/research-result.json": "8b07d20980819feb0be6cc27ca5d763c05186969aab4b6b967bac00a1bfe1f4f",
+    "PromptExperiments/Research/evidence-map-experiment-3-2026-11-12/cases/010/correct/input.json": "d7a2bdfc484f6c6ef48b0fc560ebc61f97a85e423a683d49032a609121bfe520",
+    "PromptExperiments/Research/evidence-map-experiment-3-2026-11-12/cases/010/correct/research-result.json": "cf60724eace6e7f20caf9cfb1c944f77ab8e6b8a0cf81ee163a165114599e481",
+    "PromptExperiments/Research/evidence-map-experiment-3-2026-11-12/cases/catalogue/bad/input.json": "61a17f4137e5e431b4b14634381859d30fe366674be15f345e3121fac21b8f18",
+    "PromptExperiments/Research/evidence-map-experiment-3-2026-11-12/cases/catalogue/bad/research-result.json": "22860da9a4bb54b98820c4eb9eb32dd23398e1abf7ece678cde46226aa838fbb",
+    "PromptExperiments/Research/evidence-map-experiment-3-2026-11-12/cases/catalogue/correct/input.json": "61a17f4137e5e431b4b14634381859d30fe366674be15f345e3121fac21b8f18",
+    "PromptExperiments/Research/evidence-map-experiment-3-2026-11-12/cases/catalogue/correct/research-result.json": "b5b6ecf51c0c508f350c503de4dd1348a067c7a7009ba06212c59d8800b53729",
+    "PromptExperiments/Research/evidence-map-experiment-3-2026-11-12/cases/garden/bad/input.json": "2d0a858a8434e7597d6dd0bbdc0746ed41dd446798f63bb873ea820459f96453",
+    "PromptExperiments/Research/evidence-map-experiment-3-2026-11-12/cases/garden/bad/research-result.json": "fc41011a0ad7427ee47cc882741248ed7d4aedb00477c9f84daf56f98a70b6cb",
+    "PromptExperiments/Research/evidence-map-experiment-3-2026-11-12/cases/garden/correct/input.json": "2d0a858a8434e7597d6dd0bbdc0746ed41dd446798f63bb873ea820459f96453",
+    "PromptExperiments/Research/evidence-map-experiment-3-2026-11-12/cases/garden/correct/research-result.json": "3e338623a2b280429c387f94601078ea781a19c682f9253dcdbf8192ddb620f8",
+    "PromptExperiments/Research/evidence-map-experiment-3-2026-11-12/cases/intro/bad/input.json": "e47c29debd9b245d68e9e689cf4c3c664a0afbe0a8a85e08f718f72689287b5d",
+    "PromptExperiments/Research/evidence-map-experiment-3-2026-11-12/cases/intro/bad/research-result.json": "0364875507a5bdef1f2155ced4eb375e26298f731ffa2a429575015dad3c22c4",
+    "PromptExperiments/Research/evidence-map-experiment-3-2026-11-12/cases/intro/correct/input.json": "e47c29debd9b245d68e9e689cf4c3c664a0afbe0a8a85e08f718f72689287b5d",
+    "PromptExperiments/Research/evidence-map-experiment-3-2026-11-12/cases/intro/correct/research-result.json": "9e1b003d2ce191011a5a826346a85c57d59ec7573bcb4945de107a3e05c205bf",
+    "PromptExperiments/Research/evidence-map-experiment-3-2026-11-12/cases/kiln/bad/input.json": "23de1819f34485d2b5f1d4f121472457bbfc09057bca6ae0ee801359ed9a67d6",
+    "PromptExperiments/Research/evidence-map-experiment-3-2026-11-12/cases/kiln/bad/research-result.json": "9cdeb4199ddd997e8d17aa68b721652d8f15d0da570e0690ec5e602c2100a76d",
+    "PromptExperiments/Research/evidence-map-experiment-3-2026-11-12/cases/kiln/correct/input.json": "23de1819f34485d2b5f1d4f121472457bbfc09057bca6ae0ee801359ed9a67d6",
+    "PromptExperiments/Research/evidence-map-experiment-3-2026-11-12/cases/kiln/correct/research-result.json": "86e99329f406b4f6244d0d7c99fc60d4105fe39d4573c6f9035333d0a378cfea",
+    "PromptExperiments/Research/evidence-map-experiment-3-2026-11-12/labels.json": "f642219ec4778d0e214b568d201515a4791a702718d9662b2dcf8180a3a7fc61",
+    "PromptExperiments/Research/evidence-map-experiment-3-2026-11-12/prepare.cjs": "c7bd78eff2a97d16333013df58fd45f361ee8dd630f19a8d141bdf69886c6b9c",
+    "PromptExperiments/Research/evidence-map-experiment-3-2026-11-12/prompts/judge.md": "0d6867d8007032b6436117900e7c8ab91c6e84b6557e4ad8f823f3a56b550b51",
+    "PromptExperiments/Research/evidence-map-experiment-3-2026-11-12/prompts/mapper.md": "37c3abec8c761feca215277c38d740f3d96767ad8c5effae97801eb0afde1d6d",
+    "PromptExperiments/Research/evidence-map-experiment-3-2026-11-12/protocol.md": "f858f01d56e6d53f8d3312783df7dc0b7fa5da00ece9fc3da3efba4ac7731a88",
+    "PromptExperiments/Research/evidence-map-experiment-3-2026-11-12/runner/Program.cs": "6bdf0ab5c10daedf865741d2e114ec54d7adf6f4114b004e9aa798ce4296a0ba",
+    "PromptExperiments/Research/evidence-map-experiment-3-2026-11-12/runner/Runner.csproj": "4333bf2e8992e917c70eeab801cecff5d577d2ae511ef8cc2830be441b83e494"
+  },
+  "preflightNote": "Runner array syntax corrected and unused local removed after offline build failure; zero calls. Protocol, rubric, fixtures and labels unchanged. Final freeze before first model call."
+}

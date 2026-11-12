@@ -1,0 +1,164 @@
+{
+  "items": [
+    {
+      "id": "S1",
+      "kind": "claim",
+      "proposition": "Nu\u00EByon describes itself as an emerging AI-first company aiming to build reusable products, tools, and knowledge for other AI-first companies.",
+      "sourceQuotes": [
+        "Nu\u00EByon is an emerging AI-first software company with the ambition to build tools, products, and knowledge for other AI-first companies.",
+        "Nu\u00EByon\u0027s intended audience is other AI-first companies: businesses that place AI at the center of their products, operations, or business models."
+      ],
+      "materiality": "This establishes the intended company identity and audience at the center of the selected idea.",
+      "boundary": "It describes an ambition and intended audience, not an established customer base or proof of demand."
+    },
+    {
+      "id": "S2",
+      "kind": "claim",
+      "proposition": "Nu\u00EByon.Compose is the first concrete product direction and is designed as a structured workflow for turning ideas and accumulated knowledge into content.",
+      "sourceQuotes": [
+        "Nu\u00EByon.Compose is the first concrete expression of the company\u0027s vision.",
+        "Its purpose is to turn ideas and accumulated knowledge into useful, well-structured content through an AI-native orchestration workflow.",
+        "Compose is designed to organize that process into distinct stages:"
+      ],
+      "materiality": "This supports the selected idea\u0027s concrete starting point and explains how it relates to the broader company ambition.",
+      "boundary": "The wording describes purpose and design; it does not establish that the workflow is complete, deployed, or commercially available."
+    },
+    {
+      "id": "S3",
+      "kind": "claim",
+      "proposition": "The Compose workflow is described as Idea \u2192 Discover and Select \u2192 Research \u2192 Synthesize \u2192 Narrative \u2192 Compose, with research and organized source material preceding final composition.",
+      "sourceQuotes": [
+        "Idea \u2192 Discover and Select \u2192 Research \u2192 Synthesize \u2192 Narrative \u2192 Compose",
+        "The key principle is that content should be developed from researched and organized source material rather than generated from a blank prompt without a structured process.",
+        "The upstream stages determine what can truthfully be said. The final composition stage determines how that material is presented."
+      ],
+      "materiality": "This gives concrete meaning to the selected idea\u0027s description of Compose as a structured workflow, rather than merely a general content-generation product.",
+      "boundary": "The described process does not itself demonstrate accuracy, content quality, or successful results."
+    },
+    {
+      "id": "S4",
+      "kind": "claim",
+      "proposition": "Nu\u00EByon is at an early stage; Compose is its first concrete product direction, while the broader portfolio and operating model remain under development.",
+      "sourceQuotes": [
+        "Nu\u00EByon is at an early stage. Nu\u00EByon.Compose is the first concrete product direction, while the broader portfolio and operating model remain under development."
+      ],
+      "materiality": "This qualifies the contrast between broad ambition and a focused starting point, preventing the broader vision from being mistaken for an existing portfolio.",
+      "boundary": "It does not specify exactly which parts of Compose have been implemented or the company\u0027s present operational status beyond the stated early stage."
+    },
+    {
+      "id": "S5",
+      "kind": "causalLimit",
+      "proposition": "The stated market needs and proposed solutions are strategic premises, not claims that the needs have been validated or the solutions shown effective.",
+      "sourceQuotes": [
+        "This is the strategic premise behind the company, not a claim that every identified need has already been validated or that the proposed solutions have demonstrated their effectiveness."
+      ],
+      "materiality": "Without this qualification, an account of the company\u0027s rationale could be misread as evidence of validated customer needs or product effectiveness.",
+      "boundary": "It does not show that the needs are invalid or that the proposed products cannot be effective."
+    },
+    {
+      "id": "S6",
+      "kind": "explicitMeaning",
+      "proposition": "For Nu\u00EByon, AI-first means AI is intended to be central both to the products and to how the company conceives, develops, and operates them; the operational meaning of the broader AI-only ambition is undefined.",
+      "sourceQuotes": [
+        "First, AI is central to the products Nu\u00EByon intends to build. The products should use AI as a fundamental capability to accomplish useful work.",
+        "Second, the company itself is intended to operate in an AI-first manner, using AI as a central part of how products are conceived, developed, and operated.",
+        "The broader AI-only ambition expresses a stronger version of this positioning, but its precise operational meaning has not yet been defined in the available source material."
+      ],
+      "materiality": "This clarifies what the company\u0027s AI-first positioning means while limiting claims about the stronger AI-only label.",
+      "boundary": "It does not establish that every activity is already AI-operated or that human involvement will be eliminated."
+    },
+    {
+      "id": "S7",
+      "kind": "claim",
+      "proposition": "Potential portfolio areas beyond Compose include agent orchestration, knowledge processing, social-media automation, and CAD automation, but they are possibilities rather than available or scheduled products.",
+      "sourceQuotes": [
+        "Several product directions and capabilities have been explored.",
+        "These areas are possibilities for a broader portfolio, not a list of products that are already available or committed to a delivery schedule."
+      ],
+      "materiality": "This preserves the distinction between the broad company ambition and the single concrete product direction.",
+      "boundary": "It does not establish that any listed direction will be built, released, or commercially offered."
+    },
+    {
+      "id": "S8",
+      "kind": "causalLimit",
+      "proposition": "The source explicitly says that the architecture of specialized agents and orchestration is not evidence of superior performance, lower costs, or improved productivity.",
+      "sourceQuotes": [
+        "The intention is to create software with clear responsibilities and reusable capabilities. The architecture itself should not be presented as proof of superior performance, lower costs, or improved productivity without supporting evidence."
+      ],
+      "materiality": "This prevents the workflow description from being converted into unsupported claims about business outcomes.",
+      "boundary": "It does not establish that the architecture has no benefits; it says those benefits require supporting evidence."
+    },
+    {
+      "id": "S9",
+      "kind": "negativeControl",
+      "proposition": "Nu\u00EByon\u0027s positioning should not imply an established customer base, commercial traction, or a portfolio of launched products.",
+      "sourceQuotes": [
+        "The company positioning should therefore communicate a clear intended audience without suggesting that Nu\u00EByon already has an established customer base or commercially available portfolio.",
+        "The company is at an early stage. Do not imply an established customer base, commercial traction, or a portfolio of launched products."
+      ],
+      "materiality": "These explicit exclusions constrain how the company\u0027s audience and ambition may be described.",
+      "boundary": "They do not establish that Nu\u00EByon has no individual users, contacts, or work in progress; the source only rules out implying the stated forms of established traction."
+    },
+    {
+      "id": "S10",
+      "kind": "counterexample",
+      "proposition": "Some capabilities related to the broader content direction are not part of the current Compose implementation: automatic publication is specifically excluded, and additional content formats are planned rather than all fully implemented.",
+      "sourceQuotes": [
+        "These formats represent the planned direction; they should not all be described as fully implemented or commercially available.",
+        "Publishing and distribution may become part of the broader offering, but automatic publication is not part of the current Compose implementation."
+      ],
+      "materiality": "This illustrates that even the first product direction should not be presented as a fully realized content platform.",
+      "boundary": "It does not establish the implementation status of every other Compose feature."
+    },
+    {
+      "id": "S11",
+      "kind": "claim",
+      "proposition": "The roadmap is a sequence of development priorities and exploratory directions, not a fixed release schedule or commercial availability commitment.",
+      "sourceQuotes": [
+        "The roadmap is best understood as a sequence of development priorities rather than a fixed release schedule.",
+        "No specific launch dates or commercial availability commitments have been established in the material summarized here."
+      ],
+      "materiality": "This limits how the long-term portfolio and next steps can be presented alongside the concrete starting point.",
+      "boundary": "It does not mean development will not proceed; it means dates and commercial commitments are not established in the source."
+    }
+  ],
+  "ideaChecks": [
+    {
+      "proposition": "Nu\u00EByon aims to build products and capabilities for other AI-first companies, with Nu\u00EByon.Compose as its first concrete direction: a structured workflow for turning ideas and accumulated knowledge into content, while the wider portfolio remains undeveloped or exploratory.",
+      "sourceItemIds": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S7",
+        "S9",
+        "S10"
+      ],
+      "status": "supported"
+    },
+    {
+      "proposition": "The broad company ambition should not be taken to mean that a wider product portfolio, customer base, or commercial offering already exists.",
+      "sourceItemIds": [
+        "S4",
+        "S7",
+        "S9",
+        "S11"
+      ],
+      "status": "supported"
+    },
+    {
+      "proposition": "The Compose workflow or Nu\u00EByon\u0027s AI-first architecture has demonstrated effectiveness or business outcomes.",
+      "sourceItemIds": [
+        "S5",
+        "S8",
+        "S10"
+      ],
+      "status": "unsupported"
+    }
+  ],
+  "limitations": [
+    "The source describes intended positioning, product purposes, and development directions; it gives no quantified evidence of product performance or customer validation.",
+    "The exact implementation status of Compose is not specified beyond the statements that it is the first concrete product direction, that development focuses on a deliberately narrow core workflow, and that automatic publication is not in the current implementation.",
+    "The source says the AI-only ambition\u0027s precise operational meaning is undefined, so that label cannot be given a more specific meaning from this material."
+  ]
+}

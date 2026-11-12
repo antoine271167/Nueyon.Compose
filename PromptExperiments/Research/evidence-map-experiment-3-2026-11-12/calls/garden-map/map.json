@@ -1,0 +1,68 @@
+{
+  "items": [
+    {
+      "id": "S1",
+      "kind": "explicitMeaning",
+      "proposition": "The garden board describes the seed library as the first practical expression of its neighbourhood-sharing plan.",
+      "sourceQuotes": [
+        "The garden board calls the seed library its first practical expression of the neighbourhood-sharing plan.",
+        "This is the board\u2019s stated meaning, not a measured result."
+      ],
+      "materiality": "Supports the idea that the library gives the board\u2019s sharing ambition a practical form, while identifying this as an attributed interpretation.",
+      "boundary": "Does not establish that the library increased sharing or produced any other measured result."
+    },
+    {
+      "id": "S2",
+      "kind": "claim",
+      "proposition": "The seed library is a pilot, and whether it will be expanded has not been decided.",
+      "sourceQuotes": [
+        "The library is a pilot; expansion is undecided."
+      ],
+      "materiality": "Limits conclusions about the initiative\u2019s scale, maturity, and continuation.",
+      "boundary": "Does not establish that the pilot will be expanded, discontinued, or successful."
+    },
+    {
+      "id": "S3",
+      "kind": "causalLimit",
+      "proposition": "The source reports no visitor survey or study of sharing outcomes, so it supplies no measured evidence that the library increased neighbourhood sharing.",
+      "sourceQuotes": [
+        "No visitor survey or sharing-outcome study has been conducted."
+      ],
+      "materiality": "Directly limits the claim that sharing has already increased and distinguishes the board\u2019s stated meaning from an observed effect.",
+      "boundary": "Does not prove that sharing did not increase; it says the relevant survey and outcome study were not conducted."
+    },
+    {
+      "id": "S4",
+      "kind": "claim",
+      "proposition": "The library\u2019s opening hours have not yet been fixed.",
+      "sourceQuotes": [
+        "Opening hours are not yet fixed."
+      ],
+      "materiality": "Shows that an operational detail remains unsettled, qualifying how fully the pilot is established in practice.",
+      "boundary": "Does not establish whether the library is open, how often it operates, or what effect the hours have on sharing."
+    }
+  ],
+  "ideaChecks": [
+    {
+      "proposition": "\u201CA sharing ambition takes a first practical form\u201D: the board presents the seed library as the first practical expression of its neighbourhood-sharing plan.",
+      "sourceItemIds": [
+        "S1",
+        "S2",
+        "S4"
+      ],
+      "status": "qualified"
+    },
+    {
+      "proposition": "\u201CThe library has already increased neighbourhood sharing.\u201D",
+      "sourceItemIds": [
+        "S1",
+        "S3"
+      ],
+      "status": "unsupported"
+    }
+  ],
+  "limitations": [
+    "The source attributes the library\u2019s meaning to the board and explicitly distinguishes that meaning from a measured result.",
+    "The source does not report whether sharing increased or decreased; it states that no sharing-outcome study was conducted."
+  ]
+}

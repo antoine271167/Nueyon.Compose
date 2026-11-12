@@ -1,0 +1,99 @@
+{
+  "checkedAt": "2026-11-12T21:15:24.882Z",
+  "calls": 18,
+  "maxCalls": 18,
+  "retries": 0,
+  "matchedOldCost": 46859,
+  "fixtures": [
+    {
+      "id": "intro",
+      "variant": "bad",
+      "name": "input.json",
+      "byteEqualToExperiment2": true
+    },
+    {
+      "id": "intro",
+      "variant": "bad",
+      "name": "research-result.json",
+      "byteEqualToExperiment2": true
+    },
+    {
+      "id": "intro",
+      "variant": "correct",
+      "name": "input.json",
+      "byteEqualToExperiment2": true
+    },
+    {
+      "id": "intro",
+      "variant": "correct",
+      "name": "research-result.json",
+      "byteEqualToExperiment2": true
+    },
+    {
+      "id": "005",
+      "variant": "bad",
+      "name": "input.json",
+      "byteEqualToExperiment2": true
+    },
+    {
+      "id": "005",
+      "variant": "bad",
+      "name": "research-result.json",
+      "byteEqualToExperiment2": true
+    },
+    {
+      "id": "005",
+      "variant": "correct",
+      "name": "input.json",
+      "byteEqualToExperiment2": true
+    },
+    {
+      "id": "005",
+      "variant": "correct",
+      "name": "research-result.json",
+      "byteEqualToExperiment2": true
+    },
+    {
+      "id": "010",
+      "variant": "bad",
+      "name": "input.json",
+      "byteEqualToExperiment2": true
+    },
+    {
+      "id": "010",
+      "variant": "bad",
+      "name": "research-result.json",
+      "byteEqualToExperiment2": true
+    },
+    {
+      "id": "010",
+      "variant": "correct",
+      "name": "input.json",
+      "byteEqualToExperiment2": true
+    },
+    {
+      "id": "010",
+      "variant": "correct",
+      "name": "research-result.json",
+      "byteEqualToExperiment2": true
+    }
+  ],
+  "runtime": [
+    {
+      "file": "Nueyon.Compose.Application.dll",
+      "snapshotSha256": "4e414aef768a5653ab0bfce70cc52e3abe0fd684a1a1e1541d83ecbf668b8b6a",
+      "runnerCopyStillMatches": true
+    },
+    {
+      "file": "Nueyon.Compose.Domain.dll",
+      "snapshotSha256": "805a86c53fd7cb29b5e15ed9ccf93eff31d29339ce7c6cc8022d30a0ddaebfb8",
+      "runnerCopyStillMatches": true
+    },
+    {
+      "file": "Nueyon.Compose.Infrastructure.dll",
+      "snapshotSha256": "e5dbd193765b15634c85f611885e7d3ccd3adacafc4e652abd359cb445e6d539",
+      "runnerCopyStillMatches": true
+    }
+  ],
+  "decision": "NO-GO"
+}

@@ -1,0 +1,160 @@
+{
+  "decision": "NO-GO",
+  "historicalTargetDetections": 2,
+  "historicalTargets": 3,
+  "historicalControlsAccepted": 3,
+  "historicalControls": 3,
+  "newDefectiveHoldoutsValidDetections": 2,
+  "newDefectiveHoldouts": 3,
+  "newCorrectHoldoutsAccepted": 3,
+  "newCorrectHoldouts": 3,
+  "validJudgeVerdicts": 11,
+  "judgeCalls": 12,
+  "mapCount": 6,
+  "mapsWithAllExactAnchors": 3,
+  "mapEntryCount": 47,
+  "referenceCoverage": {
+    "total": 20,
+    "covered": 19,
+    "partial": 1,
+    "correction": "The map-audit.json summary mistakenly says 21/22; its detailed entries contain 19 covered + 1 partial =20. Original pre-judge audit is preserved; no labels changed."
+  },
+  "totals": {
+    "inputTokens": 71567,
+    "outputTokens": 25470,
+    "totalTokens": 97037
+  },
+  "mapper": {
+    "calls": 6,
+    "inputTokens": 14709,
+    "outputTokens": 12070,
+    "totalTokens": 26779
+  },
+  "judge": {
+    "calls": 12,
+    "inputTokens": 56858,
+    "outputTokens": 13400,
+    "totalTokens": 70258
+  },
+  "historicalTotal": {
+    "calls": 9,
+    "inputTokens": 61604,
+    "outputTokens": 19459,
+    "totalTokens": 81063
+  },
+  "historicalJudges": {
+    "calls": 6,
+    "inputTokens": 48744,
+    "outputTokens": 10515,
+    "totalTokens": 59259
+  },
+  "historicalMaps": {
+    "calls": 3,
+    "inputTokens": 12860,
+    "outputTokens": 8944,
+    "totalTokens": 21804
+  },
+  "newHoldoutTotal": {
+    "calls": 9,
+    "inputTokens": 9963,
+    "outputTokens": 6011,
+    "totalTokens": 15974
+  },
+  "experiment2MatchedHistorical": {
+    "calls": 6,
+    "inputTokens": 40024,
+    "totalTokens": 46859,
+    "note": "baseline-intro, baseline-005, baseline-010, control-intro, control-010, control-005-complete; old partial control excluded",
+    "outputTokens": 6835
+  },
+  "experiment2Whole": {
+    "calls": 12,
+    "inputTokens": 52943,
+    "outputTokens": 10421,
+    "totalTokens": 63364
+  },
+  "caseAssessments": [
+    {
+      "id": "intro-bad",
+      "expected": "reject",
+      "actual": "accept",
+      "targetDetected": false,
+      "failure": "Judge false negative despite S2 concrete-expression map; no mapper target omission. Evidence map might be insufficiently contrastive but supplied original source and correct mapped meaning were available. No inference about hidden reasoning."
+    },
+    {
+      "id": "intro-correct",
+      "expected": "accept",
+      "actual": "accept",
+      "assessment": "Legitimate reader-effect uncertainty and precise-status uncertainty accepted. Previous Unknown 3 overrejection not repeated."
+    },
+    {
+      "id": "005-bad",
+      "expected": "reject",
+      "actual": "reject",
+      "targetDetected": true,
+      "assessment": "Two exact source-anchored material omissions: Synthesis tension with possible contribution; Idea/Research variation as causal limit. Correct negative results retained; no invented cause."
+    },
+    {
+      "id": "005-correct",
+      "expected": "accept",
+      "actual": "accept",
+      "assessment": "Unchanged strengthened Experiment 2 control; no correct evidence falsely rejected."
+    },
+    {
+      "id": "010-bad",
+      "expected": "reject",
+      "actual": "reject",
+      "targetDetected": true,
+      "assessment": "P7 correct factual-error/intact-hierarchy contrast faithfully detected using a valid quote, despite separate P8 invalid map anchor. ResearchLocation also names discarded Development sequence, but Facts/projection omission is correctly identified."
+    },
+    {
+      "id": "010-correct",
+      "expected": "accept",
+      "actual": "accept",
+      "assessment": "Unchanged control accepted; source-true orchestration claims not declared false."
+    },
+    {
+      "id": "garden-bad",
+      "expected": "reject",
+      "actual": "reject",
+      "targetDetected": true,
+      "assessment": "Unknown clause denies explicitly attributed meaning; unmeasured increased sharing correctly remains unknown. Unsupported Idea Evidence not accepted as source."
+    },
+    {
+      "id": "garden-correct",
+      "expected": "accept",
+      "actual": "accept",
+      "assessment": "No false Research rejection despite unsupported Idea Evidence; Research keeps correct source scope."
+    },
+    {
+      "id": "kiln-bad",
+      "expected": "reject",
+      "actual": "reject",
+      "targetDetected": true,
+      "assessment": "Material omitted batch/humidity confounders and same-X negative control correctly identified; presence in Interpretations does not repair actual filter. Secondary demand to repeat explicit no-causal-conclusion statement is arguably redundant with existing Unknown; not counted as separate detection or independent material blocker."
+    },
+    {
+      "id": "kiln-correct",
+      "expected": "accept",
+      "actual": "accept",
+      "assessment": "Correct rates/limits accepted despite invalid S1 map anchor; no source-evidence leakage from Idea."
+    },
+    {
+      "id": "catalogue-bad",
+      "expected": "reject",
+      "actual": "technical-failure",
+      "targetDetected": false,
+      "rawTargetDetected": true,
+      "failure": "Mapper S1 capitalizes batch; judge uses same invalid capitalized anchor twice. Both mapper and judge anchoring fail. Text appears copied from map, but provenance cannot be proved without intervention. Raw second issue faithfully identifies omitted North contrast; unusable under exact parser. First issue attacks selectedIdea.evidence rather than Research, an inappropriate extra Research blocker; it is not repeated in correct control with same Idea."
+    },
+    {
+      "id": "catalogue-correct",
+      "expected": "accept",
+      "actual": "accept",
+      "assessment": "Correct North/South/West contrast accepted; does not fix invalid defective-variant judgment."
+    }
+  ],
+  "historicalIncrementTokens": 34204,
+  "historicalIncreasePercent": 72.99344843039758,
+  "wholeRunIncreasePercent": 53.142162742251124
+}

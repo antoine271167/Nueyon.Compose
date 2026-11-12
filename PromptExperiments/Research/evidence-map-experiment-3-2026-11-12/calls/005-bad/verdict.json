@@ -1,0 +1,19 @@
+{
+  "accepted": false,
+  "blockingIssues": [
+    {
+      "category": "evidenceCoverage",
+      "researchLocation": "Research Unknowns; synthesisInput Unknowns",
+      "problem": "The projection omits the source\u2019s explicit qualification that the supplied Synthesis itself had conflicting emphasis, and its tentative interpretation that this may have reinforced the technical angle. This matters when characterizing the hierarchy failure: the observed result remains supported, but the source gives a possible contributing context that should not disappear from the account.",
+      "sourceQuote": "The baseline Synthesis pairs company identity with Compose in its top-level emphasis, but also contains a later description calling orchestration \u201Ccentral to the product direction.\u201D That internal tension may have reinforced the technical angle.",
+      "constraint": "Preserve the reported hierarchy failure while noting the source\u2019s tentative Synthesis-tension explanation; do not present it as an established cause."
+    },
+    {
+      "category": "evidenceCoverage",
+      "researchLocation": "Research Unknowns; synthesisInput Unknowns",
+      "problem": "The projection omits the reported variation in Idea and Research outputs between runs. Because Compose is downstream in a full-pipeline comparison, this is a relevant limit on attributing Compose differences solely to the Narrative prompt, even though the source does not claim that upstream variation caused the results.",
+      "sourceQuote": "Idea and Research outputs vary between runs. This is expected in the same full-pipeline comparison; all other stages and inputs were kept constant.",
+      "constraint": "Include the reported upstream-stage variation as a limitation on causal attribution; do not claim it caused the Compose results."
+    }
+  ]
+}

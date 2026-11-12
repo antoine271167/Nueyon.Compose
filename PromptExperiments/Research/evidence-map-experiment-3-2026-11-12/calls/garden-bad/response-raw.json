@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-EjW9yNXYlJyLeDsXtlscgJL5m440E",
+  "object": "chat.completion",
+  "created": 1794517090,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"accepted\":false,\"blockingIssues\":[{\"category\":\"epistemicAccuracy\",\"researchLocation\":\"Research → Unknowns; synthesisInput → Unknowns\",\"problem\":\"The clause that the source does not establish that the library expresses the sharing plan denies the board’s explicitly attributed meaning. The source distinguishes that stated meaning from a measured result; the separate uncertainty about whether sharing increased is accurate.\",\"sourceQuote\":\"The garden board calls the seed library its first practical expression of the neighbourhood-sharing plan.\",\"constraint\":\"Retain that the board describes the library as the plan’s first practical expression, while separately noting that this is not a measured result and that increased sharing is not established.\"}]}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1294,
+    "completion_tokens": 379,
+    "total_tokens": 1673,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 1291,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 231,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

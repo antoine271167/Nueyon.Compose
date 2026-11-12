@@ -1,0 +1,151 @@
+{
+  "items": [
+    {
+      "id": "P1",
+      "kind": "claim",
+      "proposition": "The earliest observable company-first hierarchy departure varies across runs: the report locates it in Idea, Synthesis, or Narrative.",
+      "sourceQuotes": [
+        "The first visible editorial hierarchy break varies by run.",
+        "In Experiment 008 Company-first runs, selected Idea already changes the hierarchy in A-001 and A-003",
+        "candidate 003 is already company/product hierarchy drift in Synthesis.",
+        "Narrative is the most recurrent first visible hierarchy shift in the available records."
+      ],
+      "materiality": "This directly supports a variable starting point rather than a single stage being the universal first location.",
+      "boundary": "These are the report’s localizations of observable departures; they do not establish the internal cause of any departure."
+    },
+    {
+      "id": "P2",
+      "kind": "claim",
+      "proposition": "Narrative is the most recurrent first visible hierarchy shift in the reviewed records, but it is not the first locus in every reported case.",
+      "sourceQuotes": [
+        "Narrative is the most recurrent first visible hierarchy shift in the available records.",
+        "It is first in 007 runs 001–002, 008 A-002 (factual breach) and 009 baseline 002/003 and candidates 001–003.",
+        "But it is not a sole root cause: some runs start in Idea or Synthesis, and in 009 baseline 001 the reported factual issue is Compose."
+      ],
+      "materiality": "Preserves the distinction between recurrence and universality, central to the selected Idea’s qualification.",
+      "boundary": "Recurrence does not establish Narrative as a universal root cause or as the first failure for every dimension."
+    },
+    {
+      "id": "P3",
+      "kind": "claim",
+      "proposition": "Experiment 008 reports company-first hierarchy changes already in selected Idea for runs A-001 and A-003.",
+      "sourceQuotes": [
+        "A-001 | **Idea** | Compose is selected as the “concrete expression” framing Nuëyon’s identity",
+        "A-003 | **Idea** | Selected Idea calls Compose an “orchestration-first philosophy”"
+      ],
+      "materiality": "Provides direct examples of an early, Idea-stage departure, showing that observed drift is not confined to Narrative.",
+      "boundary": "These examples concern the named Experiment 008 runs; they do not show that Idea is generally the first departure."
+    },
+    {
+      "id": "P4",
+      "kind": "claim",
+      "proposition": "Experiment 007 candidate 003 is localized to Synthesis as the earliest supported hierarchy departure in the available trace.",
+      "sourceQuotes": [
+        "Candidate 003 | **Synthesis** | Primary message and subject make Compose/orchestration the story; broader company identity and audience become context.",
+        "We can localize drift only from Synthesis onward for those chains"
+      ],
+      "materiality": "Adds a Synthesis-stage example to the range of reported first observable locations.",
+      "boundary": "The report does not assess Idea or Research for these chains, so it cannot establish whether the departure began before Synthesis."
+    },
+    {
+      "id": "P5",
+      "kind": "causalLimit",
+      "proposition": "The report defines “first drift” as an earliest observable departure, not as evidence of internal model causation.",
+      "sourceQuotes": [
+        "For each run, “first drift” means the earliest **observable** stage that departs from the requested company-first editorial hierarchy, introduces unsupported material, or makes a materially stronger claim.",
+        "It does not imply internal model causation."
+      ],
+      "materiality": "Prevents interpreting stage localization as proof of where or why the underlying process caused the behavior.",
+      "boundary": "The report supports stage-level observations under its stated definition, not a causal account of model behavior."
+    },
+    {
+      "id": "P6",
+      "kind": "claim",
+      "proposition": "Experiment 009 reports that company-first selected Ideas did not ensure the company-first hierarchy survived downstream.",
+      "sourceQuotes": [
+        "Experiment 009 shows that a company-first selected Idea is not sufficient.",
+        "The evaluation reports the selected Idea kept Nuëyon primary and Compose as first product direction in all six baseline/candidate runs.",
+        "The reported issues then appear downstream: orchestration-centered story framing, unsupported audience/validation/outcome language, or a factual overclaim in Compose."
+      ],
+      "materiality": "Shows a downstream departure can occur even when the selected Idea is reported as company-first, complementing the early-stage examples.",
+      "boundary": "This is the report’s summary of six runs; it does not show that every downstream stage or every run failed in the same way."
+    },
+    {
+      "id": "P7",
+      "kind": "counterexample",
+      "proposition": "Experiment 009 baseline 001 is reported as a Compose-stage factual failure while earlier stages remain company-first and downstream hierarchy is scored 2/2.",
+      "sourceQuotes": [
+        "Baseline 001 | **Compose** (reported factual failure)",
+        "Selected Idea and earlier chain remain company-first; the artifact’s score gives downstream hierarchy 2/2.",
+        "reliable conversion is not established."
+      ],
+      "materiality": "Distinguishes a factual failure at Compose from a hierarchy departure and prevents treating every late-stage problem as evidence of hierarchy drift.",
+      "boundary": "This example does not establish Compose as the first hierarchy-departure stage; the report explicitly says the earlier chain remains company-first."
+    },
+    {
+      "id": "P8",
+      "kind": "explicitMeaning",
+      "proposition": "The report treats source fidelity and editorial hierarchy as separate dimensions: a technically supported description can still be the wrong lead for a company introduction.",
+      "sourceQuotes": [
+        "Factual and editorial failures are distinct.",
+        "Orchestration is source-supported as a Compose design principle; making it the defining story of a company introduction can still violate the source’s editorial intent.",
+        "The source supports two true propositions that compete editorially: Nuëyon is an AI-first company; orchestration is central to Compose’s design."
+      ],
+      "materiality": "Clarifies that factual support alone does not determine whether an output preserves the requested company-first hierarchy.",
+      "boundary": "This is the report’s stated editorial interpretation; it does not make the supported orchestration proposition factually false."
+    },
+    {
+      "id": "P9",
+      "kind": "negativeControl",
+      "proposition": "Technical-first framing in Experiment 008 B runs is treated as expected under that condition, not by itself as a company-first hierarchy departure.",
+      "sourceQuotes": [
+        "Technical-first B runs intentionally start technical, so their first technical framing in Idea is expected by that condition",
+        "In technical-first Experiment 008 B runs, technical hierarchy itself is the intended condition; the table identifies any separate scope/factual breach."
+      ],
+      "materiality": "Provides a contrast case showing that technical framing must be interpreted against the run’s intended condition before classifying it as drift.",
+      "boundary": "Expected technical ordering under B does not demonstrate that the output satisfies a company-first introduction or that its factual claims are sound."
+    },
+    {
+      "id": "P10",
+      "kind": "causalLimit",
+      "proposition": "The report cautions that Experiment 009’s saved evaluation does not formally assign a first-failure stage to each dimension, and identifies baseline 003 localization as lower confidence.",
+      "sourceQuotes": [
+        "Its saved evaluation summarizes the six runs but does not assign a formal first-failure stage to each dimension.",
+        "where the exact factual precursor is not explicitly called out (notably baseline 003), the localization is lower confidence."
+      ],
+      "materiality": "Qualifies the precision of per-run stage localization, particularly where a report summary rather than a formal stage-by-dimension assignment is the basis.",
+      "boundary": "This limitation does not negate the report’s broader cross-run observations; it limits confidence in some specific localizations."
+    },
+    {
+      "id": "P11",
+      "kind": "causalLimit",
+      "proposition": "Upstream format references are reported as an architectural inconsistency and a plausible source of format priming, but not as a demonstrated cause of drift.",
+      "sourceQuotes": [
+        "These are direct format references in upstream prompt text.",
+        "This is an instruction-boundary inconsistency and a plausible source of format priming",
+        "It does **not** demonstrate that these references caused orchestration drift or a weak hook in any given run."
+      ],
+      "materiality": "Separates an observed prompt-boundary issue from the unproven causal explanation of particular run outcomes.",
+      "boundary": "The report does not establish that format references caused any specific hierarchy departure."
+    }
+  ],
+  "ideaChecks": [
+    {
+      "proposition": "The earliest visible departure from the intended company-first hierarchy varies across runs; Narrative is the most recurrent first visible hierarchy shift, but the evidence does not establish it—or any other stage—as a universal root cause.",
+      "sourceItemIds": [
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "P5",
+        "P10"
+      ],
+      "status": "supported"
+    }
+  ],
+  "limitations": [
+    "Experiment 007 has no Idea or Research extracts for the cited chains; the report says localization is possible only from Synthesis onward.",
+    "Experiment 009’s saved evaluation does not formally assign first-failure stages by dimension, and the report marks baseline 003 localization as lower confidence.",
+    "The map reflects the supplied diagnostic report’s descriptions of reviewed artifacts; the underlying run artifacts are not separately available here for reinspection."
+  ]
+}

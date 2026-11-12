@@ -1,0 +1,97 @@
+{
+  "items": [
+    {
+      "id": "S1",
+      "kind": "claim",
+      "proposition": "Batch North preserved the intended shelf order, while its printed labels showed wrong years.",
+      "sourceQuotes": [
+        "Batch North preserved the intended shelf order but its printed labels gave wrong years."
+      ],
+      "materiality": "This records that the date and shelf-order dimensions can have different outcomes in the same batch.",
+      "boundary": "It does not identify why the years were wrong or establish a cause of any error."
+    },
+    {
+      "id": "S2",
+      "kind": "claim",
+      "proposition": "Batch South printed the years correctly but reversed shelf order.",
+      "sourceQuotes": [
+        "Batch South printed the years correctly but reversed shelf order."
+      ],
+      "materiality": "This independently shows that correct dates do not ensure correct shelf order.",
+      "boundary": "It does not explain the reversal or establish a causal relationship between the two dimensions."
+    },
+    {
+      "id": "S3",
+      "kind": "claim",
+      "proposition": "Batch West had both dates and shelf order correct.",
+      "sourceQuotes": [
+        "Batch West had both dimensions correct."
+      ],
+      "materiality": "This is a contrast case showing that both dimensions were correct in at least one batch.",
+      "boundary": "It does not show how the batch achieved that result or establish that the same conditions apply to other batches."
+    },
+    {
+      "id": "S4",
+      "kind": "explicitMeaning",
+      "proposition": "The audit recommended checking dates and shelf order separately.",
+      "sourceQuotes": [
+        "It recommended checking dates and shelf order separately."
+      ],
+      "materiality": "This directly supports treating the two dimensions as separate checks.",
+      "boundary": "It is a recommendation, not evidence that separate checks were implemented or that they improved results."
+    },
+    {
+      "id": "S5",
+      "kind": "causalLimit",
+      "proposition": "The audit did not identify a single earliest cause across the batches.",
+      "sourceQuotes": [
+        "The audit found no single earliest cause across batches"
+      ],
+      "materiality": "This limits conclusions about a common cause for the observed errors.",
+      "boundary": "It does not establish that no causes existed; it reports that the audit found no single earliest cause."
+    },
+    {
+      "id": "S6",
+      "kind": "causalLimit",
+      "proposition": "A missing intake log prevents attribution for Batch North.",
+      "sourceQuotes": [
+        "a missing intake log prevents attribution for North."
+      ],
+      "materiality": "This is a specific attribution limitation for North and cautions against assigning its error to a cause.",
+      "boundary": "It does not state that attribution is impossible for every batch or identify what the missing log would have shown."
+    },
+    {
+      "id": "S7",
+      "kind": "negativeControl",
+      "proposition": "No reader-comprehension tests were run.",
+      "sourceQuotes": [
+        "No reader-comprehension tests were run."
+      ],
+      "materiality": "This prevents treating the audit as evidence about readers' comprehension.",
+      "boundary": "It does not establish whether the labels affected comprehension; that outcome was not tested."
+    }
+  ],
+  "ideaChecks": [
+    {
+      "proposition": "Two audit dimensions need separate checks.",
+      "sourceItemIds": [
+        "S1",
+        "S2",
+        "S4"
+      ],
+      "status": "supported"
+    },
+    {
+      "proposition": "Wrong dates prove shelf-order failure.",
+      "sourceItemIds": [
+        "S1",
+        "S2"
+      ],
+      "status": "unsupported"
+    }
+  ],
+  "limitations": [
+    "The source recommends separate checks but does not report that they were carried out.",
+    "The source does not identify causes for the batch outcomes, and specifically says North's attribution is prevented by a missing intake log."
+  ]
+}

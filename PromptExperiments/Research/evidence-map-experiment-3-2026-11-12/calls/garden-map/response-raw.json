@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-EjW795dUHxxPdN30dma9zq3YgdhD5",
+  "object": "chat.completion",
+  "created": 1794516915,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"items\": [\n    {\n      \"id\": \"S1\",\n      \"kind\": \"explicitMeaning\",\n      \"proposition\": \"The garden board describes the seed library as the first practical expression of its neighbourhood-sharing plan.\",\n      \"sourceQuotes\": [\n        \"The garden board calls the seed library its first practical expression of the neighbourhood-sharing plan.\",\n        \"This is the board’s stated meaning, not a measured result.\"\n      ],\n      \"materiality\": \"Supports the idea that the library gives the board’s sharing ambition a practical form, while identifying this as an attributed interpretation.\",\n      \"boundary\": \"Does not establish that the library increased sharing or produced any other measured result.\"\n    },\n    {\n      \"id\": \"S2\",\n      \"kind\": \"claim\",\n      \"proposition\": \"The seed library is a pilot, and whether it will be expanded has not been decided.\",\n      \"sourceQuotes\": [\n        \"The library is a pilot; expansion is undecided.\"\n      ],\n      \"materiality\": \"Limits conclusions about the initiative’s scale, maturity, and continuation.\",\n      \"boundary\": \"Does not establish that the pilot will be expanded, discontinued, or successful.\"\n    },\n    {\n      \"id\": \"S3\",\n      \"kind\": \"causalLimit\",\n      \"proposition\": \"The source reports no visitor survey or study of sharing outcomes, so it supplies no measured evidence that the library increased neighbourhood sharing.\",\n      \"sourceQuotes\": [\n        \"No visitor survey or sharing-outcome study has been conducted.\"\n      ],\n      \"materiality\": \"Directly limits the claim that sharing has already increased and distinguishes the board’s stated meaning from an observed effect.\",\n      \"boundary\": \"Does not prove that sharing did not increase; it says the relevant survey and outcome study were not conducted.\"\n    },\n    {\n      \"id\": \"S4\",\n      \"kind\": \"claim\",\n      \"proposition\": \"The library’s opening hours have not yet been fixed.\",\n      \"sourceQuotes\": [\n        \"Opening hours are not yet fixed.\"\n      ],\n      \"materiality\": \"Shows that an operational detail remains unsettled, qualifying how fully the pilot is established in practice.\",\n      \"boundary\": \"Does not establish whether the library is open, how often it operates, or what effect the hours have on sharing.\"\n    }\n  ],\n  \"ideaChecks\": [\n    {\n      \"proposition\": \"“A sharing ambition takes a first practical form”: the board presents the seed library as the first practical expression of its neighbourhood-sharing plan.\",\n      \"sourceItemIds\": [\n        \"S1\",\n        \"S2\",\n        \"S4\"\n      ],\n      \"status\": \"qualified\"\n    },\n    {\n      \"proposition\": \"“The library has already increased neighbourhood sharing.”\",\n      \"sourceItemIds\": [\n        \"S1\",\n        \"S3\"\n      ],\n      \"status\": \"unsupported\"\n    }\n  ],\n  \"limitations\": [\n    \"The source attributes the library’s meaning to the board and explicitly distinguishes that meaning from a measured result.\",\n    \"The source does not report whether sharing increased or decreased; it states that no sharing-outcome study was conducted.\"\n  ]\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 605,
+    "completion_tokens": 943,
+    "total_tokens": 1548,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 273,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

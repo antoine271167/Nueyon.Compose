@@ -1,0 +1,147 @@
+[
+  {
+    "id": "intro",
+    "group": "historical",
+    "requirements": [
+      {
+        "id": "meaning",
+        "sourceQuote": "Nuëyon.Compose is the first step because it gives the broader vision a concrete expression.",
+        "meaning": "Explicit concrete-expression meaning; Unknown 4 in baseline denies this, distinct from unmeasured reader effect."
+      },
+      {
+        "id": "stage",
+        "sourceQuote": "Nuëyon is at an early stage.",
+        "meaning": "Early stage and broader portfolio under development; no proven outcomes, launch dates or existing portfolio implied."
+      },
+      {
+        "id": "audience",
+        "sourceQuote": "Nuëyon's intended audience is other AI-first companies:",
+        "meaning": "Company identity and intended other AI-first-company audience remain primary."
+      },
+      {
+        "id": "roadmap",
+        "sourceQuote": "The roadmap is best understood as a sequence of development priorities rather than a fixed release schedule.",
+        "meaning": "Incremental planned priorities, not delivery commitments."
+      }
+    ],
+    "inputSource": "Experiment 2 unchanged",
+    "target": "Explicit concrete-expression meaning; Unknown 4 in baseline denies this, distinct from unmeasured reader effect."
+  },
+  {
+    "id": "005",
+    "group": "historical",
+    "requirements": [
+      {
+        "id": "variation",
+        "sourceQuote": "Idea and Research outputs vary between runs.",
+        "meaning": "Upstream outputs varied despite matched prompts; not an isolated causal Narrative intervention."
+      },
+      {
+        "id": "tension",
+        "sourceQuote": "That internal tension may have reinforced the technical angle.",
+        "meaning": "Baseline Synthesis contains internal company/product vs orchestration tension; possible contribution only."
+      },
+      {
+        "id": "decision",
+        "sourceQuote": "**Decision: Do not promote.**",
+        "meaning": "Candidate worse on both stage means, all candidate hierarchy/restraint failures; restored production, bounded to this test."
+      },
+      {
+        "id": "backend",
+        "sourceQuote": "the model provider may change the backend behind an alias.",
+        "meaning": "Dates differed and backend alias may drift; small sample cannot prove general performance."
+      }
+    ],
+    "inputSource": "Experiment 2 unchanged",
+    "target": "Upstream outputs varied despite matched prompts; not an isolated causal Narrative intervention."
+  },
+  {
+    "id": "010",
+    "group": "historical",
+    "requirements": [
+      {
+        "id": "contrast",
+        "sourceQuote": "Selected Idea and earlier chain remain company-first; the artifact’s score gives downstream hierarchy 2/2.",
+        "meaning": "009 baseline 001 Compose factual overclaim despite intact earlier hierarchy and 2/2; not a Compose-first hierarchy failure."
+      },
+      {
+        "id": "missing",
+        "sourceQuote": "We can localize drift only from Synthesis onward for those chains;",
+        "meaning": "007 has no Idea/Research extracts; earliest observable does not establish true first cause."
+      },
+      {
+        "id": "multiple",
+        "sourceQuote": "The first visible editorial hierarchy break varies by run.",
+        "meaning": "Idea, Synthesis and Narrative observed departures; Narrative recurrent but no universal root cause."
+      },
+      {
+        "id": "dimensions",
+        "sourceQuote": "Factual and editorial failures are distinct.",
+        "meaning": "Technical truth and editorial primacy separate; qualitative engagement evidence not consistent measured comparison."
+      }
+    ],
+    "inputSource": "Experiment 2 unchanged",
+    "target": "009 baseline 001 Compose factual overclaim despite intact earlier hierarchy and 2/2; not a Compose-first hierarchy failure."
+  },
+  {
+    "id": "garden",
+    "group": "new-holdout",
+    "requirements": [
+      {
+        "id": "meaning",
+        "sourceQuote": "The garden board calls the seed library its first practical expression of the neighbourhood-sharing plan.",
+        "meaning": "Preserve attributed meaning; baseline Unknown denies it; Idea evidence invents an increase and must not become evidence."
+      },
+      {
+        "id": "limits",
+        "sourceQuote": "No visitor survey or sharing-outcome study has been conducted.",
+        "meaning": "No measured outcomes; pilot/undecided expansion and opening hours are genuine uncertainty."
+      }
+    ],
+    "target": "Preserve attributed meaning; baseline Unknown denies it; Idea evidence invents an increase and must not become evidence."
+  },
+  {
+    "id": "kiln",
+    "group": "new-holdout",
+    "requirements": [
+      {
+        "id": "confounder",
+        "sourceQuote": "Clay batches and drying humidity differed between weeks.",
+        "meaning": "Specific upstream material/humidity confounders missing in bad downstream projection."
+      },
+      {
+        "id": "negative",
+        "sourceQuote": "A same-controller X check also recorded 5 in 100 after a batch change.",
+        "meaning": "Negative control counters controller-exclusive causal story; preserved only in discarded section of bad variant."
+      },
+      {
+        "id": "decision",
+        "sourceQuote": "it did not conclude that Y caused the reduction.",
+        "meaning": "Observed counts and continued trial retained without causal claim; durability unmeasured."
+      }
+    ],
+    "target": "Specific upstream material/humidity confounders missing in bad downstream projection."
+  },
+  {
+    "id": "catalogue",
+    "group": "new-holdout",
+    "requirements": [
+      {
+        "id": "contrast",
+        "sourceQuote": "batch North preserved the intended shelf order but its printed labels gave wrong years.",
+        "meaning": "North date error with correct order must survive; bad variant collapses dimensions and omits North."
+      },
+      {
+        "id": "reverse",
+        "sourceQuote": "Batch South printed the years correctly but reversed shelf order.",
+        "meaning": "Reverse contrast and West correct-both are controls; no single dimension explains all failures."
+      },
+      {
+        "id": "limits",
+        "sourceQuote": "a missing intake log prevents attribution for North.",
+        "meaning": "Missing observation limits causal attribution; no comprehension evidence."
+      }
+    ],
+    "target": "North date error with correct order must survive; bad variant collapses dimensions and omits North."
+  }
+]
