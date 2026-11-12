@@ -1,0 +1,26 @@
+{
+  "verdict": {
+    "accepted": false,
+    "blockingIssues": [
+      {
+        "category": "epistemicAccuracy",
+        "researchLocation": "### Unknowns, item 3",
+        "problem": "The Unknown says the source does not establish the broader portfolio’s implementation status, but the source explicitly says that the broader portfolio remains under development and describes additional directions as exploratory. This blanket denial obscures the source’s stated status, even though it is accurate that demonstrated effectiveness is not established.",
+        "sourceQuote": "NuByon is at an early stage. NuByon.Compose is the first concrete product direction, while the broader portfolio and operating model remain under development.",
+        "constraint": "Retain the stated under-development status; limit uncertainty to implementation specifics or demonstrated effectiveness that the source does not establish."
+      }
+    ]
+  },
+  "issues": [
+    {
+      "category": "epistemicAccuracy",
+      "researchLocation": "### Unknowns, item 3",
+      "problem": "The Unknown says the source does not establish the broader portfolio’s implementation status, but the source explicitly says that the broader portfolio remains under development and describes additional directions as exploratory. This blanket denial obscures the source’s stated status, even though it is accurate that demonstrated effectiveness is not established.",
+      "sourceQuote": "NuByon is at an early stage. NuByon.Compose is the first concrete product direction, while the broader portfolio and operating model remain under development.",
+      "constraint": "Retain the stated under-development status; limit uncertainty to implementation specifics or demonstrated effectiveness that the source does not establish.",
+      "exactSourceAnchor": false,
+      "anchorInSelectedIdea": false
+    }
+  ],
+  "productionParserPassed": false
+}

@@ -1,0 +1,14 @@
+{
+  "Input": {
+    "Content": "The archive audit evaluated transcription accuracy and document ordering separately. Batch Cedar had correct ordering but contained two mistranscribed dates. Batch Birch had accurate dates but incorrect ordering. Batch Elm passed both checks. The audit did not identify the cause of either error type. These three batches do not establish an overall error rate."
+  },
+  "SelectedIdea": {
+    "Idea": {
+      "Title": "Ordering and transcription failures are distinct in the reviewed archive batches.",
+      "Description": "Ordering and transcription failures are distinct in the reviewed archive batches.",
+      "Audience": "Reviewers of this report",
+      "Rationale": "Preserve the reported result and its evidence limits.",
+      "Evidence": "Verify against the source."
+    }
+  }
+}

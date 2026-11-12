@@ -1,0 +1,74 @@
+[
+  {
+    "id": "baseline-intro",
+    "group": "tuning",
+    "expected": "reject",
+    "target": "Unknown 4 denies explicit concrete expression; distinguish reader effect"
+  },
+  {
+    "id": "baseline-005",
+    "group": "tuning",
+    "expected": "reject",
+    "target": "missing upstream Idea/Research variation"
+  },
+  {
+    "id": "baseline-010",
+    "group": "tuning",
+    "expected": "reject",
+    "target": "missing Compose factual counterexample with preserved hierarchy"
+  },
+  {
+    "id": "control-intro",
+    "group": "tuning",
+    "expected": "accept",
+    "target": "Unknown 4 denies explicit concrete expression; distinguish reader effect"
+  },
+  {
+    "id": "control-005",
+    "group": "tuning",
+    "expected": "qualified",
+    "target": "upstream variation repaired; Synthesis tension still omitted"
+  },
+  {
+    "id": "control-010",
+    "group": "tuning",
+    "expected": "accept",
+    "target": "missing Compose factual counterexample with preserved hierarchy"
+  },
+  {
+    "id": "control-005-complete",
+    "group": "tuning",
+    "expected": "accept",
+    "target": "causal limits and Synthesis tension retained"
+  },
+  {
+    "id": "holdout-museum-correct",
+    "group": "holdout",
+    "expected": "accept",
+    "target": "attributed meaning is valid; outcome uncertainty is precise"
+  },
+  {
+    "id": "holdout-museum-denial",
+    "group": "holdout",
+    "expected": "reject",
+    "target": "Unknown denies explicitly attributed source relationship"
+  },
+  {
+    "id": "holdout-warehouse-confounder",
+    "group": "holdout",
+    "expected": "reject",
+    "target": "specific parcel-size confounder and supporting same-layout comparison absent downstream"
+  },
+  {
+    "id": "holdout-archive-correct",
+    "group": "holdout",
+    "expected": "accept",
+    "target": "both discriminating counterexamples and limits retained"
+  },
+  {
+    "id": "holdout-archive-omission",
+    "group": "holdout",
+    "expected": "reject",
+    "target": "Cedar transcription error despite correct order missing; generic distinct-dimensions claim insufficient"
+  }
+]

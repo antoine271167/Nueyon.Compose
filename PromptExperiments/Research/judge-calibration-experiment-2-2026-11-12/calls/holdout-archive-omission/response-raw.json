@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-EjVwlEjstcm7x6nIemhYw64c1vmkm",
+  "object": "chat.completion",
+  "created": 1794516271,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"accepted\":false,\"blockingIssues\":[{\"category\":\"evidenceCoverage\",\"researchLocation\":\"### Facts; omitted from synthesisInput\",\"problem\":\"The research includes Birch’s incorrect ordering with accurate dates, but omits Cedar, which shows the converse pattern: correct ordering with two mistranscribed dates. Without this evidence, the selected Idea’s distinction between the two failure types is supported only in one direction.\",\"sourceQuote\":\"Batch Cedar had correct ordering but contained two mistranscribed dates.\",\"constraint\":\"Include the source’s Cedar result when supporting the distinction; do not generalize beyond the reviewed batches.\"}]}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1225,
+    "completion_tokens": 265,
+    "total_tokens": 1490,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 1222,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 131,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

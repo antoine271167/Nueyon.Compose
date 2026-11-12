@@ -1,0 +1,190 @@
+[
+  {
+    "id": "baseline-intro",
+    "group": "tuning",
+    "expected": "reject",
+    "target": "Unknown 4 denies explicit concrete expression; distinguish reader effect",
+    "accepted": false,
+    "productionParserPassed": false,
+    "issues": [
+      {
+        "category": "epistemicAccuracy",
+        "researchLocation": "### Unknowns, item 3",
+        "problem": "The Unknown says the source does not establish the broader portfolio’s implementation status, but the source explicitly says that the broader portfolio remains under development and describes additional directions as exploratory. This blanket denial obscures the source’s stated status, even though it is accurate that demonstrated effectiveness is not established.",
+        "sourceQuote": "NuByon is at an early stage. NuByon.Compose is the first concrete product direction, while the broader portfolio and operating model remain under development.",
+        "constraint": "Retain the stated under-development status; limit uncertainty to implementation specifics or demonstrated effectiveness that the source does not establish.",
+        "exactSourceAnchor": false,
+        "anchorInSelectedIdea": false
+      }
+    ]
+  },
+  {
+    "id": "baseline-005",
+    "group": "tuning",
+    "expected": "reject",
+    "target": "missing upstream Idea/Research variation",
+    "accepted": false,
+    "productionParserPassed": false,
+    "issues": [
+      {
+        "category": "epistemicAccuracy",
+        "researchLocation": "### Unknowns — “The source does not state an explicit general lesson beyond the reported experiment result and decision.”",
+        "problem": "This denies an explicit lesson in the source. It says the experiment shows a prompt change should be judged by whether it preserves the intended message, not only by readability. The denial obscures a source-supported rationale relevant to the selected Idea.",
+        "sourceQuote": "It also shows why a prompt change should be judged by whether it preserves the intended message, not just whether the output reads smoothly.",
+        "constraint": "Retain the source-stated lesson with its stated scope; do not broaden it into proof of general prompt effectiveness.",
+        "exactSourceAnchor": false,
+        "anchorInSelectedIdea": true
+      }
+    ]
+  },
+  {
+    "id": "baseline-010",
+    "group": "tuning",
+    "expected": "reject",
+    "target": "missing Compose factual counterexample with preserved hierarchy",
+    "accepted": false,
+    "productionParserPassed": true,
+    "issues": [
+      {
+        "category": "downstreamIntegrity",
+        "researchLocation": "### Facts — omitted Experiment 009 baseline 001 hierarchy/factual distinction",
+        "problem": "The filtered facts omit that baseline 001 had a Compose factual failure while the selected Idea and earlier chain remained company-first and downstream hierarchy scored 2/2. This distinction is material to the Idea’s claim about hierarchy departures: without it, a factual failure at Compose could be conflated with a Compose-stage hierarchy break.",
+        "sourceQuote": "Selected Idea and earlier chain remain company-first; the artifact’s score gives downstream hierarchy 2/2.",
+        "constraint": "Retain the source’s distinction between the Compose factual failure and the unchanged company-first hierarchy; do not treat it as evidence of a Compose-first hierarchy departure.",
+        "exactSourceAnchor": true,
+        "anchorInSelectedIdea": false
+      }
+    ]
+  },
+  {
+    "id": "control-intro",
+    "group": "tuning",
+    "expected": "accept",
+    "target": "Unknown 4 denies explicit concrete expression; distinguish reader effect",
+    "accepted": false,
+    "productionParserPassed": true,
+    "issues": [
+      {
+        "category": "epistemicAccuracy",
+        "researchLocation": "### Unknowns, item 3",
+        "problem": "The blanket claim that the source does not establish the broader portfolio’s implementation status overlooks its explicit status: the portfolio remains under development. This could erase the boundary that the selected Idea relies on; what remains unspecified is the implementation status of individual broader products and their demonstrated effectiveness.",
+        "sourceQuote": "the broader portfolio and operating model remain under development.",
+        "constraint": "Preserve the source-stated status of the broader portfolio as under development; limit uncertainty to details the source does not establish, such as individual products’ implementation status or demonstrated effectiveness.",
+        "exactSourceAnchor": true,
+        "anchorInSelectedIdea": false
+      }
+    ]
+  },
+  {
+    "id": "control-005",
+    "group": "tuning",
+    "expected": "qualified",
+    "target": "upstream variation repaired; Synthesis tension still omitted",
+    "accepted": false,
+    "productionParserPassed": true,
+    "issues": [
+      {
+        "category": "downstreamIntegrity",
+        "researchLocation": "Omission from ### Facts and ### Unknowns; also absent from synthesisInput",
+        "problem": "The research omits the source-stated tension in the baseline Synthesis: it pairs company identity with Compose in its top-level emphasis but later calls orchestration central to the product direction. This is a material qualification when interpreting the candidate’s orchestration-first outputs and the prompt intervention’s result; the source says the tension may have reinforced that angle, while not changing the controlled result.",
+        "sourceQuote": "The baseline Synthesis pairs company identity with Compose in its top-level emphasis, but also contains a later description calling orchestration “central to the product direction.” That internal tension may have reinforced the technical angle. This does not change the controlled result: the candidate prompt was not sufficient to protect the supplied editorial intent, and this experiment did not change Synthesis because that was outside scope.",
+        "constraint": "Retain both the possible influence of the Synthesis tension and the source’s qualification that it does not change the reported controlled result.",
+        "exactSourceAnchor": true,
+        "anchorInSelectedIdea": false
+      }
+    ]
+  },
+  {
+    "id": "control-010",
+    "group": "tuning",
+    "expected": "accept",
+    "target": "missing Compose factual counterexample with preserved hierarchy",
+    "accepted": true,
+    "productionParserPassed": true,
+    "issues": []
+  },
+  {
+    "id": "control-005-complete",
+    "group": "tuning",
+    "expected": "accept",
+    "target": "causal limits and Synthesis tension retained",
+    "accepted": true,
+    "productionParserPassed": true,
+    "issues": []
+  },
+  {
+    "id": "holdout-museum-correct",
+    "group": "holdout",
+    "expected": "accept",
+    "target": "attributed meaning is valid; outcome uncertainty is precise",
+    "accepted": true,
+    "productionParserPassed": true,
+    "issues": []
+  },
+  {
+    "id": "holdout-museum-denial",
+    "group": "holdout",
+    "expected": "reject",
+    "target": "Unknown denies explicitly attributed source relationship",
+    "accepted": false,
+    "productionParserPassed": true,
+    "issues": [
+      {
+        "category": "epistemicAccuracy",
+        "researchLocation": "### Unknowns — “Whether the trial room expresses the wider education plan is not established by the source.”",
+        "problem": "This denies a relationship the source explicitly attributes to the museum: it calls the Lantern Room the plan’s first public expression. The denial materially undermines the selected Idea’s central claim; the lack of measured learning outcomes does not negate that characterization.",
+        "sourceQuote": "The museum calls the Lantern Room its first public expression of a wider education plan.",
+        "constraint": "Preserve the source’s attributed characterization; uncertainty may concern independently demonstrated learning benefits, which the source says were not measured.",
+        "exactSourceAnchor": true,
+        "anchorInSelectedIdea": false
+      }
+    ]
+  },
+  {
+    "id": "holdout-warehouse-confounder",
+    "group": "holdout",
+    "expected": "reject",
+    "target": "specific parcel-size confounder and supporting same-layout comparison absent downstream",
+    "accepted": false,
+    "productionParserPassed": true,
+    "issues": [
+      {
+        "category": "downstreamIntegrity",
+        "researchLocation": "synthesisInput — omitted evidence from Research Interpretations",
+        "problem": "The filtered input omits that the weeks had different parcel-size mixes and that damage counts also differed across mixes under the same layout. These source-stated limitations are material to assessing whether Q’s lower recorded count establishes a layout benefit; the retained general statement that the report does not isolate the effect does not preserve this evidence.",
+        "sourceQuote": "The two weeks used different parcel-size mixes. The report does not isolate the layout effect. During a separate check with the same layout, damaged-parcel counts also differed across parcel-size mixes.",
+        "constraint": "Retain the source’s different-mix comparison and same-layout check, without treating either as proof of a causal effect.",
+        "exactSourceAnchor": true,
+        "anchorInSelectedIdea": false
+      }
+    ]
+  },
+  {
+    "id": "holdout-archive-correct",
+    "group": "holdout",
+    "expected": "accept",
+    "target": "both discriminating counterexamples and limits retained",
+    "accepted": true,
+    "productionParserPassed": true,
+    "issues": []
+  },
+  {
+    "id": "holdout-archive-omission",
+    "group": "holdout",
+    "expected": "reject",
+    "target": "Cedar transcription error despite correct order missing; generic distinct-dimensions claim insufficient",
+    "accepted": false,
+    "productionParserPassed": true,
+    "issues": [
+      {
+        "category": "evidenceCoverage",
+        "researchLocation": "### Facts; omitted from synthesisInput",
+        "problem": "The research includes Birch’s incorrect ordering with accurate dates, but omits Cedar, which shows the converse pattern: correct ordering with two mistranscribed dates. Without this evidence, the selected Idea’s distinction between the two failure types is supported only in one direction.",
+        "sourceQuote": "Batch Cedar had correct ordering but contained two mistranscribed dates.",
+        "constraint": "Include the source’s Cedar result when supporting the distinction; do not generalize beyond the reviewed batches.",
+        "exactSourceAnchor": true,
+        "anchorInSelectedIdea": false
+      }
+    ]
+  }
+]
