@@ -86,7 +86,11 @@ public static class InfrastructureServiceExtensions
                 options.Model,
                 ResearchAgent.GetSystemInstructions());
 
-            return new ResearchAgent(baseAiAgent, logger);
+            var judge = options.EnableResearchJudge
+                ? new ResearchSemanticJudge(OpenAiAgentFactory.CreateOpenAiAgent(
+                    options.ApiKey, options.Model, ResearchSemanticJudge.GetSystemInstructions()))
+                : null;
+            return new ResearchAgent(baseAiAgent, logger, judge);
         });
 
         // Register the Synthesizer Agent

@@ -277,7 +277,8 @@ public sealed class CliTests
         CreatePromptSet(prompts);
         await File.WriteAllTextAsync(directory.Input, """{"content":"source"}""");
         var files = Directory.GetFiles(prompts, "*.prompt.md", SearchOption.AllDirectories);
-        Assert.Equal(12, files.Length);
+        Assert.Equal(13, files.Length);
+        Assert.Contains(files, file => file.EndsWith("ResearchValidation.system.prompt.md", StringComparison.Ordinal));
 
         foreach (var file in files)
         {

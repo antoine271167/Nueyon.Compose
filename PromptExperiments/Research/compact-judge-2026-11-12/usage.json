@@ -1,0 +1,62 @@
+[
+  {
+    "condition": "baseline-judge",
+    "case": "intro",
+    "model": "gpt-6-luna",
+    "inputTokens": 5633,
+    "outputTokens": 1359,
+    "totalTokens": 6992,
+    "httpRequests": 1,
+    "status": 200
+  },
+  {
+    "condition": "baseline-judge",
+    "case": "005",
+    "model": "gpt-6-luna",
+    "inputTokens": 6128,
+    "outputTokens": 2168,
+    "totalTokens": 8296,
+    "httpRequests": 1,
+    "status": 200
+  },
+  {
+    "condition": "baseline-judge",
+    "case": "010",
+    "model": "gpt-6-luna",
+    "inputTokens": 6872,
+    "outputTokens": 1469,
+    "totalTokens": 8341,
+    "httpRequests": 1,
+    "status": 200
+  },
+  {
+    "condition": "control-judge",
+    "case": "intro",
+    "model": "gpt-6-luna",
+    "inputTokens": 5645,
+    "outputTokens": 1032,
+    "totalTokens": 6677,
+    "httpRequests": 1,
+    "status": 200
+  },
+  {
+    "condition": "control-judge",
+    "case": "005",
+    "model": "gpt-6-luna",
+    "inputTokens": 6276,
+    "outputTokens": 2559,
+    "totalTokens": 8835,
+    "httpRequests": 1,
+    "status": 200
+  },
+  {
+    "condition": "control-judge",
+    "case": "010",
+    "model": "gpt-6-luna",
+    "inputTokens": 7052,
+    "outputTokens": 2089,
+    "totalTokens": 9141,
+    "httpRequests": 1,
+    "status": 200
+  }
+]

@@ -13,6 +13,30 @@ namespace Nueyon.Compose.Infrastructure.Tests;
 public sealed class InfrastructureServiceExtensionsTests
 {
     [Fact]
+    public void ResearchJudge_IsDisabledByDefault()
+    {
+        Assert.False(new OpenAiOptions().EnableResearchJudge);
+    }
+
+    [Theory]
+    [InlineData(false)]
+    [InlineData(true)]
+    public void ResearchAgent_CanBeResolvedWithExperimentalGate(bool enabled)
+    {
+        var services = new ServiceCollection();
+        services.AddLogging();
+        services.Configure<OpenAiOptions>(options =>
+        {
+            options.ApiKey = "test-key";
+            options.Model = "gpt-6-luna";
+            options.EnableResearchJudge = enabled;
+        });
+        services.AddInfrastructure();
+        using var provider = services.BuildServiceProvider();
+        Assert.IsType<ResearchAgent>(provider.GetRequiredService<IAgent<ResearchInput, ResearchResult>>());
+    }
+
+    [Fact]
     public void AddInfrastructure_RegistersIdeaValidator()
     {
         // Arrange

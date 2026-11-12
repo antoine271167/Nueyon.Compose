@@ -15,6 +15,9 @@ public sealed class OpenAiOptions
     /// </summary>
     public string Model { get; set; } = string.Empty;
 
+    /// <summary>Experimental Research gate. Disabled until judge calibration meets promotion criteria.</summary>
+    public bool EnableResearchJudge { get; set; }
+
     /// <summary>
     /// Validates that the required OpenAI configuration is present.
     /// </summary>

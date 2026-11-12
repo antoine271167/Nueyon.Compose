@@ -27,7 +27,7 @@ internal static class StoryWorkflowResultExtractor
 
         foreach (var @event in run.OutgoingEvents)
         {
-            if (@event is ExecutorFailedEvent { ExecutorId: "idea", Data: { } error })
+            if (@event is ExecutorFailedEvent { ExecutorId: "idea" or "research", Data: { } error })
             {
                 ExceptionDispatchInfo.Throw(error);
             }
