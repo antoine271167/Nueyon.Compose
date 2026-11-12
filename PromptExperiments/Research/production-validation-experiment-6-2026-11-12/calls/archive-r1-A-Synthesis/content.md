@@ -1,0 +1,18 @@
+### Central insight
+City Memory’s 900-record pilot produced concrete catalogue entries, but its limited review found different errors in names and chronology, and public access to images remained incomplete; the corrections and next-step decision do not establish a fully accurate or open archive.
+
+### Evidence
+1. The pilot created 900 catalogue records from selected registers in the Cedar, Elm and Rowan collections; it did not cover the archive’s full holdings.
+2. In the reviewed sample, Cedar had 9 of 60 vessel names mistranscribed while all 60 records were in correct chronological order; Elm’s 60 vessel names matched the originals, while 8 of 60 entries were under the wrong year. Reviewers selected the first 20 items in three accessible boxes per collection, excluded boxes with fragile bindings, and did not randomly sample all 300 records per collection.
+3. Staff corrected the nine Cedar names and eight Elm dates and rechecked those 17 entries only. This was not a full recheck or certification of the catalogue.
+4. Rights clearance was complete for 760 of the 900 scans. Descriptions for the remaining 140 records were visible, but their page images were not publicly downloadable.
+5. The committee approved designing a deeper random audit but had not approved a full-archive rollout.
+
+### What the narrative should emphasize
+Keep the distinction between catalogue output, separate quality checks, and public access central. The contrasting Cedar and Elm findings show why a pass on one check does not establish a pass on another; the limited recheck and unapproved rollout bound what can be concluded. Explain City Memory’s pilot results and decision, not a general prescription for archival practice.
+
+### What should be de-emphasized
+The Rowan sample result, dashboard color-rule history, pilot dates, and proposed audit’s detailed categories are not needed to establish this story. Avoid expanding into a description of the full catalogue process or archive holdings.
+
+### Gaps and uncertainty
+The non-random review and recheck of only 17 corrected entries do not establish the accuracy or chronological order of all 900 records. The source also does not establish public image access for all 900 scans; 140 images were not publicly downloadable. The proposed audit has not been conducted, and a full-archive rollout has not been approved.

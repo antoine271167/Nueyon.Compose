@@ -1,0 +1,14 @@
+### Selected Story
+De achtweekse busproef liet een gunstig signaal zien in het aandeel voltooide vertrekken, maar dat resultaat is niet hetzelfde als bewijs voor een effect van elektrische aandrijving of voor een vlootbusinesscase. De bevindingen over punctualiteit, toegankelijkheid en kosten beantwoorden elk een andere vraag en hebben hun eigen beperkingen. De proef mondde daarom niet uit in een aanschafbesluit: de vastgelegde vervolgstap was alleen het voorbereiden van een winterbeoordeling.
+
+### Story Progression
+- **Context:** In een proef van acht weken werden de resultaten van zes elektrische bussen vergeleken met die van zes voertuigen die zij later verdrongen. De lezer moet weten dat de vergelijking niet gelijkstaat aan een genormaliseerde schatting van het vlooteffect.
+- **Development:** Het aandeel voltooide vertrekken was 96,3% tijdens de proef tegenover 93,3% in de vergelijkingsperiode. Dat is een concreet gunstig dienstverleningssignaal, maar vervangende dieselritten telden ook mee als voltooid. Houd dit bovendien gescheiden van punctualiteit: de meetgrens daarvoor veranderde. De toegankelijkheidsinspectie vond de voorgeschreven rolstoelruimte in alle drie onderzochte bussen, maar twee hadden een defecte audiohalte-aankondiging. De geregistreerde energie-uitgaven vormen evenmin een totale-kostenvergelijking.
+- **Endpoint:** De resultaten geven geen bewezen vlootbusinesscase. Op 18 september gaf het bestuur toestemming om binnen het bestaande planningsbudget een specificatie voor een winterbeoordeling voor te bereiden; de beoordeling zelf en een besluit over aanschaf volgden daar niet uit.
+
+### Critical Constraints
+- Schrijf het hogere voltooiingspercentage niet toe aan elektrische aandrijving; vervangende dieselritten telden mee en de vergelijking was niet genormaliseerd.
+- Behandel punctualiteit niet als een rechtstreeks vergelijkbare verandering: de grens voor ‘op tijd’ veranderde.
+- Presenteer de rolstoelruimte en de defecte aankondigingen als afzonderlijke toegankelijkheidsdimensies.
+- Stel de geregistreerde elektriciteits- en dieseluitgaven niet voor als een vergelijkbare totale-kostenberekening of bewezen besparing.
+- Beschrijf de winterbeoordeling als een voorbereidingsstap, niet als uitgevoerde test of besluit om bussen aan te schaffen.

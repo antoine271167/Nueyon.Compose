@@ -1,0 +1,7 @@
+Een proef met zes elektrische bussen liet na acht weken een gunstig signaal zien: 96,3% van de vertrekken werd voltooid, tegenover 93,3% in de vergelijkingsperiode.
+
+Dat verschil zegt niet op zichzelf wat de elektrische aandrijving heeft bijgedragen. De proefbussen werden vergeleken met zes voertuigen die ze later vervingen, zonder normalisatie. Bovendien telden vervangende dieselritten mee als voltooide vertrekken.
+
+Andere uitkomsten beantwoorden andere vragen. De punctualiteitscijfers zijn niet rechtstreeks vergelijkbaar, omdat de grens voor wat als op tijd gold veranderde. Bij inspectie was de voorgeschreven rolstoelruimte aanwezig in alle drie onderzochte bussen, maar bij twee werkte de audiohalte-aankondiging niet. En de geregistreerde uitgaven aan elektriciteit en diesel vormden geen volledige kostenvergelijking.
+
+Daarom leverde de proef geen bewezen businesscase voor een elektrische vloot op. Op 18 september gaf het bestuur toestemming om binnen het bestaande planningsbudget een specificatie voor een winterbeoordeling voor te bereiden. Die beoordeling zelf en een besluit over aanschaf volgden daar niet uit.

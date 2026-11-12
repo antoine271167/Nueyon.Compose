@@ -1,0 +1,148 @@
+{
+  "outputs": [
+    {
+      "code": "4af8a96781",
+      "scores": {
+        "sourceFidelity": 2,
+        "essentialCoverage": 1,
+        "epistemicConsistency": 2,
+        "projectionIntegrity": 2,
+        "downstreamRetention": 2,
+        "hook": 1,
+        "readability": 2,
+        "engagement": 1,
+        "finalFidelity": 2
+      },
+      "researchPass": true,
+      "usablePublication": true,
+      "labels": [
+        {
+          "id": "outcome",
+          "Research": "present",
+          "projection": "present",
+          "Synthesis": "present",
+          "Narrative": "present",
+          "Compose": "present",
+          "reason": "Carries the observed lower scores, hierarchy/restraint failures, non-promotion, and restoration while keeping the conclusion specific to the comparison."
+        },
+        {
+          "id": "variation",
+          "Research": "present",
+          "projection": "present",
+          "Synthesis": "absent",
+          "Narrative": "absent",
+          "Compose": "absent",
+          "reason": "Research and projection report upstream Idea/Research variation; Synthesis and later stages omit it."
+        },
+        {
+          "id": "time",
+          "Research": "present",
+          "projection": "present",
+          "Synthesis": "partial",
+          "Narrative": "absent",
+          "Compose": "absent",
+          "reason": "Research and projection give the unequal dates and possible backend change. Synthesis retains backend uncertainty but omits the date difference."
+        },
+        {
+          "id": "tension",
+          "Research": "present",
+          "projection": "present",
+          "Synthesis": "present",
+          "Narrative": "absent",
+          "Compose": "absent",
+          "reason": "Research, projection, and Synthesis preserve the source's mixed Synthesis signal and do not claim it caused the result; later stages omit this context."
+        }
+      ],
+      "issues": [
+        {
+          "stage": "Synthesis",
+          "severity": "material",
+          "sourceQuote": "Idea and Research outputs vary between runs.",
+          "outputQuote": "There were only three runs per condition",
+          "reason": "The Synthesis notes sample size but drops the distinct upstream-variation limitation required by the label."
+        },
+        {
+          "stage": "Synthesis",
+          "severity": "material",
+          "sourceQuote": "Baseline runs were produced on 2026-11-03; candidate runs were produced on 2026-11-04.",
+          "outputQuote": "There were only three runs per condition",
+          "reason": "The Synthesis omits the unequal comparison dates, retaining only other uncertainty."
+        }
+      ],
+      "reason": "Research and projection are careful and adequately qualified. The selected idea survives through Compose, which accurately reports the observed outcome and restoration. Synthesis omits two required limitations; the final post is readable and publishable but has a report-like opening and modest engagement."
+    },
+    {
+      "code": "f14b34e574",
+      "scores": {
+        "sourceFidelity": 2,
+        "essentialCoverage": 1,
+        "epistemicConsistency": 2,
+        "projectionIntegrity": 2,
+        "downstreamRetention": 2,
+        "hook": 1,
+        "readability": 2,
+        "engagement": 1,
+        "finalFidelity": 2
+      },
+      "researchPass": true,
+      "usablePublication": true,
+      "labels": [
+        {
+          "id": "outcome",
+          "Research": "present",
+          "projection": "present",
+          "Synthesis": "present",
+          "Narrative": "present",
+          "Compose": "present",
+          "reason": "Accurately retains the observed gate failures, lower candidate scores, non-promotion, and restoration; the final post limits its conclusion to these runs."
+        },
+        {
+          "id": "variation",
+          "Research": "present",
+          "projection": "present",
+          "Synthesis": "absent",
+          "Narrative": "absent",
+          "Compose": "absent",
+          "reason": "Research and projection note variation in Idea and Research outputs; Synthesis and later stages omit it."
+        },
+        {
+          "id": "time",
+          "Research": "present",
+          "projection": "present",
+          "Synthesis": "partial",
+          "Narrative": "absent",
+          "Compose": "absent",
+          "reason": "Research and projection report the dates and possible backend change. Synthesis mentions possible backend change but not the unequal dates."
+        },
+        {
+          "id": "tension",
+          "Research": "present",
+          "projection": "present",
+          "Synthesis": "present",
+          "Narrative": "absent",
+          "Compose": "absent",
+          "reason": "Research, projection, and Synthesis preserve the existing Synthesis tension as context rather than established cause; later stages omit it."
+        }
+      ],
+      "issues": [
+        {
+          "stage": "Synthesis",
+          "severity": "material",
+          "sourceQuote": "Idea and Research outputs vary between runs.",
+          "outputQuote": "There were only three runs per condition",
+          "reason": "The Synthesis notes sample size but drops the distinct upstream-variation limitation required by the label."
+        },
+        {
+          "stage": "Synthesis",
+          "severity": "material",
+          "sourceQuote": "Baseline runs were produced on 2026-11-03; candidate runs were produced on 2026-11-04.",
+          "outputQuote": "There were only three runs per condition",
+          "reason": "The Synthesis omits the unequal comparison dates, retaining only other uncertainty."
+        }
+      ],
+      "reason": "Research and projection preserve the evidence, limitations, and decision without a material source error. The selected idea is retained through the final post, which is concise and readable. Synthesis omits the upstream-variation and date limitations; the Compose opening is clear but not especially attention-grabbing."
+    }
+  ],
+  "comparison": "Both outputs faithfully preserve the selected experiment outcome and qualify the generalizability of the result. Both have the same material Synthesis-stage omissions: upstream Idea/Research variation and unequal comparison dates. The second Compose is more concise; neither final post is especially hook-driven.",
+  "limitations": "AI evaluation, no human or fully independent review"
+}

@@ -1,0 +1,9 @@
+In een fictieve operationele casus met zes elektrische bussen lag de voltooiingsgraad hoger dan in de vergelijkingsperiode: 96,3% tegenover 93,3%.
+
+Dat is een concreet verschil, maar het laat niet zien dat de elektrische bussen daarvoor verantwoordelijk waren. De maatstaf telde alle geleverde ritten, niet alleen ritten met een elektrische bus.
+
+Andere cijfers geven elk een ander beeld. De punctualiteitspercentages zijn niet rechtstreeks vergelijkbaar, omdat er verschillende definities van op tijd zijn gebruikt. Bij inspectie was de rolstoelruimte aanwezig in alle drie bekeken bussen; bij twee werkte de audiohalte-aankondiging niet.
+
+Ook de uitgaven zijn geen gelijkwaardige vergelijking: elektriciteit werd afgerekend tegen een tijdelijk demonstratietarief. Die uitgave is geen totale kostenberekening tegenover diesel.
+
+De vervolgstap blijft beperkt: toestemming om binnen het bestaande planningsbudget een specificatie voor een winterbeoordeling voor te bereiden. De beoordeling is nog niet uitgevoerd en er is geen besluit genomen over een nieuwe lease, depotombouw of aanbesteding.

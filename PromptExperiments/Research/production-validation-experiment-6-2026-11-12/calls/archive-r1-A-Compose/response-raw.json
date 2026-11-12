@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-EjXDqNA9JUJ2LhhHS2pPm9Ot0ZLsG",
+  "object": "chat.completion",
+  "created": 1794521174,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"City Memory’s pilot produced 900 catalogue records from selected registers across three collections—not from the archive’s full holdings. But the number of records is only one part of the picture: accuracy and public access are separate questions.\\n\\nIn the non-random Cedar sample, some names were transcribed incorrectly, while the chronology was correct. In the Elm sample, names matched the originals, but some entries had the wrong year. Corrections covered the 17 entries identified in these checks; they do not establish the accuracy of all 900 records.\\n\\nAccess was a different issue. Descriptions for 140 records were visible, but their images were not publicly downloadable.\\n\\nThe committee approved designing a deeper random audit. A full-archive rollout was not approved. The pilot’s results are concrete, but catalogue production, accuracy checks and image access remain distinct measures.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5950,
+    "completion_tokens": 853,
+    "total_tokens": 6803,
+    "prompt_tokens_details": {
+      "cached_tokens": 1950,
+      "cache_write_tokens": 3997,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 656,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

@@ -1,0 +1,82 @@
+### Facts
+
+1. The dossier describes HarborLink as a fictional regional operator and the dossier itself as a synthetic operational source, not a real transport study.
+2. The demonstration involved six leased electric buses at Seabank depot and ran for eight weeks, from 4 May to 28 June 2026.
+3. The comparison period ran from 9 March to 3 May 2026.
+4. Both periods contained eight weeks, but their school-holiday calendars differed.
+5. The comparison period included two weeks of bridge diversion; the demonstration period included none.
+6. Dispatchers assigned the electric buses to two relatively flat routes close to the depot and retained diesel buses for a longer hill route.
+7. In the comparison period, the six vehicles later displaced by the trial completed 2,240 of 2,400 scheduled departures, a completion rate of 93.3%.
+8. During the trial, the electric group completed 2,310 of 2,400 scheduled departures, a completion rate of 96.3%.
+9. The completion counts are taken from the final dispatch ledger.
+10. A draft presentation used 2,340 trial departures; 30 duplicate departure IDs were removed on 9 July.
+11. In March–April, on-time arrival meant no more than three minutes late.
+12. In May–June, on-time arrival meant no more than five minutes late.
+13. The dashboard displays on-time arrival figures of 82% for March–April and 89% for May–June.
+14. The old GPS records were not reprocessed under a common on-time threshold.
+15. The source says the higher displayed punctuality percentage combines possible service differences with a measurement change.
+16. Completion rate uses the same definition in both periods and does not have the particular threshold problem affecting the punctuality figures.
+17. The source says the completion and punctuality measures must remain distinct.
+18. The diesel vehicles on the hill route completed 1,170 of 1,200 departures before the demonstration and 1,188 of 1,200 during it.
+19. The hill-route diesel vehicles used neither electric propulsion nor the new charger schedule.
+20. Roadworks ended on part of the hill route in April.
+21. The source describes the hill-route figures as a contextual comparison, not a randomized control, and says the different terrain and dispatch rules prevent a clean effect estimate.
+22. The source says this contextual comparison prevents treating every contemporaneous improvement as unique to the electric group.
+23. The electric buses used 42,000 kWh measured at the depot chargers; the figure includes charging losses up to the vehicle connection and excludes depot offices.
+24. The electric buses’ recorded distance was 35,000 km, and the energy team reports 1.20 kWh/km at the depot-charger meter boundary.
+25. A brochure quoted 1.05 kWh/km from vehicle telemetry, which uses a different boundary.
+26. Neither energy figure is a certified whole-life emissions estimate.
+27. No manufacturing, battery-replacement, or grid-displacement analysis was commissioned.
+28. The source says the operator’s cleaner-transport aspiration must not be presented as a demonstrated net-carbon reduction.
+29. Electricity expenditure was EUR 8,400 under a temporary demonstration tariff.
+30. The six comparable diesel vehicles previously used EUR 13,700 of fuel while driving 38,000 km; the source says they faced different traffic and used a different energy source.
+31. Charger lease, electrical upgrade, standing charges, and workshop training are not included in the electricity expenditure figure.
+32. The temporary tariff expires on 31 October.
+33. Finance had not produced a like-for-like whole-cost calculation.
+34. The source says the recorded expenditures may be quoted with their boundaries, but a proven annual saving or fleet payback period is not supported.
+35. Two chargers were available during the demonstration.
+36. During three overnight sessions, one charger was offline after a protective trip.
+37. Two buses departed on time after using the other charger; a third bus was substituted with a diesel bus.
+38. The final ledger counts the substituted trip as a completed route departure but not as an electric-bus departure.
+39. The source describes the summary completion rate as a service-delivery measure, not a measure of exclusive electric operation.
+40. In the same week, the charger vendor replaced a connector and updated firmware; the source says the record cannot identify which action resolved the trips.
+41. Staff handed feedback cards to riders on four Tuesday mornings, and 148 cards were returned.
+42. Of the returned cards, 112 described the ride as quieter, 21 were neutral, and 15 reported another issue without answering the noise question.
+43. The total number of riders approached and the number of unique riders are unknown; the same regular rider could return cards in more than one week.
+44. The source describes the cards as volunteered comments from selected sessions, not 148 independently sampled citizens or a representative satisfaction score.
+45. Nine drivers participated in a debrief; seven described the cab as easier to converse in and two reported unfamiliar braking response.
+46. Driver observations were collected after a training session, without blinded comparison.
+47. The source says the driver observations do not establish fewer collisions or better driver health.
+48. The safety register recorded no collision in either eight-week period for these vehicles; the source says this small exposure with zero events does not establish equal long-term collision risk.
+49. Accessibility reviewers inspected three buses.
+50. All three inspected buses had the specified wheelchair space.
+51. Two buses had an audio-stop announcement failure during inspection; the third passed both physical-space and audio checks.
+52. The source identifies physical access and functioning announcements as separate dimensions.
+53. The maintenance team restored the two audio units on 2 July, after the trial ended.
+54. The source says the final report must preserve both the trial-time failures and the later repair status, and must not present the whole demonstration as fully accessible merely because the space dimensions passed.
+55. Demonstration daytime temperatures ranged from 14 to 25 degrees Celsius; there were no freezing days and no winter heating loads.
+56. The leased buses had not been tested on the hill route in winter.
+57. The engineering team proposed a winter run with heating and matched route allocation; the proposal was not a completed trial and had no measured result.
+58. A charging-capacity spreadsheet assumes each vehicle returns by 23:00, while dispatch logs show five returns after that time.
+59. The source describes the spreadsheet as a planning assumption with observed exceptions, not an established operating guarantee.
+60. On 18 September 2026, the board authorized preparation of a winter-assessment specification within the existing planning budget.
+61. The board did not authorize another bus lease, a depot conversion, or a procurement award.
+62. The board rejected a communications draft stating that the pilot had proved the business case for electrifying the fleet.
+63. The approved wording calls the demonstration encouraging operational experience with unresolved cost, seasonality, and comparison questions; the source attributes this wording to the board and identifies it as an interpretation, not an independent causal finding.
+64. The operator describes the vehicles as “a visible first step toward cleaner local transport”; the source identifies this as the operator’s intended meaning, not a measured finding about emissions, public trust, or service quality.
+
+### Unknowns
+
+- Whether the change in completion rate between the comparison period and the trial was caused by the electric buses; the source identifies differing calendars, diversion, route allocation, and other comparison limitations but does not isolate causes.
+- A service-performance comparison using the same on-time threshold for both periods; the old GPS records were not reprocessed under a common threshold.
+- A clean estimate of the electric buses’ effect on service performance; the source says the assignment and route differences prevent one.
+- Whether the recorded energy figures correspond to a net-carbon reduction over the buses’ life cycle; the source says neither figure is a whole-life emissions estimate and that relevant analyses were not commissioned.
+- A like-for-like whole-cost comparison, proven annual saving, or fleet payback period.
+- Which charger intervention—connector replacement or firmware update—resolved the trips.
+- A representative rider satisfaction score or the number of unique riders represented by the returned cards.
+- Whether the demonstration established fewer collisions, better driver health, or equal long-term collision risk.
+- Whether all aspects of accessibility were functioning throughout the demonstration; the source records trial-time audio failures and their later repair, alongside the physical-space findings.
+- Winter performance, including performance on the hill route with heating loads; the proposed winter run had no measured result.
+- Whether the charging-capacity assumption that vehicles return by 23:00 holds in operation; the logs record five later returns.
+- The source does not establish a general business case for fleet electrification; the board rejected that wording, and the source records unresolved cost, seasonality, and comparison questions.
+- The source does not establish a general recommendation for other transport operators.

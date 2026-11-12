@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-EjXCtUCGTLiUSxn3dZ4dp8B5a1loV",
+  "object": "chat.completion",
+  "created": 1794521115,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"### Selected Story\\nDe achtweekse busproef liet een gunstig signaal zien in het aandeel voltooide vertrekken, maar dat resultaat is niet hetzelfde als bewijs voor een effect van elektrische aandrijving of voor een vlootbusinesscase. De bevindingen over punctualiteit, toegankelijkheid en kosten beantwoorden elk een andere vraag en hebben hun eigen beperkingen. De proef mondde daarom niet uit in een aanschafbesluit: de vastgelegde vervolgstap was alleen het voorbereiden van een winterbeoordeling.\\n\\n### Story Progression\\n- **Context:** In een proef van acht weken werden de resultaten van zes elektrische bussen vergeleken met die van zes voertuigen die zij later verdrongen. De lezer moet weten dat de vergelijking niet gelijkstaat aan een genormaliseerde schatting van het vlooteffect.\\n- **Development:** Het aandeel voltooide vertrekken was 96,3% tijdens de proef tegenover 93,3% in de vergelijkingsperiode. Dat is een concreet gunstig dienstverleningssignaal, maar vervangende dieselritten telden ook mee als voltooid. Houd dit bovendien gescheiden van punctualiteit: de meetgrens daarvoor veranderde. De toegankelijkheidsinspectie vond de voorgeschreven rolstoelruimte in alle drie onderzochte bussen, maar twee hadden een defecte audiohalte-aankondiging. De geregistreerde energie-uitgaven vormen evenmin een totale-kostenvergelijking.\\n- **Endpoint:** De resultaten geven geen bewezen vlootbusinesscase. Op 18 september gaf het bestuur toestemming om binnen het bestaande planningsbudget een specificatie voor een winterbeoordeling voor te bereiden; de beoordeling zelf en een besluit over aanschaf volgden daar niet uit.\\n\\n### Critical Constraints\\n- Schrijf het hogere voltooiingspercentage niet toe aan elektrische aandrijving; vervangende dieselritten telden mee en de vergelijking was niet genormaliseerd.\\n- Behandel punctualiteit niet als een rechtstreeks vergelijkbare verandering: de grens voor ‘op tijd’ veranderde.\\n- Presenteer de rolstoelruimte en de defecte aankondigingen als afzonderlijke toegankelijkheidsdimensies.\\n- Stel de geregistreerde elektriciteits- en dieseluitgaven niet voor als een vergelijkbare totale-kostenberekening of bewezen besparing.\\n- Beschrijf de winterbeoordeling als een voorbereidingsstap, niet als uitgevoerde test of besluit om bussen aan te schaffen.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 7725,
+    "completion_tokens": 824,
+    "total_tokens": 8549,
+    "prompt_tokens_details": {
+      "cached_tokens": 3956,
+      "cache_write_tokens": 3766,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 303,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

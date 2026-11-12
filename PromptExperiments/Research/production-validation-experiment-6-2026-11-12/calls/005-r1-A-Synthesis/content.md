@@ -1,0 +1,17 @@
+### Central insight
+In this test, adding a reusable editorial-intent rule to the Narrative prompt did not preserve the intended hierarchy: candidate outputs made orchestration central instead of keeping Nuëyon’s company-level message primary.
+
+### Evidence
+1. The intended introduction centered Nuëyon’s AI-first ambition for other AI-first businesses, presented Nuëyon.Compose as the first concrete product direction, and treated orchestration as supporting explanation.
+2. The candidate added a generic rule asking Narrative to preserve the Synthesis’s primary message, audience, and relative emphasis. The candidate condition changed only the Narrative user prompt.
+3. All three candidate Narrative runs and all three candidate Compose runs scored zero on the rubric gates for keeping orchestration subordinate and avoiding unsupported framing. The report says candidate outputs displaced or diluted the intended company-level message and audience.
+4. Candidate mean scores were lower than baseline at both stages: Narrative 4.00 versus 6.00, and Compose 3.33 versus 5.67. The candidate was not promoted, and the production Narrative prompt was restored byte-for-byte to the baseline.
+
+### What the narrative should emphasize
+Keep the story about this prompt intervention and the observed hierarchy failure in these runs. The intended contrast—company-level ambition primary, orchestration subordinate—defines what the rule was meant to preserve and what the candidate outputs did instead. Describe the scores and decision as part of this test, not as proof that the rule caused the outputs or will fail in other settings. Explain Nuëyon’s product direction; do not turn the result into advice for readers or a universal claim about editorial prompts.
+
+### What should be de-emphasized
+The 4/5 readability and coherence ratings, detailed examples of individual outputs, and technical exposition are secondary to the hierarchy failure and decision. Do not expand into a general account of the Compose workflow or orchestration.
+
+### Gaps and uncertainty
+There were three runs per condition; the report says this shows consistency in those samples, not statistical significance or general performance across settings. Whether the prompt change alone caused the differences, why the candidate outputs shifted emphasis, and whether a provider backend change affected results are not established. Avoid causal or general claims.

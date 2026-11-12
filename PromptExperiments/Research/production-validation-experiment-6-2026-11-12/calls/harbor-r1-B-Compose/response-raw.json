@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-EjXBwGYUp1NtZKVYyV44DPccySzyu",
+  "object": "chat.completion",
+  "created": 1794521056,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"Een synthetisch busdossier laat een bemoedigend servicecijfer zien, maar bewijst nog geen businesscase voor een elektrische vloot.\\n\\nTijdens de proefperiode werd 96,3% van de vertrekken als voltooid geregistreerd. Bij zes later verdrongen voertuigen in een andere periode was dat 93,3%. Dat verschil is concreet, maar zegt niet dat elektrische aandrijving de hogere voltooiingsgraad veroorzaakte: een voltooide rit kon ook met een dieselbus zijn uitgevoerd.\\n\\nOok de andere maatstaven vragen om een afzonderlijke beoordeling. De punctualiteitscijfers gebruikten verschillende vertragingdrempels. De toegankelijkheidscontroles betroffen drie geïnspecteerde bussen. En de geregistreerde energie-uitgaven vormen geen vergelijking van de totale kosten op gelijke basis.\\n\\nHet bestuur autoriseerde alleen de voorbereiding van een specificatie voor een winterbeoordeling. Die beoordeling is een mogelijke volgende stap, geen vastgesteld resultaat.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6039,
+    "completion_tokens": 1050,
+    "total_tokens": 7089,
+    "prompt_tokens_details": {
+      "cached_tokens": 1950,
+      "cache_write_tokens": 4086,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 823,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

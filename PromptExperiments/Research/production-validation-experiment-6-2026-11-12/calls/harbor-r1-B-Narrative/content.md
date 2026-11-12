@@ -1,0 +1,12 @@
+### Selected Story
+Het expliciet fictieve busdossier rapporteert een bemoedigende operationele uitkomst, maar geen bewezen vlootbusinesscase. In de proefperiode werden 96,3% van de vertrekken als voltooid geregistreerd, tegenover 93,3% voor zes later verdrongen voertuigen in een andere periode. Dat verschil is concreet, maar stelt niet vast dat elektrische aandrijving de hogere voltooiingsgraad veroorzaakte. De lezer moet begrijpen dat service, punctualiteit, toegankelijkheid en kosten afzonderlijk moeten worden beoordeeld en dat het bestuur alleen de voorbereiding van een winterbeoordeling autoriseerde.
+
+### Story Progression
+- **Context:** Introduceer het dossier als een synthetische evaluatie van een busproef, geen echte transportstudie, en geef de gerapporteerde voltooiingspercentages als vertrekpunt.
+- **Development:** Maak duidelijk waarom die service-uitkomst niet op zichzelf een businesscase bewijst: een voltooide rit kon ook met een dieselbus zijn uitgevoerd; de punctualiteitspercentages gebruiken verschillende vertragingdrempels; de toegankelijkheidscontroles betroffen drie geïnspecteerde bussen; en de geregistreerde energie-uitgaven zijn geen like-for-like vergelijking van totale kosten.
+- **Endpoint:** Eindig bij de beperkte vervolgstap die het bestuur autoriseerde: de voorbereiding van een specificatie voor een winterbeoordeling. Die beoordeling is een voorgenomen volgende stap, geen vastgesteld resultaat.
+
+### Critical Constraints
+- Presenteer het dossier niet als een echte transportstudie en schrijf het verschil in voltooiingspercentages niet toe aan elektrische aandrijving.
+- Stel niet dat punctualiteit rechtstreeks vergelijkbaar is, dat toegankelijkheid onder alle omstandigheden is aangetoond, of dat de proef totale kostenbesparingen opleverde.
+- Beschrijf de winterbeoordeling alleen als voorbereiding; het bestuur autoriseerde geen nieuwe lease, depotombouw of aanbesteding.

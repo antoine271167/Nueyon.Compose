@@ -1,0 +1,19 @@
+### Central insight
+De fictieve proef liet een hogere geregistreerde voltooiingsgraad zien, maar door vergelijkings- en meetbeperkingen, open toegankelijkheids- en kostenvragen en ontbrekende wintergegevens bewijst zij geen businesscase voor vlootelektrificatie; de vastgelegde vervolgstap is alleen de voorbereiding van een winterbeoordeling.
+
+### Evidence
+1. Het dossier is een synthetische, fictieve operationele bron, geen werkelijk vervoersonderzoek.
+2. In de proef voltooiden de zes elektrische bussen 2.310 van 2.400 geplande vertrekken (96,3%); in de vergelijkingsperiode voltooiden de zes voertuigen die later door de proef werden vervangen 2.240 van 2.400 (93,3%). De voltooiingsmaatstaf had in beide perioden dezelfde definitie, maar verschillen in onder meer schoolvakanties, omleidingen en route-indeling laten geen zuivere effectschatting toe. De maatstaf telt bovendien geleverde ritten, niet uitsluitend ritten met een elektrische bus.
+3. De getoonde punctualiteit steeg van 82% naar 89%, maar de grens voor ‘op tijd’ veranderde van maximaal drie naar maximaal vijf minuten te laat; de oude GPS-data zijn niet met één gemeenschappelijke grens herberekend. Die percentages zijn dus geen gelijk gemeten vergelijking.
+4. Bij inspectie hadden alle drie bekeken bussen de voorgeschreven rolstoelruimte, maar twee hadden een storing in de audiohalte-aankondiging. Die twee systemen werden pas na afloop van de proef, op 2 juli, hersteld.
+5. De gemelde elektriciteitsuitgave was €8.400 tegen een tijdelijk demonstratietarief. De genoemde €13.700 aan dieselbrandstof is geen gelijkwaardige kostenvergelijking; onder meer laad- en aansluitkosten ontbreken en Finance had geen totale kostenberekening opgesteld. Een jaarlijkse besparing of terugverdientijd is niet aangetoond.
+6. Op 18 september gaf het bestuur toestemming om binnen het bestaande planningsbudget een specificatie voor een winterbeoordeling voor te bereiden. Het gaf geen toestemming voor een nieuwe lease, depotombouw of aanbesteding.
+
+### What the narrative should emphasize
+Laat de voltooiingscijfers het concrete operationele resultaat tonen, maar presenteer het verschil niet als bewezen effect van de elektrische bussen. Gebruik de verschillende punctualiteitsgrenzen, de inspectiebevindingen en de begrensde kostenvergelijking om te laten zien dat elke maatstaf iets anders vaststelt en zijn eigen bewijsgrens heeft. Houd de winterbeoordeling bij wat daadwerkelijk is besloten: voorbereiding, geen uitgevoerde proef of vlootbesluit. Behandel dit als een fictieve, casusspecifieke besluitvorming; maak er geen algemene aanbeveling voor andere vervoerders van.
+
+### What should be de-emphasized
+Rijderskaarten, bestuurdersfeedback, energie- en emissiecijfers en de afzonderlijke laadincidenten zijn niet nodig om deze beperkte businesscase-vraag uit te leggen. Gebruik ze niet om tevredenheid, veiligheid, netto-emissiereductie of een bewezen operationeel voordeel te suggereren.
+
+### Gaps and uncertainty
+De oorzaak van het verschil in voltooiingsgraad is niet vastgesteld; een punctualiteitsvergelijking met één meetgrens ontbreekt. Er is geen gelijkwaardige totale kostenberekening of bewezen besparing. Winterprestaties, waaronder rijden op de heuvelroute met verwarmingsbelasting, zijn nog niet gemeten. De rolstoelruimtebevindingen tonen niet aan dat alle toegankelijkheidsvoorzieningen tijdens de hele proef functioneerden.

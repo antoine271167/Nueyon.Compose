@@ -1,0 +1,12 @@
+### Selected Story
+De pilot maakte 900 catalogusrecords voor geselecteerde registers uit drie collecties, geen catalogus van het volledige archief. Controles in Cedar en Elm laten zien dat correcte beschrijvingen en juiste chronologische ordening afzonderlijke kwaliteitsdimensies zijn. De beperkte correctie van 17 records en het besluit om eerst een diepere steekproefaudit te ontwerpen, niet het volledige archief uit te rollen, plaatsen de pilotopbrengst in perspectief. Ook is rechtenafhandeling niet hetzelfde als publieke beschikbaarheid: bij 140 scans waren beschrijvingen zichtbaar, maar waren de beelden niet publiek downloadbaar.
+
+### Story Progression
+- **Context:** Introduceer de 900 records voor geselecteerde registers uit drie collecties als een afgebakende pilot, niet als een catalogus van het hele archief.
+- **Development:** Gebruik de controles om de kwaliteitsdimensies concreet te maken: alle 60 gecontroleerde Cedar-records stonden chronologisch goed, maar 9 hadden een verkeerd overgenomen scheepsnaam; in Elm kwamen alle 60 namen overeen met de originelen, maar stonden 8 records onder het verkeerde jaar. De 17 fouten zijn gecorrigeerd en opnieuw gecontroleerd.
+- **Endpoint:** Verbind die beperkte correctie met het besluit van de commissie om een diepere, gestratificeerde steekproefaudit te laten ontwerpen, maar geen uitrol naar het volledige archief goed te keuren. Maak daarnaast duidelijk dat de 140 scans in afwachting van rechtenbeoordeling wel zichtbare beschrijvingen hadden, maar geen publiek downloadbare beelden.
+
+### Critical Constraints
+- Generaliseer de bevindingen niet naar de volledige collecties of het archief: de gecontroleerde records kwamen uit de eerste 20 items in drie toegankelijke dozen, niet uit een willekeurige steekproef van alle records; dozen met kwetsbare banden waren uitgesloten.
+- Beperk de bevestiging na correctie tot de 17 opnieuw gecontroleerde records.
+- Stel niet dat alle 760 scans met afgeronde rechtenafhandeling publiek downloadbaar waren; de bron bevestigt dat niet.

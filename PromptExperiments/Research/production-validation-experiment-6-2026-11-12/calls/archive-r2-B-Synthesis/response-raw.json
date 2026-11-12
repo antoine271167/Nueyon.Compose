@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-EjXIzLKpOfrd3Ca9rDMgamTazNksq",
+  "object": "chat.completion",
+  "created": 1794521493,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"### Central insight\\n\\nDe fictieve pilot leverde 900 catalogusrecords op, maar beperkte steekproefresultaten, gerichte correcties en onvolledige beeldvrijgave zijn geen bewijs van een foutloos of volledig openbaar archief; de commissie keurde alleen het ontwerpen van een diepere audit goed, niet een volledige uitrol.\\n\\n### Evidence\\n\\n1. City Memory is een fictief gemeentearchief en het dossier is synthetisch. De pilot maakte in tien weken 900 catalogusrecords, 300 per collectie.\\n2. De controles behandelden chronologische plaatsing en feitelijke beschrijving als afzonderlijke dimensies. In de eerste 60 gecontroleerde Cedar-records klopte de chronologie, maar waren 9 scheepsnamen verkeerd overgeschreven. In de eerste 60 gecontroleerde Elm-records klopten de scheepsnamen, maar stonden 8 records onder het verkeerde jaar. Dit waren de eerste 20 items uit drie toegankelijke dozen per collectie, geen willekeurige steekproef van alle records.\\n3. Op 8 juli zijn de 9 Cedar-namen en 8 Elm-datums gecorrigeerd. Alleen die 17 records zijn opnieuw gecontroleerd; dit bevestigt de correcties daarop, niet de volledige juistheid van de gecontroleerde of overige records.\\n4. Rechten zijn vrijgegeven voor 760 van de 900 scans. Van de overige 140 zijn beschrijvingen zichtbaar, maar kunnen de pagina-afbeeldingen niet publiek worden gedownload.\\n5. De commissie keurde het ontwerpen van een diepere, gestratificeerde willekeurige audit goed. Zij keurde geen volledige archiefuitrol goed.\\n\\n### What the narrative should emphasize\\n\\nLeg de concrete pilotopbrengst naast de grenzen van wat de controles en publicatiestatus aantonen. De Cedar- en Elm-voorbeelden maken zichtbaar dat juiste ordening en juiste beschrijving niet hetzelfde zijn; de beperkte steekproef en hercontrole begrenzen wat daaruit over het hele archief kan worden geconcludeerd. Beschrijf het besluit nauwkeurig als goedkeuring van het auditontwerp, niet als goedkeuring van een volledige uitrol. Houd de uitleg bij dit fictieve dossier en maak er geen algemeen advies voor archiefbeheer van.\\n\\n### What should be de-emphasized\\n\\nVermijd een uitweiding over de volledige pilotplanning, de afzonderlijke collecties buiten de voorbeelden die het onderscheid verduidelijken, en de afspraak voor fysieke inzage. Deze details zijn niet nodig om de beperkte reikwijdte van de resultaten en uitrolbeslissing uit te leggen.\\n\\n### Gaps and uncertainty\\n\\nDe niet-willekeurige controle van toegankelijke dozen stelt geen foutpercentage vast voor alle 900 records, de volledige collecties of uitgesloten materiaal. Omdat alleen de 17 gecorrigeerde records opnieuw zijn gecontroleerd, is ook voor de onderzochte records geen volledige juistheid aangetoond. Voor de 140 niet-vrijgegeven afbeeldingen is geen vaste publicatiedatum toegezegd. Het is onbekend of de geplande audit wordt uitgevoerd of wat die zal aantonen.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5200,
+    "completion_tokens": 2068,
+    "total_tokens": 7268,
+    "prompt_tokens_details": {
+      "cached_tokens": 1513,
+      "cache_write_tokens": 3684,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1381,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

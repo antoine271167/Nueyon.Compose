@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-EjXIcQ5OUvmgVoeOyotoRI8hlJRLK",
+  "object": "chat.completion",
+  "created": 1794521470,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"In een synthetisch dossier over een achtweekse proef in Seabank voltooiden zes geleasede elektrische bussen een groter aandeel geplande vertrekken dan de voertuigen die ze vervingen: 96,3% tegenover 93,3%.\\n\\nEen bemoedigend verschil, maar geen bewijs dat de bussen de oorzaak waren. De groepen reden op verschillende routes en waren niet willekeurig ingedeeld. Daardoor is dit geen genormaliseerde vergelijking en levert het geen bewezen vlootbusinesscase op.\\n\\nOok de andere bevindingen hebben elk hun eigen begrenzing. Punctualiteit werd gemeten met verschillende tijdsgrenzen. De toegankelijkheidsinspectie omvatte drie bussen. En de kostenvergelijking was onvolledig en gebruikte een tijdelijk elektriciteitstarief.\\n\\nHet bestuur stond geen bredere vlootbeslissing toe, maar wel de voorbereiding van een specificatie voor een winterbeoordeling, binnen het bestaande planningsbudget. De proef zelf testte de prestaties in de winter niet.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6109,
+    "completion_tokens": 675,
+    "total_tokens": 6784,
+    "prompt_tokens_details": {
+      "cached_tokens": 1950,
+      "cache_write_tokens": 4156,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 441,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

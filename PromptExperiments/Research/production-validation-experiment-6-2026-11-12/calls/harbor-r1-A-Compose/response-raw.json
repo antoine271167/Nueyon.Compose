@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-EjXD3tAihntdAThqwZWdW4WFeX2xQ",
+  "object": "chat.completion",
+  "created": 1794521125,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"Een proef met zes elektrische bussen liet na acht weken een gunstig signaal zien: 96,3% van de vertrekken werd voltooid, tegenover 93,3% in de vergelijkingsperiode.\\n\\nDat verschil zegt niet op zichzelf wat de elektrische aandrijving heeft bijgedragen. De proefbussen werden vergeleken met zes voertuigen die ze later vervingen, zonder normalisatie. Bovendien telden vervangende dieselritten mee als voltooide vertrekken.\\n\\nAndere uitkomsten beantwoorden andere vragen. De punctualiteitscijfers zijn niet rechtstreeks vergelijkbaar, omdat de grens voor wat als op tijd gold veranderde. Bij inspectie was de voorgeschreven rolstoelruimte aanwezig in alle drie onderzochte bussen, maar bij twee werkte de audiohalte-aankondiging niet. En de geregistreerde uitgaven aan elektriciteit en diesel vormden geen volledige kostenvergelijking.\\n\\nDaarom leverde de proef geen bewezen businesscase voor een elektrische vloot op. Op 18 september gaf het bestuur toestemming om binnen het bestaande planningsbudget een specificatie voor een winterbeoordeling voor te bereiden. Die beoordeling zelf en een besluit over aanschaf volgden daar niet uit.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6132,
+    "completion_tokens": 704,
+    "total_tokens": 6836,
+    "prompt_tokens_details": {
+      "cached_tokens": 1950,
+      "cache_write_tokens": 4179,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 443,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

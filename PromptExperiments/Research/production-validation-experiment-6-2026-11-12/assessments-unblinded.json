@@ -1,0 +1,1466 @@
+[
+  {
+    "code": "d517f67374",
+    "scores": {
+      "sourceFidelity": 2,
+      "essentialCoverage": 1,
+      "epistemicConsistency": 2,
+      "projectionIntegrity": 1,
+      "downstreamRetention": 1,
+      "hook": 1,
+      "readability": 2,
+      "engagement": 1,
+      "finalFidelity": 1
+    },
+    "researchPass": false,
+    "usablePublication": false,
+    "labels": [
+      {
+        "id": "service",
+        "Research": "present",
+        "projection": "present",
+        "Synthesis": "present",
+        "Narrative": "present",
+        "Compose": "present",
+        "reason": "Correct completion counts and distinction between service completion and exclusive electric operation are retained."
+      },
+      {
+        "id": "punctuality",
+        "Research": "present",
+        "projection": "present",
+        "Synthesis": "present",
+        "Narrative": "present",
+        "Compose": "present",
+        "reason": "The differing lateness thresholds and lack of a common reprocessing are accurately conveyed."
+      },
+      {
+        "id": "comparison",
+        "Research": "present",
+        "projection": "present",
+        "Synthesis": "partial",
+        "Narrative": "partial",
+        "Compose": "partial",
+        "reason": "Research and projection describe non-random allocation and the hill-route context; later stages retain the causal limitation but compress the comparison context."
+      },
+      {
+        "id": "cost",
+        "Research": "present",
+        "projection": "present",
+        "Synthesis": "present",
+        "Narrative": "partial",
+        "Compose": "partial",
+        "reason": "The research and synthesis preserve the incomplete, non-like-for-like cost boundary; the final text states this generally."
+      },
+      {
+        "id": "access",
+        "Research": "present",
+        "projection": "present",
+        "Synthesis": "present",
+        "Narrative": "partial",
+        "Compose": "partial",
+        "reason": "Research through synthesis accurately report the separate space and audio findings and later repair. The final stages mention inspections but omit the trial-time audio failures and repair."
+      },
+      {
+        "id": "status",
+        "Research": "present",
+        "projection": "present",
+        "Synthesis": "present",
+        "Narrative": "partial",
+        "Compose": "partial",
+        "reason": "The board’s limited authorization is retained; the final text does not explicitly state that winter performance has not been tested."
+      },
+      {
+        "id": "feedback",
+        "Research": "absent",
+        "projection": "absent",
+        "Synthesis": "absent",
+        "Narrative": "absent",
+        "Compose": "absent",
+        "reason": "Volunteered rider cards and their non-representative limits are omitted."
+      },
+      {
+        "id": "meaning",
+        "Research": "partial",
+        "projection": "partial",
+        "Synthesis": "absent",
+        "Narrative": "absent",
+        "Compose": "absent",
+        "reason": "Research and projection note that net-carbon impact is unestablished, but omit the operator’s attributed cleaner-transport aspiration; later stages omit both."
+      }
+    ],
+    "issues": [
+      {
+        "stage": "Research/projection/Synthesis",
+        "severity": "material",
+        "sourceQuote": "These are volunteered comments from selected sessions, not 148 independently sampled citizens and not a representative satisfaction score.",
+        "outputQuote": "Laat de emissieanalyse en de gedetailleerde routecontext",
+        "reason": "The required rider-feedback label is absent throughout the pipeline, including research and projection."
+      },
+      {
+        "stage": "Research/projection/Synthesis",
+        "severity": "material",
+        "sourceQuote": "The operator describes the vehicles as “a visible first step toward cleaner local transport”.",
+        "outputQuote": "De emissieanalyse en de gedetailleerde routecontext",
+        "reason": "The attributed intended meaning is omitted; the output only notes that net-carbon impact is not demonstrated."
+      },
+      {
+        "stage": "Narrative/Compose",
+        "severity": "material",
+        "sourceQuote": "Two had an audio-stop announcement failure during inspection. ... The maintenance team restored the two audio units on 2 July, after the trial ended.",
+        "outputQuote": "De toegankelijkheidscontroles betroffen drie geïnspecteerde bussen.",
+        "reason": "The final text mentions the inspection scope but omits the material trial-time announcement failures and subsequent repair."
+      }
+    ],
+    "reason": "Strong factual treatment of the service result, punctuality limits, costs, and board decision, but required research coverage is incomplete and the final account materially compresses the accessibility findings.",
+    "lane": "harbor-r1-B",
+    "arm": "B",
+    "contractValid": true,
+    "quoteVerification": [
+      {
+        "stage": "Research/projection/Synthesis",
+        "sourceExact": true,
+        "outputExact": true
+      },
+      {
+        "stage": "Research/projection/Synthesis",
+        "sourceExact": true,
+        "outputExact": false
+      },
+      {
+        "stage": "Narrative/Compose",
+        "sourceExact": false,
+        "outputExact": true
+      }
+    ],
+    "derivedResearchPass": false,
+    "derivedUsable": false,
+    "styleSum": 4
+  },
+  {
+    "code": "5f784b8168",
+    "scores": {
+      "sourceFidelity": 2,
+      "essentialCoverage": 2,
+      "epistemicConsistency": 2,
+      "projectionIntegrity": 2,
+      "downstreamRetention": 2,
+      "hook": 2,
+      "readability": 2,
+      "engagement": 1,
+      "finalFidelity": 2
+    },
+    "researchPass": true,
+    "usablePublication": true,
+    "labels": [
+      {
+        "id": "service",
+        "Research": "present",
+        "projection": "present",
+        "Synthesis": "present",
+        "Narrative": "present",
+        "Compose": "present",
+        "reason": "Correct counts, common completion definition, and the possibility of diesel-substituted completed trips are retained."
+      },
+      {
+        "id": "punctuality",
+        "Research": "present",
+        "projection": "present",
+        "Synthesis": "present",
+        "Narrative": "present",
+        "Compose": "present",
+        "reason": "The different thresholds and absence of common-threshold reprocessing are accurately conveyed and kept separate from completion."
+      },
+      {
+        "id": "comparison",
+        "Research": "present",
+        "projection": "present",
+        "Synthesis": "partial",
+        "Narrative": "partial",
+        "Compose": "partial",
+        "reason": "Research and projection include route allocation and other comparison limits; later stages retain non-normalization and avoid causal attribution but omit some contextual detail."
+      },
+      {
+        "id": "cost",
+        "Research": "present",
+        "projection": "present",
+        "Synthesis": "present",
+        "Narrative": "partial",
+        "Compose": "partial",
+        "reason": "The incomplete like-for-like cost boundary is retained, though the final text compresses the specific exclusions and temporary tariff."
+      },
+      {
+        "id": "access",
+        "Research": "present",
+        "projection": "present",
+        "Synthesis": "present",
+        "Narrative": "partial",
+        "Compose": "partial",
+        "reason": "The final text preserves the split between wheelchair space and audio-announcement failures but omits the later repair status."
+      },
+      {
+        "id": "status",
+        "Research": "present",
+        "projection": "present",
+        "Synthesis": "present",
+        "Narrative": "present",
+        "Compose": "present",
+        "reason": "The board’s authorization is correctly limited to preparing a winter-assessment specification, not conducting the assessment or approving procurement."
+      },
+      {
+        "id": "feedback",
+        "Research": "present",
+        "projection": "present",
+        "Synthesis": "absent",
+        "Narrative": "absent",
+        "Compose": "absent",
+        "reason": "Research and projection accurately describe the voluntary, non-representative cards; synthesis explicitly de-emphasizes this evidence and later stages omit it."
+      },
+      {
+        "id": "meaning",
+        "Research": "present",
+        "projection": "present",
+        "Synthesis": "absent",
+        "Narrative": "absent",
+        "Compose": "absent",
+        "reason": "Research and projection distinguish the operator’s attributed aspiration from measured environmental impact; synthesis and final stages omit the distinction."
+      }
+    ],
+    "issues": [
+      {
+        "stage": "Synthesis",
+        "severity": "minor",
+        "sourceQuote": "The public update should retain the concrete improvement in completed services without merging it with the incompatible punctuality series.",
+        "outputQuote": "Laat vrijwillige reizigerskaarten, chauffeursreacties, veiligheidsregistraties, onderhoudstellingen, laadincidenten en emissieclaims buiten het hoofdverhaal.",
+        "reason": "Feedback and the attributed cleaner-transport meaning are omitted from synthesis. This is not a central-story distortion, and the required final labels remain covered."
+      },
+      {
+        "stage": "Narrative/Compose",
+        "severity": "minor",
+        "sourceQuote": "The maintenance team restored the two audio units on 2 July, after the trial ended.",
+        "outputQuote": "bij twee werkte de audiohalte-aankondiging niet",
+        "reason": "The final text retains the trial-time failures but leaves out their later repair status."
+      }
+    ],
+    "reason": "Accurate and well-calibrated through the pipeline. The final account preserves the service contrast, separate measure limits, accessibility failures, cost boundary, and narrowly authorized next step; omitted feedback and aspiration are nonessential to the final required labels.",
+    "lane": "harbor-r1-A",
+    "arm": "A",
+    "contractValid": true,
+    "quoteVerification": [
+      {
+        "stage": "Synthesis",
+        "sourceExact": true,
+        "outputExact": true
+      },
+      {
+        "stage": "Narrative/Compose",
+        "sourceExact": true,
+        "outputExact": true
+      }
+    ],
+    "derivedResearchPass": true,
+    "derivedUsable": true,
+    "styleSum": 5
+  },
+  {
+    "code": "ada280034f",
+    "scores": {
+      "sourceFidelity": 2,
+      "essentialCoverage": 1,
+      "epistemicConsistency": 2,
+      "projectionIntegrity": 1,
+      "downstreamRetention": 2,
+      "hook": 1,
+      "readability": 2,
+      "engagement": 1,
+      "finalFidelity": 2
+    },
+    "researchPass": false,
+    "usablePublication": false,
+    "labels": [
+      {
+        "id": "outcome",
+        "Research": "present",
+        "projection": "present",
+        "Synthesis": "present",
+        "Narrative": "present",
+        "Compose": "present",
+        "reason": "Retains the observed hierarchy failure, lower mean scores, non-promotion, and rollback; the Compose text bounds the finding to these runs."
+      },
+      {
+        "id": "variation",
+        "Research": "absent",
+        "projection": "absent",
+        "Synthesis": "absent",
+        "Narrative": "absent",
+        "Compose": "absent",
+        "reason": "Does not preserve the source’s specific point that Idea and Research outputs varied between runs."
+      },
+      {
+        "id": "time",
+        "Research": "partial",
+        "projection": "partial",
+        "Synthesis": "partial",
+        "Narrative": "absent",
+        "Compose": "absent",
+        "reason": "Mentions possible backend change, but omits the Nov. 3 versus Nov. 4 comparison dates in the stages where this label is required."
+      },
+      {
+        "id": "tension",
+        "Research": "present",
+        "projection": "present",
+        "Synthesis": "absent",
+        "Narrative": "absent",
+        "Compose": "absent",
+        "reason": "Research and projection retain the possible Synthesis tension and its uncertainty; Synthesis omits it. Later stages are outside this label’s required scope."
+      }
+    ],
+    "issues": [
+      {
+        "stage": "Research/projection/Synthesis",
+        "severity": "material",
+        "sourceQuote": "Idea and Research outputs vary between runs.",
+        "outputQuote": "The source does not establish whether the score differences are statistically significant or whether the results generalize to other settings",
+        "reason": "The outputs retain limits on significance and generalization but omit the distinct required fact about run-to-run Idea and Research variability, leaving a required label absent and failing research-pass coverage."
+      },
+      {
+        "stage": "Research/projection/Synthesis",
+        "severity": "minor",
+        "sourceQuote": "The baseline runs were produced on 2026-11-03; candidate runs were produced on 2026-11-04.",
+        "outputQuote": "The report says the provider may change the backend behind the model alias.",
+        "reason": "The backend caveat is retained, but the unequal run dates are omitted."
+      }
+    ],
+    "reason": "Accurate, well-bounded account of the selected idea, with the key hierarchy failure, score decline, and decision retained through Compose. The required run-variability label is absent from Research, projection, and Synthesis, so research pass and publication usability fail.",
+    "lane": "005-r1-A",
+    "arm": "A",
+    "contractValid": true,
+    "quoteVerification": [
+      {
+        "stage": "Research/projection/Synthesis",
+        "sourceExact": true,
+        "outputExact": true
+      },
+      {
+        "stage": "Research/projection/Synthesis",
+        "sourceExact": true,
+        "outputExact": true
+      }
+    ],
+    "derivedResearchPass": false,
+    "derivedUsable": false,
+    "styleSum": 4
+  },
+  {
+    "code": "ee4fff32ce",
+    "scores": {
+      "sourceFidelity": 2,
+      "essentialCoverage": 1,
+      "epistemicConsistency": 2,
+      "projectionIntegrity": 1,
+      "downstreamRetention": 1,
+      "hook": 1,
+      "readability": 2,
+      "engagement": 1,
+      "finalFidelity": 1
+    },
+    "researchPass": false,
+    "usablePublication": false,
+    "labels": [
+      {
+        "id": "outcome",
+        "Research": "present",
+        "projection": "present",
+        "Synthesis": "present",
+        "Narrative": "partial",
+        "Compose": "partial",
+        "reason": "Research through Synthesis include the score declines and decision. Narrative and Compose retain the hierarchy failure and non-promotion but omit the lower mean scores, an important part of the selected result."
+      },
+      {
+        "id": "variation",
+        "Research": "absent",
+        "projection": "absent",
+        "Synthesis": "absent",
+        "Narrative": "absent",
+        "Compose": "absent",
+        "reason": "Does not preserve the source’s specific point that Idea and Research outputs varied between runs."
+      },
+      {
+        "id": "time",
+        "Research": "present",
+        "projection": "present",
+        "Synthesis": "present",
+        "Narrative": "absent",
+        "Compose": "absent",
+        "reason": "Required stages retain the unequal dates and possible backend change; downstream stages are outside this label’s required scope."
+      },
+      {
+        "id": "tension",
+        "Research": "present",
+        "projection": "present",
+        "Synthesis": "present",
+        "Narrative": "absent",
+        "Compose": "absent",
+        "reason": "Required stages preserve the competing Synthesis emphasis and note that its contribution was not tested; downstream stages are outside this label’s required scope."
+      }
+    ],
+    "issues": [
+      {
+        "stage": "Research/projection/Synthesis",
+        "severity": "material",
+        "sourceQuote": "Idea and Research outputs vary between runs.",
+        "outputQuote": "The report states that three runs per condition do not establish statistical significance or performance in other settings",
+        "reason": "The outputs retain the significance/generalization limitation but omit the distinct required fact about run-to-run Idea and Research variability, leaving a required label absent and failing research-pass coverage."
+      },
+      {
+        "stage": "Narrative/Compose",
+        "severity": "material",
+        "sourceQuote": "Candidate mean scores were lower than baseline at both stages: Narrative 4.00 versus 6.00, and Compose 3.33 versus 5.67.",
+        "outputQuote": "The candidate was not promoted, and the production prompt was restored.",
+        "reason": "The downstream story omits the reported score deterioration, which is part of the fixed Selected Idea’s evidence and outcome."
+      }
+    ],
+    "reason": "The research and intermediate stages accurately retain the dates, Synthesis tension, score results, and bounded interpretation. Narrative and Compose omit the reported lower scores, and all required upstream stages omit run-to-run Idea and Research variability; research pass and publication usability therefore fail.",
+    "lane": "005-r1-B",
+    "arm": "B",
+    "contractValid": true,
+    "quoteVerification": [
+      {
+        "stage": "Research/projection/Synthesis",
+        "sourceExact": true,
+        "outputExact": true
+      },
+      {
+        "stage": "Narrative/Compose",
+        "sourceExact": false,
+        "outputExact": true
+      }
+    ],
+    "derivedResearchPass": false,
+    "derivedUsable": false,
+    "styleSum": 4
+  },
+  {
+    "code": "87ce82b7f8",
+    "scores": {
+      "sourceFidelity": 2,
+      "essentialCoverage": 1,
+      "epistemicConsistency": 2,
+      "projectionIntegrity": 2,
+      "downstreamRetention": 1,
+      "hook": 2,
+      "readability": 2,
+      "engagement": 1,
+      "finalFidelity": 1
+    },
+    "researchPass": false,
+    "usablePublication": false,
+    "labels": [
+      {
+        "id": "service",
+        "Research": "present",
+        "projection": "present",
+        "Synthesis": "present",
+        "Narrative": "present",
+        "Compose": "present",
+        "reason": "The final-ledger comparison, shared completion definition, and distinction between service departures and exclusively electric departures are accurately represented."
+      },
+      {
+        "id": "punctuality",
+        "Research": "present",
+        "projection": "present",
+        "Synthesis": "present",
+        "Narrative": "present",
+        "Compose": "present",
+        "reason": "Both narrative stages distinguish punctuality from completion and retain the changed time thresholds."
+      },
+      {
+        "id": "comparison",
+        "Research": "present",
+        "projection": "present",
+        "Synthesis": "partial",
+        "Narrative": "partial",
+        "Compose": "partial",
+        "reason": "The source’s non-random route allocation and contextual diesel improvement are retained in Research/Synthesis, but holiday and diversion differences are compressed out downstream."
+      },
+      {
+        "id": "cost",
+        "Research": "present",
+        "projection": "present",
+        "Synthesis": "present",
+        "Narrative": "partial",
+        "Compose": "partial",
+        "reason": "The final post notes incomplete costs and the temporary tariff, but omits the different-distance/traffic basis and the emissions boundary; it does not claim savings."
+      },
+      {
+        "id": "access",
+        "Research": "present",
+        "projection": "present",
+        "Synthesis": "present",
+        "Narrative": "partial",
+        "Compose": "partial",
+        "reason": "The final stages say only that three buses were inspected; they omit the two trial-time audio failures and later repairs, despite the source requiring both dimensions and repair status."
+      },
+      {
+        "id": "status",
+        "Research": "present",
+        "projection": "present",
+        "Synthesis": "present",
+        "Narrative": "present",
+        "Compose": "present",
+        "reason": "The limited authorization for preparing a winter-assessment specification, rather than a fleet decision, is retained; winter was not tested."
+      },
+      {
+        "id": "feedback",
+        "Research": "present",
+        "projection": "present",
+        "Synthesis": "absent",
+        "Narrative": "absent",
+        "Compose": "absent",
+        "reason": "Synthesis explicitly de-emphasizes rider cards but does not preserve their voluntary, potentially repeated, non-representative nature; this label is not required in the final stages."
+      },
+      {
+        "id": "meaning",
+        "Research": "present",
+        "projection": "present",
+        "Synthesis": "absent",
+        "Narrative": "absent",
+        "Compose": "absent",
+        "reason": "Research and projection distinguish the operator’s cleaner-transport aspiration from measured impact, but Synthesis and later stages omit that attributed meaning; they make no unsupported environmental claim."
+      }
+    ],
+    "issues": [
+      {
+        "stage": "Synthesis",
+        "severity": "material",
+        "sourceQuote": "These are volunteered comments from selected sessions, not 148 independently sampled citizens and not a representative satisfaction score.",
+        "outputQuote": "Breid het verhaal niet uit naar reizigers- of chauffeurstevredenheid",
+        "reason": "The feedback label is required in Synthesis, but its essential sampling limitation is omitted rather than summarized."
+      },
+      {
+        "stage": "Synthesis",
+        "severity": "material",
+        "sourceQuote": "That phrase is the operator's intended meaning, not a measured finding about emissions, public trust or service quality.",
+        "outputQuote": "Breid het verhaal niet uit naar ... levenscyclusemissies",
+        "reason": "Synthesis omits the required distinction between attributed aspiration and measured impact."
+      },
+      {
+        "stage": "Compose",
+        "severity": "material",
+        "sourceQuote": "Two had an audio-stop announcement failure during inspection ... The maintenance team restored the two audio units on 2 July, after the trial ended.",
+        "outputQuote": "De toegankelijkheidsinspectie omvatte drie bussen",
+        "reason": "This gives the inspection scope but omits both the material audio failures and their later repair status, leaving the required accessibility evidence out of the final post."
+      }
+    ],
+    "reason": "Accurate research and a clear central story, but required feedback/meaning coverage disappears by Synthesis and the final post omits the key accessibility findings. The final post therefore does not meet the frozen publication criteria.",
+    "lane": "harbor-r2-B",
+    "arm": "B",
+    "contractValid": true,
+    "quoteVerification": [
+      {
+        "stage": "Synthesis",
+        "sourceExact": true,
+        "outputExact": true
+      },
+      {
+        "stage": "Synthesis",
+        "sourceExact": true,
+        "outputExact": false
+      },
+      {
+        "stage": "Compose",
+        "sourceExact": false,
+        "outputExact": true
+      }
+    ],
+    "derivedResearchPass": false,
+    "derivedUsable": false,
+    "styleSum": 5
+  },
+  {
+    "code": "d160a44359",
+    "scores": {
+      "sourceFidelity": 2,
+      "essentialCoverage": 2,
+      "epistemicConsistency": 2,
+      "projectionIntegrity": 2,
+      "downstreamRetention": 1,
+      "hook": 2,
+      "readability": 2,
+      "engagement": 1,
+      "finalFidelity": 1
+    },
+    "researchPass": false,
+    "usablePublication": false,
+    "labels": [
+      {
+        "id": "service",
+        "Research": "present",
+        "projection": "present",
+        "Synthesis": "present",
+        "Narrative": "present",
+        "Compose": "present",
+        "reason": "The correct completion figures and shared definition are retained, and the final post clarifies that the measure counts delivered trips rather than only electric-bus trips."
+      },
+      {
+        "id": "punctuality",
+        "Research": "present",
+        "projection": "present",
+        "Synthesis": "present",
+        "Narrative": "present",
+        "Compose": "present",
+        "reason": "The threshold change and lack of a common-threshold reprocessing are retained."
+      },
+      {
+        "id": "comparison",
+        "Research": "present",
+        "projection": "present",
+        "Synthesis": "partial",
+        "Narrative": "partial",
+        "Compose": "partial",
+        "reason": "Route allocation and calendar/diversion differences are retained, but the synthesis and final stages omit the hill-route diesel improvement that provides important contextual comparison."
+      },
+      {
+        "id": "cost",
+        "Research": "present",
+        "projection": "present",
+        "Synthesis": "partial",
+        "Narrative": "partial",
+        "Compose": "partial",
+        "reason": "The final stages correctly reject a like-for-like total-cost comparison and mention the temporary tariff, but compress out the differing distance/traffic and specific excluded costs."
+      },
+      {
+        "id": "access",
+        "Research": "present",
+        "projection": "present",
+        "Synthesis": "present",
+        "Narrative": "partial",
+        "Compose": "partial",
+        "reason": "The final post reports the two audio failures and the wheelchair-space finding, but omits the later repair status required alongside trial-time failures."
+      },
+      {
+        "id": "status",
+        "Research": "present",
+        "projection": "present",
+        "Synthesis": "present",
+        "Narrative": "present",
+        "Compose": "present",
+        "reason": "The final post accurately limits the decision to preparing a winter-assessment specification and says it has not been carried out; it does not imply a fleet approval."
+      },
+      {
+        "id": "feedback",
+        "Research": "present",
+        "projection": "present",
+        "Synthesis": "absent",
+        "Narrative": "absent",
+        "Compose": "absent",
+        "reason": "Synthesis says rider cards can be de-emphasized but does not preserve the volunteered, potentially repeated, non-representative character required by this label."
+      },
+      {
+        "id": "meaning",
+        "Research": "present",
+        "projection": "present",
+        "Synthesis": "absent",
+        "Narrative": "absent",
+        "Compose": "absent",
+        "reason": "Research and projection preserve the attributed cleaner-transport aspiration and its measurement boundary; Synthesis and later stages omit that required distinction."
+      }
+    ],
+    "issues": [
+      {
+        "stage": "Synthesis",
+        "severity": "material",
+        "sourceQuote": "These are volunteered comments from selected sessions, not 148 independently sampled citizens and not a representative satisfaction score.",
+        "outputQuote": "Rijderskaarten, bestuurdersfeedback, energie- en emissiecijfers ... zijn niet nodig",
+        "reason": "The required feedback label is explicitly set aside without retaining its essential representativeness limitation."
+      },
+      {
+        "stage": "Synthesis",
+        "severity": "material",
+        "sourceQuote": "That phrase is the operator's intended meaning, not a measured finding about emissions, public trust or service quality.",
+        "outputQuote": "Rijderskaarten, bestuurdersfeedback, energie- en emissiecijfers ... zijn niet nodig",
+        "reason": "The required distinction between the operator’s aspiration and measured environmental impact is omitted from Synthesis."
+      },
+      {
+        "stage": "Compose",
+        "severity": "material",
+        "sourceQuote": "The maintenance team restored the two audio units on 2 July, after the trial ended.",
+        "outputQuote": "Bij inspectie ... bij twee werkte de audiohalte-aankondiging niet.",
+        "reason": "The post accurately reports trial-time failures but omits the later repair status, which the source explicitly requires the final report to preserve."
+      }
+    ],
+    "reason": "The final post is readable and preserves the selected idea and main evidence boundaries. However, required labels disappear in Synthesis, and the final accessibility account omits the documented repair status, so the output does not pass the frozen criteria.",
+    "lane": "harbor-r2-A",
+    "arm": "A",
+    "contractValid": true,
+    "quoteVerification": [
+      {
+        "stage": "Synthesis",
+        "sourceExact": true,
+        "outputExact": false
+      },
+      {
+        "stage": "Synthesis",
+        "sourceExact": true,
+        "outputExact": false
+      },
+      {
+        "stage": "Compose",
+        "sourceExact": true,
+        "outputExact": false
+      }
+    ],
+    "derivedResearchPass": false,
+    "derivedUsable": false,
+    "styleSum": 5
+  },
+  {
+    "code": "76695ac809",
+    "scores": {
+      "sourceFidelity": 2,
+      "essentialCoverage": 1,
+      "epistemicConsistency": 2,
+      "projectionIntegrity": 2,
+      "downstreamRetention": 2,
+      "hook": 1,
+      "readability": 2,
+      "engagement": 1,
+      "finalFidelity": 1
+    },
+    "researchPass": false,
+    "usablePublication": false,
+    "labels": [
+      {
+        "id": "dimensions",
+        "Research": "present",
+        "projection": "present",
+        "Synthesis": "present",
+        "Narrative": "present",
+        "Compose": "present",
+        "reason": "The Cedar/Elm contrast preserves the distinction between ordering and factual description; the final also keeps the pilot’s limited scope."
+      },
+      {
+        "id": "sample",
+        "Research": "present",
+        "projection": "present",
+        "Synthesis": "present",
+        "Narrative": "present",
+        "Compose": "present",
+        "reason": "The non-random accessible-box selection, fragile-box exclusion, and limited recheck are retained, including in the final."
+      },
+      {
+        "id": "productivity",
+        "Research": "absent",
+        "projection": "absent",
+        "Synthesis": "absent",
+        "Narrative": "absent",
+        "Compose": "absent",
+        "reason": "The recorded timing comparison and its confounds and limits are omitted. Research, projection and Synthesis are required stages for this label."
+      },
+      {
+        "id": "logs",
+        "Research": "absent",
+        "projection": "absent",
+        "Synthesis": "absent",
+        "Narrative": "absent",
+        "Compose": "absent",
+        "reason": "The non-comparable search logs and the distinct request counts are omitted. Research, projection and Synthesis are required stages for this label."
+      },
+      {
+        "id": "rights",
+        "Research": "present",
+        "projection": "present",
+        "Synthesis": "present",
+        "Narrative": "partial",
+        "Compose": "partial",
+        "reason": "The 140 withheld images and their visible descriptions are correctly stated, but the final omits the 760 figure and the forecast/no-committed-date boundary."
+      },
+      {
+        "id": "access",
+        "Research": "absent",
+        "projection": "absent",
+        "Synthesis": "absent",
+        "Narrative": "absent",
+        "Compose": "absent",
+        "reason": "The contrast-scan pass alongside the unresolved keyboard-navigation defect is omitted."
+      },
+      {
+        "id": "decision",
+        "Research": "present",
+        "projection": "present",
+        "Synthesis": "partial",
+        "Narrative": "partial",
+        "Compose": "partial",
+        "reason": "The no-full-rollout decision and audit design are retained, but the later stages do not consistently specify that the proposed audit is random and stratified."
+      },
+      {
+        "id": "meaning",
+        "Research": "partial",
+        "projection": "partial",
+        "Synthesis": "absent",
+        "Narrative": "absent",
+        "Compose": "absent",
+        "reason": "Research and projection retain the explicit access commitment and unmeasured user effects, but omit the feedback/error coexistence; later stages omit this label. Only Research, projection and Synthesis are required."
+      }
+    ],
+    "issues": [
+      {
+        "stage": "Research/projection/Synthesis",
+        "severity": "material",
+        "sourceQuote": "“These are 24 minutes and 15 minutes per entry using the reported totals” and “One cannot infer that the tool caused a 37.5% labor saving”",
+        "outputQuote": "—",
+        "reason": "The required productivity comparison and its causal and cost-accounting limits are absent from these stages."
+      },
+      {
+        "stage": "Research/projection/Synthesis",
+        "severity": "material",
+        "sourceQuote": "“The visible increase is not a comparable measure of adoption” and “Search traffic, fulfilled requests and unique people are different quantities.”",
+        "outputQuote": "—",
+        "reason": "The search-log denominator change and the separate request-count caveat are omitted from required stages."
+      },
+      {
+        "stage": "Research/projection/Synthesis/Narrative/Compose",
+        "severity": "material",
+        "sourceQuote": "“A keyboard-only review still found that the language switch could not be reached on two record-page templates.”",
+        "outputQuote": "—",
+        "reason": "The unresolved accessibility defect is absent throughout, including the final, leaving a required quality dimension unreported."
+      }
+    ],
+    "reason": "The pipeline preserves the selected idea and handles the sampling, corrections, and withheld images carefully. However, required research-stage labels are omitted, and the final omits the keyboard-accessibility defect and some rights-status boundaries, so it is not a usable publication under the frozen rubric.",
+    "lane": "archive-r2-A",
+    "arm": "A",
+    "contractValid": true,
+    "quoteVerification": [
+      {
+        "stage": "Research/projection/Synthesis",
+        "sourceExact": false,
+        "outputExact": true
+      },
+      {
+        "stage": "Research/projection/Synthesis",
+        "sourceExact": false,
+        "outputExact": true
+      },
+      {
+        "stage": "Research/projection/Synthesis/Narrative/Compose",
+        "sourceExact": false,
+        "outputExact": true
+      }
+    ],
+    "derivedResearchPass": false,
+    "derivedUsable": false,
+    "styleSum": 4
+  },
+  {
+    "code": "e9c922ff7d",
+    "scores": {
+      "sourceFidelity": 1,
+      "essentialCoverage": 0,
+      "epistemicConsistency": 1,
+      "projectionIntegrity": 2,
+      "downstreamRetention": 1,
+      "hook": 2,
+      "readability": 2,
+      "engagement": 1,
+      "finalFidelity": 1
+    },
+    "researchPass": false,
+    "usablePublication": false,
+    "labels": [
+      {
+        "id": "dimensions",
+        "Research": "present",
+        "projection": "present",
+        "Synthesis": "present",
+        "Narrative": "present",
+        "Compose": "present",
+        "reason": "The output consistently distinguishes ordering, factual description, and image publication."
+      },
+      {
+        "id": "sample",
+        "Research": "present",
+        "projection": "present",
+        "Synthesis": "present",
+        "Narrative": "partial",
+        "Compose": "partial",
+        "reason": "Research through Synthesis identify the accessible, non-random sample and its limits. Narrative and Compose refer to limited checks of accessible boxes but omit details such as the excluded fragile-binding boxes."
+      },
+      {
+        "id": "productivity",
+        "Research": "absent",
+        "projection": "absent",
+        "Synthesis": "absent",
+        "Narrative": "absent",
+        "Compose": "absent",
+        "reason": "The recorded timing comparison, confounds, and limits are omitted. Research, projection and Synthesis are required stages for this label."
+      },
+      {
+        "id": "logs",
+        "Research": "absent",
+        "projection": "absent",
+        "Synthesis": "absent",
+        "Narrative": "absent",
+        "Compose": "absent",
+        "reason": "The non-comparable search logs and the separate request-count caveat are omitted. Research, projection and Synthesis are required stages for this label."
+      },
+      {
+        "id": "rights",
+        "Research": "present",
+        "projection": "present",
+        "Synthesis": "partial",
+        "Narrative": "contradicted",
+        "Compose": "contradicted",
+        "reason": "Research and projection distinguish clearance from public downloadability. The final stages incorrectly imply that all 760 scans were publicly released; the source establishes completed rights clearance, not public availability for those scans."
+      },
+      {
+        "id": "access",
+        "Research": "absent",
+        "projection": "absent",
+        "Synthesis": "absent",
+        "Narrative": "absent",
+        "Compose": "absent",
+        "reason": "The contrast result alongside the unresolved keyboard-navigation defect is omitted."
+      },
+      {
+        "id": "decision",
+        "Research": "present",
+        "projection": "present",
+        "Synthesis": "present",
+        "Narrative": "present",
+        "Compose": "present",
+        "reason": "The output accurately states that only designing the deeper stratified random audit was approved, not a full rollout."
+      },
+      {
+        "id": "meaning",
+        "Research": "absent",
+        "projection": "absent",
+        "Synthesis": "absent",
+        "Narrative": "absent",
+        "Compose": "absent",
+        "reason": "The explicit institutional access commitment, unmeasured user effects, and feedback/error coexistence are omitted. Only Research, projection and Synthesis are required."
+      }
+    ],
+    "issues": [
+      {
+        "stage": "Narrative/Compose",
+        "severity": "material",
+        "sourceQuote": "“Rights clearance is complete for 760 of the 900 scans.” and “The source does not establish that all 760 scans with completed rights clearance are publicly downloadable.”",
+        "outputQuote": "“760 scans zijn vrijgegeven.”",
+        "reason": "The source says rights clearance is complete, but does not say these 760 images were publicly released or downloadable. The final turns a rights-status fact into a public-availability claim."
+      },
+      {
+        "stage": "Research/projection/Synthesis/Narrative/Compose",
+        "severity": "material",
+        "sourceQuote": "“A keyboard-only review still found that the language switch could not be reached on two record-page templates.”",
+        "outputQuote": "—",
+        "reason": "The unresolved accessibility defect is omitted throughout, including the final, despite being a required label."
+      },
+      {
+        "stage": "Research/projection/Synthesis",
+        "severity": "material",
+        "sourceQuote": "“One cannot infer that the tool caused a 37.5% labor saving” and “The visible increase is not a comparable measure of adoption.”",
+        "outputQuote": "—",
+        "reason": "The required productivity and search-log limitations are absent from the research, projection and synthesis stages."
+      }
+    ],
+    "reason": "The output retains the selected idea and its sampling and decision limits, but the final materially overstates public availability for 760 scans and omits the keyboard-accessibility defect. Required research-stage labels are also missing, so it fails both research-pass and publication criteria.",
+    "lane": "archive-r2-B",
+    "arm": "B",
+    "contractValid": true,
+    "quoteVerification": [
+      {
+        "stage": "Narrative/Compose",
+        "sourceExact": false,
+        "outputExact": false
+      },
+      {
+        "stage": "Research/projection/Synthesis/Narrative/Compose",
+        "sourceExact": false,
+        "outputExact": true
+      },
+      {
+        "stage": "Research/projection/Synthesis",
+        "sourceExact": false,
+        "outputExact": true
+      }
+    ],
+    "derivedResearchPass": false,
+    "derivedUsable": false,
+    "styleSum": 5
+  },
+  {
+    "code": "4af8a96781",
+    "scores": {
+      "sourceFidelity": 2,
+      "essentialCoverage": 1,
+      "epistemicConsistency": 2,
+      "projectionIntegrity": 2,
+      "downstreamRetention": 2,
+      "hook": 1,
+      "readability": 2,
+      "engagement": 1,
+      "finalFidelity": 2
+    },
+    "researchPass": true,
+    "usablePublication": true,
+    "labels": [
+      {
+        "id": "outcome",
+        "Research": "present",
+        "projection": "present",
+        "Synthesis": "present",
+        "Narrative": "present",
+        "Compose": "present",
+        "reason": "Carries the observed lower scores, hierarchy/restraint failures, non-promotion, and restoration while keeping the conclusion specific to the comparison."
+      },
+      {
+        "id": "variation",
+        "Research": "present",
+        "projection": "present",
+        "Synthesis": "absent",
+        "Narrative": "absent",
+        "Compose": "absent",
+        "reason": "Research and projection report upstream Idea/Research variation; Synthesis and later stages omit it."
+      },
+      {
+        "id": "time",
+        "Research": "present",
+        "projection": "present",
+        "Synthesis": "partial",
+        "Narrative": "absent",
+        "Compose": "absent",
+        "reason": "Research and projection give the unequal dates and possible backend change. Synthesis retains backend uncertainty but omits the date difference."
+      },
+      {
+        "id": "tension",
+        "Research": "present",
+        "projection": "present",
+        "Synthesis": "present",
+        "Narrative": "absent",
+        "Compose": "absent",
+        "reason": "Research, projection, and Synthesis preserve the source's mixed Synthesis signal and do not claim it caused the result; later stages omit this context."
+      }
+    ],
+    "issues": [
+      {
+        "stage": "Synthesis",
+        "severity": "material",
+        "sourceQuote": "Idea and Research outputs vary between runs.",
+        "outputQuote": "There were only three runs per condition",
+        "reason": "The Synthesis notes sample size but drops the distinct upstream-variation limitation required by the label."
+      },
+      {
+        "stage": "Synthesis",
+        "severity": "material",
+        "sourceQuote": "Baseline runs were produced on 2026-11-03; candidate runs were produced on 2026-11-04.",
+        "outputQuote": "There were only three runs per condition",
+        "reason": "The Synthesis omits the unequal comparison dates, retaining only other uncertainty."
+      }
+    ],
+    "reason": "Research and projection are careful and adequately qualified. The selected idea survives through Compose, which accurately reports the observed outcome and restoration. Synthesis omits two required limitations; the final post is readable and publishable but has a report-like opening and modest engagement.",
+    "lane": "005-r2-B",
+    "arm": "B",
+    "contractValid": true,
+    "quoteVerification": [
+      {
+        "stage": "Synthesis",
+        "sourceExact": true,
+        "outputExact": true
+      },
+      {
+        "stage": "Synthesis",
+        "sourceExact": false,
+        "outputExact": true
+      }
+    ],
+    "derivedResearchPass": true,
+    "derivedUsable": false,
+    "styleSum": 4
+  },
+  {
+    "code": "f14b34e574",
+    "scores": {
+      "sourceFidelity": 2,
+      "essentialCoverage": 1,
+      "epistemicConsistency": 2,
+      "projectionIntegrity": 2,
+      "downstreamRetention": 2,
+      "hook": 1,
+      "readability": 2,
+      "engagement": 1,
+      "finalFidelity": 2
+    },
+    "researchPass": true,
+    "usablePublication": true,
+    "labels": [
+      {
+        "id": "outcome",
+        "Research": "present",
+        "projection": "present",
+        "Synthesis": "present",
+        "Narrative": "present",
+        "Compose": "present",
+        "reason": "Accurately retains the observed gate failures, lower candidate scores, non-promotion, and restoration; the final post limits its conclusion to these runs."
+      },
+      {
+        "id": "variation",
+        "Research": "present",
+        "projection": "present",
+        "Synthesis": "absent",
+        "Narrative": "absent",
+        "Compose": "absent",
+        "reason": "Research and projection note variation in Idea and Research outputs; Synthesis and later stages omit it."
+      },
+      {
+        "id": "time",
+        "Research": "present",
+        "projection": "present",
+        "Synthesis": "partial",
+        "Narrative": "absent",
+        "Compose": "absent",
+        "reason": "Research and projection report the dates and possible backend change. Synthesis mentions possible backend change but not the unequal dates."
+      },
+      {
+        "id": "tension",
+        "Research": "present",
+        "projection": "present",
+        "Synthesis": "present",
+        "Narrative": "absent",
+        "Compose": "absent",
+        "reason": "Research, projection, and Synthesis preserve the existing Synthesis tension as context rather than established cause; later stages omit it."
+      }
+    ],
+    "issues": [
+      {
+        "stage": "Synthesis",
+        "severity": "material",
+        "sourceQuote": "Idea and Research outputs vary between runs.",
+        "outputQuote": "There were only three runs per condition",
+        "reason": "The Synthesis notes sample size but drops the distinct upstream-variation limitation required by the label."
+      },
+      {
+        "stage": "Synthesis",
+        "severity": "material",
+        "sourceQuote": "Baseline runs were produced on 2026-11-03; candidate runs were produced on 2026-11-04.",
+        "outputQuote": "There were only three runs per condition",
+        "reason": "The Synthesis omits the unequal comparison dates, retaining only other uncertainty."
+      }
+    ],
+    "reason": "Research and projection preserve the evidence, limitations, and decision without a material source error. The selected idea is retained through the final post, which is concise and readable. Synthesis omits the upstream-variation and date limitations; the Compose opening is clear but not especially attention-grabbing.",
+    "lane": "005-r2-A",
+    "arm": "A",
+    "contractValid": true,
+    "quoteVerification": [
+      {
+        "stage": "Synthesis",
+        "sourceExact": true,
+        "outputExact": true
+      },
+      {
+        "stage": "Synthesis",
+        "sourceExact": false,
+        "outputExact": true
+      }
+    ],
+    "derivedResearchPass": true,
+    "derivedUsable": false,
+    "styleSum": 4
+  },
+  {
+    "code": "98df05495f",
+    "scores": {
+      "sourceFidelity": 1,
+      "essentialCoverage": 1,
+      "epistemicConsistency": 1,
+      "projectionIntegrity": 1,
+      "downstreamRetention": 1,
+      "hook": 2,
+      "readability": 2,
+      "engagement": 2,
+      "finalFidelity": 1
+    },
+    "researchPass": false,
+    "usablePublication": false,
+    "labels": [
+      {
+        "id": "dimensions",
+        "Research": "present",
+        "projection": "present",
+        "Synthesis": "present",
+        "Narrative": "partial",
+        "Compose": "partial",
+        "reason": "Research and Synthesis preserve the Cedar/Elm contrast and Rowan’s reviewed result. Narrative and Compose retain Cedar and Elm but omit Rowan’s result; the bounded sample and central distinction remain."
+      },
+      {
+        "id": "sample",
+        "Research": "partial",
+        "projection": "partial",
+        "Synthesis": "partial",
+        "Narrative": "partial",
+        "Compose": "partial",
+        "reason": "The non-random accessible-box sample and its limits are retained. Research and projection mention the 17-entry recheck, but omit the separate captain/owner-role error; Synthesis omits the correction and recheck details, and the final text does not specify them."
+      },
+      {
+        "id": "productivity",
+        "Research": "absent",
+        "projection": "absent",
+        "Synthesis": "absent",
+        "Narrative": "absent",
+        "Compose": "absent",
+        "reason": "No stage reports the 24-versus-15-minute recorded times, the material and accounting differences, or the lack of evidence for a tool-caused saving."
+      },
+      {
+        "id": "logs",
+        "Research": "absent",
+        "projection": "absent",
+        "Synthesis": "absent",
+        "Narrative": "absent",
+        "Compose": "absent",
+        "reason": "No stage preserves the non-comparable search logging rules or the distinction between searches and fulfilled requests."
+      },
+      {
+        "id": "rights",
+        "Research": "present",
+        "projection": "present",
+        "Synthesis": "partial",
+        "Narrative": "partial",
+        "Compose": "partial",
+        "reason": "The 760/140 boundary and withheld images are present. Synthesis, Narrative and Compose describe 760 scans as “vrijgegeven,” while the source states rights clearance is complete for 760; that wording overstates what the source explicitly establishes about public availability."
+      },
+      {
+        "id": "access",
+        "Research": "absent",
+        "projection": "absent",
+        "Synthesis": "absent",
+        "Narrative": "absent",
+        "Compose": "absent",
+        "reason": "The outputs omit the distinct accessibility findings: automated contrast passed, but the language switch remained unreachable on two templates and the repair was not deployed."
+      },
+      {
+        "id": "decision",
+        "Research": "present",
+        "projection": "present",
+        "Synthesis": "present",
+        "Narrative": "present",
+        "Compose": "present",
+        "reason": "Every stage correctly describes approval to design a deeper audit, not approval of a full-archive rollout or a completed audit."
+      },
+      {
+        "id": "meaning",
+        "Research": "absent",
+        "projection": "absent",
+        "Synthesis": "absent",
+        "Narrative": "absent",
+        "Compose": "absent",
+        "reason": "The outputs omit the institution’s stated access commitment and the limits of unsolicited feedback, including that positive feedback can coexist with a factual error."
+      }
+    ],
+    "issues": [
+      {
+        "stage": "Synthesis",
+        "severity": "material",
+        "sourceQuote": "The committee approved designing a deeper random audit stratified by handwriting, print quality and collection.",
+        "outputQuote": "beschrijf Nuëyons productrichting",
+        "reason": "This unexplained product-direction instruction is unsupported by the dossier and introduces an unrelated subject into the narrative guidance."
+      },
+      {
+        "stage": "Synthesis/Narrative/Compose",
+        "severity": "material",
+        "sourceQuote": "Rights clearance is complete for 760 of the 900 scans.",
+        "outputQuote": "Van de 900 scans waren er 760 vrijgegeven.",
+        "reason": "“Vrijgegeven” states that 760 scans were released, whereas the source explicitly reports rights clearance and separately states that the remaining 140 are not publicly downloadable."
+      },
+      {
+        "stage": "Research",
+        "severity": "material",
+        "sourceQuote": "One can report the recorded preparation-time difference with those boundaries. One cannot infer that the tool caused a 37.5% labor saving",
+        "outputQuote": "### Editorial relevance",
+        "reason": "Research omits the required productivity comparison and its confounds, as well as the required search-log comparison; neither is carried into later stages."
+      },
+      {
+        "stage": "Compose",
+        "severity": "material",
+        "sourceQuote": "A keyboard-only review still found that the language switch could not be reached on two record-page templates.",
+        "outputQuote": "De controles laten zien dat ordening, beschrijvingsnauwkeurigheid en publieke toegang verschillende zaken zijn.",
+        "reason": "The final text omits the required, distinct accessibility defect and the fact that its repair had not been deployed."
+      }
+    ],
+    "reason": "The narrative preserves the Selected Idea and correctly limits the audit decision, but the pipeline omits several rubric-required labels and introduces an unsupported product-direction reference. The final also overstates the 760-scan rights result and omits the accessibility finding.",
+    "lane": "archive-r1-B",
+    "arm": "B",
+    "contractValid": true,
+    "quoteVerification": [
+      {
+        "stage": "Synthesis",
+        "sourceExact": true,
+        "outputExact": true
+      },
+      {
+        "stage": "Synthesis/Narrative/Compose",
+        "sourceExact": true,
+        "outputExact": true
+      },
+      {
+        "stage": "Research",
+        "sourceExact": true,
+        "outputExact": true
+      },
+      {
+        "stage": "Compose",
+        "sourceExact": true,
+        "outputExact": true
+      }
+    ],
+    "derivedResearchPass": false,
+    "derivedUsable": false,
+    "styleSum": 6
+  },
+  {
+    "code": "c9f2788b8b",
+    "scores": {
+      "sourceFidelity": 1,
+      "essentialCoverage": 1,
+      "epistemicConsistency": 1,
+      "projectionIntegrity": 1,
+      "downstreamRetention": 1,
+      "hook": 1,
+      "readability": 2,
+      "engagement": 1,
+      "finalFidelity": 0
+    },
+    "researchPass": false,
+    "usablePublication": false,
+    "labels": [
+      {
+        "id": "dimensions",
+        "Research": "present",
+        "projection": "present",
+        "Synthesis": "present",
+        "Narrative": "partial",
+        "Compose": "partial",
+        "reason": "Research and Synthesis give the separate Cedar and Elm results. Narrative and Compose retain the difference between name accuracy and chronology but omit the exact reviewed counts and Rowan’s reviewed result."
+      },
+      {
+        "id": "sample",
+        "Research": "partial",
+        "projection": "partial",
+        "Synthesis": "partial",
+        "Narrative": "partial",
+        "Compose": "partial",
+        "reason": "The non-random accessible-box selection, limits, and 17-entry recheck are covered across the pipeline. The separate captain/owner-role correction is omitted."
+      },
+      {
+        "id": "productivity",
+        "Research": "absent",
+        "projection": "absent",
+        "Synthesis": "absent",
+        "Narrative": "absent",
+        "Compose": "absent",
+        "reason": "No stage gives the recorded 24-versus-15-minute comparison, its confounds and accounting exclusions, or the lack of a demonstrated tool-caused saving."
+      },
+      {
+        "id": "logs",
+        "Research": "absent",
+        "projection": "absent",
+        "Synthesis": "absent",
+        "Narrative": "absent",
+        "Compose": "absent",
+        "reason": "No stage explains that search counts use different logging rules or distinguishes searches from fulfilled requests."
+      },
+      {
+        "id": "rights",
+        "Research": "present",
+        "projection": "present",
+        "Synthesis": "partial",
+        "Narrative": "partial",
+        "Compose": "partial",
+        "reason": "Research and projection state the 760/140 boundary accurately. Later stages retain the 140 withheld-image fact but omit the 760-of-900 figure and the uncommitted review forecast."
+      },
+      {
+        "id": "access",
+        "Research": "absent",
+        "projection": "absent",
+        "Synthesis": "absent",
+        "Narrative": "absent",
+        "Compose": "absent",
+        "reason": "The pipeline omits the contrast result, the keyboard-only language-switch defect on two templates, and the fact that the planned repair was not deployed."
+      },
+      {
+        "id": "decision",
+        "Research": "present",
+        "projection": "present",
+        "Synthesis": "present",
+        "Narrative": "present",
+        "Compose": "present",
+        "reason": "All stages distinguish approval to design an audit from an approved full-archive rollout and do not claim the audit is complete."
+      },
+      {
+        "id": "meaning",
+        "Research": "partial",
+        "projection": "partial",
+        "Synthesis": "absent",
+        "Narrative": "absent",
+        "Compose": "absent",
+        "reason": "Research/projection note that user effects are unmeasured, but omit the stated access commitment and the feedback evidence and its limitations. Later stages omit the label entirely."
+      }
+    ],
+    "issues": [
+      {
+        "stage": "Research/Synthesis/Narrative/Compose",
+        "severity": "material",
+        "sourceQuote": "This is a synthetic but operationally realistic dossier, not a real archive report.",
+        "outputQuote": "City Memory’s pilot produced 900 catalogue records",
+        "reason": "The pipeline never identifies the archive and report as fictional and synthetic. The final presents the pilot as an unqualified real-world result, contrary to the source’s explicit status."
+      },
+      {
+        "stage": "Research/Synthesis",
+        "severity": "material",
+        "sourceQuote": "One can report the recorded preparation-time difference with those boundaries. One cannot infer that the tool caused a 37.5% labor saving",
+        "outputQuote": "### Interpretations\n\n- None.",
+        "reason": "The required productivity comparison and its limitations are absent; the required non-comparable search-log evidence is also omitted."
+      },
+      {
+        "stage": "Compose",
+        "severity": "material",
+        "sourceQuote": "A keyboard-only review still found that the language switch could not be reached on two record-page templates.",
+        "outputQuote": "The pilot’s results are concrete, but catalogue production, accuracy checks and image access remain distinct measures.",
+        "reason": "The final omits the separate accessibility defect and the undeployed repair, despite the required access label."
+      },
+      {
+        "stage": "Research/Synthesis/Narrative/Compose",
+        "severity": "material",
+        "sourceQuote": "The archive describes its bilingual catalogue as “an expression of our commitment to making local history approachable”.",
+        "outputQuote": "City Memory’s pilot produced 900 catalogue records",
+        "reason": "The pipeline omits the explicit institutional access commitment and the feedback limitations, including that praise can coexist with a factual error."
+      }
+    ],
+    "reason": "The output preserves the central distinction among production, accuracy, image access and the limited audit decision. However, it presents a synthetic case as a real pilot, omits multiple required labels, and therefore does not meet the frozen publication criteria.",
+    "lane": "archive-r1-A",
+    "arm": "A",
+    "contractValid": true,
+    "quoteVerification": [
+      {
+        "stage": "Research/Synthesis/Narrative/Compose",
+        "sourceExact": true,
+        "outputExact": true
+      },
+      {
+        "stage": "Research/Synthesis",
+        "sourceExact": true,
+        "outputExact": true
+      },
+      {
+        "stage": "Compose",
+        "sourceExact": true,
+        "outputExact": true
+      },
+      {
+        "stage": "Research/Synthesis/Narrative/Compose",
+        "sourceExact": true,
+        "outputExact": true
+      }
+    ],
+    "derivedResearchPass": false,
+    "derivedUsable": false,
+    "styleSum": 4
+  }
+]

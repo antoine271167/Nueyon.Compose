@@ -1,0 +1,32 @@
+{
+  "A": {
+    "researchPass": 2,
+    "usable": 1,
+    "assessed": 6,
+    "meanStyle": 4.333333333333333,
+    "tokens": {
+      "prompt_tokens": 186423,
+      "completion_tokens": 33888,
+      "total_tokens": 220311,
+      "calls": 24
+    },
+    "tokensPerUsable": 220311.0,
+    "weightedPerUsable": 321975.0,
+    "note": "null cost per usable means zero successes, undefined/infinite"
+  },
+  "B": {
+    "researchPass": 1,
+    "usable": 0,
+    "assessed": 6,
+    "meanStyle": 4.666666666666667,
+    "tokens": {
+      "prompt_tokens": 130079,
+      "completion_tokens": 30511,
+      "total_tokens": 160590,
+      "calls": 24
+    },
+    "tokensPerUsable": null,
+    "weightedPerUsable": null,
+    "note": "null cost per usable means zero successes, undefined/infinite"
+  }
+}

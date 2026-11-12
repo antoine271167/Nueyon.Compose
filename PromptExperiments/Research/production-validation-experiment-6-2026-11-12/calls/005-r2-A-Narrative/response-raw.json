@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-EjXGDxWRIaElAUBCRA1DclKU4zSos",
+  "object": "chat.completion",
+  "created": 1794521321,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"### Selected Story\\nA prompt comparison in Nuëyon’s editorial workflow tested whether a reusable instruction to preserve the Synthesis’s editorial intent and emphasis would keep the intended message hierarchy intact. In the candidate runs, orchestration became central rather than supporting the company-level AI-first message and Nuëyon.Compose’s product direction; the outputs also failed the factual-restraint gate. The candidate was not promoted, and the production Narrative prompt was restored.\\n\\n### Story Progression\\n- **Context:** Establish the intended hierarchy: Nuëyon’s AI-first ambition for other AI-first businesses first, Nuëyon.Compose as the first concrete product direction next, and orchestration in a supporting role.\\n- **Development:** Describe the candidate prompt change—a generic instruction to preserve editorial intent and emphasis—and the tested result: all three candidate Narrative and all three candidate Compose runs made orchestration central and failed the factual/editorial-restraint criteria. Candidate mean scores were also lower than baseline in both stages.\\n- **Endpoint:** Close with the documented evaluation decision: the candidate was not promoted, and the production prompt was restored byte-for-byte. Keep the conclusion specific to these runs.\\n\\n### Critical Constraints\\n- Do not claim the rule will fail universally or that the prompt change alone caused the results.\\n- Do not present orchestration as the intended primary message or claim benefits from the candidate.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 7562,
+    "completion_tokens": 616,
+    "total_tokens": 8178,
+    "prompt_tokens_details": {
+      "cached_tokens": 3956,
+      "cache_write_tokens": 3603,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 320,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

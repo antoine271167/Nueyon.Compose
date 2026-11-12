@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-EjXEfTse55uJSFHq3zyg1wrTCD6AL",
+  "object": "chat.completion",
+  "created": 1794521225,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"### Selected Story\\nDe synthetische City Memory-casus laat zien dat een geordend archief niet automatisch nauwkeurig beschreven of volledig publiek toegankelijk is. In de pilot liepen die kwaliteitsdimensies uiteen: Cedar was in de 60 gecontroleerde records correct geordend, maar 9 namen waren verkeerd overgeschreven; bij Elm klopten alle 60 scheepsnamen, maar stonden 8 records onder het verkeerde jaar. Ook waren van 900 scans er 760 vrijgegeven; de beschrijvingen van de overige 140 waren zichtbaar, maar de scans niet publiek downloadbaar. Het centrale punt is dat een resultaat op één dimensie geen bewijs is voor een foutloos of volledig openbaar archief. Het vervolg bleef beperkt tot goedkeuring van het ontwerpen van een diepere audit, niet van een volledige uitrol.\\n\\n### Story Progression\\n- **Context:** Introduceer City Memory als een synthetisch dossier over een fictief gemeentearchief. De tienweekse pilot maakte 900 catalogusrecords voor geselecteerde verzendregisters, niet voor het volledige archief.\\n- **Development:** Maak het onderscheid tussen ordening, beschrijvingsnauwkeurigheid en publieke toegang concreet met de uiteenlopende controles bij Cedar en Elm en de 760 vrijgegeven scans tegenover 140 scans waarvan alleen de beschrijvingen zichtbaar waren.\\n- **Endpoint:** Sluit af bij de beperkte vervolgstap: de commissie keurde het ontwerpen van een diepere, gestratificeerde aselecte audit goed, maar geen uitrol naar het volledige archief.\\n\\n### Critical Constraints\\n- Presenteer dit als een synthetische casus, niet als een werkelijk gemeentelijk pilotresultaat.\\n- De controles van telkens 60 records waren niet aselect en leveren geen foutpercentages voor volledige collecties op; gebruik ze alleen als concrete voorbeelden van verschillende kwaliteitsdimensies.\\n- Noem de audit als goedgekeurd ontwerp, niet als uitgevoerde audit; suggereer geen goedgekeurde volledige uitrol.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 7545,
+    "completion_tokens": 639,
+    "total_tokens": 8184,
+    "prompt_tokens_details": {
+      "cached_tokens": 3956,
+      "cache_write_tokens": 3586,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 196,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

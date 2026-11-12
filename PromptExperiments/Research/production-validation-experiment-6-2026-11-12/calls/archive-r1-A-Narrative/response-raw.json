@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-EjXDgKy3FNQrdUue5BJOJzvvNibO8",
+  "object": "chat.completion",
+  "created": 1794521164,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"### Selected Story\\nCity Memory’s pilot created 900 catalogue records from selected registers, but the results show that catalogue production, accuracy checks and public image access are separate dimensions. The reviewed Cedar and Elm samples revealed different errors in names and chronology, while 140 images were not publicly downloadable. The pilot therefore provides a concrete result without establishing a fully accurate or fully open archive; the committee’s next step was limited to approving the design of a deeper audit, not a full-archive rollout.\\n\\n### Story Progression\\n- **Context:** Establish that the 900 records came from selected registers in three collections, not from the archive’s full holdings.\\n- **Development:** Show how Cedar’s sample had name transcription errors but correct chronology, while Elm’s names matched the originals but some entries had the wrong year. The corrections covered only the 17 identified entries; separately, descriptions for 140 records were visible even though their images were not publicly downloadable.\\n- **Endpoint:** Clarify that these results represent distinct, limited checks and access status—not a certification of the catalogue or a fully open archive. The committee approved designing a deeper random audit, while a full-archive rollout remained unapproved.\\n\\n### Critical Constraints\\n- Do not generalize the non-random sample or the recheck of 17 corrected entries to all 900 records.\\n- Do not imply that all 900 images were publicly downloadable, or that rights clearance for 760 scans alone establishes public download access.\\n- Do not describe the proposed audit as completed or the full-archive rollout as approved.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 7404,
+    "completion_tokens": 731,
+    "total_tokens": 8135,
+    "prompt_tokens_details": {
+      "cached_tokens": 3956,
+      "cache_write_tokens": 3445,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 394,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

@@ -1,0 +1,211 @@
+{
+  "primary": {
+    "A": {
+      "researchPass": 2,
+      "usable": 1,
+      "assessed": 6,
+      "meanStyle": 4.333333333333333,
+      "tokens": {
+        "prompt_tokens": 186423,
+        "completion_tokens": 33888,
+        "total_tokens": 220311,
+        "calls": 24
+      },
+      "tokensPerUsable": 220311.0,
+      "weightedPerUsable": 321975.0,
+      "note": "null cost per usable means zero successes, undefined/infinite"
+    },
+    "B": {
+      "researchPass": 1,
+      "usable": 0,
+      "assessed": 6,
+      "meanStyle": 4.666666666666667,
+      "tokens": {
+        "prompt_tokens": 130079,
+        "completion_tokens": 30511,
+        "total_tokens": 160590,
+        "calls": 24
+      },
+      "tokensPerUsable": null,
+      "weightedPerUsable": null,
+      "note": "null cost per usable means zero successes, undefined/infinite"
+    }
+  },
+  "availabilityOnly": {
+    "A": 3,
+    "B": 2
+  },
+  "quoteChecks": {
+    "issues": 33,
+    "literalSourceQuotes": 22,
+    "literalOutputQuotesIncludingPlaceholders": 27,
+    "placeholderOutputQuotes": 5
+  },
+  "rawVsStrict": [
+    {
+      "lane": "harbor-r1-B",
+      "rawResearchPass": false,
+      "rawUsablePublication": false,
+      "strictDerivedResearchPass": false,
+      "strictDerivedUsable": false,
+      "researchProjectionLabelAvailabilityOnly": false,
+      "styleSum": 4,
+      "scoreContractValid": true
+    },
+    {
+      "lane": "harbor-r1-A",
+      "rawResearchPass": true,
+      "rawUsablePublication": true,
+      "strictDerivedResearchPass": true,
+      "strictDerivedUsable": true,
+      "researchProjectionLabelAvailabilityOnly": true,
+      "styleSum": 5,
+      "scoreContractValid": true
+    },
+    {
+      "lane": "005-r1-A",
+      "rawResearchPass": false,
+      "rawUsablePublication": false,
+      "strictDerivedResearchPass": false,
+      "strictDerivedUsable": false,
+      "researchProjectionLabelAvailabilityOnly": false,
+      "styleSum": 4,
+      "scoreContractValid": true
+    },
+    {
+      "lane": "005-r1-B",
+      "rawResearchPass": false,
+      "rawUsablePublication": false,
+      "strictDerivedResearchPass": false,
+      "strictDerivedUsable": false,
+      "researchProjectionLabelAvailabilityOnly": false,
+      "styleSum": 4,
+      "scoreContractValid": true
+    },
+    {
+      "lane": "harbor-r2-B",
+      "rawResearchPass": false,
+      "rawUsablePublication": false,
+      "strictDerivedResearchPass": false,
+      "strictDerivedUsable": false,
+      "researchProjectionLabelAvailabilityOnly": true,
+      "styleSum": 5,
+      "scoreContractValid": true
+    },
+    {
+      "lane": "harbor-r2-A",
+      "rawResearchPass": false,
+      "rawUsablePublication": false,
+      "strictDerivedResearchPass": false,
+      "strictDerivedUsable": false,
+      "researchProjectionLabelAvailabilityOnly": true,
+      "styleSum": 5,
+      "scoreContractValid": true
+    },
+    {
+      "lane": "archive-r2-A",
+      "rawResearchPass": false,
+      "rawUsablePublication": false,
+      "strictDerivedResearchPass": false,
+      "strictDerivedUsable": false,
+      "researchProjectionLabelAvailabilityOnly": false,
+      "styleSum": 4,
+      "scoreContractValid": true
+    },
+    {
+      "lane": "archive-r2-B",
+      "rawResearchPass": false,
+      "rawUsablePublication": false,
+      "strictDerivedResearchPass": false,
+      "strictDerivedUsable": false,
+      "researchProjectionLabelAvailabilityOnly": false,
+      "styleSum": 5,
+      "scoreContractValid": true
+    },
+    {
+      "lane": "005-r2-B",
+      "rawResearchPass": true,
+      "rawUsablePublication": true,
+      "strictDerivedResearchPass": true,
+      "strictDerivedUsable": false,
+      "researchProjectionLabelAvailabilityOnly": true,
+      "styleSum": 4,
+      "scoreContractValid": true
+    },
+    {
+      "lane": "005-r2-A",
+      "rawResearchPass": true,
+      "rawUsablePublication": true,
+      "strictDerivedResearchPass": true,
+      "strictDerivedUsable": false,
+      "researchProjectionLabelAvailabilityOnly": true,
+      "styleSum": 4,
+      "scoreContractValid": true
+    },
+    {
+      "lane": "archive-r1-B",
+      "rawResearchPass": false,
+      "rawUsablePublication": false,
+      "strictDerivedResearchPass": false,
+      "strictDerivedUsable": false,
+      "researchProjectionLabelAvailabilityOnly": false,
+      "styleSum": 6,
+      "scoreContractValid": true
+    },
+    {
+      "lane": "archive-r1-A",
+      "rawResearchPass": false,
+      "rawUsablePublication": false,
+      "strictDerivedResearchPass": false,
+      "strictDerivedUsable": false,
+      "researchProjectionLabelAvailabilityOnly": false,
+      "styleSum": 4,
+      "scoreContractValid": true
+    }
+  ],
+  "conservativeFinalSensitivity": {
+    "A": 0,
+    "B": 0,
+    "reason": "A harbor-r1, the sole strict pass, omits fictional/synthetic status and the later audio repair; both are explicit source boundaries, and comparable omissions are treated as material elsewhere. Root audit is unblinded, not an independent replacement verdict."
+  },
+  "notes": [
+    "The evaluator sometimes labels Research a fail for omissions first arising in Synthesis. Availability-only is a location-specific diagnostic, not a post-hoc promotion criterion.",
+    "The raw evaluator calls 005-r2 A and B usable, but gives both style sum 4; the pre-frozen threshold is 5. The strict derived score correctly excludes both.",
+    "Harbor-r1 A and Harbor-r2 A both omit the later audio repair: evaluator treats the former as minor, the latter as material. A harbor-r1 also omits fictional status, while archive-r1 A is rejected for an equivalent omission.",
+    "Archive rights label itself says 760 openbare scans, although source establishes completed rights clearance, not necessarily public downloadability. Frozen label remains unchanged; original source takes precedence. vrijgegeven may refer to rights release and is therefore ambiguous; exclude this diagnosis as sole decisive evidence.",
+    "Archive productivity/log labels may be overly broad for the selected Idea. Treat their exclusion as a sensitivity; the keyboard-accessibility omission is central, repeated in all archive arms, and remains.",
+    "No evaluator repairs/retries. Invalid literal quotes are not valid anchors. Manually verified examples are in critical-audit.md."
+  ],
+  "descriptiveTokenVariation": {
+    "A": {
+      "perPipeline": [
+        36866,
+        35697,
+        38191,
+        38380,
+        34943,
+        36234
+      ],
+      "mean": 36718.5,
+      "sampleSdAcrossMixedCases": 1369.7589203943883,
+      "min": 34943,
+      "max": 38380,
+      "note": "Mixed-case SD is descriptive, not pure stochastic repeat variance."
+    },
+    "B": {
+      "perPipeline": [
+        25663,
+        26618,
+        27040,
+        29026,
+        25762,
+        26481
+      ],
+      "mean": 26765,
+      "sampleSdAcrossMixedCases": 1225.5956918984334,
+      "min": 25663,
+      "max": 29026,
+      "note": "Mixed-case SD is descriptive, not pure stochastic repeat variance."
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-EjXHMwqNWkqVPmorwgVlWQzaAIi4m",
+  "object": "chat.completion",
+  "created": 1794521392,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"In een fictieve operationele casus met zes elektrische bussen lag de voltooiingsgraad hoger dan in de vergelijkingsperiode: 96,3% tegenover 93,3%.\\n\\nDat is een concreet verschil, maar het laat niet zien dat de elektrische bussen daarvoor verantwoordelijk waren. De maatstaf telde alle geleverde ritten, niet alleen ritten met een elektrische bus.\\n\\nAndere cijfers geven elk een ander beeld. De punctualiteitspercentages zijn niet rechtstreeks vergelijkbaar, omdat er verschillende definities van op tijd zijn gebruikt. Bij inspectie was de rolstoelruimte aanwezig in alle drie bekeken bussen; bij twee werkte de audiohalte-aankondiging niet.\\n\\nOok de uitgaven zijn geen gelijkwaardige vergelijking: elektriciteit werd afgerekend tegen een tijdelijk demonstratietarief. Die uitgave is geen totale kostenberekening tegenover diesel.\\n\\nDe vervolgstap blijft beperkt: toestemming om binnen het bestaande planningsbudget een specificatie voor een winterbeoordeling voor te bereiden. De beoordeling is nog niet uitgevoerd en er is geen besluit genomen over een nieuwe lease, depotombouw of aanbesteding.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6123,
+    "completion_tokens": 1019,
+    "total_tokens": 7142,
+    "prompt_tokens_details": {
+      "cached_tokens": 1950,
+      "cache_write_tokens": 4170,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 757,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

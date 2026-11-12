@@ -1,0 +1,84 @@
+{
+  "maxCalls": 54,
+  "pipelineCalls": 48,
+  "evaluationCalls": 6,
+  "retries": 0,
+  "maxOutputTokens": 6000,
+  "maxRequestUtf8Bytes": 180000,
+  "schedule": [
+    {
+      "case": "005",
+      "repeat": 1,
+      "arm": "A",
+      "id": "005-r1-A"
+    },
+    {
+      "case": "005",
+      "repeat": 1,
+      "arm": "B",
+      "id": "005-r1-B"
+    },
+    {
+      "case": "harbor",
+      "repeat": 1,
+      "arm": "B",
+      "id": "harbor-r1-B"
+    },
+    {
+      "case": "harbor",
+      "repeat": 1,
+      "arm": "A",
+      "id": "harbor-r1-A"
+    },
+    {
+      "case": "archive",
+      "repeat": 1,
+      "arm": "A",
+      "id": "archive-r1-A"
+    },
+    {
+      "case": "archive",
+      "repeat": 1,
+      "arm": "B",
+      "id": "archive-r1-B"
+    },
+    {
+      "case": "005",
+      "repeat": 2,
+      "arm": "B",
+      "id": "005-r2-B"
+    },
+    {
+      "case": "005",
+      "repeat": 2,
+      "arm": "A",
+      "id": "005-r2-A"
+    },
+    {
+      "case": "harbor",
+      "repeat": 2,
+      "arm": "A",
+      "id": "harbor-r2-A"
+    },
+    {
+      "case": "harbor",
+      "repeat": 2,
+      "arm": "B",
+      "id": "harbor-r2-B"
+    },
+    {
+      "case": "archive",
+      "repeat": 2,
+      "arm": "B",
+      "id": "archive-r2-B"
+    },
+    {
+      "case": "archive",
+      "repeat": 2,
+      "arm": "A",
+      "id": "archive-r2-A"
+    }
+  ],
+  "format": "LinkedInPost",
+  "ideaMode": "Frozen SelectedIdea fixture; no live Idea generation or judge; no arm-specific selection"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-EjXGMSIclrvmMfXHSWqj9mwv2PmFX",
+  "object": "chat.completion",
+  "created": 1794521330,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"content\": \"Nuëyon’s AI-first ambition for other AI-first businesses is meant to lead the story. Nuëyon.Compose is the first concrete product direction; orchestration belongs in a supporting role.\\n\\nA prompt comparison tested whether a reusable instruction to preserve editorial intent and emphasis would keep that hierarchy intact.\\n\\nIn all three candidate Narrative runs and all three candidate Compose runs, orchestration became the central message instead. The outputs also failed the factual and editorial-restraint criteria, and the candidate’s mean scores were lower than baseline in both stages.\\n\\nThe candidate prompt was not promoted. The production Narrative prompt was restored byte-for-byte. That was the outcome of these runs—not a conclusion about how the instruction would perform in every case.\"\n}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5910,
+    "completion_tokens": 473,
+    "total_tokens": 6383,
+    "prompt_tokens_details": {
+      "cached_tokens": 1950,
+      "cache_write_tokens": 3957,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 305,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

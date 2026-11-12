@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-EjXKeAkOPbRPZJXVncaxdx9U53boT",
+  "object": "chat.completion",
+  "created": 1794521596,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"Een pilotcatalogus van 900 records is geen catalogus van een heel archief. Dat onderscheid is belangrijk bij het lezen van de resultaten.\\n\\nDe 900 records betroffen geselecteerde registers uit drie collecties. De controles in Cedar en Elm lieten bovendien zien dat twee onderdelen van kwaliteit los van elkaar staan: een beschrijving kan kloppen terwijl de datering niet klopt, en andersom.\\n\\nVan de 60 gecontroleerde Cedar-records stonden alle records in de juiste chronologische volgorde, maar bij 9 was de scheepsnaam verkeerd overgenomen. In Elm kwamen de namen van alle 60 gecontroleerde records overeen met de originelen, maar 8 records stonden onder het verkeerde jaar.\\n\\nDe controle betrof records uit de eerste 20 items in drie toegankelijke dozen. Het was geen willekeurige steekproef uit alle records, en dozen met kwetsbare banden waren uitgesloten. De 17 gevonden fouten zijn gecorrigeerd en diezelfde 17 records zijn opnieuw gecontroleerd.\\n\\nDaarna besloot de commissie een diepere, gestratificeerde steekproefaudit te laten ontwerpen, maar keurde geen uitrol naar het volledige archief goed. De grenzen van de pilot zijn ook zichtbaar bij 140 scans: de beschrijvingen waren te zien, maar de beelden waren in afwachting van rechtenbeoordeling niet publiek downloadbaar.\\n\\nDe pilot leverde dus een afgebakende catalogus en een beperkte controle op — geen beoordeling van het volledige archief.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6079,
+    "completion_tokens": 840,
+    "total_tokens": 6919,
+    "prompt_tokens_details": {
+      "cached_tokens": 1950,
+      "cache_write_tokens": 4126,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 512,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}
