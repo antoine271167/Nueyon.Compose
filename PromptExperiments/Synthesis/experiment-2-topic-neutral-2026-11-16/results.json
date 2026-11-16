@@ -1,0 +1,187 @@
+{
+  "arm": {
+    "A": {
+      "pass": 9,
+      "total": 12,
+      "brandContaminations": 2,
+      "cases": {
+        "webb": 2,
+        "wolf": 2,
+        "digital": 2,
+        "lowell": 3
+      }
+    },
+    "B": {
+      "pass": 10,
+      "total": 12,
+      "brandContaminations": 0,
+      "cases": {
+        "webb": 2,
+        "wolf": 2,
+        "digital": 3,
+        "lowell": 3
+      }
+    }
+  },
+  "pairs": [
+    {
+      "case": "webb",
+      "repeat": 1,
+      "aPass": false,
+      "bPass": true,
+      "delta": [
+        2,
+        1,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "case": "webb",
+      "repeat": 2,
+      "aPass": true,
+      "bPass": true,
+      "delta": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "case": "webb",
+      "repeat": 3,
+      "aPass": true,
+      "bPass": false,
+      "delta": [
+        0,
+        0,
+        -1,
+        0,
+        -1
+      ]
+    },
+    {
+      "case": "wolf",
+      "repeat": 1,
+      "aPass": true,
+      "bPass": false,
+      "delta": [
+        -1,
+        0,
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "case": "wolf",
+      "repeat": 2,
+      "aPass": true,
+      "bPass": true,
+      "delta": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "case": "wolf",
+      "repeat": 3,
+      "aPass": false,
+      "bPass": true,
+      "delta": [
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "case": "digital",
+      "repeat": 1,
+      "aPass": true,
+      "bPass": true,
+      "delta": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "case": "digital",
+      "repeat": 2,
+      "aPass": false,
+      "bPass": true,
+      "delta": [
+        2,
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "case": "digital",
+      "repeat": 3,
+      "aPass": true,
+      "bPass": true,
+      "delta": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "case": "lowell",
+      "repeat": 1,
+      "aPass": true,
+      "bPass": true,
+      "delta": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "case": "lowell",
+      "repeat": 2,
+      "aPass": true,
+      "bPass": true,
+      "delta": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "case": "lowell",
+      "repeat": 3,
+      "aPass": true,
+      "bPass": true,
+      "delta": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "verdict": "NO-GO",
+  "gateFailure": "B 10/12 volledig voldoende < vooraf vereiste 11/12; merkcontaminatie 2/12 A versus 0/12 B, overige kwaliteitsgebreken verhinderen GO.",
+  "note": "Geobserveerde verbetering op merkidentiteit, geen bewijs dat alle actor/soortidentiteitsfouten opgelost zijn en geen bewezen causale regressie door de promptwijziging."
+}

@@ -1,0 +1,491 @@
+{
+  "assessor": "Work-assistent; ongeblindeerd, geen onafhankelijk mens, geen evaluatiemodel",
+  "dimensions": [
+    "BT",
+    "F",
+    "BN",
+    "IW",
+    "NG"
+  ],
+  "rubric": "protocol.md, vóór calls bevroren",
+  "runs": [
+    {
+      "id": "digital-r1-A",
+      "arm": "A",
+      "case": "digital",
+      "scores": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "pass": true,
+      "reason": "Voldoende onder de prospectieve rubric: centrale betekenis, concrete grondstof en relevante grenzen blijven beschikbaar.",
+      "findings": [],
+      "minor": []
+    },
+    {
+      "id": "digital-r1-B",
+      "arm": "B",
+      "case": "digital",
+      "scores": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "pass": true,
+      "reason": "Voldoende onder de prospectieve rubric: centrale betekenis, concrete grondstof en relevante grenzen blijven beschikbaar.",
+      "findings": [],
+      "minor": []
+    },
+    {
+      "id": "digital-r2-A",
+      "arm": "A",
+      "case": "digital",
+      "scores": [
+        0,
+        1,
+        2,
+        2,
+        1
+      ],
+      "pass": false,
+      "reason": "OPG-praktijk wordt in guidance Nuëyons account; overige kernkeuzes en beperkingen bruikbaar.",
+      "findings": [
+        {
+          "match": "Explain this as Nuëyon",
+          "kind": "actorcontaminatie",
+          "facts": [
+            2,
+            4,
+            6,
+            7
+          ],
+          "attribution": "Synthesis; OPG/POA in bron, geen Nuëyon in inputs.",
+          "line": 12,
+          "quote": "Keep the story on the documented sequencing and cadence: applicants came first, then the team used a defined rhythm to develop and research the service while processing applications. Explain this as Nuëyon’s account of one product’s direction and working choices, not as advice or a universal recipe for service design. The five-week figures may be used as reported context, but not as proof that these choices caused the results."
+        }
+      ],
+      "minor": [
+        "12-week public-launch deadline in insight is stelliger dan gerapporteerde doorlooptijd; oorspronkelijke opdracht was korter."
+      ]
+    },
+    {
+      "id": "digital-r2-B",
+      "arm": "B",
+      "case": "digital",
+      "scores": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "pass": true,
+      "reason": "Voldoende onder de prospectieve rubric: centrale betekenis, concrete grondstof en relevante grenzen blijven beschikbaar.",
+      "findings": [],
+      "minor": [
+        "alternating fortnightly weeks in insight is onhandig; Evidence 3 specificeert correct tweewekelijkse sprint met twee verschillende weken."
+      ]
+    },
+    {
+      "id": "digital-r3-A",
+      "arm": "A",
+      "case": "digital",
+      "scores": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "pass": true,
+      "reason": "Voldoende onder de prospectieve rubric: centrale betekenis, concrete grondstof en relevante grenzen blijven beschikbaar.",
+      "findings": [],
+      "minor": [
+        "twaalf weken later verankert onbekend beginpunt te strak; Gaps benoemt onbekend startpunt. Zelfde kleine onnauwkeurigheid als baseline."
+      ]
+    },
+    {
+      "id": "digital-r3-B",
+      "arm": "B",
+      "case": "digital",
+      "scores": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "pass": true,
+      "reason": "Voldoende onder de prospectieve rubric: centrale betekenis, concrete grondstof en relevante grenzen blijven beschikbaar.",
+      "findings": [],
+      "minor": []
+    },
+    {
+      "id": "lowell-r1-A",
+      "arm": "A",
+      "case": "lowell",
+      "scores": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "pass": true,
+      "reason": "Voldoende onder de prospectieve rubric: centrale betekenis, concrete grondstof en relevante grenzen blijven beschikbaar.",
+      "findings": [],
+      "minor": []
+    },
+    {
+      "id": "lowell-r1-B",
+      "arm": "B",
+      "case": "lowell",
+      "scores": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "pass": true,
+      "reason": "Voldoende onder de prospectieve rubric: centrale betekenis, concrete grondstof en relevante grenzen blijven beschikbaar.",
+      "findings": [],
+      "minor": []
+    },
+    {
+      "id": "lowell-r2-A",
+      "arm": "A",
+      "case": "lowell",
+      "scores": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "pass": true,
+      "reason": "Voldoende onder de prospectieve rubric: centrale betekenis, concrete grondstof en relevante grenzen blijven beschikbaar.",
+      "findings": [],
+      "minor": [
+        "Worker recollections betreffen vooral Depression-era; zin naast postwar closures kan tijdvakken te dicht bij elkaar zetten. Geen expliciete nieuwe datum voor recollections."
+      ]
+    },
+    {
+      "id": "lowell-r2-B",
+      "arm": "B",
+      "case": "lowell",
+      "scores": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "pass": true,
+      "reason": "Voldoende onder de prospectieve rubric: centrale betekenis, concrete grondstof en relevante grenzen blijven beschikbaar.",
+      "findings": [],
+      "minor": []
+    },
+    {
+      "id": "lowell-r3-A",
+      "arm": "A",
+      "case": "lowell",
+      "scores": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "pass": true,
+      "reason": "Voldoende onder de prospectieve rubric: centrale betekenis, concrete grondstof en relevante grenzen blijven beschikbaar.",
+      "findings": [],
+      "minor": []
+    },
+    {
+      "id": "lowell-r3-B",
+      "arm": "B",
+      "case": "lowell",
+      "scores": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "pass": true,
+      "reason": "Voldoende onder de prospectieve rubric: centrale betekenis, concrete grondstof en relevante grenzen blijven beschikbaar.",
+      "findings": [],
+      "minor": []
+    },
+    {
+      "id": "webb-r1-A",
+      "arm": "A",
+      "case": "webb",
+      "scores": [
+        0,
+        1,
+        1,
+        2,
+        1
+      ],
+      "pass": false,
+      "reason": "Ongefundeerde Nuëyon-verbinding in guidance; vouwen wegens formaat ontbreekt en afmetingen expliciet secundair. Kern tweede week versus zes maanden wel behouden.",
+      "findings": [
+        {
+          "match": "Beschrijf Nuëyons onderwerp",
+          "kind": "actorcontaminatie",
+          "facts": [
+            1,
+            7
+          ],
+          "attribution": "Synthesis; Nuëyon staat niet in Idea, volledige Research, projectie of bron.",
+          "line": 10,
+          "quote": "Maak het onderscheid tussen het voltooien van de fysieke uitvouwing en het gereed zijn voor routinewetenschap de rode draad. De tijdlijn uit bewijs 2 en 3 laat zien waarom “uitgevouwen” niet hetzelfde betekende als “klaar”. Beschrijf Nuëyons onderwerp als Webbs eigen ingebruiknameproces, niet als advies voor hoe lezers projecten moeten aanpakken. De gedocumenteerde potentiële faalpunten uit bewijs 1 kunnen de inzet van de uitvouwing verduidelijken, maar bewijzen niet dat zulke problemen zich daadwerkelijk voordeden."
+        },
+        {
+          "match": "De afmetingen van Webb",
+          "kind": "essentiële omissie",
+          "facts": [
+            1
+          ],
+          "attribution": "Synthesisselectie; formaat/vouwreden beschikbaar in Fact 1.",
+          "line": 13,
+          "quote": "De afmetingen van Webb en de raketkuip, de afzonderlijke stappen van de zonneschilduitvouwing, de volledige lijst van spiegel- en instrumenthandelingen en de uiteindelijke prestatie ten opzichte van verwachtingen zijn niet nodig voor deze centrale lijn. Vermijd ook een aparte uitleg van ontwerp en testen als verklaring voor het verloop."
+        }
+      ],
+      "minor": [
+        "Fasering soms te scherp opeenvolgend; cooling begon al tijdens deployment. Geen nieuwe kernrelatie of storing, daarom geen aparte scoreaftrek."
+      ]
+    },
+    {
+      "id": "webb-r1-B",
+      "arm": "B",
+      "case": "webb",
+      "scores": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "pass": true,
+      "reason": "Voldoende onder de prospectieve rubric: centrale betekenis, concrete grondstof en relevante grenzen blijven beschikbaar.",
+      "findings": [],
+      "minor": []
+    },
+    {
+      "id": "webb-r2-A",
+      "arm": "A",
+      "case": "webb",
+      "scores": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "pass": true,
+      "reason": "Voldoende onder de prospectieve rubric: centrale betekenis, concrete grondstof en relevante grenzen blijven beschikbaar.",
+      "findings": [],
+      "minor": []
+    },
+    {
+      "id": "webb-r2-B",
+      "arm": "B",
+      "case": "webb",
+      "scores": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "pass": true,
+      "reason": "Voldoende onder de prospectieve rubric: centrale betekenis, concrete grondstof en relevante grenzen blijven beschikbaar.",
+      "findings": [],
+      "minor": [
+        "Fasering soms te scherp opeenvolgend; cooling begon al tijdens deployment. Geen nieuwe kernrelatie of storing, daarom geen aparte scoreaftrek."
+      ]
+    },
+    {
+      "id": "webb-r3-A",
+      "arm": "A",
+      "case": "webb",
+      "scores": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "pass": true,
+      "reason": "Voldoende onder de prospectieve rubric: centrale betekenis, concrete grondstof en relevante grenzen blijven beschikbaar.",
+      "findings": [],
+      "minor": [
+        "Fasering soms te scherp opeenvolgend; cooling begon al tijdens deployment. Geen nieuwe kernrelatie of storing, daarom geen aparte scoreaftrek."
+      ]
+    },
+    {
+      "id": "webb-r3-B",
+      "arm": "B",
+      "case": "webb",
+      "scores": [
+        2,
+        2,
+        1,
+        2,
+        1
+      ],
+      "pass": false,
+      "reason": "Kern deployment versus wetenschap klopt, maar vereiste vouwen wegens formaat ontbreekt en vouwontwerp expliciet gedeprioriteerd. Zelfde tekort als Webb-A-r1, los van diens actorfout.",
+      "findings": [
+        {
+          "match": "De exacte afmetingen en het vouwontwerp",
+          "kind": "essentiële omissie",
+          "facts": [
+            1
+          ],
+          "attribution": "Synthesisselectie; Fact 1 volledig in Research/projectie beschikbaar.",
+          "line": 14,
+          "quote": "De exacte afmetingen en het vouwontwerp voor de raket, afzonderlijke stappen van het zonneschild, grondbesturing en telemetrie zijn niet nodig om de centrale tegenstelling te begrijpen. Vermijd ook een breder verhaal over Webb’s ontwerp, architectuur of algemene missie."
+        }
+      ],
+      "minor": []
+    },
+    {
+      "id": "wolf-r1-A",
+      "arm": "A",
+      "case": "wolf",
+      "scores": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "pass": true,
+      "reason": "Voldoende onder de prospectieve rubric: centrale betekenis, concrete grondstof en relevante grenzen blijven beschikbaar.",
+      "findings": [],
+      "minor": []
+    },
+    {
+      "id": "wolf-r1-B",
+      "arm": "B",
+      "case": "wolf",
+      "scores": [
+        1,
+        2,
+        2,
+        2,
+        1
+      ],
+      "pass": false,
+      "reason": "Elk in bron/Research wordt eland in Evidence en guidance. Lokale soortidentiteitsfout vereist correctie; netwerkkern en multicausaliteit blijven bruikbaar.",
+      "findings": [
+        {
+          "match": "elandkadaver",
+          "kind": "soortidentiteit",
+          "facts": [
+            6
+          ],
+          "attribution": "Synthesisvertaling; volledige Research en projectie hebben elk, niet moose/eland.",
+          "line": 8,
+          "quote": "2. Een wolvenprooi voedt ook andere dieren: raven en eksters komen snel bij een elandkadaver, coyotes wachten tot de wolven genoeg hebben gegeten, en uiteenlopende dieren eten de resten. (Fact 6)"
+        },
+        {
+          "match": "effecten op elanden",
+          "kind": "soortidentiteit herhaald binnen output",
+          "facts": [
+            9
+          ],
+          "attribution": "Synthesisvertaling, geen Research/filterfout.",
+          "line": 9,
+          "quote": "3. De samenstelling van de wolvenprooi veranderde: het aandeel kalveren en stieren onder de vroege-winterprooien keerde tussen 1995–2000 en 2001–2007 om. De bron verbindt veranderingen in predatie en effecten op elanden met onderling samenhangende factoren, waaronder prooibeschikbaarheid, andere predatoren, beheer buiten het park en weer. (Facts 7, 9)"
+        }
+      ],
+      "minor": []
+    },
+    {
+      "id": "wolf-r2-A",
+      "arm": "A",
+      "case": "wolf",
+      "scores": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "pass": true,
+      "reason": "Voldoende onder de prospectieve rubric: centrale betekenis, concrete grondstof en relevante grenzen blijven beschikbaar.",
+      "findings": [],
+      "minor": []
+    },
+    {
+      "id": "wolf-r2-B",
+      "arm": "B",
+      "case": "wolf",
+      "scores": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "pass": true,
+      "reason": "Voldoende onder de prospectieve rubric: centrale betekenis, concrete grondstof en relevante grenzen blijven beschikbaar.",
+      "findings": [],
+      "minor": []
+    },
+    {
+      "id": "wolf-r3-A",
+      "arm": "A",
+      "case": "wolf",
+      "scores": [
+        2,
+        1,
+        1,
+        1,
+        1
+      ],
+      "pass": false,
+      "reason": "Vernauwt netwerk-Idea tot predatie/elk; sociale samenwerking expliciet niet nodig, voedselrelaties alleen algemene optionele verwijzing zonder concrete soorten. Goede multicausale grens blijft.",
+      "findings": [
+        {
+          "match": "Pack cooperation",
+          "kind": "essentiële betekenis en focusverlies",
+          "facts": [
+            3,
+            6
+          ],
+          "attribution": "Synthesisselectie; sociale en concrete voedselrelaties in Facts 3/6 en projectie aanwezig.",
+          "line": 12,
+          "quote": "Pack cooperation and the details of wolf population history are not needed to establish this story. Avoid turning the account into a broad survey of Yellowstone’s ecosystem or a claim that wolves control it."
+        }
+      ],
+      "minor": []
+    },
+    {
+      "id": "wolf-r3-B",
+      "arm": "B",
+      "case": "wolf",
+      "scores": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "pass": true,
+      "reason": "Voldoende onder de prospectieve rubric: centrale betekenis, concrete grondstof en relevante grenzen blijven beschikbaar.",
+      "findings": [],
+      "minor": []
+    }
+  ]
+}

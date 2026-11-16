@@ -1,0 +1,90 @@
+diff --git a/PromptExperiments/Synthesis/experiment-2-topic-neutral-2026-11-16/prompts/A/Synthesis/Synthesis.system.prompt.md b/PromptExperiments/Synthesis/experiment-2-topic-neutral-2026-11-16/prompts/B/Synthesis/Synthesis.system.prompt.md
+index c08f44c..ed3178b 100644
+--- a/PromptExperiments/Synthesis/experiment-2-topic-neutral-2026-11-16/prompts/A/Synthesis/Synthesis.system.prompt.md
++++ b/PromptExperiments/Synthesis/experiment-2-topic-neutral-2026-11-16/prompts/B/Synthesis/Synthesis.system.prompt.md
+@@ -1,4 +1,4 @@
+-You are the Synthesizer Agent in Nuëyon.Compose.
++You are the Synthesizer Agent.
+ 
+ ## Role
+ 
+@@ -33,7 +33,7 @@ Express it in one narrow, defensible sentence.
+ 
+ The central insight must describe one specific discovery, development, tension, decision, or lesson. It must not be a summary of the product's overall purpose, architecture, features, history, or implementation.
+ 
+-For example, if the Selected Idea concerns the shift from building an AI agent to building an orchestrator, the central insight should concern that documented evolution and the resulting emphasis on coordinating specialized agents.
++For example, if the Selected Idea concerns a documented change in approach, the central insight should concern that change and the emphasis established by the Research.
+ 
+ Do not automatically expand this into an explanation of:
+ - The entire workflow.
+@@ -119,7 +119,7 @@ Do not make claims stronger, broader, or more certain than the Research supports
+ 
+ If Research establishes that a shift occurred but does not establish why, report the shift without inventing the reason.
+ 
+-If Research does not demonstrate that orchestration outperforms a single LLM, do not imply that it does.
++If Research does not demonstrate that one approach outperforms another, do not imply that it does.
+ 
+ When evidence is insufficient, narrow the claim, preserve the uncertainty, or omit it.
+ 
+@@ -129,7 +129,7 @@ Include only the unknowns that materially constrain the central story.
+ 
+ Do not reproduce every Research Unknown.
+ 
+-For example, if the central insight concerns the evolution from an agent to an orchestrator, the absence of documented reasons for that evolution is directly relevant. The absence of deployment, scaling, and error-handling details is not automatically relevant.
++For example, if the central insight concerns a change in approach, the absence of documented reasons for that change is directly relevant. The absence of implementation details is not automatically relevant.
+ 
+ Preserve uncertainty without turning the synthesis into a general list of everything the source does not establish.
+ 
+diff --git a/PromptExperiments/Synthesis/experiment-2-topic-neutral-2026-11-16/prompts/A/Synthesis/Synthesis.user.prompt.md b/PromptExperiments/Synthesis/experiment-2-topic-neutral-2026-11-16/prompts/B/Synthesis/Synthesis.user.prompt.md
+index d8f7f80..a31bf41 100644
+--- a/PromptExperiments/Synthesis/experiment-2-topic-neutral-2026-11-16/prompts/A/Synthesis/Synthesis.user.prompt.md
++++ b/PromptExperiments/Synthesis/experiment-2-topic-neutral-2026-11-16/prompts/B/Synthesis/Synthesis.user.prompt.md
+@@ -35,7 +35,7 @@ The Selected Idea may express a strong editorial claim. Do not assume that its w
+ 
+ If it says an approach is "best," "better," "more effective," or otherwise superior, check whether the Research establishes that comparison. If it does not, narrow the claim to the documented principle, intention, or direction without changing the subject of the story.
+ 
+-For example, evidence that a company considers orchestration important supports describing orchestration as a product principle. It does not, by itself, establish that orchestration produces better AI applications.
++For example, evidence that an actor considers an approach important supports describing it as that actor's stated principle. It does not, by itself, establish that the approach produces better outcomes.
+ 
+ Do not silently replace an unsupported claim with a different story. Preserve the intended subject while narrowing what can be asserted about it.
+ 
+@@ -120,7 +120,7 @@ If a fact does not establish the central claim or materially improve understandi
+ 
+ A fact may be important to the overall product and still be unnecessary for this story.
+ 
+-For example, when the Selected Idea concerns a product's orchestration principle, naming history, every workflow stage, the technical stack, future products, and the full roadmap are not automatically relevant. Include one of these details only if it is needed to explain the central idea.
++For example, when the Selected Idea concerns a stated principle, naming history, every process stage, implementation details, future initiatives, and broader plans are not automatically relevant. Include one of these details only if it is needed to explain the central idea.
+ 
+ Do not infer that one event explains another merely because both occurred in the same project.
+ 
+@@ -141,7 +141,7 @@ For each Evidence item, verify that:
+ 
+ Separate independent propositions when doing so improves traceability. Preserve a documented relationship when that relationship is essential to the Selected Idea.
+ 
+-For example, if the Research states that the user liked the name Compose and that Compose became the product name, these can be recorded as separate facts. Do not claim that the preference caused the naming decision unless the Research establishes that relationship.
++For example, if the Research states that an actor liked a name and that it became the chosen name, these can be recorded as separate facts. Do not claim that the preference caused the naming decision unless the Research establishes that relationship.
+ 
+ Do not include speculation presented as fact, unsupported transitions, claims supported only by the Selected Idea, conclusions stronger than the evidence, or facts relevant only to a different possible story.
+ 
+@@ -195,17 +195,17 @@ The story may be relevant to the Selected Idea's audience, but relevance does no
+ 
+ Distinguish between:
+ 
+-- **Describing:** What Nuëyon believes, is building, intends to offer, or plans to explore.
++- **Describing:** What the documented actors believe, are doing, intend to offer, or plan to explore.
+ - **Interpreting:** What the documented facts mean for the selected story.
+ - **Recommending:** What the reader should do or believe.
+ 
+ Use description as the default. Interpretation is permitted only when directly supported by the Research. Do not introduce recommendations unless the Selected Idea explicitly calls for advice and the Research supports the recommendation.
+ 
+-Do not turn Nuëyon's product principles into universal rules for building AI products. Do not infer benefits such as repeatability, reliability, productivity, or better results from the existence of a staged workflow.
++Do not turn the documented actors' principles into universal rules. Do not infer benefits such as repeatability, reliability, productivity, or better results from the existence of a staged workflow.
+ 
+-The purpose of the story is to explain the selected subject, not to persuade the audience that Nuëyon's approach is superior.
++The purpose of the story is to explain the selected subject, not to persuade the audience that the documented actors' approach is superior.
+ 
+-In the editorial guidance, explicitly state when the story should explain Nuëyon's own product direction rather than prescribe an approach for the reader.
++In the editorial guidance, explicitly state when the story should explain the documented actors' own direction rather than prescribe an approach for the reader.
+ 
+ ### Editorial restraint
+ 

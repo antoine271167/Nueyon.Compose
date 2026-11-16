@@ -1,0 +1,467 @@
+{
+  "calls": [
+    {
+      "id": "digital-r1-A-Synthesis",
+      "prompt_tokens": 5222,
+      "completion_tokens": 1815,
+      "total_tokens": 7037,
+      "prompt_tokens_details": {
+        "cached_tokens": 5219,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1425,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "started": "2026-11-16T21:36:48.739297+00:00",
+      "completed": "2026-11-16T21:37:05.2280849+00:00"
+    },
+    {
+      "id": "digital-r1-B-Synthesis",
+      "prompt_tokens": 5181,
+      "completion_tokens": 2081,
+      "total_tokens": 7262,
+      "prompt_tokens_details": {
+        "cached_tokens": 1484,
+        "cache_write_tokens": 3694,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1418,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "started": "2026-11-16T21:37:05.36971+00:00",
+      "completed": "2026-11-16T21:37:26.1651504+00:00"
+    },
+    {
+      "id": "digital-r2-A-Synthesis",
+      "prompt_tokens": 5222,
+      "completion_tokens": 1866,
+      "total_tokens": 7088,
+      "prompt_tokens_details": {
+        "cached_tokens": 5219,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1338,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "started": "2026-11-16T21:39:16.2572178+00:00",
+      "completed": "2026-11-16T21:39:34.6682947+00:00"
+    },
+    {
+      "id": "digital-r2-B-Synthesis",
+      "prompt_tokens": 5181,
+      "completion_tokens": 2240,
+      "total_tokens": 7421,
+      "prompt_tokens_details": {
+        "cached_tokens": 5178,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1710,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "started": "2026-11-16T21:38:54.6043761+00:00",
+      "completed": "2026-11-16T21:39:16.114097+00:00"
+    },
+    {
+      "id": "digital-r3-A-Synthesis",
+      "prompt_tokens": 5222,
+      "completion_tokens": 2466,
+      "total_tokens": 7688,
+      "prompt_tokens_details": {
+        "cached_tokens": 5219,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1826,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "started": "2026-11-16T21:41:07.0454262+00:00",
+      "completed": "2026-11-16T21:41:31.2887213+00:00"
+    },
+    {
+      "id": "digital-r3-B-Synthesis",
+      "prompt_tokens": 5181,
+      "completion_tokens": 3176,
+      "total_tokens": 8357,
+      "prompt_tokens_details": {
+        "cached_tokens": 5178,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 2560,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "started": "2026-11-16T21:41:31.4256353+00:00",
+      "completed": "2026-11-16T21:42:05.9197071+00:00"
+    },
+    {
+      "id": "lowell-r1-A-Synthesis",
+      "prompt_tokens": 5645,
+      "completion_tokens": 2607,
+      "total_tokens": 8252,
+      "prompt_tokens_details": {
+        "cached_tokens": 5642,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 2109,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "started": "2026-11-16T21:37:38.1760063+00:00",
+      "completed": "2026-11-16T21:38:02.0744219+00:00"
+    },
+    {
+      "id": "lowell-r1-B-Synthesis",
+      "prompt_tokens": 5604,
+      "completion_tokens": 1194,
+      "total_tokens": 6798,
+      "prompt_tokens_details": {
+        "cached_tokens": 1484,
+        "cache_write_tokens": 4117,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 617,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "started": "2026-11-16T21:37:26.3098066+00:00",
+      "completed": "2026-11-16T21:37:38.0407296+00:00"
+    },
+    {
+      "id": "lowell-r2-A-Synthesis",
+      "prompt_tokens": 5645,
+      "completion_tokens": 1677,
+      "total_tokens": 7322,
+      "prompt_tokens_details": {
+        "cached_tokens": 5642,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1226,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "started": "2026-11-16T21:39:34.8009538+00:00",
+      "completed": "2026-11-16T21:39:51.8751629+00:00"
+    },
+    {
+      "id": "lowell-r2-B-Synthesis",
+      "prompt_tokens": 5604,
+      "completion_tokens": 1656,
+      "total_tokens": 7260,
+      "prompt_tokens_details": {
+        "cached_tokens": 5601,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1109,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "started": "2026-11-16T21:39:52.0148359+00:00",
+      "completed": "2026-11-16T21:40:08.1359733+00:00"
+    },
+    {
+      "id": "lowell-r3-A-Synthesis",
+      "prompt_tokens": 5645,
+      "completion_tokens": 1428,
+      "total_tokens": 7073,
+      "prompt_tokens_details": {
+        "cached_tokens": 5642,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 930,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "started": "2026-11-16T21:42:29.2351838+00:00",
+      "completed": "2026-11-16T21:42:43.1570307+00:00"
+    },
+    {
+      "id": "lowell-r3-B-Synthesis",
+      "prompt_tokens": 5604,
+      "completion_tokens": 2258,
+      "total_tokens": 7862,
+      "prompt_tokens_details": {
+        "cached_tokens": 5601,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1535,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "started": "2026-11-16T21:42:06.0630891+00:00",
+      "completed": "2026-11-16T21:42:29.0953634+00:00"
+    },
+    {
+      "id": "webb-r1-A-Synthesis",
+      "prompt_tokens": 5326,
+      "completion_tokens": 1229,
+      "total_tokens": 6555,
+      "prompt_tokens_details": {
+        "cached_tokens": 5323,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 705,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "started": "2026-11-16T21:36:02.2627753+00:00",
+      "completed": "2026-11-16T21:36:15.8564176+00:00"
+    },
+    {
+      "id": "webb-r1-B-Synthesis",
+      "prompt_tokens": 5285,
+      "completion_tokens": 1028,
+      "total_tokens": 6313,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 5282,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 609,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "started": "2026-11-16T21:36:16.045687+00:00",
+      "completed": "2026-11-16T21:36:26.531756+00:00"
+    },
+    {
+      "id": "webb-r2-A-Synthesis",
+      "prompt_tokens": 5326,
+      "completion_tokens": 1947,
+      "total_tokens": 7273,
+      "prompt_tokens_details": {
+        "cached_tokens": 5323,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1440,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "started": "2026-11-16T21:38:15.3386058+00:00",
+      "completed": "2026-11-16T21:38:32.9141453+00:00"
+    },
+    {
+      "id": "webb-r2-B-Synthesis",
+      "prompt_tokens": 5285,
+      "completion_tokens": 1245,
+      "total_tokens": 6530,
+      "prompt_tokens_details": {
+        "cached_tokens": 5282,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 637,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "started": "2026-11-16T21:38:02.2211474+00:00",
+      "completed": "2026-11-16T21:38:15.2012695+00:00"
+    },
+    {
+      "id": "webb-r3-A-Synthesis",
+      "prompt_tokens": 5326,
+      "completion_tokens": 1382,
+      "total_tokens": 6708,
+      "prompt_tokens_details": {
+        "cached_tokens": 5323,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 866,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "started": "2026-11-16T21:40:08.272608+00:00",
+      "completed": "2026-11-16T21:40:22.8558013+00:00"
+    },
+    {
+      "id": "webb-r3-B-Synthesis",
+      "prompt_tokens": 5285,
+      "completion_tokens": 1974,
+      "total_tokens": 7259,
+      "prompt_tokens_details": {
+        "cached_tokens": 5282,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1395,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "started": "2026-11-16T21:40:22.993368+00:00",
+      "completed": "2026-11-16T21:40:42.0973725+00:00"
+    },
+    {
+      "id": "wolf-r1-A-Synthesis",
+      "prompt_tokens": 5498,
+      "completion_tokens": 792,
+      "total_tokens": 6290,
+      "prompt_tokens_details": {
+        "cached_tokens": 5495,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 416,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "started": "2026-11-16T21:36:40.1967663+00:00",
+      "completed": "2026-11-16T21:36:48.583066+00:00"
+    },
+    {
+      "id": "wolf-r1-B-Synthesis",
+      "prompt_tokens": 5457,
+      "completion_tokens": 1113,
+      "total_tokens": 6570,
+      "prompt_tokens_details": {
+        "cached_tokens": 1484,
+        "cache_write_tokens": 3970,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 572,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "started": "2026-11-16T21:36:26.670338+00:00",
+      "completed": "2026-11-16T21:36:40.049039+00:00"
+    },
+    {
+      "id": "wolf-r2-A-Synthesis",
+      "prompt_tokens": 5498,
+      "completion_tokens": 1114,
+      "total_tokens": 6612,
+      "prompt_tokens_details": {
+        "cached_tokens": 5495,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 688,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "started": "2026-11-16T21:38:33.0481462+00:00",
+      "completed": "2026-11-16T21:38:44.1458345+00:00"
+    },
+    {
+      "id": "wolf-r2-B-Synthesis",
+      "prompt_tokens": 5457,
+      "completion_tokens": 1045,
+      "total_tokens": 6502,
+      "prompt_tokens_details": {
+        "cached_tokens": 5454,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 627,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "started": "2026-11-16T21:38:44.3100475+00:00",
+      "completed": "2026-11-16T21:38:54.4657538+00:00"
+    },
+    {
+      "id": "wolf-r3-A-Synthesis",
+      "prompt_tokens": 5498,
+      "completion_tokens": 1526,
+      "total_tokens": 7024,
+      "prompt_tokens_details": {
+        "cached_tokens": 5495,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1209,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "started": "2026-11-16T21:40:52.0136253+00:00",
+      "completed": "2026-11-16T21:41:06.8792223+00:00"
+    },
+    {
+      "id": "wolf-r3-B-Synthesis",
+      "prompt_tokens": 5457,
+      "completion_tokens": 948,
+      "total_tokens": 6405,
+      "prompt_tokens_details": {
+        "cached_tokens": 5454,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 536,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "started": "2026-11-16T21:40:42.234421+00:00",
+      "completed": "2026-11-16T21:40:51.8524025+00:00"
+    }
+  ],
+  "totals": {
+    "input": 129654,
+    "output": 39807,
+    "total": 169461,
+    "reasoning": 27503,
+    "cachedInput": 112519
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-Ekyj1MTa5EDG5uO34y5fq0fiblOrU",
+  "object": "chat.completion",
+  "created": 1794865223,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"### Central insight\\nBij Webb was het uitvouwen niet hetzelfde als klaar zijn voor wetenschap: de telescoop bereikte in de tweede week zijn volledig uitgevouwen configuratie, maar afkoeling, spiegeluitlijning en instrumentkalibratie gingen nog maanden door; de wetenschappelijke missie en routinematige wetenschap begonnen na zes maanden.\\n\\n### Evidence\\n1. In de tweede week klapten de secundaire spiegel en de vleugels van de primaire spiegel uit en vergrendelden ze; daarmee was Webb volledig uitgevouwen in zijn operationele configuratie. (Research Fact 7)\\n2. In de eerste maand koelden de telescoop en instrumenten gedurende meerdere weken af. In maanden twee tot en met vier controleerde en lijnde het team de optiek en spiegels uit. (Research Facts 8–9)\\n3. In maanden vijf en zes kalibreerde het team de instrumentmodi terwijl het representatieve doelen observeerde. Na zes maanden begon Webb aan zijn wetenschappelijke missie en routinematige wetenschap. (Research Facts 10, 12)\\n4. Optionele context: de uitvouwing omvatte meer dan 50 grote stappen en meer dan 300 mogelijke afzonderlijke faalpunten; herstel op de afstand van Webb was niet mogelijk. Dit beschrijft mogelijke risico’s, niet een daadwerkelijk opgetreden storing. (Research Fact 3)\\n\\n### What the narrative should emphasize\\nMaak het verschil tussen de fysieke mijlpaal in week twee en de latere gereedheid voor wetenschap de centrale lijn. De tijdlijn van afkoeling, uitlijning en kalibratie is voldoende om die ontwikkeling te laten zien; het risico van de uitvouwing kan als één beknopte context dienen, maar hoeft niet uitgewerkt te worden. Beschrijf Webbs gedocumenteerde aanpak en tijdlijn, niet als advies voor hoe lezers of andere projecten te werk moeten gaan.\\n\\n### What should be de-emphasized\\nDe exacte afmetingen en het vouwontwerp voor de raket, afzonderlijke stappen van het zonneschild, grondbesturing en telemetrie zijn niet nodig om de centrale tegenstelling te begrijpen. Vermijd ook een breder verhaal over Webb’s ontwerp, architectuur of algemene missie.\\n\\n### Gaps and uncertainty\\nDe bron noemt mogelijke faalpunten, maar beschrijft geen concrete anomalie of storing tijdens de uitvouwing. Presenteer het risico dus niet als een probleem dat zich daadwerkelijk voordeed. De bron geeft ook geen exacte datum voor het begin van routinematige wetenschap; houd de tijdsaanduiding op ‘na zes maanden’. \"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5285,
+    "completion_tokens": 1974,
+    "total_tokens": 7259,
+    "prompt_tokens_details": {
+      "cached_tokens": 5282,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1395,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

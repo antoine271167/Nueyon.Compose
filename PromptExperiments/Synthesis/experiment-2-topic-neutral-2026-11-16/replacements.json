@@ -1,0 +1,50 @@
+{
+  "Synthesis.system.prompt.md": [
+    [
+      "You are the Synthesizer Agent in Nuëyon.Compose.",
+      "You are the Synthesizer Agent."
+    ],
+    [
+      "For example, if the Selected Idea concerns the shift from building an AI agent to building an orchestrator, the central insight should concern that documented evolution and the resulting emphasis on coordinating specialized agents.",
+      "For example, if the Selected Idea concerns a documented change in approach, the central insight should concern that change and the emphasis established by the Research."
+    ],
+    [
+      "If Research does not demonstrate that orchestration outperforms a single LLM, do not imply that it does.",
+      "If Research does not demonstrate that one approach outperforms another, do not imply that it does."
+    ],
+    [
+      "For example, if the central insight concerns the evolution from an agent to an orchestrator, the absence of documented reasons for that evolution is directly relevant. The absence of deployment, scaling, and error-handling details is not automatically relevant.",
+      "For example, if the central insight concerns a change in approach, the absence of documented reasons for that change is directly relevant. The absence of implementation details is not automatically relevant."
+    ]
+  ],
+  "Synthesis.user.prompt.md": [
+    [
+      "For example, evidence that a company considers orchestration important supports describing orchestration as a product principle. It does not, by itself, establish that orchestration produces better AI applications.",
+      "For example, evidence that an actor considers an approach important supports describing it as that actor's stated principle. It does not, by itself, establish that the approach produces better outcomes."
+    ],
+    [
+      "For example, when the Selected Idea concerns a product's orchestration principle, naming history, every workflow stage, the technical stack, future products, and the full roadmap are not automatically relevant. Include one of these details only if it is needed to explain the central idea.",
+      "For example, when the Selected Idea concerns a stated principle, naming history, every process stage, implementation details, future initiatives, and broader plans are not automatically relevant. Include one of these details only if it is needed to explain the central idea."
+    ],
+    [
+      "For example, if the Research states that the user liked the name Compose and that Compose became the product name, these can be recorded as separate facts. Do not claim that the preference caused the naming decision unless the Research establishes that relationship.",
+      "For example, if the Research states that an actor liked a name and that it became the chosen name, these can be recorded as separate facts. Do not claim that the preference caused the naming decision unless the Research establishes that relationship."
+    ],
+    [
+      "What Nuëyon believes, is building, intends to offer, or plans to explore.",
+      "What the documented actors believe, are doing, intend to offer, or plan to explore."
+    ],
+    [
+      "Do not turn Nuëyon's product principles into universal rules for building AI products.",
+      "Do not turn the documented actors' principles into universal rules."
+    ],
+    [
+      "The purpose of the story is to explain the selected subject, not to persuade the audience that Nuëyon's approach is superior.",
+      "The purpose of the story is to explain the selected subject, not to persuade the audience that the documented actors' approach is superior."
+    ],
+    [
+      "In the editorial guidance, explicitly state when the story should explain Nuëyon's own product direction rather than prescribe an approach for the reader.",
+      "In the editorial guidance, explicitly state when the story should explain the documented actors' own direction rather than prescribe an approach for the reader."
+    ]
+  ]
+}

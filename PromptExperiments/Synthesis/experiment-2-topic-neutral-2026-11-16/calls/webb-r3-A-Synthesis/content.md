@@ -1,0 +1,17 @@
+### Central insight
+Webbs uitvouwing voltooide de fysieke inzet van de telescoop, maar was niet hetzelfde als operationeel gebruik: daarna volgden maanden van afkoeling, spiegeluitlijning en instrumentkalibratie voordat de wetenschappelijke missie begon.
+
+### Evidence
+1. Webb was te groot om operationeel in een beschikbare raket te passen en werd daarom ontworpen om in de neuskegel van Ariane 5 te worden gevouwen.
+2. De uitvouwing omvatte meer dan 50 grote stappen en meer dan 300 mogelijke afzonderlijke faalpunten; reparatie op de afstand van Webb tot de aarde was niet mogelijk.
+3. In de tweede week waren de secundaire spiegel en de twee primaire spiegelvleugels uitgeklapt en vergrendeld. Daarmee was de volledig uitgevouwen operationele configuratie bereikt.
+4. Daarna volgden afzonderlijke ingebruiknamestappen: instrumenten en telescoop koelden gedurende weken af; in maanden twee tot en met vier werden de spiegels uitgelijnd; in maanden vijf en zes werden instrumentmodi gekalibreerd. Na zes maanden begon Webb aan zijn wetenschappelijke missie en routinematige wetenschappelijke operaties.
+
+### What the narrative should emphasize
+Maak het onderscheid tussen ‘volledig uitgevouwen’ en ‘klaar voor routinematige wetenschap’ de rode draad. De tijdlijn in bewijsitems 3 en 4 volstaat om te laten zien dat ingebruikname meerdere maanden doorging na het uitvouwen. Beschrijf dit als het verloop van Webbs eigen missie, niet als voorschrift of universele les voor andere projecten.
+
+### What should be de-emphasized
+De precieze volgorde van alle zonneschild-, antenne- en radiatordeployments is niet nodig voor deze invalshoek. Ook de details van de afzonderlijke kalibratiemetingen en de bredere ontwerp- en testgeschiedenis kunnen buiten beeld blijven.
+
+### Gaps and uncertainty
+De bron noemt de uitvouwing opmerkelijk soepel, maar beschrijft geen specifieke anomalieën of problemen die tijdens de inzet zijn opgetreden. Beschrijf de faalpunten daarom als risico’s van het ontwerp en niet als incidenten die zich daadwerkelijk voordeden. De bron geeft geen exacte datum voor het begin van de routinematige operaties.

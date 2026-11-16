@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-EkyfpVZ4YvFsTEsxLE4b4VTLohxlT",
+  "object": "chat.completion",
+  "created": 1794865025,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"### Central insight\\n\\nDe POA-refunddienst ging in twaalf weken naar publieke lancering; in die periode werkte het team eerst aan de aanvragerservaring en organiseerde het onderzoek tijdens de private beta in een vast ritme. De bron documenteert deze keuzes, maar toont niet aan dat zij de lancering of resultaten veroorzaakten.\\n\\n### Evidence\\n\\n1. Het team lanceerde de dienst voor het publiek in twaalf weken. De oorspronkelijke opdracht was om die binnen enkele weken te leveren, maar het team concludeerde dat dit niet haalbaar was als het ook een kwalitatieve gebruikersdienst wilde maken.\\n2. Het team richtte zich eerst op mensen die een refund aanvroegen en bracht dat werk naar alpha; het werk voor caseworkers kwam later. De auteur zegt dat caseworkers in deze nieuwe dienst nog geen gebruikers waren zolang er geen aanvragen binnenkwamen, en dat de beperkte tijd het belangrijk maakte geen aannames te doen.\\n3. Tijdens private beta werkte het team in een cyclus van twee weken: in de eerste week testen, onderzoek doen en aanvragen aannemen; in de tweede week geen aanvragen aannemen en zich richten op testen, onderzoek en het verwerken van aanvragen. De auteur zegt dat deze werkwijze hielp om snel te bouwen en tegelijk aan gebruikersbehoeften te voldoen.\\n4. **Ondersteunende uitkomst:** na vijf weken publieke beschikbaarheid meldde de auteur meer dan 100.000 aanvragen, 92,6% gebruikerstevredenheid en een voltooiingspercentage van 80,2%. De bron geeft geen definities of vergelijkingsbasis voor deze cijfers.\\n5. De dienst was digitaal en assisted-digital, zonder papieren versie. De bron beschrijft niet welke hulp de assisted-digital aanpak bood.\\n\\n### What the narrative should emphasize\\n\\nLeg de nadruk op de gedocumenteerde volgorde — aanvragers eerst, caseworkers later — en gebruik het onderzoeksritme in private beta als concrete toelichting op hoe het team het werk organiseerde. De twaalf weken geven de tijdscontext; de gerapporteerde cijfers kunnen optioneel worden genoemd, zonder ze aan een specifieke praktijk toe te schrijven. Beschrijf de keuzes van dit team, niet als advies of universeel recept voor dienstontwerp.\\n\\n### What should be de-emphasized\\n\\nDe bredere achtergrond van de refundregeling en de details van het verwerken of betalen van refunds zijn niet nodig om deze keuzes in gebruikersvolgorde en onderzoeksorganisatie uit te leggen. Ook de cijfers uit de eerste vijf weken zijn ondersteunend, geen bewijs dat de beschreven werkwijzen de uitkomsten hebben veroorzaakt.\\n\\n### Gaps and uncertainty\\n\\nDe bron bevestigt dat de dienst assisted-digital was, maar legt niet uit welke hulp werd geboden of hoe die mensen ondersteunde die niet zelfstandig digitaal konden werken. Stel daarom geen specifieke vorm of effect van die ondersteuning voorop. De bron toont evenmin aan dat de volgorde van gebruikerswerk of het onderzoeksritme de termijn van twaalf weken of de gerapporteerde resultaten heeft veroorzaakt.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5181,
+    "completion_tokens": 2081,
+    "total_tokens": 7262,
+    "prompt_tokens_details": {
+      "cached_tokens": 1484,
+      "cache_write_tokens": 3694,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1418,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

@@ -1,0 +1,40 @@
+{
+  "validB": 12,
+  "brandContaminationB": 0,
+  "materialZeroScoresB": 0,
+  "minimum11of12": false,
+  "atLeast2of3EveryCase": true,
+  "noLowerTotal": true,
+  "noLowerCase": true,
+  "dimensions": [
+    {
+      "dimension": "BT",
+      "lower": 1,
+      "higher": 2
+    },
+    {
+      "dimension": "F",
+      "lower": 0,
+      "higher": 3
+    },
+    {
+      "dimension": "BN",
+      "lower": 1,
+      "higher": 2
+    },
+    {
+      "dimension": "IW",
+      "lower": 0,
+      "higher": 1
+    },
+    {
+      "dimension": "NG",
+      "lower": 2,
+      "higher": 3
+    }
+  ],
+  "noUncompensatedRepeatedDimensionLoss": true,
+  "brandCorrectionObserved": true,
+  "noRepeatedEssentialOmissionWithinBCase": true,
+  "verdict": "NO-GO"
+}

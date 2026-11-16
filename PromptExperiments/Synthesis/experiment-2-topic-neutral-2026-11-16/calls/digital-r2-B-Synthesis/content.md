@@ -1,0 +1,17 @@
+### Central insight
+The POA refund service’s 12-week delivery involved sequencing work around users: refund applicants were taken through alpha before caseworker work was prioritized, and private-beta work was organized in alternating fortnightly weeks. The research documents this approach, but does not show that it caused the launch timing or later results.
+
+### Evidence
+1. The team was initially asked to deliver in weeks, but concluded that this was not possible while creating a quality service; the service launched to the public in 12 weeks. (Fact 4)
+2. The team focused first on refund applicants and took their work through alpha; plans for caseworkers came later. The author says this avoided unsupported assumptions about a caseworker user in a service that had not yet received applications. (Fact 6)
+3. During private beta, fortnightly sprints alternated between a week for testing, research and accepting applications, and a week that suspended submissions to focus on testing, research and processing applications. (Fact 7)
+4. **Optional outcome context:** After five weeks of public availability, the author reported over 100,000 applications, 92.6% user satisfaction and an 80.2% completion rate. The source gives no metric definitions or comparison. (Fact 8)
+
+### What the narrative should emphasize
+Keep the story on the documented choices about which users to address first and how research, applications and processing were arranged under the deadline. Preserve the distinction between the applicant-first alpha work and the later private-beta sprint rhythm. The five-week figures may be used as a brief reported snapshot, but not as proof that these practices produced the results. Explain the team’s documented direction; do not turn it into advice or a universal recipe for service designers.
+
+### What should be de-emphasized
+The fee-policy background, the full set of project constraints, and the Service Standard assessment are not needed to explain these sequencing choices. Avoid expanding this into a complete account of the refund process or case-management application.
+
+### Gaps and uncertainty
+The source confirms the service was digital and assisted-digital, with no paper version, but does not describe the assistance, who received it, or how it supported people unable to complete the process independently. Do not claim more about that support. The source also does not establish that the sequencing or sprint rhythm caused the 12-week launch or the reported five-week figures.
