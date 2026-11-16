@@ -1,0 +1,144 @@
+{
+  "model": "gpt-6-luna",
+  "maxCalls": 27,
+  "maxOutputTokens": 5000,
+  "maxRequestBytes": 120000,
+  "retries": 0,
+  "schedule": [
+    {
+      "id": "water-r1-A",
+      "case": "water",
+      "arm": "A"
+    },
+    {
+      "id": "water-r1-B",
+      "case": "water",
+      "arm": "B"
+    },
+    {
+      "id": "water-r1-B2",
+      "case": "water",
+      "arm": "B2"
+    },
+    {
+      "id": "language-r1-B",
+      "case": "language",
+      "arm": "B"
+    },
+    {
+      "id": "language-r1-B2",
+      "case": "language",
+      "arm": "B2"
+    },
+    {
+      "id": "language-r1-A",
+      "case": "language",
+      "arm": "A"
+    },
+    {
+      "id": "heat-r1-B2",
+      "case": "heat",
+      "arm": "B2"
+    },
+    {
+      "id": "heat-r1-A",
+      "case": "heat",
+      "arm": "A"
+    },
+    {
+      "id": "heat-r1-B",
+      "case": "heat",
+      "arm": "B"
+    },
+    {
+      "id": "water-r2-B",
+      "case": "water",
+      "arm": "B"
+    },
+    {
+      "id": "water-r2-B2",
+      "case": "water",
+      "arm": "B2"
+    },
+    {
+      "id": "water-r2-A",
+      "case": "water",
+      "arm": "A"
+    },
+    {
+      "id": "language-r2-B2",
+      "case": "language",
+      "arm": "B2"
+    },
+    {
+      "id": "language-r2-A",
+      "case": "language",
+      "arm": "A"
+    },
+    {
+      "id": "language-r2-B",
+      "case": "language",
+      "arm": "B"
+    },
+    {
+      "id": "heat-r2-A",
+      "case": "heat",
+      "arm": "A"
+    },
+    {
+      "id": "heat-r2-B",
+      "case": "heat",
+      "arm": "B"
+    },
+    {
+      "id": "heat-r2-B2",
+      "case": "heat",
+      "arm": "B2"
+    },
+    {
+      "id": "water-r3-B2",
+      "case": "water",
+      "arm": "B2"
+    },
+    {
+      "id": "water-r3-A",
+      "case": "water",
+      "arm": "A"
+    },
+    {
+      "id": "water-r3-B",
+      "case": "water",
+      "arm": "B"
+    },
+    {
+      "id": "language-r3-A",
+      "case": "language",
+      "arm": "A"
+    },
+    {
+      "id": "language-r3-B",
+      "case": "language",
+      "arm": "B"
+    },
+    {
+      "id": "language-r3-B2",
+      "case": "language",
+      "arm": "B2"
+    },
+    {
+      "id": "heat-r3-B",
+      "case": "heat",
+      "arm": "B"
+    },
+    {
+      "id": "heat-r3-B2",
+      "case": "heat",
+      "arm": "B2"
+    },
+    {
+      "id": "heat-r3-A",
+      "case": "heat",
+      "arm": "A"
+    }
+  ]
+}

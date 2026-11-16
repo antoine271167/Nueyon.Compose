@@ -1,0 +1,97 @@
+[
+  {
+    "run": "water-r1-B",
+    "section": "Development sequence",
+    "needle": "The committee then authorized",
+    "category": "chronologie",
+    "reason": "then koppelt het besluit aan de voorafgaande benchgebeurtenis zonder expliciete bronvolgorde.",
+    "quote": "The committee authorized a six-week paired measurement study with unchanged thresholds. It did not authorize network-wide deployment.",
+    "outputLine": 24,
+    "outputQuote": "- The committee then authorized a six-week paired measurement study with unchanged thresholds, not network-wide deployment (Fact 9).",
+    "materiality": "klein",
+    "inProjection": false
+  },
+  {
+    "run": "water-r2-B",
+    "section": "Development sequence",
+    "needle": "After reviewing the pilot",
+    "category": "chronologie",
+    "reason": "Voegt expliciet reviewmoment vóór commissieautorisatie toe; het dossier vermeldt dat moment niet. Kleine, betwistbare procesinferentie; geen kernfout.",
+    "quote": "The committee authorized a six-week paired measurement study with unchanged thresholds. It did not authorize network-wide deployment.",
+    "outputLine": 29,
+    "outputQuote": "- After reviewing the pilot, the committee authorized a six-week paired study with unchanged thresholds, not network-wide deployment (Fact 12).",
+    "materiality": "klein",
+    "inProjection": false
+  },
+  {
+    "run": "water-r3-B",
+    "section": "Development sequence",
+    "needle": "The recorded legacy fortnight preceded",
+    "category": "chronologie",
+    "reason": "Expliciete kalenderorde staat niet in de bron. legacy suggereert eerder, maar bewijst de gerapporteerde periodevolgorde niet. Kleine betwistbare inferentie; ook After review voegt volgorde toe.",
+    "quote": "The legacy fortnight recorded 46 low-pressure alerts in 1,400 logger-hours; the pilot fortnight recorded 29 in 1,120 logger-hours.",
+    "outputLine": 25,
+    "outputQuote": "- The recorded legacy fortnight preceded the pilot fortnight in the comparison; their alert counts and thresholds are reported separately. (Facts 2–3)",
+    "materiality": "klein",
+    "inProjection": false
+  },
+  {
+    "run": "heat-r2-B",
+    "section": "Development sequence",
+    "needle": "Procurement subsequently approved",
+    "category": "chronologie",
+    "reason": "subsequently plaatst het besluit na de herhaaltest; bron geeft geen relatieve datering van besluit tegenover tests.",
+    "quote": "Procurement approved only a longer instrumented trial conditional on a verified hatch remedy; no purchase or factory-wide roll-out was approved.",
+    "outputLine": 31,
+    "outputQuote": "- Procurement subsequently approved only a longer instrumented trial, conditional on a verified hatch remedy; no purchase or factory-wide roll-out was approved (Fact 11). The source does not date the rental allowance relative to testing (Fact 10).",
+    "materiality": "klein",
+    "inProjection": false
+  },
+  {
+    "run": "heat-r3-B",
+    "section": "Development sequence",
+    "needle": "Procurement subsequently approved",
+    "category": "chronologie",
+    "reason": "subsequently koppelt besluit aan sign-off, zonder expliciete relatieve datering in bron.",
+    "quote": "Procurement approved only a longer instrumented trial conditional on a verified hatch remedy; no purchase or factory-wide roll-out was approved.",
+    "outputLine": 27,
+    "outputQuote": "- At sign-off, two vessels still failed the hatch surface-temperature check and the proposed shield had not been installed (Fact 4). Procurement subsequently approved a longer instrumented trial conditional on a verified hatch remedy, not purchase or roll-out (Fact 9).",
+    "materiality": "klein",
+    "inProjection": false
+  },
+  {
+    "run": "water-r1-B2",
+    "section": "Development sequence",
+    "needle": "The committee then authorized",
+    "category": "chronologie",
+    "reason": "then maakt commissieautorisatie later dan reviewstatus; bron noemt beide zonder expliciete volgorde.",
+    "quote": "The committee authorized a six-week paired measurement study with unchanged thresholds. It did not authorize network-wide deployment.",
+    "outputLine": 26,
+    "outputQuote": "- At review, the packet fault remained open and the proposed antenna move was untested. The committee then authorized a six-week paired study with unchanged thresholds, not network-wide deployment. (Facts 6, 9)",
+    "materiality": "klein",
+    "inProjection": false
+  },
+  {
+    "run": "language-r2-B2",
+    "section": "Development sequence",
+    "needle": "a fix proposal as approved but not deployed",
+    "category": "epistemische precisie",
+    "reason": "not deployed is sterker dan no deployed fix is recorded. Facts 5 en Unknowns bewaren de bronbeperking wel correct.",
+    "quote": "Management approved a keyboard fix proposal; no deployed fix is recorded.",
+    "outputLine": 25,
+    "outputQuote": "No dated chronology is given. The source records the upload defect as open, a fix proposal as approved but not deployed, a usability study as authorised conditional on a verified fix, and general release as withheld. (Facts 4–5, 9)",
+    "materiality": "klein",
+    "inProjection": false
+  },
+  {
+    "run": "heat-r3-A",
+    "section": "Facts/Unknowns",
+    "category": "omissie",
+    "reason": "Het volledige belangrijke kostenlabel ontbreekt in volledige Research én projectie: EUR 9.200, geen datering, installatie/downtime/onderhoud uitgesloten, geen paybackclaim.",
+    "quote": "The finance appendix reports a EUR 9,200 rental allowance. It gives no date or sequence relative to testing. The allowance excludes installation, downtime and maintenance, so no payback claim is supported.",
+    "outputQuote": null,
+    "outputLine": null,
+    "materiality": "belangrijk",
+    "inProjection": false
+  }
+]

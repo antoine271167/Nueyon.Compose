@@ -1,0 +1,26 @@
+### Facts
+1. De bron betreft een fictief formulier en bevat geen echte bewonersgegevens. “Inclusive launch” wordt als ambitie beschreven, niet als gemeten inclusieresultaat; er is geen algemene toegankelijkheidscertificering aangevraagd. (Inleiding)
+2. Reviewers namen 80 van 640 berichtstrings: 40 Spaans en 40 Pools. Alle 80 behielden de goedgekeurde entitlement-termen, maar zes Spaanse strings keerden de betekenis van de deadline-uitzondering om; in de Poolse steekproef waren er geen deadline-omkeringen. Een tweede reviewer bevestigde de zes gevallen; de overige strings kregen geen tweede semantische review. De bron zegt dat geen van beide resultaten alle 640 strings certificeert. (“Sample and linguistic checks”)
+3. Een automatische kleurcontrastscan slaagde voor de drie geteste paginasjablonen. Op sjabloon twee kon een gebruiker met alleen toetsenbord de uploadknop niet activeren; het defect bleef open. Een schermlezer kondigde daar het uploadlabel correct aan, maar testte geen toetsenbordactivering. Een fixvoorstel was goedgekeurd; een uitgerolde fix is niet vermeld. (“Access and task results”)
+4. De oude Engelstalige dienst registreerde voltooiing in 33 van 50 gemodereerde sessies; het meertalige formulier in 42 van 50 ongemodereerde sessies. In de oude dienst betekende voltooiing een definitief ingediende aanvraag; het nieuwe dashboard telde het bereiken van het controlescherm. Deelnemers kwamen uit verschillende wervingskanalen, waren niet willekeurig toegewezen en waren niet gematcht op ervaring. De bron stelt daarom dat de schijnbare verbetering geen vergelijkbare schatting van het voltooiingseffect is. (“Access and task results”)
+5. “Case folding” normaliseerde hoofd- en kleine letters; het voegde geen uitkeringszaken of aanvragen samen. Drie runs op dezelfde 80 strings signaleerden met een steekproefgebaseerde checker respectievelijk zes, vijf en zes semantische problemen. Een menselijke referentiebeoordeling identificeerde de zes deadline-omkeringen. De checkerversie bleef gelijk, maar de steekproefvolgorde varieerde; de runaantallen bewijzen volgens de bron noch drie verschillende grondwaarheden, noch een stabiele checker. (“Processing and reproducibility”)
+6. De bijlage zegt dat juridische goedkeuring alleen het Spaanse toestemmingsgedeelte dekt; goedkeuringsdatum en temporele relatie tot de steekproefreview ontbreken. Goedkeuring voor Poolse toestemming is niet gedocumenteerd. Beschikbaarheid van vertalingen bewijst op zichzelf geen juridische goedkeuring. De coördinator gaf toestemming voor een usability-onderzoek met het gecorrigeerde formulier, onder voorwaarde van een geverifieerde uploadfix, en hield algemene uitrol tegen. Het onderzoeksbudget bevat vertaalvergoedingen maar geen personeelsuren; er is geen kostenbesparing aangetoond. (“Status and decision boundary”)
+7. Een aparte tevredenheidspoll kreeg 18 reacties op 90 uitnodigingen; 16 respondenten vonden de formulering duidelijker. Door non-respons en zelfselectie mag dit volgens de bron niet als tevredenheid van de populatie worden behandeld. De poll mat geen succesvolle indiening of opname van uitkeringen. De managementformulering “inclusive launch” mag niet als bevinding worden herhaald. (“Status and decision boundary”)
+
+### Interpretations
+- De positieve terminologie-, contrast- en schermlezercontroles zijn begrensde deelresultaten; ze stellen geen algemene semantische juistheid, toetsenbordtoegang of inclusie vast. (Feiten 1–3)
+- De twee voltooiingspercentages ondersteunen geen directe vergelijking van prestaties of toeschrijving van een effect aan het meertalige formulier. (Feit 4)
+
+### Unknowns
+- Semantische juistheid van de niet-beoordeelde strings, en dus van alle 640 strings, is niet vastgesteld; de bevinding van zes omkeringen betreft de Spaanse steekproef. (Feit 2)
+- Brede toegankelijkheid en daadwerkelijke documentupload met toetsenbord blijven onbewezen; de bron meldt een open defect en geen uitgerolde fix. De uitkomst van het voorwaardelijke usability-onderzoek is niet gegeven. (Feit 3, 6)
+- Een vergelijkbaar voltooiingseffect, of een effect dat aan het formulier kan worden toegeschreven, is niet vastgesteld. (Feit 4)
+- De temporele relatie en datum van de Spaanse juridische goedkeuring, Poolse juridische goedkeuring en algemene juridische goedkeuring zijn niet vastgesteld. (Feit 6)
+- Populatiebrede tevredenheid, succesvolle indiening, uitkeringsopname en kostenbesparing zijn niet aangetoond. (Feit 6, 7)
+
+### Development sequence
+- In de volgorde van de notitie: steekproef- en taalcontroles (feit 2), toegangstests en taakresultaten (feiten 3–4), checker-runs en reproduceerbaarheidsbeperkingen (feit 5), vervolgens status en besluit (feit 6) en de poll (feit 7). Dit is de documentvolgorde, geen vastgestelde chronologie van de gebeurtenissen.
+- Vooruitkijkend: een usability-onderzoek met het gecorrigeerde formulier is alleen toegestaan na verificatie van de uploadfix; algemene uitrol is tegengehouden. Een uitgerolde fix of onderzoeksresultaat is niet vermeld. (Feit 6)
+
+### Editorial relevance
+Feiten 2–6; interpretaties 1–2; unknowns 1–5.

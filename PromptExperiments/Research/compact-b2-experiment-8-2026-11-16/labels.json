@@ -1,0 +1,188 @@
+{
+  "water": [
+    {
+      "id": "ledger",
+      "materiality": "kern",
+      "sourceQuote": "The legacy fortnight recorded 46 low-pressure alerts in 1,400 logger-hours; the pilot fortnight recorded 29 in 1,120 logger-hours."
+    },
+    {
+      "id": "method",
+      "materiality": "kern",
+      "sourceQuote": "The legacy alert threshold was 1.8 bar for 30 seconds; the pilot used 1.6 bar for 60 seconds."
+    },
+    {
+      "id": "conditions",
+      "materiality": "belangrijk",
+      "sourceQuote": "A planned night flushing operation occurred during the legacy fortnight only."
+    },
+    {
+      "id": "allocation",
+      "materiality": "belangrijk",
+      "sourceQuote": "Branches were selected for ease of access, not randomly; rainfall also differed."
+    },
+    {
+      "id": "contrast",
+      "materiality": "kern",
+      "sourceQuote": "All twelve loggers passed the static reference-gauge calibration at 2.0 bar. Four nevertheless failed the overnight packet-delivery check, losing 17% of scheduled messages in that check."
+    },
+    {
+      "id": "open",
+      "materiality": "kern",
+      "sourceQuote": "The delivery fault remained open at review; a proposed antenna move had not been tested."
+    },
+    {
+      "id": "chronology",
+      "materiality": "belangrijk",
+      "sourceQuote": "A battery replacement was completed on two different devices, but the dossier provides no date linking that work to the delivery check."
+    },
+    {
+      "id": "term",
+      "materiality": "kern",
+      "sourceQuote": "A bench check recorded three brownouts: transient supply-voltage drops causing device restarts, not a regional power outage."
+    },
+    {
+      "id": "attribution",
+      "materiality": "kern",
+      "sourceQuote": "A capacitor swap and firmware update were both made before a repeat bench check with no brownouts. Their separate contributions were not identified; the bench result does not certify field uptime."
+    },
+    {
+      "id": "variation",
+      "materiality": "kern",
+      "sourceQuote": "Three replays of the same stored trace emitted 29, 31 and 28 alerts; a nondeterministic deduplication tie-breaker was enabled."
+    },
+    {
+      "id": "decision",
+      "materiality": "kern",
+      "sourceQuote": "The committee authorized a six-week paired measurement study with unchanged thresholds. It did not authorize network-wide deployment."
+    },
+    {
+      "id": "cost",
+      "materiality": "belangrijk",
+      "sourceQuote": "The budget of EUR 18,000 covers logger rental and field visits, excludes staff overtime and does not establish savings."
+    }
+  ],
+  "language": [
+    {
+      "id": "sample",
+      "materiality": "kern",
+      "sourceQuote": "Reviewers sampled 80 of 640 message strings: 40 Spanish and 40 Polish."
+    },
+    {
+      "id": "contrast",
+      "materiality": "kern",
+      "sourceQuote": "All 80 retained the glossary's approved entitlement terms. Six Spanish strings nevertheless reversed the meaning of the deadline exception. The Polish sample had no deadline reversal."
+    },
+    {
+      "id": "review",
+      "materiality": "belangrijk",
+      "sourceQuote": "A second reviewer checked the six reversals and agreed. The remaining strings did not receive that second semantic review."
+    },
+    {
+      "id": "access",
+      "materiality": "kern",
+      "sourceQuote": "An automated colour-contrast scan passed the three tested page templates. Keyboard-only testing could not activate the document-upload button on the second template."
+    },
+    {
+      "id": "open",
+      "materiality": "kern",
+      "sourceQuote": "The upload defect was still open. Screen-reader testing announced the upload label correctly on that template, but did not test keyboard activation."
+    },
+    {
+      "id": "outcome",
+      "materiality": "kern",
+      "sourceQuote": "Task completion in the old English-only service was 33 of 50 moderated sessions. The multilingual form recorded 42 of 50 unmoderated sessions."
+    },
+    {
+      "id": "method",
+      "materiality": "kern",
+      "sourceQuote": "Completion formerly required a final submitted application; the new dashboard counted reaching the review screen."
+    },
+    {
+      "id": "allocation",
+      "materiality": "belangrijk",
+      "sourceQuote": "Participants were recruited from different channels and neither assigned randomly nor matched for prior experience."
+    },
+    {
+      "id": "term",
+      "materiality": "kern",
+      "sourceQuote": "A preprocessing step called case folding normalised letter case; it did not merge benefit cases or applications."
+    },
+    {
+      "id": "variation",
+      "materiality": "kern",
+      "sourceQuote": "Three runs on the same 80 strings flagged six, five and six semantic issues with a sampling-based checker. A human reference review identified the six deadline reversals."
+    },
+    {
+      "id": "legal",
+      "materiality": "kern",
+      "sourceQuote": "The appendix says legal approval covers the Spanish consent paragraph only. It gives no approval date or temporal relationship to the sample review. Polish consent approval is not documented."
+    },
+    {
+      "id": "decision",
+      "materiality": "kern",
+      "sourceQuote": "The coordinator authorised a corrected-form usability study, conditional on a verified upload fix, and withheld general release."
+    }
+  ],
+  "heat": [
+    {
+      "id": "ledger",
+      "materiality": "kern",
+      "sourceQuote": "The final metered record shows 410 kWh of useful heat from 500 kWh electrical input over the trial boundary."
+    },
+    {
+      "id": "method",
+      "materiality": "kern",
+      "sourceQuote": "The legacy boiler's displayed 76% used fuel energy on a lower-heating-value basis, while the electrical trial used meter input and included pump demand. No common-boundary reanalysis exists."
+    },
+    {
+      "id": "conditions",
+      "materiality": "belangrijk",
+      "sourceQuote": "Trial shifts processed lighter products and ambient temperature was 8 degrees higher than in the boiler reference shifts."
+    },
+    {
+      "id": "allocation",
+      "materiality": "belangrijk",
+      "sourceQuote": "Operators selected the trial shifts to avoid peak production. There was no random assignment or matched control."
+    },
+    {
+      "id": "contrast",
+      "materiality": "kern",
+      "sourceQuote": "All four vessels passed the specified pressure-hold test. Two nevertheless failed the insulation surface-temperature check at the access hatch."
+    },
+    {
+      "id": "open",
+      "materiality": "kern",
+      "sourceQuote": "The hot surfaces remained unresolved at sign-off, and a proposed shield was not installed."
+    },
+    {
+      "id": "interlock",
+      "materiality": "belangrijk",
+      "sourceQuote": "An interlock test passed for all four vessels; it did not test the hot-surface problem."
+    },
+    {
+      "id": "term",
+      "materiality": "kern",
+      "sourceQuote": "Three thermal trips occurred during initial charging. Here a thermal trip is a protective over-temperature shutdown, not a production journey or heat-delivery cycle."
+    },
+    {
+      "id": "attribution",
+      "materiality": "kern",
+      "sourceQuote": "A controller setting and sensor mounting were changed together before a repeat charge with zero trips. The record cannot separate the two actions' contributions."
+    },
+    {
+      "id": "variation",
+      "materiality": "kern",
+      "sourceQuote": "Three identical-input simulation runs estimated usable discharge at 402, 418 and 407 kWh; the solver used stochastic initialisation."
+    },
+    {
+      "id": "cost",
+      "materiality": "belangrijk",
+      "sourceQuote": "The finance appendix reports a EUR 9,200 rental allowance. It gives no date or sequence relative to testing. The allowance excludes installation, downtime and maintenance, so no payback claim is supported."
+    },
+    {
+      "id": "decision",
+      "materiality": "kern",
+      "sourceQuote": "Procurement approved only a longer instrumented trial conditional on a verified hatch remedy; no purchase or factory-wide roll-out was approved."
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+### Facts
+
+1. The source describes a newly constructed evaluation, not a real utility study: twelve pressure loggers at two branches; it is not a drinking-water safety certification. The team calls the pilot “encouraging”; this is its assessment, not an independently established result. (Source introduction)
+2. The legacy fortnight recorded 46 low-pressure alerts in 1,400 logger-hours; the pilot fortnight recorded 29 in 1,120 logger-hours. These are alerts, not confirmed leaks or affected households. The final ledger uses 29: it restored four suppressed alerts that were distinct device events, correcting a presentation’s 25. (Recorded outcomes)
+3. The legacy threshold was 1.8 bar for 30 seconds; the pilot threshold was 1.6 bar for 60 seconds, and old traces were not reprocessed. The report gives no rate-adjusted treatment-effect estimate. (Recorded outcomes)
+4. A planned night flushing operation occurred only during the legacy fortnight. Branches were selected for ease of access, not randomly; rainfall differed, and no unaffected comparison branch was instrumented. The source says the lower alert count cannot isolate the sensor upgrade’s effect. (Recorded outcomes)
+5. All twelve loggers passed static reference-gauge calibration at 2.0 bar. Separately, four failed the overnight packet-delivery check, losing 17% of scheduled messages in that check. The delivered pressure readings were not shown to be inaccurate. (Checks and defects)
+6. The packet-delivery fault remained open at review; a proposed antenna move had not been tested. Battery replacement was completed on two different devices, but no date links it to the delivery check; the source says not to treat that battery status as repair of the packet fault. (Checks and defects)
+7. A bench check recorded three brownouts, defined here as transient supply-voltage drops causing device restarts, not a regional power outage. A capacitor swap and firmware update were both made before a repeat bench check recorded no brownouts. Their separate contributions were not identified, and the bench result does not certify field uptime. (Checks and defects)
+8. Three replays of the same stored trace emitted 29, 31 and 28 alerts; a nondeterministic deduplication tie-breaker was enabled. The team did not designate a replay as the true count. These replay counts do not replace the final field ledger’s 29. The source says repeat variability and changed thresholds limit attribution. (Repeats and decision)
+9. The committee authorized a six-week paired measurement study with unchanged thresholds; it did not authorize network-wide deployment. (Repeats and decision)
+10. The EUR 18,000 budget covers logger rental and field visits, excludes staff overtime, and does not establish savings. No safety, leak-prevention or annual reliability benefit was measured. Training attendance was 10 of 12 technicians, but attendance was not a competence test. (Repeats and decision)
+
+### Unknowns
+
+- The source does not establish whether the pilot reduced the underlying occurrence of low pressure, leaks, or household impacts; alerts are not confirmed events, and the comparison has the stated measurement and operating differences. (Facts 2–4)
+- It does not establish that the proposed antenna move would resolve packet loss, or that battery replacement repaired the fault. The date connection is also unspecified. (Fact 6)
+- The separate effects of the capacitor swap and firmware update are unknown; absence of brownouts on the repeat bench check does not establish field uptime. (Fact 7)
+- No network-wide performance, safety, leak-prevention, annual reliability, savings, or technician competence outcome is established. (Facts 1, 9–10)

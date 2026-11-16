@@ -1,0 +1,50 @@
+[
+  {
+    "arm": "A",
+    "calls": 9,
+    "sufficient": 8,
+    "conditional": 1,
+    "coreOnly": 9,
+    "input": 91440,
+    "output": 22169,
+    "total": 113609,
+    "weighted": 180116,
+    "tokensPerSufficient": 14201.125,
+    "weightedPerSufficient": 22514.5,
+    "cached": 66434,
+    "cacheWrite": 24979,
+    "reasoning": 8809
+  },
+  {
+    "arm": "B",
+    "calls": 9,
+    "sufficient": 4,
+    "conditional": 5,
+    "coreOnly": 9,
+    "input": 10017,
+    "output": 15495,
+    "total": 25512,
+    "weighted": 71997,
+    "tokensPerSufficient": 6378.0,
+    "weightedPerSufficient": 17999.25,
+    "cached": 6660,
+    "cacheWrite": 3330,
+    "reasoning": 5603
+  },
+  {
+    "arm": "B2",
+    "calls": 9,
+    "sufficient": 7,
+    "conditional": 2,
+    "coreOnly": 9,
+    "input": 11304,
+    "output": 13160,
+    "total": 24464,
+    "weighted": 63944,
+    "tokensPerSufficient": 3494.8571428571427,
+    "weightedPerSufficient": 9134.857142857143,
+    "cached": 7518,
+    "cacheWrite": 3759,
+    "reasoning": 3634
+  }
+]

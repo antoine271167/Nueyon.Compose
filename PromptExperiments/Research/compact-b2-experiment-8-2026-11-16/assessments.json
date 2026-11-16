@@ -1,0 +1,461 @@
+[
+  {
+    "id": "water-r1-A",
+    "case": "water",
+    "arm": "A",
+    "scores": {
+      "brontrouw": 2,
+      "dekking": 2,
+      "nuances_contrasten": 2,
+      "attributie": 2,
+      "epistemische_precisie": 2,
+      "consistentie": 2,
+      "bruikbaarheid_projectie": 2
+    },
+    "sufficient": true,
+    "coreOnly": true,
+    "reason": "Alle materiële labels en hun grenzen behouden; geen concrete ongefundeerde toevoeging aangetroffen."
+  },
+  {
+    "id": "water-r1-B",
+    "case": "water",
+    "arm": "B",
+    "scores": {
+      "brontrouw": 1,
+      "dekking": 2,
+      "nuances_contrasten": 2,
+      "attributie": 2,
+      "epistemische_precisie": 1,
+      "consistentie": 2,
+      "bruikbaarheid_projectie": 2
+    },
+    "sufficient": false,
+    "coreOnly": true,
+    "reason": "then koppelt het besluit aan de voorafgaande benchgebeurtenis zonder expliciete bronvolgorde."
+  },
+  {
+    "id": "water-r1-B2",
+    "case": "water",
+    "arm": "B2",
+    "scores": {
+      "brontrouw": 1,
+      "dekking": 2,
+      "nuances_contrasten": 2,
+      "attributie": 2,
+      "epistemische_precisie": 1,
+      "consistentie": 2,
+      "bruikbaarheid_projectie": 2
+    },
+    "sufficient": false,
+    "coreOnly": true,
+    "reason": "then maakt commissieautorisatie later dan reviewstatus; bron noemt beide zonder expliciete volgorde."
+  },
+  {
+    "id": "language-r1-B",
+    "case": "language",
+    "arm": "B",
+    "scores": {
+      "brontrouw": 2,
+      "dekking": 2,
+      "nuances_contrasten": 2,
+      "attributie": 2,
+      "epistemische_precisie": 2,
+      "consistentie": 2,
+      "bruikbaarheid_projectie": 2
+    },
+    "sufficient": true,
+    "coreOnly": true,
+    "reason": "Alle materiële labels en hun grenzen behouden; geen concrete ongefundeerde toevoeging aangetroffen."
+  },
+  {
+    "id": "language-r1-B2",
+    "case": "language",
+    "arm": "B2",
+    "scores": {
+      "brontrouw": 2,
+      "dekking": 2,
+      "nuances_contrasten": 2,
+      "attributie": 2,
+      "epistemische_precisie": 2,
+      "consistentie": 2,
+      "bruikbaarheid_projectie": 2
+    },
+    "sufficient": true,
+    "coreOnly": true,
+    "reason": "Alle materiële labels en hun grenzen behouden; geen concrete ongefundeerde toevoeging aangetroffen."
+  },
+  {
+    "id": "language-r1-A",
+    "case": "language",
+    "arm": "A",
+    "scores": {
+      "brontrouw": 2,
+      "dekking": 2,
+      "nuances_contrasten": 2,
+      "attributie": 2,
+      "epistemische_precisie": 2,
+      "consistentie": 2,
+      "bruikbaarheid_projectie": 2
+    },
+    "sufficient": true,
+    "coreOnly": true,
+    "reason": "Alle materiële labels en hun grenzen behouden; geen concrete ongefundeerde toevoeging aangetroffen."
+  },
+  {
+    "id": "heat-r1-B2",
+    "case": "heat",
+    "arm": "B2",
+    "scores": {
+      "brontrouw": 2,
+      "dekking": 2,
+      "nuances_contrasten": 2,
+      "attributie": 2,
+      "epistemische_precisie": 2,
+      "consistentie": 2,
+      "bruikbaarheid_projectie": 2
+    },
+    "sufficient": true,
+    "coreOnly": true,
+    "reason": "Alle materiële labels en hun grenzen behouden; geen concrete ongefundeerde toevoeging aangetroffen."
+  },
+  {
+    "id": "heat-r1-A",
+    "case": "heat",
+    "arm": "A",
+    "scores": {
+      "brontrouw": 2,
+      "dekking": 2,
+      "nuances_contrasten": 2,
+      "attributie": 2,
+      "epistemische_precisie": 2,
+      "consistentie": 2,
+      "bruikbaarheid_projectie": 2
+    },
+    "sufficient": true,
+    "coreOnly": true,
+    "reason": "Alle materiële labels en hun grenzen behouden; geen concrete ongefundeerde toevoeging aangetroffen."
+  },
+  {
+    "id": "heat-r1-B",
+    "case": "heat",
+    "arm": "B",
+    "scores": {
+      "brontrouw": 2,
+      "dekking": 2,
+      "nuances_contrasten": 2,
+      "attributie": 2,
+      "epistemische_precisie": 2,
+      "consistentie": 2,
+      "bruikbaarheid_projectie": 2
+    },
+    "sufficient": true,
+    "coreOnly": true,
+    "reason": "Alle materiële labels en hun grenzen behouden; geen concrete ongefundeerde toevoeging aangetroffen."
+  },
+  {
+    "id": "water-r2-B",
+    "case": "water",
+    "arm": "B",
+    "scores": {
+      "brontrouw": 1,
+      "dekking": 2,
+      "nuances_contrasten": 2,
+      "attributie": 2,
+      "epistemische_precisie": 1,
+      "consistentie": 2,
+      "bruikbaarheid_projectie": 2
+    },
+    "sufficient": false,
+    "coreOnly": true,
+    "reason": "Voegt expliciet reviewmoment vóór commissieautorisatie toe; het dossier vermeldt dat moment niet. Kleine, betwistbare procesinferentie; geen kernfout."
+  },
+  {
+    "id": "water-r2-B2",
+    "case": "water",
+    "arm": "B2",
+    "scores": {
+      "brontrouw": 2,
+      "dekking": 2,
+      "nuances_contrasten": 2,
+      "attributie": 2,
+      "epistemische_precisie": 2,
+      "consistentie": 2,
+      "bruikbaarheid_projectie": 2
+    },
+    "sufficient": true,
+    "coreOnly": true,
+    "reason": "Alle materiële labels en hun grenzen behouden; geen concrete ongefundeerde toevoeging aangetroffen."
+  },
+  {
+    "id": "water-r2-A",
+    "case": "water",
+    "arm": "A",
+    "scores": {
+      "brontrouw": 2,
+      "dekking": 2,
+      "nuances_contrasten": 2,
+      "attributie": 2,
+      "epistemische_precisie": 2,
+      "consistentie": 2,
+      "bruikbaarheid_projectie": 2
+    },
+    "sufficient": true,
+    "coreOnly": true,
+    "reason": "Alle materiële labels en hun grenzen behouden; geen concrete ongefundeerde toevoeging aangetroffen."
+  },
+  {
+    "id": "language-r2-B2",
+    "case": "language",
+    "arm": "B2",
+    "scores": {
+      "brontrouw": 1,
+      "dekking": 2,
+      "nuances_contrasten": 2,
+      "attributie": 2,
+      "epistemische_precisie": 1,
+      "consistentie": 2,
+      "bruikbaarheid_projectie": 2
+    },
+    "sufficient": false,
+    "coreOnly": true,
+    "reason": "not deployed is sterker dan no deployed fix is recorded. Facts 5 en Unknowns bewaren de bronbeperking wel correct."
+  },
+  {
+    "id": "language-r2-A",
+    "case": "language",
+    "arm": "A",
+    "scores": {
+      "brontrouw": 2,
+      "dekking": 2,
+      "nuances_contrasten": 2,
+      "attributie": 2,
+      "epistemische_precisie": 2,
+      "consistentie": 2,
+      "bruikbaarheid_projectie": 2
+    },
+    "sufficient": true,
+    "coreOnly": true,
+    "reason": "Alle materiële labels en hun grenzen behouden; geen concrete ongefundeerde toevoeging aangetroffen."
+  },
+  {
+    "id": "language-r2-B",
+    "case": "language",
+    "arm": "B",
+    "scores": {
+      "brontrouw": 2,
+      "dekking": 2,
+      "nuances_contrasten": 2,
+      "attributie": 2,
+      "epistemische_precisie": 2,
+      "consistentie": 2,
+      "bruikbaarheid_projectie": 2
+    },
+    "sufficient": true,
+    "coreOnly": true,
+    "reason": "Alle materiële labels en hun grenzen behouden; geen concrete ongefundeerde toevoeging aangetroffen."
+  },
+  {
+    "id": "heat-r2-A",
+    "case": "heat",
+    "arm": "A",
+    "scores": {
+      "brontrouw": 2,
+      "dekking": 2,
+      "nuances_contrasten": 2,
+      "attributie": 2,
+      "epistemische_precisie": 2,
+      "consistentie": 2,
+      "bruikbaarheid_projectie": 2
+    },
+    "sufficient": true,
+    "coreOnly": true,
+    "reason": "Alle materiële labels en hun grenzen behouden; geen concrete ongefundeerde toevoeging aangetroffen."
+  },
+  {
+    "id": "heat-r2-B",
+    "case": "heat",
+    "arm": "B",
+    "scores": {
+      "brontrouw": 1,
+      "dekking": 2,
+      "nuances_contrasten": 2,
+      "attributie": 2,
+      "epistemische_precisie": 1,
+      "consistentie": 2,
+      "bruikbaarheid_projectie": 2
+    },
+    "sufficient": false,
+    "coreOnly": true,
+    "reason": "subsequently plaatst het besluit na de herhaaltest; bron geeft geen relatieve datering van besluit tegenover tests."
+  },
+  {
+    "id": "heat-r2-B2",
+    "case": "heat",
+    "arm": "B2",
+    "scores": {
+      "brontrouw": 2,
+      "dekking": 2,
+      "nuances_contrasten": 2,
+      "attributie": 2,
+      "epistemische_precisie": 2,
+      "consistentie": 2,
+      "bruikbaarheid_projectie": 2
+    },
+    "sufficient": true,
+    "coreOnly": true,
+    "reason": "Alle materiële labels en hun grenzen behouden; geen concrete ongefundeerde toevoeging aangetroffen."
+  },
+  {
+    "id": "water-r3-B2",
+    "case": "water",
+    "arm": "B2",
+    "scores": {
+      "brontrouw": 2,
+      "dekking": 2,
+      "nuances_contrasten": 2,
+      "attributie": 2,
+      "epistemische_precisie": 2,
+      "consistentie": 2,
+      "bruikbaarheid_projectie": 2
+    },
+    "sufficient": true,
+    "coreOnly": true,
+    "reason": "Alle materiële labels en hun grenzen behouden; geen concrete ongefundeerde toevoeging aangetroffen."
+  },
+  {
+    "id": "water-r3-A",
+    "case": "water",
+    "arm": "A",
+    "scores": {
+      "brontrouw": 2,
+      "dekking": 2,
+      "nuances_contrasten": 2,
+      "attributie": 2,
+      "epistemische_precisie": 2,
+      "consistentie": 2,
+      "bruikbaarheid_projectie": 2
+    },
+    "sufficient": true,
+    "coreOnly": true,
+    "reason": "Alle materiële labels en hun grenzen behouden; geen concrete ongefundeerde toevoeging aangetroffen."
+  },
+  {
+    "id": "water-r3-B",
+    "case": "water",
+    "arm": "B",
+    "scores": {
+      "brontrouw": 1,
+      "dekking": 2,
+      "nuances_contrasten": 2,
+      "attributie": 2,
+      "epistemische_precisie": 1,
+      "consistentie": 2,
+      "bruikbaarheid_projectie": 2
+    },
+    "sufficient": false,
+    "coreOnly": true,
+    "reason": "Expliciete kalenderorde staat niet in de bron. legacy suggereert eerder, maar bewijst de gerapporteerde periodevolgorde niet. Kleine betwistbare inferentie; ook After review voegt volgorde toe."
+  },
+  {
+    "id": "language-r3-A",
+    "case": "language",
+    "arm": "A",
+    "scores": {
+      "brontrouw": 2,
+      "dekking": 2,
+      "nuances_contrasten": 2,
+      "attributie": 2,
+      "epistemische_precisie": 2,
+      "consistentie": 2,
+      "bruikbaarheid_projectie": 2
+    },
+    "sufficient": true,
+    "coreOnly": true,
+    "reason": "Alle materiële labels en hun grenzen behouden; geen concrete ongefundeerde toevoeging aangetroffen."
+  },
+  {
+    "id": "language-r3-B",
+    "case": "language",
+    "arm": "B",
+    "scores": {
+      "brontrouw": 2,
+      "dekking": 2,
+      "nuances_contrasten": 2,
+      "attributie": 2,
+      "epistemische_precisie": 2,
+      "consistentie": 2,
+      "bruikbaarheid_projectie": 2
+    },
+    "sufficient": true,
+    "coreOnly": true,
+    "reason": "Alle materiële labels en hun grenzen behouden; geen concrete ongefundeerde toevoeging aangetroffen."
+  },
+  {
+    "id": "language-r3-B2",
+    "case": "language",
+    "arm": "B2",
+    "scores": {
+      "brontrouw": 2,
+      "dekking": 2,
+      "nuances_contrasten": 2,
+      "attributie": 2,
+      "epistemische_precisie": 2,
+      "consistentie": 2,
+      "bruikbaarheid_projectie": 2
+    },
+    "sufficient": true,
+    "coreOnly": true,
+    "reason": "Alle materiële labels en hun grenzen behouden; geen concrete ongefundeerde toevoeging aangetroffen."
+  },
+  {
+    "id": "heat-r3-B",
+    "case": "heat",
+    "arm": "B",
+    "scores": {
+      "brontrouw": 1,
+      "dekking": 2,
+      "nuances_contrasten": 2,
+      "attributie": 2,
+      "epistemische_precisie": 1,
+      "consistentie": 2,
+      "bruikbaarheid_projectie": 2
+    },
+    "sufficient": false,
+    "coreOnly": true,
+    "reason": "subsequently koppelt besluit aan sign-off, zonder expliciete relatieve datering in bron."
+  },
+  {
+    "id": "heat-r3-B2",
+    "case": "heat",
+    "arm": "B2",
+    "scores": {
+      "brontrouw": 2,
+      "dekking": 2,
+      "nuances_contrasten": 2,
+      "attributie": 2,
+      "epistemische_precisie": 2,
+      "consistentie": 2,
+      "bruikbaarheid_projectie": 2
+    },
+    "sufficient": true,
+    "coreOnly": true,
+    "reason": "Alle materiële labels en hun grenzen behouden; geen concrete ongefundeerde toevoeging aangetroffen."
+  },
+  {
+    "id": "heat-r3-A",
+    "case": "heat",
+    "arm": "A",
+    "scores": {
+      "brontrouw": 2,
+      "dekking": 1,
+      "nuances_contrasten": 1,
+      "attributie": 2,
+      "epistemische_precisie": 2,
+      "consistentie": 2,
+      "bruikbaarheid_projectie": 1
+    },
+    "sufficient": false,
+    "coreOnly": true,
+    "reason": "Het volledige belangrijke kostenlabel ontbreekt in volledige Research én projectie: EUR 9.200, geen datering, installatie/downtime/onderhoud uitgesloten, geen paybackclaim."
+  }
+]
