@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-Ekxqs93SMoyAfzbLLkNh0Njjus2ym",
+  "object": "chat.completion",
+  "created": 1794861866,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"### Facts\\n1. The source says the FWS listed the northern Rocky Mountain wolf as endangered in 1973 and designated the Greater Yellowstone Ecosystem (GYE) as a recovery area. From 1995 to 1997, 41 wild wolves from Canada and northwest Montana were released in Yellowstone; wolves from the growing population dispersed beyond the park. (“History” opening)\\n2. Yellowstone packs average 11.8 individuals. The source describes packs as complex social families with older members, often the alpha male and female, and subordinates with individual traits and roles. Yellowstone research has highlighted social living’s adaptive value for cooperative offspring care, group hunting, territory and carcass defense, and survival of infirmed individuals. (“Description”)\\n3. Packs defend territories through howling and scent-marking. Encounters between packs are typically aggressive; larger packs often defeat smaller ones, with exceptions when the smaller group has more old adults or adult males. The source reports that 65% of collared wolves are ultimately killed by rival packs. (“Description”; “Population”)\\n4. Wolves eat a wide variety of prey. In Yellowstone, elk make up 90% of winter prey, while deer make up 10–15% of summer prey; wolves also kill bison. (“Description”)\\n5. Wolf kills provide food for other animals: ravens and magpies arrive almost immediately after an elk kill; coyotes wait nearby until wolves are sated; bears attempt to drive wolves away and are usually successful. Eagles and invertebrates also consume remains. (“Description”)\\n6. Early-winter prey composition changed over time: from 1995–2000, elk calves were 50% of wolf prey and bull elk 25%; from 2001–2007, that ratio reversed. The source says this indicates changes in prey vulnerability and availability. (“Changes in Their Prey”)\\n7. Bison became an increasingly important food source. Wolves prey on bison of all age classes, but most bison consumption comes from scavenging winter-killed animals or bison that died from breeding-season injuries. (“Changes in Their Prey”)\\n8. The source says changes in wolf predation and impacts on prey such as elk are linked to other factors, including other predators, ungulate management outside the park, and weather. Weather affects forage quality and availability and, ultimately, elk nutritional condition. It characterizes changes in prey selection and kill rates as resulting from complex interactions among these factors; NPS research focuses on their relative contributions over the past 25 years. (“Changes in Their Prey”)\\n9. After rapid growth in the first years following restoration, Yellowstone wolves expanded their population and range throughout the GYE. The population has stabilized since 2009 after declines from initial recolonization. The source attributes most of the decrease to declining elk numbers and available territory on the northern range, and also identifies canine distemper and sarcoptic mange as factors. (“Population”)\\n10. The source says the park provides a place to research how wolves may affect many aspects of the ecosystem. Researchers capture a small proportion of wolves each year and use radio-tracking and GPS collars to collect individual data and monitor the population, including how wolves are affecting other animals and plants; typically, only 20% of the population is collared at year-end. (“History” opening; “Population”)\\n### Interpretations\\n- Facts 2–5 and 7–8 support describing wolves in Yellowstone through interacting social, feeding, and scavenging relationships, with prey patterns and effects considered in context—not as a single, isolated predator relationship.\\n### Unknowns\\n- The source does not establish that wolves alone control, restore, or determine the state of the Yellowstone ecosystem, nor does it quantify broad ecosystem-level outcomes attributable to wolves. It describes research into possible effects on ecosystem aspects and monitoring of other animals and plants (Facts 10).\\n- The source does not quantify how much each listed factor contributes to changes in wolf predation, elk impacts, or prey selection; it explicitly describes these changes as arising from complex interactions and says NPS research is examining relative factors (Fact 8).\\n- The source gives observations and reported research findings, but does not provide study methods or evidence sufficient here to independently assess the strength of each finding (Facts 2–9).\\n### Development sequence\\n- 1973: FWS listing and recovery-area designation; 1995–1997: 41 wolves released (Fact 1). The source reports rapid population growth in the first years after restoration (Fact 9). It records one early-winter prey composition for 1995–2000 and a reversed calf-to-bull ratio for 2001–2007 (Fact 6). It says the population stabilized since 2009 after a decline, and describes current NPS research into the relative factors behind predation patterns (Facts 8–9). The source also states that January 12, 2025, marks the 30th anniversary of wolves’ return; it does not reconcile that anniversary date with the 1995–1997 release period (Fact 1’s source context).\\n### Editorial relevance\\n- Central evidence: Facts 2, 4–8. Recovery and population context: Facts 1, 9. Scope of ecosystem claims and monitoring limits: Facts 8, 10; Unknowns.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2769,
+    "completion_tokens": 1601,
+    "total_tokens": 4370,
+    "prompt_tokens_details": {
+      "cached_tokens": 2766,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 471,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

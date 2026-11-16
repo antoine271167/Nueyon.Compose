@@ -1,0 +1,31 @@
+{
+  "scope": "Promptfreeze only; test protocol not frozen",
+  "utc": "2026-11-16T20:32:03.5597956Z",
+  "prompts": [
+    {
+      "arm": "A",
+      "source": "src/Nueyon.Compose.Application/Prompts/Research/Research.system.prompt.md",
+      "sha256": "D3A28B5429CF5866EC9A23D24EB216033B1B09C85AF3436ED4CB297FC5B4078E",
+      "copyByteEqual": true
+    },
+    {
+      "arm": "A",
+      "source": "src/Nueyon.Compose.Application/Prompts/Research/Research.user.prompt.md",
+      "sha256": "9093D5AB42F5300B2C79C9678DAA905767975B8F0014530A08701C9616367728",
+      "copyByteEqual": true
+    },
+    {
+      "arm": "B2",
+      "source": "PromptExperiments/Research/compact-b2-experiment-8-2026-11-16/prompts/B2/Research/Research.system.prompt.md",
+      "sha256": "DE155005B5F494E6B54C850C6315270C95BF51C2B21C46A9D38F495CEEE0417F",
+      "copyByteEqual": true
+    },
+    {
+      "arm": "B2",
+      "source": "PromptExperiments/Research/compact-b2-experiment-8-2026-11-16/prompts/B2/Research/Research.user.prompt.md",
+      "sha256": "2373B036A4F538FB730589AAE47B06CF8FC26134A1ADB60C9E3597ECED96D3EC",
+      "copyByteEqual": true
+    }
+  ],
+  "head": "ed1682f37659d619edf58c8e2d3cbbf09d5acfed"
+}

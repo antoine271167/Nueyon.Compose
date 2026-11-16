@@ -1,0 +1,33 @@
+### Facts
+1. After textile production had risen for decades, total mill employment fell from 17,000 in 1895 to under 14,000 in 1918; the source says technological gains in output could coexist with workforce reductions. ("early signs")
+2. Lowell mill owners knew by the 1890s that their mills were aging and increasingly noncompetitive, but did not modernize their Lowell operations; some moved operations or invested profits in modern Southern plants. Southern promoters emphasized land, labor, energy, taxes, transportation, and fewer union and worker-safety restrictions. ("mill owners knew")
+3. Closures and departures began by World War I; a further wave came in 1926. By the mid-1930s, only the Merrimack, Lawrence, and Boott remained of Lowell's first large mills. By 1936 textile employment was 8,000, and the source describes empty, reduced, or demolished mill buildings. ("As early as World War I"; "The Depression came early")
+4. The source records human costs through workers' recollections: one Polish-born worker described a family diet of dandelion greens and hard bread and occasional sales of possessions for meat; another recalled being sent home repeatedly without knowing whether work would be available. It also says children left school for work, jobs were scarce, and employers increased demands. ("Families coped")
+5. In late-1930s mills, the “stretch-out” assigned workers more machines for the same wage. Yvonne Hoar recalled dangerous, noisy conditions, doubled machines, and pay of $13 a week at Merrimack Mills. In 1938 women helped organize a union; after wage and working-condition demands were rejected, workers struck. The owners capitulated after seven weeks amid approaching war and federal pressure for cloth, and workers returned. ("stretch-out"; Hoar recollection; "When a union was formed")
+6. World War II brought a temporary increase: remaining mills raised employment, military-contract firms competed for workers, and the source reports weekly mill starting pay rising from $13 in 1938 to $29 in 1943, with Remington averaging $37 for a 48-hour week in 1943. After the war, munitions and textile orders fell; Boott and Merrimack closed in the 1950s, and mill employment nearly disappeared. ("World War II quickened"; "The boom proved only temporary")
+7. In the 1960s, Lowell citizens developed a strategy to revitalize the community, transform education, and stimulate the economy, proposing redevelopment based on architectural and cultural heritage, including a historical park presenting the city as a “living museum.” The city council endorsed the idea in 1972; Lowell Heritage State Park emerged in 1974, Lowell National Historical Park in 1978, and the Lowell Historic Preservation Commission was created in 1978. ("In the 1960s"; "Pragmatic alliances")
+8. The source says political and business leaders supported the movement and describes cooperation among groups and government agencies. The Preservation Commission's stated purposes were to assist park development, encourage preservation of downtown buildings and canals, and develop related cultural programs. ("Pragmatic alliances")
+9. The source identifies other 1970s developments: the University of Lowell formed in 1975 through the union of Lowell Technological Institute and Lowell State College, with a mission including regional economic development; Wang Laboratories arrived in the mid-1970s, and many hoped it would bring a new technological future. These are distinct contributions or expectations, not evidence that either alone caused recovery. ("Other factors in the 1970s")
+10. For the late 1970s and early 1980s, the source reports rising employment, business expansion, and over 100 old buildings rehabilitated and put to new uses, alongside renewed visitors and Lowell's description as a model of historic preservation and urban revival. It does not attribute these outcomes solely to the parks. ("The late 1970s and the early 1980s")
+11. By the late 1980s, the source says the boom had ended: the regional economy cooled, the computer industry tightened, companies closed or relocated, and Wang faced strong competition, cut most of its workforce, and restructured. ("But by the late 1980s")
+12. The 1992 account also describes historic buildings housing new enterprises, old machinery used in exhibits, rising population, new immigration, public art, and visitor activities. These are claims made in the source's contemporary account, not a current city measurement. ("The city's new pride"; "The citizens of Lowell")
+
+### Interpretations
+- Facts 1–6 and 10–11 support a boom-and-bust account of industrial change rather than uninterrupted recovery.
+- Facts 7–10 and 12 support describing heritage preservation and adaptive reuse as parts of Lowell's revival, alongside education, business expansion, and other changes; they do not establish a single cause.
+
+### Unknowns
+- The source does not quantify how much the parks, preservation programs, university, Wang, or other factors contributed separately to employment, investment, or citywide recovery; the reported developments do not establish their causal effects.
+- It provides no systematic measure of who benefited from the late-1970s/early-1980s revival, or whether rehabilitation and new activity offset losses for workers affected by closures and layoffs.
+- It gives no evidence here about the durability of the revival after the late-1980s downturn or conditions after the 1992 account; the source's population and visitor descriptions should not be treated as current data.
+
+### Development sequence
+- Employment decline and mill closures preceded severe Depression-era hardship (Facts 1–5). Wartime demand then raised employment and wages, but the source says the boom was temporary; postwar orders fell and major mills closed (Fact 6).
+- Citizens developed a heritage-based redevelopment proposal in the 1960s; the council endorsed it in 1972, followed by the state park in 1974 and national park and Preservation Commission in 1978 (Facts 7–8).
+- The source next reports the university's 1975 formation and Wang's mid-1970s arrival, then late-1970s/early-1980s business expansion and building reuse, followed by the late-1980s downturn and Wang workforce cuts (Facts 9–11). This chronology does not by itself establish causation.
+
+### Editorial relevance
+- Industrial decline and human consequences: Facts 1–6.
+- Citizen initiative, collaboration, and park chronology: Facts 7–8.
+- Other recovery factors and adaptive reuse: Facts 9–10, 12; causal limits: Unknowns.
+- Late-1980s reversal and limits on a linear success story: Fact 11; Unknowns.

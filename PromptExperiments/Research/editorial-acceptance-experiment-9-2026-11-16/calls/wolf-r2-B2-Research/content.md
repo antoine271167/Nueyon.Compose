@@ -1,0 +1,23 @@
+### Facts
+1. From 1995 to 1997, 41 wild wolves from Canada and northwest Montana were released in Yellowstone; wolves later dispersed beyond the park, where they are less protected from human-caused mortality. (Opening)
+2. Yellowstone packs average 11.8 individuals. The source describes cooperative offspring care, group hunting of large prey, territory and carcass defense, and survival benefits for infirmed wolves. (Description)
+3. Wolves prey on large and small animals. Elk make up 90% of their winter prey in Yellowstone; deer make up 10–15% of summer prey, and wolves also kill bison. (Description)
+4. After an elk kill, ravens and magpies arrive almost immediately; coyotes wait nearby until wolves are sated, bears usually succeed in chasing wolves away, and many other animals, including eagles and invertebrates, consume remains. (Description)
+5. From 1995–2000, elk calves comprised 50% of wolf prey in early winter and bull elk 25%; the ratio reversed from 2001–2007. Elk remains the primary prey, while bison has become increasingly important. The source says most bison consumption comes from scavenging winter-killed animals or bison that die from breeding-season injuries, although wolves prey on bison of all age classes. (Changes in Their Prey)
+6. The source identifies other factors linked to changes in wolf predation and impacts on elk: other predators, ungulate management outside the park, and weather, including drought and winter severity. Weather affects forage quality and availability and, in turn, elk nutritional condition. It says changes in prey selection and kill rates result from complex interactions among these factors. (Changes in Their Prey)
+7. Yellowstone wolf numbers grew rapidly in the first years after restoration as packs established territories; wolves are now found throughout the GYE. The population has stabilized since 2009 following declines from initial recolonization. The source attributes most of the decrease, particularly on the northern range, primarily to declining elk numbers and available territory, with distemper and sarcoptic mange also factors. (Population)
+8. The source reports that canine distemper killed two-thirds of park pups in 2005. Other confirmed diseases include infectious canine hepatitis, parvovirus, and bordetella, but their mortality effects are unknown. Sarcoptic mange reached epidemic proportions among northern-range wolves in 2009 and had mostly subsided by the end of 2011, though it remains at lower prevalence. (Population)
+9. Wolf packs are territorial; encounters are typically aggressive. Larger packs often defeat smaller ones, with an exception when the smaller group has more old adult or adult male members. The source reports that 65% of collared wolves are ultimately killed by rival packs. (Population)
+10. Yellowstone has provided a place for research into how wolves may affect many aspects of the ecosystem. Researchers use collars to collect individual and population data and monitor effects on other animals and plants; typically only 20% of the population is collared at year-end. (Opening; Population)
+### Interpretations
+- Facts 2 and 4 show wolves embedded in social and food relationships, rather than acting only as solitary predators.
+- Facts 5–7 support describing prey patterns and population changes as variable and multi-factorial, not as effects attributable to wolves alone.
+### Unknowns
+- The source does not establish a specific, broad ecosystem outcome—such as a particular trophic cascade or a net change in plants or other animal populations—caused by wolf return. It describes research and monitoring of possible effects, but does not provide findings here that quantify such effects.
+- The source does not quantify what share of the changing bison food source comes from wolf kills versus scavenging beyond stating that most consumption is scavenged; nor does it isolate the contribution of each listed factor to changes in predation or elk impacts.
+### Development sequence
+- Wolves were released in Yellowstone from 1995 to 1997 (Fact 1); early population growth followed as packs established territories (Fact 7).
+- Elk-calf and bull proportions in early-winter prey differed between 1995–2000 and 2001–2007; the source also describes bison as an increasingly important food source (Fact 5).
+- Distemper outbreaks are reported in 2005, 2008, and 2009; mange reached epidemic proportions in 2009 and had mostly subsided by the end of 2011 (Fact 8). The population has stabilized since 2009 after earlier declines (Fact 7).
+### Editorial relevance
+Facts 1–6 and 10; Interpretations 1–2; Unknowns 1–2.

@@ -1,0 +1,8 @@
+const fs=require('fs'),p=require('path');const e=process.cwd()+'/PromptExperiments/Research/editorial-acceptance-experiment-9-2026-11-16';
+function decode(s){return s.replace(/&#(x[0-9a-f]+|\d+);/gi,(_,n)=>String.fromCodePoint(n[0].toLowerCase()==='x'?parseInt(n.slice(1),16):+n)).replace(/&(amp|lt|gt|quot|apos|nbsp|rsquo|lsquo|rdquo|ldquo|ndash|mdash|hellip);/g,(_,n)=>({amp:'&',lt:'<',gt:'>',quot:'"',apos:"'",nbsp:' ',rsquo:'’',lsquo:'‘',rdquo:'”',ldquo:'“',ndash:'–',mdash:'—',hellip:'…'}[n]));}
+const meta=[];for(const id of ['wolf','webb','digital','lowell']){let h=fs.readFileSync(e+'/downloads/'+id+'.html','utf8');let blocks=[];
+if(id==='webb'){blocks=[h.slice(h.indexOf('<article'),h.indexOf('</article>')+10)];}
+else {const re=id==='digital'?/<div class="entry-content"[^>]*>/g:/<div class="Component ArticleTextGroup TextWrapped clearfix"[^>]*>/g;let m;while(m=re.exec(h)){let depth=1,tags=/<\/?div\b[^>]*>/g;tags.lastIndex=re.lastIndex;let t;while(depth&&(t=tags.exec(h))){depth+=t[0].startsWith('</')?-1:1;}blocks.push(h.slice(re.lastIndex,tags.lastIndex));}}
+let text=blocks.map(b=>decode(b.replace(/<(script|style)\b[^>]*>[\s\S]*?<\/\1>/gi,'').replace(/<\/(p|h[1-6]|li|div|tr)>|<br\s*\/?\s*>/gi,'\n').replace(/<[^>]+>/g,'')).split('\n').map(l=>l.replace(/\s+/g,' ').trim()).filter(Boolean).join('\n\n')).join('\n\n');
+fs.mkdirSync(e+'/cases/'+id,{recursive:true});fs.writeFileSync(e+'/cases/'+id+'/source.md',text+'\n');meta.push({id,blocks:blocks.length,words:text.split(/\s+/).length,first:text.slice(0,180),last:text.slice(-180)});}
+console.log(JSON.stringify(meta,null,2));fs.writeFileSync(e+'/downloads/extraction.json',JSON.stringify(meta,null,2));

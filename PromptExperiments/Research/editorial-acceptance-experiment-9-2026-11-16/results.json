@@ -1,0 +1,45 @@
+{
+  "decision": "GO",
+  "scope": "Research-only recommendation to promote unchanged B2; no promotion executed",
+  "passes": {
+    "A": 11,
+    "B2": 12
+  },
+  "usage": {
+    "A": {
+      "calls": 12,
+      "input": 140223,
+      "output": 33247,
+      "cached": 104442,
+      "reasoning": 12551,
+      "total": 173470,
+      "weighted": 273211
+    },
+    "B2": {
+      "calls": 12,
+      "input": 33375,
+      "output": 21022,
+      "cached": 22226,
+      "reasoning": 6987,
+      "total": 54397,
+      "weighted": 117463
+    }
+  },
+  "savings": {
+    "total": 0.6864184008762322,
+    "weighted": 0.5700648948980824,
+    "perPass": 0.7125502008032129,
+    "weightedPerPass": 0.6058928203232422
+  },
+  "checks": {
+    "atLeast11": true,
+    "atLeastA": true,
+    "eachCaseAtLeast2": true,
+    "noMaterialFalseB2": true,
+    "noRecurringCoreRegressionB2": true,
+    "totalSaving20": true,
+    "weightedSaving20": true,
+    "perPassSaving20": true,
+    "weightedPerPassSaving20": true
+  }
+}

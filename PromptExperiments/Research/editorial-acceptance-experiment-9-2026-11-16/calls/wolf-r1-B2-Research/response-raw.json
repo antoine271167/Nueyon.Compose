@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-EkxkaPer0rYI8pLUS7JI22W1oT3Ye",
+  "object": "chat.completion",
+  "created": 1794861476,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"### Facts\\n1. Wolves were largely eliminated from most of the United States by the early 1900s; the U.S. Fish and Wildlife Service listed the northern Rocky Mountain wolf as endangered in 1973 and designated the Greater Yellowstone Ecosystem (GYE) as a recovery area. (Opening)\\n2. From 1995 to 1997, 41 wild wolves from Canada and northwest Montana were released in Yellowstone. The source says wolves dispersed beyond the park as the population grew, where they are less protected from human-caused mortality. (Opening)\\n3. Yellowstone packs average 11.8 individuals. The source describes packs as social families and says Yellowstone research has highlighted social-living benefits including cooperative offspring care, group hunting of large prey, territory and carcass defense, and survival benefits for infirmed individuals. (Description)\\n4. Packs defend territories through howling and scent-marking; encounters between packs are typically aggressive. Larger packs often defeat smaller groups, except when the smaller group has more old adults or adult males. The source reports that 65% of collared wolves are ultimately killed by rival packs. (Description; Population)\\n5. Elk remain wolves’ primary prey: elk account for 90% of winter prey, while deer account for 10–15% of summer prey. Wolves also kill bison. (Description)\\n6. Wolves’ kills provide food for other animals: ravens and magpies arrive almost immediately after an elk kill, coyotes wait nearby until wolves are sated, bears attempt to chase wolves away and are usually successful, and animals from eagles to invertebrates consume remains. (Description)\\n7. In early winter, elk calves made up 50% of wolf prey and bull elk 25% during 1995–2000; the ratio reversed during 2001–2007. The source says this indicates changes in prey vulnerability and availability. (Changes in Their Prey)\\n8. Bison became an increasingly important food source, but most bison consumption comes from scavenging winter-killed animals or bison that died from breeding-season injuries; wolves prey on bison of all age classes to some extent. (Changes in Their Prey)\\n9. The source identifies other factors linked to changes in wolf predation and elk impacts: other predators, ungulate management outside the park, and weather, including drought and winter severity. Weather affects forage quality and availability and ultimately elk nutritional condition. It characterizes changes in prey selection and kill rates as resulting from complex interactions among these factors. (Changes in Their Prey)\\n10. The wolf population grew rapidly in the first years after restoration, as newly formed packs spread to establish territories with sufficient prey. It later stabilized after declines from initial recolonization; the source attributes most of the decrease to declining elk numbers and available territory on the northern range, with distemper and sarcoptic mange also factors. (Population)\\n11. The source reports distemper outbreaks in 2005, 2008, and 2009; in 2005 distemper killed two-thirds of pups in the park. It also reports sarcoptic mange reached epidemic proportions among northern-range wolves in 2009 and had mostly subsided by the end of 2011, while remaining at lower prevalence in the park. (Population)\\n12. The park captures and collars a small proportion of wolves each year; typically only 20% of the population is collared at year’s end. The source says collar data help researchers monitor individuals and the population, including how wolves are affecting other animals and plants in the park. (Population)\\n13. The source describes Yellowstone as a place for research on how wolves may affect many aspects of the ecosystem, and says current NPS research focuses on the relative factors driving wolf predation over the past 25 years. These are stated research purposes, not reported findings that wolves control the ecosystem as a whole. (Opening; Changes in Their Prey; Population)\\n### Interpretations\\n- Facts 3–6 support presenting wolves as social animals embedded in predator–prey and scavenger relationships, rather than as isolated predators.\\n- Facts 7–10 support a changing, multi-factor account of prey use and wolf-population trends; the source does not establish a single cause for those changes.\\n### Unknowns\\n- The source does not report specific measured effects of wolves on plants or broad ecosystem outcomes such as a demonstrated ecosystem-wide cascade. It establishes that research monitors possible effects on animals and plants, but not the results or their magnitude. (Facts 12–13)\\n- The source does not quantify how much each listed factor—other predators, outside-park ungulate management, weather, prey vulnerability or availability—contributes to changes in predation or elk impacts. It explicitly describes interacting factors and says current research examines their relative roles. (Facts 7–9)\\n- Although the source reports examples of cooperation and group behavior, it does not establish that these behaviors alone determine pack success, population trends, or ecosystem outcomes. (Facts 3–4, 10)\\n### Development sequence\\n- By the early 1900s, wolves had disappeared from most of the United States; FWS listed the northern Rocky Mountain wolf in 1973. (Fact 1)\\n- Wolves were released in Yellowstone during 1995–1997, followed by population growth and dispersal beyond the park. (Facts 2, 10)\\n- The source reports one elk-prey composition for 1995–2000 and a reversed ratio for 2001–2007; it separately reports distemper outbreaks in 2005, 2008, and 2009, and a mange epidemic beginning in 2009 that had mostly subsided by the end of 2011. These dates do not by themselves establish causal links among the events. (Facts 7, 11)\\n- After declines from initial recolonization, the population stabilized since 2009, according to the source; the source attributes the northern-range decline primarily to elk decline and available territory, with disease also a factor. (Fact 10)\\n### Editorial relevance\\nFacts 2–9, 12–13; Interpretations 1–2\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2769,
+    "completion_tokens": 1805,
+    "total_tokens": 4574,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 2766,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 501,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-EkxqITsBz941RXgHKQpeC6gjCcfW1",
+  "object": "chat.completion",
+  "created": 1794861830,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"### Facts\\n\\n1. In 1973, the U.S. Fish and Wildlife Service listed the northern Rocky Mountain wolf as an endangered species.\\n2. In 1973, the Greater Yellowstone Ecosystem was designated as one of three wolf recovery areas.\\n3. From 1995 to 1997, 41 wild wolves from Canada and northwest Montana were released in Yellowstone.\\n4. The park has provided a place for research on how wolves may affect many aspects of the ecosystem.\\n5. In Yellowstone, average wolf pack size is 11.8 individuals.\\n6. The source describes a wolf pack as a complex social family with older members, often an alpha male and alpha female, and subordinate members.\\n7. The source says pack members have individual personality traits and roles within the pack.\\n8. Yellowstone research since reintroduction has highlighted the adaptive value of social living in wolves.\\n9. The source lists cooperative care of offspring, group hunting of large prey, defense of territory and prey carcasses, and survival benefits to infirmed individuals among the examples of social living discussed by that research.\\n10. In Yellowstone, elk make up 90% of wolves’ winter prey.\\n11. In Yellowstone, deer make up 10–15% of wolves’ summer prey.\\n12. Wolves also kill bison.\\n13. The source states that many other animals benefit from wolf kills.\\n14. Ravens and magpies arrive almost immediately after wolves kill an elk.\\n15. Coyotes arrive soon after an elk kill and wait nearby until the wolves are sated.\\n16. Bears attempt to chase wolves away from an elk kill and are usually successful.\\n17. The source says many other animals, from eagles to invertebrates, consume the remains of wolf kills.\\n18. From 1995 to 2000, in early winter, elk calves comprised 50% of wolf prey and bull elk comprised 25%.\\n19. The source says that ratio reversed from 2001 to 2007.\\n20. Elk remains the primary prey of Yellowstone wolves.\\n21. Bison has become an increasingly important food source for wolves.\\n22. The source says there is some predation on bison of all age classes.\\n23. The source says the majority of wolf consumption of bison comes from scavenging winter-killed bison or bison that died from injuries sustained during breeding season.\\n24. The source says changes in wolf predation patterns and impacts on prey species such as elk are inextricably linked to other factors, including other predators, management of ungulates outside the park, and weather.\\n25. The source says weather patterns influence forage quality and availability, ultimately affecting elk nutritional condition.\\n26. The source says changes in prey selection and kill rates through time result from complex interactions among these factors.\\n27. The source says the discovery of changes in prey use emphasizes the importance of long-term monitoring for understanding predator-prey dynamics.\\n28. Current NPS research focuses on the relative factors driving wolf predation over the past 25 years.\\n29. Each year, park researchers capture a small proportion of wolves and fit them with radio-tracking and GPS collars.\\n30. The source says the collars enable researchers to gather data on individuals and monitor the population to see how wolves are affecting other animals and plants within the park.\\n31. Typically, at the end of each year, only 20% of the wolf population is collared.\\n\\n### Interpretations\\n\\n- None.\\n\\n### Unknowns\\n\\n- The source does not establish that wolves alone, or primarily, control or govern the Yellowstone ecosystem.\\n- The source does not provide an overall account or measurement of wolves’ effects across the ecosystem. It says the park is a place for research on possible effects across many aspects and describes some research topics and examples.\\n- The source does not establish that the listed social behaviors or scavenger interactions amount to a complete account of ecosystem relationships.\\n- The source does not state that wolf reintroduction caused the reported changes in prey composition, prey selection, or kill rates.\\n- The source identifies several factors linked to wolf predation and prey dynamics but does not quantify the relative contribution of each factor here.\\n- The source does not report specific results about wolves’ effects on plants from the collar-based monitoring described.\\n- The supplied claim that long-term monitoring prevents a simplistic cause-and-effect account is not stated in the source. The source states that long-term monitoring is important for understanding predator-prey dynamics.\\n- The source does not explicitly frame its material as a challenge to a simple image of one predator governing an ecosystem.\\n\\n### Development sequence\\n\\n- 1973: The northern Rocky Mountain wolf was listed as endangered, and the Greater Yellowstone Ecosystem was designated as one of three recovery areas (Facts 1–2).\\n- 1995–1997: 41 wild wolves were released in Yellowstone (Fact 3).\\n- 1995–2000: Elk calves and bull elk made up the stated shares of early-winter wolf prey (Fact 18).\\n- 2001–2007: The source says the early-winter prey ratio had reversed (Fact 19). The relationship between the release and this change is UNKNOWN.\\n- The source reports that bison became an increasingly important food source and describes the sources of most wolf consumption of bison (Facts 21–23). The timing and cause of this change are not specified.\\n- The source describes long-term monitoring and current NPS research into factors driving wolf predation (Facts 27–28). It does not specify a causal relationship between these research activities and the reported prey changes.\\n\\n### Editorial relevance\\n\\n- Facts 3–4 are relevant to the return of wolves and the scope of ecosystem research described.\\n- Facts 5–9 are relevant to pack size and social behavior.\\n- Facts 10–17 are relevant to prey and interactions around wolf kills.\\n- Facts 18–28 are relevant to changes in prey use, other factors in predator-prey dynamics, and monitoring.\\n- Facts 29–31 are relevant to the source’s description of population monitoring and research on effects on other animals and plants.\\n- The limits noted in Unknowns apply to claims that wolves govern the ecosystem or that monitoring prevents a simplistic causal account.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 11673,
+    "completion_tokens": 3011,
+    "total_tokens": 14684,
+    "prompt_tokens_details": {
+      "cached_tokens": 11670,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1653,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

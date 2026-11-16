@@ -1,0 +1,528 @@
+{
+  "rows": [
+    {
+      "id": "webb-r1-B2",
+      "arm": "B2",
+      "case": "webb",
+      "usage": {
+        "prompt_tokens": 3624,
+        "completion_tokens": 1859,
+        "total_tokens": 5483,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 3621,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 839,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      }
+    },
+    {
+      "id": "webb-r1-A",
+      "arm": "A",
+      "case": "webb",
+      "usage": {
+        "prompt_tokens": 12528,
+        "completion_tokens": 2469,
+        "total_tokens": 14997,
+        "prompt_tokens_details": {
+          "cached_tokens": 2746,
+          "cache_write_tokens": 9779,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1104,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      }
+    },
+    {
+      "id": "wolf-r1-A",
+      "arm": "A",
+      "case": "wolf",
+      "usage": {
+        "prompt_tokens": 11673,
+        "completion_tokens": 2710,
+        "total_tokens": 14383,
+        "prompt_tokens_details": {
+          "cached_tokens": 2746,
+          "cache_write_tokens": 8924,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1215,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      }
+    },
+    {
+      "id": "wolf-r1-B2",
+      "arm": "B2",
+      "case": "wolf",
+      "usage": {
+        "prompt_tokens": 2769,
+        "completion_tokens": 1805,
+        "total_tokens": 4574,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 2766,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 501,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      }
+    },
+    {
+      "id": "digital-r1-B2",
+      "arm": "B2",
+      "case": "digital",
+      "usage": {
+        "prompt_tokens": 1703,
+        "completion_tokens": 1823,
+        "total_tokens": 3526,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 1700,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 905,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      }
+    },
+    {
+      "id": "digital-r1-A",
+      "arm": "A",
+      "case": "digital",
+      "usage": {
+        "prompt_tokens": 10607,
+        "completion_tokens": 2884,
+        "total_tokens": 13491,
+        "prompt_tokens_details": {
+          "cached_tokens": 2746,
+          "cache_write_tokens": 7858,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1217,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      }
+    },
+    {
+      "id": "lowell-r1-A",
+      "arm": "A",
+      "case": "lowell",
+      "usage": {
+        "prompt_tokens": 11933,
+        "completion_tokens": 3497,
+        "total_tokens": 15430,
+        "prompt_tokens_details": {
+          "cached_tokens": 2746,
+          "cache_write_tokens": 9184,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1192,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      }
+    },
+    {
+      "id": "lowell-r1-B2",
+      "arm": "B2",
+      "case": "lowell",
+      "usage": {
+        "prompt_tokens": 3029,
+        "completion_tokens": 2039,
+        "total_tokens": 5068,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 3026,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 553,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      }
+    },
+    {
+      "id": "webb-r2-A",
+      "arm": "A",
+      "case": "webb",
+      "usage": {
+        "prompt_tokens": 12528,
+        "completion_tokens": 2315,
+        "total_tokens": 14843,
+        "prompt_tokens_details": {
+          "cached_tokens": 12525,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 858,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      }
+    },
+    {
+      "id": "webb-r2-B2",
+      "arm": "B2",
+      "case": "webb",
+      "usage": {
+        "prompt_tokens": 3624,
+        "completion_tokens": 1965,
+        "total_tokens": 5589,
+        "prompt_tokens_details": {
+          "cached_tokens": 3621,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 920,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      }
+    },
+    {
+      "id": "wolf-r2-B2",
+      "arm": "B2",
+      "case": "wolf",
+      "usage": {
+        "prompt_tokens": 2769,
+        "completion_tokens": 1331,
+        "total_tokens": 4100,
+        "prompt_tokens_details": {
+          "cached_tokens": 2766,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 324,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      }
+    },
+    {
+      "id": "wolf-r2-A",
+      "arm": "A",
+      "case": "wolf",
+      "usage": {
+        "prompt_tokens": 11673,
+        "completion_tokens": 2366,
+        "total_tokens": 14039,
+        "prompt_tokens_details": {
+          "cached_tokens": 11670,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 696,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      }
+    },
+    {
+      "id": "digital-r2-A",
+      "arm": "A",
+      "case": "digital",
+      "usage": {
+        "prompt_tokens": 10607,
+        "completion_tokens": 2524,
+        "total_tokens": 13131,
+        "prompt_tokens_details": {
+          "cached_tokens": 10604,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 651,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      }
+    },
+    {
+      "id": "digital-r2-B2",
+      "arm": "B2",
+      "case": "digital",
+      "usage": {
+        "prompt_tokens": 1703,
+        "completion_tokens": 1344,
+        "total_tokens": 3047,
+        "prompt_tokens_details": {
+          "cached_tokens": 1700,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 512,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      }
+    },
+    {
+      "id": "lowell-r2-B2",
+      "arm": "B2",
+      "case": "lowell",
+      "usage": {
+        "prompt_tokens": 3029,
+        "completion_tokens": 1796,
+        "total_tokens": 4825,
+        "prompt_tokens_details": {
+          "cached_tokens": 3026,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 311,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      }
+    },
+    {
+      "id": "lowell-r2-A",
+      "arm": "A",
+      "case": "lowell",
+      "usage": {
+        "prompt_tokens": 11933,
+        "completion_tokens": 2897,
+        "total_tokens": 14830,
+        "prompt_tokens_details": {
+          "cached_tokens": 11930,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 790,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      }
+    },
+    {
+      "id": "webb-r3-B2",
+      "arm": "B2",
+      "case": "webb",
+      "usage": {
+        "prompt_tokens": 3624,
+        "completion_tokens": 1749,
+        "total_tokens": 5373,
+        "prompt_tokens_details": {
+          "cached_tokens": 3621,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 591,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      }
+    },
+    {
+      "id": "webb-r3-A",
+      "arm": "A",
+      "case": "webb",
+      "usage": {
+        "prompt_tokens": 12528,
+        "completion_tokens": 2711,
+        "total_tokens": 15239,
+        "prompt_tokens_details": {
+          "cached_tokens": 12525,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 878,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      }
+    },
+    {
+      "id": "wolf-r3-A",
+      "arm": "A",
+      "case": "wolf",
+      "usage": {
+        "prompt_tokens": 11673,
+        "completion_tokens": 3011,
+        "total_tokens": 14684,
+        "prompt_tokens_details": {
+          "cached_tokens": 11670,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1653,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      }
+    },
+    {
+      "id": "wolf-r3-B2",
+      "arm": "B2",
+      "case": "wolf",
+      "usage": {
+        "prompt_tokens": 2769,
+        "completion_tokens": 1601,
+        "total_tokens": 4370,
+        "prompt_tokens_details": {
+          "cached_tokens": 2766,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 471,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      }
+    },
+    {
+      "id": "digital-r3-B2",
+      "arm": "B2",
+      "case": "digital",
+      "usage": {
+        "prompt_tokens": 1703,
+        "completion_tokens": 1648,
+        "total_tokens": 3351,
+        "prompt_tokens_details": {
+          "cached_tokens": 1700,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 505,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      }
+    },
+    {
+      "id": "digital-r3-A",
+      "arm": "A",
+      "case": "digital",
+      "usage": {
+        "prompt_tokens": 10607,
+        "completion_tokens": 3005,
+        "total_tokens": 13612,
+        "prompt_tokens_details": {
+          "cached_tokens": 10604,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1399,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      }
+    },
+    {
+      "id": "lowell-r3-A",
+      "arm": "A",
+      "case": "lowell",
+      "usage": {
+        "prompt_tokens": 11933,
+        "completion_tokens": 2858,
+        "total_tokens": 14791,
+        "prompt_tokens_details": {
+          "cached_tokens": 11930,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 898,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      }
+    },
+    {
+      "id": "lowell-r3-B2",
+      "arm": "B2",
+      "case": "lowell",
+      "usage": {
+        "prompt_tokens": 3029,
+        "completion_tokens": 2062,
+        "total_tokens": 5091,
+        "prompt_tokens_details": {
+          "cached_tokens": 3026,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 555,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      }
+    }
+  ],
+  "totals": {
+    "A": {
+      "calls": 12,
+      "input": 140223,
+      "output": 33247,
+      "cached": 104442,
+      "reasoning": 12551,
+      "total": 173470,
+      "weighted": 273211
+    },
+    "B2": {
+      "calls": 12,
+      "input": 33375,
+      "output": 21022,
+      "cached": 22226,
+      "reasoning": 6987,
+      "total": 54397,
+      "weighted": 117463
+    }
+  }
+}
