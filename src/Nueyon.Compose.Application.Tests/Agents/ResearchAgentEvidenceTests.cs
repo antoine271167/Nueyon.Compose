@@ -17,6 +17,37 @@ namespace Nueyon.Compose.Application.Tests.Agents;
 /// </summary>
 public sealed class ResearchAgentEvidenceTests
 {
+    [Fact]
+    public async Task Experiment9_RawResponsesReplayExactlyThroughProductionParserAndFilter()
+    {
+        var root = new DirectoryInfo(AppContext.BaseDirectory);
+        while (root is not null && !Directory.Exists(Path.Combine(root.FullName, "PromptExperiments")))
+            root = root.Parent;
+        Assert.NotNull(root);
+        var calls = Path.Combine(root.FullName, "PromptExperiments", "Research",
+            "editorial-acceptance-experiment-9-2026-11-16", "calls");
+        var options = new System.Text.Json.JsonSerializerOptions(System.Text.Json.JsonSerializerDefaults.Web)
+            { WriteIndented = true, PropertyNameCaseInsensitive = true };
+        var directories = Directory.GetDirectories(calls);
+        Assert.Equal(24, directories.Length);
+        foreach (var directory in directories)
+        {
+            using var raw = System.Text.Json.JsonDocument.Parse(
+                await File.ReadAllTextAsync(Path.Combine(directory, "response-raw.json")));
+            var text = raw.RootElement.GetProperty("choices")[0].GetProperty("message")
+                .GetProperty("content").GetString()!;
+            var input = System.Text.Json.JsonSerializer.Deserialize<ResearchInput>(
+                await File.ReadAllTextAsync(Path.Combine(directory, "input.json")), options)!;
+            var client = new MessageCapturingChatClient { ResponseJson = text };
+            var agent = new ResearchAgent(client.AsAIAgent("OfflineReplay"), new LogCapture());
+            var result = await agent.ExecuteAsync(new AgentExecutionContext(Guid.NewGuid()), input);
+            Assert.Equal(await File.ReadAllTextAsync(Path.Combine(directory, "result.json")),
+                System.Text.Json.JsonSerializer.Serialize(result, options));
+            Assert.Equal(await File.ReadAllTextAsync(Path.Combine(directory, "projection.md")),
+                Nueyon.Compose.Application.Agents.Synthesis.SynthesisResearchFilter.ExtractFactsAndUnknowns(result.Content));
+        }
+    }
+
     /// <summary>
     ///     Test: ResearchAgent includes Evidence from SelectedIdea in the prompt
     ///     Expected: The user message sent to the LLM contains the Evidence value
@@ -117,6 +148,7 @@ public sealed class ResearchAgentEvidenceTests
 
     private sealed class MessageCapturingChatClient : IChatClient
     {
+        public string? ResponseJson { get; init; }
         public List<ChatMessage> CapturedMessages { get; } = new();
 
         public Task<ChatResponse> GetResponseAsync(
@@ -136,7 +168,7 @@ public sealed class ResearchAgentEvidenceTests
                 }
                 """;
 
-            var message = new ChatMessage(ChatRole.Assistant, responseJson);
+            var message = new ChatMessage(ChatRole.Assistant, ResponseJson ?? responseJson);
             var response = new ChatResponse([message]);
             return Task.FromResult(response);
         }

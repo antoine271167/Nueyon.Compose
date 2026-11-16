@@ -5,6 +5,17 @@ namespace Nueyon.Compose.Application.Tests.Prompts;
 
 public class PromptLoaderTests
 {
+    [Theory]
+    [InlineData("Research.system.prompt.md", "DE155005B5F494E6B54C850C6315270C95BF51C2B21C46A9D38F495CEEE0417F")]
+    [InlineData("Research.user.prompt.md", "2373B036A4F538FB730589AAE47B06CF8FC26134A1ADB60C9E3597ECED96D3EC")]
+    public void ResearchB2_EmbeddedBytesMatchAcceptedExperiment9(string name, string expectedHash)
+    {
+        using var stream = typeof(PromptLoader).Assembly.GetManifestResourceStream(
+            "Nueyon.Compose.Application.Prompts.Research." + name);
+        Assert.NotNull(stream);
+        Assert.Equal(expectedHash, Convert.ToHexString(System.Security.Cryptography.SHA256.HashData(stream)));
+    }
+
 [Fact]
 public void DirectoryScope_UsesDiskStrictlyAndRestoresEmbeddedPrompts()
 {

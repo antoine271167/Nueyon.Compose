@@ -1,2 +1,6 @@
 # Preserve the exact accepted Idea prompt bytes, including line endings.
 src/Nueyon.Compose.Application/Prompts/Idea/*.prompt.md -text whitespace=cr-at-eol
+
+# Preserve exact accepted Experiment 9 Research B2 production bytes.
+src/Nueyon.Compose.Application/Prompts/Research/Research.system.prompt.md -text whitespace=cr-at-eol
+src/Nueyon.Compose.Application/Prompts/Research/Research.user.prompt.md -text whitespace=cr-at-eol

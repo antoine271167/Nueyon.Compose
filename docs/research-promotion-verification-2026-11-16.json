@@ -1,0 +1,1336 @@
+{
+  "baseCommit": "63f06c4682b63454a024777f8633d1d650f9f3f3",
+  "prompts": [
+    {
+      "source": "PromptExperiments/Research/editorial-acceptance-experiment-9-2026-11-16/prompts/B2/Research/Research.system.prompt.md",
+      "destination": "src/Nueyon.Compose.Application/Prompts/Research/Research.system.prompt.md",
+      "bytes": 2609,
+      "sha256": "de155005b5f494e6b54c850c6315270c95bf51c2b21c46a9d38f495ceee0417f",
+      "byteEqual": true,
+      "experiment9FrozenHashEqual": true
+    },
+    {
+      "source": "PromptExperiments/Research/editorial-acceptance-experiment-9-2026-11-16/prompts/B2/Research/Research.user.prompt.md",
+      "destination": "src/Nueyon.Compose.Application/Prompts/Research/Research.user.prompt.md",
+      "bytes": 599,
+      "sha256": "2373b036a4f538fb730589aae47b06cf8fc26134a1adb60c9e3597eced96d3ec",
+      "byteEqual": true,
+      "experiment9FrozenHashEqual": true
+    }
+  ],
+  "changedExistingFiles": [
+    ".gitattributes",
+    "src/Nueyon.Compose.Application.Tests/Agents/ResearchAgentEvidenceTests.cs",
+    "src/Nueyon.Compose.Application.Tests/Prompts/PromptLoaderTests.cs",
+    "src/Nueyon.Compose.Application/Prompts/Research/Research.system.prompt.md",
+    "src/Nueyon.Compose.Application/Prompts/Research/Research.user.prompt.md"
+  ],
+  "allOtherOriginallyTrackedFilesByteUnchanged": true,
+  "deletedFiles": [],
+  "cleanup": [
+    {
+      "path": "PromptExperiments/Research/compact-b2-experiment-8-2026-11-16/runner/obj",
+      "references": [
+        "PromptExperiments/Research/compact-b2-experiment-8-2026-11-16/freeze.json"
+      ],
+      "decision": "bewaren: actieve freezeverwijzing",
+      "files": [
+        {
+          "path": "PromptExperiments/Research/compact-b2-experiment-8-2026-11-16/runner/obj/Debug/net10.0/.NETCoreApp,Version=v10.0.AssemblyAttributes.cs",
+          "bytes": 200,
+          "sha256": "93d67476196ebfc80d1d7d8844b91146cfd678d105f5ce635eb900ca40610c9b"
+        },
+        {
+          "path": "PromptExperiments/Research/compact-b2-experiment-8-2026-11-16/runner/obj/Debug/net10.0/apphost.exe",
+          "bytes": 162304,
+          "sha256": "e3d5df6f6ff3d9ad800270555840f6376f03a3bcde617a7e6fd8569fe13b08d2"
+        },
+        {
+          "path": "PromptExperiments/Research/compact-b2-experiment-8-2026-11-16/runner/obj/Debug/net10.0/ref/Runner.dll",
+          "bytes": 8192,
+          "sha256": "744435a3387ade02470ecd04fd56880276ba01042bdb22fca1f62086d4d53ac3"
+        },
+        {
+          "path": "PromptExperiments/Research/compact-b2-experiment-8-2026-11-16/runner/obj/Debug/net10.0/refint/Runner.dll",
+          "bytes": 8192,
+          "sha256": "744435a3387ade02470ecd04fd56880276ba01042bdb22fca1f62086d4d53ac3"
+        },
+        {
+          "path": "PromptExperiments/Research/compact-b2-experiment-8-2026-11-16/runner/obj/Debug/net10.0/Runner.AssemblyInfo.cs",
+          "bytes": 992,
+          "sha256": "7fc52a0f43283eaaf5d47435316e8845cff673c44639ac6b31bf39e2b05aca33"
+        },
+        {
+          "path": "PromptExperiments/Research/compact-b2-experiment-8-2026-11-16/runner/obj/Debug/net10.0/Runner.AssemblyInfoInputs.cache",
+          "bytes": 66,
+          "sha256": "8a08f03af5c120cd5f3bc7b26bf0087b3257301509b5eaa1363f95b445fb2369"
+        },
+        {
+          "path": "PromptExperiments/Research/compact-b2-experiment-8-2026-11-16/runner/obj/Debug/net10.0/Runner.assets.cache",
+          "bytes": 18353,
+          "sha256": "c78701e9a58482958a55731707590c898e06fabcf3ed2dfd9b73091903fa4b26"
+        },
+        {
+          "path": "PromptExperiments/Research/compact-b2-experiment-8-2026-11-16/runner/obj/Debug/net10.0/Runner.csproj.AssemblyReference.cache",
+          "bytes": 21982,
+          "sha256": "0c3c8224e55c20541c3b90f83b459275c563c798538a8467ea33be6a61d1ec23"
+        },
+        {
+          "path": "PromptExperiments/Research/compact-b2-experiment-8-2026-11-16/runner/obj/Debug/net10.0/Runner.csproj.CoreCompileInputs.cache",
+          "bytes": 66,
+          "sha256": "2cd654593b660c50a400cc5b1dff400ed85daefbde47d9d719580f3a110d3916"
+        },
+        {
+          "path": "PromptExperiments/Research/compact-b2-experiment-8-2026-11-16/runner/obj/Debug/net10.0/Runner.csproj.FileListAbsolute.txt",
+          "bytes": 7556,
+          "sha256": "1601ef27e9fcd7ce61bc0f7fa1da04c0da40d7074b1a3d4efd412c1d84d48c56"
+        },
+        {
+          "path": "PromptExperiments/Research/compact-b2-experiment-8-2026-11-16/runner/obj/Debug/net10.0/Runner.csproj.Up2Date",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "PromptExperiments/Research/compact-b2-experiment-8-2026-11-16/runner/obj/Debug/net10.0/Runner.dll",
+          "bytes": 30720,
+          "sha256": "3061212d9f7736161271ae5485b6fab8a609a51961f5e5fd3a7a8d5b06df2a50"
+        },
+        {
+          "path": "PromptExperiments/Research/compact-b2-experiment-8-2026-11-16/runner/obj/Debug/net10.0/Runner.GeneratedMSBuildEditorConfig.editorconfig",
+          "bytes": 878,
+          "sha256": "b38c1aef851c20090358d9aadb2a95f1d77b1910d817f6e5b04595e11123e109"
+        },
+        {
+          "path": "PromptExperiments/Research/compact-b2-experiment-8-2026-11-16/runner/obj/Debug/net10.0/Runner.genruntimeconfig.cache",
+          "bytes": 66,
+          "sha256": "1670255f21b29aae6cb2933b33691631f466e8d359d06186a4c197c387181f7c"
+        },
+        {
+          "path": "PromptExperiments/Research/compact-b2-experiment-8-2026-11-16/runner/obj/Debug/net10.0/Runner.GlobalUsings.g.cs",
+          "bytes": 239,
+          "sha256": "a3c6048bb4d922b1799a9977f84362a3787b68810cac67aa86ac3aa23295f227"
+        },
+        {
+          "path": "PromptExperiments/Research/compact-b2-experiment-8-2026-11-16/runner/obj/Debug/net10.0/Runner.pdb",
+          "bytes": 17068,
+          "sha256": "b71401e7c453980790c0b63453e1b38ee5122dc843bd04cdcca1d2587e88c2f9"
+        },
+        {
+          "path": "PromptExperiments/Research/compact-b2-experiment-8-2026-11-16/runner/obj/Debug/net10.0/Runner.sourcelink.json",
+          "bytes": 159,
+          "sha256": "de3fc3c4f3a061fac5181a5c939503f9ef3f839d648f837ee8548bf59a9432c0"
+        },
+        {
+          "path": "PromptExperiments/Research/compact-b2-experiment-8-2026-11-16/runner/obj/project.assets.json",
+          "bytes": 81846,
+          "sha256": "3da076cf91529b08c2cf6ad9b292aef35bfea437bc5d86706fac88b3a785fbd8"
+        },
+        {
+          "path": "PromptExperiments/Research/compact-b2-experiment-8-2026-11-16/runner/obj/project.nuget.cache",
+          "bytes": 4126,
+          "sha256": "45e9ea6211f9b47d9bdf0e735723253a8c1ed6ff5087b831f4e48dd7a3d96a82"
+        },
+        {
+          "path": "PromptExperiments/Research/compact-b2-experiment-8-2026-11-16/runner/obj/Runner.csproj.nuget.dgspec.json",
+          "bytes": 89501,
+          "sha256": "861ff8db420946f264f9cb3546daf0893f68f77d3050d015329507937bec6205"
+        },
+        {
+          "path": "PromptExperiments/Research/compact-b2-experiment-8-2026-11-16/runner/obj/Runner.csproj.nuget.g.props",
+          "bytes": 1302,
+          "sha256": "afb6ebbf379c26b610bf22ef01c37c4bc9aa9a4ed4210c37fb076f22fedb4f62"
+        },
+        {
+          "path": "PromptExperiments/Research/compact-b2-experiment-8-2026-11-16/runner/obj/Runner.csproj.nuget.g.targets",
+          "bytes": 1307,
+          "sha256": "b5df75694eac0f550060e6155e62d24dba14d8d66a05a7ff200df0af69246657"
+        }
+      ]
+    },
+    {
+      "path": "PromptExperiments/Research/compact-focused-experiment-5-2026-11-12/runner/obj",
+      "references": [],
+      "decision": "verwijdering geblokkeerd; behouden",
+      "files": [
+        {
+          "path": "PromptExperiments/Research/compact-focused-experiment-5-2026-11-12/runner/obj/Debug/net10.0/.NETCoreApp,Version=v10.0.AssemblyAttributes.cs",
+          "bytes": 200,
+          "sha256": "93d67476196ebfc80d1d7d8844b91146cfd678d105f5ce635eb900ca40610c9b"
+        },
+        {
+          "path": "PromptExperiments/Research/compact-focused-experiment-5-2026-11-12/runner/obj/Debug/net10.0/apphost.exe",
+          "bytes": 162304,
+          "sha256": "ca381323a55ea998ddc27927a4d8e35fb398bdeb9d6417102d65938cf3452555"
+        },
+        {
+          "path": "PromptExperiments/Research/compact-focused-experiment-5-2026-11-12/runner/obj/Debug/net10.0/ref/Runner.dll",
+          "bytes": 8192,
+          "sha256": "e8d9fb456cd93dbf6aa016838906d4687817662ebf10417cca7f840d06d476ee"
+        },
+        {
+          "path": "PromptExperiments/Research/compact-focused-experiment-5-2026-11-12/runner/obj/Debug/net10.0/refint/Runner.dll",
+          "bytes": 8192,
+          "sha256": "e8d9fb456cd93dbf6aa016838906d4687817662ebf10417cca7f840d06d476ee"
+        },
+        {
+          "path": "PromptExperiments/Research/compact-focused-experiment-5-2026-11-12/runner/obj/Debug/net10.0/Runner.AssemblyInfo.cs",
+          "bytes": 992,
+          "sha256": "4b507ac4179939de24d382154a2d1896ce93a6dc79f282ad40ef5dbef7d0c2c4"
+        },
+        {
+          "path": "PromptExperiments/Research/compact-focused-experiment-5-2026-11-12/runner/obj/Debug/net10.0/Runner.AssemblyInfoInputs.cache",
+          "bytes": 66,
+          "sha256": "bc735983434ac90f45240d646c7ca828dcd7ac0811f88de42f0dba5ca514ec14"
+        },
+        {
+          "path": "PromptExperiments/Research/compact-focused-experiment-5-2026-11-12/runner/obj/Debug/net10.0/Runner.assets.cache",
+          "bytes": 18353,
+          "sha256": "3efa34e8701fcfd0b3b39aabbad422a7374a09f85e75347e7e79ffc3dc798df8"
+        },
+        {
+          "path": "PromptExperiments/Research/compact-focused-experiment-5-2026-11-12/runner/obj/Debug/net10.0/Runner.csproj.AssemblyReference.cache",
+          "bytes": 21982,
+          "sha256": "2dd60b2dedef419bbd2a51201c9472702a78d3953165cef3c5648f1d6db3a8bd"
+        },
+        {
+          "path": "PromptExperiments/Research/compact-focused-experiment-5-2026-11-12/runner/obj/Debug/net10.0/Runner.csproj.CoreCompileInputs.cache",
+          "bytes": 66,
+          "sha256": "2cd654593b660c50a400cc5b1dff400ed85daefbde47d9d719580f3a110d3916"
+        },
+        {
+          "path": "PromptExperiments/Research/compact-focused-experiment-5-2026-11-12/runner/obj/Debug/net10.0/Runner.csproj.FileListAbsolute.txt",
+          "bytes": 7811,
+          "sha256": "f60029f480845bb0d4a2ca3c7c0ec0ae6b7c293fc7c9e93001d27f062f12be80"
+        },
+        {
+          "path": "PromptExperiments/Research/compact-focused-experiment-5-2026-11-12/runner/obj/Debug/net10.0/Runner.csproj.Up2Date",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "PromptExperiments/Research/compact-focused-experiment-5-2026-11-12/runner/obj/Debug/net10.0/Runner.dll",
+          "bytes": 36864,
+          "sha256": "a2cdbc924b327930e2ca92c8d521d57f565cab0ecdd08a51aa0832d10750122c"
+        },
+        {
+          "path": "PromptExperiments/Research/compact-focused-experiment-5-2026-11-12/runner/obj/Debug/net10.0/Runner.GeneratedMSBuildEditorConfig.editorconfig",
+          "bytes": 883,
+          "sha256": "7735068f2cb8ab80602e31737a9420389e274d1db272e60211032e47e08d17f7"
+        },
+        {
+          "path": "PromptExperiments/Research/compact-focused-experiment-5-2026-11-12/runner/obj/Debug/net10.0/Runner.genruntimeconfig.cache",
+          "bytes": 66,
+          "sha256": "5d5d6bc1beac1c4d1bb3b580d727771e8d4321da3425ffa7f912600cb080ba5a"
+        },
+        {
+          "path": "PromptExperiments/Research/compact-focused-experiment-5-2026-11-12/runner/obj/Debug/net10.0/Runner.GlobalUsings.g.cs",
+          "bytes": 239,
+          "sha256": "a3c6048bb4d922b1799a9977f84362a3787b68810cac67aa86ac3aa23295f227"
+        },
+        {
+          "path": "PromptExperiments/Research/compact-focused-experiment-5-2026-11-12/runner/obj/Debug/net10.0/Runner.pdb",
+          "bytes": 18632,
+          "sha256": "b4eb890c613cbcdd1a3cd4501cf020f1ef122a658ea49971fdd19986518cb92f"
+        },
+        {
+          "path": "PromptExperiments/Research/compact-focused-experiment-5-2026-11-12/runner/obj/Debug/net10.0/Runner.sourcelink.json",
+          "bytes": 159,
+          "sha256": "6e0011e9529d1d0519795efc4bdb7c22c675eee40aaa9806d5107244ca38bf83"
+        },
+        {
+          "path": "PromptExperiments/Research/compact-focused-experiment-5-2026-11-12/runner/obj/project.assets.json",
+          "bytes": 81861,
+          "sha256": "503bad4c2c23c252fd996557c703f3800b5b4defe4e4c14b5576753550ee027b"
+        },
+        {
+          "path": "PromptExperiments/Research/compact-focused-experiment-5-2026-11-12/runner/obj/project.nuget.cache",
+          "bytes": 4131,
+          "sha256": "d80c1e28ad5ddd0170e13cc25d6db2844cff6a400b72ee250cbc241dacd928a0"
+        },
+        {
+          "path": "PromptExperiments/Research/compact-focused-experiment-5-2026-11-12/runner/obj/Runner.csproj.nuget.dgspec.json",
+          "bytes": 89526,
+          "sha256": "ebd2c65c4fa0ba29987585a54cf15d845e0b2643baaff32de4108dd4da2e7b98"
+        },
+        {
+          "path": "PromptExperiments/Research/compact-focused-experiment-5-2026-11-12/runner/obj/Runner.csproj.nuget.g.props",
+          "bytes": 1302,
+          "sha256": "afb6ebbf379c26b610bf22ef01c37c4bc9aa9a4ed4210c37fb076f22fedb4f62"
+        },
+        {
+          "path": "PromptExperiments/Research/compact-focused-experiment-5-2026-11-12/runner/obj/Runner.csproj.nuget.g.targets",
+          "bytes": 1307,
+          "sha256": "b5df75694eac0f550060e6155e62d24dba14d8d66a05a7ff200df0af69246657"
+        }
+      ]
+    },
+    {
+      "path": "PromptExperiments/Research/compact-judge-2026-11-12/runner/obj",
+      "references": [],
+      "decision": "verwijdering geblokkeerd; behouden",
+      "files": [
+        {
+          "path": "PromptExperiments/Research/compact-judge-2026-11-12/runner/obj/Debug/net10.0/.NETCoreApp,Version=v10.0.AssemblyAttributes.cs",
+          "bytes": 200,
+          "sha256": "93d67476196ebfc80d1d7d8844b91146cfd678d105f5ce635eb900ca40610c9b"
+        },
+        {
+          "path": "PromptExperiments/Research/compact-judge-2026-11-12/runner/obj/Debug/net10.0/apphost.exe",
+          "bytes": 162304,
+          "sha256": "a7306873454058bf826b84410664efb3920107f74daba88b404cbd2edd25dd2a"
+        },
+        {
+          "path": "PromptExperiments/Research/compact-judge-2026-11-12/runner/obj/Debug/net10.0/ref/Runner.dll",
+          "bytes": 6656,
+          "sha256": "1bba9d2b2391716e45d85e19ddf81f87c0b87372fce42a90ef84ca4aadc6947b"
+        },
+        {
+          "path": "PromptExperiments/Research/compact-judge-2026-11-12/runner/obj/Debug/net10.0/refint/Runner.dll",
+          "bytes": 6656,
+          "sha256": "1bba9d2b2391716e45d85e19ddf81f87c0b87372fce42a90ef84ca4aadc6947b"
+        },
+        {
+          "path": "PromptExperiments/Research/compact-judge-2026-11-12/runner/obj/Debug/net10.0/Runner.AssemblyInfo.cs",
+          "bytes": 992,
+          "sha256": "50afa5a3e6c1d39a34ca9250f9b88a468e3e1db7dd3b9927a61323226c67a26e"
+        },
+        {
+          "path": "PromptExperiments/Research/compact-judge-2026-11-12/runner/obj/Debug/net10.0/Runner.AssemblyInfoInputs.cache",
+          "bytes": 66,
+          "sha256": "29616d3d21e5f301a23e44aa409fa9d854e6cef8a726429bc6aa3a24b8ead260"
+        },
+        {
+          "path": "PromptExperiments/Research/compact-judge-2026-11-12/runner/obj/Debug/net10.0/Runner.assets.cache",
+          "bytes": 18353,
+          "sha256": "ca1b4293219d6b8f77ac203f48803864ea644a2f523f6f2708cf5f8736828341"
+        },
+        {
+          "path": "PromptExperiments/Research/compact-judge-2026-11-12/runner/obj/Debug/net10.0/Runner.csproj.AssemblyReference.cache",
+          "bytes": 21982,
+          "sha256": "a138753f8ef26e1144d3f87beaf08836f0c52671f36da0d5bb6c00b52668f2f6"
+        },
+        {
+          "path": "PromptExperiments/Research/compact-judge-2026-11-12/runner/obj/Debug/net10.0/Runner.csproj.CoreCompileInputs.cache",
+          "bytes": 66,
+          "sha256": "2cd654593b660c50a400cc5b1dff400ed85daefbde47d9d719580f3a110d3916"
+        },
+        {
+          "path": "PromptExperiments/Research/compact-judge-2026-11-12/runner/obj/Debug/net10.0/Runner.csproj.FileListAbsolute.txt",
+          "bytes": 7046,
+          "sha256": "923097d57e3d808eb5a1d944e66e0f17faed75961cda99dbbaf2c6f7e5922159"
+        },
+        {
+          "path": "PromptExperiments/Research/compact-judge-2026-11-12/runner/obj/Debug/net10.0/Runner.csproj.Up2Date",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "PromptExperiments/Research/compact-judge-2026-11-12/runner/obj/Debug/net10.0/Runner.dll",
+          "bytes": 21504,
+          "sha256": "95f67584438dcb2e99a7c553c404ea8fa2b6acfb22931734bfc56cf9b4ac082b"
+        },
+        {
+          "path": "PromptExperiments/Research/compact-judge-2026-11-12/runner/obj/Debug/net10.0/Runner.GeneratedMSBuildEditorConfig.editorconfig",
+          "bytes": 868,
+          "sha256": "9254371320a8bc1ba2cdc5a79d2ce0c64ee5ba9fd83f324439fb2ec8e7499ae8"
+        },
+        {
+          "path": "PromptExperiments/Research/compact-judge-2026-11-12/runner/obj/Debug/net10.0/Runner.genruntimeconfig.cache",
+          "bytes": 66,
+          "sha256": "1a345818935ffddde36cc214a83ae2d0ddbae2768be8c6187b465f44b5349b69"
+        },
+        {
+          "path": "PromptExperiments/Research/compact-judge-2026-11-12/runner/obj/Debug/net10.0/Runner.GlobalUsings.g.cs",
+          "bytes": 239,
+          "sha256": "a3c6048bb4d922b1799a9977f84362a3787b68810cac67aa86ac3aa23295f227"
+        },
+        {
+          "path": "PromptExperiments/Research/compact-judge-2026-11-12/runner/obj/Debug/net10.0/Runner.pdb",
+          "bytes": 15508,
+          "sha256": "8e7a1fcb0dfb572280db0f6848342da7c624727165e4b88ea438ee24b99febbf"
+        },
+        {
+          "path": "PromptExperiments/Research/compact-judge-2026-11-12/runner/obj/Debug/net10.0/Runner.sourcelink.json",
+          "bytes": 159,
+          "sha256": "bb4c8a2fcf99d1fd4da6730e9df0085aa5543c23c9af18b1cbf1d530df702cf2"
+        },
+        {
+          "path": "PromptExperiments/Research/compact-judge-2026-11-12/runner/obj/project.assets.json",
+          "bytes": 81816,
+          "sha256": "4f0156f67530b2b59d607dc82e7a0e71f26be7fe36d691b339da920649dbdc0c"
+        },
+        {
+          "path": "PromptExperiments/Research/compact-judge-2026-11-12/runner/obj/project.nuget.cache",
+          "bytes": 4116,
+          "sha256": "71fd30380afc8154c2efd39478acdf2785f36df10885d7da256daf90924a4147"
+        },
+        {
+          "path": "PromptExperiments/Research/compact-judge-2026-11-12/runner/obj/Runner.csproj.nuget.dgspec.json",
+          "bytes": 89451,
+          "sha256": "191da9fb516361d42375ce94217802a21e57c1feee344dbf5f7dab5b68ae1dad"
+        },
+        {
+          "path": "PromptExperiments/Research/compact-judge-2026-11-12/runner/obj/Runner.csproj.nuget.g.props",
+          "bytes": 1302,
+          "sha256": "afb6ebbf379c26b610bf22ef01c37c4bc9aa9a4ed4210c37fb076f22fedb4f62"
+        },
+        {
+          "path": "PromptExperiments/Research/compact-judge-2026-11-12/runner/obj/Runner.csproj.nuget.g.targets",
+          "bytes": 1307,
+          "sha256": "b5df75694eac0f550060e6155e62d24dba14d8d66a05a7ff200df0af69246657"
+        }
+      ]
+    },
+    {
+      "path": "PromptExperiments/Research/deterministic-anchors-experiment-4-2026-11-12/runner/obj",
+      "references": [],
+      "decision": "verwijdering geblokkeerd; behouden",
+      "files": [
+        {
+          "path": "PromptExperiments/Research/deterministic-anchors-experiment-4-2026-11-12/runner/obj/Debug/net10.0/.NETCoreApp,Version=v10.0.AssemblyAttributes.cs",
+          "bytes": 200,
+          "sha256": "93d67476196ebfc80d1d7d8844b91146cfd678d105f5ce635eb900ca40610c9b"
+        },
+        {
+          "path": "PromptExperiments/Research/deterministic-anchors-experiment-4-2026-11-12/runner/obj/Debug/net10.0/apphost.exe",
+          "bytes": 162304,
+          "sha256": "375bc07e66255bcfb91f78af170cfe578992dd680ed4d2586336611736a9bb6a"
+        },
+        {
+          "path": "PromptExperiments/Research/deterministic-anchors-experiment-4-2026-11-12/runner/obj/Debug/net10.0/ref/Runner.dll",
+          "bytes": 12800,
+          "sha256": "c0302728dccc0f51dab805165ac45cdd5635bb43ca7d4a4ce489cab41e7955f7"
+        },
+        {
+          "path": "PromptExperiments/Research/deterministic-anchors-experiment-4-2026-11-12/runner/obj/Debug/net10.0/refint/Runner.dll",
+          "bytes": 12800,
+          "sha256": "c0302728dccc0f51dab805165ac45cdd5635bb43ca7d4a4ce489cab41e7955f7"
+        },
+        {
+          "path": "PromptExperiments/Research/deterministic-anchors-experiment-4-2026-11-12/runner/obj/Debug/net10.0/Runner.AssemblyInfo.cs",
+          "bytes": 992,
+          "sha256": "f47ffb56e9f7f826f454a3d1a89d2efed952321b8ab0eb81a76189b6c5a3c3c6"
+        },
+        {
+          "path": "PromptExperiments/Research/deterministic-anchors-experiment-4-2026-11-12/runner/obj/Debug/net10.0/Runner.AssemblyInfoInputs.cache",
+          "bytes": 66,
+          "sha256": "a7dd64b736c775f7bd205e0170fa76fdf3430e81c3692552d8b2375b4bfbf275"
+        },
+        {
+          "path": "PromptExperiments/Research/deterministic-anchors-experiment-4-2026-11-12/runner/obj/Debug/net10.0/Runner.assets.cache",
+          "bytes": 18353,
+          "sha256": "afc8d4bdbe682e7d40bdeea4b67886c7ed482f0982f6bf37c5a9eb56bc0a0e6f"
+        },
+        {
+          "path": "PromptExperiments/Research/deterministic-anchors-experiment-4-2026-11-12/runner/obj/Debug/net10.0/Runner.csproj.AssemblyReference.cache",
+          "bytes": 21982,
+          "sha256": "5ee71a8da7d64bce1a67086d279439727086648dbd3cf69c547eaef967fc5d58"
+        },
+        {
+          "path": "PromptExperiments/Research/deterministic-anchors-experiment-4-2026-11-12/runner/obj/Debug/net10.0/Runner.csproj.CoreCompileInputs.cache",
+          "bytes": 66,
+          "sha256": "2cd654593b660c50a400cc5b1dff400ed85daefbde47d9d719580f3a110d3916"
+        },
+        {
+          "path": "PromptExperiments/Research/deterministic-anchors-experiment-4-2026-11-12/runner/obj/Debug/net10.0/Runner.csproj.FileListAbsolute.txt",
+          "bytes": 8117,
+          "sha256": "dba358522434dbe72203b0d4e983f6dcec326d004a3cb920a580da59aa2762d4"
+        },
+        {
+          "path": "PromptExperiments/Research/deterministic-anchors-experiment-4-2026-11-12/runner/obj/Debug/net10.0/Runner.csproj.Up2Date",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "PromptExperiments/Research/deterministic-anchors-experiment-4-2026-11-12/runner/obj/Debug/net10.0/Runner.dll",
+          "bytes": 51200,
+          "sha256": "9a7976fdab5eafd15b43412409fb123f78d63fb0b220abcd503d70f4fa86823e"
+        },
+        {
+          "path": "PromptExperiments/Research/deterministic-anchors-experiment-4-2026-11-12/runner/obj/Debug/net10.0/Runner.GeneratedMSBuildEditorConfig.editorconfig",
+          "bytes": 889,
+          "sha256": "6df6bd55793a7f26a7a8f6c239ce44a1cd2fd4b6961f34928f165fbd69711d9f"
+        },
+        {
+          "path": "PromptExperiments/Research/deterministic-anchors-experiment-4-2026-11-12/runner/obj/Debug/net10.0/Runner.genruntimeconfig.cache",
+          "bytes": 66,
+          "sha256": "c0ebd1de7cfeece77b67c5b19d0bf32358417e0ad2e48852671a31997bcfcfd0"
+        },
+        {
+          "path": "PromptExperiments/Research/deterministic-anchors-experiment-4-2026-11-12/runner/obj/Debug/net10.0/Runner.GlobalUsings.g.cs",
+          "bytes": 239,
+          "sha256": "a3c6048bb4d922b1799a9977f84362a3787b68810cac67aa86ac3aa23295f227"
+        },
+        {
+          "path": "PromptExperiments/Research/deterministic-anchors-experiment-4-2026-11-12/runner/obj/Debug/net10.0/Runner.pdb",
+          "bytes": 19780,
+          "sha256": "f818f28f2d19b302eba7e1caaa8b29528efce51d615fde9e8975243a1c4a2ef6"
+        },
+        {
+          "path": "PromptExperiments/Research/deterministic-anchors-experiment-4-2026-11-12/runner/obj/Debug/net10.0/Runner.sourcelink.json",
+          "bytes": 159,
+          "sha256": "14db9a23c77c744e23195642a127442f9e15610ae37de0d323a818951780540d"
+        },
+        {
+          "path": "PromptExperiments/Research/deterministic-anchors-experiment-4-2026-11-12/runner/obj/project.assets.json",
+          "bytes": 81879,
+          "sha256": "99dc2c2fa859030d7fb4df75bf18c3c4364fbf103b3983f4056cfabdb0deb825"
+        },
+        {
+          "path": "PromptExperiments/Research/deterministic-anchors-experiment-4-2026-11-12/runner/obj/project.nuget.cache",
+          "bytes": 4137,
+          "sha256": "8e702ca72195e4c031a19a3f22d24b88b026b99868a1814dd796931d61c64ac7"
+        },
+        {
+          "path": "PromptExperiments/Research/deterministic-anchors-experiment-4-2026-11-12/runner/obj/Runner.csproj.nuget.dgspec.json",
+          "bytes": 89556,
+          "sha256": "5f2a7fb7cc1ad49cdc58a80c0471293226736f7bb055f6ccc9acdc4ff73957a2"
+        },
+        {
+          "path": "PromptExperiments/Research/deterministic-anchors-experiment-4-2026-11-12/runner/obj/Runner.csproj.nuget.g.props",
+          "bytes": 1302,
+          "sha256": "afb6ebbf379c26b610bf22ef01c37c4bc9aa9a4ed4210c37fb076f22fedb4f62"
+        },
+        {
+          "path": "PromptExperiments/Research/deterministic-anchors-experiment-4-2026-11-12/runner/obj/Runner.csproj.nuget.g.targets",
+          "bytes": 1307,
+          "sha256": "b5df75694eac0f550060e6155e62d24dba14d8d66a05a7ff200df0af69246657"
+        }
+      ]
+    },
+    {
+      "path": "PromptExperiments/Research/editorial-acceptance-experiment-9-2026-11-16/runner/obj",
+      "references": [
+        "PromptExperiments/Research/editorial-acceptance-experiment-9-2026-11-16/freeze.json"
+      ],
+      "decision": "bewaren: actieve freezeverwijzing",
+      "files": [
+        {
+          "path": "PromptExperiments/Research/editorial-acceptance-experiment-9-2026-11-16/runner/obj/Debug/net10.0/.NETCoreApp,Version=v10.0.AssemblyAttributes.cs",
+          "bytes": 200,
+          "sha256": "93d67476196ebfc80d1d7d8844b91146cfd678d105f5ce635eb900ca40610c9b"
+        },
+        {
+          "path": "PromptExperiments/Research/editorial-acceptance-experiment-9-2026-11-16/runner/obj/Debug/net10.0/apphost.exe",
+          "bytes": 162304,
+          "sha256": "2db91bc070cc90a29407cc7b91e23020b0146a687bc94cd7779b6684a053eb0d"
+        },
+        {
+          "path": "PromptExperiments/Research/editorial-acceptance-experiment-9-2026-11-16/runner/obj/Debug/net10.0/ref/Runner.dll",
+          "bytes": 8192,
+          "sha256": "564f4e57616f9e81d8c75b9cf3d7f3b8e888338c2038093f1dca3f2f3802b4e0"
+        },
+        {
+          "path": "PromptExperiments/Research/editorial-acceptance-experiment-9-2026-11-16/runner/obj/Debug/net10.0/refint/Runner.dll",
+          "bytes": 8192,
+          "sha256": "564f4e57616f9e81d8c75b9cf3d7f3b8e888338c2038093f1dca3f2f3802b4e0"
+        },
+        {
+          "path": "PromptExperiments/Research/editorial-acceptance-experiment-9-2026-11-16/runner/obj/Debug/net10.0/Runner.AssemblyInfo.cs",
+          "bytes": 992,
+          "sha256": "d04d07075ab2c0a2a05196df00de18be35d57a469a46c7e5daff3bc5c5b3dee4"
+        },
+        {
+          "path": "PromptExperiments/Research/editorial-acceptance-experiment-9-2026-11-16/runner/obj/Debug/net10.0/Runner.AssemblyInfoInputs.cache",
+          "bytes": 66,
+          "sha256": "59462a088f2a7750eefa19103521078a6d10ce972f6ac5ed84b710b8e8ded404"
+        },
+        {
+          "path": "PromptExperiments/Research/editorial-acceptance-experiment-9-2026-11-16/runner/obj/Debug/net10.0/Runner.assets.cache",
+          "bytes": 18353,
+          "sha256": "c80bbe7e1835da21b7a3f609dc051f4e0e958de6b36fb46beab9c274e6245deb"
+        },
+        {
+          "path": "PromptExperiments/Research/editorial-acceptance-experiment-9-2026-11-16/runner/obj/Debug/net10.0/Runner.csproj.AssemblyReference.cache",
+          "bytes": 21982,
+          "sha256": "8eae03f8e639d02fcd7d8c3a66dcdf35d2b21c3174e8b27ea58c41f87dc1b699"
+        },
+        {
+          "path": "PromptExperiments/Research/editorial-acceptance-experiment-9-2026-11-16/runner/obj/Debug/net10.0/Runner.csproj.CoreCompileInputs.cache",
+          "bytes": 66,
+          "sha256": "2cd654593b660c50a400cc5b1dff400ed85daefbde47d9d719580f3a110d3916"
+        },
+        {
+          "path": "PromptExperiments/Research/editorial-acceptance-experiment-9-2026-11-16/runner/obj/Debug/net10.0/Runner.csproj.FileListAbsolute.txt",
+          "bytes": 8066,
+          "sha256": "f217441a4d356e156158d47696ffe5a3947bf594d4870d792523b4bcb0803595"
+        },
+        {
+          "path": "PromptExperiments/Research/editorial-acceptance-experiment-9-2026-11-16/runner/obj/Debug/net10.0/Runner.csproj.Up2Date",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "PromptExperiments/Research/editorial-acceptance-experiment-9-2026-11-16/runner/obj/Debug/net10.0/Runner.dll",
+          "bytes": 30720,
+          "sha256": "1be5241ded58aa5ac970929710f33cbf6210d997ab4c9aba019e3d7f66d836b2"
+        },
+        {
+          "path": "PromptExperiments/Research/editorial-acceptance-experiment-9-2026-11-16/runner/obj/Debug/net10.0/Runner.GeneratedMSBuildEditorConfig.editorconfig",
+          "bytes": 888,
+          "sha256": "32ad6f60ec3750956eb0fedf4c3c66e753b185da5e7f8aa5d0dc11bf8b3185c0"
+        },
+        {
+          "path": "PromptExperiments/Research/editorial-acceptance-experiment-9-2026-11-16/runner/obj/Debug/net10.0/Runner.genruntimeconfig.cache",
+          "bytes": 66,
+          "sha256": "6b9829d9f0739dae9493d3311724b3361fca0e4a51b87800d0bc717d74c38587"
+        },
+        {
+          "path": "PromptExperiments/Research/editorial-acceptance-experiment-9-2026-11-16/runner/obj/Debug/net10.0/Runner.GlobalUsings.g.cs",
+          "bytes": 239,
+          "sha256": "a3c6048bb4d922b1799a9977f84362a3787b68810cac67aa86ac3aa23295f227"
+        },
+        {
+          "path": "PromptExperiments/Research/editorial-acceptance-experiment-9-2026-11-16/runner/obj/Debug/net10.0/Runner.pdb",
+          "bytes": 17076,
+          "sha256": "d180167e25ba43ee7fbfba34199fc15404eb71f390f293390a86d2c9c8460ee7"
+        },
+        {
+          "path": "PromptExperiments/Research/editorial-acceptance-experiment-9-2026-11-16/runner/obj/Debug/net10.0/Runner.sourcelink.json",
+          "bytes": 159,
+          "sha256": "f6f9897b3c7f245e817c41d4241ff7f2c46c644555556cf5fe4d94dc4defe635"
+        },
+        {
+          "path": "PromptExperiments/Research/editorial-acceptance-experiment-9-2026-11-16/runner/obj/project.assets.json",
+          "bytes": 81876,
+          "sha256": "fdb89ee8b45f2b70644ee06b380e777a85bb2ac389747e8eb5330a564b70045f"
+        },
+        {
+          "path": "PromptExperiments/Research/editorial-acceptance-experiment-9-2026-11-16/runner/obj/project.nuget.cache",
+          "bytes": 4136,
+          "sha256": "d75a1ea79df105684d4d5530082d2f65c00621b2f94a84c6151d09b5cefd91bc"
+        },
+        {
+          "path": "PromptExperiments/Research/editorial-acceptance-experiment-9-2026-11-16/runner/obj/Runner.csproj.nuget.dgspec.json",
+          "bytes": 89551,
+          "sha256": "7bc4ae77b763ff07299834a45dc322bec91c10c93bbf242511f74c603f99f6a7"
+        },
+        {
+          "path": "PromptExperiments/Research/editorial-acceptance-experiment-9-2026-11-16/runner/obj/Runner.csproj.nuget.g.props",
+          "bytes": 1302,
+          "sha256": "afb6ebbf379c26b610bf22ef01c37c4bc9aa9a4ed4210c37fb076f22fedb4f62"
+        },
+        {
+          "path": "PromptExperiments/Research/editorial-acceptance-experiment-9-2026-11-16/runner/obj/Runner.csproj.nuget.g.targets",
+          "bytes": 1307,
+          "sha256": "b5df75694eac0f550060e6155e62d24dba14d8d66a05a7ff200df0af69246657"
+        }
+      ]
+    },
+    {
+      "path": "PromptExperiments/Research/evidence-map-experiment-3-2026-11-12/offline-verification/obj",
+      "references": [],
+      "decision": "verwijdering geblokkeerd; behouden",
+      "files": [
+        {
+          "path": "PromptExperiments/Research/evidence-map-experiment-3-2026-11-12/offline-verification/obj/Debug/net10.0/.NETCoreApp,Version=v10.0.AssemblyAttributes.cs",
+          "bytes": 200,
+          "sha256": "93d67476196ebfc80d1d7d8844b91146cfd678d105f5ce635eb900ca40610c9b"
+        },
+        {
+          "path": "PromptExperiments/Research/evidence-map-experiment-3-2026-11-12/offline-verification/obj/Debug/net10.0/apphost.exe",
+          "bytes": 162304,
+          "sha256": "dee78640b429a71d72605255a46bfa253605227522ce58174aa6229194c86757"
+        },
+        {
+          "path": "PromptExperiments/Research/evidence-map-experiment-3-2026-11-12/offline-verification/obj/Debug/net10.0/ref/Verify.dll",
+          "bytes": 7168,
+          "sha256": "2b0a5e47c349fe6779fef2018f3b3e3483f02efb17c77dce8f26f8708dd0f737"
+        },
+        {
+          "path": "PromptExperiments/Research/evidence-map-experiment-3-2026-11-12/offline-verification/obj/Debug/net10.0/refint/Verify.dll",
+          "bytes": 7168,
+          "sha256": "2b0a5e47c349fe6779fef2018f3b3e3483f02efb17c77dce8f26f8708dd0f737"
+        },
+        {
+          "path": "PromptExperiments/Research/evidence-map-experiment-3-2026-11-12/offline-verification/obj/Debug/net10.0/Verify.AssemblyInfo.cs",
+          "bytes": 992,
+          "sha256": "3e936ed9b28599102490de4fd4a9d63dfb493b8065f1be5326c74f247a634a12"
+        },
+        {
+          "path": "PromptExperiments/Research/evidence-map-experiment-3-2026-11-12/offline-verification/obj/Debug/net10.0/Verify.AssemblyInfoInputs.cache",
+          "bytes": 66,
+          "sha256": "21fad520d0743cd63258ad670481902fe16ad91b74a6b50c0a962a8095c39d2d"
+        },
+        {
+          "path": "PromptExperiments/Research/evidence-map-experiment-3-2026-11-12/offline-verification/obj/Debug/net10.0/Verify.assets.cache",
+          "bytes": 18353,
+          "sha256": "7f1451e86fc57fff2b99f131c3bf90be6ae2a35523de7c51974fa15866f8f352"
+        },
+        {
+          "path": "PromptExperiments/Research/evidence-map-experiment-3-2026-11-12/offline-verification/obj/Debug/net10.0/Verify.csproj.AssemblyReference.cache",
+          "bytes": 21982,
+          "sha256": "d3541971d22243f6757bb3eb8ec09dc4bdaa6df4b4c0ec6537019da331f3ae7e"
+        },
+        {
+          "path": "PromptExperiments/Research/evidence-map-experiment-3-2026-11-12/offline-verification/obj/Debug/net10.0/Verify.csproj.CoreCompileInputs.cache",
+          "bytes": 66,
+          "sha256": "5774bb7de04a04984f9481f4c7b791840eed3c5b16e136bb8a85576bfe84db46"
+        },
+        {
+          "path": "PromptExperiments/Research/evidence-map-experiment-3-2026-11-12/offline-verification/obj/Debug/net10.0/Verify.csproj.FileListAbsolute.txt",
+          "bytes": 8372,
+          "sha256": "8d0c6ae7971ce6a6eca8dbf4df91a397a99d5840a81c36d7fca2b6a725dcaa79"
+        },
+        {
+          "path": "PromptExperiments/Research/evidence-map-experiment-3-2026-11-12/offline-verification/obj/Debug/net10.0/Verify.csproj.Up2Date",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "PromptExperiments/Research/evidence-map-experiment-3-2026-11-12/offline-verification/obj/Debug/net10.0/Verify.dll",
+          "bytes": 14336,
+          "sha256": "4e583ba9de6dd96642cfd218ad106310564ac5cf9031aef777a62cd34aab48b2"
+        },
+        {
+          "path": "PromptExperiments/Research/evidence-map-experiment-3-2026-11-12/offline-verification/obj/Debug/net10.0/Verify.GeneratedMSBuildEditorConfig.editorconfig",
+          "bytes": 894,
+          "sha256": "f4252574eb5703f0b5a3434c98b8d9822dba71ffe2652c0e0954738aed16de6b"
+        },
+        {
+          "path": "PromptExperiments/Research/evidence-map-experiment-3-2026-11-12/offline-verification/obj/Debug/net10.0/Verify.genruntimeconfig.cache",
+          "bytes": 66,
+          "sha256": "9887c9bfaada011d168b5568c9ef747eb02042ed464c588de3c90ff727757c5c"
+        },
+        {
+          "path": "PromptExperiments/Research/evidence-map-experiment-3-2026-11-12/offline-verification/obj/Debug/net10.0/Verify.GlobalUsings.g.cs",
+          "bytes": 239,
+          "sha256": "a3c6048bb4d922b1799a9977f84362a3787b68810cac67aa86ac3aa23295f227"
+        },
+        {
+          "path": "PromptExperiments/Research/evidence-map-experiment-3-2026-11-12/offline-verification/obj/Debug/net10.0/Verify.pdb",
+          "bytes": 14744,
+          "sha256": "de68fbcb3ed5559fbbcce915742072fc56375b9711f7ee94c62beff4c7696708"
+        },
+        {
+          "path": "PromptExperiments/Research/evidence-map-experiment-3-2026-11-12/offline-verification/obj/Debug/net10.0/Verify.sourcelink.json",
+          "bytes": 159,
+          "sha256": "b28f1d5bb6863496071406a3fb6e6366fd3e5a11ce00d16c1f671906eb4909da"
+        },
+        {
+          "path": "PromptExperiments/Research/evidence-map-experiment-3-2026-11-12/offline-verification/obj/project.assets.json",
+          "bytes": 81894,
+          "sha256": "ca20bd71c32670fc293e384769d553aa5567db7f05d10a7bb34c40c698516872"
+        },
+        {
+          "path": "PromptExperiments/Research/evidence-map-experiment-3-2026-11-12/offline-verification/obj/project.nuget.cache",
+          "bytes": 4142,
+          "sha256": "06febf94a208857c47111d4e42a64caef1c8c117f110992960e7405121aacfe8"
+        },
+        {
+          "path": "PromptExperiments/Research/evidence-map-experiment-3-2026-11-12/offline-verification/obj/Verify.csproj.nuget.dgspec.json",
+          "bytes": 89581,
+          "sha256": "2c672f1f2c37f30ed924794405ed83fddf564116d6b36b8746cf0b3f4a7e90a0"
+        },
+        {
+          "path": "PromptExperiments/Research/evidence-map-experiment-3-2026-11-12/offline-verification/obj/Verify.csproj.nuget.g.props",
+          "bytes": 1302,
+          "sha256": "afb6ebbf379c26b610bf22ef01c37c4bc9aa9a4ed4210c37fb076f22fedb4f62"
+        },
+        {
+          "path": "PromptExperiments/Research/evidence-map-experiment-3-2026-11-12/offline-verification/obj/Verify.csproj.nuget.g.targets",
+          "bytes": 1307,
+          "sha256": "b5df75694eac0f550060e6155e62d24dba14d8d66a05a7ff200df0af69246657"
+        }
+      ]
+    },
+    {
+      "path": "PromptExperiments/Research/evidence-map-experiment-3-2026-11-12/runner/obj",
+      "references": [],
+      "decision": "verwijdering geblokkeerd; behouden",
+      "files": [
+        {
+          "path": "PromptExperiments/Research/evidence-map-experiment-3-2026-11-12/runner/obj/Debug/net10.0/.NETCoreApp,Version=v10.0.AssemblyAttributes.cs",
+          "bytes": 200,
+          "sha256": "93d67476196ebfc80d1d7d8844b91146cfd678d105f5ce635eb900ca40610c9b"
+        },
+        {
+          "path": "PromptExperiments/Research/evidence-map-experiment-3-2026-11-12/runner/obj/Debug/net10.0/apphost.exe",
+          "bytes": 162304,
+          "sha256": "76700ecfc419c857d9741ab31c5d02eec9fa668fba93229f859721e9607d5961"
+        },
+        {
+          "path": "PromptExperiments/Research/evidence-map-experiment-3-2026-11-12/runner/obj/Debug/net10.0/ref/Runner.dll",
+          "bytes": 10752,
+          "sha256": "081535925322d2b4c88419e7da6deca86dc722934bb5b059d80be19d1dc122b7"
+        },
+        {
+          "path": "PromptExperiments/Research/evidence-map-experiment-3-2026-11-12/runner/obj/Debug/net10.0/refint/Runner.dll",
+          "bytes": 10752,
+          "sha256": "081535925322d2b4c88419e7da6deca86dc722934bb5b059d80be19d1dc122b7"
+        },
+        {
+          "path": "PromptExperiments/Research/evidence-map-experiment-3-2026-11-12/runner/obj/Debug/net10.0/Runner.AssemblyInfo.cs",
+          "bytes": 992,
+          "sha256": "44fb6c4087fddfb29f89e3f557c7240c9659b4e463f527b9b0edaa0292a66f0e"
+        },
+        {
+          "path": "PromptExperiments/Research/evidence-map-experiment-3-2026-11-12/runner/obj/Debug/net10.0/Runner.AssemblyInfoInputs.cache",
+          "bytes": 66,
+          "sha256": "1c0706548dc12b2dbdcb0f39042076caa162828d01114db181706552b7c87140"
+        },
+        {
+          "path": "PromptExperiments/Research/evidence-map-experiment-3-2026-11-12/runner/obj/Debug/net10.0/Runner.assets.cache",
+          "bytes": 18353,
+          "sha256": "5a219927c4c36e05aeba1d2b948a345212296def5893bacbbc137409fa4f409f"
+        },
+        {
+          "path": "PromptExperiments/Research/evidence-map-experiment-3-2026-11-12/runner/obj/Debug/net10.0/Runner.csproj.AssemblyReference.cache",
+          "bytes": 21982,
+          "sha256": "d3541971d22243f6757bb3eb8ec09dc4bdaa6df4b4c0ec6537019da331f3ae7e"
+        },
+        {
+          "path": "PromptExperiments/Research/evidence-map-experiment-3-2026-11-12/runner/obj/Debug/net10.0/Runner.csproj.CoreCompileInputs.cache",
+          "bytes": 66,
+          "sha256": "2cd654593b660c50a400cc5b1dff400ed85daefbde47d9d719580f3a110d3916"
+        },
+        {
+          "path": "PromptExperiments/Research/evidence-map-experiment-3-2026-11-12/runner/obj/Debug/net10.0/Runner.csproj.FileListAbsolute.txt",
+          "bytes": 7658,
+          "sha256": "87c65568e3c8d5d787cc7d6cdb62ffec4ce994bb53697b6c1c8b4c49986dae0d"
+        },
+        {
+          "path": "PromptExperiments/Research/evidence-map-experiment-3-2026-11-12/runner/obj/Debug/net10.0/Runner.csproj.Up2Date",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "PromptExperiments/Research/evidence-map-experiment-3-2026-11-12/runner/obj/Debug/net10.0/Runner.dll",
+          "bytes": 34816,
+          "sha256": "0e6a845f2556da80df78d46004f339c4f58a5c5fac932fa16fe1c22e72d73aac"
+        },
+        {
+          "path": "PromptExperiments/Research/evidence-map-experiment-3-2026-11-12/runner/obj/Debug/net10.0/Runner.GeneratedMSBuildEditorConfig.editorconfig",
+          "bytes": 880,
+          "sha256": "9a2a7b45ae80964525a3a3760e96195361de5cf2b57f387fef4bd35c17756f92"
+        },
+        {
+          "path": "PromptExperiments/Research/evidence-map-experiment-3-2026-11-12/runner/obj/Debug/net10.0/Runner.genruntimeconfig.cache",
+          "bytes": 66,
+          "sha256": "b917561bb71b038c3c80d5d52d72a6a04d75d9c21ed4138bfbb10e719243e702"
+        },
+        {
+          "path": "PromptExperiments/Research/evidence-map-experiment-3-2026-11-12/runner/obj/Debug/net10.0/Runner.GlobalUsings.g.cs",
+          "bytes": 239,
+          "sha256": "a3c6048bb4d922b1799a9977f84362a3787b68810cac67aa86ac3aa23295f227"
+        },
+        {
+          "path": "PromptExperiments/Research/evidence-map-experiment-3-2026-11-12/runner/obj/Debug/net10.0/Runner.pdb",
+          "bytes": 17584,
+          "sha256": "cad9eaf994cc63cd2021f6a3e74c9e88d90d1784b49cd92b9d26670047dc9389"
+        },
+        {
+          "path": "PromptExperiments/Research/evidence-map-experiment-3-2026-11-12/runner/obj/Debug/net10.0/Runner.sourcelink.json",
+          "bytes": 159,
+          "sha256": "b28f1d5bb6863496071406a3fb6e6366fd3e5a11ce00d16c1f671906eb4909da"
+        },
+        {
+          "path": "PromptExperiments/Research/evidence-map-experiment-3-2026-11-12/runner/obj/project.assets.json",
+          "bytes": 81852,
+          "sha256": "7a3a771272c0dcf21820e6aa55863f91e2fc34b65a976186e2bef0eb8857b85b"
+        },
+        {
+          "path": "PromptExperiments/Research/evidence-map-experiment-3-2026-11-12/runner/obj/project.nuget.cache",
+          "bytes": 4128,
+          "sha256": "4212a9b54b68aa1027515d81dabafef5b678f8ca04a30e885fbfb7e45db52efc"
+        },
+        {
+          "path": "PromptExperiments/Research/evidence-map-experiment-3-2026-11-12/runner/obj/Runner.csproj.nuget.dgspec.json",
+          "bytes": 89511,
+          "sha256": "f3f43e205d57c9a856baf154425029110bebc923bd77252d9d942995f6592305"
+        },
+        {
+          "path": "PromptExperiments/Research/evidence-map-experiment-3-2026-11-12/runner/obj/Runner.csproj.nuget.g.props",
+          "bytes": 1302,
+          "sha256": "afb6ebbf379c26b610bf22ef01c37c4bc9aa9a4ed4210c37fb076f22fedb4f62"
+        },
+        {
+          "path": "PromptExperiments/Research/evidence-map-experiment-3-2026-11-12/runner/obj/Runner.csproj.nuget.g.targets",
+          "bytes": 1307,
+          "sha256": "b5df75694eac0f550060e6155e62d24dba14d8d66a05a7ff200df0af69246657"
+        }
+      ]
+    },
+    {
+      "path": "PromptExperiments/Research/judge-calibration-experiment-2-2026-11-12/runner/obj",
+      "references": [],
+      "decision": "verwijdering geblokkeerd; behouden",
+      "files": [
+        {
+          "path": "PromptExperiments/Research/judge-calibration-experiment-2-2026-11-12/runner/obj/Debug/net10.0/.NETCoreApp,Version=v10.0.AssemblyAttributes.cs",
+          "bytes": 200,
+          "sha256": "93d67476196ebfc80d1d7d8844b91146cfd678d105f5ce635eb900ca40610c9b"
+        },
+        {
+          "path": "PromptExperiments/Research/judge-calibration-experiment-2-2026-11-12/runner/obj/Debug/net10.0/apphost.exe",
+          "bytes": 162304,
+          "sha256": "4d1d3582ae60f61aedee29e433422863f47c5b04a50ca24d65f45eb2575f0f4c"
+        },
+        {
+          "path": "PromptExperiments/Research/judge-calibration-experiment-2-2026-11-12/runner/obj/Debug/net10.0/ref/Runner.dll",
+          "bytes": 6656,
+          "sha256": "35d8b7ed3087cf1830368c719a9202230a04660fc780da8012b37b94c0f61d2e"
+        },
+        {
+          "path": "PromptExperiments/Research/judge-calibration-experiment-2-2026-11-12/runner/obj/Debug/net10.0/refint/Runner.dll",
+          "bytes": 6656,
+          "sha256": "35d8b7ed3087cf1830368c719a9202230a04660fc780da8012b37b94c0f61d2e"
+        },
+        {
+          "path": "PromptExperiments/Research/judge-calibration-experiment-2-2026-11-12/runner/obj/Debug/net10.0/Runner.AssemblyInfo.cs",
+          "bytes": 992,
+          "sha256": "ba4dd4fd4fedfc0b40ebb05e8cdd8f3fbc3d2bb5c124aded8ae8b240f7717440"
+        },
+        {
+          "path": "PromptExperiments/Research/judge-calibration-experiment-2-2026-11-12/runner/obj/Debug/net10.0/Runner.AssemblyInfoInputs.cache",
+          "bytes": 66,
+          "sha256": "d13b24c8c5e622fe96544663ce9e89d5ed384c93b502e08a944bed2808cded6e"
+        },
+        {
+          "path": "PromptExperiments/Research/judge-calibration-experiment-2-2026-11-12/runner/obj/Debug/net10.0/Runner.assets.cache",
+          "bytes": 18353,
+          "sha256": "3b5f7972bd5faf124f44b58195cdb06a30485b5f83ea0e382c2ddedd9dea46a3"
+        },
+        {
+          "path": "PromptExperiments/Research/judge-calibration-experiment-2-2026-11-12/runner/obj/Debug/net10.0/Runner.csproj.AssemblyReference.cache",
+          "bytes": 21982,
+          "sha256": "dc73837dccae261cdae5f0e0363e4464bff6b9fc9db9947c083f45852bb0178b"
+        },
+        {
+          "path": "PromptExperiments/Research/judge-calibration-experiment-2-2026-11-12/runner/obj/Debug/net10.0/Runner.csproj.CoreCompileInputs.cache",
+          "bytes": 66,
+          "sha256": "2cd654593b660c50a400cc5b1dff400ed85daefbde47d9d719580f3a110d3916"
+        },
+        {
+          "path": "PromptExperiments/Research/judge-calibration-experiment-2-2026-11-12/runner/obj/Debug/net10.0/Runner.csproj.FileListAbsolute.txt",
+          "bytes": 7913,
+          "sha256": "600168251a4207b969b23f48ca3b4ce841093525ee6d56f63dbd3541d5ae6f4b"
+        },
+        {
+          "path": "PromptExperiments/Research/judge-calibration-experiment-2-2026-11-12/runner/obj/Debug/net10.0/Runner.csproj.Up2Date",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "PromptExperiments/Research/judge-calibration-experiment-2-2026-11-12/runner/obj/Debug/net10.0/Runner.dll",
+          "bytes": 18432,
+          "sha256": "57d75ce8c89a7d1ce93db54a4174be3bf4055b3d76f7b0e0447b7add4d4387fe"
+        },
+        {
+          "path": "PromptExperiments/Research/judge-calibration-experiment-2-2026-11-12/runner/obj/Debug/net10.0/Runner.GeneratedMSBuildEditorConfig.editorconfig",
+          "bytes": 885,
+          "sha256": "78129b9d9766ff3c315e92e8056630f633b375bda400049fbcb6f706096da352"
+        },
+        {
+          "path": "PromptExperiments/Research/judge-calibration-experiment-2-2026-11-12/runner/obj/Debug/net10.0/Runner.genruntimeconfig.cache",
+          "bytes": 66,
+          "sha256": "6176617a6cbb568d2de699020bd06f2b34275112ee1f995e2e7764aabb6228c4"
+        },
+        {
+          "path": "PromptExperiments/Research/judge-calibration-experiment-2-2026-11-12/runner/obj/Debug/net10.0/Runner.GlobalUsings.g.cs",
+          "bytes": 239,
+          "sha256": "a3c6048bb4d922b1799a9977f84362a3787b68810cac67aa86ac3aa23295f227"
+        },
+        {
+          "path": "PromptExperiments/Research/judge-calibration-experiment-2-2026-11-12/runner/obj/Debug/net10.0/Runner.pdb",
+          "bytes": 15156,
+          "sha256": "0d4cdf7fa2bc3edce9aaf4102f6474a5db351923c2f70d96f78cf5e5f15f1c09"
+        },
+        {
+          "path": "PromptExperiments/Research/judge-calibration-experiment-2-2026-11-12/runner/obj/Debug/net10.0/Runner.sourcelink.json",
+          "bytes": 159,
+          "sha256": "54662bba3e898303d6b87ea08350a465d298725a68fc9298d6e38dbb2e929bb2"
+        },
+        {
+          "path": "PromptExperiments/Research/judge-calibration-experiment-2-2026-11-12/runner/obj/project.assets.json",
+          "bytes": 81867,
+          "sha256": "e000fd77b54de368853886d6009179f3493b3b7c5496f57ac187cfd9783a5035"
+        },
+        {
+          "path": "PromptExperiments/Research/judge-calibration-experiment-2-2026-11-12/runner/obj/project.nuget.cache",
+          "bytes": 4133,
+          "sha256": "18a6e74d9f2bf0925b70b22907c3971238432ad4aed8866d435da32896a5c740"
+        },
+        {
+          "path": "PromptExperiments/Research/judge-calibration-experiment-2-2026-11-12/runner/obj/Runner.csproj.nuget.dgspec.json",
+          "bytes": 89536,
+          "sha256": "fc0460997ceb2aed2a81a4d3b0a217a622100378f9b16d4c485a1f849b1e515f"
+        },
+        {
+          "path": "PromptExperiments/Research/judge-calibration-experiment-2-2026-11-12/runner/obj/Runner.csproj.nuget.g.props",
+          "bytes": 1302,
+          "sha256": "afb6ebbf379c26b610bf22ef01c37c4bc9aa9a4ed4210c37fb076f22fedb4f62"
+        },
+        {
+          "path": "PromptExperiments/Research/judge-calibration-experiment-2-2026-11-12/runner/obj/Runner.csproj.nuget.g.targets",
+          "bytes": 1307,
+          "sha256": "b5df75694eac0f550060e6155e62d24dba14d8d66a05a7ff200df0af69246657"
+        }
+      ]
+    },
+    {
+      "path": "PromptExperiments/Research/luna-baseline-2026-11-12/runner/obj",
+      "references": [],
+      "decision": "verwijdering geblokkeerd; behouden",
+      "files": [
+        {
+          "path": "PromptExperiments/Research/luna-baseline-2026-11-12/runner/obj/Debug/net10.0/.NETCoreApp,Version=v10.0.AssemblyAttributes.cs",
+          "bytes": 200,
+          "sha256": "93d67476196ebfc80d1d7d8844b91146cfd678d105f5ce635eb900ca40610c9b"
+        },
+        {
+          "path": "PromptExperiments/Research/luna-baseline-2026-11-12/runner/obj/Debug/net10.0/apphost.exe",
+          "bytes": 162304,
+          "sha256": "43e8fd79f6c69ec81c65481ce42840653d6a922cf12e43a51ae744f7ac290c9e"
+        },
+        {
+          "path": "PromptExperiments/Research/luna-baseline-2026-11-12/runner/obj/Debug/net10.0/ref/Runner.dll",
+          "bytes": 6656,
+          "sha256": "6c0c850a86fc5a040558dc387db12119687591f5788023d567b463966bccc087"
+        },
+        {
+          "path": "PromptExperiments/Research/luna-baseline-2026-11-12/runner/obj/Debug/net10.0/refint/Runner.dll",
+          "bytes": 6656,
+          "sha256": "6c0c850a86fc5a040558dc387db12119687591f5788023d567b463966bccc087"
+        },
+        {
+          "path": "PromptExperiments/Research/luna-baseline-2026-11-12/runner/obj/Debug/net10.0/Runner.AssemblyInfo.cs",
+          "bytes": 992,
+          "sha256": "4d6322642bd5015991e6f53f775957948a9691ff23064734f9f3b6987fcffb87"
+        },
+        {
+          "path": "PromptExperiments/Research/luna-baseline-2026-11-12/runner/obj/Debug/net10.0/Runner.AssemblyInfoInputs.cache",
+          "bytes": 66,
+          "sha256": "d27d7f38fa1f48ad43e9952087fe41d44614a7012b43d8352d2dbda6dfa163ff"
+        },
+        {
+          "path": "PromptExperiments/Research/luna-baseline-2026-11-12/runner/obj/Debug/net10.0/Runner.assets.cache",
+          "bytes": 18353,
+          "sha256": "0698f9a52b85febc635c3b8b3315fb973e41612674637da33e658c2b4a390119"
+        },
+        {
+          "path": "PromptExperiments/Research/luna-baseline-2026-11-12/runner/obj/Debug/net10.0/Runner.csproj.AssemblyReference.cache",
+          "bytes": 21982,
+          "sha256": "1362131b614cecc547d1e5875707608b30981a3c4bacbb17196a5aef479f835d"
+        },
+        {
+          "path": "PromptExperiments/Research/luna-baseline-2026-11-12/runner/obj/Debug/net10.0/Runner.csproj.CoreCompileInputs.cache",
+          "bytes": 66,
+          "sha256": "2cd654593b660c50a400cc5b1dff400ed85daefbde47d9d719580f3a110d3916"
+        },
+        {
+          "path": "PromptExperiments/Research/luna-baseline-2026-11-12/runner/obj/Debug/net10.0/Runner.csproj.FileListAbsolute.txt",
+          "bytes": 7046,
+          "sha256": "6f145f489ac3175f22bbf93c1a656565c569e252fcf6857f37d9187c54518a21"
+        },
+        {
+          "path": "PromptExperiments/Research/luna-baseline-2026-11-12/runner/obj/Debug/net10.0/Runner.csproj.Up2Date",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "PromptExperiments/Research/luna-baseline-2026-11-12/runner/obj/Debug/net10.0/Runner.dll",
+          "bytes": 20992,
+          "sha256": "80497a21d8db1362b23c280d1779bca52d2e248a8c60e34caf8d234064c074a9"
+        },
+        {
+          "path": "PromptExperiments/Research/luna-baseline-2026-11-12/runner/obj/Debug/net10.0/Runner.GeneratedMSBuildEditorConfig.editorconfig",
+          "bytes": 868,
+          "sha256": "1c5f90b1bcaa4f9be132264fa9ca395e39c124e700c96deef9deb7fa5aefcd8c"
+        },
+        {
+          "path": "PromptExperiments/Research/luna-baseline-2026-11-12/runner/obj/Debug/net10.0/Runner.genruntimeconfig.cache",
+          "bytes": 66,
+          "sha256": "0fa44434694949531feae27948dc36ed0edf7e3b80c2327018617491d24920b0"
+        },
+        {
+          "path": "PromptExperiments/Research/luna-baseline-2026-11-12/runner/obj/Debug/net10.0/Runner.GlobalUsings.g.cs",
+          "bytes": 239,
+          "sha256": "a3c6048bb4d922b1799a9977f84362a3787b68810cac67aa86ac3aa23295f227"
+        },
+        {
+          "path": "PromptExperiments/Research/luna-baseline-2026-11-12/runner/obj/Debug/net10.0/Runner.pdb",
+          "bytes": 15416,
+          "sha256": "6dd986ed1b2a5e5a082203132c7364c4d500d48a7d1096653f8ec50e82a0971b"
+        },
+        {
+          "path": "PromptExperiments/Research/luna-baseline-2026-11-12/runner/obj/Debug/net10.0/Runner.sourcelink.json",
+          "bytes": 159,
+          "sha256": "ba810c321e5024f75816795238844a733d452e9668f4f51842a096332fd02c51"
+        },
+        {
+          "path": "PromptExperiments/Research/luna-baseline-2026-11-12/runner/obj/project.assets.json",
+          "bytes": 81816,
+          "sha256": "1e529d6b5ccd65a0527da488f68491f1c7f14740dd087840299125ed742e65de"
+        },
+        {
+          "path": "PromptExperiments/Research/luna-baseline-2026-11-12/runner/obj/project.nuget.cache",
+          "bytes": 4116,
+          "sha256": "fa28b9a1ceb47d52c804bb528113e4fc14bdd192d909f057e191a8639c30e72e"
+        },
+        {
+          "path": "PromptExperiments/Research/luna-baseline-2026-11-12/runner/obj/Runner.csproj.nuget.dgspec.json",
+          "bytes": 89451,
+          "sha256": "986a5026501ddbbd151b993432d23d48cfc5b962727bbc58746f77cd37583348"
+        },
+        {
+          "path": "PromptExperiments/Research/luna-baseline-2026-11-12/runner/obj/Runner.csproj.nuget.g.props",
+          "bytes": 1302,
+          "sha256": "afb6ebbf379c26b610bf22ef01c37c4bc9aa9a4ed4210c37fb076f22fedb4f62"
+        },
+        {
+          "path": "PromptExperiments/Research/luna-baseline-2026-11-12/runner/obj/Runner.csproj.nuget.g.targets",
+          "bytes": 1307,
+          "sha256": "b5df75694eac0f550060e6155e62d24dba14d8d66a05a7ff200df0af69246657"
+        }
+      ]
+    },
+    {
+      "path": "PromptExperiments/Research/offline-reassessment-experiment-7-2026-11-16/checks/obj",
+      "references": [],
+      "decision": "verwijdering geblokkeerd; behouden",
+      "files": [
+        {
+          "path": "PromptExperiments/Research/offline-reassessment-experiment-7-2026-11-16/checks/obj/Checks.csproj.nuget.dgspec.json",
+          "bytes": 21754,
+          "sha256": "d8d3f1b083d513c45b4c74bf589be25e119829f566120d19a23c8494b3da67fe"
+        },
+        {
+          "path": "PromptExperiments/Research/offline-reassessment-experiment-7-2026-11-16/checks/obj/Checks.csproj.nuget.g.props",
+          "bytes": 1135,
+          "sha256": "0e063c6f4304f1c9c4dcf724ed96365131db66a86d8e6864619693ffcbc85522"
+        },
+        {
+          "path": "PromptExperiments/Research/offline-reassessment-experiment-7-2026-11-16/checks/obj/Checks.csproj.nuget.g.targets",
+          "bytes": 150,
+          "sha256": "971cc9b535384849b5c661d776cd7a80833a416265e32e8968e06c367368b8b5"
+        },
+        {
+          "path": "PromptExperiments/Research/offline-reassessment-experiment-7-2026-11-16/checks/obj/Debug/net10.0/.NETCoreApp,Version=v10.0.AssemblyAttributes.cs",
+          "bytes": 200,
+          "sha256": "93d67476196ebfc80d1d7d8844b91146cfd678d105f5ce635eb900ca40610c9b"
+        },
+        {
+          "path": "PromptExperiments/Research/offline-reassessment-experiment-7-2026-11-16/checks/obj/Debug/net10.0/apphost.exe",
+          "bytes": 162304,
+          "sha256": "1d8c4e44759d9651e785d7011dec1a3f15cbe325dabe2ca74271ebd1c418cf25"
+        },
+        {
+          "path": "PromptExperiments/Research/offline-reassessment-experiment-7-2026-11-16/checks/obj/Debug/net10.0/Checks.AssemblyInfo.cs",
+          "bytes": 992,
+          "sha256": "982e774cd701b82665e9375363e5d497cabd4c9ee15ff617bd0e55eb58bfb2a9"
+        },
+        {
+          "path": "PromptExperiments/Research/offline-reassessment-experiment-7-2026-11-16/checks/obj/Debug/net10.0/Checks.AssemblyInfoInputs.cache",
+          "bytes": 66,
+          "sha256": "10a6d765c1a1ccdb386a7f566989f607d4f909595608b391da95fa3d9b777863"
+        },
+        {
+          "path": "PromptExperiments/Research/offline-reassessment-experiment-7-2026-11-16/checks/obj/Debug/net10.0/Checks.assets.cache",
+          "bytes": 152,
+          "sha256": "9b7223f8fc0cc7a5812f0d665c2da0755c73b7f517bc7a5624ce0b8c5880a1f2"
+        },
+        {
+          "path": "PromptExperiments/Research/offline-reassessment-experiment-7-2026-11-16/checks/obj/Debug/net10.0/Checks.csproj.CoreCompileInputs.cache",
+          "bytes": 66,
+          "sha256": "4452a25d4963761bf2697ee893d81a5e60873ee2e7ece21733bbaa40cb10460e"
+        },
+        {
+          "path": "PromptExperiments/Research/offline-reassessment-experiment-7-2026-11-16/checks/obj/Debug/net10.0/Checks.csproj.FileListAbsolute.txt",
+          "bytes": 2231,
+          "sha256": "0c205594c917d9753d7589dc4422823889de2718d3062bd78bb4b303a1c68c96"
+        },
+        {
+          "path": "PromptExperiments/Research/offline-reassessment-experiment-7-2026-11-16/checks/obj/Debug/net10.0/Checks.dll",
+          "bytes": 8704,
+          "sha256": "78a90f2b3e458be9969919423d766b32304adaa68c13093d78a510bd4e4b9b32"
+        },
+        {
+          "path": "PromptExperiments/Research/offline-reassessment-experiment-7-2026-11-16/checks/obj/Debug/net10.0/Checks.GeneratedMSBuildEditorConfig.editorconfig",
+          "bytes": 888,
+          "sha256": "b400f4a9b5a603cffcad975715fe20551b375e786d0ea6524a3a200d41fb8c32"
+        },
+        {
+          "path": "PromptExperiments/Research/offline-reassessment-experiment-7-2026-11-16/checks/obj/Debug/net10.0/Checks.genruntimeconfig.cache",
+          "bytes": 66,
+          "sha256": "e16aef68e5c192e6b7794e5e6b7dc13da68a70ab64c290a6261c0931e0eb0ae0"
+        },
+        {
+          "path": "PromptExperiments/Research/offline-reassessment-experiment-7-2026-11-16/checks/obj/Debug/net10.0/Checks.GlobalUsings.g.cs",
+          "bytes": 239,
+          "sha256": "a3c6048bb4d922b1799a9977f84362a3787b68810cac67aa86ac3aa23295f227"
+        },
+        {
+          "path": "PromptExperiments/Research/offline-reassessment-experiment-7-2026-11-16/checks/obj/Debug/net10.0/Checks.pdb",
+          "bytes": 12872,
+          "sha256": "32a9e124698d3f7e9ce6f94e91aae6a4873b08681093f8300dcc8923fd9a51d5"
+        },
+        {
+          "path": "PromptExperiments/Research/offline-reassessment-experiment-7-2026-11-16/checks/obj/Debug/net10.0/Checks.sourcelink.json",
+          "bytes": 159,
+          "sha256": "6d381a02b2b40ba1ea2b0e21b9b2aa3c487ba9029cbbac025db8a6b527fbe418"
+        },
+        {
+          "path": "PromptExperiments/Research/offline-reassessment-experiment-7-2026-11-16/checks/obj/Debug/net10.0/ref/Checks.dll",
+          "bytes": 5632,
+          "sha256": "5ce1a1f1347402f9c9dba2682772ce2d93a7c6125903e81a99cab1e210050488"
+        },
+        {
+          "path": "PromptExperiments/Research/offline-reassessment-experiment-7-2026-11-16/checks/obj/Debug/net10.0/refint/Checks.dll",
+          "bytes": 5632,
+          "sha256": "5ce1a1f1347402f9c9dba2682772ce2d93a7c6125903e81a99cab1e210050488"
+        },
+        {
+          "path": "PromptExperiments/Research/offline-reassessment-experiment-7-2026-11-16/checks/obj/project.assets.json",
+          "bytes": 20985,
+          "sha256": "868399485f62b1f00b80f8dae6c2bf8cb61673aaba1698a1ceb054ac8dcbd9a6"
+        },
+        {
+          "path": "PromptExperiments/Research/offline-reassessment-experiment-7-2026-11-16/checks/obj/project.nuget.cache",
+          "bytes": 273,
+          "sha256": "b1ed91d296c526b5e9eda78b5f0703a67523f25a2b071ff142661e80f97d3d04"
+        }
+      ]
+    },
+    {
+      "path": "PromptExperiments/Research/production-validation-experiment-6-2026-11-12/runner/obj",
+      "references": [],
+      "decision": "verwijdering geblokkeerd; behouden",
+      "files": [
+        {
+          "path": "PromptExperiments/Research/production-validation-experiment-6-2026-11-12/runner/obj/Debug/net10.0/.NETCoreApp,Version=v10.0.AssemblyAttributes.cs",
+          "bytes": 200,
+          "sha256": "93d67476196ebfc80d1d7d8844b91146cfd678d105f5ce635eb900ca40610c9b"
+        },
+        {
+          "path": "PromptExperiments/Research/production-validation-experiment-6-2026-11-12/runner/obj/Debug/net10.0/apphost.exe",
+          "bytes": 162304,
+          "sha256": "65e64d6a7a1b9d4151658979e3928e7a4759746432f2616744d2e4b0c4e34b09"
+        },
+        {
+          "path": "PromptExperiments/Research/production-validation-experiment-6-2026-11-12/runner/obj/Debug/net10.0/Experime.63072CA5.Up2Date",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "PromptExperiments/Research/production-validation-experiment-6-2026-11-12/runner/obj/Debug/net10.0/Experiment6.AssemblyInfo.cs",
+          "bytes": 1007,
+          "sha256": "8056fa8e166229b8e494a1eb22f24e6ec1ac4bd4d47fde6bbb63ee2e3ef53c92"
+        },
+        {
+          "path": "PromptExperiments/Research/production-validation-experiment-6-2026-11-12/runner/obj/Debug/net10.0/Experiment6.AssemblyInfoInputs.cache",
+          "bytes": 66,
+          "sha256": "f82c4663c43f1a9f31492cf0d8375febdba6e702c5bc3cd78e73c004d2292b45"
+        },
+        {
+          "path": "PromptExperiments/Research/production-validation-experiment-6-2026-11-12/runner/obj/Debug/net10.0/Experiment6.assets.cache",
+          "bytes": 18353,
+          "sha256": "715e56224c3cb354205822121379ab3185f4ae82f848cede092dcc0f9bc30f76"
+        },
+        {
+          "path": "PromptExperiments/Research/production-validation-experiment-6-2026-11-12/runner/obj/Debug/net10.0/Experiment6.csproj.AssemblyReference.cache",
+          "bytes": 21982,
+          "sha256": "e82155d4bbda78404a10a5e2cc279fe0fff8308eb76d89ddce4031e8df4403dd"
+        },
+        {
+          "path": "PromptExperiments/Research/production-validation-experiment-6-2026-11-12/runner/obj/Debug/net10.0/Experiment6.csproj.CoreCompileInputs.cache",
+          "bytes": 66,
+          "sha256": "5fd5a5c6a2a96b296537cbfe417a7237749eb2883faddeb3c0a725fff7e8b552"
+        },
+        {
+          "path": "PromptExperiments/Research/production-validation-experiment-6-2026-11-12/runner/obj/Debug/net10.0/Experiment6.csproj.FileListAbsolute.txt",
+          "bytes": 8201,
+          "sha256": "63d137022b29da414603c2baa5226e494b85e8cf85d770f73bb10183c41fba6a"
+        },
+        {
+          "path": "PromptExperiments/Research/production-validation-experiment-6-2026-11-12/runner/obj/Debug/net10.0/Experiment6.dll",
+          "bytes": 41472,
+          "sha256": "ea3300cab4bb7cdb68cf9eadd303bdaa7113e9bcea3822a05deb0c9a3709e7f6"
+        },
+        {
+          "path": "PromptExperiments/Research/production-validation-experiment-6-2026-11-12/runner/obj/Debug/net10.0/Experiment6.GeneratedMSBuildEditorConfig.editorconfig",
+          "bytes": 894,
+          "sha256": "6dc704a539534ebd1e54535523e01b90fff5db830fdd53ff8cdf87499e69ab43"
+        },
+        {
+          "path": "PromptExperiments/Research/production-validation-experiment-6-2026-11-12/runner/obj/Debug/net10.0/Experiment6.genruntimeconfig.cache",
+          "bytes": 66,
+          "sha256": "69d983407f715d46902591b867f55d085bab954bbb6752c2db2277f0a593ae81"
+        },
+        {
+          "path": "PromptExperiments/Research/production-validation-experiment-6-2026-11-12/runner/obj/Debug/net10.0/Experiment6.GlobalUsings.g.cs",
+          "bytes": 239,
+          "sha256": "a3c6048bb4d922b1799a9977f84362a3787b68810cac67aa86ac3aa23295f227"
+        },
+        {
+          "path": "PromptExperiments/Research/production-validation-experiment-6-2026-11-12/runner/obj/Debug/net10.0/Experiment6.pdb",
+          "bytes": 18392,
+          "sha256": "9c73eeb26d0d7731d89e63912034f7a61c92962d2a2c99d1ce10c9a4560ffe3b"
+        },
+        {
+          "path": "PromptExperiments/Research/production-validation-experiment-6-2026-11-12/runner/obj/Debug/net10.0/Experiment6.sourcelink.json",
+          "bytes": 159,
+          "sha256": "15962c5aa75d9b52021cf744dfd36476c1fce232ed345fcce0db9812b5c6ba31"
+        },
+        {
+          "path": "PromptExperiments/Research/production-validation-experiment-6-2026-11-12/runner/obj/Debug/net10.0/ref/Experiment6.dll",
+          "bytes": 12800,
+          "sha256": "0a31ab9df528a3849505adb1c1c5f64c0beb885eaf8969c8b701f104839f320e"
+        },
+        {
+          "path": "PromptExperiments/Research/production-validation-experiment-6-2026-11-12/runner/obj/Debug/net10.0/refint/Experiment6.dll",
+          "bytes": 12800,
+          "sha256": "0a31ab9df528a3849505adb1c1c5f64c0beb885eaf8969c8b701f104839f320e"
+        },
+        {
+          "path": "PromptExperiments/Research/production-validation-experiment-6-2026-11-12/runner/obj/Experiment6.csproj.nuget.dgspec.json",
+          "bytes": 89581,
+          "sha256": "eb939a1fafb47f38ca2cee4ea645c46032b199c07e0875438933a6b52b06f06c"
+        },
+        {
+          "path": "PromptExperiments/Research/production-validation-experiment-6-2026-11-12/runner/obj/Experiment6.csproj.nuget.g.props",
+          "bytes": 1302,
+          "sha256": "afb6ebbf379c26b610bf22ef01c37c4bc9aa9a4ed4210c37fb076f22fedb4f62"
+        },
+        {
+          "path": "PromptExperiments/Research/production-validation-experiment-6-2026-11-12/runner/obj/Experiment6.csproj.nuget.g.targets",
+          "bytes": 1307,
+          "sha256": "b5df75694eac0f550060e6155e62d24dba14d8d66a05a7ff200df0af69246657"
+        },
+        {
+          "path": "PromptExperiments/Research/production-validation-experiment-6-2026-11-12/runner/obj/project.assets.json",
+          "bytes": 81894,
+          "sha256": "2037c610bca3371f63052b7da788f04e4458d7a308019cb5126f15992cc3d552"
+        },
+        {
+          "path": "PromptExperiments/Research/production-validation-experiment-6-2026-11-12/runner/obj/project.nuget.cache",
+          "bytes": 4142,
+          "sha256": "5ac8d663bd2ebb9bb5485a783bcc9d7f9fd9e81467b57e10a9915b26f7212b2d"
+        }
+      ]
+    }
+  ],
+  "build": {
+    "command": "dotnet build src/Nueyon.Compose.slnx --no-restore -t:Rebuild",
+    "errors": 0,
+    "warnings": 0
+  },
+  "tests": {
+    "application": 241,
+    "infrastructure": 25,
+    "console": 37,
+    "total": 303,
+    "failed": 0,
+    "domain": "geen tests aanwezig"
+  },
+  "replay": {
+    "rawResponses": 24,
+    "exactParsedResults": 24,
+    "exactProjections": 24,
+    "client": "in-memory fake; geen netwerk"
+  },
+  "judge": {
+    "default": false,
+    "localOverrideFound": false
+  }
+}
