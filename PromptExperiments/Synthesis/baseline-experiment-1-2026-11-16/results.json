@@ -1,0 +1,34 @@
+{
+  "decision": "VERBETERPUNTEN; baseline geen GO",
+  "passes": 8,
+  "total": 12,
+  "goThreshold": 11,
+  "criticalActorError": "digital-r1",
+  "repeatedEssentialOmission": "lowell-r1/r2/r3: outputgroei tegenover krimpend werk",
+  "byCase": {
+    "digital": {
+      "calls": 3,
+      "input": 15666,
+      "output": 5673,
+      "total": 21339
+    },
+    "lowell": {
+      "calls": 3,
+      "input": 16935,
+      "output": 4227,
+      "total": 21162
+    },
+    "webb": {
+      "calls": 3,
+      "input": 15978,
+      "output": 4270,
+      "total": 20248
+    },
+    "wolf": {
+      "calls": 3,
+      "input": 16494,
+      "output": 2601,
+      "total": 19095
+    }
+  }
+}

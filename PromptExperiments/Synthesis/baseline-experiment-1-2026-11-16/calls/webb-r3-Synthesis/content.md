@@ -1,0 +1,16 @@
+### Central insight
+Webb volledig uitgevouwen hebben was niet hetzelfde als klaar zijn voor wetenschap: na het bereiken van de operationele configuratie volgden nog maanden van afkoeling, spiegeluitlijning en instrumentkalibratie voordat de routinematige wetenschap begon.
+
+### Evidence
+1. Webb was te groot voor de beschikbare raketconfiguratie en werd ontworpen om in de Ariane 5-neuskegel te worden gevouwen. (Fact 1)
+2. De uitvouwing omvatte meer dan 50 grote stappen en 178 ontgrendelmechanismen; de bron noemt meer dan 300 mogelijke single points of failure. Dit zijn beschreven risico’s, geen gerapporteerde storingen. (Fact 3)
+3. In de tweede week waren de secundaire spiegel en beide primaire spiegelvleugels uitgeklapt en vergrendeld; daarmee was de volledig uitgevouwen operationele configuratie bereikt. Daarna volgden weken van afkoeling, maanden van spiegeluitlijning en in maand vijf en zes instrumentkalibratie. Na zes maanden begon Webb aan zijn wetenschappelijke missie en routinematige wetenschappelijke operaties. (Facts 7–10, 12)
+
+### What the narrative should emphasize
+Maak het onderscheid tussen de fysieke voltooiing van de uitvouwing en het latere operationele gereed zijn de rode draad. Fact 3 kan als beknopte context dienen voor de inzet van de uitvouwing, maar presenteer de genoemde risico’s niet als incidenten die zich daadwerkelijk voordeden. Leg de nadruk op de gedocumenteerde opeenvolging van uitvouwing, afkoeling, uitlijning en kalibratie; de afzonderlijke technische details hoeven niet allemaal terug te komen. Beschrijf Webb’s ingebruikname, niet als universeel advies voor engineeringprojecten.
+
+### What should be de-emphasized
+De precieze uitvouwing van zonneschild, radiatoren, antenne en andere onderdelen (Facts 4–6), de technische uitleg van de koeling en het uitlijnen, en de details van de kalibratiedoelen zijn niet nodig voor deze centrale tegenstelling. Vermijd ook een volledige chronologische reconstructie van alle stappen.
+
+### Gaps and uncertainty
+De bron meldt dat de uitvouwing soepel verliep, maar beschrijft geen specifieke afwijking of opgelost probleem. Vertel de risico’s dus niet als een bijna-mislukking of als bewijs dat een storing optrad. De bron geeft ook geen gedetailleerde kalibratieresultaten of exacte datum waarop de routinematige wetenschap begon; houd de formulering bij de beschreven fasen en de termijn van zes maanden.

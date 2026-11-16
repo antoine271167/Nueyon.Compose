@@ -1,0 +1,17 @@
+### Central insight
+Lowells historische omslag zette industrieel erfgoed in als basis voor een revitaliseringsinspanning en gaf oude gebouwen nieuwe functies, maar de bron uit 1992 beschrijft ook een opleving die eind jaren tachtig weer werd geraakt door economische terugval.
+
+### Evidence
+1. De textielwerkgelegenheid liep sterk terug: in 1936 waren er nog 8.000 textielbanen. Werknemers beschreven ook de menselijke gevolgen van de neergang, waaronder schaarste en onzekerheid over werk.
+2. In de jaren zestig ontwikkelden inwoners een revitaliseringsstrategie rond Lowells architectonische en culturele erfgoed. Politieke en zakelijke leiders steunden de beweging; daaruit kwamen onder meer Lowell Heritage State Park en Lowell National Historical Park voort.
+3. De bron meldt voor eind jaren zeventig en begin jaren tachtig stijgende werkgelegenheid en bedrijfsuitbreiding, en meer dan honderd oude gebouwen die werden gerenoveerd en een nieuw gebruik kregen.
+4. De bron zegt dat de hausse eind jaren tachtig voorbij was: de regionale economie koelde af, bedrijven sloten of vertrokken en Wang ontsloeg het grootste deel van zijn personeel en herstructureerde.
+
+### What the narrative should emphasize
+Richt het verhaal op de spanning tussen tastbaar hergebruik van Lowells industriële verleden en het feit dat dit de stad niet buiten latere economische terugval plaatste. Behoud de menselijke schaal van de neergang en benoem samenwerking als onderdeel van de erfgoedstrategie. Presenteer de gelijktijdige opleving en het hergebruik niet als bewijs dat de parken die resultaten veroorzaakten. Vertel over Lowells eigen historische ontwikkeling, niet als advies of universele les voor andere steden.
+
+### What should be de-emphasized
+Maak er geen volledige industriële geschiedenis of overzicht van alle herstelinitiatieven van. De universiteit en Wang bij hun komst zijn afzonderlijke ontwikkelingen en hoeven niet als parallelle verklaringen voor herstel te worden uitgewerkt. Behandel de cijfers en stadsbeschrijvingen als onderdeel van de bron uit 1992, niet als actuele metingen.
+
+### Gaps and uncertainty
+De bron kwantificeert niet afzonderlijk hoeveel de parken, behoudsprogramma’s, universiteit, Wang of andere factoren bijdroegen aan werkgelegenheid of herstel; schrijf de opleving dus niet toe aan erfgoedinitiatieven alleen. Ze meet ook niet wie van de opleving profiteerde of of die de verliezen voor getroffen werknemers compenseerde. De bron biedt geen basis voor uitspraken over Lowell na 1992.

@@ -1,0 +1,22 @@
+# Synthesis Experiment 1 — Baseline
+Prospectief plan, 16 november 2026. Alleen echte SynthesizerAgent en productieparser/schema; productieprompts bytegelijk via disk prompt scope. Echte productieprojectie ExtractFactsAndUnknowns. Geen andere agents, judge, mapper, evaluatiemodel, retries, repairs, promptwijziging of downstreampostscore.
+
+Alle vier natuurlijke cases uit Research Experiment 9: Webb (technische fasen), wolf (ecologische relaties), digital (dienstverlening/praktijkcijfers), Lowell (historisch herstel en terugval). Voor elke case vooraf B2-r1 gekozen: eerste succesvolle opgeslagen B2-output, alle vier destijds voldoende; uniforme regel voorkomt outputcherrypicking. Drie herhalingen met identieke input. Bron, Idea en Research niet herschrijven. Vergelijk volledige JSON-waarden en bronbytes met vaste experimentartefacten; echte filter moet exact overeenkomen met opgeslagen projectie.
+
+Hard budget: maximaal 12 attempts/HTTP requests, retries nul, 5000 outputtokens per call inclusief reasoning, hoogstens 60000 outputtokens. Maximaal 120000 UTF-8 requestbytes per call. Geen exact inputtoken- of europlafond; tarief niet vastgesteld. Verse client per call, geen seed/temperatuurwijziging; 300 seconden timeout. Poging telt ook bij failure; geen vervanging. Lock niet resetten. Geen automatisch hervatten.
+
+## Beoordeling en beslispoort
+Work-assistent leest iedere gehele output, vaste volledige Research, projectie en oorspronkelijke opgeslagen brontekst. Ongeblindeerde eigen beoordeling, geen onafhankelijke mens of modeljudge. Vijf dimensies 0–2: brontrouw/geen misleidende feiten; focus Selected Idea; essentiële feiten en betekenisnuance; inhoudelijke inzichten/contrasten/concrete details; bruikbaarheid als grondstof Narrative. 2 voldoende; 1 bruikbaar met concreet relevant gebrek; 0 materieel misleidend/onbruikbaar. Geen compenserende totaalscore. Geen academische volledigheid, LinkedIn-hook, verplichte aantallen feiten of downstreamkwaliteit vereisen. Verantwoorde selectie mag context weglaten, maar geen verhaaldragende tegenstelling of beperking neutraliseren. Beoordeel ook prioritering/guidance, niet alleen woordaanwezigheid.
+
+Baseline GO: minstens 11/12 volledig voldoende, minstens 2/3 per case, geen materiële verzonnen/misleidende claim en geen herhaalde essentiële omissie/nuanceverlies binnen een case. Anders verbeterpunten met kleinste vervolgstap. Geen automatische productieactie bij GO.
+
+## Vooraf essentiële betekenis per case
+- Webb: vouwen wegens formaat; uitvouwen versus gereed voor wetenschap; afkoelen, uitlijnen, kalibreren en zes maanden; concreet technisch risico of detail. Geen alles-automatisch of uitvouwen-is-klaar claim. Geen verplichte gehele deploymentlijst.
+- Wolf: sociale/voedselrelaties als netwerk met concreet voorbeeld; veranderende prooirelaties; andere predatoren/weer/beheer begrenzen één-oorzaakherstel. Bisonclaim alleen met aasetennuance. Geen lijst van alle populatiecijfers verplicht.
+- Digital: twaalf weken met bewuste inrichting van dienst/ontwikkeling; digitaal én assisted digital zonder papier; eerst aanvragers, later caseworkers; concrete sprintpraktijk; resultaten in eerste vijf weken als aanvragen, geen bewezen causale verbetering of uitgekeerde refunds. KPI's mogen context zijn, maar betekenis niet veranderen.
+- Lowell: neergang/werkcontrast en hergebruik/nieuw gebruik; burgerinitiatief met bredere onderwijs/technologiecontext; herstel begrensd door late-1980s terugval en historisch 1992-perspectief. Menselijk detail waardevol, niet iedere historische gebeurtenis verplicht.
+
+Traceability: feitelijke proposities naar Research/projectieregel en waar nodig brontekst. Voor essenties matrix bron → volledige Research → echte projectie → output/priority. Verlies vóór filter, door filter en bij Synthesis onderscheiden. Verwijderde Interpretations/Development sequence/Editorial relevance zijn geen Synthesis-omissie wanneer niet in Facts/Unknowns beschikbaar. Geen causaliteit afleiden uit oude volledige ketenruns.
+
+## Relevante historie
+Experiment 6/7: bus-audiofouten stonden in Research én filter; downstreamverlies mag niet aan Research toegeschreven worden; oude evaluatiecitaten/labels deels ondeugdelijk. Experiment 011 had ongeldige runs door stale embedded prompts en geen afgeronde 3+3-conclusie; upstream framing varieerde. Daarom identieke bevroren inputs en controle van werkelijk gerenderde requests. Oude resultaten zijn diagnoses, geen geldige baseline voor deze vier natuurlijke cases. Geen historische artefacten aanpassen.

@@ -1,0 +1,19 @@
+{
+  "hostBuild": {
+    "project": "src/Nueyon.Compose.Host.Console/Nueyon.Compose.Host.Console.csproj",
+    "passed": true,
+    "warnings": 0,
+    "errors": 0
+  },
+  "runnerBuild": {
+    "passed": true
+  },
+  "existingTests": {
+    "project": "src/Nueyon.Compose.Application.Tests/Nueyon.Compose.Application.Tests.csproj",
+    "filter": "FullyQualifiedName~SynthesisResearchFilterTests|FullyQualifiedName~SynthesizerAgentBoundaryTests",
+    "passed": 6,
+    "failed": 0,
+    "skipped": 0
+  },
+  "scope": "Observed tool executions; no new modelcalls or new tests"
+}

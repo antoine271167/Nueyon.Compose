@@ -1,0 +1,58 @@
+{
+  "model": "gpt-6-luna",
+  "maxAttempts": 12,
+  "maxOutputTokens": 5000,
+  "maxRequestBytes": 120000,
+  "retries": 0,
+  "timeoutSeconds": 300,
+  "schedule": [
+    {
+      "id": "webb-r1",
+      "case": "webb"
+    },
+    {
+      "id": "wolf-r1",
+      "case": "wolf"
+    },
+    {
+      "id": "digital-r1",
+      "case": "digital"
+    },
+    {
+      "id": "lowell-r1",
+      "case": "lowell"
+    },
+    {
+      "id": "webb-r2",
+      "case": "webb"
+    },
+    {
+      "id": "wolf-r2",
+      "case": "wolf"
+    },
+    {
+      "id": "digital-r2",
+      "case": "digital"
+    },
+    {
+      "id": "lowell-r2",
+      "case": "lowell"
+    },
+    {
+      "id": "webb-r3",
+      "case": "webb"
+    },
+    {
+      "id": "wolf-r3",
+      "case": "wolf"
+    },
+    {
+      "id": "digital-r3",
+      "case": "digital"
+    },
+    {
+      "id": "lowell-r3",
+      "case": "lowell"
+    }
+  ]
+}

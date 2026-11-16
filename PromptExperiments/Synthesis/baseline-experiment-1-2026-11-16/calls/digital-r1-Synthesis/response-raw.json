@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-EkyOf18w2x8EDuw7fIYmvD6NOkfiC",
+  "object": "chat.completion",
+  "created": 1794863961,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"### Central insight\\nHet POA-team lanceerde de refunddienst voor het publiek in twaalf weken; in het verslag staan daarbij concrete keuzes over welke gebruikers eerst aan bod kwamen en hoe onderzoek en verwerking tijdens de private beta werden ingepland, zonder aan te tonen dat die keuzes de doorlooptijd of resultaten veroorzaakten.\\n\\n### Evidence\\n1. Het team kreeg aanvankelijk de opdracht binnen enkele weken te leveren, maar concludeerde dat dit niet haalbaar was als het een kwaliteitsdienst voor gebruikers wilde maken. De dienst ging twaalf weken later live voor het publiek. (Fact 4)\\n2. Het team werkte eerst aan de refundaanvraag voor aanvragers en bracht dat deel naar alpha; het werk voor caseworkers kwam later. De auteur zegt dat de nieuwe caseworkergebruiker er nog niet was voordat aanvragen binnenkwamen, en dat het team vanwege de beperkte tijd geen aannames zonder onderbouwing wilde maken. (Fact 6)\\n3. Tijdens de private beta verdeelde het team de tweewekelijkse sprint: de eerste week voor testen, onderzoek en aanvragen aannemen; de tweede week zonder nieuwe inzendingen, voor testen, onderzoek en aanvragen verwerken. De auteur zegt dat dit hielp snel te bouwen en tegelijk aan gebruikersbehoeften te werken. (Fact 7)\\n4. **Optionele uitkomstcontext:** na vijf weken publieke beschikbaarheid rapporteerde de auteur meer dan 100.000 aanvragen, 92,6% gebruikerstevredenheid en een voltooiingspercentage van 80,2%. De bron geeft geen definities of vergelijkingsbasis. (Fact 8)\\n5. **Optionele context:** de dienst was digitaal en assisted digital, zonder papieren versie. (Fact 2)\\n\\n### What the narrative should emphasize\\nLaat de gebruikersvolgorde en de indeling van onderzoek en verwerking zien als gedocumenteerde keuzes in dit specifieke levertraject. De twaalf weken geven de tijdscontext; de gerapporteerde cijfers kunnen hooguit als vroege uitkomsten worden genoemd, niet als bewijs dat die keuzes de resultaten veroorzaakten. Leg Nuëyons/het team zijn productaanpak uit als een praktijkervaring, niet als advies of universeel recept voor dienstontwerp. De assisted-digital-aanpak is optioneel en moet niet worden uitgewerkt alsof de bron beschrijft welke hulp mensen kregen.\\n\\n### What should be de-emphasized\\nMaak van de gerapporteerde resultaten geen bewijs voor de effectiviteit van de aanpak. De overige projectbeperkingen en de beoordeling door de Service Standard kunnen achterwege blijven: ze zijn niet nodig om de gebruikersvolgorde en onderzoeksplanning te begrijpen.\\n\\n### Gaps and uncertainty\\nDe bron toont niet aan dat de beschreven keuzes de lancering binnen twaalf weken of de gerapporteerde cijfers hebben veroorzaakt. De bron definieert de resultaten niet en beschrijft niet welke assisted-digital-ondersteuning is geboden of hoe die mensen hielp die het proces niet zelfstandig digitaal konden doorlopen. Zonder aanvullende informatie geen sterkere claims doen over oorzaken, effectiviteit of de ondersteuning.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5222,
+    "completion_tokens": 1669,
+    "total_tokens": 6891,
+    "prompt_tokens_details": {
+      "cached_tokens": 1513,
+      "cache_write_tokens": 3706,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1003,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}
