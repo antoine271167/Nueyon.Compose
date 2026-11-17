@@ -1,0 +1,23 @@
+### Central insight
+
+Het POA-refundteam lanceerde de dienst na twaalf weken en beschrijft een aanpak die eerst aanvragers centraal stelde, caseworkerwerk later toevoegde en tijdens private beta vaste tijd reserveerde voor onderzoek en testen. De bron documenteert deze keuzes, maar bewijst niet dat ze de lancering of gerapporteerde resultaten veroorzaakten.
+
+### Evidence
+
+1. Het team lanceerde de dienst voor het publiek in twaalf weken. Het was aanvankelijk gevraagd binnen enkele weken te leveren, maar concludeerde dat dit niet haalbaar was met behoud van een kwalitatieve gebruikersdienst.
+2. Het team werkte eerst aan de aanvragerservaring en bracht die naar alpha; plannen voor caseworkers kwamen later. De auteur zegt dat caseworkers in deze nieuwe dienst nog geen bestaande gebruikers waren en dat het team onder tijdsdruk aannames wilde vermijden.
+3. Tijdens private beta verdeelde het team tweewekelijkse sprints: in de eerste week testte en onderzocht het team en nam het aanvragen aan; in de tweede week werden inzendingen gepauzeerd voor testen, onderzoek en verwerking.
+4. De dienst was digitaal en assisted-digital, zonder papieren versie. De bron specificeert niet welke hulp de assisted-digital route bood.
+5. De auteur rapporteert dat de dienst na vijf weken publiek beschikbaar meer dan 100.000 aanvragen had ontvangen, met 92,6% gebruikerstevredenheid en een voltooiingspercentage van 80,2%.
+
+### What the narrative should emphasize
+
+Laat vooral zien hoe de volgorde van gebruikersgroepen (punt 2) en de gereserveerde onderzoeks- en testtijd (punt 3) deel uitmaakten van de beschreven aanpak onder tijdsdruk. Punt 5 kan desgewenst als gerapporteerde stand van zaken worden genoemd, niet als bewijs dat die keuzes de uitkomsten veroorzaakten. Beschrijf de richting van dit team; maak er geen advies of universeel recept voor lezers van.
+
+### What should be de-emphasized
+
+De precieze reden voor de terugbetalingen, de beperkingen rond verouderde aanvragersgegevens en de overige organisatorische uitdagingen zijn niet nodig om deze ontwerpaanpak uit te leggen. Ook hoeft de assisted-digital route (punt 4) geen afzonderlijk verhaal te worden; claim niet hoe die ondersteuning werkte.
+
+### Gaps and uncertainty
+
+De bron stelt geen causaal verband vast tussen de beschreven werkwijzen en de lanceringstermijn of resultaten. De vijfweeksresultaten hebben geen gegeven metriekdefinities, meetmethode of vergelijking. Ook vermeldt de bron niet vanaf welk startpunt de twaalf weken zijn geteld, of wat assisted-digital ondersteuning concreet inhield.

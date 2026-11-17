@@ -1,0 +1,130 @@
+{
+  "model": "gpt-6-luna",
+  "maxAttempts": 24,
+  "maxOutputTokens": 5000,
+  "maxRequestBytes": 120000,
+  "retries": 0,
+  "timeoutSeconds": 300,
+  "schedule": [
+    {
+      "id": "webb-r1-A",
+      "case": "webb",
+      "arm": "A"
+    },
+    {
+      "id": "webb-r1-C",
+      "case": "webb",
+      "arm": "C"
+    },
+    {
+      "id": "wolf-r1-C",
+      "case": "wolf",
+      "arm": "C"
+    },
+    {
+      "id": "wolf-r1-A",
+      "case": "wolf",
+      "arm": "A"
+    },
+    {
+      "id": "digital-r1-A",
+      "case": "digital",
+      "arm": "A"
+    },
+    {
+      "id": "digital-r1-C",
+      "case": "digital",
+      "arm": "C"
+    },
+    {
+      "id": "lowell-r1-C",
+      "case": "lowell",
+      "arm": "C"
+    },
+    {
+      "id": "lowell-r1-A",
+      "case": "lowell",
+      "arm": "A"
+    },
+    {
+      "id": "webb-r2-C",
+      "case": "webb",
+      "arm": "C"
+    },
+    {
+      "id": "webb-r2-A",
+      "case": "webb",
+      "arm": "A"
+    },
+    {
+      "id": "wolf-r2-A",
+      "case": "wolf",
+      "arm": "A"
+    },
+    {
+      "id": "wolf-r2-C",
+      "case": "wolf",
+      "arm": "C"
+    },
+    {
+      "id": "digital-r2-C",
+      "case": "digital",
+      "arm": "C"
+    },
+    {
+      "id": "digital-r2-A",
+      "case": "digital",
+      "arm": "A"
+    },
+    {
+      "id": "lowell-r2-A",
+      "case": "lowell",
+      "arm": "A"
+    },
+    {
+      "id": "lowell-r2-C",
+      "case": "lowell",
+      "arm": "C"
+    },
+    {
+      "id": "webb-r3-A",
+      "case": "webb",
+      "arm": "A"
+    },
+    {
+      "id": "webb-r3-C",
+      "case": "webb",
+      "arm": "C"
+    },
+    {
+      "id": "wolf-r3-C",
+      "case": "wolf",
+      "arm": "C"
+    },
+    {
+      "id": "wolf-r3-A",
+      "case": "wolf",
+      "arm": "A"
+    },
+    {
+      "id": "digital-r3-A",
+      "case": "digital",
+      "arm": "A"
+    },
+    {
+      "id": "digital-r3-C",
+      "case": "digital",
+      "arm": "C"
+    },
+    {
+      "id": "lowell-r3-C",
+      "case": "lowell",
+      "arm": "C"
+    },
+    {
+      "id": "lowell-r3-A",
+      "case": "lowell",
+      "arm": "A"
+    }
+  ]
+}

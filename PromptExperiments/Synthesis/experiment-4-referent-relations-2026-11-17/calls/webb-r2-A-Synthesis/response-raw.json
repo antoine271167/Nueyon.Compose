@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ElJth9YNcgSXLJ6m1LOExi90BjFCe",
+  "object": "chat.completion",
+  "created": 1794946609,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"### Central insight\\nWebbs uitvouwing bracht de telescoop pas in zijn operationele configuratie; afkoeling, spiegeluitlijning en instrumentkalibratie volgden nog, en de routinewetenschap begon na zes maanden.\\n\\n### Evidence\\n1. Webb was te groot om operationeel in de beschikbare raket te passen en werd ontworpen om voor de lancering in de Ariane 5-kuip te worden gevouwen.\\n2. De uitvouwing omvatte meer dan 50 grote stappen en ruim 300 mogelijke afzonderlijke faalpunten; reparatie op Webb’s bestemming was niet mogelijk. De bron meldt wel dat de uitvouwing opmerkelijk soepel verliep, maar beschrijft geen specifieke problemen.\\n3. In de tweede week waren de secundaire spiegel en beide primaire-spiegelvleugels uitgeklapt en vergrendeld; daarmee was de telescoop volledig in haar operationele configuratie.\\n4. Daarna volgden meerdere maanden waarin het team de telescoop en instrumenten liet afkoelen, de spiegels uitlijnde en de instrumentmodi kalibreerde.\\n5. Na zes maanden begon Webb aan zijn wetenschappelijke missie en routinewetenschap.\\n\\n### What the narrative should emphasize\\nMaak het onderscheid tussen de voltooide uitvouwing en het latere begin van routinewetenschap de rode draad. De tijdlijn van uitvouwing naar afkoeling, uitlijning en kalibratie ondersteunt dat onderscheid; de risico’s kunnen kort de inzet van de uitvouwing schetsen. Beschrijf de gedocumenteerde stappen van Webb’s team, niet als universeel advies voor engineeringprojecten.\\n\\n### What should be de-emphasized\\nDe afzonderlijke mechanismen en alle details van de zonneschild- en spiegeluitvouwing zijn niet nodig voor dit verhaal. Ook de details van instrumentmodi en representatieve waarnemingsdoelen kunnen achterwege blijven, tenzij één voorbeeld het verschil tussen uitvouwing en ingebruikname verduidelijkt.\\n\\n### Gaps and uncertainty\\nDe bron geeft geen details over specifieke afwijkingen of problemen tijdens de uitvouwing. Presenteer de vele faalpunten daarom als risico’s, niet als gebeurtenissen die zich daadwerkelijk voordeden; de bron karakteriseert de uitvouwing juist als opmerkelijk soepel. De precieze kalibratieresultaten en de exacte datum waarop routinewetenschap begon, zijn niet vermeld.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5285,
+    "completion_tokens": 1144,
+    "total_tokens": 6429,
+    "prompt_tokens_details": {
+      "cached_tokens": 5282,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 618,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

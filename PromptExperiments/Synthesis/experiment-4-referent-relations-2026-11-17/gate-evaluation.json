@@ -1,0 +1,86 @@
+{
+  "decision": "NO-GO",
+  "arm": {
+    "A": {
+      "valid": 12,
+      "pass": 10,
+      "perCase": {
+        "webb": 3,
+        "wolf": 2,
+        "digital": 2,
+        "lowell": 3
+      },
+      "material": [
+        "wolf-r1-A"
+      ],
+      "targetFailures": {
+        "webb": [],
+        "wolf": [
+          "wolf-r1-A"
+        ]
+      }
+    },
+    "C": {
+      "valid": 12,
+      "pass": 8,
+      "perCase": {
+        "webb": 1,
+        "wolf": 2,
+        "digital": 2,
+        "lowell": 3
+      },
+      "material": [
+        "wolf-r1-C"
+      ],
+      "targetFailures": {
+        "webb": [
+          "webb-r2-C"
+        ],
+        "wolf": [
+          "wolf-r1-C"
+        ]
+      }
+    }
+  },
+  "paired": [
+    {
+      "dimension": "BT",
+      "lower": 2,
+      "higher": 1
+    },
+    {
+      "dimension": "F",
+      "lower": 0,
+      "higher": 0
+    },
+    {
+      "dimension": "BN",
+      "lower": 1,
+      "higher": 0
+    },
+    {
+      "dimension": "IW",
+      "lower": 0,
+      "higher": 0
+    },
+    {
+      "dimension": "NG",
+      "lower": 0,
+      "higher": 0
+    }
+  ],
+  "repeatedOmissions": [],
+  "gates": {
+    "complete": true,
+    "sufficient": false,
+    "noMaterialErrors": false,
+    "noRepeatedOmissions": true,
+    "noPassRegression": false,
+    "noPairedDimensionRegression": false,
+    "correctWolfReferent": false,
+    "wolfFoodEvidence": true,
+    "retainedWebbReason": false,
+    "observedWolfImprovement": false,
+    "observedWebbImprovement": false
+  }
+}

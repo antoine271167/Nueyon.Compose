@@ -1,0 +1,17 @@
+### Central insight
+Lowell’s heritage-led revitalization grew from civic action to preserve and reuse the city’s industrial legacy, but its late-1970s and early-1980s revival was not a simple or lasting replacement for mill work: it was accompanied by other developments and followed by a late-1980s downturn.
+
+### Evidence
+1. Mill employment fell from 17,000 in 1895 to under 14,000 in 1918 and 8,000 by 1936; workers’ recollections in the source describe scarce work, reduced diets, and uncertainty about whether shifts would be available.
+2. In the 1960s, Lowell citizens developed a revitalization strategy centered partly on architectural and cultural heritage. The city council endorsed a historical-park idea in 1972; Lowell Heritage State Park emerged in 1974 and Lowell National Historical Park in 1978. The account describes cooperation among civic groups, political and business leaders, and government agencies.
+3. In the late 1970s and early 1980s, the source reports rising employment and business expansion alongside more than 100 old buildings rehabilitated for new uses. The University of Lowell formed and Wang Laboratories arrived during the 1970s, but the account does not establish that either—or the parks—caused the reported recovery.
+4. By the late 1980s, the source says the boom had ended as the regional economy cooled; companies closed or relocated, and Wang cut most of its workforce and restructured.
+
+### What the narrative should emphasize
+Keep the thread on how civic heritage efforts made preservation and reuse part of Lowell’s revitalization, then complicate the revival account with the subsequent downturn. The worker recollections can make the earlier industrial decline concrete, if useful. Describe the documented actors’ actions and the account’s reported developments; do not turn them into advice for readers or claim that heritage programs caused recovery.
+
+### What should be de-emphasized
+The detailed chronology of mill closures, labor organizing, and individual employment or wage figures is secondary beyond what establishes industrial decline and its human costs. Avoid a full account of every park program or presenting the university and Wang as proven causes of recovery.
+
+### Gaps and uncertainty
+The source does not quantify the separate contributions of parks, preservation, the university, Wang, or other factors to employment or recovery. It also does not establish how the late-1980s downturn affected the longer-term trajectory or conditions after the 1992 account. Treat its descriptions as a historical perspective, not a current measurement of Lowell.

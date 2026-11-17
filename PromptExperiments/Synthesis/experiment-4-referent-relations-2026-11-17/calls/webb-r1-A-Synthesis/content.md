@@ -1,0 +1,17 @@
+### Central insight
+Webb’s journey to routine science took much longer than unfolding: the telescope reached its fully deployed configuration in its second week, but cooling, mirror alignment and instrument calibration continued across the six-month commissioning period.
+
+### Evidence
+1. Webb was designed to fold into the Ariane 5 fairing because its operational configuration was too large for the available rocket.
+2. Deployment involved more than 50 major steps and over 300 possible single points of failure; the source says any one could have diminished or crippled the mission, and repair was not possible at Webb’s distance from Earth.
+3. By the second week, the secondary mirror and both primary-mirror wings had unfolded and latched, completing the telescope’s fully deployed operational configuration.
+4. In the first month, the telescope and instruments cooled for several weeks. Mirror alignment took place in months two through four, followed by instrument-mode calibration in months five and six. Webb began routine science operations after six months.
+
+### What the narrative should emphasize
+Keep the distinction between reaching the deployed configuration and becoming ready for routine science at the center. Evidence 3 and 4 establish that distinction; Evidence 2 can convey the stakes of deployment without implying that something went wrong. Explain Webb’s documented commissioning, rather than turning its process into advice for readers.
+
+### What should be de-emphasized
+The folded launch design in Evidence 1 is useful context, but should not become a broader account of Webb’s architecture. Detailed deployment mechanics, ground-control procedures, orbit adjustments and other technical milestones are unnecessary unless a detail is needed to clarify the central distinction.
+
+### Gaps and uncertainty
+The source reports that deployment proceeded smoothly but does not identify specific anomalies or problems. Do not invent setbacks or portray the months of commissioning as recovery from a deployment failure. Detailed calibration results are not provided, so do not claim a specific calibration outcome beyond the reported transition to routine science operations. заключ

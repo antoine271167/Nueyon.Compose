@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ElJu6xXQ8DD3DAYJlAaswj4W30BuP",
+  "object": "chat.completion",
+  "created": 1794946634,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"### Central insight\\nYellowstone’s account complicates the idea of a wolf acting alone to steer an ecosystem: wolves hunt socially and feed other animals, while their prey selection and impacts on elk occur amid several interacting conditions.\\n\\n### Evidence\\n1. Yellowstone packs are described as social families; their documented behaviors include cooperative care of offspring and group hunting of large prey.\\n2. Elk remain wolves’ primary prey, and wolf kills also provide food for scavengers, from ravens and magpies to bears and invertebrates.\\n3. Wolf prey selection changed over time: the early-winter share of wolf prey made up by elk calves and bull elk reversed between 1995–2000 and 2001–2007. The source describes changes in prey selection and kill rates as involving interactions among factors including other predators, ungulate management outside the park, and weather, which affects forage and elk condition.\\n\\n### What the narrative should emphasize\\nKeep the focus on the relationships: wolves are social predators, their kills support other animals, and their prey use varies amid interacting conditions. The prey-selection shift is one useful example. Explain Yellowstone’s documented findings and research direction; do not turn them into advice for readers or a universal rule about ecosystems.\\n\\n### What should be de-emphasized\\nThe reintroduction chronology, wolf-population fluctuations and disease outbreaks, and collaring details are not needed to establish this story. Avoid expanding into a full account of wolf recovery or monitoring.\\n\\n### Gaps and uncertainty\\nThe source does not quantify the relative contribution of the listed factors to changes in predation or elk impacts. It also does not report measured broad ecosystem outcomes, such as a demonstrated ecosystem-wide cascade. The documented social behaviors do not establish that those behaviors alone determine pack success or ecosystem outcomes.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5477,
+    "completion_tokens": 1170,
+    "total_tokens": 6647,
+    "prompt_tokens_details": {
+      "cached_tokens": 5474,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 778,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

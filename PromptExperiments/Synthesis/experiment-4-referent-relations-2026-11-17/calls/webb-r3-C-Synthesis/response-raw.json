@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ElJvvnKCf071q4ZWw5QyIvBJtyD0U",
+  "object": "chat.completion",
+  "created": 1794946747,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"### Central insight\\nWebbs uitvouwen voltooide in de tweede week zijn fysieke configuratie, maar nog niet zijn ingebruikname: afkoeling, spiegeluitlijning en instrumentkalibratie gingen vooraf aan de start van routinewetenschap na zes maanden.\\n\\n### Evidence\\n1. Webb was in operationele configuratie te groot voor een beschikbare raket en werd daarom ontworpen om in de Ariane 5-neuskegel te vouwen en tijdens de vlucht uit te vouwen.\\n2. De uitvouwing omvatte meer dan 50 grote stappen, 178 ontgrendelingsmechanismen en meer dan 300 mogelijke afzonderlijke faalpunten. De bron zegt dat elk daarvan de missie had kunnen beperken of ontregelen en dat reparatie op die afstand niet mogelijk was.\\n3. De zonneschildpallets werden in de eerste week uitgezet; in de tweede week vouwden en vergrendelden de secundaire spiegel en de spiegelvleugels. Daarmee was Webb volledig uitgevouwen.\\n4. Daarna koelden telescoop en instrumenten gedurende weken af; in maanden twee tot en met vier werden de spiegels uitgelijnd en in maanden vijf en zes werden instrumentmodi gekalibreerd.\\n5. Na zes maanden begon Webb aan zijn wetenschappelijke missie en routinewetenschappelijke operaties.\\n\\n### What the narrative should emphasize\\nMaak het onderscheid tussen het voltooien van de fysieke uitvouwing en het gereedkomen voor routinewetenschap de rode draad. De tijdlijn van uitvouwing naar afkoeling, uitlijning en kalibratie onderbouwt dat onderscheid. Beschrijf de specifieke ingebruikname van Webb; maak er geen algemeen advies voor lezers van.\\n\\n### What should be de-emphasized\\nDe exacte afmetingen van elke raket- en telescoopcomponent en de volledige lijst van uitvouwstappen zijn niet nodig. Ook de orbitale manoeuvre, afzonderlijke instrumentmodi en Early Release Observations zijn niet nodig om de centrale ontwikkeling te laten zien.\\n\\n### Gaps and uncertainty\\nDe bron meldt een opmerkelijk soepel verlopen uitvouwing, maar geeft geen details over eventuele afwijkingen of incidenten. De genoemde faalpunten beschrijven dus risico’s, geen aangetoonde storingen; suggereer geen bijna-ramp of specifiek opgelost probleem.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5305,
+    "completion_tokens": 1594,
+    "total_tokens": 6899,
+    "prompt_tokens_details": {
+      "cached_tokens": 5302,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1076,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

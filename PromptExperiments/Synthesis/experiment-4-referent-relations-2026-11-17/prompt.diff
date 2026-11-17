@@ -1,0 +1,13 @@
+diff --git a/PromptExperiments/Synthesis/experiment-4-referent-relations-2026-11-17/prompts/A/Synthesis/Synthesis.system.prompt.md b/PromptExperiments/Synthesis/experiment-4-referent-relations-2026-11-17/prompts/C/Synthesis/Synthesis.system.prompt.md
+index ed3178b..d3a308a 100644
+--- a/PromptExperiments/Synthesis/experiment-4-referent-relations-2026-11-17/prompts/A/Synthesis/Synthesis.system.prompt.md
++++ b/PromptExperiments/Synthesis/experiment-4-referent-relations-2026-11-17/prompts/C/Synthesis/Synthesis.system.prompt.md
+@@ -99,6 +99,8 @@ Do not broaden a narrow story into a larger one in order to explain every aspect
+ 
+ Your editorial judgment may determine relevance and priority, but it must not introduce unsupported meaning.
+ 
++Preserve entity identity when translating, and keep source-supported reasons that are essential to the Selected Idea.
++
+ Do not invent:
+ - Actors.
+ - Motivations or intentions.

@@ -1,0 +1,17 @@
+### Central insight
+De POA-refunddienst ging in 12 weken publiek; het gedocumenteerde ontwerpverhaal is hoe het team eerst refundaanvragers centraal stelde en later caseworkers, terwijl het tijdens private beta onderzoek bleef doen.
+
+### Evidence
+1. De dienst ging volgens de bron 12 weken na de start van het team publiek. Het team had aanvankelijk de opdracht gekregen binnen enkele weken te leveren, maar concludeerde dat dit niet haalbaar was zonder afbreuk te doen aan de kwaliteit voor gebruikers.
+2. Het team bracht eerst het werk voor refundaanvragers naar alpha; plannen voor caseworkers kwamen later. De auteur noemt beperkte tijd en het vermijden van onbewezen aannames als redenen voor die volgorde.
+3. Tijdens private beta werkte het team in tweewekelijkse sprints: de ene week testte het, deed onderzoek en nam aanvragen aan; de andere week pauzeerde het de inzendingen om te testen, onderzoek te doen en aanvragen te verwerken.
+4. Optionele context: de dienst was digitaal en assisted digital, zonder papieren versie.
+
+### What the narrative should emphasize
+Laat de keuzes in gebruikersvolgorde en het ingeplande onderzoek de kern vormen (items 2 en 3), met de 12-weekse lancering als tijdskader (item 1). Presenteer dit als het gedocumenteerde verloop van dit team, niet als bewijs dat deze werkwijze de snelle lancering veroorzaakte of als advies voor andere teams. Item 4 kan worden weggelaten; als het wordt genoemd, claim dan niet dat de bron uitlegt hoe assisted digital ondersteuning werkte.
+
+### What should be de-emphasized
+De gerapporteerde aanvraag-, tevredenheids- en voltooiingscijfers na vijf weken zijn niet nodig om deze ontwerpkeuzes uit te leggen. Ook de bredere aanleiding voor refunds en overige projectbeperkingen horen niet in de kern van dit verhaal.
+
+### Gaps and uncertainty
+De bron beschrijft niet welke assisted-digital hulp werd geboden, aan wie, of hoe die hielp bij zelfstandig digitaal werken. Ook stelt de bron niet vast dat de beschreven keuzes de lancering binnen 12 weken of de gerapporteerde resultaten veroorzaakten; gebruik die resultaten dus niet als bewijs voor het effect van de werkwijze.
