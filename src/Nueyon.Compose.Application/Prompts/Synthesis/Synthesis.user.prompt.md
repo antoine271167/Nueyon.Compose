@@ -35,7 +35,7 @@ The Selected Idea may express a strong editorial claim. Do not assume that its w
 
 If it says an approach is "best," "better," "more effective," or otherwise superior, check whether the Research establishes that comparison. If it does not, narrow the claim to the documented principle, intention, or direction without changing the subject of the story.
 
-For example, evidence that a company considers orchestration important supports describing orchestration as a product principle. It does not, by itself, establish that orchestration produces better AI applications.
+For example, evidence that an actor considers an approach important supports describing it as that actor's stated principle. It does not, by itself, establish that the approach produces better outcomes.
 
 Do not silently replace an unsupported claim with a different story. Preserve the intended subject while narrowing what can be asserted about it.
 
@@ -120,7 +120,7 @@ If a fact does not establish the central claim or materially improve understandi
 
 A fact may be important to the overall product and still be unnecessary for this story.
 
-For example, when the Selected Idea concerns a product's orchestration principle, naming history, every workflow stage, the technical stack, future products, and the full roadmap are not automatically relevant. Include one of these details only if it is needed to explain the central idea.
+For example, when the Selected Idea concerns a stated principle, naming history, every process stage, implementation details, future initiatives, and broader plans are not automatically relevant. Include one of these details only if it is needed to explain the central idea.
 
 Do not infer that one event explains another merely because both occurred in the same project.
 
@@ -141,7 +141,7 @@ For each Evidence item, verify that:
 
 Separate independent propositions when doing so improves traceability. Preserve a documented relationship when that relationship is essential to the Selected Idea.
 
-For example, if the Research states that the user liked the name Compose and that Compose became the product name, these can be recorded as separate facts. Do not claim that the preference caused the naming decision unless the Research establishes that relationship.
+For example, if the Research states that an actor liked a name and that it became the chosen name, these can be recorded as separate facts. Do not claim that the preference caused the naming decision unless the Research establishes that relationship.
 
 Do not include speculation presented as fact, unsupported transitions, claims supported only by the Selected Idea, conclusions stronger than the evidence, or facts relevant only to a different possible story.
 
@@ -195,17 +195,17 @@ The story may be relevant to the Selected Idea's audience, but relevance does no
 
 Distinguish between:
 
-- **Describing:** What Nuëyon believes, is building, intends to offer, or plans to explore.
+- **Describing:** What the documented actors believe, are doing, intend to offer, or plan to explore.
 - **Interpreting:** What the documented facts mean for the selected story.
 - **Recommending:** What the reader should do or believe.
 
 Use description as the default. Interpretation is permitted only when directly supported by the Research. Do not introduce recommendations unless the Selected Idea explicitly calls for advice and the Research supports the recommendation.
 
-Do not turn Nuëyon's product principles into universal rules for building AI products. Do not infer benefits such as repeatability, reliability, productivity, or better results from the existence of a staged workflow.
+Do not turn the documented actors' principles into universal rules. Do not infer benefits such as repeatability, reliability, productivity, or better results from the existence of a staged workflow.
 
-The purpose of the story is to explain the selected subject, not to persuade the audience that Nuëyon's approach is superior.
+The purpose of the story is to explain the selected subject, not to persuade the audience that the documented actors' approach is superior.
 
-In the editorial guidance, explicitly state when the story should explain Nuëyon's own product direction rather than prescribe an approach for the reader.
+In the editorial guidance, explicitly state when the story should explain the documented actors' own direction rather than prescribe an approach for the reader.
 
 ### Editorial restraint
 
