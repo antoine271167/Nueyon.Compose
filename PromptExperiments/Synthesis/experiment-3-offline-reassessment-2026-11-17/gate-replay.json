@@ -1,0 +1,834 @@
+{
+  "verdict": "NO-GO",
+  "A": {
+    "total": 12,
+    "valid": 12,
+    "pass": 9,
+    "cases": {
+      "webb": 2,
+      "wolf": 2,
+      "digital": 2,
+      "lowell": 3
+    },
+    "actorContaminations": 1,
+    "materialMisleadingClaims": 1
+  },
+  "B": {
+    "total": 12,
+    "valid": 12,
+    "pass": 10,
+    "cases": {
+      "webb": 2,
+      "wolf": 2,
+      "digital": 3,
+      "lowell": 3
+    },
+    "actorContaminations": 0,
+    "materialMisleadingClaims": 1
+  },
+  "gates": {
+    "twelveValidB": true,
+    "noMaterialActorContaminationB": true,
+    "noMaterialFabricatedOrMisleadingClaimsB": false,
+    "minimum11of12": false,
+    "atLeast2of3EveryCase": true,
+    "noRepeatedEssentialOmissionWithinBCase": true,
+    "noLowerTotal": true,
+    "noLowerCase": true,
+    "noUncompensatedRepeatedDimensionLoss": true,
+    "brandCorrectionObserved": true
+  },
+  "repeatedOmissions": [],
+  "dimensions": [
+    {
+      "dimension": "BT",
+      "lower": 1,
+      "higher": 1
+    },
+    {
+      "dimension": "F",
+      "lower": 0,
+      "higher": 2
+    },
+    {
+      "dimension": "BN",
+      "lower": 1,
+      "higher": 2
+    },
+    {
+      "dimension": "IW",
+      "lower": 0,
+      "higher": 1
+    },
+    {
+      "dimension": "NG",
+      "lower": 0,
+      "higher": 2
+    }
+  ],
+  "pairs": [
+    {
+      "id": "digital-r1",
+      "delta": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "digital-r2",
+      "delta": [
+        2,
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "digital-r3",
+      "delta": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "lowell-r1",
+      "delta": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "lowell-r2",
+      "delta": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "lowell-r3",
+      "delta": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "webb-r1",
+      "delta": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "webb-r2",
+      "delta": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "webb-r3",
+      "delta": [
+        0,
+        0,
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "wolf-r1",
+      "delta": [
+        -2,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "wolf-r2",
+      "delta": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "wolf-r3",
+      "delta": [
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    }
+  ],
+  "rows": [
+    {
+      "id": "digital-r1-A-Synthesis",
+      "case": "digital",
+      "arm": "A",
+      "originalScores": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "scores": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "originalPass": true,
+      "pass": true,
+      "valid": true,
+      "reassessed": false,
+      "actorContamination": false,
+      "materialMisleadingClaim": false,
+      "essentialOmissions": []
+    },
+    {
+      "id": "digital-r1-B-Synthesis",
+      "case": "digital",
+      "arm": "B",
+      "originalScores": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "scores": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "originalPass": true,
+      "pass": true,
+      "valid": true,
+      "reassessed": false,
+      "actorContamination": false,
+      "materialMisleadingClaim": false,
+      "essentialOmissions": []
+    },
+    {
+      "id": "digital-r2-A-Synthesis",
+      "case": "digital",
+      "arm": "A",
+      "originalScores": [
+        0,
+        1,
+        2,
+        2,
+        1
+      ],
+      "scores": [
+        0,
+        1,
+        2,
+        2,
+        1
+      ],
+      "originalPass": false,
+      "pass": false,
+      "valid": true,
+      "reassessed": true,
+      "actorContamination": true,
+      "materialMisleadingClaim": true,
+      "essentialOmissions": []
+    },
+    {
+      "id": "digital-r2-B-Synthesis",
+      "case": "digital",
+      "arm": "B",
+      "originalScores": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "scores": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "originalPass": true,
+      "pass": true,
+      "valid": true,
+      "reassessed": false,
+      "actorContamination": false,
+      "materialMisleadingClaim": false,
+      "essentialOmissions": []
+    },
+    {
+      "id": "digital-r3-A-Synthesis",
+      "case": "digital",
+      "arm": "A",
+      "originalScores": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "scores": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "originalPass": true,
+      "pass": true,
+      "valid": true,
+      "reassessed": false,
+      "actorContamination": false,
+      "materialMisleadingClaim": false,
+      "essentialOmissions": []
+    },
+    {
+      "id": "digital-r3-B-Synthesis",
+      "case": "digital",
+      "arm": "B",
+      "originalScores": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "scores": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "originalPass": true,
+      "pass": true,
+      "valid": true,
+      "reassessed": false,
+      "actorContamination": false,
+      "materialMisleadingClaim": false,
+      "essentialOmissions": []
+    },
+    {
+      "id": "lowell-r1-A-Synthesis",
+      "case": "lowell",
+      "arm": "A",
+      "originalScores": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "scores": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "originalPass": true,
+      "pass": true,
+      "valid": true,
+      "reassessed": false,
+      "actorContamination": false,
+      "materialMisleadingClaim": false,
+      "essentialOmissions": []
+    },
+    {
+      "id": "lowell-r1-B-Synthesis",
+      "case": "lowell",
+      "arm": "B",
+      "originalScores": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "scores": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "originalPass": true,
+      "pass": true,
+      "valid": true,
+      "reassessed": false,
+      "actorContamination": false,
+      "materialMisleadingClaim": false,
+      "essentialOmissions": []
+    },
+    {
+      "id": "lowell-r2-A-Synthesis",
+      "case": "lowell",
+      "arm": "A",
+      "originalScores": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "scores": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "originalPass": true,
+      "pass": true,
+      "valid": true,
+      "reassessed": false,
+      "actorContamination": false,
+      "materialMisleadingClaim": false,
+      "essentialOmissions": []
+    },
+    {
+      "id": "lowell-r2-B-Synthesis",
+      "case": "lowell",
+      "arm": "B",
+      "originalScores": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "scores": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "originalPass": true,
+      "pass": true,
+      "valid": true,
+      "reassessed": false,
+      "actorContamination": false,
+      "materialMisleadingClaim": false,
+      "essentialOmissions": []
+    },
+    {
+      "id": "lowell-r3-A-Synthesis",
+      "case": "lowell",
+      "arm": "A",
+      "originalScores": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "scores": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "originalPass": true,
+      "pass": true,
+      "valid": true,
+      "reassessed": false,
+      "actorContamination": false,
+      "materialMisleadingClaim": false,
+      "essentialOmissions": []
+    },
+    {
+      "id": "lowell-r3-B-Synthesis",
+      "case": "lowell",
+      "arm": "B",
+      "originalScores": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "scores": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "originalPass": true,
+      "pass": true,
+      "valid": true,
+      "reassessed": false,
+      "actorContamination": false,
+      "materialMisleadingClaim": false,
+      "essentialOmissions": []
+    },
+    {
+      "id": "webb-r1-A-Synthesis",
+      "case": "webb",
+      "arm": "A",
+      "originalScores": [
+        0,
+        1,
+        1,
+        2,
+        1
+      ],
+      "scores": [
+        2,
+        2,
+        1,
+        2,
+        2
+      ],
+      "originalPass": false,
+      "pass": false,
+      "valid": true,
+      "reassessed": true,
+      "actorContamination": false,
+      "materialMisleadingClaim": false,
+      "essentialOmissions": [
+        "format-requires-folding"
+      ]
+    },
+    {
+      "id": "webb-r1-B-Synthesis",
+      "case": "webb",
+      "arm": "B",
+      "originalScores": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "scores": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "originalPass": true,
+      "pass": true,
+      "valid": true,
+      "reassessed": false,
+      "actorContamination": false,
+      "materialMisleadingClaim": false,
+      "essentialOmissions": []
+    },
+    {
+      "id": "webb-r2-A-Synthesis",
+      "case": "webb",
+      "arm": "A",
+      "originalScores": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "scores": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "originalPass": true,
+      "pass": true,
+      "valid": true,
+      "reassessed": false,
+      "actorContamination": false,
+      "materialMisleadingClaim": false,
+      "essentialOmissions": []
+    },
+    {
+      "id": "webb-r2-B-Synthesis",
+      "case": "webb",
+      "arm": "B",
+      "originalScores": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "scores": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "originalPass": true,
+      "pass": true,
+      "valid": true,
+      "reassessed": false,
+      "actorContamination": false,
+      "materialMisleadingClaim": false,
+      "essentialOmissions": []
+    },
+    {
+      "id": "webb-r3-A-Synthesis",
+      "case": "webb",
+      "arm": "A",
+      "originalScores": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "scores": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "originalPass": true,
+      "pass": true,
+      "valid": true,
+      "reassessed": false,
+      "actorContamination": false,
+      "materialMisleadingClaim": false,
+      "essentialOmissions": []
+    },
+    {
+      "id": "webb-r3-B-Synthesis",
+      "case": "webb",
+      "arm": "B",
+      "originalScores": [
+        2,
+        2,
+        1,
+        2,
+        1
+      ],
+      "scores": [
+        2,
+        2,
+        1,
+        2,
+        2
+      ],
+      "originalPass": false,
+      "pass": false,
+      "valid": true,
+      "reassessed": true,
+      "actorContamination": false,
+      "materialMisleadingClaim": false,
+      "essentialOmissions": [
+        "format-requires-folding"
+      ]
+    },
+    {
+      "id": "wolf-r1-A-Synthesis",
+      "case": "wolf",
+      "arm": "A",
+      "originalScores": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "scores": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "originalPass": true,
+      "pass": true,
+      "valid": true,
+      "reassessed": false,
+      "actorContamination": false,
+      "materialMisleadingClaim": false,
+      "essentialOmissions": []
+    },
+    {
+      "id": "wolf-r1-B-Synthesis",
+      "case": "wolf",
+      "arm": "B",
+      "originalScores": [
+        1,
+        2,
+        2,
+        2,
+        1
+      ],
+      "scores": [
+        0,
+        2,
+        2,
+        2,
+        2
+      ],
+      "originalPass": false,
+      "pass": false,
+      "valid": true,
+      "reassessed": true,
+      "actorContamination": false,
+      "materialMisleadingClaim": true,
+      "essentialOmissions": []
+    },
+    {
+      "id": "wolf-r2-A-Synthesis",
+      "case": "wolf",
+      "arm": "A",
+      "originalScores": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "scores": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "originalPass": true,
+      "pass": true,
+      "valid": true,
+      "reassessed": false,
+      "actorContamination": false,
+      "materialMisleadingClaim": false,
+      "essentialOmissions": []
+    },
+    {
+      "id": "wolf-r2-B-Synthesis",
+      "case": "wolf",
+      "arm": "B",
+      "originalScores": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "scores": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "originalPass": true,
+      "pass": true,
+      "valid": true,
+      "reassessed": false,
+      "actorContamination": false,
+      "materialMisleadingClaim": false,
+      "essentialOmissions": []
+    },
+    {
+      "id": "wolf-r3-A-Synthesis",
+      "case": "wolf",
+      "arm": "A",
+      "originalScores": [
+        2,
+        1,
+        1,
+        1,
+        1
+      ],
+      "scores": [
+        2,
+        1,
+        1,
+        1,
+        1
+      ],
+      "originalPass": false,
+      "pass": false,
+      "valid": true,
+      "reassessed": true,
+      "actorContamination": false,
+      "materialMisleadingClaim": false,
+      "essentialOmissions": [
+        "social-cooperation",
+        "concrete-food-network"
+      ]
+    },
+    {
+      "id": "wolf-r3-B-Synthesis",
+      "case": "wolf",
+      "arm": "B",
+      "originalScores": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "scores": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "originalPass": true,
+      "pass": true,
+      "valid": true,
+      "reassessed": false,
+      "actorContamination": false,
+      "materialMisleadingClaim": false,
+      "essentialOmissions": []
+    }
+  ],
+  "verification": {
+    "repoHead": "7df5b0ae2e5cdf07a359b1134d4e5eeffe1b35b4",
+    "frozenFiles": 2335,
+    "artifactFiles": 294,
+    "reassessmentSha256": "ede865e86dfe696b4cee524ec78bc83f41c3fd84bc813e121bd1bdf22488de27",
+    "protocolSha256": "d9ed9776b7f208875e40bf8dd2163eb810881ec534b21d602ea971741a6f74fc",
+    "preflight": "Preflight exact",
+    "replay": "Offline production-agent replay: 24",
+    "exactReplays": 24
+  }
+}
