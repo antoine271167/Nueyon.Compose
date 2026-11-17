@@ -1,0 +1,1629 @@
+{
+  "decision": "NO-GO",
+  "conditions": {
+    "all29Valid": false,
+    "atLeast5Of6TP": false,
+    "atLeast17Of18TN": false,
+    "bothSpeciesActionable": false,
+    "primaryFoldingActionable": false,
+    "atLeast2Of3TimelineActionable": true,
+    "all6LowellPass": false,
+    "historicalActorActionable": false,
+    "strayBrandNotBlocked": true,
+    "atLeast4Of5HistoricalActionable": false,
+    "atLeast90PercentActionable": false,
+    "noMaterialRegressionProposed": true
+  },
+  "matrix": {
+    "primary": {
+      "TP": 3,
+      "TN": 12,
+      "FP": 5,
+      "FN": 1,
+      "invalid": 3
+    },
+    "historical": {
+      "TP": 4,
+      "TN": 0,
+      "FP": 0,
+      "FN": 1,
+      "invalid": 0
+    }
+  },
+  "totals": {
+    "prompt": 118742,
+    "completion": 31758,
+    "total": 150500,
+    "cached": 0,
+    "reasoning": 28604
+  },
+  "feedback": {
+    "actionable": 4,
+    "total": 16
+  },
+  "rows": [
+    {
+      "id": "01",
+      "experiment": 4,
+      "run": "lowell-r3-C",
+      "expected": "PASS",
+      "target": null,
+      "score": {
+        "ratings": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "material": false,
+        "omissions": [],
+        "note": "Evidence 1–4 connects job losses and reduced diets with citizen-led park efforts, measured building reuse and Wang’s cuts. Economic claims stay bounded by the 1992 account and the late downturn."
+      },
+      "note": "Evidence 1–4 connects job losses and reduced diets with citizen-led park efforts, measured building reuse and Wang’s cuts. Economic claims stay bounded by the 1992 account and the late downturn.",
+      "legitimate": [
+        "Early output/worker contrast is optional given the reuse and downturn focus."
+      ],
+      "usage": {
+        "prompt_tokens": 4566,
+        "completion_tokens": 337,
+        "total_tokens": 4903,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 4563,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 313,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "blockers": [],
+      "verdict": "PASS",
+      "class": "TN",
+      "reviews": [],
+      "detected": false,
+      "actionableTarget": false
+    },
+    {
+      "id": "02",
+      "experiment": 4,
+      "run": "webb-r2-C",
+      "expected": "FAIL",
+      "target": "folding_reason",
+      "score": {
+        "ratings": [
+          2,
+          2,
+          1,
+          2,
+          2
+        ],
+        "material": false,
+        "omissions": [
+          "vouwreden"
+        ],
+        "note": "De-emphasis mentions fairing fit but leaves out the actual size → folding relation (Fact 1; source line 3). Evidence retains possible failures, mirror latching, and commissioning. «The remaining deployments» lacks its automatic-deployments antecedent.",
+        "targetPass": false
+      },
+      "note": "De-emphasis mentions fairing fit but leaves out the actual size → folding relation (Fact 1; source line 3). Evidence retains possible failures, mirror latching, and commissioning. «The remaining deployments» lacks its automatic-deployments antecedent.",
+      "legitimate": [
+        "Exact dimensions and an inventory of deployment hardware are optional."
+      ],
+      "usage": {
+        "prompt_tokens": 4809,
+        "completion_tokens": 2000,
+        "total_tokens": 6809,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 4806,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 2000,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "class": "invalid",
+      "error": "Expected values to be strictly equal:\n\n'length' !== 'stop'\n",
+      "reviews": [],
+      "detected": false,
+      "actionableTarget": false
+    },
+    {
+      "id": "03",
+      "experiment": 2,
+      "run": "webb-r3-B",
+      "expected": "FAIL",
+      "target": "folding_reason",
+      "score": null,
+      "note": "Size made folding for launch necessary; exact dimensions optional.",
+      "legitimate": [
+        "Exact dimensions and an inventory of deployment hardware are optional."
+      ],
+      "usage": {
+        "prompt_tokens": 4934,
+        "completion_tokens": 1591,
+        "total_tokens": 6525,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 4931,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1381,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "blockers": [
+        {
+          "field": "synthesis — What should be de-emphasized",
+          "problem": "This guidance sidelines the compact-launch folding relationship, a central strand of the Selected Idea’s account of how launch constraints led into deployment.",
+          "outputQuote": "“De exacte afmetingen en het vouwontwerp voor de raket, afzonderlijke stappen van het zonneschild, grondbesturing en telemetrie zijn niet nodig om de centrale tegenstelling te begrijpen.”",
+          "evidenceLocation": "source",
+          "evidenceQuote": "“Webb's fully deployed operational configuration is far too large to fit into any available rocket so it was designed to fold into a compact launch configuration that fit inside the Ariane 5.”",
+          "correction": "Keep the compact-launch link in the guidance: note briefly that Webb had to fold to fit the Ariane 5, without requiring exact dimensions or detailed folding steps.",
+          "exactOutput": false,
+          "exactEvidence": false
+        }
+      ],
+      "verdict": "FAIL",
+      "class": "TP",
+      "reviews": [
+        {
+          "target": "folding_reason",
+          "supported": true,
+          "minimal": true,
+          "fieldCorrect": true,
+          "introducesMaterialError": false,
+          "note": "Correct essential omission and minimal correction. Both exact anchors fail because of enclosing curly quotes.",
+          "actionable": false
+        }
+      ],
+      "detected": true,
+      "actionableTarget": false
+    },
+    {
+      "id": "04",
+      "experiment": 4,
+      "run": "wolf-r3-C",
+      "expected": "PASS",
+      "target": null,
+      "score": {
+        "ratings": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "material": false,
+        "omissions": [],
+        "note": "Evidence 1–3 retains source-language elk, group hunting and specific scavengers. The prey ratio reversal and the distinct interacting factors anchor the limits on causal claims.",
+        "targetPass": true,
+        "concreteFood": true
+      },
+      "note": "Evidence 1–3 retains source-language elk, group hunting and specific scavengers. The prey ratio reversal and the distinct interacting factors anchor the limits on causal claims.",
+      "legitimate": [
+        "Bear detail and exact percentages are optional when the central relationships survive."
+      ],
+      "usage": {
+        "prompt_tokens": 4026,
+        "completion_tokens": 646,
+        "total_tokens": 4672,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 4023,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 616,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "blockers": [],
+      "verdict": "PASS",
+      "class": "TN",
+      "reviews": [],
+      "detected": false,
+      "actionableTarget": false
+    },
+    {
+      "id": "05",
+      "experiment": 4,
+      "run": "webb-r1-C",
+      "expected": "FAIL",
+      "target": "timeline",
+      "score": {
+        "ratings": [
+          1,
+          2,
+          2,
+          2,
+          2
+        ],
+        "material": false,
+        "omissions": [],
+        "targetPass": true,
+        "note": "Evidence 1 preserves the reason (Fact 1) but «door tijdens de lancering op te vouwen» misstates when folding occurred: the launch configuration was already folded (source lines 3, 67). The physical-deployment/science distinction and handoff remain usable."
+      },
+      "note": "Evidence 1 preserves the reason (Fact 1) but «door tijdens de lancering op te vouwen» misstates when folding occurred: the launch configuration was already folded (source lines 3, 67). The physical-deployment/science distinction and handoff remain usable.",
+      "legitimate": [
+        "Exact dimensions and an inventory of deployment hardware are optional."
+      ],
+      "usage": {
+        "prompt_tokens": 4970,
+        "completion_tokens": 2000,
+        "total_tokens": 6970,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 4967,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 2000,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "class": "invalid",
+      "error": "Expected values to be strictly equal:\n\n'length' !== 'stop'\n",
+      "reviews": [],
+      "detected": false,
+      "actionableTarget": false
+    },
+    {
+      "id": "06",
+      "experiment": 4,
+      "run": "webb-r3-A",
+      "expected": "PASS",
+      "target": null,
+      "score": {
+        "ratings": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "material": false,
+        "omissions": [],
+        "targetPass": true,
+        "note": "Evidence 1 explicitly gives size versus fairing as the reason for folding before launch. Numeric risk, ground-controlled versus automatic deployment, and the timing to routine science make the distinction concrete (Facts 1, 3–4, 7–12)."
+      },
+      "note": "Evidence 1 explicitly gives size versus fairing as the reason for folding before launch. Numeric risk, ground-controlled versus automatic deployment, and the timing to routine science make the distinction concrete (Facts 1, 3–4, 7–12).",
+      "legitimate": [
+        "Exact dimensions and an inventory of deployment hardware are optional."
+      ],
+      "usage": {
+        "prompt_tokens": 4847,
+        "completion_tokens": 693,
+        "total_tokens": 5540,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 4844,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 663,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "blockers": [],
+      "verdict": "PASS",
+      "class": "TN",
+      "reviews": [],
+      "detected": false,
+      "actionableTarget": false
+    },
+    {
+      "id": "07",
+      "experiment": 4,
+      "run": "wolf-r3-A",
+      "expected": "PASS",
+      "target": null,
+      "score": {
+        "ratings": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "material": false,
+        "omissions": [],
+        "note": "Evidence 1–4 preserves group hunting, the timing of different scavengers, source-language elk, the quantified prey ratio reversal, and interacting factors.",
+        "targetPass": true,
+        "concreteFood": true
+      },
+      "note": "Evidence 1–4 preserves group hunting, the timing of different scavengers, source-language elk, the quantified prey ratio reversal, and interacting factors.",
+      "legitimate": [
+        "Bear detail and exact percentages are optional when the central relationships survive."
+      ],
+      "usage": {
+        "prompt_tokens": 4063,
+        "completion_tokens": 293,
+        "total_tokens": 4356,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 4060,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 269,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "blockers": [],
+      "verdict": "PASS",
+      "class": "TN",
+      "reviews": [],
+      "detected": false,
+      "actionableTarget": false
+    },
+    {
+      "id": "08",
+      "experiment": 4,
+      "run": "lowell-r2-C",
+      "expected": "PASS",
+      "target": null,
+      "score": {
+        "ratings": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "material": false,
+        "omissions": [],
+        "note": "Evidence 1–4 carries job loss and worker recollections, civic collaboration, 100+ buildings reused and the late downturn. Selects the Wang layoffs as a concrete turn without expanding into Wang’s history."
+      },
+      "note": "Evidence 1–4 carries job loss and worker recollections, civic collaboration, 100+ buildings reused and the late downturn. Selects the Wang layoffs as a concrete turn without expanding into Wang’s history.",
+      "legitimate": [
+        "Early output/worker contrast is optional given the reuse and downturn focus."
+      ],
+      "usage": {
+        "prompt_tokens": 4499,
+        "completion_tokens": 1016,
+        "total_tokens": 5515,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 4496,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 777,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "blockers": [
+        {
+          "field": "synthesis",
+          "problem": "The narrative explicitly sets aside the university and Wang’s arrival, omitting the selected idea’s requested strand of other recovery contributions. The source presents these as distinct developments and expectations, not proven causes.",
+          "outputQuote": "The detailed chronology of individual mill closures and the separate histories of the University of Lowell and Wang’s arrival are not needed to establish this story.",
+          "evidenceLocation": "source",
+          "evidenceQuote": "Other factors in the 1970s contributed to Lowell's rebirth. The University of Lowell (now the University of Massachusetts Lowell) emerged from the union of Lowell Technological Institute and Lowell State College in 1975. Its mission included support for regional economic development. The arrival in the mid-1970s of Wang Laboratories, then a leader in computers, brought to the city an industry that many hoped would lead to another bright technological future.",
+          "correction": "Briefly include the university’s regional-development mission and Wang’s arrival as a hoped-for technological contribution, without claiming either caused the recovery.",
+          "exactOutput": true,
+          "exactEvidence": true
+        }
+      ],
+      "verdict": "FAIL",
+      "class": "FP",
+      "reviews": [
+        {
+          "target": "optional_lowell",
+          "supported": false,
+          "minimal": false,
+          "fieldCorrect": true,
+          "introducesMaterialError": false,
+          "note": "The rubric allows university and technology as secondary context. The synthesis already covers reuse, downturn, and limits to single-cause attribution.",
+          "actionable": false
+        }
+      ],
+      "detected": false,
+      "actionableTarget": false
+    },
+    {
+      "id": "09",
+      "experiment": 4,
+      "run": "wolf-r1-C",
+      "expected": "FAIL",
+      "target": "species",
+      "score": {
+        "ratings": [
+          0,
+          2,
+          2,
+          2,
+          2
+        ],
+        "material": true,
+        "omissions": [],
+        "targetPass": false,
+        "concreteFood": true,
+        "note": "Central insight, Evidence 2–3 and Gaps substitute eland for wapiti (Facts 6–9, source lines 11, 17). The roedel → groepsjacht and named scavenger sequence remain concrete and predation stays multicausal."
+      },
+      "note": "Central insight, Evidence 2–3 and Gaps substitute eland for wapiti (Facts 6–9, source lines 11, 17). The roedel → groepsjacht and named scavenger sequence remain concrete and predation stays multicausal.",
+      "legitimate": [
+        "Bear detail and exact percentages are optional when the central relationships survive."
+      ],
+      "usage": {
+        "prompt_tokens": 4065,
+        "completion_tokens": 1092,
+        "total_tokens": 5157,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 4062,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1056,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "blockers": [],
+      "verdict": "PASS",
+      "class": "FN",
+      "reviews": [],
+      "detected": false,
+      "actionableTarget": false
+    },
+    {
+      "id": "10",
+      "experiment": 4,
+      "run": "wolf-r1-A",
+      "expected": "FAIL",
+      "target": "species",
+      "score": {
+        "ratings": [
+          0,
+          2,
+          2,
+          2,
+          2
+        ],
+        "material": true,
+        "omissions": [],
+        "targetPass": false,
+        "concreteFood": true,
+        "note": "Evidence 2–3 and Gaps refer to eland/elandkalveren (Facts 6–9 refer to wapiti). «Wolvenkadavers» is also an imprecise label for their kills. Group hunting, rapid arrival of specific scavengers and changing prey ratios establish concrete relationships."
+      },
+      "note": "Evidence 2–3 and Gaps refer to eland/elandkalveren (Facts 6–9 refer to wapiti). «Wolvenkadavers» is also an imprecise label for their kills. Group hunting, rapid arrival of specific scavengers and changing prey ratios establish concrete relationships.",
+      "legitimate": [
+        "Bear detail and exact percentages are optional when the central relationships survive."
+      ],
+      "usage": {
+        "prompt_tokens": 4119,
+        "completion_tokens": 646,
+        "total_tokens": 4765,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 4116,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 478,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "blockers": [
+        {
+          "field": "synthesis",
+          "problem": "“Wolvenkadavers” means wolf carcasses, but the source says the remains of animals killed by wolves feed scavengers.",
+          "outputQuote": "Wolvenkadavers leveren voedsel aan andere dieren: raven en eksters komen snel op een elanddoding af, en ook onder meer coyotes, beren, adelaars en ongewervelden eten van de resten.",
+          "evidenceLocation": "source",
+          "evidenceQuote": "Many other animals benefit from wolf kills. For example, when wolves kill an elk, ravens and magpies arrive almost immediately.",
+          "correction": "Vervang “Wolvenkadavers” door “Prooiresten van wolven”.",
+          "exactOutput": true,
+          "exactEvidence": true
+        }
+      ],
+      "verdict": "FAIL",
+      "class": "TP",
+      "reviews": [
+        {
+          "target": "other_fidelity",
+          "supported": true,
+          "minimal": true,
+          "fieldCorrect": true,
+          "introducesMaterialError": false,
+          "note": "The correction addresses the literal wolf-carcass reading, a real local ambiguity. It does not identify or repair the prelabelled elk-to-moose species substitution.",
+          "actionable": true
+        }
+      ],
+      "detected": false,
+      "actionableTarget": false
+    },
+    {
+      "id": "11",
+      "experiment": 2,
+      "run": "wolf-r3-A",
+      "expected": "FAIL",
+      "target": "focus",
+      "score": null,
+      "note": "Missing concrete pack cooperation and scavenger relationship; population inventory optional.",
+      "legitimate": [
+        "Bear detail and exact percentages are optional when the central relationships survive."
+      ],
+      "usage": {
+        "prompt_tokens": 3920,
+        "completion_tokens": 1032,
+        "total_tokens": 4952,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 3917,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 872,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "blockers": [
+        {
+          "field": "synthesis — What should be de-emphasized",
+          "problem": "The synthesis dismisses pack cooperation, removing the social-behavior strand that the Selected Idea explicitly asks the writer to examine.",
+          "outputQuote": "Pack cooperation and the details of wolf population history are not needed to establish this story.",
+          "evidenceLocation": "selectedIdea",
+          "evidenceQuote": "Onderzoek hoe sociaal gedrag, voedselrelaties en veranderende omstandigheden het eenvoudige beeld van één roofdier dat een ecosysteem bestuurt compliceren.",
+          "correction": "Retain social behavior as a strand—for example, cooperative care or group hunting—alongside prey changes and food relationships.",
+          "exactOutput": true,
+          "exactEvidence": true
+        }
+      ],
+      "verdict": "FAIL",
+      "class": "TP",
+      "reviews": [
+        {
+          "target": "focus",
+          "supported": true,
+          "minimal": true,
+          "fieldCorrect": true,
+          "introducesMaterialError": false,
+          "note": "Correctly detects the missing social strand and suggests source-supported cooperative behavior. Does not ask for the separate concrete scavenger example, so coverage of the compound historical defect is partial.",
+          "actionable": true
+        }
+      ],
+      "detected": true,
+      "actionableTarget": true
+    },
+    {
+      "id": "12",
+      "experiment": 4,
+      "run": "webb-r3-C",
+      "expected": "PASS",
+      "target": null,
+      "score": {
+        "ratings": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "material": false,
+        "omissions": [],
+        "note": "Evidence 1 supplies size → folding and subsequent deployment. Evidence 2–5 distinguishes potential technical failures, the second-week physical milestone and six-month commissioning. «vouwden» is awkward but the outcome is explicitly «volledig uitgevouwen».",
+        "targetPass": true
+      },
+      "note": "Evidence 1 supplies size → folding and subsequent deployment. Evidence 2–5 distinguishes potential technical failures, the second-week physical milestone and six-month commissioning. «vouwden» is awkward but the outcome is explicitly «volledig uitgevouwen».",
+      "legitimate": [
+        "Exact dimensions and an inventory of deployment hardware are optional."
+      ],
+      "usage": {
+        "prompt_tokens": 4873,
+        "completion_tokens": 1670,
+        "total_tokens": 6543,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 4870,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1475,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "blockers": [
+        {
+          "field": "synthesis",
+          "problem": "De synthese laat de grondbesturing en telemetriemonitoring weg. Dat is een expliciet gevraagd onderdeel van de Selected Idea en een belangrijke relatie binnen de risicovolle, gecoördineerde uitvouwing.",
+          "outputQuote": "De zonneschildpallets werden in de eerste week uitgezet; in de tweede week vouwden en vergrendelden de secundaire spiegel en de spiegelvleugels.",
+          "evidenceLocation": "projection",
+          "evidenceQuote": "The remaining deployments were choreographed from ground control by engineers and monitored through telemetry.",
+          "correction": "Voeg toe dat de overige uitvouwingen door ingenieurs vanaf de grond werden gecoördineerd en via telemetrie gemonitord.",
+          "exactOutput": true,
+          "exactEvidence": true
+        }
+      ],
+      "verdict": "FAIL",
+      "class": "FP",
+      "reviews": [
+        {
+          "target": "optional_webb",
+          "supported": false,
+          "minimal": false,
+          "fieldCorrect": true,
+          "introducesMaterialError": false,
+          "note": "The causal design link, risks and timing remain intact. Ground control and telemetry are optional technical detail under this rubric.",
+          "actionable": false
+        }
+      ],
+      "detected": false,
+      "actionableTarget": false
+    },
+    {
+      "id": "13",
+      "experiment": 2,
+      "run": "wolf-r1-B",
+      "expected": "FAIL",
+      "target": "species",
+      "score": null,
+      "note": "Eland/elandkadaver substitutes moose for Yellowstone elk; bear detail and exact percentages optional.",
+      "legitimate": [
+        "Bear detail and exact percentages are optional when the central relationships survive."
+      ],
+      "usage": {
+        "prompt_tokens": 4150,
+        "completion_tokens": 470,
+        "total_tokens": 4620,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 4147,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 446,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "blockers": [],
+      "verdict": "PASS",
+      "class": "FN",
+      "reviews": [],
+      "detected": false,
+      "actionableTarget": false
+    },
+    {
+      "id": "14",
+      "experiment": 4,
+      "run": "digital-r3-C",
+      "expected": "PASS",
+      "target": null,
+      "score": {
+        "ratings": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "material": false,
+        "omissions": [],
+        "note": "Evidence 1–5 keeps launch timing, the author’s rationale for sequencing, both weeks of the sprint, assisted digital and reported metrics. Gaps preserves unknown start and uncertain causality."
+      },
+      "note": "Evidence 1–5 keeps launch timing, the author’s rationale for sequencing, both weeks of the sprint, assisted digital and reported metrics. Gaps preserves unknown start and uncertain causality.",
+      "legitimate": [],
+      "usage": {
+        "prompt_tokens": 2878,
+        "completion_tokens": 1122,
+        "total_tokens": 4000,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 2875,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 972,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "blockers": [
+        {
+          "field": "selectedIdea.Description",
+          "problem": "It specifies who the assisted-digital service supported, but the evidence only confirms that the service was assisted digital and does not identify who received assistance.",
+          "outputQuote": "“met ondersteuning voor mensen die niet zelfstandig digitaal werken”",
+          "evidenceLocation": "projection",
+          "evidenceQuote": "“The source confirms an assisted-digital service, but does not describe what assistance was provided, who received it, or how it supported people unable to complete the process independently.”",
+          "correction": "Use “met een digitale en assisted-digital dienst” without specifying who received support.",
+          "exactOutput": false,
+          "exactEvidence": false
+        }
+      ],
+      "verdict": "FAIL",
+      "class": "FP",
+      "reviews": [
+        {
+          "target": "idea_scope",
+          "supported": true,
+          "minimal": false,
+          "fieldCorrect": false,
+          "introducesMaterialError": false,
+          "note": "Audits the Selected Idea's wording. The synthesis already states what is known and keeps recipients and support uncertain.",
+          "actionable": false
+        }
+      ],
+      "detected": false,
+      "actionableTarget": false
+    },
+    {
+      "id": "15",
+      "experiment": 4,
+      "run": "webb-r1-A",
+      "expected": "PASS",
+      "target": null,
+      "score": {
+        "ratings": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "material": false,
+        "omissions": [],
+        "targetPass": true,
+        "note": "Evidence 1 preserves size → fairing fit → folding (Fact 1). Weeks/months and specific mirror hardware preserve the central distinction (Facts 7–12); isolated trailing «заключ» is cosmetic."
+      },
+      "note": "Evidence 1 preserves size → fairing fit → folding (Fact 1). Weeks/months and specific mirror hardware preserve the central distinction (Facts 7–12); isolated trailing «заключ» is cosmetic.",
+      "legitimate": [
+        "Exact dimensions and an inventory of deployment hardware are optional."
+      ],
+      "usage": {
+        "prompt_tokens": 4785,
+        "completion_tokens": 937,
+        "total_tokens": 5722,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 4782,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 907,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "blockers": [],
+      "verdict": "PASS",
+      "class": "TN",
+      "reviews": [],
+      "detected": false,
+      "actionableTarget": false
+    },
+    {
+      "id": "16",
+      "experiment": 4,
+      "run": "webb-r2-A",
+      "expected": "PASS",
+      "target": null,
+      "score": {
+        "ratings": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "material": false,
+        "omissions": [],
+        "note": "Evidence 1 explicitly connects size limits and folding before launch. Evidence 2–5 pairs mirror latching and potential failure points with cooling, alignment, calibration and six-month science.",
+        "targetPass": true
+      },
+      "note": "Evidence 1 explicitly connects size limits and folding before launch. Evidence 2–5 pairs mirror latching and potential failure points with cooling, alignment, calibration and six-month science.",
+      "legitimate": [
+        "Exact dimensions and an inventory of deployment hardware are optional."
+      ],
+      "usage": {
+        "prompt_tokens": 4887,
+        "completion_tokens": 1290,
+        "total_tokens": 6177,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 4884,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1254,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "blockers": [],
+      "verdict": "PASS",
+      "class": "TN",
+      "reviews": [],
+      "detected": false,
+      "actionableTarget": false
+    },
+    {
+      "id": "17",
+      "experiment": 4,
+      "run": "lowell-r2-A",
+      "expected": "PASS",
+      "target": null,
+      "score": {
+        "ratings": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "material": false,
+        "omissions": [],
+        "note": "Evidence 1–5 captures job loss, worker uncertainty, civic cooperation, adaptive reuse and the later Wang cuts. Guidance and Gaps preserve the 1992 perspective and causal limits."
+      },
+      "note": "Evidence 1–5 captures job loss, worker uncertainty, civic cooperation, adaptive reuse and the later Wang cuts. Guidance and Gaps preserve the 1992 perspective and causal limits.",
+      "legitimate": [
+        "Early output/worker contrast is optional given the reuse and downturn focus."
+      ],
+      "usage": {
+        "prompt_tokens": 4604,
+        "completion_tokens": 1424,
+        "total_tokens": 6028,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 4601,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1207,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "blockers": [
+        {
+          "field": "synthesis",
+          "problem": "The handoff explicitly sidelines the university and Wang’s arrival, omitting the selected idea’s required strand of other recovery contributions.",
+          "outputQuote": "“The University of Lowell and Wang’s arrival are not needed as parallel recovery stories”",
+          "evidenceLocation": "source",
+          "evidenceQuote": "“Other factors in the 1970s contributed to Lowell's rebirth. The University of Lowell ... emerged from the union of Lowell Technological Institute and Lowell State College in 1975. Its mission included support for regional economic development. The arrival in the mid-1970s of Wang Laboratories ... brought to the city an industry that many hoped would lead to another bright technological future.”",
+          "correction": "Briefly include the university’s regional-development mission and Wang’s arrival as other factors associated with the revival, while clarifying that the account does not establish their separate effects.",
+          "exactOutput": false,
+          "exactEvidence": false
+        }
+      ],
+      "verdict": "FAIL",
+      "class": "FP",
+      "reviews": [
+        {
+          "target": "optional_lowell",
+          "supported": false,
+          "minimal": false,
+          "fieldCorrect": true,
+          "introducesMaterialError": false,
+          "note": "Same overreach as call 08. Optional context is treated as required. The purported evidence also abridges the source with ellipses.",
+          "actionable": false
+        }
+      ],
+      "detected": false,
+      "actionableTarget": false
+    },
+    {
+      "id": "18",
+      "experiment": 4,
+      "run": "lowell-r3-A",
+      "expected": "PASS",
+      "target": null,
+      "score": {
+        "ratings": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "material": false,
+        "omissions": [],
+        "note": "Evidence 1–5 uses vacant mill buildings, uncertainty about paid work, civic leadership, 100+ buildings reused and subsequent downturn. The instruction to avoid attributing recovery to heritage alone and the 1992 framing are explicit."
+      },
+      "note": "Evidence 1–5 uses vacant mill buildings, uncertainty about paid work, civic leadership, 100+ buildings reused and subsequent downturn. The instruction to avoid attributing recovery to heritage alone and the 1992 framing are explicit.",
+      "legitimate": [
+        "Early output/worker contrast is optional given the reuse and downturn focus."
+      ],
+      "usage": {
+        "prompt_tokens": 4662,
+        "completion_tokens": 536,
+        "total_tokens": 5198,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 4659,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 512,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "blockers": [],
+      "verdict": "PASS",
+      "class": "TN",
+      "reviews": [],
+      "detected": false,
+      "actionableTarget": false
+    },
+    {
+      "id": "19",
+      "experiment": 4,
+      "run": "wolf-r2-A",
+      "expected": "PASS",
+      "target": null,
+      "score": {
+        "ratings": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "material": false,
+        "omissions": [],
+        "note": "Evidence 1–4 keeps elk in the source language, names scavengers, and includes the early-winter prey shift plus other predators, management and weather.",
+        "targetPass": true,
+        "concreteFood": true
+      },
+      "note": "Evidence 1–4 keeps elk in the source language, names scavengers, and includes the early-winter prey shift plus other predators, management and weather.",
+      "legitimate": [
+        "Bear detail and exact percentages are optional when the central relationships survive."
+      ],
+      "usage": {
+        "prompt_tokens": 4018,
+        "completion_tokens": 462,
+        "total_tokens": 4480,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 4015,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 438,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "blockers": [],
+      "verdict": "PASS",
+      "class": "TN",
+      "reviews": [],
+      "detected": false,
+      "actionableTarget": false
+    },
+    {
+      "id": "20",
+      "experiment": 4,
+      "run": "wolf-r2-C",
+      "expected": "PASS",
+      "target": null,
+      "score": {
+        "ratings": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "material": false,
+        "omissions": [],
+        "note": "Evidence 1–3 keeps elk in the source language, links group hunting and named scavengers to wolf kills, and carries the shift in prey composition and its multifactor explanation.",
+        "targetPass": true,
+        "concreteFood": true
+      },
+      "note": "Evidence 1–3 keeps elk in the source language, links group hunting and named scavengers to wolf kills, and carries the shift in prey composition and its multifactor explanation.",
+      "legitimate": [
+        "Bear detail and exact percentages are optional when the central relationships survive."
+      ],
+      "usage": {
+        "prompt_tokens": 4001,
+        "completion_tokens": 577,
+        "total_tokens": 4578,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 3998,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 548,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "blockers": [],
+      "verdict": "PASS",
+      "class": "TN",
+      "reviews": [],
+      "detected": false,
+      "actionableTarget": false
+    },
+    {
+      "id": "21",
+      "experiment": 4,
+      "run": "digital-r1-C",
+      "expected": "FAIL",
+      "target": "timeline",
+      "score": {
+        "ratings": [
+          1,
+          2,
+          2,
+          2,
+          2
+        ],
+        "material": false,
+        "omissions": [],
+        "note": "Evidence 1 specifies «twaalf weken na aanvang van de levering» despite the unknown measurement start. Evidence 2–5 retains user order, the rationale, the sprint rhythm, assisted digital and figures as context."
+      },
+      "note": "Evidence 1 specifies «twaalf weken na aanvang van de levering» despite the unknown measurement start. Evidence 2–5 retains user order, the rationale, the sprint rhythm, assisted digital and figures as context.",
+      "legitimate": [],
+      "usage": {
+        "prompt_tokens": 2943,
+        "completion_tokens": 1446,
+        "total_tokens": 4389,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 2940,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1015,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "blockers": [
+        {
+          "field": "synthesis",
+          "problem": "Geeft een niet-onderbouwd startpunt voor de periode van twaalf weken; de bron meldt de duur, maar specificeert niet vanaf wanneer die loopt.",
+          "outputQuote": "De dienst ging twaalf weken na aanvang van de levering publiekelijk van start.",
+          "evidenceLocation": "projection",
+          "evidenceQuote": "The source does not specify the exact start point used for the 12-week delivery period.",
+          "correction": "Schrijf dat de dienst volgens de auteur binnen twaalf weken publiek werd gelanceerd, zonder een startpunt in te vullen.",
+          "exactOutput": true,
+          "exactEvidence": true
+        },
+        {
+          "field": "selectedIdea.Description",
+          "problem": "Stelt een oorzakelijk verband tussen de ontwerpkeuzes en oplevering binnen twaalf weken, terwijl de bron dat verband niet aantoont.",
+          "outputQuote": "Onderzoek hoe het POA-refundteam in twaalf weken een dienst opleverde door gebruikersvolgorde en onderzoek slim te organiseren, met ondersteuning voor mensen die niet zelfstandig digitaal werken.",
+          "evidenceLocation": "projection",
+          "evidenceQuote": "The source reports the 12-week launch and the five-week results, but does not establish that any particular practice caused the launch timing or the application, satisfaction or completion figures.",
+          "correction": "Vervang “door gebruikersvolgorde en onderzoek slim te organiseren” door een formulering die de keuzes als aanpak beschrijft, niet als oorzaak van de oplevering.",
+          "exactOutput": false,
+          "exactEvidence": true
+        },
+        {
+          "field": "selectedIdea.Description",
+          "problem": "Specificeert wie de assisted-digital ondersteuning kreeg en waarvoor, terwijl de bron alleen vermeldt dat de dienst assisted-digital was.",
+          "outputQuote": "met ondersteuning voor mensen die niet zelfstandig digitaal werken.",
+          "evidenceLocation": "projection",
+          "evidenceQuote": "The source confirms an assisted-digital service, but does not describe what assistance was provided, who received it, or how it supported people unable to complete the process independently.",
+          "correction": "Beperk dit tot de vermelding dat de dienst assisted-digital was; laat doelgroep en functie van de ondersteuning open.",
+          "exactOutput": false,
+          "exactEvidence": true
+        }
+      ],
+      "verdict": "FAIL",
+      "class": "TP",
+      "reviews": [
+        {
+          "target": "timeline",
+          "supported": true,
+          "minimal": true,
+          "fieldCorrect": true,
+          "introducesMaterialError": false,
+          "note": "Correctly identifies the invented start point and restores the supported duration.",
+          "actionable": true
+        },
+        {
+          "target": "idea_scope",
+          "supported": true,
+          "minimal": false,
+          "fieldCorrect": false,
+          "introducesMaterialError": false,
+          "note": "The Selected Idea implies causation, but the synthesis keeps claims bounded. The suggested edit targets the upstream input.",
+          "actionable": false
+        },
+        {
+          "target": "idea_scope",
+          "supported": true,
+          "minimal": false,
+          "fieldCorrect": false,
+          "introducesMaterialError": false,
+          "note": "The output already preserves assisted digital at the level supported by the evidence. This correction targets the upstream input.",
+          "actionable": false
+        }
+      ],
+      "detected": true,
+      "actionableTarget": true
+    },
+    {
+      "id": "22",
+      "experiment": 4,
+      "run": "lowell-r1-C",
+      "expected": "PASS",
+      "target": null,
+      "score": {
+        "ratings": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "material": false,
+        "omissions": [],
+        "note": "Evidence 1–4 connects job loss and workers’ experiences, civic cooperation, 100+ buildings repurposed, and the late downturn. 1992 framing and causal limits are explicit."
+      },
+      "note": "Evidence 1–4 connects job loss and workers’ experiences, civic cooperation, 100+ buildings repurposed, and the late downturn. 1992 framing and causal limits are explicit.",
+      "legitimate": [
+        "Early output/worker contrast is optional given the reuse and downturn focus."
+      ],
+      "usage": {
+        "prompt_tokens": 4500,
+        "completion_tokens": 434,
+        "total_tokens": 4934,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 4497,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 410,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "blockers": [],
+      "verdict": "PASS",
+      "class": "TN",
+      "reviews": [],
+      "detected": false,
+      "actionableTarget": false
+    },
+    {
+      "id": "23",
+      "experiment": 4,
+      "run": "digital-r2-A",
+      "expected": "FAIL",
+      "target": "timeline",
+      "score": {
+        "ratings": [
+          1,
+          2,
+          2,
+          2,
+          2
+        ],
+        "material": false,
+        "omissions": [],
+        "note": "Evidence 1 says «12 weken na de start van het team», but Fact 4 and its corresponding Unknown establish no start point. The applicant-first sequence, both sprint weeks, and assisted digital remain. Discarding detailed KPI context is a defensible choice here."
+      },
+      "note": "Evidence 1 says «12 weken na de start van het team», but Fact 4 and its corresponding Unknown establish no start point. The applicant-first sequence, both sprint weeks, and assisted digital remain. Discarding detailed KPI context is a defensible choice here.",
+      "legitimate": [
+        "Detailed early KPI figures are optional in this handoff."
+      ],
+      "usage": {
+        "prompt_tokens": 2751,
+        "completion_tokens": 1146,
+        "total_tokens": 3897,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 2748,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1015,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "blockers": [
+        {
+          "field": "synthesis — Evidence, item 1",
+          "problem": "It assigns the 12-week delivery period a specific start point that the source does not establish.",
+          "outputQuote": "De dienst ging volgens de bron 12 weken na de start van het team publiek.",
+          "evidenceLocation": "projection",
+          "evidenceQuote": "The source does not specify the exact start point used for the 12-week delivery period.",
+          "correction": "Say the service launched in 12 weeks, without specifying when that period began.",
+          "exactOutput": true,
+          "exactEvidence": true
+        }
+      ],
+      "verdict": "FAIL",
+      "class": "TP",
+      "reviews": [
+        {
+          "target": "timeline",
+          "supported": true,
+          "minimal": true,
+          "fieldCorrect": true,
+          "introducesMaterialError": false,
+          "note": "Identifies the unsupported team-start point and preserves the documented duration.",
+          "actionable": true
+        }
+      ],
+      "detected": true,
+      "actionableTarget": true
+    },
+    {
+      "id": "24",
+      "experiment": 4,
+      "run": "digital-r2-C",
+      "expected": "PASS",
+      "target": null,
+      "score": {
+        "ratings": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "material": false,
+        "omissions": [],
+        "note": "Evidence 1–5 carries the reported timing, rationale for applicant-first sequencing, precise private-beta split, reported metrics, and assisted digital without paper. Gaps explicitly preserves the unknown start and unproven causal effects."
+      },
+      "note": "Evidence 1–5 carries the reported timing, rationale for applicant-first sequencing, precise private-beta split, reported metrics, and assisted digital without paper. Gaps explicitly preserves the unknown start and unproven causal effects.",
+      "legitimate": [],
+      "usage": {
+        "prompt_tokens": 2962,
+        "completion_tokens": 1667,
+        "total_tokens": 4629,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 2959,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1368,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "blockers": [
+        {
+          "field": "selectedIdea.Description",
+          "problem": "“Door” presents the user-order and research choices as the means that produced the 12-week delivery, but the evidence does not establish that causal link for those choices.",
+          "outputQuote": "Onderzoek hoe het POA-refundteam in twaalf weken een dienst opleverde door gebruikersvolgorde en onderzoek slim te organiseren",
+          "evidenceLocation": "projection",
+          "evidenceQuote": "De bron meldt de 12-weekse lancering en de resultaten na vijf weken, maar stelt niet vast dat een bepaalde werkwijze de timing of resultaten heeft veroorzaakt.",
+          "correction": "Say the team launched in twelve weeks and describe the choices it made, without saying those choices caused the launch timing.",
+          "exactOutput": false,
+          "exactEvidence": false
+        },
+        {
+          "field": "selectedIdea.Description",
+          "problem": "The description specifies who the assisted-digital service supported, although the evidence does not identify its users or describe the assistance.",
+          "outputQuote": "met ondersteuning voor mensen die niet zelfstandig digitaal werken.",
+          "evidenceLocation": "projection",
+          "evidenceQuote": "De bron bevestigt een assisted-digital-dienst, maar beschrijft niet welke hulp werd geboden, wie die kreeg of hoe die mensen ondersteunde die het proces niet zelfstandig konden afronden.",
+          "correction": "Refer only to a digital and assisted-digital service, without specifying its users or the support provided.",
+          "exactOutput": false,
+          "exactEvidence": false
+        }
+      ],
+      "verdict": "FAIL",
+      "class": "FP",
+      "reviews": [
+        {
+          "target": "idea_scope",
+          "supported": true,
+          "minimal": false,
+          "fieldCorrect": false,
+          "introducesMaterialError": false,
+          "note": "Causality is already bounded in the synthesis. Quote points to upstream input, and the alleged projection excerpt is a translation.",
+          "actionable": false
+        },
+        {
+          "target": "idea_scope",
+          "supported": true,
+          "minimal": false,
+          "fieldCorrect": false,
+          "introducesMaterialError": false,
+          "note": "Recipients and support remain unknown in the synthesis. Quote points to upstream input, and the alleged projection excerpt is a translation.",
+          "actionable": false
+        }
+      ],
+      "detected": false,
+      "actionableTarget": false
+    },
+    {
+      "id": "25",
+      "experiment": 2,
+      "run": "webb-r1-A",
+      "expected": "FAIL",
+      "target": "folding_reason",
+      "score": null,
+      "note": "Size made folding for launch necessary; stray Nuëyon brand wording is not misattribution.",
+      "legitimate": [
+        "Exact dimensions and an inventory of deployment hardware are optional."
+      ],
+      "usage": {
+        "prompt_tokens": 4885,
+        "completion_tokens": 1304,
+        "total_tokens": 6189,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 4882,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1078,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "blockers": [
+        {
+          "field": "synthesis",
+          "problem": "De synthese laat de compacte vouwconfiguratie voor de lancering weg, waardoor een centrale schakel uit het geselecteerde idee ontbreekt: het ontwerp moest zowel in de raket passen als in de ruimte worden uitgeklapt.",
+          "outputQuote": "De afmetingen van Webb en de raketkuip, de afzonderlijke stappen van de zonneschilduitvouwing, de volledige lijst van spiegel- en instrumenthandelingen en de uiteindelijke prestatie ten opzichte van verwachtingen zijn niet nodig voor deze centrale lijn.",
+          "evidenceLocation": "source",
+          "evidenceQuote": "“Webb was designed to fold compactly to fit into the fairing.”",
+          "correction": "Behoud de ontwerpbeperking dat Webb compact moest worden opgevouwen om in de Ariane 5-kuip te passen en daarna in de ruimte moest uitvouwen; de afmetingen zelf kunnen worden weggelaten.",
+          "exactOutput": true,
+          "exactEvidence": false
+        }
+      ],
+      "verdict": "FAIL",
+      "class": "TP",
+      "reviews": [
+        {
+          "target": "folding_reason",
+          "supported": true,
+          "minimal": true,
+          "fieldCorrect": true,
+          "introducesMaterialError": false,
+          "note": "Correctly detects the missing design relation. Evidence is verbatim inside an extra pair of curly quotes. No objection to the stray brand wording.",
+          "actionable": false
+        }
+      ],
+      "detected": true,
+      "actionableTarget": false
+    },
+    {
+      "id": "26",
+      "experiment": 4,
+      "run": "digital-r1-A",
+      "expected": "PASS",
+      "target": null,
+      "score": {
+        "ratings": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "material": false,
+        "omissions": [],
+        "note": "Evidence 1–5 retains public launch duration, applicant-first design, both sprint weeks, no paper, and reported outcomes. Guidance and Gaps keep attribution and the unknown start point clear."
+      },
+      "note": "Evidence 1–5 retains public launch duration, applicant-first design, both sprint weeks, no paper, and reported outcomes. Guidance and Gaps keep attribution and the unknown start point clear.",
+      "legitimate": [],
+      "usage": {
+        "prompt_tokens": 2845,
+        "completion_tokens": 2000,
+        "total_tokens": 4845,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 2842,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 2000,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "class": "invalid",
+      "error": "Expected values to be strictly equal:\n\n'length' !== 'stop'\n",
+      "reviews": [],
+      "detected": false,
+      "actionableTarget": false
+    },
+    {
+      "id": "27",
+      "experiment": 2,
+      "run": "digital-r2-A",
+      "expected": "FAIL",
+      "target": "actor",
+      "score": null,
+      "note": "Nuëyon’s account misattributes the OPG practice report; deadline-versus-duration also noted as precision.",
+      "legitimate": [],
+      "usage": {
+        "prompt_tokens": 2764,
+        "completion_tokens": 1788,
+        "total_tokens": 4552,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 2761,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1461,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "blockers": [
+        {
+          "field": "synthesis — Central insight",
+          "problem": "It recasts the 12-week time to launch as a 12-week deadline. The source says the initial request was for delivery in a matter of weeks, which the team found incompatible with a quality service; it does not say the team had a 12-week deadline.",
+          "outputQuote": "“Under a 12-week public-launch deadline”",
+          "evidenceLocation": "source",
+          "evidenceQuote": "“We were initially asked to deliver the service in a matter of weeks, which put huge pressure on everyone and we quickly discovered would not be possible if we wanted to create a quality service for our users.” The source separately says it “launched to the public in only 12 weeks.”",
+          "correction": "Describe the service as launching in 12 weeks, after an initial request to deliver in a matter of weeks.",
+          "exactOutput": false,
+          "exactEvidence": false
+        },
+        {
+          "field": "synthesis — What the narrative should emphasize",
+          "problem": "It attributes the account to “Nuëyon,” a name not supplied in the source, potentially misidentifying the author.",
+          "outputQuote": "“Nuëyon’s account of one product’s direction and working choices”",
+          "evidenceLocation": "source",
+          "evidenceQuote": "“I’m the Product Manager for the Power of Attorney (POA) refunds service for the Office of the Public Guardian (OPG).”",
+          "correction": "Replace “Nuëyon’s account” with “the author’s account.”",
+          "exactOutput": false,
+          "exactEvidence": false
+        }
+      ],
+      "verdict": "FAIL",
+      "class": "TP",
+      "reviews": [
+        {
+          "target": "secondary_timeline",
+          "supported": false,
+          "minimal": true,
+          "fieldCorrect": true,
+          "introducesMaterialError": false,
+          "note": "Correct deadline-versus-duration observation, scored as secondary precision in Experiment 3. Source field combines quotes and commentary rather than providing a contiguous excerpt.",
+          "actionable": false
+        },
+        {
+          "target": "actor",
+          "supported": true,
+          "minimal": true,
+          "fieldCorrect": true,
+          "introducesMaterialError": false,
+          "note": "Correctly detects false attribution to Nuëyon and suggests returning attribution to the author. Both anchors are exact after stripping surrounding curly quotes.",
+          "actionable": false
+        }
+      ],
+      "detected": true,
+      "actionableTarget": false
+    },
+    {
+      "id": "28",
+      "experiment": 4,
+      "run": "digital-r3-A",
+      "expected": "PASS",
+      "target": null,
+      "score": {
+        "ratings": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "material": false,
+        "omissions": [],
+        "note": "Evidence 1–5 captures the user sequence, actual sprint mechanics, reported launch and five-week figures and no-paper assisted digital. «Bemoeilijkten» softens the optional obstacle to direct refunds (Fact 3), but the text gives no unsupported implementation or outcome."
+      },
+      "note": "Evidence 1–5 captures the user sequence, actual sprint mechanics, reported launch and five-week figures and no-paper assisted digital. «Bemoeilijkten» softens the optional obstacle to direct refunds (Fact 3), but the text gives no unsupported implementation or outcome.",
+      "legitimate": [],
+      "usage": {
+        "prompt_tokens": 2889,
+        "completion_tokens": 1742,
+        "total_tokens": 4631,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 2886,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1700,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "blockers": [],
+      "verdict": "PASS",
+      "class": "TN",
+      "reviews": [],
+      "detected": false,
+      "actionableTarget": false
+    },
+    {
+      "id": "29",
+      "experiment": 4,
+      "run": "lowell-r1-A",
+      "expected": "PASS",
+      "target": null,
+      "score": {
+        "ratings": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "material": false,
+        "omissions": [],
+        "note": "Evidence 1–4 preserves the worker recollection, citizen strategy, reuse of 100+ buildings, and layoffs/restructuring. Guidance preserves 1992 perspective and avoids single-cause recovery."
+      },
+      "note": "Evidence 1–4 preserves the worker recollection, citizen strategy, reuse of 100+ buildings, and layoffs/restructuring. Guidance preserves 1992 perspective and avoids single-cause recovery.",
+      "legitimate": [
+        "Early output/worker contrast is optional given the reuse and downturn focus."
+      ],
+      "usage": {
+        "prompt_tokens": 4527,
+        "completion_tokens": 397,
+        "total_tokens": 4924,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 4524,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 373,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "blockers": [],
+      "verdict": "PASS",
+      "class": "TN",
+      "reviews": [],
+      "detected": false,
+      "actionableTarget": false
+    }
+  ]
+}

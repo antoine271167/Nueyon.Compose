@@ -1,0 +1,593 @@
+{
+  "10": {
+    "experiment": 4,
+    "run": "wolf-r1-A",
+    "expected": "FAIL",
+    "target": "species",
+    "score": {
+      "ratings": [
+        0,
+        2,
+        2,
+        2,
+        2
+      ],
+      "material": true,
+      "omissions": [],
+      "targetPass": false,
+      "concreteFood": true,
+      "note": "Evidence 2–3 and Gaps refer to eland/elandkalveren (Facts 6–9 refer to wapiti). «Wolvenkadavers» is also an imprecise label for their kills. Group hunting, rapid arrival of specific scavengers and changing prey ratios establish concrete relationships."
+    },
+    "note": "Evidence 2–3 and Gaps refer to eland/elandkalveren (Facts 6–9 refer to wapiti). «Wolvenkadavers» is also an imprecise label for their kills. Group hunting, rapid arrival of specific scavengers and changing prey ratios establish concrete relationships.",
+    "legitimate": [
+      "Bear detail and exact percentages are optional when the central relationships survive."
+    ]
+  },
+  "11": {
+    "experiment": 2,
+    "run": "wolf-r3-A",
+    "expected": "FAIL",
+    "target": "focus",
+    "score": null,
+    "note": "Missing concrete pack cooperation and scavenger relationship; population inventory optional.",
+    "legitimate": [
+      "Bear detail and exact percentages are optional when the central relationships survive."
+    ]
+  },
+  "12": {
+    "experiment": 4,
+    "run": "webb-r3-C",
+    "expected": "PASS",
+    "target": null,
+    "score": {
+      "ratings": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "material": false,
+      "omissions": [],
+      "note": "Evidence 1 supplies size → folding and subsequent deployment. Evidence 2–5 distinguishes potential technical failures, the second-week physical milestone and six-month commissioning. «vouwden» is awkward but the outcome is explicitly «volledig uitgevouwen».",
+      "targetPass": true
+    },
+    "note": "Evidence 1 supplies size → folding and subsequent deployment. Evidence 2–5 distinguishes potential technical failures, the second-week physical milestone and six-month commissioning. «vouwden» is awkward but the outcome is explicitly «volledig uitgevouwen».",
+    "legitimate": [
+      "Exact dimensions and an inventory of deployment hardware are optional."
+    ]
+  },
+  "13": {
+    "experiment": 2,
+    "run": "wolf-r1-B",
+    "expected": "FAIL",
+    "target": "species",
+    "score": null,
+    "note": "Eland/elandkadaver substitutes moose for Yellowstone elk; bear detail and exact percentages optional.",
+    "legitimate": [
+      "Bear detail and exact percentages are optional when the central relationships survive."
+    ]
+  },
+  "14": {
+    "experiment": 4,
+    "run": "digital-r3-C",
+    "expected": "PASS",
+    "target": null,
+    "score": {
+      "ratings": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "material": false,
+      "omissions": [],
+      "note": "Evidence 1–5 keeps launch timing, the author’s rationale for sequencing, both weeks of the sprint, assisted digital and reported metrics. Gaps preserves unknown start and uncertain causality."
+    },
+    "note": "Evidence 1–5 keeps launch timing, the author’s rationale for sequencing, both weeks of the sprint, assisted digital and reported metrics. Gaps preserves unknown start and uncertain causality.",
+    "legitimate": []
+  },
+  "15": {
+    "experiment": 4,
+    "run": "webb-r1-A",
+    "expected": "PASS",
+    "target": null,
+    "score": {
+      "ratings": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "material": false,
+      "omissions": [],
+      "targetPass": true,
+      "note": "Evidence 1 preserves size → fairing fit → folding (Fact 1). Weeks/months and specific mirror hardware preserve the central distinction (Facts 7–12); isolated trailing «заключ» is cosmetic."
+    },
+    "note": "Evidence 1 preserves size → fairing fit → folding (Fact 1). Weeks/months and specific mirror hardware preserve the central distinction (Facts 7–12); isolated trailing «заключ» is cosmetic.",
+    "legitimate": [
+      "Exact dimensions and an inventory of deployment hardware are optional."
+    ]
+  },
+  "16": {
+    "experiment": 4,
+    "run": "webb-r2-A",
+    "expected": "PASS",
+    "target": null,
+    "score": {
+      "ratings": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "material": false,
+      "omissions": [],
+      "note": "Evidence 1 explicitly connects size limits and folding before launch. Evidence 2–5 pairs mirror latching and potential failure points with cooling, alignment, calibration and six-month science.",
+      "targetPass": true
+    },
+    "note": "Evidence 1 explicitly connects size limits and folding before launch. Evidence 2–5 pairs mirror latching and potential failure points with cooling, alignment, calibration and six-month science.",
+    "legitimate": [
+      "Exact dimensions and an inventory of deployment hardware are optional."
+    ]
+  },
+  "17": {
+    "experiment": 4,
+    "run": "lowell-r2-A",
+    "expected": "PASS",
+    "target": null,
+    "score": {
+      "ratings": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "material": false,
+      "omissions": [],
+      "note": "Evidence 1–5 captures job loss, worker uncertainty, civic cooperation, adaptive reuse and the later Wang cuts. Guidance and Gaps preserve the 1992 perspective and causal limits."
+    },
+    "note": "Evidence 1–5 captures job loss, worker uncertainty, civic cooperation, adaptive reuse and the later Wang cuts. Guidance and Gaps preserve the 1992 perspective and causal limits.",
+    "legitimate": [
+      "Early output/worker contrast is optional given the reuse and downturn focus."
+    ]
+  },
+  "18": {
+    "experiment": 4,
+    "run": "lowell-r3-A",
+    "expected": "PASS",
+    "target": null,
+    "score": {
+      "ratings": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "material": false,
+      "omissions": [],
+      "note": "Evidence 1–5 uses vacant mill buildings, uncertainty about paid work, civic leadership, 100+ buildings reused and subsequent downturn. The instruction to avoid attributing recovery to heritage alone and the 1992 framing are explicit."
+    },
+    "note": "Evidence 1–5 uses vacant mill buildings, uncertainty about paid work, civic leadership, 100+ buildings reused and subsequent downturn. The instruction to avoid attributing recovery to heritage alone and the 1992 framing are explicit.",
+    "legitimate": [
+      "Early output/worker contrast is optional given the reuse and downturn focus."
+    ]
+  },
+  "19": {
+    "experiment": 4,
+    "run": "wolf-r2-A",
+    "expected": "PASS",
+    "target": null,
+    "score": {
+      "ratings": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "material": false,
+      "omissions": [],
+      "note": "Evidence 1–4 keeps elk in the source language, names scavengers, and includes the early-winter prey shift plus other predators, management and weather.",
+      "targetPass": true,
+      "concreteFood": true
+    },
+    "note": "Evidence 1–4 keeps elk in the source language, names scavengers, and includes the early-winter prey shift plus other predators, management and weather.",
+    "legitimate": [
+      "Bear detail and exact percentages are optional when the central relationships survive."
+    ]
+  },
+  "20": {
+    "experiment": 4,
+    "run": "wolf-r2-C",
+    "expected": "PASS",
+    "target": null,
+    "score": {
+      "ratings": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "material": false,
+      "omissions": [],
+      "note": "Evidence 1–3 keeps elk in the source language, links group hunting and named scavengers to wolf kills, and carries the shift in prey composition and its multifactor explanation.",
+      "targetPass": true,
+      "concreteFood": true
+    },
+    "note": "Evidence 1–3 keeps elk in the source language, links group hunting and named scavengers to wolf kills, and carries the shift in prey composition and its multifactor explanation.",
+    "legitimate": [
+      "Bear detail and exact percentages are optional when the central relationships survive."
+    ]
+  },
+  "21": {
+    "experiment": 4,
+    "run": "digital-r1-C",
+    "expected": "FAIL",
+    "target": "timeline",
+    "score": {
+      "ratings": [
+        1,
+        2,
+        2,
+        2,
+        2
+      ],
+      "material": false,
+      "omissions": [],
+      "note": "Evidence 1 specifies «twaalf weken na aanvang van de levering» despite the unknown measurement start. Evidence 2–5 retains user order, the rationale, the sprint rhythm, assisted digital and figures as context."
+    },
+    "note": "Evidence 1 specifies «twaalf weken na aanvang van de levering» despite the unknown measurement start. Evidence 2–5 retains user order, the rationale, the sprint rhythm, assisted digital and figures as context.",
+    "legitimate": []
+  },
+  "22": {
+    "experiment": 4,
+    "run": "lowell-r1-C",
+    "expected": "PASS",
+    "target": null,
+    "score": {
+      "ratings": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "material": false,
+      "omissions": [],
+      "note": "Evidence 1–4 connects job loss and workers’ experiences, civic cooperation, 100+ buildings repurposed, and the late downturn. 1992 framing and causal limits are explicit."
+    },
+    "note": "Evidence 1–4 connects job loss and workers’ experiences, civic cooperation, 100+ buildings repurposed, and the late downturn. 1992 framing and causal limits are explicit.",
+    "legitimate": [
+      "Early output/worker contrast is optional given the reuse and downturn focus."
+    ]
+  },
+  "23": {
+    "experiment": 4,
+    "run": "digital-r2-A",
+    "expected": "FAIL",
+    "target": "timeline",
+    "score": {
+      "ratings": [
+        1,
+        2,
+        2,
+        2,
+        2
+      ],
+      "material": false,
+      "omissions": [],
+      "note": "Evidence 1 says «12 weken na de start van het team», but Fact 4 and its corresponding Unknown establish no start point. The applicant-first sequence, both sprint weeks, and assisted digital remain. Discarding detailed KPI context is a defensible choice here."
+    },
+    "note": "Evidence 1 says «12 weken na de start van het team», but Fact 4 and its corresponding Unknown establish no start point. The applicant-first sequence, both sprint weeks, and assisted digital remain. Discarding detailed KPI context is a defensible choice here.",
+    "legitimate": [
+      "Detailed early KPI figures are optional in this handoff."
+    ]
+  },
+  "24": {
+    "experiment": 4,
+    "run": "digital-r2-C",
+    "expected": "PASS",
+    "target": null,
+    "score": {
+      "ratings": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "material": false,
+      "omissions": [],
+      "note": "Evidence 1–5 carries the reported timing, rationale for applicant-first sequencing, precise private-beta split, reported metrics, and assisted digital without paper. Gaps explicitly preserves the unknown start and unproven causal effects."
+    },
+    "note": "Evidence 1–5 carries the reported timing, rationale for applicant-first sequencing, precise private-beta split, reported metrics, and assisted digital without paper. Gaps explicitly preserves the unknown start and unproven causal effects.",
+    "legitimate": []
+  },
+  "25": {
+    "experiment": 2,
+    "run": "webb-r1-A",
+    "expected": "FAIL",
+    "target": "folding_reason",
+    "score": null,
+    "note": "Size made folding for launch necessary; stray Nuëyon brand wording is not misattribution.",
+    "legitimate": [
+      "Exact dimensions and an inventory of deployment hardware are optional."
+    ]
+  },
+  "26": {
+    "experiment": 4,
+    "run": "digital-r1-A",
+    "expected": "PASS",
+    "target": null,
+    "score": {
+      "ratings": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "material": false,
+      "omissions": [],
+      "note": "Evidence 1–5 retains public launch duration, applicant-first design, both sprint weeks, no paper, and reported outcomes. Guidance and Gaps keep attribution and the unknown start point clear."
+    },
+    "note": "Evidence 1–5 retains public launch duration, applicant-first design, both sprint weeks, no paper, and reported outcomes. Guidance and Gaps keep attribution and the unknown start point clear.",
+    "legitimate": []
+  },
+  "27": {
+    "experiment": 2,
+    "run": "digital-r2-A",
+    "expected": "FAIL",
+    "target": "actor",
+    "score": null,
+    "note": "Nuëyon’s account misattributes the OPG practice report; deadline-versus-duration also noted as precision.",
+    "legitimate": []
+  },
+  "28": {
+    "experiment": 4,
+    "run": "digital-r3-A",
+    "expected": "PASS",
+    "target": null,
+    "score": {
+      "ratings": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "material": false,
+      "omissions": [],
+      "note": "Evidence 1–5 captures the user sequence, actual sprint mechanics, reported launch and five-week figures and no-paper assisted digital. «Bemoeilijkten» softens the optional obstacle to direct refunds (Fact 3), but the text gives no unsupported implementation or outcome."
+    },
+    "note": "Evidence 1–5 captures the user sequence, actual sprint mechanics, reported launch and five-week figures and no-paper assisted digital. «Bemoeilijkten» softens the optional obstacle to direct refunds (Fact 3), but the text gives no unsupported implementation or outcome.",
+    "legitimate": []
+  },
+  "29": {
+    "experiment": 4,
+    "run": "lowell-r1-A",
+    "expected": "PASS",
+    "target": null,
+    "score": {
+      "ratings": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "material": false,
+      "omissions": [],
+      "note": "Evidence 1–4 preserves the worker recollection, citizen strategy, reuse of 100+ buildings, and layoffs/restructuring. Guidance preserves 1992 perspective and avoids single-cause recovery."
+    },
+    "note": "Evidence 1–4 preserves the worker recollection, citizen strategy, reuse of 100+ buildings, and layoffs/restructuring. Guidance preserves 1992 perspective and avoids single-cause recovery.",
+    "legitimate": [
+      "Early output/worker contrast is optional given the reuse and downturn focus."
+    ]
+  },
+  "01": {
+    "experiment": 4,
+    "run": "lowell-r3-C",
+    "expected": "PASS",
+    "target": null,
+    "score": {
+      "ratings": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "material": false,
+      "omissions": [],
+      "note": "Evidence 1–4 connects job losses and reduced diets with citizen-led park efforts, measured building reuse and Wang’s cuts. Economic claims stay bounded by the 1992 account and the late downturn."
+    },
+    "note": "Evidence 1–4 connects job losses and reduced diets with citizen-led park efforts, measured building reuse and Wang’s cuts. Economic claims stay bounded by the 1992 account and the late downturn.",
+    "legitimate": [
+      "Early output/worker contrast is optional given the reuse and downturn focus."
+    ]
+  },
+  "02": {
+    "experiment": 4,
+    "run": "webb-r2-C",
+    "expected": "FAIL",
+    "target": "folding_reason",
+    "score": {
+      "ratings": [
+        2,
+        2,
+        1,
+        2,
+        2
+      ],
+      "material": false,
+      "omissions": [
+        "vouwreden"
+      ],
+      "note": "De-emphasis mentions fairing fit but leaves out the actual size → folding relation (Fact 1; source line 3). Evidence retains possible failures, mirror latching, and commissioning. «The remaining deployments» lacks its automatic-deployments antecedent.",
+      "targetPass": false
+    },
+    "note": "De-emphasis mentions fairing fit but leaves out the actual size → folding relation (Fact 1; source line 3). Evidence retains possible failures, mirror latching, and commissioning. «The remaining deployments» lacks its automatic-deployments antecedent.",
+    "legitimate": [
+      "Exact dimensions and an inventory of deployment hardware are optional."
+    ]
+  },
+  "03": {
+    "experiment": 2,
+    "run": "webb-r3-B",
+    "expected": "FAIL",
+    "target": "folding_reason",
+    "score": null,
+    "note": "Size made folding for launch necessary; exact dimensions optional.",
+    "legitimate": [
+      "Exact dimensions and an inventory of deployment hardware are optional."
+    ]
+  },
+  "04": {
+    "experiment": 4,
+    "run": "wolf-r3-C",
+    "expected": "PASS",
+    "target": null,
+    "score": {
+      "ratings": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "material": false,
+      "omissions": [],
+      "note": "Evidence 1–3 retains source-language elk, group hunting and specific scavengers. The prey ratio reversal and the distinct interacting factors anchor the limits on causal claims.",
+      "targetPass": true,
+      "concreteFood": true
+    },
+    "note": "Evidence 1–3 retains source-language elk, group hunting and specific scavengers. The prey ratio reversal and the distinct interacting factors anchor the limits on causal claims.",
+    "legitimate": [
+      "Bear detail and exact percentages are optional when the central relationships survive."
+    ]
+  },
+  "05": {
+    "experiment": 4,
+    "run": "webb-r1-C",
+    "expected": "FAIL",
+    "target": "timeline",
+    "score": {
+      "ratings": [
+        1,
+        2,
+        2,
+        2,
+        2
+      ],
+      "material": false,
+      "omissions": [],
+      "targetPass": true,
+      "note": "Evidence 1 preserves the reason (Fact 1) but «door tijdens de lancering op te vouwen» misstates when folding occurred: the launch configuration was already folded (source lines 3, 67). The physical-deployment/science distinction and handoff remain usable."
+    },
+    "note": "Evidence 1 preserves the reason (Fact 1) but «door tijdens de lancering op te vouwen» misstates when folding occurred: the launch configuration was already folded (source lines 3, 67). The physical-deployment/science distinction and handoff remain usable.",
+    "legitimate": [
+      "Exact dimensions and an inventory of deployment hardware are optional."
+    ]
+  },
+  "06": {
+    "experiment": 4,
+    "run": "webb-r3-A",
+    "expected": "PASS",
+    "target": null,
+    "score": {
+      "ratings": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "material": false,
+      "omissions": [],
+      "targetPass": true,
+      "note": "Evidence 1 explicitly gives size versus fairing as the reason for folding before launch. Numeric risk, ground-controlled versus automatic deployment, and the timing to routine science make the distinction concrete (Facts 1, 3–4, 7–12)."
+    },
+    "note": "Evidence 1 explicitly gives size versus fairing as the reason for folding before launch. Numeric risk, ground-controlled versus automatic deployment, and the timing to routine science make the distinction concrete (Facts 1, 3–4, 7–12).",
+    "legitimate": [
+      "Exact dimensions and an inventory of deployment hardware are optional."
+    ]
+  },
+  "07": {
+    "experiment": 4,
+    "run": "wolf-r3-A",
+    "expected": "PASS",
+    "target": null,
+    "score": {
+      "ratings": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "material": false,
+      "omissions": [],
+      "note": "Evidence 1–4 preserves group hunting, the timing of different scavengers, source-language elk, the quantified prey ratio reversal, and interacting factors.",
+      "targetPass": true,
+      "concreteFood": true
+    },
+    "note": "Evidence 1–4 preserves group hunting, the timing of different scavengers, source-language elk, the quantified prey ratio reversal, and interacting factors.",
+    "legitimate": [
+      "Bear detail and exact percentages are optional when the central relationships survive."
+    ]
+  },
+  "08": {
+    "experiment": 4,
+    "run": "lowell-r2-C",
+    "expected": "PASS",
+    "target": null,
+    "score": {
+      "ratings": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "material": false,
+      "omissions": [],
+      "note": "Evidence 1–4 carries job loss and worker recollections, civic collaboration, 100+ buildings reused and the late downturn. Selects the Wang layoffs as a concrete turn without expanding into Wang’s history."
+    },
+    "note": "Evidence 1–4 carries job loss and worker recollections, civic collaboration, 100+ buildings reused and the late downturn. Selects the Wang layoffs as a concrete turn without expanding into Wang’s history.",
+    "legitimate": [
+      "Early output/worker contrast is optional given the reuse and downturn focus."
+    ]
+  },
+  "09": {
+    "experiment": 4,
+    "run": "wolf-r1-C",
+    "expected": "FAIL",
+    "target": "species",
+    "score": {
+      "ratings": [
+        0,
+        2,
+        2,
+        2,
+        2
+      ],
+      "material": true,
+      "omissions": [],
+      "targetPass": false,
+      "concreteFood": true,
+      "note": "Central insight, Evidence 2–3 and Gaps substitute eland for wapiti (Facts 6–9, source lines 11, 17). The roedel → groepsjacht and named scavenger sequence remain concrete and predation stays multicausal."
+    },
+    "note": "Central insight, Evidence 2–3 and Gaps substitute eland for wapiti (Facts 6–9, source lines 11, 17). The roedel → groepsjacht and named scavenger sequence remain concrete and predation stays multicausal.",
+    "legitimate": [
+      "Bear detail and exact percentages are optional when the central relationships survive."
+    ]
+  }
+}

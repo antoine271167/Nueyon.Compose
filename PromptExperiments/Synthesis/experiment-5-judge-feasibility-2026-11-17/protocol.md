@@ -1,0 +1,19 @@
+# Synthesis Experiment 5 — Judge Feasibility
+
+## Corpus and blinding
+
+Primary: all 24 stored Experiment 4 outputs. Historical diagnostic: the complete five-case Experiment 3 reassessment cohort, defined by membership in that earlier assessment, no selection within the cohort. Its historical selection was defect-enriched, so it is reported separately and is not an independent holdout. Four recurring topics and assistant-authored historical assessments; no independent human labels. Read Experiment 1 baseline context and Experiment 2 rubric, including revised Lowell selection, Experiment 3 reassessment and Experiment 4 scores. Snapshot the original decoded synthesis, Selected Idea, full source and exact Facts/Unknowns projection. Check output against stored content and projection/Idea against saved Synthesis request. Full Research and historical metadata are audit-only. Judge sees no labels, IDs, arms, rubric examples or history. Use deterministic hash order.
+
+## Ground truth and feedback rubric
+
+FAIL is positive. Primary reference is Experiment 4 full-sufficiency (all five dimensions score 2), separately retaining its original material flag. Explicitly predeclare three historically nonmaterial but actionable timing errors (invented start for the central duration or wrong order of the core launch steps), one essential omission and two material species swaps. Primary disagreements remain counted even if qualitative review later finds a real additional issue. For historical controls keep Experiment 3's revised findings, with distinct optional/precision annotations. Gold labels are frozen before requests.
+
+A target is detected only when a blocker identifies that particular defect. A response scoring as TP for another reason does not count as target detection. Feedback is actionable only if field is correct, output and evidence quotes match verbatim, evidence actually supports the diagnosis, and the correction is minimal and preserves supported claims. An omission can use the closest relevant passage as anchor. Review every emitted blocker, including on false positives, for factual support, relevance and duplicates. Accept omitted Lowell early output/jobs contrast, exact Webb dimensions, optional wolf details and Digital KPI detail where focus survives. Distinguish stray branding from false attribution.
+
+## Gate for a later isolated optional repair trial
+
+All 29 responses valid. Primary at least 5/6 TP, at least 17/18 TN, all species swaps and the essential omission detected with actionable feedback, at least two of three timeline defects detected with actionable feedback, and all six Lowell passes. Historical Digital actor attribution detected with actionable feedback, the Webb stray brand mention must not be a blocker, and at least four of five historical targets detected with actionable feedback. Across all emitted blockers at least 90% actionable and zero proposed corrections introducing a material error. Failure of any condition is NO-GO. Historical diagnostic does not estimate specificity. No claim about improvement from repair or production readiness.
+
+## Budget and execution
+
+GPT-6 Luna, stored Chat Completions endpoint convention. Exactly one isolated Judge request per case, no retries or other model calls, schema with explicit verdict and up to three blockers enforced on replay. Max 2,000 completion tokens including reasoning per attempt, 58,000 aggregate. Conservative input ceiling of 720,000 tokens using UTF-8 request bytes as overestimate plus 256 tokens per request for framing. Preflight also caps each request at 26,000 bytes. Timeout 180 seconds, up to five concurrent calls, no replacement. Store requests before calls, raw response bytes, HTTP status and timestamps. Keep secrets out of artifacts. Record usage, replay locally without network, and hash final artifacts. No edits to previous experiments or production.

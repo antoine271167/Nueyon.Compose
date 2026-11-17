@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ElKBCEJmOPlhbO5u8z8p0MlDvPO4w",
+  "object": "chat.completion",
+  "created": 1794947694,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"verdict\":\"FAIL\",\"blockers\":[{\"field\":\"selectedIdea.Description\",\"problem\":\"“Door” presents the user-order and research choices as the means that produced the 12-week delivery, but the evidence does not establish that causal link for those choices.\",\"outputQuote\":\"Onderzoek hoe het POA-refundteam in twaalf weken een dienst opleverde door gebruikersvolgorde en onderzoek slim te organiseren\",\"evidenceLocation\":\"projection\",\"evidenceQuote\":\"De bron meldt de 12-weekse lancering en de resultaten na vijf weken, maar stelt niet vast dat een bepaalde werkwijze de timing of resultaten heeft veroorzaakt.\",\"correction\":\"Say the team launched in twelve weeks and describe the choices it made, without saying those choices caused the launch timing.\"},{\"field\":\"selectedIdea.Description\",\"problem\":\"The description specifies who the assisted-digital service supported, although the evidence does not identify its users or describe the assistance.\",\"outputQuote\":\"met ondersteuning voor mensen die niet zelfstandig digitaal werken.\",\"evidenceLocation\":\"projection\",\"evidenceQuote\":\"De bron bevestigt een assisted-digital-dienst, maar beschrijft niet welke hulp werd geboden, wie die kreeg of hoe die mensen ondersteunde die het proces niet zelfstandig konden afronden.\",\"correction\":\"Refer only to a digital and assisted-digital service, without specifying its users or the support provided.\"}]}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2962,
+    "completion_tokens": 1667,
+    "total_tokens": 4629,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 2959,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1368,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

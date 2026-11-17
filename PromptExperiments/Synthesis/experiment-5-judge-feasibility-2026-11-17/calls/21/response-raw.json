@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ElKB9TtXjnad4KFDcJVjVZFFZgyim",
+  "object": "chat.completion",
+  "created": 1794947691,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"verdict\":\"FAIL\",\"blockers\":[{\"field\":\"synthesis\",\"problem\":\"Geeft een niet-onderbouwd startpunt voor de periode van twaalf weken; de bron meldt de duur, maar specificeert niet vanaf wanneer die loopt.\",\"outputQuote\":\"De dienst ging twaalf weken na aanvang van de levering publiekelijk van start.\",\"evidenceLocation\":\"projection\",\"evidenceQuote\":\"The source does not specify the exact start point used for the 12-week delivery period.\",\"correction\":\"Schrijf dat de dienst volgens de auteur binnen twaalf weken publiek werd gelanceerd, zonder een startpunt in te vullen.\"},{\"field\":\"selectedIdea.Description\",\"problem\":\"Stelt een oorzakelijk verband tussen de ontwerpkeuzes en oplevering binnen twaalf weken, terwijl de bron dat verband niet aantoont.\",\"outputQuote\":\"Onderzoek hoe het POA-refundteam in twaalf weken een dienst opleverde door gebruikersvolgorde en onderzoek slim te organiseren, met ondersteuning voor mensen die niet zelfstandig digitaal werken.\",\"evidenceLocation\":\"projection\",\"evidenceQuote\":\"The source reports the 12-week launch and the five-week results, but does not establish that any particular practice caused the launch timing or the application, satisfaction or completion figures.\",\"correction\":\"Vervang “door gebruikersvolgorde en onderzoek slim te organiseren” door een formulering die de keuzes als aanpak beschrijft, niet als oorzaak van de oplevering.\"},{\"field\":\"selectedIdea.Description\",\"problem\":\"Specificeert wie de assisted-digital ondersteuning kreeg en waarvoor, terwijl de bron alleen vermeldt dat de dienst assisted-digital was.\",\"outputQuote\":\"met ondersteuning voor mensen die niet zelfstandig digitaal werken.\",\"evidenceLocation\":\"projection\",\"evidenceQuote\":\"The source confirms an assisted-digital service, but does not describe what assistance was provided, who received it, or how it supported people unable to complete the process independently.\",\"correction\":\"Beperk dit tot de vermelding dat de dienst assisted-digital was; laat doelgroep en functie van de ondersteuning open.\"}]}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2943,
+    "completion_tokens": 1446,
+    "total_tokens": 4389,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 2940,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1015,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

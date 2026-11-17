@@ -1,0 +1,154 @@
+{
+  "10": [
+    {
+      "target": "other_fidelity",
+      "supported": true,
+      "minimal": true,
+      "fieldCorrect": true,
+      "introducesMaterialError": false,
+      "note": "The correction addresses the literal wolf-carcass reading, a real local ambiguity. It does not identify or repair the prelabelled elk-to-moose species substitution."
+    }
+  ],
+  "11": [
+    {
+      "target": "focus",
+      "supported": true,
+      "minimal": true,
+      "fieldCorrect": true,
+      "introducesMaterialError": false,
+      "note": "Correctly detects the missing social strand and suggests source-supported cooperative behavior. Does not ask for the separate concrete scavenger example, so coverage of the compound historical defect is partial."
+    }
+  ],
+  "12": [
+    {
+      "target": "optional_webb",
+      "supported": false,
+      "minimal": false,
+      "fieldCorrect": true,
+      "introducesMaterialError": false,
+      "note": "The causal design link, risks and timing remain intact. Ground control and telemetry are optional technical detail under this rubric."
+    }
+  ],
+  "14": [
+    {
+      "target": "idea_scope",
+      "supported": true,
+      "minimal": false,
+      "fieldCorrect": false,
+      "introducesMaterialError": false,
+      "note": "Audits the Selected Idea's wording. The synthesis already states what is known and keeps recipients and support uncertain."
+    }
+  ],
+  "17": [
+    {
+      "target": "optional_lowell",
+      "supported": false,
+      "minimal": false,
+      "fieldCorrect": true,
+      "introducesMaterialError": false,
+      "note": "Same overreach as call 08. Optional context is treated as required. The purported evidence also abridges the source with ellipses."
+    }
+  ],
+  "21": [
+    {
+      "target": "timeline",
+      "supported": true,
+      "minimal": true,
+      "fieldCorrect": true,
+      "introducesMaterialError": false,
+      "note": "Correctly identifies the invented start point and restores the supported duration."
+    },
+    {
+      "target": "idea_scope",
+      "supported": true,
+      "minimal": false,
+      "fieldCorrect": false,
+      "introducesMaterialError": false,
+      "note": "The Selected Idea implies causation, but the synthesis keeps claims bounded. The suggested edit targets the upstream input."
+    },
+    {
+      "target": "idea_scope",
+      "supported": true,
+      "minimal": false,
+      "fieldCorrect": false,
+      "introducesMaterialError": false,
+      "note": "The output already preserves assisted digital at the level supported by the evidence. This correction targets the upstream input."
+    }
+  ],
+  "23": [
+    {
+      "target": "timeline",
+      "supported": true,
+      "minimal": true,
+      "fieldCorrect": true,
+      "introducesMaterialError": false,
+      "note": "Identifies the unsupported team-start point and preserves the documented duration."
+    }
+  ],
+  "24": [
+    {
+      "target": "idea_scope",
+      "supported": true,
+      "minimal": false,
+      "fieldCorrect": false,
+      "introducesMaterialError": false,
+      "note": "Causality is already bounded in the synthesis. Quote points to upstream input, and the alleged projection excerpt is a translation."
+    },
+    {
+      "target": "idea_scope",
+      "supported": true,
+      "minimal": false,
+      "fieldCorrect": false,
+      "introducesMaterialError": false,
+      "note": "Recipients and support remain unknown in the synthesis. Quote points to upstream input, and the alleged projection excerpt is a translation."
+    }
+  ],
+  "25": [
+    {
+      "target": "folding_reason",
+      "supported": true,
+      "minimal": true,
+      "fieldCorrect": true,
+      "introducesMaterialError": false,
+      "note": "Correctly detects the missing design relation. Evidence is verbatim inside an extra pair of curly quotes. No objection to the stray brand wording."
+    }
+  ],
+  "27": [
+    {
+      "target": "secondary_timeline",
+      "supported": false,
+      "minimal": true,
+      "fieldCorrect": true,
+      "introducesMaterialError": false,
+      "note": "Correct deadline-versus-duration observation, scored as secondary precision in Experiment 3. Source field combines quotes and commentary rather than providing a contiguous excerpt."
+    },
+    {
+      "target": "actor",
+      "supported": true,
+      "minimal": true,
+      "fieldCorrect": true,
+      "introducesMaterialError": false,
+      "note": "Correctly detects false attribution to Nuëyon and suggests returning attribution to the author. Both anchors are exact after stripping surrounding curly quotes."
+    }
+  ],
+  "03": [
+    {
+      "target": "folding_reason",
+      "supported": true,
+      "minimal": true,
+      "fieldCorrect": true,
+      "introducesMaterialError": false,
+      "note": "Correct essential omission and minimal correction. Both exact anchors fail because of enclosing curly quotes."
+    }
+  ],
+  "08": [
+    {
+      "target": "optional_lowell",
+      "supported": false,
+      "minimal": false,
+      "fieldCorrect": true,
+      "introducesMaterialError": false,
+      "note": "The rubric allows university and technology as secondary context. The synthesis already covers reuse, downturn, and limits to single-cause attribution."
+    }
+  ]
+}

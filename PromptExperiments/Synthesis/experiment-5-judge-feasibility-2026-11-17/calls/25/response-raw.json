@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ElKBEa6J5dlz4hAE0WKy4XC9mc8Rz",
+  "object": "chat.completion",
+  "created": 1794947696,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"verdict\":\"FAIL\",\"blockers\":[{\"field\":\"synthesis\",\"problem\":\"De synthese laat de compacte vouwconfiguratie voor de lancering weg, waardoor een centrale schakel uit het geselecteerde idee ontbreekt: het ontwerp moest zowel in de raket passen als in de ruimte worden uitgeklapt.\",\"outputQuote\":\"De afmetingen van Webb en de raketkuip, de afzonderlijke stappen van de zonneschilduitvouwing, de volledige lijst van spiegel- en instrumenthandelingen en de uiteindelijke prestatie ten opzichte van verwachtingen zijn niet nodig voor deze centrale lijn.\",\"evidenceLocation\":\"source\",\"evidenceQuote\":\"“Webb was designed to fold compactly to fit into the fairing.”\",\"correction\":\"Behoud de ontwerpbeperking dat Webb compact moest worden opgevouwen om in de Ariane 5-kuip te passen en daarna in de ruimte moest uitvouwen; de afmetingen zelf kunnen worden weggelaten.\"}]}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4885,
+    "completion_tokens": 1304,
+    "total_tokens": 6189,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 4882,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1078,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

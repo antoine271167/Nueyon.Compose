@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ElKBA1cwgSdyJXFH0HDNUDRFsr1e5",
+  "object": "chat.completion",
+  "created": 1794947692,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"verdict\":\"FAIL\",\"blockers\":[{\"field\":\"synthesis — Evidence, item 1\",\"problem\":\"It assigns the 12-week delivery period a specific start point that the source does not establish.\",\"outputQuote\":\"De dienst ging volgens de bron 12 weken na de start van het team publiek.\",\"evidenceLocation\":\"projection\",\"evidenceQuote\":\"The source does not specify the exact start point used for the 12-week delivery period.\",\"correction\":\"Say the service launched in 12 weeks, without specifying when that period began.\"}]}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2751,
+    "completion_tokens": 1146,
+    "total_tokens": 3897,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 2748,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1015,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

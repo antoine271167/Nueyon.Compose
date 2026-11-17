@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ElKAsECdjg6lY0HuMigRPDTshzapQ",
+  "object": "chat.completion",
+  "created": 1794947674,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"verdict\":\"FAIL\",\"blockers\":[{\"field\":\"synthesis\",\"problem\":\"De synthese laat de grondbesturing en telemetriemonitoring weg. Dat is een expliciet gevraagd onderdeel van de Selected Idea en een belangrijke relatie binnen de risicovolle, gecoördineerde uitvouwing.\",\"outputQuote\":\"De zonneschildpallets werden in de eerste week uitgezet; in de tweede week vouwden en vergrendelden de secundaire spiegel en de spiegelvleugels.\",\"evidenceLocation\":\"projection\",\"evidenceQuote\":\"The remaining deployments were choreographed from ground control by engineers and monitored through telemetry.\",\"correction\":\"Voeg toe dat de overige uitvouwingen door ingenieurs vanaf de grond werden gecoördineerd en via telemetrie gemonitord.\"}]}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4873,
+    "completion_tokens": 1670,
+    "total_tokens": 6543,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 4870,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1475,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

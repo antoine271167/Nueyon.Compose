@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ElKAv6BWty7NiKQe2EXUWX9TgZfkR",
+  "object": "chat.completion",
+  "created": 1794947677,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"verdict\":\"FAIL\",\"blockers\":[{\"field\":\"selectedIdea.Description\",\"problem\":\"It specifies who the assisted-digital service supported, but the evidence only confirms that the service was assisted digital and does not identify who received assistance.\",\"outputQuote\":\"“met ondersteuning voor mensen die niet zelfstandig digitaal werken”\",\"evidenceLocation\":\"projection\",\"evidenceQuote\":\"“The source confirms an assisted-digital service, but does not describe what assistance was provided, who received it, or how it supported people unable to complete the process independently.”\",\"correction\":\"Use “met een digitale en assisted-digital dienst” without specifying who received support.\"}]}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2878,
+    "completion_tokens": 1122,
+    "total_tokens": 4000,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 2875,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 972,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

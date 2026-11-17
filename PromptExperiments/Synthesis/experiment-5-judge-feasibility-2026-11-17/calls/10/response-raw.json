@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ElKAoZ28ZPBAa62jh68fezY2jvVwC",
+  "object": "chat.completion",
+  "created": 1794947670,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"verdict\":\"FAIL\",\"blockers\":[{\"field\":\"synthesis\",\"problem\":\"“Wolvenkadavers” means wolf carcasses, but the source says the remains of animals killed by wolves feed scavengers.\",\"outputQuote\":\"Wolvenkadavers leveren voedsel aan andere dieren: raven en eksters komen snel op een elanddoding af, en ook onder meer coyotes, beren, adelaars en ongewervelden eten van de resten.\",\"evidenceLocation\":\"source\",\"evidenceQuote\":\"Many other animals benefit from wolf kills. For example, when wolves kill an elk, ravens and magpies arrive almost immediately.\",\"correction\":\"Vervang “Wolvenkadavers” door “Prooiresten van wolven”.\"}]}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4119,
+    "completion_tokens": 646,
+    "total_tokens": 4765,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 4116,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 478,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}
