@@ -1,0 +1,314 @@
+{
+  "decision": "NO-GO",
+  "gates": {
+    "noUnsafeHandoff": false,
+    "allNarrativeCompleted": true,
+    "allHFidelitySafe": false,
+    "narrativeSoft": false,
+    "eligibleComposeCompleted": true,
+    "allHPostsFidelitySafe": false,
+    "composeSoft": false,
+    "pairedCoverage": false,
+    "pairedQuality": true,
+    "pairedTokens": true,
+    "pairedCosts": true
+  },
+  "summaries": {
+    "narrative": {
+      "F": {
+        "digital": {
+          "scored": 3,
+          "full": 0,
+          "sufficientByDimension": {
+            "focus": 3,
+            "progression": 2,
+            "evidence": 2,
+            "direction": 0,
+            "handoff": 2,
+            "fidelity": 3
+          }
+        },
+        "webb": {
+          "scored": 3,
+          "full": 0,
+          "sufficientByDimension": {
+            "focus": 3,
+            "progression": 3,
+            "evidence": 3,
+            "direction": 3,
+            "handoff": 3,
+            "fidelity": 0
+          }
+        },
+        "wolf": {
+          "scored": 3,
+          "full": 0,
+          "sufficientByDimension": {
+            "focus": 3,
+            "progression": 3,
+            "evidence": 2,
+            "direction": 2,
+            "handoff": 0,
+            "fidelity": 2
+          }
+        },
+        "lowell": {
+          "scored": 3,
+          "full": 1,
+          "sufficientByDimension": {
+            "focus": 3,
+            "progression": 3,
+            "evidence": 3,
+            "direction": 3,
+            "handoff": 3,
+            "fidelity": 1
+          }
+        },
+        "all": {
+          "scored": 12,
+          "full": 1,
+          "sufficientByDimension": {
+            "focus": 12,
+            "progression": 11,
+            "evidence": 10,
+            "direction": 8,
+            "handoff": 8,
+            "fidelity": 6
+          }
+        }
+      },
+      "H": {
+        "digital": {
+          "scored": 3,
+          "full": 1,
+          "sufficientByDimension": {
+            "focus": 3,
+            "progression": 3,
+            "evidence": 3,
+            "direction": 2,
+            "handoff": 1,
+            "fidelity": 2
+          }
+        },
+        "webb": {
+          "scored": 3,
+          "full": 2,
+          "sufficientByDimension": {
+            "focus": 3,
+            "progression": 3,
+            "evidence": 3,
+            "direction": 3,
+            "handoff": 3,
+            "fidelity": 2
+          }
+        },
+        "wolf": {
+          "scored": 3,
+          "full": 0,
+          "sufficientByDimension": {
+            "focus": 3,
+            "progression": 3,
+            "evidence": 0,
+            "direction": 3,
+            "handoff": 2,
+            "fidelity": 0
+          }
+        },
+        "lowell": {
+          "scored": 3,
+          "full": 3,
+          "sufficientByDimension": {
+            "focus": 3,
+            "progression": 3,
+            "evidence": 3,
+            "direction": 3,
+            "handoff": 3,
+            "fidelity": 3
+          }
+        },
+        "all": {
+          "scored": 12,
+          "full": 6,
+          "sufficientByDimension": {
+            "focus": 12,
+            "progression": 12,
+            "evidence": 9,
+            "direction": 11,
+            "handoff": 9,
+            "fidelity": 7
+          }
+        }
+      }
+    },
+    "linkedin": {
+      "F": {
+        "digital": {
+          "scored": 3,
+          "full": 0,
+          "sufficientByDimension": {
+            "appeal": 2,
+            "readability": 2,
+            "message": 3,
+            "ending": 0,
+            "handoff": 0,
+            "fidelity": 3
+          }
+        },
+        "webb": {
+          "scored": 0,
+          "full": 0,
+          "sufficientByDimension": {
+            "appeal": 0,
+            "readability": 0,
+            "message": 0,
+            "ending": 0,
+            "handoff": 0,
+            "fidelity": 0
+          }
+        },
+        "wolf": {
+          "scored": 3,
+          "full": 0,
+          "sufficientByDimension": {
+            "appeal": 2,
+            "readability": 2,
+            "message": 3,
+            "ending": 1,
+            "handoff": 1,
+            "fidelity": 1
+          }
+        },
+        "lowell": {
+          "scored": 1,
+          "full": 0,
+          "sufficientByDimension": {
+            "appeal": 1,
+            "readability": 1,
+            "message": 1,
+            "ending": 1,
+            "handoff": 0,
+            "fidelity": 1
+          }
+        },
+        "all": {
+          "scored": 7,
+          "full": 0,
+          "sufficientByDimension": {
+            "appeal": 5,
+            "readability": 5,
+            "message": 7,
+            "ending": 2,
+            "handoff": 1,
+            "fidelity": 5
+          }
+        }
+      },
+      "H": {
+        "digital": {
+          "scored": 2,
+          "full": 0,
+          "sufficientByDimension": {
+            "appeal": 1,
+            "readability": 2,
+            "message": 2,
+            "ending": 1,
+            "handoff": 2,
+            "fidelity": 2
+          }
+        },
+        "webb": {
+          "scored": 2,
+          "full": 0,
+          "sufficientByDimension": {
+            "appeal": 2,
+            "readability": 2,
+            "message": 2,
+            "ending": 0,
+            "handoff": 0,
+            "fidelity": 0
+          }
+        },
+        "wolf": {
+          "scored": 1,
+          "full": 0,
+          "sufficientByDimension": {
+            "appeal": 1,
+            "readability": 1,
+            "message": 1,
+            "ending": 1,
+            "handoff": 0,
+            "fidelity": 0
+          }
+        },
+        "lowell": {
+          "scored": 3,
+          "full": 0,
+          "sufficientByDimension": {
+            "appeal": 3,
+            "readability": 0,
+            "message": 3,
+            "ending": 1,
+            "handoff": 0,
+            "fidelity": 0
+          }
+        },
+        "all": {
+          "scored": 8,
+          "full": 0,
+          "sufficientByDimension": {
+            "appeal": 7,
+            "readability": 5,
+            "message": 8,
+            "ending": 3,
+            "handoff": 2,
+            "fidelity": 2
+          }
+        }
+      }
+    }
+  },
+  "gate": {
+    "linkedin-digital-r1-F": "eligible",
+    "linkedin-digital-r1-H": "eligible",
+    "linkedin-webb-r1-H": "eligible",
+    "linkedin-webb-r1-F": "blocked",
+    "linkedin-wolf-r1-F": "eligible",
+    "linkedin-wolf-r1-H": "executed before fidelity correction",
+    "linkedin-lowell-r1-H": "eligible",
+    "linkedin-lowell-r1-F": "blocked",
+    "linkedin-digital-r2-H": "eligible",
+    "linkedin-digital-r2-F": "eligible",
+    "linkedin-webb-r2-F": "blocked",
+    "linkedin-webb-r2-H": "eligible",
+    "linkedin-wolf-r2-H": "blocked",
+    "linkedin-wolf-r2-F": "executed before fidelity correction",
+    "linkedin-lowell-r2-F": "blocked",
+    "linkedin-lowell-r2-H": "eligible",
+    "linkedin-digital-r3-F": "eligible",
+    "linkedin-digital-r3-H": "blocked",
+    "linkedin-webb-r3-H": "blocked",
+    "linkedin-webb-r3-F": "blocked",
+    "linkedin-wolf-r3-F": "eligible",
+    "linkedin-wolf-r3-H": "blocked",
+    "linkedin-lowell-r3-H": "eligible",
+    "linkedin-lowell-r3-F": "eligible"
+  },
+  "pairs": [
+    "digital-r1-",
+    "digital-r2-"
+  ],
+  "paired": {
+    "F": {
+      "appealEnding": 5,
+      "totalSoft": 15,
+      "tokens": 17356,
+      "usd": 0.0029129
+    },
+    "H": {
+      "appealEnding": 6,
+      "totalSoft": 18,
+      "tokens": 17945,
+      "usd": 0.0030019
+    }
+  }
+}

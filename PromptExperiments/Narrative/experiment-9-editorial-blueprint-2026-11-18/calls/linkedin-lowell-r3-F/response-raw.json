@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ElakIhXatF6p4kDktX5VJ4JuxoUs9",
+  "object": "chat.completion",
+  "created": 1795011374,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"Lowell gebruikte zijn industriële erfgoed niet alleen om oude gebouwen te bewaren. In de jaren zestig stelden inwoners voor om dat erfgoed ook een rol te geven in de vernieuwing van de stad.\\n\\nDe textielwerkgelegenheid was al sterk teruggelopen: van 17.000 banen in 1895 naar 8.000 in 1936, te midden van fabriekssluitingen en vertrek. Een voormalige textielarbeider herinnerde zich dat hij geregeld naar huis werd gestuurd, zonder te weten of er later werk zou zijn.\\n\\nPolitieke en zakelijke leiders steunden het idee van de inwoners; de gemeenteraad onderschreef het in 1972. In 1974 en 1978 volgden erfgoed- en historische parken. Tegen het einde van de jaren zeventig en het begin van de jaren tachtig waren meer dan honderd oude gebouwen opgeknapt en voor nieuwe functies gebruikt. In die periode stegen ook de werkgelegenheid en breidden bedrijven uit. De University of Lowell en Wang Laboratories waren andere ontwikkelingen in de stad.\\n\\nTegen het einde van de jaren tachtig was de hausse voorbij. De regionale economie vertraagde en de computerindustrie kreeg te maken met problemen, waaronder personeelsreducties en herstructurering bij Wang.\\n\\nIn Lowell maakte hergebruik van industrieel erfgoed deel uit van een bredere opleving. Het voorkwam niet dat de economische omstandigheden later opnieuw verslechterden.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6152,
+    "completion_tokens": 1350,
+    "total_tokens": 7502,
+    "prompt_tokens_details": {
+      "cached_tokens": 1950,
+      "cache_write_tokens": 4199,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1024,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ElacjzgDwcZ9itHRjskXxJtNXcEJg",
+  "object": "chat.completion",
+  "created": 1795010905,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"**Selected Story**\\nYellowstone’s wolves are part of a living network: they hunt and care for young as social groups, and their kills feed other animals. Changes in what they prey on—and in their impacts—also occur amid several interacting conditions, complicating the idea that one predator controls an ecosystem.\\n\\n**Story Progression**\\n- **Context:** Yellowstone wolf packs are social families. Cooperative care of offspring and group hunting are among the benefits the source associates with living socially. Their kills also provide food for animals including ravens, coyotes, bears and invertebrates.\\n- **Development:** The composition of wolf prey changed over time: the relative shares of elk calves and bull elk among early-winter prey reversed between 1995–2000 and 2001–2007. The source links such changes to prey vulnerability and availability, while describing wolf predation and elk impacts as occurring amid other predators, ungulate management outside the park and weather.\\n\\n**Evidence/Observed Results**\\nThe source identifies packs as social families and describes cooperative offspring care and group hunting. It reports that wolf kills feed a range of other animals. It also documents the reversal in the relative composition of early-winter prey across the two stated periods. Research is examining the roles of other predators, management outside the park and weather in changing predation and elk impacts.\\n\\n**Editorial Conclusion**\\nYellowstone’s wolves matter through relationships—with pack members, prey and scavengers—but their changing impacts cannot be reduced to a single predator directing the ecosystem. The source presents those impacts in the context of several interacting conditions.\\n\\n**Critical Constraints**\\nDo not assign relative weight to the listed factors: the source does not quantify their contributions. It does not establish measured plant effects or an ecosystem-wide cascade, or show that pack social behavior alone determines population or ecosystem outcomes.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 786,
+    "completion_tokens": 601,
+    "total_tokens": 1387,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 200,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

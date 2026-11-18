@@ -1,0 +1,11 @@
+**Selected Story** Yellowstone’s wolven zijn geen afzonderlijke schakels die het ecosysteem op eigen kracht sturen. Hun sociale samenwerking en prooien verbinden ze met andere dieren, terwijl veranderingen in predatie en de gevolgen daarvan samenvallen met meerdere omstandigheden.
+
+**Story Progression**
+- **Context:** Wolven leven in sociale familiegroepen. Samen jagen en voor hun jongen zorgen zijn voorbeelden van hoe hun gedrag verder reikt dan de individuele wolf.
+- **Development:** Ook een gedode prooi wordt onderdeel van die relaties: andere dieren eten ervan. Tegelijk veranderde de samenstelling van de prooien van wolven door de tijd heen. Dat verloop plaatst wolvenpredatie in een bredere context van onder meer andere roofdieren, beheer van hoefdieren buiten het park en het weer.
+
+**Evidence/Observed Results** De bron beschrijft wolvenroedels als sociale families met gezamenlijke jacht en zorg voor jongen. Wolvendoden leveren voedsel aan onder andere raven, coyotes, beren en ongewervelden. Het aandeel van elandkalveren en mannelijke elanden in de vroege-winterprooien vertoonde een omkering tussen 1995–2000 en 2001–2007; de bron verbindt zulke verschuivingen met de beschikbaarheid en kwetsbaarheid van prooien. Onderzoek kijkt ook naar de mogelijke rol van andere roofdieren, beheer buiten het park en weersomstandigheden.
+
+**Editorial Conclusion** Yellowstone laat zien waarom de wolf beter begrepen kan worden als deelnemer aan een netwerk van sociale en voedselrelaties dan als eenzame regisseur van het ecosysteem. De waargenomen veranderingen maken die relaties concreet, maar wijzen niet één oorzaak aan.
+
+**Critical Constraints** De bron kwantificeert niet hoeveel elk van de genoemde factoren bijdraagt en stelt geen gemeten planteneffect of ecosysteembrede cascade vast. Schrijf veranderingen daarom niet uitsluitend aan wolven toe.

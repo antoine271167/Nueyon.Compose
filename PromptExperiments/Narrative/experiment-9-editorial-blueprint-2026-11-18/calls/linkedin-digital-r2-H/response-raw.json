@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ElaefPQ5AdDOA9IHNQrFO65PyyEaT",
+  "object": "chat.completion",
+  "created": 1795011025,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"Het POA-refundteam kreeg de opdracht om binnen enkele weken een nieuwe dienst te leveren. Het team concludeerde dat die termijn niet haalbaar was zonder in te leveren op de kwaliteit van de gebruikersdienst. De publieke lancering volgde na twaalf weken.\\n\\nOnder die tijdsdruk koos het team ervoor eerst de ervaring van aanvragers naar alpha te brengen. De plannen voor caseworkers werkten ze later uit: caseworkers waren nog geen gebruikers van de nieuwe dienst, en het team wilde geen aannames doen.\\n\\nOok tijdens de private beta reserveerde het team tijd voor onderzoek en testen. In de eerste week van elke tweewekelijkse sprint onderzocht en testte het team de dienst, terwijl het aanvragen aannam. In de tweede week pauzeerde het nieuwe inzendingen, zodat er tijd was voor testen, onderzoek en verwerking.\\n\\nDe dienst was digitaal en assisted-digital, zonder papieren versie. Vijf weken na de publieke lancering had de dienst meer dan 100.000 aanvragen ontvangen. De gerapporteerde gebruikerstevredenheid was 92,6% en het voltooiingspercentage 80,2%.\\n\\nVoor dit team betekende tempo dus: eerst de aanvragerservaring, en onderzoek en testen een vaste plek geven in het werkritme.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6124,
+    "completion_tokens": 1216,
+    "total_tokens": 7340,
+    "prompt_tokens_details": {
+      "cached_tokens": 1950,
+      "cache_write_tokens": 4171,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 926,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

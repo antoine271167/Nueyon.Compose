@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-Elac2tpAvOIq9yRtirnZQ9RVCw1eq",
+  "object": "chat.completion",
+  "created": 1795010862,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"**Selected Story** Yellowstone’s wolven zijn geen afzonderlijke schakels die het ecosysteem op eigen kracht sturen. Hun sociale samenwerking en prooien verbinden ze met andere dieren, terwijl veranderingen in predatie en de gevolgen daarvan samenvallen met meerdere omstandigheden.\\n\\n**Story Progression**\\n- **Context:** Wolven leven in sociale familiegroepen. Samen jagen en voor hun jongen zorgen zijn voorbeelden van hoe hun gedrag verder reikt dan de individuele wolf.\\n- **Development:** Ook een gedode prooi wordt onderdeel van die relaties: andere dieren eten ervan. Tegelijk veranderde de samenstelling van de prooien van wolven door de tijd heen. Dat verloop plaatst wolvenpredatie in een bredere context van onder meer andere roofdieren, beheer van hoefdieren buiten het park en het weer.\\n\\n**Evidence/Observed Results** De bron beschrijft wolvenroedels als sociale families met gezamenlijke jacht en zorg voor jongen. Wolvendoden leveren voedsel aan onder andere raven, coyotes, beren en ongewervelden. Het aandeel van elandkalveren en mannelijke elanden in de vroege-winterprooien vertoonde een omkering tussen 1995–2000 en 2001–2007; de bron verbindt zulke verschuivingen met de beschikbaarheid en kwetsbaarheid van prooien. Onderzoek kijkt ook naar de mogelijke rol van andere roofdieren, beheer buiten het park en weersomstandigheden.\\n\\n**Editorial Conclusion** Yellowstone laat zien waarom de wolf beter begrepen kan worden als deelnemer aan een netwerk van sociale en voedselrelaties dan als eenzame regisseur van het ecosysteem. De waargenomen veranderingen maken die relaties concreet, maar wijzen niet één oorzaak aan.\\n\\n**Critical Constraints** De bron kwantificeert niet hoeveel elk van de genoemde factoren bijdraagt en stelt geen gemeten planteneffect of ecosysteembrede cascade vast. Schrijf veranderingen daarom niet uitsluitend aan wolven toe.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 786,
+    "completion_tokens": 628,
+    "total_tokens": 1414,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 197,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

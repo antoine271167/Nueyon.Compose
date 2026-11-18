@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ElailiIqvMZF8pw9rl6ADKAldKPoE",
+  "object": "chat.completion",
+  "created": 1795011279,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"De uitvouwing van de James Webb-ruimtetelescoop was een mijlpaal. Maar Webb was daarmee nog niet klaar voor routinematige wetenschappelijke waarnemingen.\\n\\nOm in de neuskegel van een Ariane 5-raket te passen, moest de telescoop opgevouwen worden. Het uitvouwen omvatte meer dan 50 grote stappen en ruim 300 mogelijke afzonderlijke faalpunten. Elk had de missie kunnen beperken of stilleggen, terwijl reparatie op Webb’s afstand van de aarde niet mogelijk was.\\n\\nDe uitvouwing verliep soepel. In de tweede week waren de secundaire spiegel en beide vleugels van de primaire spiegel uitgeklapt en vergrendeld. Webb had zijn operationele configuratie bereikt.\\n\\nDaarna volgde de ingebruikname. In de eerste maand koelden de telescoop en instrumenten enkele weken af. De spiegeluitlijning nam maand twee tot en met vier in beslag; in maand vijf en zes werden de instrumentmodi gekalibreerd.\\n\\nPas na zes maanden begon Webb aan routinematige wetenschappelijke waarnemingen. De uitvouwing bracht de telescoop in zijn operationele vorm. De ingebruikname maakte de weg vrij voor de wetenschap die daarna kon beginnen.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5986,
+    "completion_tokens": 507,
+    "total_tokens": 6493,
+    "prompt_tokens_details": {
+      "cached_tokens": 1950,
+      "cache_write_tokens": 4033,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 222,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

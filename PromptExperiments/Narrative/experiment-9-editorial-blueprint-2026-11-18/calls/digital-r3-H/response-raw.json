@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ElacSZ92uGTxsBUs9LZq8llOGGg3o",
+  "object": "chat.completion",
+  "created": 1795010888,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"Centrale boodschap: het POA-refundteam beschrijft hoe het onder tijdsdruk een dienst in twaalf weken lanceerde door eerst de aanvragerservaring uit te werken en tijdens private beta tijd voor onderzoek en testen in te plannen. Dit is een verslag van de keuzes van dit team, geen bewezen verklaring voor de lanceringsduur of uitkomsten en geen universeel recept.\\n\\nOntwikkel het verhaal van de tijdsdruk naar de gemaakte ontwerpkeuzes: het team was aanvankelijk gevraagd binnen enkele weken te leveren, maar vond dat niet haalbaar met behoud van een kwalitatieve gebruikersdienst. Het bracht eerst de aanvragerservaring naar alpha en werkte plannen voor caseworkers later uit; volgens de auteur waren caseworkers nog geen bestaande gebruikers van deze nieuwe dienst en wilde het team aannames vermijden. Beschrijf vervolgens het ritme tijdens private beta: tweewekelijkse sprints, met in de eerste week testen, onderzoek en aanvragen aannemen, en in de tweede week aanvragen pauzeren voor testen, onderzoek en verwerking.\\n\\nNeem als context op dat de dienst digitaal en assisted-digital was, zonder papieren versie. De bron legt niet uit welke hulp de assisted-digital route bood; vul dat niet in. De auteur rapporteert dat de dienst na vijf weken publiek beschikbaar meer dan 100.000 aanvragen had ontvangen, met 92,6% gebruikerstevredenheid en een voltooiingspercentage van 80,2%. Presenteer dit uitsluitend als gerapporteerde stand van zaken: definities, meetmethode en vergelijking ontbreken, en de cijfers bewijzen niet dat de ontwerpkeuzes ze veroorzaakten.\\n\\nDe dragende spanning is de ambitie om snel te leveren tegenover de keuze om gebruikersvolgorde en onderzoekstijd in de aanpak op te nemen. Laat de beschreven richting van dit team het verhaal dragen, zonder er een voorschrift voor andere diensten van te maken. Houd de twaalf weken tot lancering en de resultaten na vijf weken publieke beschikbaarheid als afzonderlijke tijdsaanduidingen; het startpunt van de twaalf weken is niet gegeven. Laat formulering, slot en format aan Compose.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 909,
+    "completion_tokens": 552,
+    "total_tokens": 1461,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 99,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

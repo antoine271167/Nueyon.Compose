@@ -1,0 +1,15 @@
+**Selected Story**
+Lowell gebruikte zijn industriële erfgoed als onderdeel van een bredere poging tot vernieuwing: inwoners zetten zich in voor behoud en hergebruik van oude gebouwen, terwijl de stad ook andere ontwikkelingen doormaakte. Volgens een historisch verslag uit 1992 volgde op de opleving een economische terugval. Het verhaal laat zien hoe tastbare plekken en samenwerking een omslag vormgaven, zonder die tot een eenvoudig of blijvend succes te maken.
+
+**Story Progression**
+- **Context:** De textielwerkgelegenheid daalde van 17.000 banen in 1895 naar 8.000 in 1936, te midden van fabriekssluitingen en vertrek. Een voormalige textielarbeider herinnerde zich dat hij herhaaldelijk naar huis werd gestuurd zonder te weten of er werk zou zijn.
+- **Development:** In de jaren zestig stelden inwoners voor het architectonische en culturele erfgoed te benutten voor vernieuwing. Politieke en zakelijke leiders steunden het plan; de gemeenteraad onderschreef het in 1972. Erfgoed- en historische parken volgden in 1974 en 1978. De daaropvolgende opleving maakte deel uit van bredere veranderingen, en hield geen stand zonder onderbreking.
+
+**Evidence/Observed Results**
+Het verslag meldt dat in de late jaren zeventig en vroege jaren tachtig meer dan honderd oude gebouwen werden opgeknapt en voor nieuwe functies gebruikt, naast stijgende werkgelegenheid en uitbreiding van bedrijven. Het noemt ook de University of Lowell en Wang Laboratories als afzonderlijke ontwikkelingen uit de jaren zeventig. Tegen het einde van de jaren tachtig was de hausse voorbij: de regionale economie vertraagde en de computerindustrie kampte met problemen, waaronder personeelsreducties en herstructurering bij Wang.
+
+**Editorial Conclusion**
+Lowells erfgoed hielp een andere bestemming te geven aan gebouwen en maakte deel uit van een bredere opleving. De latere terugval onderstreept dat behoud en hergebruik economische verandering niet op zichzelf opheffen.
+
+**Critical Constraints**
+Behandel dit als het perspectief van een historisch verslag uit 1992, niet als een actuele meting. Schrijf de opleving niet uitsluitend toe aan de parken of erfgoedprojecten: het verslag kwantificeert de afzonderlijke bijdragen van die projecten, de universiteit, Wang en andere factoren niet. Het stelt evenmin vast of de opleving na de terugval voortduurde.

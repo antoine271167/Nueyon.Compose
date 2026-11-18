@@ -1,0 +1,401 @@
+{
+  "ratesPerMillionUsd": {
+    "input": 0.1,
+    "cached": 0.01,
+    "output": 0.5
+  },
+  "pricingBasis": "Standard estimate, not invoice",
+  "source": "https://developers.openai.com/api/docs/models/gpt-6-luna",
+  "usage": [
+    {
+      "id": "digital-r1-F",
+      "stage": "narrative",
+      "arm": "F",
+      "input": 992,
+      "cached": 0,
+      "output": 544,
+      "total": 1536,
+      "usd": 0.00037119999999999997
+    },
+    {
+      "id": "digital-r1-H",
+      "stage": "narrative",
+      "arm": "H",
+      "input": 909,
+      "cached": 0,
+      "output": 601,
+      "total": 1510,
+      "usd": 0.00039139999999999997
+    },
+    {
+      "id": "webb-r1-H",
+      "stage": "narrative",
+      "arm": "H",
+      "input": 724,
+      "cached": 0,
+      "output": 782,
+      "total": 1506,
+      "usd": 0.0004634
+    },
+    {
+      "id": "webb-r1-F",
+      "stage": "narrative",
+      "arm": "F",
+      "input": 807,
+      "cached": 0,
+      "output": 512,
+      "total": 1319,
+      "usd": 0.0003367
+    },
+    {
+      "id": "wolf-r1-F",
+      "stage": "narrative",
+      "arm": "F",
+      "input": 786,
+      "cached": 0,
+      "output": 526,
+      "total": 1312,
+      "usd": 0.0003416
+    },
+    {
+      "id": "wolf-r1-H",
+      "stage": "narrative",
+      "arm": "H",
+      "input": 703,
+      "cached": 0,
+      "output": 457,
+      "total": 1160,
+      "usd": 0.0002988
+    },
+    {
+      "id": "lowell-r1-H",
+      "stage": "narrative",
+      "arm": "H",
+      "input": 840,
+      "cached": 0,
+      "output": 575,
+      "total": 1415,
+      "usd": 0.0003715
+    },
+    {
+      "id": "lowell-r1-F",
+      "stage": "narrative",
+      "arm": "F",
+      "input": 923,
+      "cached": 0,
+      "output": 598,
+      "total": 1521,
+      "usd": 0.0003913
+    },
+    {
+      "id": "digital-r2-H",
+      "stage": "narrative",
+      "arm": "H",
+      "input": 909,
+      "cached": 0,
+      "output": 789,
+      "total": 1698,
+      "usd": 0.0004854
+    },
+    {
+      "id": "digital-r2-F",
+      "stage": "narrative",
+      "arm": "F",
+      "input": 992,
+      "cached": 0,
+      "output": 599,
+      "total": 1591,
+      "usd": 0.0003987
+    },
+    {
+      "id": "webb-r2-F",
+      "stage": "narrative",
+      "arm": "F",
+      "input": 807,
+      "cached": 0,
+      "output": 514,
+      "total": 1321,
+      "usd": 0.00033769999999999997
+    },
+    {
+      "id": "webb-r2-H",
+      "stage": "narrative",
+      "arm": "H",
+      "input": 724,
+      "cached": 0,
+      "output": 527,
+      "total": 1251,
+      "usd": 0.0003359
+    },
+    {
+      "id": "wolf-r2-H",
+      "stage": "narrative",
+      "arm": "H",
+      "input": 703,
+      "cached": 0,
+      "output": 634,
+      "total": 1337,
+      "usd": 0.00038730000000000004
+    },
+    {
+      "id": "wolf-r2-F",
+      "stage": "narrative",
+      "arm": "F",
+      "input": 786,
+      "cached": 0,
+      "output": 628,
+      "total": 1414,
+      "usd": 0.0003926
+    },
+    {
+      "id": "lowell-r2-F",
+      "stage": "narrative",
+      "arm": "F",
+      "input": 923,
+      "cached": 0,
+      "output": 619,
+      "total": 1542,
+      "usd": 0.0004018
+    },
+    {
+      "id": "lowell-r2-H",
+      "stage": "narrative",
+      "arm": "H",
+      "input": 840,
+      "cached": 0,
+      "output": 470,
+      "total": 1310,
+      "usd": 0.000319
+    },
+    {
+      "id": "digital-r3-F",
+      "stage": "narrative",
+      "arm": "F",
+      "input": 992,
+      "cached": 0,
+      "output": 598,
+      "total": 1590,
+      "usd": 0.0003982
+    },
+    {
+      "id": "digital-r3-H",
+      "stage": "narrative",
+      "arm": "H",
+      "input": 909,
+      "cached": 0,
+      "output": 552,
+      "total": 1461,
+      "usd": 0.0003669
+    },
+    {
+      "id": "webb-r3-H",
+      "stage": "narrative",
+      "arm": "H",
+      "input": 724,
+      "cached": 0,
+      "output": 544,
+      "total": 1268,
+      "usd": 0.00034439999999999997
+    },
+    {
+      "id": "webb-r3-F",
+      "stage": "narrative",
+      "arm": "F",
+      "input": 807,
+      "cached": 0,
+      "output": 499,
+      "total": 1306,
+      "usd": 0.0003302
+    },
+    {
+      "id": "wolf-r3-F",
+      "stage": "narrative",
+      "arm": "F",
+      "input": 786,
+      "cached": 0,
+      "output": 601,
+      "total": 1387,
+      "usd": 0.0003791
+    },
+    {
+      "id": "wolf-r3-H",
+      "stage": "narrative",
+      "arm": "H",
+      "input": 703,
+      "cached": 0,
+      "output": 495,
+      "total": 1198,
+      "usd": 0.0003178
+    },
+    {
+      "id": "lowell-r3-H",
+      "stage": "narrative",
+      "arm": "H",
+      "input": 840,
+      "cached": 0,
+      "output": 619,
+      "total": 1459,
+      "usd": 0.0003935
+    },
+    {
+      "id": "lowell-r3-F",
+      "stage": "narrative",
+      "arm": "F",
+      "input": 923,
+      "cached": 0,
+      "output": 604,
+      "total": 1527,
+      "usd": 0.0003943
+    },
+    {
+      "id": "linkedin-digital-r1-F",
+      "stage": "linkedin",
+      "arm": "F",
+      "input": 5967,
+      "cached": 0,
+      "output": 766,
+      "total": 6733,
+      "usd": 0.0009797
+    },
+    {
+      "id": "linkedin-digital-r1-H",
+      "stage": "linkedin",
+      "arm": "H",
+      "input": 6107,
+      "cached": 1950,
+      "output": 1290,
+      "total": 7397,
+      "usd": 0.0010802000000000001
+    },
+    {
+      "id": "linkedin-webb-r1-H",
+      "stage": "linkedin",
+      "arm": "H",
+      "input": 6123,
+      "cached": 1950,
+      "output": 526,
+      "total": 6649,
+      "usd": 0.0006998
+    },
+    {
+      "id": "linkedin-wolf-r1-F",
+      "stage": "linkedin",
+      "arm": "F",
+      "input": 5953,
+      "cached": 1950,
+      "output": 619,
+      "total": 6572,
+      "usd": 0.0007293
+    },
+    {
+      "id": "linkedin-wolf-r1-H",
+      "stage": "linkedin",
+      "arm": "H",
+      "input": 5940,
+      "cached": 1950,
+      "output": 980,
+      "total": 6920,
+      "usd": 0.0009085
+    },
+    {
+      "id": "linkedin-lowell-r1-H",
+      "stage": "linkedin",
+      "arm": "H",
+      "input": 6044,
+      "cached": 1950,
+      "output": 1210,
+      "total": 7254,
+      "usd": 0.0010339000000000001
+    },
+    {
+      "id": "linkedin-digital-r2-H",
+      "stage": "linkedin",
+      "arm": "H",
+      "input": 6124,
+      "cached": 1950,
+      "output": 1216,
+      "total": 7340,
+      "usd": 0.0010449
+    },
+    {
+      "id": "linkedin-digital-r2-F",
+      "stage": "linkedin",
+      "arm": "F",
+      "input": 6023,
+      "cached": 1950,
+      "output": 1473,
+      "total": 7496,
+      "usd": 0.0011633
+    },
+    {
+      "id": "linkedin-webb-r2-H",
+      "stage": "linkedin",
+      "arm": "H",
+      "input": 5986,
+      "cached": 1950,
+      "output": 507,
+      "total": 6493,
+      "usd": 0.0006766000000000001
+    },
+    {
+      "id": "linkedin-wolf-r2-F",
+      "stage": "linkedin",
+      "arm": "F",
+      "input": 6041,
+      "cached": 1950,
+      "output": 524,
+      "total": 6565,
+      "usd": 0.0006906
+    },
+    {
+      "id": "linkedin-lowell-r2-H",
+      "stage": "linkedin",
+      "arm": "H",
+      "input": 6010,
+      "cached": 1950,
+      "output": 1003,
+      "total": 7013,
+      "usd": 0.000927
+    },
+    {
+      "id": "linkedin-digital-r3-F",
+      "stage": "linkedin",
+      "arm": "F",
+      "input": 6035,
+      "cached": 1950,
+      "output": 1101,
+      "total": 7136,
+      "usd": 0.0009785
+    },
+    {
+      "id": "linkedin-wolf-r3-F",
+      "stage": "linkedin",
+      "arm": "F",
+      "input": 6003,
+      "cached": 1950,
+      "output": 310,
+      "total": 6313,
+      "usd": 0.0005798
+    },
+    {
+      "id": "linkedin-lowell-r3-H",
+      "stage": "linkedin",
+      "arm": "H",
+      "input": 6050,
+      "cached": 1950,
+      "output": 1126,
+      "total": 7176,
+      "usd": 0.0009925
+    },
+    {
+      "id": "linkedin-lowell-r3-F",
+      "stage": "linkedin",
+      "arm": "F",
+      "input": 6152,
+      "cached": 1950,
+      "output": 1350,
+      "total": 7502,
+      "usd": 0.0011147000000000002
+    }
+  ]
+}

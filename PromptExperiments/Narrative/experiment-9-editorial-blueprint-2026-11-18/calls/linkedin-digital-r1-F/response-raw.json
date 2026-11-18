@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-Eladf1bQi9EPcurCn47H0eJNxBq24",
+  "object": "chat.completion",
+  "created": 1795010963,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"Het POA-refundteam kreeg de opdracht om een refunddienst binnen enkele weken op te leveren. Het team concludeerde dat die planning niet haalbaar was als de dienst ook kwalitatief moest zijn. De dienst ging uiteindelijk na twaalf weken van start.\\n\\nDe ontwikkeling verliep stap voor stap: eerst werkte het team aan de ervaring van aanvragers en bracht die naar alpha. De plannen voor caseworkers kwamen later. Tijdens de private beta reserveerde het team in elke sprint van twee weken tijd voor onderzoek en testen, naast het aannemen en verwerken van aanvragen.\\n\\nDe dienst was digitaal en assisted-digital, zonder papieren versie. Na vijf weken publiek beschikbaar had de dienst meer dan 100.000 aanvragen ontvangen. De gerapporteerde gebruikerstevredenheid was 92,6% en het voltooiingspercentage 80,2%.\\n\\nZo combineerde de aanpak een gefaseerde focus op gebruikersgroepen met vaste ruimte voor onderzoek en testen tijdens het werk aan de dienst.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5967,
+    "completion_tokens": 766,
+    "total_tokens": 6733,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 5964,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 539,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

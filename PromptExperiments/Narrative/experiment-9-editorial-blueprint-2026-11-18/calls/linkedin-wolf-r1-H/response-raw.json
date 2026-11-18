@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ElaeHtsjcBVd1xabe0erhr4An9TiH",
+  "object": "chat.completion",
+  "created": 1795011001,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"Een wolvenroedel jaagt samen, maar de relaties rond Yellowstone-wolven reiken verder dan de jacht.\\n\\nRoedels zijn sociale families: ze verzorgen samen de jongen en jagen in groepsverband. En wanneer wolven een prooi doden, wordt het karkas voedsel voor onder meer raven, coyotes, beren en ongewervelden.\\n\\nOok de prooikeuze kan veranderen. Tussen 1995–2000 en 2001–2007 keerde de verhouding tussen elandkalveren en stierelanden in de vroege-winterprooi om. Zulke veranderingen hangen samen met welke prooien beschikbaar en kwetsbaar zijn.\\n\\nDe effecten van predatie op elanden staan bovendien mogelijk in wisselwerking met andere roofdieren, het beheer van hoefdieren buiten het park en het weer. Wolven zijn dus een zichtbare schakel in Yellowstone’s voedselrelaties, maar veranderingen rond predatie spelen zich af te midden van meerdere factoren.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5940,
+    "completion_tokens": 980,
+    "total_tokens": 6920,
+    "prompt_tokens_details": {
+      "cached_tokens": 1950,
+      "cache_write_tokens": 3987,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 751,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

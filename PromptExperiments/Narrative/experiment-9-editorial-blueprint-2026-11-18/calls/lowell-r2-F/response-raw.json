@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-Elac9BW9JOB5PWpza819KX55C9DK1",
+  "object": "chat.completion",
+  "created": 1795010869,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"**Selected Story**\\nLowell’s shift from textile decline to heritage-led redevelopment brought new uses for old industrial buildings, but the 1992 historical account also records a downturn by the late 1980s. Its story is one of change and partial revival, not a simple or lasting escape from economic uncertainty.\\n\\n**Story Progression**\\n- **Context:** Textile employment fell from 17,000 in 1895 to 8,000 by 1936 as mills closed and people left. One worker recalled repeatedly being sent home without knowing whether work would be available.\\n- **Development:** In the 1960s, Lowell citizens proposed building revitalization around the city’s architectural and cultural heritage. Political and business leaders supported the effort; the city council endorsed it in 1972, followed by heritage and historical parks in 1974 and 1978. The account then describes building reuse and expanding activity, before noting a late-1980s reversal.\\n\\n**Evidence/Observed Results**\\nThe account reports that more than 100 old buildings were rehabilitated for new uses in the late 1970s and early 1980s, alongside rising employment and business expansion. It also identifies the University of Lowell and Wang Laboratories as separate developments of the 1970s. By the late 1980s, a regional slowdown and difficulties in the computer industry—including Wang workforce cuts and restructuring—had ended the boom.\\n\\n**Editorial Conclusion**\\nLowell’s heritage effort shows how a city’s industrial past could become part of redevelopment, with building reuse as a tangible result. But the subsequent downturn makes clear that preservation and renewed activity did not shield the city from wider economic change.\\n\\n**Critical Constraints**\\nTreat this as the perspective of a 1992 historical account, not a current measure of Lowell. The source does not quantify the separate contributions of parks, preservation, the university, Wang, or other factors, and does not establish what happened after 1992.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 923,
+    "completion_tokens": 619,
+    "total_tokens": 1542,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 189,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

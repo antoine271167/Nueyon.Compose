@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ElaizwyRWqjaaaeQPIrKP0gVijHGB",
+  "object": "chat.completion",
+  "created": 1795011293,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"Lowell gaf zijn industriële verleden nieuwe functies, maar ontsnapte niet aan de economische neergang.\\n\\nDe textielwerkgelegenheid daalde van 17.000 banen in 1895 naar 8.000 in 1936. Een arbeider herinnerde zich dat hij herhaaldelijk naar huis werd gestuurd, zonder te weten of er later werk zou zijn.\\n\\nIn de jaren zestig ontstond een burgerinitiatief om het architectonische en culturele erfgoed onderdeel te maken van de revitalisering van de stad. Politieke en zakelijke leiders steunden het initiatief. De gemeenteraad onderschreef de aanpak in 1972; in 1974 en 1978 volgden erfgoed- en historische parken.\\n\\nDaarna kregen meer dan honderd oude gebouwen een nieuwe bestemming. In de late jaren zeventig en vroege jaren tachtig stegen ook de werkgelegenheid en bedrijfsuitbreiding. De University of Lowell en Wang Laboratories waren andere, afzonderlijke ontwikkelingen in dat decennium — niet de enige verklaring voor de veranderingen in Lowell.\\n\\nTegen het einde van de jaren tachtig was de hausse voorbij. Een regionale vertraging en problemen in de computerindustrie drukten op de stad; Wang kromp het personeelsbestand in en herstructureerde.\\n\\nLowells erfgoed en de nieuwe functies voor oude gebouwen maakten vernieuwing zichtbaar. Maar die vernieuwing betekende niet dat de economische omslag volledig of blijvend was.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6010,
+    "completion_tokens": 1003,
+    "total_tokens": 7013,
+    "prompt_tokens_details": {
+      "cached_tokens": 1950,
+      "cache_write_tokens": 4057,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 674,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}
