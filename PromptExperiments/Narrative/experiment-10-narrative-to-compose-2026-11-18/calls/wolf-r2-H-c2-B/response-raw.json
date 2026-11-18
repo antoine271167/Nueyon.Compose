@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-Elb1SjNVvYc88sGJUaCvVLzPDTcFc",
+  "object": "chat.completion",
+  "created": 1795012438,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{ \"content\": \"Yellowstone’s wolven leven en jagen als roedel: ze zorgen samen voor hun jongen en jagen in groepsverband. Maar hun rol reikt verder dan de jacht. Karkassen bieden ook voedsel aan raven, coyotes, beren en ongewervelden.\\n\\nOok het menu van de wolven verandert. In de vroege winter sloeg de verhouding tussen elandkalveren en volwassen stieren in hun dieet om tussen 1995–2000 en 2001–2007. Zulke verschuivingen hangen samen met hoe beschikbaar en kwetsbaar prooien zijn.\\n\\nTegelijk hangen veranderingen in predatie en de impact op elanden samen met meer dan wolven alleen: ook andere roofdieren, het beheer van hoefdieren buiten het park en het weer spelen mee. Hoe groot de bijdrage van elk is, wordt nog onderzocht.\\n\\nYellowstone laat zich dus niet eenvoudig verklaren door één roofdier als bestuurder. Het gaat om een netwerk van relaties en omstandigheden, waarvan de afzonderlijke bijdragen nog niet volledig zijn vastgesteld.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6060,
+    "completion_tokens": 988,
+    "total_tokens": 7048,
+    "prompt_tokens_details": {
+      "cached_tokens": 6057,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 745,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

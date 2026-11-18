@@ -1,0 +1,9 @@
+Het POA-refundteam kreeg aanvankelijk de vraag om een dienst binnen enkele weken op te leveren. Dat vond het niet haalbaar zonder de kwaliteit van de gebruikersdienst aan te tasten. De dienst werd uiteindelijk in twaalf weken gelanceerd.
+
+De eerste stap was de ervaring van aanvragers: die werd uitgewerkt en naar alpha gebracht. De plannen voor caseworkers kwamen later. Zij waren nog geen bestaande gebruikers van deze nieuwe dienst, en het team wilde aannames over hun behoeften vermijden.
+
+Ook tijdens de private beta was er vaste ruimte voor onderzoek en testen. De sprints duurden twee weken. In de eerste week nam de dienst aanvragen aan, terwijl er ook werd getest en onderzoek gedaan. In de tweede week werden nieuwe aanvragen gepauzeerd, zodat testen, onderzoek en verwerking konden doorgaan.
+
+De dienst was digitaal en assisted-digital, zonder papieren versie. Na vijf weken publieke beschikbaarheid rapporteerde de auteur meer dan 100.000 aanvragen, 92,6% gebruikerstevredenheid en een voltooiingspercentage van 80,2%.
+
+De aanpak combineerde de ambitie om snel te lanceren met een duidelijke volgorde: eerst de aanvragerservaring, en ook tijdens de beta ruimte voor onderzoek en testen.

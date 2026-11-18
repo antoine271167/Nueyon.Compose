@@ -1,0 +1,7 @@
+De James Webb-ruimtetelescoop moest opgevouwen worden om in de neuskegel van een Ariane 5-raket te passen. In de tweede week na de lancering waren de secundaire spiegel en de twee vleugels van de primaire spiegel uitgeklapt en vergrendeld. Webb had zijn operationele configuratie bereikt.
+
+Dat was een grote mijlpaal, maar nog niet het begin van routinematige wetenschap. De uitvouwing omvatte meer dan 50 grote stappen en ruim 300 mogelijke afzonderlijke faalpunten. Elk daarvan had de missie kunnen beperken of verlammen; op Webb’s afstand van de aarde was herstel niet mogelijk. De inzet verliep soepel.
+
+Daarna volgde een ingebruikname van zes maanden. In de eerste maand koelden de telescoop en instrumenten enkele weken af. In maanden twee tot en met vier werden de spiegels uitgelijnd. In maanden vijf en zes werden de instrumentmodi gekalibreerd.
+
+Pas na die stappen begon Webb aan routinematige wetenschappelijke waarnemingen. Uitgevouwen was dus niet hetzelfde als klaar voor routinewetenschap: het was het begin van een langere ingebruikname.

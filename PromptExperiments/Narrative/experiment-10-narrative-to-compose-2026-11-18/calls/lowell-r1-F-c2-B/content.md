@@ -1,0 +1,9 @@
+Lowell’s revival in the 1970s and early 1980s was part of a longer story of economic change—not a straight path from decline to recovery.
+
+Textile employment fell from 17,000 in 1895 to 8,000 by 1936 as mills closed and people left. In the 1960s, Lowell citizens proposed revitalizing the city around its architectural and cultural heritage. The city council endorsed the effort in 1972; heritage and historical parks followed in 1974 and 1978.
+
+In the late 1970s and early 1980s, more than 100 old buildings were rehabilitated for new uses, alongside rising employment and business expansion. The University of Lowell and Wang Laboratories were also separate developments of the 1970s.
+
+By the late 1980s, a regional slowdown and difficulties in the computer industry—including workforce cuts and restructuring at Wang—had ended the boom.
+
+Reusing Lowell’s industrial heritage was a tangible part of its revival. The downturn that followed shows that the revival unfolded amid continuing economic change.

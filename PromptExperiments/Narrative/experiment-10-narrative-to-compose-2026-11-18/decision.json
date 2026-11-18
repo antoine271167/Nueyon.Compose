@@ -1,0 +1,1602 @@
+{
+  "decision": "NO-GO",
+  "gates": {
+    "coverage": true,
+    "fewerNewErrors": true,
+    "noNewPairedErrors": false,
+    "safeFidelity": false,
+    "inherited": true,
+    "editorialOverall": false,
+    "editorialPerTopic": false,
+    "noAggregateEditorialLoss": false,
+    "maxThreeEditorialRegressions": true,
+    "totalTokens": true,
+    "estimatedCost": false
+  },
+  "a": {
+    "posts": 16,
+    "fidelity": 5,
+    "inherited": 6,
+    "added": 6,
+    "editorial": 169,
+    "editorialFull": 2,
+    "dimensionPasses": [
+      15,
+      13,
+      14,
+      15,
+      3,
+      14
+    ],
+    "input": 96712,
+    "cached": 80397,
+    "output": 15723,
+    "total": 112435,
+    "usd": 0.01029697
+  },
+  "b": {
+    "posts": 16,
+    "fidelity": 7,
+    "inherited": 6,
+    "added": 3,
+    "editorial": 171,
+    "editorialFull": 2,
+    "dimensionPasses": [
+      14,
+      16,
+      14,
+      16,
+      2,
+      15
+    ],
+    "input": 97672,
+    "cached": 64412,
+    "output": 16486,
+    "total": 114158,
+    "usd": 0.012213120000000003
+  },
+  "byTopic": {
+    "digital": [
+      {
+        "posts": 4,
+        "fidelity": 4,
+        "inherited": 0,
+        "added": 0,
+        "editorial": 40,
+        "editorialFull": 0,
+        "dimensionPasses": [
+          4,
+          3,
+          3,
+          4,
+          0,
+          3
+        ],
+        "input": 24350,
+        "cached": 20223,
+        "output": 4962,
+        "total": 29312,
+        "usd": 0.00309593
+      },
+      {
+        "posts": 4,
+        "fidelity": 3,
+        "inherited": 0,
+        "added": 1,
+        "editorial": 38,
+        "editorialFull": 0,
+        "dimensionPasses": [
+          3,
+          4,
+          2,
+          4,
+          0,
+          3
+        ],
+        "input": 24590,
+        "cached": 16189,
+        "output": 4732,
+        "total": 29322,
+        "usd": 0.0033679899999999995
+      }
+    ],
+    "webb": [
+      {
+        "posts": 4,
+        "fidelity": 0,
+        "inherited": 2,
+        "added": 2,
+        "editorial": 42,
+        "editorialFull": 0,
+        "dimensionPasses": [
+          4,
+          3,
+          4,
+          3,
+          0,
+          4
+        ],
+        "input": 24206,
+        "cached": 20167,
+        "output": 2497,
+        "total": 26703,
+        "usd": 0.00185407
+      },
+      {
+        "posts": 4,
+        "fidelity": 0,
+        "inherited": 2,
+        "added": 2,
+        "editorial": 43,
+        "editorialFull": 0,
+        "dimensionPasses": [
+          3,
+          4,
+          4,
+          4,
+          0,
+          4
+        ],
+        "input": 24446,
+        "cached": 16117,
+        "output": 2675,
+        "total": 27121,
+        "usd": 0.00233157
+      }
+    ],
+    "wolf": [
+      {
+        "posts": 4,
+        "fidelity": 1,
+        "inherited": 2,
+        "added": 1,
+        "editorial": 42,
+        "editorialFull": 1,
+        "dimensionPasses": [
+          3,
+          4,
+          3,
+          4,
+          1,
+          3
+        ],
+        "input": 24006,
+        "cached": 19947,
+        "output": 2697,
+        "total": 26703,
+        "usd": 0.00195387
+      },
+      {
+        "posts": 4,
+        "fidelity": 2,
+        "inherited": 2,
+        "added": 0,
+        "editorial": 45,
+        "editorialFull": 1,
+        "dimensionPasses": [
+          4,
+          4,
+          4,
+          4,
+          1,
+          4
+        ],
+        "input": 24246,
+        "cached": 16017,
+        "output": 3005,
+        "total": 27251,
+        "usd": 0.00248557
+      }
+    ],
+    "lowell": [
+      {
+        "posts": 4,
+        "fidelity": 0,
+        "inherited": 2,
+        "added": 3,
+        "editorial": 45,
+        "editorialFull": 1,
+        "dimensionPasses": [
+          4,
+          3,
+          4,
+          4,
+          2,
+          4
+        ],
+        "input": 24150,
+        "cached": 20060,
+        "output": 5567,
+        "total": 29717,
+        "usd": 0.0033931
+      },
+      {
+        "posts": 4,
+        "fidelity": 2,
+        "inherited": 2,
+        "added": 0,
+        "editorial": 45,
+        "editorialFull": 1,
+        "dimensionPasses": [
+          4,
+          4,
+          4,
+          4,
+          1,
+          4
+        ],
+        "input": 24390,
+        "cached": 16089,
+        "output": 6074,
+        "total": 30464,
+        "usd": 0.0040279899999999995
+      }
+    ]
+  },
+  "byStratum": {
+    "safe": [
+      {
+        "posts": 8,
+        "fidelity": 3,
+        "inherited": 0,
+        "added": 5,
+        "editorial": 83,
+        "editorialFull": 1,
+        "dimensionPasses": [
+          7,
+          7,
+          6,
+          7,
+          2,
+          7
+        ],
+        "input": 48554,
+        "cached": 48530,
+        "output": 8378,
+        "total": 56932,
+        "usd": 0.004676700000000001
+      },
+      {
+        "posts": 8,
+        "fidelity": 5,
+        "inherited": 0,
+        "added": 3,
+        "editorial": 82,
+        "editorialFull": 1,
+        "dimensionPasses": [
+          6,
+          8,
+          6,
+          8,
+          1,
+          7
+        ],
+        "input": 49034,
+        "cached": 32305,
+        "output": 9156,
+        "total": 58190,
+        "usd": 0.00657395
+      }
+    ],
+    "problematic": [
+      {
+        "posts": 8,
+        "fidelity": 2,
+        "inherited": 6,
+        "added": 1,
+        "editorial": 86,
+        "editorialFull": 1,
+        "dimensionPasses": [
+          8,
+          6,
+          8,
+          8,
+          1,
+          7
+        ],
+        "input": 48158,
+        "cached": 31867,
+        "output": 7345,
+        "total": 55503,
+        "usd": 0.00562027
+      },
+      {
+        "posts": 8,
+        "fidelity": 2,
+        "inherited": 6,
+        "added": 0,
+        "editorial": 89,
+        "editorialFull": 1,
+        "dimensionPasses": [
+          8,
+          8,
+          8,
+          8,
+          1,
+          8
+        ],
+        "input": 48638,
+        "cached": 32107,
+        "output": 7330,
+        "total": 55968,
+        "usd": 0.00563917
+      }
+    ]
+  },
+  "paired": [
+    {
+      "id": "digital-r1-H-c1",
+      "topic": "digital",
+      "stratum": "safe",
+      "fidelity": [
+        2,
+        2
+      ],
+      "editorial": [
+        10,
+        7
+      ],
+      "newRegressions": [],
+      "inherited": [
+        [],
+        []
+      ],
+      "added": [
+        [],
+        []
+      ],
+      "tokenDelta": 394,
+      "usdDelta": 0.0005468599999999999
+    },
+    {
+      "id": "webb-r3-H-c1",
+      "topic": "webb",
+      "stratum": "problematic",
+      "fidelity": [
+        1,
+        1
+      ],
+      "editorial": [
+        11,
+        11
+      ],
+      "newRegressions": [],
+      "inherited": [
+        [
+          "cooling-sequence"
+        ],
+        [
+          "cooling-sequence"
+        ]
+      ],
+      "added": [
+        [],
+        []
+      ],
+      "tokenDelta": -23,
+      "usdDelta": -0.00003549999999999994
+    },
+    {
+      "id": "wolf-r3-F-c1",
+      "topic": "wolf",
+      "stratum": "safe",
+      "fidelity": [
+        2,
+        2
+      ],
+      "editorial": [
+        9,
+        11
+      ],
+      "newRegressions": [],
+      "inherited": [
+        [],
+        []
+      ],
+      "added": [
+        [],
+        []
+      ],
+      "tokenDelta": 358,
+      "usdDelta": 0.0005195
+    },
+    {
+      "id": "lowell-r1-F-c1",
+      "topic": "lowell",
+      "stratum": "problematic",
+      "fidelity": [
+        0,
+        0
+      ],
+      "editorial": [
+        11,
+        12
+      ],
+      "newRegressions": [],
+      "inherited": [
+        [
+          "downturn-causality"
+        ],
+        [
+          "downturn-causality"
+        ]
+      ],
+      "added": [
+        [
+          "revival-actors"
+        ],
+        []
+      ],
+      "tokenDelta": 21,
+      "usdDelta": -0.000013499999999999949
+    },
+    {
+      "id": "digital-r3-H-c1",
+      "topic": "digital",
+      "stratum": "problematic",
+      "fidelity": [
+        2,
+        2
+      ],
+      "editorial": [
+        11,
+        11
+      ],
+      "newRegressions": [],
+      "inherited": [
+        [],
+        []
+      ],
+      "added": [
+        [],
+        []
+      ],
+      "tokenDelta": -1009,
+      "usdDelta": -0.0005285
+    },
+    {
+      "id": "webb-r1-H-c1",
+      "topic": "webb",
+      "stratum": "safe",
+      "fidelity": [
+        0,
+        0
+      ],
+      "editorial": [
+        11,
+        10
+      ],
+      "newRegressions": [],
+      "inherited": [
+        [],
+        []
+      ],
+      "added": [
+        [
+          "cooling-sequence"
+        ],
+        [
+          "cooling-sequence"
+        ]
+      ],
+      "tokenDelta": -51,
+      "usdDelta": 0.0003258
+    },
+    {
+      "id": "wolf-r2-H-c1",
+      "topic": "wolf",
+      "stratum": "problematic",
+      "fidelity": [
+        0,
+        0
+      ],
+      "editorial": [
+        10,
+        11
+      ],
+      "newRegressions": [],
+      "inherited": [
+        [
+          "elk-identity"
+        ],
+        [
+          "elk-identity"
+        ]
+      ],
+      "added": [
+        [],
+        []
+      ],
+      "tokenDelta": -34,
+      "usdDelta": -0.00004099999999999991
+    },
+    {
+      "id": "lowell-r1-H-c1",
+      "topic": "lowell",
+      "stratum": "safe",
+      "fidelity": [
+        1,
+        2
+      ],
+      "editorial": [
+        11,
+        11
+      ],
+      "newRegressions": [],
+      "inherited": [
+        [],
+        []
+      ],
+      "added": [
+        [
+          "park-contribution"
+        ],
+        []
+      ],
+      "tokenDelta": -51,
+      "usdDelta": 0.00031869000000000016
+    },
+    {
+      "id": "digital-r1-H-c2",
+      "topic": "digital",
+      "stratum": "safe",
+      "fidelity": [
+        2,
+        1
+      ],
+      "editorial": [
+        9,
+        9
+      ],
+      "newRegressions": [
+        "launch-clock"
+      ],
+      "inherited": [
+        [],
+        []
+      ],
+      "added": [
+        [],
+        [
+          "launch-clock"
+        ]
+      ],
+      "tokenDelta": 395,
+      "usdDelta": 0.00016810000000000002
+    },
+    {
+      "id": "webb-r3-H-c2",
+      "topic": "webb",
+      "stratum": "problematic",
+      "fidelity": [
+        1,
+        0
+      ],
+      "editorial": [
+        10,
+        11
+      ],
+      "newRegressions": [],
+      "inherited": [
+        [
+          "cooling-sequence"
+        ],
+        [
+          "cooling-sequence"
+        ]
+      ],
+      "added": [
+        [],
+        []
+      ],
+      "tokenDelta": 463,
+      "usdDelta": 0.00020209999999999998
+    },
+    {
+      "id": "wolf-r3-F-c2",
+      "topic": "wolf",
+      "stratum": "safe",
+      "fidelity": [
+        1,
+        2
+      ],
+      "editorial": [
+        12,
+        12
+      ],
+      "newRegressions": [],
+      "inherited": [
+        [],
+        []
+      ],
+      "added": [
+        [
+          "elk-management-scope"
+        ],
+        []
+      ],
+      "tokenDelta": -68,
+      "usdDelta": -0.00006340000000000002
+    },
+    {
+      "id": "lowell-r1-F-c2",
+      "topic": "lowell",
+      "stratum": "problematic",
+      "fidelity": [
+        0,
+        0
+      ],
+      "editorial": [
+        12,
+        11
+      ],
+      "newRegressions": [],
+      "inherited": [
+        [
+          "downturn-causality"
+        ],
+        [
+          "downturn-causality"
+        ]
+      ],
+      "added": [
+        [],
+        []
+      ],
+      "tokenDelta": 525,
+      "usdDelta": 0.00023309999999999997
+    },
+    {
+      "id": "digital-r3-H-c2",
+      "topic": "digital",
+      "stratum": "problematic",
+      "fidelity": [
+        2,
+        2
+      ],
+      "editorial": [
+        10,
+        11
+      ],
+      "newRegressions": [],
+      "inherited": [
+        [],
+        []
+      ],
+      "added": [
+        [],
+        []
+      ],
+      "tokenDelta": 230,
+      "usdDelta": 0.00008559999999999991
+    },
+    {
+      "id": "webb-r1-H-c2",
+      "topic": "webb",
+      "stratum": "safe",
+      "fidelity": [
+        0,
+        1
+      ],
+      "editorial": [
+        10,
+        11
+      ],
+      "newRegressions": [],
+      "inherited": [
+        [],
+        []
+      ],
+      "added": [
+        [
+          "cooling-sequence",
+          "commissioning-duration"
+        ],
+        [
+          "cooling-sequence"
+        ]
+      ],
+      "tokenDelta": 29,
+      "usdDelta": -0.000014899999999999983
+    },
+    {
+      "id": "wolf-r2-H-c2",
+      "topic": "wolf",
+      "stratum": "problematic",
+      "fidelity": [
+        0,
+        0
+      ],
+      "editorial": [
+        11,
+        11
+      ],
+      "newRegressions": [],
+      "inherited": [
+        [
+          "elk-identity"
+        ],
+        [
+          "elk-identity"
+        ]
+      ],
+      "added": [
+        [],
+        []
+      ],
+      "tokenDelta": 292,
+      "usdDelta": 0.00011659999999999996
+    },
+    {
+      "id": "lowell-r1-H-c2",
+      "topic": "lowell",
+      "stratum": "safe",
+      "fidelity": [
+        1,
+        2
+      ],
+      "editorial": [
+        11,
+        11
+      ],
+      "newRegressions": [],
+      "inherited": [
+        [],
+        []
+      ],
+      "added": [
+        [
+          "building-scope"
+        ],
+        []
+      ],
+      "tokenDelta": 252,
+      "usdDelta": 0.00009659999999999985
+    }
+  ],
+  "rows": [
+    {
+      "id": "digital-r1-H-c1-A",
+      "reviewId": "e0ee0de4",
+      "topic": "digital",
+      "arm": "A",
+      "fixture": "digital-r1-H",
+      "stratum": "safe",
+      "editorial": [
+        2,
+        2,
+        1,
+        2,
+        1,
+        2
+      ],
+      "fidelity": 2,
+      "inherited": [],
+      "added": [],
+      "evidence": "‘in twaalf weken’ is concreet maar zet de uitkomst voorop. Aanvragers vóór caseworkers en ‘aanvragen gepauzeerd’ geven een heldere ontwikkeling. De slotzin houdt de werkwijze centraal maar herhaalt beide hoofdpunten. Geen causale claim van aanpak naar lancering of cijfers.",
+      "input": 6107,
+      "cached": 6104,
+      "output": 1066,
+      "total": 7173,
+      "usd": 0.0005943400000000001
+    },
+    {
+      "id": "digital-r1-H-c1-B",
+      "reviewId": "cb6b5673",
+      "topic": "digital",
+      "arm": "B",
+      "fixture": "digital-r1-H",
+      "stratum": "safe",
+      "editorial": [
+        1,
+        2,
+        1,
+        2,
+        0,
+        1
+      ],
+      "fidelity": 2,
+      "inherited": [],
+      "added": [],
+      "evidence": "‘binnen enkele weken’ is een zakelijke opening. Aanvragers → caseworkers → twee verschillende sprintweken ontwikkelt de werkwijze helder. Laatste alinea eindigt op drie cijfers zonder terugkeer naar de aanpak; de cijfers behouden hun eigen tijdvenster.",
+      "input": 6167,
+      "cached": 1950,
+      "output": 1400,
+      "total": 7567,
+      "usd": 0.0011412
+    },
+    {
+      "id": "webb-r3-H-c1-B",
+      "reviewId": "3ecf9216",
+      "topic": "webb",
+      "arm": "B",
+      "fixture": "webb-r3-H",
+      "stratum": "problematic",
+      "editorial": [
+        2,
+        2,
+        2,
+        2,
+        1,
+        2
+      ],
+      "fidelity": 1,
+      "inherited": [
+        "cooling-sequence"
+      ],
+      "added": [],
+      "evidence": "‘Daarna ging de ingebruikname door: weken afkoeling’ impliceert nog een tijdrelatie, hoewel ‘ging … door’ een eerdere start toelaat. Het is een afgezwakte overdracht van ‘Daarna volgden’ uit de brief. Ariane 5 is aanwezig. Het slot herhaalt de openingsmijlpaal.",
+      "input": 6040,
+      "cached": 1950,
+      "output": 591,
+      "total": 6631,
+      "usd": 0.000724
+    },
+    {
+      "id": "webb-r3-H-c1-A",
+      "reviewId": "ed7b42f0",
+      "topic": "webb",
+      "arm": "A",
+      "fixture": "webb-r3-H",
+      "stratum": "problematic",
+      "editorial": [
+        2,
+        2,
+        2,
+        2,
+        1,
+        2
+      ],
+      "fidelity": 1,
+      "inherited": [
+        "cooling-sequence"
+      ],
+      "added": [],
+      "evidence": "‘Daarna ging de ingebruikname door: de eerste maand bestond uit weken afkoeling’ laat overlap grammaticaal toe, maar koppelt koeling via de opsomming mogelijk aan daarna. ‘In week twee’ opent concreet maar wordt later herhaald. Ariane 5 staat erin en het slot blijft bij de mijlpaal.",
+      "input": 5980,
+      "cached": 1950,
+      "output": 674,
+      "total": 6654,
+      "usd": 0.0007595
+    },
+    {
+      "id": "wolf-r3-F-c1-A",
+      "reviewId": "5c068c35",
+      "topic": "wolf",
+      "arm": "A",
+      "fixture": "wolf-r3-F",
+      "stratum": "safe",
+      "editorial": [
+        1,
+        2,
+        1,
+        2,
+        1,
+        2
+      ],
+      "fidelity": 2,
+      "inherited": [],
+      "added": [],
+      "evidence": "‘network of relationships’ is een abstracte hook. Roedels, prooien voor aaseters en concrete ‘elk calves and bull elk’ maken de ontwikkeling bruikbaar. De identiteit blijft intact. ‘more complex picture’ herhaalt vooral de opener.",
+      "input": 6003,
+      "cached": 6000,
+      "output": 447,
+      "total": 6450,
+      "usd": 0.0002838
+    },
+    {
+      "id": "wolf-r3-F-c1-B",
+      "reviewId": "dadc1945",
+      "topic": "wolf",
+      "arm": "B",
+      "fixture": "wolf-r3-F",
+      "stratum": "safe",
+      "editorial": [
+        2,
+        2,
+        2,
+        2,
+        1,
+        2
+      ],
+      "fidelity": 2,
+      "inherited": [],
+      "added": [],
+      "evidence": "De hook contrasteert jagen met de bredere rol. ‘wolf kills’ en ‘elk calves and bull elk’ behouden prooi en soort. Roedel, aaseters en verschuivende prooi bouwen begrijpelijk op. ‘living network’ en één roofdier komen terug in een samenvattend slot.",
+      "input": 6063,
+      "cached": 1950,
+      "output": 745,
+      "total": 6808,
+      "usd": 0.0008033
+    },
+    {
+      "id": "lowell-r1-F-c1-B",
+      "reviewId": "04d8b2a1",
+      "topic": "lowell",
+      "arm": "B",
+      "fixture": "lowell-r1-F",
+      "stratum": "problematic",
+      "editorial": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "fidelity": 0,
+      "inherited": [
+        "downturn-causality"
+      ],
+      "added": [],
+      "evidence": "‘had ended the boom’ neemt de causale claim letterlijk over. ‘old buildings’ en ‘separate developments’ blijven correct. De concrete teruggang, herbestemming en cyclische afsluiting dragen de focus. Historisch tijdvak blijft afgebakend, expliciete verwijzing naar 1992 vervalt.",
+      "input": 6091,
+      "cached": 1950,
+      "output": 917,
+      "total": 7008,
+      "usd": 0.0008921000000000001
+    },
+    {
+      "id": "lowell-r1-F-c1-A",
+      "reviewId": "bb5a417a",
+      "topic": "lowell",
+      "arm": "A",
+      "fixture": "lowell-r1-F",
+      "stratum": "problematic",
+      "editorial": [
+        2,
+        2,
+        2,
+        2,
+        1,
+        2
+      ],
+      "fidelity": 0,
+      "inherited": [
+        "downturn-causality"
+      ],
+      "added": [
+        "revival-actors"
+      ],
+      "evidence": "‘had ended the boom’ neemt de oorzaak uit de brief over. ‘also part of the city’s broader 1970s revival’ maakt University en Wang tot onderdelen van de opleving waar brief en Synthesis afzonderlijke ontwikkelingen vermelden. Het slot duidt de spanning maar herhaalt de hook. 1992 ontbreekt.",
+      "input": 6031,
+      "cached": 1950,
+      "output": 956,
+      "total": 6987,
+      "usd": 0.0009056
+    },
+    {
+      "id": "digital-r3-H-c1-A",
+      "reviewId": "4730f9a7",
+      "topic": "digital",
+      "arm": "A",
+      "fixture": "digital-r3-H",
+      "stratum": "problematic",
+      "editorial": [
+        2,
+        2,
+        2,
+        2,
+        1,
+        2
+      ],
+      "fidelity": 2,
+      "inherited": [],
+      "added": [],
+      "evidence": "De onhaalbare vraag en twaalf weken creëren inzet. Zowel gebruikersvolgorde als sprintweken komen terug. ‘combineerde de ambitie’ neutraliseert het causale ‘door’ uit de brief. Het slot herhaalt de volgorde en laat caseworkers daar weg.",
+      "input": 6068,
+      "cached": 1950,
+      "output": 1621,
+      "total": 7689,
+      "usd": 0.0012418
+    },
+    {
+      "id": "digital-r3-H-c1-B",
+      "reviewId": "78c35c38",
+      "topic": "digital",
+      "arm": "B",
+      "fixture": "digital-r3-H",
+      "stratum": "problematic",
+      "editorial": [
+        2,
+        2,
+        2,
+        2,
+        1,
+        2
+      ],
+      "fidelity": 2,
+      "inherited": [],
+      "added": [],
+      "evidence": "De aanvankelijke deadline en de twaalf weken openen met spanning. ‘gingen … naast elkaar’ neutraliseert het causale ‘door’. De afsluitende uitleg van de twee meetvensters herhaalt de cijfersfunctie in plaats van de ontwerpkeuze af te ronden. ‘het team rapporteerde’ comprimeert de auteurstoeschrijving, zonder de uitkomsten als causaal bewijs te gebruiken.",
+      "input": 6128,
+      "cached": 1950,
+      "output": 552,
+      "total": 6680,
+      "usd": 0.0007132999999999999
+    },
+    {
+      "id": "webb-r1-H-c1-B",
+      "reviewId": "55237f56",
+      "topic": "webb",
+      "arm": "B",
+      "fixture": "webb-r1-H",
+      "stratum": "safe",
+      "editorial": [
+        1,
+        2,
+        2,
+        2,
+        1,
+        2
+      ],
+      "fidelity": 0,
+      "inherited": [],
+      "added": [
+        "cooling-sequence"
+      ],
+      "evidence": "‘Daarna volgde de ingebruikname’ laat koeling pas na de voltooide uitvouwing beginnen. De veilige brief noemt week twee en maand één apart. Ariane 5 en de case-specifieke mijlpalen blijven behouden. ‘Uitgevouwen was dus een tussenmijlpaal’ rondt af door de opening te herhalen.",
+      "input": 6183,
+      "cached": 1950,
+      "output": 540,
+      "total": 6723,
+      "usd": 0.0007128
+    },
+    {
+      "id": "webb-r1-H-c1-A",
+      "reviewId": "5f466eaa",
+      "topic": "webb",
+      "arm": "A",
+      "fixture": "webb-r1-H",
+      "stratum": "safe",
+      "editorial": [
+        2,
+        2,
+        2,
+        2,
+        1,
+        2
+      ],
+      "fidelity": 0,
+      "inherited": [],
+      "added": [
+        "cooling-sequence"
+      ],
+      "evidence": "De Ariane 5-neuskegel biedt een concrete ingang. ‘Daarvoor volgde nog een ingebruikname van maanden. In de eerste maand koelden …’ introduceert volgorde die de brief niet vastlegt. De post bouwt via twee mijlpalen op, maar herhaalt die in het slot.",
+      "input": 6123,
+      "cached": 6120,
+      "output": 651,
+      "total": 6774,
+      "usd": 0.000387
+    },
+    {
+      "id": "wolf-r2-H-c1-A",
+      "reviewId": "fb8e5685",
+      "topic": "wolf",
+      "arm": "A",
+      "fixture": "wolf-r2-H",
+      "stratum": "problematic",
+      "editorial": [
+        2,
+        2,
+        2,
+        2,
+        1,
+        1
+      ],
+      "fidelity": 0,
+      "inherited": [
+        "elk-identity"
+      ],
+      "added": [],
+      "evidence": "‘elandkalveren’ en ‘elanden’ nemen de verkeerde soort over, ‘Hun prooi voedt ook andere dieren’ neutraliseert de verkeerde herkomst van karkassen. De jachtrelatie maakt de verbreding begrijpelijk. ‘niet volledig vastgesteld’ geeft het slot een defensieve tweede afronding. Focus op het netwerk blijft aanwezig, met extra nadruk op onbepaaldheid.",
+      "input": 6000,
+      "cached": 1950,
+      "output": 802,
+      "total": 6802,
+      "usd": 0.0008255
+    },
+    {
+      "id": "wolf-r2-H-c1-B",
+      "reviewId": "3db25f67",
+      "topic": "wolf",
+      "arm": "B",
+      "fixture": "wolf-r2-H",
+      "stratum": "problematic",
+      "editorial": [
+        2,
+        2,
+        2,
+        2,
+        1,
+        2
+      ],
+      "fidelity": 0,
+      "inherited": [
+        "elk-identity"
+      ],
+      "added": [],
+      "evidence": "‘elandkalveren’ en ‘elanden’ nemen de foute soort uit de brief over. ‘een prooi … Karkassen’ neutraliseert ‘karkassen van wolven’. Korte alinea’s brengen de lezer van roedel naar aaseters naar veranderende prooi. ‘netwerk van relaties’ blijft als slot algemeen.",
+      "input": 6060,
+      "cached": 1950,
+      "output": 708,
+      "total": 6768,
+      "usd": 0.0007845
+    },
+    {
+      "id": "lowell-r1-H-c1-B",
+      "reviewId": "331e9dcf",
+      "topic": "lowell",
+      "arm": "B",
+      "fixture": "lowell-r1-H",
+      "stratum": "safe",
+      "editorial": [
+        2,
+        2,
+        2,
+        2,
+        1,
+        2
+      ],
+      "fidelity": 2,
+      "inherited": [],
+      "added": [],
+      "evidence": "‘afzonderlijke ontwikkelingen’ en ‘te midden van’ behouden rol en samenloop. De burgerinitiatieven, ‘oude gebouwen’ en de terugval bouwen de historische spanning op. De inhoudelijke afsluiting wordt gevolgd door een herhaalde 1992-disclaimer.",
+      "input": 6104,
+      "cached": 1950,
+      "output": 2012,
+      "total": 8116,
+      "usd": 0.0014409000000000002
+    },
+    {
+      "id": "lowell-r1-H-c1-A",
+      "reviewId": "a099930a",
+      "topic": "lowell",
+      "arm": "A",
+      "fixture": "lowell-r1-H",
+      "stratum": "safe",
+      "editorial": [
+        2,
+        1,
+        2,
+        2,
+        2,
+        2
+      ],
+      "fidelity": 1,
+      "inherited": [],
+      "added": [
+        "park-contribution"
+      ],
+      "evidence": "‘de parken verklaren niet op zichzelf de economische opleving’ suggereert een verklarende bijdrage waar de veilige brief alleen samenloop toestaat. Synthesis sluit enkelvoudige attributie uit zonder de bijdrage te bepalen. ‘stegen de werkgelegenheid en bedrijfsuitbreiding’ leest stroef. 1992, oude gebouwen en het specifieke contrast in de slotzin blijven intact.",
+      "input": 6044,
+      "cached": 6041,
+      "output": 2123,
+      "total": 8167,
+      "usd": 0.00112221
+    },
+    {
+      "id": "digital-r1-H-c2-B",
+      "reviewId": "9cffb601",
+      "topic": "digital",
+      "arm": "B",
+      "fixture": "digital-r1-H",
+      "stratum": "safe",
+      "editorial": [
+        2,
+        2,
+        0,
+        2,
+        1,
+        2
+      ],
+      "fidelity": 1,
+      "inherited": [],
+      "added": [
+        "launch-clock"
+      ],
+      "evidence": "‘in twaalf weken lanceren begon met een andere vraag’ verbindt het begin van de twaalfwekenlancering mogelijk met het oorspronkelijke verzoek en herschrijft het als een kwaliteitsvraag. Synthesis en de brief laten het startpunt open en onderscheiden het verzoek van het latere oordeel. De sprintconcretisering werkt, maar de algemene slotzin herhaalt de werkwijze.",
+      "input": 6167,
+      "cached": 6164,
+      "output": 1607,
+      "total": 7774,
+      "usd": 0.0008654400000000001
+    },
+    {
+      "id": "digital-r1-H-c2-A",
+      "reviewId": "8298a839",
+      "topic": "digital",
+      "arm": "A",
+      "fixture": "digital-r1-H",
+      "stratum": "safe",
+      "editorial": [
+        2,
+        2,
+        2,
+        2,
+        0,
+        1
+      ],
+      "fidelity": 2,
+      "inherited": [],
+      "added": [],
+      "evidence": "‘binnen enkele weken opleveren’ zet de spanning direct neer. De twee sprintweken en de ontwerpvolgorde zijn helder. Tijdvensters blijven afzonderlijk. Na een alinea over kanalen eindigt de post uitsluitend op de drie uitkomstcijfers.",
+      "input": 6107,
+      "cached": 6104,
+      "output": 1272,
+      "total": 7379,
+      "usd": 0.0006973400000000001
+    },
+    {
+      "id": "webb-r3-H-c2-A",
+      "reviewId": "e79e6373",
+      "topic": "webb",
+      "arm": "A",
+      "fixture": "webb-r3-H",
+      "stratum": "problematic",
+      "editorial": [
+        2,
+        1,
+        2,
+        2,
+        1,
+        2
+      ],
+      "fidelity": 1,
+      "inherited": [
+        "cooling-sequence"
+      ],
+      "added": [],
+      "evidence": "‘Daarna ging de ingebruikname verder: weken afkoeling’ laat eerder begin toe maar suggereert nog fasevolgorde. ‘in zijn tweede week’ en de Ariane-context maken de hook concreet. Het slot herhaalt het centrale contrast en eindigt met een los sluithaakje in de geparseerde post.",
+      "input": 5980,
+      "cached": 5977,
+      "output": 667,
+      "total": 6647,
+      "usd": 0.00039357
+    },
+    {
+      "id": "webb-r3-H-c2-B",
+      "reviewId": "0c03fdff",
+      "topic": "webb",
+      "arm": "B",
+      "fixture": "webb-r3-H",
+      "stratum": "problematic",
+      "editorial": [
+        2,
+        2,
+        2,
+        2,
+        1,
+        2
+      ],
+      "fidelity": 0,
+      "inherited": [
+        "cooling-sequence"
+      ],
+      "added": [],
+      "evidence": "‘Daarna volgden nog maanden ingebruikname: weken afkoeling’ neemt de verkeerde fasevolgorde van H r3 rechtstreeks over. De vouwreden en twee mijlpalen zijn helder. Laatste twee zinnen keren terug naar de openingsstelling.",
+      "input": 6040,
+      "cached": 6037,
+      "output": 1070,
+      "total": 7110,
+      "usd": 0.00059567
+    },
+    {
+      "id": "wolf-r3-F-c2-B",
+      "reviewId": "aecf62e0",
+      "topic": "wolf",
+      "arm": "B",
+      "fixture": "wolf-r3-F",
+      "stratum": "safe",
+      "editorial": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "fidelity": 2,
+      "inherited": [],
+      "added": [],
+      "evidence": "‘A wolf kill in Yellowstone can feed far more than the pack’ opent concreet en brengt het slot via roedel, aaseters en variabele prooi naar meerdere omstandigheden. ‘elk calves and bull elk’ en ‘ungulate management’ behouden soort en scope. Het slot verbreedt de openingsrelatie zonder een oorzakelijke keten toe te voegen.",
+      "input": 6063,
+      "cached": 6060,
+      "output": 564,
+      "total": 6627,
+      "usd": 0.0003429
+    },
+    {
+      "id": "wolf-r3-F-c2-A",
+      "reviewId": "fec33612",
+      "topic": "wolf",
+      "arm": "A",
+      "fixture": "wolf-r3-F",
+      "stratum": "safe",
+      "editorial": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "fidelity": 1,
+      "inherited": [],
+      "added": [
+        "elk-management-scope"
+      ],
+      "evidence": "‘elk management outside the park’ vernauwt ‘ungulate management outside the park’ uit brief en Synthesis. Dat kan de lezing van één factor wijzigen. De Engelse soortnaam blijft correct. ‘adults’ voegt een weinig ingrijpende leeftijdsspecificatie toe aan de gezamenlijke zorg. De concrete prooiwisseling draagt een compact slot over meervoudige invloeden.",
+      "input": 6003,
+      "cached": 6000,
+      "output": 692,
+      "total": 6695,
+      "usd": 0.0004063
+    },
+    {
+      "id": "lowell-r1-F-c2-A",
+      "reviewId": "7b03f913",
+      "topic": "lowell",
+      "arm": "A",
+      "fixture": "lowell-r1-F",
+      "stratum": "problematic",
+      "editorial": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "fidelity": 0,
+      "inherited": [
+        "downturn-causality"
+      ],
+      "added": [],
+      "evidence": "‘had ended the boom’ neemt de oorzakelijke toeschrijving over. 1992 kadert de hook. Daling, burgerinitiatief, oude gebouwen en terugval houden betekenis en einde concreet. De universiteit is facultatief en weggelaten.",
+      "input": 6031,
+      "cached": 6028,
+      "output": 866,
+      "total": 6897,
+      "usd": 0.00049358
+    },
+    {
+      "id": "lowell-r1-F-c2-B",
+      "reviewId": "dedd9601",
+      "topic": "lowell",
+      "arm": "B",
+      "fixture": "lowell-r1-F",
+      "stratum": "problematic",
+      "editorial": [
+        2,
+        2,
+        2,
+        2,
+        1,
+        2
+      ],
+      "fidelity": 0,
+      "inherited": [
+        "downturn-causality"
+      ],
+      "added": [],
+      "evidence": "‘had ended the boom’ neemt de oorzakelijke toeschrijving over. ‘separate developments’ blijft behouden en het gekozen tijdvak is helder, ook zonder expliciet 1992-perspectief. De afsluiting herformuleert het economische-veranderingskader uit de openingszin.",
+      "input": 6091,
+      "cached": 6088,
+      "output": 1331,
+      "total": 7422,
+      "usd": 0.00072668
+    },
+    {
+      "id": "digital-r3-H-c2-B",
+      "reviewId": "f074c7e0",
+      "topic": "digital",
+      "arm": "B",
+      "fixture": "digital-r3-H",
+      "stratum": "problematic",
+      "editorial": [
+        2,
+        2,
+        2,
+        2,
+        1,
+        2
+      ],
+      "fidelity": 2,
+      "inherited": [],
+      "added": [],
+      "evidence": "‘binnen enkele weken klaar’ gevolgd door twaalf weken brengt concrete spanning. De post gebruikt de sprintweken en houdt de cijfers apart. ‘gingen … samen’ neutraliseert de lanceringscausaliteit uit H r3. De expliciete slotzin houdt de focus maar herhaalt dezelfde onderdelen.",
+      "input": 6128,
+      "cached": 6125,
+      "output": 1173,
+      "total": 7301,
+      "usd": 0.00064805
+    },
+    {
+      "id": "digital-r3-H-c2-A",
+      "reviewId": "5208ca14",
+      "topic": "digital",
+      "arm": "A",
+      "fixture": "digital-r3-H",
+      "stratum": "problematic",
+      "editorial": [
+        2,
+        1,
+        2,
+        2,
+        1,
+        2
+      ],
+      "fidelity": 2,
+      "inherited": [],
+      "added": [],
+      "evidence": "De fragmentarische opening contrasteert de twaalf weken met ‘binnen enkele weken’; ‘dat tempo’ kan kort naar beide terugwijzen. Werkwijze en vijfweekscijfers blijven afzonderlijk en de post neemt ‘door’ niet over. De slotzin herneemt ontwerpvolgorde en testtijd.",
+      "input": 6068,
+      "cached": 6065,
+      "output": 1003,
+      "total": 7071,
+      "usd": 0.00056245
+    },
+    {
+      "id": "webb-r1-H-c2-A",
+      "reviewId": "3621c07a",
+      "topic": "webb",
+      "arm": "A",
+      "fixture": "webb-r1-H",
+      "stratum": "safe",
+      "editorial": [
+        2,
+        2,
+        2,
+        1,
+        1,
+        2
+      ],
+      "fidelity": 0,
+      "inherited": [],
+      "added": [
+        "cooling-sequence",
+        "commissioning-duration"
+      ],
+      "evidence": "‘Daarna volgde een ingebruikname van zes maanden’ maakt de zes maanden tot een periode ná de voltooide uitvouwing en plaatst het begin van afkoeling in die fase. ‘het begin van een langere ingebruikname’ bevestigt dit. De hoofdtekst keert voor dezelfde ontplooiing terug naar de faalpunten, wat de voortgang afremt.",
+      "input": 6123,
+      "cached": 6120,
+      "output": 505,
+      "total": 6628,
+      "usd": 0.000314
+    },
+    {
+      "id": "webb-r1-H-c2-B",
+      "reviewId": "0ebb8e87",
+      "topic": "webb",
+      "arm": "B",
+      "fixture": "webb-r1-H",
+      "stratum": "safe",
+      "editorial": [
+        2,
+        2,
+        2,
+        2,
+        1,
+        2
+      ],
+      "fidelity": 1,
+      "inherited": [],
+      "added": [
+        "cooling-sequence"
+      ],
+      "evidence": "De hoofdtekst houdt maand één en week twee apart, maar ‘de ingebruikname die daarop volgde’ in het slot introduceert alsnog een mogelijke tijdclaim over de fase waaronder afkoeling valt. De neuskegel opent concreet en het slot herneemt de twee mijlpalen.",
+      "input": 6183,
+      "cached": 6180,
+      "output": 474,
+      "total": 6657,
+      "usd": 0.0002991
+    },
+    {
+      "id": "wolf-r2-H-c2-B",
+      "reviewId": "2fb19d01",
+      "topic": "wolf",
+      "arm": "B",
+      "fixture": "wolf-r2-H",
+      "stratum": "problematic",
+      "editorial": [
+        2,
+        2,
+        2,
+        2,
+        1,
+        2
+      ],
+      "fidelity": 0,
+      "inherited": [
+        "elk-identity"
+      ],
+      "added": [],
+      "evidence": "De post neemt ‘elandkalveren’ en ‘elanden’ over. ‘Karkassen bieden ook voedsel’ in de alinea over de jacht verwijdert de claim dat het karkassen van wolven zijn. De sociale roedel en het omslaan van de verhouding trekken het verhaal. De laatste alinea herhaalt de meervoudige invloeden in algemene woorden.",
+      "input": 6060,
+      "cached": 6057,
+      "output": 988,
+      "total": 7048,
+      "usd": 0.00055487
+    },
+    {
+      "id": "wolf-r2-H-c2-A",
+      "reviewId": "2b2e2d53",
+      "topic": "wolf",
+      "arm": "A",
+      "fixture": "wolf-r2-H",
+      "stratum": "problematic",
+      "editorial": [
+        2,
+        2,
+        2,
+        2,
+        1,
+        2
+      ],
+      "fidelity": 0,
+      "inherited": [
+        "elk-identity"
+      ],
+      "added": [],
+      "evidence": "‘elandkalveren’ en ‘elanden’ blijven de verkeerde soort. De overgang van ‘prooi die ze vangen’ naar ‘Karkassen’ verwijst wel naar prooidieren en neutraliseert de andere fout. De korte alinea’s bouwen op naar meerdere invloeden. De slotfrasen over het netwerk en onbekende bijdragen spreken diezelfde alinea nog eens uit.",
+      "input": 6000,
+      "cached": 5997,
+      "output": 756,
+      "total": 6756,
+      "usd": 0.00043827
+    },
+    {
+      "id": "lowell-r1-H-c2-A",
+      "reviewId": "db060e9c",
+      "topic": "lowell",
+      "arm": "A",
+      "fixture": "lowell-r1-H",
+      "stratum": "safe",
+      "editorial": [
+        2,
+        2,
+        2,
+        2,
+        1,
+        2
+      ],
+      "fidelity": 1,
+      "inherited": [],
+      "added": [
+        "building-scope"
+      ],
+      "evidence": "‘nieuwe bestemmingen voor oude fabrieken’ versmalt de herbestemming in de hook; verderop staat wel ‘oude gebouwen’, zoals in de brief. De opening geeft een concrete spanning. ‘te midden van’ bewaart samenloop, en 1992 kadert het stuk. De slotzin voegt een terugkerende bronbeperking toe na de inhoudelijke afronding.",
+      "input": 6044,
+      "cached": 6041,
+      "output": 1622,
+      "total": 7666,
+      "usd": 0.00087171
+    },
+    {
+      "id": "lowell-r1-H-c2-B",
+      "reviewId": "68af8a28",
+      "topic": "lowell",
+      "arm": "B",
+      "fixture": "lowell-r1-H",
+      "stratum": "safe",
+      "editorial": [
+        2,
+        2,
+        2,
+        2,
+        1,
+        2
+      ],
+      "fidelity": 2,
+      "inherited": [],
+      "added": [],
+      "evidence": "‘17.000 banen in 1895 naar 8.000 in 1936’ en de arbeider openen concreet. Burgerinitiatief en hergebruik komen vóór de omslag. ‘afzonderlijke ontwikkelingen’ en ‘tijdens’ behouden de grenzen. De post sluit na de inhoudelijke afronding nogmaals af met de reikwijdte van 1992.",
+      "input": 6104,
+      "cached": 6101,
+      "output": 1814,
+      "total": 7918,
+      "usd": 0.0009683099999999999
+    }
+  ]
+}

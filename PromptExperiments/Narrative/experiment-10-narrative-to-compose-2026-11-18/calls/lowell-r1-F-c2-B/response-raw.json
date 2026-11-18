@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-Elb0ZLGmD7L08cXDlgJp3BcRoJDSC",
+  "object": "chat.completion",
+  "created": 1795012383,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"Lowell’s revival in the 1970s and early 1980s was part of a longer story of economic change—not a straight path from decline to recovery.\\n\\nTextile employment fell from 17,000 in 1895 to 8,000 by 1936 as mills closed and people left. In the 1960s, Lowell citizens proposed revitalizing the city around its architectural and cultural heritage. The city council endorsed the effort in 1972; heritage and historical parks followed in 1974 and 1978.\\n\\nIn the late 1970s and early 1980s, more than 100 old buildings were rehabilitated for new uses, alongside rising employment and business expansion. The University of Lowell and Wang Laboratories were also separate developments of the 1970s.\\n\\nBy the late 1980s, a regional slowdown and difficulties in the computer industry—including workforce cuts and restructuring at Wang—had ended the boom.\\n\\nReusing Lowell’s industrial heritage was a tangible part of its revival. The downturn that followed shows that the revival unfolded amid continuing economic change.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6091,
+    "completion_tokens": 1331,
+    "total_tokens": 7422,
+    "prompt_tokens_details": {
+      "cached_tokens": 6088,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1075,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

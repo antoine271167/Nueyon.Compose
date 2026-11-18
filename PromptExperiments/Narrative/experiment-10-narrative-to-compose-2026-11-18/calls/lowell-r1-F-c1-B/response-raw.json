@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-Elax4skEoNmdRTPClOkYKc8T8hdBr",
+  "object": "chat.completion",
+  "created": 1795012166,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"Lowell’s reuse of its industrial heritage was part of a revival—not proof that the city had left economic change behind.\\n\\nTextile employment had fallen from 17,000 in 1895 to 8,000 by 1936 as mills closed and people left. In the 1960s, Lowell citizens proposed revitalizing the city around its architectural and cultural heritage. The city council endorsed the effort in 1972, and heritage and historical parks followed in 1974 and 1978.\\n\\nIn the late 1970s and early 1980s, more than 100 old buildings were rehabilitated for new uses. Employment rose and businesses expanded. The University of Lowell and Wang Laboratories were separate developments of the 1970s.\\n\\nBy the late 1980s, a regional slowdown and difficulties in the computer industry—including Wang workforce cuts and restructuring—had ended the boom. Lowell’s story was one of adaptation: old buildings found new uses, even as the city’s economy continued to change.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6091,
+    "completion_tokens": 917,
+    "total_tokens": 7008,
+    "prompt_tokens_details": {
+      "cached_tokens": 1950,
+      "cache_write_tokens": 4138,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 684,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}
