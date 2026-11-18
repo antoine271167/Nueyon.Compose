@@ -1,0 +1,63 @@
+{
+  "source": "https://developers.openai.com/api/docs/pricing",
+  "standardUsdPerMillion": {
+    "input": 0.1,
+    "cachedInput": 0.01,
+    "output": 0.5
+  },
+  "estimated": true,
+  "byArm": {
+    "F": 0.0024462,
+    "G": 0.0021317199999999997
+  },
+  "rows": [
+    {
+      "id": "digital-r1-F",
+      "usd": 0.0004162
+    },
+    {
+      "id": "digital-r1-G",
+      "usd": 0.0004004
+    },
+    {
+      "id": "webb-r1-G",
+      "usd": 0.00032839999999999996
+    },
+    {
+      "id": "webb-r1-F",
+      "usd": 0.0004127
+    },
+    {
+      "id": "digital-r2-G",
+      "usd": 0.00031906
+    },
+    {
+      "id": "digital-r2-F",
+      "usd": 0.0003877
+    },
+    {
+      "id": "webb-r2-F",
+      "usd": 0.0003772
+    },
+    {
+      "id": "webb-r2-G",
+      "usd": 0.0003814
+    },
+    {
+      "id": "digital-r3-F",
+      "usd": 0.0003922
+    },
+    {
+      "id": "digital-r3-G",
+      "usd": 0.00025356
+    },
+    {
+      "id": "webb-r3-G",
+      "usd": 0.00044889999999999996
+    },
+    {
+      "id": "webb-r3-F",
+      "usd": 0.00046019999999999996
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ElaNnLkBHOM7OQSpLRc1N969tRsM8",
+  "object": "chat.completion",
+  "created": 1795009979,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"**Selected Story**\\nHet POA-refundteam lanceerde zijn dienst na twaalf weken. De beschreven aanpak begon met de ervaring van aanvragers, voegde caseworkerwerk later toe en reserveerde tijdens private beta tijd voor onderzoek en testen. De bron documenteert deze keuzes, maar stelt niet vast dat ze de lancering of resultaten veroorzaakten.\\n\\n**Story Progression**\\n- **Context:** Het team was aanvankelijk gevraagd binnen enkele weken te leveren, maar concludeerde dat dit niet haalbaar was met behoud van een kwalitatieve gebruikersdienst. Het werkte eerst de aanvragerservaring uit en bracht die naar alpha; plannen voor caseworkers kwamen later, omdat zij in deze nieuwe dienst nog geen bestaande gebruikers waren en het team onder tijdsdruk aannames wilde vermijden.\\n- **Development:** Tijdens private beta werkte het team in tweewekelijkse sprints. In de eerste week testte en onderzocht het team en nam het aanvragen aan; in de tweede pauzeerde het nieuwe inzendingen voor testen, onderzoek en verwerking. De dienst was digitaal en assisted-digital, zonder papieren versie; de bron beschrijft niet concreet welke hulp de assisted-digital route bood.\\n\\n**Evidence/Observed Results**\\nDe auteur rapporteert dat de dienst na vijf weken publiek beschikbaar meer dan 100.000 aanvragen had ontvangen, met 92,6% gebruikerstevredenheid en een voltooiingspercentage van 80,2%. De bron geeft geen definities, meetmethode of vergelijking voor deze cijfers.\\n\\n**Editorial Conclusion**\\nDeze ervaring laat zien hoe dit team onder tijdsdruk de volgorde van gebruikersgroepen en vaste onderzoekstijd onderdeel maakte van zijn dienstontwerp. De gerapporteerde cijfers geven een beeld van de eerste vijf publieke weken, maar tonen niet aan dat die ontwerpkeuzes de resultaten veroorzaakten.\\n\\n**Critical Constraints**\\nDe bron vermeldt niet vanaf welk startpunt de twaalf weken zijn geteld. Beschrijf assisted-digital ondersteuning niet specifieker dan de beschikbare informatie toelaat.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1029,
+    "completion_tokens": 595,
+    "total_tokens": 1624,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 1026,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 152,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

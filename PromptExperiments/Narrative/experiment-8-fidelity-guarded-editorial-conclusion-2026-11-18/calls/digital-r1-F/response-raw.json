@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ElaNgOKR98j99HBm49fatKdfZ3wBp",
+  "object": "chat.completion",
+  "created": 1795009972,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"**Selected Story**\\nHet POA-refundteam lanceerde de dienst na twaalf weken. De beschreven aanpak stelde eerst de aanvragerservaring centraal, voegde caseworkerwerk later toe en reserveerde tijdens private beta vaste tijd voor onderzoek en testen. Voor professionals die diensten ontwerpen en verbeteren laat deze praktijk zien hoe het team onder tijdsdruk zijn werk organiseerde, zonder dat de bron bewijst dat die keuzes de lancering of resultaten veroorzaakten.\\n\\n**Story Progression**\\n- **Context:** Het team was aanvankelijk gevraagd binnen enkele weken te leveren, maar concludeerde dat dit niet haalbaar was met behoud van een kwalitatieve gebruikersdienst. Het werkte daarom eerst aan de aanvragerservaring en bracht die naar alpha; caseworkerplannen kwamen later. Volgens de auteur waren caseworkers in deze nieuwe dienst nog geen bestaande gebruikers en wilde het team onder tijdsdruk aannames vermijden.\\n- **Development:** Tijdens private beta werkte het team in tweewekelijkse sprints. In de eerste week testte en onderzocht het team en nam het aanvragen aan; in de tweede pauzeerde het nieuwe inzendingen voor testen, onderzoek en verwerking. Zo beschrijft de bron de combinatie van een gefaseerde volgorde van gebruikersgroepen en gereserveerde onderzoekstijd.\\n\\n**Evidence/Observed Results**\\nDe dienst was digitaal en assisted-digital, zonder papieren versie. Na vijf weken publieke beschikbaarheid rapporteerde de auteur meer dan 100.000 aanvragen, 92,6% gebruikerstevredenheid en een voltooiingspercentage van 80,2%.\\n\\n**Editorial Conclusion**\\nDe centrale ontwerpkeuze in dit verhaal is niet simpelweg sneller opleveren, maar bepalen wiens ervaring eerst werd uitgewerkt en tijd voor onderzoek en testen in de planning beschermen. De gerapporteerde cijfers geven de stand van zaken na vijf weken weer; ze tonen niet aan dat deze werkwijzen de resultaten hebben veroorzaakt.\\n\\n**Critical Constraints**\\nDe bron specificeert niet wat de assisted-digital ondersteuning inhield, hoe de cijfers zijn gemeten of waarmee ze zijn vergeleken. Het startpunt van de periode van twaalf weken is niet vermeld. Presenteer de beschreven aanpak en resultaten daarom niet als bewezen oorzaak of universeel recept.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 992,
+    "completion_tokens": 634,
+    "total_tokens": 1626,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 145,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

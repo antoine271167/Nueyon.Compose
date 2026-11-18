@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ElaOlAY2NZ4BI7U87uoZrzq1NXwAZ",
+  "object": "chat.completion",
+  "created": 1795010039,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"**Selected Story**\\nHet POA-refundteam lanceerde een digitale en assisted-digital dienst na twaalf weken. De ervaring laat zien hoe het team onder tijdsdruk keuzes maakte over de volgorde van gebruikersgroepen en ruimte voor onderzoek en testen.\\n\\n**Story Progression**\\n- **Context:** Het team kreeg aanvankelijk de opdracht binnen enkele weken te leveren, maar concludeerde dat dit niet haalbaar was met behoud van een kwalitatieve gebruikersdienst.\\n- **Development:** Het team werkte eerst aan de ervaring voor aanvragers en bracht die naar alpha; plannen voor caseworkers kwamen later. Tijdens private beta reserveerde het team in tweewekelijkse sprints tijd voor testen en onderzoek, naast het aannemen en verwerken van aanvragen.\\n\\n**Evidence/Observed Results**\\nDe dienst had geen papieren versie en bood naast de digitale route ook assisted-digital ondersteuning. Na vijf weken publiek beschikbaar te zijn geweest, had de dienst volgens de auteur meer dan 100.000 aanvragen ontvangen, met 92,6% gebruikerstevredenheid en een voltooiingspercentage van 80,2%.\\n\\n**Editorial Conclusion**\\nDeze praktijkervaring laat zien dat de beschreven aanpak niet alleen ging over sneller opleveren: de volgorde waarin het team gebruikersgroepen meenam en de tijd die het reserveerde voor onderzoek en testen, waren onderdeel van hoe het werk onder tijdsdruk werd georganiseerd. De gerapporteerde resultaten geven context aan die ervaring, maar tonen niet aan dat deze keuzes ze veroorzaakten.\\n\\n**Critical Constraints**\\nDe bron specificeert niet hoe assisted-digital ondersteuning werkte. De resultaten hebben geen vermelde meetmethode, metriekdefinities of vergelijking. De bron stelt geen causaal verband vast tussen de aanpak en de termijn of resultaten, en vermeldt niet vanaf welk startpunt de twaalf weken zijn geteld.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1029,
+    "completion_tokens": 486,
+    "total_tokens": 1515,
+    "prompt_tokens_details": {
+      "cached_tokens": 1026,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 83,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

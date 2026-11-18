@@ -1,0 +1,15 @@
+**Selected Story**
+De weg van de James Webb-ruimtetelescoop naar routinewetenschap duurde veel langer dan het uitvouwen. Webb bereikte in zijn tweede week zijn volledig uitgevouwen configuratie, maar afkoeling, spiegeluitlijning en instrumentkalibratie gingen door tijdens de zes maanden durende ingebruikname.
+
+**Story Progression**
+- **Context:** Webb moest opgevouwen in de Ariane 5-neuskegel passen, omdat zijn operationele configuratie te groot was voor de beschikbare raket. Het uitvouwen omvatte meer dan 50 grote stappen en ruim 300 mogelijke afzonderlijke faalpunten. Een probleem had de missie kunnen beperken of ernstig schaden; op Webb’s afstand van de aarde was reparatie niet mogelijk.
+- **Development:** In de tweede week waren de secundaire spiegel en beide vleugels van de primaire spiegel uitgeklapt en vergrendeld: de telescoop had zijn operationele configuratie bereikt. Dat was niet hetzelfde als gereed zijn voor routinewetenschap. In de eerste maand koelden telescoop en instrumenten enkele weken af; de spiegeluitlijning volgde in maanden twee tot en met vier, en de kalibratie van instrumentmodi in maanden vijf en zes.
+
+**Evidence/Observed Results**
+Webb begon na zes maanden met routinewetenschappelijke activiteiten. De uitvouwing verliep volgens de bron soepel; de maanden van ingebruikname volgden op het bereiken van de volledig uitgevouwen configuratie.
+
+**Editorial Conclusion**
+Webbs tijdlijn laat zien dat het bereiken van de juiste fysieke configuratie slechts één mijlpaal was. De overgang naar routinewetenschap omvatte ook maanden van afkoeling, uitlijning en kalibratie—een wezenlijk ander stadium dan het uitvouwen zelf.
+
+**Critical Constraints**
+De bron noemt geen specifieke afwijkingen of problemen tijdens de uitvouwing. Beschrijf de ingebruikname niet als herstel van een mislukking en doe geen uitspraken over specifieke kalibratieresultaten buiten de gemelde start van routinewetenschap.

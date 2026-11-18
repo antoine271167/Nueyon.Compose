@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ElaOPrmmcqnRqAo01j6M7yq2YAYZn",
+  "object": "chat.completion",
+  "created": 1795010017,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"**Selected Story**\\nWebb’s compact launch design made deployment possible, but unfolding was only an early milestone. Reaching its fully deployed configuration in the second week was followed by months of cooling, mirror alignment and instrument calibration before routine science operations began.\\n\\n**Story Progression**\\n- **Context:** Webb had to fold to fit inside the Ariane 5 fairing because its operational configuration was too large for the available rocket. Deployment required more than 50 major steps and involved over 300 possible single points of failure, with no possibility of repair at Webb’s distance from Earth.\\n- **Development:** The secondary mirror and both primary-mirror wings unfolded and latched by the second week. The telescope then had to cool, have its mirrors aligned and its instrument modes calibrated—a commissioning sequence that continued well beyond deployment.\\n\\n**Evidence/Observed Results**\\nDuring the first month, Webb and its instruments cooled for several weeks. Mirror alignment took place in months two through four, followed by instrument-mode calibration in months five and six. Webb began routine science operations after six months.\\n\\n**Editorial Conclusion**\\nWebb’s path to science shows why a successful deployment is not the same as operational readiness: unfolding completed the telescope’s configuration, while commissioning made routine observations possible.\\n\\n**Critical Constraints**\\nDeployment proceeded smoothly; the source does not identify specific anomalies or problems. Do not present commissioning as recovery from a deployment failure or claim particular calibration results beyond the transition to routine science operations.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 807,
+    "completion_tokens": 593,
+    "total_tokens": 1400,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 265,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

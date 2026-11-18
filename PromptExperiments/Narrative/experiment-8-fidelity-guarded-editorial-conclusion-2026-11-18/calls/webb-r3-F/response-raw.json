@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ElaP067xrLnotykSillmo1p78uePN",
+  "object": "chat.completion",
+  "created": 1795010054,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"**Selected Story**\\nDe uitvouwing van de James Webb-ruimtetelescoop was een cruciale mijlpaal, maar betekende nog niet dat de telescoop klaar was voor routinematige wetenschap. Na het bereiken van zijn volledig uitgevouwen configuratie in de tweede week volgden maanden van afkoeling, spiegeluitlijning en instrumentkalibratie.\\n\\n**Story Progression**\\n- **Context:** Webb moest opgevouwen in de Ariane 5-kuip passen, omdat zijn operationele configuratie te groot was voor de beschikbare raket. De uitvouwing omvatte meer dan 50 grote stappen en ruim 300 mogelijke afzonderlijke faalpunten; op Webbs afstand van de aarde was reparatie niet mogelijk.\\n- **Development:** In de tweede week waren de secundaire spiegel en beide vleugels van de hoofdspiegel uitgeklapt en vergrendeld. Daarna koelden telescoop en instrumenten gedurende enkele weken af; de spiegeluitlijning volgde in maand twee tot en met vier en de kalibratie van instrumentmodi in maand vijf en zes. Na zes maanden begon Webb aan routinematige wetenschappelijke waarnemingen.\\n\\n**Evidence/Observed Results**\\nDe mijlpaal van de volledig uitgevouwen operationele configuratie viel in de tweede week. Rutinematige wetenschap begon pas na de zes maanden durende inbedrijfstelling, waarin afkoeling, uitlijning en kalibratie plaatsvonden.\\n\\n**Editorial Conclusion**\\nWebbs ingebruikname laat zien dat bij een complex ruimteproject een zichtbare technische mijlpaal niet hetzelfde is als operationele gereedheid: de uitvouwing maakte verdere afstelling mogelijk, maar de overgang naar routinematige wetenschap vergde nog maanden.\\n\\n**Critical Constraints**\\nDe uitvouwing verliep volgens de bron soepel; er zijn geen specifieke problemen of afwijkingen genoemd. Beschrijf de maanden van inbedrijfstelling niet als herstel na een uitvouwing die misging. Er zijn geen gedetailleerde kalibratieresultaten gegeven; ga niet verder dan de gemelde overgang naar routinematige wetenschap.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 807,
+    "completion_tokens": 759,
+    "total_tokens": 1566,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 284,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

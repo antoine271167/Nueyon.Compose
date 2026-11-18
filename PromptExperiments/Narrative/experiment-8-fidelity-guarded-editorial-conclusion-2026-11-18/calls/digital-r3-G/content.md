@@ -1,0 +1,15 @@
+**Selected Story**
+Het POA-refundteam lanceerde een digitale en assisted-digital dienst na twaalf weken. De ervaring laat zien hoe het team onder tijdsdruk keuzes maakte over de volgorde van gebruikersgroepen en ruimte voor onderzoek en testen.
+
+**Story Progression**
+- **Context:** Het team kreeg aanvankelijk de opdracht binnen enkele weken te leveren, maar concludeerde dat dit niet haalbaar was met behoud van een kwalitatieve gebruikersdienst.
+- **Development:** Het team werkte eerst aan de ervaring voor aanvragers en bracht die naar alpha; plannen voor caseworkers kwamen later. Tijdens private beta reserveerde het team in tweewekelijkse sprints tijd voor testen en onderzoek, naast het aannemen en verwerken van aanvragen.
+
+**Evidence/Observed Results**
+De dienst had geen papieren versie en bood naast de digitale route ook assisted-digital ondersteuning. Na vijf weken publiek beschikbaar te zijn geweest, had de dienst volgens de auteur meer dan 100.000 aanvragen ontvangen, met 92,6% gebruikerstevredenheid en een voltooiingspercentage van 80,2%.
+
+**Editorial Conclusion**
+Deze praktijkervaring laat zien dat de beschreven aanpak niet alleen ging over sneller opleveren: de volgorde waarin het team gebruikersgroepen meenam en de tijd die het reserveerde voor onderzoek en testen, waren onderdeel van hoe het werk onder tijdsdruk werd georganiseerd. De gerapporteerde resultaten geven context aan die ervaring, maar tonen niet aan dat deze keuzes ze veroorzaakten.
+
+**Critical Constraints**
+De bron specificeert niet hoe assisted-digital ondersteuning werkte. De resultaten hebben geen vermelde meetmethode, metriekdefinities of vergelijking. De bron stelt geen causaal verband vast tussen de aanpak en de termijn of resultaten, en vermeldt niet vanaf welk startpunt de twaalf weken zijn geteld.

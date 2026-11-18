@@ -1,0 +1,91 @@
+{
+  "decision": "NO-GO",
+  "criteria": {
+    "verifiedCallsAndExactReplay": true,
+    "digitalFocus": true,
+    "digitalFidelity": true,
+    "webbFidelity": false,
+    "allStructure": true,
+    "fiveConclusions": false,
+    "fiveFullySufficient": false,
+    "twoFullySufficientPerCase": false,
+    "noFocusSumDecline": true,
+    "noConclusionSumDecline": true,
+    "fidelitySum": false,
+    "noPairedDropToZero": true,
+    "noNewMaterialErrorType": true,
+    "withinTokenLimit": true
+  },
+  "summary": {
+    "F": {
+      "scoresOfTwo": {
+        "focus": 6,
+        "conclusion": 0,
+        "structure": 6,
+        "details": 6,
+        "fidelity": 3,
+        "handoff": 3
+      },
+      "sums": {
+        "focus": 12,
+        "conclusion": 4,
+        "structure": 12,
+        "details": 12,
+        "fidelity": 6,
+        "handoff": 9
+      },
+      "complete": 0,
+      "completeByCase": {
+        "digital": 0,
+        "webb": 0
+      },
+      "materialErrorTypes": [
+        "webb-postdeployment-cooldown",
+        "webb-deployment-caused-commissioning"
+      ]
+    },
+    "G": {
+      "scoresOfTwo": {
+        "focus": 6,
+        "conclusion": 0,
+        "structure": 6,
+        "details": 5,
+        "fidelity": 3,
+        "handoff": 2
+      },
+      "sums": {
+        "focus": 12,
+        "conclusion": 5,
+        "structure": 12,
+        "details": 11,
+        "fidelity": 6,
+        "handoff": 8
+      },
+      "complete": 0,
+      "completeByCase": {
+        "digital": 0,
+        "webb": 0
+      },
+      "materialErrorTypes": [
+        "webb-postdeployment-cooldown"
+      ]
+    }
+  },
+  "tokenRatio": 0.9910966340933768,
+  "drops": [
+    {
+      "control": "digital-r3-F",
+      "id": "digital-r3-G",
+      "dimension": "details",
+      "from": 2,
+      "to": 1
+    },
+    {
+      "control": "digital-r3-F",
+      "id": "digital-r3-G",
+      "dimension": "handoff",
+      "from": 2,
+      "to": 1
+    }
+  ]
+}
