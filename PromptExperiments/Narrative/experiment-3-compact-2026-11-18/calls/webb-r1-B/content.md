@@ -1,0 +1,8 @@
+**Selected Story** Webb’s path to routine science took far longer than its unfolding. Because its operational configuration was too large for the Ariane 5 fairing, the telescope launched folded; after reaching its fully deployed configuration in its second week, it still needed months of cooling, mirror alignment and instrument calibration before beginning routine science operations.
+
+**Story Progression**
+- **Context:** Webb had to unfold in space through more than 50 major steps, with over 300 possible single points of failure. The source says any one could have diminished or crippled the mission, and repair at Webb’s distance from Earth was not possible.
+- **Development:** By the second week, the secondary mirror and both primary-mirror wings had unfolded and latched, completing the telescope’s fully deployed operational configuration. That milestone was followed by several weeks of cooling in the first month, mirror alignment in months two through four, and instrument-mode calibration in months five and six.
+- **Endpoint:** Webb began routine science operations after six months. Its commissioning shows that reaching deployed configuration was a crucial step, not the same as being ready for routine observations.
+
+**Critical Constraints:** The source reports that deployment proceeded smoothly; do not invent anomalies or frame commissioning as recovery from deployment failure. Do not claim specific calibration results beyond the reported start of routine science operations.

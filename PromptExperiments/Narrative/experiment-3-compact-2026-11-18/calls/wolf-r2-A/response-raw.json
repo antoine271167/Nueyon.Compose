@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ElZ4e01Hnr6uETzv45Q2BEUSerFqH",
+  "object": "chat.completion",
+  "created": 1795004948,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"### Selected Story\\nIn Yellowstone, wolves are social predators whose ecological relationships extend beyond their own packs: cooperative care and group hunting shape pack life, while wolf kills provide food for other animals. Changes in the composition of wolf prey offer a concrete example of how predation varies over time. The reader should understand that these relationships and changing predation occur amid other conditions, so wolves alone do not determine ecosystem outcomes.\\n\\n### Story Progression\\n- **Context:** Introduce Yellowstone wolves as social animals living in family packs, with cooperative offspring care and group hunting among the features of pack life.\\n- **Development:** Show how wolf kills feed animals ranging from ravens and coyotes to bears and invertebrates. Then use the shift in the proportions of elk calves and bull elk among early-winter prey between 1995–2000 and 2001–2007 as a specific example of changing prey composition, which the source links to prey vulnerability and availability.\\n- **Endpoint:** Place changing wolf predation and elk impacts alongside other factors, including other predators, ungulate management outside the park, and weather. Conclude that Yellowstone’s wolves are part of a set of interacting food and social relationships, not solitary controllers of ecosystem outcomes.\\n\\n### Critical Constraints\\n- Do not claim that wolves alone determine ecosystem outcomes or that the material establishes an ecosystem-wide cascade or measured plant effects.\\n- Do not attribute the prey-composition shift or broader changes in predation and elk impacts to pack social behavior alone.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6955,
+    "completion_tokens": 591,
+    "total_tokens": 7546,
+    "prompt_tokens_details": {
+      "cached_tokens": 6952,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 267,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

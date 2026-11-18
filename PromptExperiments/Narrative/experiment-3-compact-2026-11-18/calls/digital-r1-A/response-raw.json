@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ElZ3lzO9sr4bFV0CGbmlDZgB1f8Xc",
+  "object": "chat.completion",
+  "created": 1795004893,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"### Selected Story\\nHet POA-refundteam lanceerde een digitale en assisted-digital refunddienst na twaalf weken, nadat het had vastgesteld dat de aanvankelijk gevraagde termijn van enkele weken niet haalbaar was met behoud van een kwalitatieve gebruikersdienst. De beschreven aanpak richtte zich eerst op de ervaring van aanvragers en bracht caseworkers later in beeld, terwijl tijdens private beta vaste tijd was ingeroosterd voor onderzoek en testen. De kern is hoe die volgorde en werkindeling deel uitmaakten van de aanpak onder tijdsdruk, zonder dat daarmee is aangetoond dat ze de lancering of latere resultaten veroorzaakten.\\n\\n### Story Progression\\n- **Context:** Het team werd gevraagd de refunddienst binnen enkele weken te leveren, maar concludeerde dat dit niet haalbaar was met behoud van een kwalitatieve gebruikersdienst; de dienst werd na twaalf weken gelanceerd.\\n- **Development:** De aanpak begon bij de aanvragerservaring, die naar alpha werd gebracht; het werk aan caseworkers volgde later. Tijdens private beta reserveerde het team binnen tweewekelijkse sprints tijd voor aanvragen, onderzoek, testen en verwerking.\\n- **Endpoint:** De volgorde van gebruikersgroepen en de gereserveerde onderzoeks- en testtijd vormen de beschreven aanpak. Eventuele gerapporteerde uitkomsten kunnen als stand van zaken worden genoemd, niet als bewijs voor het effect van die werkwijzen.\\n\\n### Critical Constraints\\n- Leg geen causaal verband tussen de aanpak, de termijn van twaalf weken en eventuele resultaten.\\n- Beschrijf de assisted-digital route niet verder dan dat deze bestond; de concrete ondersteuning is niet gespecificeerd.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 7161,
+    "completion_tokens": 972,
+    "total_tokens": 8133,
+    "prompt_tokens_details": {
+      "cached_tokens": 3872,
+      "cache_write_tokens": 3286,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 604,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

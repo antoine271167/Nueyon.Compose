@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ElZ6Faiha8eenj6aWMm3vT6ffFKC8",
+  "object": "chat.completion",
+  "created": 1795005047,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"**Selected Story**\\nLowell’s shift from textile decline to heritage-led reuse brought new activity to the city, but it did not shield Lowell from further economic change. The 1992 historical account presents the revival as a broader effort—not a success story attributable to parks alone—and records a downturn by the late 1980s.\\n\\n**Story Progression**\\n- **Context:** Textile employment fell from 17,000 in 1895 to 8,000 by 1936 as mills closed and people left. One worker recalled being sent home repeatedly without knowing whether work would be available.\\n- **Development:** In the 1960s, Lowell citizens proposed making the city’s architectural and cultural heritage part of revitalization. Political and business leaders backed the effort; the city council endorsed it in 1972, and heritage and historical parks followed in 1974 and 1978. The account reports that more than 100 old buildings were given new uses in the late 1970s and early 1980s, alongside rising employment and business expansion. It also identifies the University of Lowell and Wang Laboratories as separate developments of the 1970s.\\n- **Endpoint:** By the late 1980s, the boom had ended amid a regional slowdown and difficulties in the computer industry, including workforce cuts and restructuring at Wang. Lowell’s reuse of its industrial past was part of a revival, not an escape from economic shifts.\\n\\n**Critical Constraints**\\nTreat this as the perspective of a 1992 historical account; do not imply conditions after 1992. Do not assign the recovery to the parks, preservation effort, university, or Wang alone, or claim the source measures their separate contributions.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 889,
+    "completion_tokens": 554,
+    "total_tokens": 1443,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 183,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

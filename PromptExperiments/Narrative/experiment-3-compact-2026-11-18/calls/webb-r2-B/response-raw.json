@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ElZ4NCDlhuk0Na7IPrq8E0qcPzrgv",
+  "object": "chat.completion",
+  "created": 1795004931,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"**Selected Story**\\nWebb moest compact worden opgevouwen om in de Ariane 5-raket te passen. Maar het bereiken van zijn volledig uitgevouwen vorm was pas een vroege stap: afkoeling, spiegeluitlijning en instrumentkalibratie namen de rest van de zes maanden durende ingebruikname in beslag.\\n\\n**Story Progression**\\n- **Context:** De operationele configuratie paste niet in de beschikbare raketruimte. Het uitvouwen omvatte meer dan 50 grote stappen en ruim 300 mogelijke afzonderlijke faalpunten; één daarvan had de missie kunnen beperken of verlammen.\\n- **Development:** In de tweede week waren de secundaire spiegel en beide vleugels van de hoofdspiegel uitgeklapt en vergrendeld. Daarna koelden de telescoop en instrumenten wekenlang af; de spiegeluitlijning volgde in maand twee tot en met vier.\\n- **Endpoint:** In maand vijf en zes werden de instrumentmodi gekalibreerd. Pas na zes maanden begon Webb aan routinematige wetenschappelijke waarnemingen: uitgevouwen zijn en klaar zijn voor routinewetenschap waren verschillende mijlpalen.\\n\\n**Critical Constraints:** De uitvouwing verliep volgens de bron soepel; verzin geen incidenten of tegenslagen en presenteer de ingebruikname niet als herstel na een fout. Claim geen specifiek kalibratieresultaat buiten de overgang naar routinematige wetenschap.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 773,
+    "completion_tokens": 581,
+    "total_tokens": 1354,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 255,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

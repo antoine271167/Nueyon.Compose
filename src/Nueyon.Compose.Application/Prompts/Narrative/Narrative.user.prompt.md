@@ -114,12 +114,6 @@ Apply these rules:
 - Do not turn individual work into collective work.
 - Do not replace an unsupported "team" with an equally unsupported "project," "organization," or "developers" as the decision-maker.
 
-For example, if supported by the inputs:
-
-- Personal action: "I set out to build an AI agent."
-- Product design: "The design centers on an orchestrator that coordinates specialized agents through distinct stages."
-- Unsupported attribution: "The team decided to replace a single agent with an orchestration layer."
-
 Do not force first-person language into every sentence. Preserve individual ownership where relevant, and describe documented product characteristics directly elsewhere.
 
 Do not invent collaboration, shared decisions, feelings, motivations, or personal experiences.
@@ -157,14 +151,6 @@ When a technical concept is relevant:
 - Avoid turning one concept into a catalogue of components, stages, or features.
 - Do not infer technical behavior from a conceptual description.
 - Do not claim that an intended design has been implemented unless the inputs establish implementation.
-
-**For this Selected Idea, the central story is the development from setting out to build an AI agent toward designing an orchestrator that coordinates specialized agents.**
-
-Use the staged workflow to explain what orchestration means. Mention the harness concept only if it materially clarifies the central development.
-
-Do not give the workflow, harness, stage boundaries, and LLM-wrapper distinction equal prominence. They are supporting details, not separate central ideas.
-
-Prefer a simple explanation of the architectural direction over an inventory of architectural concepts.
 
 Do not reproduce the Synthesis in full. Do not include facts simply because they are available.
 
@@ -217,8 +203,6 @@ Do not frame the story around:
 
 Express supported developments directly.
 
-For example, if the inputs establish that the author's work moved from building an AI agent toward an orchestration-focused design, describe that development directly. Do not characterize it as a documented shift or an account of what the project stated.
-
 Unknowns and limitations are boundaries on what may be claimed, not automatic subjects for the story.
 
 Do not make missing implementation details, performance measurements, user validation, or decision-making history part of the story unless that absence is itself central to the Selected Idea.
@@ -255,8 +239,6 @@ Do not require the story to end with:
 - A disclaimer about what cannot be concluded.
 
 Do not invent an outcome simply to provide a satisfying ending.
-
-For this story, the endpoint may simply clarify the product's orchestration-focused direction. Do not add claims about what this direction subsequently changed, enabled, improved, or prioritized unless the inputs establish those claims.
 
 A concise, accurate endpoint is better than a more dramatic conclusion that the inputs cannot support.
 
@@ -317,7 +299,6 @@ Before returning the brief, verify that:
 - The story has one clear focus and a logical progression.
 - Supporting details explain the central idea instead of competing with it.
 - Technical concepts are included only when they help develop the story.
-- The workflow and harness remain subordinate to the central story unless they are themselves central to the Selected Idea.
 - Individual ownership and point of view are preserved when supported.
 - No team, collaborator, decision-maker, motivation, cause, benefit, or outcome has been invented.
 - Design intentions are not presented as implemented or demonstrated capabilities.

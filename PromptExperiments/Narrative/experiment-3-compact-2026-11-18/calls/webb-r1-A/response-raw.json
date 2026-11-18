@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ElZ3Jutp4JzMM2I5y5YHnLLzgC1pR",
+  "object": "chat.completion",
+  "created": 1795004865,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"### Selected Story\\nWebb’s path to routine science involved more than unfolding. Because its operational configuration was too large for the Ariane 5 fairing, the telescope was designed to launch folded. Its deployment carried substantial potential risk, but the telescope reached its fully deployed configuration in its second week. Cooling, mirror alignment and instrument calibration continued through the six-month commissioning period, when Webb began routine science operations. The central point is the distinction between being fully deployed and being ready for routine science.\\n\\n### Story Progression\\n- **Context:** Webb’s operational configuration was too large for the available rocket fairing, so it was designed to launch folded.\\n- **Development:** Deployment required more than 50 major steps and involved over 300 possible single points of failure, with no possibility of repair at Webb’s distance from Earth. By the second week, the telescope’s mirror components had unfolded and latched, completing its deployed configuration.\\n- **Endpoint:** Deployment was followed by several months of cooling, mirror alignment and instrument calibration. Routine science operations began after six months, showing that deployment and readiness for science were distinct stages.\\n\\n### Critical Constraints\\n- Describe deployment risk as potential; do not imply that a deployment failure, anomaly or setback occurred.\\n- Do not portray the commissioning period as recovery from a deployment problem.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6976,
+    "completion_tokens": 585,
+    "total_tokens": 7561,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 6973,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 298,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

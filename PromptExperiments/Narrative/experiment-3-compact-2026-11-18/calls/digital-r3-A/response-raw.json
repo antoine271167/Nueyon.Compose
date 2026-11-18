@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ElZ5w944rE48UdMzC0q67H4MV9Rz1",
+  "object": "chat.completion",
+  "created": 1795005028,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"### Selected Story\\nHet POA-refundteam bracht de dienst binnen twaalf weken publiek beschikbaar. Onder tijdsdruk werkte het eerst aan de ervaring van aanvragers en pas later aan plannen voor caseworkers; tijdens private beta reserveerde het team binnen de tweewekelijkse sprints tijd voor onderzoek en testen. De kern is hoe deze volgorde en tijdsindeling deel uitmaakten van de beschreven aanpak, niet dat ze op zichzelf de lancering of resultaten verklaarden.\\n\\n### Story Progression\\n- **Context:** De dienst werd binnen twaalf weken publiek gelanceerd, nadat het team had vastgesteld dat de aanvankelijk gevraagde levering binnen enkele weken niet haalbaar was met behoud van een kwalitatieve gebruikersdienst.\\n- **Development:** De ontwikkeling begon bij de aanvragerservaring en bracht die naar alpha; de plannen voor caseworkers volgden later. Tijdens private beta wisselden onderzoeks- en testtijd en het aannemen of verwerken van aanvragen elkaar af binnen tweewekelijkse sprints.\\n- **Endpoint:** Breng de lezer terug naar deze concrete aanpak: de volgorde van gebruikersgroepen en de gereserveerde onderzoeks- en testtijd kenmerken hoe het team de dienst onder tijdsdruk ontwikkelde, zonder er een algemeen recept van te maken.\\n\\n### Critical Constraints\\n- Presenteer de volgorde en de gereserveerde onderzoeks- en testtijd niet als bewezen oorzaak van de lanceringstermijn of resultaten.\\n- Maak van deze aanpak geen universeel advies of bewezen recept.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 7161,
+    "completion_tokens": 793,
+    "total_tokens": 7954,
+    "prompt_tokens_details": {
+      "cached_tokens": 7158,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 465,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

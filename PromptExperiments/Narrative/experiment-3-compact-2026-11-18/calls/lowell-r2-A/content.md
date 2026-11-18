@@ -1,0 +1,12 @@
+### Selected Story
+Lowell’s shift from textile manufacturing toward heritage-based redevelopment formed part of a broader revival, but did not end the city’s exposure to economic change. The 1992 historical account traces the contrast from industrial decline and its effects on workers to the reuse of old buildings and renewed activity, followed by a downturn by the late 1980s. The reader should understand this as a qualified revival, not a complete or lasting recovery attributed to a single effort.
+
+### Story Progression
+- **Context:** Establish Lowell’s industrial decline through falling textile employment and the uncertainty workers experienced as mills closed.
+- **Development:** Show how citizens proposed using Lowell’s architectural and cultural heritage in revitalization, with political and business support, and how heritage parks followed. More than 100 old buildings were later rehabilitated for new uses amid rising employment and business expansion.
+- **Endpoint:** Bring the account to the late-1980s downturn, making clear that heritage reuse was part of a broader revival that did not shield Lowell from further economic change.
+
+### Critical Constraints
+- Treat this as the perspective of a 1992 historical account, not a current measure of Lowell.
+- Do not present the parks or heritage reuse as the sole cause of renewed activity; the account also identifies the University of Lowell and Wang Laboratories as separate developments.
+- Describe the late-1980s downturn without implying that the account establishes what happened afterward.

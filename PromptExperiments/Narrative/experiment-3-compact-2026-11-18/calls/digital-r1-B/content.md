@@ -1,0 +1,8 @@
+**Selected Story** Het POA-refundteam lanceerde zijn dienst na twaalf weken, nadat het had geconcludeerd dat de aanvankelijk gevraagde oplevering binnen enkele weken niet haalbaar was met behoud van een kwalitatieve gebruikersdienst. De ervaring laat zien hoe het team onder tijdsdruk de aanvragerservaring eerst uitwerkte, caseworkerwerk later toevoegde en tijdens private beta tijd reserveerde voor onderzoek en testen. Het team beschrijft deze keuzes en de resultaten die volgden, maar stelt geen oorzakelijk verband vast.
+
+**Story Progression**
+- **Context:** Schets de tijdsdruk en de keuze van het team om niet vast te houden aan een termijn van enkele weken toen die niet haalbaar bleek voor een kwalitatieve dienst. De dienst was digitaal en bood ook een assisted-digital route.
+- **Development:** Volg de ontwerpvolgorde: eerst de aanvragerservaring naar alpha, daarna plannen voor caseworkers. Laat zien hoe het team tijdens private beta een tweewekelijks ritme organiseerde: de ene week testen, onderzoek en aanvragen aannemen; de volgende week inzendingen pauzeren voor testen, onderzoek en verwerking.
+- **Endpoint:** Eindig bij de gerapporteerde stand van zaken na vijf weken publieke beschikbaarheid: meer dan 100.000 aanvragen, 92,6% gebruikerstevredenheid en een voltooiingspercentage van 80,2%. Dit zijn gerapporteerde uitkomsten, geen bewijs dat de beschreven werkwijzen ze veroorzaakten.
+
+**Critical Constraints:** De bron specificeert niet wat assisted-digital ondersteuning inhield, vanaf welk startpunt de twaalf weken zijn geteld, of hoe de vijfweeksmetingen zijn gedefinieerd of gemeten. Leg geen causaliteit of universeel recept vast.

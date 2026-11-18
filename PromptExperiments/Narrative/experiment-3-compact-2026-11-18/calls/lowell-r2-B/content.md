@@ -1,0 +1,10 @@
+**Selected Story**
+Volg Lowell van het textielverval naar het hergebruik van zijn industriële erfgoed en de economische opleving die daarmee samenviel, zonder die opleving aan de erfgoedparken alleen toe te schrijven. Het historische verslag uit 1992 laat ook zien dat de boom eind jaren tachtig omsloeg: Lowell kon zijn verleden een nieuwe functie geven, maar ontkwam niet aan verdere economische verandering.
+
+**Story Progression**
+- **Context:** Textielwerk bood steeds minder zekerheid: de werkgelegenheid daalde van 17.000 in 1895 naar 8.000 in 1936, terwijl fabrieken sloten en mensen vertrokken. Een arbeider herinnerde zich dat hij herhaaldelijk naar huis werd gestuurd zonder te weten of er werk zou zijn.
+- **Development:** In de jaren zestig stelden inwoners voor Lowells architectonische en culturele erfgoed in te zetten voor stadsvernieuwing. Politieke en zakelijke leiders steunden het plan; de gemeenteraad bekrachtigde het in 1972 en in 1974 en 1978 volgden erfgoed- en historische parken. Het verslag meldt dat in de late jaren zeventig en vroege jaren tachtig meer dan honderd oude gebouwen een nieuwe bestemming kregen, naast groei van werkgelegenheid en bedrijvigheid. Ook de Universiteit van Lowell en Wang Laboratories ontwikkelden zich in de jaren zeventig.
+- **Endpoint:** Eind jaren tachtig was de opleving voorbij. Een regionale vertraging en problemen in de computerindustrie, waaronder ontslagen en herstructurering bij Wang, maakten duidelijk dat hergebruik en nieuwe bedrijvigheid Lowell niet buiten bredere economische neergang plaatsten.
+
+**Critical Constraints**
+Behandel dit als het perspectief van een historisch verslag uit 1992, niet als een actuele meting. De bron kwantificeert niet afzonderlijk hoeveel de parken, herbestemming, universiteit, Wang of andere factoren aan de opleving bijdroegen; schrijf het herstel dus niet aan één factor toe. De bron stelt evenmin vast hoe Lowell zich na de neergang of na 1992 ontwikkelde.

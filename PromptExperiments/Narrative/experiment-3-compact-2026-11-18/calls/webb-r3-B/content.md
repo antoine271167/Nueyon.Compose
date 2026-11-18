@@ -1,0 +1,11 @@
+**Selected Story**
+Webbs eerste wetenschap kwam niet meteen na het uitvouwen: de telescoop bereikte in zijn tweede week zijn volledig uitgevouwen configuratie, maar had daarna nog maanden nodig om af te koelen, zijn spiegels uit te lijnen en zijn instrumenten te kalibreren.
+
+**Story Progression**
+- **Context:** Webb moest opgevouwen in de Ariane 5-raket passen, omdat zijn operationele configuratie te groot was voor de beschikbare ruimte. Het uitvouwen omvatte meer dan 50 grote stappen en ruim 300 mogelijke afzonderlijke faalpunten; een fout had de missie kunnen beperken of verlammen, en reparatie was op die afstand van de aarde niet mogelijk.
+- **Development:** In de tweede week waren de secundaire spiegel en beide vleugels van de primaire spiegel uitgeklapt en vergrendeld. Daarmee was Webb volledig uitgevouwen, maar nog niet klaar voor routinematige wetenschap: in de eerste maand koelden telescoop en instrumenten wekenlang af, in maanden twee tot en met vier werden de spiegels uitgelijnd en in maanden vijf en zes de instrumentmodi gekalibreerd.
+- **Endpoint:** Na zes maanden begon Webb aan routinematige wetenschappelijke waarnemingen. De ingebruikname laat zien dat een complexe missie niet alleen afhangt van het bereiken van haar uiteindelijke configuratie, maar ook van de tijd die nodig is om die bruikbaar te maken.
+
+**Critical Constraints**
+- Stel de maandenlange ingebruikname niet voor als herstel na een mislukte uitvouwing: de uitvouwing verliep volgens de bron soepel.
+- Noem geen specifieke storingen of kalibratieresultaten; die zijn niet gegeven.
