@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ElXiZp4e2vJW0ejOlXzRwHoH0MSxX",
+  "object": "chat.completion",
+  "created": 1794999735,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"### Selected Story\\nLowell’s shift from textile manufacturing toward heritage-based redevelopment took place against a long industrial decline, and it did not mark an end to economic change. A citizen-led effort to use the city’s architectural and cultural heritage accompanied the reuse of more than 100 old buildings and a broader revival in activity; by the late 1980s, a downturn had followed. The central point is that heritage reuse formed part of Lowell’s revival, not a complete or lasting escape from economic change.\\n\\n### Story Progression\\n- **Context:** Establish Lowell’s decline as a textile city, including falling textile employment and the uncertainty workers experienced as mills closed.\\n- **Development:** Explain how citizens proposed using Lowell’s heritage in a revitalization strategy, with support from political and business leaders and city council endorsement in 1972. Connect this direction to the later rehabilitation of more than 100 buildings for new uses, alongside rising employment and business expansion in the late 1970s and early 1980s.\\n- **Endpoint:** Bring the story to the late-1980s downturn, amid regional economic slowdown and difficulties in the computer industry. This qualifies the revival: reuse and renewed activity were part of a broader period of change, not evidence that Lowell had escaped it.\\n\\n### Critical Constraints\\n- Treat this as the perspective of a 1992 historical account, not a measure of Lowell’s current conditions.\\n- Do not attribute the broader revival solely to parks or heritage reuse; the account identifies other developments, including the University of Lowell and Wang Laboratories.\\n- Do not portray the revival as a complete or enduring recovery.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 7448,
+    "completion_tokens": 659,
+    "total_tokens": 8107,
+    "prompt_tokens_details": {
+      "cached_tokens": 7445,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 308,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

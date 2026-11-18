@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ElXj3nVMd8vO6N6XGw1tHUPSEBwJ0",
+  "object": "chat.completion",
+  "created": 1794999765,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"### Selected Story\\nHet POA-refundteam bracht de dienst na twaalf weken publiek beschikbaar, onder tijdsdruk en nadat het had vastgesteld dat levering binnen enkele weken niet haalbaar was met behoud van een kwalitatieve gebruikersdienst. De beschreven aanpak stelde eerst de ervaring van aanvragers centraal; het werk aan caseworkers volgde later. Tijdens de private beta reserveerde het team binnen tweewekelijkse sprints tijd voor onderzoek en testen. De lezer moet begrijpen hoe deze volgorde en dit ritme deel uitmaakten van de aanpak, zonder ze als bewezen oorzaak van de lancering of resultaten voor te stellen.\\n\\n### Story Progression\\n- **Context:** De dienst werd publiek gelanceerd na twaalf weken. De aanvankelijke vraag was om binnen enkele weken te leveren, maar het team concludeerde dat dit niet haalbaar was met behoud van een kwalitatieve gebruikersdienst.\\n- **Development:** Het werk begon bij de aanvragerservaring en bracht die naar alpha; plannen voor caseworkers kwamen later. Tijdens de private beta was in het tweewekelijkse ritme tijd gereserveerd voor onderzoek en testen, naast het aannemen en verwerken van aanvragen.\\n- **Endpoint:** Sluit af bij deze concrete beschrijving van de aanpak: aanvragers eerst, caseworkerwerk later en onderzoek en testen als terugkerend onderdeel van de private beta. Presenteer dit als de werkwijze van dit team, niet als een algemeen recept.\\n\\n### Critical Constraints\\n- Leg geen causaal verband tussen deze werkwijzen en de termijn van twaalf weken of de gerapporteerde resultaten.\\n- Beschrijf niet hoe de assisted-digital ondersteuning werkte; de bron specificeert dat niet.\\n- Maak van deze praktijkervaring geen universele aanbeveling.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 7517,
+    "completion_tokens": 1014,
+    "total_tokens": 8531,
+    "prompt_tokens_details": {
+      "cached_tokens": 7514,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 630,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

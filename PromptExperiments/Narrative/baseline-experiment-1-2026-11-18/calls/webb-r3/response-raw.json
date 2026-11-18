@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ElXiiVAB9YIsK8YOLbD9ZkLWr2enS",
+  "object": "chat.completion",
+  "created": 1794999744,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"### Selected Story\\nWebb moest opgevouwen in de Ariane 5-raket passen, omdat zijn operationele configuratie te groot was. De uitvouwing bracht aanzienlijke risico’s met zich mee, maar het bereiken van die configuratie was niet hetzelfde als klaar zijn voor routinewetenschap: na het uitvouwen volgden nog maanden van afkoeling, spiegeluitlijning en instrumentkalibratie. De kern is het verschil tussen volledig uitgevouwen zijn en operationeel klaar zijn voor wetenschap.\\n\\n### Story Progression\\n- **Context:** Leg uit waarom Webb opgevouwen werd gelanceerd en schets de inzet van de uitvouwing: die omvatte meer dan 50 grote stappen en ruim 300 mogelijke afzonderlijke faalpunten; reparatie op Webb’s afstand van de aarde was niet mogelijk.\\n- **Development:** In de tweede week waren de secundaire spiegel en beide vleugels van de primaire spiegel uitgeklapt en vergrendeld. Daarna volgden weken van afkoeling, spiegeluitlijning in maanden twee tot en met vier en instrumentkalibratie in maanden vijf en zes.\\n- **Endpoint:** Webb begon na zes maanden aan routinewetenschap. Laat daarmee zien dat de uitvouwing de operationele configuratie opleverde, terwijl ingebruikname en voorbereiding op routinewetenschap nog doorgingen.\\n\\n### Critical Constraints\\n- Schets de risico’s van de uitvouwing zonder te suggereren dat er iets misging of dat de latere ingebruikname herstel van een storing was.\\n- Claim geen specifieke kalibratieresultaten buiten de overgang naar routinewetenschap na zes maanden.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 7332,
+    "completion_tokens": 924,
+    "total_tokens": 8256,
+    "prompt_tokens_details": {
+      "cached_tokens": 7329,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 560,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

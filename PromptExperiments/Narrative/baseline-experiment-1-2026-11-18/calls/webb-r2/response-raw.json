@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ElXiBEGGhnVPK75jKkNLFljA0wBoc",
+  "object": "chat.completion",
+  "created": 1794999711,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"### Selected Story\\nWebbs uitvouwing was een belangrijke mijlpaal, maar niet het einde van de ingebruikname. Omdat de telescoop te groot was voor de Ariane 5-raket in operationele configuratie, werd hij opgevouwen gelanceerd. De risicovolle uitvouwing was in de tweede week voltooid; daarna volgden nog maanden van afkoeling, spiegeluitlijning en instrumentkalibratie voordat Webb na zes maanden aan routinematige wetenschap begon. De kern is het onderscheid tussen volledig uitgevouwen zijn en klaar zijn voor routinewetenschap.\\n\\n### Story Progression\\n- **Context:** Webb moest opgevouwen in de Ariane 5-kuip passen. De uitvouwing omvatte meer dan 50 grote stappen en ruim 300 mogelijke afzonderlijke faalpunten, terwijl reparatie op die afstand van de aarde niet mogelijk was.\\n- **Development:** In de tweede week waren de secundaire spiegel en beide delen van de primaire spiegel uitgeklapt en vergrendeld, waarmee Webb zijn volledig uitgevouwen operationele configuratie bereikte. Dat was nog niet hetzelfde als gereed zijn voor routinewetenschap: afkoeling, uitlijning en kalibratie volgden in de daaropvolgende maanden.\\n- **Endpoint:** Na zes maanden begon Webb aan routinematige wetenschappelijke waarnemingen. Eindig bij die overgang en houd de centrale tegenstelling helder: uitgevouwen was een mijlpaal, geen voltooiing van de ingebruikname.\\n\\n### Critical Constraints\\n- Schets de uitvouwing als een risicovolle operatie, maar niet als een mislukking of als aanleiding voor herstel; de uitvouwing verliep soepel.\\n- Claim geen specifieke kalibratieresultaten buiten de overgang naar routinematige wetenschap na zes maanden.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 7332,
+    "completion_tokens": 595,
+    "total_tokens": 7927,
+    "prompt_tokens_details": {
+      "cached_tokens": 7329,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 193,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

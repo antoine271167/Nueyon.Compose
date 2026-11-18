@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ElXitYnxCokWI0aT6Uo5jrs39VvjR",
+  "object": "chat.completion",
+  "created": 1794999755,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"### Selected Story\\nYellowstonewolven zijn geen solitaire roofdieren die op zichzelf het ecosysteem sturen: ze leven in sociale familiegroepen, en hun prooien verbinden hen met andere dieren. De verschuiving in de samenstelling van hun vroege-winterprooi tussen 1995–2000 en 2001–2007 maakt de veranderlijkheid van die relatie concreet. Het verhaal laat zien dat wolven onderdeel zijn van een voedselweb en dat veranderingen in predatie en de gevolgen voor elanden samengaan met meerdere factoren.\\n\\n### Story Progression\\n- **Context:** Plaats Yellowstonewolven in hun sociale en ecologische context: roedels jagen samen, en een wolfdoding levert voedsel aan onder meer raven, coyotes, beren en ongewervelden.\\n- **Development:** Gebruik de verandering in de samenstelling van de vroege-winterprooi als concreet voorbeeld: het aandeel kalveren en volwassen mannelijke elanden keerde tussen 1995–2000 en 2001–2007 om. De bron verbindt veranderingen in prooi met kwetsbaarheid en beschikbaarheid.\\n- **Endpoint:** Breng de lezer terug bij de centrale gedachte: veranderingen in wolvenpredatie en de effecten op elanden spelen zich af te midden van interacties met andere roofdieren, beheer van hoefdieren buiten het park en het weer. Yellowstone is daarmee geen verhaal van één roofdier dat alleen de uitkomst bepaalt.\\n\\n### Critical Constraints\\n- Schrijf de veranderingen in prooi, predatie of elandeffecten niet toe aan wolven alleen of aan één afzonderlijke oorzaak.\\n- Claim geen gemeten planteffecten of ecosysteembrede cascade.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 7311,
+    "completion_tokens": 729,
+    "total_tokens": 8040,
+    "prompt_tokens_details": {
+      "cached_tokens": 7308,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 357,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

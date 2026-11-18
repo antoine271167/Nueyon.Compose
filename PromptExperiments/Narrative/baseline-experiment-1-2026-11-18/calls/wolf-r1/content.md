@@ -1,0 +1,11 @@
+### Selected Story
+Het verhaal laat zien waarom Yellowstone-wolven niet goed te begrijpen zijn als losse roofdieren die het ecosysteem alleen aansturen. Wolven leven in familiegroepen, jagen samen en hun prooien worden ook voedsel voor andere dieren. Tegelijkertijd veranderde de samenstelling van hun prooi in de loop van de tijd, terwijl predatie en de gevolgen voor elanden samenhangen met meerdere factoren. De lezer moet begrijpen dat de rol van wolven verweven is met sociale en voedselrelaties én met veranderende omstandigheden.
+
+### Story Progression
+- **Context:** Introduceer wolven als sociale familiegroepen: samenwerking bij de zorg voor jongen en gezamenlijke jacht horen bij hun sociale gedrag.
+- **Development:** Maak hun voedselrelaties concreet: wolvenprooien voeden onder meer raven, coyotes, beren en ongewervelden. Laat vervolgens de veranderde samenstelling van de vroege-winterprooi zien: het aandeel kalveren en volwassen mannelijke elanden verschoof tussen 1995–2000 en 2001–2007. De bron verbindt zulke veranderingen met de beschikbaarheid en kwetsbaarheid van prooien.
+- **Endpoint:** Plaats veranderingen in predatie en de gevolgen voor elanden naast de andere genoemde factoren: andere roofdieren, beheer van hoefdieren buiten het park en het weer. Rond af met het inzicht dat de rol van wolven onderdeel is van een samenspel, niet een eenvoudige verklaring waarin één roofdier het ecosysteem bepaalt.
+
+### Critical Constraints
+- Schrijf geen veranderingen in predatie of effecten op elanden uitsluitend aan wolven toe; de bron noemt meerdere factoren.
+- Claim geen gemeten effecten op planten of een ecosysteembrede cascade.
