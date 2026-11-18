@@ -1,0 +1,1 @@
+Bewijsrichting: de nieuwe functies voor meer dan honderd oude gebouwen maken de opleving tastbaar. Het einde van de hausse tegen het eind van de jaren tachtig begrenst die verandering in het verslag uit 1992. Hergebruik en de terugval laten samen zien wat de stad tijdens de opleving kon veranderen en hoever dit historische verslag reikt.

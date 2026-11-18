@@ -1,0 +1,1 @@
+Evidence direction: the new uses for more than a hundred old buildings give the revival a concrete expression. The end of the boom by the late 1980s gives that change its historical limits in the 1992 account. Reuse and the later downturn support a story about what the city could change during a revival and what the historical record lets readers say about its durability.

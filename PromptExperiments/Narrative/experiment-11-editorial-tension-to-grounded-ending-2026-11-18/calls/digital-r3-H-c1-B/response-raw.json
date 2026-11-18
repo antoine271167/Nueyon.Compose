@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ElbtEX5pCzpmLVKkDJBXw9IaxuMhl",
+  "object": "chat.completion",
+  "created": 1795015772,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"Het POA-refundteam werd gevraagd een dienst binnen enkele weken op te leveren. Het vond dat niet haalbaar zonder in te leveren op de kwaliteit van de gebruikersdienst.\\n\\nDe dienst werd uiteindelijk in twaalf weken gelanceerd. Eerst werkte het team de ervaring van aanvragers uit tot een alpha-versie; de plannen voor caseworkers kwamen later. Caseworkers waren nog geen gebruikers van deze nieuwe dienst, en het team wilde aannames vermijden.\\n\\nOok tijdens de private beta maakte het ruimte voor onderzoek en testen. De tweewekelijkse sprints hadden een vast ritme: in de eerste week nam het team aanvragen aan en deed het onderzoek en tests. In de tweede week pauzeerde het de instroom van aanvragen om opnieuw te testen, onderzoek te doen en aanvragen te verwerken.\\n\\nDe dienst was digitaal en assisted-digital, zonder papieren versie. Vijf weken na de publieke lancering rapporteerde de auteur meer dan 100.000 aanvragen, 92,6% gebruikerstevredenheid en een voltooiingspercentage van 80,2%.\\n\\nOnder tijdsdruk gaf het team dus niet alleen prioriteit aan snelheid: het bracht eerst de aanvragerservaring naar voren en reserveerde tijdens de private beta tijd voor onderzoek, testen en verwerking.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6147,
+    "completion_tokens": 1160,
+    "total_tokens": 7307,
+    "prompt_tokens_details": {
+      "cached_tokens": 1950,
+      "cache_write_tokens": 4194,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 875,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

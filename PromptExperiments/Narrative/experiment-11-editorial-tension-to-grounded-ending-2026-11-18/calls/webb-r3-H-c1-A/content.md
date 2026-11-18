@@ -1,0 +1,9 @@
+In de tweede week was de James Webb-ruimtetelescoop volledig uitgevouwen. Een grote mijlpaal — maar nog niet het begin van routinematige wetenschappelijke waarnemingen.
+
+Om in de kuip van de Ariane 5 te passen, moest Webb opgevouwen worden gelanceerd. Het uitvouwen omvatte meer dan 50 grote stappen en ruim 300 mogelijke afzonderlijke faalpunten. Elk daarvan kon de missie beperken of ernstig hinderen, en op Webb’s afstand van de aarde was reparatie niet mogelijk. Toch verliep de uitvouwing soepel.
+
+In die tweede week klapten ook de secundaire spiegel en beide vleugels van de hoofdspiegel uit en werden vergrendeld. Webb had daarmee zijn volledig uitgevouwen operationele configuratie bereikt.
+
+Daarna volgde een langere ingebruikname: in de eerste maand koelde de telescoop af, in maanden twee tot en met vier werden de spiegels uitgelijnd en in maanden vijf en zes werden de instrumentmodi gekalibreerd. Pas na zes maanden begon Webb met routinematige wetenschappelijke waarnemingen.
+
+De uitvouwing bracht Webb in zijn operationele configuratie. Klaar zijn voor routinewetenschap vroeg nog maanden werk.

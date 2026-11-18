@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ElbtRgyK1p2e4wCVfVhPXSFdvRCSm",
+  "object": "chat.completion",
+  "created": 1795015785,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"In twaalf weken lanceerde het POA-refundteam een nieuwe dienst, ondanks een aanvankelijke verwachting dat die binnen enkele weken klaar zou zijn. Het team vond dat tempo niet haalbaar zonder in te leveren op de kwaliteit van de gebruikersdienst.\\n\\nDe eerste stap was om de ervaring van aanvragers naar alpha te brengen. De plannen voor caseworkers werkten ze later uit: caseworkers waren nog geen bestaande gebruikers van deze nieuwe dienst, en het team wilde aannames vermijden.\\n\\nOok tijdens de private beta was onderzoekstijd onderdeel van het ritme. De tweewekelijkse sprints wisselden af: in de eerste week nam de dienst aanvragen aan en vonden tests en onderzoek plaats. In de tweede week werd de instroom gepauzeerd voor testen, onderzoek en het verwerken van aanvragen.\\n\\nDe dienst bood digitale en assisted-digital dienstverlening, zonder papieren versie. Vijf weken na de publieke lancering waren er volgens de auteur meer dan 100.000 aanvragen binnengekomen. De gerapporteerde gebruikerstevredenheid was 92,6% en het voltooiingspercentage 80,2%.\\n\\nIn deze aanpak gingen snelheid en ruimte voor onderzoek samen met een duidelijke volgorde: eerst de ervaring van aanvragers, daarna de uitwerking voor caseworkers.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6098,
+    "completion_tokens": 1414,
+    "total_tokens": 7512,
+    "prompt_tokens_details": {
+      "cached_tokens": 1950,
+      "cache_write_tokens": 4145,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1119,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

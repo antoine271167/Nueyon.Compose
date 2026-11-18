@@ -1,0 +1,1 @@
+Evidence direction: the animals that feed on wolf kills show how a hunt matters beyond the pack. The reported reversal in the shares of calves and bulls among early-winter prey adds a separate observation: even the relationship between wolves and their prey varies. The source describes several conditions and does not establish their relative contributions.

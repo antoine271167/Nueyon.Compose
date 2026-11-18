@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ElbsZt7gmRP6P438C1scNTOaTwvVM",
+  "object": "chat.completion",
+  "created": 1795015731,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"Lowell’s industrial revival gave old mill buildings new lives—but it didn’t bring economic change to an end.\\n\\nTextile employment fell from 17,000 in 1895 to 8,000 by 1936 as mills closed and people left. In the 1960s, Lowell citizens proposed revitalizing the city around its architectural and cultural heritage. The city council endorsed the effort in 1972, followed by heritage and historical parks in 1974 and 1978.\\n\\nIn the late 1970s and early 1980s, more than 100 old buildings were rehabilitated for new uses. Employment was rising and businesses were expanding as part of a broader revival.\\n\\nBut by the late 1980s, a regional slowdown and difficulties in the computer industry—including workforce cuts and restructuring at Wang Laboratories—had ended the boom. Lowell’s reuse of its industrial heritage was a tangible part of the revival, not evidence that the city had escaped economic change.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6106,
+    "completion_tokens": 1076,
+    "total_tokens": 7182,
+    "prompt_tokens_details": {
+      "cached_tokens": 1950,
+      "cache_write_tokens": 4153,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 850,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

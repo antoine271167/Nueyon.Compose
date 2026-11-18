@@ -1,0 +1,1 @@
+Bewijsrichting: de dieren die eten van door wolven gedode prooien maken concreet hoe een jacht buiten de roedel doorwerkt. De gerapporteerde omkering van de aandelen kalveren en stieren in het vroege wintermenu laat daarnaast zien dat de prooirelatie varieert. De bron noemt meerdere omstandigheden en stelt hun relatieve bijdragen niet vast.

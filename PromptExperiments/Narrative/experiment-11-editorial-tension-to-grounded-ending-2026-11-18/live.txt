@@ -1,0 +1,37 @@
+Frozen files and embedded prompts verified.
+digital-r1-H-c1-A: started
+digital-r1-H-c1-A: complete
+digital-r1-H-c1-B: started
+digital-r1-H-c1-B: complete
+digital-r1-H-c1-C: started
+digital-r1-H-c1-C: complete
+webb-r3-H-c1-B: started
+webb-r3-H-c1-B: complete
+webb-r3-H-c1-C: started
+webb-r3-H-c1-C: complete
+webb-r3-H-c1-A: started
+webb-r3-H-c1-A: complete
+wolf-r3-F-c1-B: started
+wolf-r3-F-c1-B: complete
+wolf-r3-F-c1-C: started
+wolf-r3-F-c1-C: complete
+wolf-r3-F-c1-A: started
+wolf-r3-F-c1-A: complete
+lowell-r1-F-c1-C: started
+lowell-r1-F-c1-C: complete
+lowell-r1-F-c1-A: started
+lowell-r1-F-c1-A: complete
+lowell-r1-F-c1-B: started
+lowell-r1-F-c1-B: complete
+digital-r3-H-c1-A: started
+digital-r3-H-c1-A: complete
+digital-r3-H-c1-B: started
+digital-r3-H-c1-B: complete
+digital-r3-H-c1-C: started
+digital-r3-H-c1-C: complete
+webb-r1-H-c1-C: started
+Unhandled exception. System.InvalidOperationException: Compose response content is empty.
+   at Nueyon.Compose.Application.Agents.Compose.ComposeAgent.ParseComposeResultFromJson(String json) in C:\Workspaces\Nueyon.Compose\src\Nueyon.Compose.Application\Agents\Compose\ComposeAgent.cs:line 166
+   at Nueyon.Compose.Application.Agents.Compose.ComposeAgent.ExecuteAsync(AgentExecutionContext executionContext, ComposeInput input, CancellationToken cancellationToken) in C:\Workspaces\Nueyon.Compose\src\Nueyon.Compose.Application\Agents\Compose\ComposeAgent.cs:line 51
+   at Program.<Main>$(String[] args) in C:\Workspaces\Nueyon.Compose\PromptExperiments\Narrative\experiment-11-editorial-tension-to-grounded-ending-2026-11-18\runner\Program.cs:line 116
+   at Program.<Main>(String[] args)

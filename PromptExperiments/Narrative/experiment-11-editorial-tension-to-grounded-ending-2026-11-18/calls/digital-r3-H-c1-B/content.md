@@ -1,0 +1,9 @@
+Het POA-refundteam werd gevraagd een dienst binnen enkele weken op te leveren. Het vond dat niet haalbaar zonder in te leveren op de kwaliteit van de gebruikersdienst.
+
+De dienst werd uiteindelijk in twaalf weken gelanceerd. Eerst werkte het team de ervaring van aanvragers uit tot een alpha-versie; de plannen voor caseworkers kwamen later. Caseworkers waren nog geen gebruikers van deze nieuwe dienst, en het team wilde aannames vermijden.
+
+Ook tijdens de private beta maakte het ruimte voor onderzoek en testen. De tweewekelijkse sprints hadden een vast ritme: in de eerste week nam het team aanvragen aan en deed het onderzoek en tests. In de tweede week pauzeerde het de instroom van aanvragen om opnieuw te testen, onderzoek te doen en aanvragen te verwerken.
+
+De dienst was digitaal en assisted-digital, zonder papieren versie. Vijf weken na de publieke lancering rapporteerde de auteur meer dan 100.000 aanvragen, 92,6% gebruikerstevredenheid en een voltooiingspercentage van 80,2%.
+
+Onder tijdsdruk gaf het team dus niet alleen prioriteit aan snelheid: het bracht eerst de aanvragerservaring naar voren en reserveerde tijdens de private beta tijd voor onderzoek, testen en verwerking.

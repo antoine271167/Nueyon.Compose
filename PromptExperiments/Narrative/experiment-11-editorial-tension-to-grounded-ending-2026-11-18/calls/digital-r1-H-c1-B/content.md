@@ -1,0 +1,7 @@
+De POA-refunddienst moest binnen enkele weken worden opgeleverd. Het team vond die termijn niet haalbaar als de dienst kwalitatief moest zijn. De dienst werd uiteindelijk in twaalf weken gelanceerd.
+
+Onder tijdsdruk bracht het team eerst de ervaring van aanvragers naar alpha. Caseworkers waren nog geen gebruikers van deze nieuwe dienst. Het team wilde daarom geen aannames doen over hun werk en werkte dat deel later uit.
+
+Ook tijdens private beta kreeg onderzoek vaste ruimte. De tweewekelijkse sprints waren zo ingericht: in de eerste week testte en onderzocht het team, terwijl het aanvragen aannam. In de tweede week pauzeerde het team nieuwe aanvragen om te testen, onderzoek te doen en aanvragen te verwerken.
+
+Na vijf weken publieke beschikbaarheid waren de gerapporteerde cijfers: meer dan 100.000 aanvragen, 92,6% gebruikerstevredenheid en een voltooiingspercentage van 80,2%.

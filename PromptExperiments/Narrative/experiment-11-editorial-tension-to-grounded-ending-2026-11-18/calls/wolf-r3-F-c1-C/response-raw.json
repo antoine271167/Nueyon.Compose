@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-Elbrof9krXVBSgs2GCaDomqcPFget",
+  "object": "chat.completion",
+  "created": 1795015684,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"Yellowstone’s wolves are connected to the ecosystem through both their packs and their prey.\\n\\nWolf packs are social families. They hunt together and care for their young cooperatively. And a wolf’s kill can feed other animals, including ravens, coyotes, bears, and invertebrates.\\n\\nWhat wolves prey on can shift, too. Between 1995–2000 and 2001–2007, the relative shares of elk calves and bull elk among early-winter prey reversed. Changes in prey vulnerability and availability are part of that picture, alongside other predators, ungulate management outside the park, and weather.\\n\\nWolves matter through their relationships with pack members, prey, and scavengers. But their changing impacts unfold amid several interacting conditions—not through the influence of one predator alone.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6033,
+    "completion_tokens": 672,
+    "total_tokens": 6705,
+    "prompt_tokens_details": {
+      "cached_tokens": 1950,
+      "cache_write_tokens": 4080,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 491,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

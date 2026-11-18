@@ -1,0 +1,1228 @@
+{
+  "decision": "NO-GO",
+  "overall": {
+    "A": {
+      "posts": 5,
+      "fidelity": 2,
+      "inherited": 2,
+      "added": 2,
+      "otherEditorial": 49,
+      "dimensionPasses": [
+        5,
+        5,
+        4,
+        5,
+        0,
+        5
+      ],
+      "input": 30189,
+      "cached": 7800,
+      "output": 6814,
+      "total": 37003,
+      "usd": 0.0057239000000000005,
+      "noCacheUsd": 0.0064259
+    },
+    "B": {
+      "posts": 5,
+      "fidelity": 2,
+      "inherited": 1,
+      "added": 3,
+      "otherEditorial": 48,
+      "dimensionPasses": [
+        5,
+        5,
+        3,
+        5,
+        0,
+        5
+      ],
+      "input": 30569,
+      "cached": 9750,
+      "output": 5233,
+      "total": 35802,
+      "usd": 0.0047959000000000005,
+      "noCacheUsd": 0.0056733999999999995
+    },
+    "C": {
+      "posts": 5,
+      "fidelity": 4,
+      "inherited": 1,
+      "added": 0,
+      "otherEditorial": 47,
+      "dimensionPasses": [
+        5,
+        4,
+        3,
+        5,
+        1,
+        5
+      ],
+      "input": 30339,
+      "cached": 9750,
+      "output": 5186,
+      "total": 35525,
+      "usd": 0.0047494,
+      "noCacheUsd": 0.0056269
+    }
+  },
+  "byTopic": {
+    "digital": {
+      "A": {
+        "posts": 2,
+        "fidelity": 2,
+        "inherited": 0,
+        "added": 0,
+        "otherEditorial": 20,
+        "dimensionPasses": [
+          2,
+          2,
+          2,
+          2,
+          0,
+          2
+        ],
+        "input": 12175,
+        "cached": 1950,
+        "output": 3888,
+        "total": 16063,
+        "usd": 0.002986,
+        "noCacheUsd": 0.0031615000000000002
+      },
+      "B": {
+        "posts": 2,
+        "fidelity": 1,
+        "inherited": 0,
+        "added": 1,
+        "otherEditorial": 19,
+        "dimensionPasses": [
+          2,
+          2,
+          1,
+          2,
+          0,
+          2
+        ],
+        "input": 12333,
+        "cached": 3900,
+        "output": 2765,
+        "total": 15098,
+        "usd": 0.0022648,
+        "noCacheUsd": 0.0026158
+      },
+      "C": {
+        "posts": 2,
+        "fidelity": 2,
+        "inherited": 0,
+        "added": 0,
+        "otherEditorial": 19,
+        "dimensionPasses": [
+          2,
+          1,
+          2,
+          2,
+          0,
+          2
+        ],
+        "input": 12235,
+        "cached": 3900,
+        "output": 2577,
+        "total": 14812,
+        "usd": 0.002161,
+        "noCacheUsd": 0.0025120000000000003
+      }
+    },
+    "webb": {
+      "A": {
+        "posts": 1,
+        "fidelity": 0,
+        "inherited": 1,
+        "added": 0,
+        "otherEditorial": 10,
+        "dimensionPasses": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          1
+        ],
+        "input": 5980,
+        "cached": 1950,
+        "output": 1151,
+        "total": 7131,
+        "usd": 0.000998,
+        "noCacheUsd": 0.0011735
+      },
+      "B": {
+        "posts": 1,
+        "fidelity": 1,
+        "inherited": 0,
+        "added": 0,
+        "otherEditorial": 10,
+        "dimensionPasses": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          1
+        ],
+        "input": 6065,
+        "cached": 1950,
+        "output": 489,
+        "total": 6554,
+        "usd": 0.0006755,
+        "noCacheUsd": 0.000851
+      },
+      "C": {
+        "posts": 1,
+        "fidelity": 1,
+        "inherited": 0,
+        "added": 0,
+        "otherEditorial": 10,
+        "dimensionPasses": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          1
+        ],
+        "input": 6010,
+        "cached": 1950,
+        "output": 666,
+        "total": 6676,
+        "usd": 0.0007585,
+        "noCacheUsd": 0.000934
+      }
+    },
+    "wolf": {
+      "A": {
+        "posts": 1,
+        "fidelity": 0,
+        "inherited": 0,
+        "added": 1,
+        "otherEditorial": 10,
+        "dimensionPasses": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          1
+        ],
+        "input": 6003,
+        "cached": 1950,
+        "output": 496,
+        "total": 6499,
+        "usd": 0.0006728,
+        "noCacheUsd": 0.0008483000000000001
+      },
+      "B": {
+        "posts": 1,
+        "fidelity": 0,
+        "inherited": 0,
+        "added": 1,
+        "otherEditorial": 10,
+        "dimensionPasses": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          1
+        ],
+        "input": 6065,
+        "cached": 1950,
+        "output": 903,
+        "total": 6968,
+        "usd": 0.0008825,
+        "noCacheUsd": 0.001058
+      },
+      "C": {
+        "posts": 1,
+        "fidelity": 1,
+        "inherited": 0,
+        "added": 0,
+        "otherEditorial": 9,
+        "dimensionPasses": [
+          1,
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        "input": 6033,
+        "cached": 1950,
+        "output": 672,
+        "total": 6705,
+        "usd": 0.0007637999999999999,
+        "noCacheUsd": 0.0009393000000000001
+      }
+    },
+    "lowell": {
+      "A": {
+        "posts": 1,
+        "fidelity": 0,
+        "inherited": 1,
+        "added": 1,
+        "otherEditorial": 9,
+        "dimensionPasses": [
+          1,
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        "input": 6031,
+        "cached": 1950,
+        "output": 1279,
+        "total": 7310,
+        "usd": 0.0010670999999999999,
+        "noCacheUsd": 0.0012426
+      },
+      "B": {
+        "posts": 1,
+        "fidelity": 0,
+        "inherited": 1,
+        "added": 1,
+        "otherEditorial": 9,
+        "dimensionPasses": [
+          1,
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        "input": 6106,
+        "cached": 1950,
+        "output": 1076,
+        "total": 7182,
+        "usd": 0.0009731000000000001,
+        "noCacheUsd": 0.0011485999999999998
+      },
+      "C": {
+        "posts": 1,
+        "fidelity": 0,
+        "inherited": 1,
+        "added": 0,
+        "otherEditorial": 9,
+        "dimensionPasses": [
+          1,
+          1,
+          0,
+          1,
+          1,
+          1
+        ],
+        "input": 6061,
+        "cached": 1950,
+        "output": 1271,
+        "total": 7332,
+        "usd": 0.0010661,
+        "noCacheUsd": 0.0012415999999999998
+      }
+    }
+  },
+  "byStratum": {
+    "safe": {
+      "A": {
+        "posts": 2,
+        "fidelity": 1,
+        "inherited": 0,
+        "added": 1,
+        "otherEditorial": 20,
+        "dimensionPasses": [
+          2,
+          2,
+          2,
+          2,
+          0,
+          2
+        ],
+        "input": 12110,
+        "cached": 1950,
+        "output": 1887,
+        "total": 13997,
+        "usd": 0.001979,
+        "noCacheUsd": 0.0021545
+      },
+      "B": {
+        "posts": 2,
+        "fidelity": 0,
+        "inherited": 0,
+        "added": 2,
+        "otherEditorial": 19,
+        "dimensionPasses": [
+          2,
+          2,
+          1,
+          2,
+          0,
+          2
+        ],
+        "input": 12251,
+        "cached": 3900,
+        "output": 2508,
+        "total": 14759,
+        "usd": 0.0021281,
+        "noCacheUsd": 0.0024790999999999997
+      },
+      "C": {
+        "posts": 2,
+        "fidelity": 2,
+        "inherited": 0,
+        "added": 0,
+        "otherEditorial": 18,
+        "dimensionPasses": [
+          2,
+          1,
+          1,
+          2,
+          0,
+          2
+        ],
+        "input": 12170,
+        "cached": 3900,
+        "output": 1835,
+        "total": 14005,
+        "usd": 0.0017835,
+        "noCacheUsd": 0.0021345
+      }
+    },
+    "problematic": {
+      "A": {
+        "posts": 3,
+        "fidelity": 1,
+        "inherited": 2,
+        "added": 1,
+        "otherEditorial": 29,
+        "dimensionPasses": [
+          3,
+          3,
+          2,
+          3,
+          0,
+          3
+        ],
+        "input": 18079,
+        "cached": 5850,
+        "output": 4927,
+        "total": 23006,
+        "usd": 0.0037449,
+        "noCacheUsd": 0.0042714
+      },
+      "B": {
+        "posts": 3,
+        "fidelity": 2,
+        "inherited": 1,
+        "added": 1,
+        "otherEditorial": 29,
+        "dimensionPasses": [
+          3,
+          3,
+          2,
+          3,
+          0,
+          3
+        ],
+        "input": 18318,
+        "cached": 5850,
+        "output": 2725,
+        "total": 21043,
+        "usd": 0.0026678,
+        "noCacheUsd": 0.0031942999999999997
+      },
+      "C": {
+        "posts": 3,
+        "fidelity": 2,
+        "inherited": 1,
+        "added": 0,
+        "otherEditorial": 29,
+        "dimensionPasses": [
+          3,
+          3,
+          2,
+          3,
+          1,
+          3
+        ],
+        "input": 18169,
+        "cached": 5850,
+        "output": 3351,
+        "total": 21520,
+        "usd": 0.0029659,
+        "noCacheUsd": 0.0034923999999999997
+      }
+    }
+  },
+  "comparisons": {
+    "B": {
+      "decision": "NO-GO",
+      "gates": {
+        "coverage": false,
+        "endingAbsolute": false,
+        "endingGain": false,
+        "endingPerCase": false,
+        "safeFidelity": false,
+        "noMoreNewErrors": false,
+        "noPairedNewErrors": false,
+        "inherited": true,
+        "otherDimensions": false,
+        "tokens": true,
+        "usd": true
+      },
+      "paired": [
+        {
+          "id": "digital-r1-H-c1",
+          "ending": [
+            0,
+            0
+          ],
+          "fidelity": [
+            2,
+            1
+          ],
+          "added": [
+            [],
+            [
+              "deadline-status"
+            ]
+          ],
+          "inherited": [
+            [],
+            []
+          ],
+          "newRegressions": [
+            "deadline-status"
+          ],
+          "otherEditorial": [
+            10,
+            9
+          ],
+          "tokenDelta": 293,
+          "usdDelta": -0.000060600000000000064
+        },
+        {
+          "id": "webb-r3-H-c1",
+          "ending": [
+            1,
+            1
+          ],
+          "fidelity": [
+            0,
+            2
+          ],
+          "added": [
+            [],
+            []
+          ],
+          "inherited": [
+            [
+              "cooling-sequence"
+            ],
+            []
+          ],
+          "newRegressions": [],
+          "otherEditorial": [
+            10,
+            10
+          ],
+          "tokenDelta": -577,
+          "usdDelta": -0.0003225
+        },
+        {
+          "id": "wolf-r3-F-c1",
+          "ending": [
+            1,
+            1
+          ],
+          "fidelity": [
+            1,
+            1
+          ],
+          "added": [
+            [
+              "elk-management-scope"
+            ],
+            [
+              "elk-management-scope"
+            ]
+          ],
+          "inherited": [
+            [],
+            []
+          ],
+          "newRegressions": [],
+          "otherEditorial": [
+            10,
+            10
+          ],
+          "tokenDelta": 469,
+          "usdDelta": 0.00020970000000000006
+        },
+        {
+          "id": "lowell-r1-F-c1",
+          "ending": [
+            1,
+            1
+          ],
+          "fidelity": [
+            0,
+            0
+          ],
+          "added": [
+            [
+              "building-scope"
+            ],
+            [
+              "building-scope"
+            ]
+          ],
+          "inherited": [
+            [
+              "downturn-causality"
+            ],
+            [
+              "downturn-causality"
+            ]
+          ],
+          "newRegressions": [],
+          "otherEditorial": [
+            9,
+            9
+          ],
+          "tokenDelta": -128,
+          "usdDelta": -0.00009399999999999979
+        },
+        {
+          "id": "digital-r3-H-c1",
+          "ending": [
+            1,
+            1
+          ],
+          "fidelity": [
+            2,
+            2
+          ],
+          "added": [
+            [],
+            []
+          ],
+          "inherited": [
+            [],
+            []
+          ],
+          "newRegressions": [],
+          "otherEditorial": [
+            10,
+            10
+          ],
+          "tokenDelta": -1258,
+          "usdDelta": -0.0006605999999999999
+        }
+      ]
+    },
+    "C": {
+      "decision": "NO-GO",
+      "gates": {
+        "coverage": false,
+        "endingAbsolute": false,
+        "endingGain": false,
+        "endingPerCase": false,
+        "safeFidelity": false,
+        "noMoreNewErrors": true,
+        "noPairedNewErrors": true,
+        "inherited": true,
+        "otherDimensions": false,
+        "tokens": true,
+        "usd": true
+      },
+      "paired": [
+        {
+          "id": "digital-r1-H-c1",
+          "ending": [
+            0,
+            1
+          ],
+          "fidelity": [
+            2,
+            2
+          ],
+          "added": [
+            [],
+            []
+          ],
+          "inherited": [
+            [],
+            []
+          ],
+          "newRegressions": [],
+          "otherEditorial": [
+            10,
+            9
+          ],
+          "tokenDelta": -198,
+          "usdDelta": -0.00028649999999999986
+        },
+        {
+          "id": "webb-r3-H-c1",
+          "ending": [
+            1,
+            1
+          ],
+          "fidelity": [
+            0,
+            2
+          ],
+          "added": [
+            [],
+            []
+          ],
+          "inherited": [
+            [
+              "cooling-sequence"
+            ],
+            []
+          ],
+          "newRegressions": [],
+          "otherEditorial": [
+            10,
+            10
+          ],
+          "tokenDelta": -455,
+          "usdDelta": -0.00023950000000000002
+        },
+        {
+          "id": "wolf-r3-F-c1",
+          "ending": [
+            1,
+            1
+          ],
+          "fidelity": [
+            1,
+            2
+          ],
+          "added": [
+            [
+              "elk-management-scope"
+            ],
+            []
+          ],
+          "inherited": [
+            [],
+            []
+          ],
+          "newRegressions": [],
+          "otherEditorial": [
+            10,
+            9
+          ],
+          "tokenDelta": 206,
+          "usdDelta": 0.00009099999999999994
+        },
+        {
+          "id": "lowell-r1-F-c1",
+          "ending": [
+            1,
+            2
+          ],
+          "fidelity": [
+            0,
+            0
+          ],
+          "added": [
+            [
+              "building-scope"
+            ],
+            []
+          ],
+          "inherited": [
+            [
+              "downturn-causality"
+            ],
+            [
+              "downturn-causality"
+            ]
+          ],
+          "newRegressions": [],
+          "otherEditorial": [
+            9,
+            9
+          ],
+          "tokenDelta": 22,
+          "usdDelta": -9.999999999999159e-7
+        },
+        {
+          "id": "digital-r3-H-c1",
+          "ending": [
+            1,
+            1
+          ],
+          "fidelity": [
+            2,
+            2
+          ],
+          "added": [
+            [],
+            []
+          ],
+          "inherited": [
+            [],
+            []
+          ],
+          "newRegressions": [],
+          "otherEditorial": [
+            10,
+            10
+          ],
+          "tokenDelta": -1053,
+          "usdDelta": -0.0005384999999999999
+        }
+      ]
+    }
+  },
+  "rows": [
+    {
+      "id": "digital-r1-H-c1-A",
+      "reviewId": "3f1b9849db",
+      "topic": "digital",
+      "arm": "A",
+      "fixture": "digital-r1-H",
+      "stratum": "safe",
+      "editorial": [
+        2,
+        2,
+        2,
+        2,
+        0,
+        2
+      ],
+      "fidelity": 2,
+      "added": [],
+      "inherited": [],
+      "hook": "Bij de POA-refunddienst was de aanvankelijke vraag om binnen enkele weken te leveren. Het team vond dat niet haalbaar zonder in te leveren op de kwaliteit van de gebruikersdienst. De dienst werd in twaalf weken gelanceerd.",
+      "ending": "Na vijf weken publieke beschikbaarheid bedroeg de gerapporteerde stand: meer dan 100.000 aanvragen, 92,6% gebruikerstevredenheid en een voltooiingspercentage van 80,2%.",
+      "note": "De aanvankelijke vraag en de lanceringstermijn krijgen afzonderlijke zinnen (Evidence 1). Gebruikersvolgorde en sprintweken blijven leidend (Evidence 2–3). De laatste alinea somt uitsluitend de gerapporteerde vijfweekscijfers op (Evidence 5).",
+      "input": 6107,
+      "cached": 0,
+      "output": 1391,
+      "total": 7498,
+      "usd": 0.0013062,
+      "noCacheUsd": 0.0013062
+    },
+    {
+      "id": "digital-r1-H-c1-B",
+      "reviewId": "021ef5c46c",
+      "topic": "digital",
+      "arm": "B",
+      "fixture": "digital-r1-H",
+      "stratum": "safe",
+      "editorial": [
+        2,
+        2,
+        1,
+        2,
+        0,
+        2
+      ],
+      "fidelity": 1,
+      "added": [
+        "deadline-status"
+      ],
+      "inherited": [],
+      "hook": "De POA-refunddienst moest binnen enkele weken worden opgeleverd. Het team vond die termijn niet haalbaar als de dienst kwalitatief moest zijn. De dienst werd uiteindelijk in twaalf weken gelanceerd.",
+      "ending": "Na vijf weken publieke beschikbaarheid waren de gerapporteerde cijfers: meer dan 100.000 aanvragen, 92,6% gebruikerstevredenheid en een voltooiingspercentage van 80,2%.",
+      "note": "«Moest binnen enkele weken» maakt de aanvankelijke vraag (Evidence 1 en H r1) stelliger, terwijl het team de termijn afwees. Aanvragers en beide sprintweken ondersteunen de boog (Evidence 2–3). De cijfers uit Evidence 5 vormen het hele slot.",
+      "input": 6186,
+      "cached": 1950,
+      "output": 1605,
+      "total": 7791,
+      "usd": 0.0012456,
+      "noCacheUsd": 0.0014211
+    },
+    {
+      "id": "digital-r1-H-c1-C",
+      "reviewId": "f6a1a549f1",
+      "topic": "digital",
+      "arm": "C",
+      "fixture": "digital-r1-H",
+      "stratum": "safe",
+      "editorial": [
+        2,
+        1,
+        2,
+        2,
+        1,
+        2
+      ],
+      "fidelity": 2,
+      "added": [],
+      "inherited": [],
+      "hook": "De vraag was om de POA-refunddienst binnen enkele weken op te leveren. Het team oordeelde dat dit niet haalbaar was zonder in te leveren op de kwaliteit van de gebruikersdienst. De dienst werd uiteindelijk in twaalf weken gelanceerd.",
+      "ending": "Na vijf weken publieke beschikbaarheid waren de gerapporteerde cijfers: meer dan 100.000 aanvragen, 92,6% gebruikerstevredenheid en een voltooiingspercentage van 80,2%. Een traject met een krappe deadline, waarin eerst de aanvragerservaring vorm kreeg en testen en onderzoek ook tijdens de beta een vaste plek hadden. Twaalf weken tot lancering; vijf weken publieke beschikbaarheid tot die cijfers.‌",
+      "note": "De vraag, lancering en vijfweekscijfers blijven afzonderlijk (Evidence 1 en 5). De fragmentarische afronding plaatst na de recap van Evidence 2–3 nogmaals beide getallenvensters naast elkaar, zonder inhoudelijke ontwikkeling.",
+      "input": 6137,
+      "cached": 1950,
+      "output": 1163,
+      "total": 7300,
+      "usd": 0.0010197000000000001,
+      "noCacheUsd": 0.0011952
+    },
+    {
+      "id": "webb-r3-H-c1-B",
+      "reviewId": "5e8e303049",
+      "topic": "webb",
+      "arm": "B",
+      "fixture": "webb-r3-H",
+      "stratum": "problematic",
+      "editorial": [
+        2,
+        2,
+        2,
+        2,
+        1,
+        2
+      ],
+      "fidelity": 2,
+      "added": [],
+      "inherited": [],
+      "hook": "Toen de James Webb-ruimtetelescoop in de tweede week volledig was uitgevouwen, was een grote mijlpaal bereikt. Maar nog niet het begin van routinematige wetenschappelijke waarnemingen.",
+      "ending": "Na zes maanden begon Webb aan routinematige wetenschappelijke waarnemingen. De uitvouwing bracht de telescoop in de juiste vorm; de ingebruikname maakte de weg vrij voor het wetenschappelijke werk.",
+      "note": "De uitvouwing in week twee en afkoeling in maand één worden als afzonderlijke vensters beschreven zonder ‘daarna’ uit H r3 (Evidence 3–4). De Ariane 5-vouwreden blijft behouden (1). De afsluitende tegenstelling tussen juiste vorm en wetenschap herneemt de opening.",
+      "input": 6065,
+      "cached": 1950,
+      "output": 489,
+      "total": 6554,
+      "usd": 0.0006755,
+      "noCacheUsd": 0.000851
+    },
+    {
+      "id": "webb-r3-H-c1-C",
+      "reviewId": "68ab1a29b3",
+      "topic": "webb",
+      "arm": "C",
+      "fixture": "webb-r3-H",
+      "stratum": "problematic",
+      "editorial": [
+        2,
+        2,
+        2,
+        2,
+        1,
+        2
+      ],
+      "fidelity": 2,
+      "added": [],
+      "inherited": [],
+      "hook": "Webb was in de tweede week volledig uitgeklapt. Voor routinematige wetenschappelijke waarnemingen moest er nog maanden werk volgen.",
+      "ending": "Pas na zes maanden begon Webb aan routinematige wetenschappelijke waarnemingen. De zichtbare configuratiemijlpaal kwam in week twee; de ingebruikname liep door tot routinegebruik.",
+      "note": "‘Koelde … verder af’ laat tijdvensters los en neutraliseert de foute fasevolgorde uit H r3. De vouwreden staat in de aanloop (Evidence 1). De laatste zin zet week twee en routinegebruik opnieuw naast elkaar (3–4) en herhaalt de hook.",
+      "input": 6010,
+      "cached": 1950,
+      "output": 666,
+      "total": 6676,
+      "usd": 0.0007585,
+      "noCacheUsd": 0.000934
+    },
+    {
+      "id": "webb-r3-H-c1-A",
+      "reviewId": "68e92c85d7",
+      "topic": "webb",
+      "arm": "A",
+      "fixture": "webb-r3-H",
+      "stratum": "problematic",
+      "editorial": [
+        2,
+        2,
+        2,
+        2,
+        1,
+        2
+      ],
+      "fidelity": 0,
+      "added": [],
+      "inherited": [
+        "cooling-sequence"
+      ],
+      "hook": "In de tweede week was de James Webb-ruimtetelescoop volledig uitgevouwen. Een grote mijlpaal — maar nog niet het begin van routinematige wetenschappelijke waarnemingen.",
+      "ending": "De uitvouwing bracht Webb in zijn operationele configuratie. Klaar zijn voor routinewetenschap vroeg nog maanden werk.",
+      "note": "‘Daarna volgde een langere ingebruikname: in de eerste maand koelde de telescoop af’ neemt de volgorde over uit H r3. Evidence 3–4 plaatsen week twee en maand één in afzonderlijke vensters. Het slot herhaalt gewekte spanning tussen uitvouwen en routinegebruik.",
+      "input": 5980,
+      "cached": 1950,
+      "output": 1151,
+      "total": 7131,
+      "usd": 0.000998,
+      "noCacheUsd": 0.0011735
+    },
+    {
+      "id": "wolf-r3-F-c1-B",
+      "reviewId": "73ca116503",
+      "topic": "wolf",
+      "arm": "B",
+      "fixture": "wolf-r3-F",
+      "stratum": "safe",
+      "editorial": [
+        2,
+        2,
+        2,
+        2,
+        1,
+        2
+      ],
+      "fidelity": 1,
+      "added": [
+        "elk-management-scope"
+      ],
+      "inherited": [],
+      "hook": "In Yellowstone, a wolf hunt can feed animals well beyond the pack.",
+      "ending": "Yellowstone’s wolves matter through these relationships, but their changing impacts are not the work of one predator alone.",
+      "note": "De hook gebruikt het concrete voedsel voor dieren buiten de roedel (Evidence 2). ‘Elk management outside the park’ vernauwt ‘ungulate management’ in F r3 en Evidence 4. Het slot verbreedt de hook richting meerdere factoren, maar laat het bij ‘these relationships’ zonder terugkeer naar een concrete waarneming.",
+      "input": 6065,
+      "cached": 1950,
+      "output": 903,
+      "total": 6968,
+      "usd": 0.0008825,
+      "noCacheUsd": 0.001058
+    },
+    {
+      "id": "wolf-r3-F-c1-C",
+      "reviewId": "426eec8a12",
+      "topic": "wolf",
+      "arm": "C",
+      "fixture": "wolf-r3-F",
+      "stratum": "safe",
+      "editorial": [
+        2,
+        2,
+        1,
+        2,
+        1,
+        2
+      ],
+      "fidelity": 2,
+      "added": [],
+      "inherited": [],
+      "hook": "Yellowstone’s wolves are connected to the ecosystem through both their packs and their prey.",
+      "ending": "Wolves matter through their relationships with pack members, prey, and scavengers. But their changing impacts unfold amid several interacting conditions—not through the influence of one predator alone.",
+      "note": "De hook noemt pack en prey algemeen. Evidence 1–4 dragen de ontwikkeling en soort, prooi en brede beheerscope blijven intact. Het slot herhaalt de voedselrelaties en ‘several interacting conditions’ zonder concreet bewijsdetail.",
+      "input": 6033,
+      "cached": 1950,
+      "output": 672,
+      "total": 6705,
+      "usd": 0.0007637999999999999,
+      "noCacheUsd": 0.0009393000000000001
+    },
+    {
+      "id": "wolf-r3-F-c1-A",
+      "reviewId": "a3f000367d",
+      "topic": "wolf",
+      "arm": "A",
+      "fixture": "wolf-r3-F",
+      "stratum": "safe",
+      "editorial": [
+        2,
+        2,
+        2,
+        2,
+        1,
+        2
+      ],
+      "fidelity": 1,
+      "added": [
+        "elk-management-scope"
+      ],
+      "inherited": [],
+      "hook": "A wolf kill in Yellowstone can feed far more than the pack. Ravens, coyotes, bears and invertebrates also use the food wolves leave behind.",
+      "ending": "Yellowstone’s wolves are connected to pack members, prey and scavengers. Their changing impacts are part of a web of interacting conditions, not a story of one predator directing the ecosystem.",
+      "note": "‘Elk management outside the park’ vernauwt de beheerscope uit F r3 en Evidence 4. De soortterm en voedselrelaties blijven intact (Evidence 2–3). Een sterke prooihook bouwt op naar verandering; ‘web of interacting conditions’ eindigt met de al gegeven algemene betekenis.",
+      "input": 6003,
+      "cached": 1950,
+      "output": 496,
+      "total": 6499,
+      "usd": 0.0006728,
+      "noCacheUsd": 0.0008483000000000001
+    },
+    {
+      "id": "lowell-r1-F-c1-C",
+      "reviewId": "37d28444c9",
+      "topic": "lowell",
+      "arm": "C",
+      "fixture": "lowell-r1-F",
+      "stratum": "problematic",
+      "editorial": [
+        2,
+        2,
+        1,
+        2,
+        2,
+        2
+      ],
+      "fidelity": 0,
+      "added": [],
+      "inherited": [
+        "downturn-causality"
+      ],
+      "hook": "Lowell’s late-20th-century revival was not a straight line.",
+      "ending": "Reusing Lowell’s industrial heritage was a tangible part of its revival. It was not an escape from the economic changes that continued to shape the city.",
+      "note": "«Had ended the boom» komt rechtstreeks uit F r1. Evidence 4 noemt alleen samenloop. De generieke hook krijgt een concretere onderbouwing in het slot, waarin het hergebruik uit Evidence 3 een tastbaar onderdeel van de opleving blijft terwijl de terugval in Evidence 4 de betekenis begrenst. Het verslagjaar 1992 staat er niet expliciet.",
+      "input": 6061,
+      "cached": 1950,
+      "output": 1271,
+      "total": 7332,
+      "usd": 0.0010661,
+      "noCacheUsd": 0.0012415999999999998
+    },
+    {
+      "id": "lowell-r1-F-c1-A",
+      "reviewId": "bec2e1155f",
+      "topic": "lowell",
+      "arm": "A",
+      "fixture": "lowell-r1-F",
+      "stratum": "problematic",
+      "editorial": [
+        2,
+        2,
+        1,
+        2,
+        1,
+        2
+      ],
+      "fidelity": 0,
+      "added": [
+        "building-scope"
+      ],
+      "inherited": [
+        "downturn-causality"
+      ],
+      "hook": "Lowell’s old mill buildings found new uses during a revival—but the city’s economic story did not move in a straight line.",
+      "ending": "Reuse of Lowell’s industrial heritage was a tangible part of its revival. The downturn, however, places that revival within a longer story of adaptation amid continuing economic change.",
+      "note": "De hook beperkt «old buildings» uit de brief en Evidence 3 tot «old mill buildings». De expliciete oorzaak «had ended the boom» is geërfd uit F r1 (Evidence 4 geeft samenloop). De slotfrase «longer story of adaptation» herneemt het idee van een onregelmatige opleving zonder een specifiek detail verder uit te werken.",
+      "input": 6031,
+      "cached": 1950,
+      "output": 1279,
+      "total": 7310,
+      "usd": 0.0010670999999999999,
+      "noCacheUsd": 0.0012426
+    },
+    {
+      "id": "lowell-r1-F-c1-B",
+      "reviewId": "3bd1f279c7",
+      "topic": "lowell",
+      "arm": "B",
+      "fixture": "lowell-r1-F",
+      "stratum": "problematic",
+      "editorial": [
+        2,
+        2,
+        1,
+        2,
+        1,
+        2
+      ],
+      "fidelity": 0,
+      "added": [
+        "building-scope"
+      ],
+      "inherited": [
+        "downturn-causality"
+      ],
+      "hook": "Lowell’s industrial revival gave old mill buildings new lives—but it didn’t bring economic change to an end.",
+      "ending": "But by the late 1980s, a regional slowdown and difficulties in the computer industry—including workforce cuts and restructuring at Wang Laboratories—had ended the boom. Lowell’s reuse of its industrial heritage was a tangible part of the revival, not evidence that the city had escaped economic change.",
+      "note": "«Old mill buildings» versmalt «old buildings» uit Evidence 3 in de hook, hoewel de hoofdtekst de bredere term behoudt. «Had ended the boom» is overgenomen uit F r1 en maakt van samenloop een oorzaak (Evidence 4). De laatste zin herhaalt het contrast uit de hook.",
+      "input": 6106,
+      "cached": 1950,
+      "output": 1076,
+      "total": 7182,
+      "usd": 0.0009731000000000001,
+      "noCacheUsd": 0.0011485999999999998
+    },
+    {
+      "id": "digital-r3-H-c1-A",
+      "reviewId": "ebc7b79824",
+      "topic": "digital",
+      "arm": "A",
+      "fixture": "digital-r3-H",
+      "stratum": "problematic",
+      "editorial": [
+        2,
+        2,
+        2,
+        2,
+        1,
+        2
+      ],
+      "fidelity": 2,
+      "added": [],
+      "inherited": [],
+      "hook": "Het POA-refundteam lanceerde een dienst in twaalf weken. De aanvankelijke vraag was om binnen enkele weken te leveren, maar het team vond die termijn niet haalbaar zonder de kwaliteit van de gebruikersdienst uit het oog te verliezen.",
+      "ending": "De aanpak bracht de aanvragerservaring eerst naar voren en plande ook tijdens de beta tijd in voor onderzoek en testen.",
+      "note": "Twaalf weken en de oorspronkelijke vraag openen het verhaal. De post neutraliseert de causale claim uit H r3. Evidence 2–3 dragen het verhaal, maar de laatste zin vat alleen dezelfde ontwerpvolgorde en testtijd samen.",
+      "input": 6068,
+      "cached": 1950,
+      "output": 2497,
+      "total": 8565,
+      "usd": 0.0016798,
+      "noCacheUsd": 0.0018553000000000003
+    },
+    {
+      "id": "digital-r3-H-c1-B",
+      "reviewId": "bf2769c283",
+      "topic": "digital",
+      "arm": "B",
+      "fixture": "digital-r3-H",
+      "stratum": "problematic",
+      "editorial": [
+        2,
+        2,
+        2,
+        2,
+        1,
+        2
+      ],
+      "fidelity": 2,
+      "added": [],
+      "inherited": [],
+      "hook": "Het POA-refundteam werd gevraagd een dienst binnen enkele weken op te leveren. Het vond dat niet haalbaar zonder in te leveren op de kwaliteit van de gebruikersdienst.",
+      "ending": "Onder tijdsdruk gaf het team dus niet alleen prioriteit aan snelheid: het bracht eerst de aanvragerservaring naar voren en reserveerde tijdens de private beta tijd voor onderzoek, testen en verwerking.",
+      "note": "De hook maakt de tijdsdruk concreet en de tekst neutraliseert ‘door’ uit H r3 door lancering en aanpak los te formuleren (Evidence 1–3). Het slot herneemt de prioritering en de onderzoekstijd die al volledig in de hoofdtekst staan.",
+      "input": 6147,
+      "cached": 1950,
+      "output": 1160,
+      "total": 7307,
+      "usd": 0.0010192,
+      "noCacheUsd": 0.0011947000000000001
+    },
+    {
+      "id": "digital-r3-H-c1-C",
+      "reviewId": "c6ef16f625",
+      "topic": "digital",
+      "arm": "C",
+      "fixture": "digital-r3-H",
+      "stratum": "problematic",
+      "editorial": [
+        2,
+        2,
+        2,
+        2,
+        1,
+        2
+      ],
+      "fidelity": 2,
+      "added": [],
+      "inherited": [],
+      "hook": "In twaalf weken lanceerde het POA-refundteam een nieuwe dienst, ondanks een aanvankelijke verwachting dat die binnen enkele weken klaar zou zijn. Het team vond dat tempo niet haalbaar zonder in te leveren op de kwaliteit van de gebruikersdienst.",
+      "ending": "In deze aanpak gingen snelheid en ruimte voor onderzoek samen met een duidelijke volgorde: eerst de ervaring van aanvragers, daarna de uitwerking voor caseworkers.",
+      "note": "De oorspronkelijke verwachting en twaalf weken blijven apart, zonder ‘door’ uit H r3 (Evidence 1 en Gaps). Het concrete sprintritme is zichtbaar in de ontwikkeling (Evidence 3). Het slot vat de al genoemde gebruikersvolgorde en onderzoekstijd samen (Evidence 2–3).",
+      "input": 6098,
+      "cached": 1950,
+      "output": 1414,
+      "total": 7512,
+      "usd": 0.0011413,
+      "noCacheUsd": 0.0013168000000000001
+    }
+  ]
+}
