@@ -1,0 +1,570 @@
+{
+  "totals": {
+    "Narrative-A": {
+      "calls": 12,
+      "input": 84552,
+      "completion": 7410,
+      "total": 91962
+    },
+    "Narrative-B": {
+      "calls": 12,
+      "input": 10116,
+      "completion": 6530,
+      "total": 16646
+    },
+    "Narrative-C": {
+      "calls": 12,
+      "input": 10236,
+      "completion": 6677,
+      "total": 16913
+    },
+    "LinkedIn-A": {
+      "calls": 4,
+      "input": 23833,
+      "completion": 2796,
+      "total": 26629
+    },
+    "LinkedIn-B": {
+      "calls": 4,
+      "input": 23948,
+      "completion": 3632,
+      "total": 27580
+    },
+    "LinkedIn-C": {
+      "calls": 4,
+      "input": 23806,
+      "completion": 2996,
+      "total": 26802
+    }
+  },
+  "rows": [
+    {
+      "id": "webb-r1-A",
+      "stage": "Narrative",
+      "arm": "A",
+      "responseId": "chatcmpl-ElZGjWTMI3yMFhlJEbpZ6n3qtW9n3",
+      "input": 6976,
+      "completion": 634,
+      "total": 7610,
+      "cached": 6973,
+      "reasoning": 288
+    },
+    {
+      "id": "webb-r1-B",
+      "stage": "Narrative",
+      "arm": "B",
+      "responseId": "chatcmpl-ElZGr0uogLX0QXpShjp1Y3vyHxKWs",
+      "input": 773,
+      "completion": 591,
+      "total": 1364,
+      "cached": 0,
+      "reasoning": 179
+    },
+    {
+      "id": "webb-r1-C",
+      "stage": "Narrative",
+      "arm": "C",
+      "responseId": "chatcmpl-ElZGyagmdc1UraUYR4KQOc4H12B0z",
+      "input": 783,
+      "completion": 478,
+      "total": 1261,
+      "cached": 0,
+      "reasoning": 206
+    },
+    {
+      "id": "wolf-r1-B",
+      "stage": "Narrative",
+      "arm": "B",
+      "responseId": "chatcmpl-ElZH4coXlFVqbUTS4qhecu9Ijobk8",
+      "input": 752,
+      "completion": 539,
+      "total": 1291,
+      "cached": 0,
+      "reasoning": 270
+    },
+    {
+      "id": "wolf-r1-C",
+      "stage": "Narrative",
+      "arm": "C",
+      "responseId": "chatcmpl-ElZHBpkBGRdVJriDHsk88U6NjGP1M",
+      "input": 762,
+      "completion": 560,
+      "total": 1322,
+      "cached": 0,
+      "reasoning": 288
+    },
+    {
+      "id": "wolf-r1-A",
+      "stage": "Narrative",
+      "arm": "A",
+      "responseId": "chatcmpl-ElZHHOmzbyXhVDSIn0jDvrfJ6wytc",
+      "input": 6955,
+      "completion": 653,
+      "total": 7608,
+      "cached": 6952,
+      "reasoning": 283
+    },
+    {
+      "id": "digital-r1-C",
+      "stage": "Narrative",
+      "arm": "C",
+      "responseId": "chatcmpl-ElZHQXu4keEAReCEbPZrdhkpoIjNC",
+      "input": 968,
+      "completion": 600,
+      "total": 1568,
+      "cached": 0,
+      "reasoning": 258
+    },
+    {
+      "id": "digital-r1-A",
+      "stage": "Narrative",
+      "arm": "A",
+      "responseId": "chatcmpl-ElZHX15qMEcNiE1xO7c4lOEI253ST",
+      "input": 7161,
+      "completion": 819,
+      "total": 7980,
+      "cached": 7158,
+      "reasoning": 460
+    },
+    {
+      "id": "digital-r1-B",
+      "stage": "Narrative",
+      "arm": "B",
+      "responseId": "chatcmpl-ElZHlFTbzJfm4QFpmgMv6gX17ZJus",
+      "input": 958,
+      "completion": 460,
+      "total": 1418,
+      "cached": 0,
+      "reasoning": 88
+    },
+    {
+      "id": "lowell-r1-A",
+      "stage": "Narrative",
+      "arm": "A",
+      "responseId": "chatcmpl-ElZHqkiJtoygaDALvx54ruOL2Z3rB",
+      "input": 7092,
+      "completion": 601,
+      "total": 7693,
+      "cached": 7089,
+      "reasoning": 285
+    },
+    {
+      "id": "lowell-r1-C",
+      "stage": "Narrative",
+      "arm": "C",
+      "responseId": "chatcmpl-ElZHxL2GThFDMpnin6YbFFz8LTDSg",
+      "input": 899,
+      "completion": 587,
+      "total": 1486,
+      "cached": 0,
+      "reasoning": 147
+    },
+    {
+      "id": "lowell-r1-B",
+      "stage": "Narrative",
+      "arm": "B",
+      "responseId": "chatcmpl-ElZI4Tr94hNhY5VFWEkuaqT3ZITLg",
+      "input": 889,
+      "completion": 657,
+      "total": 1546,
+      "cached": 0,
+      "reasoning": 239
+    },
+    {
+      "id": "webb-r2-B",
+      "stage": "Narrative",
+      "arm": "B",
+      "responseId": "chatcmpl-ElZIBNlKDe2Wob4pjasaAIB3ViPYp",
+      "input": 773,
+      "completion": 531,
+      "total": 1304,
+      "cached": 0,
+      "reasoning": 268
+    },
+    {
+      "id": "webb-r2-A",
+      "stage": "Narrative",
+      "arm": "A",
+      "responseId": "chatcmpl-ElZIJwYPraZcUKvcNsYxKLo9bOnCZ",
+      "input": 6976,
+      "completion": 416,
+      "total": 7392,
+      "cached": 6973,
+      "reasoning": 135
+    },
+    {
+      "id": "webb-r2-C",
+      "stage": "Narrative",
+      "arm": "C",
+      "responseId": "chatcmpl-ElZIORETNqHQiTHk5ipTq1Qr7Y96C",
+      "input": 783,
+      "completion": 517,
+      "total": 1300,
+      "cached": 0,
+      "reasoning": 161
+    },
+    {
+      "id": "wolf-r2-C",
+      "stage": "Narrative",
+      "arm": "C",
+      "responseId": "chatcmpl-ElZIUbaCN4eMaeUdXfQFgQHt4BX8g",
+      "input": 762,
+      "completion": 460,
+      "total": 1222,
+      "cached": 0,
+      "reasoning": 147
+    },
+    {
+      "id": "wolf-r2-B",
+      "stage": "Narrative",
+      "arm": "B",
+      "responseId": "chatcmpl-ElZIbywvAvqDGa9D9CEJVJ13gTlr6",
+      "input": 752,
+      "completion": 580,
+      "total": 1332,
+      "cached": 0,
+      "reasoning": 260
+    },
+    {
+      "id": "wolf-r2-A",
+      "stage": "Narrative",
+      "arm": "A",
+      "responseId": "chatcmpl-ElZLlWefR1RVdnQsnlImiSNknKiAC",
+      "input": 6955,
+      "completion": 590,
+      "total": 7545,
+      "cached": 6952,
+      "reasoning": 222
+    },
+    {
+      "id": "digital-r2-B",
+      "stage": "Narrative",
+      "arm": "B",
+      "responseId": "chatcmpl-ElZLuQgsWwaQO6HVc5ef2RjYLyCqI",
+      "input": 958,
+      "completion": 560,
+      "total": 1518,
+      "cached": 0,
+      "reasoning": 208
+    },
+    {
+      "id": "digital-r2-C",
+      "stage": "Narrative",
+      "arm": "C",
+      "responseId": "chatcmpl-ElZM0gBqGk9h41VhNmpe1P3wxJ3PH",
+      "input": 968,
+      "completion": 598,
+      "total": 1566,
+      "cached": 0,
+      "reasoning": 211
+    },
+    {
+      "id": "digital-r2-A",
+      "stage": "Narrative",
+      "arm": "A",
+      "responseId": "chatcmpl-ElZM7UetQKszfnbYaVivE9oCz0ZnX",
+      "input": 7161,
+      "completion": 579,
+      "total": 7740,
+      "cached": 7158,
+      "reasoning": 218
+    },
+    {
+      "id": "lowell-r2-A",
+      "stage": "Narrative",
+      "arm": "A",
+      "responseId": "chatcmpl-ElZMFnJANZHPSneZ5xZna8J3KOOXc",
+      "input": 7092,
+      "completion": 668,
+      "total": 7760,
+      "cached": 7089,
+      "reasoning": 310
+    },
+    {
+      "id": "lowell-r2-B",
+      "stage": "Narrative",
+      "arm": "B",
+      "responseId": "chatcmpl-ElZMOp94JYWQmJua20xQuM8EXsCTx",
+      "input": 889,
+      "completion": 540,
+      "total": 1429,
+      "cached": 0,
+      "reasoning": 165
+    },
+    {
+      "id": "lowell-r2-C",
+      "stage": "Narrative",
+      "arm": "C",
+      "responseId": "chatcmpl-ElZMTAQgiA472uX172bfSzwohyOVx",
+      "input": 899,
+      "completion": 620,
+      "total": 1519,
+      "cached": 0,
+      "reasoning": 206
+    },
+    {
+      "id": "webb-r3-C",
+      "stage": "Narrative",
+      "arm": "C",
+      "responseId": "chatcmpl-ElZMbguhU1k7RChSW3vOlI4xAOk1G",
+      "input": 783,
+      "completion": 509,
+      "total": 1292,
+      "cached": 0,
+      "reasoning": 149
+    },
+    {
+      "id": "webb-r3-B",
+      "stage": "Narrative",
+      "arm": "B",
+      "responseId": "chatcmpl-ElZMg2vRKyMTmLi7vTaDZEq1dX6Uc",
+      "input": 773,
+      "completion": 523,
+      "total": 1296,
+      "cached": 0,
+      "reasoning": 230
+    },
+    {
+      "id": "webb-r3-A",
+      "stage": "Narrative",
+      "arm": "A",
+      "responseId": "chatcmpl-ElZMmSKRDhK81yLMS91VeQAafTdmQ",
+      "input": 6976,
+      "completion": 580,
+      "total": 7556,
+      "cached": 6973,
+      "reasoning": 167
+    },
+    {
+      "id": "wolf-r3-B",
+      "stage": "Narrative",
+      "arm": "B",
+      "responseId": "chatcmpl-ElZMuwOHwRYtpkF6ZmvDZ8GEA9ere",
+      "input": 752,
+      "completion": 361,
+      "total": 1113,
+      "cached": 0,
+      "reasoning": 102
+    },
+    {
+      "id": "wolf-r3-A",
+      "stage": "Narrative",
+      "arm": "A",
+      "responseId": "chatcmpl-ElZMzjvCr0aKpn8qHvA7pQezwKrab",
+      "input": 6955,
+      "completion": 475,
+      "total": 7430,
+      "cached": 6952,
+      "reasoning": 163
+    },
+    {
+      "id": "wolf-r3-C",
+      "stage": "Narrative",
+      "arm": "C",
+      "responseId": "chatcmpl-ElZN57ZleOq83550oqteWbGfnCrra",
+      "input": 762,
+      "completion": 561,
+      "total": 1323,
+      "cached": 0,
+      "reasoning": 279
+    },
+    {
+      "id": "digital-r3-A",
+      "stage": "Narrative",
+      "arm": "A",
+      "responseId": "chatcmpl-ElZNBrCJbik2KXDOvmgdOzZuMc7zg",
+      "input": 7161,
+      "completion": 585,
+      "total": 7746,
+      "cached": 7158,
+      "reasoning": 236
+    },
+    {
+      "id": "digital-r3-C",
+      "stage": "Narrative",
+      "arm": "C",
+      "responseId": "chatcmpl-ElZNJkYWGKE9fljFkCeR3NoBrFB2O",
+      "input": 968,
+      "completion": 638,
+      "total": 1606,
+      "cached": 0,
+      "reasoning": 299
+    },
+    {
+      "id": "digital-r3-B",
+      "stage": "Narrative",
+      "arm": "B",
+      "responseId": "chatcmpl-ElZNQjCfDeyBNcXTgxfgoLYaUFBiG",
+      "input": 958,
+      "completion": 503,
+      "total": 1461,
+      "cached": 0,
+      "reasoning": 145
+    },
+    {
+      "id": "lowell-r3-C",
+      "stage": "Narrative",
+      "arm": "C",
+      "responseId": "chatcmpl-ElZNWciybJoREoZb2Ccl8wVXfxNyD",
+      "input": 899,
+      "completion": 549,
+      "total": 1448,
+      "cached": 0,
+      "reasoning": 131
+    },
+    {
+      "id": "lowell-r3-A",
+      "stage": "Narrative",
+      "arm": "A",
+      "responseId": "chatcmpl-ElZNcX3z8SsXoPacPQZ2rzLR1u0zm",
+      "input": 7092,
+      "completion": 810,
+      "total": 7902,
+      "cached": 7089,
+      "reasoning": 469
+    },
+    {
+      "id": "lowell-r3-B",
+      "stage": "Narrative",
+      "arm": "B",
+      "responseId": "chatcmpl-ElZNnt392vC9T0pEtxFfMNuNvcM46",
+      "input": 889,
+      "completion": 685,
+      "total": 1574,
+      "cached": 0,
+      "reasoning": 260
+    },
+    {
+      "id": "linkedin-webb-r1-A",
+      "stage": "LinkedIn",
+      "arm": "A",
+      "responseId": "chatcmpl-ElZNvXv8xNGC8CGWVusnw4X46Z1rF",
+      "input": 5960,
+      "completion": 480,
+      "total": 6440,
+      "cached": 0,
+      "reasoning": 286
+    },
+    {
+      "id": "linkedin-webb-r1-B",
+      "stage": "LinkedIn",
+      "arm": "B",
+      "responseId": "chatcmpl-ElZO0WxB4mXyFQV4wXSUEWZxwBsBU",
+      "input": 6021,
+      "completion": 545,
+      "total": 6566,
+      "cached": 1950,
+      "reasoning": 292
+    },
+    {
+      "id": "linkedin-webb-r1-C",
+      "stage": "LinkedIn",
+      "arm": "C",
+      "responseId": "chatcmpl-ElZO74mqRZvoc4RaT2brA40Gj3HPt",
+      "input": 5885,
+      "completion": 505,
+      "total": 6390,
+      "cached": 1950,
+      "reasoning": 322
+    },
+    {
+      "id": "linkedin-lowell-r1-A",
+      "stage": "LinkedIn",
+      "arm": "A",
+      "responseId": "chatcmpl-ElZODh9yINFonSViG5uFokZ5aStUW",
+      "input": 5930,
+      "completion": 920,
+      "total": 6850,
+      "cached": 1950,
+      "reasoning": 732
+    },
+    {
+      "id": "linkedin-lowell-r1-C",
+      "stage": "LinkedIn",
+      "arm": "C",
+      "responseId": "chatcmpl-ElZOOA5tr76DcRQ0xUjMd1enUFLvh",
+      "input": 6049,
+      "completion": 991,
+      "total": 7040,
+      "cached": 1950,
+      "reasoning": 671
+    },
+    {
+      "id": "linkedin-lowell-r1-B",
+      "stage": "LinkedIn",
+      "arm": "B",
+      "responseId": "chatcmpl-ElZOYqUY1YxUcpGwFCX2xUJJ9kJVx",
+      "input": 6031,
+      "completion": 1126,
+      "total": 7157,
+      "cached": 1950,
+      "reasoning": 832
+    },
+    {
+      "id": "linkedin-wolf-r2-C",
+      "stage": "LinkedIn",
+      "arm": "C",
+      "responseId": "chatcmpl-ElZOkGGgduBwXeh9R3hhT9CbkpGdj",
+      "input": 5924,
+      "completion": 659,
+      "total": 6583,
+      "cached": 1950,
+      "reasoning": 437
+    },
+    {
+      "id": "linkedin-wolf-r2-B",
+      "stage": "LinkedIn",
+      "arm": "B",
+      "responseId": "chatcmpl-ElZOsWjRcq731A2ka2OZZknbP1y8m",
+      "input": 5929,
+      "completion": 773,
+      "total": 6702,
+      "cached": 1950,
+      "reasoning": 556
+    },
+    {
+      "id": "linkedin-wolf-r2-A",
+      "stage": "LinkedIn",
+      "arm": "A",
+      "responseId": "chatcmpl-ElZP1YqPBPWAVkoP8iU3clrMBB2cD",
+      "input": 5981,
+      "completion": 655,
+      "total": 6636,
+      "cached": 1950,
+      "reasoning": 453
+    },
+    {
+      "id": "linkedin-digital-r3-A",
+      "stage": "LinkedIn",
+      "arm": "A",
+      "responseId": "chatcmpl-ElZP9rcyNgdsf5ix82YH8Q9VTke3H",
+      "input": 5962,
+      "completion": 741,
+      "total": 6703,
+      "cached": 1950,
+      "reasoning": 575
+    },
+    {
+      "id": "linkedin-digital-r3-C",
+      "stage": "LinkedIn",
+      "arm": "C",
+      "responseId": "chatcmpl-ElZPHJlDOJlIE3IJ6JxZmJlRnt4uw",
+      "input": 5948,
+      "completion": 841,
+      "total": 6789,
+      "cached": 1950,
+      "reasoning": 625
+    },
+    {
+      "id": "linkedin-digital-r3-B",
+      "stage": "LinkedIn",
+      "arm": "B",
+      "responseId": "chatcmpl-ElZPRwXRoo7mp1PWLIKM9L9tXZ23W",
+      "input": 5967,
+      "completion": 1188,
+      "total": 7155,
+      "cached": 1950,
+      "reasoning": 957
+    }
+  ]
+}

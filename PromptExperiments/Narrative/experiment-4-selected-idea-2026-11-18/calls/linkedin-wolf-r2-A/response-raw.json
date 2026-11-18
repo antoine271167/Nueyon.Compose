@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ElZP1YqPBPWAVkoP8iU3clrMBB2cD",
+  "object": "chat.completion",
+  "created": 1795006211,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"In Yellowstone leven wolven in familiegroepen. Ze jagen samen en zorgen voor hun jongen — maar hun rol reikt verder dan de roedel.\\n\\nDe prooien van wolven leveren ook voedsel aan raven, coyotes, beren en ongewervelden. Wat wolven vangen, maakt dus deel uit van voedselrelaties tussen verschillende dieren.\\n\\nOok de samenstelling van hun vroege-winterprooi veranderde. Het aandeel elandkalveren en stieren verschilde tussen 1995–2000 en 2001–2007.\\n\\nVeranderingen in wolvenpredatie en de effecten op elanden staan bovendien in samenhang met meerdere omstandigheden, waaronder andere roofdieren, beheer van hoefdieren buiten het park en het weer.\\n\\nWolven spelen een rol in Yellowstone, maar niet los van de andere dieren en omstandigheden waarmee ze het ecosysteem delen.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5981,
+    "completion_tokens": 655,
+    "total_tokens": 6636,
+    "prompt_tokens_details": {
+      "cached_tokens": 1950,
+      "cache_write_tokens": 4028,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 453,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

@@ -1,0 +1,11 @@
+### Selected Story
+Lowell’s move from textile manufacturing toward heritage-led redevelopment followed a period of industrial decline that affected both employment and workers’ lives. Citizens proposed using the city’s architectural and cultural heritage as part of revitalization, and old buildings were later rehabilitated for new uses during a broader period of renewed activity. The story’s central point is that this reuse formed part of a revival, not an escape from economic change: a downturn had arrived by the late 1980s.
+
+### Story Progression
+- **Context:** Textile employment fell sharply between 1895 and 1936 amid mill closures and departures; one worker recalled being sent home repeatedly without knowing whether work would be available.
+- **Development:** In the 1960s, Lowell citizens proposed heritage as part of a revitalization strategy, with support from political and business leaders and council endorsement in 1972. Heritage and historical parks followed, while more than 100 old buildings were rehabilitated for new uses in the late 1970s and early 1980s, alongside rising employment and business expansion.
+- **Endpoint:** By the late 1980s, the boom had ended amid a regional slowdown and difficulties in the computer industry. Lowell’s heritage-led reuse was part of a wider revival, but the later downturn complicates any account of a complete or lasting recovery.
+
+### Critical Constraints
+- Frame this as the perspective of a 1992 historical account, not a current assessment of Lowell.
+- Do not attribute the broader recovery solely to the parks or preservation efforts; the account also identifies the University of Lowell and Wang Laboratories as separate developments of the 1970s.

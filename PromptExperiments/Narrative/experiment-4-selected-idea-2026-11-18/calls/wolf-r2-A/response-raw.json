@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ElZLlWefR1RVdnQsnlImiSNknKiAC",
+  "object": "chat.completion",
+  "created": 1795006009,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"### Selected Story\\nHet verhaal gaat over de rol van wolven in Yellowstone als sociale roofdieren binnen voedselrelaties die andere dieren omvatten. Wolven leven in familiegroepen en jagen samen; hun prooien voeden onder meer raven, coyotes, beren en ongewervelden. De samenstelling van hun prooi veranderde bovendien tussen twee onderzochte perioden, terwijl veranderingen in predatie en de effecten op elanden samenhangen met meerdere omstandigheden. De lezer moet begrijpen dat wolven niet los van andere dieren en omstandigheden het ecosysteem bepalen.\\n\\n### Story Progression\\n- **Context:** Introduceer Yellowstone-wolven als sociale familiegroepen, met onder meer gezamenlijke jacht en zorg voor jongen.\\n- **Development:** Maak hun relaties concreet: prooien van wolven leveren voedsel aan andere dieren, en het aandeel elandkalveren en stieren in de vroege-winterprooi veranderde tussen 1995–2000 en 2001–2007.\\n- **Endpoint:** Plaats veranderingen in wolvenpredatie en de effecten op elanden in de context van meerdere factoren, waaronder andere roofdieren, beheer van hoefdieren buiten het park en het weer. Zo blijft de centrale gedachte dat de rol van wolven onderdeel is van een netwerk, niet een op zichzelf staande verklaring.\\n\\n### Critical Constraints\\n- Stel niet dat wolven alleen ecosysteemuitkomsten bepalen of dat hun sociale gedrag op zichzelf populatie- of ecosysteemeffecten verklaart.\\n- Presenteer de genoemde factoren niet als bewezen oorzaken met vastgestelde relatieve bijdragen.\\n- Claim geen gemeten effecten op planten of een ecosysteembrede cascade.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6955,
+    "completion_tokens": 590,
+    "total_tokens": 7545,
+    "prompt_tokens_details": {
+      "cached_tokens": 6952,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 222,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

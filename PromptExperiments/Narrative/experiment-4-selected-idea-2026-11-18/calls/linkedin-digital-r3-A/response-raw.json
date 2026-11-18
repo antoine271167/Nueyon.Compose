@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ElZP9rcyNgdsf5ix82YH8Q9VTke3H",
+  "object": "chat.completion",
+  "created": 1795006219,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"De POA-refunddienst werd na twaalf weken gelanceerd. Aanvankelijk was gevraagd om binnen enkele weken te leveren, maar het refundteam concludeerde dat die termijn niet haalbaar was met behoud van een kwalitatieve gebruikersdienst.\\n\\nIn de aanpak kwam de ervaring van aanvragers eerst: die werd naar alpha gebracht. Plannen voor caseworkers volgden later.\\n\\nTijdens de private beta reserveerde het team elke twee weken tijd voor onderzoek en testen. Die momenten wisselden af met het aannemen en verwerken van aanvragen.\\n\\nDe volgorde van de gebruikersgroepen en de gereserveerde tijd voor onderzoek en testen maakten deel uit van deze specifieke aanpak onder tijdsdruk.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5962,
+    "completion_tokens": 741,
+    "total_tokens": 6703,
+    "prompt_tokens_details": {
+      "cached_tokens": 1950,
+      "cache_write_tokens": 4009,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 575,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

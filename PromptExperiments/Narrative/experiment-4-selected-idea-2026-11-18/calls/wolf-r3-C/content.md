@@ -1,0 +1,10 @@
+**Selected Story**
+Yellowstone’s wolves are part of a living network, not lone predators that control an ecosystem: they hunt and care for young as social packs, their kills feed other animals, and the prey they take shifts amid several interacting conditions.
+
+**Story Progression**
+- **Context:** Yellowstone wolf packs are social families; cooperative offspring care and group hunting are among the benefits of living socially. Their kills also provide food for animals including ravens, coyotes, bears and invertebrates.
+- **Development:** One concrete sign that this relationship changes over time is the composition of early-winter prey: the relative proportions of elk calves and bull elk reversed between 1995–2000 and 2001–2007. The source links prey shifts to availability and vulnerability.
+- **Endpoint:** The source describes changes in wolf predation and elk impacts alongside other predators, ungulate management outside the park and weather, while research examines their relative roles. The account points to interacting conditions, not a single predator, as the frame for understanding those changes.
+
+**Critical Constraints**
+Do not assign a relative contribution to the factors, claim that wolves alone determine ecosystem outcomes, or assert measured plant effects or an ecosystem-wide cascade; the source does not establish these.

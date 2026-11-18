@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ElZHBpkBGRdVJriDHsk88U6NjGP1M",
+  "object": "chat.completion",
+  "created": 1795005725,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"**Selected Story** Yellowstone’s wolves are part of a living network, not solitary controllers of the ecosystem: they hunt and raise young in social packs, and their kills feed animals from ravens and coyotes to bears and invertebrates. Changes in what they prey on—and in their impacts on elk—also occur alongside other conditions, complicating any simple cause-and-effect account.\\n\\n**Story Progression**\\n- **Context:** Establish that Yellowstone wolves live in social family groups, with cooperative care of offspring and group hunting.\\n- **Development:** Show how a wolf kill becomes food for other animals, then use one concrete shift: the share of early-winter prey made up by elk calves and bull elk changed between 1995–2000 and 2001–2007. The source relates prey composition to vulnerability and availability.\\n- **Endpoint:** Land on the limits of treating wolves as ecosystem drivers: changes in predation and elk impacts are associated with other predators, ungulate management outside the park, and weather, and research is examining their relative roles.\\n\\n**Critical Constraints:** Do not claim that wolves alone determine ecosystem outcomes, assign a relative contribution to the interacting factors, or imply measured plant effects or an ecosystem-wide cascade.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 762,
+    "completion_tokens": 560,
+    "total_tokens": 1322,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 288,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

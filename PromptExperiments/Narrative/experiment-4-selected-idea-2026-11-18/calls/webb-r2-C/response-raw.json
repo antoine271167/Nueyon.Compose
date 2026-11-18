@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ElZIORETNqHQiTHk5ipTq1Qr7Y96C",
+  "object": "chat.completion",
+  "created": 1795005800,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"**Selected Story** Webb bereikte in zijn tweede week de volledig uitgevouwen configuratie, maar was daarmee nog niet klaar voor routinematige wetenschap. Volg hoe de risicovolle uitvouwing werd gevolgd door maanden van afkoeling, spiegeluitlijning en instrumentkalibratie—en waarom ingebruikname een aparte, langere fase was.\\n\\n**Story Progression**\\n- **Context:** Webb moest opgevouwen in de Ariane 5-neuskegel passen, omdat de operationele configuratie te groot was voor de beschikbare raket. De uitvouwing omvatte meer dan 50 grote stappen en ruim 300 mogelijke afzonderlijke faalpunten; herstel op die afstand van de aarde was niet mogelijk.\\n- **Development:** In de tweede week waren de secundaire spiegel en beide vleugels van de hoofdspiegel uitgevouwen en vergrendeld. Daarna koelden de telescoop en instrumenten in de eerste maand wekenlang af; spiegeluitlijning volgde in maanden twee tot en met vier, en kalibratie van instrumentmodi in maanden vijf en zes.\\n- **Endpoint:** Na zes maanden begon Webb aan routinematige wetenschappelijke waarnemingen. De uitgevouwen telescoop was dus een noodzakelijke mijlpaal, niet het eindpunt van de ingebruikname.\\n\\n**Critical Constraints:** Beschrijf de risico’s als mogelijke faalpunten, niet als problemen die zich daadwerkelijk voordeden. De bron meldt dat de uitvouwing soepel verliep; presenteer de commissioning niet als herstel na een storing en voeg geen specifieke kalibratieresultaten toe.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 783,
+    "completion_tokens": 517,
+    "total_tokens": 1300,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 161,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

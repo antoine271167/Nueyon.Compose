@@ -1,0 +1,10 @@
+**Selected Story**
+Vertel hoe Lowell probeerde zijn industriële verleden een nieuwe functie te geven: burgerinitiatief en hergebruik van oude gebouwen droegen bij aan een bredere opleving, maar maakten de stad niet immuun voor economische terugslag. Volg daarbij zowel de menselijke gevolgen van het textielverval als de grenzen van een eenvoudig succesverhaal.
+
+**Story Progression**
+- **Context:** De werkgelegenheid in de textielindustrie daalde van 17.000 banen in 1895 naar 8.000 in 1936, terwijl fabrieken sloten en mensen vertrokken. Een arbeider herinnerde zich dat hij herhaaldelijk naar huis werd gestuurd zonder te weten of er werk zou zijn.
+- **Development:** In de jaren zestig stelden inwoners voor Lowells architectonische en culturele erfgoed in te zetten voor revitalisering. Politieke en zakelijke leiders steunden het initiatief; de gemeenteraad onderschreef het in 1972 en erfgoed- en historische parken volgden in 1974 en 1978. Volgens het verslag werden eind jaren zeventig en begin jaren tachtig meer dan honderd oude gebouwen aangepast voor nieuw gebruik, naast groeiende werkgelegenheid en bedrijfsuitbreiding. De Universiteit van Lowell en Wang Laboratories waren andere, afzonderlijke ontwikkelingen.
+- **Endpoint:** Tegen het einde van de jaren tachtig was de hausse voorbij, te midden van regionale vertraging en problemen in de computerindustrie, waaronder personeelsinkrimping en herstructurering bij Wang. De omslag laat zien dat erfgoed hergebruik en nieuwe bedrijvigheid kon ondersteunen, maar op zichzelf geen blijvende bescherming tegen economische verandering bood.
+
+**Critical Constraints**
+Base the account on the historical perspective published in 1992, not on current conditions. Do not attribute the broader recovery solely to the parks or preservation efforts, or claim that the revival endured after the late-1980s downturn.

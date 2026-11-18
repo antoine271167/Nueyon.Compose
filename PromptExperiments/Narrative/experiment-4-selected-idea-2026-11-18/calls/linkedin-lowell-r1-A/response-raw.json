@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ElZODh9yINFonSViG5uFokZ5aStUW",
+  "object": "chat.completion",
+  "created": 1795006161,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"Lowell’s move away from textile manufacturing wasn’t a clean break from economic uncertainty.\\n\\nAs textile employment fell and mills closed, workers faced an uncertain future. Citizens promoted using the city’s architectural and cultural heritage as part of revitalization. Heritage and historical parks followed, and more than 100 old buildings were later rehabilitated for new uses.\\n\\nThat reuse took place alongside rising employment and business expansion. The University of Lowell and Wang Laboratories were also part of the broader economic picture; heritage preservation was one strand of a wider revival, not its sole driver.\\n\\nBy the late 1980s, the boom had ended. Seen from the perspective of a 1992 historical account, Lowell’s story is one of layered change: its heritage found new uses, but the city remained subject to economic shifts.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5930,
+    "completion_tokens": 920,
+    "total_tokens": 6850,
+    "prompt_tokens_details": {
+      "cached_tokens": 1950,
+      "cache_write_tokens": 3977,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 732,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

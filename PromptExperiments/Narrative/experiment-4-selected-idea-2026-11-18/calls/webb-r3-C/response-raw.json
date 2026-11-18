@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ElZMbguhU1k7RChSW3vOlI4xAOk1G",
+  "object": "chat.completion",
+  "created": 1795006061,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"**Selected Story**\\nWebb bereikte in zijn tweede week de volledig uitgevouwen configuratie, maar was daarmee nog niet klaar voor routinewetenschap. De weg naar operationeel gebruik liep door over de rest van de zes maanden durende ingebruikname: eerst koelden de telescoop en instrumenten af, daarna werden de spiegels uitgelijnd en de instrumentmodi gekalibreerd.\\n\\n**Story Progression**\\n- **Context:** Webb moest worden opgevouwen om in de Ariane 5-neuskegel te passen. De uitvouwing omvatte meer dan 50 grote stappen en ruim 300 mogelijke afzonderlijke faalpunten; herstel op Webb’s afstand van de aarde was niet mogelijk.\\n- **Development:** In de tweede week waren de secundaire spiegel en beide vleugels van de hoofdspiegel uitgeklapt en vergrendeld. Dat voltooide de operationele configuratie, niet de ingebruikname: in de eerste maand koelden telescoop en instrumenten wekenlang af, en in maanden twee tot en met vier werden de spiegels uitgelijnd.\\n- **Endpoint:** De kalibratie van instrumentmodi volgde in maanden vijf en zes. Pas na zes maanden begon Webb aan routinewetenschap: de mijlpaal van uitvouwen was een tussenstap, geen eindpunt.\\n\\n**Critical Constraints**\\nBeschrijf de uitvouwing niet als mislukt of gevolgd door herstel: volgens de bron verliep die soepel. De mogelijke faalpunten duiden op risico, niet op opgetreden problemen. Noem geen specifieke kalibratieresultaten.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 783,
+    "completion_tokens": 509,
+    "total_tokens": 1292,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 149,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

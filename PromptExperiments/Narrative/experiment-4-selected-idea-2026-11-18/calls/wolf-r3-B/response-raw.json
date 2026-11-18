@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ElZMuwOHwRYtpkF6ZmvDZ8GEA9ere",
+  "object": "chat.completion",
+  "created": 1795006080,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"**Selected Story** Yellowstone’s wolves are part of a living network, not solitary controllers of the ecosystem: they hunt cooperatively, their kills feed other animals, and the prey they take—and the impacts of predation—change amid several interacting conditions.\\n\\n**Story Progression**\\n- **Context:** Yellowstone wolf packs are social families. Cooperative care of offspring and group hunting are among the benefits of this social life.\\n- **Development:** Wolf kills also provide food for ravens, coyotes, bears and invertebrates. Meanwhile, the composition of early-winter prey shifted: elk calves and bull elk reversed in relative proportion between 1995–2000 and 2001–2007, with prey vulnerability and availability linked to such changes.\\n- **Endpoint:** These relationships make wolf predation part of a changing web rather than a single chain of control. Other predators, ungulate management outside the park and weather also figure in changes to predation and elk impacts; research is examining their relative roles.\\n\\n**Critical Constraints:** Do not assign quantified contributions to these factors, imply that wolves alone determine ecosystem outcomes, or claim measured plant effects or an ecosystem-wide cascade.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 752,
+    "completion_tokens": 361,
+    "total_tokens": 1113,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 102,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

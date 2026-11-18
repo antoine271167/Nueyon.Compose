@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ElZO74mqRZvoc4RaT2brA40Gj3HPt",
+  "object": "chat.completion",
+  "created": 1795006155,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"Getting the James Webb Space Telescope to unfold was not the same as getting it ready for science.\\n\\nWebb had to fold to fit inside an Ariane 5 rocket. Once in space, it needed to complete more than 50 major deployment steps, with no possibility of repair at its distance from Earth. The deployment proceeded smoothly, and by its second week, the secondary mirror and both primary-mirror wings had unfolded and latched into place.\\n\\nBut reaching its deployed shape was only an early milestone. Webb and its instruments then cooled for several weeks. Mirror alignment continued through months two to four, followed by instrument calibration in months five and six.\\n\\nRoutine science operations began after the six-month commissioning period. Unfolding made Webb whole; cooling, alignment, and calibration prepared it to begin its work.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5885,
+    "completion_tokens": 505,
+    "total_tokens": 6390,
+    "prompt_tokens_details": {
+      "cached_tokens": 1950,
+      "cache_write_tokens": 3932,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 322,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

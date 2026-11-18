@@ -1,0 +1,8 @@
+**Selected Story** Het POA-refundteam lanceerde zijn dienst na twaalf weken. Voor professionals die diensten ontwerpen en verbeteren laat de beschreven aanpak zien hoe het team onder tijdsdruk eerst de ervaring van aanvragers uitwerkte, caseworkerwerk later toevoegde en tijdens private beta vaste tijd voor onderzoek en testen reserveerde. De ervaring documenteert keuzes van dit team, geen universeel recept.
+
+**Story Progression**
+- **Context:** Het team was aanvankelijk gevraagd binnen enkele weken te leveren, maar concludeerde dat dit niet haalbaar was met behoud van een kwalitatieve gebruikersdienst.
+- **Development:** Het team werkte eerst aan de aanvragerservaring en bracht die naar alpha; plannen voor caseworkers kwamen later, omdat zij in deze nieuwe dienst nog geen bestaande gebruikers waren. Tijdens private beta wisselde het team tweewekelijkse sprints af: een week testen, onderzoek doen en aanvragen aannemen, gevolgd door een week waarin inzendingen werden gepauzeerd voor testen, onderzoek en verwerking.
+- **Endpoint:** Na vijf weken publieke beschikbaarheid rapporteerde de auteur meer dan 100.000 aanvragen, 92,6% gebruikerstevredenheid en een voltooiingspercentage van 80,2%. Dat zijn gerapporteerde uitkomsten naast de aanpak, geen bewijs dat de ontwerpkeuzes ze veroorzaakten.
+
+**Critical Constraints:** De dienst was digitaal en assisted-digital, zonder papieren versie; de bron beschrijft niet welke hulp de assisted-digital route bood. De bron stelt geen causaal verband vast tussen de werkwijzen, de lanceringstermijn of de resultaten. De definities en meetmethode van de vijfweeksresultaten zijn niet gegeven.

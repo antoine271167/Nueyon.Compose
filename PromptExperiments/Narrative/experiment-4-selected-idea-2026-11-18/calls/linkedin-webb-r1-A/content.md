@@ -1,0 +1,7 @@
+Om in de Ariane 5 te passen, moest de James Webb-ruimtetelescoop compact worden opgevouwen voor de lancering.
+
+Het uitvouwen was een complexe reeks: meer dan 50 grote stappen, met ruim 300 mogelijke afzonderlijke faalpunten. In de tweede week waren de secundaire spiegel en beide vleugels van de primaire spiegel uitgeklapt en vergrendeld. Webb had zijn volledige configuratie bereikt.
+
+Maar uitgevouwen betekende nog niet klaar voor routinewetenschap. In de maanden erna koelden de telescoop en instrumenten af, werden de spiegels uitgelijnd en de instrumentmodi gekalibreerd.
+
+Na zes maanden begon Webb aan routinewetenschap. Het bereiken van de volledige configuratie was een mijlpaal; de ingebruikname liep daarna verder.

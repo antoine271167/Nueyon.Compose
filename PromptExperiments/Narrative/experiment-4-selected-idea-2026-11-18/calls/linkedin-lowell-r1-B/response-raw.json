@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ElZOYqUY1YxUcpGwFCX2xUJJ9kJVx",
+  "object": "chat.completion",
+  "created": 1795006182,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"Lowell gaf oude fabrieksgebouwen nieuwe functies, maar dat hield de stad niet buiten bereik van economische veranderingen.\\n\\nDe textielwerkgelegenheid was al sterk teruggelopen: van 17.000 banen in 1895 naar 8.000 in 1936, terwijl fabrieken sloten. Een voormalige textielarbeider vertelde hoe hij soms naar huis werd gestuurd zonder te weten of er later weer werk zou zijn.\\n\\nIn de jaren zestig stelden inwoners voor de architectuur en geschiedenis van Lowell in te zetten voor vernieuwing. Politieke en zakelijke leiders steunden het plan; de gemeenteraad onderschreef het in 1972. Erfgoed- en historische parken volgden in 1974 en 1978. Eind jaren zeventig en begin jaren tachtig kregen meer dan honderd oude gebouwen een nieuwe bestemming. In dezelfde periode groeiden werkgelegenheid en bedrijvigheid. Ook de University of Lowell en Wang Laboratories ontwikkelden zich in de jaren zeventig.\\n\\nTegen het einde van de jaren tachtig was de hausse voorbij. Een regionale vertraging en problemen in de computerindustrie, waaronder personeelsinkrimping en herstructurering bij Wang, maakten duidelijk dat nieuwe functies voor oude gebouwen Lowell niet afschermden van bredere economische veranderingen.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6031,
+    "completion_tokens": 1126,
+    "total_tokens": 7157,
+    "prompt_tokens_details": {
+      "cached_tokens": 1950,
+      "cache_write_tokens": 4078,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 832,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

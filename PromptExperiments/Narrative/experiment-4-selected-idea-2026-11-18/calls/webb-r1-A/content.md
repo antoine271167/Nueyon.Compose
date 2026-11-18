@@ -1,0 +1,11 @@
+### Selected Story
+Webb moest compact worden opgevouwen om in de Ariane 5-raket te passen, maar het uitvouwen bracht de telescoop nog niet tot routinewetenschap. De volledig uitgevouwen configuratie was er in de tweede week; daarna volgden maanden van afkoeling, spiegeluitlijning en instrumentkalibratie. De lezer moet begrijpen dat uitgevouwen zijn en klaar zijn voor routinewetenschap twee verschillende mijlpalen waren.
+
+### Story Progression
+- **Context:** Webb’s operationele configuratie was te groot voor de beschikbare raket, dus moest de telescoop worden opgevouwen voor de lancering.
+- **Development:** Het uitvouwen omvatte meer dan 50 grote stappen en ruim 300 mogelijke afzonderlijke faalpunten. In de tweede week waren de secundaire spiegel en beide primaire spiegelvleugels uitgeklapt en vergrendeld, waarmee de volledig uitgevouwen configuratie was bereikt.
+- **Endpoint:** De ingebruikname ging daarna verder: de telescoop en instrumenten koelden af, de spiegels werden uitgelijnd en de instrumentmodi gekalibreerd. Na zes maanden begon Webb aan routinewetenschap. Zo wordt het verschil duidelijk tussen de uitvouwing voltooien en klaar zijn voor routinegebruik.
+
+### Critical Constraints
+- Beschrijf de risico’s van het uitvouwen als mogelijke risico’s; wek niet de indruk dat er iets misging.
+- Presenteer de maanden van ingebruikname niet als herstel na een mislukte uitvouwing.

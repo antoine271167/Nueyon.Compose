@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ElZNvXv8xNGC8CGWVusnw4X46Z1rF",
+  "object": "chat.completion",
+  "created": 1795006143,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"Om in de Ariane 5 te passen, moest de James Webb-ruimtetelescoop compact worden opgevouwen voor de lancering.\\n\\nHet uitvouwen was een complexe reeks: meer dan 50 grote stappen, met ruim 300 mogelijke afzonderlijke faalpunten. In de tweede week waren de secundaire spiegel en beide vleugels van de primaire spiegel uitgeklapt en vergrendeld. Webb had zijn volledige configuratie bereikt.\\n\\nMaar uitgevouwen betekende nog niet klaar voor routinewetenschap. In de maanden erna koelden de telescoop en instrumenten af, werden de spiegels uitgelijnd en de instrumentmodi gekalibreerd.\\n\\nNa zes maanden begon Webb aan routinewetenschap. Het bereiken van de volledige configuratie was een mijlpaal; de ingebruikname liep daarna verder.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5960,
+    "completion_tokens": 480,
+    "total_tokens": 6440,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 5957,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 286,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

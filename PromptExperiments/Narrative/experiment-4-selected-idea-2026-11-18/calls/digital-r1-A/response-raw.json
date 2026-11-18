@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ElZHX15qMEcNiE1xO7c4lOEI253ST",
+  "object": "chat.completion",
+  "created": 1795005747,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"### Selected Story\\nHet POA-refundteam lanceerde de dienst na twaalf weken. De beschreven aanpak zette eerst de aanvragerservaring centraal en bracht caseworkerwerk later in beeld; tijdens de private beta reserveerde het team binnen tweewekelijkse sprints tijd voor onderzoek en testen. De lezer moet begrijpen hoe deze keuzes de aanpak onder tijdsdruk vormden, zonder ze als bewezen oorzaak van de lancering of resultaten te presenteren.\\n\\n### Story Progression\\n- **Context:** Het team was gevraagd de dienst binnen enkele weken te leveren, maar concludeerde dat dit niet haalbaar was met behoud van een kwalitatieve gebruikersdienst. De publieke lancering volgde na twaalf weken.\\n- **Development:** De aanvragerservaring werd eerst naar alpha gebracht; plannen voor caseworkers kwamen later, omdat zij nog geen bestaande gebruikers van deze dienst waren en het team aannames wilde vermijden. Tijdens de private beta reserveerde het team in tweewekelijkse sprints tijd voor aanvragen, onderzoek en testen.\\n- **Endpoint:** Sluit af bij deze beschreven werkwijze: de volgorde van gebruikersgroepen en de gereserveerde onderzoeks- en testtijd maakten deel uit van de aanpak. Eventuele vijfweeksresultaten kunnen hooguit als gerapporteerde stand van zaken worden genoemd, niet als bewijs voor het effect van die keuzes.\\n\\n### Critical Constraints\\n- Presenteer de werkwijzen niet als bewezen oorzaak van de lanceringstermijn of de gerapporteerde resultaten; maak er ook geen universeel advies van.\\n- Beschrijf de dienst desgewenst als digitaal en assisted-digital, maar verzin niet welke hulp die route bood.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 7161,
+    "completion_tokens": 819,
+    "total_tokens": 7980,
+    "prompt_tokens_details": {
+      "cached_tokens": 7158,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 460,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ElZIBNlKDe2Wob4pjasaAIB3ViPYp",
+  "object": "chat.completion",
+  "created": 1795005787,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"**Selected Story**\\nWebb’s path to routine science took far longer than its unfolding. Its compact launch design and the risks of deployment explain why reaching its fully deployed configuration in the second week was a major milestone—but not the end of commissioning.\\n\\n**Story Progression**\\n- **Context:** Webb had to fold into the Ariane 5 fairing because its operational configuration was too large for the available rocket. Deployment required more than 50 major steps and involved over 300 possible single points of failure; repair was not possible at Webb’s distance from Earth.\\n- **Development:** By the second week, the secondary mirror and both primary-mirror wings had unfolded and latched, completing the telescope’s fully deployed configuration. Deployment proceeded smoothly, but the telescope and instruments still needed several weeks to cool.\\n- **Endpoint:** Mirror alignment took place in months two through four, followed by instrument-mode calibration in months five and six. Webb began routine science operations after six months: deployment made its operational shape possible, while commissioning prepared it to do science.\\n\\n**Critical Constraints:** Do not imply deployment failures or specific calibration results. Keep the distinction between deployment and readiness for routine science central.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 773,
+    "completion_tokens": 531,
+    "total_tokens": 1304,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 268,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

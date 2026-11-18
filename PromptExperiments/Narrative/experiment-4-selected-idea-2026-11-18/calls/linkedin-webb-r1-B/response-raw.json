@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ElZO0WxB4mXyFQV4wXSUEWZxwBsBU",
+  "object": "chat.completion",
+  "created": 1795006148,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"De James Webb-ruimtetelescoop was te groot om in zijn operationele vorm in de Ariane 5-raketkuip te passen. Daarom werd hij opgevouwen gelanceerd en moest hij zich daarna in de ruimte ontvouwen.\\n\\nDie inzet bestond uit meer dan 50 grote stappen en ruim 300 mogelijke afzonderlijke faalpunten. Herstel op Webbs afstand van de aarde was niet mogelijk. De uitvouwing verliep soepel: in de tweede week waren de secundaire spiegel en beide vleugels van de hoofdspiegel uitgeklapt en vergrendeld.\\n\\nMaar Webb was daarmee nog niet klaar voor routineonderzoek. In de eerste maand koelden de telescoop en instrumenten wekenlang af. In maanden twee tot en met vier werden de spiegels uitgelijnd. Daarna, in maanden vijf en zes, werden de instrumentmodi gekalibreerd.\\n\\nPas na die volledige ingebruikname begon Webb aan routinematige wetenschappelijke waarnemingen. Uitvouwen bracht de telescoop in zijn operationele configuratie; de volgende zes maanden maakten hem gereed voor routinegebruik.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6021,
+    "completion_tokens": 545,
+    "total_tokens": 6566,
+    "prompt_tokens_details": {
+      "cached_tokens": 1950,
+      "cache_write_tokens": 4068,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 292,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

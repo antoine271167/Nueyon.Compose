@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ElZOsWjRcq731A2ka2OZZknbP1y8m",
+  "object": "chat.completion",
+  "created": 1795006202,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"In Yellowstone jagen wolven samen en zorgen ze gezamenlijk voor hun jongen. Ook hun rol in het ecosysteem staat niet op zichzelf.\\n\\nNa een wolfkill eten niet alleen wolven van de prooi. Ook raven, coyotes, beren en ongewervelden kunnen ervan profiteren. En welke elanden in de vroege winter door wolven werden gedood, veranderde: tussen 1995–2000 en 2001–2007 keerde de verhouding tussen kalveren en volwassen mannetjes om. De beschikbaarheid en kwetsbaarheid van prooien spelen daarbij een rol.\\n\\nTegelijk spelen ook andere factoren mee in veranderingen in wolvenpredatie en de gevolgen daarvan voor elanden, waaronder andere roofdieren, het beheer van hoefdieren buiten het park en het weer.\\n\\nYellowstone laat zien hoe wolven, prooidieren en andere invloeden met elkaar samenhangen — niet hoe één factor alles bepaalt.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5929,
+    "completion_tokens": 773,
+    "total_tokens": 6702,
+    "prompt_tokens_details": {
+      "cached_tokens": 1950,
+      "cache_write_tokens": 3976,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 556,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}
