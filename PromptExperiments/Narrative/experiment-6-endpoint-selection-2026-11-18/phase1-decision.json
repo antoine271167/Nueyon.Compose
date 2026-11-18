@@ -1,0 +1,83 @@
+{
+  "decision": "NO-GO",
+  "criteria": {
+    "completeReplay": true,
+    "digitalFocus": false,
+    "webbFidelity": false,
+    "focusCount": false,
+    "focusImprovement": false,
+    "fidelityImprovement": false,
+    "fullCount": false,
+    "perCase": false,
+    "noNewZero": false,
+    "noNovelMaterialError": true,
+    "tokenBudget": true
+  },
+  "counts": {
+    "B": {
+      "full": 0,
+      "completeByAxis": {
+        "focus": 3,
+        "progression": 3,
+        "details": 5,
+        "fidelity": 2,
+        "handoff": 6
+      },
+      "sumByAxis": {
+        "focus": 9,
+        "progression": 9,
+        "details": 11,
+        "fidelity": 6,
+        "handoff": 12
+      },
+      "fullByCase": {
+        "digital": 0,
+        "webb": 0
+      }
+    },
+    "E": {
+      "full": 0,
+      "completeByAxis": {
+        "focus": 3,
+        "progression": 3,
+        "details": 6,
+        "fidelity": 3,
+        "handoff": 6
+      },
+      "sumByAxis": {
+        "focus": 9,
+        "progression": 9,
+        "details": 12,
+        "fidelity": 6,
+        "handoff": 12
+      },
+      "fullByCase": {
+        "digital": 0,
+        "webb": 0
+      }
+    }
+  },
+  "pairedDeclines": [
+    {
+      "id": "webb-r2-E",
+      "control": "webb-r2-B",
+      "axis": "fidelity",
+      "from": 1,
+      "to": 0
+    }
+  ],
+  "tokens": {
+    "Narrative-B": {
+      "calls": 6,
+      "input": 5193,
+      "completion": 3048,
+      "total": 8241
+    },
+    "Narrative-E": {
+      "calls": 6,
+      "input": 5427,
+      "completion": 3477,
+      "total": 8904
+    }
+  }
+}

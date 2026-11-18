@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ElZupwtNkGijVdslF5F8kWHbPMZBf",
+  "object": "chat.completion",
+  "created": 1795008183,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"**Selected Story**\\nWebb’s compact launch and successful deployment were only the beginning: reaching its fully deployed configuration in the second week did not yet make the telescope ready for routine science. Cooling, mirror alignment and instrument calibration continued through a six-month commissioning period.\\n\\n**Story Progression**\\n- **Context:** Webb had to fold to fit inside the Ariane 5 fairing because its operational configuration was too large for the available rocket.\\n- **Development:** Deployment required more than 50 major steps and involved over 300 possible single points of failure; any one could have diminished or crippled the mission, and Webb was too far from Earth to repair. The process proceeded smoothly: by the second week, its secondary mirror and both primary-mirror wings were unfolded and latched.\\n- **Endpoint:** The telescope then cooled during the first month, underwent mirror alignment in months two through four, and instrument-mode calibration in months five and six. It began routine science operations after six months—a reminder that deployment completed a physical transformation, while commissioning established readiness for science.\\n\\n**Critical Constraints:** Do not imply that deployment encountered anomalies or that commissioning was recovery from a failure. Do not claim specific calibration results beyond the transition to routine science operations.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 773,
+    "completion_tokens": 517,
+    "total_tokens": 1290,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 243,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

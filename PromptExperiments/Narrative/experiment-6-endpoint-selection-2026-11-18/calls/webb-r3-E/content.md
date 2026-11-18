@@ -1,0 +1,10 @@
+**Selected Story**
+Webb moest compact worden opgevouwen om in de Ariane 5-raket te passen. Het bereiken van zijn uitgevouwen configuratie was echter niet hetzelfde als klaar zijn voor wetenschap: na de risicovolle ontplooiing volgden maanden van afkoeling, spiegeluitlijning en instrumentkalibratie voordat routinewaarnemingen konden beginnen.
+
+**Story Progression**
+- **Context:** Webb was in zijn operationele vorm te groot voor de beschikbare raketruimte en werd daarom opgevouwen gelanceerd. De ontplooiing omvatte meer dan 50 grote stappen en ruim 300 mogelijke afzonderlijke faalpunten; op Webb’s afstand van de aarde was reparatie niet mogelijk.
+- **Development:** In de tweede week waren de secundaire spiegel en beide vleugels van de hoofdspiegel uitgeklapt en vergrendeld. Daarmee was Webb volledig ontplooid, maar de ingebruikname ging door: in de eerste maand koelden telescoop en instrumenten af, in maand twee tot en met vier werden de spiegels uitgelijnd en in maand vijf en zes werden instrumentstanden gekalibreerd.
+- **Endpoint:** Na zes maanden begon Webb aan routinewetenschap. De tijdlijn maakt duidelijk dat het voltooien van de ontplooiing slechts één stap was naar operationeel gebruik.
+
+**Critical Constraints**
+De ontplooiing verliep volgens de bron soepel; beschrijf de mogelijke faalpunten als risico’s, niet als opgetreden problemen. Presenteer de commissioning niet als herstel na een storing en claim geen specifieke kalibratieresultaten.
