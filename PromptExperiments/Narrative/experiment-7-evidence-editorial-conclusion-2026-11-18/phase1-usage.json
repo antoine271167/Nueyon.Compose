@@ -1,0 +1,150 @@
+{
+  "totals": {
+    "Narrative-B": {
+      "calls": 6,
+      "input": 5193,
+      "completion": 3137,
+      "total": 8330
+    },
+    "Narrative-F": {
+      "calls": 6,
+      "input": 5397,
+      "completion": 3666,
+      "total": 9063
+    }
+  },
+  "rows": [
+    {
+      "id": "digital-r1-B",
+      "stage": "Narrative",
+      "arm": "B",
+      "responseId": "chatcmpl-Ela8AyjJs7ZcHg4pKaaXqZgIk6tcp",
+      "input": 958,
+      "completion": 504,
+      "total": 1462,
+      "cached": 0,
+      "reasoning": 167
+    },
+    {
+      "id": "digital-r1-F",
+      "stage": "Narrative",
+      "arm": "F",
+      "responseId": "chatcmpl-Ela8GfBqNhNXWqQt1KbLXGtHwqFl9",
+      "input": 992,
+      "completion": 653,
+      "total": 1645,
+      "cached": 0,
+      "reasoning": 167
+    },
+    {
+      "id": "webb-r1-F",
+      "stage": "Narrative",
+      "arm": "F",
+      "responseId": "chatcmpl-Ela8NrxtNKaYlPGz9fWFT9SB8hbCe",
+      "input": 807,
+      "completion": 650,
+      "total": 1457,
+      "cached": 0,
+      "reasoning": 294
+    },
+    {
+      "id": "webb-r1-B",
+      "stage": "Narrative",
+      "arm": "B",
+      "responseId": "chatcmpl-Ela8VhP0CVEQmRlcHgXvly3KyzNt9",
+      "input": 773,
+      "completion": 443,
+      "total": 1216,
+      "cached": 0,
+      "reasoning": 169
+    },
+    {
+      "id": "digital-r2-F",
+      "stage": "Narrative",
+      "arm": "F",
+      "responseId": "chatcmpl-Ela8anMbCSY5aWBaEDGVzvpqGW8ww",
+      "input": 992,
+      "completion": 533,
+      "total": 1525,
+      "cached": 0,
+      "reasoning": 93
+    },
+    {
+      "id": "digital-r2-B",
+      "stage": "Narrative",
+      "arm": "B",
+      "responseId": "chatcmpl-Ela8gUGrT3M5dbT3m79nsl4d4156I",
+      "input": 958,
+      "completion": 531,
+      "total": 1489,
+      "cached": 0,
+      "reasoning": 202
+    },
+    {
+      "id": "webb-r2-B",
+      "stage": "Narrative",
+      "arm": "B",
+      "responseId": "chatcmpl-Ela8mpB5MWGlAFfFWTL6XLh3sZbV2",
+      "input": 773,
+      "completion": 555,
+      "total": 1328,
+      "cached": 0,
+      "reasoning": 177
+    },
+    {
+      "id": "webb-r2-F",
+      "stage": "Narrative",
+      "arm": "F",
+      "responseId": "chatcmpl-Ela8teywCBgXcyCQq9zTp0hp9GjXN",
+      "input": 807,
+      "completion": 507,
+      "total": 1314,
+      "cached": 0,
+      "reasoning": 102
+    },
+    {
+      "id": "digital-r3-B",
+      "stage": "Narrative",
+      "arm": "B",
+      "responseId": "chatcmpl-Ela8zbPab9kMyUbLgwc3CxI0cQJ8X",
+      "input": 958,
+      "completion": 530,
+      "total": 1488,
+      "cached": 0,
+      "reasoning": 172
+    },
+    {
+      "id": "digital-r3-F",
+      "stage": "Narrative",
+      "arm": "F",
+      "responseId": "chatcmpl-Ela96BJWu0sAE8KabLH2LWbU4MGiO",
+      "input": 992,
+      "completion": 759,
+      "total": 1751,
+      "cached": 0,
+      "reasoning": 279
+    },
+    {
+      "id": "webb-r3-F",
+      "stage": "Narrative",
+      "arm": "F",
+      "responseId": "chatcmpl-Ela9Dan4tx38rmajBXQFxGyNaLM1W",
+      "input": 807,
+      "completion": 564,
+      "total": 1371,
+      "cached": 0,
+      "reasoning": 126
+    },
+    {
+      "id": "webb-r3-B",
+      "stage": "Narrative",
+      "arm": "B",
+      "responseId": "chatcmpl-Ela9K8z5dF7NaoWIGjpO90nIP96bS",
+      "input": 773,
+      "completion": 574,
+      "total": 1347,
+      "cached": 0,
+      "reasoning": 229
+    }
+  ]
+}

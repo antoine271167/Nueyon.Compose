@@ -1,0 +1,103 @@
+{
+  "decision": "NO-GO",
+  "criteria": {
+    "completeReplay": true,
+    "digitalFocus": true,
+    "webbFidelity": false,
+    "structure": true,
+    "digitalStructure": true,
+    "focusCount": true,
+    "focusImprovement": true,
+    "fidelityImprovement": false,
+    "fullCount": false,
+    "perCase": false,
+    "noNewZero": false,
+    "noNovelMaterialError": false,
+    "tokenBudget": true
+  },
+  "counts": {
+    "B": {
+      "full": 1,
+      "completeByAxis": {
+        "focus": 3,
+        "progression": 3,
+        "details": 4,
+        "fidelity": 4,
+        "handoff": 6,
+        "structure": 3
+      },
+      "sumByAxis": {
+        "focus": 9,
+        "progression": 9,
+        "details": 10,
+        "fidelity": 8,
+        "handoff": 12,
+        "structure": 9
+      },
+      "fullByCase": {
+        "digital": 0,
+        "webb": 1
+      }
+    },
+    "F": {
+      "full": 1,
+      "completeByAxis": {
+        "focus": 6,
+        "progression": 4,
+        "details": 6,
+        "fidelity": 2,
+        "handoff": 5,
+        "structure": 6
+      },
+      "sumByAxis": {
+        "focus": 12,
+        "progression": 10,
+        "details": 12,
+        "fidelity": 4,
+        "handoff": 11,
+        "structure": 12
+      },
+      "fullByCase": {
+        "digital": 1,
+        "webb": 0
+      }
+    }
+  },
+  "pairedDeclines": [
+    {
+      "id": "webb-r1-F",
+      "control": "webb-r1-B",
+      "axis": "fidelity",
+      "from": 2,
+      "to": 0
+    },
+    {
+      "id": "digital-r3-F",
+      "control": "digital-r3-B",
+      "axis": "fidelity",
+      "from": 2,
+      "to": 0
+    },
+    {
+      "id": "digital-r3-F",
+      "control": "digital-r3-B",
+      "axis": "handoff",
+      "from": 2,
+      "to": 1
+    }
+  ],
+  "tokens": {
+    "Narrative-B": {
+      "calls": 6,
+      "input": 5193,
+      "completion": 3137,
+      "total": 8330
+    },
+    "Narrative-F": {
+      "calls": 6,
+      "input": 5397,
+      "completion": 3666,
+      "total": 9063
+    }
+  }
+}

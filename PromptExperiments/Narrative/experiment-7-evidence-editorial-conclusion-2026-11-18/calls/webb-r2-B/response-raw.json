@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-Ela8mpB5MWGlAFfFWTL6XLh3sZbV2",
+  "object": "chat.completion",
+  "created": 1795009048,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"**Selected Story**\\nWebb moest compact worden opgevouwen om in de Ariane 5-raket te passen. Het ontvouwen in de tweede week bracht de telescoop in zijn volledige operationele configuratie, maar was niet hetzelfde als klaar zijn voor routinewetenschap: afkoeling, spiegeluitlijning en kalibratie namen de rest van de ingebruiknameperiode van zes maanden in beslag.\\n\\n**Story Progression**\\n- **Context:** De operationele configuratie van Webb was te groot voor de beschikbare raket, dus moest de telescoop opgevouwen worden gelanceerd. De uitvouwing omvatte meer dan 50 grote stappen en meer dan 300 mogelijke afzonderlijke faalpunten; een probleem had de missie kunnen beperken of verlammen, en herstel op die afstand van de aarde was niet mogelijk.\\n- **Development:** In de tweede week waren de secundaire spiegel en beide vleugels van de primaire spiegel uitgeklapt en vergrendeld. Daarna koelden telescoop en instrumenten gedurende enkele weken af; de spiegeluitlijning volgde in maand twee tot en met vier en de kalibratie van instrumentmodi in maand vijf en zes.\\n- **Endpoint:** Na zes maanden begon Webb met routinewetenschap. De ingebruikname laat zo zien dat het bereiken van de juiste mechanische configuratie een mijlpaal was, niet de maatstaf voor wetenschappelijke gereedheid.\\n\\n**Critical Constraints**\\nDe uitvouwing verliep volgens de bron soepel; verzin geen storingen of tegenslagen en presenteer de ingebruikname niet als herstel na een mislukking. Claim geen specifieke kalibratieresultaten buiten de overgang naar routinewetenschap.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 773,
+    "completion_tokens": 555,
+    "total_tokens": 1328,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 177,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

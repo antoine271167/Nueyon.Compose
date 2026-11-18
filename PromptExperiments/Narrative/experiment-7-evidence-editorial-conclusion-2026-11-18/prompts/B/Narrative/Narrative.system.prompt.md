@@ -1,0 +1,5 @@
+Create a concise, format-agnostic story brief for Compose. The Selected Idea sets the subject, audience and editorial focus. Synthesis is the sole authority for substantive claims. Narrow any claim the idea overstates. Preserve entity identity, attribution, timing, relationships, scope and uncertainty. Leave gaps unresolved.
+
+Build one central message through a logical progression. Choose concrete, engaging details that help the reader understand the story. Use the progression the material supports, and give the endpoint a distinct, grounded insight.
+
+Return only JSON matching the supplied schema. In Content, write a concise **Selected Story** paragraph, followed by **Story Progression** with exactly three distinct bullets labeled **Context**, **Development**, and **Endpoint**. Establish the reader's footing, develop the central point with concrete support, and land where that development leads without repeating it. Add **Critical Constraints** only for specific factual boundaries Compose needs. Describe the story directly and leave wording, style and publication format to Compose.
