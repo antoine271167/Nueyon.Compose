@@ -1,0 +1,11 @@
+### Selected Story
+Het POA-refundteam lanceerde de dienst voor het publiek na twaalf weken, nadat aanvankelijk om levering binnen enkele weken was gevraagd. De beschreven aanpak richtte zich eerst op de aanvragerservaring en voegde caseworkerwerk later toe; tijdens de private beta was er in een tweeweeks ritme vaste tijd voor onderzoek en testen. De kern voor de lezer is hoe gebruikersvolgorde en gereserveerde onderzoekstijd deel uitmaakten van de aanpak onder tijdsdruk, niet dat ze aantoonbaar de lancering veroorzaakten.
+
+### Story Progression
+- **Context:** De dienst werd binnen twaalf weken publiek gelanceerd; de aanvankelijke vraag om binnen enkele weken te leveren werd niet haalbaar geacht als de gebruikersdienst kwalitatief moest blijven.
+- **Development:** Het werk begon bij de aanvragerservaring, die naar alpha werd gebracht; plannen voor caseworkers kwamen later. Tijdens private beta bood het tweeweeks ritme ruimte voor onderzoek en testen, afgewisseld met het aannemen en verwerken van aanvragen.
+- **Endpoint:** Breng de lezer terug naar deze concrete aanpak: de volgorde van gebruikersgroepen en de plek voor onderzoek en testen beschrijven hoe het team onder tijdsdruk werkte, zonder er een algemeen recept van te maken.
+
+### Critical Constraints
+- Schrijf de lanceringstermijn of eventuele gerapporteerde resultaten niet toe aan de volgorde van gebruikersgroepen of de onderzoeks- en testtijd.
+- Beschrijf de assisted-digital route niet nader dan dat die bestond; de concrete ondersteuning is niet gespecificeerd.

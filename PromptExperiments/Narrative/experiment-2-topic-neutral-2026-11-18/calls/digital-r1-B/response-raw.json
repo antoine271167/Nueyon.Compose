@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ElXuQ2YygTFPx391gDGz2KB9ucJvO",
+  "object": "chat.completion",
+  "created": 1795000470,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"### Selected Story\\nHet POA-refundteam lanceerde de dienst voor het publiek na twaalf weken, nadat aanvankelijk om levering binnen enkele weken was gevraagd. De beschreven aanpak richtte zich eerst op de aanvragerservaring en voegde caseworkerwerk later toe; tijdens de private beta was er in een tweeweeks ritme vaste tijd voor onderzoek en testen. De kern voor de lezer is hoe gebruikersvolgorde en gereserveerde onderzoekstijd deel uitmaakten van de aanpak onder tijdsdruk, niet dat ze aantoonbaar de lancering veroorzaakten.\\n\\n### Story Progression\\n- **Context:** De dienst werd binnen twaalf weken publiek gelanceerd; de aanvankelijke vraag om binnen enkele weken te leveren werd niet haalbaar geacht als de gebruikersdienst kwalitatief moest blijven.\\n- **Development:** Het werk begon bij de aanvragerservaring, die naar alpha werd gebracht; plannen voor caseworkers kwamen later. Tijdens private beta bood het tweeweeks ritme ruimte voor onderzoek en testen, afgewisseld met het aannemen en verwerken van aanvragen.\\n- **Endpoint:** Breng de lezer terug naar deze concrete aanpak: de volgorde van gebruikersgroepen en de plek voor onderzoek en testen beschrijven hoe het team onder tijdsdruk werkte, zonder er een algemeen recept van te maken.\\n\\n### Critical Constraints\\n- Schrijf de lanceringstermijn of eventuele gerapporteerde resultaten niet toe aan de volgorde van gebruikersgroepen of de onderzoeks- en testtijd.\\n- Beschrijf de assisted-digital route niet nader dan dat die bestond; de concrete ondersteuning is niet gespecificeerd.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 7218,
+    "completion_tokens": 1060,
+    "total_tokens": 8278,
+    "prompt_tokens_details": {
+      "cached_tokens": 3877,
+      "cache_write_tokens": 3338,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 701,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

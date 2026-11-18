@@ -1,0 +1,11 @@
+### Selected Story
+Het POA-refundteam lanceerde de dienst voor het publiek na twaalf weken. Onder tijdsdruk bestond de beschreven aanpak uit eerst de aanvragerservaring naar alpha brengen en het caseworkerwerk later uitwerken, naast vaste tijd voor onderzoek en testen tijdens private beta. De lezer moet begrijpen hoe die volgorde en het gereserveerde onderzoekstempo deel uitmaakten van de aanpak, zonder ze voor te stellen als bewezen oorzaak van de lancering of resultaten. De cijfers na vijf weken publiek gebruik kunnen dienen als een afzonderlijke momentopname van de gerapporteerde uitkomsten.
+
+### Story Progression
+- **Context:** De dienst werd publiek gelanceerd na twaalf weken; aanvankelijk was gevraagd binnen enkele weken te leveren, maar het team concludeerde dat dit niet haalbaar was met behoud van een kwalitatieve gebruikersdienst.
+- **Development:** Het team bracht eerst de aanvragerservaring naar alpha en werkte de caseworkerplannen later uit. Tijdens private beta reserveerde het in een tweewekelijks ritme tijd voor onderzoek en testen, afgewisseld met het aannemen en verwerken van aanvragen.
+- **Endpoint:** Na vijf weken publiek gebruik rapporteerde het team meer dan 100.000 aanvragen, 92,6% gebruikerstevredenheid en een voltooiingspercentage van 80,2%. Presenteer dit als een gerapporteerde stand van zaken naast de beschreven aanpak, niet als het gevolg ervan.
+
+### Critical Constraints
+- Maak van de beschreven werkwijzen geen bewezen oorzaak van de termijn of de gerapporteerde cijfers, en presenteer ze niet als universeel advies.
+- Beschrijf de dienst als digitaal en assisted-digital, maar verzin niet welke hulp die route bood.

@@ -1,0 +1,11 @@
+### Selected Story
+Het verhaal gaat over het verschil tussen Webb volledig uitvouwen en gereed zijn voor routinematige wetenschap. Omdat de operationele configuratie te groot was voor de beschikbare Ariane 5-raket, was Webb ontworpen om opgevouwen te worden gelanceerd. In de tweede week waren de spiegelonderdelen uitgeklapt en vergrendeld; daarna volgden nog maanden van afkoeling, spiegeluitlijning en instrumentkalibratie. De lezer moet begrijpen dat het bereiken van de uitgeklapte configuratie een belangrijke stap was, maar niet het einde van de ingebruikname.
+
+### Story Progression
+- **Context:** Webb moest opgevouwen in de Ariane 5-kuip passen, omdat de operationele configuratie te groot was voor de beschikbare raket.
+- **Development:** De uitvouwing omvatte meer dan 50 grote stappen en ruim 300 mogelijke afzonderlijke faalpunten. In de tweede week waren de secundaire spiegel en beide vleugels van de hoofdspiegel uitgeklapt en vergrendeld, waarmee Webb zijn volledig uitgeklapte operationele configuratie bereikte.
+- **Endpoint:** De ingebruikname ging daarna door: de telescoop en instrumenten koelden in de eerste maand af, de spiegeluitlijning vond plaats in maanden twee tot en met vier en de instrumentmodi werden in maanden vijf en zes gekalibreerd. Na zes maanden begon Webb aan routinematige wetenschappelijke waarnemingen.
+
+### Critical Constraints
+- Beschrijf de mogelijke faalpunten als risico’s van de uitvouwing; suggereer niet dat er daadwerkelijk iets misging.
+- Stel de maandenlange ingebruikname niet voor als herstel na een mislukte uitvouwing.

@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ElXv9jigMHcLmlg7f7UziJyFIX9T1",
+  "object": "chat.completion",
+  "created": 1795000515,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"### Selected Story\\nIn Yellowstone zijn wolven geen op zichzelf staande schakels die het ecosysteem alleen sturen: het zijn sociale roofdieren, en hun prooiresten voeden ook andere dieren. Veranderingen in de samenstelling van hun prooi laten zien dat predatie en de invloed op elanden samenhangen met meerdere omstandigheden. De lezer moet begrijpen dat wolven deel uitmaken van een netwerk van relaties, niet de enige bepalende kracht daarin.\\n\\n### Story Progression\\n- **Context:** Schets wolven als sociale dieren: roedels jagen samen en zorgen gezamenlijk voor jongen.\\n- **Development:** Laat zien dat gedode prooien voedsel bieden aan onder meer raven, coyotes, beren en ongewervelden. Gebruik daarnaast de veranderde verhouding tussen kalveren en volwassen mannelijke elanden onder de vroege-winterprooien in de perioden 1995–2000 en 2001–2007 als concreet voorbeeld van veranderende prooisamenstelling.\\n- **Endpoint:** Plaats veranderingen in predatie en de invloed op elanden naast andere betrokken factoren, waaronder andere roofdieren, beheer van hoefdieren buiten het park en het weer. Eindig bij het beeld van een onderling verbonden systeem waarin wolven een rol spelen, maar niet alleen de uitkomsten bepalen.\\n\\n### Critical Constraints\\n- Stel niet dat wolven alleen het ecosysteem of de elandenpopulatie bepalen, of dat er een aangetoonde ecosysteembrede cascade is.\\n- Presenteer de genoemde factoren niet als een vastgestelde oorzaak of rangschikking van hun invloed; hun relatieve bijdragen zijn niet vastgesteld.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 7311,
+    "completion_tokens": 589,
+    "total_tokens": 7900,
+    "prompt_tokens_details": {
+      "cached_tokens": 7308,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 228,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

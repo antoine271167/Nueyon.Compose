@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ElXu2tJfrXxVQglOFXoGV5f5I9xTy",
+  "object": "chat.completion",
+  "created": 1795000446,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"### Selected Story\\nHet verhaal gaat over wolven in Yellowstone als sociale roofdieren binnen voedselrelaties, niet als enige dieren die het ecosysteem bepalen. Roedels jagen samen en zorgen gezamenlijk voor jongen; kadavers van wolvenprooien voeden ook raven, coyotes, beren en ongewervelden. Veranderingen in de samenstelling van hun prooi, naast andere omstandigheden die samenhangen met predatie en de gevolgen daarvan voor elanden, laten zien waarom het beeld van één roofdier dat het ecosysteem bestuurt te eenvoudig is.\\n\\n### Story Progression\\n- **Context:** Plaats de wolf in Yellowstone als een sociaal dier: roedels jagen samen en zorgen gezamenlijk voor jongen, en prooien verbinden wolven met andere dieren die van kadavers eten.\\n- **Development:** Maak de veranderende prooisamenstelling concreet: de verhouding tussen kalveren en volwassen mannelijke elanden in de vroege-winterprooi keerde om tussen 1995–2000 en 2001–2007. De bron verbindt zulke veranderingen met de beschikbaarheid en kwetsbaarheid van prooien.\\n- **Endpoint:** Breng de sociale en voedselrelaties samen met de andere factoren die samenhangen met veranderingen in predatie en de effecten daarvan op elanden. De wolf is onderdeel van een netwerk van relaties en omstandigheden, geen op zichzelf staande verklaring voor ecosysteemuitkomsten.\\n\\n### Critical Constraints\\n- Schrijf niet toe dat wolven alleen veranderingen in elanden of het ecosysteem bepalen; presenteer andere factoren als samenhangend, zonder hun relatieve invloed vast te stellen.\\n- Claim geen gemeten effecten op planten of een ecosysteembrede cascade.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 7012,
+    "completion_tokens": 667,
+    "total_tokens": 7679,
+    "prompt_tokens_details": {
+      "cached_tokens": 3877,
+      "cache_write_tokens": 3132,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 292,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

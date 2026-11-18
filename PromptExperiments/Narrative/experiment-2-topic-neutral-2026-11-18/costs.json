@@ -1,0 +1,184 @@
+{
+  "source": "https://developers.openai.com/api/docs/models/gpt-6-luna",
+  "tariffDate": "2026-11-18",
+  "usdPerMillion": {
+    "input": 0.1,
+    "cachedInput": 0.01,
+    "output": 0.5
+  },
+  "totalUsd": 0.01226729,
+  "byArmUsd": {
+    "A": 0.00515048,
+    "B": 0.00711681
+  },
+  "runs": [
+    {
+      "id": "webb-r1-A",
+      "input": 3,
+      "cachedInput": 7329,
+      "output": 597,
+      "usd": 0.00037209000000000005
+    },
+    {
+      "id": "webb-r1-B",
+      "input": 7033,
+      "cachedInput": 0,
+      "output": 678,
+      "usd": 0.0010423000000000001
+    },
+    {
+      "id": "wolf-r1-B",
+      "input": 3135,
+      "cachedInput": 3877,
+      "output": 667,
+      "usd": 0.0006857699999999999
+    },
+    {
+      "id": "wolf-r1-A",
+      "input": 3,
+      "cachedInput": 7308,
+      "output": 502,
+      "usd": 0.00032438
+    },
+    {
+      "id": "digital-r1-A",
+      "input": 3,
+      "cachedInput": 7514,
+      "output": 836,
+      "usd": 0.00049344
+    },
+    {
+      "id": "digital-r1-B",
+      "input": 3341,
+      "cachedInput": 3877,
+      "output": 1060,
+      "usd": 0.00090287
+    },
+    {
+      "id": "lowell-r1-B",
+      "input": 3272,
+      "cachedInput": 3877,
+      "output": 886,
+      "usd": 0.00080897
+    },
+    {
+      "id": "lowell-r1-A",
+      "input": 3,
+      "cachedInput": 7445,
+      "output": 586,
+      "usd": 0.00036775
+    },
+    {
+      "id": "webb-r2-B",
+      "input": 3,
+      "cachedInput": 7030,
+      "output": 625,
+      "usd": 0.00038310000000000004
+    },
+    {
+      "id": "webb-r2-A",
+      "input": 3,
+      "cachedInput": 7329,
+      "output": 505,
+      "usd": 0.00032609
+    },
+    {
+      "id": "wolf-r2-A",
+      "input": 3,
+      "cachedInput": 7308,
+      "output": 589,
+      "usd": 0.00036788
+    },
+    {
+      "id": "wolf-r2-B",
+      "input": 3,
+      "cachedInput": 7009,
+      "output": 577,
+      "usd": 0.00035889
+    },
+    {
+      "id": "digital-r2-B",
+      "input": 3,
+      "cachedInput": 7215,
+      "output": 947,
+      "usd": 0.00054595
+    },
+    {
+      "id": "digital-r2-A",
+      "input": 3,
+      "cachedInput": 7514,
+      "output": 1010,
+      "usd": 0.0005804400000000001
+    },
+    {
+      "id": "lowell-r2-A",
+      "input": 3,
+      "cachedInput": 7445,
+      "output": 615,
+      "usd": 0.00038225
+    },
+    {
+      "id": "lowell-r2-B",
+      "input": 3,
+      "cachedInput": 7146,
+      "output": 766,
+      "usd": 0.00045476
+    },
+    {
+      "id": "webb-r3-A",
+      "input": 3,
+      "cachedInput": 7329,
+      "output": 617,
+      "usd": 0.00038209
+    },
+    {
+      "id": "webb-r3-B",
+      "input": 3,
+      "cachedInput": 7030,
+      "output": 629,
+      "usd": 0.00038510000000000004
+    },
+    {
+      "id": "wolf-r3-B",
+      "input": 3,
+      "cachedInput": 7009,
+      "output": 558,
+      "usd": 0.00034939
+    },
+    {
+      "id": "wolf-r3-A",
+      "input": 3,
+      "cachedInput": 7308,
+      "output": 823,
+      "usd": 0.00048488
+    },
+    {
+      "id": "digital-r3-A",
+      "input": 3,
+      "cachedInput": 7514,
+      "output": 1088,
+      "usd": 0.0006194400000000001
+    },
+    {
+      "id": "digital-r3-B",
+      "input": 3,
+      "cachedInput": 7215,
+      "output": 1471,
+      "usd": 0.0008079500000000001
+    },
+    {
+      "id": "lowell-r3-B",
+      "input": 3,
+      "cachedInput": 7146,
+      "output": 640,
+      "usd": 0.00039176
+    },
+    {
+      "id": "lowell-r3-A",
+      "input": 3,
+      "cachedInput": 7445,
+      "output": 750,
+      "usd": 0.00044975
+    }
+  ]
+}

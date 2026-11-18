@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ElXvldXK8kmOCAXObtzq8TQqm8dzt",
+  "object": "chat.completion",
+  "created": 1795000553,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"### Selected Story\\nLowell’s textile decline brought mill closures, falling employment and uncertainty for workers. From the 1960s, citizens proposed using the city’s architectural and cultural heritage as part of revitalization, an effort supported by political and business leaders. The later reuse of more than 100 old buildings accompanied renewed employment and business activity, but the revival was not a complete escape from economic change: by the late 1980s, a downturn had followed.\\n\\n### Story Progression\\n- **Context:** Establish Lowell’s industrial decline through falling textile employment and mill closures; a worker’s recollection of repeatedly being sent home without knowing whether work would be available makes the disruption concrete.\\n- **Development:** Explain the citizen-led proposal to use Lowell’s architectural and cultural heritage in revitalization, followed by the city’s endorsement and the creation of heritage and historical parks. In the late 1970s and early 1980s, more than 100 old buildings were rehabilitated for new uses alongside rising employment and business expansion.\\n- **Endpoint:** Close with the late-1980s downturn amid a regional slowdown and difficulties in the computer industry, including Wang’s workforce cuts and restructuring. The contrast shows that heritage-led reuse formed part of a broader revival, not a lasting escape from economic change.\\n\\n### Critical Constraints\\n- Treat this as the perspective of a 1992 historical account, not a description of Lowell today.\\n- Do not attribute the broader recovery solely to the parks or heritage effort; the account also identifies the University of Lowell and Wang Laboratories as separate developments of the 1970s.\\n- Do not present the revival as complete or enduring beyond what the account supports.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 7448,
+    "completion_tokens": 615,
+    "total_tokens": 8063,
+    "prompt_tokens_details": {
+      "cached_tokens": 7445,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 251,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

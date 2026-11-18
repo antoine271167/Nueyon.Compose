@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ElXwj1MqpiqoqYkh9kTI353jTNwk9",
+  "object": "chat.completion",
+  "created": 1795000613,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"### Selected Story\\nDe POA-refunddienst werd na twaalf weken publiek gelanceerd. De aanpak die het team beschrijft, ordende het werk eerst rond de aanvragerservaring en voegde caseworkerwerk later toe; tijdens private beta werd ook tijd ingeruimd voor onderzoek en testen. De lezer moet begrijpen hoe die keuzes de werkwijze onder tijdsdruk vormgaven, zonder ze als bewezen oorzaak van de lancering of resultaten voor te stellen.\\n\\n### Story Progression\\n- **Context:** Het team was aanvankelijk gevraagd de dienst binnen enkele weken te leveren, maar concludeerde dat dit niet haalbaar was met behoud van een kwalitatieve gebruikersdienst. De publieke lancering volgde na twaalf weken.\\n- **Development:** De aanvragerservaring werd eerst naar alpha gebracht; plannen voor caseworkers kwamen later. Tijdens private beta was in een tweewekelijks ritme tijd gereserveerd voor onderzoek en testen, naast het aannemen en verwerken van aanvragen.\\n- **Endpoint:** Na vijf weken publiek beschikbaar rapporteerde de dienst meer dan 100.000 aanvragen, 92,6% gebruikerstevredenheid en een voltooiingspercentage van 80,2%. Dit is de gerapporteerde stand van zaken naast de beschreven aanpak.\\n\\n### Critical Constraints\\n- Stel de volgorde van gebruikersgroepen of de gereserveerde onderzoeks- en testtijd niet voor als bewezen oorzaak van de lanceringstermijn of de gerapporteerde cijfers.\\n- Maak van de aanpak geen universeel advies of recept.\\n- Vul niet in wat de assisted-digital ondersteuning inhield.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 7218,
+    "completion_tokens": 1471,
+    "total_tokens": 8689,
+    "prompt_tokens_details": {
+      "cached_tokens": 7215,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1107,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

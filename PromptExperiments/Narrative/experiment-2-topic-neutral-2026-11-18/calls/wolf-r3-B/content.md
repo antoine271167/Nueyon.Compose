@@ -1,0 +1,11 @@
+### Selected Story
+The story is about Yellowstone wolves as social predators whose ecological relationships extend beyond their own hunting: packs cooperate in raising offspring and hunting, and their kills feed animals ranging from ravens and coyotes to bears and invertebrates. A change in the relative shares of elk calves and bull elk in early-winter prey makes the shifting pattern of predation concrete. The reader should understand that wolf predation and its impacts on elk occur amid several interacting conditions, rather than being determined by wolves alone.
+
+### Story Progression
+- **Context:** Introduce Yellowstone wolves as social animals that live in family packs, with cooperative offspring care and group hunting.
+- **Development:** Show how their ecological relationships extend through their kills, which provide food for other animals. Then use the reversal in the relative shares of elk calves and bull elk in early-winter prey between 1995–2000 and 2001–2007 as a specific example of changing prey composition.
+- **Endpoint:** Place changing wolf predation and elk impacts in the context of other predators, ungulate management outside the park, and weather. The central point is that wolves are part of a network of food relationships and interacting conditions, not solitary controllers of ecosystem outcomes.
+
+### Critical Constraints
+- Do not imply that wolves alone determine elk or ecosystem outcomes, or claim a measured plant effect or ecosystem-wide cascade.
+- Do not present the listed factors as established causes or quantify their relative contributions.

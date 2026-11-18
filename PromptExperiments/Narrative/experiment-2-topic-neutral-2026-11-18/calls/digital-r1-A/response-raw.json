@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ElXuH74u1URS9zAvqdPiLhd4QqRrc",
+  "object": "chat.completion",
+  "created": 1795000461,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"### Selected Story\\nHet POA-refundteam lanceerde de dienst na twaalf weken, terwijl aanvankelijk was gevraagd om binnen enkele weken te leveren. Het verhaal gaat over de manier waarop het team onder die tijdsdruk de ontwikkeling inrichtte: eerst de ervaring van aanvragers naar alpha brengen en caseworkerwerk later oppakken, met tijdens de private beta vaste tijd voor onderzoek en testen. De lezer moet begrijpen hoe deze keuzes deel uitmaakten van de beschreven aanpak, zonder ze als bewezen verklaring voor de lancering of resultaten te presenteren.\\n\\n### Story Progression\\n- **Context:** De publieke lancering van de POA-refunddienst volgde na twaalf weken; leveren binnen enkele weken werd niet haalbaar geacht met behoud van een kwalitatieve gebruikersdienst.\\n- **Development:** De ontwikkeling begon met de aanvragerservaring; plannen voor caseworkers kwamen later. Tijdens de private beta combineerde het team een tweewekelijks ritme van aanvragen aannemen met tijd voor onderzoek, testen en verwerking.\\n- **Endpoint:** Breng de aandacht terug naar die volgorde en gereserveerde onderzoeks- en testtijd als onderdelen van de aanpak onder tijdsdruk. Eventuele cijfers over de eerste vijf publieke weken zijn alleen een gerapporteerde stand van zaken, geen bewijs van het effect van deze werkwijzen.\\n\\n### Critical Constraints\\n- Leg geen causaal verband tussen de beschreven werkwijzen en de termijn van twaalf weken of de gerapporteerde resultaten.\\n- Presenteer deze aanpak niet als universeel advies of bewezen recept.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 7517,
+    "completion_tokens": 836,
+    "total_tokens": 8353,
+    "prompt_tokens_details": {
+      "cached_tokens": 7514,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 497,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}
