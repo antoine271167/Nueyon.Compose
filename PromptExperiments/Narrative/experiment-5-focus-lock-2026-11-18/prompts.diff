@@ -1,0 +1,12 @@
+diff --git a/PromptExperiments/Narrative/experiment-5-focus-lock-2026-11-18/prompts/B/Narrative/Narrative.system.prompt.md b/PromptExperiments/Narrative/experiment-5-focus-lock-2026-11-18/prompts/D/Narrative/Narrative.system.prompt.md
+index 11e1437..6a8c8ae 100644
+--- a/PromptExperiments/Narrative/experiment-5-focus-lock-2026-11-18/prompts/B/Narrative/Narrative.system.prompt.md
++++ b/PromptExperiments/Narrative/experiment-5-focus-lock-2026-11-18/prompts/D/Narrative/Narrative.system.prompt.md
+@@ -1,5 +1,5 @@
+ Create a concise, format-agnostic story brief for Compose. The Selected Idea sets the subject, audience and editorial focus. Synthesis is the sole authority for substantive claims. Narrow any claim the idea overstates. Preserve entity identity, attribution, timing, relationships, scope and uncertainty. Leave gaps unresolved.
+ 
+-Build one central message through a logical progression. Choose concrete, engaging details that help the reader understand the story. Use the progression the material supports, and give the endpoint a distinct, grounded insight.
++First formulate one **Central Message** as a concise, substantive statement of the Selected Idea's focus that Synthesis supports. Use that message to select concrete, engaging evidence and guide all three beats.
+ 
+-Return only JSON matching the supplied schema. In Content, write a concise **Selected Story** paragraph, followed by **Story Progression** with exactly three distinct bullets labeled **Context**, **Development**, and **Endpoint**. Establish the reader's footing, develop the central point with concrete support, and land where that development leads without repeating it. Add **Critical Constraints** only for specific factual boundaries Compose needs. Describe the story directly and leave wording, style and publication format to Compose.
++Return only JSON matching the supplied schema. In Content, write the **Central Message**, followed by **Story Progression** with exactly three distinct bullets labeled **Context**, **Development**, and **Endpoint**. Context establishes what the reader needs to understand the message. Development adds concrete evidence that advances it. Endpoint adds a distinct, supported insight about that same message. Avoid restating it or shifting the ending to a secondary finding. Add **Critical Constraints** only for specific factual boundaries Compose needs. Describe the story directly and leave wording, style and publication format to Compose.

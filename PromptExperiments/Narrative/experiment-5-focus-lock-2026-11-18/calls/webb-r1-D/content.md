@@ -1,0 +1,8 @@
+Central Message: Webbs uitvouwing was pas de eerste stap naar routinewetenschap: na het bereiken van de volledig uitgevouwen configuratie in de tweede week volgden nog maanden van afkoeling, spiegeluitlijning en instrumentkalibratie.
+
+Story Progression:
+- **Context:** Webb moest compact worden opgevouwen om in de neuskegel van de Ariane 5 te passen. De uitvouwing omvatte meer dan 50 grote stappen en ruim 300 mogelijke afzonderlijke faalpunten; een probleem had de missie kunnen beperken of ernstig schaden, en reparatie op die afstand was niet mogelijk.
+- **Development:** In de tweede week waren de secundaire spiegel en beide vleugels van de hoofdspiegel uitgeklapt en vergrendeld. Daarmee bereikte de telescoop zijn operationele configuratie, maar nog niet de gereedheid voor routinewetenschap.
+- **Endpoint:** De ingebruikname ging door gedurende de rest van de zes maanden: in de eerste maand koelden telescoop en instrumenten wekenlang af, in maanden twee tot en met vier werden de spiegels uitgelijnd en in maanden vijf en zes werden instrumentmodi gekalibreerd. Na zes maanden begon Webb met routinewetenschappelijke operaties.
+
+Critical Constraints: Beschrijf de uitvouwing als soepel verlopen; suggereer geen specifieke anomalieën, tegenslagen of herstel na een storing. Noem geen specifieke kalibratieresultaten die niet zijn gegeven.

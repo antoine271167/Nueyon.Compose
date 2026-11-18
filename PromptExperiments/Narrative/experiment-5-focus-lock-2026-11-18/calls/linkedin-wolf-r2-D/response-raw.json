@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ElZfQomYbeDTiyN6vzrnS6GeRNr1x",
+  "object": "chat.completion",
+  "created": 1795007228,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"Yellowstone’s wolves hunt in family packs—and their kills feed far more than wolves. Ravens, coyotes, bears and invertebrates also make use of them.\\n\\nWhat wolves prey on has shifted, too. Between 1995–2000 and 2001–2007, elk calves and bull elk reversed their proportions of early-winter prey, in a pattern linked to changes in prey vulnerability and availability.\\n\\nWolf predation and its effects on elk unfold alongside other influences, including other predators, ungulate management outside the park and weather. Research is examining the relative roles of these factors.\\n\\nWolves are part of Yellowstone’s changing ecological network, not its sole controller.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5848,
+    "completion_tokens": 512,
+    "total_tokens": 6360,
+    "prompt_tokens_details": {
+      "cached_tokens": 1950,
+      "cache_write_tokens": 3895,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 354,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

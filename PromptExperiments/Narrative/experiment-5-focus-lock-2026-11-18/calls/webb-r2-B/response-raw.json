@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ElZdVbx7gfrjGzY5jgaqLvYKg39Aj",
+  "object": "chat.completion",
+  "created": 1795007109,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"**Selected Story**\\nWebbs uitvouwing was een indrukwekkende mijlpaal, maar niet hetzelfde als klaar zijn voor wetenschap. De telescoop bereikte in zijn tweede week zijn volledig uitgevouwen configuratie; daarna volgden nog maanden van afkoeling, spiegeluitlijning en instrumentkalibratie voordat routinematige wetenschappelijke waarnemingen begonnen.\\n\\n**Story Progression**\\n- **Context:** Webb moest opgevouwen in de Ariane 5-raket passen, omdat zijn operationele configuratie te groot was voor de beschikbare raket. De uitvouwing omvatte meer dan 50 grote stappen en ruim 300 mogelijke afzonderlijke faalpunten; herstel op Webbs afstand van de aarde was niet mogelijk.\\n- **Development:** In de tweede week waren de secundaire spiegel en beide vleugels van de hoofdspiegel uitgeklapt en vergrendeld. Dat voltooide de operationele configuratie, maar niet de ingebruikname: in de eerste maand koelden de telescoop en instrumenten af, in maanden twee tot en met vier werden de spiegels uitgelijnd en in maanden vijf en zes werden instrumentmodi gekalibreerd.\\n- **Endpoint:** Na zes maanden begon Webb aan routinematige wetenschappelijke operaties. De mijlpalen markeren dus twee verschillende overgangen: eerst werd de telescoop fysiek opgebouwd, daarna werd hij klaargemaakt voor zijn werk.\\n\\n**Critical Constraints:** De uitvouwing verliep volgens de bron soepel; suggereer geen specifieke storingen of dat de ingebruikname herstel van een mislukking was. Er zijn geen gedetailleerde kalibratieresultaten gegeven.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 773,
+    "completion_tokens": 671,
+    "total_tokens": 1444,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 299,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

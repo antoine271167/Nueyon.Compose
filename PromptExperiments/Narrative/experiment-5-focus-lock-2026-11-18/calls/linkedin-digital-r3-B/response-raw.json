@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ElZfgnIPUM3CUcUgdvvpoKSwbU4nj",
+  "object": "chat.completion",
+  "created": 1795007244,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"Het POA-refundteam werd gevraagd een digitale en assisted-digital dienst voor terugbetalingen binnen enkele weken op te leveren. Het team vond die termijn niet haalbaar zonder de kwaliteit van de gebruikersdienst in gevaar te brengen. De dienst ging uiteindelijk na twaalf weken publiek live.\\n\\nDe ontwikkeling begon bij de ervaring van aanvragers. Die werkte het team eerst uit tot alpha; plannen voor caseworkers kwamen later, omdat zij nog geen gebruikers van deze nieuwe dienst waren.\\n\\nTijdens de private beta verdeelde het team het werk in tweewekelijkse sprints. De ene week deed het onderzoek en testen, terwijl het ook aanvragen aannam. De andere week werden aanvragen tijdelijk gepauzeerd voor onderzoek, testen en verwerking.\\n\\nVijf weken na de publieke lancering had de dienst volgens de auteur meer dan 100.000 aanvragen ontvangen. De gerapporteerde gebruikerstevredenheid was 92,6% en het voltooiingspercentage 80,2%.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5978,
+    "completion_tokens": 1001,
+    "total_tokens": 6979,
+    "prompt_tokens_details": {
+      "cached_tokens": 1950,
+      "cache_write_tokens": 4025,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 777,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

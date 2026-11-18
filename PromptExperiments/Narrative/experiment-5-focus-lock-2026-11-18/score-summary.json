@@ -1,0 +1,152 @@
+{
+  "verdict": "NO-GO",
+  "gates": {
+    "complete": true,
+    "sufficient": false,
+    "focus": false,
+    "progressionDetailsHandoff": false,
+    "fidelity": false,
+    "noNewMaterialFidelityError": false,
+    "paired": false,
+    "tokens": true,
+    "linkedIn": false
+  },
+  "narrative": {
+    "arms": {
+      "B": {
+        "sufficient": 6,
+        "cases": {
+          "webb": 2,
+          "wolf": 3,
+          "digital": 0,
+          "lowell": 1
+        },
+        "byDimension": {
+          "focus": 9,
+          "progression": 9,
+          "details": 12,
+          "fidelity": 9,
+          "handoff": 12
+        }
+      },
+      "D": {
+        "sufficient": 3,
+        "cases": {
+          "webb": 0,
+          "wolf": 2,
+          "digital": 0,
+          "lowell": 1
+        },
+        "byDimension": {
+          "focus": 9,
+          "progression": 9,
+          "details": 11,
+          "fidelity": 5,
+          "handoff": 11
+        }
+      }
+    },
+    "pairedRegressions": [
+      {
+        "id": "webb-r1-D",
+        "base": "B",
+        "dimension": "fidelity",
+        "before": 2,
+        "after": 0
+      },
+      {
+        "id": "wolf-r1-D",
+        "base": "B",
+        "dimension": "fidelity",
+        "before": 2,
+        "after": 1
+      },
+      {
+        "id": "digital-r1-D",
+        "base": "B",
+        "dimension": "details",
+        "before": 2,
+        "after": 1
+      },
+      {
+        "id": "digital-r2-D",
+        "base": "B",
+        "dimension": "fidelity",
+        "before": 2,
+        "after": 0
+      },
+      {
+        "id": "digital-r2-D",
+        "base": "B",
+        "dimension": "handoff",
+        "before": 2,
+        "after": 1
+      },
+      {
+        "id": "webb-r3-D",
+        "base": "B",
+        "dimension": "fidelity",
+        "before": 2,
+        "after": 0
+      }
+    ]
+  },
+  "linkedIn": {
+    "arms": {
+      "B": {
+        "sufficient": 0,
+        "cases": {
+          "webb": 0,
+          "wolf": 0,
+          "digital": 0,
+          "lowell": 0
+        },
+        "byDimension": {
+          "appeal": 2,
+          "readability": 4,
+          "message": 3,
+          "accuracy": 1
+        }
+      },
+      "D": {
+        "sufficient": 1,
+        "cases": {
+          "webb": 0,
+          "wolf": 1,
+          "digital": 0,
+          "lowell": 0
+        },
+        "byDimension": {
+          "appeal": 2,
+          "readability": 3,
+          "message": 3,
+          "accuracy": 2
+        }
+      }
+    },
+    "pairedRegressions": [
+      {
+        "id": "linkedin-webb-r1-D",
+        "base": "B",
+        "dimension": "appeal",
+        "before": 2,
+        "after": 1
+      },
+      {
+        "id": "linkedin-digital-r3-D",
+        "base": "B",
+        "dimension": "readability",
+        "before": 2,
+        "after": 1
+      }
+    ]
+  },
+  "evidence": {
+    "newMaterialFidelityErrors": [
+      "webb-r1-D: strict post-deployment cooling sequence absent from the paired B.",
+      "webb-r3-D: strict post-deployment cooling sequence absent from the paired B.",
+      "digital-r2-D: causal claim about launch timing absent from the paired B.",
+      "lowell-r2-D: causal attribution of wider revival to reuse absent from the paired B."
+    ]
+  }
+}

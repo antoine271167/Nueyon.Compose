@@ -1,0 +1,8 @@
+Central Message: Lowell’s heritage-led reuse of its industrial past formed part of a broader revival, but did not shield the city from economic change: a 1992 account describes renewed activity and building reuse followed by a downturn in the late 1980s.
+
+Story Progression
+- Context: Textile employment fell from 17,000 in 1895 to 8,000 by 1936 as mills closed and people left. One worker recalled being sent home repeatedly without knowing whether work would be available.
+- Development: In the 1960s, citizens proposed using Lowell’s architectural and cultural heritage in a revitalization effort, with political and business leaders supporting the idea. The city council endorsed it in 1972; heritage and historical parks followed in 1974 and 1978. The account reports that more than 100 old buildings were rehabilitated for new uses in the late 1970s and early 1980s, alongside rising employment and business expansion. It also identifies the University of Lowell and Wang Laboratories as separate developments of the 1970s.
+- Endpoint: By the late 1980s, the boom had ended amid a regional slowdown and difficulties in the computer industry, including Wang workforce cuts and restructuring. The reversal shows that reusing Lowell’s industrial heritage was one part of a wider revival, not protection from shifts in the economy.
+
+Critical Constraints: Treat this as the perspective of a 1992 historical account, not a current measure of Lowell. Do not attribute the revival solely to the parks or preservation effort, or present the university or Wang as its sole cause; the source does not quantify the contributions of these factors. The account does not establish whether revival endured after the late-1980s downturn or describe conditions after 1992.

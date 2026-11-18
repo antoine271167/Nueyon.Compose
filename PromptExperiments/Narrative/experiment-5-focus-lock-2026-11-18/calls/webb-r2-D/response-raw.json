@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ElZdQR5KjbPiy5EjOHBzDvh625QYL",
+  "object": "chat.completion",
+  "created": 1795007104,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"Central Message: Webb bereikte in de tweede week zijn volledig uitgevouwen configuratie, maar routinewetenschap vereiste daarna nog maanden afkoeling, spiegeluitlijning en instrumentkalibratie.\\n\\nStory Progression:\\n- **Context:** Webb moest worden opgevouwen om in de Ariane 5-neuskegel te passen. De uitvouwing omvatte meer dan 50 grote stappen en ruim 300 mogelijke afzonderlijke faalpunten; herstel op Webb’s afstand van de aarde was niet mogelijk.\\n- **Development:** In de tweede week waren de secundaire spiegel en beide vleugels van de primaire spiegel uitgevouwen en vergrendeld. Daarmee was de telescoop volledig opgesteld, maar nog niet klaar voor routinewetenschap.\\n- **Endpoint:** De ingebruikname verliep in opeenvolgende fasen: in de eerste maand koelden telescoop en instrumenten wekenlang af, de spiegeluitlijning volgde in maanden twee tot en met vier en de kalibratie van instrumentmodi in maanden vijf en zes. Na zes maanden begon Webb aan routinewetenschap.\\n\\nCritical Constraints: De uitvouwing verliep volgens de bron soepel; verzin geen incidenten en stel de commissioning niet voor als herstel na een fout. De bron geeft geen gedetailleerde kalibratieresultaten; claim alleen de overgang naar routinewetenschap.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 790,
+    "completion_tokens": 520,
+    "total_tokens": 1310,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 218,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

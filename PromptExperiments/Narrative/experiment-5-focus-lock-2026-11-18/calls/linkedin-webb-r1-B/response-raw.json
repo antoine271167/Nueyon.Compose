@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ElZfCH5RrpDZgPzV7ugS2cfOWplXE",
+  "object": "chat.completion",
+  "created": 1795007214,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"Webb’s deployment was a crucial milestone—but it wasn’t the finish line on the way to routine science.\\n\\nThe telescope was too large for the Ariane 5 fairing in its operational configuration, so it launched folded. By its second week in space, the secondary mirror and both primary-mirror wings had unfolded and latched, completing that configuration.\\n\\nThen came months of commissioning. Webb cooled over several weeks. Mirror alignment followed in months two through four, with instrument-mode calibration in months five and six.\\n\\nAfter six months, Webb began routine science operations. Unfolding got the telescope into position; cooling, alignment, and calibration were still ahead.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5887,
+    "completion_tokens": 647,
+    "total_tokens": 6534,
+    "prompt_tokens_details": {
+      "cached_tokens": 1950,
+      "cache_write_tokens": 3934,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 493,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}
