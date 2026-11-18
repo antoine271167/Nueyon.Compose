@@ -1,0 +1,7 @@
+James Webb moest opgevouwen worden om in de neuskegel van een Ariane 5-raket te passen. Maar het moment waarop de telescoop volledig was uitgeklapt, betekende nog niet dat hij klaar was voor routinematige wetenschap.
+
+De uitvouwing bestond uit meer dan 50 grote stappen en ruim 300 mogelijke afzonderlijke faalpunten. Elk daarvan kon de missie beperken of ernstig hinderen; op Webbs afstand van de aarde was reparatie niet mogelijk. Toch verliep de uitvouwing soepel. In de tweede week waren de secundaire spiegel en beide vleugels van de hoofdspiegel uitgeklapt en vergrendeld.
+
+Daarna ging de ingebruikname verder. In de eerste maand koelde Webb af. In maanden twee tot en met vier werden de spiegels uitgelijnd; in maanden vijf en zes werden de instrumentmodi gekalibreerd.
+
+De uitvouwing bracht Webb dus in zijn operationele configuratie. Spiegeluitlijning en instrumentkalibratie bereidden de telescoop voor op wetenschappelijke waarnemingen. Pas na zes maanden begon Webb aan routinematige wetenschap.

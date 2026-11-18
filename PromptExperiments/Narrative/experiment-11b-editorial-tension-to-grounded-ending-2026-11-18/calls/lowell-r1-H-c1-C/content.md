@@ -1,0 +1,11 @@
+Lowell gaf zijn industriële verleden een nieuwe rol, maar dat betekende niet dat de stad aan economische verandering ontsnapte.
+
+De textielindustrie kromp sterk: het aantal banen daalde van 17.000 in 1895 naar 8.000 in 1936, terwijl fabrieken sloten en mensen vertrokken. Een arbeider herinnerde zich dat hij herhaaldelijk naar huis werd gestuurd, zonder te weten of er later werk zou zijn.
+
+In de jaren zestig ontstond een burgerinitiatief om Lowells architectuur en culturele erfgoed in te zetten voor vernieuwing. Politieke en zakelijke leiders steunden het plan. De gemeenteraad onderschreef het in 1972; in 1974 en 1978 volgden erfgoed- en historische parken.
+
+Tegen het einde van de jaren zeventig en het begin van de jaren tachtig hadden meer dan honderd oude gebouwen een nieuwe bestemming gekregen. Tegelijkertijd namen de werkgelegenheid en bedrijfsuitbreiding toe. De University of Lowell en Wang Laboratories waren afzonderlijke ontwikkelingen in de jaren zeventig, naast die bredere veranderingen.
+
+Maar de hausse was eind jaren tachtig voorbij, te midden van een regionale vertraging en problemen in de computerindustrie. Wang kreeg te maken met personeelsreducties en herstructurering.
+
+Dit beeld komt uit een historisch verslag uit 1992, niet uit een meting van Lowell vandaag. Het laat een tastbare vernieuwing zien, naast een economische opleving die kwetsbaar bleek.

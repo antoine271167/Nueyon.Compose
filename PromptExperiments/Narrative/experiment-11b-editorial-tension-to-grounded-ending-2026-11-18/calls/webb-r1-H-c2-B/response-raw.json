@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ElcAs6U4U8Y8nrfEC5f8UkPcyZGLB",
+  "object": "chat.completion",
+  "created": 1795016866,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"Webbs uitvouwing was een beslissende mijlpaal. Maar de telescoop was daarmee nog niet klaar voor routinematige wetenschappelijke waarnemingen.\\n\\nOm in de neuskegel van een Ariane 5 te passen, moest Webb opgevouwen worden gelanceerd: de operationele configuratie was te groot voor de beschikbare raket. De inzet omvatte meer dan 50 grote stappen en ruim 300 mogelijke afzonderlijke faalpunten. Elk daarvan had de missie kunnen beperken of verlammen, en herstel op Webb’s afstand van de aarde was niet mogelijk. De inzet verliep soepel.\\n\\nIn de tweede week waren de secundaire spiegel en beide vleugels van de primaire spiegel uitgeklapt en vergrendeld. Webb had toen zijn volledige operationele configuratie bereikt.\\n\\nDaarna volgde nog maanden werk. In de eerste maand koelden de telescoop en instrumenten enkele weken af. In maanden twee tot en met vier werden de spiegels uitgelijnd; in maanden vijf en zes werden de instrumentmodi gekalibreerd. Na zes maanden begon Webb aan routinematige wetenschappelijke waarnemingen.\\n\\nUitgevouwen beschreef de configuratie van Webb. Klaar voor routinewetenschap worden vergde een langere ingebruikname.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6208,
+    "completion_tokens": 783,
+    "total_tokens": 6991,
+    "prompt_tokens_details": {
+      "cached_tokens": 6205,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 495,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-Elc74hYuZt0QgXGaIxKZNo4LyUkiL",
+  "object": "chat.completion",
+  "created": 1795016630,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"Yellowstone’s wolves are connected to far more than the animals they hunt.\\n\\nA pack is a social family: wolves hunt together and help care for young. Their kills also become food for ravens, coyotes, bears and invertebrates.\\n\\nWhat wolves prey on can change, too. Between 1995–2000 and 2001–2007, the relative shares of elk calves and bull elk in early-winter prey reversed. Prey vulnerability and availability are part of that picture, alongside other predators, elk management outside the park and weather.\\n\\nWolves are part of Yellowstone’s living network, but their changing impacts unfold amid several interacting conditions—not as the work of a single predator directing the ecosystem.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6003,
+    "completion_tokens": 358,
+    "total_tokens": 6361,
+    "prompt_tokens_details": {
+      "cached_tokens": 6000,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 192,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

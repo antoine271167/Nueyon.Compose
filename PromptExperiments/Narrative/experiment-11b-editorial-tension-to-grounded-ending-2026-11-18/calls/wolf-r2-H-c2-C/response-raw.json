@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ElcB8yqfJ4pNhtORMVun7YBE0TPlC",
+  "object": "chat.completion",
+  "created": 1795016882,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"Een wolvenroedel in Yellowstone is een sociale familie: wolven jagen samen en zorgen gezamenlijk voor hun jongen.\\n\\nOok na de jacht blijft een prooi deel uitmaken van een groter web. Een karkas kan voedsel bieden aan raven, coyotes, beren en ongewervelden.\\n\\nWat wolven eten, kan bovendien veranderen. In de vroege winter draaide tussen 1995–2000 en 2001–2007 de verhouding tussen elandkalveren en volwassen stieren in hun menu om. Zulke verschuivingen hangen samen met welke prooien beschikbaar zijn en hoe kwetsbaar ze zijn.\\n\\nVeranderingen in predatie en de impact op elanden staan ook in verband met andere roofdieren, het beheer van hoefdieren buiten het park en het weer. Hoe zwaar elk van die factoren weegt, wordt nog onderzocht.\\n\\nYellowstone is daarmee geen eenvoudig verhaal van één roofdier dat het ecosysteem bestuurt. Wolven maken deel uit van een netwerk van relaties en omstandigheden, waarvan de afzonderlijke bijdragen nog niet volledig zijn vastgesteld.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6030,
+    "completion_tokens": 905,
+    "total_tokens": 6935,
+    "prompt_tokens_details": {
+      "cached_tokens": 6027,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 657,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

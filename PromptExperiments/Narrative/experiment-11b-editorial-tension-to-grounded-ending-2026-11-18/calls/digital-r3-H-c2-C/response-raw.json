@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-Elc8L0YUjCv22mGhYH2pjx6IZbPne",
+  "object": "chat.completion",
+  "created": 1795016709,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"Het POA-refundteam kreeg aanvankelijk de vraag om een dienst binnen enkele weken te leveren. Het team vond dat niet haalbaar met behoud van een kwalitatieve gebruikersdienst. De dienst werd in twaalf weken gelanceerd.\\n\\nDe eerste stap was de ervaring van aanvragers: die werkte het team uit tot alpha. De plannen voor caseworkers kwamen later. Zij waren nog geen bestaande gebruikers van deze nieuwe dienst, en het team wilde voorkomen dat het aannames over hun behoeften deed.\\n\\nTijdens de private beta werkte het team in sprints van twee weken. In de eerste week nam de dienst aanvragen aan, terwijl er ook tijd was voor onderzoek en testen. In de tweede week werden aanvragen gepauzeerd, zodat er ruimte was voor onderzoek, testen en verwerking. De dienst was digitaal en assisted-digital, zonder papieren versie.\\n\\nNa vijf weken publieke beschikbaarheid rapporteerde de auteur meer dan 100.000 aanvragen, 92,6% gebruikerstevredenheid en een voltooiingspercentage van 80,2%.\\n\\nIn deze aanpak kreeg onderzoek een vaste plek naast het aannemen en verwerken van aanvragen. De aanvragerservaring stond eerst; de plannen voor caseworkers volgden later. Dat is hoe het team de spanning tussen snel leveren en tijd maken voor onderzoek vormgaf. /final\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6098,
+    "completion_tokens": 1837,
+    "total_tokens": 7935,
+    "prompt_tokens_details": {
+      "cached_tokens": 6095,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1536,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

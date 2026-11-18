@@ -1,0 +1,9 @@
+Lowell’s revival took shape in old industrial buildings—but it wasn’t a straight path from decline to lasting recovery.
+
+Textile employment fell from 17,000 in 1895 to 8,000 by 1936 as mills closed and people left. In the 1960s, Lowell citizens proposed revitalizing the city around its architectural and cultural heritage. Political and business leaders supported the effort, and the city council endorsed it in 1972.
+
+In the late 1970s and early 1980s, more than 100 old buildings were rehabilitated for new uses, alongside rising employment and business expansion. The reuse gave the revival a tangible form.
+
+But by the late 1980s, a regional slowdown and difficulties in the computer industry—including workforce cuts and restructuring at Wang Laboratories—had brought the boom to an end.
+
+Lowell’s history, as seen from 1992, is one of adaptation during a revival, followed by continued economic change.

@@ -1,0 +1,9 @@
+Webbs uitvouwing was een beslissende mijlpaal. Maar de telescoop was daarmee nog niet klaar voor routinematige wetenschappelijke waarnemingen.
+
+Om in de neuskegel van een Ariane 5 te passen, moest Webb opgevouwen worden gelanceerd: de operationele configuratie was te groot voor de beschikbare raket. De inzet omvatte meer dan 50 grote stappen en ruim 300 mogelijke afzonderlijke faalpunten. Elk daarvan had de missie kunnen beperken of verlammen, en herstel op Webb’s afstand van de aarde was niet mogelijk. De inzet verliep soepel.
+
+In de tweede week waren de secundaire spiegel en beide vleugels van de primaire spiegel uitgeklapt en vergrendeld. Webb had toen zijn volledige operationele configuratie bereikt.
+
+Daarna volgde nog maanden werk. In de eerste maand koelden de telescoop en instrumenten enkele weken af. In maanden twee tot en met vier werden de spiegels uitgelijnd; in maanden vijf en zes werden de instrumentmodi gekalibreerd. Na zes maanden begon Webb aan routinematige wetenschappelijke waarnemingen.
+
+Uitgevouwen beschreef de configuratie van Webb. Klaar voor routinewetenschap worden vergde een langere ingebruikname.

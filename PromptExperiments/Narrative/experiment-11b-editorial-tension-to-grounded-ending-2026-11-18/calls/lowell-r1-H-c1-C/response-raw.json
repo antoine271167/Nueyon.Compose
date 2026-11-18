@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-Elc5iy5OGV0H97eNpU8iyOx1FwMb2",
+  "object": "chat.completion",
+  "created": 1795016546,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{ \"content\": \"Lowell gaf zijn industriële verleden een nieuwe rol, maar dat betekende niet dat de stad aan economische verandering ontsnapte.\\n\\nDe textielindustrie kromp sterk: het aantal banen daalde van 17.000 in 1895 naar 8.000 in 1936, terwijl fabrieken sloten en mensen vertrokken. Een arbeider herinnerde zich dat hij herhaaldelijk naar huis werd gestuurd, zonder te weten of er later werk zou zijn.\\n\\nIn de jaren zestig ontstond een burgerinitiatief om Lowells architectuur en culturele erfgoed in te zetten voor vernieuwing. Politieke en zakelijke leiders steunden het plan. De gemeenteraad onderschreef het in 1972; in 1974 en 1978 volgden erfgoed- en historische parken.\\n\\nTegen het einde van de jaren zeventig en het begin van de jaren tachtig hadden meer dan honderd oude gebouwen een nieuwe bestemming gekregen. Tegelijkertijd namen de werkgelegenheid en bedrijfsuitbreiding toe. De University of Lowell en Wang Laboratories waren afzonderlijke ontwikkelingen in de jaren zeventig, naast die bredere veranderingen.\\n\\nMaar de hausse was eind jaren tachtig voorbij, te midden van een regionale vertraging en problemen in de computerindustrie. Wang kreeg te maken met personeelsreducties en herstructurering.\\n\\nDit beeld komt uit een historisch verslag uit 1992, niet uit een meting van Lowell vandaag. Het laat een tastbare vernieuwing zien, naast een economische opleving die kwetsbaar bleek.\" }",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6074,
+    "completion_tokens": 857,
+    "total_tokens": 6931,
+    "prompt_tokens_details": {
+      "cached_tokens": 1950,
+      "cache_write_tokens": 4121,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 512,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

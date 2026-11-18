@@ -1,0 +1,9 @@
+# Experiment 11b · Amendement vóór de live hervatting
+
+Experiment 11, vastgelegd in c16c2adf6948ae8cac0bb0f9c852e1974dff28ca, blijft de referentie. De 15 geldige posts, 48 geplande posities, oorspronkelijke rubric, fixtures, prompts, modelinstellingen, volgorde, verbruikstarieven in config en inhoudelijke beslisregels blijven leidend.
+
+Op positie 16 is precies één vervangende stateless poging toegestaan voor webb-r1-H-c1-C. De originele poging blijft staan en is byte voor byte gearchiveerd onder archive/webb-r1-H-c1-C-original. De vervanging krijgt een eigen map met het achtervoegsel -replacement. De oorspronkelijke input wordt vóór uitvoering gereconstrueerd en de nieuwe requestbody moet vóór verzending exact overeenkomen met de oorspronkelijke requestbody. Alleen een geldige vervanging kan positie 16 vullen. Daarna volgen posities 17–48 in oorspronkelijke volgorde.
+
+Stop bij de eerste nieuwe ongeldige respons, HTTP-, model-, schema- of replayafwijking, of onafgeronde poging. Er volgt dan geen retry of volgende call. PAUSE stopt tussen calls. Ctrl+C stopt de lopende aanroep en laat een eventuele onafgeronde poging als stopconditie staan. Alle pogingen zijn onderdeel van de operationele analyse en de ongeldige poging telt mee in de totale uitgaven. De oorspronkelijke vergelijkende tokengate en kostengate gebruiken geldige posts. Rapporteer ook de kosten inclusief de fout, en zonder cachekorting.
+
+De gewijzigde dekkingsgate vereist 48 geldige slots en exacte offline replay daarvan, plus foutreplay van de gearchiveerde mislukking. Dit meet een reeks met maximaal één vooraf gespecificeerde vervanging van een al waargenomen fout. Het oorspronkelijke protocol houdt zijn NO-GO. De langere tijd tussen batches, mogelijke cacheverschillen en selectie op geldige respons bij C begrenzen interpretatie. Toon ook de dekking en waargenomen slotresultaten zonder vervanging.

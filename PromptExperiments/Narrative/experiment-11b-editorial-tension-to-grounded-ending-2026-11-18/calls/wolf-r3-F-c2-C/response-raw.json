@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-Elc6utoJQIiMEIM5cBRaNC3Vf5fap",
+  "object": "chat.completion",
+  "created": 1795016620,
+  "model": "gpt-6-luna",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"content\":\"A Yellowstone wolf pack’s relationships extend beyond the animals it hunts.\\n\\nWolves live in social family groups, where they hunt together and cooperate in caring for young. Their kills also provide food for ravens, coyotes, bears and invertebrates.\\n\\nWhat wolves prey on can shift, too. Between 1995–2000 and 2001–2007, the relative shares of elk calves and bull elk in early-winter prey reversed. Prey vulnerability and availability are part of that picture. Wolf predation and its effects on elk also unfold amid other predators, ungulate management outside the park and weather.\\n\\nYellowstone’s wolves matter through their relationships with pack members, prey and scavengers. Their changing impacts on elk, though, cannot be reduced to one predator directing an ecosystem.\"}",
+        "refusal": null,
+        "annotations": []
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6033,
+    "completion_tokens": 834,
+    "total_tokens": 6867,
+    "prompt_tokens_details": {
+      "cached_tokens": 6030,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 646,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "service_tier": "default",
+  "system_fingerprint": null
+}

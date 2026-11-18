@@ -1,0 +1,9 @@
+Een wolvenjacht in Yellowstone werkt verder door dan de roedel zelf.
+
+Wolven leven in sociale roedels: ze jagen samen en zorgen gezamenlijk voor hun jongen. En wanneer een prooi is gedood, wordt het karkas voedsel voor andere dieren, waaronder raven, coyotes, beren en ongewervelden.
+
+Ook het menu van de wolven verandert. In de vroege winter draaide tussen 1995–2000 en 2001–2007 de verhouding tussen elandkalveren en volwassen stieren om. Zulke verschuivingen hangen samen met welke prooien beschikbaar en kwetsbaar zijn.
+
+Tegelijk spelen andere roofdieren, het beheer van hoefdieren buiten het park en het weer mee in veranderingen in predatie en de invloed daarvan op elanden. Hoe zwaar elk van die factoren weegt, wordt nog onderzocht.
+
+Yellowstone’s wolven zijn dus geen enkele schakel die het hele ecosysteem verklaart. Hun relaties met prooien, aaseters en andere omstandigheden maken deel uit van een groter netwerk.
