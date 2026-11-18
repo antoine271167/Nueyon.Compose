@@ -29,5 +29,5 @@ De uitvoerende assistent scoorde de twaalf briefs handmatig met zicht op de arm.
 
 ## Publicatie
 
-Branch `narrative/experiment-8-fidelity-guarded-editorial-conclusion`. De hash van de artefactcommit wordt in een tweede commit aan dit rapport toegevoegd.
+Branch `narrative/experiment-8-fidelity-guarded-editorial-conclusion`. Artefactcommit: 3ded530eca99e3df2169b152b3bfd6f501bde811. [GitHub-commit](https://github.com/antoine271167/Nueyon.Compose/commit/3ded530eca99e3df2169b152b3bfd6f501bde811)
 
