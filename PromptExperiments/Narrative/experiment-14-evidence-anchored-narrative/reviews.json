@@ -1,0 +1,460 @@
+﻿{
+  "066e1136f9": [
+    {
+      "criterion": "resolution",
+      "excerpt": "Zo wordt de beschreven werkwijze concreet: eerst aandacht voor aanvragers, later voor caseworkers",
+      "source": "cases/digital/source.md",
+      "evidence": "then suspending submissions to concentrate on testing, researching and processing applications the second",
+      "discrepancy": "The endpoint enumerates choices already in the opening and does not explain what the temporary pause made room for.",
+      "severity": "editorial",
+      "origin": "Introduced by Narrative."
+    }
+  ],
+  "07c7aa61fb": [
+    {
+      "criterion": "resolution",
+      "excerpt": "de verdeling beschrijft het aantal uitleningen per dag, niet een voorkeur per openingsuur",
+      "source": "cases/library/source.md",
+      "evidence": "Er waren 80 uitleningen aan 46 unieke leners. Van de uitleningen vonden er 52 op zaterdag plaats. De proef was ook op woensdag toegankelijk, maar zaterdag was langer open.",
+      "discrepancy": "The endpoint distinguishes count from preference abstractly. The reason, unequal opening hours, appears only as a constraint and does not develop the conclusion.",
+      "severity": "editorial",
+      "origin": "Introduced by Narrative."
+    }
+  ],
+  "0fb93fe8cd": [
+    {
+      "criterion": "resolution",
+      "excerpt": "Presenteer dit als een waargenomen temperatuurverschil tussen twee plekken",
+      "source": "cases/cooling/source.md",
+      "evidence": "Toen registreerde de binnenplaats met doek gemiddeld 2 graden minder dan de open binnenplaats.",
+      "discrepancy": "The instruction stops at a generic comparison and loses the actual 2-degree result and direction from the endpoint.",
+      "severity": "editorial",
+      "origin": "Introduced by Narrative."
+    }
+  ],
+  "104c4b228f": [],
+  "1585e08108": [
+    {
+      "criterion": "fidelity",
+      "excerpt": "daarna volgden maanden van afkoeling, spiegeluitlijning en instrumentkalibratie",
+      "source": "cases/webb/source.md",
+      "evidence": "Note the major changes in the area marked as days 3-10 when the sunshield was deployed.",
+      "discrepancy": "The opening and endpoint reserve cooling for after completed deployment, while the source records cooling-related changes during deployment.",
+      "severity": "material",
+      "origin": "Narrative sharpened an upstream timing ambiguity."
+    },
+    {
+      "criterion": "handoff",
+      "excerpt": "De commissioning ging daarna door: eerst koelden de telescoop en instrumenten enkele weken",
+      "source": "cases/webb/source.md",
+      "evidence": "Note the major changes in the area marked as days 3-10 when the sunshield was deployed.",
+      "discrepancy": "Compose would need to repair the chronology even though the six-month milestone is usable.",
+      "severity": "material",
+      "origin": "Narrative sharpened an upstream timing ambiguity."
+    }
+  ],
+  "1f5b0d9dcb": [
+    {
+      "criterion": "fidelity",
+      "excerpt": "Daarna volgden afkoeling, spiegeluitlijning en kalibratie van instrumentmodi",
+      "source": "cases/webb/source.md",
+      "evidence": "Note the major changes in the area marked as days 3-10 when the sunshield was deployed.",
+      "discrepancy": "The endpoint makes cooling begin after complete deployment, even though the summary says cooling continued.",
+      "severity": "material",
+      "origin": "Narrative sharpened an upstream timing ambiguity."
+    },
+    {
+      "criterion": "handoff",
+      "excerpt": "Daarna volgden afkoeling, spiegeluitlijning en kalibratie van instrumentmodi",
+      "source": "cases/webb/source.md",
+      "evidence": "Note the major changes in the area marked as days 3-10 when the sunshield was deployed.",
+      "discrepancy": "The inconsistent chronology needs repair before downstream use.",
+      "severity": "material",
+      "origin": "Narrative sharpened an upstream timing ambiguity."
+    }
+  ],
+  "226e2d8c5f": [
+    {
+      "criterion": "resolution",
+      "excerpt": "een concreet, maar beperkt temperatuurverschil tussen de twee binnenplaatsen",
+      "source": "cases/cooling/source.md",
+      "evidence": "Toen registreerde de binnenplaats met doek gemiddeld 2 graden minder dan de open binnenplaats.",
+      "discrepancy": "The endpoint drops the direction and magnitude that made the revised measurements meaningful.",
+      "severity": "editorial",
+      "origin": "Introduced by Narrative."
+    }
+  ],
+  "2aa5874f6e": [
+    {
+      "criterion": "fidelity",
+      "excerpt": "wisselde het team tweewekelijkse sprints af met tijd voor aanvragen en tijd voor onderzoek, testen en verwerking",
+      "source": "cases/digital/source.md",
+      "evidence": "then suspending submissions to concentrate on testing, researching and processing applications the second",
+      "discrepancy": "The phrasing makes the alternation appear to be between sprints and activity blocks, obscuring the split within each sprint.",
+      "severity": "minor",
+      "origin": "Introduced by Narrative."
+    },
+    {
+      "criterion": "resolution",
+      "excerpt": "combineerde die volgorde van gebruikersgroepen met terugkerende tijd voor onderzoek en testen",
+      "source": "cases/digital/source.md",
+      "evidence": "then suspending submissions to concentrate on testing, researching and processing applications the second",
+      "discrepancy": "The ending repeats the method without showing what the second-week pause made room for.",
+      "severity": "editorial",
+      "origin": "Introduced by Narrative."
+    }
+  ],
+  "31254c6cee": [
+    {
+      "criterion": "resolution",
+      "excerpt": "De proef maakt zichtbaar dat de meeste uitleningen op zaterdag plaatsvonden, zonder dat de aantallen op zichzelf een voorkeur per openingsuur aantonen",
+      "source": "cases/library/source.md",
+      "evidence": "Er waren 80 uitleningen aan 46 unieke leners. Van de uitleningen vonden er 52 op zaterdag plaats. De proef was ook op woensdag toegankelijk, maar zaterdag was langer open.",
+      "discrepancy": "The endpoint repeats the Saturday count finding and drops the opening's explanation that Saturday offered more time.",
+      "severity": "editorial",
+      "origin": "Introduced by Narrative."
+    }
+  ],
+  "3302dcbfd0": [
+    {
+      "criterion": "resolution",
+      "excerpt": "De meting laat een gemiddeld temperatuurverschil tussen deze twee binnenplaatsen op die middagen zien",
+      "source": "cases/cooling/source.md",
+      "evidence": "Toen registreerde de binnenplaats met doek gemiddeld 2 graden minder dan de open binnenplaats.",
+      "discrepancy": "The endpoint loses both magnitude and direction already given in Development.",
+      "severity": "editorial",
+      "origin": "Introduced by Narrative."
+    }
+  ],
+  "41a78eddd4": [],
+  "41dd1418e5": [
+    {
+      "criterion": "fidelity",
+      "excerpt": "het aandeel elandkalveren en volwassen mannetjes keerde om",
+      "source": "cases/wolf/source.md",
+      "evidence": "elk calves comprised 50% of wolf prey, and bull elk comprised 25%. That ratio reversed from 2001 to 2007",
+      "discrepancy": "The reversal is correct, but the species is wapiti rather than moose.",
+      "severity": "material",
+      "origin": "Introduced by Narrative."
+    },
+    {
+      "criterion": "resolution",
+      "excerpt": "De ontwikkeling ondersteunt een beeld van Yellowstone als een netwerk van relaties en omstandigheden",
+      "source": "cases/wolf/source.md",
+      "evidence": "elk calves comprised 50% of wolf prey, and bull elk comprised 25%. That ratio reversed from 2001 to 2007",
+      "discrepancy": "The endpoint gives the general network thesis without explaining the significance of the prey reversal.",
+      "severity": "editorial",
+      "origin": "Introduced by Narrative."
+    },
+    {
+      "criterion": "handoff",
+      "excerpt": "het aandeel elandkalveren en volwassen mannetjes keerde om",
+      "source": "cases/wolf/source.md",
+      "evidence": "elk calves comprised 50% of wolf prey, and bull elk comprised 25%. That ratio reversed from 2001 to 2007",
+      "discrepancy": "The prey species requires correction before downstream use.",
+      "severity": "material",
+      "origin": "Introduced by Narrative."
+    }
+  ],
+  "44a3e4f460": [],
+  "504a1845ea": [],
+  "5566136416": [
+    {
+      "criterion": "resolution",
+      "excerpt": "De meting laat een verschil zien tussen deze twee plekken in die specifieke middagen",
+      "source": "cases/cooling/source.md",
+      "evidence": "Toen registreerde de binnenplaats met doek gemiddeld 2 graden minder dan de open binnenplaats.",
+      "discrepancy": "The endpoint leaves out the 2-degree direction and magnitude that distinguish this observation.",
+      "severity": "editorial",
+      "origin": "Introduced by Narrative."
+    }
+  ],
+  "5c56a499d3": [
+    {
+      "criterion": "fidelity",
+      "excerpt": "kalveren en volwassen mannelijke elanden",
+      "source": "cases/wolf/source.md",
+      "evidence": "elk calves comprised 50% of wolf prey, and bull elk comprised 25%. That ratio reversed from 2001 to 2007",
+      "discrepancy": "The brief substitutes moose for wapiti in the reversal.",
+      "severity": "material",
+      "origin": "Introduced by Narrative."
+    },
+    {
+      "criterion": "resolution",
+      "excerpt": "De kern is dat de relaties in Yellowstone niet terug te brengen zijn tot één wolf die het ecosysteem bepaalt",
+      "source": "cases/wolf/source.md",
+      "evidence": "elk calves comprised 50% of wolf prey, and bull elk comprised 25%. That ratio reversed from 2001 to 2007",
+      "discrepancy": "The endpoint returns to the opening thesis instead of using the reversal or another concrete observation to advance it.",
+      "severity": "editorial",
+      "origin": "Introduced by Narrative."
+    },
+    {
+      "criterion": "handoff",
+      "excerpt": "kalveren en volwassen mannelijke elanden",
+      "source": "cases/wolf/source.md",
+      "evidence": "elk calves comprised 50% of wolf prey, and bull elk comprised 25%. That ratio reversed from 2001 to 2007",
+      "discrepancy": "The species needs correction before the brief can be used.",
+      "severity": "material",
+      "origin": "Introduced by Narrative."
+    }
+  ],
+  "689130948a": [
+    {
+      "criterion": "resolution",
+      "excerpt": "combineerde die volgorde van gebruikersgroepen met gereserveerde onderzoeks- en testtijd",
+      "source": "cases/digital/source.md",
+      "evidence": "then suspending submissions to concentrate on testing, researching and processing applications the second",
+      "discrepancy": "The endpoint restates the method while skipping the concrete submission pause and continued work.",
+      "severity": "editorial",
+      "origin": "Introduced by Narrative."
+    }
+  ],
+  "6a49b78745": [
+    {
+      "criterion": "fidelity",
+      "excerpt": "52 van de 80, verdeeld over 46 unieke leners",
+      "source": "cases/library/source.md",
+      "evidence": "Er waren 80 uitleningen aan 46 unieke leners. Van de uitleningen vonden er 52 op zaterdag plaats. De proef was ook op woensdag toegankelijk, maar zaterdag was langer open.",
+      "discrepancy": "The wording allows the reader to attach 46 unique borrowers to the 52 Saturday loans. Development correctly gives 46 as the overall total.",
+      "severity": "minor",
+      "origin": "Introduced by Narrative."
+    }
+  ],
+  "6f256bc39d": [],
+  "74482dfdc2": [
+    {
+      "criterion": "fidelity",
+      "excerpt": "elandkalveren en volwassen mannelijke elanden",
+      "source": "cases/wolf/source.md",
+      "evidence": "elk calves comprised 50% of wolf prey, and bull elk comprised 25%. That ratio reversed from 2001 to 2007",
+      "discrepancy": "The brief substitutes moose for wapiti.",
+      "severity": "material",
+      "origin": "Introduced by Narrative."
+    },
+    {
+      "criterion": "resolution",
+      "excerpt": "Yellowstone biedt zo geen eenvoudig beeld van één roofdier dat ecosysteemuitkomsten bepaalt",
+      "source": "cases/wolf/source.md",
+      "evidence": "elk calves comprised 50% of wolf prey, and bull elk comprised 25%. That ratio reversed from 2001 to 2007",
+      "discrepancy": "The endpoint repeats the general thesis rather than developing the significance of the reversal.",
+      "severity": "editorial",
+      "origin": "Introduced by Narrative."
+    },
+    {
+      "criterion": "handoff",
+      "excerpt": "elandkalveren en volwassen mannelijke elanden",
+      "source": "cases/wolf/source.md",
+      "evidence": "elk calves comprised 50% of wolf prey, and bull elk comprised 25%. That ratio reversed from 2001 to 2007",
+      "discrepancy": "The species needs correction before the brief can be used.",
+      "severity": "material",
+      "origin": "Introduced by Narrative."
+    }
+  ],
+  "7ba6a94ca8": [
+    {
+      "criterion": "resolution",
+      "excerpt": "Breng de lezer terug bij de beschreven aanpak",
+      "source": "cases/digital/source.md",
+      "evidence": "then suspending submissions to concentrate on testing, researching and processing applications the second",
+      "discrepancy": "The endpoint asks for a recap and gives no consequence or concrete qualification from the sprint.",
+      "severity": "editorial",
+      "origin": "Introduced by Narrative."
+    }
+  ],
+  "85a0a87da7": [
+    {
+      "criterion": "fidelity",
+      "excerpt": "de daaropvolgende ingebruikname: afkoeling, uitlijning en kalibratie liepen door",
+      "source": "cases/webb/source.md",
+      "evidence": "Note the major changes in the area marked as days 3-10 when the sunshield was deployed.",
+      "discrepancy": "The opening places the commissioning stage that includes cooling after deployment. The later phrasing that commissioning continued leaves the brief inconsistent on overlap.",
+      "severity": "material",
+      "origin": "Narrative sharpened an upstream timing ambiguity."
+    },
+    {
+      "criterion": "handoff",
+      "excerpt": "de daaropvolgende ingebruikname: afkoeling, uitlijning en kalibratie liepen door",
+      "source": "cases/webb/source.md",
+      "evidence": "Note the major changes in the area marked as days 3-10 when the sunshield was deployed.",
+      "discrepancy": "Compose would need to correct or resolve the conflicting timing of cooling.",
+      "severity": "material",
+      "origin": "Narrative sharpened an upstream timing ambiguity."
+    }
+  ],
+  "8a6783bdc2": [],
+  "8c05e9e4ae": [],
+  "8c75dd16d9": [
+    {
+      "criterion": "resolution",
+      "excerpt": "The picture is of interacting relationships and conditions, not a single predator controlling ecosystem outcomes",
+      "source": "cases/wolf/source.md",
+      "evidence": "elk calves comprised 50% of wolf prey, and bull elk comprised 25%. That ratio reversed from 2001 to 2007",
+      "discrepancy": "The endpoint restates the opening rather than using the documented reversal to explain what long-term monitoring showed.",
+      "severity": "editorial",
+      "origin": "Introduced by Narrative."
+    }
+  ],
+  "994f88e7dd": [
+    {
+      "criterion": "fidelity",
+      "excerpt": "volwassen mannelijke elanden",
+      "source": "cases/wolf/source.md",
+      "evidence": "elk calves comprised 50% of wolf prey, and bull elk comprised 25%. That ratio reversed from 2001 to 2007",
+      "discrepancy": "The English elk in this context is wapiti. The translation substitutes moose.",
+      "severity": "material",
+      "origin": "Introduced by Narrative."
+    },
+    {
+      "criterion": "resolution",
+      "excerpt": "De wolven zijn dus onderdeel van het netwerk",
+      "source": "cases/wolf/source.md",
+      "evidence": "elk calves comprised 50% of wolf prey, and bull elk comprised 25%. That ratio reversed from 2001 to 2007",
+      "discrepancy": "The endpoint returns to the general network thesis without developing what the prey comparison reveals.",
+      "severity": "editorial",
+      "origin": "Introduced by Narrative."
+    },
+    {
+      "criterion": "handoff",
+      "excerpt": "volwassen mannelijke elanden",
+      "source": "cases/wolf/source.md",
+      "evidence": "elk calves comprised 50% of wolf prey, and bull elk comprised 25%. That ratio reversed from 2001 to 2007",
+      "discrepancy": "Compose would need to correct the prey species.",
+      "severity": "material",
+      "origin": "Introduced by Narrative."
+    }
+  ],
+  "9af9df28ed": [
+    {
+      "criterion": "fidelity",
+      "excerpt": "Daarna volgden weken van afkoeling",
+      "source": "cases/webb/source.md",
+      "evidence": "Note the major changes in the area marked as days 3-10 when the sunshield was deployed.",
+      "discrepancy": "The brief puts cooling after week-two completion, contrary to temperature changes during sunshield deployment.",
+      "severity": "material",
+      "origin": "Narrative sharpened an upstream timing ambiguity."
+    },
+    {
+      "criterion": "handoff",
+      "excerpt": "Daarna volgden weken van afkoeling",
+      "source": "cases/webb/source.md",
+      "evidence": "Note the major changes in the area marked as days 3-10 when the sunshield was deployed.",
+      "discrepancy": "The handoff requires timeline repair before reuse.",
+      "severity": "material",
+      "origin": "Narrative sharpened an upstream timing ambiguity."
+    }
+  ],
+  "a5b80a4a53": [
+    {
+      "criterion": "fidelity",
+      "excerpt": "De dienst moest aanvankelijk binnen enkele weken worden geleverd",
+      "source": "cases/digital/source.md",
+      "evidence": "We were initially asked to deliver the service in a matter of weeks",
+      "discrepancy": "An initial request is stated as a firm requirement. The launch duration and lack of causal evidence are otherwise retained.",
+      "severity": "minor",
+      "origin": "Introduced by Narrative."
+    },
+    {
+      "criterion": "resolution",
+      "excerpt": "combineerde een volgorde waarin de aanvragerservaring vooropstond met gereserveerde onderzoeks- en testtijd",
+      "source": "cases/digital/source.md",
+      "evidence": "then suspending submissions to concentrate on testing, researching and processing applications the second",
+      "discrepancy": "The conclusion repeats the chosen approach without working out the temporary pause and continuation of testing and research.",
+      "severity": "editorial",
+      "origin": "Introduced by Narrative."
+    }
+  ],
+  "ad37a2a404": [],
+  "b6690f5c6a": [],
+  "cc4dfd8859": [
+    {
+      "criterion": "resolution",
+      "excerpt": "Dit is een concreet maar afgebakend vergelijkingspunt tussen twee plekken",
+      "source": "cases/cooling/source.md",
+      "evidence": "Toen registreerde de binnenplaats met doek gemiddeld 2 graden minder dan de open binnenplaats.",
+      "discrepancy": "The endpoint substitutes a generic measurement limit for the observed direction and magnitude.",
+      "severity": "editorial",
+      "origin": "Introduced by Narrative."
+    }
+  ],
+  "ce3c882f43": [
+    {
+      "criterion": "fidelity",
+      "excerpt": "Daarna volgden weken van afkoeling",
+      "source": "cases/webb/source.md",
+      "evidence": "Note the major changes in the area marked as days 3-10 when the sunshield was deployed.",
+      "discrepancy": "The endpoint excludes cooling during deployment. The opening repeats this sequencing with vervolgens.",
+      "severity": "material",
+      "origin": "Narrative sharpened an upstream timing ambiguity."
+    },
+    {
+      "criterion": "handoff",
+      "excerpt": "Daarna volgden weken van afkoeling",
+      "source": "cases/webb/source.md",
+      "evidence": "Note the major changes in the area marked as days 3-10 when the sunshield was deployed.",
+      "discrepancy": "Compose would have to repair the sequencing before using the timeline.",
+      "severity": "material",
+      "origin": "Narrative sharpened an upstream timing ambiguity."
+    }
+  ],
+  "dad137ff61": [],
+  "e0a5d63e46": [
+    {
+      "criterion": "resolution",
+      "excerpt": "een gemiddeld temperatuurverschil tussen deze twee plekken onder de gemeten omstandigheden",
+      "source": "cases/cooling/source.md",
+      "evidence": "Toen registreerde de binnenplaats met doek gemiddeld 2 graden minder dan de open binnenplaats.",
+      "discrepancy": "The endpoint loses the direction and 2-degree magnitude described in the Development.",
+      "severity": "editorial",
+      "origin": "Introduced by Narrative."
+    }
+  ],
+  "ea80816d1c": [
+    {
+      "criterion": "resolution",
+      "excerpt": "Plaats de na vijf weken gerapporteerde aantallen en percentages als een afzonderlijke stand van zaken",
+      "source": "cases/digital/source.md",
+      "evidence": "then suspending submissions to concentrate on testing, researching and processing applications the second",
+      "discrepancy": "The separate results snapshot cannot resolve the development about prioritization and reserving research and testing time.",
+      "severity": "editorial",
+      "origin": "Introduced by Narrative."
+    }
+  ],
+  "fc465ed315": [
+    {
+      "criterion": "fidelity",
+      "excerpt": "een wolvendoding voedsel biedt aan onder meer raven, coyotes, beren en ongewervelden",
+      "source": "cases/wolf/source.md",
+      "evidence": "when wolves kill an elk, ravens and magpies arrive almost immediately",
+      "discrepancy": "This wording is ambiguous about the victim, although the opening identifies prey as the source of food.",
+      "severity": "minor",
+      "origin": "Introduced by Narrative."
+    },
+    {
+      "criterion": "fidelity",
+      "excerpt": "elandkalveren en volwassen mannelijke elanden",
+      "source": "cases/wolf/source.md",
+      "evidence": "elk calves comprised 50% of wolf prey, and bull elk comprised 25%. That ratio reversed from 2001 to 2007",
+      "discrepancy": "The translation changes wapiti into moose.",
+      "severity": "material",
+      "origin": "Introduced by Narrative."
+    },
+    {
+      "criterion": "resolution",
+      "excerpt": "hun predatie en effecten op elanden zijn niet los te zien van andere factoren",
+      "source": "cases/wolf/source.md",
+      "evidence": "elk calves comprised 50% of wolf prey, and bull elk comprised 25%. That ratio reversed from 2001 to 2007",
+      "discrepancy": "The endpoint falls back on the general network thesis; the stated shift is absent from its reasoning.",
+      "severity": "editorial",
+      "origin": "Introduced by Narrative."
+    },
+    {
+      "criterion": "handoff",
+      "excerpt": "elandkalveren en volwassen mannelijke elanden",
+      "source": "cases/wolf/source.md",
+      "evidence": "elk calves comprised 50% of wolf prey, and bull elk comprised 25%. That ratio reversed from 2001 to 2007",
+      "discrepancy": "Compose would need to correct the species and disambiguate wolvendoding.",
+      "severity": "material",
+      "origin": "Introduced by Narrative."
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+﻿diff --git a/PromptExperiments/Narrative/experiment-14-evidence-anchored-narrative/A/Narrative/Narrative.user.prompt.md b/PromptExperiments/Narrative/experiment-14-evidence-anchored-narrative/B/Narrative/Narrative.user.prompt.md
+index 9b3689b..0e134b1 100644
+--- a/PromptExperiments/Narrative/experiment-14-evidence-anchored-narrative/A/Narrative/Narrative.user.prompt.md
++++ b/PromptExperiments/Narrative/experiment-14-evidence-anchored-narrative/B/Narrative/Narrative.user.prompt.md
+@@ -68,6 +68,8 @@ Do not turn the story into a general overview of the product, project, technolog
+ 
+ Determine the most important development, contrast, observation, or relationship explicitly supported by the inputs.
+ 
++Before developing the story, choose the concrete observation in Synthesis that best supports the Selected Idea. Build the central development around what that observation shows. Preserve who or what it concerns, their roles, the timing and relationships, and the basis and limits of any comparison. Let the progression establish why the observation matters, then use what it resolves or qualifies to reach a conclusion that advances the story within the evidence.
++
+ Ask:
+ 
+ - What is the central subject?

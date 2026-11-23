@@ -1,0 +1,250 @@
+{
+  "decision": "NO-GO",
+  "gates": {
+    "zeroMaterialErrors": false,
+    "regressionMinimum": false,
+    "perSubjectMinimum": false,
+    "resolutionMinimum": false,
+    "regressionGain": false,
+    "resolutionGain": false,
+    "noOtherEditorialRegression": true,
+    "formatNeutrality": true,
+    "completeVerifiedCoverage": true
+  },
+  "totals": {
+    "A": {
+      "fidelity": 11,
+      "focus": 18,
+      "structure": 18,
+      "tension": 18,
+      "resolution": 8,
+      "details": 18,
+      "handoff": 12,
+      "neutrality": 18,
+      "full": 4,
+      "material": 6
+    },
+    "B": {
+      "fidelity": 12,
+      "focus": 18,
+      "structure": 18,
+      "tension": 18,
+      "resolution": 8,
+      "details": 18,
+      "handoff": 14,
+      "neutrality": 18,
+      "full": 6,
+      "material": 4
+    }
+  },
+  "fixed": {
+    "A": {
+      "fidelity": 6,
+      "focus": 12,
+      "structure": 12,
+      "tension": 12,
+      "resolution": 6,
+      "details": 12,
+      "handoff": 6,
+      "neutrality": 12,
+      "full": 3,
+      "material": 6
+    },
+    "B": {
+      "fidelity": 6,
+      "focus": 12,
+      "structure": 12,
+      "tension": 12,
+      "resolution": 6,
+      "details": 12,
+      "handoff": 8,
+      "neutrality": 12,
+      "full": 4,
+      "material": 4
+    }
+  },
+  "additional": {
+    "A": {
+      "fidelity": 5,
+      "focus": 6,
+      "structure": 6,
+      "tension": 6,
+      "resolution": 2,
+      "details": 6,
+      "handoff": 6,
+      "neutrality": 6,
+      "full": 1,
+      "material": 0
+    },
+    "B": {
+      "fidelity": 6,
+      "focus": 6,
+      "structure": 6,
+      "tension": 6,
+      "resolution": 2,
+      "details": 6,
+      "handoff": 6,
+      "neutrality": 6,
+      "full": 2,
+      "material": 0
+    }
+  },
+  "bySubject": {
+    "digital": {
+      "A": {
+        "fidelity": 3,
+        "focus": 3,
+        "structure": 3,
+        "tension": 3,
+        "resolution": 0,
+        "details": 3,
+        "handoff": 3,
+        "neutrality": 3,
+        "full": 0,
+        "material": 0
+      },
+      "B": {
+        "fidelity": 1,
+        "focus": 3,
+        "structure": 3,
+        "tension": 3,
+        "resolution": 0,
+        "details": 3,
+        "handoff": 3,
+        "neutrality": 3,
+        "full": 0,
+        "material": 0
+      }
+    },
+    "webb": {
+      "A": {
+        "fidelity": 0,
+        "focus": 3,
+        "structure": 3,
+        "tension": 3,
+        "resolution": 3,
+        "details": 3,
+        "handoff": 0,
+        "neutrality": 3,
+        "full": 0,
+        "material": 3
+      },
+      "B": {
+        "fidelity": 1,
+        "focus": 3,
+        "structure": 3,
+        "tension": 3,
+        "resolution": 3,
+        "details": 3,
+        "handoff": 1,
+        "neutrality": 3,
+        "full": 1,
+        "material": 2
+      }
+    },
+    "wolf": {
+      "A": {
+        "fidelity": 0,
+        "focus": 3,
+        "structure": 3,
+        "tension": 3,
+        "resolution": 0,
+        "details": 3,
+        "handoff": 0,
+        "neutrality": 3,
+        "full": 0,
+        "material": 3
+      },
+      "B": {
+        "fidelity": 1,
+        "focus": 3,
+        "structure": 3,
+        "tension": 3,
+        "resolution": 0,
+        "details": 3,
+        "handoff": 1,
+        "neutrality": 3,
+        "full": 0,
+        "material": 2
+      }
+    },
+    "lowell": {
+      "A": {
+        "fidelity": 3,
+        "focus": 3,
+        "structure": 3,
+        "tension": 3,
+        "resolution": 3,
+        "details": 3,
+        "handoff": 3,
+        "neutrality": 3,
+        "full": 3,
+        "material": 0
+      },
+      "B": {
+        "fidelity": 3,
+        "focus": 3,
+        "structure": 3,
+        "tension": 3,
+        "resolution": 3,
+        "details": 3,
+        "handoff": 3,
+        "neutrality": 3,
+        "full": 3,
+        "material": 0
+      }
+    },
+    "cooling": {
+      "A": {
+        "fidelity": 3,
+        "focus": 3,
+        "structure": 3,
+        "tension": 3,
+        "resolution": 0,
+        "details": 3,
+        "handoff": 3,
+        "neutrality": 3,
+        "full": 0,
+        "material": 0
+      },
+      "B": {
+        "fidelity": 3,
+        "focus": 3,
+        "structure": 3,
+        "tension": 3,
+        "resolution": 0,
+        "details": 3,
+        "handoff": 3,
+        "neutrality": 3,
+        "full": 0,
+        "material": 0
+      }
+    },
+    "library": {
+      "A": {
+        "fidelity": 2,
+        "focus": 3,
+        "structure": 3,
+        "tension": 3,
+        "resolution": 2,
+        "details": 3,
+        "handoff": 3,
+        "neutrality": 3,
+        "full": 1,
+        "material": 0
+      },
+      "B": {
+        "fidelity": 3,
+        "focus": 3,
+        "structure": 3,
+        "tension": 3,
+        "resolution": 2,
+        "details": 3,
+        "handoff": 3,
+        "neutrality": 3,
+        "full": 2,
+        "material": 0
+      }
+    }
+  }
+}
