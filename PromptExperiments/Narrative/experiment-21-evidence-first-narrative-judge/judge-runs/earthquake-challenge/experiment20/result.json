@@ -1,0 +1,20 @@
+{
+  "checks": {
+    "entity_identity": "Narrative excerpt: “measured amplitude” and “energy release”. Evidence: “measured amplitude” and “energy release”. The quantities match the source.",
+    "temporal_relationship": "Narrative excerpt: “for each whole-number increase”. Evidence: “each whole number increase in magnitude”. The per-increase scope is consistent.",
+    "actor_object": "Narrative excerpt: “measured amplitude increases 32-fold, while energy release increases tenfold”. Evidence: “a tenfold increase in the measured amplitude” and “32 times more energy release”. No agent or recipient relationship applies; the quantity mapping is addressed under quantitative meaning.",
+    "causal_relationship": "Narrative excerpt: “depending on which quantity is being described”. Evidence: “While each whole number increase in magnitude represents”. No causal relationship is asserted in the source or narrative.",
+    "quantitative_meaning": "Narrative excerpt: “measured amplitude increases 32-fold, while energy release increases tenfold”. Evidence: “a tenfold increase in the measured amplitude” and “32 times more energy release”. The multipliers are reversed."
+  },
+  "verdict": "REVISE",
+  "blockers": [
+    {
+      "category": "quantitative_meaning",
+      "status": "confirmed",
+      "narrativeExcerpt": "measured amplitude increases 32-fold, while energy release increases tenfold.",
+      "evidenceExcerpt": "a tenfold increase in the measured amplitude, it represents an 32 times more energy release.",
+      "problem": "The narrative assigns the 32-fold multiplier to measured amplitude and the tenfold multiplier to energy release, reversing the source.",
+      "requiredCorrection": "State that measured amplitude increases tenfold and energy release increases 32 times."
+    }
+  ]
+}

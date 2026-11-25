@@ -1,0 +1,196 @@
+{
+  "evaluationBriefs": 16,
+  "evaluationSubjects": 11,
+  "positiveBriefs": 9,
+  "positiveSubjects": 8,
+  "controlBriefs": 7,
+  "candidate": {
+    "confirmed": [
+      "166274757454",
+      "earthquake-challenge",
+      "coral-challenge"
+    ],
+    "unresolved": [],
+    "materialRecall": 0.3333333333333333,
+    "briefPrecision": 1,
+    "blockerCount": 4,
+    "supportedBlockers": 4,
+    "materialPrecision": 1,
+    "triageRecall": 0.3333333333333333,
+    "silentEscapes": [],
+    "silentEscapeRate": 0,
+    "falsePositiveRevise": [],
+    "falsePositiveReviseRate": 0,
+    "uncertain": 7,
+    "uncertainRate": 0.4375,
+    "statusCounts": {
+      "GO": 1,
+      "REVISE": 3,
+      "UNCERTAIN": 7,
+      "technical_failure": 5
+    }
+  },
+  "baseline": {
+    "confirmed": [
+      "2ff42e2fa4",
+      "a027be447f28",
+      "0f2553c79399",
+      "bennu-challenge",
+      "earthquake-challenge",
+      "coral-challenge"
+    ],
+    "unresolved": [],
+    "materialRecall": 0.6666666666666666,
+    "briefPrecision": 0.8571428571428571,
+    "blockerCount": 7,
+    "supportedBlockers": 6,
+    "materialPrecision": 0.8571428571428571,
+    "triageRecall": 0.6666666666666666,
+    "silentEscapes": [
+      "0d1f75b51c",
+      "166274757454"
+    ],
+    "silentEscapeRate": 0.2222222222222222,
+    "falsePositiveRevise": [],
+    "falsePositiveReviseRate": 0,
+    "uncertain": 0,
+    "uncertainRate": 0,
+    "statusCounts": {
+      "GO": 9,
+      "REVISE": 7,
+      "UNCERTAIN": 0,
+      "technical_failure": 0
+    }
+  },
+  "targetClaimCoverage": {
+    "covered": 8,
+    "total": 9
+  },
+  "targetEvidenceAlignment": {
+    "correct": 8,
+    "assessable": 8
+  },
+  "categories": {
+    "entity_identity": {
+      "extracted": 16,
+      "targets": 3,
+      "confirmed": 0
+    },
+    "temporal_relationship": {
+      "extracted": 57,
+      "targets": 2,
+      "confirmed": 1
+    },
+    "actor_object": {
+      "extracted": 64,
+      "targets": 1,
+      "confirmed": 0
+    },
+    "causality": {
+      "extracted": 11,
+      "targets": 0,
+      "confirmed": 0
+    },
+    "numerical_scale": {
+      "extracted": 36,
+      "targets": 2,
+      "confirmed": 1
+    },
+    "scope_certainty": {
+      "extracted": 50,
+      "targets": 1,
+      "confirmed": 1
+    }
+  },
+  "calls": {
+    "extraction": {
+      "evaluation": {
+        "calls": 16,
+        "valid": 15,
+        "transport": 0,
+        "invalidJson": 0,
+        "invalidContract": 1,
+        "totalSeconds": 408.0800000000001,
+        "meanSeconds": 25.505000000000006,
+        "metered": 16,
+        "aiCredits": 3.028947
+      },
+      "development": {
+        "calls": 2,
+        "valid": 1,
+        "transport": 0,
+        "invalidJson": 0,
+        "invalidContract": 1,
+        "totalSeconds": 76.616,
+        "meanSeconds": 38.308,
+        "metered": 2,
+        "aiCredits": 0.570434
+      }
+    },
+    "comparison": {
+      "evaluation": {
+        "calls": 15,
+        "valid": 11,
+        "transport": 0,
+        "invalidJson": 0,
+        "invalidContract": 4,
+        "totalSeconds": 392.83699999999993,
+        "meanSeconds": 26.189133333333327,
+        "metered": 15,
+        "aiCredits": 3.4042175
+      },
+      "development": {
+        "calls": 1,
+        "valid": 1,
+        "transport": 0,
+        "invalidJson": 0,
+        "invalidContract": 0,
+        "totalSeconds": 35.802,
+        "meanSeconds": 35.802,
+        "metered": 1,
+        "aiCredits": 0.331342
+      }
+    },
+    "baseline": {
+      "evaluation": {
+        "calls": 16,
+        "valid": 16,
+        "transport": 0,
+        "invalidJson": 0,
+        "invalidContract": 0,
+        "totalSeconds": 185.57199999999995,
+        "meanSeconds": 11.598249999999997,
+        "metered": 16,
+        "aiCredits": 1.5396845
+      },
+      "development": {
+        "calls": 0,
+        "valid": 0,
+        "transport": 0,
+        "invalidJson": 0,
+        "invalidContract": 0,
+        "totalSeconds": 0,
+        "meanSeconds": null,
+        "metered": 0,
+        "aiCredits": null
+      }
+    }
+  },
+  "generation": {
+    "calls": 3,
+    "totalSeconds": 16.3264571,
+    "cost": null
+  },
+  "aggregation": {
+    "modelCalls": 0
+  },
+  "repair": {
+    "executed": false,
+    "reverificationCalls": 0
+  },
+  "editorial": {
+    "scored": 16,
+    "accepted": 14,
+    "mean": 4.00625
+  }
+}

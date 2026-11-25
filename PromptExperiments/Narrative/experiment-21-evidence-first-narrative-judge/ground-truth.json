@@ -1,0 +1,159 @@
+{
+  "2ff42e2fa4": {
+    "label": "F2",
+    "findings": [
+      {
+        "severity": "F2",
+        "category": "entity_identity",
+        "narrativeExcerpt": "elandkalveren en volwassen mannelijke elanden",
+        "evidenceExcerpt": "elk calves comprised 50% of wolf prey, and bull elk comprised 25%",
+        "explanation": "Yellowstone elk are wapiti. The Dutch word eland changes the prey species."
+      }
+    ]
+  },
+  "0d1f75b51c": {
+    "label": "F2",
+    "findings": [
+      {
+        "severity": "F2",
+        "category": "temporal_relationship",
+        "narrativeExcerpt": "Daarna volgden weken van afkoeling",
+        "evidenceExcerpt": "Note the major changes in the area marked as days 3-10 when the sunshield was deployed.",
+        "explanation": "The brief sequences cooling after the telescope’s completed second-week deployment, while the source records cooling changes during deployment."
+      }
+    ]
+  },
+  "a027be447f28": {
+    "label": "F2",
+    "findings": [
+      {
+        "severity": "F2",
+        "category": "entity_identity",
+        "narrativeExcerpt": "hotspots voor verkeerd baangebruik",
+        "evidenceExcerpt": "a cylinder marks a wrong surface hot spot",
+        "explanation": "The wording broadens wrong surface to improper use and narrows the surface to a runway. The named FAA category is central to the brief."
+      }
+    ]
+  },
+  "0f2553c79399": {
+    "label": "F2",
+    "findings": [
+      {
+        "severity": "F2",
+        "category": "numerical_scale",
+        "narrativeExcerpt": "42,4 van de 605,6 quadriljoen Btu",
+        "evidenceExcerpt": "42.4 out of 605.6 quadrillion Btu",
+        "explanation": "English quadrillion is 10^15, whereas Dutch quadriljoen is 10^24. The Dutch scale term for 10^15 is biljard."
+      }
+    ]
+  },
+  "166274757454": {
+    "label": "F2",
+    "findings": [
+      {
+        "severity": "F2",
+        "category": "temporal_relationship",
+        "narrativeExcerpt": "wisselden tweewekelijkse sprints af tussen aanvragen aannemen en tijd besteden aan testen, onderzoek en verwerking",
+        "evidenceExcerpt": "testing, researching and accepting applications in the first week and then suspending submissions to concentrate on testing, researching and processing applications the second",
+        "explanation": "The alternation was between weeks within each sprint. Research and testing happened in both weeks."
+      }
+    ]
+  },
+  "1ae0c9278f": {
+    "label": "F2",
+    "findings": [
+      {
+        "severity": "F2",
+        "category": "entity_identity",
+        "narrativeExcerpt": "volwassen mannelijke elanden",
+        "evidenceExcerpt": "elk calves comprised 50% of wolf prey, and bull elk comprised 25%",
+        "explanation": "Yellowstone elk are wapiti. The Dutch word eland changes the prey species."
+      }
+    ]
+  },
+  "2336788e5a": {
+    "label": "F2",
+    "findings": [
+      {
+        "severity": "F2",
+        "category": "temporal_relationship",
+        "narrativeExcerpt": "daarna volgden maanden van afkoeling",
+        "evidenceExcerpt": "Note the major changes in the area marked as days 3-10 when the sunshield was deployed.",
+        "explanation": "The brief places cooling after completed deployment. The source records cooling changes during sunshield deployment."
+      }
+    ]
+  },
+  "4632ab6ce2": {
+    "label": "F2",
+    "findings": [
+      {
+        "severity": "F2",
+        "category": "entity_identity",
+        "narrativeExcerpt": "elandkalveren en stierelanden",
+        "evidenceExcerpt": "elk calves comprised 50% of wolf prey, and bull elk comprised 25%",
+        "explanation": "Yellowstone elk are wapiti. The Dutch word eland changes the prey species."
+      }
+    ]
+  },
+  "20108143a8": {
+    "label": "F0",
+    "findings": []
+  },
+  "4071526efe": {
+    "label": "F0",
+    "findings": []
+  },
+  "42e705d60d": {
+    "label": "F0",
+    "findings": []
+  },
+  "4b4216205f": {
+    "label": "F1",
+    "findings": []
+  },
+  "bennu-control": {
+    "label": "F0",
+    "findings": []
+  },
+  "bennu-challenge": {
+    "label": "F2",
+    "findings": [
+      {
+        "category": "actor_object",
+        "narrativeExcerpt": "About 20 minutes after its release above Earth’s atmosphere, the capsule fired its engines to divert away from Earth.",
+        "evidenceExcerpt": "About 20 minutes after the spacecraft released its sample capsule above Earth’s atmosphere, it fired its engines to divert its trajectory away from Earth.",
+        "explanation": "The engine firing is attributed to the capsule instead of the spacecraft."
+      }
+    ]
+  },
+  "earthquake-control": {
+    "label": "F0",
+    "findings": []
+  },
+  "earthquake-challenge": {
+    "label": "F2",
+    "findings": [
+      {
+        "category": "numerical_scale",
+        "narrativeExcerpt": "measured amplitude increases 32-fold, while energy release increases tenfold",
+        "evidenceExcerpt": "While each whole number increase in magnitude represents a tenfold increase in the measured amplitude, it represents an 32 times more energy release.",
+        "explanation": "The measured amplitude and energy multipliers are swapped."
+      }
+    ]
+  },
+  "coral-control": {
+    "label": "F0",
+    "findings": []
+  },
+  "coral-challenge": {
+    "label": "F2",
+    "findings": [
+      {
+        "category": "scope_certainty",
+        "narrativeExcerpt": "corals always recover when stress-caused bleaching is not severe",
+        "evidenceExcerpt": "If the stress-caused bleaching is not severe, coral have been known to recover.",
+        "explanation": "Documented possibility is changed into a guarantee."
+      }
+    ]
+  }
+}

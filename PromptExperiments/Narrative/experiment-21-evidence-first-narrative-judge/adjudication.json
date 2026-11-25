@@ -1,0 +1,158 @@
+{
+  "2ff42e2fa4": {
+    "candidateMatch": "miss",
+    "baselineMatch": "confirmed",
+    "supportedBlockers": 0,
+    "supportedBaselineBlockers": 1,
+    "note": "c12 quotes elandkalveren and elanden but normalizes both to elk. The true source anchor is present in raw c12. c14 joins noncontiguous source fragments.",
+    "extracted": true,
+    "evidenceLocated": true,
+    "normalization": "Narrative species normalized incorrectly; source passage gives elk.",
+    "comparison": "Raw SUPPORTED misses species.",
+    "aggregation": "Technical failure from nonverbatim c14."
+  },
+  "0d1f75b51c": {
+    "candidateMatch": "miss",
+    "baselineMatch": "miss",
+    "supportedBlockers": 0,
+    "supportedBaselineBlockers": 0,
+    "note": "c15 extracts weeks of cooling but loses Daarna and completion precedence. c05 treats cooling as part of commissioning. Other source quotations include synthetic ellipses or wording.",
+    "extracted": false,
+    "normalization": "Precedence absent.",
+    "comparison": "No contradiction on deployment overlap.",
+    "aggregation": "Technical failure from nonverbatim source excerpts."
+  },
+  "a027be447f28": {
+    "candidateMatch": "miss",
+    "baselineMatch": "confirmed",
+    "supportedBlockers": 0,
+    "supportedBaselineBlockers": 1,
+    "note": "claim-009 equates verkeerd baangebruik and wrong surface. The UNCERTAIN finding concerns label continuity since 2022, not category identity.",
+    "extracted": true,
+    "evidenceLocated": true,
+    "normalization": "Dutch wording retained, but comparison equates runway misuse with wrong surface.",
+    "comparison": "SUPPORTED on target. Date uncertainty is unrelated.",
+    "aggregation": "UNCERTAIN propagates a different issue."
+  },
+  "0f2553c79399": {
+    "candidateMatch": "miss",
+    "baselineMatch": "confirmed",
+    "supportedBlockers": 0,
+    "supportedBaselineBlockers": 1,
+    "note": "claim-009 quotes quadriljoen but normalizes to English quadrillion, erasing the factor of 10^9. Its exact evidence is present in raw output; other citations join separate paragraphs.",
+    "extracted": true,
+    "evidenceLocated": true,
+    "normalization": "Narrative scale normalized incorrectly.",
+    "comparison": "Raw SUPPORTED misses unit magnitude.",
+    "aggregation": "Technical failure from nonverbatim source excerpts."
+  },
+  "166274757454": {
+    "candidateMatch": "confirmed",
+    "baselineMatch": "miss",
+    "supportedBlockers": 1,
+    "supportedBaselineBlockers": 0,
+    "note": "c14 retains sprint-level alternation; original source documents two weeks within each sprint with testing and research in both.",
+    "extracted": true,
+    "evidenceLocated": true,
+    "normalization": "Correct interval and co-occurrence.",
+    "comparison": "Material contradiction.",
+    "aggregation": "REVISE."
+  },
+  "20108143a8": {
+    "candidateMatch": "none",
+    "baselineMatch": "none",
+    "supportedBlockers": 0,
+    "supportedBaselineBlockers": 0,
+    "note": "Coverage questions ask whether to add outcome metrics and service-channel detail. These are editorial omissions from an acceptable brief."
+  },
+  "4071526efe": {
+    "candidateMatch": "none",
+    "baselineMatch": "none",
+    "supportedBlockers": 0,
+    "supportedBaselineBlockers": 0,
+    "note": "Cooling control withheld for nonverbatim Narrative excerpt; raw paraphrase combines a contrast into an unquoted string."
+  },
+  "1ae0c9278f": {
+    "candidateMatch": "miss",
+    "baselineMatch": "miss",
+    "supportedBlockers": 0,
+    "supportedBaselineBlockers": 0,
+    "note": "claim-013 retains elanden but sourceMeaning translates elk as stierelanden. The candidate omission question concerns bison. The comparator rewrites contextual wolf prey as wolf kills without identifying the species error.",
+    "extracted": true,
+    "evidenceLocated": true,
+    "normalization": "Source-side species normalization incorrect.",
+    "comparison": "SUPPORTED on target.",
+    "aggregation": "UNCERTAIN on an unrelated omission."
+  },
+  "42e705d60d": {
+    "candidateMatch": "none",
+    "baselineMatch": "none",
+    "supportedBlockers": 0,
+    "supportedBaselineBlockers": 0,
+    "note": "Lowell endpoint frames the boom and subsequent slowdown. Later population and enterprise information is outside the chosen endpoint; related coverage question is overcautious."
+  },
+  "4b4216205f": {
+    "candidateMatch": "none",
+    "baselineMatch": "none",
+    "supportedBlockers": 0,
+    "supportedBaselineBlockers": 0,
+    "note": "Valid concern about the locally ambiguous 46-lender wording, but the full brief gives 46 for the entire trial. A proposed second trial was outside the angle. Keep F1."
+  },
+  "bennu-control": {
+    "candidateMatch": "none",
+    "baselineMatch": "none",
+    "supportedBlockers": 0,
+    "supportedBaselineBlockers": 0,
+    "note": "No claim about the physical trajectory of the capsule. The brief calls for keeping two story threads distinct. Uncertainty arose by treating editorial direction as a physical comparison."
+  },
+  "bennu-challenge": {
+    "candidateMatch": "miss",
+    "baselineMatch": "confirmed",
+    "supportedBlockers": 0,
+    "supportedBaselineBlockers": 1,
+    "note": "Claims 002, 004 and 005 identify the actor error in raw comparison. claim-008 drops “its sample” from an unrelated source quotation; the entire response fails validation.",
+    "extracted": true,
+    "evidenceLocated": true,
+    "normalization": "Actor and action correctly retained and aligned.",
+    "comparison": "Three raw supported contradictions on the same target.",
+    "aggregation": "Technical failure prevents delivery of the blocker."
+  },
+  "earthquake-control": {
+    "candidateMatch": "none",
+    "baselineMatch": "none",
+    "supportedBlockers": 0,
+    "supportedBaselineBlockers": 0,
+    "note": "The correct amplitude and energy multipliers are preserved; both judges returned GO."
+  },
+  "earthquake-challenge": {
+    "candidateMatch": "confirmed",
+    "baselineMatch": "confirmed",
+    "supportedBlockers": 2,
+    "supportedBaselineBlockers": 1,
+    "note": "The amended story swaps ×10 and ×32. Candidate flags the two swapped assertions separately. Both arms ground the correction in the exact USGS excerpt.",
+    "extracted": true,
+    "evidenceLocated": true,
+    "normalization": "Quantities and their respective measures normalized correctly.",
+    "comparison": "Two blockers match the one reference swap.",
+    "aggregation": "REVISE."
+  },
+  "coral-control": {
+    "candidateMatch": "none",
+    "baselineMatch": "none",
+    "supportedBlockers": 0,
+    "supportedBaselineBlockers": 0,
+    "note": "Candidate requires evidence that recovery is not inevitable despite the source giving an observation rather than a guarantee. No material contradiction in the full brief."
+  },
+  "coral-challenge": {
+    "candidateMatch": "confirmed",
+    "baselineMatch": "confirmed",
+    "supportedBlockers": 1,
+    "supportedBaselineBlockers": 1,
+    "note": "The assertion always recover upgrades evidence of observed recovery to a guarantee. Both arms identify this. The separate candidate uncertainty about non-inevitability does not negate the blocker.",
+    "extracted": true,
+    "evidenceLocated": true,
+    "normalization": "Observed possibility and universal claim correctly distinguished.",
+    "comparison": "Supported discrepancy in certainty.",
+    "aggregation": "REVISE retains the blocker."
+  }
+}

@@ -1,0 +1,343 @@
+{
+  "claims": [
+    {
+      "claimId": "claim-1",
+      "category": "entity_identity",
+      "narrativeExcerpt": "separation of a sample capsule from the spacecraft",
+      "entitiesOrQuantities": [
+        "sample capsule",
+        "spacecraft"
+      ],
+      "narrativeMeaning": "The sample capsule and spacecraft are separate objects.",
+      "qualification": null
+    },
+    {
+      "claimId": "claim-2",
+      "category": "actor_object",
+      "narrativeExcerpt": "spacecraft carrying it",
+      "entitiesOrQuantities": [
+        "spacecraft",
+        "sample capsule"
+      ],
+      "narrativeMeaning": "The spacecraft carries the sample capsule.",
+      "qualification": null
+    },
+    {
+      "claimId": "claim-3",
+      "category": "temporal_relationship",
+      "narrativeExcerpt": "two distinct parts of the sequence: the capsule’s release and the spacecraft’s subsequent change of trajectory",
+      "entitiesOrQuantities": [
+        "capsule release",
+        "spacecraft trajectory change"
+      ],
+      "narrativeMeaning": "The capsule’s release and the spacecraft’s trajectory change are distinct events; the release occurs before the trajectory change.",
+      "qualification": null
+    },
+    {
+      "claimId": "claim-4",
+      "category": "numerical_scale",
+      "narrativeExcerpt": "About 20 minutes after releasing the capsule above Earth’s atmosphere, the spacecraft fired its engines",
+      "entitiesOrQuantities": [
+        "about 20 minutes",
+        "capsule release",
+        "spacecraft engine firing"
+      ],
+      "narrativeMeaning": "The spacecraft fired its engines approximately 20 minutes after the capsule was released.",
+      "qualification": "The interval is approximate."
+    },
+    {
+      "claimId": "claim-5",
+      "category": "scope_certainty",
+      "narrativeExcerpt": "releasing the capsule above Earth’s atmosphere",
+      "entitiesOrQuantities": [
+        "capsule",
+        "Earth’s atmosphere"
+      ],
+      "narrativeMeaning": "The capsule was released above Earth’s atmosphere.",
+      "qualification": null
+    },
+    {
+      "claimId": "claim-6",
+      "category": "actor_object",
+      "narrativeExcerpt": "the spacecraft fired its engines",
+      "entitiesOrQuantities": [
+        "spacecraft",
+        "engines"
+      ],
+      "narrativeMeaning": "The spacecraft fired its engines.",
+      "qualification": null
+    },
+    {
+      "claimId": "claim-7",
+      "category": "causality",
+      "narrativeExcerpt": "to divert away from Earth",
+      "entitiesOrQuantities": [
+        "spacecraft",
+        "Earth"
+      ],
+      "narrativeMeaning": "The spacecraft fired its engines with the purpose of diverting away from Earth.",
+      "qualification": "States the purpose of the engine firing."
+    },
+    {
+      "claimId": "claim-8",
+      "category": "entity_identity",
+      "narrativeExcerpt": "the sample capsule and the spacecraft carrying it are separate objects in the delivery sequence",
+      "entitiesOrQuantities": [
+        "sample capsule",
+        "spacecraft",
+        "delivery sequence"
+      ],
+      "narrativeMeaning": "The sample capsule and the spacecraft are separate objects in the delivery sequence.",
+      "qualification": null
+    },
+    {
+      "claimId": "claim-9",
+      "category": "actor_object",
+      "narrativeExcerpt": "the spacecraft carrying it",
+      "entitiesOrQuantities": [
+        "spacecraft",
+        "sample capsule"
+      ],
+      "narrativeMeaning": "The spacecraft carries the sample capsule.",
+      "qualification": null
+    },
+    {
+      "claimId": "claim-10",
+      "category": "actor_object",
+      "narrativeExcerpt": "The spacecraft released the capsule",
+      "entitiesOrQuantities": [
+        "spacecraft",
+        "capsule"
+      ],
+      "narrativeMeaning": "The spacecraft released the capsule.",
+      "qualification": null
+    },
+    {
+      "claimId": "claim-11",
+      "category": "scope_certainty",
+      "narrativeExcerpt": "above Earth’s atmosphere",
+      "entitiesOrQuantities": [
+        "capsule",
+        "Earth’s atmosphere"
+      ],
+      "narrativeMeaning": "The capsule was released above Earth’s atmosphere.",
+      "qualification": null
+    },
+    {
+      "claimId": "claim-12",
+      "category": "numerical_scale",
+      "narrativeExcerpt": "about 20 minutes later, it fired its engines",
+      "entitiesOrQuantities": [
+        "about 20 minutes",
+        "capsule release",
+        "spacecraft engine firing"
+      ],
+      "narrativeMeaning": "The spacecraft fired its engines approximately 20 minutes after releasing the capsule.",
+      "qualification": "The interval is approximate."
+    },
+    {
+      "claimId": "claim-13",
+      "category": "actor_object",
+      "narrativeExcerpt": "it fired its engines",
+      "entitiesOrQuantities": [
+        "spacecraft",
+        "engines"
+      ],
+      "narrativeMeaning": "The spacecraft fired its engines.",
+      "qualification": null
+    },
+    {
+      "claimId": "claim-14",
+      "category": "causality",
+      "narrativeExcerpt": "to divert away from Earth",
+      "entitiesOrQuantities": [
+        "spacecraft",
+        "Earth"
+      ],
+      "narrativeMeaning": "The spacecraft fired its engines with the purpose of diverting away from Earth.",
+      "qualification": "States the purpose of the engine firing."
+    },
+    {
+      "claimId": "claim-15",
+      "category": "temporal_relationship",
+      "narrativeExcerpt": "the spacecraft turning away after the release",
+      "entitiesOrQuantities": [
+        "spacecraft",
+        "capsule release"
+      ],
+      "narrativeMeaning": "The spacecraft turned away after the capsule’s release.",
+      "qualification": null
+    },
+    {
+      "claimId": "claim-16",
+      "category": "scope_certainty",
+      "narrativeExcerpt": "keeping its trajectory change distinct from the capsule’s path",
+      "entitiesOrQuantities": [
+        "spacecraft trajectory",
+        "capsule path"
+      ],
+      "narrativeMeaning": "The spacecraft’s trajectory change is distinct from the capsule’s path.",
+      "qualification": null
+    }
+  ],
+  "assessments": [
+    {
+      "claimId": "claim-1",
+      "sourceExcerpt": "released its sample capsule",
+      "sourceMeaning": "The spacecraft released the capsule, separating it from the spacecraft.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "Releasing the capsule from the spacecraft supports that they are separate objects.",
+      "correction": null
+    },
+    {
+      "claimId": "claim-2",
+      "sourceExcerpt": "the spacecraft released its sample capsule",
+      "sourceMeaning": "The spacecraft had the sample capsule and then released it.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "The release supports that the spacecraft was carrying the capsule beforehand.",
+      "correction": null
+    },
+    {
+      "claimId": "claim-3",
+      "sourceExcerpt": "About 20 minutes after the spacecraft released its sample capsule above Earth’s atmosphere, it fired its engines to divert its trajectory away from Earth.",
+      "sourceMeaning": "The spacecraft released the capsule, then about 20 minutes later fired its engines to divert its trajectory away from Earth.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "The source establishes the release and the spacecraft’s later trajectory change as sequential events.",
+      "correction": null
+    },
+    {
+      "claimId": "claim-4",
+      "sourceExcerpt": "About 20 minutes after the spacecraft released its sample capsule above Earth’s atmosphere, it fired its engines",
+      "sourceMeaning": "The spacecraft fired its engines approximately 20 minutes after releasing the capsule.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "The timing and approximate interval match the source.",
+      "correction": null
+    },
+    {
+      "claimId": "claim-5",
+      "sourceExcerpt": "released its sample capsule above Earth’s atmosphere",
+      "sourceMeaning": "The spacecraft released the capsule above Earth’s atmosphere.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "The release location matches the source.",
+      "correction": null
+    },
+    {
+      "claimId": "claim-6",
+      "sourceExcerpt": "it fired its engines",
+      "sourceMeaning": "The spacecraft fired its engines.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "In context, “it” refers to the spacecraft.",
+      "correction": null
+    },
+    {
+      "claimId": "claim-7",
+      "sourceExcerpt": "it fired its engines to divert its trajectory away from Earth",
+      "sourceMeaning": "The spacecraft fired its engines to divert its trajectory away from Earth.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "The stated purpose matches the source.",
+      "correction": null
+    },
+    {
+      "claimId": "claim-8",
+      "sourceExcerpt": "released its sample capsule",
+      "sourceMeaning": "The spacecraft released the capsule, indicating the capsule and spacecraft are separate objects in the sequence.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "The release supports the distinction between the capsule and spacecraft.",
+      "correction": null
+    },
+    {
+      "claimId": "claim-9",
+      "sourceExcerpt": "the spacecraft released its sample capsule",
+      "sourceMeaning": "The spacecraft had the sample capsule and then released it.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "The release supports that the spacecraft was carrying the capsule beforehand.",
+      "correction": null
+    },
+    {
+      "claimId": "claim-10",
+      "sourceExcerpt": "the spacecraft released its sample capsule",
+      "sourceMeaning": "The spacecraft released the capsule.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "The actor and action match the source.",
+      "correction": null
+    },
+    {
+      "claimId": "claim-11",
+      "sourceExcerpt": "released its sample capsule above Earth’s atmosphere",
+      "sourceMeaning": "The spacecraft released the capsule above Earth’s atmosphere.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "The release location matches the source.",
+      "correction": null
+    },
+    {
+      "claimId": "claim-12",
+      "sourceExcerpt": "About 20 minutes after the spacecraft released its sample capsule above Earth’s atmosphere, it fired its engines",
+      "sourceMeaning": "The spacecraft fired its engines approximately 20 minutes after releasing the capsule.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "The timing and approximate interval match the source.",
+      "correction": null
+    },
+    {
+      "claimId": "claim-13",
+      "sourceExcerpt": "it fired its engines",
+      "sourceMeaning": "The spacecraft fired its engines.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "In context, “it” refers to the spacecraft.",
+      "correction": null
+    },
+    {
+      "claimId": "claim-14",
+      "sourceExcerpt": "it fired its engines to divert its trajectory away from Earth",
+      "sourceMeaning": "The spacecraft fired its engines to divert its trajectory away from Earth.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "The stated purpose matches the source.",
+      "correction": null
+    },
+    {
+      "claimId": "claim-15",
+      "sourceExcerpt": "About 20 minutes after the spacecraft released its sample capsule above Earth’s atmosphere, it fired its engines to divert its trajectory away from Earth.",
+      "sourceMeaning": "After releasing the capsule, the spacecraft fired its engines to divert its trajectory away from Earth.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "The source places the spacecraft’s diversion after the release.",
+      "correction": null
+    },
+    {
+      "claimId": "claim-16",
+      "sourceExcerpt": "it fired its engines to divert its trajectory away from Earth",
+      "sourceMeaning": "The spacecraft’s trajectory was diverted away from Earth; the source does not describe the capsule’s path or establish how it relates to the spacecraft’s trajectory.",
+      "verdict": "INSUFFICIENT_EVIDENCE",
+      "material": true,
+      "explanation": "The source identifies the spacecraft’s trajectory change but provides no information about the capsule’s path, so their paths cannot be compared.",
+      "correction": null
+    }
+  ],
+  "coverageQuestions": [],
+  "verdict": "UNCERTAIN",
+  "blockers": [],
+  "unresolved": [
+    {
+      "claimId": "claim-16",
+      "sourceExcerpt": "it fired its engines to divert its trajectory away from Earth",
+      "sourceMeaning": "The spacecraft’s trajectory was diverted away from Earth; the source does not describe the capsule’s path or establish how it relates to the spacecraft’s trajectory.",
+      "verdict": "INSUFFICIENT_EVIDENCE",
+      "material": true,
+      "explanation": "The source identifies the spacecraft’s trajectory change but provides no information about the capsule’s path, so their paths cannot be compared.",
+      "correction": null
+    }
+  ]
+}

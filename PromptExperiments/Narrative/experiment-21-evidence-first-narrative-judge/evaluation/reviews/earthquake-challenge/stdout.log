@@ -1,0 +1,15 @@
+{
+  "fidelity": "F2",
+  "findings": [
+    {
+      "severity": "F2",
+      "category": "quantitative_meaning",
+      "narrativeExcerpt": "A whole-number increase in magnitude has different multipliers depending on which quantity is being described: measured amplitude increases 32-fold, while energy release increases tenfold.",
+      "evidenceExcerpt": "While each whole number increase in magnitude represents a tenfold increase in the measured amplitude, it represents an 32 times more energy release.",
+      "explanation": "The narrative reverses the source's multipliers, materially changing the quantitative meaning. Later progression bullets state the multipliers correctly, making the narrative internally inconsistent."
+    }
+  ],
+  "editorial": [2, 3, 3, 4, 4],
+  "rationale": "The central idea and progression are clear, and the endpoint is supported. However, the opening reverses the key multipliers and contradicts the later development, weakening alignment and leaving a downstream writer with conflicting direction."
+}
+

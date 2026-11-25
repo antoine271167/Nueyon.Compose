@@ -1,0 +1,93 @@
+{
+  "claims": [
+    {
+      "claimId": "claim-1",
+      "category": "entity_identity",
+      "narrativeExcerpt": "distinction between coral bleaching and coral mortality",
+      "entitiesOrQuantities": ["coral bleaching", "coral mortality"],
+      "narrativeMeaning": "Coral bleaching and coral mortality are distinct phenomena.",
+      "qualification": null
+    },
+    {
+      "claimId": "claim-2",
+      "category": "scope_certainty",
+      "narrativeExcerpt": "bleaching does not necessarily mean a coral has died",
+      "entitiesOrQuantities": ["coral bleaching", "a coral's death"],
+      "narrativeMeaning": "Bleaching does not establish that the coral has died; death is not certain.",
+      "qualification": null
+    },
+    {
+      "claimId": "claim-3",
+      "category": "numerical_scale",
+      "narrativeExcerpt": "corals always recover when stress-caused bleaching is not severe",
+      "entitiesOrQuantities": ["corals", "recovery", "stress-caused bleaching", "not severe"],
+      "narrativeMeaning": "All corals recover under the condition that their stress-caused bleaching is not severe.",
+      "qualification": "Applies when stress-caused bleaching is not severe."
+    },
+    {
+      "claimId": "claim-4",
+      "category": "temporal_relationship",
+      "narrativeExcerpt": "bleaching can be followed by recovery",
+      "entitiesOrQuantities": ["bleaching", "recovery"],
+      "narrativeMeaning": "Recovery can occur after bleaching.",
+      "qualification": "Possible, not certain."
+    },
+    {
+      "claimId": "claim-5",
+      "category": "scope_certainty",
+      "narrativeExcerpt": "neither recovery nor death is inevitable",
+      "entitiesOrQuantities": ["recovery"],
+      "narrativeMeaning": "Recovery after bleaching is not certain.",
+      "qualification": null
+    },
+    {
+      "claimId": "claim-6",
+      "category": "scope_certainty",
+      "narrativeExcerpt": "neither recovery nor death is inevitable",
+      "entitiesOrQuantities": ["death"],
+      "narrativeMeaning": "Death after bleaching is not certain.",
+      "qualification": null
+    },
+    {
+      "claimId": "claim-7",
+      "category": "causality",
+      "narrativeExcerpt": "coral bleaching as a stress-caused condition",
+      "entitiesOrQuantities": ["stress", "coral bleaching"],
+      "narrativeMeaning": "Stress causes coral bleaching.",
+      "qualification": null
+    },
+    {
+      "claimId": "claim-8",
+      "category": "entity_identity",
+      "narrativeExcerpt": "distinguish it from mortality",
+      "entitiesOrQuantities": ["coral bleaching", "mortality"],
+      "narrativeMeaning": "Coral bleaching is distinguished from mortality.",
+      "qualification": null
+    },
+    {
+      "claimId": "claim-9",
+      "category": "temporal_relationship",
+      "narrativeExcerpt": "when stress-caused bleaching is not severe, corals have been known to recover",
+      "entitiesOrQuantities": ["stress-caused bleaching", "corals", "recovery"],
+      "narrativeMeaning": "Corals have been observed to recover after stress-caused bleaching that is not severe.",
+      "qualification": "Applies when stress-caused bleaching is not severe; recovery is reported as having occurred, not as universal."
+    },
+    {
+      "claimId": "claim-10",
+      "category": "scope_certainty",
+      "narrativeExcerpt": "bleaching does not settle whether a coral will recover or die",
+      "entitiesOrQuantities": ["coral bleaching", "a coral's recovery"],
+      "narrativeMeaning": "Bleaching alone does not determine whether the coral will recover.",
+      "qualification": null
+    },
+    {
+      "claimId": "claim-11",
+      "category": "scope_certainty",
+      "narrativeExcerpt": "bleaching does not settle whether a coral will recover or die",
+      "entitiesOrQuantities": ["coral bleaching", "a coral's death"],
+      "narrativeMeaning": "Bleaching alone does not determine whether the coral will die.",
+      "qualification": null
+    }
+  ]
+}
+

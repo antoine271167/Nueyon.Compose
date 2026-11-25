@@ -1,0 +1,191 @@
+{
+  "assessments": [
+    {
+      "claimId": "c1",
+      "sourceExcerpt": "My team and I built a digital and assisted digital service (no paper version) to meet a need that hadn’t previously existed. We passed alpha and beta Service Standard assessments and launched to the public in only 12 weeks.",
+      "sourceMeaning": "The author and their team built the POA-refund service and launched it publicly; the surrounding source identifies the author as its Product Manager.",
+      "verdict": "SUPPORTED",
+      "material": true,
+      "explanation": "The source attributes building the service to the author and team and reports its public launch.",
+      "correction": null
+    },
+    {
+      "claimId": "c2",
+      "sourceExcerpt": "launched to the public in only 12 weeks.",
+      "sourceMeaning": "The service was publicly launched in a twelve-week delivery period.",
+      "verdict": "SUPPORTED",
+      "material": true,
+      "explanation": "“Na twaalf weken” conveys the reported twelve-week period; the source does not specify a more precise starting point.",
+      "correction": null
+    },
+    {
+      "claimId": "c3",
+      "sourceExcerpt": "We were initially asked to deliver the service in a matter of weeks",
+      "sourceMeaning": "The initial request was to deliver the service within a short period measured in weeks.",
+      "verdict": "SUPPORTED",
+      "material": true,
+      "explanation": "“Enkele weken” is a reasonable rendering of “a matter of weeks.”",
+      "correction": null
+    },
+    {
+      "claimId": "c4",
+      "sourceExcerpt": "we quickly discovered would not be possible if we wanted to create a quality service for our users.",
+      "sourceMeaning": "The team judged delivery within the initially requested period infeasible if it was to create a quality service for users.",
+      "verdict": "SUPPORTED",
+      "material": true,
+      "explanation": "The narrative preserves both the team's judgment and the condition of maintaining service quality.",
+      "correction": null
+    },
+    {
+      "claimId": "c5",
+      "sourceExcerpt": "My team focused on the users applying for refunds first",
+      "sourceMeaning": "The team focused first on users applying for refunds.",
+      "verdict": "SUPPORTED",
+      "material": true,
+      "explanation": "Working out the applicant experience first accurately conveys this priority.",
+      "correction": null
+    },
+    {
+      "claimId": "c6",
+      "sourceExcerpt": "Plans for the caseworker user came later.",
+      "sourceMeaning": "Caseworker plans came after the initial focus on refund applicants.",
+      "verdict": "SUPPORTED",
+      "material": true,
+      "explanation": "The narrative preserves the stated order.",
+      "correction": null
+    },
+    {
+      "claimId": "c7",
+      "sourceExcerpt": "We achieved this by splitting our fortnightly sprints in two: testing, researching and accepting applications in the first week and then suspending submissions to concentrate on testing, researching and processing applications the second.",
+      "sourceMeaning": "During private beta, the team divided each two-week sprint into scheduled periods that included research and testing.",
+      "verdict": "SUPPORTED",
+      "material": true,
+      "explanation": "The recurring split of the sprints supports the description of time set aside for research and testing.",
+      "correction": null
+    },
+    {
+      "claimId": "c8",
+      "sourceExcerpt": "launched to the public in only 12 weeks.",
+      "sourceMeaning": "The service was publicly launched within a twelve-week delivery period.",
+      "verdict": "SUPPORTED",
+      "material": true,
+      "explanation": "This accurately states the reported public launch timing.",
+      "correction": null
+    },
+    {
+      "claimId": "c9",
+      "sourceExcerpt": "We were initially asked to deliver the service in a matter of weeks",
+      "sourceMeaning": "The initial request was to deliver the service within a short period measured in weeks.",
+      "verdict": "SUPPORTED",
+      "material": true,
+      "explanation": "“Enkele weken” is a reasonable rendering of “a matter of weeks.”",
+      "correction": null
+    },
+    {
+      "claimId": "c10",
+      "sourceExcerpt": "we quickly discovered would not be possible if we wanted to create a quality service for our users.",
+      "sourceMeaning": "The team judged delivery within the requested period infeasible if it was to create a quality service for users.",
+      "verdict": "SUPPORTED",
+      "material": true,
+      "explanation": "The narrative retains the source's feasibility judgment and quality condition.",
+      "correction": null
+    },
+    {
+      "claimId": "c11",
+      "sourceExcerpt": "My team focused on the users applying for refunds first and this is what we took to the alpha assessment.",
+      "sourceMeaning": "The team focused first on refund applicants and took that work to the alpha assessment.",
+      "verdict": "SUPPORTED",
+      "material": true,
+      "explanation": "The narrative's applicant experience brought to alpha is a faithful summary of this passage.",
+      "correction": null
+    },
+    {
+      "claimId": "c12",
+      "sourceExcerpt": "Plans for the caseworker user came later.",
+      "sourceMeaning": "Caseworker plans followed the applicant-focused work taken to alpha.",
+      "verdict": "SUPPORTED",
+      "material": true,
+      "explanation": "The stated later timing is explicit in the source.",
+      "correction": null
+    },
+    {
+      "claimId": "c13",
+      "sourceExcerpt": "our fortnightly sprints",
+      "sourceMeaning": "The sprints followed a two-week cadence.",
+      "verdict": "SUPPORTED",
+      "material": true,
+      "explanation": "“Tweewekelijkse” correctly renders “fortnightly.”",
+      "correction": null
+    },
+    {
+      "claimId": "c14",
+      "sourceExcerpt": "splitting our fortnightly sprints in two: testing, researching and accepting applications in the first week and then suspending submissions to concentrate on testing, researching and processing applications the second.",
+      "sourceMeaning": "Each two-week sprint was split into two weeks: the first included accepting applications alongside testing and research; submissions were suspended in the second, which focused on testing, research, and processing.",
+      "verdict": "CONTRADICTED",
+      "material": true,
+      "explanation": "The narrative says the two-week sprints alternated between accepting applications and time for testing, research, and processing. The source instead describes a two-part schedule within each sprint: applications were accepted in the first week, alongside testing and research, and suspended in the second.",
+      "correction": "Binnen tweewekelijkse sprints nam het team in de eerste week aanvragen aan en deed het onderzoek en tests; in de tweede week werden inzendingen gepauzeerd voor onderzoek, tests en verwerking."
+    },
+    {
+      "claimId": "c15",
+      "sourceExcerpt": "accepting applications in the first week",
+      "sourceMeaning": "The team accepted applications during the first week of each split sprint.",
+      "verdict": "SUPPORTED",
+      "material": true,
+      "explanation": "Accepting applications is explicitly listed as a first-week activity.",
+      "correction": null
+    },
+    {
+      "claimId": "c16",
+      "sourceExcerpt": "testing, researching and accepting applications in the first week and then suspending submissions to concentrate on testing, researching and processing applications the second.",
+      "sourceMeaning": "Testing was included in both weeks of the split sprint.",
+      "verdict": "SUPPORTED",
+      "material": true,
+      "explanation": "The source explicitly includes testing in both weeks.",
+      "correction": null
+    },
+    {
+      "claimId": "c17",
+      "sourceExcerpt": "testing, researching and accepting applications in the first week and then suspending submissions to concentrate on testing, researching and processing applications the second.",
+      "sourceMeaning": "Research was included in both weeks of the split sprint.",
+      "verdict": "SUPPORTED",
+      "material": true,
+      "explanation": "The source explicitly includes research in both weeks.",
+      "correction": null
+    },
+    {
+      "claimId": "c18",
+      "sourceExcerpt": "processing applications the second.",
+      "sourceMeaning": "Processing applications was a second-week activity.",
+      "verdict": "SUPPORTED",
+      "material": true,
+      "explanation": "The source explicitly places processing in the second week.",
+      "correction": null
+    },
+    {
+      "claimId": "c19",
+      "sourceExcerpt": "My team focused on the users applying for refunds first",
+      "sourceMeaning": "The team prioritized refund applicants in its initial focus.",
+      "verdict": "SUPPORTED",
+      "material": true,
+      "explanation": "The narrative accurately summarizes the stated user-group priority.",
+      "correction": null
+    },
+    {
+      "claimId": "c20",
+      "sourceExcerpt": "splitting our fortnightly sprints in two: testing, researching and accepting applications in the first week and then suspending submissions to concentrate on testing, researching and processing applications the second.",
+      "sourceMeaning": "The team scheduled recurring sprint time for research and testing.",
+      "verdict": "SUPPORTED",
+      "material": true,
+      "explanation": "The described two-week schedule explicitly allocates time to research and testing.",
+      "correction": null
+    }
+  ],
+  "coverageQuestions": [
+    {
+      "narrativeExcerpt": "De POA-refunddienst werd binnen twaalf weken publiek gelanceerd",
+      "question": "Is it potentially material to note that the source describes the service as digital and assisted-digital, with no paper version, while not specifying what assistance the assisted-digital route provided?"
+    }
+  ]
+}
+

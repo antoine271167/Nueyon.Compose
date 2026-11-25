@@ -1,0 +1,186 @@
+{
+  "assessments": [
+    {
+      "claimId": "c01",
+      "sourceExcerpt": "Webb was designed to fold into a compact launch configuration that fit inside the Ariane 5.",
+      "sourceMeaning": "Webb had to fold into a compact configuration to fit inside the Ariane 5.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "The source explicitly says Webb was designed to fold compactly to fit inside the Ariane 5.",
+      "correction": null
+    },
+    {
+      "claimId": "c02",
+      "sourceExcerpt": "Webb's fully deployed operational configuration is far too large to fit into any available rocket so it was designed to fold into a compact launch configuration that fit inside the Ariane 5.",
+      "sourceMeaning": "Webb's fully deployed configuration was too large to fit in any available rocket.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "The source directly establishes that the operational configuration was too large for any available rocket.",
+      "correction": null
+    },
+    {
+      "claimId": "c03",
+      "sourceExcerpt": "During the second week after launch, we finished deploying the telescope structures by unfolding and latching the secondary mirror tripod and rotating and latching the two primary mirror wings. This brought Webb into its fully deployed operational configuration.",
+      "sourceMeaning": "Webb reached its fully deployed operational configuration during the second week after launch.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "The source places completion of deployment and arrival at the fully deployed configuration in the second week.",
+      "correction": null
+    },
+    {
+      "claimId": "c04",
+      "sourceExcerpt": "After six months: “Science operations!” Webb began its science mission and started to conduct routine science operations.",
+      "sourceMeaning": "Routine science operations began after six months, later than the second-week deployment milestone.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "The source distinguishes the second-week deployed configuration from the start of routine science operations after six months.",
+      "correction": null
+    },
+    {
+      "claimId": "c05",
+      "sourceExcerpt": "The telescope and scientific instruments started to cool rapidly in the shade of the sunshield, but it took several weeks for them to cool all the way down and reach stable temperatures.",
+      "sourceMeaning": "Cooling to stable temperatures took several weeks during the commissioning period.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "The source says cooling took several weeks and places it in the first month of the six-month commissioning timeline.",
+      "correction": null
+    },
+    {
+      "claimId": "c06",
+      "sourceExcerpt": "In the second, third and fourth months: Initial optics checkouts, and telescope alignment. ... We then embarked on the long process of aligning all the telescope optics",
+      "sourceMeaning": "Telescope optics alignment took place over months two through four of commissioning.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "The source places the long alignment process in the second, third and fourth months.",
+      "correction": null
+    },
+    {
+      "claimId": "c07",
+      "sourceExcerpt": "In the fifth and sixth months: Calibration and completion of commissioning. We meticulously calibrated all of the scientific instruments’ many modes of operation",
+      "sourceMeaning": "Instrument calibration took place during the fifth and sixth commissioning months.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "The source explicitly assigns instrument calibration to months five and six.",
+      "correction": null
+    },
+    {
+      "claimId": "c08",
+      "sourceExcerpt": "Webb was designed to fold into a compact launch configuration that fit inside the Ariane 5.",
+      "sourceMeaning": "Webb was designed to fold compactly to fit inside the Ariane 5 launch fairing.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "This matches the source's description of the folded launch configuration.",
+      "correction": null
+    },
+    {
+      "claimId": "c09",
+      "sourceExcerpt": "There were over 50 major deployment steps",
+      "sourceMeaning": "Deployment involved more than 50 major steps.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "“Veel stappen” is consistent with the source's count of over 50 major deployment steps.",
+      "correction": null
+    },
+    {
+      "claimId": "c10",
+      "sourceExcerpt": "There were over 300 possible single points of failure.",
+      "sourceMeaning": "The deployment had more than 300 possible single points of failure.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "The source explicitly describes these as possible, not certain, failure points.",
+      "correction": null
+    },
+    {
+      "claimId": "c11",
+      "sourceExcerpt": "There were over 50 major deployment steps, with 178 release mechanisms that had to perform perfectly or any one of over 300 single points of failure could have diminished or crippled the mission.",
+      "sourceMeaning": "The many deployment steps and potential failure points made deployment high-stakes; a failure could have harmed the mission.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "The source describes potential mission consequences if a release mechanism failed, supporting the characterization as risky without implying a failure occurred.",
+      "correction": null
+    },
+    {
+      "claimId": "c12",
+      "sourceExcerpt": "by unfolding and latching the secondary mirror tripod and rotating and latching the two primary mirror wings.",
+      "sourceMeaning": "The secondary-mirror support and the two primary-mirror wings were unfolded during deployment in the second week.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "The narrative's shorthand “spiegels uitgevouwen” refers to the source's deployment of the secondary-mirror tripod and primary-mirror wings.",
+      "correction": null
+    },
+    {
+      "claimId": "c13",
+      "sourceExcerpt": "by unfolding and latching the secondary mirror tripod and rotating and latching the two primary mirror wings.",
+      "sourceMeaning": "The secondary-mirror tripod and both primary-mirror wings were latched during the second-week deployment.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "The source explicitly says the tripod and both wings were latched.",
+      "correction": null
+    },
+    {
+      "claimId": "c14",
+      "sourceExcerpt": "This brought Webb into its fully deployed operational configuration.",
+      "sourceMeaning": "Completing those deployment steps brought Webb into its fully deployed operational configuration in the second week.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "This is the source's stated result of the second-week deployment steps.",
+      "correction": null
+    },
+    {
+      "claimId": "c15",
+      "sourceExcerpt": "it took several weeks for them to cool all the way down and reach stable temperatures.",
+      "sourceMeaning": "Cooling to stable temperatures took several weeks.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "The narrative accurately preserves the source's duration without specifying an unsupported exact number.",
+      "correction": null
+    },
+    {
+      "claimId": "c16",
+      "sourceExcerpt": "In the second, third and fourth months: Initial optics checkouts, and telescope alignment. ... We then embarked on the long process of aligning all the telescope optics",
+      "sourceMeaning": "Optics alignment was a long process occurring over several months.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "The source locates alignment in months two through four and describes it as a long process.",
+      "correction": null
+    },
+    {
+      "claimId": "c17",
+      "sourceExcerpt": "In the fifth and sixth months: Calibration and completion of commissioning.",
+      "sourceMeaning": "Instrument calibration followed the earlier alignment period, taking place in months five and six.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "The source places alignment in months two through four and calibration in months five and six.",
+      "correction": null
+    },
+    {
+      "claimId": "c18",
+      "sourceExcerpt": "After six months: “Science operations!” Webb began its science mission and started to conduct routine science operations.",
+      "sourceMeaning": "Webb began routine science operations after six months of commissioning.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "The source explicitly gives this timing and endpoint.",
+      "correction": null
+    },
+    {
+      "claimId": "c19",
+      "sourceExcerpt": "The remaining five months of commissioning were all about aligning the optics and calibrating the scientific instruments.",
+      "sourceMeaning": "Commissioning work continued after the second-week deployment milestone and was completed later, before routine science operations began.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "The source's timeline separates completed deployment from the subsequent commissioning work and its later completion.",
+      "correction": null
+    },
+    {
+      "claimId": "c20",
+      "sourceExcerpt": "Webb's deployment was completed with remarkable smoothness.",
+      "sourceMeaning": "Webb's deployment proceeded smoothly.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "The source explicitly characterizes the completed deployment as remarkably smooth.",
+      "correction": null
+    }
+  ],
+  "coverageQuestions": []
+}
+

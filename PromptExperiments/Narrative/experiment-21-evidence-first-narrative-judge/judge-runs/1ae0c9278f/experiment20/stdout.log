@@ -1,0 +1,21 @@
+{
+  "checks": {
+    "entity_identity": "Narrative: \"In Yellowstone zijn wolven sociale jagers\". Evidence: \"In Yellowstone, average pack size is 11.8 individuals.\" The place and animal referents are consistent.",
+    "temporal_relationship": "Narrative: \"de verhouding tussen deze groepen keerde om tussen 1995–2000 en 2001–2007.\" Evidence: \"That ratio reversed from 2001 to 2007\". The sequence and timing are accurate.",
+    "actor_object": "Narrative: \"hun prooien leveren voedsel aan dieren van raven en coyotes tot beren en ongewervelden.\" Evidence: \"Many other animals benefit from wolf kills.\" The source says wolf kills, not prey in general, provide this food.",
+    "causal_relationship": "Narrative: \"veranderingen in predatie en de invloed op elanden samenhangen met meerdere omstandigheden.\" Evidence: \"Consequently, changes in prey selection and kill rates through time result from complex interactions among these factors.\" The narrative preserves the qualified, multi-factor relationship.",
+    "quantitative_meaning": "Narrative: \"de verhouding tussen deze groepen keerde om tussen 1995–2000 en 2001–2007.\" Evidence: \"From 1995 to 2000, in early winter, elk calves comprised 50% of wolf prey, and bull elk comprised 25%.\" No material quantity or statistical-scope distortion."
+  },
+  "verdict": "REVISE",
+  "blockers": [
+    {
+      "category": "actor_object",
+      "status": "confirmed",
+      "narrativeExcerpt": "hun prooien leveren voedsel aan dieren van raven en coyotes tot beren en ongewervelden.",
+      "evidenceExcerpt": "Many other animals benefit from wolf kills.",
+      "problem": "The narrative attributes the scavengers' food to prey generally, while the source specifically identifies wolf kills as their food source.",
+      "requiredCorrection": "Clarify that the food comes from wolf kills or their remains, not prey in general."
+    }
+  ]
+}
+

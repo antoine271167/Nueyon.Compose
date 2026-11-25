@@ -1,0 +1,50 @@
+{
+  "assessments": [
+    {
+      "claimId": "claim-1",
+      "sourceExcerpt": "If the stress-caused bleaching is not severe, coral have been known to recover.",
+      "sourceMeaning": "Some corals with non-severe, stress-caused bleaching have recovered, so bleaching in that stated circumstance does not mean the coral is dead.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "Known recovery after non-severe bleaching supports the claim that bleaching does not necessarily mean death.",
+      "correction": null
+    },
+    {
+      "claimId": "claim-2",
+      "sourceExcerpt": "If the stress-caused bleaching is not severe, coral have been known to recover.",
+      "sourceMeaning": "Some corals have recovered when their stress-caused bleaching was not severe.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "This preserves the source's condition and its observation of recovery, without claiming it is guaranteed.",
+      "correction": null
+    },
+    {
+      "claimId": "claim-3",
+      "sourceExcerpt": "If the stress-caused bleaching is not severe, coral have been known to recover.",
+      "sourceMeaning": "Some corals recovered in the context of non-severe, stress-caused bleaching.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "The source's report of recovery in bleached corals supports recovery as a possible outcome after bleaching.",
+      "correction": null
+    },
+    {
+      "claimId": "claim-4",
+      "sourceExcerpt": "If the stress-caused bleaching is not severe, coral have been known to recover.",
+      "sourceMeaning": "Some corals with non-severe, stress-caused bleaching have recovered; the source does not say whether recovery is inevitable.",
+      "verdict": "INSUFFICIENT_EVIDENCE",
+      "material": true,
+      "explanation": "The source establishes that recovery has occurred, but does not establish that recovery is not inevitable for the relevant group.",
+      "correction": null
+    },
+    {
+      "claimId": "claim-5",
+      "sourceExcerpt": "If the stress-caused bleaching is not severe, coral have been known to recover.",
+      "sourceMeaning": "Some corals with non-severe, stress-caused bleaching recovered rather than dying.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "The reported recoveries establish that death is not inevitable in the stated non-severe bleaching circumstance.",
+      "correction": null
+    }
+  ],
+  "coverageQuestions": []
+}

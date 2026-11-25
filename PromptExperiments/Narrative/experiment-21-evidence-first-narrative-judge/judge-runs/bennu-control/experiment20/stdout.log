@@ -1,0 +1,12 @@
+{
+  "checks": {
+    "entity_identity": "Narrative: “The story follows the separation of a sample capsule from the spacecraft carrying it.” Evidence: “the spacecraft released its sample capsule” — the capsule and spacecraft remain distinct.",
+    "temporal_relationship": "Narrative: “About 20 minutes after releasing the capsule above Earth’s atmosphere, the spacecraft fired its engines” Evidence: “About 20 minutes after the spacecraft released its sample capsule above Earth’s atmosphere, it fired its engines” — order and interval match.",
+    "actor_object": "Narrative: “the spacecraft fired its engines to divert away from Earth.” Evidence: “it fired its engines to divert its trajectory away from Earth.” — the spacecraft, not the capsule, acts.",
+    "causal_relationship": "Narrative: “it fired its engines to divert away from Earth.” Evidence: “it fired its engines to divert its trajectory away from Earth.” — the stated purpose is supported.",
+    "quantitative_meaning": "Narrative: “About 20 minutes after releasing the capsule” Evidence: “About 20 minutes after the spacecraft released its sample capsule” — the approximate interval is preserved."
+  },
+  "verdict": "GO",
+  "blockers": []
+}
+

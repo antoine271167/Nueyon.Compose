@@ -1,0 +1,28 @@
+const fs=require('node:fs');
+const Module=require('node:module');
+const path=require('node:path');
+const assert=require('node:assert/strict');
+const file=path.resolve(__dirname,'run.cjs');
+const temp=new Module(file,module);
+temp.filename=file;
+const code=fs.readFileSync(file,'utf8').split("\nmain().catch")[0];
+temp._compile(code+'\nmodule.exports={extract,compare,aggregate};',file);
+const {extract,compare,aggregate}=temp.exports;
+const narrative={content:'Claim about an example.'};
+assert.throws(()=>extract('{"claims":[],"claims":[]}',narrative),/Duplicate/);
+assert.throws(()=>extract('{"claims":[]}',narrative),/Invalid array/);
+const claim={claimId:'c',category:'scope_certainty',narrativeExcerpt:narrative.content,entitiesOrQuantities:['example'],narrativeMeaning:'Claim',qualification:null};
+assert.throws(()=>extract(JSON.stringify({claims:[{...claim,narrativeExcerpt:'Wrong'}]}),narrative),/Nonverbatim/);
+const extraction=extract(JSON.stringify({claims:[claim]}),narrative);
+const input={...extraction,narrative,source:'Source document.'};
+const finding={claimId:'c',sourceExcerpt:'Source document.',sourceMeaning:'Source',verdict:'SUPPORTED',material:true,explanation:'Explanation',correction:null};
+const validate=(assessments,coverageQuestions=[])=>compare(JSON.stringify({assessments,coverageQuestions}),input);
+assert.throws(()=>validate([]),/Missing/);
+assert.throws(()=>validate([{...finding,sourceExcerpt:'Wrong evidence'}]),/Nonverbatim/);
+assert.throws(()=>validate([{...finding,sourceExcerpt:null}]),/grounding/);
+assert.equal(aggregate(extraction,validate([finding])).verdict,'GO');
+assert.equal(aggregate(extraction,validate([{...finding,verdict:'INSUFFICIENT_EVIDENCE'}])).verdict,'UNCERTAIN');
+assert.equal(aggregate(extraction,validate([finding],[{narrativeExcerpt:narrative.content,question:'Unresolved question'}])).verdict,'UNCERTAIN');
+assert.equal(aggregate(extraction,validate([{...finding,verdict:'CONTRADICTED',correction:'Correct the relationship'}])).verdict,'REVISE');
+console.log('10 checks passed');
+

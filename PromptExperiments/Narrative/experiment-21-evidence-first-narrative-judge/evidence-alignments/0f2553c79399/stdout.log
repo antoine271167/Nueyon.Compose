@@ -1,0 +1,123 @@
+{
+  "assessments": [
+    {
+      "claimId": "claim-001",
+      "sourceExcerpt": "The table for 2024 lists 10.0 trillion kWh of renewable electricity production out of 30.7 trillion kWh of total electricity production, reported as 32%.",
+      "sourceMeaning": "The 2024 figures give a renewable share for electricity production; the source also reports a separate share for total energy production.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "The source's world statistics report distinct shares for different measures, so the answer depends on the measure.",
+      "correction": null
+    },
+    {
+      "claimId": "claim-002",
+      "sourceExcerpt": "The table for 2024 lists 10.0 trillion kWh of renewable electricity production out of 30.7 trillion kWh of total electricity production, reported as 32%.",
+      "sourceMeaning": "Renewables produced 10.0 of 30.7 trillion kWh of electricity globally in 2024, reported as a 32% share.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "The percentage and production denominator match the source.",
+      "correction": null
+    },
+    {
+      "claimId": "claim-003",
+      "sourceExcerpt": "Across all energy production, renewables were 42.4 out of 605.6 quadrillion Btu, reported as 7%.",
+      "sourceMeaning": "Renewables accounted for 42.4 of 605.6 quadrillion Btu of total energy production, reported as 7%.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "The amount, denominator, and reported share match the source.",
+      "correction": null
+    },
+    {
+      "claimId": "claim-004",
+      "sourceExcerpt": "The table for 2024 lists 10.0 trillion kWh of renewable electricity production out of 30.7 trillion kWh of total electricity production, reported as 32%. Across all energy production, renewables were 42.4 out of 605.6 quadrillion Btu, reported as 7%.",
+      "sourceMeaning": "The 32% and 7% figures use different production scopes: electricity production and all energy production.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "The source reports the figures for these distinct production measures.",
+      "correction": null
+    },
+    {
+      "claimId": "claim-005",
+      "sourceExcerpt": "The table for 2024 lists 10.0 trillion kWh of renewable electricity production out of 30.7 trillion kWh of total electricity production, reported as 32%. Across all energy production, renewables were 42.4 out of 605.6 quadrillion Btu, reported as 7%.",
+      "sourceMeaning": "The reported renewable share differs between electricity production and total energy production.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "The source's different reported shares support the stated dependence on the chosen measure.",
+      "correction": null
+    },
+    {
+      "claimId": "claim-006",
+      "sourceExcerpt": "The table for 2024 lists 10.0 trillion kWh of renewable electricity production out of 30.7 trillion kWh of total electricity production, reported as 32%.",
+      "sourceMeaning": "The figures are for 2024; the source identifies its statistics as world renewable energy statistics.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "The source identifies the statistics as world figures and specifies 2024.",
+      "correction": null
+    },
+    {
+      "claimId": "claim-007",
+      "sourceExcerpt": "The table for 2024 lists 10.0 trillion kWh of renewable electricity production out of 30.7 trillion kWh of total electricity production, reported as 32%. Across all energy production, renewables were 42.4 out of 605.6 quadrillion Btu, reported as 7%.",
+      "sourceMeaning": "The source reports electricity production and all energy production as separate measures, but does not establish that electricity is a subset of its total energy production measure.",
+      "verdict": "INSUFFICIENT_EVIDENCE",
+      "material": true,
+      "explanation": "The source distinguishes the measures but does not support the stated subset relationship.",
+      "correction": null
+    },
+    {
+      "claimId": "claim-008",
+      "sourceExcerpt": "The table for 2024 lists 10.0 trillion kWh of renewable electricity production out of 30.7 trillion kWh of total electricity production, reported as 32%.",
+      "sourceMeaning": "Renewables produced 10.0 of 30.7 trillion kWh of electricity, a reported 32% share.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "The Dutch number formatting and “biljoen” correspond to the source's 10.0 and 30.7 trillion kWh.",
+      "correction": null
+    },
+    {
+      "claimId": "claim-009",
+      "sourceExcerpt": "Across all energy production, renewables were 42.4 out of 605.6 quadrillion Btu, reported as 7%.",
+      "sourceMeaning": "Renewables accounted for 42.4 of 605.6 quadrillion Btu of total energy production, a reported 7% share.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "The quantities, units, scope, and share match the source.",
+      "correction": null
+    },
+    {
+      "claimId": "claim-010",
+      "sourceExcerpt": "The table for 2024 lists 10.0 trillion kWh of renewable electricity production out of 30.7 trillion kWh of total electricity production, reported as 32%. Across all energy production, renewables were 42.4 out of 605.6 quadrillion Btu, reported as 7%.",
+      "sourceMeaning": "The 32% and 7% figures describe separate production measures and denominators.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "Given the distinct scopes, the figures are not contradictory.",
+      "correction": null
+    },
+    {
+      "claimId": "claim-011",
+      "sourceExcerpt": "The table for 2024 lists 10.0 trillion kWh of renewable electricity production out of 30.7 trillion kWh of total electricity production, reported as 32%. Across all energy production, renewables were 42.4 out of 605.6 quadrillion Btu, reported as 7%.",
+      "sourceMeaning": "The 32% and 7% figures use different measures: electricity production and total energy production.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "The source reports different scopes and units for the two figures.",
+      "correction": null
+    },
+    {
+      "claimId": "claim-012",
+      "sourceExcerpt": "The renewable share of all energy consumption was also 7%.",
+      "sourceMeaning": "Renewables accounted for 7% of total energy consumption.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "The consumption scope and 7% share match the source.",
+      "correction": null
+    }
+  ],
+  "coverageQuestions": [
+    {
+      "narrativeExcerpt": "Zet de cijfers naast elkaar: hernieuwbare bronnen waren goed voor 10,0 van de 30,7 biljoen kWh elektriciteitsproductie (32%), tegenover 42,4 van de 605,6 quadriljoen Btu totale energieproductie (7%).",
+      "question": "Should the comparison also note that total electricity consumption was 28.5 trillion kWh but the renewable portion was listed as unavailable?"
+    },
+    {
+      "narrativeExcerpt": "Behandel de cijfers als wereldcijfers voor 2024.",
+      "question": "Should this include the source's qualification that this is a July 1, 2026 data vintage subject to change?"
+    }
+  ]
+}
+

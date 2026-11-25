@@ -1,0 +1,172 @@
+{
+  "assessments": [
+    {
+      "claimId": "c1",
+      "sourceExcerpt": "Een wijkbibliotheek leende zes weken gereedschap uit.",
+      "sourceMeaning": "Een wijkbibliotheek bood gereedschapsuitleen aan.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "De bron zegt dat de wijkbibliotheek gereedschap uitleende.",
+      "correction": null
+    },
+    {
+      "claimId": "c2",
+      "sourceExcerpt": "Een wijkbibliotheek leende zes weken gereedschap uit.",
+      "sourceMeaning": "De gereedschapsuitleen duurde zes weken.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "De duur van zes weken staat expliciet in de bron.",
+      "correction": null
+    },
+    {
+      "claimId": "c3",
+      "sourceExcerpt": "De proef was ook op woensdag toegankelijk, maar zaterdag was langer open.",
+      "sourceMeaning": "De proef was toegankelijk op woensdag en zaterdag.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "De bron noemt woensdag en zaterdag als toegankelijke dagen.",
+      "correction": null
+    },
+    {
+      "claimId": "c4",
+      "sourceExcerpt": "Van de uitleningen vonden er 52 op zaterdag plaats.",
+      "sourceMeaning": "52 van de uitleningen vonden op zaterdag plaats; zaterdag had daarmee het grootste genoemde aandeel.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "52 van de 80 uitleningen vonden op zaterdag plaats, wat de omschrijving als concentratie op zaterdag ondersteunt.",
+      "correction": null
+    },
+    {
+      "claimId": "c5",
+      "sourceExcerpt": "Van de uitleningen vonden er 52 op zaterdag plaats.",
+      "sourceMeaning": "52 uitleningen vonden op zaterdag plaats.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "‘Toen’ verwijst naar zaterdag en de bron bevestigt het aantal.",
+      "correction": null
+    },
+    {
+      "claimId": "c6",
+      "sourceExcerpt": "Er waren 80 uitleningen aan 46 unieke leners.",
+      "sourceMeaning": "Er waren 46 unieke leners voor de 80 uitleningen in totaal; de bron specificeert niet welke leners de zaterdagse uitleningen deden.",
+      "verdict": "INSUFFICIENT_EVIDENCE",
+      "material": true,
+      "explanation": "De formulering koppelt de 46 unieke leners aan de 52 zaterdagse uitleningen, maar de bron geeft alleen het totale aantal unieke leners voor alle 80 uitleningen.",
+      "correction": null
+    },
+    {
+      "claimId": "c7",
+      "sourceExcerpt": "De proef was ook op woensdag toegankelijk, maar zaterdag was langer open.",
+      "sourceMeaning": "De gereedschapsuitleen was een proef.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "De bron benoemt het aanbod expliciet als een proef.",
+      "correction": null
+    },
+    {
+      "claimId": "c8",
+      "sourceExcerpt": "Van de uitleningen vonden er 52 op zaterdag plaats.",
+      "sourceMeaning": "De gegevens maken concreet op welke genoemde dag de uitleningen plaatsvonden.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "De bron geeft aan dat 52 uitleningen op zaterdag plaatsvonden; de passage claimt geen specifiek uur.",
+      "correction": null
+    },
+    {
+      "claimId": "c9",
+      "sourceExcerpt": "Van de uitleningen vonden er 52 op zaterdag plaats. De proef was ook op woensdag toegankelijk, maar zaterdag was langer open.",
+      "sourceMeaning": "De totalen geven uitleningen per dag en de zaterdagopening was langer; ze tonen geen voorkeur per openingsuur aan.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "De bron geeft dagtotalen en vermeldt dat zaterdag langer open was, maar geen aantallen per openingsuur.",
+      "correction": null
+    },
+    {
+      "claimId": "c10",
+      "sourceExcerpt": "Een wijkbibliotheek leende zes weken gereedschap uit.",
+      "sourceMeaning": "De wijkbibliotheek hield de gereedschapsuitleen zes weken.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "De bron vermeldt een uitleenperiode van zes weken.",
+      "correction": null
+    },
+    {
+      "claimId": "c11",
+      "sourceExcerpt": "De proef was ook op woensdag toegankelijk, maar zaterdag was langer open.",
+      "sourceMeaning": "De gereedschapsuitleen was toegankelijk op woensdag en zaterdag.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "Beide dagen worden in de bron genoemd.",
+      "correction": null
+    },
+    {
+      "claimId": "c12",
+      "sourceExcerpt": "Een wijkbibliotheek leende zes weken gereedschap uit.",
+      "sourceMeaning": "De wijkbibliotheek hield een gereedschapsuitleen.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "De bron zegt dat de wijkbibliotheek gereedschap uitleende.",
+      "correction": null
+    },
+    {
+      "claimId": "c13",
+      "sourceExcerpt": "Er waren 80 uitleningen aan 46 unieke leners. Van de uitleningen vonden er 52 op zaterdag plaats.",
+      "sourceMeaning": "Van de in totaal 80 uitleningen vonden er 52 op zaterdag plaats.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "De bron geeft beide aantallen en koppelt de 52 uitleningen aan zaterdag.",
+      "correction": null
+    },
+    {
+      "claimId": "c14",
+      "sourceExcerpt": "Er waren 80 uitleningen aan 46 unieke leners.",
+      "sourceMeaning": "Er waren in totaal 46 unieke leners.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "Het aantal unieke leners staat expliciet in de bron.",
+      "correction": null
+    },
+    {
+      "claimId": "c15",
+      "sourceExcerpt": "Van de uitleningen vonden er 52 op zaterdag plaats.",
+      "sourceMeaning": "Het grootste genoemde aandeel van de uitleningen vond op zaterdag plaats.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "52 van de 80 uitleningen vonden op zaterdag plaats, wat deze samenvatting ondersteunt.",
+      "correction": null
+    },
+    {
+      "claimId": "c16",
+      "sourceExcerpt": "De proef was ook op woensdag toegankelijk, maar zaterdag was langer open.",
+      "sourceMeaning": "De zaterdagopening duurde langer dan de andere genoemde opening op woensdag.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "De bron vermeldt expliciet dat zaterdag langer open was; woensdag is de andere genoemde openingsdag.",
+      "correction": null
+    },
+    {
+      "claimId": "c17",
+      "sourceExcerpt": "Van de uitleningen vonden er 52 op zaterdag plaats.",
+      "sourceMeaning": "De aantallen geven aan dat 52 uitleningen op zaterdag plaatsvonden.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "De bron geeft het aantal uitleningen per genoemde dag voor zaterdag.",
+      "correction": null
+    },
+    {
+      "claimId": "c18",
+      "sourceExcerpt": "Van de uitleningen vonden er 52 op zaterdag plaats. De proef was ook op woensdag toegankelijk, maar zaterdag was langer open.",
+      "sourceMeaning": "De bron geeft dagtotalen en vermeldt langere opening op zaterdag, maar geen aantallen per openingsuur om een voorkeur per uur vast te stellen.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "De beperking tot wat de aantallen aantonen is consistent met de gerapporteerde dagtotalen en openingstijden.",
+      "correction": null
+    }
+  ],
+  "coverageQuestions": [
+    {
+      "narrativeExcerpt": "Het gebruik concentreerde zich op zaterdag. Omdat de zaterdagopening langer duurde, tonen de aantallen wanneer uitleningen plaatsvonden, niet een voorkeur per openingsuur.",
+      "question": "De bron vermeldt ook dat het bestuur na de proef een tweede proef voorstelde die nog niet was goedgekeurd. Is deze status een potentieel materiële ontwikkeling die in de Narrative moet worden opgenomen?"
+    }
+  ]
+}

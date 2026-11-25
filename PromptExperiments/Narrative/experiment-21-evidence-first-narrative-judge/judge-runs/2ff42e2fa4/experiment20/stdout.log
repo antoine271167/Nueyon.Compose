@@ -1,0 +1,21 @@
+{
+  "checks": {
+    "entity_identity": "Probleem: de brief noemt “elandkalveren en volwassen mannelijke elanden”; de bron noemt “elk calves” en “bull elk”. In deze context verwijst “eland” niet naar hetzelfde dier als het Engelse “elk”.",
+    "temporal_relationship": "“in 1995–2000 en 2001–2007”; de bron zegt “From 1995 to 2000” en “That ratio reversed from 2001 to 2007.” De perioden en volgorde kloppen.",
+    "actor_object": "“een wolvendoding voedsel biedt aan dieren”; de bron zegt “Many other animals benefit from wolf kills.” De wolven zijn de veroorzakers van de doding en andere dieren benutten de resten.",
+    "causal_relationship": "“veranderingen in predatie en de effecten op elanden samenvallen met andere factoren”; de bron zegt “result from complex interactions among these factors.” De brief schrijft de verschuiving niet aan één oorzaak toe.",
+    "quantitative_meaning": "“de verschuiving in de verhouding tussen elandkalveren en volwassen mannelijke elanden”; de bron geeft “elk calves comprised 50% of wolf prey, and bull elk comprised 25%” en zegt dat “That ratio reversed”. De brief laat percentages weg, maar verandert de verhouding of statistische scope niet."
+  },
+  "verdict": "REVISE",
+  "blockers": [
+    {
+      "category": "entity_identity",
+      "status": "confirmed",
+      "narrativeExcerpt": "de verhouding tussen elandkalveren en volwassen mannelijke elanden",
+      "evidenceExcerpt": "elk calves comprised 50% of wolf prey, and bull elk comprised 25%",
+      "problem": "“Eland” duidt een andere soort aan dan het Engelse “elk” in de Yellowstone-bron; daardoor verandert de identiteit van de prooidieren.",
+      "requiredCorrection": "Vervang “elandkalveren” en “volwassen mannelijke elanden” door “wapitikalveren” en “volwassen mannelijke wapiti’s”; vervang ook “elanden” waar het naar deze bronsoort verwijst door “wapiti’s”."
+    }
+  ]
+}
+

@@ -1,0 +1,213 @@
+{
+  "claims": [
+    {
+      "claimId": "c001",
+      "category": "temporal_relationship",
+      "narrativeExcerpt": "Webb bereikte zijn volledig uitgevouwen configuratie al in de tweede week",
+      "entitiesOrQuantities": ["Webb", "volledig uitgevouwen configuratie", "tweede week"],
+      "narrativeMeaning": "Webb bereikte de volledig uitgevouwen configuratie uiterlijk in week twee.",
+      "qualification": "De tekst zegt 'al in de tweede week'."
+    },
+    {
+      "claimId": "c002",
+      "category": "temporal_relationship",
+      "narrativeExcerpt": "maar was daarmee nog niet klaar voor routinewetenschap",
+      "entitiesOrQuantities": ["Webb", "routinewetenschap"],
+      "narrativeMeaning": "Het bereiken van de volledig uitgevouwen configuratie betekende niet dat Webb al klaar was voor routinewetenschap.",
+      "qualification": "Nog niet klaar op dat moment."
+    },
+    {
+      "claimId": "c003",
+      "category": "scope_certainty",
+      "narrativeExcerpt": "De uitvouwing was een risicovolle fase",
+      "entitiesOrQuantities": ["de uitvouwing", "risicovolle fase"],
+      "narrativeMeaning": "De uitvouwing was een risicovolle fase.",
+      "qualification": "Risico, niet de bewering dat een storing optrad."
+    },
+    {
+      "claimId": "c004",
+      "category": "numerical_scale",
+      "narrativeExcerpt": "meer dan vijftig grote stappen",
+      "entitiesOrQuantities": ["meer dan vijftig", "grote stappen", "de uitvouwing"],
+      "narrativeMeaning": "De uitvouwing omvatte meer dan vijftig grote stappen.",
+      "qualification": "Meer dan vijftig; het aantal is niet exact gespecificeerd."
+    },
+    {
+      "claimId": "c005",
+      "category": "numerical_scale",
+      "narrativeExcerpt": "honderden mogelijke afzonderlijke faalpunten",
+      "entitiesOrQuantities": ["honderden", "mogelijke afzonderlijke faalpunten", "de uitvouwing"],
+      "narrativeMeaning": "De uitvouwing had honderden mogelijke afzonderlijke faalpunten.",
+      "qualification": "Mogelijke faalpunten; geen opgetreden storingen."
+    },
+    {
+      "claimId": "c006",
+      "category": "temporal_relationship",
+      "narrativeExcerpt": "daarna volgden maanden van afkoeling",
+      "entitiesOrQuantities": ["afkoeling", "maanden", "de uitvouwing"],
+      "narrativeMeaning": "Na de uitvouwing volgden maanden van afkoeling.",
+      "qualification": "De duur wordt als maanden aangeduid, zonder exact aantal."
+    },
+    {
+      "claimId": "c007",
+      "category": "temporal_relationship",
+      "narrativeExcerpt": "daarna volgden maanden van ... spiegeluitlijning",
+      "entitiesOrQuantities": ["spiegeluitlijning", "maanden", "de uitvouwing"],
+      "narrativeMeaning": "Na de uitvouwing volgden maanden van spiegeluitlijning.",
+      "qualification": "De duur wordt als maanden aangeduid, zonder exact aantal."
+    },
+    {
+      "claimId": "c008",
+      "category": "temporal_relationship",
+      "narrativeExcerpt": "daarna volgden maanden van ... instrumentkalibratie",
+      "entitiesOrQuantities": ["instrumentkalibratie", "maanden", "de uitvouwing"],
+      "narrativeMeaning": "Na de uitvouwing volgden maanden van instrumentkalibratie.",
+      "qualification": "De duur wordt als maanden aangeduid, zonder exact aantal."
+    },
+    {
+      "claimId": "c009",
+      "category": "temporal_relationship",
+      "narrativeExcerpt": "Webb moest voor de lancering worden opgevouwen",
+      "entitiesOrQuantities": ["Webb", "voor de lancering"],
+      "narrativeMeaning": "Webb werd vóór de lancering opgevouwen.",
+      "qualification": null
+    },
+    {
+      "claimId": "c010",
+      "category": "causality",
+      "narrativeExcerpt": "Webb moest voor de lancering worden opgevouwen omdat de operationele configuratie te groot was voor de beschikbare raket.",
+      "entitiesOrQuantities": ["Webb", "operationele configuratie", "beschikbare raket"],
+      "narrativeMeaning": "De operationele configuratie was te groot voor de beschikbare raket; daarom moest Webb vóór de lancering worden opgevouwen.",
+      "qualification": "De grootte wordt relatief aan de beschikbare raket gesteld."
+    },
+    {
+      "claimId": "c011",
+      "category": "actor_object",
+      "narrativeExcerpt": "de operationele configuratie te groot was voor de beschikbare raket",
+      "entitiesOrQuantities": ["operationele configuratie", "beschikbare raket"],
+      "narrativeMeaning": "De operationele configuratie was te groot voor de beschikbare raket.",
+      "qualification": null
+    },
+    {
+      "claimId": "c012",
+      "category": "scope_certainty",
+      "narrativeExcerpt": "De uitvouwing omvatte veel stappen",
+      "entitiesOrQuantities": ["de uitvouwing", "veel stappen"],
+      "narrativeMeaning": "De uitvouwing omvatte veel stappen.",
+      "qualification": "Het aantal is niet nader gespecificeerd."
+    },
+    {
+      "claimId": "c013",
+      "category": "scope_certainty",
+      "narrativeExcerpt": "mogelijke faalpunten",
+      "entitiesOrQuantities": ["mogelijke faalpunten", "de uitvouwing"],
+      "narrativeMeaning": "De uitvouwing omvatte mogelijke faalpunten.",
+      "qualification": "Mogelijke faalpunten; geen opgetreden storingen."
+    },
+    {
+      "claimId": "c014",
+      "category": "scope_certainty",
+      "narrativeExcerpt": "reparatie op Webb’s afstand van de aarde niet mogelijk was",
+      "entitiesOrQuantities": ["reparatie", "Webb", "afstand van de aarde"],
+      "narrativeMeaning": "Reparatie was op Webb’s afstand van de aarde niet mogelijk.",
+      "qualification": null
+    },
+    {
+      "claimId": "c015",
+      "category": "actor_object",
+      "narrativeExcerpt": "de secundaire spiegel ... uitgeklapt en vergrendeld",
+      "entitiesOrQuantities": ["secundaire spiegel"],
+      "narrativeMeaning": "De secundaire spiegel was uitgeklapt en vergrendeld.",
+      "qualification": null
+    },
+    {
+      "claimId": "c016",
+      "category": "actor_object",
+      "narrativeExcerpt": "beide primaire-spiegelvleugels uitgeklapt en vergrendeld",
+      "entitiesOrQuantities": ["beide primaire-spiegelvleugels"],
+      "narrativeMeaning": "Beide primaire-spiegelvleugels waren uitgeklapt en vergrendeld.",
+      "qualification": "Beide vleugels."
+    },
+    {
+      "claimId": "c017",
+      "category": "temporal_relationship",
+      "narrativeExcerpt": "In de tweede week waren de secundaire spiegel en beide primaire-spiegelvleugels uitgeklapt en vergrendeld.",
+      "entitiesOrQuantities": ["tweede week", "secundaire spiegel", "beide primaire-spiegelvleugels"],
+      "narrativeMeaning": "In week twee waren de secundaire spiegel en beide primaire-spiegelvleugels uitgeklapt en vergrendeld.",
+      "qualification": "De week is niet nader gedateerd."
+    },
+    {
+      "claimId": "c018",
+      "category": "actor_object",
+      "narrativeExcerpt": "Daarmee was Webb volledig uitgevouwen",
+      "entitiesOrQuantities": ["Webb", "volledig uitgevouwen"],
+      "narrativeMeaning": "Na het uitklappen en vergrendelen van de genoemde spiegelonderdelen was Webb volledig uitgevouwen.",
+      "qualification": null
+    },
+    {
+      "claimId": "c019",
+      "category": "temporal_relationship",
+      "narrativeExcerpt": "maar de ingebruikname liep door",
+      "entitiesOrQuantities": ["ingebruikname", "volledig uitgevouwen Webb"],
+      "narrativeMeaning": "De ingebruikname ging door nadat Webb volledig was uitgevouwen.",
+      "qualification": null
+    },
+    {
+      "claimId": "c020",
+      "category": "actor_object",
+      "narrativeExcerpt": "de telescoop en instrumenten koelden af",
+      "entitiesOrQuantities": ["de telescoop", "koelen af"],
+      "narrativeMeaning": "De telescoop koelde af.",
+      "qualification": null
+    },
+    {
+      "claimId": "c021",
+      "category": "actor_object",
+      "narrativeExcerpt": "de telescoop en instrumenten koelden af",
+      "entitiesOrQuantities": ["instrumenten", "afkoelen"],
+      "narrativeMeaning": "De instrumenten koelden af.",
+      "qualification": null
+    },
+    {
+      "claimId": "c022",
+      "category": "actor_object",
+      "narrativeExcerpt": "de spiegels werden uitgelijnd",
+      "entitiesOrQuantities": ["spiegels", "uitlijning"],
+      "narrativeMeaning": "De spiegels werden uitgelijnd.",
+      "qualification": "Niet nader gespecificeerd welke spiegels."
+    },
+    {
+      "claimId": "c023",
+      "category": "actor_object",
+      "narrativeExcerpt": "de instrumenten gekalibreerd",
+      "entitiesOrQuantities": ["instrumenten", "kalibratie"],
+      "narrativeMeaning": "De instrumenten werden gekalibreerd.",
+      "qualification": null
+    },
+    {
+      "claimId": "c024",
+      "category": "temporal_relationship",
+      "narrativeExcerpt": "Na zes maanden begon Webb aan routinewetenschappelijke waarnemingen.",
+      "entitiesOrQuantities": ["zes maanden", "Webb", "routinewetenschappelijke waarnemingen"],
+      "narrativeMeaning": "Webb begon zes maanden later aan routinewetenschappelijke waarnemingen.",
+      "qualification": "De tekst specificeert niet vanaf welk exact startmoment de zes maanden worden geteld."
+    },
+    {
+      "claimId": "c025",
+      "category": "scope_certainty",
+      "narrativeExcerpt": "het bereiken van de operationele configuratie een mijlpaal was, niet het einde van de ingebruikname",
+      "entitiesOrQuantities": ["operationele configuratie", "mijlpaal", "ingebruikname"],
+      "narrativeMeaning": "Het bereiken van de operationele configuratie was een mijlpaal, maar niet het einde van de ingebruikname.",
+      "qualification": null
+    },
+    {
+      "claimId": "c026",
+      "category": "scope_certainty",
+      "narrativeExcerpt": "De uitvouwing verliep volgens de bron soepel.",
+      "entitiesOrQuantities": ["de uitvouwing", "bron"],
+      "narrativeMeaning": "Volgens de bron verliep de uitvouwing soepel.",
+      "qualification": "Toegeschreven aan de bron."
+    }
+  ]
+}
+

@@ -1,0 +1,100 @@
+{
+  "claims": [
+    {
+      "claimId": "claim-1",
+      "category": "numerical_scale",
+      "narrativeExcerpt": "A whole-number increase in magnitude has different multipliers depending on which quantity is being described",
+      "entitiesOrQuantities": [
+        "magnitude",
+        "measured amplitude",
+        "energy release",
+        "multiplier"
+      ],
+      "narrativeMeaning": "The multiplier for a whole-number increase in magnitude varies according to whether measured amplitude or energy release is described.",
+      "qualification": null
+    },
+    {
+      "claimId": "claim-2",
+      "category": "numerical_scale",
+      "narrativeExcerpt": "measured amplitude increases tenfold",
+      "entitiesOrQuantities": [
+        "measured amplitude",
+        "magnitude increase",
+        "10-fold multiplier"
+      ],
+      "narrativeMeaning": "For a whole-number increase in magnitude, measured amplitude increases by a factor of 10.",
+      "qualification": "Applies to measured amplitude."
+    },
+    {
+      "claimId": "claim-3",
+      "category": "numerical_scale",
+      "narrativeExcerpt": "energy release increases 32-fold",
+      "entitiesOrQuantities": [
+        "energy release",
+        "magnitude increase",
+        "32-fold multiplier"
+      ],
+      "narrativeMeaning": "For a whole-number increase in magnitude, energy release increases by a factor of 32.",
+      "qualification": "Applies to energy release."
+    },
+    {
+      "claimId": "claim-4",
+      "category": "entity_identity",
+      "narrativeExcerpt": "these are distinct measures",
+      "entitiesOrQuantities": [
+        "measured amplitude",
+        "energy release"
+      ],
+      "narrativeMeaning": "Measured amplitude and energy release are distinct measures.",
+      "qualification": null
+    },
+    {
+      "claimId": "claim-5",
+      "category": "scope_certainty",
+      "narrativeExcerpt": "not interchangeable descriptions of the same multiplier",
+      "entitiesOrQuantities": [
+        "measured-amplitude multiplier",
+        "energy-release multiplier"
+      ],
+      "narrativeMeaning": "The measured-amplitude and energy-release multipliers are not interchangeable as a single multiplier.",
+      "qualification": null
+    },
+    {
+      "claimId": "claim-6",
+      "category": "numerical_scale",
+      "narrativeExcerpt": "ten times the measured amplitude",
+      "entitiesOrQuantities": [
+        "measured amplitude",
+        "whole-number increase in magnitude",
+        "10-fold multiplier"
+      ],
+      "narrativeMeaning": "For each whole-number increase in magnitude, measured amplitude increases by a factor of 10.",
+      "qualification": "Stated in the Development section."
+    },
+    {
+      "claimId": "claim-7",
+      "category": "numerical_scale",
+      "narrativeExcerpt": "32 times the energy release",
+      "entitiesOrQuantities": [
+        "energy release",
+        "whole-number increase in magnitude",
+        "32-fold multiplier"
+      ],
+      "narrativeMeaning": "For each whole-number increase in magnitude, energy release increases by a factor of 32.",
+      "qualification": "Stated in the Development section."
+    },
+    {
+      "claimId": "claim-8",
+      "category": "numerical_scale",
+      "narrativeExcerpt": "the multiplier depends on whether the comparison concerns measured amplitude or energy release",
+      "entitiesOrQuantities": [
+        "multiplier",
+        "measured amplitude",
+        "energy release"
+      ],
+      "narrativeMeaning": "The applicable multiplier depends on whether the comparison is about measured amplitude or energy release.",
+      "qualification": "Stated in the Endpoint section."
+    }
+  ]
+}
+

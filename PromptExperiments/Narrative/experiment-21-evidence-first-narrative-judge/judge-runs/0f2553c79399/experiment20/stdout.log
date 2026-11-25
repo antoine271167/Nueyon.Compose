@@ -1,0 +1,21 @@
+{
+  "checks": {
+    "entity_identity": "Geen materiële afwijking: hernieuwbare bronnen, elektriciteitsproductie en totale energieproductie verwijzen naar de maten in het bewijs.",
+    "temporal_relationship": "De verhaallijn houdt de cijfers bij wereldwijde gegevens voor 2024; het weglaten van de vintage-datum verandert de tijdsrelatie niet wezenlijk.",
+    "actor_object": "Hernieuwbare bronnen worden correct weergegeven als leverancier van elektriciteitsproductie en als aandeel van totale energieproductie.",
+    "causal_relationship": "De tekst stelt dat het antwoord afhangt van de gekozen maatstaf; dat past bij het bewijs dat verschillende productiematen verschillende aandelen geven.",
+    "quantitative_meaning": "De elektriciteitscijfers kloppen, maar “quadriljoen Btu” geeft de eenheid “quadrillion Btu” niet correct weer in het Nederlands en verandert daardoor de schaal."
+  },
+  "verdict": "REVISE",
+  "blockers": [
+    {
+      "category": "quantitative_meaning",
+      "status": "confirmed",
+      "narrativeExcerpt": "42,4 van de 605,6 quadriljoen Btu totale energieproductie (7%).",
+      "evidenceExcerpt": "Across all energy production, renewables were 42.4 out of 605.6 quadrillion Btu, reported as 7%.",
+      "problem": "“Quadriljoen” heeft in het Nederlands een andere schaal dan de broneenheid “quadrillion”; zo wordt de omvang van de productie verkeerd weergegeven.",
+      "requiredCorrection": "Vervang “quadriljoen Btu” door “biljard Btu”."
+    }
+  ]
+}
+

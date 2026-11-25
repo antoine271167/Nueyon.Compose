@@ -1,0 +1,22 @@
+{
+  "decision": "NO-GO",
+  "baseCommit": "827fd03462b583694074611be7055cda16f061d8",
+  "phaseA": {
+    "status": "FAIL",
+    "matchedTriage": false,
+    "acceptableRevise": true,
+    "groundedBlockers": true,
+    "criticalCategoryCoverage": true,
+    "credibleBreadth": false,
+    "failClosedTechnical": true,
+    "noRecurringEntityTemporalEscape": true,
+    "developmentWolfSilentEscape": true,
+    "breadthStatus": "INSUFFICIENT EVIDENCE for a positive generalization decision"
+  },
+  "phaseB": {
+    "executed": false,
+    "reason": "Phase A failed"
+  },
+  "editorialRegression": "not measured because no repairs ran",
+  "recommendedAction": "Correct source-term preservation and use resolvable evidence spans, then run a newly frozen independent detection study before testing repairs."
+}

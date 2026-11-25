@@ -1,0 +1,157 @@
+{
+  "claims": [
+    {
+      "claimId": "claim-001",
+      "category": "actor_object",
+      "narrativeExcerpt": "Het stadsarchief testte schaduwdoek op één van twee binnenplaatsen.",
+      "entitiesOrQuantities": ["Het stadsarchief", "schaduwdoek", "binnenplaatsen"],
+      "narrativeMeaning": "Het stadsarchief voerde een proef met schaduwdoek uit op een binnenplaats.",
+      "qualification": "De binnenplaats was één van twee."
+    },
+    {
+      "claimId": "claim-002",
+      "category": "scope_certainty",
+      "narrativeExcerpt": "één van twee binnenplaatsen",
+      "entitiesOrQuantities": ["één", "twee binnenplaatsen"],
+      "narrativeMeaning": "De proef vond plaats op één binnenplaats uit een totaal van twee.",
+      "qualification": null
+    },
+    {
+      "claimId": "claim-003",
+      "category": "actor_object",
+      "narrativeExcerpt": "De meetopstelling is bepalend voor wat de vergelijking laat zien",
+      "entitiesOrQuantities": ["meetopstelling", "vergelijking"],
+      "narrativeMeaning": "De meetopstelling beïnvloedt wat uit de vergelijking kan blijken.",
+      "qualification": null
+    },
+    {
+      "claimId": "claim-004",
+      "category": "temporal_relationship",
+      "narrativeExcerpt": "nadat de sensor was verplaatst",
+      "entitiesOrQuantities": ["sensor"],
+      "narrativeMeaning": "De relevante metingen zijn verricht nadat de sensor was verplaatst.",
+      "qualification": null
+    },
+    {
+      "claimId": "claim-005",
+      "category": "actor_object",
+      "narrativeExcerpt": "vrij op dezelfde hoogte stond",
+      "entitiesOrQuantities": ["sensor", "dezelfde hoogte"],
+      "narrativeMeaning": "De sensor stond vrij en op dezelfde hoogte.",
+      "qualification": null
+    },
+    {
+      "claimId": "claim-006",
+      "category": "scope_certainty",
+      "narrativeExcerpt": "alleen metingen van nadat de sensor was verplaatst en vrij op dezelfde hoogte stond, zijn vergelijkbaar.",
+      "entitiesOrQuantities": ["metingen", "sensor"],
+      "narrativeMeaning": "Alleen metingen die na verplaatsing van de sensor zijn gedaan terwijl die vrij en op dezelfde hoogte stond, zijn vergelijkbaar.",
+      "qualification": "Beide meetopstellingsvoorwaarden gelden."
+    },
+    {
+      "claimId": "claim-007",
+      "category": "numerical_scale",
+      "narrativeExcerpt": "Op vier heldere middagen",
+      "entitiesOrQuantities": ["vier middagen"],
+      "narrativeMeaning": "De beschreven metingen betreffen vier middagen waarop het helder was.",
+      "qualification": null
+    },
+    {
+      "claimId": "claim-008",
+      "category": "numerical_scale",
+      "narrativeExcerpt": "lag de gemeten temperatuur op de overdekte binnenplaats gemiddeld 2 graden lager.",
+      "entitiesOrQuantities": ["gemeten temperatuur", "overdekte binnenplaats", "2 graden"],
+      "narrativeMeaning": "De gemiddelde gemeten temperatuur op de overdekte binnenplaats was 2 graden lager dan op de vergelijkingsplek.",
+      "qualification": "Gemiddeld over vier heldere middagen; de vergelijkingsplek is impliciet."
+    },
+    {
+      "claimId": "claim-009",
+      "category": "scope_certainty",
+      "narrativeExcerpt": "een beperkte vergelijking tussen twee plekken, geen algemene uitspraak over het effect van schaduwdoek.",
+      "entitiesOrQuantities": ["twee plekken", "schaduwdoek"],
+      "narrativeMeaning": "De vergelijking betreft twee plekken en stelt geen algemeen effect van schaduwdoek vast.",
+      "qualification": "Beperkte vergelijking."
+    },
+    {
+      "claimId": "claim-010",
+      "category": "actor_object",
+      "narrativeExcerpt": "de proef met schaduwdoek op één van de twee binnenplaatsen",
+      "entitiesOrQuantities": ["schaduwdoek", "één", "twee binnenplaatsen"],
+      "narrativeMeaning": "De proef met schaduwdoek vond plaats op één van de twee binnenplaatsen.",
+      "qualification": "Herhaald in de story progression."
+    },
+    {
+      "claimId": "claim-011",
+      "category": "actor_object",
+      "narrativeExcerpt": "de rol van de meetplek bij het vergelijken van de metingen",
+      "entitiesOrQuantities": ["meetplek", "metingen"],
+      "narrativeMeaning": "De meetplek speelt een rol bij de vergelijking van metingen.",
+      "qualification": "Herhaald als context voor de proef."
+    },
+    {
+      "claimId": "claim-012",
+      "category": "temporal_relationship",
+      "narrativeExcerpt": "alleen de metingen na verplaatsing van de sensor",
+      "entitiesOrQuantities": ["metingen", "sensor"],
+      "narrativeMeaning": "De vergelijkbare metingen zijn uitsluitend van na de verplaatsing van de sensor.",
+      "qualification": "Herhaald in de story progression."
+    },
+    {
+      "claimId": "claim-013",
+      "category": "actor_object",
+      "narrativeExcerpt": "vrij op dezelfde hoogte",
+      "entitiesOrQuantities": ["sensor", "dezelfde hoogte"],
+      "narrativeMeaning": "Voor de vergelijkbare metingen stond de sensor vrij en op dezelfde hoogte.",
+      "qualification": "Herhaald in de story progression."
+    },
+    {
+      "claimId": "claim-014",
+      "category": "scope_certainty",
+      "narrativeExcerpt": "alleen de metingen na verplaatsing van de sensor, vrij op dezelfde hoogte, vergelijkbaar zijn.",
+      "entitiesOrQuantities": ["metingen", "sensor"],
+      "narrativeMeaning": "Alleen metingen na sensorverplaatsing, met de sensor vrij en op dezelfde hoogte, zijn vergelijkbaar.",
+      "qualification": "Beide meetopstellingsvoorwaarden gelden; herhaald in de story progression."
+    },
+    {
+      "claimId": "claim-015",
+      "category": "numerical_scale",
+      "narrativeExcerpt": "In die metingen was het op vier heldere middagen",
+      "entitiesOrQuantities": ["vier middagen"],
+      "narrativeMeaning": "De beschreven metingen bestrijken vier heldere middagen.",
+      "qualification": "Verwijst naar de eerder genoemde vergelijkbare metingen."
+    },
+    {
+      "claimId": "claim-016",
+      "category": "numerical_scale",
+      "narrativeExcerpt": "gemiddeld 2 graden koeler op de overdekte binnenplaats.",
+      "entitiesOrQuantities": ["2 graden", "overdekte binnenplaats"],
+      "narrativeMeaning": "Op de overdekte binnenplaats was het gemiddeld 2 graden koeler dan op de vergelijkingsplek.",
+      "qualification": "Herhaling van het temperatuurverschil, over vier heldere middagen."
+    },
+    {
+      "claimId": "claim-017",
+      "category": "numerical_scale",
+      "narrativeExcerpt": "een concreet, maar beperkt temperatuurverschil tussen de twee binnenplaatsen.",
+      "entitiesOrQuantities": ["temperatuurverschil", "twee binnenplaatsen"],
+      "narrativeMeaning": "De meting toont een concreet temperatuurverschil tussen de twee binnenplaatsen.",
+      "qualification": "Het verschil is beperkt; de grootte wordt hier niet herhaald."
+    },
+    {
+      "claimId": "claim-018",
+      "category": "causality",
+      "narrativeExcerpt": "het gaat om een waargenomen verschil tussen twee plekken",
+      "entitiesOrQuantities": ["waargenomen verschil", "twee plekken"],
+      "narrativeMeaning": "Het temperatuurverschil is een waarneming tussen twee plekken, geen vastgestelde causale werking van schaduwdoek.",
+      "qualification": "De tekst schrijft het verschil niet toe aan schaduwdoek als bewezen oorzaak."
+    },
+    {
+      "claimId": "claim-019",
+      "category": "actor_object",
+      "narrativeExcerpt": "zonder willekeurige toewijzing.",
+      "entitiesOrQuantities": ["toewijzing"],
+      "narrativeMeaning": "De vergelijking tussen de plekken vond plaats zonder willekeurige toewijzing.",
+      "qualification": null
+    }
+  ]
+}
+

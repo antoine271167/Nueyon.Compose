@@ -1,0 +1,20 @@
+{
+  "checks": {
+    "entity_identity": "No material mismatch: the narrative's “coral” and “corals” refer to the same entity as the source's “coral.”",
+    "temporal_relationship": "The narrative's “when stress-caused bleaching is not severe, corals have been known to recover” preserves the source's condition and recovery relationship: “If the stress-caused bleaching is not severe, coral have been known to recover.”",
+    "actor_object": "No material change in actor or action: “corals have been known to recover” matches the source's “coral have been known to recover.”",
+    "causal_relationship": "The narrative's “stress-caused condition” is consistent with the source's “stress-caused bleaching”; no changed causal direction is evident.",
+    "quantitative_meaning": "“always recover” overstates the source's “have been known to recover,” turning observed possibility into certainty."
+  },
+  "verdict": "REVISE",
+  "blockers": [
+    {
+      "category": "quantitative_meaning",
+      "status": "confirmed",
+      "narrativeExcerpt": "The supported observation is that corals always recover when stress-caused bleaching is not severe.",
+      "evidenceExcerpt": "If the stress-caused bleaching is not severe, coral have been known to recover.",
+      "problem": "“always recover” makes recovery inevitable, while the evidence only says recovery has been observed; the synthesis also says, “Do not present recovery or death as inevitable.”",
+      "requiredCorrection": "Replace “always recover” with “have been known to recover.”"
+    }
+  ]
+}

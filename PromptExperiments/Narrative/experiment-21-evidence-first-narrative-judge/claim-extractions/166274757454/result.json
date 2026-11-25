@@ -1,0 +1,226 @@
+{
+  "claims": [
+    {
+      "claimId": "c1",
+      "category": "actor_object",
+      "narrativeExcerpt": "Het POA-refundteam lanceerde de dienst",
+      "entitiesOrQuantities": [
+        "POA-refundteam",
+        "de dienst"
+      ],
+      "narrativeMeaning": "The POA refund team launched the service.",
+      "qualification": null
+    },
+    {
+      "claimId": "c2",
+      "category": "temporal_relationship",
+      "narrativeExcerpt": "na twaalf weken",
+      "entitiesOrQuantities": [
+        "de dienst",
+        "twaalf weken"
+      ],
+      "narrativeMeaning": "The service launch occurred after twelve weeks.",
+      "qualification": null
+    },
+    {
+      "claimId": "c3",
+      "category": "numerical_scale",
+      "narrativeExcerpt": "de aanvankelijk gevraagde termijn van enkele weken",
+      "entitiesOrQuantities": [
+        "aanvankelijk gevraagde leveringstermijn",
+        "enkele weken"
+      ],
+      "narrativeMeaning": "The initially requested delivery timeframe was several weeks.",
+      "qualification": null
+    },
+    {
+      "claimId": "c4",
+      "category": "scope_certainty",
+      "narrativeExcerpt": "levering binnen de aanvankelijk gevraagde termijn van enkele weken niet haalbaar werd geacht met behoud van een kwalitatieve gebruikersdienst",
+      "entitiesOrQuantities": [
+        "levering",
+        "aanvankelijk gevraagde termijn van enkele weken",
+        "kwalitatieve gebruikersdienst"
+      ],
+      "narrativeMeaning": "Delivery within the initially requested timeframe of several weeks was judged infeasible while maintaining a quality user service.",
+      "qualification": "Feasibility was judged, rather than stated as an objective impossibility."
+    },
+    {
+      "claimId": "c5",
+      "category": "temporal_relationship",
+      "narrativeExcerpt": "eerst de aanvragerservaring uitwerken",
+      "entitiesOrQuantities": [
+        "aanvragerservaring",
+        "werkwijze"
+      ],
+      "narrativeMeaning": "Working out the applicant experience came first in the described approach.",
+      "qualification": null
+    },
+    {
+      "claimId": "c6",
+      "category": "temporal_relationship",
+      "narrativeExcerpt": "later caseworkerwerk toevoegen",
+      "entitiesOrQuantities": [
+        "caseworkerwerk",
+        "werkwijze"
+      ],
+      "narrativeMeaning": "Caseworker work was added later in the described approach.",
+      "qualification": null
+    },
+    {
+      "claimId": "c7",
+      "category": "actor_object",
+      "narrativeExcerpt": "tijdens de private beta vaste tijd reserveren voor onderzoek en testen",
+      "entitiesOrQuantities": [
+        "private beta",
+        "vaste tijd",
+        "onderzoek",
+        "testen"
+      ],
+      "narrativeMeaning": "During the private beta, the team reserved fixed time for research and testing.",
+      "qualification": null
+    },
+    {
+      "claimId": "c8",
+      "category": "temporal_relationship",
+      "narrativeExcerpt": "De POA-refunddienst werd binnen twaalf weken publiek gelanceerd",
+      "entitiesOrQuantities": [
+        "POA-refunddienst",
+        "twaalf weken"
+      ],
+      "narrativeMeaning": "The POA refund service was publicly launched within twelve weeks.",
+      "qualification": null
+    },
+    {
+      "claimId": "c9",
+      "category": "numerical_scale",
+      "narrativeExcerpt": "de aanvankelijk gevraagde levering binnen enkele weken",
+      "entitiesOrQuantities": [
+        "aanvankelijk gevraagde levering",
+        "enkele weken"
+      ],
+      "narrativeMeaning": "The initially requested delivery timeframe was several weeks.",
+      "qualification": null
+    },
+    {
+      "claimId": "c10",
+      "category": "scope_certainty",
+      "narrativeExcerpt": "werd niet haalbaar geacht met behoud van een kwalitatieve gebruikersdienst",
+      "entitiesOrQuantities": [
+        "levering binnen enkele weken",
+        "kwalitatieve gebruikersdienst"
+      ],
+      "narrativeMeaning": "Delivery within the requested timeframe was judged infeasible while maintaining a quality user service.",
+      "qualification": "Feasibility was judged, rather than stated as an objective impossibility."
+    },
+    {
+      "claimId": "c11",
+      "category": "actor_object",
+      "narrativeExcerpt": "De aanvragerservaring werd eerst naar alpha gebracht",
+      "entitiesOrQuantities": [
+        "aanvragerservaring",
+        "alpha"
+      ],
+      "narrativeMeaning": "The applicant experience was first brought to alpha.",
+      "qualification": null
+    },
+    {
+      "claimId": "c12",
+      "category": "temporal_relationship",
+      "narrativeExcerpt": "plannen voor caseworkers kwamen later",
+      "entitiesOrQuantities": [
+        "plannen voor caseworkers"
+      ],
+      "narrativeMeaning": "Plans for caseworkers came later than bringing the applicant experience to alpha.",
+      "qualification": null
+    },
+    {
+      "claimId": "c13",
+      "category": "numerical_scale",
+      "narrativeExcerpt": "tweewekelijkse sprints",
+      "entitiesOrQuantities": [
+        "sprints",
+        "twee weken"
+      ],
+      "narrativeMeaning": "The sprints followed a two-week cadence.",
+      "qualification": null
+    },
+    {
+      "claimId": "c14",
+      "category": "temporal_relationship",
+      "narrativeExcerpt": "wisselden tweewekelijkse sprints af tussen aanvragen aannemen en tijd besteden aan testen, onderzoek en verwerking",
+      "entitiesOrQuantities": [
+        "tweewekelijkse sprints",
+        "aanvragen aannemen",
+        "testen",
+        "onderzoek",
+        "verwerking"
+      ],
+      "narrativeMeaning": "The two-week sprints alternated between accepting applications and spending time on testing, research, and processing.",
+      "qualification": null
+    },
+    {
+      "claimId": "c15",
+      "category": "actor_object",
+      "narrativeExcerpt": "aanvragen aannemen",
+      "entitiesOrQuantities": [
+        "aanvragen"
+      ],
+      "narrativeMeaning": "One activity in the alternating sprint rhythm was accepting applications.",
+      "qualification": null
+    },
+    {
+      "claimId": "c16",
+      "category": "actor_object",
+      "narrativeExcerpt": "testen",
+      "entitiesOrQuantities": [
+        "testen"
+      ],
+      "narrativeMeaning": "Testing was included in the time spent during the alternating sprints.",
+      "qualification": null
+    },
+    {
+      "claimId": "c17",
+      "category": "actor_object",
+      "narrativeExcerpt": "onderzoek",
+      "entitiesOrQuantities": [
+        "onderzoek"
+      ],
+      "narrativeMeaning": "Research was included in the time spent during the alternating sprints.",
+      "qualification": null
+    },
+    {
+      "claimId": "c18",
+      "category": "actor_object",
+      "narrativeExcerpt": "verwerking",
+      "entitiesOrQuantities": [
+        "verwerking"
+      ],
+      "narrativeMeaning": "Processing was included in the time spent during the alternating sprints.",
+      "qualification": null
+    },
+    {
+      "claimId": "c19",
+      "category": "temporal_relationship",
+      "narrativeExcerpt": "een volgorde waarin aanvragers eerst kwamen",
+      "entitiesOrQuantities": [
+        "aanvragers",
+        "werkwijze"
+      ],
+      "narrativeMeaning": "The described approach prioritized applicants first.",
+      "qualification": null
+    },
+    {
+      "claimId": "c20",
+      "category": "actor_object",
+      "narrativeExcerpt": "expliciet gereserveerde tijd voor onderzoek en testen",
+      "entitiesOrQuantities": [
+        "gereserveerde tijd",
+        "onderzoek",
+        "testen"
+      ],
+      "narrativeMeaning": "The described approach explicitly set aside time for research and testing.",
+      "qualification": null
+    }
+  ]
+}

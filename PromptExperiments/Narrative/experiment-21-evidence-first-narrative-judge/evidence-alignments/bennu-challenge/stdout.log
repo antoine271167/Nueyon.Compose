@@ -1,0 +1,132 @@
+{
+  "assessments": [
+    {
+      "claimId": "claim-001",
+      "sourceExcerpt": "the spacecraft released its sample capsule",
+      "sourceMeaning": "The spacecraft releases the capsule it carries, separating the two objects.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "The source's release statement supports the capsule separating from the spacecraft carrying it.",
+      "correction": null
+    },
+    {
+      "claimId": "claim-002",
+      "sourceExcerpt": "About 20 minutes after the spacecraft released its sample capsule above Earth’s atmosphere, it fired its engines",
+      "sourceMeaning": "About 20 minutes after releasing the capsule, the spacecraft fired its engines.",
+      "verdict": "CONTRADICTED",
+      "material": true,
+      "explanation": "The Narrative assigns the later engine firing to the capsule; the source assigns it to the spacecraft.",
+      "correction": "About 20 minutes after its release, the spacecraft fired its engines."
+    },
+    {
+      "claimId": "claim-003",
+      "sourceExcerpt": "released its sample capsule above Earth’s atmosphere",
+      "sourceMeaning": "The spacecraft released the capsule above Earth's atmosphere.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "The source explicitly places the capsule's release above Earth's atmosphere.",
+      "correction": null
+    },
+    {
+      "claimId": "claim-004",
+      "sourceExcerpt": "About 20 minutes after the spacecraft released its sample capsule above Earth’s atmosphere, it fired its engines",
+      "sourceMeaning": "The spacecraft, not the capsule, fired its engines.",
+      "verdict": "CONTRADICTED",
+      "material": true,
+      "explanation": "The source's pronoun refers to the spacecraft; the Narrative attributes the engine firing to the capsule.",
+      "correction": "The spacecraft fired its engines."
+    },
+    {
+      "claimId": "claim-005",
+      "sourceExcerpt": "to divert its trajectory away from Earth",
+      "sourceMeaning": "The spacecraft diverted its trajectory away from Earth.",
+      "verdict": "CONTRADICTED",
+      "material": true,
+      "explanation": "The source assigns the diversion to the spacecraft, while the Narrative assigns it to the capsule.",
+      "correction": "The spacecraft diverted its trajectory away from Earth."
+    },
+    {
+      "claimId": "claim-006",
+      "sourceExcerpt": "About 20 minutes after the spacecraft released its sample capsule above Earth’s atmosphere, it fired its engines to divert its trajectory away from Earth.",
+      "sourceMeaning": "The spacecraft changed trajectory about 20 minutes after releasing the capsule.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "The source explicitly places the spacecraft's trajectory change after the capsule's release.",
+      "correction": null
+    },
+    {
+      "claimId": "claim-007",
+      "sourceExcerpt": "the spacecraft released its sample capsule",
+      "sourceMeaning": "The capsule and spacecraft are distinct objects; the spacecraft releases the capsule.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "The source identifies the capsule as an object released by the spacecraft.",
+      "correction": null
+    },
+    {
+      "claimId": "claim-008",
+      "sourceExcerpt": "the spacecraft released the capsule",
+      "sourceMeaning": "The spacecraft releases the capsule.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "This matches the source's release statement.",
+      "correction": null
+    },
+    {
+      "claimId": "claim-009",
+      "sourceExcerpt": "released its sample capsule above Earth’s atmosphere",
+      "sourceMeaning": "The spacecraft released the capsule above Earth's atmosphere.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "The source explicitly gives the release location.",
+      "correction": null
+    },
+    {
+      "claimId": "claim-010",
+      "sourceExcerpt": "About 20 minutes after the spacecraft released its sample capsule above Earth’s atmosphere, it fired its engines",
+      "sourceMeaning": "The spacecraft fired its engines about 20 minutes after releasing the capsule.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "The approximate interval and event order match the source.",
+      "correction": null
+    },
+    {
+      "claimId": "claim-011",
+      "sourceExcerpt": "it fired its engines",
+      "sourceMeaning": "The spacecraft fired its engines.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "In the Narrative's context, “it” refers to the spacecraft, matching the source.",
+      "correction": null
+    },
+    {
+      "claimId": "claim-012",
+      "sourceExcerpt": "to divert its trajectory away from Earth",
+      "sourceMeaning": "The spacecraft diverted its trajectory away from Earth.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "In the Narrative's context, the spacecraft is the actor, matching the source.",
+      "correction": null
+    },
+    {
+      "claimId": "claim-013",
+      "sourceExcerpt": "About 20 minutes after the spacecraft released its sample capsule above Earth’s atmosphere, it fired its engines to divert its trajectory away from Earth.",
+      "sourceMeaning": "After release, the spacecraft fired its engines to divert away from Earth.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "The source supports the spacecraft changing trajectory after the release.",
+      "correction": null
+    },
+    {
+      "claimId": "claim-014",
+      "sourceExcerpt": "to divert its trajectory away from Earth",
+      "sourceMeaning": "The spacecraft's trajectory was diverted away from Earth; the source does not establish how that trajectory relates to the capsule's path.",
+      "verdict": "INSUFFICIENT_EVIDENCE",
+      "material": true,
+      "explanation": "The source gives the spacecraft's diversion direction but says nothing about whether its trajectory is distinct from the capsule's path.",
+      "correction": null
+    }
+  ],
+  "coverageQuestions": []
+}
+

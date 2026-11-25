@@ -1,0 +1,196 @@
+{
+  "claims": [
+    {
+      "claimId": "claim-001",
+      "category": "entity_identity",
+      "narrativeExcerpt": "Een hot spot is een plek op het bewegingsterrein van een luchthaven",
+      "entitiesOrQuantities": [
+        "hot spot",
+        "bewegingsterrein",
+        "luchthaven"
+      ],
+      "narrativeMeaning": "Een hot spot is een locatie op het bewegingsterrein van een luchthaven.",
+      "qualification": null
+    },
+    {
+      "claimId": "claim-002",
+      "category": "temporal_relationship",
+      "narrativeExcerpt": "in het verleden een botsing",
+      "entitiesOrQuantities": [
+        "hot spot",
+        "botsing"
+      ],
+      "narrativeMeaning": "Op de hot-spotlocatie heeft eerder een botsing plaatsgevonden.",
+      "qualification": "De botsing vond in het verleden plaats."
+    },
+    {
+      "claimId": "claim-003",
+      "category": "temporal_relationship",
+      "narrativeExcerpt": "runway incursion heeft plaatsgevonden",
+      "entitiesOrQuantities": [
+        "hot spot",
+        "runway incursion"
+      ],
+      "narrativeMeaning": "Op de hot-spotlocatie heeft eerder een runway incursion plaatsgevonden.",
+      "qualification": "De runway incursion vond in het verleden plaats."
+    },
+    {
+      "claimId": "claim-004",
+      "category": "scope_certainty",
+      "narrativeExcerpt": "waar zo’n risico bestaat",
+      "entitiesOrQuantities": [
+        "hot spot",
+        "botsing",
+        "runway incursion"
+      ],
+      "narrativeMeaning": "Een hot spot kan een locatie zijn waar risico bestaat op een botsing of runway incursion.",
+      "qualification": "Het gaat om potentieel risico, niet noodzakelijk om een eerder incident."
+    },
+    {
+      "claimId": "claim-005",
+      "category": "actor_object",
+      "narrativeExcerpt": "De FAA gebruikt sinds 19 mei 2022 gestandaardiseerde kaartvormen om twee soorten hot spots te onderscheiden",
+      "entitiesOrQuantities": [
+        "FAA",
+        "gestandaardiseerde kaartvormen",
+        "twee soorten hot spots"
+      ],
+      "narrativeMeaning": "De FAA gebruikt gestandaardiseerde kaartvormen om twee soorten hot spots van elkaar te onderscheiden.",
+      "qualification": null
+    },
+    {
+      "claimId": "claim-006",
+      "category": "temporal_relationship",
+      "narrativeExcerpt": "sinds 19 mei 2022",
+      "entitiesOrQuantities": [
+        "FAA",
+        "gestandaardiseerde kaartvormen",
+        "19 mei 2022"
+      ],
+      "narrativeMeaning": "De FAA gebruikt de gestandaardiseerde kaartvormen vanaf 19 mei 2022.",
+      "qualification": "De formulering geeft aan dat het gebruik vanaf die datum is begonnen en daarna voortduurt."
+    },
+    {
+      "claimId": "claim-007",
+      "category": "numerical_scale",
+      "narrativeExcerpt": "twee soorten hot spots",
+      "entitiesOrQuantities": [
+        "hot spots",
+        "twee soorten"
+      ],
+      "narrativeMeaning": "De standaard onderscheidt twee soorten hot spots.",
+      "qualification": null
+    },
+    {
+      "claimId": "claim-008",
+      "category": "entity_identity",
+      "narrativeExcerpt": "grondbewegingshotspots",
+      "entitiesOrQuantities": [
+        "grondbewegingshotspots"
+      ],
+      "narrativeMeaning": "Grondbewegingshotspots zijn een van de twee onderscheiden soorten hot spots.",
+      "qualification": null
+    },
+    {
+      "claimId": "claim-009",
+      "category": "entity_identity",
+      "narrativeExcerpt": "hotspots voor verkeerd baangebruik",
+      "entitiesOrQuantities": [
+        "hotspots voor verkeerd baangebruik"
+      ],
+      "narrativeMeaning": "Hotspots voor verkeerd baangebruik zijn een van de twee onderscheiden soorten hot spots.",
+      "qualification": null
+    },
+    {
+      "claimId": "claim-010",
+      "category": "entity_identity",
+      "narrativeExcerpt": "een hot spot een plek op het bewegingsterrein van een luchthaven is",
+      "entitiesOrQuantities": [
+        "hot spot",
+        "bewegingsterrein",
+        "luchthaven"
+      ],
+      "narrativeMeaning": "Een hot spot is een locatie op het bewegingsterrein van een luchthaven.",
+      "qualification": "Dit is de herhaalde definitie in de contextsectie."
+    },
+    {
+      "claimId": "claim-011",
+      "category": "temporal_relationship",
+      "narrativeExcerpt": "een voorgeschiedenis van, of potentieel risico op, een botsing",
+      "entitiesOrQuantities": [
+        "hot spot",
+        "botsing"
+      ],
+      "narrativeMeaning": "Een hot spot kan een voorgeschiedenis van een botsing hebben of een potentieel risico op een botsing betreffen.",
+      "qualification": "Dit is de herhaalde definitie in de contextsectie; voorgeschiedenis en potentieel risico zijn alternatieven."
+    },
+    {
+      "claimId": "claim-012",
+      "category": "temporal_relationship",
+      "narrativeExcerpt": "runway incursion",
+      "entitiesOrQuantities": [
+        "hot spot",
+        "runway incursion"
+      ],
+      "narrativeMeaning": "De herhaalde definitie noemt ook een runway incursion als gebeurtenis met een voorgeschiedenis of potentieel risico op de hot-spotlocatie.",
+      "qualification": "Dit is de herhaalde definitie in de contextsectie; voorgeschiedenis en potentieel risico zijn alternatieven."
+    },
+    {
+      "claimId": "claim-013",
+      "category": "temporal_relationship",
+      "narrativeExcerpt": "van kracht sinds 19 mei 2022",
+      "entitiesOrQuantities": [
+        "FAA-standaard",
+        "19 mei 2022"
+      ],
+      "narrativeMeaning": "De FAA-standaard is van kracht vanaf 19 mei 2022.",
+      "qualification": "Dit is de datum zoals die in de ontwikkelingssectie wordt vermeld."
+    },
+    {
+      "claimId": "claim-014",
+      "category": "actor_object",
+      "narrativeExcerpt": "een cirkel of ellips duidt een grondbewegingshotspot aan",
+      "entitiesOrQuantities": [
+        "cirkel",
+        "ellips",
+        "grondbewegingshotspot"
+      ],
+      "narrativeMeaning": "Een cirkel of ellips op de kaart staat voor een grondbewegingshotspot.",
+      "qualification": "De twee vormen zijn alternatieven."
+    },
+    {
+      "claimId": "claim-015",
+      "category": "actor_object",
+      "narrativeExcerpt": "een cilinder duidt een hotspot voor verkeerd baangebruik aan",
+      "entitiesOrQuantities": [
+        "cilinder",
+        "hotspot voor verkeerd baangebruik"
+      ],
+      "narrativeMeaning": "Een cilinder op de kaart staat voor een hotspot voor verkeerd baangebruik.",
+      "qualification": null
+    },
+    {
+      "claimId": "claim-016",
+      "category": "actor_object",
+      "narrativeExcerpt": "de kaartvormen de twee betekenissen van hot spots van elkaar onderscheiden",
+      "entitiesOrQuantities": [
+        "kaartvormen",
+        "twee betekenissen van hot spots"
+      ],
+      "narrativeMeaning": "De kaartvormen onderscheiden de twee betekenissen van hot spots van elkaar.",
+      "qualification": null
+    },
+    {
+      "claimId": "claim-017",
+      "category": "causality",
+      "narrativeExcerpt": "het genoemde doel is verwarring over de betekenis of weergave ervan te voorkomen",
+      "entitiesOrQuantities": [
+        "standaard",
+        "verwarring over betekenis",
+        "verwarring over weergave"
+      ],
+      "narrativeMeaning": "Het doel van de standaard is verwarring over de betekenis of weergave van hot spots te voorkomen.",
+      "qualification": "Dit is een genoemd doel, geen bewezen resultaat."
+    }
+  ]
+}

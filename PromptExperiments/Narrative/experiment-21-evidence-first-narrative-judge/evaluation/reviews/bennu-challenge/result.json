@@ -1,0 +1,20 @@
+{
+  "fidelity": "F2",
+  "findings": [
+    {
+      "severity": "F2",
+      "category": "actor_object",
+      "narrativeExcerpt": "About 20 minutes after its release above Earth’s atmosphere, the capsule fired its engines to divert away from Earth.",
+      "evidenceExcerpt": "About 20 minutes after the spacecraft released its sample capsule above Earth’s atmosphere, it fired its engines to divert its trajectory away from Earth.",
+      "explanation": "The narrative assigns the engine firing and trajectory change to the capsule, but the source assigns both actions to the spacecraft. This materially changes which object performs the key action."
+    }
+  ],
+  "editorial": [
+    3,
+    4,
+    3,
+    3,
+    4
+  ],
+  "rationale": "The handoff gives the story a clear direction and chronological progression, with specific timing and setting. The contradictory attribution undermines coherence and downstream usability. The spacecraft’s diversion provides a supported endpoint, but the source offers little detail beyond that event."
+}

@@ -1,0 +1,69 @@
+{
+  "assessments": [
+    {
+      "claimId": "claim-1",
+      "sourceExcerpt": "While each whole number increase in magnitude represents a tenfold increase in the measured amplitude, it represents an 32 times more energy release.",
+      "sourceMeaning": "Each whole-number magnitude increase corresponds to a tenfold increase in measured amplitude and a 32-fold increase in energy release.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "The source gives different multipliers for measured amplitude and energy release.",
+      "correction": null
+    },
+    {
+      "claimId": "claim-2",
+      "sourceExcerpt": "While each whole number increase in magnitude represents a tenfold increase in the measured amplitude, it represents an 32 times more energy release.",
+      "sourceMeaning": "Each whole-number magnitude increase corresponds to a tenfold increase in measured amplitude.",
+      "verdict": "CONTRADICTED",
+      "material": true,
+      "explanation": "The Narrative assigns the source's 32-fold energy multiplier to measured amplitude; the source says amplitude increases tenfold.",
+      "correction": "measured amplitude increases tenfold"
+    },
+    {
+      "claimId": "claim-3",
+      "sourceExcerpt": "While each whole number increase in magnitude represents a tenfold increase in the measured amplitude, it represents an 32 times more energy release.",
+      "sourceMeaning": "Each whole-number magnitude increase corresponds to a 32-fold increase in energy release.",
+      "verdict": "CONTRADICTED",
+      "material": true,
+      "explanation": "The Narrative assigns the source's tenfold amplitude multiplier to energy release; the source says energy release increases 32-fold.",
+      "correction": "energy release increases 32-fold"
+    },
+    {
+      "claimId": "claim-4",
+      "sourceExcerpt": "While each whole number increase in magnitude represents a tenfold increase in the measured amplitude, it represents an 32 times more energy release.",
+      "sourceMeaning": "Measured amplitude and energy release have different multipliers for a whole-number magnitude increase.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "The source assigns different multipliers to the two quantities, supporting the distinction that their multipliers are not interchangeable.",
+      "correction": null
+    },
+    {
+      "claimId": "claim-5",
+      "sourceExcerpt": "While each whole number increase in magnitude represents a tenfold increase in the measured amplitude, it represents an 32 times more energy release.",
+      "sourceMeaning": "Each whole-number magnitude increase corresponds to a tenfold increase in measured amplitude.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "This progression statement matches the source's amplitude multiplier.",
+      "correction": null
+    },
+    {
+      "claimId": "claim-6",
+      "sourceExcerpt": "While each whole number increase in magnitude represents a tenfold increase in the measured amplitude, it represents an 32 times more energy release.",
+      "sourceMeaning": "Each whole-number magnitude increase corresponds to a 32-fold increase in energy release.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "This progression statement matches the source's energy-release multiplier.",
+      "correction": null
+    },
+    {
+      "claimId": "claim-7",
+      "sourceExcerpt": "While each whole number increase in magnitude represents a tenfold increase in the measured amplitude, it represents an 32 times more energy release.",
+      "sourceMeaning": "The applicable multiplier differs between measured amplitude and energy release.",
+      "verdict": "SUPPORTED",
+      "material": false,
+      "explanation": "The source provides a distinct multiplier for each quantity.",
+      "correction": null
+    }
+  ],
+  "coverageQuestions": []
+}
+

@@ -1,0 +1,826 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "claimId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "category": {
+            "enum": [
+              "entity_identity",
+              "temporal_relationship",
+              "actor_object",
+              "causality",
+              "numerical_scale",
+              "scope_certainty"
+            ]
+          },
+          "narrativeExcerpt": {
+            "type": "string",
+            "minLength": 1
+          },
+          "entitiesOrQuantities": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "narrativeMeaning": {
+            "type": "string",
+            "minLength": 1
+          },
+          "qualification": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "claimId",
+          "category",
+          "narrativeExcerpt",
+          "entitiesOrQuantities",
+          "narrativeMeaning",
+          "qualification"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "assessments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "claimId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sourceExcerpt": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "sourceMeaning": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "verdict": {
+            "enum": [
+              "SUPPORTED",
+              "CONTRADICTED",
+              "INSUFFICIENT_EVIDENCE"
+            ]
+          },
+          "material": {
+            "type": "boolean"
+          },
+          "explanation": {
+            "type": "string",
+            "minLength": 1
+          },
+          "correction": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "claimId",
+          "sourceExcerpt",
+          "sourceMeaning",
+          "verdict",
+          "material",
+          "explanation",
+          "correction"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "coverageQuestions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "narrativeExcerpt": {
+            "type": "string",
+            "minLength": 1
+          },
+          "question": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "narrativeExcerpt",
+          "question"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "verdict": {
+      "enum": [
+        "GO",
+        "REVISE",
+        "UNCERTAIN"
+      ]
+    },
+    "blockers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "claimId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sourceExcerpt": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "sourceMeaning": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "verdict": {
+            "enum": [
+              "SUPPORTED",
+              "CONTRADICTED",
+              "INSUFFICIENT_EVIDENCE"
+            ]
+          },
+          "material": {
+            "type": "boolean"
+          },
+          "explanation": {
+            "type": "string",
+            "minLength": 1
+          },
+          "correction": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "claimId",
+          "sourceExcerpt",
+          "sourceMeaning",
+          "verdict",
+          "material",
+          "explanation",
+          "correction"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "unresolved": {
+      "type": "array",
+      "items": {
+        "anyOf": [
+          {
+            "type": "object",
+            "properties": {
+              "claimId": {
+                "type": "string",
+                "minLength": 1
+              },
+              "sourceExcerpt": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "sourceMeaning": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "verdict": {
+                "enum": [
+                  "SUPPORTED",
+                  "CONTRADICTED",
+                  "INSUFFICIENT_EVIDENCE"
+                ]
+              },
+              "material": {
+                "type": "boolean"
+              },
+              "explanation": {
+                "type": "string",
+                "minLength": 1
+              },
+              "correction": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            },
+            "required": [
+              "claimId",
+              "sourceExcerpt",
+              "sourceMeaning",
+              "verdict",
+              "material",
+              "explanation",
+              "correction"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "narrativeExcerpt": {
+                "type": "string",
+                "minLength": 1
+              },
+              "question": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "narrativeExcerpt",
+              "question"
+            ],
+            "additionalProperties": false
+          }
+        ]
+      }
+    }
+  },
+  "required": [
+    "claims",
+    "assessments",
+    "coverageQuestions",
+    "verdict",
+    "blockers",
+    "unresolved"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "extraction": {
+      "type": "object",
+      "properties": {
+        "claims": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "claimId": {
+                "type": "string",
+                "minLength": 1
+              },
+              "category": {
+                "enum": [
+                  "entity_identity",
+                  "temporal_relationship",
+                  "actor_object",
+                  "causality",
+                  "numerical_scale",
+                  "scope_certainty"
+                ]
+              },
+              "narrativeExcerpt": {
+                "type": "string",
+                "minLength": 1
+              },
+              "entitiesOrQuantities": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "narrativeMeaning": {
+                "type": "string",
+                "minLength": 1
+              },
+              "qualification": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            },
+            "required": [
+              "claimId",
+              "category",
+              "narrativeExcerpt",
+              "entitiesOrQuantities",
+              "narrativeMeaning",
+              "qualification"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 1
+        }
+      },
+      "required": [
+        "claims"
+      ],
+      "additionalProperties": false
+    },
+    "comparison": {
+      "type": "object",
+      "properties": {
+        "assessments": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "claimId": {
+                "type": "string",
+                "minLength": 1
+              },
+              "sourceExcerpt": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "sourceMeaning": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "verdict": {
+                "enum": [
+                  "SUPPORTED",
+                  "CONTRADICTED",
+                  "INSUFFICIENT_EVIDENCE"
+                ]
+              },
+              "material": {
+                "type": "boolean"
+              },
+              "explanation": {
+                "type": "string",
+                "minLength": 1
+              },
+              "correction": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            },
+            "required": [
+              "claimId",
+              "sourceExcerpt",
+              "sourceMeaning",
+              "verdict",
+              "material",
+              "explanation",
+              "correction"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "coverageQuestions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "narrativeExcerpt": {
+                "type": "string",
+                "minLength": 1
+              },
+              "question": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "narrativeExcerpt",
+              "question"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "assessments",
+        "coverageQuestions"
+      ],
+      "additionalProperties": false
+    },
+    "aggregate": {
+      "type": "object",
+      "properties": {
+        "claims": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "claimId": {
+                "type": "string",
+                "minLength": 1
+              },
+              "category": {
+                "enum": [
+                  "entity_identity",
+                  "temporal_relationship",
+                  "actor_object",
+                  "causality",
+                  "numerical_scale",
+                  "scope_certainty"
+                ]
+              },
+              "narrativeExcerpt": {
+                "type": "string",
+                "minLength": 1
+              },
+              "entitiesOrQuantities": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "narrativeMeaning": {
+                "type": "string",
+                "minLength": 1
+              },
+              "qualification": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            },
+            "required": [
+              "claimId",
+              "category",
+              "narrativeExcerpt",
+              "entitiesOrQuantities",
+              "narrativeMeaning",
+              "qualification"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "assessments": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "claimId": {
+                "type": "string",
+                "minLength": 1
+              },
+              "sourceExcerpt": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "sourceMeaning": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "verdict": {
+                "enum": [
+                  "SUPPORTED",
+                  "CONTRADICTED",
+                  "INSUFFICIENT_EVIDENCE"
+                ]
+              },
+              "material": {
+                "type": "boolean"
+              },
+              "explanation": {
+                "type": "string",
+                "minLength": 1
+              },
+              "correction": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            },
+            "required": [
+              "claimId",
+              "sourceExcerpt",
+              "sourceMeaning",
+              "verdict",
+              "material",
+              "explanation",
+              "correction"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "coverageQuestions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "narrativeExcerpt": {
+                "type": "string",
+                "minLength": 1
+              },
+              "question": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "narrativeExcerpt",
+              "question"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "verdict": {
+          "enum": [
+            "GO",
+            "REVISE",
+            "UNCERTAIN"
+          ]
+        },
+        "blockers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "claimId": {
+                "type": "string",
+                "minLength": 1
+              },
+              "sourceExcerpt": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "sourceMeaning": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "verdict": {
+                "enum": [
+                  "SUPPORTED",
+                  "CONTRADICTED",
+                  "INSUFFICIENT_EVIDENCE"
+                ]
+              },
+              "material": {
+                "type": "boolean"
+              },
+              "explanation": {
+                "type": "string",
+                "minLength": 1
+              },
+              "correction": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            },
+            "required": [
+              "claimId",
+              "sourceExcerpt",
+              "sourceMeaning",
+              "verdict",
+              "material",
+              "explanation",
+              "correction"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "unresolved": {
+          "type": "array",
+          "items": {
+            "anyOf": [
+              {
+                "type": "object",
+                "properties": {
+                  "claimId": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "sourceExcerpt": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "sourceMeaning": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "verdict": {
+                    "enum": [
+                      "SUPPORTED",
+                      "CONTRADICTED",
+                      "INSUFFICIENT_EVIDENCE"
+                    ]
+                  },
+                  "material": {
+                    "type": "boolean"
+                  },
+                  "explanation": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "correction": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  }
+                },
+                "required": [
+                  "claimId",
+                  "sourceExcerpt",
+                  "sourceMeaning",
+                  "verdict",
+                  "material",
+                  "explanation",
+                  "correction"
+                ],
+                "additionalProperties": false
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "narrativeExcerpt": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "question": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "narrativeExcerpt",
+                  "question"
+                ],
+                "additionalProperties": false
+              }
+            ]
+          }
+        }
+      },
+      "required": [
+        "claims",
+        "assessments",
+        "coverageQuestions",
+        "verdict",
+        "blockers",
+        "unresolved"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

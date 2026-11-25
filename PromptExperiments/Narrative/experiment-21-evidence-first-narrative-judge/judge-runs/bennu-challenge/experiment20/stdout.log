@@ -1,0 +1,21 @@
+{
+  "checks": {
+    "entity_identity": "No material issue: the narrative distinguishes the sample capsule from the spacecraft, consistent with the synthesis limit “Distinguish the capsule and the spacecraft.”",
+    "temporal_relationship": "The release precedes the engine firing by about 20 minutes, consistent with the source: “About 20 minutes after the spacecraft released its sample capsule above Earth’s atmosphere, it fired its engines to divert its trajectory away from Earth.”",
+    "actor_object": "Material misattribution: the narrative says “the capsule fired its engines,” but the source assigns the firing to the spacecraft.",
+    "causal_relationship": "No material issue: “to divert away from Earth” is consistent with the source’s “to divert its trajectory away from Earth.”",
+    "quantitative_meaning": "No material issue: “About 20 minutes” matches the source’s timing, with no changed scale or scope."
+  },
+  "verdict": "REVISE",
+  "blockers": [
+    {
+      "category": "actor_object",
+      "status": "confirmed",
+      "narrativeExcerpt": "About 20 minutes after its release above Earth’s atmosphere, the capsule fired its engines to divert away from Earth.",
+      "evidenceExcerpt": "About 20 minutes after the spacecraft released its sample capsule above Earth’s atmosphere, it fired its engines to divert its trajectory away from Earth.",
+      "problem": "The narrative assigns the engine firing and diversion to the capsule; the source assigns them to the spacecraft.",
+      "requiredCorrection": "Attribute the engine firing and diversion to the spacecraft, not the capsule."
+    }
+  ]
+}
+

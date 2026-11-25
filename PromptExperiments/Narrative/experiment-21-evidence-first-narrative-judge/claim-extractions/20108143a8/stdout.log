@@ -1,0 +1,165 @@
+{
+  "claims": [
+    {
+      "claimId": "claim-001",
+      "category": "temporal_relationship",
+      "narrativeExcerpt": "Het POA-refundteam lanceerde de dienst na twaalf weken",
+      "entitiesOrQuantities": ["POA-refundteam", "de dienst", "twaalf weken"],
+      "narrativeMeaning": "Het POA-refundteam lanceerde de dienst nadat twaalf weken waren verstreken.",
+      "qualification": null
+    },
+    {
+      "claimId": "claim-002",
+      "category": "numerical_scale",
+      "narrativeExcerpt": "de aanvankelijk gevraagde termijn van enkele weken",
+      "entitiesOrQuantities": ["aanvankelijk gevraagde termijn", "enkele weken"],
+      "narrativeMeaning": "De aanvankelijk gevraagde leveringstermijn bedroeg enkele weken.",
+      "qualification": "De duur is bij benadering; geen exact aantal weken wordt genoemd."
+    },
+    {
+      "claimId": "claim-003",
+      "category": "scope_certainty",
+      "narrativeExcerpt": "nadat het had geconcludeerd dat leveren binnen de aanvankelijk gevraagde termijn van enkele weken niet haalbaar was met behoud van een kwalitatieve gebruikersdienst",
+      "entitiesOrQuantities": ["POA-refundteam", "levering", "enkele weken", "kwalitatieve gebruikersdienst"],
+      "narrativeMeaning": "Het team concludeerde dat levering binnen de aanvankelijk gevraagde termijn niet haalbaar was als de gebruikersdienst kwalitatief moest blijven.",
+      "qualification": "Dit is de conclusie van het team, geen onafhankelijk bewezen vaststelling."
+    },
+    {
+      "claimId": "claim-004",
+      "category": "temporal_relationship",
+      "narrativeExcerpt": "De beschreven aanpak gaf eerst prioriteit aan de ervaring van aanvragers en werkte caseworkerplannen later uit",
+      "entitiesOrQuantities": ["beschreven aanpak", "ervaring van aanvragers", "caseworkerplannen"],
+      "narrativeMeaning": "De aanpak gaf eerst prioriteit aan de ervaring van aanvragers en werkte de plannen voor caseworkers later uit.",
+      "qualification": null
+    },
+    {
+      "claimId": "claim-005",
+      "category": "actor_object",
+      "narrativeExcerpt": "tijdens de private beta reserveerde het team vaste tijd voor onderzoek en testen",
+      "entitiesOrQuantities": ["team", "private beta", "vaste tijd", "onderzoek", "testen"],
+      "narrativeMeaning": "Tijdens de private beta reserveerde het team vaste tijd voor onderzoek en testen.",
+      "qualification": "De omvang van de gereserveerde tijd wordt niet vermeld."
+    },
+    {
+      "claimId": "claim-006",
+      "category": "temporal_relationship",
+      "narrativeExcerpt": "Het POA-refundteam lanceerde de dienst na twaalf weken",
+      "entitiesOrQuantities": ["POA-refundteam", "de dienst", "twaalf weken"],
+      "narrativeMeaning": "Het POA-refundteam lanceerde de dienst nadat twaalf weken waren verstreken.",
+      "qualification": null
+    },
+    {
+      "claimId": "claim-007",
+      "category": "numerical_scale",
+      "narrativeExcerpt": "de aanvankelijk gevraagde levering binnen enkele weken",
+      "entitiesOrQuantities": ["aanvankelijk gevraagde levering", "enkele weken"],
+      "narrativeMeaning": "De aanvankelijk gevraagde leveringstermijn bedroeg enkele weken.",
+      "qualification": "De duur is bij benadering; geen exact aantal weken wordt genoemd."
+    },
+    {
+      "claimId": "claim-008",
+      "category": "scope_certainty",
+      "narrativeExcerpt": "niet haalbaar geacht met behoud van een kwalitatieve gebruikersdienst",
+      "entitiesOrQuantities": ["levering binnen de aanvankelijk gevraagde termijn", "kwalitatieve gebruikersdienst"],
+      "narrativeMeaning": "Levering binnen de aanvankelijk gevraagde termijn werd niet haalbaar geacht onder de voorwaarde dat de gebruikersdienst kwalitatief bleef.",
+      "qualification": "Het betreft een inschatting van haalbaarheid."
+    },
+    {
+      "claimId": "claim-009",
+      "category": "temporal_relationship",
+      "narrativeExcerpt": "De aanvragerservaring kwam eerst",
+      "entitiesOrQuantities": ["aanvragerservaring"],
+      "narrativeMeaning": "De aanvragerservaring kreeg als eerste aandacht in de beschreven volgorde.",
+      "qualification": null
+    },
+    {
+      "claimId": "claim-010",
+      "category": "actor_object",
+      "narrativeExcerpt": "werd naar alpha gebracht",
+      "entitiesOrQuantities": ["aanvragerservaring", "alpha"],
+      "narrativeMeaning": "De aanvragerservaring werd naar alpha gebracht.",
+      "qualification": null
+    },
+    {
+      "claimId": "claim-011",
+      "category": "temporal_relationship",
+      "narrativeExcerpt": "plannen voor caseworkers volgden later",
+      "entitiesOrQuantities": ["plannen voor caseworkers", "aanvragerservaring"],
+      "narrativeMeaning": "De plannen voor caseworkers volgden later dan de aandacht voor de aanvragerservaring.",
+      "qualification": null
+    },
+    {
+      "claimId": "claim-012",
+      "category": "numerical_scale",
+      "narrativeExcerpt": "tweewekelijkse sprints",
+      "entitiesOrQuantities": ["sprints", "twee weken"],
+      "narrativeMeaning": "De sprints hadden een tweewekelijkse cyclus.",
+      "qualification": null
+    },
+    {
+      "claimId": "claim-013",
+      "category": "temporal_relationship",
+      "narrativeExcerpt": "wisselden tweewekelijkse sprints weken met aanvragen en onderzoek af met weken waarin inzendingen werden gepauzeerd voor testen, onderzoek en verwerking",
+      "entitiesOrQuantities": ["tweewekelijkse sprints", "weken met aanvragen en onderzoek", "weken waarin inzendingen werden gepauzeerd"],
+      "narrativeMeaning": "De sprintindeling wisselde weken met aanvragen en onderzoek af met weken waarin inzendingen werden gepauzeerd.",
+      "qualification": null
+    },
+    {
+      "claimId": "claim-014",
+      "category": "actor_object",
+      "narrativeExcerpt": "weken met aanvragen en onderzoek",
+      "entitiesOrQuantities": ["weken", "aanvragen", "onderzoek"],
+      "narrativeMeaning": "Een type week in de sprintindeling omvatte aanvragen en onderzoek.",
+      "qualification": null
+    },
+    {
+      "claimId": "claim-015",
+      "category": "actor_object",
+      "narrativeExcerpt": "weken waarin inzendingen werden gepauzeerd",
+      "entitiesOrQuantities": ["weken", "inzendingen"],
+      "narrativeMeaning": "In het andere type week werden inzendingen gepauzeerd.",
+      "qualification": null
+    },
+    {
+      "claimId": "claim-016",
+      "category": "actor_object",
+      "narrativeExcerpt": "voor testen, onderzoek en verwerking",
+      "entitiesOrQuantities": ["testen", "onderzoek", "verwerking"],
+      "narrativeMeaning": "De weken waarin inzendingen werden gepauzeerd waren bestemd voor testen, onderzoek en verwerking.",
+      "qualification": null
+    },
+    {
+      "claimId": "claim-017",
+      "category": "actor_object",
+      "narrativeExcerpt": "De beschreven aanpak combineerde een volgorde van gebruikersgroepen met gereserveerde onderzoeks- en testtijd.",
+      "entitiesOrQuantities": ["beschreven aanpak", "volgorde van gebruikersgroepen", "gereserveerde onderzoeks- en testtijd"],
+      "narrativeMeaning": "De aanpak combineerde een volgorde voor gebruikersgroepen met tijd die was gereserveerd voor onderzoek en testen.",
+      "qualification": null
+    },
+    {
+      "claimId": "claim-018",
+      "category": "actor_object",
+      "narrativeExcerpt": "De beschreven aanpak combineerde een volgorde van gebruikersgroepen",
+      "entitiesOrQuantities": ["beschreven aanpak", "gebruikersgroepen"],
+      "narrativeMeaning": "De aanpak hanteerde een volgorde voor gebruikersgroepen.",
+      "qualification": null
+    },
+    {
+      "claimId": "claim-019",
+      "category": "actor_object",
+      "narrativeExcerpt": "met gereserveerde onderzoeks- en testtijd",
+      "entitiesOrQuantities": ["gereserveerde tijd", "onderzoek", "testen"],
+      "narrativeMeaning": "De aanpak omvatte tijd die was gereserveerd voor onderzoek en testen.",
+      "qualification": null
+    },
+    {
+      "claimId": "claim-020",
+      "category": "scope_certainty",
+      "narrativeExcerpt": "als de manier waarop het team onder tijdsdruk werkte",
+      "entitiesOrQuantities": ["team", "tijdsdruk", "beschreven aanpak"],
+      "narrativeMeaning": "De aanpak beschrijft hoe het team onder tijdsdruk werkte.",
+      "qualification": null
+    }
+  ]
+}
+
