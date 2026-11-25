@@ -1,0 +1,22 @@
+﻿{
+  "decision": "NO-GO",
+  "recallTarget": 0.9,
+  "evaluation": {
+    "S": {
+      "precision": 0.6666666666666666,
+      "recall": 0.6666666666666666
+    },
+    "S+Source": {
+      "precision": 1,
+      "recall": 0.6666666666666666
+    }
+  },
+  "independentPositiveSubjects": 3,
+  "minimumForGo": 5,
+  "developmentMaterialDetections": {
+    "S": "0/2",
+    "S+Source": "0/2"
+  },
+  "promotion": false,
+  "nextStep": "Expand independent positive cases and source coverage before another validator experiment."
+}

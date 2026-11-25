@@ -1,0 +1,15 @@
+{
+  "status": "FAIL",
+  "findings": [
+    {
+      "category": "numerical_scale",
+      "severity": "material",
+      "narrativeExcerpt": "42,4 van de 605,6 quadriljoen Btu totale energieproductie",
+      "evidenceExcerpt": "42.4 out of 605.6 quadrillion Btu",
+      "explanation": "In het Nederlands is een quadriljoen 10^24, terwijl het Engelse quadrillion hier 10^15 betekent. De vertaling vergroot beide hoeveelheden daardoor met een factor van een miljard.",
+      "findingType": "contradiction",
+      "suggestedCorrection": "Gebruik de Nederlandse schaalterm biljard: 42,4 van de 605,6 biljard Btu."
+    }
+  ]
+}
+
