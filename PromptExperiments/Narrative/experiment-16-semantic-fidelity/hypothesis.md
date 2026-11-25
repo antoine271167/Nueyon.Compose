@@ -1,0 +1,9 @@
+# Semantic preservation hypothesis
+
+Wolf's Selected Idea directs attention to prey and scavengers. Synthesis calls the prey elk and identifies wolf kills as food for other animals. Translating elk as Dutch ?eland? changes the species to moose. ?Wolvendoding? also obscures who was killed. Webb's Idea lists commissioning milestones, and Synthesis gives deployment in week two and cooling in month one, while saying cooling continued across commissioning. The original source puts substantial temperature changes during sunshield deployment on days 3?10. Narrative's ?daarna? turns coarse, overlapping periods into exclusive phases. Wolf is introduced drift. Webb amplifies upstream timing ambiguity.
+
+The system already requires preserving supported actors, relationships, scope and certainty. The user prompt already distinguishes chronology from causation and asks for natural rewording. Neither gives an operational fallback for ambiguous translation or tells the model that story order does not establish event order. Experiment 13 coupled referent/relationship checks with an ending intervention. Experiment 14 centered the story on a chosen evidence anchor. B instead intervenes when each retained fact is rephrased. It leaves selection, story structure and ending instructions in place and adds no output requirements.
+
+With three independent repeats, B should avert at least two regression F2 output failures observed in concurrent A, with zero B F2 across regression and holdout cases, and pass the editorial safeguards in the protocol. A smaller change, a material holdout error, or an editorial regression can falsify promotion readiness.
+
+Source comparisons are from the archived Wolf and Webb source, exact CLI input and outputs in Experiments 13?14 and the output excerpts and second review in Experiment 15.

@@ -1,0 +1,13 @@
+diff --git "a/PromptExperiments\\Narrative\\experiment-16-semantic-fidelity\\A\\Narrative\\Narrative.user.prompt.md" "b/PromptExperiments\\Narrative\\experiment-16-semantic-fidelity\\B\\Narrative\\Narrative.user.prompt.md"
+index 2943eaa..56ca331 100644
+--- "a/PromptExperiments\\Narrative\\experiment-16-semantic-fidelity\\A\\Narrative\\Narrative.user.prompt.md"
++++ "b/PromptExperiments\\Narrative\\experiment-16-semantic-fidelity\\B\\Narrative\\Narrative.user.prompt.md"
+@@ -158,6 +158,8 @@ Do not reproduce the Synthesis in full. Do not include facts simply because they
+ 
+ The Synthesis defines the boundary of the story's factual meaning.
+ 
++When paraphrasing, first identify the referents and relationships carried by each fact you use, then express those same relationships in your own words. Keep the original term when a translation could name a different entity. Preserve who acted on what, which events overlap or follow one another, what is observed versus caused, and what any number counts or covers. Let the story order guide presentation only. If the timing or relationship is unspecified, use wording that leaves it open.
++
+ Do not invent or infer:
+ 
+ - Facts, events, experiences, or outcomes.

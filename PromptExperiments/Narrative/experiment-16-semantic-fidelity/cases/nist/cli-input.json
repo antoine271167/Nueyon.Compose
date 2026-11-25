@@ -1,0 +1,12 @@
+{
+  "selectedIdea": {
+    "title": "Wat een foutieve match vertelt over gezichtsherkenning",
+    "description": "Leg de twee soorten fouten uit en laat zien wat verschillen tussen algoritmen wel en niet zeggen.",
+    "audience": "Nieuwsgierige Nederlandstalige lezers zonder vakkennis.",
+    "rationale": "Een concreet onderscheid helpt de lezer de centrale vraag te begrijpen.",
+    "evidence": null
+  },
+  "synthesis": {
+    "content": "### Central insight\nLeg de twee soorten fouten uit en laat zien wat verschillen tussen algoritmen wel en niet zeggen.\n\n### Evidence\nNIST measured the performance of algorithms from different developers. In a false positive the software matches photos of different people; in a false negative it fails to match photos of the same person. For one-to-one matching, false positives often differed by demographic group and by algorithm; across the study performance varied widely. NIST did not test causes. The relation between performance and training data was raised as a possible topic for further study."
+  }
+}
