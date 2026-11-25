@@ -1,0 +1,15 @@
+{
+  "fidelity": "F2",
+  "findings": [
+    {
+      "severity": "F2",
+      "category": "quantitative_meaning",
+      "narrativeExcerpt": "42,4 van de 605,6 quadriljoen Btu totale energieproductie",
+      "evidenceExcerpt": "Across all energy production, renewables were 42.4 out of 605.6 quadrillion Btu, reported as 7%.",
+      "explanation": "The Dutch “quadriljoen” means 10^24, while the source’s English “quadrillion” means 10^15. This changes the stated quantities by a factor of a billion; standard Dutch terminology for 10^15 is “biljard.”"
+    }
+  ],
+  "editorial": [4, 4, 4, 4, 4],
+  "rationale": "The blueprint is aligned, clearly progressed, actionable, and ends on a source-supported distinction; the unit-scale translation error materially compromises its factual details."
+}
+

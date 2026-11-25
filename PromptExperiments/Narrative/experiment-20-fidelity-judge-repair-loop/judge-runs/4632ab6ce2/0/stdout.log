@@ -1,0 +1,21 @@
+{
+  "checks": {
+    "entity_identity": "Mismatch: “elandkalveren en stierelanden” renders the source’s “elk calves” and “bull elk” as a different animal; use “wapiti” for the Yellowstone species.",
+    "temporal_relationship": "“in 1995–2000 anders dan in 2001–2007” preserves the periods and order of the source’s comparison: “From 1995 to 2000” and “from 2001 to 2007.”",
+    "actor_object": "“Een gedode prooi voedt ook andere dieren” keeps wolves as the predators and other animals as beneficiaries, consistent with “Many other animals benefit from wolf kills.”",
+    "causal_relationship": "The narrative presents other predators, ungulate management, and weather as interacting circumstances, not a single cause; the source says changes “result from complex interactions among these factors.”",
+    "quantitative_meaning": "The narrative omits the exact percentages but preserves that prey composition differed between the two periods. The source specifies “elk calves comprised 50% of wolf prey, and bull elk comprised 25%” in 1995–2000; no conflicting quantity is asserted."
+  },
+  "verdict": "REVISE",
+  "blockers": [
+    {
+      "category": "entity_identity",
+      "status": "confirmed",
+      "narrativeExcerpt": "het aandeel elandkalveren en stierelanden onder de vroege-winterprooi",
+      "evidenceExcerpt": "From 1995 to 2000, in early winter, elk calves comprised 50% of wolf prey, and bull elk comprised 25%.",
+      "problem": "The narrative’s “eland” changes the species referent for the source’s Yellowstone elk.",
+      "requiredCorrection": "Use “wapiti” for “elk” (for example, “wapitikalfen en wapitistieren” and “gevolgen voor wapiti’s”)."
+    }
+  ]
+}
+

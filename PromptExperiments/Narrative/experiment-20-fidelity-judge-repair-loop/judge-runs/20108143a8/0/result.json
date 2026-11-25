@@ -1,0 +1,11 @@
+{
+  "checks": {
+    "entity_identity": "Geen materiële afwijking: Narrative excerpt “Het POA-refundteam lanceerde de dienst na twaalf weken”; decisive evidence “I’m the Product Manager for the Power of Attorney (POA) refunds service for the Office of the Public Guardian (OPG).” De referent POA-refunddienst is behouden.",
+    "temporal_relationship": "Geen materiële afwijking: Narrative excerpt “De aanvragerservaring kwam eerst en werd naar alpha gebracht; plannen voor caseworkers volgden later.”; decisive evidence “My team focused on the users applying for refunds first and this is what we took to the alpha assessment. Plans for the caseworker user came later.” De volgorde en de private-beta-weekindeling komen overeen.",
+    "actor_object": "Geen materiële afwijking: Narrative excerpt “tijdens de private beta reserveerde het team vaste tijd voor onderzoek en testen.”; decisive evidence “We achieved this by splitting our fortnightly sprints in two: testing, researching and accepting applications in the first week and then suspending submissions to concentrate on testing, researching and processing applications the second.” Het team blijft de actor en aanvragen, onderzoek, testen en verwerking behouden hun juiste rollen.",
+    "causal_relationship": "Geen materiële afwijking: Narrative excerpt “zonder ze als oorzaak van de lancering of als algemeen recept te presenteren.”; decisive evidence “The service has now been available for five weeks and has already received over 100k applications with 92.6% user satisfaction and an 80.2% completion rate.” De Narrative schrijft de resultaten niet causaal toe aan de beschreven keuzes.",
+    "quantitative_meaning": "Geen materiële afwijking: Narrative excerpt “lanceerde de dienst na twaalf weken” en “tweewekelijkse sprints”; decisive evidence “We passed alpha and beta Service Standard assessments and launched to the public in only 12 weeks.” en “splitting our fortnightly sprints in two”. De tijdsaanduidingen en schaal zijn correct weergegeven."
+  },
+  "verdict": "GO",
+  "blockers": []
+}

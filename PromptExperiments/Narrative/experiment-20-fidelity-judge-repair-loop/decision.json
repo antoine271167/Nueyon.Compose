@@ -1,0 +1,21 @@
+{
+  "decision": "NO-GO",
+  "gates": {
+    "knownTriage": false,
+    "repair": false,
+    "noNewF2": true,
+    "falsePositive": true,
+    "acceptedEditorial": true,
+    "editorialMean": true,
+    "noRecurringSilentCategory": false,
+    "directionDevelopment": true,
+    "artifactsAndExecution": false,
+    "benefitOnTwoSubjects": true,
+    "coverage": true
+  },
+  "silentCategories": {
+    "entity_identity": 3,
+    "temporal_relationship": 2
+  },
+  "action": "Keep the Judge experimental"
+}

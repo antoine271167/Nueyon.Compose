@@ -1,0 +1,1 @@
+Synthetische bron. Een wijkbibliotheek leende zes weken gereedschap uit. Er waren 80 uitleningen aan 46 unieke leners. Van de uitleningen vonden er 52 op zaterdag plaats. De proef was ook op woensdag toegankelijk, maar zaterdag was langer open. Het bestuur stelde na de proef een tweede proef voor, die nog niet was goedgekeurd.

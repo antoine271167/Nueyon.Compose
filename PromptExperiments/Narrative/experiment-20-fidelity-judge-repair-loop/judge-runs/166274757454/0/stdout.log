@@ -1,0 +1,12 @@
+{
+  "checks": {
+    "entity_identity": "Geen materiële afwijking. Narrative: “De POA-refunddienst werd binnen twaalf weken publiek gelanceerd”. Bron: “I’m the Product Manager for the Power of Attorney (POA) refunds service for the Office of the Public Guardian (OPG).” De dienst en afkorting zijn correct geïdentificeerd.",
+    "temporal_relationship": "Geen materiële afwijking. Narrative: “De aanvragerservaring werd eerst naar alpha gebracht en plannen voor caseworkers kwamen later.” Bron: “My team focused on the users applying for refunds first and this is what we took to the alpha assessment. Plans for the caseworker user came later.” De volgorde klopt.",
+    "actor_object": "Geen materiële afwijking. Narrative: “Tijdens de private beta wisselden tweewekelijkse sprints af tussen aanvragen aannemen en tijd besteden aan testen, onderzoek en verwerking.” Bron: “testing, researching and accepting applications in the first week and then suspending submissions to concentrate on testing, researching and processing applications the second.” Team, handelingen en aanvragen zijn correct weergegeven.",
+    "causal_relationship": "Geen materiële afwijking. Narrative: “zonder ze als bewezen oorzaak van de lancering of resultaten voor te stellen.” Synthesis: “De bron documenteert deze keuzes, maar bewijst niet dat ze de lancering of gerapporteerde resultaten veroorzaakten.” De beperking op causaliteit volgt de evidence.",
+    "quantitative_meaning": "Geen materiële afwijking. Narrative: “De POA-refunddienst werd binnen twaalf weken publiek gelanceerd” en “tweewekelijkse sprints”. Bron: “launched to the public in only 12 weeks” en “splitting our fortnightly sprints in two”. De tijdsduur en sprintcadans komen overeen."
+  },
+  "verdict": "GO",
+  "blockers": []
+}
+

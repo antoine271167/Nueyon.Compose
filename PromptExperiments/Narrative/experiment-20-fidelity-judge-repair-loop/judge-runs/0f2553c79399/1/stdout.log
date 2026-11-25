@@ -1,0 +1,12 @@
+{
+  "checks": {
+    "entity_identity": "Narrative: “Hernieuwbare bronnen leverden 32% van de elektriciteitsproductie” en “totale energieproductie”. Evidence: “renewable electricity production” en “Across all energy production, renewables were 42.4 out of 605.6 quadrillion Btu”. De referenten zijn consistent.",
+    "temporal_relationship": "Narrative: “wereldwijd in 2024”. Evidence: “The table for 2024 lists”. De periode komt overeen; de latere datavintage wordt niet als gebeurtenisdatum voorgesteld.",
+    "actor_object": "Narrative: “Hernieuwbare bronnen leverden 32% van de elektriciteitsproductie”. Evidence: “10.0 trillion kWh of renewable electricity production out of 30.7 trillion kWh of total electricity production”. De bron en het gemeten geheel zijn correct weergegeven.",
+    "causal_relationship": "Narrative: “het antwoord op de vraag naar het aandeel hernieuwbare energie verandert met de gekozen maatstaf.” Evidence: “Across all energy production, renewables were 42.4 out of 605.6 quadrillion Btu, reported as 7%.” De verschillende aandelen ondersteunen het onderscheid in maatstaf; er wordt geen sterkere oorzaak-gevolgclaim gemaakt.",
+    "quantitative_meaning": "Narrative: “10,0 van de 30,7 biljoen kWh elektriciteitsproductie (32%), tegenover 42,4 van de 605,6 biljard Btu totale energieproductie (7%)” en “Het aandeel van hernieuwbare energie in het totale energieverbruik was eveneens 7%.” Evidence: “10.0 trillion kWh of renewable electricity production out of 30.7 trillion kWh of total electricity production, reported as 32%” en “The renewable share of all energy consumption was also 7%.” Waarden, noemers en scope komen overeen."
+  },
+  "verdict": "GO",
+  "blockers": []
+}
+

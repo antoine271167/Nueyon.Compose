@@ -1,0 +1,21 @@
+{
+  "checks": {
+    "entity_identity": "Geen materiële afwijking. Narrative excerpt: \"Hernieuwbare bronnen leverden 32% van de elektriciteitsproductie, terwijl hun aandeel in de totale energieproductie 7% was.\" Evidence: \"10.0 trillion kWh of renewable electricity production\" and \"Across all energy production, renewables were 42.4 out of 605.6 quadrillion Btu\".",
+    "temporal_relationship": "Geen materiële afwijking. Narrative excerpt: \"Het aandeel hernieuwbare energie wereldwijd in 2024 hangt af van wat je meet.\" Evidence: \"The table for 2024 lists\".",
+    "actor_object": "Geen materiële afwijking. Narrative excerpt: \"Hernieuwbare bronnen leverden 32% van de elektriciteitsproductie\". Evidence: \"10.0 trillion kWh of renewable electricity production out of 30.7 trillion kWh of total electricity production, reported as 32%.\"",
+    "causal_relationship": "Geen materiële afwijking. Narrative excerpt: \"het antwoord op de vraag naar het aandeel hernieuwbare energie verandert met de gekozen maatstaf.\" Evidence: \"Across all energy production, renewables were 42.4 out of 605.6 quadrillion Btu, reported as 7%.\"",
+    "quantitative_meaning": "Materiële afwijking: de schaal van de eenheid voor totale energieproductie is verkeerd vertaald. Narrative excerpt: \"tegenover 42,4 van de 605,6 quadriljoen Btu totale energieproductie (7%).\" Evidence: \"renewables were 42.4 out of 605.6 quadrillion Btu, reported as 7%.\""
+  },
+  "verdict": "REVISE",
+  "blockers": [
+    {
+      "category": "quantitative_meaning",
+      "status": "confirmed",
+      "narrativeExcerpt": "tegenover 42,4 van de 605,6 quadriljoen Btu totale energieproductie (7%).",
+      "evidenceExcerpt": "renewables were 42.4 out of 605.6 quadrillion Btu, reported as 7%.",
+      "problem": "\"Quadriljoen\" betekent in het Nederlands 10^24, terwijl het Engelse \"quadrillion\" hier 10^15 betekent; de vertaling vergroot beide hoeveelheden met een factor van een miljard.",
+      "requiredCorrection": "Vervang \"quadriljoen Btu\" door \"biljard Btu\"."
+    }
+  ]
+}
+

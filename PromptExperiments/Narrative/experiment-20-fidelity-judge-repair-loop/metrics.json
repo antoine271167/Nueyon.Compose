@@ -1,0 +1,483 @@
+{
+  "all": {
+    "subjects": 16,
+    "count": 36,
+    "initial": {
+      "F0": 23,
+      "F1": 5,
+      "F2": 8
+    },
+    "final": {
+      "F0": 25,
+      "F1": 5,
+      "F2": 6
+    },
+    "detection": {
+      "truePositive": 2,
+      "revise": 3,
+      "precision": 0.6666666666666666,
+      "recall": 0.25,
+      "triageRecall": 0.25,
+      "knownDetected": 2,
+      "knownTriage": 0.25,
+      "knownTotal": 8,
+      "falsePositive": 0,
+      "falsePositiveRate": 0,
+      "uncertainty": 0,
+      "uncertaintyRate": 0,
+      "unmatchedRevise": [
+        "0d1f75b51c"
+      ],
+      "silentEscapes": [
+        "2ff42e2fa4",
+        "a027be447f28",
+        "166274757454",
+        "1ae0c9278f",
+        "2336788e5a"
+      ],
+      "unmatchedF2": [
+        "2ff42e2fa4",
+        "0d1f75b51c",
+        "a027be447f28",
+        "166274757454",
+        "1ae0c9278f",
+        "2336788e5a"
+      ]
+    },
+    "repair": {
+      "corrected": [
+        "0f2553c79399",
+        "4632ab6ce2"
+      ],
+      "correctedRate": 0.25,
+      "correctedAfterOne": 2,
+      "correctedAfterTwo": 0,
+      "improvedSubjects": [
+        "eia",
+        "wolf"
+      ],
+      "remainingF2": [
+        "2ff42e2fa4",
+        "0d1f75b51c",
+        "a027be447f28",
+        "166274757454",
+        "1ae0c9278f",
+        "2336788e5a"
+      ],
+      "introducedF2": [],
+      "unnecessaryRewrites": []
+    },
+    "editorial": {
+      "pairs": 36,
+      "before": 4.150000000000002,
+      "after": 4.161111111111112,
+      "meanChange": 0.01111111111111112,
+      "beforeAcceptable": 0.9722222222222222,
+      "afterAcceptable": 0.9722222222222222,
+      "acceptedPass": 0.9705882352941176,
+      "directionChange": 0.05555555555555555,
+      "developmentChange": 0
+    },
+    "operations": {
+      "calls": 66,
+      "byKind": {
+        "judge": 39,
+        "narrative": 24,
+        "repair": 3
+      },
+      "meanJudgeCalls": 1.0833333333333333,
+      "meanRepairCalls": 0.08333333333333333,
+      "outcomes": {
+        "accepted_after_one": 3,
+        "accepted_without_repair": 31,
+        "technical_failure": 2
+      },
+      "failures": [
+        {
+          "file": "judge-runs/bluecarbon-1/0/attempt.json",
+          "error": "invalid-json: Expected ',' or '}' after property value in JSON at position 1201 (line 6 column 225)"
+        },
+        {
+          "file": "judge-runs/bluecarbon-3/0/attempt.json",
+          "error": "invalid-json: Expected ',' or '}' after property value in JSON at position 186 (line 3 column 171)"
+        }
+      ],
+      "latencyByKind": {
+        "narrative": {
+          "count": 24,
+          "mean": 5.545000000000001,
+          "median": 5.207,
+          "p95": 7.42,
+          "max": 7.799
+        },
+        "judge": {
+          "count": 39,
+          "mean": 11.216743589743592,
+          "median": 10.26,
+          "p95": 15.943,
+          "max": 19.049
+        },
+        "repair": {
+          "count": 3,
+          "mean": 7.973333333333334,
+          "median": 7.527,
+          "p95": 8.985,
+          "max": 8.985
+        }
+      },
+      "addedLatency": {
+        "count": 36,
+        "mean": 12.81591666666667,
+        "median": 10.076,
+        "p95": 34.913000000000004,
+        "max": 41.620999999999995
+      }
+    }
+  },
+  "cohorts": {
+    "historical-regression": {
+      "subjects": 5,
+      "count": 8,
+      "initial": {
+        "F2": 8
+      },
+      "final": {
+        "F0": 2,
+        "F2": 6
+      },
+      "detection": {
+        "truePositive": 2,
+        "revise": 3,
+        "precision": 0.6666666666666666,
+        "recall": 0.25,
+        "triageRecall": 0.25,
+        "knownDetected": 2,
+        "knownTriage": 0.25,
+        "knownTotal": 8,
+        "falsePositive": 0,
+        "falsePositiveRate": null,
+        "uncertainty": 0,
+        "uncertaintyRate": 0,
+        "unmatchedRevise": [
+          "0d1f75b51c"
+        ],
+        "silentEscapes": [
+          "2ff42e2fa4",
+          "a027be447f28",
+          "166274757454",
+          "1ae0c9278f",
+          "2336788e5a"
+        ],
+        "unmatchedF2": [
+          "2ff42e2fa4",
+          "0d1f75b51c",
+          "a027be447f28",
+          "166274757454",
+          "1ae0c9278f",
+          "2336788e5a"
+        ]
+      },
+      "repair": {
+        "corrected": [
+          "0f2553c79399",
+          "4632ab6ce2"
+        ],
+        "correctedRate": 0.25,
+        "correctedAfterOne": 2,
+        "correctedAfterTwo": 0,
+        "improvedSubjects": [
+          "eia",
+          "wolf"
+        ],
+        "remainingF2": [
+          "2ff42e2fa4",
+          "0d1f75b51c",
+          "a027be447f28",
+          "166274757454",
+          "1ae0c9278f",
+          "2336788e5a"
+        ],
+        "introducedF2": [],
+        "unnecessaryRewrites": []
+      },
+      "editorial": {
+        "pairs": 8,
+        "before": 4.18125,
+        "after": 4.23125,
+        "meanChange": 0.050000000000000044,
+        "beforeAcceptable": 1,
+        "afterAcceptable": 1,
+        "acceptedPass": 1,
+        "directionChange": 0.25,
+        "developmentChange": 0
+      },
+      "operations": {
+        "calls": 14,
+        "byKind": {
+          "judge": 11,
+          "repair": 3
+        },
+        "meanJudgeCalls": 1.375,
+        "meanRepairCalls": 0.375,
+        "outcomes": {
+          "accepted_after_one": 3,
+          "accepted_without_repair": 5
+        },
+        "failures": [],
+        "latencyByKind": {
+          "narrative": {
+            "count": 0,
+            "mean": null,
+            "median": null,
+            "p95": null,
+            "max": null
+          },
+          "judge": {
+            "count": 11,
+            "mean": 13.784090909090908,
+            "median": 13.587,
+            "p95": 19.049,
+            "max": 19.049
+          },
+          "repair": {
+            "count": 3,
+            "mean": 7.973333333333334,
+            "median": 7.527,
+            "p95": 8.985,
+            "max": 8.985
+          }
+        },
+        "addedLatency": {
+          "count": 8,
+          "mean": 21.943125000000002,
+          "median": 14.592,
+          "p95": 41.620999999999995,
+          "max": 41.620999999999995
+        }
+      }
+    },
+    "historical-accepted": {
+      "subjects": 4,
+      "count": 4,
+      "initial": {
+        "F0": 3,
+        "F1": 1
+      },
+      "final": {
+        "F0": 3,
+        "F1": 1
+      },
+      "detection": {
+        "truePositive": 0,
+        "revise": 0,
+        "precision": null,
+        "recall": null,
+        "triageRecall": null,
+        "knownDetected": 0,
+        "knownTriage": null,
+        "knownTotal": 0,
+        "falsePositive": 0,
+        "falsePositiveRate": 0,
+        "uncertainty": 0,
+        "uncertaintyRate": 0,
+        "unmatchedRevise": [],
+        "silentEscapes": [],
+        "unmatchedF2": []
+      },
+      "repair": {
+        "corrected": [],
+        "correctedRate": null,
+        "correctedAfterOne": 0,
+        "correctedAfterTwo": 0,
+        "improvedSubjects": [],
+        "remainingF2": [],
+        "introducedF2": [],
+        "unnecessaryRewrites": []
+      },
+      "editorial": {
+        "pairs": 4,
+        "before": 4.15,
+        "after": 4.15,
+        "meanChange": 0,
+        "beforeAcceptable": 1,
+        "afterAcceptable": 1,
+        "acceptedPass": 1,
+        "directionChange": 0,
+        "developmentChange": 0
+      },
+      "operations": {
+        "calls": 4,
+        "byKind": {
+          "judge": 4
+        },
+        "meanJudgeCalls": 1,
+        "meanRepairCalls": 0,
+        "outcomes": {
+          "accepted_without_repair": 4
+        },
+        "failures": [],
+        "latencyByKind": {
+          "narrative": {
+            "count": 0,
+            "mean": null,
+            "median": null,
+            "p95": null,
+            "max": null
+          },
+          "judge": {
+            "count": 4,
+            "mean": 11.658249999999999,
+            "median": 10.875,
+            "p95": 14.134,
+            "max": 14.134
+          },
+          "repair": {
+            "count": 0,
+            "mean": null,
+            "median": null,
+            "p95": null,
+            "max": null
+          }
+        },
+        "addedLatency": {
+          "count": 4,
+          "mean": 11.658249999999999,
+          "median": 10.875,
+          "p95": 14.134,
+          "max": 14.134
+        }
+      }
+    },
+    "new": {
+      "subjects": 8,
+      "count": 24,
+      "initial": {
+        "F0": 20,
+        "F1": 4
+      },
+      "final": {
+        "F0": 20,
+        "F1": 4
+      },
+      "detection": {
+        "truePositive": 0,
+        "revise": 0,
+        "precision": null,
+        "recall": null,
+        "triageRecall": null,
+        "knownDetected": 0,
+        "knownTriage": null,
+        "knownTotal": 0,
+        "falsePositive": 0,
+        "falsePositiveRate": 0,
+        "uncertainty": 0,
+        "uncertaintyRate": 0,
+        "unmatchedRevise": [],
+        "silentEscapes": [],
+        "unmatchedF2": []
+      },
+      "repair": {
+        "corrected": [],
+        "correctedRate": null,
+        "correctedAfterOne": 0,
+        "correctedAfterTwo": 0,
+        "improvedSubjects": [],
+        "remainingF2": [],
+        "introducedF2": [],
+        "unnecessaryRewrites": []
+      },
+      "editorial": {
+        "pairs": 24,
+        "before": 4.139583333333334,
+        "after": 4.139583333333334,
+        "meanChange": 0,
+        "beforeAcceptable": 0.9583333333333334,
+        "afterAcceptable": 0.9583333333333334,
+        "acceptedPass": 0.9545454545454546,
+        "directionChange": 0,
+        "developmentChange": 0
+      },
+      "operations": {
+        "calls": 48,
+        "byKind": {
+          "judge": 24,
+          "narrative": 24
+        },
+        "meanJudgeCalls": 1,
+        "meanRepairCalls": 0,
+        "outcomes": {
+          "accepted_without_repair": 22,
+          "technical_failure": 2
+        },
+        "failures": [
+          {
+            "file": "judge-runs/bluecarbon-1/0/attempt.json",
+            "error": "invalid-json: Expected ',' or '}' after property value in JSON at position 1201 (line 6 column 225)"
+          },
+          {
+            "file": "judge-runs/bluecarbon-3/0/attempt.json",
+            "error": "invalid-json: Expected ',' or '}' after property value in JSON at position 186 (line 3 column 171)"
+          }
+        ],
+        "latencyByKind": {
+          "narrative": {
+            "count": 24,
+            "mean": 5.545000000000001,
+            "median": 5.207,
+            "p95": 7.42,
+            "max": 7.799
+          },
+          "judge": {
+            "count": 24,
+            "mean": 9.966458333333334,
+            "median": 9.685,
+            "p95": 11.483,
+            "max": 13.105
+          },
+          "repair": {
+            "count": 0,
+            "mean": null,
+            "median": null,
+            "p95": null,
+            "max": null
+          }
+        },
+        "addedLatency": {
+          "count": 24,
+          "mean": 9.966458333333334,
+          "median": 9.685,
+          "p95": 11.483,
+          "max": 13.105
+        }
+      }
+    }
+  },
+  "silentCategories": {
+    "entity_identity": 3,
+    "temporal_relationship": 2
+  },
+  "reviewCalls": {
+    "count": 48,
+    "failures": [
+      {
+        "file": "reviews/0d1f75b51c/0/first/attempt.json",
+        "kind": "review",
+        "started": "2026-11-25T19:47:41.692Z",
+        "seconds": 14.949,
+        "exitCode": 0,
+        "signal": null,
+        "error": "invalid-contract: Invalid finding or excerpt"
+      },
+      {
+        "file": "reviews/0f2553c79399/0/first/attempt.json",
+        "kind": "review",
+        "started": "2026-11-25T19:47:41.761Z",
+        "seconds": 22.192,
+        "exitCode": 0,
+        "signal": null,
+        "error": "invalid-contract: Invalid finding or excerpt"
+      }
+    ]
+  },
+  "totalModelInvocations": 114
+}

@@ -1,0 +1,1831 @@
+[
+  {
+    "id": "2ff42e2fa4",
+    "subject": "wolf",
+    "cohort": "historical-regression",
+    "loop": {
+      "id": "2ff42e2fa4",
+      "status": "accepted_without_repair",
+      "repairs": 0
+    },
+    "initial": {
+      "version": 0,
+      "fidelity": "F2",
+      "findings": [
+        {
+          "severity": "F2",
+          "category": "entity_identity",
+          "narrativeExcerpt": "elandkalveren en volwassen mannelijke elanden",
+          "evidenceExcerpt": "elk calves comprised 50% of wolf prey, and bull elk comprised 25%",
+          "explanation": "Yellowstone elk are wapiti. The Dutch word eland changes the prey species."
+        }
+      ],
+      "editorial": [
+        5,
+        4,
+        4,
+        4,
+        4
+      ],
+      "weighted": 4.25,
+      "pass": true,
+      "first": "F0",
+      "rationale": "De verhaallijn sluit nauw aan op de gekozen invalshoek en bouwt logisch op van sociaal gedrag en aaseters naar veranderende prooisamenstelling en meerdere samenhangende factoren. De blueprint is goed bruikbaar en eindigt binnen wat de bron ondersteunt; de concrete voorbeelden zijn relevant, al wordt de precieze richting van de verschuiving in de verhouding niet benoemd."
+    },
+    "last": {
+      "version": 0,
+      "fidelity": "F2",
+      "findings": [
+        {
+          "severity": "F2",
+          "category": "entity_identity",
+          "narrativeExcerpt": "elandkalveren en volwassen mannelijke elanden",
+          "evidenceExcerpt": "elk calves comprised 50% of wolf prey, and bull elk comprised 25%",
+          "explanation": "Yellowstone elk are wapiti. The Dutch word eland changes the prey species."
+        }
+      ],
+      "editorial": [
+        5,
+        4,
+        4,
+        4,
+        4
+      ],
+      "weighted": 4.25,
+      "pass": true,
+      "first": "F0",
+      "rationale": "De verhaallijn sluit nauw aan op de gekozen invalshoek en bouwt logisch op van sociaal gedrag en aaseters naar veranderende prooisamenstelling en meerdere samenhangende factoren. De blueprint is goed bruikbaar en eindigt binnen wat de bron ondersteunt; de concrete voorbeelden zijn relevant, al wordt de precieze richting van de verschuiving in de verhouding niet benoemd."
+    },
+    "confirmedMatch": false,
+    "uncertainMatch": false,
+    "introduced": []
+  },
+  {
+    "id": "0d1f75b51c",
+    "subject": "webb",
+    "cohort": "historical-regression",
+    "loop": {
+      "id": "0d1f75b51c",
+      "status": "accepted_after_one",
+      "repairs": 1
+    },
+    "initial": {
+      "version": 0,
+      "fidelity": "F2",
+      "findings": [
+        {
+          "severity": "F2",
+          "category": "temporal_relationship",
+          "narrativeExcerpt": "Daarna volgden weken van afkoeling",
+          "evidenceExcerpt": "Note the major changes in the area marked as days 3-10 when the sunshield was deployed.",
+          "explanation": "The brief sequences cooling after the telescope’s completed second-week deployment, while the source records cooling changes during deployment."
+        },
+        {
+          "severity": "F1",
+          "category": "other",
+          "narrativeExcerpt": "In de tweede week waren de spiegels uitgevouwen en vergrendeld",
+          "evidenceExcerpt": "During the second week after launch, we finished deploying the telescope structures by unfolding and latching the secondary mirror tripod and rotating and latching the two primary mirror wings.",
+          "explanation": "De bron zegt dat het statief van de secundaire spiegel werd uitgevouwen en dat de twee vleugels van de primaire spiegel werden gedraaid en vergrendeld. De formulering dat de spiegels zelf werden uitgevouwen is een kleine technische onnauwkeurigheid."
+        }
+      ],
+      "editorial": [
+        5,
+        4,
+        4,
+        5,
+        3
+      ],
+      "weighted": 4.3,
+      "pass": true,
+      "second": "F1",
+      "rationale": "De kern is helder en trouw aan de bron: het bereiken van de uitgevouwen configuratie wordt onderscheiden van de zes maanden durende ingebruikname en routinewetenschap vormt een onderbouwd eindpunt. De opbouw is logisch en bruikbaar als schrijfblauwdruk, maar bevat weinig specifieke details buiten de globale tijdlijn en inzet."
+    },
+    "last": {
+      "version": 1,
+      "fidelity": "F2",
+      "findings": [
+        {
+          "severity": "F2",
+          "category": "temporal_relationship",
+          "narrativeExcerpt": "Daarna volgden weken van afkoeling",
+          "evidenceExcerpt": "Note the major changes in the area marked as days 3-10 when the sunshield was deployed.",
+          "explanation": "Both independent review calls missed the remaining error. The source establishes cooling during deployment; the repaired brief still sequences it after the second-week deployment."
+        }
+      ],
+      "editorial": [
+        5,
+        4,
+        4,
+        5,
+        3
+      ],
+      "weighted": 4.3,
+      "pass": true,
+      "first": "F0",
+      "second": "F0",
+      "rationale": "De verhaallijn blijft helder gericht op het verschil tussen uitvouwing en routinewetenschap, met een logische tijdlijn en ondersteund eindpunt. Het is bruikbaar als blueprint, maar bevat weinig concrete details over de afkoeling, uitlijning en kalibratie."
+    },
+    "confirmedMatch": false,
+    "uncertainMatch": false,
+    "introduced": []
+  },
+  {
+    "id": "a027be447f28",
+    "subject": "faa",
+    "cohort": "historical-regression",
+    "loop": {
+      "id": "a027be447f28",
+      "status": "accepted_without_repair",
+      "repairs": 0
+    },
+    "initial": {
+      "version": 0,
+      "fidelity": "F2",
+      "findings": [
+        {
+          "severity": "F2",
+          "category": "entity_identity",
+          "narrativeExcerpt": "hotspots voor verkeerd baangebruik",
+          "evidenceExcerpt": "a cylinder marks a wrong surface hot spot",
+          "explanation": "The wording broadens wrong surface to improper use and narrows the surface to a runway. The named FAA category is central to the brief."
+        }
+      ],
+      "editorial": [
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "weighted": 4,
+      "pass": true,
+      "first": "F1",
+      "rationale": "De blueprint heeft een heldere lijn van context naar symbooluitleg en een ondersteund eindpunt. De concrete vormen en het doel geven een schrijver voldoende richting; de beperkte scope maakt het degelijk, maar niet bijzonder onderscheidend."
+    },
+    "last": {
+      "version": 0,
+      "fidelity": "F2",
+      "findings": [
+        {
+          "severity": "F2",
+          "category": "entity_identity",
+          "narrativeExcerpt": "hotspots voor verkeerd baangebruik",
+          "evidenceExcerpt": "a cylinder marks a wrong surface hot spot",
+          "explanation": "The wording broadens wrong surface to improper use and narrows the surface to a runway. The named FAA category is central to the brief."
+        }
+      ],
+      "editorial": [
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "weighted": 4,
+      "pass": true,
+      "first": "F1",
+      "rationale": "De blueprint heeft een heldere lijn van context naar symbooluitleg en een ondersteund eindpunt. De concrete vormen en het doel geven een schrijver voldoende richting; de beperkte scope maakt het degelijk, maar niet bijzonder onderscheidend."
+    },
+    "confirmedMatch": false,
+    "uncertainMatch": false,
+    "introduced": []
+  },
+  {
+    "id": "0f2553c79399",
+    "subject": "eia",
+    "cohort": "historical-regression",
+    "loop": {
+      "id": "0f2553c79399",
+      "status": "accepted_after_one",
+      "repairs": 1
+    },
+    "initial": {
+      "version": 0,
+      "fidelity": "F2",
+      "findings": [
+        {
+          "severity": "F2",
+          "category": "quantitative_meaning",
+          "narrativeExcerpt": "42,4 van de 605,6 quadriljoen Btu",
+          "evidenceExcerpt": "42.4 out of 605.6 quadrillion Btu",
+          "explanation": "English quadrillion is 10^15, whereas Dutch quadriljoen is 10^24. The Dutch scale term for 10^15 is biljard."
+        }
+      ],
+      "editorial": [
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "weighted": 4,
+      "pass": true,
+      "second": "F2",
+      "rationale": "The blueprint is aligned, clearly progressed, actionable, and ends on a source-supported distinction; the unit-scale translation error materially compromises its factual details."
+    },
+    "last": {
+      "version": 1,
+      "fidelity": "F0",
+      "findings": [],
+      "editorial": [
+        5,
+        4,
+        4,
+        4,
+        4
+      ],
+      "weighted": 4.25,
+      "pass": true,
+      "first": "F0",
+      "second": "F0",
+      "rationale": "De verhaallijn sluit helder aan op het gekozen idee en bouwt logisch op van de vraag naar de vergelijking en conclusie. De cijfers en het onderscheid tussen elektriciteitsproductie, totale energieproductie en energieverbruik zijn bruikbaar en onderbouwd. De invalshoek is duidelijk, maar niet bijzonder onderscheidend."
+    },
+    "confirmedMatch": true,
+    "uncertainMatch": false,
+    "introduced": []
+  },
+  {
+    "id": "166274757454",
+    "subject": "digital",
+    "cohort": "historical-regression",
+    "loop": {
+      "id": "166274757454",
+      "status": "accepted_without_repair",
+      "repairs": 0
+    },
+    "initial": {
+      "version": 0,
+      "fidelity": "F2",
+      "findings": [
+        {
+          "severity": "F2",
+          "category": "temporal_relationship",
+          "narrativeExcerpt": "wisselden tweewekelijkse sprints af tussen aanvragen aannemen en tijd besteden aan testen, onderzoek en verwerking",
+          "evidenceExcerpt": "testing, researching and accepting applications in the first week and then suspending submissions to concentrate on testing, researching and processing applications the second",
+          "explanation": "The alternation was between weeks within each sprint. Research and testing happened in both weeks."
+        }
+      ],
+      "editorial": [
+        5,
+        4,
+        4,
+        3,
+        3
+      ],
+      "weighted": 4,
+      "pass": true,
+      "first": "F1",
+      "rationale": "De richting is helder en trouw aan de geselecteerde aanpak, met een logische voortgang van context naar werkwijze. Het is een bruikbare, beknopte blauwdruk, maar het endpoint herhaalt vooral de aanpak en geeft geen uitkomst of concreet sluitend moment. De kernstappen zijn aanwezig, maar de sprintbeschrijving verliest een relevant detail en de gerapporteerde resultaten ontbreken."
+    },
+    "last": {
+      "version": 0,
+      "fidelity": "F2",
+      "findings": [
+        {
+          "severity": "F2",
+          "category": "temporal_relationship",
+          "narrativeExcerpt": "wisselden tweewekelijkse sprints af tussen aanvragen aannemen en tijd besteden aan testen, onderzoek en verwerking",
+          "evidenceExcerpt": "testing, researching and accepting applications in the first week and then suspending submissions to concentrate on testing, researching and processing applications the second",
+          "explanation": "The alternation was between weeks within each sprint. Research and testing happened in both weeks."
+        }
+      ],
+      "editorial": [
+        5,
+        4,
+        4,
+        3,
+        3
+      ],
+      "weighted": 4,
+      "pass": true,
+      "first": "F1",
+      "rationale": "De richting is helder en trouw aan de geselecteerde aanpak, met een logische voortgang van context naar werkwijze. Het is een bruikbare, beknopte blauwdruk, maar het endpoint herhaalt vooral de aanpak en geeft geen uitkomst of concreet sluitend moment. De kernstappen zijn aanwezig, maar de sprintbeschrijving verliest een relevant detail en de gerapporteerde resultaten ontbreken."
+    },
+    "confirmedMatch": false,
+    "uncertainMatch": false,
+    "introduced": []
+  },
+  {
+    "id": "1ae0c9278f",
+    "subject": "wolf",
+    "cohort": "historical-regression",
+    "loop": {
+      "id": "1ae0c9278f",
+      "status": "accepted_without_repair",
+      "repairs": 0
+    },
+    "initial": {
+      "version": 0,
+      "fidelity": "F2",
+      "findings": [
+        {
+          "severity": "F2",
+          "category": "entity_identity",
+          "narrativeExcerpt": "volwassen mannelijke elanden",
+          "evidenceExcerpt": "elk calves comprised 50% of wolf prey, and bull elk comprised 25%",
+          "explanation": "Yellowstone elk are wapiti. The Dutch word eland changes the prey species."
+        }
+      ],
+      "editorial": [
+        5,
+        4,
+        4,
+        4,
+        4
+      ],
+      "weighted": 4.25,
+      "pass": true,
+      "first": "F0",
+      "rationale": "The narrative coherently develops the selected idea from social behavior and food relationships to changing prey composition and interacting factors. Its endpoint is supported and avoids claiming that wolves alone determine ecosystem outcomes. The blueprint gives a writer clear direction and relevant examples, though it could be more distinctive with the specific prey proportions or examples of weather effects."
+    },
+    "last": {
+      "version": 0,
+      "fidelity": "F2",
+      "findings": [
+        {
+          "severity": "F2",
+          "category": "entity_identity",
+          "narrativeExcerpt": "volwassen mannelijke elanden",
+          "evidenceExcerpt": "elk calves comprised 50% of wolf prey, and bull elk comprised 25%",
+          "explanation": "Yellowstone elk are wapiti. The Dutch word eland changes the prey species."
+        }
+      ],
+      "editorial": [
+        5,
+        4,
+        4,
+        4,
+        4
+      ],
+      "weighted": 4.25,
+      "pass": true,
+      "first": "F0",
+      "rationale": "The narrative coherently develops the selected idea from social behavior and food relationships to changing prey composition and interacting factors. Its endpoint is supported and avoids claiming that wolves alone determine ecosystem outcomes. The blueprint gives a writer clear direction and relevant examples, though it could be more distinctive with the specific prey proportions or examples of weather effects."
+    },
+    "confirmedMatch": false,
+    "uncertainMatch": false,
+    "introduced": []
+  },
+  {
+    "id": "2336788e5a",
+    "subject": "webb",
+    "cohort": "historical-regression",
+    "loop": {
+      "id": "2336788e5a",
+      "status": "accepted_without_repair",
+      "repairs": 0
+    },
+    "initial": {
+      "version": 0,
+      "fidelity": "F2",
+      "findings": [
+        {
+          "severity": "F2",
+          "category": "temporal_relationship",
+          "narrativeExcerpt": "daarna volgden maanden van afkoeling",
+          "evidenceExcerpt": "Note the major changes in the area marked as days 3-10 when the sunshield was deployed.",
+          "explanation": "The brief places cooling after completed deployment. The source records cooling changes during sunshield deployment."
+        }
+      ],
+      "editorial": [
+        5,
+        5,
+        4,
+        5,
+        4
+      ],
+      "weighted": 4.65,
+      "pass": true,
+      "first": "F0",
+      "rationale": "De verhaallijn houdt de kern helder: uitvouwing in week twee was een mijlpaal, niet het einde van de ingebruikname. De chronologie bouwt logisch op naar routinewetenschap na zes maanden en het endpoint is onderbouwd. Het plan biedt duidelijke richting en relevante details, maar blijft beknopt en werkt de specifieke stappen of kalibratie niet verder uit."
+    },
+    "last": {
+      "version": 0,
+      "fidelity": "F2",
+      "findings": [
+        {
+          "severity": "F2",
+          "category": "temporal_relationship",
+          "narrativeExcerpt": "daarna volgden maanden van afkoeling",
+          "evidenceExcerpt": "Note the major changes in the area marked as days 3-10 when the sunshield was deployed.",
+          "explanation": "The brief places cooling after completed deployment. The source records cooling changes during sunshield deployment."
+        }
+      ],
+      "editorial": [
+        5,
+        5,
+        4,
+        5,
+        4
+      ],
+      "weighted": 4.65,
+      "pass": true,
+      "first": "F0",
+      "rationale": "De verhaallijn houdt de kern helder: uitvouwing in week twee was een mijlpaal, niet het einde van de ingebruikname. De chronologie bouwt logisch op naar routinewetenschap na zes maanden en het endpoint is onderbouwd. Het plan biedt duidelijke richting en relevante details, maar blijft beknopt en werkt de specifieke stappen of kalibratie niet verder uit."
+    },
+    "confirmedMatch": false,
+    "uncertainMatch": false,
+    "introduced": []
+  },
+  {
+    "id": "4632ab6ce2",
+    "subject": "wolf",
+    "cohort": "historical-regression",
+    "loop": {
+      "id": "4632ab6ce2",
+      "status": "accepted_after_one",
+      "repairs": 1
+    },
+    "initial": {
+      "version": 0,
+      "fidelity": "F2",
+      "findings": [
+        {
+          "severity": "F2",
+          "category": "entity_identity",
+          "narrativeExcerpt": "elandkalveren en stierelanden",
+          "evidenceExcerpt": "elk calves comprised 50% of wolf prey, and bull elk comprised 25%",
+          "explanation": "Yellowstone elk are wapiti. The Dutch word eland changes the prey species."
+        }
+      ],
+      "editorial": [
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "weighted": 4,
+      "pass": true,
+      "first": "F0",
+      "second": "F0",
+      "rationale": "De verhaallijn is coherent en goed bruikbaar: sociaal gedrag en aaseters leiden naar een concrete verschuiving in prooisamenstelling en vervolgens naar de meerdere factoren die predatie beïnvloeden. De endpoint wordt door de bron gedragen en vermijdt een monocausale ecosysteemclaim. De details zijn relevant, al blijft de omkering in de verhouding tussen kalveren en stierelanden minder specifiek dan de bron."
+    },
+    "last": {
+      "version": 1,
+      "fidelity": "F0",
+      "findings": [],
+      "editorial": [
+        5,
+        4,
+        4,
+        4,
+        3
+      ],
+      "weighted": 4.15,
+      "pass": true,
+      "first": "F0",
+      "second": "F0",
+      "rationale": "De richting sluit nauw aan bij de bron en de opbouw verbindt sociaal gedrag, voedselrelaties en veranderende predatie logisch. Het blueprint biedt een bruikbaar, brongetrouw eindpunt. De concrete voorbeelden helpen, maar de prooiverschuiving blijft minder precies dan de bron: de omkering van de aandelen en de bijbehorende percentages ontbreken."
+    },
+    "confirmedMatch": true,
+    "uncertainMatch": false,
+    "introduced": []
+  },
+  {
+    "id": "20108143a8",
+    "subject": "digital",
+    "cohort": "historical-accepted",
+    "loop": {
+      "id": "20108143a8",
+      "status": "accepted_without_repair",
+      "repairs": 0
+    },
+    "initial": {
+      "version": 0,
+      "fidelity": "F0",
+      "findings": [],
+      "editorial": [
+        5,
+        4,
+        5,
+        4,
+        4
+      ],
+      "weighted": 4.5,
+      "pass": true,
+      "first": "F0",
+      "rationale": "De verhaallijn sluit nauw aan op de gekozen invalshoek en bouwt logisch op van tijdsdruk naar gebruikersvolgorde en sprintindeling. De concrete werkwijzen geven een schrijver bruikbare richting; het endpoint blijft terecht voorzichtig over causaliteit, al is het vooral een samenvatting van de aanpak en geen afzonderlijke uitkomst."
+    },
+    "last": {
+      "version": 0,
+      "fidelity": "F0",
+      "findings": [],
+      "editorial": [
+        5,
+        4,
+        5,
+        4,
+        4
+      ],
+      "weighted": 4.5,
+      "pass": true,
+      "first": "F0",
+      "rationale": "De verhaallijn sluit nauw aan op de gekozen invalshoek en bouwt logisch op van tijdsdruk naar gebruikersvolgorde en sprintindeling. De concrete werkwijzen geven een schrijver bruikbare richting; het endpoint blijft terecht voorzichtig over causaliteit, al is het vooral een samenvatting van de aanpak en geen afzonderlijke uitkomst."
+    },
+    "confirmedMatch": false,
+    "uncertainMatch": false,
+    "introduced": []
+  },
+  {
+    "id": "4071526efe",
+    "subject": "cooling",
+    "cohort": "historical-accepted",
+    "loop": {
+      "id": "4071526efe",
+      "status": "accepted_without_repair",
+      "repairs": 0
+    },
+    "initial": {
+      "version": 0,
+      "fidelity": "F0",
+      "findings": [],
+      "editorial": [
+        5,
+        4,
+        4,
+        4,
+        4
+      ],
+      "weighted": 4.25,
+      "pass": true,
+      "first": "F0",
+      "rationale": "De narrative blijft trouw aan de bron: de vergelijkbare metingen zijn die na verplaatsing van de sensor, het verschil betreft twee binnenplaatsen op vier heldere middagen en de tekst vermijdt een bewezen causale claim. De opbouw sluit goed aan op de gekozen lijn en eindigt bij een onderbouwde, beperkte conclusie. De concrete meetdetails maken het bruikbaar als schrijfblauwdruk."
+    },
+    "last": {
+      "version": 0,
+      "fidelity": "F0",
+      "findings": [],
+      "editorial": [
+        5,
+        4,
+        4,
+        4,
+        4
+      ],
+      "weighted": 4.25,
+      "pass": true,
+      "first": "F0",
+      "rationale": "De narrative blijft trouw aan de bron: de vergelijkbare metingen zijn die na verplaatsing van de sensor, het verschil betreft twee binnenplaatsen op vier heldere middagen en de tekst vermijdt een bewezen causale claim. De opbouw sluit goed aan op de gekozen lijn en eindigt bij een onderbouwde, beperkte conclusie. De concrete meetdetails maken het bruikbaar als schrijfblauwdruk."
+    },
+    "confirmedMatch": false,
+    "uncertainMatch": false,
+    "introduced": []
+  },
+  {
+    "id": "42e705d60d",
+    "subject": "lowell",
+    "cohort": "historical-accepted",
+    "loop": {
+      "id": "42e705d60d",
+      "status": "accepted_without_repair",
+      "repairs": 0
+    },
+    "initial": {
+      "version": 0,
+      "fidelity": "F0",
+      "findings": [],
+      "editorial": [
+        5,
+        4,
+        4,
+        4,
+        4
+      ],
+      "weighted": 4.25,
+      "pass": true,
+      "first": "F0",
+      "rationale": "The narrative preserves the source’s meaning, chronology, actors, and uncertainty, including the distinction between heritage efforts and other contributions to recovery. Its progression from decline through redevelopment to downturn is coherent and usable, with a supported endpoint. Relevant details are present, though the blueprint could be more specific with figures and dates."
+    },
+    "last": {
+      "version": 0,
+      "fidelity": "F0",
+      "findings": [],
+      "editorial": [
+        5,
+        4,
+        4,
+        4,
+        4
+      ],
+      "weighted": 4.25,
+      "pass": true,
+      "first": "F0",
+      "rationale": "The narrative preserves the source’s meaning, chronology, actors, and uncertainty, including the distinction between heritage efforts and other contributions to recovery. Its progression from decline through redevelopment to downturn is coherent and usable, with a supported endpoint. Relevant details are present, though the blueprint could be more specific with figures and dates."
+    },
+    "confirmedMatch": false,
+    "uncertainMatch": false,
+    "introduced": []
+  },
+  {
+    "id": "4b4216205f",
+    "subject": "library",
+    "cohort": "historical-accepted",
+    "loop": {
+      "id": "4b4216205f",
+      "status": "accepted_without_repair",
+      "repairs": 0
+    },
+    "initial": {
+      "version": 0,
+      "fidelity": "F1",
+      "findings": [
+        {
+          "severity": "F1",
+          "category": "quantitative_meaning",
+          "narrativeExcerpt": "De uitleningen waren geconcentreerd op zaterdag: 52 van de 80 uitleningen vonden toen plaats, verdeeld over 46 unieke leners.",
+          "evidenceExcerpt": "Er waren 80 uitleningen aan 46 unieke leners. Van de uitleningen vonden er 52 op zaterdag plaats.",
+          "explanation": "The source gives 46 unique borrowers for all 80 loans, but does not say how many borrowers made the 52 Saturday loans. The sentence can imply those 46 borrowers account for the Saturday loans, slightly narrowing the source's scope."
+        }
+      ],
+      "editorial": [
+        4,
+        3,
+        4,
+        3,
+        4
+      ],
+      "weighted": 3.6,
+      "pass": true,
+      "first": "F1",
+      "second": "F2",
+      "rationale": "The blueprint is aligned, coherent, and evidence-specific, with a clear progression from trial context to Saturday usage and its interpretive limit. Its endpoint is supported but modest: it does not include the board's proposed second trial, and the development is concise rather than distinctive. The borrower phrasing introduces a minor scope ambiguity."
+    },
+    "last": {
+      "version": 0,
+      "fidelity": "F1",
+      "findings": [
+        {
+          "severity": "F1",
+          "category": "quantitative_meaning",
+          "narrativeExcerpt": "De uitleningen waren geconcentreerd op zaterdag: 52 van de 80 uitleningen vonden toen plaats, verdeeld over 46 unieke leners.",
+          "evidenceExcerpt": "Er waren 80 uitleningen aan 46 unieke leners. Van de uitleningen vonden er 52 op zaterdag plaats.",
+          "explanation": "The source gives 46 unique borrowers for all 80 loans, but does not say how many borrowers made the 52 Saturday loans. The sentence can imply those 46 borrowers account for the Saturday loans, slightly narrowing the source's scope."
+        }
+      ],
+      "editorial": [
+        4,
+        3,
+        4,
+        3,
+        4
+      ],
+      "weighted": 3.6,
+      "pass": true,
+      "first": "F1",
+      "second": "F2",
+      "rationale": "The blueprint is aligned, coherent, and evidence-specific, with a clear progression from trial context to Saturday usage and its interpretive limit. Its endpoint is supported but modest: it does not include the board's proposed second trial, and the development is concise rather than distinctive. The borrower phrasing introduces a minor scope ambiguity."
+    },
+    "confirmedMatch": false,
+    "uncertainMatch": false,
+    "introduced": []
+  },
+  {
+    "id": "mangroves-1",
+    "subject": "mangroves",
+    "cohort": "new",
+    "loop": {
+      "id": "mangroves-1",
+      "status": "accepted_without_repair",
+      "repairs": 0
+    },
+    "initial": {
+      "version": 0,
+      "fidelity": "F0",
+      "findings": [],
+      "editorial": [
+        5,
+        4,
+        4,
+        3,
+        4
+      ],
+      "weighted": 4.1,
+      "pass": true,
+      "first": "F0",
+      "rationale": "The narrative preserves the source’s distinctions between many forests with prop roots and most mangroves flooded at least twice daily, and accurately conveys how roots slow tidal water and help sediment build up. Its direction is clear and aligned; the progression is logical, though the endpoint largely restates the central idea rather than adding a stronger resolution."
+    },
+    "last": {
+      "version": 0,
+      "fidelity": "F0",
+      "findings": [],
+      "editorial": [
+        5,
+        4,
+        4,
+        3,
+        4
+      ],
+      "weighted": 4.1,
+      "pass": true,
+      "first": "F0",
+      "rationale": "The narrative preserves the source’s distinctions between many forests with prop roots and most mangroves flooded at least twice daily, and accurately conveys how roots slow tidal water and help sediment build up. Its direction is clear and aligned; the progression is logical, though the endpoint largely restates the central idea rather than adding a stronger resolution."
+    },
+    "confirmedMatch": false,
+    "uncertainMatch": false,
+    "introduced": []
+  },
+  {
+    "id": "ripcurrent-1",
+    "subject": "ripcurrent",
+    "cohort": "new",
+    "loop": {
+      "id": "ripcurrent-1",
+      "status": "accepted_without_repair",
+      "repairs": 0
+    },
+    "initial": {
+      "version": 0,
+      "fidelity": "F0",
+      "findings": [],
+      "editorial": [
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "weighted": 4,
+      "pass": true,
+      "first": "F0",
+      "rationale": "The blueprint stays focused on distinguishing the two terms, progresses clearly from confusion to locations and contrasts, and gives a supported endpoint. It includes relevant locations and flow characteristics; “certain mouths” is broad but does not materially alter the source meaning."
+    },
+    "last": {
+      "version": 0,
+      "fidelity": "F0",
+      "findings": [],
+      "editorial": [
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "weighted": 4,
+      "pass": true,
+      "first": "F0",
+      "rationale": "The blueprint stays focused on distinguishing the two terms, progresses clearly from confusion to locations and contrasts, and gives a supported endpoint. It includes relevant locations and flow characteristics; “certain mouths” is broad but does not materially alter the source meaning."
+    },
+    "confirmedMatch": false,
+    "uncertainMatch": false,
+    "introduced": []
+  },
+  {
+    "id": "stormsurge-stormtide-1",
+    "subject": "stormsurge-stormtide",
+    "cohort": "new",
+    "loop": {
+      "id": "stormsurge-stormtide-1",
+      "status": "accepted_without_repair",
+      "repairs": 0
+    },
+    "initial": {
+      "version": 0,
+      "fidelity": "F0",
+      "findings": [],
+      "editorial": [
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "weighted": 4,
+      "pass": true,
+      "first": "F0",
+      "rationale": "The blueprint aligns with the selected idea and source, progresses clearly from observed level to surge and storm tide, and gives a writer sufficient supported direction. Its endpoint is clear, and its details are relevant, though the treatment is straightforward rather than distinctive."
+    },
+    "last": {
+      "version": 0,
+      "fidelity": "F0",
+      "findings": [],
+      "editorial": [
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "weighted": 4,
+      "pass": true,
+      "first": "F0",
+      "rationale": "The blueprint aligns with the selected idea and source, progresses clearly from observed level to surge and storm tide, and gives a writer sufficient supported direction. Its endpoint is clear, and its details are relevant, though the treatment is straightforward rather than distinctive."
+    },
+    "confirmedMatch": false,
+    "uncertainMatch": false,
+    "introduced": []
+  },
+  {
+    "id": "upwelling-1",
+    "subject": "upwelling",
+    "cohort": "new",
+    "loop": {
+      "id": "upwelling-1",
+      "status": "accepted_without_repair",
+      "repairs": 0
+    },
+    "initial": {
+      "version": 0,
+      "fidelity": "F0",
+      "findings": [],
+      "editorial": [
+        5,
+        5,
+        4,
+        4,
+        3
+      ],
+      "weighted": 4.4,
+      "pass": true,
+      "first": "F0",
+      "rationale": "The blueprint stays aligned with the source and progresses clearly from wind-driven displacement to replacement and biological significance. It gives a usable, supported endpoint, though it includes only the core evidence rather than additional relevant details such as coastal conditions or downwelling."
+    },
+    "last": {
+      "version": 0,
+      "fidelity": "F0",
+      "findings": [],
+      "editorial": [
+        5,
+        5,
+        4,
+        4,
+        3
+      ],
+      "weighted": 4.4,
+      "pass": true,
+      "first": "F0",
+      "rationale": "The blueprint stays aligned with the source and progresses clearly from wind-driven displacement to replacement and biological significance. It gives a usable, supported endpoint, though it includes only the core evidence rather than additional relevant details such as coastal conditions or downwelling."
+    },
+    "confirmedMatch": false,
+    "uncertainMatch": false,
+    "introduced": []
+  },
+  {
+    "id": "sound-1",
+    "subject": "sound",
+    "cohort": "new",
+    "loop": {
+      "id": "sound-1",
+      "status": "accepted_without_repair",
+      "repairs": 0
+    },
+    "initial": {
+      "version": 0,
+      "fidelity": "F0",
+      "findings": [],
+      "editorial": [
+        5,
+        5,
+        5,
+        4,
+        4
+      ],
+      "weighted": 4.75,
+      "pass": true,
+      "first": "F0",
+      "rationale": "The narrative preserves the source’s sequence and relationships: cooling water slows sound and bends it downward, while increasing pressure below the thermocline raises sound speed and bends it upward. The hydrophone endpoint is supported. Editorially, the blueprint is coherent and usable; it could be more distinctive by naming the sound channel and giving the source’s concrete distance context."
+    },
+    "last": {
+      "version": 0,
+      "fidelity": "F0",
+      "findings": [],
+      "editorial": [
+        5,
+        5,
+        5,
+        4,
+        4
+      ],
+      "weighted": 4.75,
+      "pass": true,
+      "first": "F0",
+      "rationale": "The narrative preserves the source’s sequence and relationships: cooling water slows sound and bends it downward, while increasing pressure below the thermocline raises sound speed and bends it upward. The hydrophone endpoint is supported. Editorially, the blueprint is coherent and usable; it could be more distinctive by naming the sound channel and giving the source’s concrete distance context."
+    },
+    "confirmedMatch": false,
+    "uncertainMatch": false,
+    "introduced": []
+  },
+  {
+    "id": "conveyor-1",
+    "subject": "conveyor",
+    "cohort": "new",
+    "loop": {
+      "id": "conveyor-1",
+      "status": "accepted_without_repair",
+      "repairs": 0
+    },
+    "initial": {
+      "version": 0,
+      "fidelity": "F0",
+      "findings": [],
+      "editorial": [
+        5,
+        5,
+        4,
+        5,
+        4
+      ],
+      "weighted": 4.65,
+      "pass": true,
+      "first": "F0",
+      "rationale": "The narrative preserves the source’s sequence and relationships: cooling and sinking in the Norwegian Sea, southward deep flow, and return to the surface through mixing and wind-driven upwelling. It correctly frames the starting point as an explanatory entry, not a historical beginning, and avoids inventing a return route. The progression and endpoint are clear; the blueprint is actionable, though it leaves some source specifics, such as Gulf Stream water heating the atmosphere, unstated."
+    },
+    "last": {
+      "version": 0,
+      "fidelity": "F0",
+      "findings": [],
+      "editorial": [
+        5,
+        5,
+        4,
+        5,
+        4
+      ],
+      "weighted": 4.65,
+      "pass": true,
+      "first": "F0",
+      "rationale": "The narrative preserves the source’s sequence and relationships: cooling and sinking in the Norwegian Sea, southward deep flow, and return to the surface through mixing and wind-driven upwelling. It correctly frames the starting point as an explanatory entry, not a historical beginning, and avoids inventing a return route. The progression and endpoint are clear; the blueprint is actionable, though it leaves some source specifics, such as Gulf Stream water heating the atmosphere, unstated."
+    },
+    "confirmedMatch": false,
+    "uncertainMatch": false,
+    "introduced": []
+  },
+  {
+    "id": "geodesy-1",
+    "subject": "geodesy",
+    "cohort": "new",
+    "loop": {
+      "id": "geodesy-1",
+      "status": "accepted_without_repair",
+      "repairs": 0
+    },
+    "initial": {
+      "version": 0,
+      "fidelity": "F0",
+      "findings": [],
+      "editorial": [
+        5,
+        4,
+        3,
+        4,
+        3
+      ],
+      "weighted": 3.9,
+      "pass": true,
+      "first": "F0",
+      "rationale": "The blueprint stays aligned with the source and progresses clearly from definition to port example. Its endpoint is supported, though the outline offers limited development and specific evidence beyond the central example."
+    },
+    "last": {
+      "version": 0,
+      "fidelity": "F0",
+      "findings": [],
+      "editorial": [
+        5,
+        4,
+        3,
+        4,
+        3
+      ],
+      "weighted": 3.9,
+      "pass": true,
+      "first": "F0",
+      "rationale": "The blueprint stays aligned with the source and progresses clearly from definition to port example. Its endpoint is supported, though the outline offers limited development and specific evidence beyond the central example."
+    },
+    "confirmedMatch": false,
+    "uncertainMatch": false,
+    "introduced": []
+  },
+  {
+    "id": "bluecarbon-1",
+    "subject": "bluecarbon",
+    "cohort": "new",
+    "loop": {
+      "id": "bluecarbon-1",
+      "status": "technical_failure",
+      "repairs": 0
+    },
+    "initial": {
+      "version": 0,
+      "fidelity": "F1",
+      "findings": [
+        {
+          "severity": "F1",
+          "category": "quantitative_meaning",
+          "narrativeExcerpt": "how damage to these coastal habitats can release some of that stored carbon back into the atmosphere",
+          "evidenceExcerpt": "When these systems are damaged, an enormous amount of carbon is emitted back into the atmosphere, where it can then contribute to climate change.",
+          "explanation": "The narrative softens the source’s stated outcome into a possibility and describes the amount as “some,” understating the source’s “enormous amount.” The endpoint repeats this more cautious framing."
+        }
+      ],
+      "editorial": [
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "weighted": 4,
+      "pass": true,
+      "first": "F1",
+      "rationale": "The blueprint has a clear focus, logical progression from uptake to below-ground storage to habitat damage, and enough direction for a writer to develop. Its endpoint is supported by the source, and its details are relevant and specific. These editorial strengths are separate from the minor fidelity issue."
+    },
+    "last": {
+      "version": 0,
+      "fidelity": "F1",
+      "findings": [
+        {
+          "severity": "F1",
+          "category": "quantitative_meaning",
+          "narrativeExcerpt": "how damage to these coastal habitats can release some of that stored carbon back into the atmosphere",
+          "evidenceExcerpt": "When these systems are damaged, an enormous amount of carbon is emitted back into the atmosphere, where it can then contribute to climate change.",
+          "explanation": "The narrative softens the source’s stated outcome into a possibility and describes the amount as “some,” understating the source’s “enormous amount.” The endpoint repeats this more cautious framing."
+        }
+      ],
+      "editorial": [
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "weighted": 4,
+      "pass": true,
+      "first": "F1",
+      "rationale": "The blueprint has a clear focus, logical progression from uptake to below-ground storage to habitat damage, and enough direction for a writer to develop. Its endpoint is supported by the source, and its details are relevant and specific. These editorial strengths are separate from the minor fidelity issue."
+    },
+    "confirmedMatch": false,
+    "uncertainMatch": false,
+    "introduced": []
+  },
+  {
+    "id": "mangroves-2",
+    "subject": "mangroves",
+    "cohort": "new",
+    "loop": {
+      "id": "mangroves-2",
+      "status": "accepted_without_repair",
+      "repairs": 0
+    },
+    "initial": {
+      "version": 0,
+      "fidelity": "F1",
+      "findings": [
+        {
+          "severity": "F1",
+          "category": "quantitative_meaning",
+          "narrativeExcerpt": "Mangrove forests are regularly flooded",
+          "evidenceExcerpt": "which means that most mangroves get flooded at least twice per day.",
+          "explanation": "The narrative’s broad statement can imply that all mangrove forests are regularly flooded, while the source specifically says most mangroves are flooded at least twice daily. The following clause partially clarifies the scope."
+        }
+      ],
+      "editorial": [
+        5,
+        4,
+        4,
+        5,
+        4
+      ],
+      "weighted": 4.4,
+      "pass": true,
+      "first": "F1",
+      "rationale": "The blueprint closely follows the selected idea and gives a clear progression from roots to sediment buildup, ending at a supported outcome. It provides useful specific evidence, though the brief progression and limited detail leave some room for a downstream writer to develop the story."
+    },
+    "last": {
+      "version": 0,
+      "fidelity": "F1",
+      "findings": [
+        {
+          "severity": "F1",
+          "category": "quantitative_meaning",
+          "narrativeExcerpt": "Mangrove forests are regularly flooded",
+          "evidenceExcerpt": "which means that most mangroves get flooded at least twice per day.",
+          "explanation": "The narrative’s broad statement can imply that all mangrove forests are regularly flooded, while the source specifically says most mangroves are flooded at least twice daily. The following clause partially clarifies the scope."
+        }
+      ],
+      "editorial": [
+        5,
+        4,
+        4,
+        5,
+        4
+      ],
+      "weighted": 4.4,
+      "pass": true,
+      "first": "F1",
+      "rationale": "The blueprint closely follows the selected idea and gives a clear progression from roots to sediment buildup, ending at a supported outcome. It provides useful specific evidence, though the brief progression and limited detail leave some room for a downstream writer to develop the story."
+    },
+    "confirmedMatch": false,
+    "uncertainMatch": false,
+    "introduced": []
+  },
+  {
+    "id": "ripcurrent-2",
+    "subject": "ripcurrent",
+    "cohort": "new",
+    "loop": {
+      "id": "ripcurrent-2",
+      "status": "accepted_without_repair",
+      "repairs": 0
+    },
+    "initial": {
+      "version": 0,
+      "fidelity": "F0",
+      "findings": [],
+      "editorial": [
+        5,
+        4,
+        4,
+        4,
+        3
+      ],
+      "weighted": 4.15,
+      "pass": true,
+      "first": "F0",
+      "rationale": "The narrative preserves the source-supported distinction in flow and setting, and correctly treats eight feet per second as an upper bound. Its progression is clear and usable, with a supported endpoint; detail is relevant but intentionally limited."
+    },
+    "last": {
+      "version": 0,
+      "fidelity": "F0",
+      "findings": [],
+      "editorial": [
+        5,
+        4,
+        4,
+        4,
+        3
+      ],
+      "weighted": 4.15,
+      "pass": true,
+      "first": "F0",
+      "rationale": "The narrative preserves the source-supported distinction in flow and setting, and correctly treats eight feet per second as an upper bound. Its progression is clear and usable, with a supported endpoint; detail is relevant but intentionally limited."
+    },
+    "confirmedMatch": false,
+    "uncertainMatch": false,
+    "introduced": []
+  },
+  {
+    "id": "stormsurge-stormtide-2",
+    "subject": "stormsurge-stormtide",
+    "cohort": "new",
+    "loop": {
+      "id": "stormsurge-stormtide-2",
+      "status": "accepted_without_repair",
+      "repairs": 0
+    },
+    "initial": {
+      "version": 0,
+      "fidelity": "F0",
+      "findings": [],
+      "editorial": [
+        5,
+        4,
+        4,
+        4,
+        4
+      ],
+      "weighted": 4.25,
+      "pass": true,
+      "first": "F0",
+      "rationale": "The blueprint stays aligned with the selected idea and source, with a clear progression from the tide reference to surge and storm tide. It provides usable definitions and relevant factors, though it does not develop a concrete observed-water-level example."
+    },
+    "last": {
+      "version": 0,
+      "fidelity": "F0",
+      "findings": [],
+      "editorial": [
+        5,
+        4,
+        4,
+        4,
+        4
+      ],
+      "weighted": 4.25,
+      "pass": true,
+      "first": "F0",
+      "rationale": "The blueprint stays aligned with the selected idea and source, with a clear progression from the tide reference to surge and storm tide. It provides usable definitions and relevant factors, though it does not develop a concrete observed-water-level example."
+    },
+    "confirmedMatch": false,
+    "uncertainMatch": false,
+    "introduced": []
+  },
+  {
+    "id": "upwelling-2",
+    "subject": "upwelling",
+    "cohort": "new",
+    "loop": {
+      "id": "upwelling-2",
+      "status": "accepted_without_repair",
+      "repairs": 0
+    },
+    "initial": {
+      "version": 0,
+      "fidelity": "F0",
+      "findings": [],
+      "editorial": [
+        5,
+        4,
+        4,
+        4,
+        4
+      ],
+      "weighted": 4.25,
+      "pass": true,
+      "first": "F0",
+      "rationale": "The narrative aligns closely with the selected idea and source, progresses clearly from displacement to replacement to biological significance, and gives a usable, supported endpoint. It includes relevant specifics—wind, deeper water, temperature, nutrients, and qualified productivity—though the concise blueprint offers little additional scene-setting."
+    },
+    "last": {
+      "version": 0,
+      "fidelity": "F0",
+      "findings": [],
+      "editorial": [
+        5,
+        4,
+        4,
+        4,
+        4
+      ],
+      "weighted": 4.25,
+      "pass": true,
+      "first": "F0",
+      "rationale": "The narrative aligns closely with the selected idea and source, progresses clearly from displacement to replacement to biological significance, and gives a usable, supported endpoint. It includes relevant specifics—wind, deeper water, temperature, nutrients, and qualified productivity—though the concise blueprint offers little additional scene-setting."
+    },
+    "confirmedMatch": false,
+    "uncertainMatch": false,
+    "introduced": []
+  },
+  {
+    "id": "sound-2",
+    "subject": "sound",
+    "cohort": "new",
+    "loop": {
+      "id": "sound-2",
+      "status": "accepted_without_repair",
+      "repairs": 0
+    },
+    "initial": {
+      "version": 0,
+      "fidelity": "F0",
+      "findings": [],
+      "editorial": [
+        5,
+        4,
+        4,
+        4,
+        4
+      ],
+      "weighted": 4.25,
+      "pass": true,
+      "first": "F0",
+      "rationale": "The narrative aligns with the source’s hypothetical whale call, correctly traces sound’s downward and upward refraction, and ends with a supported hydrophone-detection point. It gives a clear, usable progression with relevant detail and avoids unsupported distance claims."
+    },
+    "last": {
+      "version": 0,
+      "fidelity": "F0",
+      "findings": [],
+      "editorial": [
+        5,
+        4,
+        4,
+        4,
+        4
+      ],
+      "weighted": 4.25,
+      "pass": true,
+      "first": "F0",
+      "rationale": "The narrative aligns with the source’s hypothetical whale call, correctly traces sound’s downward and upward refraction, and ends with a supported hydrophone-detection point. It gives a clear, usable progression with relevant detail and avoids unsupported distance claims."
+    },
+    "confirmedMatch": false,
+    "uncertainMatch": false,
+    "introduced": []
+  },
+  {
+    "id": "conveyor-2",
+    "subject": "conveyor",
+    "cohort": "new",
+    "loop": {
+      "id": "conveyor-2",
+      "status": "accepted_without_repair",
+      "repairs": 0
+    },
+    "initial": {
+      "version": 0,
+      "fidelity": "F0",
+      "findings": [],
+      "editorial": [
+        5,
+        5,
+        5,
+        5,
+        4
+      ],
+      "weighted": 4.9,
+      "pass": true,
+      "first": "F0",
+      "rationale": "The narrative accurately follows the source’s cooling, sinking, southward deep flow, and return toward the surface, and preserves the Norwegian Sea as an entry point rather than a historical beginning. Its progression is clear and gives a writer a supported endpoint; the details are specific, though the Gulf Stream’s role in bringing warm water north is omitted."
+    },
+    "last": {
+      "version": 0,
+      "fidelity": "F0",
+      "findings": [],
+      "editorial": [
+        5,
+        5,
+        5,
+        5,
+        4
+      ],
+      "weighted": 4.9,
+      "pass": true,
+      "first": "F0",
+      "rationale": "The narrative accurately follows the source’s cooling, sinking, southward deep flow, and return toward the surface, and preserves the Norwegian Sea as an entry point rather than a historical beginning. Its progression is clear and gives a writer a supported endpoint; the details are specific, though the Gulf Stream’s role in bringing warm water north is omitted."
+    },
+    "confirmedMatch": false,
+    "uncertainMatch": false,
+    "introduced": []
+  },
+  {
+    "id": "geodesy-2",
+    "subject": "geodesy",
+    "cohort": "new",
+    "loop": {
+      "id": "geodesy-2",
+      "status": "accepted_without_repair",
+      "repairs": 0
+    },
+    "initial": {
+      "version": 0,
+      "fidelity": "F0",
+      "findings": [],
+      "editorial": [
+        4,
+        3,
+        4,
+        3,
+        3
+      ],
+      "weighted": 3.5,
+      "pass": true,
+      "first": "F0",
+      "second": "F0",
+      "rationale": "The blueprint aligns clearly with the selected idea and gives a usable context-to-example progression. Its endpoint is supported but mostly restates the shared-reference link, and the evidence is relevant though limited in detail."
+    },
+    "last": {
+      "version": 0,
+      "fidelity": "F0",
+      "findings": [],
+      "editorial": [
+        4,
+        3,
+        4,
+        3,
+        3
+      ],
+      "weighted": 3.5,
+      "pass": true,
+      "first": "F0",
+      "second": "F0",
+      "rationale": "The blueprint aligns clearly with the selected idea and gives a usable context-to-example progression. Its endpoint is supported but mostly restates the shared-reference link, and the evidence is relevant though limited in detail."
+    },
+    "confirmedMatch": false,
+    "uncertainMatch": false,
+    "introduced": []
+  },
+  {
+    "id": "bluecarbon-2",
+    "subject": "bluecarbon",
+    "cohort": "new",
+    "loop": {
+      "id": "bluecarbon-2",
+      "status": "accepted_without_repair",
+      "repairs": 0
+    },
+    "initial": {
+      "version": 0,
+      "fidelity": "F0",
+      "findings": [],
+      "editorial": [
+        5,
+        4,
+        4,
+        3,
+        3
+      ],
+      "weighted": 4,
+      "pass": true,
+      "first": "F0",
+      "rationale": "The narrative accurately reflects the source’s account of carbon uptake, below-ground storage, and potential release when coastal habitats are damaged. Its progression is clear and aligned with the selected idea. The blueprint is usable, though its endpoint is a consequence rather than a fuller resolution, and it offers only a few specific details."
+    },
+    "last": {
+      "version": 0,
+      "fidelity": "F0",
+      "findings": [],
+      "editorial": [
+        5,
+        4,
+        4,
+        3,
+        3
+      ],
+      "weighted": 4,
+      "pass": true,
+      "first": "F0",
+      "rationale": "The narrative accurately reflects the source’s account of carbon uptake, below-ground storage, and potential release when coastal habitats are damaged. Its progression is clear and aligned with the selected idea. The blueprint is usable, though its endpoint is a consequence rather than a fuller resolution, and it offers only a few specific details."
+    },
+    "confirmedMatch": false,
+    "uncertainMatch": false,
+    "introduced": []
+  },
+  {
+    "id": "mangroves-3",
+    "subject": "mangroves",
+    "cohort": "new",
+    "loop": {
+      "id": "mangroves-3",
+      "status": "accepted_without_repair",
+      "repairs": 0
+    },
+    "initial": {
+      "version": 0,
+      "fidelity": "F0",
+      "findings": [],
+      "editorial": [
+        4,
+        3,
+        4,
+        3,
+        3
+      ],
+      "weighted": 3.5,
+      "pass": true,
+      "first": "F0",
+      "second": "F0",
+      "rationale": "The story stays aligned with the selected idea and progresses coherently from tidal context to root effects. Its endpoint is supported but mostly restates the central idea rather than resolving it with the source’s coastline-stabilization evidence. The blueprint is usable, though its evidence and development remain brief."
+    },
+    "last": {
+      "version": 0,
+      "fidelity": "F0",
+      "findings": [],
+      "editorial": [
+        4,
+        3,
+        4,
+        3,
+        3
+      ],
+      "weighted": 3.5,
+      "pass": true,
+      "first": "F0",
+      "second": "F0",
+      "rationale": "The story stays aligned with the selected idea and progresses coherently from tidal context to root effects. Its endpoint is supported but mostly restates the central idea rather than resolving it with the source’s coastline-stabilization evidence. The blueprint is usable, though its evidence and development remain brief."
+    },
+    "confirmedMatch": false,
+    "uncertainMatch": false,
+    "introduced": []
+  },
+  {
+    "id": "ripcurrent-3",
+    "subject": "ripcurrent",
+    "cohort": "new",
+    "loop": {
+      "id": "ripcurrent-3",
+      "status": "accepted_without_repair",
+      "repairs": 0
+    },
+    "initial": {
+      "version": 0,
+      "fidelity": "F0",
+      "findings": [],
+      "editorial": [
+        5,
+        4,
+        4,
+        4,
+        4
+      ],
+      "weighted": 4.25,
+      "pass": true,
+      "first": "F0",
+      "rationale": "The narrative preserves the source’s distinction between rip currents and rip tides, including their locations and flow characteristics. Its progression is clear and reaches a supported endpoint; the blueprint provides useful specifics, though it stays narrowly focused."
+    },
+    "last": {
+      "version": 0,
+      "fidelity": "F0",
+      "findings": [],
+      "editorial": [
+        5,
+        4,
+        4,
+        4,
+        4
+      ],
+      "weighted": 4.25,
+      "pass": true,
+      "first": "F0",
+      "rationale": "The narrative preserves the source’s distinction between rip currents and rip tides, including their locations and flow characteristics. Its progression is clear and reaches a supported endpoint; the blueprint provides useful specifics, though it stays narrowly focused."
+    },
+    "confirmedMatch": false,
+    "uncertainMatch": false,
+    "introduced": []
+  },
+  {
+    "id": "stormsurge-stormtide-3",
+    "subject": "stormsurge-stormtide",
+    "cohort": "new",
+    "loop": {
+      "id": "stormsurge-stormtide-3",
+      "status": "accepted_without_repair",
+      "repairs": 0
+    },
+    "initial": {
+      "version": 0,
+      "fidelity": "F0",
+      "findings": [],
+      "editorial": [
+        5,
+        4,
+        4,
+        5,
+        4
+      ],
+      "weighted": 4.4,
+      "pass": true,
+      "first": "F0",
+      "rationale": "The narrative preserves the source’s distinctions between predicted astronomical tide, storm surge, and storm tide, and its claims about surge causes and contributing factors are supported. The progression is clear and ends with a supported distinction; the blueprint is usable, though its development largely restates the central explanation."
+    },
+    "last": {
+      "version": 0,
+      "fidelity": "F0",
+      "findings": [],
+      "editorial": [
+        5,
+        4,
+        4,
+        5,
+        4
+      ],
+      "weighted": 4.4,
+      "pass": true,
+      "first": "F0",
+      "rationale": "The narrative preserves the source’s distinctions between predicted astronomical tide, storm surge, and storm tide, and its claims about surge causes and contributing factors are supported. The progression is clear and ends with a supported distinction; the blueprint is usable, though its development largely restates the central explanation."
+    },
+    "confirmedMatch": false,
+    "uncertainMatch": false,
+    "introduced": []
+  },
+  {
+    "id": "upwelling-3",
+    "subject": "upwelling",
+    "cohort": "new",
+    "loop": {
+      "id": "upwelling-3",
+      "status": "accepted_without_repair",
+      "repairs": 0
+    },
+    "initial": {
+      "version": 0,
+      "fidelity": "F0",
+      "findings": [],
+      "editorial": [
+        5,
+        4,
+        4,
+        4,
+        3
+      ],
+      "weighted": 4.15,
+      "pass": true,
+      "first": "F0",
+      "rationale": "The narrative is coherent and aligned with the selected idea, progressing clearly from wind-driven displacement to biological significance. It gives a usable, supported endpoint, though the evidence is accurate but limited in specific detail."
+    },
+    "last": {
+      "version": 0,
+      "fidelity": "F0",
+      "findings": [],
+      "editorial": [
+        5,
+        4,
+        4,
+        4,
+        3
+      ],
+      "weighted": 4.15,
+      "pass": true,
+      "first": "F0",
+      "rationale": "The narrative is coherent and aligned with the selected idea, progressing clearly from wind-driven displacement to biological significance. It gives a usable, supported endpoint, though the evidence is accurate but limited in specific detail."
+    },
+    "confirmedMatch": false,
+    "uncertainMatch": false,
+    "introduced": []
+  },
+  {
+    "id": "sound-3",
+    "subject": "sound",
+    "cohort": "new",
+    "loop": {
+      "id": "sound-3",
+      "status": "accepted_without_repair",
+      "repairs": 0
+    },
+    "initial": {
+      "version": 0,
+      "fidelity": "F0",
+      "findings": [],
+      "editorial": [
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "weighted": 4,
+      "pass": true,
+      "first": "F0",
+      "rationale": "The narrative preserves the source’s hypothetical example, sequence of sound-speed changes and refraction, and qualified hydrophone outcome. Its progression is clear and usable, with relevant supporting detail and a source-supported endpoint."
+    },
+    "last": {
+      "version": 0,
+      "fidelity": "F0",
+      "findings": [],
+      "editorial": [
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "weighted": 4,
+      "pass": true,
+      "first": "F0",
+      "rationale": "The narrative preserves the source’s hypothetical example, sequence of sound-speed changes and refraction, and qualified hydrophone outcome. Its progression is clear and usable, with relevant supporting detail and a source-supported endpoint."
+    },
+    "confirmedMatch": false,
+    "uncertainMatch": false,
+    "introduced": []
+  },
+  {
+    "id": "conveyor-3",
+    "subject": "conveyor",
+    "cohort": "new",
+    "loop": {
+      "id": "conveyor-3",
+      "status": "accepted_without_repair",
+      "repairs": 0
+    },
+    "initial": {
+      "version": 0,
+      "fidelity": "F1",
+      "findings": [
+        {
+          "severity": "F1",
+          "category": "other",
+          "narrativeExcerpt": "From there, mixing and wind-driven upwelling return water to the surface",
+          "evidenceExcerpt": "Eventually, the cold bottom waters returns to the surface through mixing and wind-driven upwelling",
+          "explanation": "“From there” suggests the return to the surface occurs at Antarctica. The source says the water reaches Antarctica and eventually returns, but does not specify where that return occurs."
+        }
+      ],
+      "editorial": [
+        5,
+        4,
+        4,
+        4,
+        3
+      ],
+      "weighted": 4.15,
+      "pass": true,
+      "first": "F1",
+      "rationale": "The blueprint is coherent and well aligned with the selected idea, with a clear progression and supported endpoint. It gives a downstream writer useful structure, though its evidence details are selective rather than distinctive. The implied location of the return is a minor factual imprecision."
+    },
+    "last": {
+      "version": 0,
+      "fidelity": "F1",
+      "findings": [
+        {
+          "severity": "F1",
+          "category": "other",
+          "narrativeExcerpt": "From there, mixing and wind-driven upwelling return water to the surface",
+          "evidenceExcerpt": "Eventually, the cold bottom waters returns to the surface through mixing and wind-driven upwelling",
+          "explanation": "“From there” suggests the return to the surface occurs at Antarctica. The source says the water reaches Antarctica and eventually returns, but does not specify where that return occurs."
+        }
+      ],
+      "editorial": [
+        5,
+        4,
+        4,
+        4,
+        3
+      ],
+      "weighted": 4.15,
+      "pass": true,
+      "first": "F1",
+      "rationale": "The blueprint is coherent and well aligned with the selected idea, with a clear progression and supported endpoint. It gives a downstream writer useful structure, though its evidence details are selective rather than distinctive. The implied location of the return is a minor factual imprecision."
+    },
+    "confirmedMatch": false,
+    "uncertainMatch": false,
+    "introduced": []
+  },
+  {
+    "id": "geodesy-3",
+    "subject": "geodesy",
+    "cohort": "new",
+    "loop": {
+      "id": "geodesy-3",
+      "status": "accepted_without_repair",
+      "repairs": 0
+    },
+    "initial": {
+      "version": 0,
+      "fidelity": "F0",
+      "findings": [],
+      "editorial": [
+        4,
+        3,
+        3,
+        3,
+        3
+      ],
+      "weighted": 3.25,
+      "pass": false,
+      "first": "F0",
+      "rationale": "The blueprint stays focused on a shared reference and a supported port-travel example, progressing from definition to application. It is usable but brief, with limited development and detail; its endpoint is supported but modest."
+    },
+    "last": {
+      "version": 0,
+      "fidelity": "F0",
+      "findings": [],
+      "editorial": [
+        4,
+        3,
+        3,
+        3,
+        3
+      ],
+      "weighted": 3.25,
+      "pass": false,
+      "first": "F0",
+      "rationale": "The blueprint stays focused on a shared reference and a supported port-travel example, progressing from definition to application. It is usable but brief, with limited development and detail; its endpoint is supported but modest."
+    },
+    "confirmedMatch": false,
+    "uncertainMatch": false,
+    "introduced": []
+  },
+  {
+    "id": "bluecarbon-3",
+    "subject": "bluecarbon",
+    "cohort": "new",
+    "loop": {
+      "id": "bluecarbon-3",
+      "status": "technical_failure",
+      "repairs": 0
+    },
+    "initial": {
+      "version": 0,
+      "fidelity": "F1",
+      "findings": [
+        {
+          "severity": "F1",
+          "category": "quantitative_meaning",
+          "narrativeExcerpt": "damage can release some stored carbon back into the atmosphere.",
+          "evidenceExcerpt": "When these systems are damaged, an enormous amount of carbon is emitted back into the atmosphere",
+          "explanation": "The narrative weakens the source's assertion that damage emits an enormous amount to a possibility of releasing only an unspecified amount. The broad point remains accurate, but the scale and certainty are softened."
+        }
+      ],
+      "editorial": [
+        5,
+        4,
+        4,
+        4,
+        3
+      ],
+      "weighted": 4.15,
+      "pass": true,
+      "first": "F1",
+      "rationale": "The blueprint is tightly aligned to its central idea and progresses clearly from below-ground storage to habitat damage, with a supported endpoint. It is usable, though its evidence and direction are intentionally narrow and offer limited detail for development."
+    },
+    "last": {
+      "version": 0,
+      "fidelity": "F1",
+      "findings": [
+        {
+          "severity": "F1",
+          "category": "quantitative_meaning",
+          "narrativeExcerpt": "damage can release some stored carbon back into the atmosphere.",
+          "evidenceExcerpt": "When these systems are damaged, an enormous amount of carbon is emitted back into the atmosphere",
+          "explanation": "The narrative weakens the source's assertion that damage emits an enormous amount to a possibility of releasing only an unspecified amount. The broad point remains accurate, but the scale and certainty are softened."
+        }
+      ],
+      "editorial": [
+        5,
+        4,
+        4,
+        4,
+        3
+      ],
+      "weighted": 4.15,
+      "pass": true,
+      "first": "F1",
+      "rationale": "The blueprint is tightly aligned to its central idea and progresses clearly from below-ground storage to habitat damage, with a supported endpoint. It is usable, though its evidence and direction are intentionally narrow and offer limited detail for development."
+    },
+    "confirmedMatch": false,
+    "uncertainMatch": false,
+    "introduced": []
+  }
+]

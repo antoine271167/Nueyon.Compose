@@ -1,0 +1,11 @@
+{
+  "checks": {
+    "entity_identity": "Narrative: \"hypothetical whale call\"; source: \"Imagine a whale is swimming through the ocean and calls out to its pod.\" The referent remains illustrative.",
+    "temporal_relationship": "Narrative: \"As temperature drops through the thermocline, sound speed decreases\"; source: \"their speed decreases with increasing depth (as the temperature drops)\". The downward phase precedes the deeper-water reversal in both.",
+    "actor_object": "Narrative: \"a hydrophone at a suitable depth can detect distant signals\"; source: \"hydrophones, or underwater microphones, if placed at the proper depth, can pick up whale songs and manmade noises\". The detector and signals retain their roles.",
+    "causal_relationship": "Narrative: \"where temperature is stable and pressure increases, reverses that pattern\"; source: \"Below the thermocline \\\"layer,\\\" the temperature remains constant, but pressure continues to increase. This causes the speed of sound to increase and makes the sound waves refract upward.\" The causal direction is preserved.",
+    "quantitative_meaning": "Narrative: \"detect distant signals\"; source: \"from many kilometers away.\" The narrative makes no unsupported universal distance claim."
+  },
+  "verdict": "GO",
+  "blockers": []
+}

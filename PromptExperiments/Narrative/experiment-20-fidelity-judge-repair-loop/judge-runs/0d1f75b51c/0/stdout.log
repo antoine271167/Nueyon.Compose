@@ -1,0 +1,21 @@
+{
+  "checks": {
+    "entity_identity": "De formulering “de spiegels” verwisselt de uitgevouwen onderdelen met de spiegels zelf. De bron noemt de secundaire spiegelsteun en de primaire spiegelvleugels.",
+    "temporal_relationship": "“In de tweede week” gevolgd door “Daarna” en “Na zes maanden” stemt overeen met de bron: uitvouwing in de tweede week, daarna commissioning en routinewetenschap na zes maanden.",
+    "actor_object": "“Webb was ontworpen om opgevouwen in de Ariane 5-kuip te passen” en “De uitvouwing bracht de telescoop” komen overeen met de bron: Webb was ontworpen voor de kuip en de uitvouwing bracht het naar de operationele configuratie.",
+    "causal_relationship": "De bron bevestigt dat de operationele configuratie te groot was voor een beschikbare raket en dat Webb daarom opvouwbaar was ontworpen. De narrative beweert niet dat een storing de latere ingebruikname veroorzaakte.",
+    "quantitative_meaning": "“In de tweede week” en “tijdens de ingebruikname van zes maanden” passen bij de bron, die de uitvouwing in de tweede week plaatst en routinewetenschap na zes maanden vermeldt."
+  },
+  "verdict": "REVISE",
+  "blockers": [
+    {
+      "category": "entity_identity",
+      "status": "confirmed",
+      "narrativeExcerpt": "In de tweede week waren de spiegels uitgevouwen en vergrendeld en had Webb zijn operationele configuratie bereikt.",
+      "evidenceExcerpt": "During the second week after launch, we finished deploying the telescope structures by unfolding and latching the secondary mirror tripod and rotating and latching the two primary mirror wings.",
+      "problem": "De bron zegt dat de secundaire spiegelsteun uitvouwde en de primaire spiegelvleugels draaiden; “de spiegels” benoemt die onderdelen niet nauwkeurig.",
+      "requiredCorrection": "Vervang “de spiegels waren uitgevouwen en vergrendeld” door een formulering die de secundaire spiegelsteun en de primaire spiegelvleugels benoemt."
+    }
+  ]
+}
+

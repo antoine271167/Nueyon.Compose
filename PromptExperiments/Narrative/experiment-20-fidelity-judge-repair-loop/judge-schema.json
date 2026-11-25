@@ -1,0 +1,102 @@
+{
+  "type": "object",
+  "properties": {
+    "checks": {
+      "type": "object",
+      "properties": {
+        "entity_identity": {
+          "type": "string",
+          "minLength": 1
+        },
+        "temporal_relationship": {
+          "type": "string",
+          "minLength": 1
+        },
+        "actor_object": {
+          "type": "string",
+          "minLength": 1
+        },
+        "causal_relationship": {
+          "type": "string",
+          "minLength": 1
+        },
+        "quantitative_meaning": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "entity_identity",
+        "temporal_relationship",
+        "actor_object",
+        "causal_relationship",
+        "quantitative_meaning"
+      ],
+      "additionalProperties": false
+    },
+    "verdict": {
+      "enum": [
+        "GO",
+        "REVISE",
+        "UNCERTAIN"
+      ]
+    },
+    "blockers": {
+      "type": "array",
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "properties": {
+          "category": {
+            "enum": [
+              "entity_identity",
+              "temporal_relationship",
+              "actor_object",
+              "causal_relationship",
+              "quantitative_meaning"
+            ]
+          },
+          "status": {
+            "enum": [
+              "confirmed",
+              "uncertain"
+            ]
+          },
+          "narrativeExcerpt": {
+            "type": "string",
+            "minLength": 1
+          },
+          "evidenceExcerpt": {
+            "type": "string",
+            "minLength": 1
+          },
+          "problem": {
+            "type": "string",
+            "minLength": 1
+          },
+          "requiredCorrection": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "category",
+          "status",
+          "narrativeExcerpt",
+          "evidenceExcerpt",
+          "problem",
+          "requiredCorrection"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "checks",
+    "verdict",
+    "blockers"
+  ],
+  "additionalProperties": false
+}

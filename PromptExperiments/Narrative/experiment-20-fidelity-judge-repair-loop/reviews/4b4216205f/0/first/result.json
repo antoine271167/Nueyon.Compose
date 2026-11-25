@@ -1,0 +1,20 @@
+{
+  "fidelity": "F1",
+  "findings": [
+    {
+      "severity": "F1",
+      "category": "quantitative_meaning",
+      "narrativeExcerpt": "De uitleningen waren geconcentreerd op zaterdag: 52 van de 80 uitleningen vonden toen plaats, verdeeld over 46 unieke leners.",
+      "evidenceExcerpt": "Er waren 80 uitleningen aan 46 unieke leners. Van de uitleningen vonden er 52 op zaterdag plaats.",
+      "explanation": "The source gives 46 unique borrowers for all 80 loans, but does not say how many borrowers made the 52 Saturday loans. The sentence can imply those 46 borrowers account for the Saturday loans, slightly narrowing the source's scope."
+    }
+  ],
+  "editorial": [
+    4,
+    3,
+    4,
+    3,
+    4
+  ],
+  "rationale": "The blueprint is aligned, coherent, and evidence-specific, with a clear progression from trial context to Saturday usage and its interpretive limit. Its endpoint is supported but modest: it does not include the board's proposed second trial, and the development is concise rather than distinctive. The borrower phrasing introduces a minor scope ambiguity."
+}

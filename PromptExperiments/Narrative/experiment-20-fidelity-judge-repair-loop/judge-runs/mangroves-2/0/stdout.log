@@ -1,0 +1,12 @@
+{
+  "checks": {
+    "entity_identity": "“many mangrove forests” and “prop roots” match the source’s “Many mangrove forests” and “prop roots”; no material entity mismatch.",
+    "temporal_relationship": "“The prop roots slow tidal water” before “sediment to settle” and “builds up the muddy bottom” matches the source sequence: “The roots also slow the movement of tidal waters, causing sediments to settle out of the water and build up the muddy bottom.”",
+    "actor_object": "“The prop roots slow tidal water” correctly assigns the action to the roots and the object as tidal water; the source says, “The roots also slow the movement of tidal waters”.",
+    "causal_relationship": "“by slowing tidal water, they allow sediment to settle and build up the bottom” preserves the source’s causal relationship: “The roots also slow the movement of tidal waters, causing sediments to settle out of the water and build up the muddy bottom.”",
+    "quantitative_meaning": "“most flood at least twice a day, and many have stilt-like prop roots” keeps the qualifiers distinct, matching “most mangroves get flooded at least twice per day” and “Many mangrove forests can be recognized by their dense tangle of prop roots”."
+  },
+  "verdict": "GO",
+  "blockers": []
+}
+

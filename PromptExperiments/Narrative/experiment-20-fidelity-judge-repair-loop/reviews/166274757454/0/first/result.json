@@ -1,0 +1,20 @@
+{
+  "fidelity": "F1",
+  "findings": [
+    {
+      "severity": "F1",
+      "category": "temporal_relationship",
+      "narrativeExcerpt": "Tijdens de private beta wisselden tweewekelijkse sprints af tussen aanvragen aannemen en tijd besteden aan testen, onderzoek en verwerking.",
+      "evidenceExcerpt": "We achieved this by splitting our fortnightly sprints in two: testing, researching and accepting applications in the first week and then suspending submissions to concentrate on testing, researching and processing applications the second.",
+      "explanation": "De samenvatting suggereert dat aanvragen aannemen en testen/onderzoek/verwerken elkaar per week afwisselden. In de bron vonden testen en onderzoek in beide weken plaats; aanvragen aannemen gebeurde in de eerste week en verwerken in de tweede."
+    }
+  ],
+  "editorial": [
+    5,
+    4,
+    4,
+    3,
+    3
+  ],
+  "rationale": "De richting is helder en trouw aan de geselecteerde aanpak, met een logische voortgang van context naar werkwijze. Het is een bruikbare, beknopte blauwdruk, maar het endpoint herhaalt vooral de aanpak en geeft geen uitkomst of concreet sluitend moment. De kernstappen zijn aanwezig, maar de sprintbeschrijving verliest een relevant detail en de gerapporteerde resultaten ontbreken."
+}

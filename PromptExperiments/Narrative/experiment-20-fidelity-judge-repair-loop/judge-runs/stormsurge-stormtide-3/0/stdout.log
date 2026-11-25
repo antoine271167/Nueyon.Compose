@@ -1,0 +1,12 @@
+{
+  "checks": {
+    "entity_identity": "Narrative: “Storm surge is measured above the predicted tide”; evidence: “Storm surge is the abnormal rise in seawater level during a storm, measured as the height of the water above the normal predicted astronomical tide.” The terms and referents are consistent.",
+    "temporal_relationship": "Narrative: “Begin with the coastal water level and establish the predicted astronomical tide as the baseline for understanding it.” Evidence: “Storm tide is the total observed seawater level during a storm, resulting from the combination of storm surge and the astronomical tide.” The progression is explanatory, not a changed event chronology.",
+    "actor_object": "Narrative: “storm winds pushing water onshore”; evidence: “The surge is caused primarily by a storm’s winds pushing water onshore.” Agent, action, and object are consistent.",
+    "causal_relationship": "Narrative: “caused primarily by storm winds pushing water onshore”; evidence: “The surge is caused primarily by a storm’s winds pushing water onshore.” Causal direction and strength are preserved.",
+    "quantitative_meaning": "Narrative: “surge is the storm-driven increase above it”; evidence: “measured as the height of the water above the normal predicted astronomical tide.” The baseline and relative measure are preserved; no scale or denominator is changed."
+  },
+  "verdict": "GO",
+  "blockers": []
+}
+

@@ -1,0 +1,12 @@
+{
+  "checks": {
+    "entity_identity": "Narrative excerpt: “rip currents are narrow, powerful channels found along U.S. ocean coasts and Great Lakes shores, while a rip tide is swift tidal water moving through inlets and certain mouths.” Evidence: “rip currents are powerful, narrow channels of fast-moving water that are prevalent along the East, Gulf, and West coasts of the U.S., as well as along the shores of the Great Lakes.” and “A rip tide is a specific type of current associated with the swift movement of tidal water through inlets and the mouths of estuaries, embayments, and harbors.” The names and referents match.",
+    "temporal_relationship": "Narrative excerpt: “rip currents are narrow, powerful channels found along U.S. ocean coasts and Great Lakes shores”. Evidence: “Rip currents are powerful, narrow channels of fast-moving water that are prevalent along the East, Gulf, and West coasts of the U.S., as well as along the shores of the Great Lakes.” No event order is changed; both describe where the flows occur.",
+    "actor_object": "Narrative excerpt: “a rip tide is swift tidal water moving through inlets and certain mouths.” Evidence: “A rip tide is a specific type of current associated with the swift movement of tidal water through inlets and the mouths of estuaries, embayments, and harbors.” The flow and locations are correctly associated.",
+    "causal_relationship": "Narrative excerpt: “The reader should understand that the terms are not interchangeable descriptions of the same flow.” Evidence: “While the terms are often confused, rip currents are different than rip tides.” The distinction is supported; no causal relationship is asserted.",
+    "quantitative_meaning": "Narrative excerpt: “Present eight feet per second as an upper bound for rip-current speed, not a usual or typical speed.” Evidence: “Moving at speeds of up to eight feet per second, rip currents can move faster than an Olympic swimmer.” The upper-bound meaning is preserved."
+  },
+  "verdict": "GO",
+  "blockers": []
+}
+

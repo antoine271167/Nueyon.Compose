@@ -1,0 +1,22 @@
+{
+  "fidelity": "F2",
+  "findings": [
+    {
+      "severity": "F2",
+      "category": "quantitative_meaning",
+      "narrativeExcerpt": "42,4 van de 605,6 quadriljoen Btu totale energieproductie (7%)",
+      "evidenceExcerpt": "Across all energy production, renewables were 42.4 out of 605.6 quadrillion Btu, reported as 7%.",
+      "explanation": "In Dutch, “quadriljoen” means 10^24, while the source’s English “quadrillion” means 10^15. The translated unit therefore changes the magnitude by a factor of a billion; “biljard Btu” would preserve the source’s scale."
+    },
+    {
+      "severity": "F1",
+      "category": "other",
+      "narrativeExcerpt": "maak duidelijk dat elektriciteit een deel van de totale energieproductie is.",
+      "evidenceExcerpt": "The table for 2024 lists 10.0 trillion kWh of renewable electricity production out of 30.7 trillion kWh of total electricity production, reported as 32%. Across all energy production, renewables were 42.4 out of 605.6 quadrillion Btu, reported as 7%.",
+      "explanation": "The source reports electricity production and all-energy production as distinct measures; it does not establish that electricity production is a subset of total energy production. Present them as different measures rather than asserting that relationship."
+    }
+  ],
+  "editorial": [4, 4, 4, 4, 4],
+  "rationale": "The blueprint is aligned, clearly progresses from contrasting measures to a supported endpoint, and provides specific figures and useful constraints. Its editorial potential is strong, though the translated unit error undermines the quantitative detail and the claimed subset relationship needs revision."
+}
+

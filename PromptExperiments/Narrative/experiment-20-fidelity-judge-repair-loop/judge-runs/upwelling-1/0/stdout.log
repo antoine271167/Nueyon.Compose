@@ -1,0 +1,12 @@
+{
+  "checks": {
+    "entity_identity": "Narrative: \"Deeper, typically colder and nutrient-rich water rises to replace the displaced surface water.\" Evidence: \"Water then rises up from beneath the surface to replace the water that was pushed away.\" The water and referents are consistent.",
+    "temporal_relationship": "Narrative: \"Wind can push surface waters away\" followed by \"Deeper, typically colder and nutrient-rich water rises to replace the displaced surface water.\" Evidence: \"Winds blowing across the ocean surface push water away. Water then rises up from beneath the surface to replace the water that was pushed away.\" The order is preserved.",
+    "actor_object": "Narrative: \"Wind can push surface waters away\" and \"Deeper, typically colder and nutrient-rich water rises to replace the displaced surface water.\" Evidence: \"Winds blowing across the ocean surface push water away. Water then rises up from beneath the surface to replace the water that was pushed away.\" Agents, actions, and recipient are consistent.",
+    "causal_relationship": "Narrative: \"The nutrients in that water often support high biological productivity\". Evidence: \"These nutrients “fertilize” surface waters, meaning that these surface waters often have high biological productivity.\" The relationship and its qualification are preserved.",
+    "quantitative_meaning": "Narrative: \"The rising water is typically colder and nutrient-rich; those nutrients often support high biological productivity.\" Evidence: \"Water that rises to the surface as a result of upwelling is typically colder and is rich in nutrients\" and \"these surface waters often have high biological productivity.\" The narrative preserves the typical/often scope without adding quantities or guarantees."
+  },
+  "verdict": "GO",
+  "blockers": []
+}
+
