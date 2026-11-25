@@ -1,0 +1,12 @@
+{
+  "checks": {
+    "entity_identity": "The narrative names “the depositor, FDIC-insured bank, and ownership category”; the source identifies coverage “per depositor, per FDIC-insured bank, per ownership category.” The referents match.",
+    "temporal_relationship": "No event sequence or timing is asserted in “The reader should understand that all three are part of the stated basis for deposit coverage.” The source states the amount “is $250,000 per depositor, per FDIC-insured bank, per ownership category.”",
+    "actor_object": "No agent or recipient is materially reassigned in “The story explains how the standard $250,000 FDIC deposit insurance amount is defined.” The source states the amount “is $250,000 per depositor, per FDIC-insured bank, per ownership category.”",
+    "causal_relationship": "The narrative presents the three units as the basis for coverage, not as causes of a different amount: “all three are part of the stated basis for deposit coverage.” This matches the source’s “per depositor, per FDIC-insured bank, per ownership category.”",
+    "quantitative_meaning": "“the standard $250,000 FDIC deposit insurance amount” preserves the source’s “standard deposit insurance amount is $250,000”; the narrative also retains all three per-units."
+  },
+  "verdict": "GO",
+  "blockers": []
+}
+

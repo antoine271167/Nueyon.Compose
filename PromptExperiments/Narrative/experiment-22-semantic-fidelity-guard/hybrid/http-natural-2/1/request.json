@@ -1,0 +1,15 @@
+{
+  "invariant": {
+    "subject": "http",
+    "source": "The HEAD method is identical to GET except that the server MUST NOT send content in the response.",
+    "category": "entity_identity",
+    "relation": "What HEAD can tell you without the content",
+    "anchors": "HEAD|GET"
+  },
+  "candidates": [
+    "Explain the relationship between HEAD and GET: HEAD is the same as GET except that the server must not send content in its response. The reader should understand this defining distinction, without attributing other information or capabilities to HEAD.",
+    "- **Context:** Introduce HEAD and GET as the two methods being compared.",
+    "- **Development:** Establish that HEAD is identical to GET except for the response-content requirement."
+  ],
+  "terminology": []
+}

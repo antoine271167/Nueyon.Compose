@@ -1,0 +1,21 @@
+{
+  "checks": {
+    "entity_identity": "No material identity issue. Narrative excerpt: “The story is about the HEAD method’s relationship to GET” Evidence: “The HEAD method is identical to GET except that the server MUST NOT send content in the response.”",
+    "temporal_relationship": "No material temporal relationship is established by the source. Narrative excerpt: “- **Context:** Introduce HEAD in relation to GET.” Evidence: “The HEAD method is identical to GET except that the server MUST NOT send content in the response.”",
+    "actor_object": "Confirmed reversal of the server’s action toward response content. Narrative excerpt: “the server must send content in the response.” Evidence: “the server MUST NOT send content in the response.”",
+    "causal_relationship": "No material causal relationship is asserted by the source. Narrative excerpt: “The reader should understand this specific distinction without assuming what else a HEAD response can reveal.” Evidence: “The HEAD method is identical to GET except that the server MUST NOT send content in the response.”",
+    "quantitative_meaning": "No material quantitative claim is made. Narrative excerpt: “The story is about the HEAD method’s relationship to GET” Evidence: “The HEAD method is identical to GET except that the server MUST NOT send content in the response.”"
+  },
+  "verdict": "REVISE",
+  "blockers": [
+    {
+      "category": "actor_object",
+      "status": "confirmed",
+      "narrativeExcerpt": "the server must send content in the response.",
+      "evidenceExcerpt": "the server MUST NOT send content in the response.",
+      "problem": "The brief reverses whether the server sends response content.",
+      "requiredCorrection": "Change the claims that the server must send or include response content to state that the server MUST NOT send content in the response."
+    }
+  ]
+}
+

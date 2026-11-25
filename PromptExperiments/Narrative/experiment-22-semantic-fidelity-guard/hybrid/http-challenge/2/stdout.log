@@ -1,0 +1,2 @@
+{"verdict":"CONTRADICTED","narrativeExcerpt":"it is defined as identical to GET except that the server must send content in the response.","relation":"The brief asserts that a HEAD response must include content, directly contradicting the source, which says the server MUST NOT send content.","correction":"State that the server must not send content in a HEAD response."}
+

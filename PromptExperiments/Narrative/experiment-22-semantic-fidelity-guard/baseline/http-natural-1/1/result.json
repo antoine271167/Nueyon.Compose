@@ -1,0 +1,11 @@
+{
+  "checks": {
+    "entity_identity": "No material issue: “The story is about the HEAD method’s relationship to GET” matches the source’s “The HEAD method is identical to GET”.",
+    "temporal_relationship": "No material temporal claim: “Context,” “Development,” and “Endpoint” organize the explanation; the source establishes no event timing.",
+    "actor_object": "No material issue: “the server must not send content in a HEAD response” preserves the source’s agent, action, and recipient.",
+    "causal_relationship": "No material causal claim: “the defining difference” describes the distinction in the source without asserting a cause.",
+    "quantitative_meaning": "No material quantitative claim: the narrative makes no numerical or statistical assertion."
+  },
+  "verdict": "GO",
+  "blockers": []
+}

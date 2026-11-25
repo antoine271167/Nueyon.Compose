@@ -1,0 +1,13 @@
+{
+  "status": "FAIL",
+  "findings": [
+    {
+      "category": "quantitative_meaning",
+      "status": "confirmed",
+      "narrativeExcerpt": "it contains a 84-bit unsigned number representing a Unix Epoch timestamp",
+      "evidenceExcerpt": "48-bit big-endian unsigned number of the Unix Epoch timestamp",
+      "problem": "The narrative changes the timestamp width from 48 bits to 84 bits.",
+      "requiredCorrection": "Change “84-bit” to “48-bit.”"
+    }
+  ]
+}

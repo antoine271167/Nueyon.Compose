@@ -1,0 +1,2 @@
+{"verdict":"CONTRADICTED","narrativeExcerpt":"it contains a 84-bit unsigned number representing a Unix Epoch timestamp, stored in big-endian order.","relation":"The source specifies a 48-bit big-endian unsigned Unix Epoch timestamp within the UUIDv7 identifier; the candidate asserts 84 bits, an incompatible numerical scale.","correction":"State that the timestamp is a 48-bit unsigned number stored in big-endian order."}
+

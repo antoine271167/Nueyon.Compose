@@ -1,0 +1,11 @@
+{
+  "status": "REVIEW",
+  "findings": [],
+  "candidates": [
+    "Explain the relationship between HEAD and GET: HEAD is the same as GET except that the server must not send content in its response. The reader should understand this defining distinction, without attributing other information or capabilities to HEAD.",
+    "- **Context:** Introduce HEAD and GET as the two methods being compared.",
+    "- **Development:** Establish that HEAD is identical to GET except for the response-content requirement."
+  ],
+  "unresolved": "Relation needs semantic interpretation",
+  "milliseconds": 0.05819999997038394
+}

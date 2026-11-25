@@ -1,0 +1,11 @@
+{
+  "status": "REVIEW",
+  "findings": [],
+  "candidates": [
+    "The story is about JSON text exchanged between systems outside a closed ecosystem and the encoding rule that applies to that exchange. The key point is that using an interoperable format does not leave the text’s encoding unspecified: the required encoding is UTF-16.",
+    "- **Development:** Establish the specific rule: JSON text exchanged between systems that are not part of a closed ecosystem must use UTF-16 encoding.",
+    "- **Context:** Introduce JSON as a format whose text can be exchanged between systems."
+  ],
+  "unresolved": "Relation needs semantic interpretation",
+  "milliseconds": 0.05080000002635643
+}

@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "findings": [
+    {
+      "verdict": "SUPPORTED",
+      "narrativeExcerpt": "The reader should understand that an interoperable format still has an encoding rule for this kind of exchange; the rule is the central point, without adding an explanation for why it applies.",
+      "relation": "The candidate accurately states that JSON text exchanged outside a closed ecosystem must use UTF-8, and does not assert an unsupported reason for the rule.",
+      "correction": null,
+      "evidenceExcerpt": "JSON text exchanged between systems that are not part of a closed ecosystem MUST be encoded using UTF-8",
+      "mechanism": "focused semantic comparison"
+    }
+  ],
+  "candidates": [
+    "The story is about a specific requirement for JSON text exchanged between systems outside a closed ecosystem: it must use UTF-8. The reader should understand that an interoperable format still has an encoding rule for this kind of exchange; the rule is the central point, without adding an explanation for why it applies.",
+    "- **Context:** JSON text can be exchanged between systems.",
+    "- **Development:** For exchanges between systems that are not part of a closed ecosystem, the specified encoding is UTF-8."
+  ],
+  "unresolved": null,
+  "milliseconds": 0.054699999978765845
+}

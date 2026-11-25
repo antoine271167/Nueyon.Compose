@@ -1,0 +1,20 @@
+{
+  "status": "FAIL",
+  "findings": [
+    {
+      "verdict": "CONTRADICTED",
+      "narrativeExcerpt": "TAI is adjusted by leap seconds to match UTC.",
+      "relation": "The source says UTC is based on TAI and is adjusted by leap seconds; this excerpt reverses which time standard is adjusted.",
+      "correction": "State that UTC is based on TAI and adjusted by leap seconds.",
+      "evidenceExcerpt": "Coordinated Universal Time (UTC) is based on International Atomic Time (TAI), but it is adjusted by leap seconds",
+      "mechanism": "focused semantic comparison"
+    }
+  ],
+  "candidates": [
+    "The story explains the relationship between International Atomic Time (TAI) and Coordinated Universal Time (UTC): TAI is adjusted by leap seconds to match UTC. The reader should understand that UTC is not simply identical to TAI; the supplied material establishes their relationship and the adjustments, but not why those adjustments are made.",
+    "- **Development:** Explain their supported relationship: TAI is adjusted by leap seconds to match UTC.",
+    "- Do not explain why leap seconds are used or make broader claims about how the two standards diverge; the inputs establish only that UTC is based on TAI and adjusted by leap seconds."
+  ],
+  "unresolved": null,
+  "milliseconds": 0.05119999998714775
+}

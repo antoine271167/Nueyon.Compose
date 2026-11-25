@@ -1,0 +1,6 @@
+{
+  "verdict": "SUPPORTED",
+  "narrativeExcerpt": "Explain WAL through its effect on the relationship between reading and writing: readers do not block writers, and writers do not block readers. The reader should understand that these activities can proceed concurrently, rather than one having to wait for the other.",
+  "relation": "The source explicitly states that readers and writers do not block each other and can proceed concurrently; the excerpt preserves that relationship.",
+  "correction": null
+}

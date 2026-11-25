@@ -1,0 +1,13 @@
+{
+  "status": "FAIL",
+  "findings": [
+    {
+      "category": "quantitative_meaning",
+      "status": "confirmed",
+      "narrativeExcerpt": "42,4 van de 605,6 quadriljoen Btu totale energieproductie (7%)",
+      "evidenceExcerpt": "renewables were 42.4 out of 605.6 quadrillion Btu, reported as 7%.",
+      "problem": "In het Nederlands is een quadriljoen niet gelijk aan de Engelse quadrillion; daardoor verandert de gerapporteerde energieschaal materieel.",
+      "requiredCorrection": "Vervang \"quadriljoen Btu\" door \"biljard Btu\"."
+    }
+  ]
+}

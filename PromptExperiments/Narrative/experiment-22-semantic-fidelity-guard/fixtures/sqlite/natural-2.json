@@ -1,0 +1,3 @@
+{
+  "content": "### Selected Story\nThe story is about how WAL handles reading and writing at the same time: readers do not block writers, and writers do not block readers. The reader should understand that these activities can proceed concurrently, so neither has to wait for the other to continue.\n\n### Story Progression\n- **Context:** Establish that the subject is the relationship between reading and writing under WAL.\n- **Development:** Explain the supported interaction: readers do not block writers, and writers do not block readers.\n- **Endpoint:** Clarify that reading and writing can proceed concurrently, without either blocking the other.\n\n### Critical Constraints\n- Do not imply that WAL eliminates all waiting or establishes faster or better performance."
+}

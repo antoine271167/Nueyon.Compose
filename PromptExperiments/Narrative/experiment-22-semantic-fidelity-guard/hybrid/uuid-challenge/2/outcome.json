@@ -1,0 +1,20 @@
+{
+  "status": "FAIL",
+  "findings": [
+    {
+      "verdict": "CONTRADICTED",
+      "narrativeExcerpt": "it contains a 84-bit unsigned number representing a Unix Epoch timestamp, stored in big-endian order.",
+      "relation": "For how UUIDv7 carries time inside an identifier, the source specifies a 48-bit unsigned Unix Epoch timestamp in big-endian order, but the excerpt asserts 84 bits.",
+      "correction": "State that the timestamp is 48-bit, not 84-bit.",
+      "evidenceExcerpt": "48-bit big-endian unsigned number of the Unix Epoch timestamp",
+      "mechanism": "focused semantic comparison"
+    }
+  ],
+  "candidates": [
+    "Explain how UUIDv7 incorporates time into an identifier: it contains a 84-bit unsigned number representing a Unix Epoch timestamp, stored in big-endian order. The reader should understand that this timestamp is part of the identifier itself.",
+    "- **Endpoint:** Clarify that UUIDv7 carries this timestamp within the identifier.",
+    "- Do not infer additional UUIDv7 behavior, such as ordering properties, or claim benefits beyond the timestamp representation."
+  ],
+  "unresolved": null,
+  "milliseconds": 0.11739999998826534
+}

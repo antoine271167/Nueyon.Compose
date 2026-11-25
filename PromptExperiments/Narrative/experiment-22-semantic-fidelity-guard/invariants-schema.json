@@ -1,0 +1,28 @@
+{
+  "type": "object",
+  "required": [
+    "subject",
+    "source",
+    "relation",
+    "category",
+    "anchors"
+  ],
+  "properties": {
+    "subject": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string"
+    },
+    "relation": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "anchors": {
+      "type": "string",
+      "description": "Pipe-delimited case-insensitive discovery expressions, scoped to one source relation."
+    }
+  }
+}

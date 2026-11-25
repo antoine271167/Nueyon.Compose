@@ -1,0 +1,13 @@
+{
+  "status": "FAIL",
+  "findings": [
+    {
+      "category": "entity_identity",
+      "status": "confirmed",
+      "narrativeExcerpt": "Wilbur as the pilot",
+      "evidenceExcerpt": "with Orville piloting.",
+      "problem": "The narrative names Wilbur as the pilot, but the source names Orville.",
+      "requiredCorrection": "Identify Orville, not Wilbur, as the pilot."
+    }
+  ]
+}

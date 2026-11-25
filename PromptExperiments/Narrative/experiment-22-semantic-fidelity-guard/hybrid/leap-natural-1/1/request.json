@@ -1,0 +1,15 @@
+{
+  "invariant": {
+    "subject": "leap",
+    "source": "Coordinated Universal Time (UTC) is based on International Atomic Time (TAI), but it is adjusted by leap seconds",
+    "category": "causality",
+    "relation": "Why atomic time and civil time diverge",
+    "anchors": "UTC|TAI|leap second|schrikkelseconde"
+  },
+  "candidates": [
+    "- **Development:** Explain their supported relationship: UTC is based on TAI and is adjusted by leap seconds.",
+    "- Do not explain why leap seconds are used or make broader claims about how the two standards diverge; the inputs establish only that UTC is based on TAI and adjusted by leap seconds.",
+    "The story explains the relationship between International Atomic Time (TAI) and Coordinated Universal Time (UTC): UTC is based on TAI, but leap-second adjustments distinguish the two. The reader should understand that UTC is not simply identical to TAI; the supplied material establishes their relationship and the adjustments, but not why those adjustments are made."
+  ],
+  "terminology": []
+}

@@ -1,0 +1,20 @@
+{
+  "checks": {
+    "entity_identity": "Material mismatch: the narrative names UTF-16, while the source specifies UTF-8.",
+    "temporal_relationship": "No material temporal relationship is stated in the brief or source.",
+    "actor_object": "The brief preserves the exchange context; no material change to agent, action, or recipient is evident.",
+    "causal_relationship": "No causal claim is made in the brief or source.",
+    "quantitative_meaning": "No quantities or statistical scope are changed."
+  },
+  "verdict": "REVISE",
+  "blockers": [
+    {
+      "category": "entity_identity",
+      "status": "confirmed",
+      "narrativeExcerpt": "the required encoding is UTF-16.",
+      "evidenceExcerpt": "JSON text exchanged between systems that are not part of a closed ecosystem MUST be encoded using UTF-8",
+      "problem": "The brief identifies a different encoding from the one required by the source.",
+      "requiredCorrection": "Change UTF-16 to UTF-8."
+    }
+  ]
+}

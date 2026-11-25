@@ -1,0 +1,13 @@
+{
+  "status": "FAIL",
+  "findings": [
+    {
+      "category": "entity_identity",
+      "status": "confirmed",
+      "narrativeExcerpt": "Voyager 1’s close-up study of Neptune in 1989",
+      "evidenceExcerpt": "In 1989, NASA's Voyager 2 became the first-and only-spacecraft to study Neptune up close.",
+      "problem": "The narrative names Voyager 1, but the source identifies Voyager 2 as the spacecraft that studied Neptune up close.",
+      "requiredCorrection": "Replace “Voyager 1” with “Voyager 2” throughout the narrative."
+    }
+  ]
+}

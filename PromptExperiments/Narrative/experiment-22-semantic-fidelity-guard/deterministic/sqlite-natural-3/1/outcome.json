@@ -1,0 +1,11 @@
+{
+  "status": "REVIEW",
+  "findings": [],
+  "candidates": [
+    "Explain WAL through its effect on the relationship between reading and writing: readers do not block writers, and writers do not block readers. The reader should understand that these activities can proceed concurrently, rather than one having to wait for the other.",
+    "- Do not claim that WAL eliminates all waiting or describe how it achieves this; the supplied material establishes only that readers and writers do not block one another.",
+    "- **Development:** Explain that readers do not block writers, and writers do not block readers."
+  ],
+  "unresolved": "Relation needs semantic interpretation",
+  "milliseconds": 0.09540000002016313
+}

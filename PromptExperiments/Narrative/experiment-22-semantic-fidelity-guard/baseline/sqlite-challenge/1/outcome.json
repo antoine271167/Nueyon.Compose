@@ -1,0 +1,21 @@
+{
+  "status": "FAIL",
+  "findings": [
+    {
+      "category": "temporal_relationship",
+      "status": "confirmed",
+      "narrativeExcerpt": "The reader should understand that these two activities must proceed in sequence.",
+      "evidenceExcerpt": "Reading and writing can proceed concurrently.",
+      "problem": "The Narrative says reading and writing must happen sequentially, but the source says they can happen concurrently.",
+      "requiredCorrection": "State that reading and writing can proceed concurrently."
+    },
+    {
+      "category": "actor_object",
+      "status": "confirmed",
+      "narrativeExcerpt": "readers must wait until writing has finished.",
+      "evidenceExcerpt": "readers do not block writers and a writer does not block readers.",
+      "problem": "The Narrative claims readers must wait for writing, contradicting the source's statement that readers and writers do not block each other.",
+      "requiredCorrection": "State that readers do not block writers and writers do not block readers."
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "findings": [
+    {
+      "verdict": "SUPPORTED",
+      "narrativeExcerpt": "continuous residence for five years was required before title could be received.",
+      "relation": "The candidates accurately describe the provision’s five-year continuous-residence requirement before title; they do not assert that any claimant completed it.",
+      "correction": null,
+      "evidenceExcerpt": "Among its provisions was a five-year requirement of continuous residence before receiving the title to the land",
+      "mechanism": "focused semantic comparison"
+    }
+  ],
+  "candidates": [
+    "The story is about a provision that connected a claim to land with the possibility of receiving its title: continuous residence for five years was required before title could be received. The reader should understand this as a conditional path from claim to ownership, not evidence that a particular claimant completed it.",
+    "- **Development:** Explain the stated condition: five years of continuous residence before title could be received.",
+    "- **Endpoint:** Clarify that the provision made continuous residence a requirement along the path from claim to title."
+  ],
+  "unresolved": null,
+  "milliseconds": 0.11869999999180436
+}

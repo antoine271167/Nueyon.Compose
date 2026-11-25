@@ -1,0 +1,16 @@
+{
+  "selectedIdea": {
+    "title": "How UUIDv7 carries time inside an identifier",
+    "description": "How UUIDv7 carries time inside an identifier",
+    "audience": "Curious general readers",
+    "rationale": "How UUIDv7 carries time inside an identifier",
+    "evidence": "48-bit big-endian unsigned number of the Unix Epoch timestamp"
+  },
+  "synthesis": {
+    "content": "### Central insight\nHow UUIDv7 carries time inside an identifier\n### Source evidence\n48-bit big-endian unsigned number of the Unix Epoch timestamp"
+  },
+  "source": "48-bit big-endian unsigned number of the Unix Epoch timestamp\n",
+  "narrative": {
+    "content": "### Selected Story\nThe story explains how UUIDv7 carries time within the identifier: its time-bearing component is a 48-bit, big-endian unsigned Unix Epoch timestamp. The main point for readers is that the timestamp is part of UUIDv7 itself.\n\n### Story Progression\n- **Context:** Introduce UUIDv7 as the identifier at the center of the story.\n- **Development:** Explain that its time-bearing component is a 48-bit, big-endian unsigned number representing a Unix Epoch timestamp.\n- **Endpoint:** Bring the focus back to the central idea: UUIDv7 carries that timestamp within the identifier itself."
+  }
+}

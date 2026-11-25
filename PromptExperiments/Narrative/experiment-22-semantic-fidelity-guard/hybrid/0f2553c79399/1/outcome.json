@@ -1,0 +1,20 @@
+{
+  "status": "FAIL",
+  "findings": [
+    {
+      "verdict": "CONTRADICTED",
+      "narrativeExcerpt": "- **Development:** Zet de cijfers naast elkaar: hernieuwbare bronnen waren goed voor 10,0 van de 30,7 biljoen kWh elektriciteitsproductie (32%), tegenover 42,4 van de 605,6 quadriljoen Btu totale energieproductie (7%).",
+      "relation": "The excerpt assigns the first coefficient to electricity production in kWh and the second to total energy production in quadrillion Btu; they are not both for total energy production in the same unit and scale.",
+      "correction": "Align both coefficients to total energy production and the same unit and scale.",
+      "evidenceExcerpt": "42.4 out of 605.6 quadrillion Btu",
+      "mechanism": "focused semantic comparison"
+    }
+  ],
+  "candidates": [
+    "- **Development:** Zet de cijfers naast elkaar: hernieuwbare bronnen waren goed voor 10,0 van de 30,7 biljoen kWh elektriciteitsproductie (32%), tegenover 42,4 van de 605,6 quadriljoen Btu totale energieproductie (7%).",
+    "Het aandeel hernieuwbare energie wereldwijd in 2024 hangt af van wat je meet. Hernieuwbare bronnen leverden 32% van de elektriciteitsproductie, terwijl hun aandeel in de totale energieproductie 7% was. Het belangrijkste inzicht is dat deze cijfers verschillende delen van het energiesysteem beschrijven: het antwoord op de vraag naar het aandeel hernieuwbare energie verandert met de gekozen maatstaf.",
+    "- **Context:** Introduceer de vraag naar het wereldwijde aandeel hernieuwbare energie in 2024 en maak duidelijk dat elektriciteit een deel van de totale energieproductie is."
+  ],
+  "unresolved": null,
+  "milliseconds": 2.400000000001455
+}

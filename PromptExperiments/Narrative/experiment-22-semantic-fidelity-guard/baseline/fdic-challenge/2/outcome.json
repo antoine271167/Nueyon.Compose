@@ -1,0 +1,13 @@
+{
+  "status": "FAIL",
+  "findings": [
+    {
+      "category": "quantitative_meaning",
+      "status": "confirmed",
+      "narrativeExcerpt": "The story explains how the standard $250,000 deposit insurance amount is defined: it applies per account.",
+      "evidenceExcerpt": "The standard deposit insurance amount is $250,000 per depositor, per FDIC-insured bank, per ownership category.",
+      "problem": "The narrative says coverage applies per account, but the source defines it per depositor, per FDIC-insured bank, and per ownership category.",
+      "requiredCorrection": "State that the standard amount applies per depositor, per FDIC-insured bank, per ownership category."
+    }
+  ]
+}

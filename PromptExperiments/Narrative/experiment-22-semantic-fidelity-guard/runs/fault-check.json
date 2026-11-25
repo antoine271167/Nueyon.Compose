@@ -1,0 +1,97 @@
+{
+  "source": {
+    "category": "numerical_scale",
+    "anchors": "Btu",
+    "source": "42.4 out of 605.6 quadrillion Btu"
+  },
+  "results": [
+    {
+      "name": "bare scale relation",
+      "content": "42,4 van de 605,6 quadriljoen Btu",
+      "expected": "FAIL",
+      "actual": "FAIL",
+      "agreement": true,
+      "findings": [
+        {
+          "mechanism": "deterministic numerical checking",
+          "verdict": "CONTRADICTED",
+          "narrativeExcerpt": "42,4 van de 605,6 quadriljoen Btu",
+          "evidenceExcerpt": "42.4 out of 605.6 quadrillion Btu",
+          "relation": "Same explicit unit and ratio coefficients; the named scale changes both magnitudes.",
+          "correction": "Express the original magnitude (10^15 multiplier)."
+        }
+      ]
+    },
+    {
+      "name": "converted scale name",
+      "content": "42,4 van de 605,6 biljard Btu",
+      "expected": "REVIEW",
+      "actual": "REVIEW",
+      "agreement": true,
+      "findings": []
+    },
+    {
+      "name": "omission",
+      "content": "The source compares two quantities.",
+      "expected": "REVIEW",
+      "actual": "REVIEW",
+      "agreement": true,
+      "findings": []
+    },
+    {
+      "name": "other unit",
+      "content": "42,4 van de 605,6 quadriljoen joule",
+      "expected": "REVIEW",
+      "actual": "REVIEW",
+      "agreement": true,
+      "findings": []
+    },
+    {
+      "name": "two ratio clauses",
+      "content": "10,0 van de 30,7 biljoen kWh; 42,4 van de 605,6 quadriljoen Btu",
+      "expected": "FAIL",
+      "actual": "REVIEW",
+      "agreement": false,
+      "findings": []
+    },
+    {
+      "name": "editorial prohibition",
+      "content": "Do not say 42,4 van de 605,6 quadriljoen Btu.",
+      "expected": "REVIEW",
+      "actual": "FAIL",
+      "agreement": false,
+      "findings": [
+        {
+          "mechanism": "deterministic numerical checking",
+          "verdict": "CONTRADICTED",
+          "narrativeExcerpt": "42,4 van de 605,6 quadriljoen Btu",
+          "evidenceExcerpt": "42.4 out of 605.6 quadrillion Btu",
+          "relation": "Same explicit unit and ratio coefficients; the named scale changes both magnitudes.",
+          "correction": "Express the original magnitude (10^15 multiplier)."
+        }
+      ]
+    }
+  ],
+  "invalid": [
+    {
+      "name": "malformed",
+      "rejected": true,
+      "reason": "Expected property name or '}' in JSON at position 1 (line 1 column 2)"
+    },
+    {
+      "name": "missing correction",
+      "rejected": true,
+      "reason": "Invalid focused response contract"
+    },
+    {
+      "name": "invented quote",
+      "rejected": true,
+      "reason": "Invalid focused response contract"
+    },
+    {
+      "name": "invalid status",
+      "rejected": true,
+      "reason": "Invalid focused response contract"
+    }
+  ]
+}

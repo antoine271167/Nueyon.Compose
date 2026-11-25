@@ -1,0 +1,6 @@
+{
+  "verdict": "CONTRADICTED",
+  "narrativeExcerpt": "the required encoding is UTF-16",
+  "relation": "The source requires UTF-8 for JSON text exchanged between systems outside a closed ecosystem; the excerpt assigns that same exchange UTF-16, an incompatible encoding.",
+  "correction": "State that the required encoding is UTF-8."
+}

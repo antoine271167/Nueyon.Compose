@@ -1,0 +1,20 @@
+{
+  "checks": {
+    "entity_identity": "The narrative uses “account” as the coverage unit, while the source specifies “per depositor, per FDIC-insured bank, per ownership category.”",
+    "temporal_relationship": "No temporal sequence or duration is asserted in the narrative; the source provides no temporal evidence to compare.",
+    "actor_object": "No material agent-recipient relationship is asserted; the source defines a coverage amount and its unit.",
+    "causal_relationship": "No causal relationship is asserted in the narrative or source.",
+    "quantitative_meaning": "“applies separately to each account” changes the source’s coverage unit and denominator, which are per depositor, per FDIC-insured bank, and per ownership category."
+  },
+  "verdict": "REVISE",
+  "blockers": [
+    {
+      "category": "quantitative_meaning",
+      "status": "confirmed",
+      "narrativeExcerpt": "The story explains how the standard $250,000 deposit insurance amount is defined: it applies per account.",
+      "evidenceExcerpt": "The standard deposit insurance amount is $250,000 per depositor, per FDIC-insured bank, per ownership category.",
+      "problem": "“per account” materially changes the unit that determines the standard coverage amount.",
+      "requiredCorrection": "Replace the per-account unit with the source’s unit: per depositor, per FDIC-insured bank, per ownership category."
+    }
+  ]
+}

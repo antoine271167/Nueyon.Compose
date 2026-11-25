@@ -1,0 +1,20 @@
+{
+  "checks": {
+    "entity_identity": "Narrative excerpt: “a claim to land” and “its title”; evidence: “a five-year requirement of continuous residence before receiving the title to the land”. The land and title referents are consistent.",
+    "temporal_relationship": "Narrative excerpt: “title was received before the five years of residence began.” Evidence: “a five-year requirement of continuous residence before receiving the title to the land”. The order is reversed.",
+    "actor_object": "Narrative excerpt: “not evidence that a particular claimant completed it.” Evidence: “a five-year requirement of continuous residence before receiving the title to the land”. The narrative does not assign completion or receipt to a particular claimant.",
+    "causal_relationship": "Narrative excerpt: “a conditional path from claim to ownership”. Evidence: “a five-year requirement of continuous residence before receiving the title to the land”. The conditional relationship is consistent, but the narrative reverses when the requirement applies.",
+    "quantitative_meaning": "Narrative excerpt: “the five years of residence”. Evidence: “a five-year requirement of continuous residence before receiving the title to the land”. The duration is retained, but the narrative's temporal reversal changes the requirement's meaning."
+  },
+  "verdict": "REVISE",
+  "blockers": [
+    {
+      "category": "temporal_relationship",
+      "status": "confirmed",
+      "narrativeExcerpt": "title was received before the five years of residence began.",
+      "evidenceExcerpt": "a five-year requirement of continuous residence before receiving the title to the land",
+      "problem": "The narrative reverses the order: the source makes five years of continuous residence a prerequisite to receiving title.",
+      "requiredCorrection": "State that five years of continuous residence was required before receiving title."
+    }
+  ]
+}

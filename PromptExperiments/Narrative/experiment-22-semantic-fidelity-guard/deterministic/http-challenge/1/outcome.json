@@ -1,0 +1,11 @@
+{
+  "status": "REVIEW",
+  "findings": [],
+  "candidates": [
+    "The story is about the HEAD method’s relationship to GET: it is defined as identical to GET except that the server must send content in the response. The reader should understand this specific distinction without assuming what else a HEAD response can reveal.",
+    "- **Context:** Introduce HEAD in relation to GET.",
+    "- **Endpoint:** Leave the reader with the narrow distinction the material establishes: HEAD corresponds to GET, with response content included."
+  ],
+  "unresolved": "Relation needs semantic interpretation",
+  "milliseconds": 0.056099999987054616
+}

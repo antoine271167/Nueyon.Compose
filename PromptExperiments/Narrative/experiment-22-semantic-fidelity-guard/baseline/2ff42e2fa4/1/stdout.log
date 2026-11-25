@@ -1,0 +1,21 @@
+{
+  "checks": {
+    "entity_identity": "Geen materiële afwijking: “Yellowstonewolven” verwijst naar de wolven in Yellowstone; de bron noemt “Yellowstone wolves”.",
+    "temporal_relationship": "Geen materiële afwijking: “in 1995–2000 en 2001–2007” behoudt de volgorde en perioden uit “From 1995 to 2000” en “from 2001 to 2007”.",
+    "actor_object": "Materiële afwijking: “een wolvendoding” kan betekenen dat wolven worden gedood, terwijl de bron bedoelt dat dieren eten van prooien die wolven hebben gedood: “Many other animals benefit from wolf kills.”",
+    "causal_relationship": "Geen materiële afwijking: “binnen omstandigheden waarin meerdere factoren meespelen” en “samenvallen met andere factoren” vermijden een enkelvoudige oorzaak, overeenkomstig “result from complex interactions among these factors.”",
+    "quantitative_meaning": "Geen materiële afwijking: de narrative noemt de verschuiving in verhouding en de perioden, zonder de percentages te verdraaien; de bron vermeldt “elk calves comprised 50% of wolf prey, and bull elk comprised 25%” en “That ratio reversed”."
+  },
+  "verdict": "REVISE",
+  "blockers": [
+    {
+      "category": "actor_object",
+      "status": "confirmed",
+      "narrativeExcerpt": "Laat zien dat een wolvendoding voedsel biedt aan dieren van raven en coyotes tot beren en ongewervelden.",
+      "evidenceExcerpt": "Many other animals benefit from wolf kills.",
+      "problem": "“Een wolvendoding” kan gelezen worden als het doden van wolven; de bron bedoelt een prooi die door wolven is gedood en die andere dieren vervolgens eten.",
+      "requiredCorrection": "Vervang “een wolvendoding” door “een door wolven gedode prooi”."
+    }
+  ]
+}
+

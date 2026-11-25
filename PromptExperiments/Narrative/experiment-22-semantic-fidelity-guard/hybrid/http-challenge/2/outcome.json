@@ -1,0 +1,20 @@
+{
+  "status": "FAIL",
+  "findings": [
+    {
+      "verdict": "CONTRADICTED",
+      "narrativeExcerpt": "it is defined as identical to GET except that the server must send content in the response.",
+      "relation": "The brief asserts that a HEAD response must include content, directly contradicting the source, which says the server MUST NOT send content.",
+      "correction": "State that the server must not send content in a HEAD response.",
+      "evidenceExcerpt": "The HEAD method is identical to GET except that the server MUST NOT send content in the response.",
+      "mechanism": "focused semantic comparison"
+    }
+  ],
+  "candidates": [
+    "The story is about the HEAD method’s relationship to GET: it is defined as identical to GET except that the server must send content in the response. The reader should understand this specific distinction without assuming what else a HEAD response can reveal.",
+    "- **Context:** Introduce HEAD in relation to GET.",
+    "- **Endpoint:** Leave the reader with the narrow distinction the material establishes: HEAD corresponds to GET, with response content included."
+  ],
+  "unresolved": null,
+  "milliseconds": 0.06330000003799796
+}

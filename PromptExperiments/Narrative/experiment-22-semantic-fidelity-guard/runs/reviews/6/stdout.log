@@ -1,0 +1,31 @@
+[
+  {
+    "id": "71b7ea2e16f7",
+    "fidelity": "F2",
+    "narrativeExcerpt": "how WAL handles reading and writing at the same time",
+    "editorial": [3, 3, 3, 3, 2],
+    "reason": "Clear, usable progression, but the source does not attribute the concurrency behavior to WAL; the endpoint repeats the main point and offers few concrete details."
+  },
+  {
+    "id": "7af427aa8b96",
+    "fidelity": "F0",
+    "narrativeExcerpt": null,
+    "editorial": [4, 4, 4, 4, 3],
+    "reason": "A clear observation-to-explanation progression with a concrete glass-of-water example; the endpoint directly resolves the question."
+  },
+  {
+    "id": "805e3693689c",
+    "fidelity": "F2",
+    "narrativeExcerpt": "how WAL affects the relationship between reading and writing",
+    "editorial": [3, 3, 4, 3, 2],
+    "reason": "The structure is easy to use, but the source does not say WAL causes or affects this concurrency behavior; the progression is repetitive and abstract."
+  },
+  {
+    "id": "819276562f24",
+    "fidelity": "F0",
+    "narrativeExcerpt": null,
+    "editorial": [4, 4, 4, 4, 3],
+    "reason": "Clearly introduces the relationship, explains the leap-second adjustment, and ends with the supported distinction; concrete detail is limited to the time standards and adjustment."
+  }
+]
+

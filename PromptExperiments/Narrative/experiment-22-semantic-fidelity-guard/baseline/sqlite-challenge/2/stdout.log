@@ -1,0 +1,29 @@
+{
+  "checks": {
+    "entity_identity": "No material identity change: the brief's “WAL” matches the selected idea and synthesis.",
+    "temporal_relationship": "The brief says “these two activities must proceed in sequence,” but the source says “Reading and writing can proceed concurrently.”",
+    "actor_object": "The brief says “readers must wait until writing has finished,” but the source says “a writer does not block readers.”",
+    "causal_relationship": "No material causal claim beyond WAL's effect on reading and writing is introduced; the source supports concurrent reading and writing.",
+    "quantitative_meaning": "No quantitative claim appears in the brief or source."
+  },
+  "verdict": "REVISE",
+  "blockers": [
+    {
+      "category": "temporal_relationship",
+      "status": "confirmed",
+      "narrativeExcerpt": "The reader should understand that these two activities must proceed in sequence.",
+      "evidenceExcerpt": "Reading and writing can proceed concurrently.",
+      "problem": "The brief changes concurrent activity into sequential activity.",
+      "requiredCorrection": "State that reading and writing can proceed concurrently."
+    },
+    {
+      "category": "actor_object",
+      "status": "confirmed",
+      "narrativeExcerpt": "readers must wait until writing has finished.",
+      "evidenceExcerpt": "a writer does not block readers.",
+      "problem": "The brief says writing blocks readers, contradicting the source's explicit relationship.",
+      "requiredCorrection": "State that a writer does not block readers."
+    }
+  ]
+}
+

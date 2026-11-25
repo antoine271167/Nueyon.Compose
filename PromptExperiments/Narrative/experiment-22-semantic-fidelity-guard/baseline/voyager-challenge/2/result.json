@@ -1,0 +1,20 @@
+{
+  "checks": {
+    "entity_identity": "Narrative: “NASA’s Voyager 1 became the first spacecraft to study Neptune up close.” Evidence: “NASA's Voyager 2 became the first-and only-spacecraft to study Neptune up close.” The spacecraft identity materially differs.",
+    "temporal_relationship": "Narrative: “In 1989, NASA’s Voyager 1 became the first spacecraft to study Neptune up close.” Evidence: “In 1989, NASA's Voyager 2 became the first-and only-spacecraft to study Neptune up close.” The year is consistent; the spacecraft identity is not.",
+    "actor_object": "Narrative: “Voyager 1’s close-up study of Neptune in 1989” Evidence: “Voyager 2 became the first-and only-spacecraft to study Neptune up close.” The actor differs; Neptune and the close-up study are consistent.",
+    "causal_relationship": "Narrative: “making its encounter one no other spacecraft has repeated.” Evidence: “first-and only-spacecraft to study Neptune up close.” This consequence is supported, though the narrative assigns it to the wrong spacecraft.",
+    "quantitative_meaning": "Narrative: “it was the first—and remains the only—spacecraft to study the planet up close.” Evidence: “the first-and only-spacecraft to study Neptune up close.” The first/only scope and 1989 date are consistent; the narrative assigns them to the wrong spacecraft."
+  },
+  "verdict": "REVISE",
+  "blockers": [
+    {
+      "category": "entity_identity",
+      "status": "confirmed",
+      "narrativeExcerpt": "The story is about Voyager 1’s close-up study of Neptune in 1989: it was the first—and remains the only—spacecraft to study the planet up close.",
+      "evidenceExcerpt": "In 1989, NASA's Voyager 2 became the first-and only-spacecraft to study Neptune up close.",
+      "problem": "The narrative identifies Voyager 1 as the spacecraft, while the source identifies Voyager 2.",
+      "requiredCorrection": "Replace “Voyager 1” with “Voyager 2” in the spacecraft references."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "checks": {
+    "entity_identity": "No material identity issue: the Narrative's “WAL” and “reading and writing” match the source's terms.",
+    "temporal_relationship": "Confirmed contradiction. Narrative: “The reader should understand that these two activities must proceed in sequence.” Evidence: “Reading and writing can proceed concurrently.”",
+    "actor_object": "Confirmed contradiction. Narrative: “readers must wait until writing has finished.” Evidence: “readers do not block writers and a writer does not block readers.”",
+    "causal_relationship": "No material causal claim to assess; the Narrative describes a waiting relationship, not a cause supported by the source.",
+    "quantitative_meaning": "No quantities or statistical claims appear in the Narrative."
+  },
+  "verdict": "REVISE",
+  "blockers": [
+    {
+      "category": "temporal_relationship",
+      "status": "confirmed",
+      "narrativeExcerpt": "The reader should understand that these two activities must proceed in sequence.",
+      "evidenceExcerpt": "Reading and writing can proceed concurrently.",
+      "problem": "The Narrative says reading and writing must happen sequentially, but the source says they can happen concurrently.",
+      "requiredCorrection": "State that reading and writing can proceed concurrently."
+    },
+    {
+      "category": "actor_object",
+      "status": "confirmed",
+      "narrativeExcerpt": "readers must wait until writing has finished.",
+      "evidenceExcerpt": "readers do not block writers and a writer does not block readers.",
+      "problem": "The Narrative claims readers must wait for writing, contradicting the source's statement that readers and writers do not block each other.",
+      "requiredCorrection": "State that readers do not block writers and writers do not block readers."
+    }
+  ]
+}

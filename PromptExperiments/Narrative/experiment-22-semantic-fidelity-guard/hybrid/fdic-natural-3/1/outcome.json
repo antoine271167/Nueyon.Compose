@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "findings": [
+    {
+      "verdict": "SUPPORTED",
+      "narrativeExcerpt": "The story explains how the standard $250,000 FDIC deposit insurance amount is defined: by depositor, FDIC-insured bank, and ownership category.",
+      "relation": "The excerpt accurately states that coverage is determined per depositor, per FDIC-insured bank, and per ownership category.",
+      "correction": null,
+      "evidenceExcerpt": "The standard deposit insurance amount is $250,000 per depositor, per FDIC-insured bank, per ownership category.",
+      "mechanism": "focused semantic comparison"
+    }
+  ],
+  "candidates": [
+    "The story explains how the standard $250,000 FDIC deposit insurance amount is defined: by depositor, FDIC-insured bank, and ownership category. The reader should understand that all three are part of the stated basis for deposit coverage.",
+    "- **Context:** Introduce the standard deposit insurance amount: $250,000.",
+    "- **Development:** Explain the three units named in the coverage rule: the depositor, the FDIC-insured bank, and the ownership category."
+  ],
+  "unresolved": null,
+  "milliseconds": 0.11170000000856817
+}

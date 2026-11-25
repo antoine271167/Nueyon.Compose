@@ -1,0 +1,11 @@
+{
+  "checks": {
+    "entity_identity": "Narrative: “Het POA-refundteam lanceerde de dienst na twaalf weken” Evidence: “I’m the Product Manager for the Power of Attorney (POA) refunds service” and “My team and I built a digital and assisted digital service” — the POA-refundteam is the source author's team.",
+    "temporal_relationship": "Narrative: “De aanvragerservaring kwam eerst en werd naar alpha gebracht; plannen voor caseworkers volgden later.” Evidence: “My team focused on the users applying for refunds first and this is what we took to the alpha assessment. Plans for the caseworker user came later.” — order is preserved.",
+    "actor_object": "Narrative: “in de tweede week werden inzendingen gepauzeerd voor testen, onderzoek en verwerking.” Evidence: “then suspending submissions to concentrate on testing, researching and processing applications the second.” — the team pauses submissions to do that work, as stated in the source.",
+    "causal_relationship": "Narrative: “niet als bewezen verklaring voor de lancering of resultaten.” Evidence: “This was key to us being able to build the service so quickly while ensuring it met user needs.” — the source reports the author's view that the sprint arrangement was key; the narrative does not present it as proven causation, consistent with the synthesis's caution.",
+    "quantitative_meaning": "Narrative: “lanceerde de dienst na twaalf weken” and “tweewekelijkse sprints” Evidence: “launched to the public in only 12 weeks” and “splitting our fortnightly sprints in two” — the duration and sprint interval are preserved."
+  },
+  "verdict": "GO",
+  "blockers": []
+}

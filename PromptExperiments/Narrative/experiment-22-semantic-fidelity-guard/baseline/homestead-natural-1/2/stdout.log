@@ -1,0 +1,21 @@
+{
+  "checks": {
+    "entity_identity": "Narrative excerpt: \"the land claim\". Evidence: \"a five-year requirement of continuous residence before receiving the title to the land\". The land referent is consistent.",
+    "temporal_relationship": "Narrative excerpt: \"When a land claim turned into ownership\". Evidence: \"before receiving the title to the land\". The source states a prerequisite, not a completed transition; see confirmed blocker.",
+    "actor_object": "Narrative excerpt: \"not evidence that a particular claimant completed it\". Evidence: \"a five-year requirement of continuous residence before receiving the title to the land\". The narrative does not assign an unsupported action or recipient.",
+    "causal_relationship": "Narrative excerpt: \"a conditional path from claim to ownership\". Evidence: \"a five-year requirement of continuous residence before receiving the title to the land\". The narrative accurately presents a condition, not proof that it guarantees ownership.",
+    "quantitative_meaning": "Narrative excerpt: \"five years of continuous residence\". Evidence: \"a five-year requirement of continuous residence\". Duration and continuity are preserved."
+  },
+  "verdict": "REVISE",
+  "blockers": [
+    {
+      "category": "temporal_relationship",
+      "status": "confirmed",
+      "narrativeExcerpt": "When a land claim turned into ownership",
+      "evidenceExcerpt": "Among its provisions was a five-year requirement of continuous residence before receiving the title to the land",
+      "problem": "The headline presents the transition to ownership as completed, while the evidence only states a requirement preceding possible receipt of title.",
+      "requiredCorrection": "Use a conditional framing, such as \"When a land claim could lead to ownership\"."
+    }
+  ]
+}
+

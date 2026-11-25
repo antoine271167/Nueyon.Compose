@@ -1,0 +1,11 @@
+{
+  "status": "REVIEW",
+  "findings": [],
+  "candidates": [
+    "The story is about how WAL affects the relationship between reading and writing: readers do not block writers, and writers do not block readers. The reader should understand that these two activities can proceed concurrently rather than waiting on one another.",
+    "- **Development:** Explain the supported relationship: readers do not block writers, and writers do not block readers.",
+    "- **Context:** Introduce WAL as the subject and focus on its effect on reading and writing."
+  ],
+  "unresolved": "Relation needs semantic interpretation",
+  "milliseconds": 0.6273999999975786
+}

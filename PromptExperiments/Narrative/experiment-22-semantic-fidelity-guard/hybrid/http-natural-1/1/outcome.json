@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "findings": [
+    {
+      "verdict": "SUPPORTED",
+      "narrativeExcerpt": "The story is about the HEAD method’s relationship to GET: it is defined as identical to GET except that the server must not send content in the response. The reader should understand this specific distinction without assuming what else a HEAD response can reveal.",
+      "relation": "The candidate accurately states HEAD’s relationship to GET and the restriction on response content; its caution does not assert anything beyond the source.",
+      "correction": null,
+      "evidenceExcerpt": "The HEAD method is identical to GET except that the server MUST NOT send content in the response.",
+      "mechanism": "focused semantic comparison"
+    }
+  ],
+  "candidates": [
+    "The story is about the HEAD method’s relationship to GET: it is defined as identical to GET except that the server must not send content in the response. The reader should understand this specific distinction without assuming what else a HEAD response can reveal.",
+    "- **Context:** Introduce HEAD in relation to GET.",
+    "- **Endpoint:** Leave the reader with the narrow distinction the material establishes: HEAD corresponds to GET, with response content omitted."
+  ],
+  "unresolved": null,
+  "milliseconds": 0.09129999997094274
+}

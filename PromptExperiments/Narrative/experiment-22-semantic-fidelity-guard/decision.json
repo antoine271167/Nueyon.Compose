@@ -1,0 +1,61 @@
+{
+  "decision": "NO-GO",
+  "architecture": "C",
+  "scope": "Experiment-only. Do not integrate a Narrative guard on this evidence.",
+  "phaseA": {
+    "outcome": "fail",
+    "liveConfirmed": 0,
+    "liveAcceptableFalseFails": 0,
+    "supplementaryFalseContradictions": 1,
+    "reason": "Mixed-ratio EIA line escapes, and an editorial prohibition can trigger the isolated rule. No general entity or temporal blocker was tested."
+  },
+  "phaseB": {
+    "matchedDetectionOrRisk": {
+      "threshold": 0.9,
+      "observed": 0.8461538461538461,
+      "pass": false
+    },
+    "noRecurringEntityOrTimingEscape": {
+      "pass": false,
+      "reason": "FAA escaped twice. Webb development chronology escaped in both briefs. Digital's confirmed result disappeared on repeat."
+    },
+    "acceptableFalseFail": {
+      "thresholdMax": 0.1,
+      "observed": 0.03225806451612903,
+      "pass": true
+    },
+    "confirmedBlockerPrecision": {
+      "threshold": 0.9,
+      "observed": 0.8461538461538461,
+      "pass": false
+    },
+    "pairedImprovement": {
+      "pass": false,
+      "baselineConfirmed": 11,
+      "hybridConfirmed": 11,
+      "baselineRelevantRisk": 1,
+      "hybridRelevantRisk": 0
+    },
+    "editorialFreedom": {
+      "pass": false,
+      "reason": "One false FAIL on the historical acceptable Digital control. Editorial effects on rich new briefs were insufficiently evidenced."
+    },
+    "failClosed": {
+      "observed": true,
+      "qualification": "Observed uncertainty and invalid comparator output were withheld. Four malformed focused replies were rejected by the decoder probe. Full hosting and exception behavior were outside scope."
+    },
+    "complexityBenefit": {
+      "pass": false,
+      "reason": "One live model call per brief remained, and this prototype required a manually curated source relationship for each subject."
+    },
+    "adequateCoverage": {
+      "pass": false,
+      "reason": "Thirteen held-out subjects, but only three natural archival positive briefs. The 30 new natural briefs contained no confirmed F2."
+    },
+    "execution": {
+      "pass": true,
+      "reason": "All planned primary and repeat slots were accounted for. Frozen files and raw results were retained."
+    }
+  },
+  "next": "Test source-grounded verification of material claims in finished articles after Compose, with explicit evidence uncertainty and technical holds on unattended release. Preserve article-level editorial scoring while measuring errors introduced after Narrative."
+}

@@ -1,0 +1,29 @@
+{
+  "checks": {
+    "entity_identity": "The standards are identified consistently: the narrative uses “International Atomic Time (TAI)” and “Coordinated Universal Time (UTC),” matching the source terms.",
+    "temporal_relationship": "No material event-order claim is made; “adjusted by leap seconds” is consistent with the source, which does not specify timing beyond that.",
+    "actor_object": "Mismatch: “TAI is adjusted by leap seconds to match UTC” reverses the subject. The source says “Coordinated Universal Time (UTC) is based on International Atomic Time (TAI), but it is adjusted by leap seconds”.",
+    "causal_relationship": "“to match UTC” assigns a purpose not established by the source, which only states that UTC “is adjusted by leap seconds.”",
+    "quantitative_meaning": "No quantitative claims are made in the narrative or supplied evidence."
+  },
+  "verdict": "REVISE",
+  "blockers": [
+    {
+      "category": "actor_object",
+      "status": "confirmed",
+      "narrativeExcerpt": "TAI is adjusted by leap seconds to match UTC.",
+      "evidenceExcerpt": "Coordinated Universal Time (UTC) is based on International Atomic Time (TAI), but it is adjusted by leap seconds",
+      "problem": "The narrative makes TAI the standard adjusted by leap seconds, but the source makes UTC the adjusted standard.",
+      "requiredCorrection": "State that UTC is adjusted by leap seconds, not TAI."
+    },
+    {
+      "category": "causal_relationship",
+      "status": "confirmed",
+      "narrativeExcerpt": "TAI is adjusted by leap seconds to match UTC.",
+      "evidenceExcerpt": "Coordinated Universal Time (UTC) is based on International Atomic Time (TAI), but it is adjusted by leap seconds",
+      "problem": "The source does not establish that the leap-second adjustment is made “to match UTC”; that purpose is unsupported.",
+      "requiredCorrection": "Remove “to match UTC”; the source establishes only that UTC is based on TAI and adjusted by leap seconds."
+    }
+  ]
+}
+

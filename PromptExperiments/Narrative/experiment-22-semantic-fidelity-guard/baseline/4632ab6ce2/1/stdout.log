@@ -1,0 +1,21 @@
+{
+  "checks": {
+    "entity_identity": "Material issue: “elandkalveren en stierelanden” changes the prey species named in the source; see blocker.",
+    "temporal_relationship": "“in 1995–2000 anders dan in 2001–2007” preserves the source’s time periods and change: “That ratio reversed from 2001 to 2007”.",
+    "actor_object": "“Een gedode prooi voedt ook andere dieren” preserves the relationship in “Many other animals benefit from wolf kills.”",
+    "causal_relationship": "“met meerdere samenwerkende omstandigheden” does not assign a single cause; the source says changes “result from complex interactions among these factors.”",
+    "quantitative_meaning": "“het aandeel elandkalveren en stierelanden onder de vroege-winterprooi” retains the prey-composition comparison without changing its scope; omitting the percentages is not materially misleading."
+  },
+  "verdict": "REVISE",
+  "blockers": [
+    {
+      "category": "entity_identity",
+      "status": "confirmed",
+      "narrativeExcerpt": "het aandeel elandkalveren en stierelanden onder de vroege-winterprooi",
+      "evidenceExcerpt": "From 1995 to 2000, in early winter, elk calves comprised 50% of wolf prey, and bull elk comprised 25%.",
+      "problem": "In Dutch, “eland” names moose, not the elk (wapiti) identified in the source; this changes the prey species.",
+      "requiredCorrection": "Use “wapiti” for “elk” throughout, including “wapitikalfjes” and “stierwapiti’s”."
+    }
+  ]
+}
+

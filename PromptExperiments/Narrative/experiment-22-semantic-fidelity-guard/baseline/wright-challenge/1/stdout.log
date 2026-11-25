@@ -1,0 +1,21 @@
+{
+  "checks": {
+    "entity_identity": "Mismatch: the narrative identifies Wilbur as the pilot, while the source identifies Orville.",
+    "temporal_relationship": "Consistent: the narrative says the flight lasted 12 seconds; the source says \"making a 12-second flight\".",
+    "actor_object": "Mismatch: the narrative assigns piloting to Wilbur; the source says \"with Orville piloting.\"",
+    "causal_relationship": "No material causal relationship is asserted in the narrative or source.",
+    "quantitative_meaning": "Consistent: the narrative gives 12 seconds and 36 m (120 ft), matching the source's \"12-second flight, traveling 36 m (120 ft)\"."
+  },
+  "verdict": "REVISE",
+  "blockers": [
+    {
+      "category": "entity_identity",
+      "status": "confirmed",
+      "narrativeExcerpt": "Wilbur as the pilot",
+      "evidenceExcerpt": "with Orville piloting.",
+      "problem": "The narrative names Wilbur as the pilot, but the source names Orville.",
+      "requiredCorrection": "Identify Orville, not Wilbur, as the pilot."
+    }
+  ]
+}
+

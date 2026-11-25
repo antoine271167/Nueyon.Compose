@@ -1,0 +1,11 @@
+{
+  "checks": {
+    "entity_identity": "Narrative excerpt: “Orville”. Evidence: “with Orville piloting.” The person is identified consistently.",
+    "temporal_relationship": "Narrative excerpt: “lasted 12 seconds”. Evidence: “making a 12-second flight”. The duration is consistent.",
+    "actor_object": "Narrative excerpt: “who was at the controls.” Evidence: “with Orville piloting.” Orville is consistently the pilot of the flight.",
+    "causal_relationship": "Narrative excerpt: “The reader should understand both the flight’s limited duration and distance and who was at the controls.” Evidence: “making a 12-second flight, traveling 36 m (120 ft), with Orville piloting.” No causal relationship is asserted.",
+    "quantitative_meaning": "Narrative excerpt: “covered 36 m (120 ft)”. Evidence: “traveling 36 m (120 ft)”. The distance and units match; the 12-second duration is also consistent."
+  },
+  "verdict": "GO",
+  "blockers": []
+}

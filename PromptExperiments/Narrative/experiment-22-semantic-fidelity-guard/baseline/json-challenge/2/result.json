@@ -1,0 +1,20 @@
+{
+  "checks": {
+    "entity_identity": "Mismatch: the narrative specifies UTF-16, while the source and handoff specify UTF-8.",
+    "temporal_relationship": "No temporal relationship is asserted. The narrative's rule applies to the exchange described in the source.",
+    "actor_object": "The narrative preserves JSON text as the object being encoded; the source states that JSON text exchanged between the specified systems MUST be encoded.",
+    "causal_relationship": "No causal explanation is asserted; the narrative also says not to invent one, consistent with the source.",
+    "quantitative_meaning": "No quantities, units, denominators, or statistical claims are asserted."
+  },
+  "verdict": "REVISE",
+  "blockers": [
+    {
+      "category": "entity_identity",
+      "status": "confirmed",
+      "narrativeExcerpt": "the required encoding is UTF-16.",
+      "evidenceExcerpt": "JSON text exchanged between systems that are not part of a closed ecosystem MUST be encoded using UTF-8",
+      "problem": "The narrative names UTF-16 as the required encoding, but the source requires UTF-8.",
+      "requiredCorrection": "Replace UTF-16 with UTF-8."
+    }
+  ]
+}

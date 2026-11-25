@@ -1,0 +1,11 @@
+{
+  "checks": {
+    "entity_identity": "Narrative: \"Het POA-refundteam lanceerde de dienst na twaalf weken\" en \"eerst de aanvragerservaring uitwerken, later caseworkerwerk toevoegen\". Evidence: \"I’m the Product Manager for the Power of Attorney (POA) refunds service for the Office of the Public Guardian (OPG).\" en \"My team focused on the users applying for refunds first and this is what we took to the alpha assessment. Plans for the caseworker user came later.\" De dienst en gebruikersgroepen komen overeen.",
+    "temporal_relationship": "Narrative: \"De aanvragerservaring werd eerst naar alpha gebracht en plannen voor caseworkers kwamen later.\" Evidence: \"My team focused on the users applying for refunds first and this is what we took to the alpha assessment. Plans for the caseworker user came later.\" De volgorde klopt; ook de lancering binnen twaalf weken en de private-beta-sprints worden niet in strijd met de bron weergegeven.",
+    "actor_object": "Narrative: \"Tijdens de private beta wisselden tweewekelijkse sprints af tussen aanvragen aannemen en tijd besteden aan testen, onderzoek en verwerking.\" Evidence: \"testing, researching and accepting applications in the first week and then suspending submissions to concentrate on testing, researching and processing applications the second.\" Team, activiteiten en aanvragen zijn correct weergegeven.",
+    "causal_relationship": "Narrative: \"zonder ze als bewezen oorzaak van de lancering of resultaten voor te stellen.\" Evidence: \"This was key to us being able to build the service so quickly while ensuring it met user needs.\" De bron beschrijft wel een verband met snel bouwen, maar de narrative maakt daar terecht geen bewezen oorzaak van de lancering of resultaten van.",
+    "quantitative_meaning": "Narrative: \"lanceerde de dienst na twaalf weken\" en \"tijdens de private beta wisselden tweewekelijkse sprints af\". Evidence: \"launched to the public in only 12 weeks.\" en \"splitting our fortnightly sprints in two\". De tijdsaanduidingen en schaal zijn consistent; de gerapporteerde resultaten worden niet als causaliteitsbewijs opgevoerd."
+  },
+  "verdict": "GO",
+  "blockers": []
+}

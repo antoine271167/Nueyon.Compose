@@ -1,0 +1,20 @@
+{
+  "status": "FAIL",
+  "findings": [
+    {
+      "verdict": "CONTRADICTED",
+      "narrativeExcerpt": "Tijdens de private beta wisselden tweewekelijkse sprints af tussen aanvragen aannemen en tijd besteden aan testen, onderzoek en verwerking.",
+      "relation": "The source describes a two-week sprint: applications were accepted while testing and research continued in the first week, then submissions were suspended while testing, research, and processing continued in the second. The excerpt instead presents those activities as alternating across two-week sprints.",
+      "correction": "Describe the shift between the two weeks of a sprint, keeping testing and research in both weeks.",
+      "evidenceExcerpt": "testing, researching and accepting applications in the first week and then suspending submissions to concentrate on testing, researching and processing applications the second",
+      "mechanism": "focused semantic comparison"
+    }
+  ],
+  "candidates": [
+    "Het POA-refundteam lanceerde de dienst na twaalf weken, nadat levering binnen de aanvankelijk gevraagde termijn van enkele weken niet haalbaar werd geacht met behoud van een kwalitatieve gebruikersdienst. De kern van het verhaal is de volgorde en het werkritme van de beschreven aanpak: eerst de aanvragerservaring uitwerken, later caseworkerwerk toevoegen en tijdens de private beta vaste tijd reserveren voor onderzoek en testen. De lezer moet begrijpen hoe die keuzes deel uitmaakten van de werkwijze onder tijdsdruk, zonder ze als bewezen oorzaak van de lancering of resultaten voor te stellen.",
+    "- **Development:** De aanvragerservaring werd eerst naar alpha gebracht en plannen voor caseworkers kwamen later. Tijdens de private beta wisselden tweewekelijkse sprints af tussen aanvragen aannemen en tijd besteden aan testen, onderzoek en verwerking.",
+    "- Stel niet dat de volgorde of gereserveerde onderzoeks- en testtijd de lancering binnen twaalf weken of de gerapporteerde resultaten heeft veroorzaakt."
+  ],
+  "unresolved": null,
+  "milliseconds": 0.08450000000448199
+}

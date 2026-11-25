@@ -1,0 +1,20 @@
+{
+  "status": "REVIEW",
+  "findings": [
+    {
+      "verdict": "INSUFFICIENT_EVIDENCE",
+      "narrativeExcerpt": "receiving title required five years of continuous residence on the land.",
+      "relation": "The source establishes five years of continuous residence before title, but does not specify that residence had to be on the land; that added location requirement cannot be settled from the supplied evidence.",
+      "correction": null,
+      "evidenceExcerpt": "Among its provisions was a five-year requirement of continuous residence before receiving the title to the land",
+      "mechanism": "focused semantic comparison"
+    }
+  ],
+  "candidates": [
+    "The story is about the condition linking a land claim to ownership: receiving title required five years of continuous residence on the land. The reader should understand that making a claim and receiving title were distinct stages, with residence required before ownership was granted.",
+    "- **Development:** Explain the supported condition: five years of continuous residence was required before title could be received.",
+    "- **Endpoint:** Clarify that a land claim did not itself amount to title; ownership was conditional on meeting the residence requirement."
+  ],
+  "unresolved": "The source establishes five years of continuous residence before title, but does not specify that residence had to be on the land; that added location requirement cannot be settled from the supplied evidence.",
+  "milliseconds": 0.09180000002379529
+}

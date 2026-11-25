@@ -1,0 +1,6 @@
+{
+  "verdict": "CONTRADICTED",
+  "narrativeExcerpt": "it contains a 84-bit unsigned number representing a Unix Epoch timestamp, stored in big-endian order.",
+  "relation": "For how UUIDv7 carries time inside an identifier, the source specifies a 48-bit unsigned Unix Epoch timestamp in big-endian order, but the excerpt asserts 84 bits.",
+  "correction": "State that the timestamp is 48-bit, not 84-bit."
+}

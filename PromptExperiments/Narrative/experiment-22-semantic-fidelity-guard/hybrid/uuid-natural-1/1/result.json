@@ -1,0 +1,6 @@
+{
+  "verdict": "SUPPORTED",
+  "narrativeExcerpt": "it contains a 48-bit unsigned number representing a Unix Epoch timestamp, stored in big-endian order.",
+  "relation": "The candidate asserts that UUIDv7 carries the source’s 48-bit unsigned Unix Epoch timestamp in big-endian order within the identifier; this matches the source relationship.",
+  "correction": null
+}

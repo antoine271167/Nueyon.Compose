@@ -1,0 +1,12 @@
+{
+  "checks": {
+    "entity_identity": "The narrative preserves the supplied entities: International Atomic Time (TAI) and Coordinated Universal Time (UTC).",
+    "temporal_relationship": "No temporal order or timing relationship is stated in the supplied evidence.",
+    "actor_object": "The narrative preserves the relationship: UTC is based on TAI and is adjusted by leap seconds.",
+    "causal_relationship": "The narrative does not claim why leap seconds are used, consistent with the evidence and critical constraint.",
+    "quantitative_meaning": "No quantities or statistical claims are stated."
+  },
+  "verdict": "GO",
+  "blockers": []
+}
+

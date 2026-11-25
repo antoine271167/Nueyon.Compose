@@ -1,0 +1,492 @@
+[
+  {
+    "id": "2ff42e2fa4",
+    "subject": "wolf",
+    "split": "development",
+    "cohort": "historical-regression",
+    "input": "../experiment-20-fidelity-judge-repair-loop/cases/archived/2ff42e2fa4/input.json",
+    "source": "../experiment-20-fidelity-judge-repair-loop/cases/archived/2ff42e2fa4/source.txt",
+    "initial": "../experiment-20-fidelity-judge-repair-loop/cases/archived/2ff42e2fa4/initial.json",
+    "repeat": false
+  },
+  {
+    "id": "0d1f75b51c",
+    "subject": "webb",
+    "split": "development",
+    "cohort": "historical-regression",
+    "input": "../experiment-20-fidelity-judge-repair-loop/cases/archived/0d1f75b51c/input.json",
+    "source": "../experiment-20-fidelity-judge-repair-loop/cases/archived/0d1f75b51c/source.txt",
+    "initial": "../experiment-20-fidelity-judge-repair-loop/cases/archived/0d1f75b51c/initial.json",
+    "repeat": false
+  },
+  {
+    "id": "a027be447f28",
+    "subject": "faa",
+    "split": "evaluation",
+    "cohort": "historical-regression",
+    "input": "../experiment-20-fidelity-judge-repair-loop/cases/archived/a027be447f28/input.json",
+    "source": "../experiment-20-fidelity-judge-repair-loop/cases/archived/a027be447f28/source.txt",
+    "initial": "../experiment-20-fidelity-judge-repair-loop/cases/archived/a027be447f28/initial.json",
+    "repeat": true
+  },
+  {
+    "id": "0f2553c79399",
+    "subject": "eia",
+    "split": "evaluation",
+    "cohort": "historical-regression",
+    "input": "../experiment-20-fidelity-judge-repair-loop/cases/archived/0f2553c79399/input.json",
+    "source": "../experiment-20-fidelity-judge-repair-loop/cases/archived/0f2553c79399/source.txt",
+    "initial": "../experiment-20-fidelity-judge-repair-loop/cases/archived/0f2553c79399/initial.json",
+    "repeat": true
+  },
+  {
+    "id": "166274757454",
+    "subject": "digital",
+    "split": "evaluation",
+    "cohort": "historical-regression",
+    "input": "../experiment-20-fidelity-judge-repair-loop/cases/archived/166274757454/input.json",
+    "source": "../experiment-20-fidelity-judge-repair-loop/cases/archived/166274757454/source.txt",
+    "initial": "../experiment-20-fidelity-judge-repair-loop/cases/archived/166274757454/initial.json",
+    "repeat": true
+  },
+  {
+    "id": "1ae0c9278f",
+    "subject": "wolf",
+    "split": "development",
+    "cohort": "historical-regression",
+    "input": "../experiment-20-fidelity-judge-repair-loop/cases/archived/1ae0c9278f/input.json",
+    "source": "../experiment-20-fidelity-judge-repair-loop/cases/archived/1ae0c9278f/source.txt",
+    "initial": "../experiment-20-fidelity-judge-repair-loop/cases/archived/1ae0c9278f/initial.json",
+    "repeat": false
+  },
+  {
+    "id": "2336788e5a",
+    "subject": "webb",
+    "split": "development",
+    "cohort": "historical-regression",
+    "input": "../experiment-20-fidelity-judge-repair-loop/cases/archived/2336788e5a/input.json",
+    "source": "../experiment-20-fidelity-judge-repair-loop/cases/archived/2336788e5a/source.txt",
+    "initial": "../experiment-20-fidelity-judge-repair-loop/cases/archived/2336788e5a/initial.json",
+    "repeat": false
+  },
+  {
+    "id": "4632ab6ce2",
+    "subject": "wolf",
+    "split": "development",
+    "cohort": "historical-regression",
+    "input": "../experiment-20-fidelity-judge-repair-loop/cases/archived/4632ab6ce2/input.json",
+    "source": "../experiment-20-fidelity-judge-repair-loop/cases/archived/4632ab6ce2/source.txt",
+    "initial": "../experiment-20-fidelity-judge-repair-loop/cases/archived/4632ab6ce2/initial.json",
+    "repeat": false
+  },
+  {
+    "id": "20108143a8",
+    "subject": "digital",
+    "split": "evaluation",
+    "cohort": "historical-accepted",
+    "input": "../experiment-20-fidelity-judge-repair-loop/cases/archived/20108143a8/input.json",
+    "source": "../experiment-20-fidelity-judge-repair-loop/cases/archived/20108143a8/source.txt",
+    "initial": "../experiment-20-fidelity-judge-repair-loop/cases/archived/20108143a8/initial.json",
+    "repeat": false
+  },
+  {
+    "id": "ice-natural-1",
+    "subject": "ice",
+    "split": "evaluation",
+    "cohort": "new-natural",
+    "input": "fixtures/ice/input.json",
+    "source": "fixtures/ice/source.txt",
+    "initial": "fixtures/ice/natural-1.json",
+    "repeat": true
+  },
+  {
+    "id": "ice-natural-2",
+    "subject": "ice",
+    "split": "evaluation",
+    "cohort": "new-natural",
+    "input": "fixtures/ice/input.json",
+    "source": "fixtures/ice/source.txt",
+    "initial": "fixtures/ice/natural-2.json",
+    "repeat": false
+  },
+  {
+    "id": "ice-natural-3",
+    "subject": "ice",
+    "split": "evaluation",
+    "cohort": "new-natural",
+    "input": "fixtures/ice/input.json",
+    "source": "fixtures/ice/source.txt",
+    "initial": "fixtures/ice/natural-3.json",
+    "repeat": false
+  },
+  {
+    "id": "ice-challenge",
+    "subject": "ice",
+    "split": "evaluation",
+    "cohort": "new-mutation",
+    "input": "fixtures/ice/input.json",
+    "source": "fixtures/ice/source.txt",
+    "initial": "fixtures/ice/challenge.json",
+    "repeat": true
+  },
+  {
+    "id": "leap-natural-1",
+    "subject": "leap",
+    "split": "evaluation",
+    "cohort": "new-natural",
+    "input": "fixtures/leap/input.json",
+    "source": "fixtures/leap/source.txt",
+    "initial": "fixtures/leap/natural-1.json",
+    "repeat": true
+  },
+  {
+    "id": "leap-natural-2",
+    "subject": "leap",
+    "split": "evaluation",
+    "cohort": "new-natural",
+    "input": "fixtures/leap/input.json",
+    "source": "fixtures/leap/source.txt",
+    "initial": "fixtures/leap/natural-2.json",
+    "repeat": false
+  },
+  {
+    "id": "leap-natural-3",
+    "subject": "leap",
+    "split": "evaluation",
+    "cohort": "new-natural",
+    "input": "fixtures/leap/input.json",
+    "source": "fixtures/leap/source.txt",
+    "initial": "fixtures/leap/natural-3.json",
+    "repeat": false
+  },
+  {
+    "id": "leap-challenge",
+    "subject": "leap",
+    "split": "evaluation",
+    "cohort": "new-mutation",
+    "input": "fixtures/leap/input.json",
+    "source": "fixtures/leap/source.txt",
+    "initial": "fixtures/leap/challenge.json",
+    "repeat": true
+  },
+  {
+    "id": "voyager-natural-1",
+    "subject": "voyager",
+    "split": "evaluation",
+    "cohort": "new-natural",
+    "input": "fixtures/voyager/input.json",
+    "source": "fixtures/voyager/source.txt",
+    "initial": "fixtures/voyager/natural-1.json",
+    "repeat": true
+  },
+  {
+    "id": "voyager-natural-2",
+    "subject": "voyager",
+    "split": "evaluation",
+    "cohort": "new-natural",
+    "input": "fixtures/voyager/input.json",
+    "source": "fixtures/voyager/source.txt",
+    "initial": "fixtures/voyager/natural-2.json",
+    "repeat": false
+  },
+  {
+    "id": "voyager-natural-3",
+    "subject": "voyager",
+    "split": "evaluation",
+    "cohort": "new-natural",
+    "input": "fixtures/voyager/input.json",
+    "source": "fixtures/voyager/source.txt",
+    "initial": "fixtures/voyager/natural-3.json",
+    "repeat": false
+  },
+  {
+    "id": "voyager-challenge",
+    "subject": "voyager",
+    "split": "evaluation",
+    "cohort": "new-mutation",
+    "input": "fixtures/voyager/input.json",
+    "source": "fixtures/voyager/source.txt",
+    "initial": "fixtures/voyager/challenge.json",
+    "repeat": true
+  },
+  {
+    "id": "fdic-natural-1",
+    "subject": "fdic",
+    "split": "evaluation",
+    "cohort": "new-natural",
+    "input": "fixtures/fdic/input.json",
+    "source": "fixtures/fdic/source.txt",
+    "initial": "fixtures/fdic/natural-1.json",
+    "repeat": true
+  },
+  {
+    "id": "fdic-natural-2",
+    "subject": "fdic",
+    "split": "evaluation",
+    "cohort": "new-natural",
+    "input": "fixtures/fdic/input.json",
+    "source": "fixtures/fdic/source.txt",
+    "initial": "fixtures/fdic/natural-2.json",
+    "repeat": false
+  },
+  {
+    "id": "fdic-natural-3",
+    "subject": "fdic",
+    "split": "evaluation",
+    "cohort": "new-natural",
+    "input": "fixtures/fdic/input.json",
+    "source": "fixtures/fdic/source.txt",
+    "initial": "fixtures/fdic/natural-3.json",
+    "repeat": false
+  },
+  {
+    "id": "fdic-challenge",
+    "subject": "fdic",
+    "split": "evaluation",
+    "cohort": "new-mutation",
+    "input": "fixtures/fdic/input.json",
+    "source": "fixtures/fdic/source.txt",
+    "initial": "fixtures/fdic/challenge.json",
+    "repeat": true
+  },
+  {
+    "id": "homestead-natural-1",
+    "subject": "homestead",
+    "split": "evaluation",
+    "cohort": "new-natural",
+    "input": "fixtures/homestead/input.json",
+    "source": "fixtures/homestead/source.txt",
+    "initial": "fixtures/homestead/natural-1.json",
+    "repeat": true
+  },
+  {
+    "id": "homestead-natural-2",
+    "subject": "homestead",
+    "split": "evaluation",
+    "cohort": "new-natural",
+    "input": "fixtures/homestead/input.json",
+    "source": "fixtures/homestead/source.txt",
+    "initial": "fixtures/homestead/natural-2.json",
+    "repeat": false
+  },
+  {
+    "id": "homestead-natural-3",
+    "subject": "homestead",
+    "split": "evaluation",
+    "cohort": "new-natural",
+    "input": "fixtures/homestead/input.json",
+    "source": "fixtures/homestead/source.txt",
+    "initial": "fixtures/homestead/natural-3.json",
+    "repeat": false
+  },
+  {
+    "id": "homestead-challenge",
+    "subject": "homestead",
+    "split": "evaluation",
+    "cohort": "new-mutation",
+    "input": "fixtures/homestead/input.json",
+    "source": "fixtures/homestead/source.txt",
+    "initial": "fixtures/homestead/challenge.json",
+    "repeat": true
+  },
+  {
+    "id": "wright-natural-1",
+    "subject": "wright",
+    "split": "evaluation",
+    "cohort": "new-natural",
+    "input": "fixtures/wright/input.json",
+    "source": "fixtures/wright/source.txt",
+    "initial": "fixtures/wright/natural-1.json",
+    "repeat": true
+  },
+  {
+    "id": "wright-natural-2",
+    "subject": "wright",
+    "split": "evaluation",
+    "cohort": "new-natural",
+    "input": "fixtures/wright/input.json",
+    "source": "fixtures/wright/source.txt",
+    "initial": "fixtures/wright/natural-2.json",
+    "repeat": false
+  },
+  {
+    "id": "wright-natural-3",
+    "subject": "wright",
+    "split": "evaluation",
+    "cohort": "new-natural",
+    "input": "fixtures/wright/input.json",
+    "source": "fixtures/wright/source.txt",
+    "initial": "fixtures/wright/natural-3.json",
+    "repeat": false
+  },
+  {
+    "id": "wright-challenge",
+    "subject": "wright",
+    "split": "evaluation",
+    "cohort": "new-mutation",
+    "input": "fixtures/wright/input.json",
+    "source": "fixtures/wright/source.txt",
+    "initial": "fixtures/wright/challenge.json",
+    "repeat": true
+  },
+  {
+    "id": "sqlite-natural-1",
+    "subject": "sqlite",
+    "split": "evaluation",
+    "cohort": "new-natural",
+    "input": "fixtures/sqlite/input.json",
+    "source": "fixtures/sqlite/source.txt",
+    "initial": "fixtures/sqlite/natural-1.json",
+    "repeat": true
+  },
+  {
+    "id": "sqlite-natural-2",
+    "subject": "sqlite",
+    "split": "evaluation",
+    "cohort": "new-natural",
+    "input": "fixtures/sqlite/input.json",
+    "source": "fixtures/sqlite/source.txt",
+    "initial": "fixtures/sqlite/natural-2.json",
+    "repeat": false
+  },
+  {
+    "id": "sqlite-natural-3",
+    "subject": "sqlite",
+    "split": "evaluation",
+    "cohort": "new-natural",
+    "input": "fixtures/sqlite/input.json",
+    "source": "fixtures/sqlite/source.txt",
+    "initial": "fixtures/sqlite/natural-3.json",
+    "repeat": false
+  },
+  {
+    "id": "sqlite-challenge",
+    "subject": "sqlite",
+    "split": "evaluation",
+    "cohort": "new-mutation",
+    "input": "fixtures/sqlite/input.json",
+    "source": "fixtures/sqlite/source.txt",
+    "initial": "fixtures/sqlite/challenge.json",
+    "repeat": true
+  },
+  {
+    "id": "http-natural-1",
+    "subject": "http",
+    "split": "evaluation",
+    "cohort": "new-natural",
+    "input": "fixtures/http/input.json",
+    "source": "fixtures/http/source.txt",
+    "initial": "fixtures/http/natural-1.json",
+    "repeat": true
+  },
+  {
+    "id": "http-natural-2",
+    "subject": "http",
+    "split": "evaluation",
+    "cohort": "new-natural",
+    "input": "fixtures/http/input.json",
+    "source": "fixtures/http/source.txt",
+    "initial": "fixtures/http/natural-2.json",
+    "repeat": false
+  },
+  {
+    "id": "http-natural-3",
+    "subject": "http",
+    "split": "evaluation",
+    "cohort": "new-natural",
+    "input": "fixtures/http/input.json",
+    "source": "fixtures/http/source.txt",
+    "initial": "fixtures/http/natural-3.json",
+    "repeat": false
+  },
+  {
+    "id": "http-challenge",
+    "subject": "http",
+    "split": "evaluation",
+    "cohort": "new-mutation",
+    "input": "fixtures/http/input.json",
+    "source": "fixtures/http/source.txt",
+    "initial": "fixtures/http/challenge.json",
+    "repeat": true
+  },
+  {
+    "id": "json-natural-1",
+    "subject": "json",
+    "split": "evaluation",
+    "cohort": "new-natural",
+    "input": "fixtures/json/input.json",
+    "source": "fixtures/json/source.txt",
+    "initial": "fixtures/json/natural-1.json",
+    "repeat": true
+  },
+  {
+    "id": "json-natural-2",
+    "subject": "json",
+    "split": "evaluation",
+    "cohort": "new-natural",
+    "input": "fixtures/json/input.json",
+    "source": "fixtures/json/source.txt",
+    "initial": "fixtures/json/natural-2.json",
+    "repeat": false
+  },
+  {
+    "id": "json-natural-3",
+    "subject": "json",
+    "split": "evaluation",
+    "cohort": "new-natural",
+    "input": "fixtures/json/input.json",
+    "source": "fixtures/json/source.txt",
+    "initial": "fixtures/json/natural-3.json",
+    "repeat": false
+  },
+  {
+    "id": "json-challenge",
+    "subject": "json",
+    "split": "evaluation",
+    "cohort": "new-mutation",
+    "input": "fixtures/json/input.json",
+    "source": "fixtures/json/source.txt",
+    "initial": "fixtures/json/challenge.json",
+    "repeat": true
+  },
+  {
+    "id": "uuid-natural-1",
+    "subject": "uuid",
+    "split": "evaluation",
+    "cohort": "new-natural",
+    "input": "fixtures/uuid/input.json",
+    "source": "fixtures/uuid/source.txt",
+    "initial": "fixtures/uuid/natural-1.json",
+    "repeat": true
+  },
+  {
+    "id": "uuid-natural-2",
+    "subject": "uuid",
+    "split": "evaluation",
+    "cohort": "new-natural",
+    "input": "fixtures/uuid/input.json",
+    "source": "fixtures/uuid/source.txt",
+    "initial": "fixtures/uuid/natural-2.json",
+    "repeat": false
+  },
+  {
+    "id": "uuid-natural-3",
+    "subject": "uuid",
+    "split": "evaluation",
+    "cohort": "new-natural",
+    "input": "fixtures/uuid/input.json",
+    "source": "fixtures/uuid/source.txt",
+    "initial": "fixtures/uuid/natural-3.json",
+    "repeat": false
+  },
+  {
+    "id": "uuid-challenge",
+    "subject": "uuid",
+    "split": "evaluation",
+    "cohort": "new-mutation",
+    "input": "fixtures/uuid/input.json",
+    "source": "fixtures/uuid/source.txt",
+    "initial": "fixtures/uuid/challenge.json",
+    "repeat": true
+  }
+]

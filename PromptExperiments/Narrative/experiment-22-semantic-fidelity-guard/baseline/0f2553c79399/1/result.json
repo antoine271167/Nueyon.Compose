@@ -1,0 +1,20 @@
+{
+  "checks": {
+    "entity_identity": "Geen materiële identiteitswijziging gevonden. Narrative excerpt: \"Hernieuwbare bronnen leverden 32% van de elektriciteitsproductie\". Evidence excerpt: \"10.0 trillion kWh of renewable electricity production out of 30.7 trillion kWh of total electricity production, reported as 32%.\"",
+    "temporal_relationship": "De cijfers blijven gekoppeld aan 2024; er wordt geen onjuiste volgorde of overlap geïntroduceerd. Narrative excerpt: \"Het aandeel hernieuwbare energie wereldwijd in 2024 hangt af van wat je meet.\" Evidence excerpt: \"The table for 2024 lists 10.0 trillion kWh\".",
+    "actor_object": "De bronnen zijn correct weergegeven als producenten en elektriciteitsproductie als het object. Narrative excerpt: \"Hernieuwbare bronnen leverden 32% van de elektriciteitsproductie\". Evidence excerpt: \"renewable electricity production out of 30.7 trillion kWh of total electricity production, reported as 32%.\"",
+    "causal_relationship": "De conclusie dat het antwoord afhangt van de gekozen maatstaf past bij de verschillende gerapporteerde aandelen; er wordt geen sterkere oorzaak-gevolgrelatie toegevoegd. Narrative excerpt: \"het antwoord op de vraag naar het aandeel hernieuwbare energie verandert met de gekozen maatstaf.\" Evidence excerpt: \"Across all energy production, renewables were 42.4 out of 605.6 quadrillion Btu, reported as 7%.\"",
+    "quantitative_meaning": "De elektriciteitscijfers en percentages kloppen, maar \"quadriljoen Btu\" geeft de schaal van de Engelse bronterm \"quadrillion Btu\" onjuist weer in het Nederlands. Narrative excerpt: \"42,4 van de 605,6 quadriljoen Btu totale energieproductie (7%)\". Evidence excerpt: \"Across all energy production, renewables were 42.4 out of 605.6 quadrillion Btu, reported as 7%.\""
+  },
+  "verdict": "REVISE",
+  "blockers": [
+    {
+      "category": "quantitative_meaning",
+      "status": "confirmed",
+      "narrativeExcerpt": "42,4 van de 605,6 quadriljoen Btu totale energieproductie (7%)",
+      "evidenceExcerpt": "renewables were 42.4 out of 605.6 quadrillion Btu, reported as 7%.",
+      "problem": "In het Nederlands is een quadriljoen niet gelijk aan de Engelse quadrillion; daardoor verandert de gerapporteerde energieschaal materieel.",
+      "requiredCorrection": "Vervang \"quadriljoen Btu\" door \"biljard Btu\"."
+    }
+  ]
+}

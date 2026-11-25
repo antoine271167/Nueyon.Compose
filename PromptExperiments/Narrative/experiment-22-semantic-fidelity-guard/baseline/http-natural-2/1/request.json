@@ -1,0 +1,16 @@
+{
+  "selectedIdea": {
+    "title": "What HEAD can tell you without the content",
+    "description": "What HEAD can tell you without the content",
+    "audience": "Curious general readers",
+    "rationale": "What HEAD can tell you without the content",
+    "evidence": "The HEAD method is identical to GET except that the server MUST NOT send content in the response."
+  },
+  "synthesis": {
+    "content": "### Central insight\nWhat HEAD can tell you without the content\n### Source evidence\nThe HEAD method is identical to GET except that the server MUST NOT send content in the response."
+  },
+  "source": "The HEAD method is identical to GET except that the server MUST NOT send content in the response.\n",
+  "narrative": {
+    "content": "### Selected Story\nExplain the relationship between HEAD and GET: HEAD is the same as GET except that the server must not send content in its response. The reader should understand this defining distinction, without attributing other information or capabilities to HEAD.\n\n### Story Progression\n- **Context:** Introduce HEAD and GET as the two methods being compared.\n- **Development:** Establish that HEAD is identical to GET except for the response-content requirement.\n- **Endpoint:** Conclude with the specific distinction: a HEAD response does not include content.\n\n### Critical Constraints\n- Do not claim what particular information a HEAD response provides beyond the stated relationship to GET.\n- Do not add use cases, benefits, or other technical behavior not established by the source."
+  }
+}

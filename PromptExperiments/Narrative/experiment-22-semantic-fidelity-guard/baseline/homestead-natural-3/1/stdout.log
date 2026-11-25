@@ -1,0 +1,21 @@
+{
+  "checks": {
+    "entity_identity": "No material mismatch: the narrative’s title and land referents align with the supplied evidence and handoff.",
+    "temporal_relationship": "The five-year residence requirement is correctly placed before receiving title.",
+    "actor_object": "No material mismatch: the evidence does not name an actor, and the narrative does not assign the requirement to a named person or organization.",
+    "causal_relationship": "The narrative presents residence as a condition of receiving title, consistent with the evidence.",
+    "quantitative_meaning": "The narrative preserves the five-year duration and continuous-residence requirement."
+  },
+  "verdict": "UNCERTAIN",
+  "blockers": [
+    {
+      "category": "entity_identity",
+      "status": "uncertain",
+      "narrativeExcerpt": "receiving title required five years of continuous residence on the land.",
+      "evidenceExcerpt": "Among its provisions was a five-year requirement of continuous residence before receiving the title to the land",
+      "problem": "The evidence does not specify where the continuous residence had to occur, so the narrative's addition that it was on the land is not established.",
+      "requiredCorrection": null
+    }
+  ]
+}
+

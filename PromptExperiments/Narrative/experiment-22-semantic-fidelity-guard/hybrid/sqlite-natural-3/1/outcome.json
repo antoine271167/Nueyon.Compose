@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "findings": [
+    {
+      "verdict": "SUPPORTED",
+      "narrativeExcerpt": "Explain WAL through its effect on the relationship between reading and writing: readers do not block writers, and writers do not block readers. The reader should understand that these activities can proceed concurrently, rather than one having to wait for the other.",
+      "relation": "The source explicitly states that readers and writers do not block each other and can proceed concurrently; the excerpt preserves that relationship.",
+      "correction": null,
+      "evidenceExcerpt": "readers do not block writers and a writer does not block readers. Reading and writing can proceed concurrently.",
+      "mechanism": "focused semantic comparison"
+    }
+  ],
+  "candidates": [
+    "Explain WAL through its effect on the relationship between reading and writing: readers do not block writers, and writers do not block readers. The reader should understand that these activities can proceed concurrently, rather than one having to wait for the other.",
+    "- Do not claim that WAL eliminates all waiting or describe how it achieves this; the supplied material establishes only that readers and writers do not block one another.",
+    "- **Development:** Explain that readers do not block writers, and writers do not block readers."
+  ],
+  "unresolved": null,
+  "milliseconds": 0.05790000001434237
+}

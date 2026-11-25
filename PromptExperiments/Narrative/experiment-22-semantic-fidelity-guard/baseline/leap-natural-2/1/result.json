@@ -1,0 +1,11 @@
+{
+  "checks": {
+    "entity_identity": "No material identity shift. Narrative excerpt: “The story is about the relationship between International Atomic Time (TAI) and Coordinated Universal Time (UTC)” Evidence: “Coordinated Universal Time (UTC) is based on International Atomic Time (TAI)”",
+    "temporal_relationship": "No material temporal sequence is asserted. Narrative excerpt: “UTC is based on TAI and is adjusted by leap seconds.” Evidence: “Coordinated Universal Time (UTC) is based on International Atomic Time (TAI), but it is adjusted by leap seconds”",
+    "actor_object": "The passive construction preserves UTC as the standard being adjusted. Narrative excerpt: “UTC is based on TAI and is adjusted by leap seconds.” Evidence: “Coordinated Universal Time (UTC) is based on International Atomic Time (TAI), but it is adjusted by leap seconds”",
+    "causal_relationship": "No unsupported cause for using leap seconds is given; the stated distinction is consistent with the handoff. Narrative excerpt: “leap-second adjustments mean the two are not identical.” Evidence: “UTC is based on TAI, but it is adjusted by leap seconds”",
+    "quantitative_meaning": "No quantities or magnitude claims are made. Narrative excerpt: “do not quantify the difference between UTC and TAI.” Evidence: “it is adjusted by leap seconds”"
+  },
+  "verdict": "GO",
+  "blockers": []
+}

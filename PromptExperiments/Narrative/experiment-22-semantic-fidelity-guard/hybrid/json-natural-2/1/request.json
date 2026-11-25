@@ -1,0 +1,15 @@
+{
+  "invariant": {
+    "subject": "json",
+    "source": "JSON text exchanged between systems that are not part of a closed ecosystem MUST be encoded using UTF-8",
+    "category": "entity_identity",
+    "relation": "Why an interoperable format still needs an encoding rule",
+    "anchors": "UTF|JSON"
+  },
+  "candidates": [
+    "The story is about a specific requirement for JSON text exchanged between systems outside a closed ecosystem: it must use UTF-8. The reader should understand that an interoperable format still has an encoding rule for this kind of exchange; the rule is the central point, without adding an explanation for why it applies.",
+    "- **Context:** JSON text can be exchanged between systems.",
+    "- **Development:** For exchanges between systems that are not part of a closed ecosystem, the specified encoding is UTF-8."
+  ],
+  "terminology": []
+}

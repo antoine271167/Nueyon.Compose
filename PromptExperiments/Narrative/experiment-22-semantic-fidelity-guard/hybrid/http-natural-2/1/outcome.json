@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "findings": [
+    {
+      "verdict": "SUPPORTED",
+      "narrativeExcerpt": "HEAD is the same as GET except that the server must not send content in its response.",
+      "relation": "This accurately states the HEAD–GET relationship and the response-content distinction; the capitalization change from MUST NOT does not change its meaning.",
+      "correction": null,
+      "evidenceExcerpt": "The HEAD method is identical to GET except that the server MUST NOT send content in the response.",
+      "mechanism": "focused semantic comparison"
+    }
+  ],
+  "candidates": [
+    "Explain the relationship between HEAD and GET: HEAD is the same as GET except that the server must not send content in its response. The reader should understand this defining distinction, without attributing other information or capabilities to HEAD.",
+    "- **Context:** Introduce HEAD and GET as the two methods being compared.",
+    "- **Development:** Establish that HEAD is identical to GET except for the response-content requirement."
+  ],
+  "unresolved": null,
+  "milliseconds": 0.06930000003194436
+}

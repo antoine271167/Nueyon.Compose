@@ -1,0 +1,13 @@
+{
+  "status": "FAIL",
+  "findings": [
+    {
+      "category": "actor_object",
+      "status": "confirmed",
+      "narrativeExcerpt": "the server must send content in the response.",
+      "evidenceExcerpt": "the server MUST NOT send content in the response.",
+      "problem": "The Narrative reverses the defining rule by saying the server must send response content.",
+      "requiredCorrection": "Change the claim to state that the server MUST NOT send content in the response."
+    }
+  ]
+}

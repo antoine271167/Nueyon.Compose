@@ -1,0 +1,50 @@
+[
+  {
+    "id": "71b7ea2e16f7",
+    "source": "readers do not block writers and a writer does not block readers. Reading and writing can proceed concurrently.",
+    "selectedIdea": {
+      "title": "How WAL changes who has to wait",
+      "description": "How WAL changes who has to wait",
+      "audience": "Curious general readers",
+      "rationale": "How WAL changes who has to wait",
+      "evidence": "readers do not block writers and a writer does not block readers. Reading and writing can proceed concurrently."
+    },
+    "narrative": "### Selected Story\nThe story is about how WAL handles reading and writing at the same time: readers do not block writers, and writers do not block readers. The reader should understand that these activities can proceed concurrently, so neither has to wait for the other to continue.\n\n### Story Progression\n- **Context:** Establish that the subject is the relationship between reading and writing under WAL.\n- **Development:** Explain the supported interaction: readers do not block writers, and writers do not block readers.\n- **Endpoint:** Clarify that reading and writing can proceed concurrently, without either blocking the other.\n\n### Critical Constraints\n- Do not imply that WAL eliminates all waiting or establishes faster or better performance."
+  },
+  {
+    "id": "7af427aa8b96",
+    "source": "Ice is less dense than liquid water which is why your ice cubes float in your glass.",
+    "selectedIdea": {
+      "title": "Why solid water floats",
+      "description": "Why solid water floats",
+      "audience": "Curious general readers",
+      "rationale": "Why solid water floats",
+      "evidence": "Ice is less dense than liquid water which is why your ice cubes float in your glass."
+    },
+    "narrative": "### Selected Story\nExplain the familiar observation of ice cubes floating in a glass of liquid water: ice is less dense than liquid water, and this difference accounts for why the ice floats.\n\n### Story Progression\n- **Context:** Begin with ice cubes in a glass of liquid water.\n- **Development:** Establish the key comparison: ice is less dense than liquid water.\n- **Endpoint:** Connect that density difference to the central point: the ice cubes float."
+  },
+  {
+    "id": "805e3693689c",
+    "source": "readers do not block writers and a writer does not block readers. Reading and writing can proceed concurrently.",
+    "selectedIdea": {
+      "title": "How WAL changes who has to wait",
+      "description": "How WAL changes who has to wait",
+      "audience": "Curious general readers",
+      "rationale": "How WAL changes who has to wait",
+      "evidence": "readers do not block writers and a writer does not block readers. Reading and writing can proceed concurrently."
+    },
+    "narrative": "### Selected Story\nThe story is about how WAL affects the relationship between reading and writing: readers do not block writers, and writers do not block readers. The reader should understand that these two activities can proceed concurrently rather than waiting on one another.\n\n### Story Progression\n- **Context:** Introduce WAL as the subject and focus on its effect on reading and writing.\n- **Development:** Explain the supported relationship: readers do not block writers, and writers do not block readers.\n- **Endpoint:** Clarify that reading and writing can proceed concurrently, which is the central point about who has to wait.\n\n### Critical Constraints\n- Do not add WAL mechanics, implementation details, or performance claims beyond the stated concurrency behavior."
+  },
+  {
+    "id": "819276562f24",
+    "source": "Coordinated Universal Time (UTC) is based on International Atomic Time (TAI), but it is adjusted by leap seconds",
+    "selectedIdea": {
+      "title": "Why atomic time and civil time diverge",
+      "description": "Why atomic time and civil time diverge",
+      "audience": "Curious general readers",
+      "rationale": "Why atomic time and civil time diverge",
+      "evidence": "Coordinated Universal Time (UTC) is based on International Atomic Time (TAI), but it is adjusted by leap seconds"
+    },
+    "narrative": "### Selected Story\nThe story is about the relationship between atomic time, represented by International Atomic Time (TAI), and civil time, represented by Coordinated Universal Time (UTC). UTC is based on TAI but is adjusted by leap seconds, so the reader should understand that the two are connected but do not remain identical.\n\n### Story Progression\n- **Context:** Introduce TAI and UTC as the two time standards at the center of the story.\n- **Development:** Explain their supported relationship: UTC is based on TAI and is adjusted by leap seconds.\n- **Endpoint:** Clarify that these adjustments are the stated reason UTC and TAI diverge; they are related, but distinct.\n\n### Critical Constraints\n- Do not add other reasons for the divergence or claim consequences or benefits beyond the stated adjustment."
+  }
+]

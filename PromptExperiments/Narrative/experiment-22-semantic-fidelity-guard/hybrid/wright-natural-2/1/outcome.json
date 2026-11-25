@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "findings": [
+    {
+      "verdict": "SUPPORTED",
+      "narrativeExcerpt": null,
+      "relation": "The source identifies Orville as the pilot of the 12-second flight; the candidates either state that directly or direct the writer to identify him as pilot. No incompatible assertion is made.",
+      "correction": null,
+      "evidenceExcerpt": "making a 12-second flight, traveling 36 m (120 ft), with Orville piloting.",
+      "mechanism": "focused semantic comparison"
+    }
+  ],
+  "candidates": [
+    "The story is about Orville piloting a flight that lasted 12 seconds and covered 36 m (120 ft). The reader should understand the flight through the specific supported detail at its center: Orville was at the controls.",
+    "- **Context:** Establish the flight through its duration and distance: 12 seconds and 36 m (120 ft).",
+    "- **Development:** Identify Orville as the person piloting the flight."
+  ],
+  "unresolved": null,
+  "milliseconds": 0.06489999999757856
+}

@@ -1,0 +1,11 @@
+{
+  "checks": {
+    "entity_identity": "No material mismatch: the narrative's “FDIC-insured bank” and “ownership category” match the source terms.",
+    "temporal_relationship": "No material temporal relationship is asserted; the narrative preserves the source's coverage rule.",
+    "actor_object": "No material mismatch: “it applies per depositor, per FDIC-insured bank, and per ownership category” preserves which units the coverage amount applies to.",
+    "causal_relationship": "No material causal claim is added; “frame the standard coverage amount” is consistent with the source.",
+    "quantitative_meaning": "No material mismatch: “$250,000” remains the standard amount, defined per depositor, per FDIC-insured bank, and per ownership category."
+  },
+  "verdict": "GO",
+  "blockers": []
+}

@@ -1,0 +1,12 @@
+{
+  "checks": {
+    "entity_identity": "Narrative: “JSON text being exchanged between systems outside a closed ecosystem.” Evidence: “JSON text exchanged between systems that are not part of a closed ecosystem”. The exchanged text and systems match the source referents.",
+    "temporal_relationship": "Narrative: “Introduce JSON text being exchanged between systems that are not part of a closed ecosystem.” Evidence: “JSON text exchanged between systems that are not part of a closed ecosystem”. No start, completion, or event-order claim changes the source meaning.",
+    "actor_object": "Narrative: “the JSON text must use UTF-8 encoding.” Evidence: “JSON text exchanged between systems that are not part of a closed ecosystem MUST be encoded using UTF-8”. The text is the object of the same encoding requirement.",
+    "causal_relationship": "Narrative: “do not claim that the encoding requirement produces particular benefits or outcomes.” Evidence: “JSON text exchanged between systems that are not part of a closed ecosystem MUST be encoded using UTF-8”. No unsupported causal outcome is asserted.",
+    "quantitative_meaning": "Narrative: “Keep the UTF-8 requirement scoped to JSON text exchanged between systems outside a closed ecosystem; do not generalize it to every use of JSON.” Evidence: “JSON text exchanged between systems that are not part of a closed ecosystem MUST be encoded using UTF-8”. Scope is preserved; no numerical quantity or denominator is changed."
+  },
+  "verdict": "GO",
+  "blockers": []
+}
+

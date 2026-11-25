@@ -1,0 +1,21 @@
+{
+  "checks": {
+    "entity_identity": "Mismatch: the narrative identifies Wilbur as the pilot, while the source identifies Orville.",
+    "temporal_relationship": "The narrative's 12-second duration is supported by the source's \"12-second flight.\"",
+    "actor_object": "Mismatch: the narrative assigns the pilot role to Wilbur; the source assigns it to Orville.",
+    "causal_relationship": "No material causal claim is made in the narrative.",
+    "quantitative_meaning": "The narrative's 12 seconds and 36 m (120 ft) match the source's duration and distance."
+  },
+  "verdict": "REVISE",
+  "blockers": [
+    {
+      "category": "actor_object",
+      "status": "confirmed",
+      "narrativeExcerpt": "Wilbur as the pilot",
+      "evidenceExcerpt": "with Orville piloting.",
+      "problem": "The narrative assigns the pilot role to Wilbur, but the source says Orville was piloting.",
+      "requiredCorrection": "Identify Orville, not Wilbur, as the pilot."
+    }
+  ]
+}
+

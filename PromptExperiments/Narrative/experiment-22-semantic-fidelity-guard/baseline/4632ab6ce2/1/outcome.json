@@ -1,0 +1,13 @@
+{
+  "status": "FAIL",
+  "findings": [
+    {
+      "category": "entity_identity",
+      "status": "confirmed",
+      "narrativeExcerpt": "het aandeel elandkalveren en stierelanden onder de vroege-winterprooi",
+      "evidenceExcerpt": "From 1995 to 2000, in early winter, elk calves comprised 50% of wolf prey, and bull elk comprised 25%.",
+      "problem": "In Dutch, “eland” names moose, not the elk (wapiti) identified in the source; this changes the prey species.",
+      "requiredCorrection": "Use “wapiti” for “elk” throughout, including “wapitikalfjes” and “stierwapiti’s”."
+    }
+  ]
+}

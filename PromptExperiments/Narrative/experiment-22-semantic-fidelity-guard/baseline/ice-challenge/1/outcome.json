@@ -1,0 +1,13 @@
+{
+  "status": "FAIL",
+  "findings": [
+    {
+      "category": "quantitative_meaning",
+      "status": "confirmed",
+      "narrativeExcerpt": "ice is denser than liquid water",
+      "evidenceExcerpt": "Ice is less dense than liquid water",
+      "problem": "The narrative reverses the source's density comparison.",
+      "requiredCorrection": "Change “denser” to “less dense”."
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "findings": [
+    {
+      "verdict": "SUPPORTED",
+      "narrativeExcerpt": "The story is about Voyager 2’s close-up study of Neptune in 1989: it was the first—and remains the only—spacecraft to study the planet up close. Readers should understand that this encounter has not been repeated by another spacecraft.",
+      "relation": "The source identifies Voyager 2 as the only spacecraft to study Neptune up close; the candidate’s claim that no other spacecraft has repeated the encounter preserves that exclusivity.",
+      "correction": null,
+      "evidenceExcerpt": "In 1989, NASA's Voyager 2 became the first-and only-spacecraft to study Neptune up close.",
+      "mechanism": "focused semantic comparison"
+    }
+  ],
+  "candidates": [
+    "The story is about Voyager 2’s close-up study of Neptune in 1989: it was the first—and remains the only—spacecraft to study the planet up close. Readers should understand that this encounter has not been repeated by another spacecraft.",
+    "- **Development:** In 1989, NASA’s Voyager 2 became the first spacecraft to study Neptune up close.",
+    "- **Context:** Establish Neptune as the subject of a close-up spacecraft study."
+  ],
+  "unresolved": null,
+  "milliseconds": 0.05670000000100117
+}

@@ -1,0 +1,20 @@
+{
+  "checks": {
+    "entity_identity": "Narrative: \"hotspots voor verkeerd baangebruik\". Evidence: \"a cylinder marks a wrong surface hot spot.\" The translated technical referent may not preserve the source term; this needs confirmation.",
+    "temporal_relationship": "Narrative: \"sinds 19 mei 2022\". Evidence: \"beginning May 19, 2022.\" The start date is preserved.",
+    "actor_object": "Narrative: \"De FAA gebruikt sinds 19 mei 2022 gestandaardiseerde kaartvormen om twee soorten hot spots te onderscheiden\". Evidence: \"The FAA standardized two meanings with three shapes\". The FAA is the standardizing actor, and the shapes distinguish the types.",
+    "causal_relationship": "Narrative: \"het genoemde doel is verwarring over de betekenis of weergave ervan te voorkomen.\" Evidence: \"The stated purpose is to prevent confusion about the meaning or depiction of hot spots.\" The purpose is preserved without claiming a proven result.",
+    "quantitative_meaning": "Narrative: \"een cirkel of ellips\" and \"een cilinder\". Evidence: \"three shapes\" and \"A circle or ellipse marks a ground movement hot spot; a cylinder marks a wrong surface hot spot.\" The three shapes and two types are represented."
+  },
+  "verdict": "UNCERTAIN",
+  "blockers": [
+    {
+      "category": "entity_identity",
+      "status": "uncertain",
+      "narrativeExcerpt": "hotspots voor verkeerd baangebruik",
+      "evidenceExcerpt": "a cylinder marks a wrong surface hot spot.",
+      "problem": "The Dutch wording may not preserve the intended technical referent of \"wrong surface hot spot\"; the supplied evidence does not define the term enough to determine whether this translation is accurate.",
+      "requiredCorrection": null
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "model": "gpt-6-luna",
+  "timeoutSeconds": 150,
+  "concurrency": 6,
+  "sampling": "provider defaults",
+  "attempts": 2,
+  "repeatPolicy": "First attempt on all evaluation briefs, second independent attempt on the full F2 cohort plus the first natural brief per new subject. Keep attempts separate.",
+  "tools": "disabled for the Judge and focused comparison",
+  "sourceCommit": "611a7e71b73cfea3cb1b9c6a229d43a7544235d3",
+  "dotnet": "10.0.404",
+  "node": "v22.16.0",
+  "copilot": "1.0.116"
+}

@@ -1,0 +1,13 @@
+{
+  "status": "FAIL",
+  "findings": [
+    {
+      "category": "entity_identity",
+      "status": "confirmed",
+      "narrativeExcerpt": "the required encoding is UTF-16.",
+      "evidenceExcerpt": "JSON text exchanged between systems that are not part of a closed ecosystem MUST be encoded using UTF-8",
+      "problem": "The narrative names UTF-16 as the required encoding, but the source requires UTF-8.",
+      "requiredCorrection": "Replace UTF-16 with UTF-8."
+    }
+  ]
+}

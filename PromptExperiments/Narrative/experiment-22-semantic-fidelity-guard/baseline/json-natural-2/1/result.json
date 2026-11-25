@@ -1,0 +1,11 @@
+{
+  "checks": {
+    "entity_identity": "No material identity change. Narrative: “JSON text”; source: “JSON text”. Narrative: “systems that are not part of a closed ecosystem”; source: “systems that are not part of a closed ecosystem”.",
+    "temporal_relationship": "No material temporal claim. Narrative progression: “Context” → “Development” → “Endpoint”; the source states a requirement, not an event sequence: “JSON text exchanged between systems that are not part of a closed ecosystem MUST be encoded using UTF-8”.",
+    "actor_object": "The requirement and its object are preserved. Narrative: “the specified encoding is UTF-8”; source: “JSON text exchanged between systems that are not part of a closed ecosystem MUST be encoded using UTF-8”.",
+    "causal_relationship": "No causal claim is added. Narrative: “without adding an explanation for why it applies”; source gives the requirement without a rationale: “MUST be encoded using UTF-8”.",
+    "quantitative_meaning": "No quantities or statistical scope are changed. Narrative: “systems that are not part of a closed ecosystem”; source: “systems that are not part of a closed ecosystem”."
+  },
+  "verdict": "GO",
+  "blockers": []
+}

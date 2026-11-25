@@ -1,0 +1,12 @@
+{
+  "checks": {
+    "entity_identity": "Narrative excerpt: \"The story is about the HEAD method’s relationship to GET\"; evidence: \"The HEAD method is identical to GET except that the server MUST NOT send content in the response.\" The method identities and relationship are preserved.",
+    "temporal_relationship": "Narrative excerpt: \"- **Context:** Introduce HEAD in relation to GET.\" The evidence defines a relationship, not a sequence of events, and the brief adds no temporal claim.",
+    "actor_object": "Narrative excerpt: \"the server must not send content in a HEAD response.\" Evidence: \"the server MUST NOT send content in the response.\" The actor, action, and response-content object are preserved.",
+    "causal_relationship": "Narrative excerpt: \"it is defined as identical to GET except that the server must not send content in the response.\" Evidence: \"The HEAD method is identical to GET except that the server MUST NOT send content in the response.\" No causal claim is added or changed.",
+    "quantitative_meaning": "Narrative excerpt: \"the narrow distinction the material establishes: HEAD corresponds to GET, with response content omitted.\" Evidence: \"The HEAD method is identical to GET except that the server MUST NOT send content in the response.\" No quantities or statistical scope are changed."
+  },
+  "verdict": "GO",
+  "blockers": []
+}
+

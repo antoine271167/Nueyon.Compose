@@ -1,0 +1,21 @@
+{
+  "checks": {
+    "entity_identity": "No material mismatch: the narrative refers to “a claim to land” and “its title”; the source specifies “the title to the land.”",
+    "temporal_relationship": "Material reversal: the narrative says “title was received before the five years of residence began,” while the source says “a five-year requirement of continuous residence before receiving the title to the land”.",
+    "actor_object": "No material mismatch in the recipient or object: the narrative says “receiving its title”; the source says “receiving the title to the land.” Neither specifies who received it.",
+    "causal_relationship": "The narrative describes “a conditional path from claim to ownership,” consistent with a requirement, but its timing reverses the source: “a five-year requirement of continuous residence before receiving the title to the land”.",
+    "quantitative_meaning": "The duration remains five years: the narrative says “five years of residence,” and the source says “a five-year requirement of continuous residence before receiving the title to the land”. The narrative also identifies continuous residence as the requirement."
+  },
+  "verdict": "REVISE",
+  "blockers": [
+    {
+      "category": "temporal_relationship",
+      "status": "confirmed",
+      "narrativeExcerpt": "title was received before the five years of residence began.",
+      "evidenceExcerpt": "a five-year requirement of continuous residence before receiving the title to the land",
+      "problem": "The narrative puts receipt of title before the residence requirement begins; the source makes five years of continuous residence a condition before receiving title.",
+      "requiredCorrection": "State that five years of continuous residence were required before receiving the title."
+    }
+  ]
+}
+

@@ -1,0 +1,14 @@
+{
+  "invariant": {
+    "subject": "fdic",
+    "source": "The standard deposit insurance amount is $250,000 per depositor, per FDIC-insured bank, per ownership category.",
+    "category": "numerical_scale",
+    "relation": "The unit that determines deposit coverage",
+    "anchors": "FDIC|deposit|250"
+  },
+  "candidates": [
+    "The story explains how the standard $250,000 deposit insurance amount is defined: it applies per account. The reader should understand that this unit frames the standard coverage amount.",
+    "- **Context:** Introduce the standard deposit insurance amount of $250,000."
+  ],
+  "terminology": []
+}

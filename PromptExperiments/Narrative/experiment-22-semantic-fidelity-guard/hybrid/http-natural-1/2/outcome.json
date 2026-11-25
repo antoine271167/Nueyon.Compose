@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "findings": [
+    {
+      "verdict": "SUPPORTED",
+      "narrativeExcerpt": null,
+      "relation": "Both candidates preserve the HEAD–GET distinction: HEAD is identical to GET except that the server must not send response content. The second is a narrower summary, and neither asserts an incompatible relationship.",
+      "correction": null,
+      "evidenceExcerpt": "The HEAD method is identical to GET except that the server MUST NOT send content in the response.",
+      "mechanism": "focused semantic comparison"
+    }
+  ],
+  "candidates": [
+    "The story is about the HEAD method’s relationship to GET: it is defined as identical to GET except that the server must not send content in the response. The reader should understand this specific distinction without assuming what else a HEAD response can reveal.",
+    "- **Context:** Introduce HEAD in relation to GET.",
+    "- **Endpoint:** Leave the reader with the narrow distinction the material establishes: HEAD corresponds to GET, with response content omitted."
+  ],
+  "unresolved": null,
+  "milliseconds": 0.06900000001769513
+}

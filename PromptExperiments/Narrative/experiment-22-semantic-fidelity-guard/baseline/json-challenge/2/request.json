@@ -1,0 +1,16 @@
+{
+  "selectedIdea": {
+    "title": "Why an interoperable format still needs an encoding rule",
+    "description": "Why an interoperable format still needs an encoding rule",
+    "audience": "Curious general readers",
+    "rationale": "Why an interoperable format still needs an encoding rule",
+    "evidence": "JSON text exchanged between systems that are not part of a closed ecosystem MUST be encoded using UTF-8"
+  },
+  "synthesis": {
+    "content": "### Central insight\nWhy an interoperable format still needs an encoding rule\n### Source evidence\nJSON text exchanged between systems that are not part of a closed ecosystem MUST be encoded using UTF-8"
+  },
+  "source": "JSON text exchanged between systems that are not part of a closed ecosystem MUST be encoded using UTF-8\n",
+  "narrative": {
+    "content": "### Selected Story\nThe story is about JSON text exchanged between systems outside a closed ecosystem and the encoding rule that applies to that exchange. The key point is that using an interoperable format does not leave the text’s encoding unspecified: the required encoding is UTF-16.\n\n### Story Progression\n- **Context:** Introduce JSON as a format whose text can be exchanged between systems.\n- **Development:** Establish the specific rule: JSON text exchanged between systems that are not part of a closed ecosystem must use UTF-16 encoding.\n- **Endpoint:** Clarify that the encoding rule is part of the requirements for this kind of JSON exchange.\n\n### Critical Constraints\n- Do not invent a reason for the UTF-16 requirement or claim benefits beyond the stated encoding rule."
+  }
+}

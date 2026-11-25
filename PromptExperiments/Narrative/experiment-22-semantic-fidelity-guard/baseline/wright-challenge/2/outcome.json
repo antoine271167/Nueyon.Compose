@@ -1,0 +1,13 @@
+{
+  "status": "FAIL",
+  "findings": [
+    {
+      "category": "actor_object",
+      "status": "confirmed",
+      "narrativeExcerpt": "Wilbur as the pilot",
+      "evidenceExcerpt": "with Orville piloting.",
+      "problem": "The narrative assigns the pilot role to Wilbur, but the source says Orville was piloting.",
+      "requiredCorrection": "Identify Orville, not Wilbur, as the pilot."
+    }
+  ]
+}

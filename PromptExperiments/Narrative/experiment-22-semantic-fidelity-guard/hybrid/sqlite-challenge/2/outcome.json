@@ -1,0 +1,20 @@
+{
+  "status": "FAIL",
+  "findings": [
+    {
+      "verdict": "CONTRADICTED",
+      "narrativeExcerpt": "readers must wait until writing has finished",
+      "relation": "The source says readers and writers can proceed concurrently without blocking one another; requiring readers to wait until writing finishes asserts the opposite relationship.",
+      "correction": "State that readers and writers can proceed concurrently without blocking each other.",
+      "evidenceExcerpt": "readers do not block writers and a writer does not block readers. Reading and writing can proceed concurrently.",
+      "mechanism": "focused semantic comparison"
+    }
+  ],
+  "candidates": [
+    "The story is about how WAL affects the relationship between reading and writing: readers must wait until writing has finished. The reader should understand that these two activities must proceed in sequence.",
+    "- **Context:** Introduce WAL as the subject and focus on its effect on reading and writing.",
+    "- **Development:** Explain the supported relationship: readers must wait until writing has finished."
+  ],
+  "unresolved": null,
+  "milliseconds": 0.062200000014854595
+}

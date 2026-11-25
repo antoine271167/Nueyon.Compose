@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "findings": [
+    {
+      "verdict": "SUPPORTED",
+      "narrativeExcerpt": "Explain why ice floats in liquid water: ice is less dense than liquid water, and that difference accounts for ice cubes floating in a glass.",
+      "relation": "The candidate preserves the source’s causal relationship: ice’s lower density than liquid water explains why ice cubes float.",
+      "correction": null,
+      "evidenceExcerpt": "Ice is less dense than liquid water which is why your ice cubes float in your glass.",
+      "mechanism": "focused semantic comparison"
+    }
+  ],
+  "candidates": [
+    "Explain why ice floats in liquid water: ice is less dense than liquid water, and that difference accounts for ice cubes floating in a glass. The reader should understand the density relationship behind this familiar observation.",
+    "- **Context:** Establish the familiar observation of ice floating in a glass of liquid water.",
+    "- **Development:** Explain the relevant difference: ice is less dense than liquid water."
+  ],
+  "unresolved": null,
+  "milliseconds": 0.061499999996158294
+}

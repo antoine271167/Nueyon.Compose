@@ -1,0 +1,20 @@
+{
+  "checks": {
+    "entity_identity": "Narratief: «grondbewegingshotspots en hotspots voor verkeerd baangebruik». Bewijs: «a ground movement hot spot» en «a wrong surface hot spot». De eerste benaming sluit aan; bij de tweede is niet vast te stellen of «verkeerd baangebruik» hetzelfde referent heeft als «wrong surface».",
+    "temporal_relationship": "Narratief: «De FAA gebruikt sinds 19 mei 2022 gestandaardiseerde kaartvormen». Bewijs: «beginning May 19, 2022». De ingangsdatum en tijdsrelatie komen overeen.",
+    "actor_object": "Narratief: «De FAA gebruikt sinds 19 mei 2022 gestandaardiseerde kaartvormen om twee soorten hot spots te onderscheiden». Bewijs: «The FAA standardized two meanings with three shapes». De FAA is in beide gevallen de actor en de vormen onderscheiden de soorten.",
+    "causal_relationship": "Narratief: «het genoemde doel is verwarring over de betekenis of weergave ervan te voorkomen». Bewijs: «The stated purpose is to prevent confusion about the meaning or depiction of hot spots.» Het wordt als doel, niet als bewezen resultaat, weergegeven.",
+    "quantitative_meaning": "Narratief: «twee soorten hot spots» en «een cirkel of ellips ...; een cilinder». Bewijs: «two meanings with three shapes» en «A circle or ellipse ...; a cylinder». De aantallen stemmen overeen."
+  },
+  "verdict": "UNCERTAIN",
+  "blockers": [
+    {
+      "category": "entity_identity",
+      "status": "uncertain",
+      "narrativeExcerpt": "hotspots voor verkeerd baangebruik",
+      "evidenceExcerpt": "a wrong surface hot spot",
+      "problem": "De Nederlandse formulering verwijst naar verkeerd baangebruik, terwijl het bewijs de categorie «wrong surface» noemt. Op basis van het aangeleverde materiaal is niet vast te stellen of deze vertaling hetzelfde referent aanduidt.",
+      "requiredCorrection": null
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "verdict": "CONTRADICTED",
+  "narrativeExcerpt": "it is defined as identical to GET except that the server must send content in the response.",
+  "relation": "The source says HEAD is identical to GET except that the server MUST NOT send response content; this excerpt asserts the opposite.",
+  "correction": "State that the server must not send content in a HEAD response."
+}

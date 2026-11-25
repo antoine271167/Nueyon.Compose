@@ -1,0 +1,52 @@
+{
+  "scales": {
+    "en": {
+      "million": 6,
+      "billion": 9,
+      "trillion": 12,
+      "quadrillion": 15,
+      "quintillion": 18
+    },
+    "nl": {
+      "miljoen": 6,
+      "miljard": 9,
+      "biljoen": 12,
+      "biljard": 15,
+      "triljoen": 18,
+      "triljard": 21,
+      "quadriljoen": 24
+    }
+  },
+  "identity": [
+    {
+      "canonical": "Cervus canadensis",
+      "aliases": [
+        "wapiti",
+        "North American elk"
+      ]
+    },
+    {
+      "canonical": "Alces alces",
+      "aliases": [
+        "eland",
+        "moose"
+      ]
+    }
+  ],
+  "temporal": [
+    "before",
+    "after",
+    "during",
+    "while",
+    "until",
+    "started",
+    "completed",
+    "voor",
+    "nadat",
+    "daarna",
+    "tijdens",
+    "terwijl",
+    "begon",
+    "voltooid"
+  ]
+}

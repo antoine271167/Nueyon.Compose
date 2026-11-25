@@ -1,0 +1,16 @@
+{
+  "selectedIdea": {
+    "title": "How WAL changes who has to wait",
+    "description": "How WAL changes who has to wait",
+    "audience": "Curious general readers",
+    "rationale": "How WAL changes who has to wait",
+    "evidence": "readers do not block writers and a writer does not block readers. Reading and writing can proceed concurrently."
+  },
+  "synthesis": {
+    "content": "### Central insight\nHow WAL changes who has to wait\n### Source evidence\nreaders do not block writers and a writer does not block readers. Reading and writing can proceed concurrently."
+  },
+  "source": "readers do not block writers and a writer does not block readers. Reading and writing can proceed concurrently.\n",
+  "narrative": {
+    "content": "### Selected Story\nThe story is about how WAL affects the relationship between reading and writing: readers must wait until writing has finished. The reader should understand that these two activities must proceed in sequence.\n\n### Story Progression\n- **Context:** Introduce WAL as the subject and focus on its effect on reading and writing.\n- **Development:** Explain the supported relationship: readers must wait until writing has finished.\n- **Endpoint:** Clarify that readers wait until writes finish, which is the central point about who has to wait.\n\n### Critical Constraints\n- Do not add WAL mechanics, implementation details, or performance claims beyond the stated concurrency behavior."
+  }
+}

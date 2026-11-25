@@ -1,0 +1,21 @@
+{
+  "checks": {
+    "entity_identity": "Narrative: “ice cubes in a glass of liquid water.” Source: “your ice cubes float in your glass.” The entities and setting match.",
+    "temporal_relationship": "Narrative: “Begin with ice cubes in a glass of liquid water.” Source: “Ice is less dense than liquid water which is why your ice cubes float in your glass.” No conflicting temporal relationship is stated.",
+    "actor_object": "Narrative: “the ice cubes float.” Source: “your ice cubes float in your glass.” The actor and action match.",
+    "causal_relationship": "Narrative: “this difference accounts for why the ice floats.” Source: “which is why your ice cubes float in your glass.” The causal direction matches, but the stated density comparison is reversed.",
+    "quantitative_meaning": "Narrative: “ice is denser than liquid water.” Source: “Ice is less dense than liquid water”. The comparative density claim is reversed."
+  },
+  "verdict": "REVISE",
+  "blockers": [
+    {
+      "category": "quantitative_meaning",
+      "status": "confirmed",
+      "narrativeExcerpt": "ice is denser than liquid water",
+      "evidenceExcerpt": "Ice is less dense than liquid water",
+      "problem": "The narrative reverses the source's density comparison.",
+      "requiredCorrection": "Change “denser” to “less dense”."
+    }
+  ]
+}
+

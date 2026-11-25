@@ -1,0 +1,11 @@
+{
+  "checks": {
+    "entity_identity": "Narrative excerpt: “ice cubes” and “liquid water”; evidence: “your ice cubes” and “liquid water.” The referents match.",
+    "temporal_relationship": "Narrative excerpt: “Begin with ice cubes in a glass of liquid water” and “Connect that density difference to the central point: the ice cubes float.” Evidence: “Ice is less dense than liquid water which is why your ice cubes float in your glass.” This is explanatory progression, with no changed event timing.",
+    "actor_object": "Narrative excerpt: “the ice cubes float”; evidence: “your ice cubes float in your glass.” The same object is described as floating.",
+    "causal_relationship": "Narrative excerpt: “this difference accounts for why the ice floats”; evidence: “Ice is less dense than liquid water which is why your ice cubes float in your glass.” The causal direction and strength match.",
+    "quantitative_meaning": "Narrative excerpt: “ice is less dense than liquid water”; evidence: “Ice is less dense than liquid water.” The comparison is preserved; no numerical quantity or statistical scope is added."
+  },
+  "verdict": "GO",
+  "blockers": []
+}
