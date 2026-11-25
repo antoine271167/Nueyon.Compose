@@ -1,0 +1,15 @@
+{
+  "status": "REVIEW",
+  "findings": [
+    {
+      "category": "certainty",
+      "severity": "potential",
+      "narrativeExcerpt": "The key point for developers is that declaring compatibility and making an extension’s code thread-safe are distinct responsibilities.",
+      "evidenceExcerpt": "An extension must explicitly indicate that it supports this mode",
+      "explanation": "The source establishes a support declaration requirement, but does not say whether that declaration is distinct from or sufficient to establish thread safety. The distinction may be accurate, but the supplied source cannot resolve it.",
+      "findingType": "unsupported_assertion",
+      "suggestedCorrection": "Keep the declaration requirement, but support the distinction with a source that addresses thread safety or frame it as an editorial point rather than a fact established by this source."
+    }
+  ]
+}
+

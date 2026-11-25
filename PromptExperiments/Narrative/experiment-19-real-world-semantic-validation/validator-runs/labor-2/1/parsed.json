@@ -1,0 +1,14 @@
+{
+  "status": "REVIEW",
+  "findings": [
+    {
+      "category": "certainty",
+      "severity": "potential",
+      "narrativeExcerpt": "browsing listings alone is passive search and does not meet the active-search criterion.",
+      "evidenceExcerpt": "Passive-only job search does not count as active search.",
+      "explanation": "The evidence establishes that passive-only search does not qualify as active search, but does not establish that browsing listings alone is passive. The narrative’s specific classification may be correct, but the supplied evidence does not resolve it.",
+      "findingType": "unsupported_assertion",
+      "suggestedCorrection": "Use the supported distinction between passive-only and active search, or retain the browsing-listings example only if a source confirms that browsing alone is passive."
+    }
+  ]
+}

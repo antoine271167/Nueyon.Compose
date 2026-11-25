@@ -1,0 +1,188 @@
+{
+  "subjects": 12,
+  "narratives": 36,
+  "F0": 35,
+  "F1": 1,
+  "F2": 0,
+  "F2Subjects": 0,
+  "narrativeAttempts": 36,
+  "primary": {
+    "planned": 72,
+    "executed": 72,
+    "valid": 72,
+    "validRate": 1,
+    "validF2Attempts": 0,
+    "validAcceptableAttempts": 72,
+    "errors": {
+      "invalid-json": 0,
+      "invalid-contract": 0,
+      "transport": 0,
+      "missing": 0
+    },
+    "invalidJsonRate": 0,
+    "definitive": {
+      "tp": 0,
+      "fp": 0,
+      "tn": 72,
+      "fn": 0,
+      "precision": null,
+      "recall": null,
+      "specificity": 1
+    },
+    "triage": {
+      "tp": 0,
+      "fp": 9,
+      "tn": 63,
+      "fn": 0,
+      "sensitivity": null,
+      "specificity": 0.875,
+      "silentEscapes": 0,
+      "silentEscapeRate": null,
+      "escapeIds": []
+    },
+    "acceptable": {
+      "failRate": 0,
+      "flagRate": 0.125,
+      "reviewAttempts": 9,
+      "reviewOutputs": 7,
+      "rejectedOutputs": 0
+    },
+    "stability": {
+      "plannedPairs": 36,
+      "validPairs": 36,
+      "agreements": 31,
+      "agreement": 0.8611111111111112,
+      "materialDisagreements": [],
+      "repeatedSilentEscapeIds": []
+    },
+    "evidence": {
+      "totalFindings": 10,
+      "adjudicated": 10,
+      "actionableFindings": 0,
+      "materialFindings": 0,
+      "actionableMaterial": 0,
+      "actionableMaterialRate": null
+    },
+    "latencySeconds": {
+      "mean": 8.912541666666668,
+      "min": 6.09,
+      "p50": 8.021,
+      "p90": 12.405,
+      "p95": 13.12,
+      "max": 18.943
+    },
+    "workload": {
+      "PASS": {
+        "count": 63,
+        "rate": 0.875
+      },
+      "REVIEW": {
+        "count": 9,
+        "rate": 0.125
+      },
+      "FAIL": {
+        "count": 0,
+        "rate": 0
+      },
+      "INVALID_OR_MISSING": {
+        "count": 0,
+        "rate": 0
+      }
+    }
+  },
+  "supplementary": {
+    "planned": 10,
+    "executed": 10,
+    "valid": 10,
+    "validRate": 1,
+    "validF2Attempts": 10,
+    "validAcceptableAttempts": 0,
+    "errors": {
+      "invalid-json": 0,
+      "invalid-contract": 0,
+      "transport": 0,
+      "missing": 0
+    },
+    "invalidJsonRate": 0,
+    "definitive": {
+      "tp": 3,
+      "fp": 0,
+      "tn": 0,
+      "fn": 7,
+      "precision": 1,
+      "recall": 0.3,
+      "specificity": null
+    },
+    "triage": {
+      "tp": 5,
+      "fp": 0,
+      "tn": 0,
+      "fn": 5,
+      "sensitivity": 0.5,
+      "specificity": null,
+      "silentEscapes": 5,
+      "silentEscapeRate": 0.5,
+      "escapeIds": [
+        "2ff42e2fa4/1",
+        "2ff42e2fa4/2",
+        "0d1f75b51c/1",
+        "0d1f75b51c/2",
+        "0f2553c79399/2"
+      ]
+    },
+    "acceptable": {
+      "failRate": null,
+      "flagRate": null,
+      "reviewAttempts": 0,
+      "reviewOutputs": 0,
+      "rejectedOutputs": 0
+    },
+    "stability": {
+      "plannedPairs": 5,
+      "validPairs": 5,
+      "agreements": 4,
+      "agreement": 0.8,
+      "materialDisagreements": [
+        "0f2553c79399"
+      ],
+      "repeatedSilentEscapeIds": [
+        "2ff42e2fa4",
+        "0d1f75b51c"
+      ]
+    },
+    "evidence": {
+      "totalFindings": 5,
+      "adjudicated": 5,
+      "actionableFindings": 5,
+      "materialFindings": 3,
+      "actionableMaterial": 3,
+      "actionableMaterialRate": 1
+    },
+    "latencySeconds": {
+      "mean": 10.9747,
+      "min": 6.73,
+      "p50": 11.511,
+      "p90": 12.566,
+      "p95": 13.765,
+      "max": 13.765
+    },
+    "workload": {
+      "PASS": {
+        "count": 5,
+        "rate": 0.5
+      },
+      "REVIEW": {
+        "count": 2,
+        "rate": 0.2
+      },
+      "FAIL": {
+        "count": 3,
+        "rate": 0.3
+      },
+      "INVALID_OR_MISSING": {
+        "count": 0,
+        "rate": 0
+      }
+    }
+  }
+}

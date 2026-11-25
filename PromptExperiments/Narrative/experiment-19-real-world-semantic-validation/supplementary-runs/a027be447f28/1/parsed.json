@@ -1,0 +1,14 @@
+{
+  "status": "REVIEW",
+  "findings": [
+    {
+      "category": "entity_identity",
+      "severity": "potential",
+      "narrativeExcerpt": "hotspots voor verkeerd baangebruik",
+      "evidenceExcerpt": "a wrong surface hot spot",
+      "explanation": "De bron noemt een ‘wrong surface hot spot’, terwijl ‘verkeerd baangebruik’ dit mogelijk vernauwt tot verkeerd gebruik van een baan. De aangeleverde bron is een geparafraseerde samenvatting en licht de categorie niet nader toe, dus de precieze Nederlandse equivalentie is niet vast te stellen.",
+      "findingType": "ambiguity",
+      "suggestedCorrection": "Behoud de categorie als ‘wrong-surfacehotspot’ of verduidelijk de Nederlandse vertaling aan de hand van de oorspronkelijke FAA-bron."
+    }
+  ]
+}

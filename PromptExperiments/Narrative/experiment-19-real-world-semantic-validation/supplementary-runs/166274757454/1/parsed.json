@@ -1,0 +1,14 @@
+{
+  "status": "FAIL",
+  "findings": [
+    {
+      "category": "temporal_relationship",
+      "severity": "material",
+      "narrativeExcerpt": "Tijdens de private beta wisselden tweewekelijkse sprints af tussen aanvragen aannemen en tijd besteden aan testen, onderzoek en verwerking.",
+      "evidenceExcerpt": "We achieved this by splitting our fortnightly sprints in two: testing, researching and accepting applications in the first week and then suspending submissions to concentrate on testing, researching and processing applications the second.",
+      "explanation": "De narrative kan gelezen worden alsof verschillende tweeweekse sprints elkaar afwisselden tussen aanvragen aannemen en onderzoek/verwerking. De bron zegt dat elke tweeweekse sprint in twee weken werd verdeeld, waarbij de activiteiten per week verschilden.",
+      "findingType": "contradiction",
+      "suggestedCorrection": "Beschrijf dat het team elke tweeweekse sprint in twee weken verdeelde: in de eerste week nam het aanvragen aan en deed het onderzoek en tests; in de tweede pauzeerde het inzendingen om zich op onderzoek, tests en verwerking te richten."
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "status": "REVIEW",
+  "findings": [
+    {
+      "category": "scope",
+      "severity": "potential",
+      "narrativeExcerpt": "satellite-measured heat-stress footprint",
+      "evidenceExcerpt": "roughly 84.4% of global coral reef area experienced bleaching-level heat stress",
+      "explanation": "The source supports the heat-stress footprint but does not specify that it was measured by satellite. The measurement method cannot be verified from the supplied source.",
+      "findingType": "unsupported_assertion",
+      "suggestedCorrection": "Remove “satellite-measured” unless a source confirming the measurement method is available."
+    }
+  ]
+}

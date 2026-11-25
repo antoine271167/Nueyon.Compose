@@ -1,0 +1,10 @@
+﻿# Source coverage findings
+
+The frozen source files are curated paraphrases rather than verbatim document excerpts. They carry the central factual relationships but omit relevant context. This implementation choice materially limits the interpretation of the acceptance trial. The validator could only see supplied evidence and had no browsing. Ground-truth review used the linked originals. The primary false-positive workload therefore includes cases where REVIEW was reasonable under truncated evidence even though the original publication supports the brief.
+
+- EPA's Phase II section explicitly describes additional units and reports over 2,000 in scope. The frozen source recorded the start date and Phase I expansion, omitting the Phase II coverage increase. [EPA Acid Rain Program](https://www.epa.gov/acidrain/acid-rain-program)
+- NOAA explicitly calls the fourth event the largest to date, identifies the third event as the prior record and describes the satellite heat-stress product. The frozen source recorded the percentages but omitted the first two facts and the measurement method from its evidence paragraph. [NOAA Coral Reef Watch update](https://www.coralreefwatch.noaa.gov/satellite/research/coral_bleaching_report.php)
+- BLS explicitly uses looking at postings without further action as an example of passive search. The frozen source recorded the passive-search rule and the editorial handoff proposed the example. It omitted the source's example. [BLS CPS definitions](https://www.bls.gov/cps/definitions.htm)
+- Python's 3.13 guide describes the support declaration under module initialization and separately explains thread-safety responsibilities under its C API and internal-state guidance. The frozen source emphasized the declaration while the upstream fixture included the distinction as a limit. [CPython 3.13 extension guide](https://docs.python.org/3.13/howto/free-threading-extensions.html)
+
+These observations do not change the labels or remove flags from headline scoring. They identify evidence omissions that limit attribution of false positives to model judgment. No post-hoc prompt or input changes were made.

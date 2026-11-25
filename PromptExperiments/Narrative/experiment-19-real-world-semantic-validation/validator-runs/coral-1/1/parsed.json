@@ -1,0 +1,23 @@
+{
+  "status": "REVIEW",
+  "findings": [
+    {
+      "category": "scope",
+      "severity": "potential",
+      "narrativeExcerpt": "makes the event record-setting by measured exposure",
+      "evidenceExcerpt": "The previous global event ran from 2014 to 2017 and exposed 68.2% of reef area to bleaching-level heat stress.",
+      "explanation": "The source establishes that the reported 84.4% exceeds the previous event’s 68.2%, but it does not establish that this is the highest measured exposure across all prior events. The record-setting claim may be accurate, but the supplied evidence does not verify its full historical scope.",
+      "findingType": "unsupported_assertion",
+      "suggestedCorrection": "Verify the comparison against the full historical record, or limit the claim to saying the measured exposure exceeds that of the previous global event."
+    },
+    {
+      "category": "scope",
+      "severity": "potential",
+      "narrativeExcerpt": "satellite data show bleaching-level heat stress across roughly 84.4% of global reef area",
+      "evidenceExcerpt": "roughly 84.4% of global coral reef area experienced bleaching-level heat stress.",
+      "explanation": "The source supports the area and heat-stress figure but does not identify satellite data as its measurement method. The method attribution may be correct, but cannot be verified from the supplied source text.",
+      "findingType": "unsupported_assertion",
+      "suggestedCorrection": "Confirm the satellite attribution in the original reporting, or omit the method attribution while retaining the supported area and heat-stress figure."
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "status": "FAIL",
+  "findings": [
+    {
+      "category": "numerical_scale",
+      "severity": "material",
+      "narrativeExcerpt": "42,4 van de 605,6 quadriljoen Btu totale energieproductie",
+      "evidenceExcerpt": "Across all energy production, renewables were 42.4 out of 605.6 quadrillion Btu, reported as 7%.",
+      "explanation": "In Dutch, “quadriljoen” denotes 10^24, whereas the source’s “quadrillion” denotes 10^15. This changes the scale of both energy-production figures by a factor of a billion and materially misstates the data.",
+      "findingType": "contradiction",
+      "suggestedCorrection": "Use the Dutch equivalent “biljard Btu” for both figures, or retain “quadrillion Btu” to avoid the scale mismatch."
+    }
+  ]
+}

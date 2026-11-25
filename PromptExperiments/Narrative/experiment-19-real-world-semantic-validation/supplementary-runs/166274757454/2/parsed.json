@@ -1,0 +1,14 @@
+{
+  "status": "FAIL",
+  "findings": [
+    {
+      "category": "temporal_relationship",
+      "severity": "material",
+      "narrativeExcerpt": "Tijdens de private beta wisselden tweewekelijkse sprints af tussen aanvragen aannemen en tijd besteden aan testen, onderzoek en verwerking.",
+      "evidenceExcerpt": "testing, researching and accepting applications in the first week and then suspending submissions to concentrate on testing, researching and processing applications the second.",
+      "explanation": "De formulering kan suggereren dat aanvragen aannemen en testen, onderzoek en verwerking in afzonderlijke perioden plaatsvonden. De bron zegt dat testen en onderzoek in beide weken doorgingen: aanvragen werden in de eerste week aangenomen en in de tweede gepauzeerd terwijl het team testte, onderzoek deed en aanvragen verwerkte.",
+      "findingType": "contradiction",
+      "suggestedCorrection": "Beschrijf dat het team in de eerste week aanvragen aannam naast testen en onderzoek, en in de tweede week inzendingen pauzeerde om te testen, onderzoek te doen en aanvragen te verwerken."
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+﻿{
+  "outcome": "NO-GO",
+  "primaryDetectionEvidence": "INSUFFICIENT EVIDENCE",
+  "recommendation": "C",
+  "recommendationText": "Do not approve Narrative yet",
+  "productionIntegrationEligible": false,
+  "gates": {
+    "triageSensitivityAtLeast95Percent": "not estimable",
+    "acceptableFlagRateAtMost10Percent": false,
+    "definitivePrecisionAtLeast90Percent": "not estimable",
+    "actionableMaterialEvidenceAtLeast90Percent": "not estimable",
+    "noRecurringSilentEscape": "not testable in primary; failed on archived regressions",
+    "exactRepeatAgreementAtLeast90Percent": false,
+    "noRepeatedMaterialPassFlagInstability": "not testable in primary",
+    "completeValidExecution": true,
+    "atLeastEightF2AcrossFourSubjects": false,
+    "atLeastTwelveSubjectsAnd36Narratives": true
+  },
+  "reason": "Primary review workload and repeat agreement failed the frozen thresholds. The natural set had no F2, and the separate archived regression set reproduced repeated entity and chronology misses. Frozen source summaries omitted some context and limit attribution of primary flags to the validator alone."
+}

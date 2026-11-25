@@ -1,0 +1,14 @@
+{
+  "status": "REVIEW",
+  "findings": [
+    {
+      "category": "scope",
+      "severity": "potential",
+      "narrativeExcerpt": "The program’s sulfur dioxide coverage expanded across phases",
+      "evidenceExcerpt": "Phase II began in 2000.",
+      "explanation": "The source gives the Phase II start date but does not say that coverage expanded in that phase. It documents an increase from 263 initial units to 445 units within Phase I, which does not establish expansion across phases.",
+      "findingType": "unsupported_assertion",
+      "suggestedCorrection": "Describe the phase dates and Phase I unit totals without asserting that coverage expanded across phases, unless the source confirms a Phase II coverage change."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "selectedIdea": {
+    "title": "Three standards, two cryptographic jobs",
+    "description": "Start with why exchanging key material and authenticating a signer are separate tasks, then use the standards to make that distinction concrete.",
+    "audience": "Software and security practitioners",
+    "rationale": "Build the editorial blueprint around the distinction the source makes and explain why it matters to the reader.",
+    "evidence": "The approval is historical. FALCON was separate and under development at the time. Avoid claims that adoption was complete or that algorithms guarantee absolute security."
+  },
+  "synthesis": {
+    "content": "### Central insight\n\nStart with why exchanging key material and authenticating a signer are separate tasks, then use the standards to make that distinction concrete.\n\n### Evidence\n\nThe Secretary of Commerce approved three FIPS for post-quantum cryptography in August 2024. FIPS 203 specifies a lattice-based mechanism for establishing a shared secret. FIPS 204 specifies lattice-based digital signatures derived from CRYSTALS-Dilithium. FIPS 205 specifies stateless hash-based signatures derived from SPHINCS+. Signatures can identify unauthorized modification and authenticate the signatory. When the notice was published, NIST was developing a FALCON-derived signature standard as another option.\n\n### What the narrative should emphasize\n\nStart with why exchanging key material and authenticating a signer are separate tasks, then use the standards to make that distinction concrete.\n\n### Gaps and uncertainty\n\nThe approval is historical. FALCON was separate and under development at the time. Avoid claims that adoption was complete or that algorithms guarantee absolute security."
+  }
+}
