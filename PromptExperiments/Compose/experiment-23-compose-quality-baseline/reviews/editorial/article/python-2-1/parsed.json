@@ -1,0 +1,16 @@
+{
+  "scores": {
+    "opening_interest": 3,
+    "development_substance": 3,
+    "readability_flow": 4,
+    "focus_coherence": 4,
+    "ending_impact": 3,
+    "naturalness_originality": 3
+  },
+  "defects": [
+    "thin_substance",
+    "abstraction"
+  ],
+  "strength": "“The declaration signals that the extension supports the free-threading runtime mode; it is separate from making the extension’s code thread-safe.” The distinction is clear and useful to the intended audience.",
+  "weakness": "“How an extension makes that declaration depends on whether it uses multi-phase or single-phase initialization.” This introduces a key distinction but gives no example or further detail, leaving the piece feeling more like an opening than a complete article."
+}

@@ -1,0 +1,76 @@
+{
+  "claims": [
+    {
+      "excerpt": "GRACE Follow-On investigates changes in Earth’s water by tracking the distance between two satellites.",
+      "claim": "GRACE Follow-On uses distance changes between two satellites to investigate changes in Earth’s water.",
+      "category": "cause",
+      "label": "F0 faithful",
+      "evidence": "The changing inter-satellite distance is a raw measurement used to infer shifts in mass. The mission follows changes involving groundwater, lakes and rivers, soil moisture, glaciers, ice sheets and changes in sea level attributable to water added to the oceans.",
+      "narrative": "Explain how GRACE Follow-On’s two satellites use changes in the distance between them to help investigate water movement on Earth.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The source links the distance measurement to inferred mass shifts and those shifts to changes in water stores and sea level.",
+      "materiality": "This states the central purpose and measurement relationship accurately."
+    },
+    {
+      "excerpt": "They follow one another about 137 miles (220 kilometers) apart.",
+      "claim": "The two satellites follow one another at a separation of about 137 miles (220 kilometers).",
+      "category": "quantity",
+      "label": "F0 faithful",
+      "evidence": "Twin satellites follow each other about 137 miles or 220 kilometers apart.",
+      "narrative": "GRACE Follow-On consists of two satellites that follow one another about 137 miles (220 kilometers) apart.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The distance and approximate units match the source.",
+      "materiality": "The separation is central context for the measurement."
+    },
+    {
+      "excerpt": "As the pair passes a larger concentration of mass, gravity affects the leading satellite first",
+      "claim": "As the pair passes a larger mass concentration, gravity affects the leading satellite before the trailing satellite.",
+      "category": "chronology",
+      "label": "F1 minor immaterial imprecision",
+      "evidence": "As the pair approaches a larger mass concentration, stronger gravity acts on the leading satellite first",
+      "narrative": "As the pair passes a larger mass concentration, gravity acts on the leading satellite first, initially pulling it farther from the trailing satellite. The resulting change in separation is used to infer shifts in mass.",
+      "narrativeRelation": "ambiguous",
+      "origin": "propagated",
+      "explanation": "The source describes the pair approaching the concentration; “passes” can suggest the effect begins at or after closest approach. The narrative also uses “approaches” elsewhere in its development, so the wording is not fully consistent.",
+      "materiality": "The wording slightly blurs timing, but does not materially change the stated order of the satellites’ response."
+    },
+    {
+      "excerpt": "initially pulling it farther ahead and increasing the gap between them.",
+      "claim": "The leading satellite is initially pulled farther ahead, increasing the separation between the satellites.",
+      "category": "cause",
+      "label": "F0 faithful",
+      "evidence": "initially pulling it farther from the trailing one.",
+      "narrative": "initially pulling it farther from the trailing satellite.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The source and narrative describe the same initial motion and resulting increase in separation.",
+      "materiality": "This describes the change that the mission measures."
+    },
+    {
+      "excerpt": "That change in separation is a measurement scientists use to infer shifts in mass on Earth.",
+      "claim": "Scientists use the change in satellite separation as a measurement to infer shifts in mass on Earth.",
+      "category": "technical",
+      "label": "F0 faithful",
+      "evidence": "The changing inter-satellite distance is a raw measurement used to infer shifts in mass.",
+      "narrative": "The resulting change in separation is used to infer shifts in mass.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The source explicitly identifies changing inter-satellite distance as a measurement used to infer mass shifts.",
+      "materiality": "This accurately distinguishes inference from direct measurement of mass."
+    },
+    {
+      "excerpt": "Those shifts can help reveal changes in groundwater, lakes and rivers, soil moisture, glaciers and ice sheets, as well as sea-level changes attributable to water added to the oceans.",
+      "claim": "Inferred mass shifts can help reveal changes in groundwater, lakes and rivers, soil moisture, glaciers and ice sheets, and sea-level changes attributable to water added to the oceans.",
+      "category": "scope",
+      "label": "F0 faithful",
+      "evidence": "The mission follows changes involving groundwater, lakes and rivers, soil moisture, glaciers, ice sheets and changes in sea level attributable to water added to the oceans.",
+      "narrative": "Connect those inferred mass shifts to the water movement scientists investigate, including changes in groundwater, lakes and rivers, soil moisture, glaciers and ice sheets, and sea level attributable to water added to the oceans.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The listed water stores and the qualification limiting the sea-level claim to water added to the oceans match the source.",
+      "materiality": "The qualification preserves the source’s scope and avoids implying that all sea-level change is measured this way."
+    }
+  ]
+}

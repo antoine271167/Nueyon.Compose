@@ -1,0 +1,100 @@
+{
+  "claims": [
+    {
+      "excerpt": "NIST’s generative AI profile and its broader AI Risk Management Framework are related, but they have different scopes.",
+      "claim": "NIST’s generative AI profile and broader AI Risk Management Framework are related publications with different scopes.",
+      "category": "interpretation",
+      "label": "F0 faithful",
+      "evidence": "In July 2024 NIST published AI 600-1, a companion profile for generative AI with cross-sector scope.",
+      "narrative": "The story is about the relationship between NIST’s broad, voluntary AI Risk Management Framework and its later profile focused on generative AI. ... Readers should understand the two publications as related but distinct in scope",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The source identifies AI 600-1 as a generative AI companion profile to the broader framework, supporting the stated relationship and distinction in scope.",
+      "materiality": "Central framing of the piece."
+    },
+    {
+      "excerpt": "Released in January 2023, AI RMF 1.0",
+      "claim": "NIST released AI RMF 1.0 in January 2023.",
+      "category": "chronology",
+      "label": "F0 faithful",
+      "evidence": "NIST released AI RMF 1.0 in January 2023.",
+      "narrative": "The framework, released in January 2023,",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The date and release are stated directly in the source.",
+      "materiality": "Establishes the framework’s place in the timeline."
+    },
+    {
+      "excerpt": "is a voluntary framework designed to help organizations incorporate trustworthiness considerations",
+      "claim": "AI RMF 1.0 is voluntary and is designed to help organizations incorporate trustworthiness considerations.",
+      "category": "intention",
+      "label": "F0 faithful",
+      "evidence": "It was designed for voluntary use and aims to help organizations bring trustworthiness considerations into the design, development, use and evaluation of AI.",
+      "narrative": "The framework, released in January 2023, is designed to help organizations incorporate trustworthiness considerations",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The source describes the framework as designed for voluntary use and gives the same purpose.",
+      "materiality": "Describes the framework’s intended use and purpose."
+    },
+    {
+      "excerpt": "across AI design, development, use, and evaluation.",
+      "claim": "The framework’s trustworthiness considerations span AI design, development, use, and evaluation.",
+      "category": "scope",
+      "label": "F0 faithful",
+      "evidence": "bring trustworthiness considerations into the design, development, use and evaluation of AI.",
+      "narrative": "across AI design, development, use, and evaluation.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The piece preserves the source’s four lifecycle areas without materially changing their meaning.",
+      "materiality": "Specifies the breadth of the framework’s intended application."
+    },
+    {
+      "excerpt": "In July 2024, NIST published AI 600-1",
+      "claim": "NIST published AI 600-1 in July 2024.",
+      "category": "chronology",
+      "label": "F0 faithful",
+      "evidence": "In July 2024 NIST published AI 600-1",
+      "narrative": "In July 2024, NIST published AI 600-1",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The publication date and publisher match the source.",
+      "materiality": "Establishes the profile’s chronology."
+    },
+    {
+      "excerpt": "as a cross-sector companion profile focused on generative AI.",
+      "claim": "AI 600-1 is a cross-sector companion profile focused on generative AI.",
+      "category": "scope",
+      "label": "F0 faithful",
+      "evidence": "a companion profile for generative AI with cross-sector scope.",
+      "narrative": "a cross-sector companion profile for generative AI.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The piece accurately conveys both the profile’s cross-sector scope and its generative-AI focus.",
+      "materiality": "Defines the profile’s relationship to the framework and its subject scope."
+    },
+    {
+      "excerpt": "the framework addresses AI broadly, while the profile focuses on generative AI.",
+      "claim": "The framework has broader AI scope, while the profile focuses specifically on generative AI.",
+      "category": "scope",
+      "label": "F0 faithful",
+      "evidence": "AI RMF 1.0 ... trustworthiness considerations into the design, development, use and evaluation of AI. ... AI 600-1, a companion profile for generative AI",
+      "narrative": "the later profile focuses on one class of AI",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The source describes the framework in relation to AI generally and the companion profile as focused on generative AI; the comparison is consistent with those stated scopes.",
+      "materiality": "States the key distinction between the two publications."
+    },
+    {
+      "excerpt": "Being a companion profile does not mean AI 600-1 replaces the broader framework.",
+      "claim": "AI 600-1’s status as a companion profile does not establish that it replaces the broader framework.",
+      "category": "interpretation",
+      "label": "F0 faithful",
+      "evidence": "Companion status does not establish replacement.",
+      "narrative": "without presenting the generative AI profile as a replacement for the broader framework.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The piece makes the same cautious distinction as the source and does not claim that replacement is impossible for any other reason.",
+      "materiality": "Prevents a misleading inference about the relationship between the publications."
+    }
+  ]
+}

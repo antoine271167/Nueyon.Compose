@@ -1,0 +1,112 @@
+{
+  "claims": [
+    {
+      "excerpt": "Two Changes to Selective Availability",
+      "claim": "The piece describes two distinct changes concerning Selective Availability.",
+      "category": "quantity",
+      "label": "F0 faithful",
+      "evidence": "In May 2000 the US government stopped using it at President Bill Clinton’s direction to make civil and commercial GPS more useful worldwide. In September 2007 the government announced it would procure the future GPS III generation without the feature.",
+      "narrative": "The story distinguishes two changes to Selective Availability",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The source describes the 2000 end of use and the separate 2007 procurement decision.",
+      "materiality": "Central framing; supported."
+    },
+    {
+      "excerpt": "Selective Availability was a feature that deliberately degraded public GPS signals for national security.",
+      "claim": "Selective Availability deliberately degraded public GPS signals for national security.",
+      "category": "technical",
+      "label": "F0 faithful",
+      "evidence": "Selective Availability deliberately degraded public GPS signals for national security.",
+      "narrative": "Selective Availability, the feature that deliberately degraded public GPS signals for national security.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The description matches the source.",
+      "materiality": "Provides context for the changes; supported."
+    },
+    {
+      "excerpt": "It was addressed in two separate steps.",
+      "claim": "The changes concerning Selective Availability occurred in two separate steps.",
+      "category": "scope",
+      "label": "F0 faithful",
+      "evidence": "In May 2000 the US government stopped using it at President Bill Clinton’s direction to make civil and commercial GPS more useful worldwide. In September 2007 the government announced it would procure the future GPS III generation without the feature.",
+      "narrative": "The story distinguishes two changes to Selective Availability",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The source distinguishes the operational change from the later procurement decision.",
+      "materiality": "Central to the piece’s distinction; supported."
+    },
+    {
+      "excerpt": "In May 2000, at President Bill Clinton’s direction, the US government stopped using the feature",
+      "claim": "In May 2000, the US government stopped using Selective Availability at President Bill Clinton’s direction.",
+      "category": "chronology",
+      "label": "F0 faithful",
+      "evidence": "In May 2000 the US government stopped using it at President Bill Clinton’s direction",
+      "narrative": "In May 2000, the US government stopped using it",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The date, actor, action, and direction are stated in the source; the narrative also includes the direction in its development.",
+      "materiality": "Identifies the first intervention; supported."
+    },
+    {
+      "excerpt": "to make civil and commercial GPS more useful worldwide.",
+      "claim": "The stated purpose of stopping Selective Availability was to make civil and commercial GPS more useful worldwide.",
+      "category": "intention",
+      "label": "F0 faithful",
+      "evidence": "to make civil and commercial GPS more useful worldwide.",
+      "narrative": "to make civil and commercial GPS more useful worldwide",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The stated purpose matches the source without adding a quantified benefit.",
+      "materiality": "Material context for the 2000 decision; supported."
+    },
+    {
+      "excerpt": "That was the operational change.",
+      "claim": "The 2000 cessation of use was an operational change.",
+      "category": "interpretation",
+      "label": "F0 faithful",
+      "evidence": "In May 2000 the US government stopped using it",
+      "narrative": "the May 2000 operational change",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "Calling the stop in use an operational change accurately distinguishes it from the later procurement specification.",
+      "materiality": "Clarifies the nature of the first step; supported."
+    },
+    {
+      "excerpt": "In September 2007, the government announced that the future GPS III generation would be procured without Selective Availability.",
+      "claim": "In September 2007, the government announced that it would procure the future GPS III generation without Selective Availability.",
+      "category": "chronology",
+      "label": "F0 faithful",
+      "evidence": "In September 2007 the government announced it would procure the future GPS III generation without the feature.",
+      "narrative": "in September 2007, it announced that the future GPS III generation would be procured without it",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The date, announcement, future generation, and omission of the feature match the source.",
+      "materiality": "Identifies the second intervention; supported."
+    },
+    {
+      "excerpt": "This was a separate step: not the switch in 2000, but the omission of the feature from a future generation",
+      "claim": "The 2007 decision was distinct from the 2000 operational switch and specified omission of Selective Availability from a future generation.",
+      "category": "interpretation",
+      "label": "F0 faithful",
+      "evidence": "In May 2000 the US government stopped using it at President Bill Clinton’s direction to make civil and commercial GPS more useful worldwide. In September 2007 the government announced it would procure the future GPS III generation without the feature.",
+      "narrative": "These as separate interventions: stopping use of an existing feature, then specifying its omission from a future generation.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The source describes separate actions: stopping use, then deciding to procure a future generation without the feature.",
+      "materiality": "Central distinction; supported."
+    },
+    {
+      "excerpt": "making the 2000 policy durable for GPS III.",
+      "claim": "The omission of Selective Availability from GPS III made the 2000 policy durable for that generation.",
+      "category": "outcome",
+      "label": "F0 faithful",
+      "evidence": "GPS.gov describes the procurement choice as making the 2000 policy durable by removing that feature in the future generation.",
+      "narrative": "Frame the future-generation procurement choice as making the 2000 policy durable by removing Selective Availability from that generation",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The source explicitly characterizes the procurement choice as making the policy durable through removal of the feature in the future generation.",
+      "materiality": "Explains the significance of the second step; supported."
+    }
+  ]
+}

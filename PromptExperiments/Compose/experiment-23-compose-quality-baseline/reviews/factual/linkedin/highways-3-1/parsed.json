@@ -1,0 +1,88 @@
+{
+  "claims": [
+    {
+      "excerpt": "The U.S. interstate highway system took shape through several legislative steps, each with a different role.",
+      "claim": "The interstate highway system developed through multiple legislative steps that served distinct functions.",
+      "category": "interpretation",
+      "label": "F0 faithful",
+      "evidence": "Use the sequence to separate studying feasibility, designating a network and providing a mechanism for construction financing.",
+      "narrative": "The development of the U.S. interstate highway system involved distinct legislative steps: studying a proposed six-route toll network, authorizing designation of a much larger national network, and later providing funding for highway construction.",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The source describes the study, designation, and construction-funding roles, supporting this summary.",
+      "materiality": "Material framing of the sequence; no discrepancy."
+    },
+    {
+      "excerpt": "In 1938, Congress directed the chief of the Bureau of Public Roads to study a proposed six-route toll network.",
+      "claim": "In 1938, Congress directed the Bureau of Public Roads chief to study a proposed six-route toll network.",
+      "category": "entity",
+      "label": "F0 faithful",
+      "evidence": "The 1938 Federal-Aid Highway Act directed the Bureau of Public Roads chief to study a proposed six-route toll network.",
+      "narrative": "In 1938, the Federal-Aid Highway Act directed the Bureau of Public Roads chief to study a proposed six-route toll network.",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "“Congress directed” accurately summarizes that the 1938 Act directed the study; the six-route toll description remains specific to the proposal.",
+      "materiality": "Material historical detail; accurately represented."
+    },
+    {
+      "excerpt": "The 1944 Act then authorized designation of 40,000 miles for a national interstate network.",
+      "claim": "The 1944 Act authorized designation of 40,000 miles for a national interstate network.",
+      "category": "quantity",
+      "label": "F0 faithful",
+      "evidence": "The 1944 Federal-Aid Highway Act authorized designating 40,000 miles for a national interstate network.",
+      "narrative": "The 1944 Act authorized designation of 40,000 miles for a national interstate network.",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The act, quantity, and authorization of designation match the source; the statement does not imply the network was completed.",
+      "materiality": "Material scale and legal function; accurately represented."
+    },
+    {
+      "excerpt": "The 1956 Act authorized funding for highway construction",
+      "claim": "The 1956 Act authorized funding for highway construction.",
+      "category": "technical",
+      "label": "F0 faithful",
+      "evidence": "The 1956 Act, dated June 29, authorized funding for highway construction",
+      "narrative": "The 1956 Act authorized highway-construction funding",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The funding authorization matches the source.",
+      "materiality": "Material description of the 1956 Act's role; accurately represented."
+    },
+    {
+      "excerpt": "amended tax provisions covering motor fuel, tires, trucks, and buses.",
+      "claim": "The 1956 Act amended tax provisions covering motor fuel, tires, trucks, and buses.",
+      "category": "technical",
+      "label": "F0 faithful",
+      "evidence": "amended tax provisions for motor fuel, tires, trucks and buses.",
+      "narrative": "amended tax provisions for motor fuel, tires, trucks, and buses.",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The listed tax provisions match the source; “covering” does not materially change their meaning.",
+      "materiality": "Material statutory detail; accurately represented."
+    },
+    {
+      "excerpt": "It is the law associated with establishing the interstate system",
+      "claim": "The 1956 Act is associated with establishing the interstate system.",
+      "category": "attribution",
+      "label": "F0 faithful",
+      "evidence": "The National Archives identifies the 1956 law with establishing the interstate system.",
+      "narrative": "the National Archives identifies the 1956 law with establishing the interstate system.",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The wording preserves the source's qualified attribution rather than claiming the law alone completed the system.",
+      "materiality": "Material attribution; accurately represented."
+    },
+    {
+      "excerpt": "the sequence distinguishes studying a proposal, designating a network, and providing a way to finance construction.",
+      "claim": "The legislative sequence distinguishes studying a proposal, authorizing network designation, and providing a mechanism to finance construction.",
+      "category": "interpretation",
+      "label": "F0 faithful",
+      "evidence": "Use the sequence to separate studying feasibility, designating a network and providing a mechanism for construction financing. Authorization and designation are not completion.",
+      "narrative": "The sequence distinguishes feasibility study, network designation, and a mechanism for construction financing",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "This accurately summarizes the distinct functions and does not conflate authorization or designation with completion.",
+      "materiality": "Material interpretive point; accurately represented."
+    }
+  ]
+}

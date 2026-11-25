@@ -1,0 +1,88 @@
+{
+  "claims": [
+    {
+      "excerpt": "De POA-refunddienst ging na twaalf weken publiek live.",
+      "claim": "The service launched publicly after twelve weeks had elapsed.",
+      "category": "chronology",
+      "label": "F1 minor immaterial imprecision",
+      "evidence": "We passed alpha and beta Service Standard assessments and launched to the public in only 12 weeks.",
+      "narrative": "Het POA-refundteam lanceerde de dienst na twaalf weken",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The source says the service launched “in” 12 weeks, but does not establish that the launch occurred precisely after twelve full weeks.",
+      "materiality": "Minor timing precision; the source supports the twelve-week timeframe."
+    },
+    {
+      "excerpt": "Levering binnen de aanvankelijk gevraagde paar weken werd niet haalbaar geacht als de gebruikersdienst kwalitatief moest blijven.",
+      "claim": "The initially requested delivery within a few weeks was considered infeasible if the team was to deliver a quality service for users.",
+      "category": "outcome",
+      "label": "F0 faithful",
+      "evidence": "We were initially asked to deliver the service in a matter of weeks, which put huge pressure on everyone and we quickly discovered would not be possible if we wanted to create a quality service for our users.",
+      "narrative": "nadat levering binnen de aanvankelijk gevraagde termijn van enkele weken niet haalbaar werd geacht met behoud van een kwalitatieve gebruikersdienst",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "This accurately conveys the source’s initial request and the reason it could not be met.",
+      "materiality": "Material context for the delivery timeline, faithfully represented."
+    },
+    {
+      "excerpt": "De aanpak verliep in stappen: eerst werd de ervaring voor aanvragers naar alpha gebracht.",
+      "claim": "The team prioritized the applicant experience and took it to the alpha assessment first.",
+      "category": "chronology",
+      "label": "F0 faithful",
+      "evidence": "My team focused on the users applying for refunds first and this is what we took to the alpha assessment.",
+      "narrative": "De aanvragerservaring werd eerst naar alpha gebracht",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The sequence and alpha milestone match the source.",
+      "materiality": "Central to the described approach; accurately represented."
+    },
+    {
+      "excerpt": "Het werk voor caseworkers kwam later.",
+      "claim": "Work for caseworkers came later than the work focused on applicants.",
+      "category": "chronology",
+      "label": "F0 faithful",
+      "evidence": "Plans for the caseworker user came later.",
+      "narrative": "plannen voor caseworkers kwamen later",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The source says caseworker plans came later; it also describes building the case-management application during private beta, consistent with work following the initial applicant focus.",
+      "materiality": "A central sequencing detail; accurately represented."
+    },
+    {
+      "excerpt": "Tijdens de private beta wisselden tweewekelijkse sprints af.",
+      "claim": "The team alternated between distinct fortnight-long sprints.",
+      "category": "chronology",
+      "label": "F2 material incorrect, unsupported or misleading",
+      "evidence": "We achieved this by splitting our fortnightly sprints in two: testing, researching and accepting applications in the first week and then suspending submissions to concentrate on testing, researching and processing applications the second.",
+      "narrative": "Tijdens de private beta wisselden tweewekelijkse sprints af",
+      "narrativeRelation": "differs",
+      "origin": "new_distortion",
+      "explanation": "The source describes dividing each fortnightly sprint into two weeks with different emphases, not alternating between separate fortnight-long sprints.",
+      "materiality": "Misstates the cadence and structure of the team’s working method."
+    },
+    {
+      "excerpt": "In de ene lag de nadruk op aanvragen aannemen; in de andere was tijd gereserveerd voor testen, onderzoek en verwerking.",
+      "claim": "One phase emphasized accepting applications, while the other reserved time for testing, research and processing.",
+      "category": "scope",
+      "label": "F1 minor immaterial imprecision",
+      "evidence": "testing, researching and accepting applications in the first week and then suspending submissions to concentrate on testing, researching and processing applications the second.",
+      "narrative": "In de ene lag de nadruk op aanvragen aannemen; in de andere was tijd gereserveerd voor testen, onderzoek en verwerking.",
+      "narrativeRelation": "supports",
+      "origin": "new_distortion",
+      "explanation": "The contrast broadly matches the source, but testing and research also occurred in the first week, and submissions were suspended in the second. The excerpt’s contrast can obscure those details, though it does not explicitly say testing and research happened only in the second phase.",
+      "materiality": "Minor imprecision in how activities were allocated across the two weeks."
+    },
+    {
+      "excerpt": "Zo combineerde het POA-refundteam een volgorde waarin aanvragers eerst kwamen met vaste ruimte voor onderzoek en testen.",
+      "claim": "The team’s approach combined prioritizing applicants with reserved time for research and testing.",
+      "category": "interpretation",
+      "label": "F0 faithful",
+      "evidence": "We achieved this by splitting our fortnightly sprints in two: testing, researching and accepting applications in the first week and then suspending submissions to concentrate on testing, researching and processing applications the second.",
+      "narrative": "De beschreven aanpak combineerde een volgorde waarin aanvragers eerst kwamen met expliciet gereserveerde tijd voor onderzoek en testen.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "This is a supported summary of the applicant-first sequence and the scheduled research and testing time; it does not claim those choices caused the launch or results.",
+      "materiality": "A central summary of the approach, with no unsupported causal claim."
+    }
+  ]
+}

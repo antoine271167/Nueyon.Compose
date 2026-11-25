@@ -1,0 +1,124 @@
+{
+  "claims": [
+    {
+      "excerpt": "The unemployment rate doesn’t count everyone who doesn’t have a job.",
+      "claim": "People without jobs are not all counted in the unemployment rate.",
+      "category": "scope",
+      "label": "F0 faithful",
+      "evidence": "The unemployment rate divides unemployed people by the sum of employed and unemployed people.",
+      "narrative": "rather than by everyone without a job.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The denominator includes employed and classified unemployed people, not everyone without a job.",
+      "materiality": "Material scope clarification; faithful to the denominator definition."
+    },
+    {
+      "excerpt": "Its denominator is the number of employed people plus the number classified as unemployed.",
+      "claim": "The unemployment-rate denominator is employed people plus people classified as unemployed.",
+      "category": "quantity",
+      "label": "F0 faithful",
+      "evidence": "The unemployment rate divides unemployed people by the sum of employed and unemployed people.",
+      "narrative": "The rate’s denominator is the number of employed people plus unemployed people.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "This accurately states the denominator.",
+      "materiality": "Central to the explanation."
+    },
+    {
+      "excerpt": "That classification depends on what happened during specific survey periods.",
+      "claim": "Unemployment classification depends on events during specified survey periods.",
+      "category": "chronology",
+      "label": "F0 faithful",
+      "evidence": "Under the Current Population Survey, an unemployed person was not employed during the survey reference week, was available for work except for temporary illness, and made an active job search effort in the four-week period ending with that week or was temporarily laid off and expected recall.",
+      "narrative": "availability and the survey reference periods also matter",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The source specifies a reference week and a four-week job-search period.",
+      "materiality": "Material timing context."
+    },
+    {
+      "excerpt": "In general, a person must not have been employed during the reference week,",
+      "claim": "A person generally must not have been employed during the reference week to be classified as unemployed.",
+      "category": "chronology",
+      "label": "F0 faithful",
+      "evidence": "an unemployed person was not employed during the survey reference week",
+      "narrative": "the person must not have been employed during the reference week",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The condition matches the source.",
+      "materiality": "Material classification condition."
+    },
+    {
+      "excerpt": "must have been available for work (with an exception for temporary illness),",
+      "claim": "A person must generally be available for work, with temporary illness as an exception.",
+      "category": "scope",
+      "label": "F0 faithful",
+      "evidence": "was available for work except for temporary illness",
+      "narrative": "must have been available for work, except for temporary illness",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The availability condition and exception match the source.",
+      "materiality": "Material classification condition."
+    },
+    {
+      "excerpt": "and must have actively looked for work during the four weeks ending with that week.",
+      "claim": "A person generally must have actively searched for work during the four-week period ending with the reference week.",
+      "category": "chronology",
+      "label": "F0 faithful",
+      "evidence": "made an active job search effort in the four-week period ending with that week",
+      "narrative": "Active search must fall within the four-week period ending with the reference week",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The period and active-search requirement match the source.",
+      "materiality": "Material classification condition."
+    },
+    {
+      "excerpt": "There’s an exception to the active-search requirement: someone on temporary layoff who expects to be recalled may qualify without searching.",
+      "claim": "A person on temporary layoff who expects recall may qualify without active job search.",
+      "category": "scope",
+      "label": "F0 faithful",
+      "evidence": "or was temporarily laid off and expected recall",
+      "narrative": "The first may qualify without an active search",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The source presents temporary layoff with expected recall as an alternative to active search; “may qualify” appropriately avoids overstatement.",
+      "materiality": "Material exception to the general search condition."
+    },
+    {
+      "excerpt": "By contrast, browsing job listings alone doesn’t count as actively looking.",
+      "claim": "Browsing job listings alone does not qualify as active job search.",
+      "category": "technical",
+      "label": "U insufficient evidence to settle",
+      "evidence": "Passive-only job search does not count as active search.",
+      "narrative": "The second was someone who only browsed job listings. The passive browsing alone does not meet the active-search requirement.",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The source excludes passive-only search but does not establish whether browsing listings alone is necessarily passive; the specific example is supplied by the narrative and upstream framing.",
+      "materiality": "Material to the story’s contrast, but the supplied source is insufficient to confirm this specific example."
+    },
+    {
+      "excerpt": "So having no job isn’t enough by itself.",
+      "claim": "Lacking a job alone is insufficient for classification as unemployed.",
+      "category": "scope",
+      "label": "F0 faithful",
+      "evidence": "an unemployed person was not employed during the survey reference week, was available for work except for temporary illness, and made an active job search effort in the four-week period ending with that week or was temporarily laid off and expected recall.",
+      "narrative": "unemployment is not simply the absence of a job",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The source requires additional availability and search-or-layoff criteria.",
+      "materiality": "Central clarification of who qualifies."
+    },
+    {
+      "excerpt": "Availability, recent job-search activity, and the temporary-layoff exception determine whether someone is counted as unemployed—and included in the rate’s denominator.",
+      "claim": "Availability, recent active job search or the temporary-layoff exception determine whether someone is counted as unemployed and thus included in the denominator.",
+      "category": "scope",
+      "label": "F0 faithful",
+      "evidence": "was available for work except for temporary illness, and made an active job search effort in the four-week period ending with that week or was temporarily laid off and expected recall. The unemployment rate divides unemployed people by the sum of employed and unemployed people.",
+      "narrative": "availability and the survey reference periods also matter, and that the classification determines whether a person is counted among the unemployed in the rate’s denominator.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "This summarizes the source’s availability and search-or-layoff criteria and correctly links unemployment classification to inclusion in the denominator. The reference-week employment condition is stated earlier in the piece.",
+      "materiality": "Material concluding summary; consistent with the earlier conditions and denominator definition."
+    }
+  ]
+}

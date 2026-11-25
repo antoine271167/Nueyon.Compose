@@ -1,0 +1,76 @@
+{
+  "claims": [
+    {
+      "excerpt": "At the National Ignition Facility, an experiment achieved fusion ignition",
+      "claim": "An experiment at the National Ignition Facility achieved fusion ignition.",
+      "category": "outcome",
+      "label": "F0",
+      "evidence": "a Lawrence Livermore National Laboratory experiment at the National Ignition Facility achieved fusion ignition.",
+      "narrative": "The National Ignition Facility experiment achieved fusion ignition",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The source directly reports the experiment and its location and result.",
+      "materiality": "Central factual claim; accurate."
+    },
+    {
+      "excerpt": "2.05 megajoules of energy were delivered to the target",
+      "claim": "The experiment delivered 2.05 megajoules of energy to the target.",
+      "category": "quantity",
+      "label": "F0",
+      "evidence": "The experiment delivered 2.05 megajoules to the target",
+      "narrative": "2.05 megajoules were delivered to the target",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The amount and target boundary match the source.",
+      "materiality": "Central measurement; accurate."
+    },
+    {
+      "excerpt": "3.15 megajoules of fusion energy were produced",
+      "claim": "The experiment generated 3.15 megajoules of fusion energy.",
+      "category": "quantity",
+      "label": "F0",
+      "evidence": "generated 3.15 megajoules of fusion energy.",
+      "narrative": "3.15 megajoules of fusion energy were generated",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The amount and energy type match the source.",
+      "materiality": "Central measurement; accurate."
+    },
+    {
+      "excerpt": "That target-level comparison marks progress toward inertial fusion energy.",
+      "claim": "The comparison between energy delivered to the target and fusion energy produced marks progress toward inertial fusion energy.",
+      "category": "interpretation",
+      "label": "F1",
+      "evidence": "The announcement treats the experiment as progress toward inertial fusion energy",
+      "narrative": "what that target-level comparison establishes: fusion output exceeded the energy delivered to the target, a result treated as progress toward inertial fusion energy",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The source says the experiment is progress toward inertial fusion energy, but does not specifically attribute that significance to the target-level comparison. This is a minor framing shift, not a substantive contradiction.",
+      "materiality": "The distinction could overstate what the comparison alone establishes, but does not materially change the reported result."
+    },
+    {
+      "excerpt": "It is not practical electricity production",
+      "claim": "The experiment did not amount to practical electricity production.",
+      "category": "outcome",
+      "label": "F0",
+      "evidence": "notes the many scientific and technological developments still needed for practical energy production.",
+      "narrative": "not as practical electricity production",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The source says substantial development remains before practical energy production; the claim does not say electricity was generated.",
+      "materiality": "Important qualification; consistent with the source."
+    },
+    {
+      "excerpt": "reaching that goal still requires substantial scientific and technological development.",
+      "claim": "Substantial scientific and technological development is still needed to reach practical energy production.",
+      "category": "outcome",
+      "label": "F0",
+      "evidence": "notes the many scientific and technological developments still needed for practical energy production.",
+      "narrative": "practical energy production still requires substantial scientific and technological development",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "This matches the source's statement about remaining development.",
+      "materiality": "Important qualification; accurate."
+    }
+  ]
+}

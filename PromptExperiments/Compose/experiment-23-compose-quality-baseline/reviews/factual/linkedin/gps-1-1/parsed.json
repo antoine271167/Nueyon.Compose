@@ -1,0 +1,100 @@
+{
+  "claims": [
+    {
+      "excerpt": "Selective Availability was a feature that deliberately degraded public GPS signals for national security.",
+      "claim": "Selective Availability was a feature that deliberately degraded public GPS signals for national security.",
+      "category": "technical",
+      "label": "F0 faithful",
+      "evidence": "Selective Availability deliberately degraded public GPS signals for national security.",
+      "narrative": "Explain that Selective Availability deliberately degraded public GPS signals for national security.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "Accurately states the feature and its stated purpose.",
+      "materiality": "Material context; no discrepancy."
+    },
+    {
+      "excerpt": "In May 2000, at President Bill Clinton’s direction, the U.S. government stopped using it to make civil and commercial GPS more useful worldwide.",
+      "claim": "In May 2000, the U.S. government stopped using Selective Availability at President Bill Clinton’s direction to make civil and commercial GPS more useful worldwide.",
+      "category": "other",
+      "label": "F0 faithful",
+      "evidence": "In May 2000 the US government stopped using it at President Bill Clinton’s direction to make civil and commercial GPS more useful worldwide.",
+      "narrative": "In May 2000, the US government stopped using it;",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The timing, actor, direction, action, and stated purpose match the source.",
+      "materiality": "Material event; no discrepancy."
+    },
+    {
+      "excerpt": "at President Bill Clinton’s direction",
+      "claim": "The 2000 decision to stop using Selective Availability was made at President Bill Clinton’s direction.",
+      "category": "attribution",
+      "label": "F0 faithful",
+      "evidence": "In May 2000 the US government stopped using it at President Bill Clinton’s direction",
+      "narrative": "made at President Bill Clinton’s direction",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The attribution matches the source.",
+      "materiality": "Material attribution; no discrepancy."
+    },
+    {
+      "excerpt": "to make civil and commercial GPS more useful worldwide",
+      "claim": "Stopping use of Selective Availability was intended to make civil and commercial GPS more useful worldwide.",
+      "category": "intention",
+      "label": "F0 faithful",
+      "evidence": "to make civil and commercial GPS more useful worldwide.",
+      "narrative": "to make civil and commercial GPS more useful worldwide",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The stated purpose matches the source and does not claim a quantified or universal outcome.",
+      "materiality": "Material purpose; no discrepancy."
+    },
+    {
+      "excerpt": "That was an operational change.",
+      "claim": "The May 2000 cessation of use was an operational change.",
+      "category": "interpretation",
+      "label": "F0 faithful",
+      "evidence": "In May 2000 the US government stopped using it",
+      "narrative": "The reader should understand these as separate interventions: stopping use of an existing feature",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "Characterizing the cessation of use as operational accurately distinguishes it from the later procurement decision.",
+      "materiality": "Material distinction; no discrepancy."
+    },
+    {
+      "excerpt": "In September 2007, the government announced a separate procurement decision: the future GPS III generation would be procured without Selective Availability.",
+      "claim": "In September 2007, the government announced that the future GPS III generation would be procured without Selective Availability, as a decision separate from the 2000 cessation of use.",
+      "category": "chronology",
+      "label": "F0 faithful",
+      "evidence": "In September 2007 the government announced it would procure the future GPS III generation without the feature.",
+      "narrative": "in September 2007, it announced that the future GPS III generation would be procured without it.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The date, announcement, future generation, and procurement choice match the source; treating this as separate from the 2000 operational change is consistent with the source’s distinct events.",
+      "materiality": "Material chronology and distinction; no discrepancy."
+    },
+    {
+      "excerpt": "The first change stopped the feature’s use.",
+      "claim": "The May 2000 change stopped use of Selective Availability.",
+      "category": "outcome",
+      "label": "F0 faithful",
+      "evidence": "In May 2000 the US government stopped using it",
+      "narrative": "stopping use of an existing feature",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "This accurately restates the operational change without claiming the capability was removed from every satellite.",
+      "materiality": "Material distinction; no discrepancy."
+    },
+    {
+      "excerpt": "The later decision carried that policy into a future generation by specifying that it would be left out.",
+      "claim": "The 2007 procurement decision carried the 2000 policy into a future generation by specifying that Selective Availability would be omitted from GPS III.",
+      "category": "interpretation",
+      "label": "F0 faithful",
+      "evidence": "GPS.gov describes the procurement choice as making the 2000 policy durable by removing that feature in the future generation.",
+      "narrative": "making the 2000 policy durable by removing Selective Availability from that generation",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The source explicitly describes the procurement choice as making the earlier policy durable through omission in the future generation.",
+      "materiality": "Material interpretation of the relationship between the decisions; no discrepancy."
+    }
+  ]
+}

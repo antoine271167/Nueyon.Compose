@@ -1,0 +1,5157 @@
+{
+  "subjects": 12,
+  "formats": {
+    "article": {
+      "planned": 36,
+      "attempted": 36,
+      "valid": 36,
+      "generationFailures": {},
+      "generationSeconds": {
+        "sum": 174.27599999999993,
+        "mean": 4.8409999999999975,
+        "median": 4.784000000000001
+      },
+      "contentWords": 112.16666666666667,
+      "editorial": {
+        "reviewed": 36,
+        "mean": 3.2986111111111107,
+        "median": 3.35,
+        "distribution": {
+          "3": 3,
+          "4": 1,
+          "3.25": 5,
+          "3.1": 1,
+          "3.35": 8,
+          "3.05": 1,
+          "3.45": 1,
+          "3.2": 1,
+          "2.8": 2,
+          "3.95": 1,
+          "3.4": 1,
+          "3.6": 2,
+          "2.9": 2,
+          "3.5": 2,
+          "3.8": 1,
+          "3.3": 1,
+          "3.7": 1,
+          "3.55": 1,
+          "2.6": 1
+        },
+        "acceptance": {
+          "n": 2,
+          "d": 36,
+          "percent": 5.555555555555555
+        },
+        "acceptanceOfGenerated": {
+          "n": 2,
+          "d": 36,
+          "percent": 5.555555555555555
+        },
+        "criterionMeans": [
+          3.0555555555555554,
+          2.8333333333333335,
+          3.9166666666666665,
+          4.194444444444445,
+          2.4444444444444446,
+          3.2222222222222223
+        ],
+        "criticalWeakness": [
+          {
+            "n": 5,
+            "d": 36,
+            "percent": 13.88888888888889
+          },
+          {
+            "n": 9,
+            "d": 36,
+            "percent": 25
+          },
+          {
+            "n": 0,
+            "d": 36,
+            "percent": 0
+          },
+          {
+            "n": 0,
+            "d": 36,
+            "percent": 0
+          },
+          {
+            "n": 21,
+            "d": 36,
+            "percent": 58.333333333333336
+          },
+          {
+            "n": 1,
+            "d": 36,
+            "percent": 2.7777777777777777
+          }
+        ],
+        "patterns": {
+          "thin_substance": 32,
+          "report_voice": 19,
+          "generic_ending": 17,
+          "repetition": 19,
+          "bureaucratic_language": 3,
+          "generic_opening": 5,
+          "abstraction": 5,
+          "formulaic_structure": 1
+        },
+        "outputs": [
+          {
+            "id": "acid-1",
+            "scores": [
+              3,
+              3,
+              4,
+              4,
+              2,
+              3
+            ],
+            "weighted": 3.25,
+            "accepted": false
+          },
+          {
+            "id": "airmf-1",
+            "scores": [
+              3,
+              2,
+              4,
+              4,
+              3,
+              3
+            ],
+            "weighted": 3.1,
+            "accepted": false
+          },
+          {
+            "id": "coral-1",
+            "scores": [
+              3,
+              3,
+              4,
+              4,
+              3,
+              3
+            ],
+            "weighted": 3.35,
+            "accepted": false
+          },
+          {
+            "id": "digital-1",
+            "scores": [
+              2,
+              3,
+              4,
+              4,
+              2,
+              3
+            ],
+            "weighted": 3.05,
+            "accepted": false
+          },
+          {
+            "id": "fusion-1",
+            "scores": [
+              3,
+              2,
+              4,
+              4,
+              2,
+              3
+            ],
+            "weighted": 3,
+            "accepted": false
+          },
+          {
+            "id": "gps-1",
+            "scores": [
+              3,
+              2,
+              4,
+              4,
+              2,
+              3
+            ],
+            "weighted": 3,
+            "accepted": false
+          },
+          {
+            "id": "grace-1",
+            "scores": [
+              3,
+              3,
+              4,
+              4,
+              2,
+              4
+            ],
+            "weighted": 3.35,
+            "accepted": false
+          },
+          {
+            "id": "highways-1",
+            "scores": [
+              3,
+              3,
+              4,
+              4,
+              2,
+              3
+            ],
+            "weighted": 3.25,
+            "accepted": false
+          },
+          {
+            "id": "labor-1",
+            "scores": [
+              3,
+              3,
+              4,
+              4,
+              2,
+              3
+            ],
+            "weighted": 3.25,
+            "accepted": false
+          },
+          {
+            "id": "python-1",
+            "scores": [
+              3,
+              3,
+              4,
+              4,
+              3,
+              4
+            ],
+            "weighted": 3.45,
+            "accepted": false
+          },
+          {
+            "id": "webb-1",
+            "scores": [
+              4,
+              2,
+              4,
+              4,
+              2,
+              3
+            ],
+            "weighted": 3.2,
+            "accepted": false
+          },
+          {
+            "id": "wolf-1",
+            "scores": [
+              3,
+              2,
+              3,
+              4,
+              2,
+              3
+            ],
+            "weighted": 2.8,
+            "accepted": false
+          },
+          {
+            "id": "wolf-2",
+            "scores": [
+              3,
+              3,
+              4,
+              4,
+              3,
+              3
+            ],
+            "weighted": 3.35,
+            "accepted": false
+          },
+          {
+            "id": "webb-2",
+            "scores": [
+              3,
+              3,
+              4,
+              4,
+              2,
+              3
+            ],
+            "weighted": 3.25,
+            "accepted": false
+          },
+          {
+            "id": "python-2",
+            "scores": [
+              3,
+              3,
+              4,
+              4,
+              3,
+              3
+            ],
+            "weighted": 3.35,
+            "accepted": false
+          },
+          {
+            "id": "labor-2",
+            "scores": [
+              4,
+              4,
+              4,
+              5,
+              2,
+              4
+            ],
+            "weighted": 3.95,
+            "accepted": false
+          },
+          {
+            "id": "highways-2",
+            "scores": [
+              3,
+              3,
+              4,
+              5,
+              2,
+              3
+            ],
+            "weighted": 3.4,
+            "accepted": false
+          },
+          {
+            "id": "grace-2",
+            "scores": [
+              3,
+              3,
+              4,
+              4,
+              2,
+              4
+            ],
+            "weighted": 3.35,
+            "accepted": false
+          },
+          {
+            "id": "gps-2",
+            "scores": [
+              3,
+              3,
+              4,
+              5,
+              3,
+              4
+            ],
+            "weighted": 3.6,
+            "accepted": false
+          },
+          {
+            "id": "fusion-2",
+            "scores": [
+              4,
+              3,
+              5,
+              5,
+              3,
+              4
+            ],
+            "weighted": 4,
+            "accepted": true
+          },
+          {
+            "id": "digital-2",
+            "scores": [
+              2,
+              3,
+              4,
+              3,
+              2,
+              3
+            ],
+            "weighted": 2.9,
+            "accepted": false
+          },
+          {
+            "id": "coral-2",
+            "scores": [
+              3,
+              3,
+              4,
+              5,
+              3,
+              3
+            ],
+            "weighted": 3.5,
+            "accepted": false
+          },
+          {
+            "id": "airmf-2",
+            "scores": [
+              3,
+              2,
+              4,
+              4,
+              2,
+              3
+            ],
+            "weighted": 3,
+            "accepted": false
+          },
+          {
+            "id": "acid-2",
+            "scores": [
+              3,
+              3,
+              4,
+              4,
+              2,
+              4
+            ],
+            "weighted": 3.35,
+            "accepted": false
+          },
+          {
+            "id": "acid-3",
+            "scores": [
+              3,
+              3,
+              4,
+              4,
+              3,
+              3
+            ],
+            "weighted": 3.35,
+            "accepted": false
+          },
+          {
+            "id": "airmf-3",
+            "scores": [
+              2,
+              2,
+              4,
+              4,
+              2,
+              3
+            ],
+            "weighted": 2.8,
+            "accepted": false
+          },
+          {
+            "id": "coral-3",
+            "scores": [
+              4,
+              3,
+              4,
+              5,
+              4,
+              3
+            ],
+            "weighted": 3.8,
+            "accepted": true
+          },
+          {
+            "id": "digital-3",
+            "scores": [
+              3,
+              2,
+              4,
+              4,
+              2,
+              2
+            ],
+            "weighted": 2.9,
+            "accepted": false
+          },
+          {
+            "id": "fusion-3",
+            "scores": [
+              4,
+              4,
+              3,
+              4,
+              2,
+              3
+            ],
+            "weighted": 3.5,
+            "accepted": false
+          },
+          {
+            "id": "gps-3",
+            "scores": [
+              3,
+              3,
+              4,
+              5,
+              3,
+              4
+            ],
+            "weighted": 3.6,
+            "accepted": false
+          },
+          {
+            "id": "grace-3",
+            "scores": [
+              3,
+              3,
+              4,
+              4,
+              2,
+              3
+            ],
+            "weighted": 3.25,
+            "accepted": false
+          },
+          {
+            "id": "highways-3",
+            "scores": [
+              2,
+              3,
+              4,
+              5,
+              3,
+              3
+            ],
+            "weighted": 3.3,
+            "accepted": false
+          },
+          {
+            "id": "labor-3",
+            "scores": [
+              4,
+              4,
+              3,
+              4,
+              3,
+              4
+            ],
+            "weighted": 3.7,
+            "accepted": false
+          },
+          {
+            "id": "python-3",
+            "scores": [
+              3,
+              3,
+              4,
+              4,
+              3,
+              3
+            ],
+            "weighted": 3.35,
+            "accepted": false
+          },
+          {
+            "id": "webb-3",
+            "scores": [
+              4,
+              3,
+              4,
+              4,
+              3,
+              3
+            ],
+            "weighted": 3.55,
+            "accepted": false
+          },
+          {
+            "id": "wolf-3",
+            "scores": [
+              2,
+              2,
+              3,
+              4,
+              2,
+              3
+            ],
+            "weighted": 2.6,
+            "accepted": false
+          }
+        ]
+      },
+      "reviews": {
+        "editorial": {
+          "attempted": 36,
+          "usable": 36,
+          "strictParserValid": 32,
+          "meanSeconds": 8.765638888888889
+        },
+        "primary": {
+          "attempted": 36,
+          "usable": 35,
+          "strictParserValid": 1,
+          "meanSeconds": 21.14402777777778
+        },
+        "secondary": {
+          "attempted": 18,
+          "usable": 18,
+          "strictParserValid": 1,
+          "meanSeconds": 22.9765
+        }
+      },
+      "factual": {
+        "firstUsable": 35,
+        "fallback": 1,
+        "claimCount": 331,
+        "reviewerLabels": {
+          "F0": 315,
+          "F1": 7,
+          "F2": 4,
+          "U": 5
+        },
+        "confirmedF2Count": 9,
+        "adjudicatedUnresolved": 1,
+        "confirmedF2Outputs": {
+          "n": 9,
+          "d": 36,
+          "percent": 25
+        },
+        "confirmedF2AcrossGenerated": {
+          "n": 9,
+          "d": 36,
+          "percent": 25
+        },
+        "confirmedF2Category": {
+          "chronology": 6,
+          "entity": 3
+        },
+        "confirmedF2Origin": {
+          "propagated": 9
+        },
+        "dualReviews": 17,
+        "outputLevelFlagDisagreement": [
+          "coral-1",
+          "fusion-1",
+          "python-2",
+          "digital-3"
+        ],
+        "outsideNarrative": 3,
+        "eitherF2OrEditorialFailure": {
+          "n": 34,
+          "d": 36,
+          "percent": 94.44444444444444
+        }
+      },
+      "bySubject": {
+        "acid": {
+          "reviewed": 3,
+          "mean": 3.3166666666666664,
+          "median": 3.35,
+          "distribution": {
+            "3.25": 1,
+            "3.35": 2
+          },
+          "acceptance": {
+            "n": 0,
+            "d": 3,
+            "percent": 0
+          },
+          "acceptanceOfGenerated": {
+            "n": 0,
+            "d": 3,
+            "percent": 0
+          },
+          "criterionMeans": [
+            3,
+            3,
+            4,
+            4,
+            2.3333333333333335,
+            3.3333333333333335
+          ],
+          "criticalWeakness": [
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 2,
+              "d": 3,
+              "percent": 66.66666666666667
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            }
+          ],
+          "patterns": {
+            "thin_substance": 3,
+            "report_voice": 2,
+            "generic_ending": 3,
+            "repetition": 1
+          },
+          "outputs": [
+            {
+              "id": "acid-1",
+              "scores": [
+                3,
+                3,
+                4,
+                4,
+                2,
+                3
+              ],
+              "weighted": 3.25,
+              "accepted": false
+            },
+            {
+              "id": "acid-2",
+              "scores": [
+                3,
+                3,
+                4,
+                4,
+                2,
+                4
+              ],
+              "weighted": 3.35,
+              "accepted": false
+            },
+            {
+              "id": "acid-3",
+              "scores": [
+                3,
+                3,
+                4,
+                4,
+                3,
+                3
+              ],
+              "weighted": 3.35,
+              "accepted": false
+            }
+          ],
+          "valid": 3,
+          "range": 0.10000000000000009,
+          "confirmedF2Claims": 0,
+          "reviewedF2Outputs": 0
+        },
+        "airmf": {
+          "reviewed": 3,
+          "mean": 2.9666666666666663,
+          "median": 3,
+          "distribution": {
+            "3": 1,
+            "3.1": 1,
+            "2.8": 1
+          },
+          "acceptance": {
+            "n": 0,
+            "d": 3,
+            "percent": 0
+          },
+          "acceptanceOfGenerated": {
+            "n": 0,
+            "d": 3,
+            "percent": 0
+          },
+          "criterionMeans": [
+            2.6666666666666665,
+            2,
+            4,
+            4,
+            2.3333333333333335,
+            3
+          ],
+          "criticalWeakness": [
+            {
+              "n": 1,
+              "d": 3,
+              "percent": 33.333333333333336
+            },
+            {
+              "n": 3,
+              "d": 3,
+              "percent": 100
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 2,
+              "d": 3,
+              "percent": 66.66666666666667
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            }
+          ],
+          "patterns": {
+            "thin_substance": 3,
+            "report_voice": 2,
+            "generic_opening": 1,
+            "repetition": 1
+          },
+          "outputs": [
+            {
+              "id": "airmf-1",
+              "scores": [
+                3,
+                2,
+                4,
+                4,
+                3,
+                3
+              ],
+              "weighted": 3.1,
+              "accepted": false
+            },
+            {
+              "id": "airmf-2",
+              "scores": [
+                3,
+                2,
+                4,
+                4,
+                2,
+                3
+              ],
+              "weighted": 3,
+              "accepted": false
+            },
+            {
+              "id": "airmf-3",
+              "scores": [
+                2,
+                2,
+                4,
+                4,
+                2,
+                3
+              ],
+              "weighted": 2.8,
+              "accepted": false
+            }
+          ],
+          "valid": 3,
+          "range": 0.30000000000000027,
+          "confirmedF2Claims": 0,
+          "reviewedF2Outputs": 0
+        },
+        "coral": {
+          "reviewed": 3,
+          "mean": 3.5499999999999994,
+          "median": 3.5,
+          "distribution": {
+            "3.35": 1,
+            "3.5": 1,
+            "3.8": 1
+          },
+          "acceptance": {
+            "n": 1,
+            "d": 3,
+            "percent": 33.333333333333336
+          },
+          "acceptanceOfGenerated": {
+            "n": 1,
+            "d": 3,
+            "percent": 33.333333333333336
+          },
+          "criterionMeans": [
+            3.3333333333333335,
+            3,
+            4,
+            4.666666666666667,
+            3.3333333333333335,
+            3
+          ],
+          "criticalWeakness": [
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            }
+          ],
+          "patterns": {
+            "thin_substance": 3,
+            "report_voice": 3,
+            "repetition": 1
+          },
+          "outputs": [
+            {
+              "id": "coral-1",
+              "scores": [
+                3,
+                3,
+                4,
+                4,
+                3,
+                3
+              ],
+              "weighted": 3.35,
+              "accepted": false
+            },
+            {
+              "id": "coral-2",
+              "scores": [
+                3,
+                3,
+                4,
+                5,
+                3,
+                3
+              ],
+              "weighted": 3.5,
+              "accepted": false
+            },
+            {
+              "id": "coral-3",
+              "scores": [
+                4,
+                3,
+                4,
+                5,
+                4,
+                3
+              ],
+              "weighted": 3.8,
+              "accepted": true
+            }
+          ],
+          "valid": 3,
+          "range": 0.44999999999999973,
+          "confirmedF2Claims": 0,
+          "reviewedF2Outputs": 0
+        },
+        "digital": {
+          "reviewed": 3,
+          "mean": 2.9499999999999997,
+          "median": 2.9,
+          "distribution": {
+            "3.05": 1,
+            "2.9": 2
+          },
+          "acceptance": {
+            "n": 0,
+            "d": 3,
+            "percent": 0
+          },
+          "acceptanceOfGenerated": {
+            "n": 0,
+            "d": 3,
+            "percent": 0
+          },
+          "criterionMeans": [
+            2.3333333333333335,
+            2.6666666666666665,
+            4,
+            3.6666666666666665,
+            2,
+            2.6666666666666665
+          ],
+          "criticalWeakness": [
+            {
+              "n": 2,
+              "d": 3,
+              "percent": 66.66666666666667
+            },
+            {
+              "n": 1,
+              "d": 3,
+              "percent": 33.333333333333336
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 3,
+              "d": 3,
+              "percent": 100
+            },
+            {
+              "n": 1,
+              "d": 3,
+              "percent": 33.333333333333336
+            }
+          ],
+          "patterns": {
+            "report_voice": 3,
+            "thin_substance": 3,
+            "repetition": 3,
+            "generic_ending": 2,
+            "bureaucratic_language": 2,
+            "abstraction": 1
+          },
+          "outputs": [
+            {
+              "id": "digital-1",
+              "scores": [
+                2,
+                3,
+                4,
+                4,
+                2,
+                3
+              ],
+              "weighted": 3.05,
+              "accepted": false
+            },
+            {
+              "id": "digital-2",
+              "scores": [
+                2,
+                3,
+                4,
+                3,
+                2,
+                3
+              ],
+              "weighted": 2.9,
+              "accepted": false
+            },
+            {
+              "id": "digital-3",
+              "scores": [
+                3,
+                2,
+                4,
+                4,
+                2,
+                2
+              ],
+              "weighted": 2.9,
+              "accepted": false
+            }
+          ],
+          "valid": 3,
+          "range": 0.1499999999999999,
+          "confirmedF2Claims": 3,
+          "reviewedF2Outputs": 3
+        },
+        "fusion": {
+          "reviewed": 3,
+          "mean": 3.5,
+          "median": 3.5,
+          "distribution": {
+            "3": 1,
+            "4": 1,
+            "3.5": 1
+          },
+          "acceptance": {
+            "n": 1,
+            "d": 3,
+            "percent": 33.333333333333336
+          },
+          "acceptanceOfGenerated": {
+            "n": 1,
+            "d": 3,
+            "percent": 33.333333333333336
+          },
+          "criterionMeans": [
+            3.6666666666666665,
+            3,
+            4,
+            4.333333333333333,
+            2.3333333333333335,
+            3.3333333333333335
+          ],
+          "criticalWeakness": [
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 1,
+              "d": 3,
+              "percent": 33.333333333333336
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 2,
+              "d": 3,
+              "percent": 66.66666666666667
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            }
+          ],
+          "patterns": {
+            "thin_substance": 3,
+            "repetition": 2,
+            "report_voice": 2,
+            "generic_ending": 3
+          },
+          "outputs": [
+            {
+              "id": "fusion-1",
+              "scores": [
+                3,
+                2,
+                4,
+                4,
+                2,
+                3
+              ],
+              "weighted": 3,
+              "accepted": false
+            },
+            {
+              "id": "fusion-2",
+              "scores": [
+                4,
+                3,
+                5,
+                5,
+                3,
+                4
+              ],
+              "weighted": 4,
+              "accepted": true
+            },
+            {
+              "id": "fusion-3",
+              "scores": [
+                4,
+                4,
+                3,
+                4,
+                2,
+                3
+              ],
+              "weighted": 3.5,
+              "accepted": false
+            }
+          ],
+          "valid": 3,
+          "range": 1,
+          "confirmedF2Claims": 0,
+          "reviewedF2Outputs": 0
+        },
+        "gps": {
+          "reviewed": 3,
+          "mean": 3.4,
+          "median": 3.6,
+          "distribution": {
+            "3": 1,
+            "3.6": 2
+          },
+          "acceptance": {
+            "n": 0,
+            "d": 3,
+            "percent": 0
+          },
+          "acceptanceOfGenerated": {
+            "n": 0,
+            "d": 3,
+            "percent": 0
+          },
+          "criterionMeans": [
+            3,
+            2.6666666666666665,
+            4,
+            4.666666666666667,
+            2.6666666666666665,
+            3.6666666666666665
+          ],
+          "criticalWeakness": [
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 1,
+              "d": 3,
+              "percent": 33.333333333333336
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 1,
+              "d": 3,
+              "percent": 33.333333333333336
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            }
+          ],
+          "patterns": {
+            "thin_substance": 2,
+            "repetition": 3,
+            "report_voice": 1,
+            "generic_ending": 1
+          },
+          "outputs": [
+            {
+              "id": "gps-1",
+              "scores": [
+                3,
+                2,
+                4,
+                4,
+                2,
+                3
+              ],
+              "weighted": 3,
+              "accepted": false
+            },
+            {
+              "id": "gps-2",
+              "scores": [
+                3,
+                3,
+                4,
+                5,
+                3,
+                4
+              ],
+              "weighted": 3.6,
+              "accepted": false
+            },
+            {
+              "id": "gps-3",
+              "scores": [
+                3,
+                3,
+                4,
+                5,
+                3,
+                4
+              ],
+              "weighted": 3.6,
+              "accepted": false
+            }
+          ],
+          "valid": 3,
+          "range": 0.6000000000000001,
+          "confirmedF2Claims": 0,
+          "reviewedF2Outputs": 0
+        },
+        "grace": {
+          "reviewed": 3,
+          "mean": 3.3166666666666664,
+          "median": 3.35,
+          "distribution": {
+            "3.35": 2,
+            "3.25": 1
+          },
+          "acceptance": {
+            "n": 0,
+            "d": 3,
+            "percent": 0
+          },
+          "acceptanceOfGenerated": {
+            "n": 0,
+            "d": 3,
+            "percent": 0
+          },
+          "criterionMeans": [
+            3,
+            3,
+            4,
+            4,
+            2,
+            3.6666666666666665
+          ],
+          "criticalWeakness": [
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 3,
+              "d": 3,
+              "percent": 100
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            }
+          ],
+          "patterns": {
+            "thin_substance": 2,
+            "repetition": 1,
+            "generic_ending": 2
+          },
+          "outputs": [
+            {
+              "id": "grace-1",
+              "scores": [
+                3,
+                3,
+                4,
+                4,
+                2,
+                4
+              ],
+              "weighted": 3.35,
+              "accepted": false
+            },
+            {
+              "id": "grace-2",
+              "scores": [
+                3,
+                3,
+                4,
+                4,
+                2,
+                4
+              ],
+              "weighted": 3.35,
+              "accepted": false
+            },
+            {
+              "id": "grace-3",
+              "scores": [
+                3,
+                3,
+                4,
+                4,
+                2,
+                3
+              ],
+              "weighted": 3.25,
+              "accepted": false
+            }
+          ],
+          "valid": 3,
+          "range": 0.10000000000000009,
+          "confirmedF2Claims": 0,
+          "reviewedF2Outputs": 0
+        },
+        "highways": {
+          "reviewed": 3,
+          "mean": 3.3166666666666664,
+          "median": 3.3,
+          "distribution": {
+            "3.25": 1,
+            "3.4": 1,
+            "3.3": 1
+          },
+          "acceptance": {
+            "n": 0,
+            "d": 3,
+            "percent": 0
+          },
+          "acceptanceOfGenerated": {
+            "n": 0,
+            "d": 3,
+            "percent": 0
+          },
+          "criterionMeans": [
+            2.6666666666666665,
+            3,
+            4,
+            4.666666666666667,
+            2.3333333333333335,
+            3
+          ],
+          "criticalWeakness": [
+            {
+              "n": 1,
+              "d": 3,
+              "percent": 33.333333333333336
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 2,
+              "d": 3,
+              "percent": 66.66666666666667
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            }
+          ],
+          "patterns": {
+            "generic_opening": 3,
+            "thin_substance": 3,
+            "repetition": 1,
+            "report_voice": 3,
+            "generic_ending": 2,
+            "formulaic_structure": 1
+          },
+          "outputs": [
+            {
+              "id": "highways-1",
+              "scores": [
+                3,
+                3,
+                4,
+                4,
+                2,
+                3
+              ],
+              "weighted": 3.25,
+              "accepted": false
+            },
+            {
+              "id": "highways-2",
+              "scores": [
+                3,
+                3,
+                4,
+                5,
+                2,
+                3
+              ],
+              "weighted": 3.4,
+              "accepted": false
+            },
+            {
+              "id": "highways-3",
+              "scores": [
+                2,
+                3,
+                4,
+                5,
+                3,
+                3
+              ],
+              "weighted": 3.3,
+              "accepted": false
+            }
+          ],
+          "valid": 3,
+          "range": 0.1499999999999999,
+          "confirmedF2Claims": 0,
+          "reviewedF2Outputs": 0
+        },
+        "labor": {
+          "reviewed": 3,
+          "mean": 3.6333333333333333,
+          "median": 3.7,
+          "distribution": {
+            "3.25": 1,
+            "3.95": 1,
+            "3.7": 1
+          },
+          "acceptance": {
+            "n": 0,
+            "d": 3,
+            "percent": 0
+          },
+          "acceptanceOfGenerated": {
+            "n": 0,
+            "d": 3,
+            "percent": 0
+          },
+          "criterionMeans": [
+            3.6666666666666665,
+            3.6666666666666665,
+            3.6666666666666665,
+            4.333333333333333,
+            2.3333333333333335,
+            3.6666666666666665
+          ],
+          "criticalWeakness": [
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 2,
+              "d": 3,
+              "percent": 66.66666666666667
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            }
+          ],
+          "patterns": {
+            "repetition": 2,
+            "generic_ending": 2,
+            "thin_substance": 1
+          },
+          "outputs": [
+            {
+              "id": "labor-1",
+              "scores": [
+                3,
+                3,
+                4,
+                4,
+                2,
+                3
+              ],
+              "weighted": 3.25,
+              "accepted": false
+            },
+            {
+              "id": "labor-2",
+              "scores": [
+                4,
+                4,
+                4,
+                5,
+                2,
+                4
+              ],
+              "weighted": 3.95,
+              "accepted": false
+            },
+            {
+              "id": "labor-3",
+              "scores": [
+                4,
+                4,
+                3,
+                4,
+                3,
+                4
+              ],
+              "weighted": 3.7,
+              "accepted": false
+            }
+          ],
+          "valid": 3,
+          "range": 0.7000000000000002,
+          "confirmedF2Claims": 0,
+          "reviewedF2Outputs": 0
+        },
+        "python": {
+          "reviewed": 3,
+          "mean": 3.3833333333333333,
+          "median": 3.35,
+          "distribution": {
+            "3.45": 1,
+            "3.35": 2
+          },
+          "acceptance": {
+            "n": 0,
+            "d": 3,
+            "percent": 0
+          },
+          "acceptanceOfGenerated": {
+            "n": 0,
+            "d": 3,
+            "percent": 0
+          },
+          "criterionMeans": [
+            3,
+            3,
+            4,
+            4,
+            3,
+            3.3333333333333335
+          ],
+          "criticalWeakness": [
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            }
+          ],
+          "patterns": {
+            "abstraction": 2,
+            "thin_substance": 3
+          },
+          "outputs": [
+            {
+              "id": "python-1",
+              "scores": [
+                3,
+                3,
+                4,
+                4,
+                3,
+                4
+              ],
+              "weighted": 3.45,
+              "accepted": false
+            },
+            {
+              "id": "python-2",
+              "scores": [
+                3,
+                3,
+                4,
+                4,
+                3,
+                3
+              ],
+              "weighted": 3.35,
+              "accepted": false
+            },
+            {
+              "id": "python-3",
+              "scores": [
+                3,
+                3,
+                4,
+                4,
+                3,
+                3
+              ],
+              "weighted": 3.35,
+              "accepted": false
+            }
+          ],
+          "valid": 3,
+          "range": 0.10000000000000009,
+          "confirmedF2Claims": 0,
+          "reviewedF2Outputs": 0
+        },
+        "webb": {
+          "reviewed": 3,
+          "mean": 3.3333333333333335,
+          "median": 3.25,
+          "distribution": {
+            "3.2": 1,
+            "3.25": 1,
+            "3.55": 1
+          },
+          "acceptance": {
+            "n": 0,
+            "d": 3,
+            "percent": 0
+          },
+          "acceptanceOfGenerated": {
+            "n": 0,
+            "d": 3,
+            "percent": 0
+          },
+          "criterionMeans": [
+            3.6666666666666665,
+            2.6666666666666665,
+            4,
+            4,
+            2.3333333333333335,
+            3
+          ],
+          "criticalWeakness": [
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 1,
+              "d": 3,
+              "percent": 33.333333333333336
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 2,
+              "d": 3,
+              "percent": 66.66666666666667
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            }
+          ],
+          "patterns": {
+            "thin_substance": 3,
+            "repetition": 3,
+            "report_voice": 1
+          },
+          "outputs": [
+            {
+              "id": "webb-1",
+              "scores": [
+                4,
+                2,
+                4,
+                4,
+                2,
+                3
+              ],
+              "weighted": 3.2,
+              "accepted": false
+            },
+            {
+              "id": "webb-2",
+              "scores": [
+                3,
+                3,
+                4,
+                4,
+                2,
+                3
+              ],
+              "weighted": 3.25,
+              "accepted": false
+            },
+            {
+              "id": "webb-3",
+              "scores": [
+                4,
+                3,
+                4,
+                4,
+                3,
+                3
+              ],
+              "weighted": 3.55,
+              "accepted": false
+            }
+          ],
+          "valid": 3,
+          "range": 0.34999999999999964,
+          "confirmedF2Claims": 3,
+          "reviewedF2Outputs": 3
+        },
+        "wolf": {
+          "reviewed": 3,
+          "mean": 2.9166666666666665,
+          "median": 2.8,
+          "distribution": {
+            "2.8": 1,
+            "3.35": 1,
+            "2.6": 1
+          },
+          "acceptance": {
+            "n": 0,
+            "d": 3,
+            "percent": 0
+          },
+          "acceptanceOfGenerated": {
+            "n": 0,
+            "d": 3,
+            "percent": 0
+          },
+          "criterionMeans": [
+            2.6666666666666665,
+            2.3333333333333335,
+            3.3333333333333335,
+            4,
+            2.3333333333333335,
+            3
+          ],
+          "criticalWeakness": [
+            {
+              "n": 1,
+              "d": 3,
+              "percent": 33.333333333333336
+            },
+            {
+              "n": 2,
+              "d": 3,
+              "percent": 66.66666666666667
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 2,
+              "d": 3,
+              "percent": 66.66666666666667
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            }
+          ],
+          "patterns": {
+            "thin_substance": 3,
+            "repetition": 1,
+            "abstraction": 2,
+            "generic_ending": 2,
+            "report_voice": 2,
+            "generic_opening": 1,
+            "bureaucratic_language": 1
+          },
+          "outputs": [
+            {
+              "id": "wolf-1",
+              "scores": [
+                3,
+                2,
+                3,
+                4,
+                2,
+                3
+              ],
+              "weighted": 2.8,
+              "accepted": false
+            },
+            {
+              "id": "wolf-2",
+              "scores": [
+                3,
+                3,
+                4,
+                4,
+                3,
+                3
+              ],
+              "weighted": 3.35,
+              "accepted": false
+            },
+            {
+              "id": "wolf-3",
+              "scores": [
+                2,
+                2,
+                3,
+                4,
+                2,
+                3
+              ],
+              "weighted": 2.6,
+              "accepted": false
+            }
+          ],
+          "valid": 3,
+          "range": 0.75,
+          "confirmedF2Claims": 3,
+          "reviewedF2Outputs": 3
+        }
+      },
+      "byRichness": {
+        "rich": {
+          "reviewed": 18,
+          "mean": 3.2027777777777775,
+          "median": 3.275,
+          "distribution": {
+            "3": 1,
+            "3.25": 3,
+            "3.05": 1,
+            "3.35": 5,
+            "2.8": 1,
+            "3.4": 1,
+            "3.6": 2,
+            "2.9": 2,
+            "3.3": 1,
+            "2.6": 1
+          },
+          "acceptance": {
+            "n": 0,
+            "d": 18,
+            "percent": 0
+          },
+          "acceptanceOfGenerated": {
+            "n": 0,
+            "d": 18,
+            "percent": 0
+          },
+          "criterionMeans": [
+            2.7777777777777777,
+            2.7777777777777777,
+            3.888888888888889,
+            4.166666666666667,
+            2.2777777777777777,
+            3.2222222222222223
+          ],
+          "criticalWeakness": [
+            {
+              "n": 4,
+              "d": 18,
+              "percent": 22.22222222222222
+            },
+            {
+              "n": 4,
+              "d": 18,
+              "percent": 22.22222222222222
+            },
+            {
+              "n": 0,
+              "d": 18,
+              "percent": 0
+            },
+            {
+              "n": 0,
+              "d": 18,
+              "percent": 0
+            },
+            {
+              "n": 13,
+              "d": 18,
+              "percent": 72.22222222222223
+            },
+            {
+              "n": 1,
+              "d": 18,
+              "percent": 5.555555555555555
+            }
+          ],
+          "patterns": {
+            "thin_substance": 16,
+            "report_voice": 11,
+            "generic_ending": 12,
+            "repetition": 10,
+            "bureaucratic_language": 3,
+            "generic_opening": 4,
+            "abstraction": 3,
+            "formulaic_structure": 1
+          },
+          "outputs": [
+            {
+              "id": "acid-1",
+              "scores": [
+                3,
+                3,
+                4,
+                4,
+                2,
+                3
+              ],
+              "weighted": 3.25,
+              "accepted": false
+            },
+            {
+              "id": "digital-1",
+              "scores": [
+                2,
+                3,
+                4,
+                4,
+                2,
+                3
+              ],
+              "weighted": 3.05,
+              "accepted": false
+            },
+            {
+              "id": "gps-1",
+              "scores": [
+                3,
+                2,
+                4,
+                4,
+                2,
+                3
+              ],
+              "weighted": 3,
+              "accepted": false
+            },
+            {
+              "id": "grace-1",
+              "scores": [
+                3,
+                3,
+                4,
+                4,
+                2,
+                4
+              ],
+              "weighted": 3.35,
+              "accepted": false
+            },
+            {
+              "id": "highways-1",
+              "scores": [
+                3,
+                3,
+                4,
+                4,
+                2,
+                3
+              ],
+              "weighted": 3.25,
+              "accepted": false
+            },
+            {
+              "id": "wolf-1",
+              "scores": [
+                3,
+                2,
+                3,
+                4,
+                2,
+                3
+              ],
+              "weighted": 2.8,
+              "accepted": false
+            },
+            {
+              "id": "wolf-2",
+              "scores": [
+                3,
+                3,
+                4,
+                4,
+                3,
+                3
+              ],
+              "weighted": 3.35,
+              "accepted": false
+            },
+            {
+              "id": "highways-2",
+              "scores": [
+                3,
+                3,
+                4,
+                5,
+                2,
+                3
+              ],
+              "weighted": 3.4,
+              "accepted": false
+            },
+            {
+              "id": "grace-2",
+              "scores": [
+                3,
+                3,
+                4,
+                4,
+                2,
+                4
+              ],
+              "weighted": 3.35,
+              "accepted": false
+            },
+            {
+              "id": "gps-2",
+              "scores": [
+                3,
+                3,
+                4,
+                5,
+                3,
+                4
+              ],
+              "weighted": 3.6,
+              "accepted": false
+            },
+            {
+              "id": "digital-2",
+              "scores": [
+                2,
+                3,
+                4,
+                3,
+                2,
+                3
+              ],
+              "weighted": 2.9,
+              "accepted": false
+            },
+            {
+              "id": "acid-2",
+              "scores": [
+                3,
+                3,
+                4,
+                4,
+                2,
+                4
+              ],
+              "weighted": 3.35,
+              "accepted": false
+            },
+            {
+              "id": "acid-3",
+              "scores": [
+                3,
+                3,
+                4,
+                4,
+                3,
+                3
+              ],
+              "weighted": 3.35,
+              "accepted": false
+            },
+            {
+              "id": "digital-3",
+              "scores": [
+                3,
+                2,
+                4,
+                4,
+                2,
+                2
+              ],
+              "weighted": 2.9,
+              "accepted": false
+            },
+            {
+              "id": "gps-3",
+              "scores": [
+                3,
+                3,
+                4,
+                5,
+                3,
+                4
+              ],
+              "weighted": 3.6,
+              "accepted": false
+            },
+            {
+              "id": "grace-3",
+              "scores": [
+                3,
+                3,
+                4,
+                4,
+                2,
+                3
+              ],
+              "weighted": 3.25,
+              "accepted": false
+            },
+            {
+              "id": "highways-3",
+              "scores": [
+                2,
+                3,
+                4,
+                5,
+                3,
+                3
+              ],
+              "weighted": 3.3,
+              "accepted": false
+            },
+            {
+              "id": "wolf-3",
+              "scores": [
+                2,
+                2,
+                3,
+                4,
+                2,
+                3
+              ],
+              "weighted": 2.6,
+              "accepted": false
+            }
+          ]
+        },
+        "constrained": {
+          "reviewed": 18,
+          "mean": 3.394444444444444,
+          "median": 3.35,
+          "distribution": {
+            "3": 2,
+            "4": 1,
+            "3.1": 1,
+            "3.35": 3,
+            "3.25": 2,
+            "3.45": 1,
+            "3.2": 1,
+            "3.95": 1,
+            "3.5": 2,
+            "2.8": 1,
+            "3.8": 1,
+            "3.7": 1,
+            "3.55": 1
+          },
+          "acceptance": {
+            "n": 2,
+            "d": 18,
+            "percent": 11.11111111111111
+          },
+          "acceptanceOfGenerated": {
+            "n": 2,
+            "d": 18,
+            "percent": 11.11111111111111
+          },
+          "criterionMeans": [
+            3.3333333333333335,
+            2.888888888888889,
+            3.9444444444444446,
+            4.222222222222222,
+            2.611111111111111,
+            3.2222222222222223
+          ],
+          "criticalWeakness": [
+            {
+              "n": 1,
+              "d": 18,
+              "percent": 5.555555555555555
+            },
+            {
+              "n": 5,
+              "d": 18,
+              "percent": 27.77777777777778
+            },
+            {
+              "n": 0,
+              "d": 18,
+              "percent": 0
+            },
+            {
+              "n": 0,
+              "d": 18,
+              "percent": 0
+            },
+            {
+              "n": 8,
+              "d": 18,
+              "percent": 44.44444444444444
+            },
+            {
+              "n": 0,
+              "d": 18,
+              "percent": 0
+            }
+          ],
+          "patterns": {
+            "thin_substance": 16,
+            "report_voice": 8,
+            "repetition": 9,
+            "generic_ending": 5,
+            "abstraction": 2,
+            "generic_opening": 1
+          },
+          "outputs": [
+            {
+              "id": "airmf-1",
+              "scores": [
+                3,
+                2,
+                4,
+                4,
+                3,
+                3
+              ],
+              "weighted": 3.1,
+              "accepted": false
+            },
+            {
+              "id": "coral-1",
+              "scores": [
+                3,
+                3,
+                4,
+                4,
+                3,
+                3
+              ],
+              "weighted": 3.35,
+              "accepted": false
+            },
+            {
+              "id": "fusion-1",
+              "scores": [
+                3,
+                2,
+                4,
+                4,
+                2,
+                3
+              ],
+              "weighted": 3,
+              "accepted": false
+            },
+            {
+              "id": "labor-1",
+              "scores": [
+                3,
+                3,
+                4,
+                4,
+                2,
+                3
+              ],
+              "weighted": 3.25,
+              "accepted": false
+            },
+            {
+              "id": "python-1",
+              "scores": [
+                3,
+                3,
+                4,
+                4,
+                3,
+                4
+              ],
+              "weighted": 3.45,
+              "accepted": false
+            },
+            {
+              "id": "webb-1",
+              "scores": [
+                4,
+                2,
+                4,
+                4,
+                2,
+                3
+              ],
+              "weighted": 3.2,
+              "accepted": false
+            },
+            {
+              "id": "webb-2",
+              "scores": [
+                3,
+                3,
+                4,
+                4,
+                2,
+                3
+              ],
+              "weighted": 3.25,
+              "accepted": false
+            },
+            {
+              "id": "python-2",
+              "scores": [
+                3,
+                3,
+                4,
+                4,
+                3,
+                3
+              ],
+              "weighted": 3.35,
+              "accepted": false
+            },
+            {
+              "id": "labor-2",
+              "scores": [
+                4,
+                4,
+                4,
+                5,
+                2,
+                4
+              ],
+              "weighted": 3.95,
+              "accepted": false
+            },
+            {
+              "id": "fusion-2",
+              "scores": [
+                4,
+                3,
+                5,
+                5,
+                3,
+                4
+              ],
+              "weighted": 4,
+              "accepted": true
+            },
+            {
+              "id": "coral-2",
+              "scores": [
+                3,
+                3,
+                4,
+                5,
+                3,
+                3
+              ],
+              "weighted": 3.5,
+              "accepted": false
+            },
+            {
+              "id": "airmf-2",
+              "scores": [
+                3,
+                2,
+                4,
+                4,
+                2,
+                3
+              ],
+              "weighted": 3,
+              "accepted": false
+            },
+            {
+              "id": "airmf-3",
+              "scores": [
+                2,
+                2,
+                4,
+                4,
+                2,
+                3
+              ],
+              "weighted": 2.8,
+              "accepted": false
+            },
+            {
+              "id": "coral-3",
+              "scores": [
+                4,
+                3,
+                4,
+                5,
+                4,
+                3
+              ],
+              "weighted": 3.8,
+              "accepted": true
+            },
+            {
+              "id": "fusion-3",
+              "scores": [
+                4,
+                4,
+                3,
+                4,
+                2,
+                3
+              ],
+              "weighted": 3.5,
+              "accepted": false
+            },
+            {
+              "id": "labor-3",
+              "scores": [
+                4,
+                4,
+                3,
+                4,
+                3,
+                4
+              ],
+              "weighted": 3.7,
+              "accepted": false
+            },
+            {
+              "id": "python-3",
+              "scores": [
+                3,
+                3,
+                4,
+                4,
+                3,
+                3
+              ],
+              "weighted": 3.35,
+              "accepted": false
+            },
+            {
+              "id": "webb-3",
+              "scores": [
+                4,
+                3,
+                4,
+                4,
+                3,
+                3
+              ],
+              "weighted": 3.55,
+              "accepted": false
+            }
+          ]
+        }
+      },
+      "seriesWithEditorialFailure": {
+        "n": 12,
+        "d": 12,
+        "percent": 100
+      },
+      "seriesWithConfirmedF2": 3
+    },
+    "linkedin": {
+      "planned": 36,
+      "attempted": 36,
+      "valid": 35,
+      "generationFailures": {
+        "unclassified": 1
+      },
+      "generationSeconds": {
+        "sum": 209.36900000000009,
+        "mean": 5.815805555555558,
+        "median": 5.969
+      },
+      "contentWords": 97.37142857142857,
+      "editorial": {
+        "reviewed": 35,
+        "mean": 3.495714285714285,
+        "median": 3.45,
+        "distribution": {
+          "3": 2,
+          "4": 2,
+          "2.95": 1,
+          "3.2": 4,
+          "3.35": 4,
+          "3.4": 4,
+          "3.75": 2,
+          "3.65": 3,
+          "3.6": 2,
+          "3.95": 1,
+          "3.85": 1,
+          "3.55": 4,
+          "3.25": 2,
+          "3.8": 1,
+          "3.45": 1,
+          "4.2": 1
+        },
+        "acceptance": {
+          "n": 8,
+          "d": 35,
+          "percent": 22.857142857142858
+        },
+        "acceptanceOfGenerated": {
+          "n": 8,
+          "d": 35,
+          "percent": 22.857142857142858
+        },
+        "criterionMeans": [
+          3.2285714285714286,
+          4.0285714285714285,
+          3.3142857142857145,
+          4.257142857142857,
+          2.7142857142857144,
+          3.4857142857142858
+        ],
+        "criticalWeakness": [
+          {
+            "n": 2,
+            "d": 35,
+            "percent": 5.714285714285714
+          },
+          {
+            "n": 0,
+            "d": 35,
+            "percent": 0
+          },
+          {
+            "n": 1,
+            "d": 35,
+            "percent": 2.857142857142857
+          },
+          {
+            "n": 0,
+            "d": 35,
+            "percent": 0
+          },
+          {
+            "n": 10,
+            "d": 35,
+            "percent": 28.571428571428573
+          },
+          {
+            "n": 1,
+            "d": 35,
+            "percent": 2.857142857142857
+          }
+        ],
+        "patterns": {
+          "generic_opening": 5,
+          "report_voice": 21,
+          "bureaucratic_language": 1,
+          "formulaic_structure": 1,
+          "generic_ending": 16,
+          "thin_substance": 17,
+          "repetition": 14,
+          "forced_lesson": 2,
+          "low_engagement_ending": 1
+        },
+        "outputs": [
+          {
+            "id": "acid-1",
+            "scores": [
+              2,
+              3,
+              4,
+              4,
+              2,
+              3
+            ],
+            "weighted": 2.95,
+            "accepted": false
+          },
+          {
+            "id": "airmf-1",
+            "scores": [
+              3,
+              4,
+              3,
+              4,
+              2,
+              3
+            ],
+            "weighted": 3.2,
+            "accepted": false
+          },
+          {
+            "id": "coral-1",
+            "scores": [
+              3,
+              4,
+              3,
+              4,
+              3,
+              3
+            ],
+            "weighted": 3.35,
+            "accepted": false
+          },
+          {
+            "id": "digital-1",
+            "scores": [
+              3,
+              4,
+              3,
+              4,
+              2,
+              3
+            ],
+            "weighted": 3.2,
+            "accepted": false
+          },
+          {
+            "id": "fusion-1",
+            "scores": [
+              3,
+              4,
+              3,
+              5,
+              2,
+              4
+            ],
+            "weighted": 3.4,
+            "accepted": false
+          },
+          {
+            "id": "gps-1",
+            "scores": [
+              3,
+              4,
+              3,
+              4,
+              2,
+              3
+            ],
+            "weighted": 3.2,
+            "accepted": false
+          },
+          {
+            "id": "grace-1",
+            "scores": [
+              3,
+              4,
+              3,
+              4,
+              3,
+              4
+            ],
+            "weighted": 3.4,
+            "accepted": false
+          },
+          {
+            "id": "highways-1",
+            "scores": [
+              3,
+              4,
+              3,
+              4,
+              3,
+              3
+            ],
+            "weighted": 3.35,
+            "accepted": false
+          },
+          {
+            "id": "labor-1",
+            "scores": [
+              4,
+              4,
+              4,
+              5,
+              3,
+              4
+            ],
+            "weighted": 4,
+            "accepted": true
+          },
+          {
+            "id": "python-1",
+            "scores": [
+              3,
+              4,
+              4,
+              5,
+              3,
+              4
+            ],
+            "weighted": 3.75,
+            "accepted": true
+          },
+          {
+            "id": "webb-1",
+            "scores": [
+              4,
+              4,
+              3,
+              4,
+              3,
+              4
+            ],
+            "weighted": 3.65,
+            "accepted": false
+          },
+          {
+            "id": "wolf-2",
+            "scores": [
+              3,
+              4,
+              3,
+              4,
+              3,
+              4
+            ],
+            "weighted": 3.4,
+            "accepted": false
+          },
+          {
+            "id": "webb-2",
+            "scores": [
+              4,
+              4,
+              3,
+              4,
+              3,
+              3
+            ],
+            "weighted": 3.6,
+            "accepted": false
+          },
+          {
+            "id": "python-2",
+            "scores": [
+              3,
+              5,
+              4,
+              5,
+              3,
+              4
+            ],
+            "weighted": 3.95,
+            "accepted": true
+          },
+          {
+            "id": "labor-2",
+            "scores": [
+              4,
+              4,
+              4,
+              4,
+              3,
+              4
+            ],
+            "weighted": 3.85,
+            "accepted": true
+          },
+          {
+            "id": "highways-2",
+            "scores": [
+              3,
+              4,
+              4,
+              4,
+              3,
+              3
+            ],
+            "weighted": 3.55,
+            "accepted": false
+          },
+          {
+            "id": "grace-2",
+            "scores": [
+              3,
+              4,
+              3,
+              4,
+              3,
+              4
+            ],
+            "weighted": 3.4,
+            "accepted": false
+          },
+          {
+            "id": "gps-2",
+            "scores": [
+              4,
+              4,
+              4,
+              5,
+              3,
+              4
+            ],
+            "weighted": 4,
+            "accepted": true
+          },
+          {
+            "id": "fusion-2",
+            "scores": [
+              4,
+              4,
+              3,
+              4,
+              3,
+              4
+            ],
+            "weighted": 3.65,
+            "accepted": false
+          },
+          {
+            "id": "digital-2",
+            "scores": [
+              3,
+              4,
+              2,
+              4,
+              2,
+              3
+            ],
+            "weighted": 3,
+            "accepted": false
+          },
+          {
+            "id": "coral-2",
+            "scores": [
+              3,
+              4,
+              3,
+              5,
+              3,
+              4
+            ],
+            "weighted": 3.55,
+            "accepted": false
+          },
+          {
+            "id": "airmf-2",
+            "scores": [
+              3,
+              4,
+              4,
+              4,
+              3,
+              3
+            ],
+            "weighted": 3.55,
+            "accepted": false
+          },
+          {
+            "id": "acid-2",
+            "scores": [
+              3,
+              4,
+              3,
+              4,
+              2,
+              4
+            ],
+            "weighted": 3.25,
+            "accepted": false
+          },
+          {
+            "id": "acid-3",
+            "scores": [
+              3,
+              4,
+              3,
+              4,
+              2,
+              3
+            ],
+            "weighted": 3.2,
+            "accepted": false
+          },
+          {
+            "id": "airmf-3",
+            "scores": [
+              4,
+              4,
+              3,
+              5,
+              3,
+              4
+            ],
+            "weighted": 3.8,
+            "accepted": true
+          },
+          {
+            "id": "coral-3",
+            "scores": [
+              3,
+              4,
+              4,
+              4,
+              3,
+              3
+            ],
+            "weighted": 3.55,
+            "accepted": false
+          },
+          {
+            "id": "digital-3",
+            "scores": [
+              3,
+              4,
+              3,
+              3,
+              2,
+              2
+            ],
+            "weighted": 3,
+            "accepted": false
+          },
+          {
+            "id": "fusion-3",
+            "scores": [
+              4,
+              4,
+              3,
+              4,
+              2,
+              3
+            ],
+            "weighted": 3.45,
+            "accepted": false
+          },
+          {
+            "id": "gps-3",
+            "scores": [
+              2,
+              4,
+              3,
+              5,
+              3,
+              3
+            ],
+            "weighted": 3.25,
+            "accepted": false
+          },
+          {
+            "id": "grace-3",
+            "scores": [
+              3,
+              4,
+              4,
+              5,
+              3,
+              4
+            ],
+            "weighted": 3.75,
+            "accepted": true
+          },
+          {
+            "id": "highways-3",
+            "scores": [
+              3,
+              4,
+              3,
+              4,
+              3,
+              3
+            ],
+            "weighted": 3.35,
+            "accepted": false
+          },
+          {
+            "id": "labor-3",
+            "scores": [
+              3,
+              4,
+              4,
+              4,
+              3,
+              4
+            ],
+            "weighted": 3.6,
+            "accepted": false
+          },
+          {
+            "id": "python-3",
+            "scores": [
+              4,
+              5,
+              4,
+              5,
+              3,
+              4
+            ],
+            "weighted": 4.2,
+            "accepted": true
+          },
+          {
+            "id": "webb-3",
+            "scores": [
+              4,
+              4,
+              3,
+              4,
+              3,
+              4
+            ],
+            "weighted": 3.65,
+            "accepted": false
+          },
+          {
+            "id": "wolf-3",
+            "scores": [
+              3,
+              4,
+              3,
+              4,
+              3,
+              3
+            ],
+            "weighted": 3.35,
+            "accepted": false
+          }
+        ]
+      },
+      "reviews": {
+        "editorial": {
+          "attempted": 35,
+          "usable": 35,
+          "strictParserValid": 30,
+          "meanSeconds": 8.363485714285714
+        },
+        "primary": {
+          "attempted": 35,
+          "usable": 32,
+          "strictParserValid": 2,
+          "meanSeconds": 21.30251428571428
+        },
+        "secondary": {
+          "attempted": 20,
+          "usable": 18,
+          "strictParserValid": 2,
+          "meanSeconds": 23.1669
+        }
+      },
+      "factual": {
+        "firstUsable": 32,
+        "fallback": 3,
+        "claimCount": 302,
+        "reviewerLabels": {
+          "F0": 274,
+          "F1": 11,
+          "F2": 7,
+          "U": 10
+        },
+        "confirmedF2Count": 7,
+        "adjudicatedUnresolved": 1,
+        "confirmedF2Outputs": {
+          "n": 7,
+          "d": 35,
+          "percent": 20
+        },
+        "confirmedF2AcrossGenerated": {
+          "n": 7,
+          "d": 35,
+          "percent": 20
+        },
+        "confirmedF2Category": {
+          "technical": 1,
+          "chronology": 4,
+          "entity": 2
+        },
+        "confirmedF2Origin": {
+          "new_distortion": 1,
+          "propagated": 6
+        },
+        "dualReviews": 15,
+        "outputLevelFlagDisagreement": [
+          "coral-1",
+          "digital-1",
+          "labor-2",
+          "highways-2",
+          "coral-2",
+          "fusion-3",
+          "labor-3"
+        ],
+        "outsideNarrative": 2,
+        "eitherF2OrEditorialFailure": {
+          "n": 27,
+          "d": 35,
+          "percent": 77.14285714285714
+        }
+      },
+      "bySubject": {
+        "acid": {
+          "reviewed": 3,
+          "mean": 3.1333333333333333,
+          "median": 3.2,
+          "distribution": {
+            "2.95": 1,
+            "3.25": 1,
+            "3.2": 1
+          },
+          "acceptance": {
+            "n": 0,
+            "d": 3,
+            "percent": 0
+          },
+          "acceptanceOfGenerated": {
+            "n": 0,
+            "d": 3,
+            "percent": 0
+          },
+          "criterionMeans": [
+            2.6666666666666665,
+            3.6666666666666665,
+            3.3333333333333335,
+            4,
+            2,
+            3.3333333333333335
+          ],
+          "criticalWeakness": [
+            {
+              "n": 1,
+              "d": 3,
+              "percent": 33.333333333333336
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 3,
+              "d": 3,
+              "percent": 100
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            }
+          ],
+          "patterns": {
+            "generic_opening": 1,
+            "report_voice": 3,
+            "bureaucratic_language": 1,
+            "formulaic_structure": 1,
+            "generic_ending": 3,
+            "thin_substance": 1
+          },
+          "outputs": [
+            {
+              "id": "acid-1",
+              "scores": [
+                2,
+                3,
+                4,
+                4,
+                2,
+                3
+              ],
+              "weighted": 2.95,
+              "accepted": false
+            },
+            {
+              "id": "acid-2",
+              "scores": [
+                3,
+                4,
+                3,
+                4,
+                2,
+                4
+              ],
+              "weighted": 3.25,
+              "accepted": false
+            },
+            {
+              "id": "acid-3",
+              "scores": [
+                3,
+                4,
+                3,
+                4,
+                2,
+                3
+              ],
+              "weighted": 3.2,
+              "accepted": false
+            }
+          ],
+          "valid": 3,
+          "range": 0.2999999999999998,
+          "confirmedF2Claims": 1,
+          "reviewedF2Outputs": 1
+        },
+        "airmf": {
+          "reviewed": 3,
+          "mean": 3.516666666666667,
+          "median": 3.55,
+          "distribution": {
+            "3.2": 1,
+            "3.55": 1,
+            "3.8": 1
+          },
+          "acceptance": {
+            "n": 1,
+            "d": 3,
+            "percent": 33.333333333333336
+          },
+          "acceptanceOfGenerated": {
+            "n": 1,
+            "d": 3,
+            "percent": 33.333333333333336
+          },
+          "criterionMeans": [
+            3.3333333333333335,
+            4,
+            3.3333333333333335,
+            4.333333333333333,
+            2.6666666666666665,
+            3.3333333333333335
+          ],
+          "criticalWeakness": [
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 1,
+              "d": 3,
+              "percent": 33.333333333333336
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            }
+          ],
+          "patterns": {
+            "thin_substance": 2,
+            "repetition": 2,
+            "report_voice": 2,
+            "generic_ending": 2
+          },
+          "outputs": [
+            {
+              "id": "airmf-1",
+              "scores": [
+                3,
+                4,
+                3,
+                4,
+                2,
+                3
+              ],
+              "weighted": 3.2,
+              "accepted": false
+            },
+            {
+              "id": "airmf-2",
+              "scores": [
+                3,
+                4,
+                4,
+                4,
+                3,
+                3
+              ],
+              "weighted": 3.55,
+              "accepted": false
+            },
+            {
+              "id": "airmf-3",
+              "scores": [
+                4,
+                4,
+                3,
+                5,
+                3,
+                4
+              ],
+              "weighted": 3.8,
+              "accepted": true
+            }
+          ],
+          "valid": 3,
+          "range": 0.5999999999999996,
+          "confirmedF2Claims": 0,
+          "reviewedF2Outputs": 0
+        },
+        "coral": {
+          "reviewed": 3,
+          "mean": 3.483333333333333,
+          "median": 3.55,
+          "distribution": {
+            "3.35": 1,
+            "3.55": 2
+          },
+          "acceptance": {
+            "n": 0,
+            "d": 3,
+            "percent": 0
+          },
+          "acceptanceOfGenerated": {
+            "n": 0,
+            "d": 3,
+            "percent": 0
+          },
+          "criterionMeans": [
+            3,
+            4,
+            3.3333333333333335,
+            4.333333333333333,
+            3,
+            3.3333333333333335
+          ],
+          "criticalWeakness": [
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            }
+          ],
+          "patterns": {
+            "report_voice": 3,
+            "thin_substance": 2
+          },
+          "outputs": [
+            {
+              "id": "coral-1",
+              "scores": [
+                3,
+                4,
+                3,
+                4,
+                3,
+                3
+              ],
+              "weighted": 3.35,
+              "accepted": false
+            },
+            {
+              "id": "coral-2",
+              "scores": [
+                3,
+                4,
+                3,
+                5,
+                3,
+                4
+              ],
+              "weighted": 3.55,
+              "accepted": false
+            },
+            {
+              "id": "coral-3",
+              "scores": [
+                3,
+                4,
+                4,
+                4,
+                3,
+                3
+              ],
+              "weighted": 3.55,
+              "accepted": false
+            }
+          ],
+          "valid": 3,
+          "range": 0.19999999999999973,
+          "confirmedF2Claims": 0,
+          "reviewedF2Outputs": 0
+        },
+        "digital": {
+          "reviewed": 3,
+          "mean": 3.0666666666666664,
+          "median": 3,
+          "distribution": {
+            "3": 2,
+            "3.2": 1
+          },
+          "acceptance": {
+            "n": 0,
+            "d": 3,
+            "percent": 0
+          },
+          "acceptanceOfGenerated": {
+            "n": 0,
+            "d": 3,
+            "percent": 0
+          },
+          "criterionMeans": [
+            3,
+            4,
+            2.6666666666666665,
+            3.6666666666666665,
+            2,
+            2.6666666666666665
+          ],
+          "criticalWeakness": [
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 1,
+              "d": 3,
+              "percent": 33.333333333333336
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 3,
+              "d": 3,
+              "percent": 100
+            },
+            {
+              "n": 1,
+              "d": 3,
+              "percent": 33.333333333333336
+            }
+          ],
+          "patterns": {
+            "repetition": 3,
+            "report_voice": 2,
+            "forced_lesson": 1,
+            "thin_substance": 2,
+            "generic_ending": 2
+          },
+          "outputs": [
+            {
+              "id": "digital-1",
+              "scores": [
+                3,
+                4,
+                3,
+                4,
+                2,
+                3
+              ],
+              "weighted": 3.2,
+              "accepted": false
+            },
+            {
+              "id": "digital-2",
+              "scores": [
+                3,
+                4,
+                2,
+                4,
+                2,
+                3
+              ],
+              "weighted": 3,
+              "accepted": false
+            },
+            {
+              "id": "digital-3",
+              "scores": [
+                3,
+                4,
+                3,
+                3,
+                2,
+                2
+              ],
+              "weighted": 3,
+              "accepted": false
+            }
+          ],
+          "valid": 3,
+          "range": 0.20000000000000018,
+          "confirmedF2Claims": 3,
+          "reviewedF2Outputs": 3
+        },
+        "fusion": {
+          "reviewed": 3,
+          "mean": 3.5,
+          "median": 3.45,
+          "distribution": {
+            "3.4": 1,
+            "3.65": 1,
+            "3.45": 1
+          },
+          "acceptance": {
+            "n": 0,
+            "d": 3,
+            "percent": 0
+          },
+          "acceptanceOfGenerated": {
+            "n": 0,
+            "d": 3,
+            "percent": 0
+          },
+          "criterionMeans": [
+            3.6666666666666665,
+            4,
+            3,
+            4.333333333333333,
+            2.3333333333333335,
+            3.6666666666666665
+          ],
+          "criticalWeakness": [
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 2,
+              "d": 3,
+              "percent": 66.66666666666667
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            }
+          ],
+          "patterns": {
+            "repetition": 1,
+            "thin_substance": 3,
+            "generic_ending": 2,
+            "report_voice": 2
+          },
+          "outputs": [
+            {
+              "id": "fusion-1",
+              "scores": [
+                3,
+                4,
+                3,
+                5,
+                2,
+                4
+              ],
+              "weighted": 3.4,
+              "accepted": false
+            },
+            {
+              "id": "fusion-2",
+              "scores": [
+                4,
+                4,
+                3,
+                4,
+                3,
+                4
+              ],
+              "weighted": 3.65,
+              "accepted": false
+            },
+            {
+              "id": "fusion-3",
+              "scores": [
+                4,
+                4,
+                3,
+                4,
+                2,
+                3
+              ],
+              "weighted": 3.45,
+              "accepted": false
+            }
+          ],
+          "valid": 3,
+          "range": 0.25,
+          "confirmedF2Claims": 0,
+          "reviewedF2Outputs": 0
+        },
+        "gps": {
+          "reviewed": 3,
+          "mean": 3.483333333333333,
+          "median": 3.25,
+          "distribution": {
+            "4": 1,
+            "3.2": 1,
+            "3.25": 1
+          },
+          "acceptance": {
+            "n": 1,
+            "d": 3,
+            "percent": 33.333333333333336
+          },
+          "acceptanceOfGenerated": {
+            "n": 1,
+            "d": 3,
+            "percent": 33.333333333333336
+          },
+          "criterionMeans": [
+            3,
+            4,
+            3.3333333333333335,
+            4.666666666666667,
+            2.6666666666666665,
+            3.3333333333333335
+          ],
+          "criticalWeakness": [
+            {
+              "n": 1,
+              "d": 3,
+              "percent": 33.333333333333336
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 1,
+              "d": 3,
+              "percent": 33.333333333333336
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            }
+          ],
+          "patterns": {
+            "repetition": 2,
+            "report_voice": 2,
+            "generic_opening": 1
+          },
+          "outputs": [
+            {
+              "id": "gps-1",
+              "scores": [
+                3,
+                4,
+                3,
+                4,
+                2,
+                3
+              ],
+              "weighted": 3.2,
+              "accepted": false
+            },
+            {
+              "id": "gps-2",
+              "scores": [
+                4,
+                4,
+                4,
+                5,
+                3,
+                4
+              ],
+              "weighted": 4,
+              "accepted": true
+            },
+            {
+              "id": "gps-3",
+              "scores": [
+                2,
+                4,
+                3,
+                5,
+                3,
+                3
+              ],
+              "weighted": 3.25,
+              "accepted": false
+            }
+          ],
+          "valid": 3,
+          "range": 0.7999999999999998,
+          "confirmedF2Claims": 0,
+          "reviewedF2Outputs": 0
+        },
+        "grace": {
+          "reviewed": 3,
+          "mean": 3.516666666666667,
+          "median": 3.4,
+          "distribution": {
+            "3.4": 2,
+            "3.75": 1
+          },
+          "acceptance": {
+            "n": 1,
+            "d": 3,
+            "percent": 33.333333333333336
+          },
+          "acceptanceOfGenerated": {
+            "n": 1,
+            "d": 3,
+            "percent": 33.333333333333336
+          },
+          "criterionMeans": [
+            3,
+            4,
+            3.3333333333333335,
+            4.333333333333333,
+            3,
+            4
+          ],
+          "criticalWeakness": [
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            }
+          ],
+          "patterns": {
+            "repetition": 1,
+            "generic_ending": 2
+          },
+          "outputs": [
+            {
+              "id": "grace-1",
+              "scores": [
+                3,
+                4,
+                3,
+                4,
+                3,
+                4
+              ],
+              "weighted": 3.4,
+              "accepted": false
+            },
+            {
+              "id": "grace-2",
+              "scores": [
+                3,
+                4,
+                3,
+                4,
+                3,
+                4
+              ],
+              "weighted": 3.4,
+              "accepted": false
+            },
+            {
+              "id": "grace-3",
+              "scores": [
+                3,
+                4,
+                4,
+                5,
+                3,
+                4
+              ],
+              "weighted": 3.75,
+              "accepted": true
+            }
+          ],
+          "valid": 3,
+          "range": 0.3500000000000001,
+          "confirmedF2Claims": 0,
+          "reviewedF2Outputs": 0
+        },
+        "highways": {
+          "reviewed": 3,
+          "mean": 3.4166666666666665,
+          "median": 3.35,
+          "distribution": {
+            "3.35": 2,
+            "3.55": 1
+          },
+          "acceptance": {
+            "n": 0,
+            "d": 3,
+            "percent": 0
+          },
+          "acceptanceOfGenerated": {
+            "n": 0,
+            "d": 3,
+            "percent": 0
+          },
+          "criterionMeans": [
+            3,
+            4,
+            3.3333333333333335,
+            4,
+            3,
+            3
+          ],
+          "criticalWeakness": [
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            }
+          ],
+          "patterns": {
+            "report_voice": 3,
+            "thin_substance": 2,
+            "generic_ending": 1,
+            "generic_opening": 1
+          },
+          "outputs": [
+            {
+              "id": "highways-1",
+              "scores": [
+                3,
+                4,
+                3,
+                4,
+                3,
+                3
+              ],
+              "weighted": 3.35,
+              "accepted": false
+            },
+            {
+              "id": "highways-2",
+              "scores": [
+                3,
+                4,
+                4,
+                4,
+                3,
+                3
+              ],
+              "weighted": 3.55,
+              "accepted": false
+            },
+            {
+              "id": "highways-3",
+              "scores": [
+                3,
+                4,
+                3,
+                4,
+                3,
+                3
+              ],
+              "weighted": 3.35,
+              "accepted": false
+            }
+          ],
+          "valid": 3,
+          "range": 0.19999999999999973,
+          "confirmedF2Claims": 0,
+          "reviewedF2Outputs": 0
+        },
+        "labor": {
+          "reviewed": 3,
+          "mean": 3.8166666666666664,
+          "median": 3.85,
+          "distribution": {
+            "4": 1,
+            "3.85": 1,
+            "3.6": 1
+          },
+          "acceptance": {
+            "n": 2,
+            "d": 3,
+            "percent": 66.66666666666667
+          },
+          "acceptanceOfGenerated": {
+            "n": 2,
+            "d": 3,
+            "percent": 66.66666666666667
+          },
+          "criterionMeans": [
+            3.6666666666666665,
+            4,
+            4,
+            4.333333333333333,
+            3,
+            4
+          ],
+          "criticalWeakness": [
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            }
+          ],
+          "patterns": {
+            "repetition": 3,
+            "generic_ending": 1,
+            "report_voice": 1
+          },
+          "outputs": [
+            {
+              "id": "labor-1",
+              "scores": [
+                4,
+                4,
+                4,
+                5,
+                3,
+                4
+              ],
+              "weighted": 4,
+              "accepted": true
+            },
+            {
+              "id": "labor-2",
+              "scores": [
+                4,
+                4,
+                4,
+                4,
+                3,
+                4
+              ],
+              "weighted": 3.85,
+              "accepted": true
+            },
+            {
+              "id": "labor-3",
+              "scores": [
+                3,
+                4,
+                4,
+                4,
+                3,
+                4
+              ],
+              "weighted": 3.6,
+              "accepted": false
+            }
+          ],
+          "valid": 3,
+          "range": 0.3999999999999999,
+          "confirmedF2Claims": 0,
+          "reviewedF2Outputs": 0
+        },
+        "python": {
+          "reviewed": 3,
+          "mean": 3.966666666666667,
+          "median": 3.95,
+          "distribution": {
+            "3.75": 1,
+            "3.95": 1,
+            "4.2": 1
+          },
+          "acceptance": {
+            "n": 3,
+            "d": 3,
+            "percent": 100
+          },
+          "acceptanceOfGenerated": {
+            "n": 3,
+            "d": 3,
+            "percent": 100
+          },
+          "criterionMeans": [
+            3.3333333333333335,
+            4.666666666666667,
+            4,
+            5,
+            3,
+            4
+          ],
+          "criticalWeakness": [
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            }
+          ],
+          "patterns": {
+            "generic_opening": 1,
+            "low_engagement_ending": 1,
+            "generic_ending": 1
+          },
+          "outputs": [
+            {
+              "id": "python-1",
+              "scores": [
+                3,
+                4,
+                4,
+                5,
+                3,
+                4
+              ],
+              "weighted": 3.75,
+              "accepted": true
+            },
+            {
+              "id": "python-2",
+              "scores": [
+                3,
+                5,
+                4,
+                5,
+                3,
+                4
+              ],
+              "weighted": 3.95,
+              "accepted": true
+            },
+            {
+              "id": "python-3",
+              "scores": [
+                4,
+                5,
+                4,
+                5,
+                3,
+                4
+              ],
+              "weighted": 4.2,
+              "accepted": true
+            }
+          ],
+          "valid": 3,
+          "range": 0.4500000000000002,
+          "confirmedF2Claims": 0,
+          "reviewedF2Outputs": 0
+        },
+        "webb": {
+          "reviewed": 3,
+          "mean": 3.6333333333333333,
+          "median": 3.65,
+          "distribution": {
+            "3.65": 2,
+            "3.6": 1
+          },
+          "acceptance": {
+            "n": 0,
+            "d": 3,
+            "percent": 0
+          },
+          "acceptanceOfGenerated": {
+            "n": 0,
+            "d": 3,
+            "percent": 0
+          },
+          "criterionMeans": [
+            4,
+            4,
+            3,
+            4,
+            3,
+            3.6666666666666665
+          ],
+          "criticalWeakness": [
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            },
+            {
+              "n": 0,
+              "d": 3,
+              "percent": 0
+            }
+          ],
+          "patterns": {
+            "thin_substance": 3,
+            "repetition": 2,
+            "report_voice": 1,
+            "forced_lesson": 1
+          },
+          "outputs": [
+            {
+              "id": "webb-1",
+              "scores": [
+                4,
+                4,
+                3,
+                4,
+                3,
+                4
+              ],
+              "weighted": 3.65,
+              "accepted": false
+            },
+            {
+              "id": "webb-2",
+              "scores": [
+                4,
+                4,
+                3,
+                4,
+                3,
+                3
+              ],
+              "weighted": 3.6,
+              "accepted": false
+            },
+            {
+              "id": "webb-3",
+              "scores": [
+                4,
+                4,
+                3,
+                4,
+                3,
+                4
+              ],
+              "weighted": 3.65,
+              "accepted": false
+            }
+          ],
+          "valid": 3,
+          "range": 0.04999999999999982,
+          "confirmedF2Claims": 1,
+          "reviewedF2Outputs": 1
+        },
+        "wolf": {
+          "reviewed": 2,
+          "mean": 3.375,
+          "median": 3.375,
+          "distribution": {
+            "3.4": 1,
+            "3.35": 1
+          },
+          "acceptance": {
+            "n": 0,
+            "d": 2,
+            "percent": 0
+          },
+          "acceptanceOfGenerated": {
+            "n": 0,
+            "d": 2,
+            "percent": 0
+          },
+          "criterionMeans": [
+            3,
+            4,
+            3,
+            4,
+            3,
+            3.5
+          ],
+          "criticalWeakness": [
+            {
+              "n": 0,
+              "d": 2,
+              "percent": 0
+            },
+            {
+              "n": 0,
+              "d": 2,
+              "percent": 0
+            },
+            {
+              "n": 0,
+              "d": 2,
+              "percent": 0
+            },
+            {
+              "n": 0,
+              "d": 2,
+              "percent": 0
+            },
+            {
+              "n": 0,
+              "d": 2,
+              "percent": 0
+            },
+            {
+              "n": 0,
+              "d": 2,
+              "percent": 0
+            }
+          ],
+          "patterns": {
+            "thin_substance": 2,
+            "generic_ending": 2,
+            "report_voice": 2,
+            "generic_opening": 1
+          },
+          "outputs": [
+            {
+              "id": "wolf-2",
+              "scores": [
+                3,
+                4,
+                3,
+                4,
+                3,
+                4
+              ],
+              "weighted": 3.4,
+              "accepted": false
+            },
+            {
+              "id": "wolf-3",
+              "scores": [
+                3,
+                4,
+                3,
+                4,
+                3,
+                3
+              ],
+              "weighted": 3.35,
+              "accepted": false
+            }
+          ],
+          "valid": 2,
+          "range": 0.04999999999999982,
+          "confirmedF2Claims": 2,
+          "reviewedF2Outputs": 2
+        }
+      },
+      "byRichness": {
+        "rich": {
+          "reviewed": 17,
+          "mean": 3.329411764705883,
+          "median": 3.35,
+          "distribution": {
+            "3": 2,
+            "4": 1,
+            "2.95": 1,
+            "3.2": 3,
+            "3.4": 3,
+            "3.35": 3,
+            "3.55": 1,
+            "3.25": 2,
+            "3.75": 1
+          },
+          "acceptance": {
+            "n": 2,
+            "d": 17,
+            "percent": 11.764705882352942
+          },
+          "acceptanceOfGenerated": {
+            "n": 2,
+            "d": 17,
+            "percent": 11.764705882352942
+          },
+          "criterionMeans": [
+            2.9411764705882355,
+            3.9411764705882355,
+            3.176470588235294,
+            4.117647058823529,
+            2.588235294117647,
+            3.2941176470588234
+          ],
+          "criticalWeakness": [
+            {
+              "n": 2,
+              "d": 17,
+              "percent": 11.764705882352942
+            },
+            {
+              "n": 0,
+              "d": 17,
+              "percent": 0
+            },
+            {
+              "n": 1,
+              "d": 17,
+              "percent": 5.882352941176471
+            },
+            {
+              "n": 0,
+              "d": 17,
+              "percent": 0
+            },
+            {
+              "n": 7,
+              "d": 17,
+              "percent": 41.1764705882353
+            },
+            {
+              "n": 1,
+              "d": 17,
+              "percent": 5.882352941176471
+            }
+          ],
+          "patterns": {
+            "generic_opening": 4,
+            "report_voice": 12,
+            "bureaucratic_language": 1,
+            "formulaic_structure": 1,
+            "generic_ending": 10,
+            "repetition": 6,
+            "forced_lesson": 1,
+            "thin_substance": 7
+          },
+          "outputs": [
+            {
+              "id": "acid-1",
+              "scores": [
+                2,
+                3,
+                4,
+                4,
+                2,
+                3
+              ],
+              "weighted": 2.95,
+              "accepted": false
+            },
+            {
+              "id": "digital-1",
+              "scores": [
+                3,
+                4,
+                3,
+                4,
+                2,
+                3
+              ],
+              "weighted": 3.2,
+              "accepted": false
+            },
+            {
+              "id": "gps-1",
+              "scores": [
+                3,
+                4,
+                3,
+                4,
+                2,
+                3
+              ],
+              "weighted": 3.2,
+              "accepted": false
+            },
+            {
+              "id": "grace-1",
+              "scores": [
+                3,
+                4,
+                3,
+                4,
+                3,
+                4
+              ],
+              "weighted": 3.4,
+              "accepted": false
+            },
+            {
+              "id": "highways-1",
+              "scores": [
+                3,
+                4,
+                3,
+                4,
+                3,
+                3
+              ],
+              "weighted": 3.35,
+              "accepted": false
+            },
+            {
+              "id": "wolf-2",
+              "scores": [
+                3,
+                4,
+                3,
+                4,
+                3,
+                4
+              ],
+              "weighted": 3.4,
+              "accepted": false
+            },
+            {
+              "id": "highways-2",
+              "scores": [
+                3,
+                4,
+                4,
+                4,
+                3,
+                3
+              ],
+              "weighted": 3.55,
+              "accepted": false
+            },
+            {
+              "id": "grace-2",
+              "scores": [
+                3,
+                4,
+                3,
+                4,
+                3,
+                4
+              ],
+              "weighted": 3.4,
+              "accepted": false
+            },
+            {
+              "id": "gps-2",
+              "scores": [
+                4,
+                4,
+                4,
+                5,
+                3,
+                4
+              ],
+              "weighted": 4,
+              "accepted": true
+            },
+            {
+              "id": "digital-2",
+              "scores": [
+                3,
+                4,
+                2,
+                4,
+                2,
+                3
+              ],
+              "weighted": 3,
+              "accepted": false
+            },
+            {
+              "id": "acid-2",
+              "scores": [
+                3,
+                4,
+                3,
+                4,
+                2,
+                4
+              ],
+              "weighted": 3.25,
+              "accepted": false
+            },
+            {
+              "id": "acid-3",
+              "scores": [
+                3,
+                4,
+                3,
+                4,
+                2,
+                3
+              ],
+              "weighted": 3.2,
+              "accepted": false
+            },
+            {
+              "id": "digital-3",
+              "scores": [
+                3,
+                4,
+                3,
+                3,
+                2,
+                2
+              ],
+              "weighted": 3,
+              "accepted": false
+            },
+            {
+              "id": "gps-3",
+              "scores": [
+                2,
+                4,
+                3,
+                5,
+                3,
+                3
+              ],
+              "weighted": 3.25,
+              "accepted": false
+            },
+            {
+              "id": "grace-3",
+              "scores": [
+                3,
+                4,
+                4,
+                5,
+                3,
+                4
+              ],
+              "weighted": 3.75,
+              "accepted": true
+            },
+            {
+              "id": "highways-3",
+              "scores": [
+                3,
+                4,
+                3,
+                4,
+                3,
+                3
+              ],
+              "weighted": 3.35,
+              "accepted": false
+            },
+            {
+              "id": "wolf-3",
+              "scores": [
+                3,
+                4,
+                3,
+                4,
+                3,
+                3
+              ],
+              "weighted": 3.35,
+              "accepted": false
+            }
+          ]
+        },
+        "constrained": {
+          "reviewed": 18,
+          "mean": 3.6527777777777777,
+          "median": 3.625,
+          "distribution": {
+            "4": 1,
+            "3.2": 1,
+            "3.35": 1,
+            "3.4": 1,
+            "3.75": 1,
+            "3.65": 3,
+            "3.6": 2,
+            "3.95": 1,
+            "3.85": 1,
+            "3.55": 3,
+            "3.8": 1,
+            "3.45": 1,
+            "4.2": 1
+          },
+          "acceptance": {
+            "n": 6,
+            "d": 18,
+            "percent": 33.333333333333336
+          },
+          "acceptanceOfGenerated": {
+            "n": 6,
+            "d": 18,
+            "percent": 33.333333333333336
+          },
+          "criterionMeans": [
+            3.5,
+            4.111111111111111,
+            3.4444444444444446,
+            4.388888888888889,
+            2.8333333333333335,
+            3.6666666666666665
+          ],
+          "criticalWeakness": [
+            {
+              "n": 0,
+              "d": 18,
+              "percent": 0
+            },
+            {
+              "n": 0,
+              "d": 18,
+              "percent": 0
+            },
+            {
+              "n": 0,
+              "d": 18,
+              "percent": 0
+            },
+            {
+              "n": 0,
+              "d": 18,
+              "percent": 0
+            },
+            {
+              "n": 3,
+              "d": 18,
+              "percent": 16.666666666666668
+            },
+            {
+              "n": 0,
+              "d": 18,
+              "percent": 0
+            }
+          ],
+          "patterns": {
+            "thin_substance": 10,
+            "repetition": 8,
+            "report_voice": 9,
+            "generic_ending": 6,
+            "generic_opening": 1,
+            "low_engagement_ending": 1,
+            "forced_lesson": 1
+          },
+          "outputs": [
+            {
+              "id": "airmf-1",
+              "scores": [
+                3,
+                4,
+                3,
+                4,
+                2,
+                3
+              ],
+              "weighted": 3.2,
+              "accepted": false
+            },
+            {
+              "id": "coral-1",
+              "scores": [
+                3,
+                4,
+                3,
+                4,
+                3,
+                3
+              ],
+              "weighted": 3.35,
+              "accepted": false
+            },
+            {
+              "id": "fusion-1",
+              "scores": [
+                3,
+                4,
+                3,
+                5,
+                2,
+                4
+              ],
+              "weighted": 3.4,
+              "accepted": false
+            },
+            {
+              "id": "labor-1",
+              "scores": [
+                4,
+                4,
+                4,
+                5,
+                3,
+                4
+              ],
+              "weighted": 4,
+              "accepted": true
+            },
+            {
+              "id": "python-1",
+              "scores": [
+                3,
+                4,
+                4,
+                5,
+                3,
+                4
+              ],
+              "weighted": 3.75,
+              "accepted": true
+            },
+            {
+              "id": "webb-1",
+              "scores": [
+                4,
+                4,
+                3,
+                4,
+                3,
+                4
+              ],
+              "weighted": 3.65,
+              "accepted": false
+            },
+            {
+              "id": "webb-2",
+              "scores": [
+                4,
+                4,
+                3,
+                4,
+                3,
+                3
+              ],
+              "weighted": 3.6,
+              "accepted": false
+            },
+            {
+              "id": "python-2",
+              "scores": [
+                3,
+                5,
+                4,
+                5,
+                3,
+                4
+              ],
+              "weighted": 3.95,
+              "accepted": true
+            },
+            {
+              "id": "labor-2",
+              "scores": [
+                4,
+                4,
+                4,
+                4,
+                3,
+                4
+              ],
+              "weighted": 3.85,
+              "accepted": true
+            },
+            {
+              "id": "fusion-2",
+              "scores": [
+                4,
+                4,
+                3,
+                4,
+                3,
+                4
+              ],
+              "weighted": 3.65,
+              "accepted": false
+            },
+            {
+              "id": "coral-2",
+              "scores": [
+                3,
+                4,
+                3,
+                5,
+                3,
+                4
+              ],
+              "weighted": 3.55,
+              "accepted": false
+            },
+            {
+              "id": "airmf-2",
+              "scores": [
+                3,
+                4,
+                4,
+                4,
+                3,
+                3
+              ],
+              "weighted": 3.55,
+              "accepted": false
+            },
+            {
+              "id": "airmf-3",
+              "scores": [
+                4,
+                4,
+                3,
+                5,
+                3,
+                4
+              ],
+              "weighted": 3.8,
+              "accepted": true
+            },
+            {
+              "id": "coral-3",
+              "scores": [
+                3,
+                4,
+                4,
+                4,
+                3,
+                3
+              ],
+              "weighted": 3.55,
+              "accepted": false
+            },
+            {
+              "id": "fusion-3",
+              "scores": [
+                4,
+                4,
+                3,
+                4,
+                2,
+                3
+              ],
+              "weighted": 3.45,
+              "accepted": false
+            },
+            {
+              "id": "labor-3",
+              "scores": [
+                3,
+                4,
+                4,
+                4,
+                3,
+                4
+              ],
+              "weighted": 3.6,
+              "accepted": false
+            },
+            {
+              "id": "python-3",
+              "scores": [
+                4,
+                5,
+                4,
+                5,
+                3,
+                4
+              ],
+              "weighted": 4.2,
+              "accepted": true
+            },
+            {
+              "id": "webb-3",
+              "scores": [
+                4,
+                4,
+                3,
+                4,
+                3,
+                4
+              ],
+              "weighted": 3.65,
+              "accepted": false
+            }
+          ]
+        }
+      },
+      "seriesWithEditorialFailure": {
+        "n": 11,
+        "d": 12,
+        "percent": 91.66666666666667
+      },
+      "seriesWithConfirmedF2": 4
+    }
+  }
+}

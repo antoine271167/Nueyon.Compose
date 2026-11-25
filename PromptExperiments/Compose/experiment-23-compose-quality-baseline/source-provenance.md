@@ -1,0 +1,3 @@
+# Source provenance
+
+Fixtures retain verbatim archived evidence files and upstream handoffs. The manifest maps each to the original repository path. Experiment 19 evidence is curated paraphrases of authoritative primary references, while Experiment 20 evidence retains its archive form. The source links are in the [Experiment 19 provenance](../../Narrative/experiment-19-real-world-semantic-validation/source-provenance.md) and [Experiment 20 provenance](../../Narrative/experiment-20-fidelity-judge-repair-loop/source-provenance.md). Preserve these evidence limits in adjudication. No standalone Research result was available for these cases.

@@ -1,0 +1,3 @@
+{
+  "content": "## CPython 3.13\u2019s Experimental Free-Threading Mode and Extensions\n\nCPython 3.13 introduced experimental free threading as a configuration in which the Global Interpreter Lock (GIL) can be disabled. In this mode, importing an extension without an explicit declaration of support triggers a warning and enables the GIL.\n\nHow an extension makes that declaration depends on whether it uses multi-phase or single-phase initialization. The declaration signals that the extension supports the free-threading runtime mode; it is separate from making the extension\u2019s code thread-safe."
+}

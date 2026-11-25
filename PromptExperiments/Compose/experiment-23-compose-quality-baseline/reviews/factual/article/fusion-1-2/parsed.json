@@ -1,0 +1,100 @@
+{
+  "claims": [
+    {
+      "excerpt": "What the National Ignition Facility’s Energy Comparison Shows",
+      "claim": "The National Ignition Facility result can be understood through a comparison of fusion energy generated and energy delivered to the target.",
+      "category": "interpretation",
+      "label": "F0 faithful",
+      "evidence": "The experiment delivered 2.05 megajoules to the target and generated 3.15 megajoules of fusion energy.",
+      "narrative": "The story centers on what that target-level comparison establishes: fusion output exceeded the energy delivered to the target",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The headline frames the comparison described by the source’s two measurements.",
+      "materiality": "This framing is central to the piece but adds no unsupported measurement."
+    },
+    {
+      "excerpt": "The National Ignition Facility experiment achieved fusion ignition",
+      "claim": "The National Ignition Facility experiment achieved fusion ignition.",
+      "category": "outcome",
+      "label": "F0 faithful",
+      "evidence": "a Lawrence Livermore National Laboratory experiment at the National Ignition Facility achieved fusion ignition.",
+      "narrative": "The National Ignition Facility experiment achieved fusion ignition",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The source states this directly.",
+      "materiality": "This is the central outcome being reported."
+    },
+    {
+      "excerpt": "producing 3.15 megajoules of fusion energy after delivering 2.05 megajoules to the target",
+      "claim": "The experiment generated 3.15 megajoules of fusion energy after delivering 2.05 megajoules to the target.",
+      "category": "quantity",
+      "label": "F0 faithful",
+      "evidence": "The experiment delivered 2.05 megajoules to the target and generated 3.15 megajoules of fusion energy.",
+      "narrative": "by producing 3.15 megajoules of fusion energy after delivering 2.05 megajoules to the target",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "Both measurements and their relationship to the experiment match the source.",
+      "materiality": "The amounts and measurement boundary are essential to the comparison."
+    },
+    {
+      "excerpt": "The comparison is specific to the energy delivered to the target",
+      "claim": "The energy comparison uses the amount delivered to the target, rather than a facility-wide energy measure.",
+      "category": "scope",
+      "label": "F0 faithful",
+      "evidence": "The experiment delivered 2.05 megajoules to the target and generated 3.15 megajoules of fusion energy.",
+      "narrative": "the target-level comparison",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The piece specifies the target-delivered energy as the comparison basis; it does not claim a facility-wide energy gain.",
+      "materiality": "This boundary prevents the comparison from being mistaken for net facility energy gain."
+    },
+    {
+      "excerpt": "the fusion output exceeded that amount",
+      "claim": "The fusion energy generated exceeded the energy delivered to the target.",
+      "category": "quantity",
+      "label": "F0 faithful",
+      "evidence": "The experiment delivered 2.05 megajoules to the target and generated 3.15 megajoules of fusion energy.",
+      "narrative": "fusion output exceeded the energy delivered to the target",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The source’s reported values support this comparison: 3.15 megajoules is greater than 2.05 megajoules.",
+      "materiality": "This is the main conclusion of the energy comparison."
+    },
+    {
+      "excerpt": "The result is treated as progress toward inertial fusion energy",
+      "claim": "The result is progress toward inertial fusion energy.",
+      "category": "attribution",
+      "label": "F0 faithful",
+      "evidence": "The announcement treats the experiment as progress toward inertial fusion energy",
+      "narrative": "a result treated as progress toward inertial fusion energy",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The source attributes this characterization to the announcement; the piece preserves that qualified framing.",
+      "materiality": "It describes the result’s significance without claiming practical energy production has been achieved."
+    },
+    {
+      "excerpt": "not as practical electricity production",
+      "claim": "The experiment did not demonstrate practical electricity production.",
+      "category": "outcome",
+      "label": "F1 minor immaterial imprecision",
+      "evidence": "The announcement treats the experiment as progress toward inertial fusion energy and notes the many scientific and technological developments still needed for practical energy production.",
+      "narrative": "not as practical electricity production",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The source says practical energy production still requires development, but does not specifically use the term “electricity.” The narrower wording does not materially change the stated limitation.",
+      "materiality": "The distinction matters to the result’s real-world significance, though the wording remains consistent with the source’s caveat."
+    },
+    {
+      "excerpt": "Substantial scientific and technological development is still required before practical energy production.",
+      "claim": "Further scientific and technological development is needed before practical energy production.",
+      "category": "outcome",
+      "label": "F0 faithful",
+      "evidence": "the many scientific and technological developments still needed for practical energy production.",
+      "narrative": "practical energy production still requires substantial scientific and technological development",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The piece accurately conveys that development remains necessary; “substantial” summarizes the source’s “many” developments.",
+      "materiality": "This caveat prevents the experimental result from being mistaken for a practical energy technology."
+    }
+  ]
+}

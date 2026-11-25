@@ -1,0 +1,112 @@
+{
+  "claims": [
+    {
+      "excerpt": "The unemployment rate is calculated using the number of unemployed people and the number of employed people—not everyone who does not have a job.",
+      "claim": "The unemployment rate is based on unemployed and employed people, rather than everyone without a job.",
+      "category": "scope",
+      "label": "F0 faithful",
+      "evidence": "The unemployment rate divides unemployed people by the sum of employed and unemployed people.",
+      "narrative": "Establish that the unemployment rate divides unemployed people by the combined number of employed and unemployed people, rather than by everyone without a job.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The source defines the rate using unemployed people and the combined employed-and-unemployed population.",
+      "materiality": "This identifies who is included in the rate’s calculation."
+    },
+    {
+      "excerpt": "Whether someone is counted as unemployed depends on their circumstances and activity during specified survey periods.",
+      "claim": "Unemployment classification depends on a person’s circumstances and activity during defined survey periods.",
+      "category": "scope",
+      "label": "F0 faithful",
+      "evidence": "Under the Current Population Survey, an unemployed person was not employed during the survey reference week, was available for work except for temporary illness, and made an active job search effort in the four-week period ending with that week or was temporarily laid off and expected recall.",
+      "narrative": "The reader should understand that unemployment is not simply the absence of a job: classification depends on being available and, in most cases, actively searching during the specified period.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The source’s criteria depend on availability, search activity, and specified reference periods.",
+      "materiality": "This frames the criteria used to classify someone as unemployed."
+    },
+    {
+      "excerpt": "In general, a person must not have been employed during the reference week",
+      "claim": "A person generally must not have been employed during the survey reference week to qualify as unemployed.",
+      "category": "chronology",
+      "label": "F0 faithful",
+      "evidence": "Under the Current Population Survey, an unemployed person was not employed during the survey reference week",
+      "narrative": "the person must not have been employed during the reference week",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "This matches the source’s reference-week condition.",
+      "materiality": "Employment during the reference week is a core classification condition."
+    },
+    {
+      "excerpt": "must have been available for work",
+      "claim": "A person generally must have been available for work to qualify as unemployed.",
+      "category": "other",
+      "label": "F0 faithful",
+      "evidence": "was available for work except for temporary illness",
+      "narrative": "must have been available for work, except for temporary illness",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The following sentence in the piece states the source’s temporary-illness exception.",
+      "materiality": "Availability is a core classification condition."
+    },
+    {
+      "excerpt": "must have actively looked for work during the four weeks ending with that reference week.",
+      "claim": "A person generally must have actively searched for work during the four-week period ending with the reference week.",
+      "category": "chronology",
+      "label": "F0 faithful",
+      "evidence": "made an active job search effort in the four-week period ending with that week",
+      "narrative": "Active search must fall within the four-week period ending with the reference week",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The stated search period and its endpoint match the source.",
+      "materiality": "The timing of active search affects classification."
+    },
+    {
+      "excerpt": "Temporary illness is an exception to the availability condition.",
+      "claim": "Temporary illness is an exception to the requirement that a person be available for work.",
+      "category": "other",
+      "label": "F0 faithful",
+      "evidence": "was available for work except for temporary illness",
+      "narrative": "available for work, except for temporary illness",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "This accurately states the source’s exception.",
+      "materiality": "It clarifies when the availability condition does not apply."
+    },
+    {
+      "excerpt": "A person on temporary layoff who expects to be recalled may qualify as unemployed without actively searching for work.",
+      "claim": "A person on temporary layoff who expects recall may qualify as unemployed without active job search.",
+      "category": "scope",
+      "label": "F0 faithful",
+      "evidence": "or was temporarily laid off and expected recall",
+      "narrative": "a temporarily laid-off person expecting recall",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The source gives temporary layoff with expected recall as an alternative to the active-search condition.",
+      "materiality": "This is a material exception to the general active-search requirement."
+    },
+    {
+      "excerpt": "By contrast, someone whose only job-search activity was browsing listings has not met the active-search requirement through that activity alone.",
+      "claim": "Browsing job listings alone does not satisfy the active-search requirement.",
+      "category": "technical",
+      "label": "U",
+      "evidence": "Passive-only job search does not count as active search.",
+      "narrative": "someone whose only job-search activity was browsing listings. The first may qualify without an active search; passive browsing alone does not meet the active-search requirement.",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The source says passive-only search does not count, but does not establish whether browsing listings alone is passive in this context.",
+      "materiality": "Whether this activity qualifies as active search can change a person’s classification."
+    },
+    {
+      "excerpt": "These conditions determine whether a person is included among the unemployed—and therefore whether they are counted in the unemployment rate’s denominator, which combines employed and unemployed people.",
+      "claim": "Meeting the unemployment criteria determines whether someone is included among the unemployed, and the rate’s denominator combines employed and unemployed people.",
+      "category": "cause",
+      "label": "F0 faithful",
+      "evidence": "Under the Current Population Survey, an unemployed person was not employed during the survey reference week, was available for work except for temporary illness, and made an active job search effort in the four-week period ending with that week or was temporarily laid off and expected recall. The unemployment rate divides unemployed people by the sum of employed and unemployed people.",
+      "narrative": "Clarify that availability and the survey reference periods also matter, and that the classification determines whether a person is counted among the unemployed in the rate’s denominator.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The source defines who is unemployed and specifies that unemployed people are included in the denominator alongside employed people.",
+      "materiality": "This connects the classification rules to inclusion in the rate’s denominator."
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+# Recurring patterns and candidate causes
+
+| Pattern | Article | LinkedIn Post | Evidence and hypothesis | Diagnostic follow-up |
+| --- | ---: | ---: | --- | --- |
+| Thin substance | 32/36 | 17/35 | The digital and AI risk profile Articles give the reader a narrow summary. Short, abstract briefs limit usable development, and the Article template discourages extra explanation. The stronger fusion Article shows the same contract can develop concrete evidence. | Paired Article-only comparison that preserves facts and judges supported elaboration. |
+| Report-like voice | 19/36 | 21/35 | Acid and AI risk drafts often lead with institutional framing and terminology. Brief structure and prompt caution may both contribute. The shared schema is a Content string and does not prescribe a report structure. | Compare matched rewrites from the same brief and assess voice blind. |
+| Generic endings | 17/36 | 16/35 | The digital and Webb drafts often restate the distinction from the opening or development. Article rules allow a natural stop but the model often adds a summarizing sentence. LinkedIn ending guidance also failed to reliably produce a distinct landing. | Isolate ending guidance and score redundancy and supported impact. |
+| Repetition | 19/36 | 14/35 | Recaps borrow the Narrative's endpoint and repeat the same proposition. This occurs with both rich and constrained inputs. | Control the endpoint and ask reviewers whether the final paragraph adds supported value. |
+| Semantic changes | 9/36 | 7/35 | Wolf, digital and Webb are primarily upstream meaning problems. Acid rain's one bad attachment alongside clean repetitions supports a Compose paraphrase variability hypothesis. | Compare paired correct and faulty briefs and verify final wording against the source. |
+
+The passive restrictions in the shared and Article prompts may contribute to sober writing, but no prompt was varied. The observed differences do not identify which instruction caused a defect. Upstream evidence limited what an honest Compose draft could say, even if the original authoritative page contained more. Improving source transfer would change that information boundary. The current study leaves it intact.

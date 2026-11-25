@@ -1,0 +1,88 @@
+{
+  "claims": [
+    {
+      "excerpt": "De werkwijze achter de POA-refunddienst",
+      "claim": "The piece describes the approach used to build the POA refund service.",
+      "category": "interpretation",
+      "label": "F0 faithful",
+      "evidence": "How we achieved it and what I’ve learned from the experience",
+      "narrative": "De kern van het verhaal is de volgorde en het werkritme van de beschreven aanpak",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The title frames the piece as an account of the service’s working approach, consistent with the source.",
+      "materiality": "Low; framing only."
+    },
+    {
+      "excerpt": "De POA-refunddienst werd na twaalf weken publiek gelanceerd.",
+      "claim": "The POA refund service launched publicly after a twelve-week delivery period.",
+      "category": "chronology",
+      "label": "F0 faithful",
+      "evidence": "We passed alpha and beta Service Standard assessments and launched to the public in only 12 weeks.",
+      "narrative": "Het POA-refundteam lanceerde de dienst na twaalf weken",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "This matches the source’s stated twelve-week launch period; the source does not specify the period’s exact start point.",
+      "materiality": "Material timeline detail, accurately represented at the source’s level of precision."
+    },
+    {
+      "excerpt": "De aanvankelijk gevraagde levering binnen enkele weken werd niet haalbaar geacht met behoud van een kwalitatieve gebruikersdienst.",
+      "claim": "The initially requested delivery within a matter of weeks was judged infeasible if the team was to provide a quality service for users.",
+      "category": "outcome",
+      "label": "F0 faithful",
+      "evidence": "We were initially asked to deliver the service in a matter of weeks, which put huge pressure on everyone and we quickly discovered would not be possible if we wanted to create a quality service for our users.",
+      "narrative": "de aanvankelijk gevraagde levering binnen enkele weken niet haalbaar werd geacht met behoud van een kwalitatieve gebruikersdienst",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "Accurately preserves both the requested timeframe and the stated quality constraint.",
+      "materiality": "Material context for the delivery timeline."
+    },
+    {
+      "excerpt": "De aanvragerservaring werd eerst naar alpha gebracht.",
+      "claim": "The team prioritized the applicant experience and took it to the alpha assessment before adding caseworker plans.",
+      "category": "chronology",
+      "label": "F0 faithful",
+      "evidence": "My team focused on the users applying for refunds first and this is what we took to the alpha assessment. Plans for the caseworker user came later.",
+      "narrative": "eerst de aanvragerservaring uitwerken, later caseworkerwerk toevoegen",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "A faithful concise rendering of the stated order and alpha milestone.",
+      "materiality": "Material description of the team’s sequencing."
+    },
+    {
+      "excerpt": "Plannen voor het werk van caseworkers kwamen later.",
+      "claim": "Plans for caseworker work came after the team focused on applicant users and took that work to alpha.",
+      "category": "chronology",
+      "label": "F0 faithful",
+      "evidence": "My team focused on the users applying for refunds first and this is what we took to the alpha assessment. Plans for the caseworker user came later.",
+      "narrative": "later caseworkerwerk toevoegen",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The source explicitly says caseworker plans came later.",
+      "materiality": "Material description of the team’s sequencing."
+    },
+    {
+      "excerpt": "Tijdens de private beta wisselden tweewekelijkse sprints af: in de ene werden aanvragen aangenomen, in de andere was tijd gereserveerd voor testen, onderzoek en verwerking.",
+      "claim": "During private beta, fortnightly sprints alternated between accepting applications and reserving time for testing, research, and processing, implying these activities were divided between the two weeks.",
+      "category": "technical",
+      "label": "F2 material incorrect, unsupported or misleading",
+      "evidence": "We achieved this by splitting our fortnightly sprints in two: testing, researching and accepting applications in the first week and then suspending submissions to concentrate on testing, researching and processing applications the second.",
+      "narrative": "tijdens de private beta vaste tijd reserveren voor onderzoek en testen. The narrative also says: “tijdens de private beta wisselden tweewekelijkse sprints af tussen aanvragen aannemen en tijd besteden aan testen, onderzoek en verwerking.”",
+      "narrativeRelation": "differs",
+      "origin": "propagated",
+      "explanation": "The source says testing and research happened in both weeks; applications were accepted in the first week, while submissions were suspended in the second for testing, research, and processing. The piece’s contrast makes the work sound divided into an application-taking week and a testing/research/processing week, obscuring that overlap and the suspension of submissions.",
+      "materiality": "Material to the account of the sprint cadence and how research and testing were scheduled."
+    },
+    {
+      "excerpt": "De beschreven werkwijze combineerde zo een eerste focus op aanvragers met vaste tijd voor onderzoek en testen tijdens de private beta.",
+      "claim": "The approach combined an initial focus on applicants with recurring reserved time for research and testing during private beta.",
+      "category": "interpretation",
+      "label": "F0 faithful",
+      "evidence": "My team focused on the users applying for refunds first and this is what we took to the alpha assessment. Plans for the caseworker user came later. ... We achieved this by splitting our fortnightly sprints in two: testing, researching and accepting applications in the first week and then suspending submissions to concentrate on testing, researching and processing applications the second.",
+      "narrative": "De beschreven aanpak combineerde een volgorde waarin aanvragers eerst kwamen met expliciet gereserveerde tijd voor onderzoek en testen.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "This summary is supported by the source’s stated sequence and recurring time for research and testing, though the preceding sprint description inaccurately simplifies how activities overlapped.",
+      "materiality": "Material summary of the piece’s central approach."
+    }
+  ]
+}

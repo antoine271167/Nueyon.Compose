@@ -1,0 +1,7 @@
+# Factual fidelity
+
+The [claim metrics](metrics.json) report F0/F1/F2/U labels from one usable factual review per output, preferring the primary review. The [adjudication ledger](reviews/factual/adjudications.json) preserves separately the evidence-backed material findings and dispositions of disputed flags. Machine claim inventories vary in granularity and can miss material relationships. Their F0 counts are reviewer judgments. Factual coverage includes both format cohorts and all subjects. Original-source checks resolved several apparent evidence gaps. [Source checks](source-checks.md)
+
+Material findings cluster in three stress inputs and a single new wording distortion on acid rain. Stress-input selection raises the observed rate relative to any corpus that excludes defective upstream drafts. Several inherited problems would pass a comparison against Narrative alone. Conversely, NOAA confirms the record and satellite measurement, so the blind source-extract reviewers' adverse labels do not establish errors.
+
+The primary and second judgments are retained under [factual reviews](reviews/factual). Agreement in the presence of an F2 or U flag is an output-level proxy. Matching flags can concern different claims. The secondary review sample was enriched for flags and three known regression subjects were checked by the operator. Neither agreement nor raw F0 counts prove complete verification. Adjudication flags that cannot be settled remain U.

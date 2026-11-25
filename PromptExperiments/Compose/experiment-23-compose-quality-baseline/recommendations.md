@@ -1,0 +1,8 @@
+# Candidate directions
+
+1. Test source-grounded verification and withholding on complete finished content. Expected release impact high, implementation complexity medium, operational fit high only after independent evaluation. Use paired archived Compose drafts, blinded claim review, full evidence, natural errors and matched clean controls. Measure missed material claims and false holds separately. The model judges' false flags on NOAA are a deliberate negative control.
+2. Compare Article-specific development from the same handoff. Expected Article editorial gain high, factual risk medium if development implies unsupported meaning, complexity low, unattended fit conditional on a release gate. Hold facts, model and workflow constant. Test concrete supported detail and a non-repetitive ending separately from length.
+3. Test a better transfer of source chronology and exact entity identity into Narrative and Compose. Expected fidelity gain high on relevant cases, complexity medium, factual risk medium if the additional context becomes a source of incidental claims. Use a paired evidence-preservation ablation.
+4. Test LinkedIn ending instructions and remove duplicated restrictions in a separate comparison. Expected quality gain modest relative to Article, factual risk medium for stronger takeaways, complexity low. Preserve independent editorial and release gates.
+
+The smallest immediately useful Experiment 24 is a final-content verification benchmark on frozen drafts. Start with paired correct and incorrect claims about identity, sequence and tradable units, and predeclare false-hold and material-error detection gates. Include fresh subjects outside these archives.
