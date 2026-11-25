@@ -1,0 +1,24 @@
+{
+  "status": "FAIL",
+  "findings": [
+    {
+      "category": "temporal_relationship",
+      "severity": "material",
+      "narrativeExcerpt": "Voyager 1 vertrok later",
+      "evidenceExcerpt": "Voyager 2 launched before Voyager 1.",
+      "explanation": "The narrative reverses the launch order stated in the synthesis.",
+      "findingType": "contradiction",
+      "suggestedCorrection": "State that Voyager 2 launched before Voyager 1."
+    },
+    {
+      "category": "temporal_relationship",
+      "severity": "material",
+      "narrativeExcerpt": "kwam ook later bij Jupiter aan.",
+      "evidenceExcerpt": "Voyager 1 overtook its twin and arrived at Jupiter first.",
+      "explanation": "The narrative says Voyager 1 arrived later, while the synthesis says it arrived at Jupiter first.",
+      "findingType": "contradiction",
+      "suggestedCorrection": "State that Voyager 1 arrived at Jupiter before Voyager 2."
+    }
+  ]
+}
+

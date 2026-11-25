@@ -1,0 +1,24 @@
+{
+  "status": "FAIL",
+  "findings": [
+    {
+      "category": "causality",
+      "severity": "material",
+      "narrativeExcerpt": "De onderzoekers toonden aan dat een slapeloosheidsstoornis de gemelde geheugenachteruitgang veroorzaakt.",
+      "evidenceExcerpt": "increased odds (OR 1.70; 95% CI 1.29-2.26) of self-reported memory worsening was observed",
+      "explanation": "The evidence reports an association with increased odds, not that insomnia caused memory worsening. The narrative presents causation as established.",
+      "findingType": "unsupported_assertion",
+      "suggestedCorrection": "Describe the observed link with increased odds of self-reported memory worsening, without claiming causation."
+    },
+    {
+      "category": "certainty",
+      "severity": "material",
+      "narrativeExcerpt": "een slapeloosheidsstoornis",
+      "evidenceExcerpt": "developing probable insomnia disorder was linked to greater odds of self-reported memory worsening.",
+      "explanation": "The synthesis specifies probable insomnia disorder, while the narrative states insomnia disorder without that qualification, making the diagnosis sound more certain.",
+      "findingType": "unsupported_assertion",
+      "suggestedCorrection": "Retain the qualification that the disorder was probable."
+    }
+  ]
+}
+

@@ -1,0 +1,30 @@
+{
+  "decision": "CONDITIONAL GO",
+  "gates": {
+    "S": {
+      "sensitivity": true,
+      "escapePattern": true,
+      "falseFlags": true,
+      "precision": true,
+      "evidence": true,
+      "stability": false,
+      "coverage": true,
+      "complete": false
+    },
+    "S+Source": {
+      "sensitivity": true,
+      "escapePattern": true,
+      "falseFlags": true,
+      "precision": true,
+      "evidence": true,
+      "stability": true,
+      "coverage": true,
+      "complete": false
+    }
+  },
+  "qualifyingConditions": [],
+  "conditionalConditions": [
+    "S",
+    "S+Source"
+  ]
+}

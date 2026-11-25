@@ -1,0 +1,2513 @@
+{
+  "subjects": 12,
+  "examples": 48,
+  "planned": 192,
+  "attempted": 192,
+  "valid": 187,
+  "conditions": {
+    "S": {
+      "attempted": 96,
+      "valid": 93,
+      "definitivePrecision": {
+        "numerator": 44,
+        "denominator": 45,
+        "value": 0.9777777777777777
+      },
+      "definitiveRecall": {
+        "numerator": 44,
+        "denominator": 47,
+        "value": 0.9361702127659575
+      },
+      "definitiveFalsePositiveRate": {
+        "numerator": 1,
+        "denominator": 46,
+        "value": 0.021739130434782608
+      },
+      "definitiveFalseNegativeRate": {
+        "numerator": 3,
+        "denominator": 47,
+        "value": 0.06382978723404255
+      },
+      "triageSensitivity": {
+        "numerator": 47,
+        "denominator": 47,
+        "value": 1
+      },
+      "triageSpecificity": {
+        "numerator": 43,
+        "denominator": 46,
+        "value": 0.9347826086956522
+      },
+      "falsePositiveFlagRate": {
+        "numerator": 3,
+        "denominator": 46,
+        "value": 0.06521739130434782
+      },
+      "silentEscapeRate": {
+        "numerator": 0,
+        "denominator": 47,
+        "value": 0
+      },
+      "flaggedWorkload": {
+        "numerator": 50,
+        "denominator": 93,
+        "value": 0.5376344086021505
+      },
+      "workload": {
+        "PASS": {
+          "numerator": 43,
+          "denominator": 93,
+          "value": 0.46236559139784944
+        },
+        "REVIEW": {
+          "numerator": 5,
+          "denominator": 93,
+          "value": 0.053763440860215055
+        },
+        "FAIL": {
+          "numerator": 45,
+          "denominator": 93,
+          "value": 0.4838709677419355
+        }
+      },
+      "acceptableReview": {
+        "numerator": 2,
+        "denominator": 46,
+        "value": 0.043478260869565216
+      },
+      "supportedBlocks": {
+        "numerator": 41,
+        "denominator": 93,
+        "value": 0.44086021505376344
+      },
+      "confirmedDefinitiveRecall": {
+        "numerator": 44,
+        "denominator": 47,
+        "value": 0.9361702127659575
+      },
+      "confirmedTriageRecall": {
+        "numerator": 47,
+        "denominator": 47,
+        "value": 1
+      },
+      "actionableEvidence": {
+        "numerator": 44,
+        "denominator": 47,
+        "value": 0.9361702127659575
+      },
+      "unsupportedFindings": 9,
+      "byCategory": {
+        "identity": {
+          "attempted": 20,
+          "valid": 20,
+          "definitivePrecision": {
+            "numerator": 9,
+            "denominator": 9,
+            "value": 1
+          },
+          "definitiveRecall": {
+            "numerator": 9,
+            "denominator": 10,
+            "value": 0.9
+          },
+          "definitiveFalsePositiveRate": {
+            "numerator": 0,
+            "denominator": 10,
+            "value": 0
+          },
+          "definitiveFalseNegativeRate": {
+            "numerator": 1,
+            "denominator": 10,
+            "value": 0.1
+          },
+          "triageSensitivity": {
+            "numerator": 10,
+            "denominator": 10,
+            "value": 1
+          },
+          "triageSpecificity": {
+            "numerator": 10,
+            "denominator": 10,
+            "value": 1
+          },
+          "falsePositiveFlagRate": {
+            "numerator": 0,
+            "denominator": 10,
+            "value": 0
+          },
+          "silentEscapeRate": {
+            "numerator": 0,
+            "denominator": 10,
+            "value": 0
+          },
+          "flaggedWorkload": {
+            "numerator": 10,
+            "denominator": 20,
+            "value": 0.5
+          },
+          "workload": {
+            "PASS": {
+              "numerator": 10,
+              "denominator": 20,
+              "value": 0.5
+            },
+            "REVIEW": {
+              "numerator": 1,
+              "denominator": 20,
+              "value": 0.05
+            },
+            "FAIL": {
+              "numerator": 9,
+              "denominator": 20,
+              "value": 0.45
+            }
+          },
+          "acceptableReview": {
+            "numerator": 0,
+            "denominator": 10,
+            "value": 0
+          },
+          "supportedBlocks": {
+            "numerator": 7,
+            "denominator": 20,
+            "value": 0.35
+          },
+          "confirmedDefinitiveRecall": {
+            "numerator": 9,
+            "denominator": 10,
+            "value": 0.9
+          },
+          "confirmedTriageRecall": {
+            "numerator": 10,
+            "denominator": 10,
+            "value": 1
+          },
+          "actionableEvidence": {
+            "numerator": 8,
+            "denominator": 10,
+            "value": 0.8
+          },
+          "unsupportedFindings": 2
+        },
+        "temporal": {
+          "attempted": 16,
+          "valid": 15,
+          "definitivePrecision": {
+            "numerator": 7,
+            "denominator": 8,
+            "value": 0.875
+          },
+          "definitiveRecall": {
+            "numerator": 7,
+            "denominator": 8,
+            "value": 0.875
+          },
+          "definitiveFalsePositiveRate": {
+            "numerator": 1,
+            "denominator": 7,
+            "value": 0.14285714285714285
+          },
+          "definitiveFalseNegativeRate": {
+            "numerator": 1,
+            "denominator": 8,
+            "value": 0.125
+          },
+          "triageSensitivity": {
+            "numerator": 8,
+            "denominator": 8,
+            "value": 1
+          },
+          "triageSpecificity": {
+            "numerator": 6,
+            "denominator": 7,
+            "value": 0.8571428571428571
+          },
+          "falsePositiveFlagRate": {
+            "numerator": 1,
+            "denominator": 7,
+            "value": 0.14285714285714285
+          },
+          "silentEscapeRate": {
+            "numerator": 0,
+            "denominator": 8,
+            "value": 0
+          },
+          "flaggedWorkload": {
+            "numerator": 9,
+            "denominator": 15,
+            "value": 0.6
+          },
+          "workload": {
+            "PASS": {
+              "numerator": 6,
+              "denominator": 15,
+              "value": 0.4
+            },
+            "REVIEW": {
+              "numerator": 1,
+              "denominator": 15,
+              "value": 0.06666666666666667
+            },
+            "FAIL": {
+              "numerator": 8,
+              "denominator": 15,
+              "value": 0.5333333333333333
+            }
+          },
+          "acceptableReview": {
+            "numerator": 0,
+            "denominator": 7,
+            "value": 0
+          },
+          "supportedBlocks": {
+            "numerator": 6,
+            "denominator": 15,
+            "value": 0.4
+          },
+          "confirmedDefinitiveRecall": {
+            "numerator": 7,
+            "denominator": 8,
+            "value": 0.875
+          },
+          "confirmedTriageRecall": {
+            "numerator": 8,
+            "denominator": 8,
+            "value": 1
+          },
+          "actionableEvidence": {
+            "numerator": 7,
+            "denominator": 8,
+            "value": 0.875
+          },
+          "unsupportedFindings": 3
+        },
+        "actor": {
+          "attempted": 20,
+          "valid": 19,
+          "definitivePrecision": {
+            "numerator": 10,
+            "denominator": 10,
+            "value": 1
+          },
+          "definitiveRecall": {
+            "numerator": 10,
+            "denominator": 10,
+            "value": 1
+          },
+          "definitiveFalsePositiveRate": {
+            "numerator": 0,
+            "denominator": 9,
+            "value": 0
+          },
+          "definitiveFalseNegativeRate": {
+            "numerator": 0,
+            "denominator": 10,
+            "value": 0
+          },
+          "triageSensitivity": {
+            "numerator": 10,
+            "denominator": 10,
+            "value": 1
+          },
+          "triageSpecificity": {
+            "numerator": 9,
+            "denominator": 9,
+            "value": 1
+          },
+          "falsePositiveFlagRate": {
+            "numerator": 0,
+            "denominator": 9,
+            "value": 0
+          },
+          "silentEscapeRate": {
+            "numerator": 0,
+            "denominator": 10,
+            "value": 0
+          },
+          "flaggedWorkload": {
+            "numerator": 10,
+            "denominator": 19,
+            "value": 0.5263157894736842
+          },
+          "workload": {
+            "PASS": {
+              "numerator": 9,
+              "denominator": 19,
+              "value": 0.47368421052631576
+            },
+            "REVIEW": {
+              "numerator": 0,
+              "denominator": 19,
+              "value": 0
+            },
+            "FAIL": {
+              "numerator": 10,
+              "denominator": 19,
+              "value": 0.5263157894736842
+            }
+          },
+          "acceptableReview": {
+            "numerator": 0,
+            "denominator": 9,
+            "value": 0
+          },
+          "supportedBlocks": {
+            "numerator": 10,
+            "denominator": 19,
+            "value": 0.5263157894736842
+          },
+          "confirmedDefinitiveRecall": {
+            "numerator": 10,
+            "denominator": 10,
+            "value": 1
+          },
+          "confirmedTriageRecall": {
+            "numerator": 10,
+            "denominator": 10,
+            "value": 1
+          },
+          "actionableEvidence": {
+            "numerator": 10,
+            "denominator": 10,
+            "value": 1
+          },
+          "unsupportedFindings": 0
+        },
+        "numerical": {
+          "attempted": 28,
+          "valid": 27,
+          "definitivePrecision": {
+            "numerator": 12,
+            "denominator": 12,
+            "value": 1
+          },
+          "definitiveRecall": {
+            "numerator": 12,
+            "denominator": 13,
+            "value": 0.9230769230769231
+          },
+          "definitiveFalsePositiveRate": {
+            "numerator": 0,
+            "denominator": 14,
+            "value": 0
+          },
+          "definitiveFalseNegativeRate": {
+            "numerator": 1,
+            "denominator": 13,
+            "value": 0.07692307692307693
+          },
+          "triageSensitivity": {
+            "numerator": 13,
+            "denominator": 13,
+            "value": 1
+          },
+          "triageSpecificity": {
+            "numerator": 12,
+            "denominator": 14,
+            "value": 0.8571428571428571
+          },
+          "falsePositiveFlagRate": {
+            "numerator": 2,
+            "denominator": 14,
+            "value": 0.14285714285714285
+          },
+          "silentEscapeRate": {
+            "numerator": 0,
+            "denominator": 13,
+            "value": 0
+          },
+          "flaggedWorkload": {
+            "numerator": 15,
+            "denominator": 27,
+            "value": 0.5555555555555556
+          },
+          "workload": {
+            "PASS": {
+              "numerator": 12,
+              "denominator": 27,
+              "value": 0.4444444444444444
+            },
+            "REVIEW": {
+              "numerator": 3,
+              "denominator": 27,
+              "value": 0.1111111111111111
+            },
+            "FAIL": {
+              "numerator": 12,
+              "denominator": 27,
+              "value": 0.4444444444444444
+            }
+          },
+          "acceptableReview": {
+            "numerator": 2,
+            "denominator": 14,
+            "value": 0.14285714285714285
+          },
+          "supportedBlocks": {
+            "numerator": 12,
+            "denominator": 27,
+            "value": 0.4444444444444444
+          },
+          "confirmedDefinitiveRecall": {
+            "numerator": 12,
+            "denominator": 13,
+            "value": 0.9230769230769231
+          },
+          "confirmedTriageRecall": {
+            "numerator": 13,
+            "denominator": 13,
+            "value": 1
+          },
+          "actionableEvidence": {
+            "numerator": 13,
+            "denominator": 13,
+            "value": 1
+          },
+          "unsupportedFindings": 2
+        },
+        "causality": {
+          "attempted": 12,
+          "valid": 12,
+          "definitivePrecision": {
+            "numerator": 6,
+            "denominator": 6,
+            "value": 1
+          },
+          "definitiveRecall": {
+            "numerator": 6,
+            "denominator": 6,
+            "value": 1
+          },
+          "definitiveFalsePositiveRate": {
+            "numerator": 0,
+            "denominator": 6,
+            "value": 0
+          },
+          "definitiveFalseNegativeRate": {
+            "numerator": 0,
+            "denominator": 6,
+            "value": 0
+          },
+          "triageSensitivity": {
+            "numerator": 6,
+            "denominator": 6,
+            "value": 1
+          },
+          "triageSpecificity": {
+            "numerator": 6,
+            "denominator": 6,
+            "value": 1
+          },
+          "falsePositiveFlagRate": {
+            "numerator": 0,
+            "denominator": 6,
+            "value": 0
+          },
+          "silentEscapeRate": {
+            "numerator": 0,
+            "denominator": 6,
+            "value": 0
+          },
+          "flaggedWorkload": {
+            "numerator": 6,
+            "denominator": 12,
+            "value": 0.5
+          },
+          "workload": {
+            "PASS": {
+              "numerator": 6,
+              "denominator": 12,
+              "value": 0.5
+            },
+            "REVIEW": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0
+            },
+            "FAIL": {
+              "numerator": 6,
+              "denominator": 12,
+              "value": 0.5
+            }
+          },
+          "acceptableReview": {
+            "numerator": 0,
+            "denominator": 6,
+            "value": 0
+          },
+          "supportedBlocks": {
+            "numerator": 6,
+            "denominator": 12,
+            "value": 0.5
+          },
+          "confirmedDefinitiveRecall": {
+            "numerator": 6,
+            "denominator": 6,
+            "value": 1
+          },
+          "confirmedTriageRecall": {
+            "numerator": 6,
+            "denominator": 6,
+            "value": 1
+          },
+          "actionableEvidence": {
+            "numerator": 6,
+            "denominator": 6,
+            "value": 1
+          },
+          "unsupportedFindings": 2
+        }
+      },
+      "byRepetition": {
+        "1": {
+          "attempted": 48,
+          "valid": 45,
+          "definitivePrecision": {
+            "numerator": 22,
+            "denominator": 23,
+            "value": 0.9565217391304348
+          },
+          "definitiveRecall": {
+            "numerator": 22,
+            "denominator": 23,
+            "value": 0.9565217391304348
+          },
+          "definitiveFalsePositiveRate": {
+            "numerator": 1,
+            "denominator": 22,
+            "value": 0.045454545454545456
+          },
+          "definitiveFalseNegativeRate": {
+            "numerator": 1,
+            "denominator": 23,
+            "value": 0.043478260869565216
+          },
+          "triageSensitivity": {
+            "numerator": 23,
+            "denominator": 23,
+            "value": 1
+          },
+          "triageSpecificity": {
+            "numerator": 21,
+            "denominator": 22,
+            "value": 0.9545454545454546
+          },
+          "falsePositiveFlagRate": {
+            "numerator": 1,
+            "denominator": 22,
+            "value": 0.045454545454545456
+          },
+          "silentEscapeRate": {
+            "numerator": 0,
+            "denominator": 23,
+            "value": 0
+          },
+          "flaggedWorkload": {
+            "numerator": 24,
+            "denominator": 45,
+            "value": 0.5333333333333333
+          },
+          "workload": {
+            "PASS": {
+              "numerator": 21,
+              "denominator": 45,
+              "value": 0.4666666666666667
+            },
+            "REVIEW": {
+              "numerator": 1,
+              "denominator": 45,
+              "value": 0.022222222222222223
+            },
+            "FAIL": {
+              "numerator": 23,
+              "denominator": 45,
+              "value": 0.5111111111111111
+            }
+          },
+          "acceptableReview": {
+            "numerator": 0,
+            "denominator": 22,
+            "value": 0
+          },
+          "supportedBlocks": {
+            "numerator": 21,
+            "denominator": 45,
+            "value": 0.4666666666666667
+          },
+          "confirmedDefinitiveRecall": {
+            "numerator": 22,
+            "denominator": 23,
+            "value": 0.9565217391304348
+          },
+          "confirmedTriageRecall": {
+            "numerator": 23,
+            "denominator": 23,
+            "value": 1
+          },
+          "actionableEvidence": {
+            "numerator": 22,
+            "denominator": 23,
+            "value": 0.9565217391304348
+          },
+          "unsupportedFindings": 4
+        },
+        "2": {
+          "attempted": 48,
+          "valid": 48,
+          "definitivePrecision": {
+            "numerator": 22,
+            "denominator": 22,
+            "value": 1
+          },
+          "definitiveRecall": {
+            "numerator": 22,
+            "denominator": 24,
+            "value": 0.9166666666666666
+          },
+          "definitiveFalsePositiveRate": {
+            "numerator": 0,
+            "denominator": 24,
+            "value": 0
+          },
+          "definitiveFalseNegativeRate": {
+            "numerator": 2,
+            "denominator": 24,
+            "value": 0.08333333333333333
+          },
+          "triageSensitivity": {
+            "numerator": 24,
+            "denominator": 24,
+            "value": 1
+          },
+          "triageSpecificity": {
+            "numerator": 22,
+            "denominator": 24,
+            "value": 0.9166666666666666
+          },
+          "falsePositiveFlagRate": {
+            "numerator": 2,
+            "denominator": 24,
+            "value": 0.08333333333333333
+          },
+          "silentEscapeRate": {
+            "numerator": 0,
+            "denominator": 24,
+            "value": 0
+          },
+          "flaggedWorkload": {
+            "numerator": 26,
+            "denominator": 48,
+            "value": 0.5416666666666666
+          },
+          "workload": {
+            "PASS": {
+              "numerator": 22,
+              "denominator": 48,
+              "value": 0.4583333333333333
+            },
+            "REVIEW": {
+              "numerator": 4,
+              "denominator": 48,
+              "value": 0.08333333333333333
+            },
+            "FAIL": {
+              "numerator": 22,
+              "denominator": 48,
+              "value": 0.4583333333333333
+            }
+          },
+          "acceptableReview": {
+            "numerator": 2,
+            "denominator": 24,
+            "value": 0.08333333333333333
+          },
+          "supportedBlocks": {
+            "numerator": 20,
+            "denominator": 48,
+            "value": 0.4166666666666667
+          },
+          "confirmedDefinitiveRecall": {
+            "numerator": 22,
+            "denominator": 24,
+            "value": 0.9166666666666666
+          },
+          "confirmedTriageRecall": {
+            "numerator": 24,
+            "denominator": 24,
+            "value": 1
+          },
+          "actionableEvidence": {
+            "numerator": 22,
+            "denominator": 24,
+            "value": 0.9166666666666666
+          },
+          "unsupportedFindings": 5
+        }
+      },
+      "stability": {
+        "agreement": {
+          "numerator": 40,
+          "denominator": 45,
+          "value": 0.8888888888888888
+        },
+        "materialDisagreement": {
+          "numerator": 2,
+          "denominator": 23,
+          "value": 0.08695652173913043
+        },
+        "materialPassFlagSwitch": {
+          "numerator": 0,
+          "denominator": 23,
+          "value": 0
+        },
+        "recurring": [],
+        "systematicInconsistency": [],
+        "transitions": {
+          "PASS→PASS": 19,
+          "PASS→REVIEW": 2,
+          "PASS→FAIL": 0,
+          "REVIEW→PASS": 0,
+          "REVIEW→REVIEW": 0,
+          "REVIEW→FAIL": 1,
+          "FAIL→PASS": 1,
+          "FAIL→REVIEW": 1,
+          "FAIL→FAIL": 21
+        },
+        "pairs": [
+          {
+            "id": "N01",
+            "subject": "porpoises",
+            "category": "identity",
+            "label": "F0",
+            "statuses": [
+              "PASS",
+              "PASS"
+            ]
+          },
+          {
+            "id": "N02",
+            "subject": "porpoises",
+            "category": "identity",
+            "label": "F2",
+            "statuses": [
+              "FAIL",
+              "FAIL"
+            ]
+          },
+          {
+            "id": "N03",
+            "subject": "porpoises",
+            "category": "identity",
+            "label": "F0",
+            "statuses": [
+              "PASS",
+              "PASS"
+            ]
+          },
+          {
+            "id": "N04",
+            "subject": "porpoises",
+            "category": "identity",
+            "label": "F2",
+            "statuses": [
+              "FAIL",
+              "REVIEW"
+            ]
+          },
+          {
+            "id": "N05",
+            "subject": "meteors",
+            "category": "identity",
+            "label": "F0",
+            "statuses": [
+              "PASS",
+              "PASS"
+            ]
+          },
+          {
+            "id": "N06",
+            "subject": "meteors",
+            "category": "identity",
+            "label": "F2",
+            "statuses": [
+              "FAIL",
+              "FAIL"
+            ]
+          },
+          {
+            "id": "N07",
+            "subject": "meteors",
+            "category": "identity",
+            "label": "F0",
+            "statuses": [
+              "PASS",
+              "PASS"
+            ]
+          },
+          {
+            "id": "N08",
+            "subject": "meteors",
+            "category": "identity",
+            "label": "F2",
+            "statuses": [
+              "FAIL",
+              "FAIL"
+            ]
+          },
+          {
+            "id": "N09",
+            "subject": "voyager",
+            "category": "temporal",
+            "label": "F0",
+            "statuses": [
+              "PASS",
+              "PASS"
+            ]
+          },
+          {
+            "id": "N10",
+            "subject": "voyager",
+            "category": "temporal",
+            "label": "F2",
+            "statuses": [
+              "FAIL",
+              "FAIL"
+            ]
+          },
+          {
+            "id": "N11",
+            "subject": "voyager",
+            "category": "temporal",
+            "label": "F0",
+            "statuses": [
+              "FAIL",
+              "PASS"
+            ]
+          },
+          {
+            "id": "N12",
+            "subject": "voyager",
+            "category": "temporal",
+            "label": "F2",
+            "statuses": [
+              "FAIL",
+              "FAIL"
+            ]
+          },
+          {
+            "id": "N13",
+            "subject": "cassini",
+            "category": "temporal",
+            "label": "F0",
+            "statuses": [
+              "PASS",
+              "PASS"
+            ]
+          },
+          {
+            "id": "N14",
+            "subject": "cassini",
+            "category": "temporal",
+            "label": "F2",
+            "statuses": [
+              "FAIL",
+              "FAIL"
+            ]
+          },
+          {
+            "id": "N15",
+            "subject": "cassini",
+            "category": "actor",
+            "label": "F0",
+            "statuses": [
+              "PASS",
+              "PASS"
+            ]
+          },
+          {
+            "id": "N16",
+            "subject": "cassini",
+            "category": "actor",
+            "label": "F2",
+            "statuses": [
+              "FAIL",
+              "FAIL"
+            ]
+          },
+          {
+            "id": "N17",
+            "subject": "apollo",
+            "category": "actor",
+            "label": "F0",
+            "statuses": [
+              "PASS",
+              "PASS"
+            ]
+          },
+          {
+            "id": "N18",
+            "subject": "apollo",
+            "category": "actor",
+            "label": "F2",
+            "statuses": [
+              "FAIL",
+              "FAIL"
+            ]
+          },
+          {
+            "id": "N19",
+            "subject": "apollo",
+            "category": "actor",
+            "label": "F0",
+            "statuses": [
+              "PASS",
+              "PASS"
+            ]
+          },
+          {
+            "id": "N20",
+            "subject": "apollo",
+            "category": "actor",
+            "label": "F2",
+            "statuses": [
+              "FAIL",
+              "FAIL"
+            ]
+          },
+          {
+            "id": "N21",
+            "subject": "louisiana",
+            "category": "actor",
+            "label": "F0",
+            "statuses": [
+              "PASS",
+              "PASS"
+            ]
+          },
+          {
+            "id": "N22",
+            "subject": "louisiana",
+            "category": "actor",
+            "label": "F2",
+            "statuses": [
+              "FAIL",
+              "FAIL"
+            ]
+          },
+          {
+            "id": "N23",
+            "subject": "louisiana",
+            "category": "numerical",
+            "label": "F0",
+            "statuses": [
+              "PASS",
+              "PASS"
+            ]
+          },
+          {
+            "id": "N24",
+            "subject": "louisiana",
+            "category": "numerical",
+            "label": "F2",
+            "statuses": [
+              "FAIL",
+              "FAIL"
+            ]
+          },
+          {
+            "id": "N25",
+            "subject": "insomnia",
+            "category": "causality",
+            "label": "F0",
+            "statuses": [
+              "PASS",
+              "PASS"
+            ]
+          },
+          {
+            "id": "N26",
+            "subject": "insomnia",
+            "category": "causality",
+            "label": "F2",
+            "statuses": [
+              "FAIL",
+              "FAIL"
+            ]
+          },
+          {
+            "id": "N27",
+            "subject": "insomnia",
+            "category": "numerical",
+            "label": "F0",
+            "statuses": [
+              "PASS",
+              "PASS"
+            ]
+          },
+          {
+            "id": "N28",
+            "subject": "insomnia",
+            "category": "numerical",
+            "label": "F2",
+            "statuses": [
+              "INVALID",
+              "REVIEW"
+            ]
+          },
+          {
+            "id": "N29",
+            "subject": "food",
+            "category": "causality",
+            "label": "F0",
+            "statuses": [
+              "PASS",
+              "PASS"
+            ]
+          },
+          {
+            "id": "N30",
+            "subject": "food",
+            "category": "causality",
+            "label": "F2",
+            "statuses": [
+              "FAIL",
+              "FAIL"
+            ]
+          },
+          {
+            "id": "N31",
+            "subject": "food",
+            "category": "numerical",
+            "label": "F0",
+            "statuses": [
+              "PASS",
+              "REVIEW"
+            ]
+          },
+          {
+            "id": "N32",
+            "subject": "food",
+            "category": "numerical",
+            "label": "F2",
+            "statuses": [
+              "FAIL",
+              "FAIL"
+            ]
+          },
+          {
+            "id": "N33",
+            "subject": "census",
+            "category": "numerical",
+            "label": "F0",
+            "statuses": [
+              "PASS",
+              "PASS"
+            ]
+          },
+          {
+            "id": "N34",
+            "subject": "census",
+            "category": "numerical",
+            "label": "F2",
+            "statuses": [
+              "FAIL",
+              "FAIL"
+            ]
+          },
+          {
+            "id": "N35",
+            "subject": "census",
+            "category": "numerical",
+            "label": "F0",
+            "statuses": [
+              "PASS",
+              "REVIEW"
+            ]
+          },
+          {
+            "id": "N36",
+            "subject": "census",
+            "category": "numerical",
+            "label": "F2",
+            "statuses": [
+              "FAIL",
+              "FAIL"
+            ]
+          },
+          {
+            "id": "N37",
+            "subject": "ocean",
+            "category": "numerical",
+            "label": "F1",
+            "statuses": [
+              "PASS",
+              "PASS"
+            ]
+          },
+          {
+            "id": "N38",
+            "subject": "ocean",
+            "category": "numerical",
+            "label": "F2",
+            "statuses": [
+              "FAIL",
+              "FAIL"
+            ]
+          },
+          {
+            "id": "N39",
+            "subject": "ocean",
+            "category": "identity",
+            "label": "F0",
+            "statuses": [
+              "PASS",
+              "PASS"
+            ]
+          },
+          {
+            "id": "N40",
+            "subject": "ocean",
+            "category": "identity",
+            "label": "F2",
+            "statuses": [
+              "FAIL",
+              "FAIL"
+            ]
+          },
+          {
+            "id": "N41",
+            "subject": "osiris",
+            "category": "temporal",
+            "label": "F0",
+            "statuses": [
+              "INVALID",
+              "PASS"
+            ]
+          },
+          {
+            "id": "N42",
+            "subject": "osiris",
+            "category": "temporal",
+            "label": "F2",
+            "statuses": [
+              "REVIEW",
+              "FAIL"
+            ]
+          },
+          {
+            "id": "N43",
+            "subject": "osiris",
+            "category": "actor",
+            "label": "F0",
+            "statuses": [
+              "INVALID",
+              "PASS"
+            ]
+          },
+          {
+            "id": "N44",
+            "subject": "osiris",
+            "category": "actor",
+            "label": "F2",
+            "statuses": [
+              "FAIL",
+              "FAIL"
+            ]
+          },
+          {
+            "id": "N45",
+            "subject": "dart",
+            "category": "causality",
+            "label": "F0",
+            "statuses": [
+              "PASS",
+              "PASS"
+            ]
+          },
+          {
+            "id": "N46",
+            "subject": "dart",
+            "category": "causality",
+            "label": "F2",
+            "statuses": [
+              "FAIL",
+              "FAIL"
+            ]
+          },
+          {
+            "id": "N47",
+            "subject": "dart",
+            "category": "numerical",
+            "label": "F0",
+            "statuses": [
+              "PASS",
+              "PASS"
+            ]
+          },
+          {
+            "id": "N48",
+            "subject": "dart",
+            "category": "numerical",
+            "label": "F2",
+            "statuses": [
+              "FAIL",
+              "FAIL"
+            ]
+          }
+        ]
+      }
+    },
+    "S+Source": {
+      "attempted": 96,
+      "valid": 94,
+      "definitivePrecision": {
+        "numerator": 46,
+        "denominator": 47,
+        "value": 0.9787234042553191
+      },
+      "definitiveRecall": {
+        "numerator": 46,
+        "denominator": 46,
+        "value": 1
+      },
+      "definitiveFalsePositiveRate": {
+        "numerator": 1,
+        "denominator": 48,
+        "value": 0.020833333333333332
+      },
+      "definitiveFalseNegativeRate": {
+        "numerator": 0,
+        "denominator": 46,
+        "value": 0
+      },
+      "triageSensitivity": {
+        "numerator": 46,
+        "denominator": 46,
+        "value": 1
+      },
+      "triageSpecificity": {
+        "numerator": 46,
+        "denominator": 48,
+        "value": 0.9583333333333334
+      },
+      "falsePositiveFlagRate": {
+        "numerator": 2,
+        "denominator": 48,
+        "value": 0.041666666666666664
+      },
+      "silentEscapeRate": {
+        "numerator": 0,
+        "denominator": 46,
+        "value": 0
+      },
+      "flaggedWorkload": {
+        "numerator": 48,
+        "denominator": 94,
+        "value": 0.5106382978723404
+      },
+      "workload": {
+        "PASS": {
+          "numerator": 46,
+          "denominator": 94,
+          "value": 0.48936170212765956
+        },
+        "REVIEW": {
+          "numerator": 1,
+          "denominator": 94,
+          "value": 0.010638297872340425
+        },
+        "FAIL": {
+          "numerator": 47,
+          "denominator": 94,
+          "value": 0.5
+        }
+      },
+      "acceptableReview": {
+        "numerator": 1,
+        "denominator": 48,
+        "value": 0.020833333333333332
+      },
+      "supportedBlocks": {
+        "numerator": 45,
+        "denominator": 94,
+        "value": 0.4787234042553192
+      },
+      "confirmedDefinitiveRecall": {
+        "numerator": 46,
+        "denominator": 46,
+        "value": 1
+      },
+      "confirmedTriageRecall": {
+        "numerator": 46,
+        "denominator": 46,
+        "value": 1
+      },
+      "actionableEvidence": {
+        "numerator": 46,
+        "denominator": 47,
+        "value": 0.9787234042553191
+      },
+      "unsupportedFindings": 4,
+      "byCategory": {
+        "identity": {
+          "attempted": 20,
+          "valid": 20,
+          "definitivePrecision": {
+            "numerator": 10,
+            "denominator": 10,
+            "value": 1
+          },
+          "definitiveRecall": {
+            "numerator": 10,
+            "denominator": 10,
+            "value": 1
+          },
+          "definitiveFalsePositiveRate": {
+            "numerator": 0,
+            "denominator": 10,
+            "value": 0
+          },
+          "definitiveFalseNegativeRate": {
+            "numerator": 0,
+            "denominator": 10,
+            "value": 0
+          },
+          "triageSensitivity": {
+            "numerator": 10,
+            "denominator": 10,
+            "value": 1
+          },
+          "triageSpecificity": {
+            "numerator": 10,
+            "denominator": 10,
+            "value": 1
+          },
+          "falsePositiveFlagRate": {
+            "numerator": 0,
+            "denominator": 10,
+            "value": 0
+          },
+          "silentEscapeRate": {
+            "numerator": 0,
+            "denominator": 10,
+            "value": 0
+          },
+          "flaggedWorkload": {
+            "numerator": 10,
+            "denominator": 20,
+            "value": 0.5
+          },
+          "workload": {
+            "PASS": {
+              "numerator": 10,
+              "denominator": 20,
+              "value": 0.5
+            },
+            "REVIEW": {
+              "numerator": 0,
+              "denominator": 20,
+              "value": 0
+            },
+            "FAIL": {
+              "numerator": 10,
+              "denominator": 20,
+              "value": 0.5
+            }
+          },
+          "acceptableReview": {
+            "numerator": 0,
+            "denominator": 10,
+            "value": 0
+          },
+          "supportedBlocks": {
+            "numerator": 9,
+            "denominator": 20,
+            "value": 0.45
+          },
+          "confirmedDefinitiveRecall": {
+            "numerator": 10,
+            "denominator": 10,
+            "value": 1
+          },
+          "confirmedTriageRecall": {
+            "numerator": 10,
+            "denominator": 10,
+            "value": 1
+          },
+          "actionableEvidence": {
+            "numerator": 9,
+            "denominator": 10,
+            "value": 0.9
+          },
+          "unsupportedFindings": 1
+        },
+        "temporal": {
+          "attempted": 16,
+          "valid": 15,
+          "definitivePrecision": {
+            "numerator": 7,
+            "denominator": 7,
+            "value": 1
+          },
+          "definitiveRecall": {
+            "numerator": 7,
+            "denominator": 7,
+            "value": 1
+          },
+          "definitiveFalsePositiveRate": {
+            "numerator": 0,
+            "denominator": 8,
+            "value": 0
+          },
+          "definitiveFalseNegativeRate": {
+            "numerator": 0,
+            "denominator": 7,
+            "value": 0
+          },
+          "triageSensitivity": {
+            "numerator": 7,
+            "denominator": 7,
+            "value": 1
+          },
+          "triageSpecificity": {
+            "numerator": 8,
+            "denominator": 8,
+            "value": 1
+          },
+          "falsePositiveFlagRate": {
+            "numerator": 0,
+            "denominator": 8,
+            "value": 0
+          },
+          "silentEscapeRate": {
+            "numerator": 0,
+            "denominator": 7,
+            "value": 0
+          },
+          "flaggedWorkload": {
+            "numerator": 7,
+            "denominator": 15,
+            "value": 0.4666666666666667
+          },
+          "workload": {
+            "PASS": {
+              "numerator": 8,
+              "denominator": 15,
+              "value": 0.5333333333333333
+            },
+            "REVIEW": {
+              "numerator": 0,
+              "denominator": 15,
+              "value": 0
+            },
+            "FAIL": {
+              "numerator": 7,
+              "denominator": 15,
+              "value": 0.4666666666666667
+            }
+          },
+          "acceptableReview": {
+            "numerator": 0,
+            "denominator": 8,
+            "value": 0
+          },
+          "supportedBlocks": {
+            "numerator": 7,
+            "denominator": 15,
+            "value": 0.4666666666666667
+          },
+          "confirmedDefinitiveRecall": {
+            "numerator": 7,
+            "denominator": 7,
+            "value": 1
+          },
+          "confirmedTriageRecall": {
+            "numerator": 7,
+            "denominator": 7,
+            "value": 1
+          },
+          "actionableEvidence": {
+            "numerator": 7,
+            "denominator": 7,
+            "value": 1
+          },
+          "unsupportedFindings": 0
+        },
+        "actor": {
+          "attempted": 20,
+          "valid": 19,
+          "definitivePrecision": {
+            "numerator": 9,
+            "denominator": 10,
+            "value": 0.9
+          },
+          "definitiveRecall": {
+            "numerator": 9,
+            "denominator": 9,
+            "value": 1
+          },
+          "definitiveFalsePositiveRate": {
+            "numerator": 1,
+            "denominator": 10,
+            "value": 0.1
+          },
+          "definitiveFalseNegativeRate": {
+            "numerator": 0,
+            "denominator": 9,
+            "value": 0
+          },
+          "triageSensitivity": {
+            "numerator": 9,
+            "denominator": 9,
+            "value": 1
+          },
+          "triageSpecificity": {
+            "numerator": 8,
+            "denominator": 10,
+            "value": 0.8
+          },
+          "falsePositiveFlagRate": {
+            "numerator": 2,
+            "denominator": 10,
+            "value": 0.2
+          },
+          "silentEscapeRate": {
+            "numerator": 0,
+            "denominator": 9,
+            "value": 0
+          },
+          "flaggedWorkload": {
+            "numerator": 11,
+            "denominator": 19,
+            "value": 0.5789473684210527
+          },
+          "workload": {
+            "PASS": {
+              "numerator": 8,
+              "denominator": 19,
+              "value": 0.42105263157894735
+            },
+            "REVIEW": {
+              "numerator": 1,
+              "denominator": 19,
+              "value": 0.05263157894736842
+            },
+            "FAIL": {
+              "numerator": 10,
+              "denominator": 19,
+              "value": 0.5263157894736842
+            }
+          },
+          "acceptableReview": {
+            "numerator": 1,
+            "denominator": 10,
+            "value": 0.1
+          },
+          "supportedBlocks": {
+            "numerator": 9,
+            "denominator": 19,
+            "value": 0.47368421052631576
+          },
+          "confirmedDefinitiveRecall": {
+            "numerator": 9,
+            "denominator": 9,
+            "value": 1
+          },
+          "confirmedTriageRecall": {
+            "numerator": 9,
+            "denominator": 9,
+            "value": 1
+          },
+          "actionableEvidence": {
+            "numerator": 10,
+            "denominator": 10,
+            "value": 1
+          },
+          "unsupportedFindings": 2
+        },
+        "numerical": {
+          "attempted": 28,
+          "valid": 28,
+          "definitivePrecision": {
+            "numerator": 14,
+            "denominator": 14,
+            "value": 1
+          },
+          "definitiveRecall": {
+            "numerator": 14,
+            "denominator": 14,
+            "value": 1
+          },
+          "definitiveFalsePositiveRate": {
+            "numerator": 0,
+            "denominator": 14,
+            "value": 0
+          },
+          "definitiveFalseNegativeRate": {
+            "numerator": 0,
+            "denominator": 14,
+            "value": 0
+          },
+          "triageSensitivity": {
+            "numerator": 14,
+            "denominator": 14,
+            "value": 1
+          },
+          "triageSpecificity": {
+            "numerator": 14,
+            "denominator": 14,
+            "value": 1
+          },
+          "falsePositiveFlagRate": {
+            "numerator": 0,
+            "denominator": 14,
+            "value": 0
+          },
+          "silentEscapeRate": {
+            "numerator": 0,
+            "denominator": 14,
+            "value": 0
+          },
+          "flaggedWorkload": {
+            "numerator": 14,
+            "denominator": 28,
+            "value": 0.5
+          },
+          "workload": {
+            "PASS": {
+              "numerator": 14,
+              "denominator": 28,
+              "value": 0.5
+            },
+            "REVIEW": {
+              "numerator": 0,
+              "denominator": 28,
+              "value": 0
+            },
+            "FAIL": {
+              "numerator": 14,
+              "denominator": 28,
+              "value": 0.5
+            }
+          },
+          "acceptableReview": {
+            "numerator": 0,
+            "denominator": 14,
+            "value": 0
+          },
+          "supportedBlocks": {
+            "numerator": 14,
+            "denominator": 28,
+            "value": 0.5
+          },
+          "confirmedDefinitiveRecall": {
+            "numerator": 14,
+            "denominator": 14,
+            "value": 1
+          },
+          "confirmedTriageRecall": {
+            "numerator": 14,
+            "denominator": 14,
+            "value": 1
+          },
+          "actionableEvidence": {
+            "numerator": 14,
+            "denominator": 14,
+            "value": 1
+          },
+          "unsupportedFindings": 0
+        },
+        "causality": {
+          "attempted": 12,
+          "valid": 12,
+          "definitivePrecision": {
+            "numerator": 6,
+            "denominator": 6,
+            "value": 1
+          },
+          "definitiveRecall": {
+            "numerator": 6,
+            "denominator": 6,
+            "value": 1
+          },
+          "definitiveFalsePositiveRate": {
+            "numerator": 0,
+            "denominator": 6,
+            "value": 0
+          },
+          "definitiveFalseNegativeRate": {
+            "numerator": 0,
+            "denominator": 6,
+            "value": 0
+          },
+          "triageSensitivity": {
+            "numerator": 6,
+            "denominator": 6,
+            "value": 1
+          },
+          "triageSpecificity": {
+            "numerator": 6,
+            "denominator": 6,
+            "value": 1
+          },
+          "falsePositiveFlagRate": {
+            "numerator": 0,
+            "denominator": 6,
+            "value": 0
+          },
+          "silentEscapeRate": {
+            "numerator": 0,
+            "denominator": 6,
+            "value": 0
+          },
+          "flaggedWorkload": {
+            "numerator": 6,
+            "denominator": 12,
+            "value": 0.5
+          },
+          "workload": {
+            "PASS": {
+              "numerator": 6,
+              "denominator": 12,
+              "value": 0.5
+            },
+            "REVIEW": {
+              "numerator": 0,
+              "denominator": 12,
+              "value": 0
+            },
+            "FAIL": {
+              "numerator": 6,
+              "denominator": 12,
+              "value": 0.5
+            }
+          },
+          "acceptableReview": {
+            "numerator": 0,
+            "denominator": 6,
+            "value": 0
+          },
+          "supportedBlocks": {
+            "numerator": 6,
+            "denominator": 12,
+            "value": 0.5
+          },
+          "confirmedDefinitiveRecall": {
+            "numerator": 6,
+            "denominator": 6,
+            "value": 1
+          },
+          "confirmedTriageRecall": {
+            "numerator": 6,
+            "denominator": 6,
+            "value": 1
+          },
+          "actionableEvidence": {
+            "numerator": 6,
+            "denominator": 6,
+            "value": 1
+          },
+          "unsupportedFindings": 1
+        }
+      },
+      "byRepetition": {
+        "1": {
+          "attempted": 48,
+          "valid": 46,
+          "definitivePrecision": {
+            "numerator": 22,
+            "denominator": 23,
+            "value": 0.9565217391304348
+          },
+          "definitiveRecall": {
+            "numerator": 22,
+            "denominator": 22,
+            "value": 1
+          },
+          "definitiveFalsePositiveRate": {
+            "numerator": 1,
+            "denominator": 24,
+            "value": 0.041666666666666664
+          },
+          "definitiveFalseNegativeRate": {
+            "numerator": 0,
+            "denominator": 22,
+            "value": 0
+          },
+          "triageSensitivity": {
+            "numerator": 22,
+            "denominator": 22,
+            "value": 1
+          },
+          "triageSpecificity": {
+            "numerator": 22,
+            "denominator": 24,
+            "value": 0.9166666666666666
+          },
+          "falsePositiveFlagRate": {
+            "numerator": 2,
+            "denominator": 24,
+            "value": 0.08333333333333333
+          },
+          "silentEscapeRate": {
+            "numerator": 0,
+            "denominator": 22,
+            "value": 0
+          },
+          "flaggedWorkload": {
+            "numerator": 24,
+            "denominator": 46,
+            "value": 0.5217391304347826
+          },
+          "workload": {
+            "PASS": {
+              "numerator": 22,
+              "denominator": 46,
+              "value": 0.4782608695652174
+            },
+            "REVIEW": {
+              "numerator": 1,
+              "denominator": 46,
+              "value": 0.021739130434782608
+            },
+            "FAIL": {
+              "numerator": 23,
+              "denominator": 46,
+              "value": 0.5
+            }
+          },
+          "acceptableReview": {
+            "numerator": 1,
+            "denominator": 24,
+            "value": 0.041666666666666664
+          },
+          "supportedBlocks": {
+            "numerator": 22,
+            "denominator": 46,
+            "value": 0.4782608695652174
+          },
+          "confirmedDefinitiveRecall": {
+            "numerator": 22,
+            "denominator": 22,
+            "value": 1
+          },
+          "confirmedTriageRecall": {
+            "numerator": 22,
+            "denominator": 22,
+            "value": 1
+          },
+          "actionableEvidence": {
+            "numerator": 22,
+            "denominator": 22,
+            "value": 1
+          },
+          "unsupportedFindings": 2
+        },
+        "2": {
+          "attempted": 48,
+          "valid": 48,
+          "definitivePrecision": {
+            "numerator": 24,
+            "denominator": 24,
+            "value": 1
+          },
+          "definitiveRecall": {
+            "numerator": 24,
+            "denominator": 24,
+            "value": 1
+          },
+          "definitiveFalsePositiveRate": {
+            "numerator": 0,
+            "denominator": 24,
+            "value": 0
+          },
+          "definitiveFalseNegativeRate": {
+            "numerator": 0,
+            "denominator": 24,
+            "value": 0
+          },
+          "triageSensitivity": {
+            "numerator": 24,
+            "denominator": 24,
+            "value": 1
+          },
+          "triageSpecificity": {
+            "numerator": 24,
+            "denominator": 24,
+            "value": 1
+          },
+          "falsePositiveFlagRate": {
+            "numerator": 0,
+            "denominator": 24,
+            "value": 0
+          },
+          "silentEscapeRate": {
+            "numerator": 0,
+            "denominator": 24,
+            "value": 0
+          },
+          "flaggedWorkload": {
+            "numerator": 24,
+            "denominator": 48,
+            "value": 0.5
+          },
+          "workload": {
+            "PASS": {
+              "numerator": 24,
+              "denominator": 48,
+              "value": 0.5
+            },
+            "REVIEW": {
+              "numerator": 0,
+              "denominator": 48,
+              "value": 0
+            },
+            "FAIL": {
+              "numerator": 24,
+              "denominator": 48,
+              "value": 0.5
+            }
+          },
+          "acceptableReview": {
+            "numerator": 0,
+            "denominator": 24,
+            "value": 0
+          },
+          "supportedBlocks": {
+            "numerator": 23,
+            "denominator": 48,
+            "value": 0.4791666666666667
+          },
+          "confirmedDefinitiveRecall": {
+            "numerator": 24,
+            "denominator": 24,
+            "value": 1
+          },
+          "confirmedTriageRecall": {
+            "numerator": 24,
+            "denominator": 24,
+            "value": 1
+          },
+          "actionableEvidence": {
+            "numerator": 24,
+            "denominator": 25,
+            "value": 0.96
+          },
+          "unsupportedFindings": 2
+        }
+      },
+      "stability": {
+        "agreement": {
+          "numerator": 44,
+          "denominator": 46,
+          "value": 0.9565217391304348
+        },
+        "materialDisagreement": {
+          "numerator": 0,
+          "denominator": 22,
+          "value": 0
+        },
+        "materialPassFlagSwitch": {
+          "numerator": 0,
+          "denominator": 22,
+          "value": 0
+        },
+        "recurring": [],
+        "systematicInconsistency": [],
+        "transitions": {
+          "PASS→PASS": 22,
+          "PASS→REVIEW": 0,
+          "PASS→FAIL": 0,
+          "REVIEW→PASS": 1,
+          "REVIEW→REVIEW": 0,
+          "REVIEW→FAIL": 0,
+          "FAIL→PASS": 1,
+          "FAIL→REVIEW": 0,
+          "FAIL→FAIL": 22
+        },
+        "pairs": [
+          {
+            "id": "N01",
+            "subject": "porpoises",
+            "category": "identity",
+            "label": "F0",
+            "statuses": [
+              "PASS",
+              "PASS"
+            ]
+          },
+          {
+            "id": "N02",
+            "subject": "porpoises",
+            "category": "identity",
+            "label": "F2",
+            "statuses": [
+              "FAIL",
+              "FAIL"
+            ]
+          },
+          {
+            "id": "N03",
+            "subject": "porpoises",
+            "category": "identity",
+            "label": "F0",
+            "statuses": [
+              "PASS",
+              "PASS"
+            ]
+          },
+          {
+            "id": "N04",
+            "subject": "porpoises",
+            "category": "identity",
+            "label": "F2",
+            "statuses": [
+              "FAIL",
+              "FAIL"
+            ]
+          },
+          {
+            "id": "N05",
+            "subject": "meteors",
+            "category": "identity",
+            "label": "F0",
+            "statuses": [
+              "PASS",
+              "PASS"
+            ]
+          },
+          {
+            "id": "N06",
+            "subject": "meteors",
+            "category": "identity",
+            "label": "F2",
+            "statuses": [
+              "FAIL",
+              "FAIL"
+            ]
+          },
+          {
+            "id": "N07",
+            "subject": "meteors",
+            "category": "identity",
+            "label": "F0",
+            "statuses": [
+              "PASS",
+              "PASS"
+            ]
+          },
+          {
+            "id": "N08",
+            "subject": "meteors",
+            "category": "identity",
+            "label": "F2",
+            "statuses": [
+              "FAIL",
+              "FAIL"
+            ]
+          },
+          {
+            "id": "N09",
+            "subject": "voyager",
+            "category": "temporal",
+            "label": "F0",
+            "statuses": [
+              "PASS",
+              "PASS"
+            ]
+          },
+          {
+            "id": "N10",
+            "subject": "voyager",
+            "category": "temporal",
+            "label": "F2",
+            "statuses": [
+              "FAIL",
+              "FAIL"
+            ]
+          },
+          {
+            "id": "N11",
+            "subject": "voyager",
+            "category": "temporal",
+            "label": "F0",
+            "statuses": [
+              "PASS",
+              "PASS"
+            ]
+          },
+          {
+            "id": "N12",
+            "subject": "voyager",
+            "category": "temporal",
+            "label": "F2",
+            "statuses": [
+              "FAIL",
+              "FAIL"
+            ]
+          },
+          {
+            "id": "N13",
+            "subject": "cassini",
+            "category": "temporal",
+            "label": "F0",
+            "statuses": [
+              "PASS",
+              "PASS"
+            ]
+          },
+          {
+            "id": "N14",
+            "subject": "cassini",
+            "category": "temporal",
+            "label": "F2",
+            "statuses": [
+              "FAIL",
+              "FAIL"
+            ]
+          },
+          {
+            "id": "N15",
+            "subject": "cassini",
+            "category": "actor",
+            "label": "F0",
+            "statuses": [
+              "PASS",
+              "PASS"
+            ]
+          },
+          {
+            "id": "N16",
+            "subject": "cassini",
+            "category": "actor",
+            "label": "F2",
+            "statuses": [
+              "FAIL",
+              "FAIL"
+            ]
+          },
+          {
+            "id": "N17",
+            "subject": "apollo",
+            "category": "actor",
+            "label": "F0",
+            "statuses": [
+              "REVIEW",
+              "PASS"
+            ]
+          },
+          {
+            "id": "N18",
+            "subject": "apollo",
+            "category": "actor",
+            "label": "F2",
+            "statuses": [
+              "FAIL",
+              "FAIL"
+            ]
+          },
+          {
+            "id": "N19",
+            "subject": "apollo",
+            "category": "actor",
+            "label": "F0",
+            "statuses": [
+              "FAIL",
+              "PASS"
+            ]
+          },
+          {
+            "id": "N20",
+            "subject": "apollo",
+            "category": "actor",
+            "label": "F2",
+            "statuses": [
+              "FAIL",
+              "FAIL"
+            ]
+          },
+          {
+            "id": "N21",
+            "subject": "louisiana",
+            "category": "actor",
+            "label": "F0",
+            "statuses": [
+              "PASS",
+              "PASS"
+            ]
+          },
+          {
+            "id": "N22",
+            "subject": "louisiana",
+            "category": "actor",
+            "label": "F2",
+            "statuses": [
+              "FAIL",
+              "FAIL"
+            ]
+          },
+          {
+            "id": "N23",
+            "subject": "louisiana",
+            "category": "numerical",
+            "label": "F0",
+            "statuses": [
+              "PASS",
+              "PASS"
+            ]
+          },
+          {
+            "id": "N24",
+            "subject": "louisiana",
+            "category": "numerical",
+            "label": "F2",
+            "statuses": [
+              "FAIL",
+              "FAIL"
+            ]
+          },
+          {
+            "id": "N25",
+            "subject": "insomnia",
+            "category": "causality",
+            "label": "F0",
+            "statuses": [
+              "PASS",
+              "PASS"
+            ]
+          },
+          {
+            "id": "N26",
+            "subject": "insomnia",
+            "category": "causality",
+            "label": "F2",
+            "statuses": [
+              "FAIL",
+              "FAIL"
+            ]
+          },
+          {
+            "id": "N27",
+            "subject": "insomnia",
+            "category": "numerical",
+            "label": "F0",
+            "statuses": [
+              "PASS",
+              "PASS"
+            ]
+          },
+          {
+            "id": "N28",
+            "subject": "insomnia",
+            "category": "numerical",
+            "label": "F2",
+            "statuses": [
+              "FAIL",
+              "FAIL"
+            ]
+          },
+          {
+            "id": "N29",
+            "subject": "food",
+            "category": "causality",
+            "label": "F0",
+            "statuses": [
+              "PASS",
+              "PASS"
+            ]
+          },
+          {
+            "id": "N30",
+            "subject": "food",
+            "category": "causality",
+            "label": "F2",
+            "statuses": [
+              "FAIL",
+              "FAIL"
+            ]
+          },
+          {
+            "id": "N31",
+            "subject": "food",
+            "category": "numerical",
+            "label": "F0",
+            "statuses": [
+              "PASS",
+              "PASS"
+            ]
+          },
+          {
+            "id": "N32",
+            "subject": "food",
+            "category": "numerical",
+            "label": "F2",
+            "statuses": [
+              "FAIL",
+              "FAIL"
+            ]
+          },
+          {
+            "id": "N33",
+            "subject": "census",
+            "category": "numerical",
+            "label": "F0",
+            "statuses": [
+              "PASS",
+              "PASS"
+            ]
+          },
+          {
+            "id": "N34",
+            "subject": "census",
+            "category": "numerical",
+            "label": "F2",
+            "statuses": [
+              "FAIL",
+              "FAIL"
+            ]
+          },
+          {
+            "id": "N35",
+            "subject": "census",
+            "category": "numerical",
+            "label": "F0",
+            "statuses": [
+              "PASS",
+              "PASS"
+            ]
+          },
+          {
+            "id": "N36",
+            "subject": "census",
+            "category": "numerical",
+            "label": "F2",
+            "statuses": [
+              "FAIL",
+              "FAIL"
+            ]
+          },
+          {
+            "id": "N37",
+            "subject": "ocean",
+            "category": "numerical",
+            "label": "F1",
+            "statuses": [
+              "PASS",
+              "PASS"
+            ]
+          },
+          {
+            "id": "N38",
+            "subject": "ocean",
+            "category": "numerical",
+            "label": "F2",
+            "statuses": [
+              "FAIL",
+              "FAIL"
+            ]
+          },
+          {
+            "id": "N39",
+            "subject": "ocean",
+            "category": "identity",
+            "label": "F0",
+            "statuses": [
+              "PASS",
+              "PASS"
+            ]
+          },
+          {
+            "id": "N40",
+            "subject": "ocean",
+            "category": "identity",
+            "label": "F2",
+            "statuses": [
+              "FAIL",
+              "FAIL"
+            ]
+          },
+          {
+            "id": "N41",
+            "subject": "osiris",
+            "category": "temporal",
+            "label": "F0",
+            "statuses": [
+              "PASS",
+              "PASS"
+            ]
+          },
+          {
+            "id": "N42",
+            "subject": "osiris",
+            "category": "temporal",
+            "label": "F2",
+            "statuses": [
+              "INVALID",
+              "FAIL"
+            ]
+          },
+          {
+            "id": "N43",
+            "subject": "osiris",
+            "category": "actor",
+            "label": "F0",
+            "statuses": [
+              "PASS",
+              "PASS"
+            ]
+          },
+          {
+            "id": "N44",
+            "subject": "osiris",
+            "category": "actor",
+            "label": "F2",
+            "statuses": [
+              "INVALID",
+              "FAIL"
+            ]
+          },
+          {
+            "id": "N45",
+            "subject": "dart",
+            "category": "causality",
+            "label": "F0",
+            "statuses": [
+              "PASS",
+              "PASS"
+            ]
+          },
+          {
+            "id": "N46",
+            "subject": "dart",
+            "category": "causality",
+            "label": "F2",
+            "statuses": [
+              "FAIL",
+              "FAIL"
+            ]
+          },
+          {
+            "id": "N47",
+            "subject": "dart",
+            "category": "numerical",
+            "label": "F0",
+            "statuses": [
+              "PASS",
+              "PASS"
+            ]
+          },
+          {
+            "id": "N48",
+            "subject": "dart",
+            "category": "numerical",
+            "label": "F2",
+            "statuses": [
+              "FAIL",
+              "FAIL"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

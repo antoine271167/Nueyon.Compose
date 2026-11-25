@@ -1,0 +1,24 @@
+{
+  "status": "FAIL",
+  "findings": [
+    {
+      "category": "actor_object",
+      "severity": "material",
+      "narrativeExcerpt": "Collins keerde terug naar Armstrong en Aldrin in de maanmodule.",
+      "evidenceExcerpt": "Armstrong and Aldrin returned to the CSM with Collins.",
+      "explanation": "The narrative reverses who returned: the source says Armstrong and Aldrin returned with Collins, not that Collins returned to them.",
+      "findingType": "contradiction",
+      "suggestedCorrection": "State that Armstrong and Aldrin returned to Collins."
+    },
+    {
+      "category": "entity_identity",
+      "severity": "material",
+      "narrativeExcerpt": "Collins keerde terug naar Armstrong en Aldrin in de maanmodule.",
+      "evidenceExcerpt": "Armstrong and Aldrin returned to the CSM with Collins.",
+      "explanation": "The narrative places the reunion in the lunar module, while the source says Armstrong and Aldrin returned to the CSM with Collins.",
+      "findingType": "contradiction",
+      "suggestedCorrection": "Identify the CSM as the destination, rather than the lunar module."
+    }
+  ]
+}
+

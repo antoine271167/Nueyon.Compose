@@ -1,0 +1,15 @@
+{
+  "status": "FAIL",
+  "findings": [
+    {
+      "category": "temporal_relationship",
+      "severity": "material",
+      "narrativeExcerpt": "kwam ook later bij Jupiter aan",
+      "evidenceExcerpt": "Voyager 1 overtook its twin and arrived at Jupiter first.",
+      "explanation": "The narrative says Voyager 1 arrived later at Jupiter, while the synthesis says it arrived first. The narrative's claim that Voyager 1 departed later is consistent with the synthesis.",
+      "findingType": "contradiction",
+      "suggestedCorrection": "Keep that Voyager 1 departed later, but state that it reached Jupiter first."
+    }
+  ]
+}
+
