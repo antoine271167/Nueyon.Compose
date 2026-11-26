@@ -1,0 +1,136 @@
+{
+  "claims": [
+    {
+      "excerpt": "The Golden Record: Earth Material and Playback Instructions",
+      "claim": "The Golden Record paired material from Earth with instructions for playing it.",
+      "category": "interpretation",
+      "label": "F0 faithful",
+      "evidence": "Both Voyager spacecraft carried a gold-plated record. A committee chaired by Carl Sagan selected its contents for NASA: 115 analog images, natural sounds including surf and whale calls, musical selections spanning cultures and eras, and spoken greetings in 55 languages. ... Symbolic instructions explain the spacecraft's origin and how to play the record.",
+      "narrative": "The Golden Record aboard each Voyager spacecraft paired a collection of material from Earth with instructions for playing it.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The title accurately summarizes the record's Earth material and the accompanying playback instructions.",
+      "materiality": "This framing is the piece's central subject."
+    },
+    {
+      "excerpt": "Each Voyager spacecraft carried a gold-plated record",
+      "claim": "Each Voyager spacecraft carried a gold-plated record.",
+      "category": "entity",
+      "label": "F0 faithful",
+      "evidence": "Both Voyager spacecraft carried a gold-plated record.",
+      "narrative": "Both Voyager spacecraft carried a gold-plated record",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The claim matches the source and narrative.",
+      "materiality": "Establishes which spacecraft carried the record."
+    },
+    {
+      "excerpt": "containing selected material from Earth",
+      "claim": "The record contained material selected from Earth.",
+      "category": "entity",
+      "label": "F0 faithful",
+      "evidence": "A committee chaired by Carl Sagan selected its contents for NASA: 115 analog images, natural sounds including surf and whale calls, musical selections spanning cultures and eras, and spoken greetings in 55 languages.",
+      "narrative": "a collection of material from Earth",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The source describes selected contents, and the narrative identifies them as material from Earth.",
+      "materiality": "Describes the record's contents."
+    },
+    {
+      "excerpt": "The collection included 115 analog images",
+      "claim": "The collection included 115 analog images.",
+      "category": "quantity",
+      "label": "F0 faithful",
+      "evidence": "115 analog images",
+      "narrative": "The collection included 115 analog images",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The quantity and description match the source.",
+      "materiality": "Gives a specific count of the images."
+    },
+    {
+      "excerpt": "natural sounds",
+      "claim": "The collection included natural sounds.",
+      "category": "entity",
+      "label": "F0 faithful",
+      "evidence": "natural sounds including surf and whale calls",
+      "narrative": "natural sounds",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The source explicitly lists natural sounds.",
+      "materiality": "Identifies a category of content."
+    },
+    {
+      "excerpt": "music from different cultures and eras",
+      "claim": "The collection included music spanning different cultures and eras.",
+      "category": "scope",
+      "label": "F0 faithful",
+      "evidence": "musical selections spanning cultures and eras",
+      "narrative": "music from different cultures and eras",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The wording preserves the source's stated cultural and historical breadth.",
+      "materiality": "Describes the range of musical selections."
+    },
+    {
+      "excerpt": "spoken greetings in 55 languages",
+      "claim": "The collection included spoken greetings in 55 languages.",
+      "category": "quantity",
+      "label": "F0 faithful",
+      "evidence": "spoken greetings in 55 languages",
+      "narrative": "spoken greetings in 55 languages",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The content and language count match the source.",
+      "materiality": "Gives a specific count of the languages represented."
+    },
+    {
+      "excerpt": "Each record came with a cartridge and needle",
+      "claim": "Each record was accompanied by a cartridge and needle.",
+      "category": "entity",
+      "label": "F0 faithful",
+      "evidence": "Each record was protected by an aluminum jacket and accompanied by a cartridge and needle.",
+      "narrative": "Each record was accompanied by a cartridge and needle",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The claim matches the source; omitting the aluminum jacket does not imply it was absent.",
+      "materiality": "Describes equipment supplied with each record."
+    },
+    {
+      "excerpt": "symbolic instructions explaining the spacecraft’s origin",
+      "claim": "The symbolic instructions explained the spacecraft's origin.",
+      "category": "technical",
+      "label": "F0 faithful",
+      "evidence": "Symbolic instructions explain the spacecraft's origin and how to play the record.",
+      "narrative": "symbolic instructions about the spacecraft’s origin",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The stated purpose of the instructions matches the source.",
+      "materiality": "Describes information encoded in the instructions."
+    },
+    {
+      "excerpt": "symbolic instructions explaining the spacecraft’s origin and how to play the audio",
+      "claim": "The symbolic instructions explained how to play the record's audio.",
+      "category": "technical",
+      "label": "F0 faithful",
+      "evidence": "Symbolic instructions explain the spacecraft's origin and how to play the record.",
+      "narrative": "symbolic instructions about ... how to play the audio",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The source says the instructions explain how to play the record; referring to its audio is consistent with that.",
+      "materiality": "Describes the instructions' playback guidance."
+    },
+    {
+      "excerpt": "The Golden Record thus paired a collection of material from Earth with guidance for playing it.",
+      "claim": "The Golden Record combined a collection of Earth material with guidance for playing the record.",
+      "category": "interpretation",
+      "label": "F0 faithful",
+      "evidence": "Both Voyager spacecraft carried a gold-plated record. ... Symbolic instructions explain the spacecraft's origin and how to play the record.",
+      "narrative": "The central idea is this pairing: the record carried selected material from Earth and information for operating the object.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "This synthesis follows from the source's description of the record's contents and accompanying playback instructions.",
+      "materiality": "States the piece's central relationship between the contents and instructions."
+    }
+  ]
+}

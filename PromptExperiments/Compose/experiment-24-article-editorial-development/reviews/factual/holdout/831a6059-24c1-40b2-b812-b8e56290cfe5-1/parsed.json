@@ -1,0 +1,124 @@
+{
+  "claims": [
+    {
+      "excerpt": "The Blast That Followed Mount St. Helens’ North Flank Collapse",
+      "claim": "The blast followed the north flank collapse.",
+      "category": "chronology",
+      "label": "F0 faithful",
+      "evidence": "On May 18 its steep north flank fell in a landslide, triggering a blast",
+      "narrative": "The story follows how Mount St. Helens’ north flank collapse on May 18, 1980, triggered a blast",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The headline’s sequence is supported by the source, which also explicitly states that the collapse triggered the blast.",
+      "materiality": "Material to the event sequence."
+    },
+    {
+      "excerpt": "In the two months before May 18, 1980, Mount St. Helens experienced earthquakes and small explosions.",
+      "claim": "Mount St. Helens experienced earthquakes and small explosions during the two months before May 18, 1980.",
+      "category": "chronology",
+      "label": "F0 faithful",
+      "evidence": "For two months before May 18, 1980, Mount St. Helens experienced earthquakes and small explosions.",
+      "narrative": "In the two months before May 18, Mount St. Helens experienced earthquakes and small explosions.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The timeframe and activity match the supplied source evidence.",
+      "materiality": "Provides context for the eruption."
+    },
+    {
+      "excerpt": "On May 18, the volcano’s steep north flank collapsed in a landslide",
+      "claim": "On May 18, 1980, Mount St. Helens’ steep north flank fell in a landslide.",
+      "category": "chronology",
+      "label": "F0 faithful",
+      "evidence": "On May 18 its steep north flank fell in a landslide",
+      "narrative": "On May 18, 1980, triggered a blast",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The narrative also describes the May 18 north flank collapse; the year is established in the surrounding narrative and source context.",
+      "materiality": "Material to the event sequence."
+    },
+    {
+      "excerpt": "triggering a blast",
+      "claim": "The north flank collapse triggered the blast.",
+      "category": "cause",
+      "label": "F0 faithful",
+      "evidence": "its steep north flank fell in a landslide, triggering a blast",
+      "narrative": "north flank collapse on May 18, 1980, triggered a blast",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The causal relationship matches the supplied source evidence.",
+      "materiality": "Central causal relationship."
+    },
+    {
+      "excerpt": "that traveled nearly horizontally",
+      "claim": "The blast traveled nearly horizontally.",
+      "category": "technical",
+      "label": "F0 faithful",
+      "evidence": "triggering a blast that traveled nearly horizontally",
+      "narrative": "a blast that traveled nearly horizontally",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The direction of travel is stated with the same qualification in the source evidence.",
+      "materiality": "Material description of the blast’s motion."
+    },
+    {
+      "excerpt": "A powerful vertical eruption followed, distinct from the blast.",
+      "claim": "A powerful vertical eruption followed the blast and was distinct from it.",
+      "category": "chronology",
+      "label": "F0 faithful",
+      "evidence": "triggering a blast that traveled nearly horizontally before a powerful vertical eruption followed",
+      "narrative": "distinct from the powerful vertical eruption that followed",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The source distinguishes the subsequent vertical eruption from the preceding blast through their separate sequence; the narrative makes that distinction explicit as well.",
+      "materiality": "Material distinction between two events."
+    },
+    {
+      "excerpt": "The blast developed into a gravity-driven flow of hot material.",
+      "claim": "The blast developed into a gravity-driven flow of hot material.",
+      "category": "technical",
+      "label": "F0 faithful",
+      "evidence": "The blast developed into a gravity-driven flow of hot material",
+      "narrative": "The blast developed into a gravity-driven flow of hot material.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "Matches the supplied source evidence.",
+      "materiality": "Material description of the blast’s development."
+    },
+    {
+      "excerpt": "It felled millions of trees",
+      "claim": "The flow felled millions of trees.",
+      "category": "quantity",
+      "label": "F0 faithful",
+      "evidence": "that felled millions of trees",
+      "narrative": "millions of trees felled",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The quantity and effect match the supplied source evidence.",
+      "materiality": "Material statement of the scale of damage."
+    },
+    {
+      "excerpt": "stripped bark and branches",
+      "claim": "The flow stripped bark and branches.",
+      "category": "outcome",
+      "label": "F0 faithful",
+      "evidence": "stripped bark and branches",
+      "narrative": "bark and branches stripped",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "Matches the supplied source evidence.",
+      "materiality": "Material description of damage."
+    },
+    {
+      "excerpt": "and scraped away soil in places.",
+      "claim": "The flow scraped away soil in some places.",
+      "category": "scope",
+      "label": "F0 faithful",
+      "evidence": "and scraped away soil in places.",
+      "narrative": "soil scraped away in places",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The location qualifier is retained, without implying that soil was removed everywhere.",
+      "materiality": "Material description of the localized effects."
+    }
+  ]
+}

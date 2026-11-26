@@ -1,0 +1,112 @@
+{
+  "claims": [
+    {
+      "excerpt": "# Fusion Output Exceeded Energy Delivered to the NIF Target",
+      "claim": "Fusion output exceeded the energy delivered to the NIF target.",
+      "category": "technical",
+      "label": "F0 faithful",
+      "evidence": "The experiment delivered 2.05 megajoules to the target and generated 3.15 megajoules of fusion energy.",
+      "narrative": "fusion output exceeded the energy delivered to the target",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The title accurately states the comparison made by the source’s measurements.",
+      "materiality": "Central result."
+    },
+    {
+      "excerpt": "In a National Ignition Facility experiment",
+      "claim": "The experiment took place at the National Ignition Facility.",
+      "category": "entity",
+      "label": "F0 faithful",
+      "evidence": "a Lawrence Livermore National Laboratory experiment at the National Ignition Facility",
+      "narrative": "the National Ignition Facility experiment",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The facility is correctly identified; the source also names the laboratory conducting the experiment.",
+      "materiality": "Provides the setting for the result."
+    },
+    {
+      "excerpt": "2.05 megajoules of energy were delivered to the target",
+      "claim": "The experiment delivered 2.05 megajoules of energy to the target.",
+      "category": "quantity",
+      "label": "F0 faithful",
+      "evidence": "The experiment delivered 2.05 megajoules to the target",
+      "narrative": "2.05 megajoules were delivered to the target",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The quantity and its target-level denominator match the source.",
+      "materiality": "Material measurement underlying the comparison."
+    },
+    {
+      "excerpt": "which produced 3.15 megajoules of fusion energy",
+      "claim": "The experiment generated 3.15 megajoules of fusion energy.",
+      "category": "quantity",
+      "label": "F0 faithful",
+      "evidence": "generated 3.15 megajoules of fusion energy",
+      "narrative": "3.15 megajoules of fusion energy were generated",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The amount and energy type match the source.",
+      "materiality": "Material measurement underlying the comparison."
+    },
+    {
+      "excerpt": "The comparison is specific to the energy delivered to the target",
+      "claim": "The comparison uses energy delivered to the target, not facility-wide energy input or net electricity delivered.",
+      "category": "scope",
+      "label": "F0 faithful",
+      "evidence": "The experiment delivered 2.05 megajoules to the target",
+      "narrative": "Keep the comparison specific to energy delivered to the target; do not describe it as net facility energy gain or electricity delivered to the grid.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The source’s stated denominator is target-delivered energy; the narrative correctly preserves that boundary.",
+      "materiality": "Prevents a misleading interpretation of the energy comparison."
+    },
+    {
+      "excerpt": "the fusion output exceeded that amount",
+      "claim": "The 3.15 megajoules of fusion energy exceeded the 2.05 megajoules delivered to the target.",
+      "category": "technical",
+      "label": "F0 faithful",
+      "evidence": "The experiment delivered 2.05 megajoules to the target and generated 3.15 megajoules of fusion energy.",
+      "narrative": "fusion output exceeded the energy delivered to the target",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The comparison follows directly from the source quantities and does not claim net facility energy gain.",
+      "materiality": "States the experiment’s central result."
+    },
+    {
+      "excerpt": "The result is treated as progress toward inertial fusion energy",
+      "claim": "The achievement is treated as progress toward inertial fusion energy.",
+      "category": "interpretation",
+      "label": "F0 faithful",
+      "evidence": "The announcement treats the experiment as progress toward inertial fusion energy",
+      "narrative": "a result treated as progress toward inertial fusion energy",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "This accurately conveys how the source characterizes the achievement.",
+      "materiality": "Frames the significance without claiming practical deployment."
+    },
+    {
+      "excerpt": "not as practical electricity production",
+      "claim": "The result does not constitute practical electricity production.",
+      "category": "outcome",
+      "label": "F0 faithful",
+      "evidence": "notes the many scientific and technological developments still needed for practical energy production",
+      "narrative": "not as practical electricity production",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The source says substantial development remains before practical energy production; the piece does not claim the experiment delivered electricity.",
+      "materiality": "Clarifies that the achievement is not a practical power-generation result."
+    },
+    {
+      "excerpt": "Producing energy for practical use still requires substantial scientific and technological development.",
+      "claim": "Practical energy production still requires substantial scientific and technological development.",
+      "category": "outcome",
+      "label": "F0 faithful",
+      "evidence": "notes the many scientific and technological developments still needed for practical energy production",
+      "narrative": "practical energy production still requires substantial scientific and technological development",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The piece faithfully restates the remaining-development qualification in the source.",
+      "materiality": "Material qualification on the result’s practical significance."
+    }
+  ]
+}

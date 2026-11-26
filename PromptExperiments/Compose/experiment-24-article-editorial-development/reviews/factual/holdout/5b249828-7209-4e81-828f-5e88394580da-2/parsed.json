@@ -1,0 +1,88 @@
+{
+  "claims": [
+    {
+      "excerpt": "De aanpak achter de POA-refunddienst",
+      "claim": "The piece frames the described practices as the approach used to develop the POA refund service.",
+      "category": "interpretation",
+      "label": "F0 faithful",
+      "evidence": "My team and I built a digital and assisted digital service",
+      "narrative": "De kern van het verhaal is de volgorde en het werkritme van de beschreven aanpak",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The source describes the team’s practices while building the service; the title does not imply a specific causal effect.",
+      "materiality": "Low; this is a framing claim."
+    },
+    {
+      "excerpt": "De POA-refunddienst werd na twaalf weken publiek gelanceerd.",
+      "claim": "The POA refund service was launched publicly after twelve weeks.",
+      "category": "chronology",
+      "label": "F1 minor immaterial imprecision",
+      "evidence": "launched to the public in only 12 weeks",
+      "narrative": "Het POA-refundteam lanceerde de dienst na twaalf weken",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The source says the service launched in twelve weeks, not explicitly after exactly twelve weeks. The Dutch wording slightly sharpens the timing, as does the narrative, but does not materially change the reported timeframe.",
+      "materiality": "Low; the difference between ‘in’ and ‘after’ twelve weeks is unlikely to alter the account."
+    },
+    {
+      "excerpt": "Levering binnen de aanvankelijk gevraagde termijn van enkele weken werd niet haalbaar geacht als daarbij een kwalitatieve gebruikersdienst behouden moest blijven.",
+      "claim": "The team judged that delivering within the initially requested few-week timeframe was not feasible while maintaining a quality service for users.",
+      "category": "outcome",
+      "label": "F0 faithful",
+      "evidence": "We were initially asked to deliver the service in a matter of weeks, which put huge pressure on everyone and we quickly discovered would not be possible if we wanted to create a quality service for our users.",
+      "narrative": "de aanvankelijk gevraagde levering binnen enkele weken werd niet haalbaar geacht met behoud van een kwalitatieve gebruikersdienst",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "This accurately preserves both the requested timeframe and the stated condition that a quality service be maintained.",
+      "materiality": "Material context for the delivery timeline; accurately represented."
+    },
+    {
+      "excerpt": "Het POA-refundteam werkte eerst de ervaring voor aanvragers uit en bracht die naar alpha.",
+      "claim": "The team focused first on the refund applicants’ experience and took that work to alpha.",
+      "category": "chronology",
+      "label": "F0 faithful",
+      "evidence": "My team focused on the users applying for refunds first and this is what we took to the alpha assessment.",
+      "narrative": "eerst de aanvragerservaring uitwerken",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "This matches the source’s stated order and alpha milestone.",
+      "materiality": "Material to the approach’s sequence; accurately represented."
+    },
+    {
+      "excerpt": "Plannen voor caseworkers kwamen later.",
+      "claim": "Plans for the caseworker user came later than the work focused on applicants.",
+      "category": "chronology",
+      "label": "F0 faithful",
+      "evidence": "Plans for the caseworker user came later.",
+      "narrative": "later caseworkerwerk toevoegen",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The sequence is stated directly in the source.",
+      "materiality": "Material to the approach’s sequence; accurately represented."
+    },
+    {
+      "excerpt": "Tijdens de private beta wisselden tweewekelijkse sprints af tussen het aannemen van aanvragen en tijd besteden aan testen, onderzoek en verwerking.",
+      "claim": "During private beta, fortnightly sprints alternated between accepting applications and spending time on testing, research and processing.",
+      "category": "chronology",
+      "label": "F2 material incorrect, unsupported or misleading",
+      "evidence": "We achieved this by splitting our fortnightly sprints in two: testing, researching and accepting applications in the first week and then suspending submissions to concentrate on testing, researching and processing applications the second.",
+      "narrative": "Tijdens de private beta wisselden tweewekelijkse sprints af tussen aanvragen aannemen en tijd besteden aan testen, onderzoek en verwerking.",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The source says each fortnightly sprint was split into two weeks: the team accepted applications during the first week while also testing and researching, then suspended submissions in the second week for testing, research and processing. The piece’s wording instead suggests that sprints alternated between those activity sets, obscuring the within-sprint schedule and misplacing the intake pause.",
+      "materiality": "Material to the account of the team’s operating rhythm."
+    },
+    {
+      "excerpt": "Zo combineerde de beschreven werkwijze een eerste focus op aanvragers met expliciet gereserveerde tijd voor onderzoek en testen.",
+      "claim": "The described approach combined an initial focus on applicants with explicitly allocated time for research and testing.",
+      "category": "interpretation",
+      "label": "F0 faithful",
+      "evidence": "My team focused on the users applying for refunds first",
+      "narrative": "De beschreven aanpak combineerde een volgorde waarin aanvragers eerst kwamen met expliciet gereserveerde tijd voor onderzoek en testen.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "This is a supported synthesis of the applicant-first sequence and the research and testing time described in the source. It does not claim that these choices caused the launch or results.",
+      "materiality": "Material summary of the approach; accurately presented as a description."
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "claims": [
+    {
+      "excerpt": "How GRACE Follow-On Uses Satellite Separation to Investigate Water Movement",
+      "claim": "GRACE Follow-On uses satellite separation measurements to investigate water movement.",
+      "category": "technical",
+      "label": "F0 faithful",
+      "evidence": "The changing inter-satellite distance is a raw measurement used to infer shifts in mass. The mission follows changes involving groundwater, lakes and rivers, soil moisture, glaciers, ice sheets and changes in sea level attributable to water added to the oceans.",
+      "narrative": "Explain how GRACE Follow-On’s two satellites use changes in the distance between them to help investigate water movement on Earth.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The title accurately summarizes the measurement-to-inference purpose described in the source.",
+      "materiality": "Central framing; faithful to the source."
+    },
+    {
+      "excerpt": "GRACE Follow-On consists of two satellites",
+      "claim": "GRACE Follow-On consists of two satellites.",
+      "category": "entity",
+      "label": "F0 faithful",
+      "evidence": "Twin satellites follow each other about 137 miles or 220 kilometers apart.",
+      "narrative": "GRACE Follow-On’s two satellites",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The source identifies the mission as having twin satellites.",
+      "materiality": "Basic mission context; accurate."
+    },
+    {
+      "excerpt": "that follow one another about 137 miles (220 kilometers) apart",
+      "claim": "The two satellites follow one another at a separation of about 137 miles (220 kilometers).",
+      "category": "quantity",
+      "label": "F0 faithful",
+      "evidence": "Twin satellites follow each other about 137 miles or 220 kilometers apart.",
+      "narrative": "GRACE Follow-On consists of two satellites that follow one another about 137 miles (220 kilometers) apart.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "Both the distance and its approximate qualification match the source.",
+      "materiality": "Relevant measurement context; accurate."
+    },
+    {
+      "excerpt": "As they pass a larger concentration of mass, gravity affects the leading satellite first",
+      "claim": "During passage by a larger mass concentration, gravity affects the leading satellite before the trailing satellite.",
+      "category": "chronology",
+      "label": "F1 minor immaterial imprecision",
+      "evidence": "As the pair approaches a larger mass concentration, stronger gravity acts on the leading satellite first, initially pulling it farther from the trailing one.",
+      "narrative": "As the pair passes a larger mass concentration, gravity acts on the leading satellite first",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The source locates the described effect as the pair approaches the mass concentration; “as they pass” is less precise and may suggest a different point in the encounter. The narrative also uses “passes” in its selected-story summary, though its progression and the source say “approaches.”",
+      "materiality": "Minor timing imprecision; the leading satellite being affected first is supported."
+    },
+    {
+      "excerpt": "initially increasing its distance from the trailing satellite",
+      "claim": "The initial effect is to increase the distance between the leading and trailing satellites.",
+      "category": "cause",
+      "label": "F0 faithful",
+      "evidence": "As the pair approaches a larger mass concentration, stronger gravity acts on the leading satellite first, initially pulling it farther from the trailing one.",
+      "narrative": "initially pulling it farther from the trailing satellite",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The source explicitly describes the leading satellite being pulled farther away initially.",
+      "materiality": "Central to the described separation-change mechanism; accurate."
+    },
+    {
+      "excerpt": "Scientists use changes in the satellites’ separation to infer shifts in mass.",
+      "claim": "Scientists use changes in satellite separation to infer shifts in mass.",
+      "category": "technical",
+      "label": "F0 faithful",
+      "evidence": "The changing inter-satellite distance is a raw measurement used to infer shifts in mass.",
+      "narrative": "That changing separation is a measurement used to infer shifts in mass.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The claim matches the source’s distinction between measuring separation and inferring mass shifts.",
+      "materiality": "Central measurement relationship; accurate."
+    },
+    {
+      "excerpt": "Those inferred shifts help investigate changes in Earth’s water",
+      "claim": "Inferred mass shifts help scientists investigate changes in Earth’s water.",
+      "category": "technical",
+      "label": "F0 faithful",
+      "evidence": "The mission follows changes involving groundwater, lakes and rivers, soil moisture, glaciers, ice sheets and changes in sea level attributable to water added to the oceans.",
+      "narrative": "which can reveal changes involving groundwater and other stores of water.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The source links the mass-shift inferences to monitoring changes involving Earth’s water.",
+      "materiality": "Central application of the measurements; accurate."
+    },
+    {
+      "excerpt": "including groundwater, lakes and rivers, soil moisture, glaciers and ice sheets",
+      "claim": "The water-related changes investigated include groundwater, lakes and rivers, soil moisture, glaciers, and ice sheets.",
+      "category": "scope",
+      "label": "F0 faithful",
+      "evidence": "The mission follows changes involving groundwater, lakes and rivers, soil moisture, glaciers, ice sheets",
+      "narrative": "including changes in groundwater, lakes and rivers, soil moisture, glaciers and ice sheets",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "All listed water stores and features are included in the source.",
+      "materiality": "Defines the scope of the mission’s water-related applications; accurate."
+    },
+    {
+      "excerpt": "and sea level changes attributable to water added to the oceans",
+      "claim": "The mission investigates sea-level changes attributable to water added to the oceans.",
+      "category": "scope",
+      "label": "F0 faithful",
+      "evidence": "and changes in sea level attributable to water added to the oceans.",
+      "narrative": "and sea level attributable to water added to the oceans.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The attribution is appropriately limited to water added to the oceans; it does not extend the claim to thermal expansion.",
+      "materiality": "Important qualification on the sea-level claim; accurate."
+    }
+  ]
+}

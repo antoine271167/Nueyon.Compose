@@ -1,0 +1,88 @@
+{
+  "claims": [
+    {
+      "excerpt": "The SOFAR Channel Carries Distant Whale Calls",
+      "claim": "The SOFAR channel carries whale calls over long distances.",
+      "category": "cause",
+      "label": "F0 faithful",
+      "evidence": "This naturally occurring ocean channel allows low-frequency sound to travel long distances as sound waves bend up and down. Hydrophones at the channel's axis can detect faraway sounds, including whale calls.",
+      "narrative": "The central idea is that this channel’s sound-carrying behavior makes faraway whale calls audible to hydrophones.",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The title concisely expresses the source-supported connection between the channel, long-distance sound, and whale-call detection.",
+      "materiality": "The title accurately states the piece’s central idea."
+    },
+    {
+      "excerpt": "The SOFAR channel is a naturally occurring pathway in the ocean",
+      "claim": "The SOFAR channel is a naturally occurring ocean pathway.",
+      "category": "entity",
+      "label": "F0 faithful",
+      "evidence": "This naturally occurring ocean channel",
+      "narrative": "The SOFAR channel is a naturally occurring ocean pathway",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The description matches the supplied evidence.",
+      "materiality": "This establishes what the SOFAR channel is."
+    },
+    {
+      "excerpt": "through which low-frequency sound can travel long distances.",
+      "claim": "Low-frequency sound can travel long distances through the SOFAR channel.",
+      "category": "technical",
+      "label": "F0 faithful",
+      "evidence": "This naturally occurring ocean channel allows low-frequency sound to travel long distances",
+      "narrative": "that allows low-frequency sound to travel long distances.",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The frequency range, route, and long-distance capability are supported.",
+      "materiality": "This is a central property of the channel."
+    },
+    {
+      "excerpt": "As sound waves bend up and down through the channel",
+      "claim": "Sound waves bend up and down through the SOFAR channel.",
+      "category": "technical",
+      "label": "F0 faithful",
+      "evidence": "as sound waves bend up and down",
+      "narrative": "As sound waves bend up and down through the channel",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The description matches the supplied evidence.",
+      "materiality": "This describes the sound behavior underlying the account."
+    },
+    {
+      "excerpt": "a hydrophone positioned near its axis can detect sounds from far away, including whale calls.",
+      "claim": "A hydrophone near the SOFAR channel's axis can detect distant sounds, including whale calls.",
+      "category": "technical",
+      "label": "F0 faithful",
+      "evidence": "Hydrophones at the channel's axis can detect faraway sounds, including whale calls.",
+      "narrative": "a hydrophone positioned near its axis can detect distant sounds, including whale calls.",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The singular wording and “near” rather than “at” the axis are immaterial generalizations of the source’s plural statement.",
+      "materiality": "This supplies the listening example that connects the channel to whale calls."
+    },
+    {
+      "excerpt": "In some instances, low-frequency sound can travel across entire ocean basins.",
+      "claim": "In some instances, low-frequency sound can travel across entire ocean basins.",
+      "category": "scope",
+      "label": "F0 faithful",
+      "evidence": "In some instances low-frequency sounds carry across entire ocean basins.",
+      "narrative": "in some instances, it can travel across entire ocean basins",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The qualification “in some instances” and the scale of travel are preserved.",
+      "materiality": "The qualification avoids implying that basin-scale travel occurs in every instance."
+    },
+    {
+      "excerpt": "This sound-carrying behavior helps explain how distant whale calls can be detected.",
+      "claim": "The channel's sound-carrying behavior helps explain the detection of distant whale calls.",
+      "category": "cause",
+      "label": "F0 faithful",
+      "evidence": "This naturally occurring ocean channel allows low-frequency sound to travel long distances as sound waves bend up and down. Hydrophones at the channel's axis can detect faraway sounds, including whale calls.",
+      "narrative": "The central idea is that this channel’s sound-carrying behavior makes faraway whale calls audible to hydrophones.",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The source links long-distance sound travel through the channel to hydrophone detection of faraway whale calls; “helps explain” does not overstate that connection.",
+      "materiality": "This is the piece’s concluding explanation of how the mechanism relates to whale-call detection."
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "claims": [
+    {
+      "excerpt": "## The May 18 Blast at Mount St. Helens",
+      "claim": "A blast occurred at Mount St. Helens on May 18 (the following text specifies 1980).",
+      "category": "chronology",
+      "label": "F0 faithful",
+      "evidence": "On May 18 its steep north flank fell in a landslide, triggering a blast",
+      "narrative": "The story follows how Mount St. Helens’ north flank collapse on May 18, 1980, triggered a blast",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The title’s date and location are consistent with the body and narrative.",
+      "materiality": "Low; identifies the event and is accurate."
+    },
+    {
+      "excerpt": "In the two months before May 18, 1980, Mount St. Helens experienced earthquakes and small explosions.",
+      "claim": "Mount St. Helens experienced earthquakes and small explosions during the two months before May 18, 1980.",
+      "category": "chronology",
+      "label": "F0 faithful",
+      "evidence": "For two months before May 18, 1980, Mount St. Helens experienced earthquakes and small explosions.",
+      "narrative": "It develops from the preceding months of earthquakes and small explosions; Context: In the two months before May 18, Mount St. Helens experienced earthquakes and small explosions.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The narrative preserves the two-month period and the reported activity; the year is established elsewhere in the narrative.",
+      "materiality": "Low; accurate background chronology."
+    },
+    {
+      "excerpt": "Then the steep north flank collapsed in a landslide, triggering a blast that traveled nearly horizontally.",
+      "claim": "The steep north flank collapsed in a landslide and triggered a blast that traveled nearly horizontally.",
+      "category": "cause",
+      "label": "F0 faithful",
+      "evidence": "On May 18 its steep north flank fell in a landslide, triggering a blast that traveled nearly horizontally",
+      "narrative": "Mount St. Helens’ north flank collapse on May 18, 1980, triggered a blast that traveled nearly horizontally; the steep north flank fell in a landslide, triggering a blast that traveled nearly horizontally",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The narrative retains the landslide, triggering relationship, and near-horizontal travel without adding a compass direction.",
+      "materiality": "High; this is the central event sequence."
+    },
+    {
+      "excerpt": "A powerful vertical eruption followed; it was distinct from the blast.",
+      "claim": "A powerful vertical eruption followed the blast and was distinct from it.",
+      "category": "chronology",
+      "label": "F0 faithful",
+      "evidence": "before a powerful vertical eruption followed.",
+      "narrative": "distinct from the powerful vertical eruption that followed; before a powerful vertical eruption followed",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The narrative preserves both the order and distinction between the blast and eruption.",
+      "materiality": "High; conflating the two events would materially alter the account."
+    },
+    {
+      "excerpt": "The blast developed into a gravity-driven flow of hot material.",
+      "claim": "The blast developed into a gravity-driven flow of hot material.",
+      "category": "technical",
+      "label": "F0 faithful",
+      "evidence": "The blast developed into a gravity-driven flow of hot material",
+      "narrative": "the blast’s gravity-driven flow; The blast developed into a gravity-driven flow of hot material.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The narrative accurately retains the flow’s development, driving mechanism, and material description.",
+      "materiality": "High; describes the nature of the blast’s later phase."
+    },
+    {
+      "excerpt": "It felled millions of trees",
+      "claim": "The flow felled millions of trees.",
+      "category": "quantity",
+      "label": "F0 faithful",
+      "evidence": "that felled millions of trees",
+      "narrative": "millions of trees felled",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The narrative preserves the stated scale and effect.",
+      "materiality": "High; conveys the scale of damage."
+    },
+    {
+      "excerpt": "stripped bark and branches",
+      "claim": "The flow stripped bark and branches.",
+      "category": "outcome",
+      "label": "F0 faithful",
+      "evidence": "stripped bark and branches",
+      "narrative": "bark and branches stripped",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The stated physical effect is retained.",
+      "materiality": "Low; a specific documented effect."
+    },
+    {
+      "excerpt": "and scraped away soil in places.",
+      "claim": "The flow scraped away soil in some places.",
+      "category": "scope",
+      "label": "F0 faithful",
+      "evidence": "and scraped away soil in places.",
+      "narrative": "soil scraped away in places",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The narrative retains the localized scope rather than implying soil was removed everywhere.",
+      "materiality": "Low; the location qualifier is preserved."
+    }
+  ]
+}

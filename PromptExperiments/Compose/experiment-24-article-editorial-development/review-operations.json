@@ -1,0 +1,35 @@
+{
+  "processFailures": 0,
+  "stages": {
+    "editorial/development pass 1": {
+      "attempted": 36,
+      "strictParserRejected": 7,
+      "processFailures": 0
+    },
+    "editorial/holdout pass 1": {
+      "attempted": 126,
+      "strictParserRejected": 20,
+      "processFailures": 0
+    },
+    "factual/development pass 1": {
+      "attempted": 36,
+      "strictParserRejected": 36,
+      "processFailures": 0
+    },
+    "factual/development pass 2": {
+      "attempted": 36,
+      "strictParserRejected": 36,
+      "processFailures": 0
+    },
+    "factual/holdout pass 1": {
+      "attempted": 126,
+      "strictParserRejected": 117,
+      "processFailures": 0
+    },
+    "factual/holdout pass 2": {
+      "attempted": 124,
+      "strictParserRejected": 121,
+      "processFailures": 0
+    }
+  }
+}

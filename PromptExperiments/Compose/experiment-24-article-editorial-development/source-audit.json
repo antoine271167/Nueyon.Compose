@@ -1,0 +1,486 @@
+{
+  "holdout/digital-1-B": [
+    {
+      "label": "F2",
+      "category": "chronology",
+      "excerpt": "Tijdens de private beta wisselden tweewekelijkse sprints af: in de ene periode werden aanvragen aangenomen, in de andere was tijd gereserveerd voor testen, onderzoek en verwerking.",
+      "evidence": "splitting our fortnightly sprints in two: testing, researching and accepting applications in the first week",
+      "narrative": "Tijdens de private beta wisselden tweewekelijkse sprints af tussen aanvragen aannemen en tijd besteden aan testen, onderzoek en verwerking.",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The Article describes alternating fortnightly sprints or states that sprints alternated between activities. The original describes two weeks within each sprint and testing and research in both weeks.",
+      "materiality": "Changes the work cadence and obscures overlap in the activities.",
+      "sources": [
+        "fixtures/digital/source.txt",
+        "https://mojdigital.blog.gov.uk/2018/03/13/how-to-build-and-release-a-digital-by-default-service-in-12-weeks/"
+      ]
+    }
+  ],
+  "holdout/digital-1-C": [
+    {
+      "label": "F2",
+      "category": "chronology",
+      "excerpt": "Tijdens de private beta wisselden tweewekelijkse sprints af: in de ene periode werden aanvragen aangenomen, in de andere was tijd gereserveerd voor testen, onderzoek en verwerking.",
+      "evidence": "splitting our fortnightly sprints in two: testing, researching and accepting applications in the first week",
+      "narrative": "Tijdens de private beta wisselden tweewekelijkse sprints af tussen aanvragen aannemen en tijd besteden aan testen, onderzoek en verwerking.",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The Article describes alternating fortnightly sprints or states that sprints alternated between activities. The original describes two weeks within each sprint and testing and research in both weeks.",
+      "materiality": "Changes the work cadence and obscures overlap in the activities.",
+      "sources": [
+        "fixtures/digital/source.txt",
+        "https://mojdigital.blog.gov.uk/2018/03/13/how-to-build-and-release-a-digital-by-default-service-in-12-weeks/"
+      ]
+    }
+  ],
+  "holdout/digital-1-A": [
+    {
+      "label": "F2",
+      "category": "chronology",
+      "excerpt": "Tijdens de private beta wisselden tweewekelijkse sprints af.",
+      "evidence": "splitting our fortnightly sprints in two: testing, researching and accepting applications in the first week",
+      "narrative": "Tijdens de private beta wisselden tweewekelijkse sprints af tussen aanvragen aannemen en tijd besteden aan testen, onderzoek en verwerking.",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The Article describes alternating fortnightly sprints or states that sprints alternated between activities. The original describes two weeks within each sprint and testing and research in both weeks.",
+      "materiality": "Changes the work cadence and obscures overlap in the activities.",
+      "sources": [
+        "fixtures/digital/source.txt",
+        "https://mojdigital.blog.gov.uk/2018/03/13/how-to-build-and-release-a-digital-by-default-service-in-12-weeks/"
+      ]
+    }
+  ],
+  "holdout/webb-1-B": [
+    {
+      "label": "F2",
+      "category": "chronology",
+      "excerpt": "Eerst volgden weken van afkoeling, maanden van spiegeluitlijning en daarna de kalibratie van de instrumenten.",
+      "evidence": "NASA places cooldown during sunshield deployment and reports that cooldown effectively ended during the months of optical alignment.",
+      "narrative": "Daarna volgden weken van afkoeling, maanden van spiegeluitlijning en vervolgens instrumentkalibratie.",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The Article follows the sequential framing of the Narrative although cooling and deployment or alignment overlap.",
+      "materiality": "Misstates how commissioning steps fit together in an Article organized around that chronology.",
+      "sources": [
+        "https://science.nasa.gov/mission/webb/deployment/",
+        "https://science.nasa.gov/mission/webb/faqs-full/"
+      ]
+    }
+  ],
+  "holdout/webb-1-C": [
+    {
+      "label": "F2",
+      "category": "chronology",
+      "excerpt": "De telescoop moest nog weken afkoelen, waarna de spiegeluitlijning maanden doorging en de instrumenten werden gekalibreerd.",
+      "evidence": "NASA places cooldown during sunshield deployment and reports that cooldown effectively ended during the months of optical alignment.",
+      "narrative": "Daarna volgden weken van afkoeling, maanden van spiegeluitlijning en vervolgens instrumentkalibratie.",
+      "narrativeRelation": "differs",
+      "origin": "amplified",
+      "explanation": "The Article explicitly places the alignment after weeks of cooling, heightening the sequential reading of the Narrative. NASA documents overlap.",
+      "materiality": "Misstates how commissioning steps fit together in an Article organized around that chronology.",
+      "sources": [
+        "https://science.nasa.gov/mission/webb/deployment/",
+        "https://science.nasa.gov/mission/webb/faqs-full/"
+      ]
+    }
+  ],
+  "holdout/webb-1-A": [
+    {
+      "label": "F2",
+      "category": "chronology",
+      "excerpt": "Daarna volgden weken waarin de telescoop afkoelde, maanden van spiegeluitlijning en de kalibratie van de instrumenten.",
+      "evidence": "NASA places cooldown during sunshield deployment and reports that cooldown effectively ended during the months of optical alignment.",
+      "narrative": "Daarna volgden weken van afkoeling, maanden van spiegeluitlijning en vervolgens instrumentkalibratie.",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The Article follows the sequential framing of the Narrative although cooling and deployment or alignment overlap.",
+      "materiality": "Misstates how commissioning steps fit together in an Article organized around that chronology.",
+      "sources": [
+        "https://science.nasa.gov/mission/webb/deployment/",
+        "https://science.nasa.gov/mission/webb/faqs-full/"
+      ]
+    }
+  ],
+  "holdout/wolf-1-C": [
+    {
+      "label": "F2",
+      "category": "entity",
+      "excerpt": "elandkalveren en volwassen mannelijke elanden",
+      "evidence": "in early winter, elk calves comprised 50% of wolf prey, and bull elk comprised 25%",
+      "narrative": "elandkalveren en volwassen mannelijke elanden",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The original concerns Yellowstone elk (wapiti), not the Dutch eland (moose).",
+      "materiality": "The central prey example identifies the wrong animal.",
+      "sources": [
+        "fixtures/wolf/source.txt",
+        "https://www.nps.gov/yell/learn/nature/elk.htm",
+        "https://anw.ivdnt.org/article/eland"
+      ]
+    }
+  ],
+  "holdout/wolf-1-A": [
+    {
+      "label": "F2",
+      "category": "entity",
+      "excerpt": "elandkalveren en volwassen mannelijke elanden",
+      "evidence": "in early winter, elk calves comprised 50% of wolf prey, and bull elk comprised 25%",
+      "narrative": "elandkalveren en volwassen mannelijke elanden",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The original concerns Yellowstone elk (wapiti), not the Dutch eland (moose).",
+      "materiality": "The central prey example identifies the wrong animal.",
+      "sources": [
+        "fixtures/wolf/source.txt",
+        "https://www.nps.gov/yell/learn/nature/elk.htm",
+        "https://anw.ivdnt.org/article/eland"
+      ]
+    }
+  ],
+  "holdout/wolf-1-B": [
+    {
+      "label": "F2",
+      "category": "entity",
+      "excerpt": "elandkalveren en volwassen mannelijke elanden",
+      "evidence": "in early winter, elk calves comprised 50% of wolf prey, and bull elk comprised 25%",
+      "narrative": "elandkalveren en volwassen mannelijke elanden",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The original concerns Yellowstone elk (wapiti), not the Dutch eland (moose).",
+      "materiality": "The central prey example identifies the wrong animal.",
+      "sources": [
+        "fixtures/wolf/source.txt",
+        "https://www.nps.gov/yell/learn/nature/elk.htm",
+        "https://anw.ivdnt.org/article/eland"
+      ]
+    }
+  ],
+  "holdout/faa-1-A": [
+    {
+      "label": "F2",
+      "category": "quantity",
+      "excerpt": "## Hotspots op luchthavenkaarten: twee vormen, twee betekenissen",
+      "evidence": "three shapes with two distinct meanings",
+      "narrative": "twee soorten hot spots",
+      "narrativeRelation": "differs",
+      "origin": "new_distortion",
+      "explanation": "The headline changes the count from two categories to two shapes. The three shapes are circle, ellipse and cylinder.",
+      "materiality": "The number of different shapes is a central distinction in the article.",
+      "sources": [
+        "fixtures/faa/source.txt",
+        "https://www.faa.gov/newsroom/hot-spot-standardized-symbology"
+      ]
+    }
+  ],
+  "holdout/sofar-channel-2-C": [
+    {
+      "label": "F2",
+      "category": "scope",
+      "excerpt": "## How the SOFAR Channel Carries Whale Calls Across the Ocean",
+      "evidence": "In some instances, low-frequency sounds can be heard across entire ocean basins.",
+      "narrative": "in some instances, it can travel across entire ocean basins, helping explain how distant calls can be detected.",
+      "narrativeRelation": "differs",
+      "origin": "new_distortion",
+      "explanation": "The heading claims cross-ocean transmission for whale calls. The source establishes ocean-basin scale for some low-frequency sound and separately gives distant whale calls as a detection example. It reports whale communication over hundreds and sometimes thousands of miles, without establishing the cross-ocean claim.",
+      "materiality": "Introduces a specific range claim into the title.",
+      "sources": [
+        "https://oceanservice.noaa.gov/facts/sofar.html"
+      ]
+    }
+  ],
+  "holdout/wolf-2-A": [
+    {
+      "label": "F2",
+      "category": "entity",
+      "excerpt": "elandkalveren en volwassen mannelijke elanden",
+      "evidence": "in early winter, elk calves comprised 50% of wolf prey, and bull elk comprised 25%",
+      "narrative": "elandkalveren en volwassen mannelijke elanden",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The original concerns Yellowstone elk (wapiti), not the Dutch eland (moose).",
+      "materiality": "The central prey example identifies the wrong animal.",
+      "sources": [
+        "fixtures/wolf/source.txt",
+        "https://www.nps.gov/yell/learn/nature/elk.htm",
+        "https://anw.ivdnt.org/article/eland"
+      ]
+    }
+  ],
+  "holdout/wolf-2-B": [
+    {
+      "label": "F2",
+      "category": "entity",
+      "excerpt": "elandkalveren en volwassen mannelijke elanden",
+      "evidence": "in early winter, elk calves comprised 50% of wolf prey, and bull elk comprised 25%",
+      "narrative": "elandkalveren en volwassen mannelijke elanden",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The original concerns Yellowstone elk (wapiti), not the Dutch eland (moose).",
+      "materiality": "The central prey example identifies the wrong animal.",
+      "sources": [
+        "fixtures/wolf/source.txt",
+        "https://www.nps.gov/yell/learn/nature/elk.htm",
+        "https://anw.ivdnt.org/article/eland"
+      ]
+    }
+  ],
+  "holdout/wolf-2-C": [
+    {
+      "label": "F2",
+      "category": "entity",
+      "excerpt": "elandkalveren en volwassen mannelijke elanden",
+      "evidence": "in early winter, elk calves comprised 50% of wolf prey, and bull elk comprised 25%",
+      "narrative": "elandkalveren en volwassen mannelijke elanden",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The original concerns Yellowstone elk (wapiti), not the Dutch eland (moose).",
+      "materiality": "The central prey example identifies the wrong animal.",
+      "sources": [
+        "fixtures/wolf/source.txt",
+        "https://www.nps.gov/yell/learn/nature/elk.htm",
+        "https://anw.ivdnt.org/article/eland"
+      ]
+    }
+  ],
+  "holdout/webb-2-C": [
+    {
+      "label": "F2",
+      "category": "chronology",
+      "excerpt": "Daarna volgden weken van afkoeling en maanden van spiegeluitlijning, gevolgd door de kalibratie van de instrumenten.",
+      "evidence": "NASA places cooldown during sunshield deployment and reports that cooldown effectively ended during the months of optical alignment.",
+      "narrative": "Daarna volgden weken van afkoeling, maanden van spiegeluitlijning en vervolgens instrumentkalibratie.",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The Article follows the sequential framing of the Narrative although cooling and deployment or alignment overlap.",
+      "materiality": "Misstates how commissioning steps fit together in an Article organized around that chronology.",
+      "sources": [
+        "https://science.nasa.gov/mission/webb/deployment/",
+        "https://science.nasa.gov/mission/webb/faqs-full/"
+      ]
+    }
+  ],
+  "holdout/webb-2-A": [
+    {
+      "label": "F2",
+      "category": "chronology",
+      "excerpt": "Daarna koelde de telescoop gedurende weken af.",
+      "evidence": "NASA places cooldown during sunshield deployment and reports that cooldown effectively ended during the months of optical alignment.",
+      "narrative": "Daarna volgden weken van afkoeling, maanden van spiegeluitlijning en vervolgens instrumentkalibratie.",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The Article follows the sequential framing of the Narrative although cooling and deployment or alignment overlap.",
+      "materiality": "Misstates how commissioning steps fit together in an Article organized around that chronology.",
+      "sources": [
+        "https://science.nasa.gov/mission/webb/deployment/",
+        "https://science.nasa.gov/mission/webb/faqs-full/"
+      ]
+    }
+  ],
+  "holdout/digital-2-B": [
+    {
+      "label": "F2",
+      "category": "chronology",
+      "excerpt": "Tijdens de private beta wisselden tweewekelijkse sprints af tussen aanvragen aannemen en tijd besteden aan testen, onderzoek en verwerking.",
+      "evidence": "splitting our fortnightly sprints in two: testing, researching and accepting applications in the first week",
+      "narrative": "Tijdens de private beta wisselden tweewekelijkse sprints af tussen aanvragen aannemen en tijd besteden aan testen, onderzoek en verwerking.",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The Article describes alternating fortnightly sprints or states that sprints alternated between activities. The original describes two weeks within each sprint and testing and research in both weeks.",
+      "materiality": "Changes the work cadence and obscures overlap in the activities.",
+      "sources": [
+        "fixtures/digital/source.txt",
+        "https://mojdigital.blog.gov.uk/2018/03/13/how-to-build-and-release-a-digital-by-default-service-in-12-weeks/"
+      ]
+    }
+  ],
+  "holdout/digital-2-C": [
+    {
+      "label": "F2",
+      "category": "chronology",
+      "excerpt": "Tijdens de private beta wisselden tweewekelijkse sprints af: in de ene periode werden aanvragen aangenomen, in de andere was tijd gereserveerd voor testen, onderzoek en verwerking.",
+      "evidence": "splitting our fortnightly sprints in two: testing, researching and accepting applications in the first week",
+      "narrative": "Tijdens de private beta wisselden tweewekelijkse sprints af tussen aanvragen aannemen en tijd besteden aan testen, onderzoek en verwerking.",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The Article describes alternating fortnightly sprints or states that sprints alternated between activities. The original describes two weeks within each sprint and testing and research in both weeks.",
+      "materiality": "Changes the work cadence and obscures overlap in the activities.",
+      "sources": [
+        "fixtures/digital/source.txt",
+        "https://mojdigital.blog.gov.uk/2018/03/13/how-to-build-and-release-a-digital-by-default-service-in-12-weeks/"
+      ]
+    }
+  ],
+  "holdout/digital-2-A": [
+    {
+      "label": "F2",
+      "category": "chronology",
+      "excerpt": "Tijdens de private beta wisselden tweewekelijkse sprints elkaar af: de ene periode werden aanvragen aangenomen, de andere was er tijd voor testen, onderzoek en verwerking.",
+      "evidence": "splitting our fortnightly sprints in two: testing, researching and accepting applications in the first week",
+      "narrative": "Tijdens de private beta wisselden tweewekelijkse sprints af tussen aanvragen aannemen en tijd besteden aan testen, onderzoek en verwerking.",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The Article describes alternating fortnightly sprints or states that sprints alternated between activities. The original describes two weeks within each sprint and testing and research in both weeks.",
+      "materiality": "Changes the work cadence and obscures overlap in the activities.",
+      "sources": [
+        "fixtures/digital/source.txt",
+        "https://mojdigital.blog.gov.uk/2018/03/13/how-to-build-and-release-a-digital-by-default-service-in-12-weeks/"
+      ]
+    }
+  ],
+  "holdout/digital-3-A": [
+    {
+      "label": "F2",
+      "category": "chronology",
+      "excerpt": "Tijdens de private beta wisselden tweewekelijkse sprints af tussen het aannemen van aanvragen en tijd besteden aan testen, onderzoek en verwerking.",
+      "evidence": "splitting our fortnightly sprints in two: testing, researching and accepting applications in the first week",
+      "narrative": "Tijdens de private beta wisselden tweewekelijkse sprints af tussen aanvragen aannemen en tijd besteden aan testen, onderzoek en verwerking.",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The Article describes alternating fortnightly sprints or states that sprints alternated between activities. The original describes two weeks within each sprint and testing and research in both weeks.",
+      "materiality": "Changes the work cadence and obscures overlap in the activities.",
+      "sources": [
+        "fixtures/digital/source.txt",
+        "https://mojdigital.blog.gov.uk/2018/03/13/how-to-build-and-release-a-digital-by-default-service-in-12-weeks/"
+      ]
+    }
+  ],
+  "holdout/digital-3-B": [
+    {
+      "label": "F2",
+      "category": "chronology",
+      "excerpt": "Tijdens de private beta wisselden tweewekelijkse sprints af: in sommige sprints nam het team aanvragen aan; in andere reserveerde het tijd voor testen, onderzoek en verwerking.",
+      "evidence": "splitting our fortnightly sprints in two: testing, researching and accepting applications in the first week",
+      "narrative": "Tijdens de private beta wisselden tweewekelijkse sprints af tussen aanvragen aannemen en tijd besteden aan testen, onderzoek en verwerking.",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The Article describes alternating fortnightly sprints or states that sprints alternated between activities. The original describes two weeks within each sprint and testing and research in both weeks.",
+      "materiality": "Changes the work cadence and obscures overlap in the activities.",
+      "sources": [
+        "fixtures/digital/source.txt",
+        "https://mojdigital.blog.gov.uk/2018/03/13/how-to-build-and-release-a-digital-by-default-service-in-12-weeks/"
+      ]
+    }
+  ],
+  "holdout/digital-3-C": [
+    {
+      "label": "F2",
+      "category": "chronology",
+      "excerpt": "Tijdens de private beta wisselden tweewekelijkse sprints af tussen aanvragen aannemen en tijd besteden aan testen, onderzoek en verwerking.",
+      "evidence": "splitting our fortnightly sprints in two: testing, researching and accepting applications in the first week",
+      "narrative": "Tijdens de private beta wisselden tweewekelijkse sprints af tussen aanvragen aannemen en tijd besteden aan testen, onderzoek en verwerking.",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The Article describes alternating fortnightly sprints or states that sprints alternated between activities. The original describes two weeks within each sprint and testing and research in both weeks.",
+      "materiality": "Changes the work cadence and obscures overlap in the activities.",
+      "sources": [
+        "fixtures/digital/source.txt",
+        "https://mojdigital.blog.gov.uk/2018/03/13/how-to-build-and-release-a-digital-by-default-service-in-12-weeks/"
+      ]
+    }
+  ],
+  "holdout/webb-3-A": [
+    {
+      "label": "F2",
+      "category": "chronology",
+      "excerpt": "De telescoop moest nog weken afkoelen, waarna de spiegeluitlijning maanden in beslag nam.",
+      "evidence": "NASA places cooldown during sunshield deployment and reports that cooldown effectively ended during the months of optical alignment.",
+      "narrative": "Daarna volgden weken van afkoeling, maanden van spiegeluitlijning en vervolgens instrumentkalibratie.",
+      "narrativeRelation": "differs",
+      "origin": "amplified",
+      "explanation": "The Article explicitly places the alignment after weeks of cooling, heightening the sequential reading of the Narrative. NASA documents overlap.",
+      "materiality": "Misstates how commissioning steps fit together in an Article organized around that chronology.",
+      "sources": [
+        "https://science.nasa.gov/mission/webb/deployment/",
+        "https://science.nasa.gov/mission/webb/faqs-full/"
+      ]
+    }
+  ],
+  "holdout/webb-3-C": [
+    {
+      "label": "F2",
+      "category": "chronology",
+      "excerpt": "De telescoop koelde daarna weken af; de spiegeluitlijning duurde maanden, gevolgd door de kalibratie van de instrumenten.",
+      "evidence": "NASA places cooldown during sunshield deployment and reports that cooldown effectively ended during the months of optical alignment.",
+      "narrative": "Daarna volgden weken van afkoeling, maanden van spiegeluitlijning en vervolgens instrumentkalibratie.",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The Article follows the sequential framing of the Narrative although cooling and deployment or alignment overlap.",
+      "materiality": "Misstates how commissioning steps fit together in an Article organized around that chronology.",
+      "sources": [
+        "https://science.nasa.gov/mission/webb/deployment/",
+        "https://science.nasa.gov/mission/webb/faqs-full/"
+      ]
+    }
+  ],
+  "holdout/wolf-3-B": [
+    {
+      "label": "F2",
+      "category": "entity",
+      "excerpt": "elandkalveren en volwassen mannelijke elanden",
+      "evidence": "in early winter, elk calves comprised 50% of wolf prey, and bull elk comprised 25%",
+      "narrative": "elandkalveren en volwassen mannelijke elanden",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The original concerns Yellowstone elk (wapiti), not the Dutch eland (moose).",
+      "materiality": "The central prey example identifies the wrong animal.",
+      "sources": [
+        "fixtures/wolf/source.txt",
+        "https://www.nps.gov/yell/learn/nature/elk.htm",
+        "https://anw.ivdnt.org/article/eland"
+      ]
+    }
+  ],
+  "holdout/wolf-3-C": [
+    {
+      "label": "F2",
+      "category": "entity",
+      "excerpt": "elandkalveren en volwassen mannelijke elanden",
+      "evidence": "in early winter, elk calves comprised 50% of wolf prey, and bull elk comprised 25%",
+      "narrative": "elandkalveren en volwassen mannelijke elanden",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The original concerns Yellowstone elk (wapiti), not the Dutch eland (moose).",
+      "materiality": "The central prey example identifies the wrong animal.",
+      "sources": [
+        "fixtures/wolf/source.txt",
+        "https://www.nps.gov/yell/learn/nature/elk.htm",
+        "https://anw.ivdnt.org/article/eland"
+      ]
+    }
+  ],
+  "holdout/wolf-3-A": [
+    {
+      "label": "F2",
+      "category": "entity",
+      "excerpt": "elandkalveren en volwassen mannelijke elanden",
+      "evidence": "in early winter, elk calves comprised 50% of wolf prey, and bull elk comprised 25%",
+      "narrative": "elandkalveren en volwassen mannelijke elanden",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The original concerns Yellowstone elk (wapiti), not the Dutch eland (moose).",
+      "materiality": "The central prey example identifies the wrong animal.",
+      "sources": [
+        "fixtures/wolf/source.txt",
+        "https://www.nps.gov/yell/learn/nature/elk.htm",
+        "https://anw.ivdnt.org/article/eland"
+      ]
+    }
+  ],
+  "holdout/faa-3-B": [
+    {
+      "label": "F2",
+      "category": "quantity",
+      "excerpt": "## Twee vormen voor hot spots op luchthavenkaarten",
+      "evidence": "three shapes with two distinct meanings",
+      "narrative": "twee soorten hot spots",
+      "narrativeRelation": "differs",
+      "origin": "new_distortion",
+      "explanation": "The headline changes the count from two categories to two shapes. The three shapes are circle, ellipse and cylinder.",
+      "materiality": "The number of different shapes is a central distinction in the article.",
+      "sources": [
+        "fixtures/faa/source.txt",
+        "https://www.faa.gov/newsroom/hot-spot-standardized-symbology"
+      ]
+    }
+  ]
+}

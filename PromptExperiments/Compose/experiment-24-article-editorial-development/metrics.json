@@ -1,0 +1,2590 @@
+{
+  "development": {
+    "conditions": {
+      "A": {
+        "planned": 12,
+        "attempted": 12,
+        "valid": 12,
+        "editorialReviewed": 12,
+        "acceptanceCount": 1,
+        "acceptance": 0.08333333333333333,
+        "mean": 3.4041666666666663,
+        "median": 3.375,
+        "distribution": {
+          "1": 0,
+          "2": 0,
+          "3": 12,
+          "4": 0
+        },
+        "criteria": {
+          "opening": 3.25,
+          "development": 2.8333333333333335,
+          "readability": 3.9166666666666665,
+          "focus": 4.416666666666667,
+          "ending": 2.5,
+          "voice": 3.5
+        },
+        "withinSubjectVariance": 0.023229166666666662,
+        "words": 109.66666666666667,
+        "defects": {
+          "repetition": 3,
+          "generic_opening": 1,
+          "generic_ending": 6,
+          "report_voice": 4,
+          "thin_substance": 11
+        },
+        "confirmedF2": 0,
+        "newF2": 0,
+        "propagatedF2": 0,
+        "amplifiedF2": 0,
+        "factualReviewed": 12,
+        "factualWithIncompleteReview": 0,
+        "unresolved": 0,
+        "medianSeconds": 4.0245,
+        "p90Seconds": 5.035
+      },
+      "B": {
+        "planned": 12,
+        "attempted": 12,
+        "valid": 12,
+        "editorialReviewed": 12,
+        "acceptanceCount": 1,
+        "acceptance": 0.08333333333333333,
+        "mean": 3.3416666666666663,
+        "median": 3.4000000000000004,
+        "distribution": {
+          "1": 0,
+          "2": 1,
+          "3": 11,
+          "4": 0
+        },
+        "criteria": {
+          "opening": 3.1666666666666665,
+          "development": 2.8333333333333335,
+          "readability": 3.9166666666666665,
+          "focus": 4.166666666666667,
+          "ending": 2.5,
+          "voice": 3.4166666666666665
+        },
+        "withinSubjectVariance": 0.01687500000000002,
+        "words": 106.83333333333333,
+        "defects": {
+          "repetition": 7,
+          "generic_opening": 2,
+          "generic_ending": 7,
+          "report_voice": 3,
+          "thin_substance": 10
+        },
+        "confirmedF2": 0,
+        "newF2": 0,
+        "propagatedF2": 0,
+        "amplifiedF2": 0,
+        "factualReviewed": 12,
+        "factualWithIncompleteReview": 0,
+        "unresolved": 0,
+        "medianSeconds": 4.319000000000001,
+        "p90Seconds": 5.277
+      },
+      "C": {
+        "planned": 12,
+        "attempted": 12,
+        "valid": 12,
+        "editorialReviewed": 12,
+        "acceptanceCount": 2,
+        "acceptance": 0.16666666666666666,
+        "mean": 3.4583333333333335,
+        "median": 3.45,
+        "distribution": {
+          "1": 0,
+          "2": 1,
+          "3": 10,
+          "4": 1
+        },
+        "criteria": {
+          "opening": 3.0833333333333335,
+          "development": 2.9166666666666665,
+          "readability": 4.083333333333333,
+          "focus": 4.416666666666667,
+          "ending": 2.6666666666666665,
+          "voice": 3.6666666666666665
+        },
+        "withinSubjectVariance": 0.02416666666666666,
+        "words": 111.08333333333333,
+        "defects": {
+          "repetition": 2,
+          "generic_opening": 2,
+          "generic_ending": 6,
+          "report_voice": 2,
+          "thin_substance": 9
+        },
+        "confirmedF2": 0,
+        "newF2": 0,
+        "propagatedF2": 0,
+        "amplifiedF2": 0,
+        "factualReviewed": 12,
+        "factualWithIncompleteReview": 1,
+        "unresolved": 0,
+        "medianSeconds": 4.207,
+        "p90Seconds": 4.731
+      }
+    },
+    "cohort": {
+      "archived": {
+        "A": {
+          "planned": 12,
+          "attempted": 12,
+          "valid": 12,
+          "editorialReviewed": 12,
+          "acceptanceCount": 1,
+          "acceptance": 0.08333333333333333,
+          "mean": 3.4041666666666663,
+          "median": 3.375,
+          "distribution": {
+            "1": 0,
+            "2": 0,
+            "3": 12,
+            "4": 0
+          },
+          "criteria": {
+            "opening": 3.25,
+            "development": 2.8333333333333335,
+            "readability": 3.9166666666666665,
+            "focus": 4.416666666666667,
+            "ending": 2.5,
+            "voice": 3.5
+          },
+          "withinSubjectVariance": 0.023229166666666662,
+          "words": 109.66666666666667,
+          "defects": {
+            "repetition": 3,
+            "generic_opening": 1,
+            "generic_ending": 6,
+            "report_voice": 4,
+            "thin_substance": 11
+          },
+          "confirmedF2": 0,
+          "newF2": 0,
+          "propagatedF2": 0,
+          "amplifiedF2": 0,
+          "factualReviewed": 12,
+          "factualWithIncompleteReview": 0,
+          "unresolved": 0,
+          "medianSeconds": 4.0245,
+          "p90Seconds": 5.035
+        },
+        "B": {
+          "planned": 12,
+          "attempted": 12,
+          "valid": 12,
+          "editorialReviewed": 12,
+          "acceptanceCount": 1,
+          "acceptance": 0.08333333333333333,
+          "mean": 3.3416666666666663,
+          "median": 3.4000000000000004,
+          "distribution": {
+            "1": 0,
+            "2": 1,
+            "3": 11,
+            "4": 0
+          },
+          "criteria": {
+            "opening": 3.1666666666666665,
+            "development": 2.8333333333333335,
+            "readability": 3.9166666666666665,
+            "focus": 4.166666666666667,
+            "ending": 2.5,
+            "voice": 3.4166666666666665
+          },
+          "withinSubjectVariance": 0.01687500000000002,
+          "words": 106.83333333333333,
+          "defects": {
+            "repetition": 7,
+            "generic_opening": 2,
+            "generic_ending": 7,
+            "report_voice": 3,
+            "thin_substance": 10
+          },
+          "confirmedF2": 0,
+          "newF2": 0,
+          "propagatedF2": 0,
+          "amplifiedF2": 0,
+          "factualReviewed": 12,
+          "factualWithIncompleteReview": 0,
+          "unresolved": 0,
+          "medianSeconds": 4.319000000000001,
+          "p90Seconds": 5.277
+        },
+        "C": {
+          "planned": 12,
+          "attempted": 12,
+          "valid": 12,
+          "editorialReviewed": 12,
+          "acceptanceCount": 2,
+          "acceptance": 0.16666666666666666,
+          "mean": 3.4583333333333335,
+          "median": 3.45,
+          "distribution": {
+            "1": 0,
+            "2": 1,
+            "3": 10,
+            "4": 1
+          },
+          "criteria": {
+            "opening": 3.0833333333333335,
+            "development": 2.9166666666666665,
+            "readability": 4.083333333333333,
+            "focus": 4.416666666666667,
+            "ending": 2.6666666666666665,
+            "voice": 3.6666666666666665
+          },
+          "withinSubjectVariance": 0.02416666666666666,
+          "words": 111.08333333333333,
+          "defects": {
+            "repetition": 2,
+            "generic_opening": 2,
+            "generic_ending": 6,
+            "report_voice": 2,
+            "thin_substance": 9
+          },
+          "confirmedF2": 0,
+          "newF2": 0,
+          "propagatedF2": 0,
+          "amplifiedF2": 0,
+          "factualReviewed": 12,
+          "factualWithIncompleteReview": 1,
+          "unresolved": 0,
+          "medianSeconds": 4.207,
+          "p90Seconds": 4.731
+        }
+      }
+    },
+    "richness": {
+      "rich": {
+        "A": {
+          "planned": 6,
+          "attempted": 6,
+          "valid": 6,
+          "editorialReviewed": 6,
+          "acceptanceCount": 0,
+          "acceptance": 0,
+          "mean": 3.4250000000000003,
+          "median": 3.425,
+          "distribution": {
+            "1": 0,
+            "2": 0,
+            "3": 6,
+            "4": 0
+          },
+          "criteria": {
+            "opening": 3.1666666666666665,
+            "development": 3,
+            "readability": 3.8333333333333335,
+            "focus": 4.5,
+            "ending": 2.5,
+            "voice": 3.5
+          },
+          "withinSubjectVariance": 0.0052083333333333365,
+          "words": 107.83333333333333,
+          "defects": {
+            "repetition": 1,
+            "generic_opening": 0,
+            "generic_ending": 3,
+            "report_voice": 3,
+            "thin_substance": 6
+          },
+          "confirmedF2": 0,
+          "newF2": 0,
+          "propagatedF2": 0,
+          "amplifiedF2": 0,
+          "factualReviewed": 6,
+          "factualWithIncompleteReview": 0,
+          "unresolved": 0,
+          "medianSeconds": 4.189,
+          "p90Seconds": 5.035
+        },
+        "B": {
+          "planned": 6,
+          "attempted": 6,
+          "valid": 6,
+          "editorialReviewed": 6,
+          "acceptanceCount": 1,
+          "acceptance": 0.16666666666666666,
+          "mean": 3.441666666666667,
+          "median": 3.45,
+          "distribution": {
+            "1": 0,
+            "2": 0,
+            "3": 6,
+            "4": 0
+          },
+          "criteria": {
+            "opening": 2.8333333333333335,
+            "development": 3.1666666666666665,
+            "readability": 4,
+            "focus": 4.333333333333333,
+            "ending": 2.6666666666666665,
+            "voice": 3.6666666666666665
+          },
+          "withinSubjectVariance": 0.024375000000000025,
+          "words": 111.83333333333333,
+          "defects": {
+            "repetition": 2,
+            "generic_opening": 1,
+            "generic_ending": 3,
+            "report_voice": 1,
+            "thin_substance": 5
+          },
+          "confirmedF2": 0,
+          "newF2": 0,
+          "propagatedF2": 0,
+          "amplifiedF2": 0,
+          "factualReviewed": 6,
+          "factualWithIncompleteReview": 0,
+          "unresolved": 0,
+          "medianSeconds": 4.625,
+          "p90Seconds": 5.277
+        },
+        "C": {
+          "planned": 6,
+          "attempted": 6,
+          "valid": 6,
+          "editorialReviewed": 6,
+          "acceptanceCount": 2,
+          "acceptance": 0.3333333333333333,
+          "mean": 3.6333333333333333,
+          "median": 3.55,
+          "distribution": {
+            "1": 0,
+            "2": 0,
+            "3": 5,
+            "4": 1
+          },
+          "criteria": {
+            "opening": 3,
+            "development": 3.3333333333333335,
+            "readability": 4.166666666666667,
+            "focus": 4.666666666666667,
+            "ending": 2.6666666666666665,
+            "voice": 4
+          },
+          "withinSubjectVariance": 0.037083333333333295,
+          "words": 110.5,
+          "defects": {
+            "repetition": 0,
+            "generic_opening": 1,
+            "generic_ending": 4,
+            "report_voice": 1,
+            "thin_substance": 4
+          },
+          "confirmedF2": 0,
+          "newF2": 0,
+          "propagatedF2": 0,
+          "amplifiedF2": 0,
+          "factualReviewed": 6,
+          "factualWithIncompleteReview": 0,
+          "unresolved": 0,
+          "medianSeconds": 4.4295,
+          "p90Seconds": 105.217
+        }
+      },
+      "constrained": {
+        "B": {
+          "planned": 6,
+          "attempted": 6,
+          "valid": 6,
+          "editorialReviewed": 6,
+          "acceptanceCount": 0,
+          "acceptance": 0,
+          "mean": 3.241666666666667,
+          "median": 3.325,
+          "distribution": {
+            "1": 0,
+            "2": 1,
+            "3": 5,
+            "4": 0
+          },
+          "criteria": {
+            "opening": 3.5,
+            "development": 2.5,
+            "readability": 3.8333333333333335,
+            "focus": 4,
+            "ending": 2.3333333333333335,
+            "voice": 3.1666666666666665
+          },
+          "withinSubjectVariance": 0.009375000000000007,
+          "words": 101.83333333333333,
+          "defects": {
+            "repetition": 5,
+            "generic_opening": 1,
+            "generic_ending": 4,
+            "report_voice": 2,
+            "thin_substance": 5
+          },
+          "confirmedF2": 0,
+          "newF2": 0,
+          "propagatedF2": 0,
+          "amplifiedF2": 0,
+          "factualReviewed": 6,
+          "factualWithIncompleteReview": 0,
+          "unresolved": 0,
+          "medianSeconds": 3.804,
+          "p90Seconds": 6.389
+        },
+        "C": {
+          "planned": 6,
+          "attempted": 6,
+          "valid": 6,
+          "editorialReviewed": 6,
+          "acceptanceCount": 0,
+          "acceptance": 0,
+          "mean": 3.283333333333333,
+          "median": 3.375,
+          "distribution": {
+            "1": 0,
+            "2": 1,
+            "3": 5,
+            "4": 0
+          },
+          "criteria": {
+            "opening": 3.1666666666666665,
+            "development": 2.5,
+            "readability": 4,
+            "focus": 4.166666666666667,
+            "ending": 2.6666666666666665,
+            "voice": 3.3333333333333335
+          },
+          "withinSubjectVariance": 0.011250000000000019,
+          "words": 111.66666666666667,
+          "defects": {
+            "repetition": 2,
+            "generic_opening": 1,
+            "generic_ending": 2,
+            "report_voice": 1,
+            "thin_substance": 5
+          },
+          "confirmedF2": 0,
+          "newF2": 0,
+          "propagatedF2": 0,
+          "amplifiedF2": 0,
+          "factualReviewed": 6,
+          "factualWithIncompleteReview": 1,
+          "unresolved": 0,
+          "medianSeconds": 4.0595,
+          "p90Seconds": 4.731
+        },
+        "A": {
+          "planned": 6,
+          "attempted": 6,
+          "valid": 6,
+          "editorialReviewed": 6,
+          "acceptanceCount": 1,
+          "acceptance": 0.16666666666666666,
+          "mean": 3.3833333333333333,
+          "median": 3.325,
+          "distribution": {
+            "1": 0,
+            "2": 0,
+            "3": 6,
+            "4": 0
+          },
+          "criteria": {
+            "opening": 3.3333333333333335,
+            "development": 2.6666666666666665,
+            "readability": 4,
+            "focus": 4.333333333333333,
+            "ending": 2.5,
+            "voice": 3.5
+          },
+          "withinSubjectVariance": 0.04124999999999999,
+          "words": 111.5,
+          "defects": {
+            "repetition": 2,
+            "generic_opening": 1,
+            "generic_ending": 3,
+            "report_voice": 1,
+            "thin_substance": 5
+          },
+          "confirmedF2": 0,
+          "newF2": 0,
+          "propagatedF2": 0,
+          "amplifiedF2": 0,
+          "factualReviewed": 6,
+          "factualWithIncompleteReview": 0,
+          "unresolved": 0,
+          "medianSeconds": 4.006,
+          "p90Seconds": 6.471
+        }
+      }
+    },
+    "paired": {
+      "B": {
+        "subjects": [
+          {
+            "subject": "acid",
+            "pairs": [
+              {
+                "rep": 1,
+                "a": 3.05,
+                "b": 3.45,
+                "aPass": false,
+                "bPass": false
+              },
+              {
+                "rep": 2,
+                "a": 3.25,
+                "b": 3.05,
+                "aPass": false,
+                "bPass": false
+              }
+            ],
+            "meanDelta": 0.10000000000000009,
+            "acceptanceDelta": 0
+          },
+          {
+            "subject": "airmf",
+            "pairs": [
+              {
+                "rep": 1,
+                "a": 3,
+                "b": 3,
+                "aPass": false,
+                "bPass": false
+              },
+              {
+                "rep": 2,
+                "a": 3.25,
+                "b": 2.8,
+                "aPass": false,
+                "bPass": false
+              }
+            ],
+            "meanDelta": -0.2250000000000001,
+            "acceptanceDelta": 0
+          },
+          {
+            "subject": "fusion",
+            "pairs": [
+              {
+                "rep": 1,
+                "a": 3.4,
+                "b": 3.55,
+                "aPass": false,
+                "bPass": false
+              },
+              {
+                "rep": 2,
+                "a": 3.5,
+                "b": 3.3,
+                "aPass": false,
+                "bPass": false
+              }
+            ],
+            "meanDelta": -0.025000000000000133,
+            "acceptanceDelta": 0
+          },
+          {
+            "subject": "gps",
+            "pairs": [
+              {
+                "rep": 1,
+                "a": 3.7,
+                "b": 3.5,
+                "aPass": false,
+                "bPass": false
+              },
+              {
+                "rep": 2,
+                "a": 3.7,
+                "b": 3.85,
+                "aPass": false,
+                "bPass": true
+              }
+            ],
+            "meanDelta": -0.025000000000000133,
+            "acceptanceDelta": 0.5
+          },
+          {
+            "subject": "labor",
+            "pairs": [
+              {
+                "rep": 1,
+                "a": 3.25,
+                "b": 3.35,
+                "aPass": false,
+                "bPass": false
+              },
+              {
+                "rep": 2,
+                "a": 3.9,
+                "b": 3.45,
+                "aPass": true,
+                "bPass": false
+              }
+            ],
+            "meanDelta": -0.17499999999999982,
+            "acceptanceDelta": -0.5
+          },
+          {
+            "subject": "grace",
+            "pairs": [
+              {
+                "rep": 1,
+                "a": 3.5,
+                "b": 3.45,
+                "aPass": false,
+                "bPass": false
+              },
+              {
+                "rep": 2,
+                "a": 3.35,
+                "b": 3.35,
+                "aPass": false,
+                "bPass": false
+              }
+            ],
+            "meanDelta": -0.02499999999999991,
+            "acceptanceDelta": 0
+          }
+        ],
+        "meanInterval": [
+          -0.15000000000000002,
+          0.01666666666666668
+        ],
+        "acceptanceInterval": [
+          -0.25,
+          0.25
+        ],
+        "leaveOneOut": [
+          {
+            "omitted": "acid",
+            "meanDelta": -0.09500000000000001,
+            "acceptanceDelta": 0
+          },
+          {
+            "omitted": "airmf",
+            "meanDelta": -0.02999999999999998,
+            "acceptanceDelta": 0
+          },
+          {
+            "omitted": "fusion",
+            "meanDelta": -0.06999999999999998,
+            "acceptanceDelta": 0
+          },
+          {
+            "omitted": "gps",
+            "meanDelta": -0.06999999999999998,
+            "acceptanceDelta": -0.1
+          },
+          {
+            "omitted": "labor",
+            "meanDelta": -0.040000000000000036,
+            "acceptanceDelta": 0.1
+          },
+          {
+            "omitted": "grace",
+            "meanDelta": -0.07000000000000002,
+            "acceptanceDelta": 0
+          }
+        ]
+      },
+      "C": {
+        "subjects": [
+          {
+            "subject": "acid",
+            "pairs": [
+              {
+                "rep": 1,
+                "a": 3.05,
+                "b": 3.5,
+                "aPass": false,
+                "bPass": false
+              },
+              {
+                "rep": 2,
+                "a": 3.25,
+                "b": 3.35,
+                "aPass": false,
+                "bPass": false
+              }
+            ],
+            "meanDelta": 0.27500000000000013,
+            "acceptanceDelta": 0
+          },
+          {
+            "subject": "airmf",
+            "pairs": [
+              {
+                "rep": 1,
+                "a": 3,
+                "b": 3.1,
+                "aPass": false,
+                "bPass": false
+              },
+              {
+                "rep": 2,
+                "a": 3.25,
+                "b": 2.8,
+                "aPass": false,
+                "bPass": false
+              }
+            ],
+            "meanDelta": -0.17500000000000004,
+            "acceptanceDelta": 0
+          },
+          {
+            "subject": "fusion",
+            "pairs": [
+              {
+                "rep": 1,
+                "a": 3.4,
+                "b": 3.3,
+                "aPass": false,
+                "bPass": false
+              },
+              {
+                "rep": 2,
+                "a": 3.5,
+                "b": 3.45,
+                "aPass": false,
+                "bPass": false
+              }
+            ],
+            "meanDelta": -0.07499999999999996,
+            "acceptanceDelta": 0
+          },
+          {
+            "subject": "gps",
+            "pairs": [
+              {
+                "rep": 1,
+                "a": 3.7,
+                "b": 3.6,
+                "aPass": false,
+                "bPass": false
+              },
+              {
+                "rep": 2,
+                "a": 3.7,
+                "b": 3.85,
+                "aPass": false,
+                "bPass": true
+              }
+            ],
+            "meanDelta": 0.02499999999999991,
+            "acceptanceDelta": 0.5
+          },
+          {
+            "subject": "labor",
+            "pairs": [
+              {
+                "rep": 1,
+                "a": 3.25,
+                "b": 3.6,
+                "aPass": false,
+                "bPass": false
+              },
+              {
+                "rep": 2,
+                "a": 3.9,
+                "b": 3.45,
+                "aPass": true,
+                "bPass": false
+              }
+            ],
+            "meanDelta": -0.04999999999999982,
+            "acceptanceDelta": -0.5
+          },
+          {
+            "subject": "grace",
+            "pairs": [
+              {
+                "rep": 1,
+                "a": 3.5,
+                "b": 4.05,
+                "aPass": false,
+                "bPass": true
+              },
+              {
+                "rep": 2,
+                "a": 3.35,
+                "b": 3.45,
+                "aPass": false,
+                "bPass": false
+              }
+            ],
+            "meanDelta": 0.32499999999999996,
+            "acceptanceDelta": 0.5
+          }
+        ],
+        "meanInterval": [
+          -0.08749999999999998,
+          0.20000000000000004
+        ],
+        "acceptanceInterval": [
+          -0.16666666666666666,
+          0.3333333333333333
+        ],
+        "leaveOneOut": [
+          {
+            "omitted": "acid",
+            "meanDelta": 0.010000000000000009,
+            "acceptanceDelta": 0.1
+          },
+          {
+            "omitted": "airmf",
+            "meanDelta": 0.10000000000000005,
+            "acceptanceDelta": 0.1
+          },
+          {
+            "omitted": "fusion",
+            "meanDelta": 0.08000000000000003,
+            "acceptanceDelta": 0.1
+          },
+          {
+            "omitted": "gps",
+            "meanDelta": 0.06000000000000005,
+            "acceptanceDelta": 0
+          },
+          {
+            "omitted": "labor",
+            "meanDelta": 0.075,
+            "acceptanceDelta": 0.2
+          },
+          {
+            "omitted": "grace",
+            "meanDelta": 4.4408920985006264e-17,
+            "acceptanceDelta": 0
+          }
+        ]
+      }
+    }
+  },
+  "holdout": {
+    "conditions": {
+      "A": {
+        "planned": 42,
+        "attempted": 42,
+        "valid": 42,
+        "editorialReviewed": 42,
+        "acceptanceCount": 2,
+        "acceptance": 0.047619047619047616,
+        "mean": 3.201190476190477,
+        "median": 3.2,
+        "distribution": {
+          "1": 0,
+          "2": 5,
+          "3": 37,
+          "4": 0
+        },
+        "criteria": {
+          "opening": 3.119047619047619,
+          "development": 2.5,
+          "readability": 3.9523809523809526,
+          "focus": 4.0476190476190474,
+          "ending": 2.2857142857142856,
+          "voice": 3.261904761904762
+        },
+        "withinSubjectVariance": 0.0157936507936508,
+        "words": 91.42857142857143,
+        "defects": {
+          "repetition": 17,
+          "generic_opening": 7,
+          "generic_ending": 22,
+          "report_voice": 18,
+          "thin_substance": 42
+        },
+        "confirmedF2": 10,
+        "newF2": 1,
+        "propagatedF2": 8,
+        "amplifiedF2": 1,
+        "factualReviewed": 42,
+        "factualWithIncompleteReview": 4,
+        "unresolved": 1,
+        "medianSeconds": 4.063,
+        "p90Seconds": 5.377
+      },
+      "B": {
+        "planned": 42,
+        "attempted": 42,
+        "valid": 42,
+        "editorialReviewed": 42,
+        "acceptanceCount": 0,
+        "acceptance": 0,
+        "mean": 3.092857142857143,
+        "median": 3,
+        "distribution": {
+          "1": 0,
+          "2": 12,
+          "3": 30,
+          "4": 0
+        },
+        "criteria": {
+          "opening": 2.9761904761904763,
+          "development": 2.4523809523809526,
+          "readability": 3.761904761904762,
+          "focus": 3.9285714285714284,
+          "ending": 2.2857142857142856,
+          "voice": 3.142857142857143
+        },
+        "withinSubjectVariance": 0.04373015873015875,
+        "words": 88.5952380952381,
+        "defects": {
+          "repetition": 17,
+          "generic_opening": 5,
+          "generic_ending": 19,
+          "report_voice": 21,
+          "thin_substance": 42
+        },
+        "confirmedF2": 8,
+        "newF2": 1,
+        "propagatedF2": 7,
+        "amplifiedF2": 0,
+        "factualReviewed": 42,
+        "factualWithIncompleteReview": 5,
+        "unresolved": 1,
+        "medianSeconds": 4.08,
+        "p90Seconds": 5.673
+      },
+      "C": {
+        "planned": 42,
+        "attempted": 42,
+        "valid": 42,
+        "editorialReviewed": 42,
+        "acceptanceCount": 1,
+        "acceptance": 0.023809523809523808,
+        "mean": 3.1392857142857142,
+        "median": 3.1,
+        "distribution": {
+          "1": 0,
+          "2": 9,
+          "3": 33,
+          "4": 0
+        },
+        "criteria": {
+          "opening": 2.9761904761904763,
+          "development": 2.4285714285714284,
+          "readability": 3.857142857142857,
+          "focus": 4.023809523809524,
+          "ending": 2.380952380952381,
+          "voice": 3.238095238095238
+        },
+        "withinSubjectVariance": 0.028611111111111108,
+        "words": 90.78571428571429,
+        "defects": {
+          "repetition": 14,
+          "generic_opening": 5,
+          "generic_ending": 16,
+          "report_voice": 19,
+          "thin_substance": 42
+        },
+        "confirmedF2": 10,
+        "newF2": 1,
+        "propagatedF2": 8,
+        "amplifiedF2": 1,
+        "factualReviewed": 40,
+        "factualWithIncompleteReview": 4,
+        "unresolved": 0,
+        "medianSeconds": 4.1395,
+        "p90Seconds": 5.974
+      }
+    },
+    "cohort": {
+      "archived": {
+        "A": {
+          "planned": 9,
+          "attempted": 9,
+          "valid": 9,
+          "editorialReviewed": 9,
+          "acceptanceCount": 1,
+          "acceptance": 0.1111111111111111,
+          "mean": 3.35,
+          "median": 3.3,
+          "distribution": {
+            "1": 0,
+            "2": 0,
+            "3": 9,
+            "4": 0
+          },
+          "criteria": {
+            "opening": 3.111111111111111,
+            "development": 2.888888888888889,
+            "readability": 3.888888888888889,
+            "focus": 4.111111111111111,
+            "ending": 2.7777777777777777,
+            "voice": 3.3333333333333335
+          },
+          "withinSubjectVariance": 0.02703703703703704,
+          "words": 115.66666666666667,
+          "defects": {
+            "repetition": 3,
+            "generic_opening": 2,
+            "generic_ending": 2,
+            "report_voice": 6,
+            "thin_substance": 9
+          },
+          "confirmedF2": 0,
+          "newF2": 0,
+          "propagatedF2": 0,
+          "amplifiedF2": 0,
+          "factualReviewed": 9,
+          "factualWithIncompleteReview": 2,
+          "unresolved": 0,
+          "medianSeconds": 4.244,
+          "p90Seconds": 6.689
+        },
+        "B": {
+          "planned": 9,
+          "attempted": 9,
+          "valid": 9,
+          "editorialReviewed": 9,
+          "acceptanceCount": 0,
+          "acceptance": 0,
+          "mean": 3.494444444444444,
+          "median": 3.55,
+          "distribution": {
+            "1": 0,
+            "2": 1,
+            "3": 8,
+            "4": 0
+          },
+          "criteria": {
+            "opening": 3.2222222222222223,
+            "development": 2.888888888888889,
+            "readability": 4,
+            "focus": 4.333333333333333,
+            "ending": 3,
+            "voice": 3.7777777777777777
+          },
+          "withinSubjectVariance": 0.05222222222222226,
+          "words": 110.88888888888889,
+          "defects": {
+            "repetition": 1,
+            "generic_opening": 0,
+            "generic_ending": 2,
+            "report_voice": 4,
+            "thin_substance": 9
+          },
+          "confirmedF2": 0,
+          "newF2": 0,
+          "propagatedF2": 0,
+          "amplifiedF2": 0,
+          "factualReviewed": 9,
+          "factualWithIncompleteReview": 1,
+          "unresolved": 1,
+          "medianSeconds": 4.46,
+          "p90Seconds": 6.296
+        },
+        "C": {
+          "planned": 9,
+          "attempted": 9,
+          "valid": 9,
+          "editorialReviewed": 9,
+          "acceptanceCount": 1,
+          "acceptance": 0.1111111111111111,
+          "mean": 3.3000000000000003,
+          "median": 3.3,
+          "distribution": {
+            "1": 0,
+            "2": 0,
+            "3": 9,
+            "4": 0
+          },
+          "criteria": {
+            "opening": 3,
+            "development": 2.7777777777777777,
+            "readability": 3.7777777777777777,
+            "focus": 4.333333333333333,
+            "ending": 2.6666666666666665,
+            "voice": 3.3333333333333335
+          },
+          "withinSubjectVariance": 0.05370370370370369,
+          "words": 112.88888888888889,
+          "defects": {
+            "repetition": 1,
+            "generic_opening": 2,
+            "generic_ending": 3,
+            "report_voice": 6,
+            "thin_substance": 9
+          },
+          "confirmedF2": 0,
+          "newF2": 0,
+          "propagatedF2": 0,
+          "amplifiedF2": 0,
+          "factualReviewed": 9,
+          "factualWithIncompleteReview": 0,
+          "unresolved": 0,
+          "medianSeconds": 4.512,
+          "p90Seconds": 5.974
+        }
+      },
+      "stress": {
+        "B": {
+          "planned": 15,
+          "attempted": 15,
+          "valid": 15,
+          "editorialReviewed": 15,
+          "acceptanceCount": 0,
+          "acceptance": 0,
+          "mean": 2.9566666666666666,
+          "median": 3,
+          "distribution": {
+            "1": 0,
+            "2": 5,
+            "3": 10,
+            "4": 0
+          },
+          "criteria": {
+            "opening": 2.8666666666666667,
+            "development": 2.4,
+            "readability": 3.6,
+            "focus": 3.6666666666666665,
+            "ending": 2.2,
+            "voice": 2.933333333333333
+          },
+          "withinSubjectVariance": 0.07333333333333333,
+          "words": 101.4,
+          "defects": {
+            "repetition": 8,
+            "generic_opening": 2,
+            "generic_ending": 10,
+            "report_voice": 8,
+            "thin_substance": 15
+          },
+          "confirmedF2": 8,
+          "newF2": 1,
+          "propagatedF2": 7,
+          "amplifiedF2": 0,
+          "factualReviewed": 15,
+          "factualWithIncompleteReview": 1,
+          "unresolved": 0,
+          "medianSeconds": 4.824,
+          "p90Seconds": 6.095
+        },
+        "C": {
+          "planned": 15,
+          "attempted": 15,
+          "valid": 15,
+          "editorialReviewed": 15,
+          "acceptanceCount": 0,
+          "acceptance": 0,
+          "mean": 3.1600000000000006,
+          "median": 3.2,
+          "distribution": {
+            "1": 0,
+            "2": 4,
+            "3": 11,
+            "4": 0
+          },
+          "criteria": {
+            "opening": 3.066666666666667,
+            "development": 2.466666666666667,
+            "readability": 3.933333333333333,
+            "focus": 3.8,
+            "ending": 2.533333333333333,
+            "voice": 3.2
+          },
+          "withinSubjectVariance": 0.021111111111111112,
+          "words": 106.66666666666667,
+          "defects": {
+            "repetition": 7,
+            "generic_opening": 1,
+            "generic_ending": 5,
+            "report_voice": 3,
+            "thin_substance": 15
+          },
+          "confirmedF2": 9,
+          "newF2": 0,
+          "propagatedF2": 8,
+          "amplifiedF2": 1,
+          "factualReviewed": 14,
+          "factualWithIncompleteReview": 2,
+          "unresolved": 0,
+          "medianSeconds": 4.676,
+          "p90Seconds": 6.595
+        },
+        "A": {
+          "planned": 15,
+          "attempted": 15,
+          "valid": 15,
+          "editorialReviewed": 15,
+          "acceptanceCount": 0,
+          "acceptance": 0,
+          "mean": 3.1633333333333336,
+          "median": 3.2,
+          "distribution": {
+            "1": 0,
+            "2": 1,
+            "3": 14,
+            "4": 0
+          },
+          "criteria": {
+            "opening": 3.066666666666667,
+            "development": 2.466666666666667,
+            "readability": 4,
+            "focus": 4,
+            "ending": 2.1333333333333333,
+            "voice": 3.2
+          },
+          "withinSubjectVariance": 0.014555555555555563,
+          "words": 108.66666666666667,
+          "defects": {
+            "repetition": 8,
+            "generic_opening": 2,
+            "generic_ending": 10,
+            "report_voice": 6,
+            "thin_substance": 15
+          },
+          "confirmedF2": 10,
+          "newF2": 1,
+          "propagatedF2": 8,
+          "amplifiedF2": 1,
+          "factualReviewed": 15,
+          "factualWithIncompleteReview": 1,
+          "unresolved": 1,
+          "medianSeconds": 4.915,
+          "p90Seconds": 6.559
+        }
+      },
+      "fresh": {
+        "C": {
+          "planned": 18,
+          "attempted": 18,
+          "valid": 18,
+          "editorialReviewed": 18,
+          "acceptanceCount": 0,
+          "acceptance": 0,
+          "mean": 3.041666666666666,
+          "median": 3,
+          "distribution": {
+            "1": 0,
+            "2": 5,
+            "3": 13,
+            "4": 0
+          },
+          "criteria": {
+            "opening": 2.888888888888889,
+            "development": 2.2222222222222223,
+            "readability": 3.8333333333333335,
+            "focus": 4.055555555555555,
+            "ending": 2.111111111111111,
+            "voice": 3.2222222222222223
+          },
+          "withinSubjectVariance": 0.022314814814814815,
+          "words": 66.5,
+          "defects": {
+            "repetition": 6,
+            "generic_opening": 2,
+            "generic_ending": 8,
+            "report_voice": 10,
+            "thin_substance": 18
+          },
+          "confirmedF2": 1,
+          "newF2": 1,
+          "propagatedF2": 0,
+          "amplifiedF2": 0,
+          "factualReviewed": 17,
+          "factualWithIncompleteReview": 2,
+          "unresolved": 0,
+          "medianSeconds": 3.4685,
+          "p90Seconds": 4.298
+        },
+        "A": {
+          "planned": 18,
+          "attempted": 18,
+          "valid": 18,
+          "editorialReviewed": 18,
+          "acceptanceCount": 1,
+          "acceptance": 0.05555555555555555,
+          "mean": 3.158333333333333,
+          "median": 3.1500000000000004,
+          "distribution": {
+            "1": 0,
+            "2": 4,
+            "3": 14,
+            "4": 0
+          },
+          "criteria": {
+            "opening": 3.1666666666666665,
+            "development": 2.3333333333333335,
+            "readability": 3.9444444444444446,
+            "focus": 4.055555555555555,
+            "ending": 2.1666666666666665,
+            "voice": 3.2777777777777777
+          },
+          "withinSubjectVariance": 0.011203703703703709,
+          "words": 64.94444444444444,
+          "defects": {
+            "repetition": 6,
+            "generic_opening": 3,
+            "generic_ending": 10,
+            "report_voice": 6,
+            "thin_substance": 18
+          },
+          "confirmedF2": 0,
+          "newF2": 0,
+          "propagatedF2": 0,
+          "amplifiedF2": 0,
+          "factualReviewed": 18,
+          "factualWithIncompleteReview": 1,
+          "unresolved": 0,
+          "medianSeconds": 3.5605,
+          "p90Seconds": 4.066
+        },
+        "B": {
+          "planned": 18,
+          "attempted": 18,
+          "valid": 18,
+          "editorialReviewed": 18,
+          "acceptanceCount": 0,
+          "acceptance": 0,
+          "mean": 3.0055555555555555,
+          "median": 3,
+          "distribution": {
+            "1": 0,
+            "2": 6,
+            "3": 12,
+            "4": 0
+          },
+          "criteria": {
+            "opening": 2.9444444444444446,
+            "development": 2.2777777777777777,
+            "readability": 3.7777777777777777,
+            "focus": 3.9444444444444446,
+            "ending": 2,
+            "voice": 3
+          },
+          "withinSubjectVariance": 0.014814814814814815,
+          "words": 66.77777777777777,
+          "defects": {
+            "repetition": 8,
+            "generic_opening": 3,
+            "generic_ending": 7,
+            "report_voice": 9,
+            "thin_substance": 18
+          },
+          "confirmedF2": 0,
+          "newF2": 0,
+          "propagatedF2": 0,
+          "amplifiedF2": 0,
+          "factualReviewed": 18,
+          "factualWithIncompleteReview": 3,
+          "unresolved": 0,
+          "medianSeconds": 3.4995,
+          "p90Seconds": 4.395
+        }
+      }
+    },
+    "richness": {
+      "constrained": {
+        "A": {
+          "planned": 24,
+          "attempted": 24,
+          "valid": 24,
+          "editorialReviewed": 24,
+          "acceptanceCount": 1,
+          "acceptance": 0.041666666666666664,
+          "mean": 3.1791666666666667,
+          "median": 3.2,
+          "distribution": {
+            "1": 0,
+            "2": 4,
+            "3": 20,
+            "4": 0
+          },
+          "criteria": {
+            "opening": 3.125,
+            "development": 2.4166666666666665,
+            "readability": 3.9583333333333335,
+            "focus": 4,
+            "ending": 2.3333333333333335,
+            "voice": 3.25
+          },
+          "withinSubjectVariance": 0.015625000000000007,
+          "words": 84.375,
+          "defects": {
+            "repetition": 10,
+            "generic_opening": 4,
+            "generic_ending": 13,
+            "report_voice": 7,
+            "thin_substance": 24
+          },
+          "confirmedF2": 4,
+          "newF2": 1,
+          "propagatedF2": 2,
+          "amplifiedF2": 1,
+          "factualReviewed": 24,
+          "factualWithIncompleteReview": 3,
+          "unresolved": 0,
+          "medianSeconds": 4.0535,
+          "p90Seconds": 4.915
+        },
+        "B": {
+          "planned": 24,
+          "attempted": 24,
+          "valid": 24,
+          "editorialReviewed": 24,
+          "acceptanceCount": 0,
+          "acceptance": 0,
+          "mean": 3.1604166666666664,
+          "median": 3.075,
+          "distribution": {
+            "1": 0,
+            "2": 7,
+            "3": 17,
+            "4": 0
+          },
+          "criteria": {
+            "opening": 3,
+            "development": 2.5416666666666665,
+            "readability": 3.75,
+            "focus": 4.083333333333333,
+            "ending": 2.375,
+            "voice": 3.25
+          },
+          "withinSubjectVariance": 0.014444444444444444,
+          "words": 81.5,
+          "defects": {
+            "repetition": 10,
+            "generic_opening": 3,
+            "generic_ending": 9,
+            "report_voice": 10,
+            "thin_substance": 24
+          },
+          "confirmedF2": 2,
+          "newF2": 1,
+          "propagatedF2": 1,
+          "amplifiedF2": 0,
+          "factualReviewed": 24,
+          "factualWithIncompleteReview": 2,
+          "unresolved": 1,
+          "medianSeconds": 3.94,
+          "p90Seconds": 4.824
+        },
+        "C": {
+          "planned": 24,
+          "attempted": 24,
+          "valid": 24,
+          "editorialReviewed": 24,
+          "acceptanceCount": 1,
+          "acceptance": 0.041666666666666664,
+          "mean": 3.1708333333333325,
+          "median": 3.05,
+          "distribution": {
+            "1": 0,
+            "2": 5,
+            "3": 19,
+            "4": 0
+          },
+          "criteria": {
+            "opening": 2.9583333333333335,
+            "development": 2.5,
+            "readability": 3.8333333333333335,
+            "focus": 4.083333333333333,
+            "ending": 2.4583333333333335,
+            "voice": 3.2916666666666665
+          },
+          "withinSubjectVariance": 0.019513888888888886,
+          "words": 83,
+          "defects": {
+            "repetition": 7,
+            "generic_opening": 2,
+            "generic_ending": 6,
+            "report_voice": 9,
+            "thin_substance": 24
+          },
+          "confirmedF2": 4,
+          "newF2": 1,
+          "propagatedF2": 2,
+          "amplifiedF2": 1,
+          "factualReviewed": 23,
+          "factualWithIncompleteReview": 3,
+          "unresolved": 0,
+          "medianSeconds": 3.9835,
+          "p90Seconds": 4.676
+        }
+      },
+      "rich": {
+        "B": {
+          "planned": 18,
+          "attempted": 18,
+          "valid": 18,
+          "editorialReviewed": 18,
+          "acceptanceCount": 0,
+          "acceptance": 0,
+          "mean": 3.002777777777778,
+          "median": 3,
+          "distribution": {
+            "1": 0,
+            "2": 5,
+            "3": 13,
+            "4": 0
+          },
+          "criteria": {
+            "opening": 2.9444444444444446,
+            "development": 2.3333333333333335,
+            "readability": 3.7777777777777777,
+            "focus": 3.7222222222222223,
+            "ending": 2.1666666666666665,
+            "voice": 3
+          },
+          "withinSubjectVariance": 0.0827777777777778,
+          "words": 98.05555555555556,
+          "defects": {
+            "repetition": 7,
+            "generic_opening": 2,
+            "generic_ending": 10,
+            "report_voice": 11,
+            "thin_substance": 18
+          },
+          "confirmedF2": 6,
+          "newF2": 0,
+          "propagatedF2": 6,
+          "amplifiedF2": 0,
+          "factualReviewed": 18,
+          "factualWithIncompleteReview": 3,
+          "unresolved": 0,
+          "medianSeconds": 4.5255,
+          "p90Seconds": 6.28
+        },
+        "C": {
+          "planned": 18,
+          "attempted": 18,
+          "valid": 18,
+          "editorialReviewed": 18,
+          "acceptanceCount": 0,
+          "acceptance": 0,
+          "mean": 3.0972222222222223,
+          "median": 3.1,
+          "distribution": {
+            "1": 0,
+            "2": 4,
+            "3": 14,
+            "4": 0
+          },
+          "criteria": {
+            "opening": 3,
+            "development": 2.3333333333333335,
+            "readability": 3.888888888888889,
+            "focus": 3.9444444444444446,
+            "ending": 2.2777777777777777,
+            "voice": 3.1666666666666665
+          },
+          "withinSubjectVariance": 0.040740740740740744,
+          "words": 101.16666666666667,
+          "defects": {
+            "repetition": 7,
+            "generic_opening": 3,
+            "generic_ending": 10,
+            "report_voice": 10,
+            "thin_substance": 18
+          },
+          "confirmedF2": 6,
+          "newF2": 0,
+          "propagatedF2": 6,
+          "amplifiedF2": 0,
+          "factualReviewed": 17,
+          "factualWithIncompleteReview": 1,
+          "unresolved": 0,
+          "medianSeconds": 4.452500000000001,
+          "p90Seconds": 6.595
+        },
+        "A": {
+          "planned": 18,
+          "attempted": 18,
+          "valid": 18,
+          "editorialReviewed": 18,
+          "acceptanceCount": 1,
+          "acceptance": 0.05555555555555555,
+          "mean": 3.230555555555555,
+          "median": 3.25,
+          "distribution": {
+            "1": 0,
+            "2": 1,
+            "3": 17,
+            "4": 0
+          },
+          "criteria": {
+            "opening": 3.111111111111111,
+            "development": 2.611111111111111,
+            "readability": 3.9444444444444446,
+            "focus": 4.111111111111111,
+            "ending": 2.2222222222222223,
+            "voice": 3.2777777777777777
+          },
+          "withinSubjectVariance": 0.016018518518518526,
+          "words": 100.83333333333333,
+          "defects": {
+            "repetition": 7,
+            "generic_opening": 3,
+            "generic_ending": 9,
+            "report_voice": 11,
+            "thin_substance": 18
+          },
+          "confirmedF2": 6,
+          "newF2": 0,
+          "propagatedF2": 6,
+          "amplifiedF2": 0,
+          "factualReviewed": 18,
+          "factualWithIncompleteReview": 1,
+          "unresolved": 1,
+          "medianSeconds": 4.439,
+          "p90Seconds": 6.689
+        }
+      }
+    },
+    "paired": {
+      "B": {
+        "subjects": [
+          {
+            "subject": "coral",
+            "pairs": [
+              {
+                "rep": 1,
+                "a": 3.5,
+                "b": 3.55,
+                "aPass": false,
+                "bPass": false
+              },
+              {
+                "rep": 2,
+                "a": 3.8,
+                "b": 3.55,
+                "aPass": true,
+                "bPass": false
+              },
+              {
+                "rep": 3,
+                "a": 3.3,
+                "b": 3.65,
+                "aPass": false,
+                "bPass": false
+              }
+            ],
+            "meanDelta": 0.04999999999999997,
+            "acceptanceDelta": -0.3333333333333333
+          },
+          {
+            "subject": "digital",
+            "pairs": [
+              {
+                "rep": 1,
+                "a": 3.25,
+                "b": 2.35,
+                "aPass": false,
+                "bPass": false
+              },
+              {
+                "rep": 2,
+                "a": 3,
+                "b": 3,
+                "aPass": false,
+                "bPass": false
+              },
+              {
+                "rep": 3,
+                "a": 3.25,
+                "b": 2,
+                "aPass": false,
+                "bPass": false
+              }
+            ],
+            "meanDelta": -0.7166666666666667,
+            "acceptanceDelta": 0
+          },
+          {
+            "subject": "highways",
+            "pairs": [
+              {
+                "rep": 1,
+                "a": 3.25,
+                "b": 3.7,
+                "aPass": false,
+                "bPass": false
+              },
+              {
+                "rep": 2,
+                "a": 3.05,
+                "b": 2.8,
+                "aPass": false,
+                "bPass": false
+              },
+              {
+                "rep": 3,
+                "a": 3.5,
+                "b": 3.45,
+                "aPass": false,
+                "bPass": false
+              }
+            ],
+            "meanDelta": 0.05000000000000012,
+            "acceptanceDelta": 0
+          },
+          {
+            "subject": "python",
+            "pairs": [
+              {
+                "rep": 1,
+                "a": 3.35,
+                "b": 3.7,
+                "aPass": false,
+                "bPass": false
+              },
+              {
+                "rep": 2,
+                "a": 3.2,
+                "b": 3.6,
+                "aPass": false,
+                "bPass": false
+              },
+              {
+                "rep": 3,
+                "a": 3.2,
+                "b": 3.45,
+                "aPass": false,
+                "bPass": false
+              }
+            ],
+            "meanDelta": 0.3333333333333333,
+            "acceptanceDelta": 0
+          },
+          {
+            "subject": "webb",
+            "pairs": [
+              {
+                "rep": 1,
+                "a": 3.45,
+                "b": 3.15,
+                "aPass": false,
+                "bPass": false
+              },
+              {
+                "rep": 2,
+                "a": 3.35,
+                "b": 3.65,
+                "aPass": false,
+                "bPass": false
+              },
+              {
+                "rep": 3,
+                "a": 3.45,
+                "b": 3.65,
+                "aPass": false,
+                "bPass": false
+              }
+            ],
+            "meanDelta": 0.06666666666666643,
+            "acceptanceDelta": 0
+          },
+          {
+            "subject": "wolf",
+            "pairs": [
+              {
+                "rep": 1,
+                "a": 3,
+                "b": 2.35,
+                "aPass": false,
+                "bPass": false
+              },
+              {
+                "rep": 2,
+                "a": 3,
+                "b": 2.9,
+                "aPass": false,
+                "bPass": false
+              },
+              {
+                "rep": 3,
+                "a": 2.8,
+                "b": 3.1,
+                "aPass": false,
+                "bPass": false
+              }
+            ],
+            "meanDelta": -0.1499999999999999,
+            "acceptanceDelta": 0
+          },
+          {
+            "subject": "eia",
+            "pairs": [
+              {
+                "rep": 1,
+                "a": 3.35,
+                "b": 3.35,
+                "aPass": false,
+                "bPass": false
+              },
+              {
+                "rep": 2,
+                "a": 3,
+                "b": 3,
+                "aPass": false,
+                "bPass": false
+              },
+              {
+                "rep": 3,
+                "a": 3.2,
+                "b": 3,
+                "aPass": false,
+                "bPass": false
+              }
+            ],
+            "meanDelta": -0.06666666666666672,
+            "acceptanceDelta": 0
+          },
+          {
+            "subject": "faa",
+            "pairs": [
+              {
+                "rep": 1,
+                "a": 3,
+                "b": 3.05,
+                "aPass": false,
+                "bPass": false
+              },
+              {
+                "rep": 2,
+                "a": 3,
+                "b": 2.8,
+                "aPass": false,
+                "bPass": false
+              },
+              {
+                "rep": 3,
+                "a": 3.35,
+                "b": 3,
+                "aPass": false,
+                "bPass": false
+              }
+            ],
+            "meanDelta": -0.16666666666666682,
+            "acceptanceDelta": 0
+          },
+          {
+            "subject": "voyager-record",
+            "pairs": [
+              {
+                "rep": 1,
+                "a": 3,
+                "b": 3,
+                "aPass": false,
+                "bPass": false
+              },
+              {
+                "rep": 2,
+                "a": 3,
+                "b": 3,
+                "aPass": false,
+                "bPass": false
+              },
+              {
+                "rep": 3,
+                "a": 3.25,
+                "b": 3,
+                "aPass": false,
+                "bPass": false
+              }
+            ],
+            "meanDelta": -0.08333333333333333,
+            "acceptanceDelta": 0
+          },
+          {
+            "subject": "st-helens-blast",
+            "pairs": [
+              {
+                "rep": 1,
+                "a": 3.25,
+                "b": 3.1,
+                "aPass": false,
+                "bPass": false
+              },
+              {
+                "rep": 2,
+                "a": 3.45,
+                "b": 3,
+                "aPass": false,
+                "bPass": false
+              },
+              {
+                "rep": 3,
+                "a": 3.2,
+                "b": 3.2,
+                "aPass": false,
+                "bPass": false
+              }
+            ],
+            "meanDelta": -0.20000000000000004,
+            "acceptanceDelta": 0
+          },
+          {
+            "subject": "hope-diamond-mail",
+            "pairs": [
+              {
+                "rep": 1,
+                "a": 3.55,
+                "b": 3.45,
+                "aPass": false,
+                "bPass": false
+              },
+              {
+                "rep": 2,
+                "a": 3.8,
+                "b": 3,
+                "aPass": true,
+                "bPass": false
+              },
+              {
+                "rep": 3,
+                "a": 3.55,
+                "b": 3.65,
+                "aPass": false,
+                "bPass": false
+              }
+            ],
+            "meanDelta": -0.26666666666666644,
+            "acceptanceDelta": -0.3333333333333333
+          },
+          {
+            "subject": "sofar-channel",
+            "pairs": [
+              {
+                "rep": 1,
+                "a": 2.85,
+                "b": 3.1,
+                "aPass": false,
+                "bPass": false
+              },
+              {
+                "rep": 2,
+                "a": 3.2,
+                "b": 3.1,
+                "aPass": false,
+                "bPass": false
+              },
+              {
+                "rep": 3,
+                "a": 3,
+                "b": 3,
+                "aPass": false,
+                "bPass": false
+              }
+            ],
+            "meanDelta": 0.04999999999999997,
+            "acceptanceDelta": 0
+          },
+          {
+            "subject": "stonewall-park",
+            "pairs": [
+              {
+                "rep": 1,
+                "a": 3.1,
+                "b": 2.75,
+                "aPass": false,
+                "bPass": false
+              },
+              {
+                "rep": 2,
+                "a": 3.2,
+                "b": 2.65,
+                "aPass": false,
+                "bPass": false
+              },
+              {
+                "rep": 3,
+                "a": 3,
+                "b": 2.8,
+                "aPass": false,
+                "bPass": false
+              }
+            ],
+            "meanDelta": -0.36666666666666686,
+            "acceptanceDelta": 0
+          },
+          {
+            "subject": "suffrage-amendment",
+            "pairs": [
+              {
+                "rep": 1,
+                "a": 2.85,
+                "b": 2.8,
+                "aPass": false,
+                "bPass": false
+              },
+              {
+                "rep": 2,
+                "a": 2.8,
+                "b": 2.8,
+                "aPass": false,
+                "bPass": false
+              },
+              {
+                "rep": 3,
+                "a": 2.8,
+                "b": 2.7,
+                "aPass": false,
+                "bPass": false
+              }
+            ],
+            "meanDelta": -0.04999999999999997,
+            "acceptanceDelta": 0
+          }
+        ],
+        "meanInterval": [
+          -0.2416666666666667,
+          0.007142857142857179
+        ],
+        "acceptanceInterval": [
+          -0.11904761904761904,
+          0
+        ],
+        "leaveOneOut": [
+          {
+            "omitted": "coral",
+            "meanDelta": -0.12051282051282054,
+            "acceptanceDelta": -0.02564102564102564
+          },
+          {
+            "omitted": "digital",
+            "meanDelta": -0.06153846153846155,
+            "acceptanceDelta": -0.05128205128205128
+          },
+          {
+            "omitted": "highways",
+            "meanDelta": -0.12051282051282056,
+            "acceptanceDelta": -0.05128205128205128
+          },
+          {
+            "omitted": "python",
+            "meanDelta": -0.14230769230769233,
+            "acceptanceDelta": -0.05128205128205128
+          },
+          {
+            "omitted": "webb",
+            "meanDelta": -0.1217948717948718,
+            "acceptanceDelta": -0.05128205128205128
+          },
+          {
+            "omitted": "wolf",
+            "meanDelta": -0.10512820512820517,
+            "acceptanceDelta": -0.05128205128205128
+          },
+          {
+            "omitted": "eia",
+            "meanDelta": -0.11153846153846157,
+            "acceptanceDelta": -0.05128205128205128
+          },
+          {
+            "omitted": "faa",
+            "meanDelta": -0.10384615384615387,
+            "acceptanceDelta": -0.05128205128205128
+          },
+          {
+            "omitted": "voyager-record",
+            "meanDelta": -0.1102564102564103,
+            "acceptanceDelta": -0.05128205128205128
+          },
+          {
+            "omitted": "st-helens-blast",
+            "meanDelta": -0.10128205128205131,
+            "acceptanceDelta": -0.05128205128205128
+          },
+          {
+            "omitted": "hope-diamond-mail",
+            "meanDelta": -0.0961538461538462,
+            "acceptanceDelta": -0.02564102564102564
+          },
+          {
+            "omitted": "sofar-channel",
+            "meanDelta": -0.12051282051282054,
+            "acceptanceDelta": -0.05128205128205128
+          },
+          {
+            "omitted": "stonewall-park",
+            "meanDelta": -0.08846153846153847,
+            "acceptanceDelta": -0.05128205128205128
+          },
+          {
+            "omitted": "suffrage-amendment",
+            "meanDelta": -0.11282051282051285,
+            "acceptanceDelta": -0.05128205128205128
+          }
+        ]
+      },
+      "C": {
+        "subjects": [
+          {
+            "subject": "coral",
+            "pairs": [
+              {
+                "rep": 1,
+                "a": 3.5,
+                "b": 3,
+                "aPass": false,
+                "bPass": false
+              },
+              {
+                "rep": 2,
+                "a": 3.8,
+                "b": 3.1,
+                "aPass": true,
+                "bPass": false
+              },
+              {
+                "rep": 3,
+                "a": 3.3,
+                "b": 3.8,
+                "aPass": false,
+                "bPass": true
+              }
+            ],
+            "meanDelta": -0.23333333333333325,
+            "acceptanceDelta": 0
+          },
+          {
+            "subject": "digital",
+            "pairs": [
+              {
+                "rep": 1,
+                "a": 3.25,
+                "b": 2.85,
+                "aPass": false,
+                "bPass": false
+              },
+              {
+                "rep": 2,
+                "a": 3,
+                "b": 2.35,
+                "aPass": false,
+                "bPass": false
+              },
+              {
+                "rep": 3,
+                "a": 3.25,
+                "b": 2.7,
+                "aPass": false,
+                "bPass": false
+              }
+            ],
+            "meanDelta": -0.5333333333333332,
+            "acceptanceDelta": 0
+          },
+          {
+            "subject": "highways",
+            "pairs": [
+              {
+                "rep": 1,
+                "a": 3.25,
+                "b": 3.25,
+                "aPass": false,
+                "bPass": false
+              },
+              {
+                "rep": 2,
+                "a": 3.05,
+                "b": 3.05,
+                "aPass": false,
+                "bPass": false
+              },
+              {
+                "rep": 3,
+                "a": 3.5,
+                "b": 3.5,
+                "aPass": false,
+                "bPass": false
+              }
+            ],
+            "meanDelta": 0,
+            "acceptanceDelta": 0
+          },
+          {
+            "subject": "python",
+            "pairs": [
+              {
+                "rep": 1,
+                "a": 3.35,
+                "b": 3.35,
+                "aPass": false,
+                "bPass": false
+              },
+              {
+                "rep": 2,
+                "a": 3.2,
+                "b": 3.3,
+                "aPass": false,
+                "bPass": false
+              },
+              {
+                "rep": 3,
+                "a": 3.2,
+                "b": 3.35,
+                "aPass": false,
+                "bPass": false
+              }
+            ],
+            "meanDelta": 0.08333333333333319,
+            "acceptanceDelta": 0
+          },
+          {
+            "subject": "webb",
+            "pairs": [
+              {
+                "rep": 1,
+                "a": 3.45,
+                "b": 3.45,
+                "aPass": false,
+                "bPass": false
+              },
+              {
+                "rep": 2,
+                "a": 3.35,
+                "b": 3.55,
+                "aPass": false,
+                "bPass": false
+              },
+              {
+                "rep": 3,
+                "a": 3.45,
+                "b": 3.55,
+                "aPass": false,
+                "bPass": false
+              }
+            ],
+            "meanDelta": 0.0999999999999998,
+            "acceptanceDelta": 0
+          },
+          {
+            "subject": "wolf",
+            "pairs": [
+              {
+                "rep": 1,
+                "a": 3,
+                "b": 3.35,
+                "aPass": false,
+                "bPass": false
+              },
+              {
+                "rep": 2,
+                "a": 3,
+                "b": 3.2,
+                "aPass": false,
+                "bPass": false
+              },
+              {
+                "rep": 3,
+                "a": 2.8,
+                "b": 2.85,
+                "aPass": false,
+                "bPass": false
+              }
+            ],
+            "meanDelta": 0.20000000000000018,
+            "acceptanceDelta": 0
+          },
+          {
+            "subject": "eia",
+            "pairs": [
+              {
+                "rep": 1,
+                "a": 3.35,
+                "b": 3.45,
+                "aPass": false,
+                "bPass": false
+              },
+              {
+                "rep": 2,
+                "a": 3,
+                "b": 3.55,
+                "aPass": false,
+                "bPass": false
+              },
+              {
+                "rep": 3,
+                "a": 3.2,
+                "b": 3.35,
+                "aPass": false,
+                "bPass": false
+              }
+            ],
+            "meanDelta": 0.2666666666666666,
+            "acceptanceDelta": 0
+          },
+          {
+            "subject": "faa",
+            "pairs": [
+              {
+                "rep": 1,
+                "a": 3,
+                "b": 3,
+                "aPass": false,
+                "bPass": false
+              },
+              {
+                "rep": 2,
+                "a": 3,
+                "b": 3.2,
+                "aPass": false,
+                "bPass": false
+              },
+              {
+                "rep": 3,
+                "a": 3.35,
+                "b": 3,
+                "aPass": false,
+                "bPass": false
+              }
+            ],
+            "meanDelta": -0.04999999999999997,
+            "acceptanceDelta": 0
+          },
+          {
+            "subject": "voyager-record",
+            "pairs": [
+              {
+                "rep": 1,
+                "a": 3,
+                "b": 3.1,
+                "aPass": false,
+                "bPass": false
+              },
+              {
+                "rep": 2,
+                "a": 3,
+                "b": 3,
+                "aPass": false,
+                "bPass": false
+              },
+              {
+                "rep": 3,
+                "a": 3.25,
+                "b": 3,
+                "aPass": false,
+                "bPass": false
+              }
+            ],
+            "meanDelta": -0.04999999999999997,
+            "acceptanceDelta": 0
+          },
+          {
+            "subject": "st-helens-blast",
+            "pairs": [
+              {
+                "rep": 1,
+                "a": 3.25,
+                "b": 3.1,
+                "aPass": false,
+                "bPass": false
+              },
+              {
+                "rep": 2,
+                "a": 3.45,
+                "b": 3.1,
+                "aPass": false,
+                "bPass": false
+              },
+              {
+                "rep": 3,
+                "a": 3.2,
+                "b": 3.4,
+                "aPass": false,
+                "bPass": false
+              }
+            ],
+            "meanDelta": -0.10000000000000009,
+            "acceptanceDelta": 0
+          },
+          {
+            "subject": "hope-diamond-mail",
+            "pairs": [
+              {
+                "rep": 1,
+                "a": 3.55,
+                "b": 3,
+                "aPass": false,
+                "bPass": false
+              },
+              {
+                "rep": 2,
+                "a": 3.8,
+                "b": 3.2,
+                "aPass": true,
+                "bPass": false
+              },
+              {
+                "rep": 3,
+                "a": 3.55,
+                "b": 3.75,
+                "aPass": false,
+                "bPass": false
+              }
+            ],
+            "meanDelta": -0.31666666666666643,
+            "acceptanceDelta": -0.3333333333333333
+          },
+          {
+            "subject": "sofar-channel",
+            "pairs": [
+              {
+                "rep": 1,
+                "a": 2.85,
+                "b": 3,
+                "aPass": false,
+                "bPass": false
+              },
+              {
+                "rep": 2,
+                "a": 3.2,
+                "b": 3,
+                "aPass": false,
+                "bPass": false
+              },
+              {
+                "rep": 3,
+                "a": 3,
+                "b": 3,
+                "aPass": false,
+                "bPass": false
+              }
+            ],
+            "meanDelta": -0.016666666666666757,
+            "acceptanceDelta": 0
+          },
+          {
+            "subject": "stonewall-park",
+            "pairs": [
+              {
+                "rep": 1,
+                "a": 3.1,
+                "b": 2.8,
+                "aPass": false,
+                "bPass": false
+              },
+              {
+                "rep": 2,
+                "a": 3.2,
+                "b": 3,
+                "aPass": false,
+                "bPass": false
+              },
+              {
+                "rep": 3,
+                "a": 3,
+                "b": 2.8,
+                "aPass": false,
+                "bPass": false
+              }
+            ],
+            "meanDelta": -0.23333333333333353,
+            "acceptanceDelta": 0
+          },
+          {
+            "subject": "suffrage-amendment",
+            "pairs": [
+              {
+                "rep": 1,
+                "a": 2.85,
+                "b": 2.8,
+                "aPass": false,
+                "bPass": false
+              },
+              {
+                "rep": 2,
+                "a": 2.8,
+                "b": 2.9,
+                "aPass": false,
+                "bPass": false
+              },
+              {
+                "rep": 3,
+                "a": 2.8,
+                "b": 2.8,
+                "aPass": false,
+                "bPass": false
+              }
+            ],
+            "meanDelta": 0.016666666666666607,
+            "acceptanceDelta": 0
+          }
+        ],
+        "meanInterval": [
+          -0.17380952380952383,
+          0.0404761904761905
+        ],
+        "acceptanceInterval": [
+          -0.07142857142857142,
+          0
+        ],
+        "leaveOneOut": [
+          {
+            "omitted": "coral",
+            "meanDelta": -0.04871794871794873,
+            "acceptanceDelta": -0.02564102564102564
+          },
+          {
+            "omitted": "digital",
+            "meanDelta": -0.025641025641025664,
+            "acceptanceDelta": -0.02564102564102564
+          },
+          {
+            "omitted": "highways",
+            "meanDelta": -0.06666666666666668,
+            "acceptanceDelta": -0.02564102564102564
+          },
+          {
+            "omitted": "python",
+            "meanDelta": -0.07307692307692307,
+            "acceptanceDelta": -0.02564102564102564
+          },
+          {
+            "omitted": "webb",
+            "meanDelta": -0.07435897435897436,
+            "acceptanceDelta": -0.02564102564102564
+          },
+          {
+            "omitted": "wolf",
+            "meanDelta": -0.08205128205128208,
+            "acceptanceDelta": -0.02564102564102564
+          },
+          {
+            "omitted": "eia",
+            "meanDelta": -0.08717948717948719,
+            "acceptanceDelta": -0.02564102564102564
+          },
+          {
+            "omitted": "faa",
+            "meanDelta": -0.06282051282051283,
+            "acceptanceDelta": -0.02564102564102564
+          },
+          {
+            "omitted": "voyager-record",
+            "meanDelta": -0.06282051282051283,
+            "acceptanceDelta": -0.02564102564102564
+          },
+          {
+            "omitted": "st-helens-blast",
+            "meanDelta": -0.05897435897435899,
+            "acceptanceDelta": -0.02564102564102564
+          },
+          {
+            "omitted": "hope-diamond-mail",
+            "meanDelta": -0.042307692307692345,
+            "acceptanceDelta": 0
+          },
+          {
+            "omitted": "sofar-channel",
+            "meanDelta": -0.0653846153846154,
+            "acceptanceDelta": -0.02564102564102564
+          },
+          {
+            "omitted": "stonewall-park",
+            "meanDelta": -0.048717948717948725,
+            "acceptanceDelta": -0.02564102564102564
+          },
+          {
+            "omitted": "suffrage-amendment",
+            "meanDelta": -0.06794871794871796,
+            "acceptanceDelta": -0.02564102564102564
+          }
+        ]
+      }
+    }
+  }
+}

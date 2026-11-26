@@ -1,0 +1,64 @@
+{
+  "claims": [
+    {
+      "excerpt": "### The Stonewall Inn and Christopher Park",
+      "claim": "The Stonewall Inn and Christopher Park are the places associated with the events discussed.",
+      "category": "interpretation",
+      "label": "F0 faithful",
+      "evidence": "Police raided the Stonewall Inn in the early hours of June 28, 1969. The raid prompted resistance and demonstrations continued on following nights in Christopher Park, across from the inn, and in the nearby neighborhood.",
+      "narrative": "The story locates the Stonewall demonstrations around the Stonewall Inn and Christopher Park.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The title identifies the two locations associated with the raid and subsequent demonstrations in the evidence.",
+      "materiality": "Low; it frames the subject without adding a disputed event detail."
+    },
+    {
+      "excerpt": "In the early hours of June 28, 1969, police raided the Stonewall Inn.",
+      "claim": "Police raided the Stonewall Inn in the early hours of June 28, 1969.",
+      "category": "chronology",
+      "label": "F0 faithful",
+      "evidence": "Police raided the Stonewall Inn in the early hours of June 28, 1969.",
+      "narrative": "After police raided the inn in the early hours of June 28, 1969",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The location and timing match the evidence.",
+      "materiality": "High; this establishes the central event and its timing."
+    },
+    {
+      "excerpt": "Resistance followed",
+      "claim": "Resistance occurred after the police raid.",
+      "category": "chronology",
+      "label": "F0 faithful",
+      "evidence": "The raid prompted resistance",
+      "narrative": "resistance followed",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The evidence establishes resistance as a response to the raid; the excerpt asserts sequence without overstating causation.",
+      "materiality": "Material to the event sequence."
+    },
+    {
+      "excerpt": "demonstrations continued on subsequent nights in Christopher Park, across from the inn, and in the nearby neighborhood.",
+      "claim": "Demonstrations continued on later nights in Christopher Park, across from the Stonewall Inn, and in the nearby neighborhood.",
+      "category": "scope",
+      "label": "F0 faithful",
+      "evidence": "demonstrations continued on following nights in Christopher Park, across from the inn, and in the nearby neighborhood.",
+      "narrative": "demonstrations continued on subsequent nights in Christopher Park, across from the inn, and in the nearby neighborhood",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The locations, their relationship, and the continued demonstrations on later nights match the evidence.",
+      "materiality": "High; this identifies where and when demonstrations continued."
+    },
+    {
+      "excerpt": "The events took place around the inn, the park, and the surrounding area.",
+      "claim": "The events were located around the inn, the park, and the surrounding area.",
+      "category": "scope",
+      "label": "F0 faithful",
+      "evidence": "Police raided the Stonewall Inn in the early hours of June 28, 1969. The raid prompted resistance and demonstrations continued on following nights in Christopher Park, across from the inn, and in the nearby neighborhood.",
+      "narrative": "The reader should understand how the events were situated in relation to these places.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "This summarizes the raid at the inn and later demonstrations in the park and nearby neighborhood; it does not claim that demonstrations occurred only in the park.",
+      "materiality": "Low; it restates the geographic scope without specifying additional locations."
+    }
+  ]
+}

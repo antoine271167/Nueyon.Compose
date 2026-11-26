@@ -1,0 +1,88 @@
+{
+  "claims": [
+    {
+      "excerpt": "# Fourth Global Coral Bleaching Event Set a Record for Heat-Stress Exposure",
+      "claim": "The fourth global coral bleaching event set a record for heat-stress exposure.",
+      "category": "outcome",
+      "label": "U",
+      "evidence": "From January 1, 2023 through September 30, 2025, roughly 84.4% of global coral reef area experienced bleaching-level heat stress. The previous global event ran from 2014 to 2017 and exposed 68.2% of reef area to bleaching-level heat stress.",
+      "narrative": "The scale of the heat-stress footprint—larger than the 68.2% recorded during the 2014–2017 event—makes the event record-setting by measured exposure, not proof that every exposed reef bleached or died.",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The source establishes a larger footprint than the previous global event, but supplies no measurements for earlier global events to independently establish an all-time record.",
+      "materiality": "Material: the title asserts a historical superlative beyond the comparison quantified in the source."
+    },
+    {
+      "excerpt": "The fourth global coral bleaching event was confirmed on April 15, 2024.",
+      "claim": "The fourth global coral bleaching event was confirmed on April 15, 2024.",
+      "category": "chronology",
+      "label": "F0",
+      "evidence": "NOAA and ICRI confirmed the fourth global bleaching event on April 15, 2024.",
+      "narrative": "The fourth global coral bleaching event was confirmed on April 15, 2024, while satellite data show bleaching-level heat stress across roughly 84.4% of global reef area from January 2023 through September 2025.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The date and event number match the source; omitting NOAA and ICRI does not change the claim.",
+      "materiality": "Immaterial attribution omission."
+    },
+    {
+      "excerpt": "Satellite data show bleaching-level heat stress across roughly 84.4% of global reef area from January 2023 through September 2025—a measurement period distinct from the confirmation date.",
+      "claim": "Satellite data show roughly 84.4% of global reef area experienced bleaching-level heat stress during January 2023 through September 2025.",
+      "category": "quantity",
+      "label": "F0",
+      "evidence": "From January 1, 2023 through September 30, 2025, roughly 84.4% of global coral reef area experienced bleaching-level heat stress.",
+      "narrative": "The fourth global coral bleaching event was confirmed on April 15, 2024, while satellite data show bleaching-level heat stress across roughly 84.4% of global reef area from January 2023 through September 2025.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The approximate percentage and measurement window match the source; the shortened month-to-month wording preserves the stated interval.",
+      "materiality": "Material quantitative claim, accurately represented."
+    },
+    {
+      "excerpt": "Satellite data show bleaching-level heat stress across roughly 84.4% of global reef area from January 2023 through September 2025—a measurement period distinct from the confirmation date.",
+      "claim": "The heat-stress measurement period is distinct from the event’s April 15, 2024 confirmation date.",
+      "category": "chronology",
+      "label": "F0",
+      "evidence": "NOAA and ICRI confirmed the fourth global bleaching event on April 15, 2024. From January 1, 2023 through September 30, 2025, roughly 84.4% of global coral reef area experienced bleaching-level heat stress.",
+      "narrative": "The fourth global coral bleaching event was confirmed on April 15, 2024, while satellite data show bleaching-level heat stress across roughly 84.4% of global reef area from January 2023 through September 2025.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The source gives different dates for confirmation and for the exposure window, as the piece explicitly distinguishes.",
+      "materiality": "Material chronology distinction, accurately represented."
+    },
+    {
+      "excerpt": "Mass bleaching was documented in at least 83 countries and territories.",
+      "claim": "Mass bleaching was documented in at least 83 countries and territories.",
+      "category": "quantity",
+      "label": "F0",
+      "evidence": "Mass bleaching was documented in at least 83 countries and territories.",
+      "narrative": "Mass bleaching was documented in at least 83 countries and territories.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The threshold and geographic scope match the source.",
+      "materiality": "Material scope claim, accurately represented."
+    },
+    {
+      "excerpt": "The measured heat-stress footprint exceeded the 68.2% recorded during the 2014–2017 event.",
+      "claim": "The measured heat-stress footprint exceeded the 68.2% recorded during the 2014–2017 global event.",
+      "category": "quantity",
+      "label": "F0",
+      "evidence": "The previous global event ran from 2014 to 2017 and exposed 68.2% of reef area to bleaching-level heat stress.",
+      "narrative": "The scale of the heat-stress footprint—larger than the 68.2% recorded during the 2014–2017 event—makes the event record-setting by measured exposure, not proof that every exposed reef bleached or died.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The percentage, event period, and comparison are consistent with the source.",
+      "materiality": "Material comparison, accurately represented."
+    },
+    {
+      "excerpt": "The record describes reef area exposed to bleaching-level heat stress; it does not establish that every exposed reef bleached or died.",
+      "claim": "The record measures reef area exposed to bleaching-level heat stress, not the share of reefs that bleached or died; it does not establish that every exposed reef had either outcome.",
+      "category": "interpretation",
+      "label": "F0",
+      "evidence": "From January 1, 2023 through September 30, 2025, roughly 84.4% of global coral reef area experienced bleaching-level heat stress. Mass bleaching was documented in at least 83 countries and territories.",
+      "narrative": "The scale of the heat-stress footprint—larger than the 68.2% recorded during the 2014–2017 event—makes the event record-setting by measured exposure, not proof that every exposed reef bleached or died.",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The source reports heat-stress exposure separately from geographically documented mass bleaching; it does not report that all exposed reefs bleached or died. The wording accurately limits what the exposure figure establishes.",
+      "materiality": "Material distinction between exposure and biological outcomes, accurately represented."
+    }
+  ]
+}

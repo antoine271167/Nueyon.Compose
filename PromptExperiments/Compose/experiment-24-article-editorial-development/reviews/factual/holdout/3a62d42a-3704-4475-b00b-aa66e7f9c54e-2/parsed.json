@@ -1,0 +1,76 @@
+{
+  "claims": [
+    {
+      "excerpt": "## The Stonewall Inn and Christopher Park",
+      "claim": "The Stonewall Inn and Christopher Park are the two places relevant to the account of the demonstrations.",
+      "category": "scope",
+      "label": "F0 faithful",
+      "evidence": "Locate the demonstrations in relation to the Stonewall Inn and Christopher Park using the limited event record.",
+      "narrative": "The story locates the Stonewall demonstrations around the Stonewall Inn and Christopher Park.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The title names the two locations that the source and narrative identify as relevant to the events.",
+      "materiality": "Low; it frames the subject without asserting a more specific relationship."
+    },
+    {
+      "excerpt": "In the early hours of June 28, 1969, police raided the Stonewall Inn.",
+      "claim": "Police raided the Stonewall Inn in the early hours of June 28, 1969.",
+      "category": "chronology",
+      "label": "F0 faithful",
+      "evidence": "Police raided the Stonewall Inn in the early hours of June 28, 1969.",
+      "narrative": "After police raided the inn in the early hours of June 28, 1969",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The date, time of day, actor, action, and location match the source.",
+      "materiality": "Material event detail, accurately represented."
+    },
+    {
+      "excerpt": "Resistance followed",
+      "claim": "Resistance followed the police raid.",
+      "category": "cause",
+      "label": "F0 faithful",
+      "evidence": "The raid prompted resistance",
+      "narrative": "resistance followed",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The source describes the raid as prompting resistance; the piece preserves that relationship.",
+      "materiality": "Material event relationship, accurately represented."
+    },
+    {
+      "excerpt": "demonstrations continued on subsequent nights",
+      "claim": "Demonstrations continued on nights after the raid.",
+      "category": "chronology",
+      "label": "F0 faithful",
+      "evidence": "demonstrations continued on following nights",
+      "narrative": "demonstrations continued on subsequent nights",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "“Subsequent nights” faithfully conveys “following nights” without adding a precise duration.",
+      "materiality": "Material chronology, accurately represented."
+    },
+    {
+      "excerpt": "across from the inn in Christopher Park",
+      "claim": "The demonstrations took place in Christopher Park, across from the Stonewall Inn.",
+      "category": "entity",
+      "label": "F0 faithful",
+      "evidence": "in Christopher Park, across from the inn",
+      "narrative": "in Christopher Park, across from the inn",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The location and its relationship to the inn match the source.",
+      "materiality": "Material geographic detail, accurately represented."
+    },
+    {
+      "excerpt": "and in the nearby neighborhood",
+      "claim": "The demonstrations also took place in the nearby neighborhood.",
+      "category": "scope",
+      "label": "F0 faithful",
+      "evidence": "and in the nearby neighborhood",
+      "narrative": "and in the nearby neighborhood",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The piece preserves the source's additional location and does not limit the demonstrations to the park.",
+      "materiality": "Material scope detail, accurately represented."
+    }
+  ]
+}

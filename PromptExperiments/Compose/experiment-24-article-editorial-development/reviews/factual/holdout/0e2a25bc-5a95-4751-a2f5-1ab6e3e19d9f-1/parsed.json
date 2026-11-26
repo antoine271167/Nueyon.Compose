@@ -1,0 +1,124 @@
+{
+  "claims": [
+    {
+      "excerpt": "The Blast at Mount St. Helens",
+      "claim": "A blast occurred at Mount St. Helens.",
+      "category": "entity",
+      "label": "F0 faithful",
+      "evidence": "On May 18 its steep north flank fell in a landslide, triggering a blast",
+      "narrative": "The story follows how Mount St. Helens’ north flank collapse on May 18, 1980, triggered a blast",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The title identifies the event and location described in the source.",
+      "materiality": "Establishes the subject of the piece."
+    },
+    {
+      "excerpt": "In the two months before May 18, 1980, Mount St. Helens experienced earthquakes and small explosions.",
+      "claim": "Mount St. Helens experienced earthquakes and small explosions during the two months before May 18, 1980.",
+      "category": "chronology",
+      "label": "F0 faithful",
+      "evidence": "For two months before May 18, 1980, Mount St. Helens experienced earthquakes and small explosions.",
+      "narrative": "In the two months before May 18, Mount St. Helens experienced earthquakes and small explosions.",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The timing and events match the source.",
+      "materiality": "Provides context for the eruption sequence."
+    },
+    {
+      "excerpt": "On May 18, the volcano’s steep north flank collapsed in a landslide",
+      "claim": "On May 18, 1980, Mount St. Helens’ steep north flank collapsed in a landslide.",
+      "category": "chronology",
+      "label": "F0 faithful",
+      "evidence": "On May 18 its steep north flank fell in a landslide",
+      "narrative": "On May 18, 1980, the steep north flank fell in a landslide",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The preceding sentence dates the events to 1980; the collapse and landslide match the source.",
+      "materiality": "Identifies the event that triggered the blast."
+    },
+    {
+      "excerpt": "triggering a blast",
+      "claim": "The north-flank landslide triggered the blast.",
+      "category": "cause",
+      "label": "F0 faithful",
+      "evidence": "its steep north flank fell in a landslide, triggering a blast",
+      "narrative": "north flank collapse on May 18, 1980, triggered a blast",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The stated causal relationship matches the source.",
+      "materiality": "Central causal relationship in the account."
+    },
+    {
+      "excerpt": "a blast that traveled nearly horizontally",
+      "claim": "The blast traveled nearly horizontally.",
+      "category": "technical",
+      "label": "F0 faithful",
+      "evidence": "triggering a blast that traveled nearly horizontally",
+      "narrative": "triggered a blast that traveled nearly horizontally",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "Direction and degree match the source; no compass direction is added.",
+      "materiality": "A defining characteristic of the blast."
+    },
+    {
+      "excerpt": "A powerful vertical eruption followed.",
+      "claim": "A powerful vertical eruption followed the nearly horizontal blast.",
+      "category": "chronology",
+      "label": "F0 faithful",
+      "evidence": "triggering a blast that traveled nearly horizontally before a powerful vertical eruption followed",
+      "narrative": "a powerful vertical eruption that followed",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The source presents the vertical eruption as a subsequent event, matching the piece.",
+      "materiality": "Preserves the sequence and distinction between the blast and eruption."
+    },
+    {
+      "excerpt": "The blast developed into a gravity-driven flow of hot material.",
+      "claim": "The blast developed into a gravity-driven flow of hot material.",
+      "category": "technical",
+      "label": "F0 faithful",
+      "evidence": "The blast developed into a gravity-driven flow of hot material",
+      "narrative": "The blast developed into a gravity-driven flow of hot material.",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The development and nature of the flow match the source.",
+      "materiality": "Describes the form the blast took."
+    },
+    {
+      "excerpt": "It felled millions of trees",
+      "claim": "The gravity-driven flow felled millions of trees.",
+      "category": "quantity",
+      "label": "F0 faithful",
+      "evidence": "that felled millions of trees",
+      "narrative": "millions of trees felled",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The pronoun refers to the flow, and the scale matches the source.",
+      "materiality": "Conveys the scale of the flow’s impact."
+    },
+    {
+      "excerpt": "stripped bark and branches",
+      "claim": "The flow stripped bark and branches.",
+      "category": "outcome",
+      "label": "F0 faithful",
+      "evidence": "stripped bark and branches",
+      "narrative": "bark and branches stripped",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The stated physical effect matches the source.",
+      "materiality": "Describes a documented effect of the flow."
+    },
+    {
+      "excerpt": "and scraped away soil in places.",
+      "claim": "The flow scraped away soil in some places.",
+      "category": "scope",
+      "label": "F0 faithful",
+      "evidence": "and scraped away soil in places.",
+      "narrative": "soil scraped away in places",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The effect and its limited scope match the source.",
+      "materiality": "Describes a documented effect without implying it occurred everywhere."
+    }
+  ]
+}

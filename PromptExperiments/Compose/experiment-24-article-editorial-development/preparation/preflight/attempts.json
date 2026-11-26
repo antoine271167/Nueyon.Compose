@@ -1,0 +1,5 @@
+﻿{
+  "generation": {"model": "gpt-6-luna", "runtime": "production CLI", "fixture": "../../../experiment-23-compose-quality-baseline/fixtures/airmf/article.json", "exit": 0, "response": "compose-result.json", "samplingSlot": false},
+  "reviewer": {"model": "gpt-6-luna", "runtime": "GitHub Copilot CLI 1.0.116", "request": "Reply only READY.", "response": "READY", "exit": 0, "samplingSlot": false},
+  "credentialValuesLogged": false
+}

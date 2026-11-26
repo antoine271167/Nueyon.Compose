@@ -1,0 +1,88 @@
+{
+  "claims": [
+    {
+      "excerpt": "Hoeveel energie was hernieuwbaar in 2024? Dat hangt af van wat je meet",
+      "claim": "Het antwoord op welk aandeel van energie hernieuwbaar was in 2024 hangt af van de gekozen maatstaf.",
+      "category": "interpretation",
+      "label": "F0 faithful",
+      "evidence": "Laat zien waarom het antwoord verandert met wat je meet, aan de hand van de wereldcijfers voor 2024.",
+      "narrative": "De vraag welk deel van de energie wereldwijd hernieuwbaar is, heeft in 2024 niet één antwoord: het hangt af van wat je meet.",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "De bron geeft verschillende hernieuwbare aandelen voor elektriciteitsproductie, totale energieproductie en totaal energieverbruik.",
+      "materiality": "Deze framing bepaalt hoe de cijfers moeten worden geïnterpreteerd."
+    },
+    {
+      "excerpt": "Wereldwijd kwam 32% van de elektriciteitsproductie in 2024 uit hernieuwbare bronnen.",
+      "claim": "Wereldwijd was in 2024 32% van de elektriciteitsproductie afkomstig uit hernieuwbare bronnen.",
+      "category": "quantity",
+      "label": "F0 faithful",
+      "evidence": "The table for 2024 lists 10.0 trillion kWh of renewable electricity production out of 30.7 trillion kWh of total electricity production, reported as 32%.",
+      "narrative": "Hernieuwbare bronnen leverden 32% van de elektriciteit",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "De bron vermeldt dezelfde 32% voor hernieuwbare elektriciteitsproductie in 2024.",
+      "materiality": "Dit is een hoofdpercentage; het geldt specifiek voor elektriciteitsproductie."
+    },
+    {
+      "excerpt": "hernieuwbare energie vormde 7% van zowel de totale energieproductie",
+      "claim": "Hernieuwbare energie vormde in 2024 7% van de totale energieproductie.",
+      "category": "quantity",
+      "label": "F0 faithful",
+      "evidence": "Across all energy production, renewables were 42.4 out of 605.6 quadrillion Btu, reported as 7%.",
+      "narrative": "hernieuwbare energie 7% uitmaakte van zowel de totale energieproductie",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "De bron geeft voor totale energieproductie een hernieuwbaar aandeel van 7%.",
+      "materiality": "Dit cijfer heeft een bredere afbakening dan het elektriciteitscijfer."
+    },
+    {
+      "excerpt": "als het totale energieverbruik.",
+      "claim": "Hernieuwbare energie vormde in 2024 7% van het totale energieverbruik.",
+      "category": "quantity",
+      "label": "F0 faithful",
+      "evidence": "The renewable share of all energy consumption was also 7%.",
+      "narrative": "als het totale energieverbruik.",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "De bron vermeldt eveneens 7% voor het aandeel hernieuwbare energie in het totale energieverbruik.",
+      "materiality": "Dit is een afzonderlijke maatstaf van energieproductie en elektriciteitsproductie."
+    },
+    {
+      "excerpt": "Die percentages beschrijven verschillende afbakeningen. Het aandeel in de elektriciteitsproductie is dus niet hetzelfde als het aandeel in alle energieproductie of in het totale energieverbruik.",
+      "claim": "De percentages hebben betrekking op verschillende categorieën: het aandeel in elektriciteitsproductie is niet hetzelfde als het aandeel in totale energieproductie of totaal energieverbruik.",
+      "category": "scope",
+      "label": "F0 faithful",
+      "evidence": "The table for 2024 lists 10.0 trillion kWh of renewable electricity production out of 30.7 trillion kWh of total electricity production, reported as 32%. Total electricity consumption was 28.5 trillion kWh; the renewable portion is listed as unavailable. Across all energy production, renewables were 42.4 out of 605.6 quadrillion Btu, reported as 7%. The renewable share of all energy consumption was also 7%.",
+      "narrative": "De lezer moet begrijpen dat een percentage voor elektriciteit niet hetzelfde is als een percentage voor alle energie.\n\n### Story Progression\n- **Endpoint:** Benadruk dat de percentages verschillende afbakeningen van energie beschrijven; noem daarom steeds waarop het aandeel betrekking heeft.",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "De bron maakt onderscheid tussen elektriciteitsproductie, totale energieproductie en totaal energieverbruik; bovendien is het hernieuwbare aandeel van elektriciteitsverbruik volgens de bron niet beschikbaar.",
+      "materiality": "Dit onderscheid voorkomt dat het 32%-cijfer ten onrechte wordt opgevat als aandeel van alle energie."
+    },
+    {
+      "excerpt": "De cijfers horen bij een gegevensversie van 1 juli 2026",
+      "claim": "De gebruikte cijfers horen bij een gegevensversie van 1 juli 2026.",
+      "category": "chronology",
+      "label": "F0 faithful",
+      "evidence": "This is a July 1, 2026 data vintage subject to change.",
+      "narrative": "De cijfers zijn voor 2024 en horen bij een gegevensversie van 1 juli 2026, die kan worden bijgewerkt.",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "De bron noemt expliciet de gegevensversie van 1 juli 2026.",
+      "materiality": "De gegevensversie is van belang voor de actualiteit en reproduceerbaarheid van de cijfers."
+    },
+    {
+      "excerpt": "en kunnen worden bijgewerkt.",
+      "claim": "De cijfers kunnen worden bijgewerkt.",
+      "category": "certainty",
+      "label": "F0 faithful",
+      "evidence": "This is a July 1, 2026 data vintage subject to change.",
+      "narrative": "De cijfers zijn voor 2024 en horen bij een gegevensversie van 1 juli 2026, die kan worden bijgewerkt.",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "De bron vermeldt dat de gegevensversie aan verandering onderhevig is.",
+      "materiality": "Dit maakt duidelijk dat de vermelde cijfers niet noodzakelijk definitief zijn."
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "claims": [
+    {
+      "excerpt": "What the National Ignition Facility’s Fusion Result Shows",
+      "claim": "The result being discussed is from the National Ignition Facility.",
+      "category": "entity",
+      "label": "F0 faithful",
+      "evidence": "a Lawrence Livermore National Laboratory experiment at the National Ignition Facility",
+      "narrative": "The National Ignition Facility experiment",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The source identifies the experiment as taking place at the National Ignition Facility.",
+      "materiality": "The facility identifies the experiment."
+    },
+    {
+      "excerpt": "2.05 megajoules of energy were delivered to the target",
+      "claim": "The experiment delivered 2.05 megajoules of energy to the target.",
+      "category": "quantity",
+      "label": "F0 faithful",
+      "evidence": "The experiment delivered 2.05 megajoules to the target",
+      "narrative": "2.05 megajoules to the target",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The value and target-level boundary match the source.",
+      "materiality": "The target-level boundary is central to interpreting the result."
+    },
+    {
+      "excerpt": "the resulting fusion produced 3.15 megajoules",
+      "claim": "The experiment generated 3.15 megajoules of fusion energy.",
+      "category": "quantity",
+      "label": "F0 faithful",
+      "evidence": "generated 3.15 megajoules of fusion energy",
+      "narrative": "3.15 megajoules of fusion energy were generated",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The amount and energy type match the source.",
+      "materiality": "The output value is central to the comparison."
+    },
+    {
+      "excerpt": "At the target level, fusion output exceeded the energy delivered to the target.",
+      "claim": "At the target, fusion output exceeded the energy delivered to the target.",
+      "category": "interpretation",
+      "label": "F0 faithful",
+      "evidence": "The experiment delivered 2.05 megajoules to the target and generated 3.15 megajoules of fusion energy.",
+      "narrative": "fusion output exceeded the energy delivered to the target",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The stated relationship follows from the source values, and the claim is explicitly limited to the target level.",
+      "materiality": "This comparison is the piece’s central takeaway; its target-level scope prevents implying facility-wide energy gain."
+    },
+    {
+      "excerpt": "That comparison represents progress toward inertial fusion energy",
+      "claim": "The target-level comparison represents progress toward inertial fusion energy.",
+      "category": "interpretation",
+      "label": "F0 faithful",
+      "evidence": "The announcement treats the experiment as progress toward inertial fusion energy",
+      "narrative": "a result treated as progress toward inertial fusion energy",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "This matches how the source characterizes the achievement.",
+      "materiality": "It frames the significance of the comparison."
+    },
+    {
+      "excerpt": "not practical electricity production",
+      "claim": "The target-level result is not practical electricity production.",
+      "category": "outcome",
+      "label": "F0 faithful",
+      "evidence": "notes the many scientific and technological developments still needed for practical energy production",
+      "narrative": "not as practical electricity production",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The source says practical energy production still requires substantial development; it does not claim that the experiment produced practical electricity.",
+      "materiality": "This distinction avoids overstating the result as usable power."
+    },
+    {
+      "excerpt": "Substantial scientific and technological development is still required before practical energy production.",
+      "claim": "Practical energy production still requires substantial scientific and technological development.",
+      "category": "outcome",
+      "label": "F0 faithful",
+      "evidence": "notes the many scientific and technological developments still needed for practical energy production",
+      "narrative": "practical energy production still requires substantial scientific and technological development",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The piece accurately restates the source’s qualification.",
+      "materiality": "This sets the limit on what the achievement establishes."
+    }
+  ]
+}

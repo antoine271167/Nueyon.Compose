@@ -1,0 +1,112 @@
+{
+  "claims": [
+    {
+      "excerpt": "NIST’s AI Risk Management Framework and Generative AI Profile",
+      "claim": "The title associates NIST with both the AI Risk Management Framework and a generative AI profile.",
+      "category": "entity",
+      "label": "F0 faithful",
+      "evidence": "NIST released AI RMF 1.0 in January 2023.",
+      "narrative": "The story is about the relationship between NIST’s broad, voluntary AI Risk Management Framework and its later profile focused on generative AI.",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The source identifies NIST as releasing the framework and publishing the profile.",
+      "materiality": "The title’s identification of the publications and their association is accurate."
+    },
+    {
+      "excerpt": "NIST released its voluntary AI Risk Management Framework (AI RMF 1.0) in January 2023.",
+      "claim": "NIST released AI RMF 1.0 in January 2023.",
+      "category": "chronology",
+      "label": "F0 faithful",
+      "evidence": "NIST released AI RMF 1.0 in January 2023.",
+      "narrative": "The framework, released in January 2023,",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The release date and actor match the source.",
+      "materiality": "Accurately states the framework’s release timing."
+    },
+    {
+      "excerpt": "voluntary AI Risk Management Framework",
+      "claim": "AI RMF 1.0 is voluntary.",
+      "category": "other",
+      "label": "F0 faithful",
+      "evidence": "It was designed for voluntary use",
+      "narrative": "NIST’s broad, voluntary AI Risk Management Framework",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The source describes the framework as designed for voluntary use.",
+      "materiality": "Accurately characterizes the framework’s voluntary status."
+    },
+    {
+      "excerpt": "The broad framework is designed to help organizations incorporate trustworthiness considerations across AI design, development, use, and evaluation.",
+      "claim": "The framework is designed to help organizations incorporate trustworthiness considerations across AI design, development, use, and evaluation.",
+      "category": "intention",
+      "label": "F0 faithful",
+      "evidence": "It was designed for voluntary use and aims to help organizations bring trustworthiness considerations into the design, development, use and evaluation of AI.",
+      "narrative": "The framework, released in January 2023, is designed to help organizations incorporate trustworthiness considerations across AI design, development, use, and evaluation.",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "This closely paraphrases the source’s description of the framework’s aim and coverage.",
+      "materiality": "Accurately conveys the stated purpose and lifecycle areas."
+    },
+    {
+      "excerpt": "In July 2024, NIST published AI 600-1",
+      "claim": "NIST published AI 600-1 in July 2024.",
+      "category": "chronology",
+      "label": "F0 faithful",
+      "evidence": "In July 2024 NIST published AI 600-1,",
+      "narrative": "In July 2024, NIST published AI 600-1",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The actor, publication, and date match the source.",
+      "materiality": "Accurately states the publication timing."
+    },
+    {
+      "excerpt": "a cross-sector companion profile focused on generative AI",
+      "claim": "AI 600-1 is a cross-sector companion profile focused on generative AI.",
+      "category": "technical",
+      "label": "F0 faithful",
+      "evidence": "a companion profile for generative AI with cross-sector scope.",
+      "narrative": "a cross-sector companion profile for generative AI.",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The source supports both its companion status and its generative-AI focus and cross-sector scope.",
+      "materiality": "Accurately identifies the profile’s role and scope."
+    },
+    {
+      "excerpt": "The profile and the framework are related, but have different scopes:",
+      "claim": "AI 600-1 and AI RMF 1.0 are related publications with different scopes.",
+      "category": "interpretation",
+      "label": "F0 faithful",
+      "evidence": "In July 2024 NIST published AI 600-1, a companion profile for generative AI with cross-sector scope.",
+      "narrative": "Readers should understand the two publications as related but distinct in scope:",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The source calls AI 600-1 a companion profile to the framework and distinguishes its generative-AI focus from the framework’s broader AI coverage.",
+      "materiality": "The relationship and scope distinction are supported."
+    },
+    {
+      "excerpt": "AI RMF 1.0 addresses AI broadly, while AI 600-1 focuses on generative AI.",
+      "claim": "AI RMF 1.0 addresses AI broadly, whereas AI 600-1 focuses on generative AI.",
+      "category": "scope",
+      "label": "F0 faithful",
+      "evidence": "It was designed for voluntary use and aims to help organizations bring trustworthiness considerations into the design, development, use and evaluation of AI. In July 2024 NIST published AI 600-1, a companion profile for generative AI with cross-sector scope.",
+      "narrative": "the later profile focuses on one class of AI",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The source describes the framework’s application across AI and the profile’s specific focus on generative AI.",
+      "materiality": "Accurately distinguishes their scopes."
+    },
+    {
+      "excerpt": "Its status as a companion does not mean that it replaces the broader framework.",
+      "claim": "AI 600-1’s companion status does not establish that it replaces the broader framework.",
+      "category": "interpretation",
+      "label": "F0 faithful",
+      "evidence": "Companion status does not establish replacement.",
+      "narrative": "without presenting the generative AI profile as a replacement for the broader framework.",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "This accurately preserves the source’s caution against inferring replacement from companion status.",
+      "materiality": "Avoids a material mischaracterization of the relationship between the publications."
+    }
+  ]
+}

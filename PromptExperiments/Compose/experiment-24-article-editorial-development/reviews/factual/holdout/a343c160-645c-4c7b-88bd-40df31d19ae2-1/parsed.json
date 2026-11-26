@@ -1,0 +1,100 @@
+{
+  "claims": [
+    {
+      "excerpt": "Twee vormen voor hot spots op luchthavenkaarten",
+      "claim": "Er zijn twee vormen voor hot spots op luchthavenkaarten.",
+      "category": "quantity",
+      "label": "F2 material incorrect, unsupported or misleading",
+      "evidence": "The FAA standardized two meanings with three shapes beginning May 19, 2022.",
+      "narrative": null,
+      "narrativeRelation": "absent",
+      "origin": "independently_introduced",
+      "explanation": "De bron onderscheidt twee betekenissen maar noemt drie vormen: een cirkel, een ellips en een cilinder. De titel suggereert twee vormen.",
+      "materiality": "De titel kan lezers een onjuist beeld geven van het aantal gestandaardiseerde vormen."
+    },
+    {
+      "excerpt": "Een hot spot op een luchthavenkaart markeert een plek in het bewegingsgebied van de luchthaven",
+      "claim": "Een hot spot op een luchthavenkaart markeert een plek in het bewegingsgebied van een luchthaven.",
+      "category": "entity",
+      "label": "F0 faithful",
+      "evidence": "A hot spot is an airport movement-area location",
+      "narrative": "Een hot spot op een luchthavenkaart markeert een plek in het bewegingsgebied van een luchthaven",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "Dit geeft de definitie en locatie uit de bron getrouw weer.",
+      "materiality": "De locatie is de kern van de definitie."
+    },
+    {
+      "excerpt": "waar in het verleden een botsing of runway incursion heeft plaatsgevonden, of waar daarvoor mogelijk risico bestaat.",
+      "claim": "De plek heeft een geschiedenis van een botsing of runway incursion, of er bestaat mogelijk een risico daarop.",
+      "category": "certainty",
+      "label": "F0 faithful",
+      "evidence": "with a history or potential risk of collision or runway incursion.",
+      "narrative": "met een geschiedenis van of mogelijk risico op een botsing of runway incursion.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "De tekst behoudt zowel de historische mogelijkheid als het mogelijke risico uit de bron.",
+      "materiality": "Dit onderscheid beschrijft waarom een locatie als hot spot geldt."
+    },
+    {
+      "excerpt": "Sinds 19 mei 2022 standaardiseert de FAA de aanduidingen voor twee soorten hot spots.",
+      "claim": "De FAA standaardiseerde vanaf 19 mei 2022 de aanduidingen voor twee soorten hot spots.",
+      "category": "chronology",
+      "label": "F0 faithful",
+      "evidence": "The FAA standardized two meanings with three shapes beginning May 19, 2022.",
+      "narrative": "De FAA standaardiseerde vanaf 19 mei 2022 de aanduidingen voor twee soorten hot spots",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "De datum en het aantal soorten komen overeen; ‘sinds’ geeft de ingangsdatum weer.",
+      "materiality": "De datum en reikwijdte van de standaard zijn relevante context."
+    },
+    {
+      "excerpt": "Een cirkel of ellips geeft een *ground movement hot spot* aan;",
+      "claim": "Een cirkel of ellips geeft een ground movement hot spot aan.",
+      "category": "technical",
+      "label": "F0 faithful",
+      "evidence": "A circle or ellipse marks a ground movement hot spot;",
+      "narrative": "een cirkel of ellips duidt een ground movement hot spot aan;",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "De vorm en de bijbehorende categorie zijn correct weergegeven.",
+      "materiality": "Dit is een van de twee vorm-categoriecombinaties die de tekst beschrijft."
+    },
+    {
+      "excerpt": "een cilinder staat voor een *wrong surface hot spot*.",
+      "claim": "Een cilinder geeft een wrong surface hot spot aan.",
+      "category": "technical",
+      "label": "F0 faithful",
+      "evidence": "a cylinder marks a wrong surface hot spot.",
+      "narrative": "een cilinder duidt een wrong surface hot spot aan.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "De vorm en de bijbehorende categorie zijn correct weergegeven.",
+      "materiality": "Dit is de tweede vorm-categoriecombinatie die de tekst beschrijft."
+    },
+    {
+      "excerpt": "De vorm op de kaart maakt zichtbaar om welk type hot spot het gaat.",
+      "claim": "De vorm op de kaart maakt zichtbaar om welk type hot spot het gaat.",
+      "category": "outcome",
+      "label": "F0 faithful",
+      "evidence": "A circle or ellipse marks a ground movement hot spot; a cylinder marks a wrong surface hot spot.",
+      "narrative": "de vorm op de kaart maakt zichtbaar om welk type het gaat.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "De vormcategorieën maken volgens de bron de twee betekenissen herkenbaar.",
+      "materiality": "Dit beschrijft het praktische effect van de vormcodering."
+    },
+    {
+      "excerpt": "De standaard is bedoeld om verwarring over de betekenis en weergave van hot spots te voorkomen.",
+      "claim": "Het voorkomen van verwarring over betekenis en weergave van hot spots is het doel van de standaard.",
+      "category": "intention",
+      "label": "F0 faithful",
+      "evidence": "The stated purpose is to prevent confusion about the meaning or depiction of hot spots.",
+      "narrative": "met als genoemd doel verwarring over de betekenis of weergave van hot spots te voorkomen.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "Het genoemde doel komt overeen met de bron.",
+      "materiality": "Dit geeft het beoogde nut van de standaard weer."
+    }
+  ]
+}

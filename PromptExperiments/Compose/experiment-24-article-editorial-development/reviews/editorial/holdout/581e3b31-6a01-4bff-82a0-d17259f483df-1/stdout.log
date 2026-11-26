@@ -1,0 +1,2 @@
+{"scores":[3,2,4,4,3,4],"defects":["thin_substance"],"strength":"Clearly distinguishes declaring free-threading compatibility from ensuring thread safety: “declaring support signals compatibility with the free-threading mode; it does not make the extension’s code thread-safe.”","weakness":"The article says declaration depends on initialization style but doesn’t explain either path: “The way an extension makes that declaration depends on whether it uses multi-phase or single-phase initialization.”"}
+

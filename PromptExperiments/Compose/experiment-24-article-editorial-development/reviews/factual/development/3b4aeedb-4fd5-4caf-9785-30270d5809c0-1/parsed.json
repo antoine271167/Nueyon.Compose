@@ -1,0 +1,124 @@
+{
+  "claims": [
+    {
+      "excerpt": "How GRACE Follow-On Uses Satellite Separation to Investigate Water Movement",
+      "claim": "GRACE Follow-On uses changes in satellite separation to investigate water movement.",
+      "category": "technical",
+      "label": "F0 faithful",
+      "evidence": "The changing inter-satellite distance is a raw measurement used to infer shifts in mass. The mission follows changes involving groundwater, lakes and rivers, soil moisture, glaciers, ice sheets and changes in sea level attributable to water added to the oceans.",
+      "narrative": "Explain how GRACE Follow-On’s two satellites use changes in the distance between them to help investigate water movement on Earth.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The title accurately summarizes the measurement-to-mass-inference method and its application to water changes described by the source.",
+      "materiality": "This is the piece’s central framing."
+    },
+    {
+      "excerpt": "GRACE Follow-On consists of two satellites",
+      "claim": "GRACE Follow-On consists of two satellites.",
+      "category": "entity",
+      "label": "F0 faithful",
+      "evidence": "Twin satellites follow each other about 137 miles or 220 kilometers apart.",
+      "narrative": "GRACE Follow-On consists of two satellites that follow one another about 137 miles (220 kilometers) apart.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The source identifies a pair of twin satellites.",
+      "materiality": "Establishes the mission’s relevant configuration."
+    },
+    {
+      "excerpt": "that follow one another about 137 miles (220 kilometers) apart",
+      "claim": "The satellites follow one another at a separation of about 137 miles (220 kilometers).",
+      "category": "quantity",
+      "label": "F0 faithful",
+      "evidence": "Twin satellites follow each other about 137 miles or 220 kilometers apart.",
+      "narrative": "GRACE Follow-On consists of two satellites that follow one another about 137 miles (220 kilometers) apart.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "Both stated distance units and the approximate separation match the source.",
+      "materiality": "Provides the scale of the satellite separation."
+    },
+    {
+      "excerpt": "As they pass a larger concentration of mass",
+      "claim": "The satellites pass a larger mass concentration during the described gravitational interaction.",
+      "category": "chronology",
+      "label": "F1 minor immaterial imprecision",
+      "evidence": "As the pair approaches a larger mass concentration",
+      "narrative": "As the pair passes a larger mass concentration, gravity affects the leading satellite first, initially increasing its distance from the trailing satellite.",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The source says the pair approaches the concentration; “pass” can suggest a later point in the encounter. The narrative’s selected-story wording uses the same phrasing, although its story progression says “approaches.”",
+      "materiality": "Minor timing imprecision; it does not change the main explanation."
+    },
+    {
+      "excerpt": "gravity affects the leading satellite first",
+      "claim": "Gravity acts on the leading satellite before the trailing satellite in this encounter.",
+      "category": "chronology",
+      "label": "F0 faithful",
+      "evidence": "stronger gravity acts on the leading satellite first",
+      "narrative": "gravity affects the leading satellite first",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The source explicitly says the leading satellite is affected first.",
+      "materiality": "This ordering is central to the described change in separation."
+    },
+    {
+      "excerpt": "initially increasing its distance from the trailing satellite",
+      "claim": "The initial effect is to increase the leading satellite’s distance from the trailing satellite.",
+      "category": "cause",
+      "label": "F0 faithful",
+      "evidence": "initially pulling it farther from the trailing one",
+      "narrative": "initially increasing its distance from the trailing satellite",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "Increasing the distance is an accurate paraphrase of pulling the leading satellite farther away.",
+      "materiality": "Describes the direction of the initial separation change."
+    },
+    {
+      "excerpt": "Scientists use changes in the satellites’ separation to infer shifts in mass.",
+      "claim": "Scientists use changes in the satellites’ separation to infer shifts in mass.",
+      "category": "technical",
+      "label": "F0 faithful",
+      "evidence": "The changing inter-satellite distance is a raw measurement used to infer shifts in mass.",
+      "narrative": "The resulting change in separation is used to infer shifts in mass.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The measurement and inference are stated directly in the source.",
+      "materiality": "This is the measurement-to-inference link in the explanation."
+    },
+    {
+      "excerpt": "Those inferred shifts help investigate changes in Earth’s water",
+      "claim": "Inferred shifts in mass help scientists investigate changes in Earth’s water.",
+      "category": "interpretation",
+      "label": "F0 faithful",
+      "evidence": "The mission follows changes involving groundwater, lakes and rivers, soil moisture, glaciers, ice sheets and changes in sea level attributable to water added to the oceans.",
+      "narrative": "which can reveal changes involving groundwater and other stores of water.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The source connects the mass-inference measurement to monitoring changes involving water.",
+      "materiality": "Connects the measurement to the mission’s water-related application."
+    },
+    {
+      "excerpt": "including groundwater, lakes and rivers, soil moisture, glaciers and ice sheets",
+      "claim": "The water changes investigated include changes involving groundwater, lakes and rivers, soil moisture, glaciers, and ice sheets.",
+      "category": "scope",
+      "label": "F0 faithful",
+      "evidence": "The mission follows changes involving groundwater, lakes and rivers, soil moisture, glaciers, ice sheets",
+      "narrative": "including changes in groundwater, lakes and rivers, soil moisture, glaciers and ice sheets",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "Each listed water store or feature appears in the source.",
+      "materiality": "Defines the scope of the water changes described."
+    },
+    {
+      "excerpt": "and sea level changes attributable to water added to the oceans",
+      "claim": "The described sea-level changes are attributable to water added to the oceans.",
+      "category": "cause",
+      "label": "F0 faithful",
+      "evidence": "changes in sea level attributable to water added to the oceans.",
+      "narrative": "sea level attributable to water added to the oceans",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The source gives the same attribution and the piece preserves that limitation.",
+      "materiality": "The attribution limits the sea-level claim and avoids implying other causes."
+    }
+  ]
+}

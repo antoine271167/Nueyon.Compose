@@ -1,0 +1,136 @@
+{
+  "claims": [
+    {
+      "excerpt": "The Hope Diamond’s Two-Day Journey to the Smithsonian",
+      "claim": "The Hope Diamond’s journey to the Smithsonian took two days.",
+      "category": "chronology",
+      "label": "F0 faithful",
+      "evidence": "The 45.5-carat gem was sent from New York's General Post Office on November 8 by registered first-class mail in a plain brown package. ... It reached the Smithsonian on November 10",
+      "narrative": "The story follows the Hope Diamond’s two-day journey by mail from New York to the Smithsonian in 1958.",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The source dates the mailing to November 8 and arrival to November 10, consistent with the headline’s two-day framing.",
+      "materiality": "The duration frames the story."
+    },
+    {
+      "excerpt": "In 1958, jeweler Harry Winston donated the 45.5-carat Hope Diamond to the Smithsonian.",
+      "claim": "Jeweler Harry Winston donated the Hope Diamond to the Smithsonian in 1958.",
+      "category": "entity",
+      "label": "F0 faithful",
+      "evidence": "Jeweler Harry Winston donated the Hope Diamond to the Smithsonian in 1958.",
+      "narrative": "In 1958, jeweler Harry Winston donated the 45.5-carat Hope Diamond to the Smithsonian.",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The attribution, recipient, and year match the source.",
+      "materiality": "Identifies the donor, recipient, and context for the journey."
+    },
+    {
+      "excerpt": "45.5-carat Hope Diamond",
+      "claim": "The Hope Diamond weighed 45.5 carats.",
+      "category": "quantity",
+      "label": "F0 faithful",
+      "evidence": "The 45.5-carat gem was sent from New York's General Post Office on November 8 by registered first-class mail in a plain brown package.",
+      "narrative": "the 45.5-carat gem",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The stated carat weight matches the source.",
+      "materiality": "Provides a defining detail of the object."
+    },
+    {
+      "excerpt": "On November 8, the gem began its journey from New York’s General Post Office",
+      "claim": "The gem began its journey on November 8 from New York’s General Post Office.",
+      "category": "chronology",
+      "label": "F0 faithful",
+      "evidence": "The 45.5-carat gem was sent from New York's General Post Office on November 8 by registered first-class mail in a plain brown package.",
+      "narrative": "On November 8, it was sent from New York’s General Post Office",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The departure date and location match the source.",
+      "materiality": "Establishes the journey’s starting point and date."
+    },
+    {
+      "excerpt": "in a plain brown package",
+      "claim": "The gem was mailed in a plain brown package.",
+      "category": "other",
+      "label": "F0 faithful",
+      "evidence": "The 45.5-carat gem was sent from New York's General Post Office on November 8 by registered first-class mail in a plain brown package.",
+      "narrative": "in a plain brown package",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The package description matches the source and does not add a claim about its security.",
+      "materiality": "A concrete detail of how the gem was sent."
+    },
+    {
+      "excerpt": "sent by registered first-class mail",
+      "claim": "The gem was sent by registered first-class mail.",
+      "category": "technical",
+      "label": "F0 faithful",
+      "evidence": "The 45.5-carat gem was sent from New York's General Post Office on November 8 by registered first-class mail in a plain brown package.",
+      "narrative": "by registered first-class mail",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The mailing service matches the source; no extra level of security is asserted.",
+      "materiality": "Identifies the mailing method."
+    },
+    {
+      "excerpt": "Postage cost $2.44",
+      "claim": "Postage cost $2.44.",
+      "category": "quantity",
+      "label": "F0 faithful",
+      "evidence": "Postage cost $2.44 and registration cost $142.85.",
+      "narrative": "Postage was $2.44",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The postage amount matches the source.",
+      "materiality": "A specific cost detail."
+    },
+    {
+      "excerpt": "registration cost $142.85",
+      "claim": "Registration cost $142.85.",
+      "category": "quantity",
+      "label": "F0 faithful",
+      "evidence": "Postage cost $2.44 and registration cost $142.85.",
+      "narrative": "registration cost $142.85",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The registration amount matches the source.",
+      "materiality": "A specific cost detail."
+    },
+    {
+      "excerpt": "The diamond reached the Smithsonian on November 10.",
+      "claim": "The diamond reached the Smithsonian on November 10.",
+      "category": "chronology",
+      "label": "F0 faithful",
+      "evidence": "It reached the Smithsonian on November 10 and was presented in a ceremony attended by Postmaster General Arthur Summerfield.",
+      "narrative": "It reached the Smithsonian on November 10",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The arrival date and destination match the source.",
+      "materiality": "Establishes the endpoint and duration framing."
+    },
+    {
+      "excerpt": "Its arrival was marked by a presentation ceremony",
+      "claim": "A presentation ceremony marked the diamond’s arrival.",
+      "category": "outcome",
+      "label": "F0 faithful",
+      "evidence": "It reached the Smithsonian on November 10 and was presented in a ceremony attended by Postmaster General Arthur Summerfield.",
+      "narrative": "was presented at a ceremony",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The source says the diamond reached the Smithsonian and was presented in a ceremony; describing the ceremony as marking its arrival is consistent with that account.",
+      "materiality": "Describes the event associated with the arrival."
+    },
+    {
+      "excerpt": "attended by Postmaster General Arthur Summerfield",
+      "claim": "Postmaster General Arthur Summerfield attended the ceremony.",
+      "category": "entity",
+      "label": "F0 faithful",
+      "evidence": "It reached the Smithsonian on November 10 and was presented in a ceremony attended by Postmaster General Arthur Summerfield.",
+      "narrative": "attended by Postmaster General Arthur Summerfield",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The attendee and his title match the source.",
+      "materiality": "Identifies a notable ceremony attendee."
+    }
+  ]
+}

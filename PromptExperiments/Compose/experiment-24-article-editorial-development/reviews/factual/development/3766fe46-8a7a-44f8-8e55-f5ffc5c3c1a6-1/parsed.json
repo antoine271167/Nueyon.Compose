@@ -1,0 +1,136 @@
+{
+  "claims": [
+    {
+      "excerpt": "Two Emissions Tracks in the Acid Rain Program",
+      "claim": "The Acid Rain Program had two distinct emissions tracks for its pollutants.",
+      "category": "interpretation",
+      "label": "F0 faithful",
+      "evidence": "The sulfur dioxide mechanism applies an aggregate cap and allows trading; one allowance covers one ton. ... The nitrogen oxides component was rate-based for certain coal-fired units, began in 1996 and did not introduce a cap or allowance trading.",
+      "narrative": "The Acid Rain Program addressed sulfur dioxide and nitrogen oxides from the power sector, but it did not use one shared emissions mechanism.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The source describes different mechanisms and timelines for sulfur dioxide and nitrogen oxides.",
+      "materiality": "The distinction frames the piece."
+    },
+    {
+      "excerpt": "Under Title IV’s Acid Rain Program, sulfur dioxide and nitrogen oxides from the power sector were regulated through different mechanisms.",
+      "claim": "Title IV’s Acid Rain Program regulated power-sector sulfur dioxide and nitrogen oxides through different mechanisms.",
+      "category": "scope",
+      "label": "F0 faithful",
+      "evidence": "EPA’s Acid Rain Program addresses sulfur dioxide and nitrogen oxides from the power sector under Title IV. ... The sulfur dioxide mechanism applies an aggregate cap and allows trading; one allowance covers one ton. ... The nitrogen oxides component was rate-based for certain coal-fired units",
+      "narrative": "The Acid Rain Program addressed sulfur dioxide and nitrogen oxides from the power sector, but it did not use one shared emissions mechanism.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The source establishes the program, pollutants, sector, Title IV context, and differing mechanisms.",
+      "materiality": "Identifies the program’s scope and central contrast."
+    },
+    {
+      "excerpt": "In the sulfur dioxide system, each covered allowance represents permission to emit one ton under an aggregate cap, with allowances traded among participants.",
+      "claim": "In the sulfur dioxide system, each covered allowance permits one ton of emissions under an aggregate cap, and allowances are traded among participants.",
+      "category": "technical",
+      "label": "F0 faithful",
+      "evidence": "The sulfur dioxide mechanism applies an aggregate cap and allows trading; one allowance covers one ton.",
+      "narrative": "An allowance provides an entry point to the sulfur dioxide system: each covered allowance represents permission for one ton under an aggregate cap with trading.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The allowance quantity, cap, and trading mechanism match the source. “Among participants” makes explicit who trades but does not change the claim.",
+      "materiality": "Describes the core sulfur dioxide mechanism."
+    },
+    {
+      "excerpt": "Sulfur dioxide coverage expanded in phases.",
+      "claim": "Sulfur dioxide coverage expanded in phases.",
+      "category": "chronology",
+      "label": "F0 faithful",
+      "evidence": "Its phase I began in 1995 ... Phase II began in 2000.",
+      "narrative": "The program’s sulfur dioxide coverage expanded across phases",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The source gives successive sulfur dioxide phases.",
+      "materiality": "Introduces the timeline."
+    },
+    {
+      "excerpt": "Phase I began in 1995 with 263 initial units at 110 plants.",
+      "claim": "Phase I began in 1995 and initially included 263 units at 110 plants.",
+      "category": "quantity",
+      "label": "F0 faithful",
+      "evidence": "Its phase I began in 1995 with 263 initial units at 110 plants",
+      "narrative": "Phase I began in 1995 with 263 initial units at 110 plants",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The dates and counts match; units and plants are kept distinct.",
+      "materiality": "Provides the initial Phase I scale."
+    },
+    {
+      "excerpt": "Substitution or compensating units brought the Phase I total to 445 units.",
+      "claim": "Substitution or compensating units brought the Phase I total to 445 units.",
+      "category": "quantity",
+      "label": "F0 faithful",
+      "evidence": "substitution or compensating units brought the phase I total to 445 units.",
+      "narrative": "substitution or compensating units brought the Phase I total to 445 units.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The mechanism and resulting unit count match the source.",
+      "materiality": "Provides the resulting Phase I scale."
+    },
+    {
+      "excerpt": "Phase II began in 2000",
+      "claim": "Phase II began in 2000.",
+      "category": "chronology",
+      "label": "F0 faithful",
+      "evidence": "Phase II began in 2000.",
+      "narrative": "Phase II began in 2000",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The date matches the source.",
+      "materiality": "Establishes the next phase’s timing."
+    },
+    {
+      "excerpt": "the final cap, reached in 2010, was 8.95 million tons.",
+      "claim": "The sulfur dioxide program’s final cap was 8.95 million tons in 2010.",
+      "category": "quantity",
+      "label": "F0 faithful",
+      "evidence": "The final 2010 cap was 8.95 million tons.",
+      "narrative": "the final cap in 2010 was 8.95 million tons.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The cap amount and year match; the wording does not present the cap as actual emissions.",
+      "materiality": "States the final cap level."
+    },
+    {
+      "excerpt": "For certain coal-fired units, regulation began in 1996",
+      "claim": "Nitrogen oxides regulation for certain coal-fired units began in 1996.",
+      "category": "chronology",
+      "label": "F0 faithful",
+      "evidence": "The nitrogen oxides component was rate-based for certain coal-fired units, began in 1996",
+      "narrative": "regulation for certain coal-fired units: it began in 1996",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The pollutant, covered unit scope, and start year match.",
+      "materiality": "Establishes the NOx track’s timing and scope."
+    },
+    {
+      "excerpt": "and was rate-based, without a cap or allowance trading.",
+      "claim": "The nitrogen oxides regulation for those units was rate-based and had neither a cap nor allowance trading.",
+      "category": "technical",
+      "label": "F0 faithful",
+      "evidence": "The nitrogen oxides component was rate-based for certain coal-fired units ... and did not introduce a cap or allowance trading.",
+      "narrative": "it was rate-based, without a cap or allowance trading.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The mechanism and absence of cap and trading match the source.",
+      "materiality": "Distinguishes the NOx mechanism from the sulfur dioxide system."
+    },
+    {
+      "excerpt": "The program therefore used distinct mechanisms and timelines for its two pollutants.",
+      "claim": "The program used distinct mechanisms and timelines for sulfur dioxide and nitrogen oxides.",
+      "category": "interpretation",
+      "label": "F0 faithful",
+      "evidence": "The sulfur dioxide mechanism applies an aggregate cap and allows trading ... The nitrogen oxides component was rate-based for certain coal-fired units, began in 1996 and did not introduce a cap or allowance trading.",
+      "narrative": "The program’s two pollutants therefore had distinct mechanisms and timelines.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "This conclusion follows directly from the source’s separate mechanisms and start dates.",
+      "materiality": "Summarizes the central comparison."
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "claims": [
+    {
+      "excerpt": "How GRACE Follow-On Tracks Changes in Earth’s Water",
+      "claim": "GRACE Follow-On tracks changes in Earth's water.",
+      "category": "technical",
+      "label": "F0 faithful",
+      "evidence": "The mission follows changes involving groundwater, lakes and rivers, soil moisture, glaciers, ice sheets and changes in sea level attributable to water added to the oceans.",
+      "narrative": "Explain how GRACE Follow-On’s two satellites use changes in the distance between them to help investigate water movement on Earth.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The title concisely describes the mission's tracking of changes involving water.",
+      "materiality": "This is the piece's central subject."
+    },
+    {
+      "excerpt": "GRACE Follow-On consists of two satellites that follow one another about 137 miles (220 kilometers) apart.",
+      "claim": "GRACE Follow-On consists of two satellites that follow one another about 137 miles (220 kilometers) apart.",
+      "category": "quantity",
+      "label": "F0 faithful",
+      "evidence": "Twin satellites follow each other about 137 miles or 220 kilometers apart.",
+      "narrative": "GRACE Follow-On consists of two satellites that follow one another about 137 miles (220 kilometers) apart.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The satellite count and approximate separation match the source, with equivalent unit conversions.",
+      "materiality": "Provides factual context for how the mission works."
+    },
+    {
+      "excerpt": "As the pair approaches a larger mass concentration, gravity affects the leading satellite first, initially pulling it farther from the trailing satellite.",
+      "claim": "As the pair approaches a larger mass concentration, gravity acts on the leading satellite before the trailing satellite and initially pulls the leading satellite farther away.",
+      "category": "cause",
+      "label": "F0 faithful",
+      "evidence": "As the pair approaches a larger mass concentration, stronger gravity acts on the leading satellite first, initially pulling it farther from the trailing one.",
+      "narrative": "As the pair passes a larger mass concentration, gravity affects the leading satellite first, initially increasing its distance from the trailing satellite.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The order and initial direction of the effect match the source. Omitting “stronger” does not change the stated relationship.",
+      "materiality": "Explains the physical basis of the changing separation."
+    },
+    {
+      "excerpt": "The changing distance between the satellites is a measurement scientists use to infer shifts in mass.",
+      "claim": "Scientists use the changing distance between the satellites as a measurement to infer shifts in mass.",
+      "category": "technical",
+      "label": "F0 faithful",
+      "evidence": "The changing inter-satellite distance is a raw measurement used to infer shifts in mass.",
+      "narrative": "That changing separation is a measurement used to infer shifts in mass.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The measurement and inference are accurately described; “raw” is omitted without changing the claim.",
+      "materiality": "This is the central measurement-to-inference relationship."
+    },
+    {
+      "excerpt": "It is not a direct measurement of groundwater;",
+      "claim": "The satellite-distance measurement is not a direct measurement of groundwater.",
+      "category": "technical",
+      "label": "F0 faithful",
+      "evidence": "The changing inter-satellite distance is a raw measurement used to infer shifts in mass.",
+      "narrative": "Do not describe the separation measurement as a change in altitude or as a direct image or measurement of groundwater.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The source identifies distance as a measurement used to infer mass shifts, not as a direct groundwater measurement.",
+      "materiality": "Clarifies what the instrument measures and avoids overstating its directness."
+    },
+    {
+      "excerpt": "the inferred mass changes can help reveal water movement on Earth.",
+      "claim": "Inferred changes in mass can help reveal water movement on Earth.",
+      "category": "interpretation",
+      "label": "F0 faithful",
+      "evidence": "The changing inter-satellite distance is a raw measurement used to infer shifts in mass. The mission follows changes involving groundwater, lakes and rivers, soil moisture, glaciers, ice sheets and changes in sea level attributable to water added to the oceans.",
+      "narrative": "which can reveal changes involving groundwater and other stores of water.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The source links inferred mass shifts to the mission's tracking of changes involving water; “can help reveal” appropriately states an inference rather than a direct observation.",
+      "materiality": "Connects the measurement to the mission's purpose."
+    },
+    {
+      "excerpt": "These changes include shifts in groundwater, lakes and rivers, soil moisture, glaciers and ice sheets, as well as sea-level changes attributable to water added to the oceans.",
+      "claim": "The changes being tracked include changes involving groundwater, lakes and rivers, soil moisture, glaciers, ice sheets, and sea level changes attributable to water added to the oceans.",
+      "category": "scope",
+      "label": "F0 faithful",
+      "evidence": "The mission follows changes involving groundwater, lakes and rivers, soil moisture, glaciers, ice sheets and changes in sea level attributable to water added to the oceans.",
+      "narrative": "including changes in groundwater, lakes and rivers, soil moisture, glaciers and ice sheets, and sea level attributable to water added to the oceans.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The listed water stores and the qualification limiting the sea-level claim to water added to the oceans match the source.",
+      "materiality": "Defines the scope of water-related changes described."
+    }
+  ]
+}

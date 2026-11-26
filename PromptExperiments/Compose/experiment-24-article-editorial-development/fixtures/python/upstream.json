@@ -1,0 +1,12 @@
+{
+  "selectedIdea": {
+    "title": "Why a Python extension can change the runtime mode",
+    "description": "Tell the story from application runtime choice to the import boundary and then explain why extension authors have a distinct compatibility responsibility.",
+    "audience": "Software developers",
+    "rationale": "Build the editorial blueprint around the distinction the source makes and explain why it matters to the reader.",
+    "evidence": "Keep the claim pinned to 3.13. Free threading is a configuration, and a support declaration is distinct from the work of making code thread-safe."
+  },
+  "synthesis": {
+    "content": "### Central insight\n\nTell the story from application runtime choice to the import boundary and then explain why extension authors have a distinct compatibility responsibility.\n\n### Evidence\n\nCPython 3.13 introduced experimental free threading, a configuration that can run with the global interpreter lock disabled. An extension must explicitly indicate that it supports this mode; importing one without that declaration warns and enables the GIL. The mechanism differs between extensions using multi-phase and single-phase initialization. On Windows the compiler does not get the Py_GIL_DISABLED macro automatically for extension builds; the configuration can be checked via sysconfig.\n\n### What the narrative should emphasize\n\nTell the story from application runtime choice to the import boundary and then explain why extension authors have a distinct compatibility responsibility.\n\n### Gaps and uncertainty\n\nKeep the claim pinned to 3.13. Free threading is a configuration, and a support declaration is distinct from the work of making code thread-safe."
+  }
+}

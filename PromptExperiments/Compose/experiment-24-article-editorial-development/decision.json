@@ -1,0 +1,82 @@
+{
+  "selected": "B",
+  "overall": "NO-GO",
+  "promoted": false,
+  "decisions": {
+    "B": {
+      "label": "NO-GO",
+      "delta": {
+        "acceptance": -0.047619047619047616,
+        "mean": -0.10833333333333384,
+        "opening": -0.1428571428571428,
+        "development": -0.04761904761904745,
+        "readability": -0.1904761904761907,
+        "focus": -0.11904761904761907,
+        "ending": 0,
+        "voice": -0.11904761904761907
+      },
+      "editorial": {
+        "acceptance": false,
+        "weightedMean": false,
+        "development": false,
+        "ending": false,
+        "readabilityAndFocus": true,
+        "breadth": false,
+        "uncertainty": false,
+        "recurringDefects": true
+      },
+      "factual": {
+        "noNewF2": false,
+        "noAdditionalAmplification": true,
+        "fullCoverage": false
+      },
+      "operational": {
+        "validity": true,
+        "latency": true
+      },
+      "reproducibility": {
+        "selected": true,
+        "editorialCoverage": true
+      },
+      "novelDefects": []
+    },
+    "C": {
+      "label": "NO-GO",
+      "delta": {
+        "acceptance": -0.023809523809523808,
+        "mean": -0.06190476190476257,
+        "opening": -0.1428571428571428,
+        "development": -0.07142857142857162,
+        "readability": -0.09523809523809534,
+        "focus": -0.023809523809523725,
+        "ending": 0.09523809523809534,
+        "voice": -0.023809523809523725
+      },
+      "editorial": {
+        "acceptance": false,
+        "weightedMean": false,
+        "development": false,
+        "ending": false,
+        "readabilityAndFocus": true,
+        "breadth": false,
+        "uncertainty": false,
+        "recurringDefects": true
+      },
+      "factual": {
+        "noNewF2": false,
+        "noAdditionalAmplification": true,
+        "fullCoverage": false
+      },
+      "operational": {
+        "validity": true,
+        "latency": true
+      },
+      "reproducibility": {
+        "selected": false,
+        "editorialCoverage": true
+      },
+      "novelDefects": []
+    }
+  },
+  "freezeHash": "cbbdd2caf3eca0b668d69692b22666a489e881bc3ece256c9a86e486ff53d6d7"
+}

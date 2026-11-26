@@ -1,0 +1,100 @@
+{
+  "claims": [
+    {
+      "excerpt": "# Hoeveel energie was wereldwijd hernieuwbaar in 2024?",
+      "claim": "The piece asks about the global renewable share of energy in 2024.",
+      "category": "scope",
+      "label": "F0 faithful",
+      "evidence": "The table for 2024 lists 10.0 trillion kWh of renewable electricity production out of 30.7 trillion kWh of total electricity production, reported as 32%.",
+      "narrative": "De vraag welk deel van de energie wereldwijd hernieuwbaar is, heeft in 2024 niet één antwoord: het hangt af van wat je meet.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The title frames the same year, global scope, and renewable-energy-share topic as the source data and narrative.",
+      "materiality": "The framing establishes the subject and scope."
+    },
+    {
+      "excerpt": "Dat hangt af van wat je meet.",
+      "claim": "The answer depends on which energy measure is used.",
+      "category": "interpretation",
+      "label": "F0 faithful",
+      "evidence": "The table for 2024 lists 10.0 trillion kWh of renewable electricity production out of 30.7 trillion kWh of total electricity production, reported as 32%. Across all energy production, renewables were 42.4 out of 605.6 quadrillion Btu, reported as 7%. The renewable share of all energy consumption was also 7%.",
+      "narrative": "De vraag welk deel van de energie wereldwijd hernieuwbaar is, heeft in 2024 niet één antwoord: het hangt af van wat je meet.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The source reports different shares for electricity production, all-energy production, and all-energy consumption.",
+      "materiality": "This is the piece’s central qualification."
+    },
+    {
+      "excerpt": "Hernieuwbare bronnen leverden in 2024 32% van de wereldwijde elektriciteit.",
+      "claim": "Renewable sources accounted for 32% of worldwide electricity production in 2024.",
+      "category": "quantity",
+      "label": "F0 faithful",
+      "evidence": "The table for 2024 lists 10.0 trillion kWh of renewable electricity production out of 30.7 trillion kWh of total electricity production, reported as 32%.",
+      "narrative": "Hernieuwbare bronnen leverden 32% van de elektriciteit",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The source explicitly reports renewable electricity production as 32% of total electricity production; “leverden” conveys that production relationship.",
+      "materiality": "The percentage is a central figure, and its production denominator matters."
+    },
+    {
+      "excerpt": "Voor energie in bredere zin waren de aandelen lager:",
+      "claim": "The renewable shares for broader measures of energy were lower than the 32% electricity-production share.",
+      "category": "quantity",
+      "label": "F0 faithful",
+      "evidence": "Across all energy production, renewables were 42.4 out of 605.6 quadrillion Btu, reported as 7%. The renewable share of all energy consumption was also 7%.",
+      "narrative": "terwijl hernieuwbare energie 7% uitmaakte van zowel de totale energieproductie als het totale energieverbruik.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "Both broader-measure shares in the source are 7%, below 32%. The piece subsequently distinguishes the measures rather than presenting them as identical denominators.",
+      "materiality": "The comparison helps explain why the answer varies by measure."
+    },
+    {
+      "excerpt": "hernieuwbare energie vormde 7% van zowel de totale energieproductie als het totale energieverbruik.",
+      "claim": "Renewables accounted for 7% of both total energy production and total energy consumption in 2024.",
+      "category": "quantity",
+      "label": "F0 faithful",
+      "evidence": "Across all energy production, renewables were 42.4 out of 605.6 quadrillion Btu, reported as 7%. The renewable share of all energy consumption was also 7%.",
+      "narrative": "hernieuwbare energie 7% uitmaakte van zowel de totale energieproductie als het totale energieverbruik.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The source reports 7% for each of these broader energy measures.",
+      "materiality": "These are key figures, and the two denominators must remain distinct."
+    },
+    {
+      "excerpt": "Die percentages hebben dus betrekking op verschillende maatstaven.",
+      "claim": "The cited percentages refer to different measures.",
+      "category": "interpretation",
+      "label": "F0 faithful",
+      "evidence": "The table for 2024 lists 10.0 trillion kWh of renewable electricity production out of 30.7 trillion kWh of total electricity production, reported as 32%. Across all energy production, renewables were 42.4 out of 605.6 quadrillion Btu, reported as 7%. The renewable share of all energy consumption was also 7%.",
+      "narrative": "Benadruk dat de percentages verschillende afbakeningen van energie beschrijven",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The source separately reports electricity production, all-energy production, and all-energy consumption.",
+      "materiality": "This guards against conflating different denominators."
+    },
+    {
+      "excerpt": "Het aandeel in de elektriciteitsproductie is niet hetzelfde als het aandeel in alle energieproductie of in het totale energieverbruik.",
+      "claim": "The renewable share of electricity production is not the same measure as the renewable share of all energy production or total energy consumption.",
+      "category": "interpretation",
+      "label": "F0 faithful",
+      "evidence": "The table for 2024 lists 10.0 trillion kWh of renewable electricity production out of 30.7 trillion kWh of total electricity production, reported as 32%. Across all energy production, renewables were 42.4 out of 605.6 quadrillion Btu, reported as 7%. The renewable share of all energy consumption was also 7%.",
+      "narrative": "De lezer moet begrijpen dat een percentage voor elektriciteit niet hetzelfde is als een percentage voor alle energie.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The source gives separate figures for electricity production and the broader production and consumption measures.",
+      "materiality": "This distinction is essential to interpreting the percentages correctly."
+    },
+    {
+      "excerpt": "De cijfers horen bij een gegevensversie van 1 juli 2026 en kunnen worden bijgewerkt.",
+      "claim": "The figures correspond to a July 1, 2026 data vintage and may be updated.",
+      "category": "chronology",
+      "label": "F0 faithful",
+      "evidence": "This is a July 1, 2026 data vintage subject to change.",
+      "narrative": "De cijfers zijn voor 2024 en horen bij een gegevensversie van 1 juli 2026, die kan worden bijgewerkt.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The source identifies the data vintage as July 1, 2026 and says it is subject to change.",
+      "materiality": "The vintage and update caveat qualify the currency of the reported figures."
+    }
+  ]
+}

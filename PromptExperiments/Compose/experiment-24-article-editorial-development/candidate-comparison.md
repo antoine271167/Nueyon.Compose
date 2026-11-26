@@ -1,0 +1,5 @@
+﻿# Candidate comparison
+
+[A](prompts/A-production/Compose.article.user.prompt.md) is the committed production prompt. It already asks for natural prose, progression and concise expression. [B](prompts/B-supported-development/Compose.article.user.prompt.md) adds a single paragraph defining observable choices in the finished article, from the opening detail to the job of each paragraph and the final supported detail. [C](prompts/C-writing-strategy/Compose.article.user.prompt.md) adds a single paragraph specifying an internal sequence for selecting and organizing material before drafting. The shared Compose system already has an internal planning section. C places the strategy closer to Article drafting and overlaps that system guidance.
+
+B and C both preserve the baseline semantic firewall and use no length floor. No refinement was pursued. The development selection was frozen before holdout generations. Consult [development-selection.json](development-selection.json) for ranking and evidence and [metrics.json](metrics.json) for pairs in both phases.

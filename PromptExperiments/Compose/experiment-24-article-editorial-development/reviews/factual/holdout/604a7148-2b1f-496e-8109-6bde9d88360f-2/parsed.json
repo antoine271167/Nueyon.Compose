@@ -1,0 +1,52 @@
+{
+  "claims": [
+    {
+      "excerpt": "The 19th Amendment: Passage and Ratification",
+      "claim": "The piece concerns the 19th Amendment’s passage and ratification.",
+      "category": "scope",
+      "label": "F0 faithful",
+      "evidence": "The United States Congress passed the proposed 19th Amendment on June 4, 1919. It was ratified on August 18, 1920.",
+      "narrative": "The story traces the 19th Amendment from Congress’s passage of the proposal on June 4, 1919, to its ratification on August 18, 1920",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The title accurately describes the two events covered.",
+      "materiality": "No discrepancy."
+    },
+    {
+      "excerpt": "Congress passed the proposed 19th Amendment on June 4, 1919.",
+      "claim": "Congress passed the proposed 19th Amendment on June 4, 1919.",
+      "category": "chronology",
+      "label": "F0 faithful",
+      "evidence": "The United States Congress passed the proposed 19th Amendment on June 4, 1919.",
+      "narrative": "Congress’s passage of the proposed amendment on June 4, 1919",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The date and event match the source; omitting “United States” before “Congress” does not change the actor in context.",
+      "materiality": "No material discrepancy."
+    },
+    {
+      "excerpt": "It was ratified on August 18, 1920.",
+      "claim": "The 19th Amendment was ratified on August 18, 1920.",
+      "category": "chronology",
+      "label": "F0 faithful",
+      "evidence": "It was ratified on August 18, 1920.",
+      "narrative": "its ratification on August 18, 1920",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The pronoun refers to the 19th Amendment, and the date matches the source.",
+      "materiality": "No discrepancy."
+    },
+    {
+      "excerpt": "The amendment’s text prohibits the United States or any state from denying or abridging the right to vote on account of sex.",
+      "claim": "The amendment’s text prohibits the United States or any state from denying or abridging the right to vote on account of sex.",
+      "category": "technical",
+      "label": "F0 faithful",
+      "evidence": "The text bars the United States or any state from denying or abridging voting rights on account of sex.",
+      "narrative": "the United States or any state may not deny or abridge voting rights on account of sex",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "This accurately states the text’s prohibition without broadening it into a guarantee of voting access in every circumstance.",
+      "materiality": "No discrepancy."
+    }
+  ]
+}

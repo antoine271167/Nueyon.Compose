@@ -1,0 +1,76 @@
+{
+  "claims": [
+    {
+      "excerpt": "The National Ignition Facility experiment achieved fusion ignition",
+      "claim": "An experiment at the National Ignition Facility achieved fusion ignition.",
+      "category": "outcome",
+      "label": "F0 faithful",
+      "evidence": "On December 5, 2022, a Lawrence Livermore National Laboratory experiment at the National Ignition Facility achieved fusion ignition.",
+      "narrative": "The National Ignition Facility experiment achieved fusion ignition by producing 3.15 megajoules of fusion energy after delivering 2.05 megajoules to the target.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The source directly states this result.",
+      "materiality": "Central to the piece."
+    },
+    {
+      "excerpt": "producing 3.15 megajoules of fusion energy after delivering 2.05 megajoules of energy to its target.",
+      "claim": "The experiment delivered 2.05 megajoules to its target and generated 3.15 megajoules of fusion energy; the delivery preceded the generation.",
+      "category": "quantity",
+      "label": "F0 faithful",
+      "evidence": "The experiment delivered 2.05 megajoules to the target and generated 3.15 megajoules of fusion energy.",
+      "narrative": "The National Ignition Facility experiment achieved fusion ignition by producing 3.15 megajoules of fusion energy after delivering 2.05 megajoules to the target. The story centers on what that target-level comparison establishes: fusion output exceeded the energy delivered to the target",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "Both measurements and their relationship match the source; the narrative also presents delivery before generation.",
+      "materiality": "Central quantitative result."
+    },
+    {
+      "excerpt": "That comparison is specific to the target: the fusion energy produced exceeded the energy delivered to it.",
+      "claim": "The comparison is target-level: the reported fusion energy exceeded the energy delivered to the target.",
+      "category": "interpretation",
+      "label": "F0 faithful",
+      "evidence": "The experiment delivered 2.05 megajoules to the target and generated 3.15 megajoules of fusion energy.",
+      "narrative": "The story centers on what that target-level comparison establishes: fusion output exceeded the energy delivered to the target",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The comparison follows from the reported quantities and correctly confines the denominator to energy delivered to the target.",
+      "materiality": "Important boundary on what the result demonstrates."
+    },
+    {
+      "excerpt": "It does not represent net energy gain for the facility or electricity supplied to the grid.",
+      "claim": "The target-level comparison is not net energy gain for the facility and does not mean electricity was supplied to the grid.",
+      "category": "scope",
+      "label": "F0 faithful",
+      "evidence": "The target energy denominator excludes facility-wide electricity. Fusion output is not net electricity delivered to the grid.",
+      "narrative": "- Keep the comparison specific to energy delivered to the target; do not describe it as net facility energy gain or electricity delivered to the grid.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The upstream material explicitly distinguishes target energy from facility-wide energy and grid electricity; the piece preserves that distinction.",
+      "materiality": "Prevents a materially misleading interpretation of the result."
+    },
+    {
+      "excerpt": "The result is progress toward inertial fusion energy",
+      "claim": "The result represents progress toward inertial fusion energy.",
+      "category": "interpretation",
+      "label": "F0 faithful",
+      "evidence": "The announcement treats the experiment as progress toward inertial fusion energy",
+      "narrative": "a result treated as progress toward inertial fusion energy",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The source and narrative characterize the achievement as progress toward this goal.",
+      "materiality": "Describes the significance without claiming the goal has been achieved."
+    },
+    {
+      "excerpt": "but practical energy production still requires substantial scientific and technological development.",
+      "claim": "Practical energy production still requires substantial scientific and technological development.",
+      "category": "outcome",
+      "label": "F0 faithful",
+      "evidence": "notes the many scientific and technological developments still needed for practical energy production.",
+      "narrative": "while practical energy production still requires substantial scientific and technological development.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "This accurately conveys the source's statement that many developments are still needed.",
+      "materiality": "Clarifies that practical energy production has not been achieved."
+    }
+  ]
+}

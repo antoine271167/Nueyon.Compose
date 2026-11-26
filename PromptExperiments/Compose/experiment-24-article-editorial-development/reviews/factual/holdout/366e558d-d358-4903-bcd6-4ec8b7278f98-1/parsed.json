@@ -1,0 +1,148 @@
+{
+  "claims": [
+    {
+      "excerpt": "## Uitgevouwen was Webb nog niet klaar voor routinewetenschap",
+      "claim": "Webb was uitgevouwen, maar nog niet klaar voor routinewetenschap.",
+      "category": "outcome",
+      "label": "F0 faithful",
+      "evidence": "Webb began its science mission and started to conduct routine science operations.",
+      "narrative": "Webb moest compact in de Ariane 5-raket passen, hoewel zijn operationele configuratie daarvoor te groot was. De uitvouwing bracht de telescoop in de tweede week in die configuratie, maar was niet hetzelfde als klaar zijn voor routinewetenschap: afkoeling, spiegeluitlijning en instrumentkalibratie liepen door tijdens de ingebruikname van zes maanden.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "De bron onderscheidt het bereiken van de volledig uitgevouwen configuratie van het begin van routinewetenschap na zes maanden.",
+      "materiality": "Centraal onderscheid in het stuk."
+    },
+    {
+      "excerpt": "De James Webb-ruimtetelescoop moest opgevouwen in de kuip van de Ariane 5-raket passen.",
+      "claim": "Webb moest opgevouwen in de kuip van de Ariane 5 passen.",
+      "category": "technical",
+      "label": "F0 faithful",
+      "evidence": "Webb was designed to fold compactly to fit into the fairing.",
+      "narrative": "Webb was ontworpen om opgevouwen in de Ariane 5-kuip te passen.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "Dit komt overeen met de bron en het narratief.",
+      "materiality": "Geeft de ontwerpcontext voor de uitvouwing."
+    },
+    {
+      "excerpt": "In zijn operationele configuratie was hij daarvoor te groot.",
+      "claim": "Webbs operationele configuratie was te groot om in de Ariane 5-kuip te passen.",
+      "category": "technical",
+      "label": "F0 faithful",
+      "evidence": "Its fully deployed operational configuration measures approximately 70ft long, 47 ft wide, 28 ft tall (21m x 14m x 8m ) far too big to fit into any available rocket. The Ariane 5 launch vehicle's rocket fairing has a diameter of approximately 18 ft (5.4 m) x 43ft (13m) tall.",
+      "narrative": "hoewel zijn operationele configuratie daarvoor te groot was",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "De bron bevestigt dat de volledig uitgevouwen configuratie niet in een beschikbare raket paste.",
+      "materiality": "Onderbouwt waarom Webb opgevouwen moest worden gelanceerd."
+    },
+    {
+      "excerpt": "Het uitvouwen bestond uit veel stappen en kende mogelijke faalpunten",
+      "claim": "Webbs uitvouwing omvatte veel stappen en mogelijke faalpunten.",
+      "category": "quantity",
+      "label": "F0 faithful",
+      "evidence": "There were over 50 major deployment steps, with 178 release mechanisms that had to perform perfectly or any one of over 300 single points of failure could have diminished or crippled the mission.",
+      "narrative": "De uitvouwing omvatte veel stappen en mogelijke faalpunten",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "De bron noemt meer dan 50 grote stappen en meer dan 300 mogelijke single points of failure.",
+      "materiality": "Beschrijft de complexiteit en inzet van de uitvouwing."
+    },
+    {
+      "excerpt": "waardoor dit een risicovolle fase van de missie was.",
+      "claim": "De vele stappen en mogelijke faalpunten maakten de uitvouwing een risicovolle missiefase.",
+      "category": "cause",
+      "label": "F0 faithful",
+      "evidence": "The complex high stakes deployment process included over 50 major deployments with 178 release mechanisms that all had to work properly. There were over 300 possible single points of failure.",
+      "narrative": "waardoor duidelijk is dat dit een risicovolle fase was",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "De kwalificatie als risicovol is een redelijke weergave van de beschreven hoge inzet en faalpunten.",
+      "materiality": "Geeft de inzet van deze fase weer zonder te beweren dat er iets misging."
+    },
+    {
+      "excerpt": "De uitvouwing verliep soepel.",
+      "claim": "Webbs uitvouwing verliep soepel.",
+      "category": "outcome",
+      "label": "F0 faithful",
+      "evidence": "Webb's deployment was completed with remarkable smoothness.",
+      "narrative": "de uitvouwing verliep soepel",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "De bron zegt expliciet dat de uitvouwing opmerkelijk soepel verliep.",
+      "materiality": "Voorkomt de indruk dat de genoemde risico's zich daadwerkelijk voordeden."
+    },
+    {
+      "excerpt": "In de tweede week waren de spiegels uitgevouwen en vergrendeld.",
+      "claim": "In de tweede week waren Webbs spiegels uitgevouwen en vergrendeld.",
+      "category": "technical",
+      "label": "F1 minor immaterial imprecision",
+      "evidence": "During the second week after launch, we finished deploying the telescope structures by unfolding and latching the secondary mirror tripod and rotating and latching the two primary mirror wings.",
+      "narrative": "In de tweede week waren de spiegels uitgevouwen en vergrendeld",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "De bron preciseert dat de secundaire spiegelsteun en de primaire spiegelvleugels werden uitgevouwen en vergrendeld; de formulering dat de spiegels zelf uitvouwden is een kleine technische vereenvoudiging.",
+      "materiality": "Kleine technische onnauwkeurigheid; de timing en strekking blijven juist."
+    },
+    {
+      "excerpt": "Webb had daarmee zijn operationele configuratie bereikt",
+      "claim": "Webb bereikte in de tweede week zijn operationele configuratie.",
+      "category": "chronology",
+      "label": "F0 faithful",
+      "evidence": "This brought Webb into its fully deployed operational configuration.",
+      "narrative": "had Webb zijn operationele configuratie bereikt",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "De bron bevestigt dat de voltooide inzet Webb in zijn volledig uitgevouwen operationele configuratie bracht.",
+      "materiality": "Belangrijk tijdlijnpunt in het stuk."
+    },
+    {
+      "excerpt": "maar was nog niet klaar voor routinewetenschap.",
+      "claim": "Het bereiken van de operationele configuratie betekende niet dat Webb al klaar was voor routinewetenschap.",
+      "category": "outcome",
+      "label": "F0 faithful",
+      "evidence": "The remaining five months of commissioning were all about aligning the optics and calibrating the scientific instruments. After six months: “Science operations!” Webb began its science mission and started to conduct routine science operations.",
+      "narrative": "maar was niet hetzelfde als klaar zijn voor routinewetenschap",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "Na het bereiken van de uitgevouwen configuratie volgden nog maanden van ingebruikname voordat routinewetenschap begon.",
+      "materiality": "Dit is het centrale onderscheid van de tekst."
+    },
+    {
+      "excerpt": "Eerst volgden weken van afkoeling, maanden van spiegeluitlijning en daarna de kalibratie van de instrumenten.",
+      "claim": "Na de uitvouwing volgden weken van afkoeling, maanden van spiegeluitlijning en daarna instrumentkalibratie.",
+      "category": "chronology",
+      "label": "F0 faithful",
+      "evidence": "it took several weeks for them to cool all the way down and reach stable temperatures. ... In the second, third and fourth months: Initial optics checkouts, and telescope alignment. ... In the fifth and sixth months: Calibration and completion of commissioning.",
+      "narrative": "afkoeling, spiegeluitlijning en instrumentkalibratie liepen door tijdens de ingebruikname van zes maanden",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "De bron beschrijft wekenlange afkoeling, uitlijning in maanden twee tot en met vier en instrumentkalibratie in maanden vijf en zes. ‘Daarna’ geeft die volgorde beknopt weer.",
+      "materiality": "Onderbouwt waarom de uitvouwing niet gelijkstond aan gereedheid voor routinewetenschap."
+    },
+    {
+      "excerpt": "Pas na zes maanden ingebruikname begon Webb aan routinewetenschap.",
+      "claim": "Webb begon na zes maanden ingebruikname aan routinewetenschap.",
+      "category": "chronology",
+      "label": "F0 faithful",
+      "evidence": "After six months: “Science operations!” Webb began its science mission and started to conduct routine science operations.",
+      "narrative": "Na zes maanden begon Webb aan routinewetenschap.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "De bron plaatst het begin van routinewetenschap na zes maanden ingebruikname.",
+      "materiality": "Bepaalt de eindtijdlijn van het verhaal."
+    },
+    {
+      "excerpt": "De uitvouwing was een belangrijke mijlpaal, niet het einde van de weg naar wetenschappelijke operaties.",
+      "claim": "De uitvouwing was een belangrijke mijlpaal, maar niet het einde van Webb's weg naar wetenschappelijke operaties.",
+      "category": "interpretation",
+      "label": "F0 faithful",
+      "evidence": "This brought Webb into its fully deployed operational configuration. ... The remaining five months of commissioning were all about aligning the optics and calibrating the scientific instruments. ... After six months: “Science operations!”",
+      "narrative": "een belangrijke mijlpaal was, niet het einde van Webbs weg naar wetenschappelijke operaties",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "Dit is een interpretatieve samenvatting van de bron: volledige inzet werd gevolgd door vijf maanden verdere ingebruikname.",
+      "materiality": "Verwoordt de hoofdboodschap van de tekst."
+    }
+  ]
+}

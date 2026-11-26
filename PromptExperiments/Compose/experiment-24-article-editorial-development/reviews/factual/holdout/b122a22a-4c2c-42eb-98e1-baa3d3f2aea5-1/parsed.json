@@ -1,0 +1,100 @@
+{
+  "claims": [
+    {
+      "excerpt": "The story follows how Mount St. Helens’ north flank collapse on May 18, 1980, triggered a blast",
+      "claim": "Mount St. Helens’ north flank collapsed on May 18, 1980, and triggered a blast.",
+      "category": "cause",
+      "label": "F0 faithful",
+      "evidence": "On May 18 its steep north flank fell in a landslide, triggering a blast",
+      "narrative": "The story follows how Mount St. Helens’ north flank collapse on May 18, 1980, triggered a blast",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The date, collapse, and causal relationship match the supplied source evidence.",
+      "materiality": "High: establishes the event’s central cause and timing."
+    },
+    {
+      "excerpt": "In the two months before May 18, Mount St. Helens experienced earthquakes and small explosions.",
+      "claim": "Mount St. Helens experienced earthquakes and small explosions during the two months before May 18, 1980.",
+      "category": "chronology",
+      "label": "F0 faithful",
+      "evidence": "For two months before May 18, 1980, Mount St. Helens experienced earthquakes and small explosions.",
+      "narrative": "In the two months before May 18, Mount St. Helens experienced earthquakes and small explosions.",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The timeframe and events match the supplied evidence; the year is clear from the surrounding account.",
+      "materiality": "Low: contextual background."
+    },
+    {
+      "excerpt": "before a powerful vertical eruption followed.",
+      "claim": "A powerful vertical eruption followed the nearly horizontal blast.",
+      "category": "chronology",
+      "label": "F0 faithful",
+      "evidence": "triggering a blast that traveled nearly horizontally before a powerful vertical eruption followed.",
+      "narrative": "before a powerful vertical eruption followed.",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The sequence and distinction between blast and eruption are supported by the evidence.",
+      "materiality": "High: preserves the distinction and sequence of the events."
+    },
+    {
+      "excerpt": "The central point is the sequence from collapse to blast and the damage caused by the flow.",
+      "claim": "The narrative’s central point is the sequence from collapse to blast and the flow’s damage.",
+      "category": "interpretation",
+      "label": "F0 faithful",
+      "evidence": "Follow the north flank collapse and the documented direction and effects of the blast.",
+      "narrative": "The central point is the sequence from collapse to blast and the damage caused by the flow.",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "This is a faithful characterization of the source-backed story focus.",
+      "materiality": "Low: describes emphasis rather than adding an event claim."
+    },
+    {
+      "excerpt": "a blast that traveled nearly horizontally",
+      "claim": "The blast traveled nearly horizontally.",
+      "category": "technical",
+      "label": "F0 faithful",
+      "evidence": "triggering a blast that traveled nearly horizontally",
+      "narrative": "a blast that traveled nearly horizontally",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The description matches the supplied evidence and does not add a compass direction.",
+      "materiality": "High: describes the blast’s documented direction of travel."
+    },
+    {
+      "excerpt": "The blast developed into a gravity-driven flow of hot material.",
+      "claim": "The blast developed into a gravity-driven flow of hot material.",
+      "category": "technical",
+      "label": "F0 faithful",
+      "evidence": "The blast developed into a gravity-driven flow of hot material",
+      "narrative": "The blast developed into a gravity-driven flow of hot material.",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The flow description is directly supported by the supplied evidence.",
+      "materiality": "High: identifies the process responsible for the described effects."
+    },
+    {
+      "excerpt": "millions of trees felled, bark and branches stripped, and soil scraped away in places.",
+      "claim": "The flow felled millions of trees, stripped bark and branches, and scraped away soil in places.",
+      "category": "outcome",
+      "label": "F0 faithful",
+      "evidence": "that felled millions of trees, stripped bark and branches, and scraped away soil in places.",
+      "narrative": "millions of trees felled, bark and branches stripped, and soil scraped away in places.",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The impacts and their attribution to the flow match the supplied evidence.",
+      "materiality": "High: conveys the scale and types of physical damage."
+    },
+    {
+      "excerpt": "ending with the scale and character of the blast’s physical impact.",
+      "claim": "The story is intended to end by emphasizing the scale and character of the blast’s physical impact.",
+      "category": "intention",
+      "label": "U insufficient evidence to settle",
+      "evidence": "",
+      "narrative": "ending with the scale and character of the blast’s physical impact.",
+      "narrativeRelation": "absent",
+      "origin": "independently_introduced",
+      "explanation": "This is an editorial intention, not a source-verifiable event claim; the source evidence does support the listed impacts.",
+      "materiality": "Low: affects framing, not the account of events."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "claims": [
+    {
+      "excerpt": "National Ignition Facility Experiment Exceeds Target Energy Input",
+      "claim": "The experiment’s fusion-energy output exceeded the energy delivered to its target.",
+      "category": "quantity",
+      "label": "F0 faithful",
+      "evidence": "The experiment delivered 2.05 megajoules to the target and generated 3.15 megajoules of fusion energy.",
+      "narrative": "The story centers on what that target-level comparison establishes: fusion output exceeded the energy delivered to the target",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The source figures support the comparison at the target; the title does not claim net facility energy gain.",
+      "materiality": "This is the headline’s central quantitative conclusion."
+    },
+    {
+      "excerpt": "The National Ignition Facility experiment achieved fusion ignition",
+      "claim": "An experiment at the National Ignition Facility achieved fusion ignition.",
+      "category": "entity",
+      "label": "F0 faithful",
+      "evidence": "On December 5, 2022, a Lawrence Livermore National Laboratory experiment at the National Ignition Facility achieved fusion ignition.",
+      "narrative": "The National Ignition Facility experiment achieved fusion ignition",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The source directly identifies the facility and confirms ignition.",
+      "materiality": "This is the core event being reported."
+    },
+    {
+      "excerpt": "producing 3.15 megajoules of fusion energy after 2.05 megajoules were delivered to the target.",
+      "claim": "The experiment generated 3.15 megajoules of fusion energy, while 2.05 megajoules were delivered to the target; the wording presents delivery as preceding generation.",
+      "category": "quantity",
+      "label": "F0 faithful",
+      "evidence": "The experiment delivered 2.05 megajoules to the target and generated 3.15 megajoules of fusion energy.",
+      "narrative": "by producing 3.15 megajoules of fusion energy after delivering 2.05 megajoules to the target",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "Both quantities and the target boundary match the source. The source lists delivery before generation; the narrative uses the same ordering.",
+      "materiality": "The quantities define the comparison and its measurement boundary."
+    },
+    {
+      "excerpt": "The result is treated as progress toward inertial fusion energy, not as practical electricity production.",
+      "claim": "The result is framed as progress toward inertial fusion energy, not as practical electricity production already achieved.",
+      "category": "interpretation",
+      "label": "F0 faithful",
+      "evidence": "The announcement treats the experiment as progress toward inertial fusion energy",
+      "narrative": "a result treated as progress toward inertial fusion energy, not as practical electricity production",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The source calls the experiment progress toward inertial fusion energy and distinguishes it from practical energy production.",
+      "materiality": "This qualification prevents the experimental result from being mistaken for practical power generation."
+    },
+    {
+      "excerpt": "Practical energy production still requires substantial scientific and technological development.",
+      "claim": "Practical energy production still requires substantial scientific and technological development.",
+      "category": "certainty",
+      "label": "F0 faithful",
+      "evidence": "and notes the many scientific and technological developments still needed for practical energy production.",
+      "narrative": "while practical energy production still requires substantial scientific and technological development.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "This accurately conveys the source’s qualification that many developments remain necessary.",
+      "materiality": "It establishes that practical energy production has not yet been achieved."
+    }
+  ]
+}

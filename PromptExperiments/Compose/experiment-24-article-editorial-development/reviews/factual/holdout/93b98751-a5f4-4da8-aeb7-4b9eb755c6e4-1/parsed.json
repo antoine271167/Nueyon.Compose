@@ -1,0 +1,112 @@
+{
+  "claims": [
+    {
+      "excerpt": "Uitgevouwen was nog niet klaar voor routinewetenschap",
+      "claim": "Webb’s having unfolded did not mean it was ready for routine science operations.",
+      "category": "outcome",
+      "label": "F0 faithful",
+      "evidence": "After six months: “Science operations!” Webb began its science mission and started to conduct routine science operations.",
+      "narrative": "uitgevouwen zijn een belangrijke mijlpaal was, niet het einde van Webbs weg naar wetenschappelijke operaties.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The source distinguishes completing deployment from beginning routine science operations.",
+      "materiality": "Central to the piece."
+    },
+    {
+      "excerpt": "Webb moest opgevouwen in de kuip van de Ariane 5-raket passen: in zijn operationele configuratie was de telescoop daarvoor te groot.",
+      "claim": "Webb had to fit in the Ariane 5 fairing in a folded launch configuration because its operational configuration was too large.",
+      "category": "technical",
+      "label": "F0 faithful",
+      "evidence": "Webb's fully deployed operational configuration is far too large to fit into any available rocket so it was designed to fold into a compact launch configuration that fit inside the Ariane 5.",
+      "narrative": "Webb was ontworpen om opgevouwen in de Ariane 5-kuip te passen.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "This accurately summarizes the design constraint and the Ariane 5 fairing.",
+      "materiality": "Provides context for the deployment."
+    },
+    {
+      "excerpt": "De uitvouwing bestond uit veel stappen met mogelijke faalpunten.",
+      "claim": "Webb’s deployment involved many steps and possible points of failure.",
+      "category": "technical",
+      "label": "F0 faithful",
+      "evidence": "There were over 50 major deployment steps, with 178 release mechanisms that had to perform perfectly or any one of over 300 single points of failure could have diminished or crippled the mission.",
+      "narrative": "De uitvouwing omvatte veel stappen en mogelijke faalpunten",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The source documents numerous deployment steps and potential failure points; the piece does not imply that any failure occurred.",
+      "materiality": "Conveys the complexity and stakes of deployment."
+    },
+    {
+      "excerpt": "Toch verliep die soepel.",
+      "claim": "Despite the potential failure points, Webb’s deployment proceeded smoothly.",
+      "category": "outcome",
+      "label": "F0 faithful",
+      "evidence": "Webb's deployment was completed with remarkable smoothness.",
+      "narrative": "de uitvouwing verliep soepel.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The source explicitly describes the deployment as remarkably smooth.",
+      "materiality": "Rules out an implication that the deployment failed or required recovery."
+    },
+    {
+      "excerpt": "In de tweede week waren de spiegels uitgevouwen en vergrendeld, en had Webb zijn operationele configuratie bereikt.",
+      "claim": "By the second week, Webb’s mirrors had unfolded and latched, bringing the telescope to its operational configuration.",
+      "category": "technical",
+      "label": "F1 minor immaterial imprecision",
+      "evidence": "During the second week after launch, we finished deploying the telescope structures by unfolding and latching the secondary mirror tripod and rotating and latching the two primary mirror wings. This brought Webb into its fully deployed operational configuration.",
+      "narrative": "In de tweede week waren de spiegels uitgevouwen en vergrendeld en had Webb zijn operationele configuratie bereikt.",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The source says the secondary-mirror tripod unfolded and latched, while the primary-mirror wings rotated and latched; it does not say the mirrors themselves all unfolded. The wording is a minor technical simplification, and the reported timing and resulting configuration are accurate.",
+      "materiality": "Low: it does not change the main point that deployment was complete in the second week."
+    },
+    {
+      "excerpt": "Dat was een belangrijke mijlpaal, maar nog niet het einde van de ingebruikname.",
+      "claim": "Reaching the operational configuration was an important milestone, but commissioning was not yet complete.",
+      "category": "chronology",
+      "label": "F0 faithful",
+      "evidence": "The remaining five months of commissioning were all about aligning the optics and calibrating the scientific instruments.",
+      "narrative": "maar was niet hetzelfde als klaar zijn voor routinewetenschap",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The source states that commissioning work continued after deployment was complete.",
+      "materiality": "Clarifies the difference between deployment and readiness for routine science."
+    },
+    {
+      "excerpt": "Daarna volgden weken van afkoeling en maanden van spiegeluitlijning, gevolgd door de kalibratie van de instrumenten.",
+      "claim": "After deployment, Webb underwent weeks of cooling, months of mirror alignment, and then instrument calibration.",
+      "category": "chronology",
+      "label": "F0 faithful",
+      "evidence": "The telescope and scientific instruments started to cool rapidly in the shade of the sunshield, but it took several weeks for them to cool all the way down and reach stable temperatures. ... In the second, third and fourth months: Initial optics checkouts, and telescope alignment. ... In the fifth and sixth months: Calibration and completion of commissioning.",
+      "narrative": "Daarna volgden weken van afkoeling, maanden van spiegeluitlijning en vervolgens instrumentkalibratie.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The source places cooling first, alignment in months two through four, and instrument calibration in months five and six.",
+      "materiality": "Establishes the sequence and duration of post-deployment work."
+    },
+    {
+      "excerpt": "Die ingebruikname duurde zes maanden.",
+      "claim": "Webb’s commissioning period lasted six months.",
+      "category": "chronology",
+      "label": "F0 faithful",
+      "evidence": "After six months: “Science operations!” Webb began its science mission and started to conduct routine science operations.",
+      "narrative": "de ingebruikname van zes maanden",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The source’s timeline places commissioning and its listed work across the first six months, ending with routine science operations.",
+      "materiality": "Defines the length of the transition from deployment to routine operations."
+    },
+    {
+      "excerpt": "Pas daarna begon Webb aan routinewetenschap.",
+      "claim": "Webb began routine science operations only after the six-month commissioning period.",
+      "category": "chronology",
+      "label": "F0 faithful",
+      "evidence": "After six months: “Science operations!” Webb began its science mission and started to conduct routine science operations.",
+      "narrative": "Na zes maanden begon Webb aan routinewetenschap.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The source explicitly says Webb began routine science operations after six months.",
+      "materiality": "States the endpoint of the timeline."
+    }
+  ]
+}

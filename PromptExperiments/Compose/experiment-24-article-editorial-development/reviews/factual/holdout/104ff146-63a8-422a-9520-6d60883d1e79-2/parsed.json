@@ -1,0 +1,76 @@
+{
+  "claims": [
+    {
+      "excerpt": "Wat de vormen van hot spots op luchthavenkaarten aangeven",
+      "claim": "The shapes used for airport-map hot spots indicate what type of hot spot is marked.",
+      "category": "technical",
+      "label": "F0 faithful",
+      "evidence": "A circle or ellipse marks a ground movement hot spot; a cylinder marks a wrong surface hot spot.",
+      "narrative": "de vorm op de kaart maakt zichtbaar om welk type het gaat.",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The title’s general claim is supported by the source’s shape-to-type mappings.",
+      "materiality": "Material to the piece’s central point."
+    },
+    {
+      "excerpt": "Een hot spot op een luchthavenkaart markeert een plek in het bewegingsgebied van een luchthaven waar eerder een botsing of runway incursion heeft plaatsgevonden, of waar zo’n gebeurtenis mogelijk risico vormt.",
+      "claim": "An airport-map hot spot marks a location in an airport’s movement area with a history of collision or runway incursion, or a potential risk of such an event.",
+      "category": "technical",
+      "label": "F0 faithful",
+      "evidence": "A hot spot is an airport movement-area location with a history or potential risk of collision or runway incursion.",
+      "narrative": "Een hot spot op een luchthavenkaart markeert een plek in het bewegingsgebied van een luchthaven met een geschiedenis van of mogelijk risico op een botsing of runway incursion.",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The Dutch wording preserves the source’s alternatives: a history of an event or potential risk of one.",
+      "materiality": "Material definition of the term."
+    },
+    {
+      "excerpt": "Vanaf 19 mei 2022 standaardiseerde de FAA de aanduidingen voor twee soorten hot spots.",
+      "claim": "Beginning May 19, 2022, the FAA standardized the designations for two types of hot spots.",
+      "category": "chronology",
+      "label": "F0 faithful",
+      "evidence": "The FAA standardized two meanings with three shapes beginning May 19, 2022.",
+      "narrative": "De FAA standaardiseerde vanaf 19 mei 2022 de aanduidingen voor twee soorten hot spots: de vorm op de kaart maakt zichtbaar om welk type het gaat.",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The date, agency, and count of types match the source; the following shape mappings specify the three shapes.",
+      "materiality": "Material chronology and scope."
+    },
+    {
+      "excerpt": "Een cirkel of ellips duidt een *ground movement hot spot* aan",
+      "claim": "A circle or ellipse denotes a ground movement hot spot.",
+      "category": "technical",
+      "label": "F0 faithful",
+      "evidence": "A circle or ellipse marks a ground movement hot spot;",
+      "narrative": "een cirkel of ellips duidt een ground movement hot spot aan",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The shape and hot-spot type match the source.",
+      "materiality": "Material to identifying the category from the map symbol."
+    },
+    {
+      "excerpt": "een cilinder staat voor een *wrong surface hot spot*.",
+      "claim": "A cylinder denotes a wrong surface hot spot.",
+      "category": "technical",
+      "label": "F0 faithful",
+      "evidence": "a cylinder marks a wrong surface hot spot.",
+      "narrative": "een cilinder duidt een wrong surface hot spot aan.",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The shape and hot-spot type match the source.",
+      "materiality": "Material to identifying the category from the map symbol."
+    },
+    {
+      "excerpt": "De standaardisering is bedoeld om verwarring over de betekenis en weergave van hot spots te voorkomen.",
+      "claim": "The standardization is intended to prevent confusion about the meaning and depiction of hot spots.",
+      "category": "intention",
+      "label": "F0 faithful",
+      "evidence": "The stated purpose is to prevent confusion about the meaning or depiction of hot spots.",
+      "narrative": "met als genoemd doel verwarring over de betekenis of weergave van hot spots te voorkomen.",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "The stated purpose is preserved; “en” versus “or” does not materially change the claim in this context.",
+      "materiality": "Material explanation of the standardization’s stated purpose."
+    }
+  ]
+}

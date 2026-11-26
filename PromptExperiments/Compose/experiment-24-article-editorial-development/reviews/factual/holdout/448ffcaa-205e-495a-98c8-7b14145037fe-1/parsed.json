@@ -1,0 +1,124 @@
+{
+  "claims": [
+    {
+      "excerpt": "### Yellowstonewolven in een web van sociale en voedselrelaties",
+      "claim": "Yellowstonewolven maken deel uit van sociale en voedselrelaties.",
+      "category": "interpretation",
+      "label": "F0 faithful",
+      "evidence": "Wolves are highly social animals and live in packs.\nMany other animals benefit from wolf kills.",
+      "narrative": "Yellowstonewolven zijn sociale roofdieren: ze jagen in groepen en hun prooien voeden ook andere dieren.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "De beeldspraak vat broninformatie over groepsleven en voedselrelaties samen.",
+      "materiality": "Geen materiële afwijking."
+    },
+    {
+      "excerpt": "Yellowstonewolven leven in sociale familiegroepen.",
+      "claim": "Yellowstonewolven leven in sociale familiegroepen.",
+      "category": "entity",
+      "label": "F0 faithful",
+      "evidence": "The pack is a complex social family",
+      "narrative": "Introduce Yellowstonewolven als sociale familiegroepen",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "Dit komt overeen met de beschrijving van wolvenroedels als sociale families.",
+      "materiality": "Geen materiële afwijking."
+    },
+    {
+      "excerpt": "Ze jagen samen en zorgen voor hun jongen.",
+      "claim": "Yellowstonewolven jagen samen en zorgen gezamenlijk voor hun jongen.",
+      "category": "entity",
+      "label": "F0 faithful",
+      "evidence": "cooperative care of offspring, group hunting of large prey",
+      "narrative": "met onder meer gezamenlijke jacht en zorg voor jongen.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "Beide gedragingen worden expliciet genoemd als voordelen van sociaal leven.",
+      "materiality": "Geen materiële afwijking."
+    },
+    {
+      "excerpt": "Ook na een wolvendoding krijgen andere dieren voedsel: van raven en coyotes tot beren en ongewervelden.",
+      "claim": "Een ‘wolvendoding’ levert voedsel op voor andere dieren; de formulering kan ook worden gelezen als het doden van een wolf, terwijl de bron gaat over prooien die door wolven zijn gedood.",
+      "category": "interpretation",
+      "label": "F2 material incorrect, unsupported or misleading",
+      "evidence": "Many other animals benefit from wolf kills. For example, when wolves kill an elk, ravens and magpies arrive almost immediately. Coyotes arrive soon after, waiting nearby until the wolves are sated. Bears will attempt to chase the wolves away, and are usually successful. Many other animals—from eagles to invertebrates—consume the remains.",
+      "narrative": "Laat zien dat een wolvendoding voedsel biedt aan dieren van raven en coyotes tot beren en ongewervelden.",
+      "narrativeRelation": "supports",
+      "origin": "propagated",
+      "explanation": "‘Wolvendoding’ is dubbelzinnig en kan de actor en het object omdraaien: de bron beschrijft dieren die eten van prooien die wolven hebben gedood, niet van een gedode wolf. De narratieve tegenhanger herhaalt dezelfde formulering.",
+      "materiality": "Materieel voor de beschreven voedselrelatie; maak expliciet dat het om een prooi gaat die door wolven is gedood."
+    },
+    {
+      "excerpt": "De prooien van wolven veranderden in de loop der tijd.",
+      "claim": "De samenstelling van de prooien van wolven veranderde in de loop der tijd.",
+      "category": "chronology",
+      "label": "F0 faithful",
+      "evidence": "From 1995 to 2000, in early winter, elk calves comprised 50% of wolf prey, and bull elk comprised 25%. That ratio reversed from 2001 to 2007",
+      "narrative": "de veranderde samenstelling van hun prooi in verschillende perioden",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "De bron beschrijft een verandering in de samenstelling van vroege-winterprooien tussen perioden.",
+      "materiality": "Geen materiële afwijking."
+    },
+    {
+      "excerpt": "Onder de prooien die in de vroege winter werden gedood, verschoof de verhouding tussen elandkalveren en volwassen mannelijke elanden tussen 1995–2000 en 2001–2007.",
+      "claim": "De verhouding tussen elandkalveren en volwassen mannelijke elanden onder de in de vroege winter gedode prooien veranderde tussen 1995–2000 en 2001–2007.",
+      "category": "quantity",
+      "label": "F0 faithful",
+      "evidence": "From 1995 to 2000, in early winter, elk calves comprised 50% of wolf prey, and bull elk comprised 25%. That ratio reversed from 2001 to 2007",
+      "narrative": "de verschuiving in de verhouding tussen elandkalveren en volwassen mannelijke elanden onder de vroege-winterprooien in 1995–2000 en 2001–2007",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "De bron geeft de verhoudingen en vermeldt dat die in de latere periode omkeerden. De tekst claimt alleen dat de verhouding verschoof.",
+      "materiality": "Geen materiële afwijking."
+    },
+    {
+      "excerpt": "Die veranderingen worden in verband gebracht met de beschikbaarheid en kwetsbaarheid van prooien.",
+      "claim": "De veranderingen in de prooisamenstelling hangen samen met beschikbaarheid en kwetsbaarheid van prooien.",
+      "category": "cause",
+      "label": "F0 faithful",
+      "evidence": "That ratio reversed from 2001 to 2007, indicating changes in prey vulnerability and availability.",
+      "narrative": "de bron verbindt die veranderingen met de beschikbaarheid en kwetsbaarheid van prooien.",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "‘In verband gebracht’ geeft samenhang weer en stelt niet dat één factor de verandering alleen veroorzaakte.",
+      "materiality": "Geen materiële afwijking."
+    },
+    {
+      "excerpt": "De veranderende predatiepatronen en effecten op elanden vallen samen met andere factoren",
+      "claim": "Veranderende predatiepatronen en effecten op elanden hangen samen met andere factoren.",
+      "category": "cause",
+      "label": "F0 faithful",
+      "evidence": "Changes in wolf predation patterns and impacts on prey species like elk are inextricably linked to other factors",
+      "narrative": "veranderingen in predatie en de effecten op elanden samenvallen met andere factoren",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "De bron beschrijft deze verbanden als complex en gekoppeld aan andere factoren.",
+      "materiality": "Geen materiële afwijking."
+    },
+    {
+      "excerpt": "waaronder andere roofdieren, het beheer van hoefdieren buiten het park en het weer.",
+      "claim": "De genoemde samenhangende factoren omvatten andere roofdieren, beheer van hoefdieren buiten het park en het weer.",
+      "category": "entity",
+      "label": "F0 faithful",
+      "evidence": "such as other predators, management of ungulates outside the park, and weather (e.g. drought, winter severity).",
+      "narrative": "waaronder andere roofdieren, beheer van hoefdieren buiten het park en het weer",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "Alle drie de factoren worden expliciet in de bron genoemd.",
+      "materiality": "Geen materiële afwijking."
+    },
+    {
+      "excerpt": "Samen laten deze observaties zien dat wolven deel uitmaken van sociale en voedselrelaties in Yellowstone, binnen een ecosysteem waarin meerdere factoren meespelen.",
+      "claim": "De observaties plaatsen wolven in sociale en voedselrelaties binnen een ecosysteem waarin meerdere factoren meespelen.",
+      "category": "interpretation",
+      "label": "F0 faithful",
+      "evidence": "Research in Yellowstone since reintroduction has highlighted the adaptive value of social living in wolves – from cooperative care of offspring, group hunting of large prey\nMany other animals benefit from wolf kills.\nConsequently, changes in prey selection and kill rates through time result from complex interactions among these factors.",
+      "narrative": "Breng de twee observaties samen: wolven maken deel uit van sociale en voedselrelaties, terwijl veranderingen in predatie en de effecten op elanden samenvallen met andere factoren",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "Dit is een voorzichtige synthese van de beschreven sociale relaties, voedselrelaties en meerdere invloeden; er wordt geen ecosysteembrede cascade geclaimd.",
+      "materiality": "Geen materiële afwijking."
+    }
+  ]
+}

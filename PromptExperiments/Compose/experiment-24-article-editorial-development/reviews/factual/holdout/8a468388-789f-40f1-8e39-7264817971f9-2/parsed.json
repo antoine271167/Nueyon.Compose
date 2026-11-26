@@ -1,0 +1,64 @@
+{
+  "claims": [
+    {
+      "excerpt": "## The Stonewall Inn and Christopher Park\n\nThe Stonewall demonstrations were centered around the Stonewall Inn and Christopher Park.",
+      "claim": "The demonstrations were centered around both the Stonewall Inn and Christopher Park.",
+      "category": "scope",
+      "label": "F2 material incorrect, unsupported or misleading",
+      "evidence": "Police raided the Stonewall Inn in the early hours of June 28, 1969. The raid prompted resistance and demonstrations continued on following nights in Christopher Park, across from the inn, and in the nearby neighborhood.",
+      "narrative": "The story locates the Stonewall demonstrations around the Stonewall Inn and Christopher Park.",
+      "narrativeRelation": "supports",
+      "origin": "amplified",
+      "explanation": "The supplied source summary places the raid at the inn and later demonstrations in the park and nearby neighborhood; it does not establish that demonstrations were centered around both places. “Centered around” strengthens the upstream idea of locating events in relation to those places.",
+      "materiality": "Materially suggests a concentration and overall scope not established by the source."
+    },
+    {
+      "excerpt": "In the early hours of June 28, 1969, police raided the inn",
+      "claim": "Police raided the Stonewall Inn in the early hours of June 28, 1969.",
+      "category": "chronology",
+      "label": "F0 faithful",
+      "evidence": "Police raided the Stonewall Inn in the early hours of June 28, 1969.",
+      "narrative": "After police raided the inn in the early hours of June 28, 1969",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The date, time, actor, and target match the supplied source summary.",
+      "materiality": "Accurately states the event’s time and location."
+    },
+    {
+      "excerpt": "and resistance followed.",
+      "claim": "Resistance followed the raid.",
+      "category": "chronology",
+      "label": "F0 faithful",
+      "evidence": "The raid prompted resistance",
+      "narrative": "resistance followed",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The source says the raid prompted resistance; the piece states the supported temporal sequence without adding a stronger causal claim.",
+      "materiality": "No material discrepancy."
+    },
+    {
+      "excerpt": "Demonstrations continued on subsequent nights",
+      "claim": "Demonstrations continued on nights after the raid.",
+      "category": "chronology",
+      "label": "F0 faithful",
+      "evidence": "demonstrations continued on following nights",
+      "narrative": "demonstrations continued on subsequent nights",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "“Subsequent nights” faithfully conveys “following nights.”",
+      "materiality": "No material discrepancy."
+    },
+    {
+      "excerpt": "in Christopher Park, directly across from the inn, and in the nearby neighborhood.",
+      "claim": "The continuing demonstrations took place in Christopher Park and the nearby neighborhood; the park was across from the inn.",
+      "category": "scope",
+      "label": "F1 minor immaterial imprecision",
+      "evidence": "demonstrations continued on following nights in Christopher Park, across from the inn, and in the nearby neighborhood.",
+      "narrative": "in Christopher Park, across from the inn, and in the nearby neighborhood",
+      "narrativeRelation": "supports",
+      "origin": "independently_introduced",
+      "explanation": "The locations and their relationship to the inn match the supplied source summary. “Directly” adds slight emphasis beyond the source’s “across from,” without materially changing the geography.",
+      "materiality": "Immaterial spatial emphasis."
+    }
+  ]
+}

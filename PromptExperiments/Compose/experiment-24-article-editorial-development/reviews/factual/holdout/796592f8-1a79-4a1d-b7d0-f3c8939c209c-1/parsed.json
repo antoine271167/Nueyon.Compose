@@ -1,0 +1,64 @@
+{
+  "claims": [
+    {
+      "excerpt": "The 19th Amendment: Passage and Ratification",
+      "claim": "The piece concerns the 19th Amendment’s passage and ratification.",
+      "category": "other",
+      "label": "F0 faithful",
+      "evidence": "The United States Congress passed the proposed 19th Amendment on June 4, 1919. It was ratified on August 18, 1920.",
+      "narrative": "The story traces the 19th Amendment from Congress’s passage of the proposal on June 4, 1919, to its ratification on August 18, 1920",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "Both events named in the title are documented in the source and reflected in the narrative.",
+      "materiality": "Low; accurately identifies the piece’s subject."
+    },
+    {
+      "excerpt": "Congress passed the proposed 19th Amendment on June 4, 1919.",
+      "claim": "Congress passed the proposed 19th Amendment on June 4, 1919.",
+      "category": "chronology",
+      "label": "F0 faithful",
+      "evidence": "The United States Congress passed the proposed 19th Amendment on June 4, 1919.",
+      "narrative": "Congress’s passage of the proposal on June 4, 1919",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The date and event match the source. Omitting “United States” before Congress does not change the actor in context.",
+      "materiality": "Material timeline detail; accurately stated."
+    },
+    {
+      "excerpt": "It was ratified on August 18, 1920.",
+      "claim": "The amendment was ratified on August 18, 1920.",
+      "category": "chronology",
+      "label": "F0 faithful",
+      "evidence": "It was ratified on August 18, 1920.",
+      "narrative": "its ratification on August 18, 1920",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The date and event match the source; “It” refers to the 19th Amendment.",
+      "materiality": "Material timeline detail; accurately stated."
+    },
+    {
+      "excerpt": "Congress passed the proposed 19th Amendment on June 4, 1919. It was ratified on August 18, 1920.",
+      "claim": "The amendment’s passage preceded its ratification.",
+      "category": "chronology",
+      "label": "F0 faithful",
+      "evidence": "The United States Congress passed the proposed 19th Amendment on June 4, 1919. It was ratified on August 18, 1920.",
+      "narrative": "from Congress’s passage of the proposal on June 4, 1919, to its ratification on August 18, 1920",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The dates establish this order, and the narrative presents the same progression.",
+      "materiality": "Material to the timeline; accurately stated."
+    },
+    {
+      "excerpt": "The amendment’s text prohibits the United States or any state from denying or abridging the right to vote on account of sex.",
+      "claim": "The amendment prohibits the United States or any state from denying or abridging the right to vote on account of sex.",
+      "category": "technical",
+      "label": "F0 faithful",
+      "evidence": "The text bars the United States or any state from denying or abridging voting rights on account of sex.",
+      "narrative": "the United States or any state may not deny or abridge voting rights on account of sex",
+      "narrativeRelation": "supports",
+      "origin": "none",
+      "explanation": "The statement preserves the source’s actors, prohibited actions, and basis for the prohibition.",
+      "materiality": "Central constitutional claim; accurately stated."
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "scores": [
+    3,
+    3,
+    4,
+    5,
+    4,
+    4
+  ],
+  "defects": [
+    "thin_substance"
+  ],
+  "strength": {
+    "excerpt": "Declaring support signals compatibility with the free-threading runtime mode; it does not establish that the extension’s code is thread-safe.",
+    "reason": "The closing distinction is precise and useful to extension authors, and prevents a potentially important misunderstanding."
+  },
+  "weakness": {
+    "excerpt": "The declaration mechanism differs depending on whether the extension uses multi-phase or single-phase initialization.",
+    "reason": "This introduces an important distinction but does not explain what either mechanism is or how the reader can act on it, leaving the piece informative but thin."
+  }
+}
