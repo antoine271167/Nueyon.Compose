@@ -1,0 +1,55 @@
+{
+  "items": [
+    {
+      "id": "baseline",
+      "claim": "The twin satellites follow one another about 220 kilometers apart.",
+      "synthesisExcerpt": "Twin satellites follow each other about 137 miles or 220 kilometers apart.",
+      "sourceEvidence": "Twin satellites follow each other about 137 miles or 220 kilometers apart.",
+      "kind": "measurement setup",
+      "useful": true,
+      "material": true,
+      "usefulness": "Establishes the changing gap that anchors the explanation.",
+      "qualification": "This is separation, not altitude."
+    },
+    {
+      "id": "gravity-sequence",
+      "claim": "A larger mass concentration first strengthens gravity’s pull on the leading satellite.",
+      "synthesisExcerpt": "As the pair approaches a larger mass concentration, stronger gravity acts on the leading satellite first, initially pulling it farther from the trailing one.",
+      "sourceEvidence": "As the pair approaches a larger mass concentration, stronger gravity acts on the leading satellite first, initially pulling it farther from the trailing one.",
+      "kind": "mechanism",
+      "useful": true,
+      "material": true,
+      "usefulness": "Explains why the satellites’ spacing changes.",
+      "qualification": "The gravitational effect comes before the spacing change."
+    },
+    {
+      "id": "measurement-inference",
+      "claim": "Changing inter-satellite distance is measured to infer shifts in mass.",
+      "synthesisExcerpt": "The changing inter-satellite distance is a raw measurement used to infer shifts in mass.",
+      "sourceEvidence": "The changing inter-satellite distance is a raw measurement used to infer shifts in mass.",
+      "kind": "inference",
+      "useful": true,
+      "material": true,
+      "usefulness": "Clarifies what the measurement tells scientists.",
+      "qualification": "The measurement is indirect, not a direct view of groundwater."
+    },
+    {
+      "id": "water-changes",
+      "claim": "The mission follows changes in several forms of water storage and water added to the oceans.",
+      "synthesisExcerpt": "The mission follows changes involving groundwater, lakes and rivers, soil moisture, glaciers, ice sheets and changes in sea level attributable to water added to the oceans.",
+      "sourceEvidence": "The mission follows changes involving groundwater, lakes and rivers, soil moisture, glaciers, ice sheets and changes in sea level attributable to water added to the oceans.",
+      "kind": "application",
+      "useful": true,
+      "material": true,
+      "usefulness": "Provides the endpoint: the water movements these measurements help investigate.",
+      "qualification": "The sea-level claim is limited to water added to the oceans."
+    }
+  ],
+  "uncertainties": [
+    "Satellite separation is not altitude.",
+    "Gravity’s effect precedes the spacing change.",
+    "The instrument is not a direct camera for groundwater.",
+    "Do not extend the sea-level claim to thermal expansion."
+  ],
+  "endpoint": "Water-related mass changes the mission can help scientists investigate, including groundwater, surface water, soil moisture, ice, and sea-level changes attributable to water added to the oceans."
+}

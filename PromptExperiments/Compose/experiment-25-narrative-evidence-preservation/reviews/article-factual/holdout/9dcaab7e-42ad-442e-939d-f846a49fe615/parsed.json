@@ -1,0 +1,120 @@
+{
+  "claims": [
+    {
+      "exactBodyExcerpt": "Yellowstone-wolven leven in sociale familiegroepen. Samen zorgen ze voor jongen en jagen ze in groepen.",
+      "label": "F0",
+      "sourceEvidence": "The source describes packs as “complex social famil[ies]” and lists “cooperative care of offspring” and “group hunting of large prey.”",
+      "synthesisStatement": "Yellowstone packs are social families; the source identifies cooperative offspring care and group hunting among their social-living benefits.",
+      "narrativeStatement": "Yellowstone-wolven leven in sociale familiegroepen. Samenwerking bij de zorg voor jongen en groepsjacht zijn kenmerken van dat sociale gedrag.",
+      "origin": "upstream",
+      "explanation": "Faithfully conveys the source’s account of pack sociality and two benefits of social living.",
+      "materiality": "high"
+    },
+    {
+      "exactBodyExcerpt": "Maar hun rol in het ecosysteem staat niet los van andere dieren en veranderende omstandigheden.",
+      "label": "F0",
+      "sourceEvidence": "The source describes wolf kills benefiting other animals and links changes in wolf predation and elk impacts to other predators, ungulate management outside the park, and weather.",
+      "synthesisStatement": "Yellowstone’s wolves are portrayed not as solitary ecosystem controllers but as social predators whose kills feed other animals, while changes in their prey and impacts occur amid several interacting factors.",
+      "narrativeStatement": "Het verhaal gaat over Yellowstone-wolven als sociale roofdieren binnen een netwerk van voedselrelaties en veranderende omstandigheden, niet als afzonderlijke dieren die het ecosysteem alleen sturen.",
+      "origin": "narrative",
+      "explanation": "This is a supported framing of the source’s food-web and multifactor evidence, not a claim that wolves have no ecosystem effects.",
+      "materiality": "low"
+    },
+    {
+      "exactBodyExcerpt": "De prooi die wolven doden, wordt ook voedsel voor andere dieren: van raven en coyotes tot beren en ongewervelden.",
+      "label": "F0",
+      "sourceEvidence": "The source says ravens arrive at elk kills, coyotes wait nearby, bears may chase wolves away, and animals “from eagles to invertebrates” consume the remains.",
+      "synthesisStatement": "Wolf kills provide food for other animals, from ravens and coyotes to bears and invertebrates.",
+      "narrativeStatement": "Een wolfdoding voedt ook andere dieren: van raven en coyotes tot beren en ongewervelden.",
+      "origin": "upstream",
+      "explanation": "The examples and the claim that carcasses provide food to other animals are supported. It does not imply a broader ecosystem cascade.",
+      "materiality": "high"
+    },
+    {
+      "exactBodyExcerpt": "Ook veranderde de samenstelling van de prooi. In de vroege winter keerde het aandeel elandkalveren en stieren onder de prooien om tussen 1995–2000 en 2001–2007.",
+      "label": "F2",
+      "sourceEvidence": "The source says elk calves comprised 50% and bull elk 25% of early-winter wolf prey from 1995 to 2000, and “That ratio reversed from 2001 to 2007.”",
+      "synthesisStatement": "The composition of wolf prey changed over time: the proportion of early-winter prey made up by elk calves and bull elk reversed between 1995–2000 and 2001–2007.",
+      "narrativeStatement": "De samenstelling van de prooi veranderde eveneens: het aandeel van elk-kalveren en stieren in de prooi van de vroege winter keerde om tussen 1995–2000 en 2001–2007.",
+      "origin": "compose",
+      "explanation": "The time periods and reversal are accurate, but “elandkalveren” identifies moose rather than the source’s elk (wapiti); “stieren” consequently also points to the wrong species. The species error materially changes the reported prey fact.",
+      "materiality": "high"
+    },
+    {
+      "exactBodyExcerpt": "Zulke verschuivingen hangen samen met de kwetsbaarheid en beschikbaarheid van prooien.",
+      "label": "F0",
+      "sourceEvidence": "The source says the reversal indicated changes in “prey vulnerability and availability.”",
+      "synthesisStatement": "The source links such changes to prey vulnerability and availability.",
+      "narrativeStatement": "de bron verbindt zulke verschuivingen met de kwetsbaarheid en beschikbaarheid van prooien.",
+      "origin": "upstream",
+      "explanation": "Faithfully states the source’s qualified interpretation of the prey-composition change.",
+      "materiality": "medium"
+    },
+    {
+      "exactBodyExcerpt": "Veranderingen in wolvenpredatie en de effecten daarvan op elanden spelen zich bovendien af te midden van wisselwerkingen met andere roofdieren, het beheer van hoefdieren buiten het park en het weer.",
+      "label": "F2",
+      "sourceEvidence": "The source says wolf predation patterns and impacts on “prey species like elk” are linked to other predators, management of ungulates outside the park, and weather.",
+      "synthesisStatement": "The source describes changes in wolf predation and elk impacts as involving interactions among other predators, ungulate management outside the park, and weather.",
+      "narrativeStatement": "Veranderingen in wolvenpredatie en effecten op elanden spelen zich bovendien af te midden van wisselwerkingen met andere roofdieren, het beheer van hoefdieren buiten het park en het weer.",
+      "origin": "propagated",
+      "explanation": "The listed factors and their association with predation changes are supported, but “elanden” again misidentifies the source’s elk as moose. This species error was already present in the narrative and is carried into the article.",
+      "materiality": "high"
+    },
+    {
+      "exactBodyExcerpt": "De sociale en voedselrelaties van wolven maken deel uit van een veranderlijk geheel;",
+      "label": "F1",
+      "sourceEvidence": "The source documents social pack behavior, animals feeding on wolf-killed carcasses, changing prey composition, and several factors associated with predation changes.",
+      "synthesisStatement": "Yellowstone’s wolves are portrayed not as solitary ecosystem controllers but as social predators whose kills feed other animals, while changes in their prey and impacts occur amid several interacting factors.",
+      "narrativeStatement": "De sociale en voedselrelaties van wolven maken deel uit van een veranderlijk geheel.",
+      "origin": "narrative",
+      "explanation": "A reasonable synthesis of the documented relationships, though “veranderlijk geheel” is interpretive rather than a directly measured source finding.",
+      "materiality": "low"
+    },
+    {
+      "exactBodyExcerpt": "veranderingen in predatie en effecten op elanden zijn daarom niet aan wolven alleen toe te schrijven.",
+      "label": "F2",
+      "sourceEvidence": "The source says changes in prey selection and kill rates result from complex interactions among other predators, outside-park ungulate management, and weather; it refers to impacts on elk.",
+      "synthesisStatement": "The source says the factors’ relative roles are being examined and does not support a single-cause account.",
+      "narrativeStatement": "De veranderingen in predatie en effecten op elanden zijn daarom niet te herleiden tot wolven alleen; meerdere omstandigheden spelen mee.",
+      "origin": "propagated",
+      "explanation": "The caution against attributing the changes to wolves alone is supported, but “elanden” again changes the source’s elk to moose. The species error is inherited from the narrative.",
+      "materiality": "high"
+    }
+  ],
+  "preserved": [
+    "social-pack-behavior",
+    "kills-feed-other-animals"
+  ],
+  "distorted": [
+    "prey-composition-shift",
+    "multiple-influences-on-predation"
+  ],
+  "omitted": [],
+  "developments": 3,
+  "explainedFacts": 4,
+  "paragraphSteps": [
+    {
+      "paragraph": 1,
+      "step": "Context",
+      "content": "Establishes pack sociality and frames wolves as connected to other animals and changing conditions."
+    },
+    {
+      "paragraph": 2,
+      "step": "Development",
+      "content": "Shows carcasses feeding other animals, then gives the early-winter prey-composition reversal and its link to prey vulnerability and availability."
+    },
+    {
+      "paragraph": 3,
+      "step": "Development and endpoint",
+      "content": "Places predation changes amid other factors and concludes that the changes cannot be attributed to wolves alone."
+    }
+  ],
+  "endpointAddsMeaning": false,
+  "redundancy": [
+    "The final paragraph restates the preceding multifactor point in its conclusion that changes are not attributable to wolves alone; this is purposeful emphasis rather than a new factual claim."
+  ],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}

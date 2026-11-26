@@ -1,0 +1,110 @@
+{
+  "claims": [
+    {
+      "excerpt": "In August 2024, the Secretary of Commerce approved the first three NIST post-quantum standards: FIPS 203, FIPS 204 and FIPS 205.",
+      "label": "U",
+      "sourceEvidence": "The supplied NIST evidence confirms that the Secretary of Commerce approved FIPS 203, 204 and 205 in August 2024, but does not explicitly establish the qualifier “first three.”",
+      "synthesisStatement": "The Secretary of Commerce approved FIPS 203, 204 and 205 in August 2024.",
+      "narrativeStatement": "The first three NIST post-quantum standards, approved by the Secretary of Commerce in August 2024.",
+      "origin": "unresolved",
+      "explanation": "The approval date and listed standards are supported; the supplied source evidence does not independently substantiate their status as the first three.",
+      "materiality": "low"
+    },
+    {
+      "excerpt": "All three are designed to resist future quantum attacks",
+      "label": "F0",
+      "sourceEvidence": "The supplied NIST evidence says the schemes are designed to resist future quantum attacks.",
+      "synthesisStatement": "The schemes are designed to resist future quantum attacks.",
+      "narrativeStatement": "all three schemes are designed to resist future quantum attacks.",
+      "origin": "upstream",
+      "explanation": "Faithfully states the shared design aim without claiming a guarantee.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "FIPS 203 specifies ML-KEM, which establishes a shared secret between parties communicating over a public channel.",
+      "label": "F0",
+      "sourceEvidence": "The supplied NIST evidence says FIPS 203 specifies ML-KEM to establish a shared secret between parties communicating over a public channel.",
+      "synthesisStatement": "FIPS 203 specifies ML-KEM to establish a shared secret between parties communicating over a public channel.",
+      "narrativeStatement": "FIPS 203 specifies ML-KEM to establish a shared secret between parties communicating over a public channel.",
+      "origin": "upstream",
+      "explanation": "Preserves the purpose and public-channel qualification.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "FIPS 204 and FIPS 205 specify digital signature schemes",
+      "label": "F0",
+      "sourceEvidence": "The supplied NIST evidence identifies FIPS 204 and FIPS 205 as digital signature standards.",
+      "synthesisStatement": "FIPS 204 and FIPS 205 specify digital signature schemes.",
+      "narrativeStatement": "FIPS 204 and FIPS 205 specify digital signature schemes.",
+      "origin": "upstream",
+      "explanation": "Faithfully identifies both standards’ function.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "FIPS 204 is module-lattice-based, while FIPS 205 is stateless hash-based.",
+      "label": "F0",
+      "sourceEvidence": "The supplied NIST evidence identifies FIPS 204 as module-lattice-based and FIPS 205 as stateless hash-based.",
+      "synthesisStatement": "FIPS 204 specifies a module-lattice-based digital signature scheme; FIPS 205 specifies a stateless hash-based digital signature scheme.",
+      "narrativeStatement": "module-lattice-based and stateless hash-based, respectively.",
+      "origin": "upstream",
+      "explanation": "The standards are matched to the correct scheme descriptions.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "Together, the standards cover shared-secret establishment and digital signatures.",
+      "label": "F0",
+      "sourceEvidence": "The supplied evidence assigns shared-secret establishment to FIPS 203 and digital signatures to FIPS 204 and FIPS 205.",
+      "synthesisStatement": "FIPS 203 specifies ML-KEM to establish a shared secret; FIPS 204 and FIPS 205 specify digital signature schemes.",
+      "narrativeStatement": "cover two functions: FIPS 203 specifies ML-KEM ... while FIPS 204 and FIPS 205 specify digital signature schemes.",
+      "origin": "compose",
+      "explanation": "Accurately summarizes the functions established by the preceding details.",
+      "materiality": "medium"
+    },
+    {
+      "excerpt": "Their common design aim does not make their functions the same.",
+      "label": "F0",
+      "sourceEvidence": "The evidence gives the schemes a shared quantum-resistance aim while distinguishing key establishment from digital signatures.",
+      "synthesisStatement": "The schemes are designed to resist future quantum attacks, and the standards specify different functions.",
+      "narrativeStatement": "The reader should understand that the standards share a design aim ... but do different kinds of work.",
+      "origin": "compose",
+      "explanation": "A supported distinction, not a new technical claim.",
+      "materiality": "low"
+    }
+  ],
+  "preserved": [
+    "approval-date",
+    "ml-kem-purpose",
+    "ml-dsa-signature",
+    "slh-dsa-signature",
+    "quantum-resistance"
+  ],
+  "distorted": [],
+  "omitted": [],
+  "developments": 2,
+  "explainedFacts": 5,
+  "paragraphSteps": [
+    {
+      "paragraph": 1,
+      "step": "Context: approval and shared quantum-resistance aim."
+    },
+    {
+      "paragraph": 2,
+      "step": "Development: distinguishes ML-KEM’s shared-secret function from the two signature standards and identifies their respective bases."
+    },
+    {
+      "paragraph": 3,
+      "step": "Endpoint: summarizes the two functions and restates their distinction."
+    }
+  ],
+  "endpointAddsMeaning": false,
+  "redundancy": [
+    "Together, the standards cover shared-secret establishment and digital signatures.",
+    "Their common design aim does not make their functions the same."
+  ],
+  "peripheral": [],
+  "unsupported": [
+    "the first three NIST post-quantum standards"
+  ],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}

@@ -1,0 +1,64 @@
+{
+  "claims": [
+    {
+      "excerpt": "Sparse checkout changes which tracked files are present in the working tree.",
+      "label": "F0",
+      "sourceEvidence": "Sparse checkout changes which tracked files are present in the working tree.",
+      "synthesisStatement": "Sparse checkout changes which tracked files are present in the working tree.",
+      "narrativeStatement": "Sparse checkout changes which tracked files are present in the working tree.",
+      "origin": "upstream",
+      "explanation": "Faithfully preserves the definition and its scope to tracked files in the working tree.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "In cone mode, it selects directories and includes all files recursively under them.",
+      "label": "F0",
+      "sourceEvidence": "Cone mode selects directories and includes all files recursively under them.",
+      "synthesisStatement": "Cone mode selects directories and includes all files recursively under them.",
+      "narrativeStatement": "Cone mode selects directories and includes all files recursively under them.",
+      "origin": "upstream",
+      "explanation": "Faithfully states the recursive inclusion rule for selected directories.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "It also includes files that are siblings of the selected directory or of any ancestor directory.",
+      "label": "F0",
+      "sourceEvidence": "It also includes files that are siblings of the selected directory or any ancestor directory.",
+      "synthesisStatement": "It also includes files that are siblings of the selected directory or any ancestor directory.",
+      "narrativeStatement": "It also includes files that are siblings of the selected directory or any ancestor directory.",
+      "origin": "upstream",
+      "explanation": "Faithfully preserves the additional sibling-file inclusion rule and its selected-directory and ancestor scope.",
+      "materiality": "material"
+    }
+  ],
+  "preserved": [
+    "sparse-checkout-working-tree",
+    "cone-recursive-inclusion",
+    "cone-sibling-inclusion"
+  ],
+  "distorted": [],
+  "omitted": [],
+  "developments": 2,
+  "explainedFacts": 3,
+  "paragraphSteps": [
+    {
+      "paragraph": 1,
+      "steps": [
+        "sparse-checkout-working-tree",
+        "cone-recursive-inclusion"
+      ]
+    },
+    {
+      "paragraph": 2,
+      "steps": [
+        "cone-sibling-inclusion"
+      ]
+    }
+  ],
+  "endpointAddsMeaning": true,
+  "redundancy": [],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}

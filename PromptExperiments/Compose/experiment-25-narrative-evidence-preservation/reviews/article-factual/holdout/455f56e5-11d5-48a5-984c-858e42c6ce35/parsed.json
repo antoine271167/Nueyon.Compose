@@ -1,0 +1,74 @@
+{
+  "claims": [
+    {
+      "excerpt": "What the Twenty-sixth Amendment Protects",
+      "label": "F0",
+      "sourceEvidence": "The provided Archives.gov evidence says the amendment bars federal and state governments from restricting citizens’ voting rights because of age when they are 18 or older.",
+      "synthesisStatement": "The amendment added an age-based protection for voting rights.",
+      "narrativeStatement": "The heading accurately introduces the age-based voting-rights protection described in the article.",
+      "origin": "upstream",
+      "explanation": "The heading is a faithful summary of the protection stated below.",
+      "materiality": "Low"
+    },
+    {
+      "excerpt": "Congress passed the Twenty-sixth Amendment on March 23, 1971, and it was ratified on July 1, 1971.",
+      "label": "F0",
+      "sourceEvidence": "The provided Archives.gov evidence gives March 23, 1971, as the passage date and July 1, 1971, as the ratification date.",
+      "synthesisStatement": "Congress passed the amendment on March 23, 1971, and it was ratified on July 1, 1971.",
+      "narrativeStatement": "The article preserves both dates and their associated events.",
+      "origin": "upstream",
+      "explanation": "The dates and sequence match the supplied evidence.",
+      "materiality": "Low"
+    },
+    {
+      "excerpt": "The amendment bars the federal and state governments from denying or limiting U.S. citizens’ voting rights because of age when they are at least 18.",
+      "label": "F0",
+      "sourceEvidence": "The provided Archives.gov evidence says the amendment bars federal and state abridgment of U.S. citizens’ voting rights on account of age for those 18 or older.",
+      "synthesisStatement": "The amendment bars both federal and state governments from denying or limiting U.S. citizens’ voting rights because of age when they are at least 18.",
+      "narrativeStatement": "The article preserves the governments covered, the protected right, the age-related basis, and the 18-or-older qualification.",
+      "origin": "upstream",
+      "explanation": "The wording is a faithful paraphrase with the material qualifications intact.",
+      "materiality": "High"
+    },
+    {
+      "excerpt": "Congress can enforce the amendment through appropriate legislation.",
+      "label": "F0",
+      "sourceEvidence": "The provided Archives.gov evidence says Section 2 gives Congress legislative enforcement authority.",
+      "synthesisStatement": "Congress can enforce the amendment through appropriate legislation.",
+      "narrativeStatement": "The article accurately states Congress’s enforcement authority and its legislative means.",
+      "origin": "upstream",
+      "explanation": "This matches the supplied evidence without adding details about the legislation.",
+      "materiality": "Medium"
+    }
+  ],
+  "preserved": [
+    "timeline",
+    "age-protection",
+    "enforcement"
+  ],
+  "distorted": [],
+  "omitted": [],
+  "developments": 3,
+  "explainedFacts": 1,
+  "paragraphSteps": [
+    {
+      "paragraph": 1,
+      "steps": [
+        "timeline"
+      ]
+    },
+    {
+      "paragraph": 2,
+      "steps": [
+        "age-protection",
+        "enforcement"
+      ]
+    }
+  ],
+  "endpointAddsMeaning": true,
+  "redundancy": [],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}

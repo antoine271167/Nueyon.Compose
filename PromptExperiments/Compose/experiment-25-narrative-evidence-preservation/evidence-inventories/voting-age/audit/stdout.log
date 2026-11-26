@@ -1,0 +1,26 @@
+{
+  "checks": [
+    {
+      "id": "timeline",
+      "supported": false,
+      "useful": false,
+      "reason": "The excerpt and claim match the synthesis, but the frozen original source text is not provided; the cited URL and operator paraphrase do not independently establish the dates. The dates offer historical context but do not explain the age protection asked about.",
+      "coverageGap": "No omission from the excerpt relative to the claim; authoritative verification of both dates remains unresolved."
+    },
+    {
+      "id": "age-protection",
+      "supported": false,
+      "useful": true,
+      "reason": "The excerpt fully states the synthesis's protection, including the governments covered, the age-based restriction, citizenship, and the 18-or-older threshold. The claim preserves those qualifications. However, the original source text is not provided, so source support remains unresolved.",
+      "coverageGap": "No material omission from the excerpt relative to the claim; the cited source's original wording remains unavailable for verification."
+    },
+    {
+      "id": "enforcement",
+      "supported": false,
+      "useful": true,
+      "reason": "The excerpt and claim match the synthesis's statement that Congress can enforce the amendment through appropriate legislation. The original source text is not provided, so source support remains unresolved. This is relevant context but does not define the age protection.",
+      "coverageGap": "No omission from the excerpt relative to the claim; authoritative verification of the enforcement clause remains unresolved."
+    }
+  ]
+}
+

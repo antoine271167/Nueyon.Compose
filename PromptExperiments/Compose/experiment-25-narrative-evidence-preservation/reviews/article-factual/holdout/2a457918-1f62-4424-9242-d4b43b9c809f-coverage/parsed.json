@@ -1,0 +1,98 @@
+{
+  "claims": [
+    {
+      "excerpt": "The First Three NIST Post-Quantum Standards Serve Two Purposes",
+      "label": "F0",
+      "sourceEvidence": "The selected idea says the first three NIST post-quantum standards serve two distinct purposes; the evidence identifies key establishment and digital signatures.",
+      "synthesisStatement": "The listed standards specify one shared-secret scheme and two digital-signature schemes.",
+      "narrativeStatement": "Why the first three NIST post-quantum standards serve two distinct purposes",
+      "origin": "upstream",
+      "explanation": "Faithfully summarizes the two purposes identified by the standards’ specifications.",
+      "materiality": "High"
+    },
+    {
+      "excerpt": "In August 2024, the Secretary of Commerce approved FIPS 203, FIPS 204 and FIPS 205.",
+      "label": "F0",
+      "sourceEvidence": "The Secretary of Commerce approved FIPS 203, 204 and 205 in August 2024.",
+      "synthesisStatement": "The Secretary of Commerce approved FIPS 203, 204 and 205 in August 2024.",
+      "narrativeStatement": "The Secretary of Commerce approved FIPS 203, 204 and 205 in August 2024.",
+      "origin": "propagated",
+      "explanation": "Preserves the approver, standards, and approval date.",
+      "materiality": "High"
+    },
+    {
+      "excerpt": "The standards specify schemes for two distinct purposes: establishing a shared secret and creating digital signatures.",
+      "label": "F0",
+      "sourceEvidence": "FIPS 203 establishes a shared secret; FIPS 204 and FIPS 205 specify digital-signature schemes.",
+      "synthesisStatement": "The three specifications describe one shared-secret purpose and two digital-signature schemes.",
+      "narrativeStatement": "Why the first three NIST post-quantum standards serve two distinct purposes",
+      "origin": "compose",
+      "explanation": "Accurately groups the listed specifications into their two purposes.",
+      "materiality": "High"
+    },
+    {
+      "excerpt": "FIPS 203 specifies ML-KEM, which establishes a shared secret between parties communicating over a public channel.",
+      "label": "F0",
+      "sourceEvidence": "FIPS 203 specifies ML-KEM to establish a shared secret between parties communicating over a public channel.",
+      "synthesisStatement": "FIPS 203 specifies ML-KEM to establish a shared secret between parties communicating over a public channel.",
+      "narrativeStatement": "FIPS 203 specifies ML-KEM to establish a shared secret between parties communicating over a public channel.",
+      "origin": "propagated",
+      "explanation": "Preserves the algorithm name, purpose, and public-channel qualification.",
+      "materiality": "High"
+    },
+    {
+      "excerpt": "FIPS 204 specifies a module-lattice-based digital signature scheme",
+      "label": "F0",
+      "sourceEvidence": "FIPS 204 specifies a module-lattice-based digital signature scheme.",
+      "synthesisStatement": "FIPS 204 specifies a module-lattice-based digital signature scheme.",
+      "narrativeStatement": "FIPS 204 specifies a module-lattice-based digital signature scheme.",
+      "origin": "propagated",
+      "explanation": "Faithfully states the scheme’s basis and purpose.",
+      "materiality": "High"
+    },
+    {
+      "excerpt": "FIPS 205 specifies a stateless hash-based digital signature scheme.",
+      "label": "F0",
+      "sourceEvidence": "FIPS 205 specifies a stateless hash-based digital signature scheme.",
+      "synthesisStatement": "FIPS 205 specifies a stateless hash-based digital signature scheme.",
+      "narrativeStatement": "FIPS 205 specifies a stateless hash-based digital signature scheme.",
+      "origin": "propagated",
+      "explanation": "Faithfully states the scheme’s stateless hash-based design and signature purpose.",
+      "materiality": "High"
+    },
+    {
+      "excerpt": "The schemes are designed to resist future quantum attacks.",
+      "label": "F0",
+      "sourceEvidence": "The schemes are designed to resist future quantum attacks.",
+      "synthesisStatement": "The schemes are designed to resist future quantum attacks.",
+      "narrativeStatement": "The schemes are designed to resist future quantum attacks.",
+      "origin": "propagated",
+      "explanation": "Preserves the stated security goal without implying a guarantee.",
+      "materiality": "High"
+    }
+  ],
+  "preserved": [
+    "approval-date",
+    "ml-kem-purpose",
+    "ml-dsa-signature",
+    "slh-dsa-signature",
+    "quantum-resistance"
+  ],
+  "distorted": [],
+  "omitted": [],
+  "developments": 3,
+  "explainedFacts": 3,
+  "paragraphSteps": [
+    "Paragraph 1: approval context and two-purpose framing.",
+    "Paragraph 2: shared-secret purpose and the two signature schemes.",
+    "Paragraph 3: quantum-resistance goal."
+  ],
+  "endpointAddsMeaning": true,
+  "redundancy": [
+    "The title’s two-purpose framing is repeated in the first paragraph."
+  ],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}

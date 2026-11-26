@@ -1,0 +1,33 @@
+{
+  "checks": [
+    {
+      "id": "baseline",
+      "supported": true,
+      "useful": true,
+      "reason": "The excerpt matches both texts verbatim, and the claim accurately describes the satellite separation. It establishes the measurement setup without duplicating the mechanism or inference items.",
+      "coverageGap": "The source's May 22, 2018 launch date is omitted. The synthesis also cautions that separation is not altitude, but the source does not state that qualification."
+    },
+    {
+      "id": "gravity-sequence",
+      "supported": true,
+      "useful": true,
+      "reason": "The excerpt matches both texts verbatim. The claim accurately captures the sequence: stronger gravity acts on the leading satellite first, before it is pulled farther from the trailing satellite. This adds the mechanism rather than repeating the baseline.",
+      "coverageGap": "None for this mechanism; the excerpt includes the resulting pull and its direction."
+    },
+    {
+      "id": "measurement-inference",
+      "supported": true,
+      "useful": true,
+      "reason": "The excerpt matches both texts verbatim, and the claim preserves the indirect measurement-to-inference relationship. It complements the mechanism by explaining what the changing distance is used to infer.",
+      "coverageGap": "The claim omits that the changing distance is a raw measurement; this detail is present in the excerpt."
+    },
+    {
+      "id": "water-changes",
+      "supported": true,
+      "useful": true,
+      "reason": "The excerpt matches both texts verbatim, and the claim accurately summarizes the listed water-related changes and the restricted sea-level relationship. It provides the application endpoint without duplicating the measurement explanation.",
+      "coverageGap": "The claim does not enumerate groundwater, lakes and rivers, soil moisture, glaciers, and ice sheets; those are included in the excerpt. The synthesis cautions against extending the sea-level claim to thermal expansion, which the source does not mention."
+    }
+  ]
+}
+

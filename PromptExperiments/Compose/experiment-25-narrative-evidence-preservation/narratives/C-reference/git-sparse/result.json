@@ -1,0 +1,3 @@
+{
+  "content": "### Selected Story\nWhat cone-mode sparse checkout includes\n\n### Story Progression\n- **Context:** Sparse checkout changes which tracked files are present in the working tree.\n- **Development:** Cone mode selects directories and includes all files recursively under them.\n- **Endpoint:** It also includes files that are siblings of the selected directory or any ancestor directory.\n\n### Critical Constraints\n- Preserve the scope and qualifications of the developments."
+}

@@ -1,0 +1,100 @@
+{
+  "claims": [
+    {
+      "exactBodyExcerpt": "Een hot spot op een luchthavenkaart markeert een plek in het bewegingsgebied waar een geschiedenis van, of kans op, botsingen of een runway incursion bestaat.",
+      "label": "F0",
+      "sourceEvidence": "Een hot spot is een locatie in het bewegingsgebied van een luchthaven met een geschiedenis van of potentieel risico op een botsing of runway incursion.",
+      "synthesisStatement": "A hot spot is an airport movement-area location with a history or potential risk of collision or runway incursion.",
+      "narrativeStatement": "Een hot spot op een luchthavenkaart markeert een plek in het bewegingsgebied waar een geschiedenis van, of kans op, botsingen of een runway incursion bestaat.",
+      "origin": "propagated",
+      "explanation": "Behoudt zowel de locatie als de mogelijkheid of voorgeschiedenis van risico; beweert niet dat een incident zeker zal plaatsvinden.",
+      "materiality": "high"
+    },
+    {
+      "exactBodyExcerpt": "De FAA standaardiseerde vanaf 19 mei 2022 vormen om twee soorten hot spots herkenbaar te onderscheiden.",
+      "label": "F1",
+      "sourceEvidence": "Op de kaartcyclus van 19 mei 2022 standaardiseerde de FAA drie vormen en twee betekenissen.",
+      "synthesisStatement": "The FAA standardized two meanings with three shapes beginning May 19, 2022.",
+      "narrativeStatement": "De FAA standaardiseerde vanaf 19 mei 2022 vormen om twee soorten hot spots herkenbaar te onderscheiden.",
+      "origin": "propagated",
+      "explanation": "Datum en twee onderscheiden betekenissen zijn behouden. De bewering noemt niet dat de standaard drie vormen omvat; daardoor is de beschrijving onvolledig, maar niet inhoudelijk tegengesteld aan het bewijs.",
+      "materiality": "moderate"
+    },
+    {
+      "exactBodyExcerpt": "De lezer moet begrijpen dat de vorm aangeeft om welk type hot spot het gaat.",
+      "label": "F0",
+      "sourceEvidence": "De cirkel en ellips duiden ground-movement-hotspots aan; een cilinder duidt een wrong-surface-hotspot aan.",
+      "synthesisStatement": "A circle or ellipse marks a ground movement hot spot; a cylinder marks a wrong surface hot spot.",
+      "narrativeStatement": "De lezer moet begrijpen dat de vorm aangeeft om welk type hot spot het gaat.",
+      "origin": "compose",
+      "explanation": "Dit is geformuleerd als een instructie aan de lezer, maar impliceert dat de vorm het type aangeeft; de gegeven vormbetekenissen ondersteunen dat.",
+      "materiality": "moderate"
+    },
+    {
+      "exactBodyExcerpt": "Leg uit wat een hot spot op een luchthavenkaart aanduidt: een locatie in het bewegingsgebied met een geschiedenis van of potentieel risico op een botsing of runway incursion.",
+      "label": "F0",
+      "sourceEvidence": "Een hot spot is een locatie in het bewegingsgebied van een luchthaven met een geschiedenis van of potentieel risico op een botsing of runway incursion.",
+      "synthesisStatement": "A hot spot is an airport movement-area location with a history or potential risk of collision or runway incursion.",
+      "narrativeStatement": "Leg uit wat een hot spot op een luchthavenkaart aanduidt: een locatie in het bewegingsgebied met een geschiedenis van of potentieel risico op een botsing of runway incursion.",
+      "origin": "propagated",
+      "explanation": "De contextinstructie herhaalt de definitie getrouw en behoudt de onzekerheid van potentieel risico.",
+      "materiality": "high"
+    },
+    {
+      "exactBodyExcerpt": "een cirkel of ellips staat voor een ground movement hot spot",
+      "label": "F0",
+      "sourceEvidence": "Een cirkel of ellips duidt een ground-movement-hotspot aan.",
+      "synthesisStatement": "A circle or ellipse marks a ground movement hot spot.",
+      "narrativeStatement": "een cirkel of ellips staat voor een ground movement hot spot",
+      "origin": "propagated",
+      "explanation": "De vorm en de bijbehorende categorie komen overeen met het bewijs.",
+      "materiality": "high"
+    },
+    {
+      "exactBodyExcerpt": "een cilinder voor een wrong surface hot spot",
+      "label": "F0",
+      "sourceEvidence": "Een cilinder duidt een wrong-surface-hotspot aan.",
+      "synthesisStatement": "A cylinder marks a wrong surface hot spot.",
+      "narrativeStatement": "een cilinder voor een wrong surface hot spot",
+      "origin": "propagated",
+      "explanation": "De vorm en de bijbehorende categorie komen overeen met het bewijs.",
+      "materiality": "high"
+    },
+    {
+      "exactBodyExcerpt": "het doel van de standaardisering: verwarring over de betekenis of weergave van hot spots voorkomen.",
+      "label": "F0",
+      "sourceEvidence": "Het aangegeven doel van de standaardisering is verwarring over de betekenis of weergave van hot spots te voorkomen.",
+      "synthesisStatement": "The stated purpose is to prevent confusion about the meaning or depiction of hot spots.",
+      "narrativeStatement": "het doel van de standaardisering: verwarring over de betekenis of weergave van hot spots voorkomen.",
+      "origin": "propagated",
+      "explanation": "Dit wordt als doel gepresenteerd, niet als bewezen resultaat; dat sluit aan bij de expliciete beperking.",
+      "materiality": "moderate"
+    }
+  ],
+  "preserved": [
+    "hot-spot-definition",
+    "ground-movement-symbol",
+    "wrong-surface-symbol",
+    "standardization-purpose"
+  ],
+  "distorted": [
+    "standardization-date"
+  ],
+  "omitted": [],
+  "developments": 3,
+  "explainedFacts": 5,
+  "paragraphSteps": [
+    "Context: definitie en risicolocatie.",
+    "Development: onderscheid tussen de vormbetekenissen.",
+    "Endpoint: het genoemde doel van standaardisering."
+  ],
+  "endpointAddsMeaning": true,
+  "redundancy": [
+    "De hot-spotdefinitie staat zowel in Selected Story als in de Context-stap."
+  ],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}
+

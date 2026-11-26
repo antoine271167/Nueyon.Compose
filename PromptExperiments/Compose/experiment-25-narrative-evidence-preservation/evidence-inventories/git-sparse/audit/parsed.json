@@ -1,0 +1,25 @@
+{
+  "checks": [
+    {
+      "id": "sparse-checkout-working-tree",
+      "supported": false,
+      "useful": true,
+      "reason": "The excerpt matches the synthesis, and the claim preserves its scope. Support from the original source is unresolved: the supplied source evidence is an operator paraphrase, not authoritative source text.",
+      "coverageGap": "No material is omitted from the excerpt or claim; authoritative source evidence is missing."
+    },
+    {
+      "id": "cone-recursive-inclusion",
+      "supported": false,
+      "useful": true,
+      "reason": "The excerpt matches the synthesis. The claim conveys recursive inclusion but omits the explicit point that cone mode selects directories. Original-source support is unresolved because the supplied source evidence is only an operator paraphrase.",
+      "coverageGap": "The claim leaves the directory-selection step implicit; authoritative source evidence is missing."
+    },
+    {
+      "id": "cone-sibling-inclusion",
+      "supported": false,
+      "useful": true,
+      "reason": "The excerpt matches the synthesis and adds a useful qualification to recursive inclusion. The claim broadly preserves the sibling relationship, but original-source support is unresolved because the supplied source evidence is only an operator paraphrase.",
+      "coverageGap": "The claim does not spell out that siblings are files at the selected-directory or ancestor-directory level; authoritative source evidence is missing."
+    }
+  ]
+}

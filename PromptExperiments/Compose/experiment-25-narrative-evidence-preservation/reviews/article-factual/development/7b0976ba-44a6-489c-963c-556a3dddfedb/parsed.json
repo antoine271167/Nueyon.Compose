@@ -1,0 +1,78 @@
+{
+  "claims": [
+    {
+      "excerpt": "A 2022 experiment at the National Ignition Facility reported achieving fusion ignition.",
+      "label": "F0",
+      "sourceEvidence": "On December 5, 2022, a Lawrence Livermore National Laboratory experiment at the National Ignition Facility achieved fusion ignition.",
+      "synthesisStatement": "On December 5, 2022, a Lawrence Livermore National Laboratory experiment at the National Ignition Facility achieved fusion ignition.",
+      "narrativeStatement": "Introduce the National Ignition Facility experiment and its reported achievement of fusion ignition, as part of progress toward inertial fusion energy.",
+      "origin": "propagated",
+      "explanation": "Faithfully states the facility, year, and reported achievement; omitting the exact date and laboratory does not change the claim.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "At the target, 2.05 megajoules of energy were delivered, and 3.15 megajoules of fusion energy were generated.",
+      "label": "F0",
+      "sourceEvidence": "The experiment delivered 2.05 megajoules to the target and generated 3.15 megajoules of fusion energy.",
+      "synthesisStatement": "The experiment delivered 2.05 megajoules to the target and generated 3.15 megajoules of fusion energy.",
+      "narrativeStatement": "Give the target-level measurements: 2.05 megajoules delivered to the target and 3.15 megajoules of fusion energy generated.",
+      "origin": "propagated",
+      "explanation": "Both quantities and the target-level input boundary are accurately represented.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "That comparison describes energy at the target; it does not represent net electricity production or electricity delivered to the grid.",
+      "label": "F0",
+      "sourceEvidence": "The target energy denominator excludes facility-wide electricity. Fusion output is not net electricity delivered to the grid.",
+      "synthesisStatement": "The target energy denominator excludes facility-wide electricity. Fusion output is not net electricity delivered to the grid.",
+      "narrativeStatement": "Do not describe the result as net energy or net electricity delivered to the grid; the input measurement is energy delivered to the target, not facility-wide electricity use.",
+      "origin": "propagated",
+      "explanation": "The qualification correctly distinguishes target energy from facility-wide electricity and fusion output from net grid electricity.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "The result is a step toward inertial fusion energy, while practical energy production still requires substantial scientific and technological development.",
+      "label": "F0",
+      "sourceEvidence": "The announcement treats the experiment as progress toward inertial fusion energy and notes the many scientific and technological developments still needed for practical energy production.",
+      "synthesisStatement": "The announcement treats the experiment as progress toward inertial fusion energy and notes the many scientific and technological developments still needed for practical energy production.",
+      "narrativeStatement": "That target-level comparison marks the reported achievement of fusion ignition and is a step toward inertial fusion energy, while practical energy production still requires substantial scientific and technological development.",
+      "origin": "propagated",
+      "explanation": "Preserves both the qualified progress claim and the caveat that practical production requires further development.",
+      "materiality": "high"
+    }
+  ],
+  "preserved": [
+    "ignition-event",
+    "target-energy-comparison",
+    "development-still-needed"
+  ],
+  "distorted": [],
+  "omitted": [
+    "announcement-date"
+  ],
+  "developments": 3,
+  "explainedFacts": 2,
+  "paragraphSteps": [
+    {
+      "paragraph": 1,
+      "step": "Introduces the ignition result and gives the target-level energy measurements.",
+      "supported": true
+    },
+    {
+      "paragraph": 2,
+      "step": "Clarifies that the target-energy comparison is not net electricity production or grid delivery.",
+      "supported": true
+    },
+    {
+      "paragraph": 3,
+      "step": "Places the result as progress toward inertial fusion energy while noting remaining development needs.",
+      "supported": true
+    }
+  ],
+  "endpointAddsMeaning": false,
+  "redundancy": [],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}

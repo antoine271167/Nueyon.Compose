@@ -1,0 +1,111 @@
+{
+  "claims": [
+    {
+      "excerpt": "Three NIST Post-Quantum Standards, Two Functions",
+      "label": "F0",
+      "sourceEvidence": "The evidence identifies FIPS 203, 204, and 205 and describes FIPS 203 as key establishment and FIPS 204 and 205 as signature standards.",
+      "synthesisStatement": "FIPS 203, 204 and 205 are the first three standards and serve two distinct purposes.",
+      "narrativeStatement": "The first three NIST post-quantum standards ... cover two functions",
+      "origin": "upstream",
+      "explanation": "The title accurately summarizes the three standards and their two functions.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "In August 2024, the Secretary of Commerce approved the first three NIST post-quantum standards: FIPS 203, FIPS 204 and FIPS 205.",
+      "label": "U",
+      "sourceEvidence": "“The Secretary of Commerce approved FIPS 203, 204 and 205 in August 2024.”",
+      "synthesisStatement": "The Secretary of Commerce approved FIPS 203, 204 and 205 in August 2024.",
+      "narrativeStatement": "The first three NIST post-quantum standards, approved by the Secretary of Commerce in August 2024",
+      "origin": "propagated",
+      "explanation": "The month, approver, and standards are supported; the supplied evidence does not establish the qualifier “first.”",
+      "materiality": "medium"
+    },
+    {
+      "excerpt": "All three are designed to resist future quantum attacks",
+      "label": "F0",
+      "sourceEvidence": "“They are designed to resist future quantum-computer attacks.”",
+      "synthesisStatement": "The schemes are designed to resist future quantum attacks.",
+      "narrativeStatement": "all three schemes are designed to resist future quantum attacks",
+      "origin": "propagated",
+      "explanation": "Faithfully states the shared design aim without implying a guarantee.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "they serve two different functions.",
+      "label": "F0",
+      "sourceEvidence": "FIPS 203 is described as a KEM for establishing a shared secret; FIPS 204 and 205 are described as signature standards.",
+      "synthesisStatement": "The standards serve two distinct purposes.",
+      "narrativeStatement": "cover two functions",
+      "origin": "propagated",
+      "explanation": "Accurately summarizes key establishment versus digital signatures.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "FIPS 203 specifies ML-KEM, which establishes a shared secret between parties communicating over a public channel.",
+      "label": "F0",
+      "sourceEvidence": "“FIPS 203 specifies ML-KEM to establish a shared secret over a public channel.”",
+      "synthesisStatement": "FIPS 203 specifies ML-KEM to establish a shared secret between parties communicating over a public channel.",
+      "narrativeStatement": "FIPS 203 specifies ML-KEM to establish a shared secret between parties communicating over a public channel",
+      "origin": "propagated",
+      "explanation": "Preserves the standard, algorithm, purpose, and public-channel qualification.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "FIPS 204 and FIPS 205 specify digital signature schemes: FIPS 204 is module-lattice-based, while FIPS 205 is stateless hash-based.",
+      "label": "F0",
+      "sourceEvidence": "“FIPS 204 is the module-lattice signature standard, and FIPS 205 is the stateless hash-based signature standard.”",
+      "synthesisStatement": "FIPS 204 specifies a module-lattice-based digital signature scheme. FIPS 205 specifies a stateless hash-based digital signature scheme.",
+      "narrativeStatement": "FIPS 204 and FIPS 205 specify digital signature schemes: module-lattice-based and stateless hash-based, respectively.",
+      "origin": "propagated",
+      "explanation": "Correctly assigns each signature scheme and its stated basis.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "Together, the standards cover shared-secret establishment and digital signatures.",
+      "label": "F0",
+      "sourceEvidence": "FIPS 203 establishes a shared secret; FIPS 204 and 205 are digital signature standards.",
+      "synthesisStatement": "FIPS 203 provides key establishment, while FIPS 204 and 205 provide signatures.",
+      "narrativeStatement": "The three standards therefore cover two functions: shared-secret establishment and digital signatures.",
+      "origin": "compose",
+      "explanation": "Valid synthesis of the described purposes.",
+      "materiality": "medium"
+    },
+    {
+      "excerpt": "Their common design aim does not make their functions the same.",
+      "label": "F0",
+      "sourceEvidence": "The schemes share the design aim of resisting future quantum attacks, while FIPS 203 establishes a shared secret and FIPS 204 and 205 are signature standards.",
+      "synthesisStatement": "The schemes share a security goal but serve distinct purposes.",
+      "narrativeStatement": "Their common design aim does not erase this difference in purpose.",
+      "origin": "compose",
+      "explanation": "A supported distinction between a shared security goal and different functions.",
+      "materiality": "low"
+    }
+  ],
+  "preserved": [
+    "approval-date",
+    "ml-kem-purpose",
+    "ml-dsa-signature",
+    "slh-dsa-signature",
+    "quantum-resistance"
+  ],
+  "distorted": [],
+  "omitted": [],
+  "developments": 2,
+  "explainedFacts": 5,
+  "paragraphSteps": [
+    "Introduces the approval and shared design aim, then identifies the two functions.",
+    "Explains FIPS 203's shared-secret function and distinguishes the two signature standards.",
+    "Synthesizes the functions and contrasts them with the common design aim."
+  ],
+  "endpointAddsMeaning": false,
+  "redundancy": [
+    "Together, the standards cover shared-secret establishment and digital signatures.",
+    "Their common design aim does not make their functions the same."
+  ],
+  "peripheral": [],
+  "unsupported": [
+    "first three"
+  ],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}

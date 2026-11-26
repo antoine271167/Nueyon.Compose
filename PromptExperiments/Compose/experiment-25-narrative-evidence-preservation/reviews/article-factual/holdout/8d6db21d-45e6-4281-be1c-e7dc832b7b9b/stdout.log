@@ -1,0 +1,117 @@
+{
+  "claims": [
+    {
+      "excerpt": "OSIRIS-REx’s Bennu Sample Exceeded Its 60-Gram Minimum",
+      "label": "F0",
+      "sourceEvidence": "The mission required at least 60 grams, and the requirement was reached before the sampling head was fully opened; the completed sample mass was 121.6 grams.",
+      "synthesisStatement": "The team exceeded that requirement before completely opening the sampling head.",
+      "narrativeStatement": "The completed inventory amounted to 121.6 grams, establishing the final total in relation to the 60-gram minimum.",
+      "origin": "propagated",
+      "explanation": "The sample exceeded the mission’s 60-gram requirement, as the headline states.",
+      "materiality": "central"
+    },
+    {
+      "excerpt": "OSIRIS-REx returned material from asteroid Bennu to Earth on September 24, 2023.",
+      "label": "F0",
+      "sourceEvidence": "OSIRIS-REx returned material from asteroid Bennu to Earth on September 24, 2023.",
+      "synthesisStatement": "OSIRIS-REx returned material from asteroid Bennu to Earth on September 24, 2023.",
+      "narrativeStatement": "OSIRIS-REx returned material from asteroid Bennu on September 24, 2023.",
+      "origin": "propagated",
+      "explanation": "The return date and destination match the supplied evidence.",
+      "materiality": "contextual"
+    },
+    {
+      "excerpt": "The mission required at least 60 grams of sample",
+      "label": "F0",
+      "sourceEvidence": "The mission required at least 60 grams of asteroid material.",
+      "synthesisStatement": "The mission required at least 60 grams of asteroid material.",
+      "narrativeStatement": "The mission required at least 60 grams.",
+      "origin": "propagated",
+      "explanation": "“Sample” refers here to the asteroid material required by the mission; the amount and minimum qualification are preserved.",
+      "materiality": "central"
+    },
+    {
+      "excerpt": "that minimum had already been exceeded before the sampling head was completely opened",
+      "label": "F0",
+      "sourceEvidence": "The 60 g science requirement was reached before the sampling head was fully opened.",
+      "synthesisStatement": "The team exceeded that requirement before completely opening the sampling head.",
+      "narrativeStatement": "That requirement had already been exceeded before the sampling head was completely opened.",
+      "origin": "propagated",
+      "explanation": "The timing and qualification are preserved; no amount for this earlier milestone is asserted.",
+      "materiality": "central"
+    },
+    {
+      "excerpt": "A final pour added 51.2 grams.",
+      "label": "F0",
+      "sourceEvidence": "The final pour contributed 51.2 g.",
+      "synthesisStatement": "A final pour added 51.2 grams.",
+      "narrativeStatement": "A final pour then added 51.2 grams.",
+      "origin": "propagated",
+      "explanation": "The amount and its attribution to the final pour match the evidence.",
+      "materiality": "central"
+    },
+    {
+      "excerpt": "The completed inventory totaled 121.6 grams",
+      "label": "F0",
+      "sourceEvidence": "The total sample mass was 121.6 g.",
+      "synthesisStatement": "The completed inventory amounted to 121.6 grams.",
+      "narrativeStatement": "The completed inventory amounted to 121.6 grams.",
+      "origin": "propagated",
+      "explanation": "The completed inventory amount matches the supplied total.",
+      "materiality": "central"
+    },
+    {
+      "excerpt": "well above the 60-gram requirement.",
+      "label": "F0",
+      "sourceEvidence": "The completed sample mass was 121.6 g; the mission requirement was at least 60 g.",
+      "synthesisStatement": "The mission required at least 60 grams of asteroid material. The completed inventory amounted to 121.6 grams.",
+      "narrativeStatement": "The completed inventory amounted to 121.6 grams, establishing the final total in relation to the 60-gram minimum.",
+      "origin": "propagated",
+      "explanation": "The comparison follows from the stated amounts and does not change the requirement into a final-inventory figure.",
+      "materiality": "central"
+    }
+  ],
+  "preserved": [
+    "return-date",
+    "minimum-required",
+    "requirement-exceeded-before-opening",
+    "final-pour",
+    "completed-inventory"
+  ],
+  "distorted": [],
+  "omitted": [],
+  "developments": 2,
+  "explainedFacts": 1,
+  "paragraphSteps": [
+    {
+      "paragraph": 1,
+      "steps": [
+        "return-date",
+        "minimum-required",
+        "requirement-exceeded-before-opening"
+      ]
+    },
+    {
+      "paragraph": 2,
+      "steps": [
+        "final-pour",
+        "completed-inventory"
+      ]
+    }
+  ],
+  "endpointAddsMeaning": false,
+  "redundancy": [
+    {
+      "excerpts": [
+        "OSIRIS-REx’s Bennu Sample Exceeded Its 60-Gram Minimum",
+        "well above the 60-gram requirement."
+      ],
+      "explanation": "Both express the same comparison between the completed amount and the mission minimum."
+    }
+  ],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}
+

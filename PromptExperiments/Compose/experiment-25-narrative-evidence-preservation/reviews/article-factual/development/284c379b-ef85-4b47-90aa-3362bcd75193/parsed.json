@@ -1,0 +1,148 @@
+{
+  "claims": [
+    {
+      "excerpt": "Two Approaches in EPA’s Acid Rain Program",
+      "label": "F0",
+      "sourceEvidence": "The sulfur dioxide and nitrogen oxides timelines and mechanisms differ.",
+      "synthesisStatement": "The program treated the two pollutants differently.",
+      "narrativeStatement": "The program used different mechanisms for sulfur dioxide and nitrogen oxides.",
+      "origin": "upstream",
+      "explanation": "The title accurately summarizes the documented difference between the pollutants’ mechanisms.",
+      "materiality": "low"
+    },
+    {
+      "excerpt": "Under Title IV, the EPA’s Acid Rain Program used different mechanisms to address sulfur dioxide (SO₂) and nitrogen oxides (NOₓ).",
+      "label": "F0",
+      "sourceEvidence": "“EPA’s Acid Rain Program addresses sulfur dioxide and nitrogen oxides from the power sector under Title IV” and the source’s separate descriptions of each pollutant’s mechanism.",
+      "synthesisStatement": "The program addresses both pollutants under Title IV and treats them differently.",
+      "narrativeStatement": "The program used different mechanisms for sulfur dioxide and nitrogen oxides.",
+      "origin": "upstream",
+      "explanation": "Faithfully introduces the program and its central contrast.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "For SO₂, an allowance represented permission to emit one ton within an aggregate cap-and-trade system.",
+      "label": "F0",
+      "sourceEvidence": "“The sulfur dioxide mechanism applies an aggregate cap and allows trading; one allowance covers one ton.”",
+      "synthesisStatement": "The sulfur dioxide mechanism uses an aggregate cap and trading; one allowance covers one ton.",
+      "narrativeStatement": "A sulfur dioxide allowance represents permission for one ton under an aggregate cap-and-trade system.",
+      "origin": "propagated",
+      "explanation": "The allowance’s one-ton meaning is correctly limited to SO₂ and situated within its cap-and-trade system.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "The SO₂ program expanded in stages.",
+      "label": "F0",
+      "sourceEvidence": "“Its phase I began in 1995” and “Phase II began in 2000.”",
+      "synthesisStatement": "The SO₂ program has Phase I and Phase II milestones.",
+      "narrativeStatement": "The sulfur dioxide program’s coverage grew over time.",
+      "origin": "upstream",
+      "explanation": "The following dated phases support this concise summary of staged expansion.",
+      "materiality": "low"
+    },
+    {
+      "excerpt": "Phase I began in 1995 with 263 emissions units at 110 plants.",
+      "label": "F0",
+      "sourceEvidence": "“phase I began in 1995 with 263 initial units at 110 plants.”",
+      "synthesisStatement": "Phase I began in 1995 with 263 initial units at 110 plants.",
+      "narrativeStatement": "Phase I began in 1995 with 263 units at 110 plants.",
+      "origin": "upstream",
+      "explanation": "The body correctly identifies the 263 as units and the 110 as plants; “with” the phase’s 1995 start preserves the initial-count meaning.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "Substitution or compensating units brought the Phase I total to 445 units, and Phase II began in 2000.",
+      "label": "F0",
+      "sourceEvidence": "“substitution or compensating units brought the phase I total to 445 units. Phase II began in 2000.”",
+      "synthesisStatement": "Substitution or compensating units brought the Phase I total to 445; Phase II began in 2000.",
+      "narrativeStatement": "Substitution or compensating units brought the Phase I total to 445, and Phase II began in 2000.",
+      "origin": "upstream",
+      "explanation": "Both the expanded unit total and the Phase II date match the evidence.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "In 2010, the program’s final cap was 8.95 million tons—a permitted total, not a report of actual emissions.",
+      "label": "F0",
+      "sourceEvidence": "“The final 2010 cap was 8.95 million tons.” The synthesis also states: “A cap is a permitted total rather than reported actual emissions.”",
+      "synthesisStatement": "The final 2010 cap was 8.95 million tons; it is a permitted total, not reported actual emissions.",
+      "narrativeStatement": "The sulfur dioxide program’s final cap was 8.95 million tons in 2010; this is a permitted total, not a report of actual emissions.",
+      "origin": "upstream",
+      "explanation": "The value, year, and crucial distinction between a cap and actual emissions are preserved.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "The NOₓ component followed a separate timeline and mechanism.",
+      "label": "F0",
+      "sourceEvidence": "“The nitrogen oxides component was rate-based for certain coal-fired units, began in 1996 and did not introduce a cap or allowance trading.”",
+      "synthesisStatement": "The NOₓ component had a separate mechanism and began in 1996.",
+      "narrativeStatement": "The nitrogen oxides component followed a separate, rate-based approach.",
+      "origin": "upstream",
+      "explanation": "This accurately introduces the distinct NOₓ rules and timeline described next.",
+      "materiality": "low"
+    },
+    {
+      "excerpt": "It began in 1996 and used a rate-based approach for certain coal-fired units, without a cap or allowance trading.",
+      "label": "F0",
+      "sourceEvidence": "“The nitrogen oxides component was rate-based for certain coal-fired units, began in 1996 and did not introduce a cap or allowance trading.”",
+      "synthesisStatement": "The NOₓ component was rate-based for certain coal-fired units, began in 1996, and did not introduce a cap or allowance trading.",
+      "narrativeStatement": "The component began in 1996 and used a rate-based approach for certain coal-fired units, without a cap or allowance trading.",
+      "origin": "upstream",
+      "explanation": "The date, rate-based category, “certain” limitation, and absence of a cap and trading all match.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "The two pollutants were therefore governed by distinct rules and timelines.",
+      "label": "F0",
+      "sourceEvidence": "The source gives different mechanisms and dates for SO₂ and NOₓ.",
+      "synthesisStatement": "The sulfur dioxide and nitrogen oxides timelines and mechanisms differ.",
+      "narrativeStatement": "Readers should understand both the difference in rules and the distinct timelines.",
+      "origin": "propagated",
+      "explanation": "This concluding comparison is supported, though it repeats the opening contrast and preceding details.",
+      "materiality": "low"
+    }
+  ],
+  "preserved": [
+    "allowance-one-ton",
+    "sulfur-dioxide-cap-trading",
+    "nitrogen-oxides-rate-based",
+    "sulfur-dioxide-coverage-expansion",
+    "sulfur-dioxide-later-milestones"
+  ],
+  "distorted": [],
+  "omitted": [],
+  "developments": 5,
+  "explainedFacts": 5,
+  "paragraphSteps": [
+    {
+      "paragraph": 1,
+      "steps": [
+        "Establishes the Title IV pollutant contrast.",
+        "Explains the SO₂ allowance and cap-and-trade mechanism."
+      ]
+    },
+    {
+      "paragraph": 2,
+      "steps": [
+        "Tracks Phase I’s 1995 start and unit/plant counts.",
+        "Explains the increase to 445 units and gives the 2000 Phase II milestone.",
+        "Ends with the 2010 cap and clarifies that it is not actual emissions."
+      ]
+    },
+    {
+      "paragraph": 3,
+      "steps": [
+        "Gives the NOₓ start date and rate-based rule for certain coal-fired units.",
+        "Summarizes the difference between the pollutants’ rules and timelines."
+      ]
+    }
+  ],
+  "endpointAddsMeaning": false,
+  "redundancy": [
+    "Two Approaches in EPA’s Acid Rain Program",
+    "The two pollutants were therefore governed by distinct rules and timelines."
+  ],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}

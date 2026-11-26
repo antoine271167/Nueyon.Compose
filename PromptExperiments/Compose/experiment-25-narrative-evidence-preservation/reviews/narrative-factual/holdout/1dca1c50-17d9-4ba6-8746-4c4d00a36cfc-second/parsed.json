@@ -1,0 +1,76 @@
+{
+  "claims": [
+    {
+      "exactBodyExcerpt": "Een wolf is geen losse schakel: Yellowstone als levend netwerk",
+      "label": "F1",
+      "sourceEvidence": "The source describes social wolf packs, other animals feeding on wolf kills, and predation patterns linked to several interacting factors.",
+      "synthesisStatement": "Yellowstone’s wolves are portrayed not as solitary ecosystem controllers but as social predators whose kills feed other animals, while changes in their prey and impacts occur amid several interacting factors.",
+      "narrativeStatement": "Een wolf is geen losse schakel: Yellowstone als levend netwerk",
+      "origin": "compose",
+      "explanation": "The metaphor is a fair summary of the documented relationships, but “levend netwerk” is broader than any specific network analysis in the source.",
+      "materiality": "low"
+    },
+    {
+      "exactBodyExcerpt": "Yellowstone packs are social families; the source identifies cooperative offspring care and group hunting among their social-living benefits. (Fact 3)",
+      "label": "F0",
+      "sourceEvidence": "Packs are “complex social famil[ies]”; social-living benefits include “cooperative care of offspring” and “group hunting of large prey.”",
+      "synthesisStatement": "Yellowstone packs are social families; the source identifies cooperative offspring care and group hunting among their social-living benefits. (Fact 3)",
+      "narrativeStatement": "Yellowstone packs are social families; the source identifies cooperative offspring care and group hunting among their social-living benefits. (Fact 3)",
+      "origin": "propagated",
+      "explanation": "Faithfully preserves the source’s examples and qualifies them as benefits of social living, without claiming social behavior alone determines ecosystem outcomes.",
+      "materiality": "medium"
+    },
+    {
+      "exactBodyExcerpt": "Wolf kills provide food for other animals, from ravens and coyotes to bears and invertebrates. (Fact 6)",
+      "label": "F0",
+      "sourceEvidence": "Ravens and magpies arrive at elk kills, coyotes wait nearby, bears may chase wolves away, and animals “from eagles to invertebrates” consume remains.",
+      "synthesisStatement": "Wolf kills provide food for other animals, from ravens and coyotes to bears and invertebrates. (Fact 6)",
+      "narrativeStatement": "Wolf kills provide food for other animals, from ravens and coyotes to bears and invertebrates. (Fact 6)",
+      "origin": "propagated",
+      "explanation": "Accurately summarizes the named scavengers and consumers; it does not imply a measured ecosystem-wide cascade.",
+      "materiality": "medium"
+    },
+    {
+      "exactBodyExcerpt": "The composition of wolf prey changed over time: the proportion of early-winter prey made up by elk calves and bull elk reversed between 1995–2000 and 2001–2007. The source links such changes to prey vulnerability and availability. (Fact 7)",
+      "label": "F0",
+      "sourceEvidence": "From 1995 to 2000, elk calves comprised 50% and bull elk 25% of early-winter wolf prey; “That ratio reversed from 2001 to 2007, indicating changes in prey vulnerability and availability.”",
+      "synthesisStatement": "The composition of wolf prey changed over time: the proportion of early-winter prey made up by elk calves and bull elk reversed between 1995–2000 and 2001–2007. The source links such changes to prey vulnerability and availability. (Fact 7)",
+      "narrativeStatement": "The composition of wolf prey changed over time: the proportion of early-winter prey made up by elk calves and bull elk reversed between 1995–2000 and 2001–2007. The source links such changes to prey vulnerability and availability. (Fact 7)",
+      "origin": "propagated",
+      "explanation": "Preserves the early-winter scope, the two periods, and the source’s qualified interpretation. It omits the percentages but does not misstate the reversal.",
+      "materiality": "high"
+    },
+    {
+      "exactBodyExcerpt": "The source describes changes in wolf predation and elk impacts as involving interactions among other predators, ungulate management outside the park, and weather, and says research is examining these factors’ relative roles. (Fact 9; Fact 13)",
+      "label": "F0",
+      "sourceEvidence": "Wolf predation patterns and elk impacts are linked to “other predators, management of ungulates outside the park, and weather”; NPS research focuses on the relative factors driving wolf predation.",
+      "synthesisStatement": "The source describes changes in wolf predation and elk impacts as involving interactions among other predators, ungulate management outside the park, and weather, and says research is examining these factors’ relative roles. (Fact 9; Fact 13)",
+      "narrativeStatement": "The source describes changes in wolf predation and elk impacts as involving interactions among other predators, ungulate management outside the park, and weather, and says research is examining these factors’ relative roles. (Fact 9; Fact 13)",
+      "origin": "propagated",
+      "explanation": "Faithfully lists the factors and retains the qualification that research examines their relative roles; it does not assign or quantify their contributions.",
+      "materiality": "high"
+    }
+  ],
+  "preserved": [
+    "social-pack-behavior",
+    "kills-feed-other-animals",
+    "prey-composition-shift",
+    "multiple-influences-on-predation"
+  ],
+  "distorted": [],
+  "omitted": [],
+  "developments": 2,
+  "explainedFacts": 4,
+  "paragraphSteps": [
+    "Context: establishes pack sociality and cooperative behavior.",
+    "Development: shows how kills provide food for other animals.",
+    "Development: gives a time-bounded example of changing early-winter prey composition and its stated relation to vulnerability and availability.",
+    "Endpoint: places predation and elk impacts among interacting factors and notes research into their relative roles."
+  ],
+  "endpointAddsMeaning": true,
+  "redundancy": [],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}

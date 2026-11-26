@@ -1,0 +1,143 @@
+{
+  "claims": [
+    {
+      "bodyExcerpt": "was not employed during the survey reference week",
+      "label": "F0",
+      "sourceEvidence": "was not employed during the survey reference week",
+      "synthesisStatement": "An unemployed person was not employed during the survey reference week.",
+      "narrativeStatement": "The context states this reference-week condition.",
+      "origin": "upstream",
+      "explanation": "Faithfully preserves the reference-week scope.",
+      "materiality": "material"
+    },
+    {
+      "bodyExcerpt": "was available for work except for temporary illness",
+      "label": "F0",
+      "sourceEvidence": "was available for work except for temporary illness",
+      "synthesisStatement": "An unemployed person had to be available for work, except in cases of temporary illness.",
+      "narrativeStatement": "The context states the availability requirement and its exception.",
+      "origin": "upstream",
+      "explanation": "Preserves both the requirement and temporary-illness qualification.",
+      "materiality": "material"
+    },
+    {
+      "bodyExcerpt": "made an active job search effort in the four-week period ending with that week",
+      "label": "F0",
+      "sourceEvidence": "made an active job search effort in the four-week period ending with that week",
+      "synthesisStatement": "One route to being classified as unemployed was active job search during the four-week period ending with the reference week.",
+      "narrativeStatement": "The context gives the active-search route and its four-week window.",
+      "origin": "upstream",
+      "explanation": "Preserves the active-search condition and timeframe.",
+      "materiality": "material"
+    },
+    {
+      "bodyExcerpt": "was temporarily laid off and expected recall",
+      "label": "F0",
+      "sourceEvidence": "was temporarily laid off and expected recall",
+      "synthesisStatement": "A person temporarily laid off and expecting recall could qualify without the active-search route.",
+      "narrativeStatement": "The context presents temporary layoff with expected recall as the alternative route.",
+      "origin": "upstream",
+      "explanation": "Preserves the alternative to active search; the surrounding sentence retains the shared reference-week and availability conditions.",
+      "materiality": "material"
+    },
+    {
+      "bodyExcerpt": "Passive-only job search does not count as active search.",
+      "label": "F0",
+      "sourceEvidence": "Passive-only job search does not count as active search.",
+      "synthesisStatement": "Passive-only job search does not count as active search.",
+      "narrativeStatement": "The development states that passive-only search is not active search.",
+      "origin": "upstream",
+      "explanation": "Faithful and limited to whether passive search meets the active-search criterion; it does not rule out the temporary-layoff alternative.",
+      "materiality": "material"
+    },
+    {
+      "bodyExcerpt": "Someone waiting to start a new job generally needs active search as well.",
+      "label": "F0",
+      "sourceEvidence": "Someone waiting to start a new job generally needs active search as well.",
+      "synthesisStatement": "Someone waiting to start a new job generally needs active search as well.",
+      "narrativeStatement": "The development retains the general qualification.",
+      "origin": "upstream",
+      "explanation": "Preserves the source’s “generally” qualification.",
+      "materiality": "non-material"
+    },
+    {
+      "bodyExcerpt": "Receipt of unemployment insurance is irrelevant to the classification.",
+      "label": "F0",
+      "sourceEvidence": "Receipt of unemployment insurance is irrelevant to the classification.",
+      "synthesisStatement": "Receiving unemployment insurance does not determine the classification.",
+      "narrativeStatement": "The development says benefit receipt is irrelevant to classification.",
+      "origin": "upstream",
+      "explanation": "Faithfully concerns classification, not benefit eligibility.",
+      "materiality": "non-material"
+    },
+    {
+      "bodyExcerpt": "The unemployment rate divides unemployed people by the sum of employed and unemployed people.",
+      "label": "F0",
+      "sourceEvidence": "The unemployment rate divides unemployed people by the sum of employed and unemployed people.",
+      "synthesisStatement": "The unemployment rate divides unemployed people by the combined number of employed and unemployed people.",
+      "narrativeStatement": "The endpoint states the rate’s denominator.",
+      "origin": "upstream",
+      "explanation": "Preserves both the unemployed numerator and the employed-plus-unemployed denominator.",
+      "materiality": "material"
+    }
+  ],
+  "preserved": [
+    "not-employed-in-reference-week",
+    "availability-required",
+    "active-search-window",
+    "temporary-layoff-recall",
+    "passive-search-excluded",
+    "waiting-to-start-job",
+    "insurance-irrelevant",
+    "rate-denominator"
+  ],
+  "distorted": [],
+  "omitted": [],
+  "developments": 3,
+  "explainedFacts": 8,
+  "paragraphSteps": [
+    {
+      "step": "Context",
+      "supportedFacts": [
+        "not-employed-in-reference-week",
+        "availability-required",
+        "active-search-window",
+        "temporary-layoff-recall"
+      ]
+    },
+    {
+      "step": "Passive-only search",
+      "supportedFacts": [
+        "passive-search-excluded"
+      ]
+    },
+    {
+      "step": "Waiting to start a new job",
+      "supportedFacts": [
+        "waiting-to-start-job"
+      ]
+    },
+    {
+      "step": "Unemployment insurance",
+      "supportedFacts": [
+        "insurance-irrelevant"
+      ]
+    },
+    {
+      "step": "Endpoint",
+      "supportedFacts": [
+        "rate-denominator"
+      ]
+    }
+  ],
+  "endpointAddsMeaning": true,
+  "redundancy": [],
+  "peripheral": [
+    "waiting-to-start-job",
+    "insurance-irrelevant"
+  ],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}
+

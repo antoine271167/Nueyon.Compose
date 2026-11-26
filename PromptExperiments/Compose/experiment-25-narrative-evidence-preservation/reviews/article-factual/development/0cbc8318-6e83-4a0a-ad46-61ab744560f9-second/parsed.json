@@ -1,0 +1,129 @@
+{
+  "claims": [
+    {
+      "excerpt": "a person is classified as unemployed if they were not employed during the survey reference week",
+      "label": "F0",
+      "sourceEvidence": "“was not employed during the survey reference week”",
+      "synthesisStatement": "“an unemployed person was not employed during the survey reference week”",
+      "narrativeStatement": "“an unemployed person was not employed during the survey reference week”",
+      "origin": "upstream",
+      "explanation": "Faithfully states the reference-week employment condition.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "they were available for work, except for a temporary illness",
+      "label": "F0",
+      "sourceEvidence": "“was available for work except for temporary illness”",
+      "synthesisStatement": "“was available for work except for temporary illness”",
+      "narrativeStatement": "“was available for work except for temporary illness”",
+      "origin": "upstream",
+      "explanation": "Preserves both the availability requirement and temporary-illness exception.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "They must also have actively searched for a job during the four-week period ending with that week",
+      "label": "F0",
+      "sourceEvidence": "“made an active job search effort in the four-week period ending with that week”",
+      "synthesisStatement": "“made an active job search effort in the four-week period ending with that week”",
+      "narrativeStatement": "“made an active job search effort in the four-week period ending with that week”",
+      "origin": "upstream",
+      "explanation": "Preserves the active-search route and its four-week window.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "or have been temporarily laid off and expected to be recalled",
+      "label": "F0",
+      "sourceEvidence": "“or was temporarily laid off and expected recall”",
+      "synthesisStatement": "“or was temporarily laid off and expected recall”",
+      "narrativeStatement": "“or was temporarily laid off and expected recall”",
+      "origin": "upstream",
+      "explanation": "Accurately presents temporary layoff with expected recall as an alternative to active search.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "Passive-only job search does not count as active search.",
+      "label": "F0",
+      "sourceEvidence": "“Passive-only job search does not count as active search.”",
+      "synthesisStatement": "“Passive-only job search does not count as active search.”",
+      "narrativeStatement": "“Passive-only job search does not count as active search.”",
+      "origin": "upstream",
+      "explanation": "Faithfully distinguishes passive-only search from active search.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "Someone waiting to start a new job generally needs to have actively searched as well.",
+      "label": "F0",
+      "sourceEvidence": "“Someone waiting to start a new job generally needs active search as well.”",
+      "synthesisStatement": "“Someone waiting to start a new job generally needs active search as well.”",
+      "narrativeStatement": "“Someone waiting to start a new job generally needs active search as well.”",
+      "origin": "upstream",
+      "explanation": "Preserves the general qualification; “actively searched” is a faithful restatement of needing active search.",
+      "materiality": "nonmaterial"
+    },
+    {
+      "excerpt": "Receiving unemployment insurance does not affect the classification.",
+      "label": "F0",
+      "sourceEvidence": "“Receipt of unemployment insurance is irrelevant to the classification.”",
+      "synthesisStatement": "“Receipt of unemployment insurance is irrelevant to the classification.”",
+      "narrativeStatement": "“Receipt of unemployment insurance is irrelevant to the classification.”",
+      "origin": "upstream",
+      "explanation": "Faithfully says benefit receipt does not determine classification, without asserting anything about benefit eligibility.",
+      "materiality": "nonmaterial"
+    },
+    {
+      "excerpt": "The unemployment rate is calculated by dividing the number of unemployed people by the combined number of employed and unemployed people.",
+      "label": "F0",
+      "sourceEvidence": "“The unemployment rate divides unemployed people by the sum of employed and unemployed people.”",
+      "synthesisStatement": "“The unemployment rate divides unemployed people by the sum of employed and unemployed people.”",
+      "narrativeStatement": "“The unemployment rate divides unemployed people by the sum of employed and unemployed people.”",
+      "origin": "upstream",
+      "explanation": "Accurately states the unemployed numerator and employed-plus-unemployed denominator.",
+      "materiality": "material"
+    }
+  ],
+  "preserved": [
+    "not-employed-in-reference-week",
+    "availability-required",
+    "active-search-window",
+    "temporary-layoff-recall",
+    "passive-search-excluded",
+    "waiting-to-start-job",
+    "insurance-irrelevant",
+    "rate-denominator"
+  ],
+  "distorted": [],
+  "omitted": [],
+  "developments": 3,
+  "explainedFacts": 8,
+  "paragraphSteps": [
+    {
+      "paragraph": 1,
+      "steps": [
+        "context: not-employed-in-reference-week",
+        "context: availability-required",
+        "context: active-search-window",
+        "context: temporary-layoff-recall"
+      ]
+    },
+    {
+      "paragraph": 2,
+      "steps": [
+        "development: passive-search-excluded",
+        "development: waiting-to-start-job",
+        "development: insurance-irrelevant"
+      ]
+    },
+    {
+      "paragraph": 3,
+      "steps": [
+        "endpoint: rate-denominator"
+      ]
+    }
+  ],
+  "endpointAddsMeaning": true,
+  "redundancy": [],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}

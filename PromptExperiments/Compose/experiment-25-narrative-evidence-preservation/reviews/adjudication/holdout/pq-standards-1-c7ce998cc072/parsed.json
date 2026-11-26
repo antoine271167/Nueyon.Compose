@@ -1,0 +1,24 @@
+[
+  {
+    "i": 0,
+    "decision": "F0",
+    "origin": "none",
+    "reason": "The excerpt accurately states the approval date, approving official, and three standard identifiers.",
+    "sourceEvidence": "The source says the Secretary of Commerce approved three standards in August 2024: FIPS 203, 204, and 205.",
+    "synthesisStatement": "The Secretary of Commerce approved FIPS 203, 204 and 205 in August 2024.",
+    "narrativeStatement": "The Secretary of Commerce approved FIPS 203, 204 and 205 in August 2024.",
+    "materiality": "No discrepancy.",
+    "key": "5e99b59d-73d5-4042-925a-f64d3709c267|In August 2024, the Secretary of Commerce approved the first three NIST post-quantum standards: FIPS 203, FIPS 204 and FIPS 205."
+  },
+  {
+    "i": 1,
+    "decision": "F0",
+    "origin": "none",
+    "reason": "The title’s distinction between two purposes is supported: FIPS 203 establishes a shared secret, while FIPS 204 and 205 specify digital signature schemes.",
+    "sourceEvidence": "The source describes FIPS 203 as a KEM for establishing a shared secret, and FIPS 204 and 205 as digital signature standards.",
+    "synthesisStatement": "FIPS 203 specifies ML-KEM to establish a shared secret between parties communicating over a public channel. FIPS 204 specifies a module-lattice-based digital signature scheme. FIPS 205 specifies a stateless hash-based digital signature scheme.",
+    "narrativeStatement": "The three standards therefore cover two functions: shared-secret establishment and digital signatures.",
+    "materiality": "No discrepancy.",
+    "key": "0a91e877-452d-4399-b4bc-54d5f02bebc9|The First Three NIST Post-Quantum Standards Serve Two Distinct Purposes"
+  }
+]

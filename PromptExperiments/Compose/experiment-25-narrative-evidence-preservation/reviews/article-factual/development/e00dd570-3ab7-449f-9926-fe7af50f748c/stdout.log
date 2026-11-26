@@ -1,0 +1,77 @@
+{
+  "claims": [
+    {
+      "excerpt": "On December 5, 2022, an experiment at Lawrence Livermore National Laboratory’s National Ignition Facility achieved fusion ignition.",
+      "label": "F0",
+      "sourceEvidence": "On December 5, 2022, a Lawrence Livermore National Laboratory experiment at the National Ignition Facility achieved fusion ignition.",
+      "synthesisStatement": "A Lawrence Livermore National Laboratory experiment at the National Ignition Facility achieved fusion ignition on December 5, 2022.",
+      "narrativeStatement": "On December 5, 2022, a Lawrence Livermore National Laboratory experiment at the National Ignition Facility achieved fusion ignition.",
+      "origin": "propagated",
+      "explanation": "Faithfully preserves the event, date, and facility; “an experiment at” does not change the stated location.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "The experiment delivered 2.05 megajoules of energy to its target and generated 3.15 megajoules of fusion energy.",
+      "label": "F0",
+      "sourceEvidence": "The experiment delivered 2.05 megajoules to the target and generated 3.15 megajoules of fusion energy.",
+      "synthesisStatement": "The experiment delivered 2.05 megajoules to the target and generated 3.15 megajoules of fusion energy.",
+      "narrativeStatement": "The experiment delivered 2.05 megajoules to the target and generated 3.15 megajoules of fusion energy.",
+      "origin": "propagated",
+      "explanation": "Preserves both quantities, units, and the target-energy denominator. It does not claim that the output was net electricity or that facility-wide energy use was included.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "The announcement described the achievement as progress toward inertial fusion energy, while noting that many scientific and technological developments are still needed for practical energy production.",
+      "label": "F0",
+      "sourceEvidence": "The announcement treats the experiment as progress toward inertial fusion energy and notes the many scientific and technological developments still needed for practical energy production.",
+      "synthesisStatement": "The announcement presents the result as progress toward inertial fusion energy while noting substantial developments remain before practical production.",
+      "narrativeStatement": "The announcement treats the experiment as progress toward inertial fusion energy and notes the many scientific and technological developments still needed for practical energy production.",
+      "origin": "propagated",
+      "explanation": "Preserves both the qualified outlook and the need for further scientific and technological development; it adds no timeline.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "The U.S. Department of Energy announced the achievement on December 13.",
+      "label": "F0",
+      "sourceEvidence": "DOE announced the achievement on December 13.",
+      "synthesisStatement": "DOE announced the achievement on December 13.",
+      "narrativeStatement": "DOE announced the achievement on December 13.",
+      "origin": "propagated",
+      "explanation": "DOE and the U.S. Department of Energy refer to the same agency. The announcement date is preserved without adding a year not stated for that date.",
+      "materiality": "non-material"
+    }
+  ],
+  "preserved": [
+    "ignition-event",
+    "target-energy-comparison",
+    "development-still-needed",
+    "announcement-date"
+  ],
+  "distorted": [],
+  "omitted": [],
+  "developments": 4,
+  "explainedFacts": 0,
+  "paragraphSteps": [
+    {
+      "paragraph": 1,
+      "steps": [
+        "Context: fusion ignition at the facility on December 5, 2022.",
+        "Measurement: energy delivered to the target and fusion energy generated."
+      ]
+    },
+    {
+      "paragraph": 2,
+      "steps": [
+        "Outlook: progress toward inertial fusion energy, with development still needed.",
+        "Endpoint: DOE announcement on December 13."
+      ]
+    }
+  ],
+  "endpointAddsMeaning": false,
+  "redundancy": [],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}
+

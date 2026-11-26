@@ -1,0 +1,144 @@
+{
+  "claims": [
+    {
+      "id": "c01",
+      "exactExcerpt": "Snel digitaal leveren begon hier met keuzes, niet met een formulier",
+      "label": "F1",
+      "sourceEvidence": "The source says the team focused on refund applicants first and later advises: “Build services not form fillers.” It does not say the service literally began with choices rather than a form.",
+      "synthesisStatement": "The narrative uses the same title, but the source supports this as thematic framing, not as a literal account of how work began.",
+      "narrativeStatement": "Snel digitaal leveren begon hier met keuzes, niet met een formulier",
+      "origin": "upstream",
+      "explanation": "The title combines documented design choices with a contrast to form-filling, but “begon hier” gives that framing a chronological implication the source does not establish.",
+      "materiality": "low"
+    },
+    {
+      "id": "c02",
+      "exactExcerpt": "De dienst ging twaalf weken na de start publiek.",
+      "label": "F1",
+      "sourceEvidence": "“launched to the public in only 12 weeks.” The source does not specify the point from which the twelve weeks were counted.",
+      "synthesisStatement": "The team launched publicly in twelve weeks; the start point is unspecified.",
+      "narrativeStatement": "Het team lanceerde de dienst voor het publiek in twaalf weken.",
+      "origin": "amplification",
+      "explanation": "“Na de start” makes an unspecified start point explicit. The twelve-week duration is supported, but this added timing detail is not.",
+      "materiality": "moderate"
+    },
+    {
+      "id": "c03",
+      "exactExcerpt": "Aanvankelijk was gevraagd om binnen enkele weken te leveren, maar het team concludeerde dat dit niet haalbaar was met behoud van een kwalitatieve gebruikersdienst.",
+      "label": "F0",
+      "sourceEvidence": "“We were initially asked to deliver the service in a matter of weeks” and it “would not be possible if we wanted to create a quality service for our users.”",
+      "synthesisStatement": "The initial deadline and the team's quality-based conclusion are both accurately reported.",
+      "narrativeStatement": "Het was aanvankelijk gevraagd binnen enkele weken te leveren, maar concludeerde dat dit niet haalbaar was met behoud van een kwalitatieve gebruikersdienst.",
+      "origin": "propagated",
+      "explanation": "Faithfully preserves the stated deadline pressure and the reason it was judged infeasible.",
+      "materiality": "high"
+    },
+    {
+      "id": "c04",
+      "exactExcerpt": "De eerste stap was de ervaring van aanvragers: die werd uitgewerkt tot alpha.",
+      "label": "F1",
+      "sourceEvidence": "“My team focused on the users applying for refunds first and this is what we took to the alpha assessment.”",
+      "synthesisStatement": "The team focused on applicants first and took that focus to alpha assessment.",
+      "narrativeStatement": "Het team werkte eerst aan de aanvragerservaring en bracht die naar alpha.",
+      "origin": "propagated",
+      "explanation": "The sequence is supported, but “werd uitgewerkt tot alpha” blurs taking the work to an alpha assessment with developing the experience into an alpha.",
+      "materiality": "low"
+    },
+    {
+      "id": "c05",
+      "exactExcerpt": "Plannen voor caseworkers kwamen later. De auteur schrijft dat caseworkers nog geen bestaande gebruikers van de nieuwe dienst waren en dat het team onder tijdsdruk aannames wilde vermijden.",
+      "label": "F0",
+      "sourceEvidence": "“Plans for the caseworker user came later”; the casework user “didn’t yet exist” for the new service, and the team wanted to avoid “incorrect assumptions” under limited time.",
+      "synthesisStatement": "Caseworker planning followed applicant-focused work because the new service had no existing caseworker users, and the team wanted to avoid assumptions.",
+      "narrativeStatement": "Plannen voor caseworkers kwamen later. De auteur zegt dat caseworkers in deze nieuwe dienst nog geen bestaande gebruikers waren en dat het team onder tijdsdruk aannames wilde vermijden.",
+      "origin": "propagated",
+      "explanation": "Accurately preserves the order, the new-service context, attribution, and the stated concern about assumptions.",
+      "materiality": "high"
+    },
+    {
+      "id": "c06",
+      "exactExcerpt": "Tijdens de private beta werkte het team in sprints van twee weken. In de eerste week testte en onderzocht het de dienst en nam het aanvragen aan. In de tweede week werden inzendingen gepauzeerd, zodat er getest, onderzocht en verwerkt kon worden.",
+      "label": "F0",
+      "sourceEvidence": "“splitting our fortnightly sprints in two”: “testing, researching and accepting applications in the first week” and “suspending submissions” in the second to focus on “testing, researching and processing applications.”",
+      "synthesisStatement": "The two-week cadence and the distinct activities in each week are accurately represented.",
+      "narrativeStatement": "Tijdens private beta verdeelde het team tweewekelijkse sprints: in de eerste week testte en onderzocht het team en nam het aanvragen aan; in de tweede week werden inzendingen gepauzeerd voor testen, onderzoek en verwerking.",
+      "origin": "propagated",
+      "explanation": "“Fortnightly” means two-weekly; the account retains the first-week intake and second-week submission pause, without reversing the cadence.",
+      "materiality": "high"
+    },
+    {
+      "id": "c07",
+      "exactExcerpt": "De dienst was digitaal en bood ook een assisted-digital route; een papieren versie was er niet.",
+      "label": "F0",
+      "sourceEvidence": "“a digital and assisted digital service (no paper version).”",
+      "synthesisStatement": "The service channels are accurately described.",
+      "narrativeStatement": "De dienst was digitaal en assisted-digital, zonder papieren versie.",
+      "origin": "propagated",
+      "explanation": "Faithfully states the digital and assisted-digital service and the absence of a paper version.",
+      "materiality": "low"
+    },
+    {
+      "id": "c08",
+      "exactExcerpt": "De bron beschrijft niet welke hulp die route bood.",
+      "label": "F0",
+      "sourceEvidence": "The source names an “assisted digital service” but does not describe the assistance provided.",
+      "synthesisStatement": "The specific form of assisted-digital support is not given.",
+      "narrativeStatement": "De bron specificeert niet welke hulp de assisted-digital route bood.",
+      "origin": "propagated",
+      "explanation": "Accurately preserves the source limitation and avoids inventing details about the assistance.",
+      "materiality": "low"
+    },
+    {
+      "id": "c09",
+      "exactExcerpt": "Na vijf weken publieke beschikbaarheid had de dienst meer dan 100.000 aanvragen ontvangen. De gebruikerstevredenheid was 92,6% en het voltooiingspercentage 80,2%.",
+      "label": "F0",
+      "sourceEvidence": "“available for five weeks” and “over 100k applications with 92.6% user satisfaction and an 80.2% completion rate.”",
+      "synthesisStatement": "These are the author's reported figures after five weeks; the source gives no definitions, methodology, comparison, or causal link to the described practices.",
+      "narrativeStatement": "De auteur rapporteert dat de dienst na vijf weken publiek beschikbaar meer dan 100.000 aanvragen had ontvangen, met 92,6% gebruikerstevredenheid en een voltooiingspercentage van 80,2%.",
+      "origin": "propagated",
+      "explanation": "Preserves the time period, quantities, and reported metric names without implying that the design choices caused the results.",
+      "materiality": "high"
+    }
+  ],
+  "preserved": [
+    "user-sequence",
+    "beta-research-rhythm",
+    "assisted-digital-scope",
+    "five-week-results"
+  ],
+  "distorted": [
+    "launch-timeline"
+  ],
+  "omitted": [],
+  "developments": 2,
+  "explainedFacts": 5,
+  "paragraphSteps": [
+    {
+      "paragraph": 1,
+      "role": "Context: launch timeline and initial deadline",
+      "claimIds": ["c02", "c03"]
+    },
+    {
+      "paragraph": 2,
+      "role": "Development step 1: applicant-first focus, followed by caseworker planning",
+      "claimIds": ["c04", "c05"]
+    },
+    {
+      "paragraph": 3,
+      "role": "Development step 2: two-week private-beta research and intake cadence",
+      "claimIds": ["c06"]
+    },
+    {
+      "paragraph": 4,
+      "role": "Service scope and reported five-week endpoint",
+      "claimIds": ["c07", "c08", "c09"]
+    }
+  ],
+  "endpointAddsMeaning": false,
+  "redundancy": [],
+  "peripheral": ["c07", "c08"],
+  "unsupported": ["c02"],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}
+

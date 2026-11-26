@@ -1,0 +1,39 @@
+{
+  "checks": [
+    {
+      "id": "sa-purpose",
+      "supported": true,
+      "useful": true,
+      "reason": "The excerpt and claim match the source and Synthesis: Selective Availability deliberately degraded public GPS signals for national security. It establishes the feature at issue without overstating the degree of degradation.",
+      "coverageGap": "No degree of degradation is specified; do not imply one."
+    },
+    {
+      "id": "operational-switch-2000",
+      "supported": true,
+      "useful": true,
+      "reason": "The full excerpt and claim preserve the May 2000 timing, the US government's action, President Clinton's direction, and the stated purpose. The qualification correctly distinguishes stopping use from removing the capability.",
+      "coverageGap": "The material does not say the capability was removed in 2000 or quantify the resulting benefit."
+    },
+    {
+      "id": "future-generation-procurement",
+      "supported": true,
+      "useful": true,
+      "reason": "The full excerpt and claim preserve the September 2007 announcement and its future GPS III procurement scope. The qualification correctly avoids treating the announcement as evidence of when every satellite lacked the feature.",
+      "coverageGap": "No date when every satellite lacked the capability is established."
+    },
+    {
+      "id": "policy-durable",
+      "supported": false,
+      "useful": true,
+      "reason": "The source and Synthesis say GPS.gov describes the procurement choice as making the 2000 policy durable. The claim drops that attribution and presents the characterization as an unqualified fact, so the full claim is not supported as worded. The relationship is useful but should retain the attribution.",
+      "coverageGap": "Retain that this is GPS.gov's characterization; the material does not say the procurement decision was the 2000 operational switch."
+    },
+    {
+      "id": "events-not-equivalent",
+      "supported": true,
+      "useful": true,
+      "reason": "The Synthesis states this distinction explicitly. The source supports it through the different actions and scopes it describes: stopping use in 2000 versus announcing procurement of a future generation without the feature in 2007. It restates the central contrast, but is useful to prevent conflation.",
+      "coverageGap": "The source does not give a date when every satellite lacked the capability."
+    }
+  ]
+}

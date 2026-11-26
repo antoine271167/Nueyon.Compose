@@ -1,0 +1,86 @@
+{
+  "claims": [
+    {
+      "exactBodyExcerpt": "Selective Availability deliberately degraded public GPS signals for national security.",
+      "label": "F0",
+      "sourceEvidence": "“Selective Availability deliberately degraded public GPS signals for national security.”",
+      "synthesisStatement": "“Selective Availability deliberately degraded public GPS signals for national security.”",
+      "narrativeStatement": "“Selective Availability deliberately degraded public GPS signals for national security.”",
+      "origin": "upstream",
+      "explanation": "Faithfully states the feature’s purpose without adding a degree of degradation.",
+      "materiality": "material"
+    },
+    {
+      "exactBodyExcerpt": "In May 2000, at President Bill Clinton’s direction, the US government stopped using the feature, with the aim of making civil and commercial GPS more useful worldwide.",
+      "label": "F0",
+      "sourceEvidence": "“In May 2000 the US government stopped using it at President Bill Clinton’s direction to make civil and commercial GPS more useful worldwide.”",
+      "synthesisStatement": "“In May 2000 the US government stopped using it at President Bill Clinton’s direction to make civil and commercial GPS more useful worldwide.”",
+      "narrativeStatement": "“In May 2000, the US government stopped using it at President Bill Clinton’s direction” and “with the aim of making civil and commercial GPS more useful worldwide.”",
+      "origin": "upstream",
+      "explanation": "Preserves the date, direction, action, and stated aim; it does not imply the capability was removed.",
+      "materiality": "material"
+    },
+    {
+      "exactBodyExcerpt": "A separate step followed in September 2007, when the government announced that future GPS III satellites would be procured without Selective Availability.",
+      "label": "F0",
+      "sourceEvidence": "“In September 2007 the government announced it would procure the future GPS III generation without the feature.”",
+      "synthesisStatement": "“In September 2007 the government announced it would procure the future GPS III generation without the feature.”",
+      "narrativeStatement": "“In September 2007, it announced that future GPS III satellites would be procured without it.”",
+      "origin": "upstream",
+      "explanation": "Accurately identifies a separate 2007 procurement announcement concerning the future GPS III generation.",
+      "materiality": "material"
+    },
+    {
+      "exactBodyExcerpt": "The 2000 action ended the feature’s use under the existing policy;",
+      "label": "F0",
+      "sourceEvidence": "The source says the government “stopped using” Selective Availability in 2000.",
+      "synthesisStatement": "“The 2007 procurement decision was not the 2000 operational switch.”",
+      "narrativeStatement": "“One action ended the feature’s use under the existing policy.”",
+      "origin": "compose",
+      "explanation": "Faithfully summarizes the operational change and distinguishes stopping use from removing the capability.",
+      "materiality": "material"
+    },
+    {
+      "exactBodyExcerpt": "the 2007 procurement choice carried that policy into a future generation.",
+      "label": "F0",
+      "sourceEvidence": "GPS.gov describes the procurement choice as “making the 2000 policy durable by removing that feature in the future generation.”",
+      "synthesisStatement": "“GPS.gov describes the procurement choice as making the 2000 policy durable by removing that feature in the future generation.”",
+      "narrativeStatement": "“The latter was described as making the 2000 policy durable in a future generation.”",
+      "origin": "narrative",
+      "explanation": "Faithfully conveys the policy-continuity point without claiming when every satellite lacked the feature.",
+      "materiality": "material"
+    }
+  ],
+  "preserved": [
+    "sa-purpose",
+    "operational-switch-2000",
+    "future-generation-procurement",
+    "events-not-equivalent"
+  ],
+  "distorted": [],
+  "omitted": [],
+  "developments": 2,
+  "explainedFacts": 4,
+  "paragraphSteps": [
+    {
+      "paragraph": 1,
+      "steps": [
+        "Establishes Selective Availability’s purpose.",
+        "Describes the May 2000 operational change and its stated aim."
+      ]
+    },
+    {
+      "paragraph": 2,
+      "steps": [
+        "Describes the September 2007 future-generation procurement decision.",
+        "Distinguishes that decision from the 2000 operational change and explains its policy continuity."
+      ]
+    }
+  ],
+  "endpointAddsMeaning": true,
+  "redundancy": [],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}

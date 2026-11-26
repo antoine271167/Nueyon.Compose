@@ -1,0 +1,8 @@
+{
+  "narrative": {
+    "content": "### Selected Story\nExplain how CPython 3.13’s experimental free-threaded configuration connects an application’s runtime choice to the extensions it imports: an extension without an explicit support declaration triggers a warning and enables the GIL. The reader should understand that declaring support is a compatibility responsibility for extension authors, separate from the work of making the code thread-safe.\n\n### Story Progression\n- **Context:** CPython 3.13 introduced experimental free threading as a configuration that can run with the GIL disabled.\n- **Development:** At the import boundary, an extension’s support declaration matters: importing one without it warns and enables the GIL. The declaration mechanism differs between multi-phase and single-phase initialization.\n- **Endpoint:** Make clear that declaring support communicates compatibility with the mode; it is distinct from making the extension’s code thread-safe.\n\n### Critical Constraints\n- Keep the claims specific to CPython 3.13 and describe free threading as experimental.\n- Do not imply that a support declaration makes extension code thread-safe or establishes that it is."
+  },
+  "composition": {
+    "format": "Article"
+  }
+}

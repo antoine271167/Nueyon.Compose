@@ -1,0 +1,39 @@
+{
+  "checks": [
+    {
+      "id": "pre-impact-period",
+      "supported": false,
+      "useful": true,
+      "reason": "The synthesis supports the baseline claim, but the supplied source evidence is only an operator paraphrase; without the frozen original source, independent verification is unresolved. The excerpt’s scope is the pre-impact period around Didymos; the claim preserves that scope but omits that Didymos is the larger asteroid.",
+      "coverageGap": "The claim omits the excerpt’s “larger asteroid” descriptor."
+    },
+    {
+      "id": "immediate-period-change",
+      "supported": false,
+      "useful": true,
+      "reason": "The synthesis supports the immediate 32-minute-42-second reduction and distinguishes it from the later settled period. Independent verification against the original source is unresolved because only an operator paraphrase is supplied.",
+      "coverageGap": "The claim omits the resulting immediate period of 11 hours, 22 minutes and 37 seconds."
+    },
+    {
+      "id": "continued-shortening",
+      "supported": false,
+      "useful": true,
+      "reason": "The synthesis supports both changes over subsequent weeks. Its wording reports them together, not as cause and effect, and the claim preserves that relationship. Independent verification against the original source is unresolved because only an operator paraphrase is supplied.",
+      "coverageGap": ""
+    },
+    {
+      "id": "settled-period",
+      "supported": false,
+      "useful": true,
+      "reason": "The synthesis supports the settled period and total reduction relative to before impact. This is a distinct later result from the immediate change. Independent verification against the original source is unresolved because only an operator paraphrase is supplied.",
+      "coverageGap": ""
+    },
+    {
+      "id": "orbit-shape",
+      "supported": false,
+      "useful": true,
+      "reason": "The synthesis supports the post-impact change in orbit shape, which is relevant beyond the period changes. The evidence does not quantify the shape change, and the claim does not imply a magnitude. Independent verification against the original source is unresolved because only an operator paraphrase is supplied.",
+      "coverageGap": "The amount or degree of the change in orbit shape is not given in the synthesis."
+    }
+  ]
+}

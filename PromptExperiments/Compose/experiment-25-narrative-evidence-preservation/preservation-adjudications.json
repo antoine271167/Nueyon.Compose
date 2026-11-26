@@ -1,0 +1,108 @@
+{
+  "digital:A": {
+    "changes": {
+      "user-sequence": "omitted",
+      "beta-research-rhythm": "omitted"
+    },
+    "reason": "The handoff preserves applicants-first and a fortnightly rhythm, but drops alpha stage, rationale and the exact first-week and second-week division. No conflicting cadence is asserted.",
+    "reference": "https://mojdigital.blog.gov.uk/2018/03/13/how-to-build-and-release-a-digital-by-default-service-in-12-weeks/"
+  },
+  "webb:A": {
+    "changes": {
+      "deployed-second-week": "preserved",
+      "cooling-and-alignment": "distorted",
+      "calibration-to-science": "omitted"
+    },
+    "reason": "The secondary and primary mirror deployment milestone is stated accurately. A places cooling afterward and gives no month ranges for alignment or calibration, although the six-month science start is preserved.",
+    "reference": "https://science.nasa.gov/mission/webb/deployment/"
+  },
+  "wolf:A": {
+    "changes": {
+      "prey-composition-shift": "distorted",
+      "multiple-influences-on-predation": "distorted"
+    },
+    "reason": "Two material source items substitute moose for wapiti.",
+    "reference": "https://www.nps.gov/yell/learn/nature/elk.htm"
+  },
+  "wolf:B": {
+    "changes": {
+      "multiple-influences-on-predation": "distorted"
+    },
+    "reason": "The prey comparison uses elk, but the interaction claim repeatedly uses Dutch eland, a different species.",
+    "reference": "https://www.nps.gov/yell/learn/nature/elk.htm"
+  },
+  "wolf:C": {
+    "changes": {
+      "multiple-influences-on-predation": "preserved"
+    },
+    "reason": "The extract keeps elk identity and the source's multifactored relationship and unresolved relative contributions.",
+    "reference": "https://home.nps.gov/yell/learn/nature/wolf.htm"
+  },
+  "eia:A": {
+    "changes": {
+      "renewable-electricity-production-share-2024": "omitted",
+      "renewable-all-energy-production-share-2024": "omitted"
+    },
+    "reason": "Both reported percentages are present but their complete inventory items require distinct quantity pairs and units. Those figures are absent.",
+    "reference": "https://www.eia.gov/tools/faqs/faq.php?id=527&t=4"
+  },
+  "faa:A": {
+    "changes": {
+      "standardization-date": "preserved",
+      "ground-movement-symbol": "preserved",
+      "wrong-surface-symbol": "preserved",
+      "standardization-purpose": "preserved"
+    },
+    "reason": "A preserves the date, spells out the three distinct shapes and two category names and states the purpose with attribution. Enumeration preserves the count without the word three.",
+    "reference": "https://www.faa.gov/newsroom/hot-spot-standardized-symbology"
+  },
+  "faa:B": {
+    "changes": {
+      "ground-movement-symbol": "preserved",
+      "wrong-surface-symbol": "distorted",
+      "standardization-purpose": "preserved"
+    },
+    "reason": "The shape mapping and stated purpose are present. The literal locative rendering of wrong surface loses the exact category identity despite preserving the cylinder association.",
+    "reference": "https://www.faa.gov/newsroom/hot-spot-standardized-symbology"
+  },
+  "dart:B": {
+    "changes": {
+      "pre-impact-period": "preserved",
+      "immediate-period-change": "preserved",
+      "settled-period": "preserved"
+    },
+    "reason": "The baseline and both orbital periods match the source at the reported precision and retain their temporal relationships to the impact.",
+    "reference": "https://www.jpl.nasa.gov/news/nasa-study-asteroids-orbit-shape-changed-after-dart-impact/"
+  },
+  "dart:C": {
+    "changes": {
+      "pre-impact-period": "preserved",
+      "immediate-period-change": "preserved",
+      "settled-period": "preserved"
+    },
+    "reason": "All three verbatim measures match the source at the reported precision. The original separate precision note is not part of Synthesis and no extra precision is asserted.",
+    "reference": "https://www.jpl.nasa.gov/news/nasa-study-asteroids-orbit-shape-changed-after-dart-impact/"
+  },
+  "quake-1906:A": {
+    "changes": {
+      "geodetic-reanalysis": "omitted",
+      "geodetic-estimate": "preserved"
+    },
+    "reason": "A reports the 7.9 geodetic estimate and benchmark mechanism accurately. It leaves out the before/after comparison required by the separate geodetic reanalysis item.",
+    "reference": "https://earthquake.usgs.gov/earthquakes/events/1906calif/18april/magnitude.php"
+  },
+  "quake-1906:B": {
+    "changes": {
+      "seismic-data": "preserved"
+    },
+    "reason": "B states 96 observatories, 12 usable datasets and digitization/modeling explicitly.",
+    "reference": "https://earthquake.usgs.gov/earthquakes/events/1906calif/18april/magnitude.php"
+  },
+  "git-sparse:C": {
+    "changes": {
+      "cone-recursive-inclusion": "preserved"
+    },
+    "reason": "The preceding working-tree statement explicitly limits the scope to tracked files.",
+    "reference": "https://git-scm.com/docs/git-sparse-checkout.html"
+  }
+}

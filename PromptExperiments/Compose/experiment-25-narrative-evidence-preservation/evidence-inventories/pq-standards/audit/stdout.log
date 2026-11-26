@@ -1,0 +1,40 @@
+{
+  "checks": [
+    {
+      "id": "approval-date",
+      "supported": false,
+      "useful": false,
+      "reason": "The excerpt and claim match the Synthesis, but the provided source contains only an operator paraphrase, not the frozen NIST text needed to verify them. The date does not explain the standards’ distinct purposes.",
+      "coverageGap": "The original NIST passage is unavailable; the qualification also notes that later adoption is not addressed."
+    },
+    {
+      "id": "ml-kem-purpose",
+      "supported": false,
+      "useful": true,
+      "reason": "The excerpt and claim match the Synthesis, but source support is unresolved because only an operator paraphrase is provided. This is relevant evidence for the key-establishment purpose.",
+      "coverageGap": "The original NIST passage is unavailable; the excerpt does not cover protocol details or use."
+    },
+    {
+      "id": "ml-dsa-signature",
+      "supported": false,
+      "useful": true,
+      "reason": "The excerpt and claim match the Synthesis, but source support is unresolved because only an operator paraphrase is provided. This establishes one signature standard and its stated basis.",
+      "coverageGap": "The original NIST passage is unavailable; no further scheme details are included."
+    },
+    {
+      "id": "slh-dsa-signature",
+      "supported": false,
+      "useful": true,
+      "reason": "The excerpt and claim match the Synthesis, but source support is unresolved because only an operator paraphrase is provided. It adds a second signature standard with a different stated basis, so it is not redundant with the ML-DSA item.",
+      "coverageGap": "The original NIST passage is unavailable; the excerpt does not compare the signature schemes."
+    },
+    {
+      "id": "quantum-resistance",
+      "supported": false,
+      "useful": true,
+      "reason": "The excerpt and claim match the Synthesis, but source support is unresolved because only an operator paraphrase is provided. It supplies relevant shared context, though it does not distinguish the standards’ purposes.",
+      "coverageGap": "The original NIST passage is unavailable; the excerpt does not specify a guarantee or threat model."
+    }
+  ]
+}
+

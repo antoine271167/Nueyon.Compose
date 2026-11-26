@@ -1,0 +1,80 @@
+{
+  "claims": [
+    {
+      "excerpt": "De POA-refunddienst werd onder tijdsdruk ontwikkeld en ging na twaalf weken publiek.",
+      "label": "F0",
+      "sourceEvidence": "“launched to the public in only 12 weeks” and “We had a tight deadline.”",
+      "synthesisStatement": "The team launched the service publicly in twelve weeks.",
+      "narrativeStatement": "The service went public after twelve weeks, under time pressure.",
+      "origin": "upstream",
+      "explanation": "Faithfully reports the deadline context and launch timing.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "Een aanvankelijk gevraagde levertijd van enkele weken werd niet haalbaar geacht als de gebruikersdienst kwalitatief moest blijven.",
+      "label": "F0",
+      "sourceEvidence": "“initially asked to deliver the service in a matter of weeks” and “would not be possible if we wanted to create a quality service for our users.”",
+      "synthesisStatement": "The requested delivery within weeks was judged infeasible while maintaining quality.",
+      "narrativeStatement": "The requested few-week deadline was not considered feasible while preserving quality.",
+      "origin": "upstream",
+      "explanation": "Preserves the source’s qualification that quality was the constraint.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "De aanpak begon bij de ervaring van aanvragers. Plannen voor caseworkers kwamen later aan bod.",
+      "label": "F0",
+      "sourceEvidence": "“focused on the users applying for refunds first”; “Plans for the caseworker user came later.”",
+      "synthesisStatement": "The team worked first on the applicants’ experience and brought caseworker plans in later.",
+      "narrativeStatement": "Applicants came first; caseworker work followed later.",
+      "origin": "upstream",
+      "explanation": "Accurately states the order, though it omits the alpha milestone and the stated reason for that choice.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "Tijdens de private beta bood een tweewekelijks ritme vaste tijd voor onderzoek en testen, naast het aannemen en verwerken van aanvragen.",
+      "label": "F2",
+      "sourceEvidence": "The fortnightly sprints were split in two: week one included testing, research, and accepting applications; submissions were suspended in week two for testing, research, and processing.",
+      "synthesisStatement": "The two-week sprint had distinct weekly activities, including a week when submissions were suspended.",
+      "narrativeStatement": "The rhythm reserved research and testing time alongside application work.",
+      "origin": "propagated",
+      "explanation": "Flattens the specific alternating weekly cadence and omits the suspension of submissions; “naast” can suggest application work ran alongside the reserved research time.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "Zo zag de beschreven werkwijze eruit: eerst aandacht voor aanvragers, later voor caseworkers, met tijdens de private beta gereserveerde tijd voor onderzoek en testen.",
+      "label": "F1",
+      "sourceEvidence": "Applicants were prioritized before caseworker plans; private-beta fortnightly sprints included research and testing.",
+      "synthesisStatement": "Summarizes the user sequence and the research/testing activity during private beta.",
+      "narrativeStatement": "Restates the selected approach and its sequencing.",
+      "origin": "propagated",
+      "explanation": "A broadly faithful recap, but again leaves out the specific week-by-week sprint cadence.",
+      "materiality": "low"
+    }
+  ],
+  "preserved": [
+    "launch-timeline",
+    "user-sequence"
+  ],
+  "distorted": [
+    "beta-research-rhythm"
+  ],
+  "omitted": [
+    "assisted-digital-scope",
+    "five-week-results"
+  ],
+  "developments": 3,
+  "explainedFacts": 2,
+  "paragraphSteps": [
+    "Context: time pressure, public launch after twelve weeks, and the quality constraint.",
+    "Development: applicants first, caseworkers later, followed by a summary of the private-beta research rhythm.",
+    "Recap: repeats the user sequence and research/testing time."
+  ],
+  "endpointAddsMeaning": false,
+  "redundancy": [
+    "Zo zag de beschreven werkwijze eruit: eerst aandacht voor aanvragers, later voor caseworkers, met tijdens de private beta gereserveerde tijd voor onderzoek en testen."
+  ],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}

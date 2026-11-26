@@ -1,0 +1,108 @@
+{
+  "claims": [
+    {
+      "excerpt": "OSIRIS-REx Returned 121.6 Grams from Bennu",
+      "label": "F1",
+      "sourceEvidence": "The supplied evidence says the completed inventory was 121.6 grams; it also says OSIRIS-REx returned Bennu material to Earth.",
+      "synthesisStatement": "The completed inventory amounted to 121.6 grams.",
+      "narrativeStatement": "The final inventory was 121.6 grams.",
+      "origin": "amplification",
+      "explanation": "The headline calls 121.6 grams the amount returned, while the evidence specifically identifies it as the completed inventory. In context this is a minor shorthand, not a different supported amount.",
+      "materiality": "low"
+    },
+    {
+      "excerpt": "OSIRIS-REx returned material from asteroid Bennu to Earth on September 24, 2023.",
+      "label": "F0",
+      "sourceEvidence": "The supplied evidence states OSIRIS-REx returned Bennu material to Earth on September 24, 2023.",
+      "synthesisStatement": "OSIRIS-REx returned material from asteroid Bennu to Earth on September 24, 2023.",
+      "narrativeStatement": "OSIRIS-REx returned material from asteroid Bennu on September 24, 2023.",
+      "origin": "propagated",
+      "explanation": "The date, object, and destination match the evidence.",
+      "materiality": "material context"
+    },
+    {
+      "excerpt": "The mission required at least 60 grams",
+      "label": "F0",
+      "sourceEvidence": "The supplied evidence states the mission required at least 60 grams of asteroid material.",
+      "synthesisStatement": "The mission required at least 60 grams of asteroid material.",
+      "narrativeStatement": "The mission needed at least 60 grams.",
+      "origin": "propagated",
+      "explanation": "The article preserves the minimum and correctly presents it as a mission requirement.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "that minimum had already been exceeded before the sampling head was completely opened.",
+      "label": "F0",
+      "sourceEvidence": "The supplied evidence states the team exceeded the requirement before completely opening the sampling head.",
+      "synthesisStatement": "The team exceeded that requirement before completely opening the sampling head.",
+      "narrativeStatement": "That requirement had already been exceeded before the sampling head was completely opened.",
+      "origin": "propagated",
+      "explanation": "The milestone and its timing are preserved; no amount for that earlier milestone is invented.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "A final pour added 51.2 grams.",
+      "label": "F0",
+      "sourceEvidence": "The supplied evidence states a final pour added 51.2 grams.",
+      "synthesisStatement": "A final pour added 51.2 grams.",
+      "narrativeStatement": "A final pour adding 51.2 grams.",
+      "origin": "propagated",
+      "explanation": "The article preserves the amount and identifies it as the final pour.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "The completed inventory totaled 121.6 grams",
+      "label": "F0",
+      "sourceEvidence": "The supplied evidence states the completed inventory amounted to 121.6 grams.",
+      "synthesisStatement": "The completed inventory amounted to 121.6 grams.",
+      "narrativeStatement": "The final inventory was 121.6 grams.",
+      "origin": "propagated",
+      "explanation": "The amount is correctly identified as the completed inventory total.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "distinct from the 60-gram minimum the mission required.",
+      "label": "F0",
+      "sourceEvidence": "The evidence identifies 60 grams as the mission requirement and 121.6 grams as the completed inventory.",
+      "synthesisStatement": "The mission required at least 60 grams of asteroid material; the completed inventory amounted to 121.6 grams.",
+      "narrativeStatement": "Keep the 60-gram mission requirement distinct from the 121.6-gram completed inventory.",
+      "origin": "narrative",
+      "explanation": "This accurately emphasizes that the requirement and final inventory are different quantities.",
+      "materiality": "material"
+    }
+  ],
+  "preserved": [
+    "return-date",
+    "minimum-required",
+    "requirement-exceeded-before-opening",
+    "final-pour",
+    "completed-inventory"
+  ],
+  "distorted": [],
+  "omitted": [],
+  "developments": 3,
+  "explainedFacts": 2,
+  "paragraphSteps": [
+    {
+      "paragraph": 1,
+      "steps": [
+        "Gives the return date and the mission's minimum requirement.",
+        "Places the requirement being exceeded before the sampling head was completely opened."
+      ]
+    },
+    {
+      "paragraph": 2,
+      "steps": [
+        "States the final-pour addition.",
+        "Gives the completed inventory and distinguishes it from the mission minimum."
+      ]
+    }
+  ],
+  "endpointAddsMeaning": true,
+  "redundancy": [],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}
+

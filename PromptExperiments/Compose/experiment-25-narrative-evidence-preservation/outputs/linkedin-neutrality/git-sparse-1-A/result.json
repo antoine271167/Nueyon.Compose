@@ -1,0 +1,3 @@
+{
+  "content": "Sparse checkout controls which tracked files appear in your working tree.\n\nIn cone mode, you select directories, and Git includes all files beneath them recursively. But the selection reaches beyond those directories: it also includes files that are siblings of a selected directory and of each of its ancestor directories.\n\nSo cone mode includes more than the contents of the directories you selected."
+}

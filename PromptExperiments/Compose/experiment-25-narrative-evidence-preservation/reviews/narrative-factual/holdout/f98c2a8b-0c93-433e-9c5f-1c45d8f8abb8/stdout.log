@@ -1,0 +1,51 @@
+{
+  "claims": [
+    {
+      "excerpt": "Sparse checkout changes which tracked files are present in the working tree.",
+      "label": "F0",
+      "sourceEvidence": "Authoritative verification: “Sparse checkout limits which tracked files appear in the working tree.”",
+      "synthesisStatement": "Sparse checkout changes which tracked files are present in the working tree.",
+      "narrativeStatement": "Sparse checkout changes which tracked files are present in the working tree.",
+      "origin": "propagated",
+      "explanation": "Faithfully states the working-tree effect and retains the tracked-files qualification.",
+      "materiality": "Material context; faithfully represented."
+    },
+    {
+      "excerpt": "Cone mode selects directories and includes all files recursively under them.",
+      "label": "F2",
+      "sourceEvidence": "Authoritative verification: “Cone mode takes directories, includes their tracked contents recursively.”",
+      "synthesisStatement": "Cone mode selects directories and includes all files recursively under them.",
+      "narrativeStatement": "Cone mode selects directories and includes all files recursively under them.",
+      "origin": "propagated",
+      "explanation": "The narrative repeats the synthesis, but “all files” omits the source’s tracked-contents qualification and can imply untracked files are included.",
+      "materiality": "Material: it broadens which files the rule covers."
+    },
+    {
+      "excerpt": "It also includes files that are siblings of the selected directory or any ancestor directory.",
+      "label": "F0",
+      "sourceEvidence": "Authoritative verification: “includes files immediately alongside the selected directory or its ancestors.”",
+      "synthesisStatement": "It also includes files that are siblings of the selected directory or any ancestor directory.",
+      "narrativeStatement": "It also includes files that are siblings of the selected directory or any ancestor directory.",
+      "origin": "propagated",
+      "explanation": "Faithfully conveys sibling-file inclusion at the selected-directory and ancestor levels.",
+      "materiality": "Material qualification to the recursive inclusion rule; faithfully represented."
+    }
+  ],
+  "preserved": ["sparse-checkout-working-tree", "cone-sibling-inclusion"],
+  "distorted": ["cone-recursive-inclusion"],
+  "omitted": [],
+  "developments": 2,
+  "explainedFacts": 3,
+  "paragraphSteps": [
+    "Context: sparse-checkout-working-tree",
+    "Development: cone-recursive-inclusion",
+    "Endpoint: cone-sibling-inclusion"
+  ],
+  "endpointAddsMeaning": true,
+  "redundancy": [],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}
+

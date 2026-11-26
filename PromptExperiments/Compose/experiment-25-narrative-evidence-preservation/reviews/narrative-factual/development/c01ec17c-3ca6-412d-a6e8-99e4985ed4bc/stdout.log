@@ -1,0 +1,90 @@
+{
+  "claims": [
+    {
+      "excerpt": "The story centers on what the 2022 National Ignition Facility experiment measured at the target: 2.05 megajoules of energy delivered and 3.15 megajoules of fusion energy generated.",
+      "label": "F0",
+      "sourceEvidence": "The experiment delivered 2.05 megajoules to the target and generated 3.15 megajoules of fusion energy.",
+      "synthesisStatement": "The experiment delivered 2.05 megajoules to the target and generated 3.15 megajoules of fusion energy.",
+      "narrativeStatement": "The story centers on what the 2022 National Ignition Facility experiment measured at the target: 2.05 megajoules of energy delivered and 3.15 megajoules of fusion energy generated.",
+      "origin": "propagated",
+      "explanation": "The quantities and target-level denominator are accurate; the body gives the year but not the exact experiment date or laboratory.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "That target-level comparison marks the reported achievement of fusion ignition",
+      "label": "F0",
+      "sourceEvidence": "A Lawrence Livermore National Laboratory experiment at the National Ignition Facility achieved fusion ignition. The experiment delivered 2.05 megajoules to the target and generated 3.15 megajoules of fusion energy.",
+      "synthesisStatement": "On December 5, 2022, a Lawrence Livermore National Laboratory experiment at the National Ignition Facility achieved fusion ignition. The experiment delivered 2.05 megajoules to the target and generated 3.15 megajoules of fusion energy.",
+      "narrativeStatement": "That target-level comparison marks the reported achievement of fusion ignition",
+      "origin": "composed",
+      "explanation": "This links the reported measurements to the experiment's ignition achievement without claiming facility-wide net energy.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "and is a step toward inertial fusion energy",
+      "label": "F0",
+      "sourceEvidence": "The announcement treats the experiment as progress toward inertial fusion energy.",
+      "synthesisStatement": "The announcement treats the experiment as progress toward inertial fusion energy",
+      "narrativeStatement": "and is a step toward inertial fusion energy",
+      "origin": "propagated",
+      "explanation": "Faithfully conveys the stated direction of progress.",
+      "materiality": "medium"
+    },
+    {
+      "excerpt": "while practical energy production still requires substantial scientific and technological development.",
+      "label": "F0",
+      "sourceEvidence": "The announcement ... notes the many scientific and technological developments still needed for practical energy production.",
+      "synthesisStatement": "The announcement treats the experiment as progress toward inertial fusion energy and notes the many scientific and technological developments still needed for practical energy production.",
+      "narrativeStatement": "while practical energy production still requires substantial scientific and technological development.",
+      "origin": "propagated",
+      "explanation": "Preserves the qualification that practical production has not been achieved and requires further development.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "this comparison is significant as an experimental result, not as net electricity production",
+      "label": "F0",
+      "sourceEvidence": "Fusion output is not net electricity delivered to the grid.",
+      "synthesisStatement": "Fusion output is not net electricity delivered to the grid.",
+      "narrativeStatement": "Clarify that this comparison is significant as an experimental result, not as net electricity production",
+      "origin": "composed",
+      "explanation": "The endpoint distinction is supported; it does not equate target-level fusion output with net electricity.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "practical energy production remains a longer-term direction requiring further scientific and technological development.",
+      "label": "F1",
+      "sourceEvidence": "The announcement ... notes the many scientific and technological developments still needed for practical energy production.",
+      "synthesisStatement": "The announcement treats the experiment as progress toward inertial fusion energy and notes the many scientific and technological developments still needed for practical energy production.",
+      "narrativeStatement": "practical energy production remains a longer-term direction requiring further scientific and technological development.",
+      "origin": "amplification",
+      "explanation": "The need for further development is supported, but “longer-term” adds a temporal characterization not specified in the source.",
+      "materiality": "low"
+    }
+  ],
+  "preserved": [
+    "ignition-event",
+    "target-energy-comparison",
+    "development-still-needed"
+  ],
+  "distorted": [],
+  "omitted": [
+    "announcement-date"
+  ],
+  "developments": 1,
+  "explainedFacts": 3,
+  "paragraphSteps": [
+    "Selected Story paragraph: introduces the target-level measurements, connects them to ignition and progress toward inertial fusion energy, and qualifies practical production.",
+    "Story Progression: repeats the context and measurements, then directs the endpoint to distinguish the experiment from net electricity production.",
+    "Critical Constraints: instructions and prohibitions, not additional asserted facts."
+  ],
+  "endpointAddsMeaning": true,
+  "redundancy": [
+    "The Story Progression context repeats the ignition and inertial-fusion context from Selected Story.",
+    "The Story Progression development repeats the target-level measurements from Selected Story."
+  ],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}
+

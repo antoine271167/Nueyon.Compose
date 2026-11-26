@@ -1,0 +1,78 @@
+{
+  "claims": [
+    {
+      "excerpt": "Sparse checkout controls which tracked files appear in the working tree.",
+      "label": "F0",
+      "sourceEvidence": "Sparse checkout changes which tracked files are present in the working tree.",
+      "synthesisStatement": "Sparse checkout changes which tracked files are present in the working tree.",
+      "narrativeStatement": "Sparse checkout changes which tracked files are present in the working tree.",
+      "origin": "upstream",
+      "explanation": "“Controls which” faithfully restates that sparse checkout changes which tracked files appear; the tracked-file and working-tree qualifications are preserved.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "In cone mode, selecting a directory includes all files recursively beneath it.",
+      "label": "F0",
+      "sourceEvidence": "Cone mode selects directories and includes all files recursively under them.",
+      "synthesisStatement": "Cone mode selects directories and includes all files recursively under them.",
+      "narrativeStatement": "In cone mode, selecting a directory includes all files recursively beneath it.",
+      "origin": "upstream",
+      "explanation": "Faithfully preserves the recursive inclusion rule for selected directories.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "The included files are not limited to those selected directory trees.",
+      "label": "F0",
+      "sourceEvidence": "Cone mode also includes files that are siblings of the selected directory or any ancestor directory.",
+      "synthesisStatement": "It also includes files that are siblings of the selected directory or any ancestor directory.",
+      "narrativeStatement": "not only files beneath selected directories, but also certain files alongside those directories and their ancestors.",
+      "origin": "upstream",
+      "explanation": "This is a faithful summary of the additional sibling-file inclusion described in the following sentence.",
+      "materiality": "minor"
+    },
+    {
+      "excerpt": "Cone mode also includes certain files alongside the selected directories and their ancestors",
+      "label": "F0",
+      "sourceEvidence": "Cone mode includes files that are siblings of the selected directory or any ancestor directory.",
+      "synthesisStatement": "It also includes files that are siblings of the selected directory or any ancestor directory.",
+      "narrativeStatement": "also certain files alongside those directories and their ancestors",
+      "origin": "upstream",
+      "explanation": "“Certain files alongside” accurately conveys sibling files at the selected-directory and ancestor levels without asserting that all neighboring files are included.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "extending the working-tree scope beyond the selected directories themselves.",
+      "label": "F0",
+      "sourceEvidence": "Cone mode also includes files that are siblings of the selected directory or any ancestor directory.",
+      "synthesisStatement": "It also includes files that are siblings of the selected directory or any ancestor directory.",
+      "narrativeStatement": "so the scope includes files beyond the selected directory trees.",
+      "origin": "upstream",
+      "explanation": "This is the supported consequence of including sibling files; it does not broaden the claim beyond the described working-tree scope.",
+      "materiality": "minor"
+    }
+  ],
+  "preserved": [
+    "sparse-checkout-working-tree",
+    "cone-recursive-inclusion",
+    "cone-sibling-inclusion"
+  ],
+  "distorted": [],
+  "omitted": [],
+  "developments": 3,
+  "explainedFacts": 3,
+  "paragraphSteps": [
+    "Context: sparse checkout changes which tracked files are present in the working tree.",
+    "Development: cone mode includes files recursively beneath selected directories.",
+    "Endpoint: cone mode also includes sibling files at the selected-directory and ancestor levels."
+  ],
+  "endpointAddsMeaning": true,
+  "redundancy": [
+    "The included files are not limited to those selected directory trees.",
+    "extending the working-tree scope beyond the selected directories themselves."
+  ],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}
+

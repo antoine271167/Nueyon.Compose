@@ -1,0 +1,139 @@
+{
+  "claims": [
+    {
+      "excerpt": "Een wolf is geen losse schakel: Yellowstone als levend netwerk",
+      "label": "F0",
+      "sourceEvidence": "The source describes social packs, other animals feeding on wolf-kill remains, changing prey composition, and interacting influences on wolf predation.",
+      "synthesisStatement": "This metaphor is supported by the several ecological relationships and factors described, without asserting a measured ecosystem-wide cascade.",
+      "narrativeStatement": "The title matches the narrative's emphasis on social and food relationships and multiple interacting factors.",
+      "origin": "compose",
+      "explanation": "A framing metaphor rather than a specific measured claim; the article's examples support it.",
+      "materiality": "Low"
+    },
+    {
+      "excerpt": "In Yellowstone leven wolven in roedels die als sociale families functioneren.",
+      "label": "F0",
+      "sourceEvidence": "The source calls Yellowstone packs “complex social famil[ies].”",
+      "synthesisStatement": "Faithfully states that Yellowstone packs are social families.",
+      "narrativeStatement": "Faithfully carries forward the narrative's pack context.",
+      "origin": "propagated",
+      "explanation": "The wording preserves the source's characterization.",
+      "materiality": "Low"
+    },
+    {
+      "excerpt": "Tot de genoemde voordelen van dat samenleven behoren gezamenlijke zorg voor jongen en groepsjacht.",
+      "label": "F0",
+      "sourceEvidence": "The source lists “cooperative care of offspring” and “group hunting of large prey” among the adaptive benefits of social living.",
+      "synthesisStatement": "Faithfully identifies two of the source's stated benefits.",
+      "narrativeStatement": "Faithfully carries forward both details.",
+      "origin": "propagated",
+      "explanation": "It does not claim that social behavior alone determines ecosystem outcomes.",
+      "materiality": "Low"
+    },
+    {
+      "excerpt": "Ook na een wolfskilling wordt voedsel gedeeld met andere dieren.",
+      "label": "F0",
+      "sourceEvidence": "The source says many other animals benefit from wolf kills and consume the remains.",
+      "synthesisStatement": "Faithfully summarizes the food relationship described.",
+      "narrativeStatement": "Faithfully carries forward the claim that wolf kills provide food for other animals.",
+      "origin": "propagated",
+      "explanation": "“Gedeeld” describes the carcass as a food resource; it does not assert deliberate sharing.",
+      "materiality": "Low"
+    },
+    {
+      "excerpt": "Raven en coyotes, maar ook beren en ongewervelden, eten van de resten.",
+      "label": "F0",
+      "sourceEvidence": "The source describes ravens arriving at kills, coyotes waiting nearby, bears attempting to chase wolves away, and animals “from eagles to invertebrates” consuming remains.",
+      "synthesisStatement": "The listed animals are consistent with the synthesis's summary that kills feed ravens, coyotes, bears, and invertebrates.",
+      "narrativeStatement": "Faithfully carries forward the listed animal groups.",
+      "origin": "propagated",
+      "explanation": "The source supports the food-web point, though it gives different specific behaviors for ravens, coyotes, and bears.",
+      "materiality": "Low"
+    },
+    {
+      "excerpt": "De samenstelling van de prooi veranderde eveneens.",
+      "label": "F0",
+      "sourceEvidence": "The source reports a reversal in the early-winter proportions of elk calves and bull elk between the two periods.",
+      "synthesisStatement": "Faithfully summarizes the reported change in prey composition.",
+      "narrativeStatement": "Faithfully introduces the prey-composition example.",
+      "origin": "propagated",
+      "explanation": "The next sentence supplies the source's specific periods and prey categories.",
+      "materiality": "Low"
+    },
+    {
+      "excerpt": "In de vroege winter verschoof tussen 1995–2000 en 2001–2007 de verhouding tussen elandkalveren en stieren onder de prooien.",
+      "label": "F1",
+      "sourceEvidence": "The source says that from 1995 to 2000 elk calves comprised 50% and bull elk 25% of early-winter wolf prey, and that “That ratio reversed from 2001 to 2007.”",
+      "synthesisStatement": "The periods, early-winter scope, and reversal are preserved; the synthesis explicitly identifies both categories as elk.",
+      "narrativeStatement": "The narrative explicitly says “elk calves and bull elk”; the article shortens the latter to “stieren.”",
+      "origin": "compose",
+      "explanation": "The species qualifier for the bulls is omitted. The pairing with elk calves makes the intended meaning inferable, but the wording is less precise than the source.",
+      "materiality": "Low"
+    },
+    {
+      "excerpt": "De bron verbindt zulke veranderingen met de kwetsbaarheid en beschikbaarheid van prooidieren.",
+      "label": "F0",
+      "sourceEvidence": "The source says the ratio reversal indicated changes in “prey vulnerability and availability.”",
+      "synthesisStatement": "Faithfully preserves the source's stated interpretation.",
+      "narrativeStatement": "Faithfully carries forward that interpretation.",
+      "origin": "propagated",
+      "explanation": "The attribution to the source appropriately avoids overstating causation.",
+      "materiality": "Low"
+    },
+    {
+      "excerpt": "Veranderingen in de predatie door wolven en de gevolgen daarvan voor elanden hangen volgens de bron samen met interacties tussen andere roofdieren, het beheer van hoefdieren buiten het park en het weer.",
+      "label": "F0",
+      "sourceEvidence": "The source links changes in wolf predation patterns and impacts on prey such as elk to other predators, management of ungulates outside the park, and weather, and describes complex interactions among these factors.",
+      "synthesisStatement": "Faithfully conveys the listed influences and their interaction, without assigning their relative contributions.",
+      "narrativeStatement": "Faithfully carries forward the multifactor account.",
+      "origin": "propagated",
+      "explanation": "The claim remains qualified as the source's account and does not present wolves as the sole cause.",
+      "materiality": "Low"
+    },
+    {
+      "excerpt": "Onderzoek bestudeert de relatieve rol van deze factoren.",
+      "label": "F0",
+      "sourceEvidence": "The source says current NPS research focuses on the relative factors driving wolf predation over the past 25 years.",
+      "synthesisStatement": "Faithfully summarizes the research focus on relative roles.",
+      "narrativeStatement": "Faithfully carries forward that research is examining the factors' relative roles.",
+      "origin": "propagated",
+      "explanation": "The article omits the NPS attribution and 25-year period but does not contradict or materially change the stated research focus.",
+      "materiality": "Low"
+    }
+  ],
+  "preserved": [
+    "social-pack-behavior",
+    "kills-feed-other-animals",
+    "multiple-influences-on-predation"
+  ],
+  "distorted": [
+    "prey-composition-shift"
+  ],
+  "omitted": [],
+  "developments": 3,
+  "explainedFacts": 4,
+  "paragraphSteps": [
+    {
+      "paragraph": 1,
+      "step": "Context: packs as social families and benefits of social living."
+    },
+    {
+      "paragraph": 2,
+      "step": "Development: wolf kills provide food for other animals."
+    },
+    {
+      "paragraph": 3,
+      "step": "Development: early-winter prey composition shifted, with the source linking changes to prey vulnerability and availability."
+    },
+    {
+      "paragraph": 4,
+      "step": "Endpoint: wolf predation and elk impacts are associated with interacting factors whose relative roles are under study."
+    }
+  ],
+  "endpointAddsMeaning": true,
+  "redundancy": [],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}

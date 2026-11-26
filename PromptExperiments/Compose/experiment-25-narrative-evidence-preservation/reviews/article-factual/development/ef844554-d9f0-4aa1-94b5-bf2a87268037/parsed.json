@@ -1,0 +1,76 @@
+{
+  "claims": [
+    {
+      "excerpt": "Two satellites follow one another about 137 miles, or 220 kilometers, apart.",
+      "label": "F0",
+      "sourceEvidence": "Twin satellites follow each other about 137 miles or 220 kilometers apart.",
+      "synthesisStatement": "Twin satellites follow each other about 137 miles or 220 kilometers apart.",
+      "narrativeStatement": "Twin satellites follow each other about 137 miles or 220 kilometers apart.",
+      "origin": "propagated",
+      "explanation": "Faithfully gives the satellites' separation; it does not misstate the gap as altitude.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "As they approach a larger concentration of mass, stronger gravity acts on the leading satellite first, initially pulling it farther away from the trailing satellite.",
+      "label": "F0",
+      "sourceEvidence": "As the pair approaches a larger mass concentration, stronger gravity acts on the leading satellite first, initially pulling it farther from the trailing one.",
+      "synthesisStatement": "As the pair approaches a larger mass concentration, stronger gravity acts on the leading satellite first, initially pulling it farther from the trailing one.",
+      "narrativeStatement": "As the pair approaches a larger mass concentration, stronger gravity acts on the leading satellite first, initially pulling it farther from the trailing one.",
+      "origin": "propagated",
+      "explanation": "Preserves the mass-concentration context, which satellite is affected first, and the direction of the initial pull.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "The changing distance between them is a raw measurement used to infer shifts in mass.",
+      "label": "F0",
+      "sourceEvidence": "The changing inter-satellite distance is a raw measurement used to infer shifts in mass.",
+      "synthesisStatement": "The changing inter-satellite distance is a raw measurement used to infer shifts in mass.",
+      "narrativeStatement": "The changing inter-satellite distance is a raw measurement used to infer shifts in mass.",
+      "origin": "propagated",
+      "explanation": "Faithfully describes an indirect measurement used for inference, not direct observation of groundwater.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "The mission follows changes involving groundwater, lakes and rivers, soil moisture, glaciers and ice sheets, as well as changes in sea level attributable to water added to the oceans.",
+      "label": "F0",
+      "sourceEvidence": "The mission follows changes involving groundwater, lakes and rivers, soil moisture, glaciers, ice sheets and changes in sea level attributable to water added to the oceans.",
+      "synthesisStatement": "The mission follows changes involving groundwater, lakes and rivers, soil moisture, glaciers, ice sheets and changes in sea level attributable to water added to the oceans.",
+      "narrativeStatement": "The mission follows changes involving groundwater, lakes and rivers, soil moisture, glaciers, ice sheets and changes in sea level attributable to water added to the oceans.",
+      "origin": "propagated",
+      "explanation": "Preserves the listed water-related changes and limits the sea-level claim to water added to the oceans.",
+      "materiality": "material"
+    }
+  ],
+  "preserved": [
+    "baseline",
+    "gravity-sequence",
+    "measurement-inference",
+    "water-changes"
+  ],
+  "distorted": [],
+  "omitted": [],
+  "developments": 3,
+  "explainedFacts": 2,
+  "paragraphSteps": [
+    {
+      "paragraph": 1,
+      "steps": [
+        "baseline",
+        "gravity-sequence"
+      ]
+    },
+    {
+      "paragraph": 2,
+      "steps": [
+        "measurement-inference",
+        "water-changes"
+      ]
+    }
+  ],
+  "endpointAddsMeaning": true,
+  "redundancy": [],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}

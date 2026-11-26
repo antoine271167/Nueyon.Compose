@@ -1,0 +1,126 @@
+{
+  "claims": [
+    {
+      "excerpt": "a person is classified as unemployed if they were not employed during the survey reference week",
+      "label": "F0",
+      "sourceEvidence": "was not employed during the survey reference week",
+      "synthesisStatement": "An unemployed person was not employed during the survey reference week.",
+      "narrativeStatement": "Under the Current Population Survey, an unemployed person was not employed during the survey reference week, was available for work except for temporary illness, and made an active job search effort in the four-week period ending with that week or was temporarily laid off and expected recall.",
+      "origin": "upstream",
+      "explanation": "Faithfully states the reference-week employment condition.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "were available for work, except for a temporary illness.",
+      "label": "F0",
+      "sourceEvidence": "was available for work except for temporary illness",
+      "synthesisStatement": "An unemployed person was available for work except for temporary illness.",
+      "narrativeStatement": "Under the Current Population Survey, an unemployed person was not employed during the survey reference week, was available for work except for temporary illness, and made an active job search effort in the four-week period ending with that week or was temporarily laid off and expected recall.",
+      "origin": "upstream",
+      "explanation": "Preserves the temporary-illness exception to availability.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "They must also have actively searched for a job during the four-week period ending with that week",
+      "label": "F0",
+      "sourceEvidence": "made an active job search effort in the four-week period ending with that week",
+      "synthesisStatement": "An active job search effort in the four-week period ending with the reference week is one qualifying route.",
+      "narrativeStatement": "Under the Current Population Survey, an unemployed person was not employed during the survey reference week, was available for work except for temporary illness, and made an active job search effort in the four-week period ending with that week or was temporarily laid off and expected recall.",
+      "origin": "upstream",
+      "explanation": "Preserves the active-search requirement and its four-week window.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "or have been temporarily laid off and expected to be recalled.",
+      "label": "F0",
+      "sourceEvidence": "or was temporarily laid off and expected recall",
+      "synthesisStatement": "Temporary layoff with expected recall is an alternative to the active-search route.",
+      "narrativeStatement": "Under the Current Population Survey, an unemployed person was not employed during the survey reference week, was available for work except for temporary illness, and made an active job search effort in the four-week period ending with that week or was temporarily laid off and expected recall.",
+      "origin": "upstream",
+      "explanation": "Accurately presents expected recall after temporary layoff as the alternative route.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "Passive-only job search does not count as active search.",
+      "label": "F0",
+      "sourceEvidence": "Passive-only job search does not count as active search.",
+      "synthesisStatement": "Passive-only job search does not count as active search.",
+      "narrativeStatement": "Passive-only job search does not count as active search.",
+      "origin": "upstream",
+      "explanation": "Faithfully states the distinction between passive and active search.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "Someone waiting to start a new job generally needs to have actively searched as well.",
+      "label": "F0",
+      "sourceEvidence": "Someone waiting to start a new job generally needs active search as well.",
+      "synthesisStatement": "Someone waiting to start a new job generally needs active search as well.",
+      "narrativeStatement": "Someone waiting to start a new job generally needs active search as well.",
+      "origin": "upstream",
+      "explanation": "Preserves the qualification that active search is generally needed.",
+      "materiality": "nonmaterial"
+    },
+    {
+      "excerpt": "Receiving unemployment insurance does not affect the classification.",
+      "label": "F0",
+      "sourceEvidence": "Receipt of unemployment insurance is irrelevant to the classification.",
+      "synthesisStatement": "Receipt of unemployment insurance is irrelevant to the classification.",
+      "narrativeStatement": "Receipt of unemployment insurance is irrelevant to the classification.",
+      "origin": "upstream",
+      "explanation": "Faithfully limits the claim to its effect on classification.",
+      "materiality": "nonmaterial"
+    },
+    {
+      "excerpt": "The unemployment rate is calculated by dividing the number of unemployed people by the combined number of employed and unemployed people.",
+      "label": "F0",
+      "sourceEvidence": "The unemployment rate divides unemployed people by the sum of employed and unemployed people.",
+      "synthesisStatement": "The unemployment rate divides unemployed people by the sum of employed and unemployed people.",
+      "narrativeStatement": "The unemployment rate divides unemployed people by the sum of employed and unemployed people.",
+      "origin": "upstream",
+      "explanation": "States the numerator and denominator faithfully.",
+      "materiality": "material"
+    }
+  ],
+  "preserved": [
+    "not-employed-in-reference-week",
+    "availability-required",
+    "active-search-window",
+    "temporary-layoff-recall",
+    "passive-search-excluded",
+    "waiting-to-start-job",
+    "insurance-irrelevant",
+    "rate-denominator"
+  ],
+  "distorted": [],
+  "omitted": [],
+  "developments": 5,
+  "explainedFacts": 8,
+  "paragraphSteps": [
+    {
+      "paragraph": 1,
+      "steps": [
+        "Context: reference-week employment, availability, active-search window, or temporary-layoff route"
+      ]
+    },
+    {
+      "paragraph": 2,
+      "steps": [
+        "Development: passive-only search",
+        "Development: waiting to start a job",
+        "Development: unemployment insurance"
+      ]
+    },
+    {
+      "paragraph": 3,
+      "steps": [
+        "Endpoint: unemployment-rate denominator"
+      ]
+    }
+  ],
+  "endpointAddsMeaning": false,
+  "redundancy": [],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}

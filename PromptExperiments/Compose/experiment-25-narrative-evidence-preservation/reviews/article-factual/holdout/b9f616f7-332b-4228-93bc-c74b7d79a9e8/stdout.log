@@ -1,0 +1,101 @@
+{
+  "claims": [
+    {
+      "excerpt": "Het aandeel hernieuwbare energie hangt af van wat je meet",
+      "label": "F0",
+      "sourceEvidence": "The evidence compares renewable shares for electricity production, all-energy production, and all-energy consumption.",
+      "synthesisStatement": "The answer changes depending on what is measured.",
+      "narrativeStatement": "The reported share depends on whether the measure is electricity or all energy.",
+      "origin": "propagated",
+      "explanation": "Faithfully states the central comparison supported by the figures.",
+      "materiality": "central"
+    },
+    {
+      "excerpt": "In 2024 kwam 32% van de wereldwijde elektriciteitsproductie uit hernieuwbare bronnen.",
+      "label": "F0",
+      "sourceEvidence": "For 2024, renewable electricity production was 10.0 trillion kWh out of 30.7 trillion kWh total, reported as 32%.",
+      "synthesisStatement": "The 2024 renewable share of electricity production was 32%.",
+      "narrativeStatement": "In 2024, 32% of global electricity production was renewable.",
+      "origin": "propagated",
+      "explanation": "Correctly identifies the year, global scope, production measure, and percentage. It does not confuse production with consumption.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "7% van de totale energieproductie",
+      "label": "F0",
+      "sourceEvidence": "For 2024, renewable all-energy production was 42.4 quadrillion Btu out of 605.6 quadrillion Btu total, reported as 7%.",
+      "synthesisStatement": "Renewables accounted for 7% of all energy production.",
+      "narrativeStatement": "The share for all energy production was 7%.",
+      "origin": "propagated",
+      "explanation": "Correctly gives the all-energy production share; the source's energy units and total-production denominator support it.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "7% van het totale energieverbruik",
+      "label": "F0",
+      "sourceEvidence": "The source states that renewables' share of all energy consumption was 7%.",
+      "synthesisStatement": "The renewable share of all energy consumption was also 7%.",
+      "narrativeStatement": "The share for all energy consumption was also 7%.",
+      "origin": "propagated",
+      "explanation": "Correctly labels this as an all-energy consumption share, not an electricity-consumption share.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "Deze cijfers beschrijven verschillende maatstaven: elektriciteitsproductie is niet hetzelfde als de productie of het verbruik van alle energie.",
+      "label": "F0",
+      "sourceEvidence": "The evidence provides separate measures for electricity production and all-energy production and consumption.",
+      "synthesisStatement": "The figures describe different measures: electricity production is not the same as all-energy production or consumption.",
+      "narrativeStatement": "The figures describe different parts of the energy system, not answers to precisely the same question.",
+      "origin": "propagated",
+      "explanation": "Accurately distinguishes the measures without implying a renewable electricity-consumption value or that the figures are contradictory.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "De cijfers zijn afkomstig uit een datavintage van 1 juli 2026 en kunnen wijzigen.",
+      "label": "F0",
+      "sourceEvidence": "The source identifies a July 1, 2026 data vintage and says the data is subject to change.",
+      "synthesisStatement": "This is a July 1, 2026 data vintage subject to change.",
+      "narrativeStatement": "The figures are from a July 1, 2026 data vintage that may change.",
+      "origin": "propagated",
+      "explanation": "Preserves the date and change qualification.",
+      "materiality": "low"
+    }
+  ],
+  "preserved": [
+    "renewable-electricity-production-share-2024",
+    "renewable-all-energy-production-share-2024",
+    "renewable-all-energy-consumption-share-2024",
+    "data-vintage"
+  ],
+  "distorted": [],
+  "omitted": [
+    "renewable-electricity-consumption-share-unavailable"
+  ],
+  "developments": 3,
+  "explainedFacts": 3,
+  "paragraphSteps": [
+    {
+      "paragraph": 1,
+      "steps": [
+        "States the 2024 renewable share of global electricity production.",
+        "Contrasts it with all-energy production and consumption shares."
+      ]
+    },
+    {
+      "paragraph": 2,
+      "steps": [
+        "Explains that the figures use different measures.",
+        "Qualifies the figures with their data vintage."
+      ]
+    }
+  ],
+  "endpointAddsMeaning": false,
+  "redundancy": [
+    "The heading's measurement-dependent takeaway is reiterated in the second paragraph."
+  ],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}
+

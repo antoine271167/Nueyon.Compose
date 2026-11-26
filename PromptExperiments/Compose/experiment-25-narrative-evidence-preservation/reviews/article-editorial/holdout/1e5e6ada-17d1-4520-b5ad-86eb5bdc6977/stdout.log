@@ -1,0 +1,2 @@
+{"scores":[3,2,4,4,3,4],"defects":["thin_substance"],"strength":"“It communicates support for the free-threaded mode; it does not make the extension’s code thread-safe” clearly distinguishes a support declaration from actual thread safety.","weakness":"“The way an extension declares support differs between multi-phase and single-phase initialization” points to an important distinction but doesn’t explain what differs or give readers a concrete example."}
+

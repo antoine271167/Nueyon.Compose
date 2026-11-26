@@ -1,0 +1,62 @@
+{
+  "inputHash": "631f3d47b6ed04494f42d36ebf7c8c6ea8c1d9268cc086aee12b509b7b3a70c7",
+  "outputHash": "c93da3a21f0c6d8327a74649f0a13f9e0b06fa16474310bfeaf95850ac8d0903",
+  "angle": "Why one program used two emissions rules",
+  "items": [
+    {
+      "id": "allowance-one-ton",
+      "claim": "One sulfur dioxide allowance covers one ton.",
+      "synthesisExcerpt": "The sulfur dioxide mechanism applies an aggregate cap and allows trading; one allowance covers one ton.",
+      "sourceEvidence": "“one allowance covers one ton”",
+      "kind": "allowance",
+      "useful": true,
+      "material": true,
+      "usefulness": "Offers a concrete entry point to the program.",
+      "qualification": "Specific to the sulfur dioxide mechanism."
+    },
+    {
+      "id": "sulfur-dioxide-cap-trading",
+      "claim": "The sulfur dioxide mechanism uses an aggregate cap and trading.",
+      "synthesisExcerpt": "The sulfur dioxide mechanism applies an aggregate cap and allows trading; one allowance covers one ton.",
+      "sourceEvidence": "“The sulfur dioxide mechanism applies an aggregate cap and allows trading”",
+      "kind": "mechanism",
+      "useful": true,
+      "material": true,
+      "usefulness": "Establishes the first half of the pollutant comparison.",
+      "qualification": "The cap is not a reported actual-emissions total."
+    },
+    {
+      "id": "nitrogen-oxides-rate-based",
+      "claim": "The nitrogen oxides component was rate-based for certain coal-fired units and did not add a cap or allowance trading.",
+      "synthesisExcerpt": "The nitrogen oxides component was rate-based for certain coal-fired units, began in 1996 and did not introduce a cap or allowance trading.",
+      "sourceEvidence": "“The nitrogen oxides component was rate-based for certain coal-fired units” and “did not introduce a cap or allowance trading”",
+      "kind": "mechanism",
+      "useful": true,
+      "material": true,
+      "usefulness": "Shows how the program treated the pollutants differently.",
+      "qualification": "Applies to certain coal-fired units."
+    },
+    {
+      "id": "sulfur-dioxide-coverage-expansion",
+      "claim": "Sulfur dioxide phase I began in 1995 with 263 initial units at 110 plants; substitution or compensating units brought the total to 445 units.",
+      "synthesisExcerpt": "Its phase I began in 1995 with 263 initial units at 110 plants; substitution or compensating units brought the phase I total to 445 units.",
+      "sourceEvidence": "“phase I began in 1995 with 263 initial units at 110 plants; substitution or compensating units brought the phase I total to 445 units”",
+      "kind": "timeline-and-coverage",
+      "useful": true,
+      "material": true,
+      "usefulness": "Adds a concrete account of how coverage expanded.",
+      "qualification": "Units and plants are different counts."
+    },
+    {
+      "id": "sulfur-dioxide-later-milestones",
+      "claim": "Sulfur dioxide phase II began in 2000, and the final cap in 2010 was 8.95 million tons.",
+      "synthesisExcerpt": "Phase II began in 2000. The final 2010 cap was 8.95 million tons.",
+      "sourceEvidence": "“Phase II began in 2000. The final 2010 cap was 8.95 million tons.”",
+      "kind": "timeline-and-cap",
+      "useful": true,
+      "material": true,
+      "usefulness": "Carries the sulfur dioxide timeline through its later cap.",
+      "qualification": "The cap is not a reported actual-emissions total."
+    }
+  ]
+}

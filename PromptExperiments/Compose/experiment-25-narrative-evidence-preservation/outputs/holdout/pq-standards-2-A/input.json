@@ -1,0 +1,8 @@
+{
+  "narrative": {
+    "content": "### Selected Story\nThe story explains how FIPS 203, 204, and 205 cover two functions within standards designed to resist future quantum attacks: FIPS 203 establishes a shared secret between communicating parties, while FIPS 204 and 205 specify digital signature schemes. The reader should understand that the standards address both shared-secret establishment and digital signatures—not that each standard serves a separate purpose.\n\n### Story Progression\n- **Context:** In August 2024, the Secretary of Commerce approved FIPS 203, 204, and 205, standards designed to resist future quantum attacks.\n- **Development:** FIPS 203 specifies a method for establishing a shared secret over a public channel. FIPS 204 and 205 both specify digital signature schemes, using module-lattice-based and stateless hash-based approaches, respectively.\n- **Endpoint:** The standards cover two functions: establishing a shared secret and creating digital signatures. The two signature standards differ in the type of scheme they specify.\n\n### Critical Constraints\n- Do not imply that FIPS 204 and FIPS 205 serve different functions; both specify digital signature schemes."
+  },
+  "composition": {
+    "format": "Article"
+  }
+}

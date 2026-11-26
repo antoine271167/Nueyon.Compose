@@ -1,0 +1,103 @@
+{
+  "claims": [
+    {
+      "excerpt": "Why a Python extension can change the runtime mode",
+      "label": "F0",
+      "sourceEvidence": "An extension must explicitly indicate that it supports this mode; importing one without that declaration warns and enables the GIL.",
+      "synthesisStatement": "This headline frames the import behavior as an extension affecting runtime mode; the stated fallback supports that framing.",
+      "narrativeStatement": "Why a Python extension can change the runtime mode",
+      "origin": "upstream",
+      "explanation": "The headline is supported by the described import-time behavior, though it omits the condition that triggers the change.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "CPython 3.13 introduced experimental free threading, a configuration that can run with the global interpreter lock disabled.",
+      "label": "F0",
+      "sourceEvidence": "CPython 3.13 introduced experimental free threading, a configuration that can run with the global interpreter lock disabled.",
+      "synthesisStatement": "Establishes the version-specific runtime choice and its relationship to the GIL.",
+      "narrativeStatement": "CPython 3.13 introduced experimental free threading, a configuration that can run with the global interpreter lock disabled.",
+      "origin": "upstream",
+      "explanation": "Matches the source, including the experimental status, version, and qualified description of the configuration.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "An extension must explicitly indicate that it supports this mode; importing one without that declaration warns and enables the GIL.",
+      "label": "F0",
+      "sourceEvidence": "An extension must explicitly indicate that it supports this mode; importing one without that declaration warns and enables the GIL.",
+      "synthesisStatement": "Describes the support declaration and the fallback when it is absent.",
+      "narrativeStatement": "An extension must explicitly indicate that it supports this mode; importing one without that declaration warns and enables the GIL.",
+      "origin": "upstream",
+      "explanation": "Preserves both the requirement and the condition for the warning and GIL fallback.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "Free threading is a configuration, and a support declaration is distinct from the work of making code thread-safe.",
+      "label": "F0",
+      "sourceEvidence": "Free threading is a configuration, and a support declaration is distinct from the work of making code thread-safe.",
+      "synthesisStatement": "Clarifies that declaring support is not equivalent to making code thread-safe.",
+      "narrativeStatement": "Free threading is a configuration, and a support declaration is distinct from the work of making code thread-safe.",
+      "origin": "upstream",
+      "explanation": "Preserves the qualification without implying that a declaration makes code safe.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "The mechanism differs between extensions using multi-phase and single-phase initialization.",
+      "label": "F0",
+      "sourceEvidence": "The mechanism differs between extensions using multi-phase and single-phase initialization.",
+      "synthesisStatement": "Signals that the support mechanism depends on initialization style.",
+      "narrativeStatement": "The mechanism differs between extensions using multi-phase and single-phase initialization.",
+      "origin": "upstream",
+      "explanation": "Accurately states the distinction without inventing details about either mechanism.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "On Windows the compiler does not get the Py_GIL_DISABLED macro automatically for extension builds;",
+      "label": "F0",
+      "sourceEvidence": "On Windows the compiler does not get the Py_GIL_DISABLED macro automatically for extension builds",
+      "synthesisStatement": "Adds a Windows-specific build consideration.",
+      "narrativeStatement": "On Windows the compiler does not get the Py_GIL_DISABLED macro automatically for extension builds;",
+      "origin": "upstream",
+      "explanation": "Matches the platform and scope in the source; the trailing semicolon does not change the claim.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "the configuration can be checked via sysconfig.",
+      "label": "F0",
+      "sourceEvidence": "the configuration can be checked via sysconfig.",
+      "synthesisStatement": "Provides a way to inspect the configuration.",
+      "narrativeStatement": "the configuration can be checked via sysconfig.",
+      "origin": "upstream",
+      "explanation": "Faithfully reports the check and does not add a command or further detail.",
+      "materiality": "non-material"
+    }
+  ],
+  "preserved": [
+    "runtime-mode",
+    "import-boundary",
+    "support-vs-safety",
+    "initialization-mechanisms",
+    "windows-build-macro",
+    "sysconfig-check"
+  ],
+  "distorted": [],
+  "omitted": [],
+  "developments": 5,
+  "explainedFacts": 6,
+  "paragraphSteps": [
+    "Context: CPython 3.13 introduced experimental free threading and its GIL-disabled configuration.",
+    "Development: An undeclared extension support status triggers a warning and enables the GIL on import.",
+    "Development: Declaring support is distinct from making code thread-safe.",
+    "Development: The support mechanism differs by initialization style.",
+    "Development: Windows extension builds do not automatically receive Py_GIL_DISABLED from the compiler.",
+    "Endpoint: sysconfig can be used to check the configuration."
+  ],
+  "endpointAddsMeaning": true,
+  "redundancy": [],
+  "peripheral": [
+    "sysconfig-check"
+  ],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}
+

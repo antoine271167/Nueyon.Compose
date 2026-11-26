@@ -1,0 +1,67 @@
+{
+  "claims": [
+    {
+      "excerpt": "NIST released AI RMF 1.0 in January 2023.",
+      "label": "F0",
+      "sourceEvidence": "NIST released AI RMF 1.0 in January 2023.",
+      "synthesisStatement": "NIST released AI RMF 1.0 in January 2023.",
+      "narrativeStatement": "NIST released AI RMF 1.0 in January 2023.",
+      "origin": "propagated",
+      "explanation": "The date, organization, and document are stated faithfully.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "In July 2024, it published AI 600-1, a companion profile for generative AI with cross-sector scope.",
+      "label": "F0",
+      "sourceEvidence": "In July 2024 NIST published AI 600-1, a companion profile for generative AI with cross-sector scope.",
+      "synthesisStatement": "In July 2024 NIST published AI 600-1, a companion profile for generative AI with cross-sector scope.",
+      "narrativeStatement": "In July 2024 NIST published AI 600-1, a companion profile for generative AI with cross-sector scope.",
+      "origin": "propagated",
+      "explanation": "The publication date, companion status, subject, and cross-sector scope are preserved. The claim does not imply that the profile replaces the framework.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "The profile’s relationship to the order concerns the development of the publication. Its abstract does not describe mandatory private-sector compliance.",
+      "label": "F0",
+      "sourceEvidence": "Its relation to the order concerns development of the publication; the abstract does not describe mandatory private-sector compliance.",
+      "synthesisStatement": "Its relation to the order concerns development of the publication; the abstract does not describe mandatory private-sector compliance.",
+      "narrativeStatement": "Its relation to the order concerns development of the publication; the abstract does not describe mandatory private-sector compliance.",
+      "origin": "propagated",
+      "explanation": "Both qualifications are retained, including the limitation to what the abstract describes; no compliance requirement is asserted.",
+      "materiality": "material"
+    }
+  ],
+  "preserved": [
+    "nist-ai-rmf-release",
+    "ai-600-1-release",
+    "order-relation"
+  ],
+  "distorted": [],
+  "omitted": [],
+  "developments": 2,
+  "explainedFacts": 0,
+  "paragraphSteps": [
+    {
+      "step": "Context: NIST released AI RMF 1.0 in January 2023.",
+      "type": "development",
+      "assessment": "Supported timeline context; stated, not meaningfully explained."
+    },
+    {
+      "step": "Development: In July 2024 NIST published AI 600-1, a companion profile for generative AI with cross-sector scope.",
+      "type": "development",
+      "assessment": "Supported publication and scope details; the relationship to the earlier framework is not further explained."
+    },
+    {
+      "step": "Endpoint: Its relation to the order concerns development of the publication; the abstract does not describe mandatory private-sector compliance.",
+      "type": "qualification",
+      "assessment": "Supported clarification that limits what can be inferred from the order reference."
+    }
+  ],
+  "endpointAddsMeaning": true,
+  "redundancy": [],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}
+

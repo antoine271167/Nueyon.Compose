@@ -1,0 +1,88 @@
+{
+  "claims": [
+    {
+      "excerpt": "OSIRIS-REx Returned 121.6 Grams from Bennu",
+      "label": "F0",
+      "sourceEvidence": "The provided verification says the total sample mass was 121.6 g; the synthesis says the completed inventory amounted to 121.6 grams.",
+      "synthesisStatement": "The completed inventory amounted to 121.6 grams.",
+      "narrativeStatement": "The completed inventory was 121.6 grams, the figure that closes the account of how much material was returned.",
+      "origin": "propagated",
+      "explanation": "Faithfully expresses the final returned sample amount, consistent with the total sample mass and the narrative's framing.",
+      "materiality": "High; states the central outcome."
+    },
+    {
+      "excerpt": "OSIRIS-REx returned material from Bennu to Earth on September 24, 2023.",
+      "label": "F0",
+      "sourceEvidence": "The provided source evidence states that OSIRIS-REx returned material from Bennu to Earth on September 24, 2023.",
+      "synthesisStatement": "OSIRIS-REx returned material from asteroid Bennu to Earth on September 24, 2023.",
+      "narrativeStatement": "OSIRIS-REx returned material from Bennu to Earth on September 24, 2023, with a mission requirement of at least 60 grams.",
+      "origin": "upstream",
+      "explanation": "Preserves the destination and exact return date.",
+      "materiality": "Contextual."
+    },
+    {
+      "excerpt": "The mission required at least 60 grams, and that amount had been exceeded before the sampling head was completely opened.",
+      "label": "F0",
+      "sourceEvidence": "The provided source evidence says the mission required at least 60 grams and that the requirement was reached before the sampling head was fully opened.",
+      "synthesisStatement": "The mission required at least 60 grams of asteroid material. The team exceeded that requirement before completely opening the sampling head.",
+      "narrativeStatement": "The requirement was exceeded before the sampling head was completely opened.",
+      "origin": "upstream",
+      "explanation": "Correctly identifies 60 grams as the requirement and preserves the timing of exceeding it; it does not invent an amount for that earlier milestone.",
+      "materiality": "High; distinguishes the requirement from the final total."
+    },
+    {
+      "excerpt": "A final pour added another 51.2 grams.",
+      "label": "F0",
+      "sourceEvidence": "The provided source evidence says the final pour contributed 51.2 g.",
+      "synthesisStatement": "A final pour added 51.2 grams.",
+      "narrativeStatement": "A final pour then added 51.2 grams.",
+      "origin": "upstream",
+      "explanation": "Accurately states the addition without implying it was the only material collected.",
+      "materiality": "High; accounts for a specific addition."
+    },
+    {
+      "excerpt": "The completed inventory totaled 121.6 grams, the final amount accounted for from the return.",
+      "label": "F0",
+      "sourceEvidence": "The provided source evidence says the total sample mass was 121.6 g; the synthesis says the completed inventory amounted to 121.6 grams.",
+      "synthesisStatement": "The completed inventory amounted to 121.6 grams.",
+      "narrativeStatement": "The completed inventory was 121.6 grams, the figure that closes the account of how much material was returned.",
+      "origin": "propagated",
+      "explanation": "Preserves the completed total and accurately frames it as the final accounted-for amount.",
+      "materiality": "High; gives the final accounted-for amount."
+    }
+  ],
+  "preserved": [
+    "return-date",
+    "minimum-required",
+    "requirement-exceeded-before-opening",
+    "final-pour",
+    "completed-inventory"
+  ],
+  "distorted": [],
+  "omitted": [],
+  "developments": 2,
+  "explainedFacts": 5,
+  "paragraphSteps": [
+    {
+      "paragraph": "OSIRIS-REx returned material from Bennu to Earth on September 24, 2023.",
+      "step": "Context: establishes the return date."
+    },
+    {
+      "paragraph": "The mission required at least 60 grams, and that amount had been exceeded before the sampling head was completely opened.",
+      "step": "Development: establishes the requirement and the earlier milestone."
+    },
+    {
+      "paragraph": "A final pour added another 51.2 grams. The completed inventory totaled 121.6 grams, the final amount accounted for from the return.",
+      "step": "Development and endpoint: gives the final addition and completed total."
+    }
+  ],
+  "endpointAddsMeaning": true,
+  "redundancy": [
+    "The headline's 121.6-gram total is repeated in the final paragraph; the repetition is conventional and not misleading."
+  ],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}
+

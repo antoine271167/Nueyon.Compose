@@ -1,0 +1,143 @@
+{
+  "claims": [
+    {
+      "exactBodyExcerpt": "Explain how CPython 3.13’s experimental free-threading configuration connects an application’s runtime choice to the behavior of imported extensions.",
+      "label": "F0",
+      "sourceEvidence": "“CPython 3.13 introduced experimental free threading, a configuration that can run with the global interpreter lock disabled.”",
+      "synthesisStatement": "“Tell the story from application runtime choice to the import boundary and then explain why extension authors have a distinct compatibility responsibility.”",
+      "narrativeStatement": "“Explain how CPython 3.13’s experimental free-threading configuration connects an application’s runtime choice to the behavior of imported extensions.”",
+      "origin": "propagated",
+      "explanation": "This frames the source-supported progression from runtime configuration to import behavior.",
+      "materiality": "material"
+    },
+    {
+      "exactBodyExcerpt": "When free threading is configured with the GIL disabled, an extension’s explicit support declaration affects what happens at import: without one, importing the extension warns and enables the GIL.",
+      "label": "F0",
+      "sourceEvidence": "“An extension must explicitly indicate that it supports this mode; importing one without that declaration warns and enables the GIL.”",
+      "synthesisStatement": "“An extension must explicitly indicate that it supports this mode; importing one without that declaration warns and enables the GIL.”",
+      "narrativeStatement": "“When free threading is configured with the GIL disabled, an extension’s explicit support declaration affects what happens at import: without one, importing the extension warns and enables the GIL.”",
+      "origin": "upstream",
+      "explanation": "Faithfully states the import fallback when the support declaration is absent.",
+      "materiality": "material"
+    },
+    {
+      "exactBodyExcerpt": "The reader should understand that extension authors have a distinct compatibility responsibility, and that declaring support is not the same as making code thread-safe.",
+      "label": "F0",
+      "sourceEvidence": "“Free threading is a configuration, and a support declaration is distinct from the work of making code thread-safe.”",
+      "synthesisStatement": "“Tell the story from application runtime choice to the import boundary and then explain why extension authors have a distinct compatibility responsibility.”",
+      "narrativeStatement": "“The reader should understand that extension authors have a distinct compatibility responsibility, and that declaring support is not the same as making code thread-safe.”",
+      "origin": "propagated",
+      "explanation": "Preserves both the compatibility-responsibility framing and the qualification that support is not thread safety.",
+      "materiality": "material"
+    },
+    {
+      "exactBodyExcerpt": "CPython 3.13 introduced experimental free threading as a configuration that can run with the GIL disabled, establishing the runtime choice the story concerns.",
+      "label": "F0",
+      "sourceEvidence": "“CPython 3.13 introduced experimental free threading, a configuration that can run with the global interpreter lock disabled.”",
+      "synthesisStatement": "“CPython 3.13 introduced experimental free threading, a configuration that can run with the global interpreter lock disabled.”",
+      "narrativeStatement": "“CPython 3.13 introduced experimental free threading as a configuration that can run with the GIL disabled, establishing the runtime choice the story concerns.”",
+      "origin": "upstream",
+      "explanation": "Retains the version, experimental status, and configurable disabled-GIL qualification.",
+      "materiality": "material"
+    },
+    {
+      "exactBodyExcerpt": "That choice meets an import boundary: an extension must explicitly indicate support for free threading; importing one without that declaration warns and enables the GIL.",
+      "label": "F0",
+      "sourceEvidence": "“An extension must explicitly indicate that it supports this mode; importing one without that declaration warns and enables the GIL.”",
+      "synthesisStatement": "“An extension must explicitly indicate that it supports this mode; importing one without that declaration warns and enables the GIL.”",
+      "narrativeStatement": "“That choice meets an import boundary: an extension must explicitly indicate support for free threading; importing one without that declaration warns and enables the GIL.”",
+      "origin": "upstream",
+      "explanation": "Accurately repeats the declaration requirement and its import-time consequence.",
+      "materiality": "material"
+    },
+    {
+      "exactBodyExcerpt": "The declaration mechanism differs between multi-phase and single-phase initialization.",
+      "label": "F0",
+      "sourceEvidence": "“The mechanism differs between extensions using multi-phase and single-phase initialization.”",
+      "synthesisStatement": "“The mechanism differs between extensions using multi-phase and single-phase initialization.”",
+      "narrativeStatement": "“The declaration mechanism differs between multi-phase and single-phase initialization.”",
+      "origin": "upstream",
+      "explanation": "Preserves the distinction without inventing details about either mechanism.",
+      "materiality": "material"
+    },
+    {
+      "exactBodyExcerpt": "For extension builds on Windows, the compiler does not automatically receive the `Py_GIL_DISABLED` macro; the configuration can be checked through `sysconfig`.",
+      "label": "F0",
+      "sourceEvidence": "“On Windows the compiler does not get the Py_GIL_DISABLED macro automatically for extension builds; the configuration can be checked via sysconfig.”",
+      "synthesisStatement": "“On Windows the compiler does not get the Py_GIL_DISABLED macro automatically for extension builds; the configuration can be checked via sysconfig.”",
+      "narrativeStatement": "“For extension builds on Windows, the compiler does not automatically receive the `Py_GIL_DISABLED` macro; the configuration can be checked through `sysconfig`.”",
+      "origin": "upstream",
+      "explanation": "Retains the Windows build qualifier, macro name, and configuration-check method.",
+      "materiality": "material"
+    },
+    {
+      "exactBodyExcerpt": "Frame the declaration as a compatibility signal that affects import behavior, not as proof that the extension’s code is thread-safe.",
+      "label": "F0",
+      "sourceEvidence": "“An extension must explicitly indicate that it supports this mode; importing one without that declaration warns and enables the GIL.” “A support declaration is distinct from the work of making code thread-safe.”",
+      "synthesisStatement": "“A support declaration is distinct from the work of making code thread-safe.”",
+      "narrativeStatement": "“Frame the declaration as a compatibility signal that affects import behavior, not as proof that the extension’s code is thread-safe.”",
+      "origin": "compose",
+      "explanation": "Combines the stated import consequence with the explicit distinction from thread safety; it does not claim the declaration proves safety.",
+      "materiality": "material"
+    },
+    {
+      "exactBodyExcerpt": "That distinction is the specific responsibility the runtime behavior makes relevant for extension authors.",
+      "label": "F0",
+      "sourceEvidence": "“Tell the story from application runtime choice to the import boundary and then explain why extension authors have a distinct compatibility responsibility.”",
+      "synthesisStatement": "“Tell the story from application runtime choice to the import boundary and then explain why extension authors have a distinct compatibility responsibility.”",
+      "narrativeStatement": "“That distinction is the specific responsibility the runtime behavior makes relevant for extension authors.”",
+      "origin": "compose",
+      "explanation": "A supported editorial inference connecting the import behavior and safety qualification to extension authors’ responsibility.",
+      "materiality": "material"
+    }
+  ],
+  "preserved": [
+    "runtime-mode",
+    "import-boundary",
+    "support-vs-safety",
+    "initialization-mechanisms",
+    "windows-build-macro",
+    "sysconfig-check"
+  ],
+  "distorted": [],
+  "omitted": [],
+  "developments": 3,
+  "explainedFacts": 3,
+  "paragraphSteps": [
+    {
+      "step": "Context: establishes CPython 3.13 experimental free threading as a runtime configuration that can disable the GIL.",
+      "inventoryIds": [
+        "runtime-mode"
+      ]
+    },
+    {
+      "step": "Development: links the configuration to the extension import requirement and fallback, then notes initialization-style and Windows build details.",
+      "inventoryIds": [
+        "import-boundary",
+        "initialization-mechanisms",
+        "windows-build-macro",
+        "sysconfig-check"
+      ]
+    },
+    {
+      "step": "Endpoint: explains that the compatibility declaration is not a guarantee of thread safety.",
+      "inventoryIds": [
+        "support-vs-safety"
+      ]
+    }
+  ],
+  "endpointAddsMeaning": true,
+  "redundancy": [
+    "“Explain how CPython 3.13’s experimental free-threading configuration connects an application’s runtime choice to the behavior of imported extensions.” / “CPython 3.13 introduced experimental free threading as a configuration that can run with the GIL disabled, establishing the runtime choice the story concerns.”",
+    "“When free threading is configured with the GIL disabled, an extension’s explicit support declaration affects what happens at import: without one, importing the extension warns and enables the GIL.” / “That choice meets an import boundary: an extension must explicitly indicate support for free threading; importing one without that declaration warns and enables the GIL.”",
+    "“The reader should understand that extension authors have a distinct compatibility responsibility, and that declaring support is not the same as making code thread-safe.” / “Frame the declaration as a compatibility signal that affects import behavior, not as proof that the extension’s code is thread-safe.”"
+  ],
+  "peripheral": [
+    "windows-build-macro",
+    "sysconfig-check"
+  ],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}
+

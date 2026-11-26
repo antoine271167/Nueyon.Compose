@@ -1,0 +1,107 @@
+{
+  "claims": [
+    {
+      "excerpt": "CPython 3.13 introduced experimental free threading, a configuration that can run with the global interpreter lock (GIL) disabled.",
+      "label": "F0",
+      "sourceEvidence": "CPython 3.13 introduced experimental free threading, a configuration that can run with the global interpreter lock disabled.",
+      "synthesisStatement": "CPython 3.13 introduced experimental free threading, a configuration that can run with the global interpreter lock disabled.",
+      "narrativeStatement": "CPython 3.13 introduced experimental free threading, a configuration that can run with the global interpreter lock disabled.",
+      "origin": "propagated",
+      "explanation": "Preserves the CPython 3.13 scope and describes free threading as a configuration that can disable the GIL.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "Python extensions must explicitly declare support for this mode. If an extension is imported without that declaration, Python issues a warning and enables the GIL.",
+      "label": "F0",
+      "sourceEvidence": "An extension must explicitly indicate that it supports this mode; importing one without that declaration warns and enables the GIL.",
+      "synthesisStatement": "An extension must explicitly indicate that it supports this mode; importing one without that declaration warns and enables the GIL.",
+      "narrativeStatement": "An extension must explicitly indicate that it supports this mode; importing one without that declaration warns and enables the GIL.",
+      "origin": "propagated",
+      "explanation": "Faithfully gives both the explicit declaration requirement and the warning-and-GIL fallback when the declaration is absent.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "Declaring support for free threading is separate from making an extension’s code thread-safe.",
+      "label": "F0",
+      "sourceEvidence": "A support declaration is distinct from the work of making code thread-safe.",
+      "synthesisStatement": "Free threading is a configuration, and a support declaration is distinct from the work of making code thread-safe.",
+      "narrativeStatement": "Free threading is a configuration, and a support declaration is distinct from the work of making code thread-safe.",
+      "origin": "propagated",
+      "explanation": "Preserves the distinction without implying that declaring support makes code thread-safe.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "The declaration mechanism also differs depending on whether an extension uses multi-phase or single-phase initialization.",
+      "label": "F0",
+      "sourceEvidence": "The mechanism differs between extensions using multi-phase and single-phase initialization.",
+      "synthesisStatement": "The mechanism differs between extensions using multi-phase and single-phase initialization.",
+      "narrativeStatement": "The mechanism differs between extensions using multi-phase and single-phase initialization.",
+      "origin": "propagated",
+      "explanation": "Accurately states that initialization style affects the mechanism and does not invent the mechanisms themselves.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "On Windows, extension builds do not automatically receive the `Py_GIL_DISABLED` compiler macro.",
+      "label": "F0",
+      "sourceEvidence": "On Windows the compiler does not get the Py_GIL_DISABLED macro automatically for extension builds",
+      "synthesisStatement": "On Windows the compiler does not get the Py_GIL_DISABLED macro automatically for extension builds;",
+      "narrativeStatement": "On Windows the compiler does not get the Py_GIL_DISABLED macro automatically for extension builds;",
+      "origin": "propagated",
+      "explanation": "Preserves the Windows and extension-build qualification and the fact that the macro is not supplied automatically.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "The free-threading configuration can be checked through `sysconfig`.",
+      "label": "F0",
+      "sourceEvidence": "the configuration can be checked via sysconfig.",
+      "synthesisStatement": "the configuration can be checked via sysconfig.",
+      "narrativeStatement": "the configuration can be checked via sysconfig.",
+      "origin": "propagated",
+      "explanation": "Faithfully identifies sysconfig as a way to check the configuration without claiming a particular command.",
+      "materiality": "supporting"
+    }
+  ],
+  "preserved": [
+    "runtime-mode",
+    "import-boundary",
+    "support-vs-safety",
+    "initialization-mechanisms",
+    "windows-build-macro",
+    "sysconfig-check"
+  ],
+  "distorted": [],
+  "omitted": [],
+  "developments": 4,
+  "explainedFacts": 2,
+  "paragraphSteps": [
+    {
+      "paragraph": 1,
+      "steps": [
+        "runtime-mode",
+        "import-boundary"
+      ]
+    },
+    {
+      "paragraph": 2,
+      "steps": [
+        "support-vs-safety",
+        "initialization-mechanisms"
+      ]
+    },
+    {
+      "paragraph": 3,
+      "steps": [
+        "windows-build-macro",
+        "sysconfig-check"
+      ]
+    }
+  ],
+  "endpointAddsMeaning": true,
+  "redundancy": [],
+  "peripheral": [
+    "The free-threading configuration can be checked through `sysconfig`."
+  ],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}

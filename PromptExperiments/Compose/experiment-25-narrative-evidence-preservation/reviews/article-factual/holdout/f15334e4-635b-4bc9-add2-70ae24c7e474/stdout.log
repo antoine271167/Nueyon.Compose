@@ -1,0 +1,94 @@
+{
+  "claims": [
+    {
+      "id": "pre-impact-period",
+      "exactBodyExcerpt": "Before the impact, Dimorphos took 11 hours and 55 minutes to orbit the larger asteroid Didymos.",
+      "label": "F0",
+      "sourceEvidence": "Before impact, Dimorphos took 11 hours and 55 minutes to orbit the larger asteroid Didymos. The authoritative verification describes this as about 11 hours and 55 minutes.",
+      "synthesisStatement": "Before impact, Dimorphos took 11 hours and 55 minutes to orbit the larger asteroid Didymos.",
+      "narrativeStatement": "Before impact, Dimorphos took 11 hours and 55 minutes to orbit the larger asteroid Didymos.",
+      "origin": "upstream",
+      "explanation": "Faithfully states the baseline at the same rounded precision; it does not assert greater precision than the source.",
+      "materiality": "Material baseline fact; no meaningful qualification is lost."
+    },
+    {
+      "id": "immediate-period-change",
+      "exactBodyExcerpt": "Immediately afterward, its orbital period was 11 hours, 22 minutes and 37 seconds—a shortening of 32 minutes and 42 seconds.",
+      "label": "F0",
+      "sourceEvidence": "Immediately after impact, the period shortened by 32 minutes and 42 seconds, to 11 hours, 22 minutes and 37 seconds. The modeled figure has estimated 1.5-second precision.",
+      "synthesisStatement": "Immediately after impact, the period shortened by 32 minutes and 42 seconds, to 11 hours, 22 minutes and 37 seconds.",
+      "narrativeStatement": "Immediately after impact, the period shortened by 32 minutes and 42 seconds, to 11 hours, 22 minutes and 37 seconds.",
+      "origin": "upstream",
+      "explanation": "Retains both the immediate timing and the matching period and reduction values; the reported seconds do not imply precision beyond the source's modeled estimate.",
+      "materiality": "Material immediate-change measurement."
+    },
+    {
+      "id": "continued-shortening",
+      "exactBodyExcerpt": "Over the following weeks, Dimorphos lost more rocky material to space as its orbital period continued to shorten.",
+      "label": "F0",
+      "sourceEvidence": "Over subsequent weeks Dimorphos lost more rocky material to space while its orbital period continued to shorten. The evidence reports these changes together, not that one caused the other.",
+      "synthesisStatement": "Over subsequent weeks Dimorphos lost more rocky material to space while its orbital period continued to shorten.",
+      "narrativeStatement": "Over subsequent weeks Dimorphos lost more rocky material to space while its orbital period continued to shorten.",
+      "origin": "upstream",
+      "explanation": "“As” conveys the concurrent trend here and does not explicitly claim that material loss caused the period change.",
+      "materiality": "Material subsequent trend; causal qualification is preserved."
+    },
+    {
+      "id": "settled-period",
+      "exactBodyExcerpt": "The period eventually settled at 11 hours, 22 minutes and 3 seconds, 33 minutes and 15 seconds shorter than before impact.",
+      "label": "F0",
+      "sourceEvidence": "The period settled at 11 hours, 22 minutes and 3 seconds, 33 minutes and 15 seconds shorter than before impact. The modeled figure has estimated 1.5-second precision.",
+      "synthesisStatement": "The period settled at 11 hours, 22 minutes and 3 seconds, 33 minutes and 15 seconds shorter than before impact.",
+      "narrativeStatement": "The period settled at 11 hours, 22 minutes and 3 seconds, 33 minutes and 15 seconds shorter than before impact.",
+      "origin": "upstream",
+      "explanation": "Correctly distinguishes the later settled value from the immediate post-impact value and preserves the total reduction from baseline.",
+      "materiality": "Material final period and total-change measurement."
+    },
+    {
+      "id": "orbit-shape",
+      "exactBodyExcerpt": "After the impact, Dimorphos’s orbit was no longer circular.",
+      "label": "F0",
+      "sourceEvidence": "The orbit was no longer circular after impact.",
+      "synthesisStatement": "The orbit was no longer circular after impact.",
+      "narrativeStatement": "The orbit was no longer circular after impact.",
+      "origin": "upstream",
+      "explanation": "Faithfully reports the qualitative shape change without adding a magnitude or mechanism.",
+      "materiality": "Material additional orbital change."
+    }
+  ],
+  "preserved": [
+    "pre-impact-period",
+    "immediate-period-change",
+    "continued-shortening",
+    "settled-period",
+    "orbit-shape"
+  ],
+  "distorted": [],
+  "omitted": [],
+  "developments": 3,
+  "explainedFacts": 0,
+  "paragraphSteps": [
+    {
+      "paragraph": 1,
+      "steps": [
+        "pre-impact-period",
+        "immediate-period-change"
+      ]
+    },
+    {
+      "paragraph": 2,
+      "steps": [
+        "continued-shortening",
+        "settled-period",
+        "orbit-shape"
+      ]
+    }
+  ],
+  "endpointAddsMeaning": true,
+  "redundancy": [],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}
+

@@ -1,0 +1,86 @@
+{
+  "claims": [
+    {
+      "excerpt": "Een hot spot op een luchthavenkaart markeert een locatie in het bewegingsgebied waar in het verleden botsingen hebben plaatsgevonden of waar een risico op botsingen of een runway incursion bestaat.",
+      "label": "F0",
+      "sourceEvidence": "A hot spot is an airport movement-area location with a history or potential risk of collision or runway incursion.",
+      "synthesisStatement": "Een hot spot is een plek in het bewegingsgebied met een voorgeschiedenis van of risico op een botsing of runway incursion.",
+      "narrativeStatement": "Een hot spot op een luchthavenkaart duidt een locatie in het bewegingsgebied aan met een geschiedenis van of potentieel risico op een botsing of runway incursion.",
+      "origin": "propagated",
+      "explanation": "Behoudt zowel de locatie in het bewegingsgebied als de alternatieven voorgeschiedenis of potentieel risico; stelt niet dat een incident zeker zal plaatsvinden.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "Vanaf 19 mei 2022 standaardiseerde de FAA de vormen van deze aanduidingen om twee typen hot spots van elkaar te onderscheiden.",
+      "label": "F0",
+      "sourceEvidence": "On the May 19, 2022 chart cycle the FAA standardized three shapes and two meanings.",
+      "synthesisStatement": "De FAA standaardiseerde vanaf 19 mei 2022 twee betekenissen met drie vormen.",
+      "narrativeStatement": "De FAA standaardiseerde vanaf 19 mei 2022 vormen om twee soorten hot spots herkenbaar te onderscheiden.",
+      "origin": "propagated",
+      "explanation": "De datum, FAA-standaardisering en het onderscheid tussen twee typen komen overeen. De drie vormen worden in de daaropvolgende zinnen opgesomd.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "Een cirkel of ellips duidt een *ground movement hot spot* aan;",
+      "label": "F0",
+      "sourceEvidence": "Circle and ellipse are both ground-movement indicators.",
+      "synthesisStatement": "Een cirkel of ellips duidt een ground movement hot spot aan.",
+      "narrativeStatement": "Een cirkel of ellips staat voor een ground movement hot spot.",
+      "origin": "propagated",
+      "explanation": "Beide vormen zijn correct aan hetzelfde type hot spot gekoppeld.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "een cilinder staat voor een *wrong surface hot spot*.",
+      "label": "F0",
+      "sourceEvidence": "A cylinder represents wrong surface.",
+      "synthesisStatement": "Een cilinder duidt een wrong surface hot spot aan.",
+      "narrativeStatement": "Een cilinder staat voor een wrong surface hot spot.",
+      "origin": "propagated",
+      "explanation": "De vorm en het bijbehorende type komen overeen.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "De vorm geeft dus aan om welk type hot spot het gaat.",
+      "label": "F0",
+      "sourceEvidence": "The FAA standardized three shapes and two meanings; circle and ellipse indicate ground movement, while a cylinder represents wrong surface.",
+      "synthesisStatement": "De vormen onderscheiden de twee betekenissen van hot spots.",
+      "narrativeStatement": "De lezer moet begrijpen dat de vorm aangeeft om welk type hot spot het gaat.",
+      "origin": "compose",
+      "explanation": "Dit vat de direct voorafgaande, brongetrouwe vormbetekenissen samen en voegt geen nieuw type of kwalificatie toe.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "De standaardisering is bedoeld om verwarring over de betekenis of weergave van hot spots te voorkomen.",
+      "label": "F0",
+      "sourceEvidence": "Standardized depiction is intended to prevent confusion.",
+      "synthesisStatement": "De standaardisering is bedoeld om verwarring over de betekenis of weergave van hot spots te voorkomen.",
+      "narrativeStatement": "Rond af met het doel van de standaardisering: verwarring over de betekenis of weergave van hot spots voorkomen.",
+      "origin": "propagated",
+      "explanation": "Het doel wordt als bedoeling gepresenteerd, niet als bewezen resultaat.",
+      "materiality": "material"
+    }
+  ],
+  "preserved": [
+    "hot-spot-definition",
+    "standardization-date",
+    "ground-movement-symbol",
+    "wrong-surface-symbol",
+    "standardization-purpose"
+  ],
+  "distorted": [],
+  "omitted": [],
+  "developments": 3,
+  "explainedFacts": 5,
+  "paragraphSteps": [
+    "Context: definitie en risico- of voorgeschiedenis.",
+    "Ontwikkeling: standaardisering, ingangsdatum en de twee vormbetekenissen.",
+    "Eindpunt: het beoogde doel van de standaardisering."
+  ],
+  "endpointAddsMeaning": true,
+  "redundancy": [],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}

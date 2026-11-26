@@ -1,0 +1,148 @@
+{
+  "claims": [
+    {
+      "exactBodyExcerpt": "Two Pollutants, Different Rules in the Acid Rain Program",
+      "label": "F0",
+      "sourceEvidence": "“The sulfur dioxide and nitrogen oxides timelines and mechanisms differ.”",
+      "synthesisStatement": "The two pollutants were treated differently.",
+      "narrativeStatement": "The narrative says the program used different mechanisms for sulfur dioxide and nitrogen oxides.",
+      "origin": "propagated",
+      "explanation": "Faithful headline summary of the documented distinction.",
+      "materiality": "Low"
+    },
+    {
+      "exactBodyExcerpt": "Under Title IV, the EPA’s Acid Rain Program used different mechanisms for sulfur dioxide and nitrogen oxides.",
+      "label": "F0",
+      "sourceEvidence": "“EPA’s Acid Rain Program addresses sulfur dioxide and nitrogen oxides from the power sector under Title IV” and “the nitrogen oxides component was rate-based.”",
+      "synthesisStatement": "The program addresses both pollutants under Title IV and treats them through different mechanisms.",
+      "narrativeStatement": "The narrative opens by saying the program used different mechanisms for sulfur dioxide and nitrogen oxides.",
+      "origin": "propagated",
+      "explanation": "Faithfully states the program’s Title IV context and the supported difference in mechanisms.",
+      "materiality": "High"
+    },
+    {
+      "exactBodyExcerpt": "In the sulfur dioxide system, an allowance represented permission to emit one ton.",
+      "label": "F0",
+      "sourceEvidence": "“one allowance covers one ton”",
+      "synthesisStatement": "One sulfur dioxide allowance covers one ton.",
+      "narrativeStatement": "The narrative describes a sulfur dioxide allowance as covering one ton.",
+      "origin": "propagated",
+      "explanation": "The wording accurately conveys the allowance’s one-ton emissions authorization.",
+      "materiality": "High"
+    },
+    {
+      "exactBodyExcerpt": "Allowances operated within an aggregate cap, with trading among covered sources.",
+      "label": "F0",
+      "sourceEvidence": "“The sulfur dioxide mechanism applies an aggregate cap and allows trading.”",
+      "synthesisStatement": "The sulfur dioxide mechanism uses an aggregate cap and allows trading.",
+      "narrativeStatement": "The narrative calls it an aggregate cap-and-trade system.",
+      "origin": "propagated",
+      "explanation": "Faithful description; “covered sources” is consistent with the program context and does not change the claim.",
+      "materiality": "High"
+    },
+    {
+      "exactBodyExcerpt": "The sulfur dioxide program expanded in phases.",
+      "label": "F0",
+      "sourceEvidence": "“phase I began in 1995” and “Phase II began in 2000.”",
+      "synthesisStatement": "The sulfur dioxide program had Phase I and Phase II milestones.",
+      "narrativeStatement": "The narrative describes Phase I, its coverage growth, and Phase II.",
+      "origin": "propagated",
+      "explanation": "Accurately summarizes the documented phased timeline.",
+      "materiality": "Medium"
+    },
+    {
+      "exactBodyExcerpt": "Phase I began in 1995 with 263 emissions units at 110 plants.",
+      "label": "F0",
+      "sourceEvidence": "“phase I began in 1995 with 263 initial units at 110 plants”",
+      "synthesisStatement": "Phase I began in 1995 with 263 initial units at 110 plants.",
+      "narrativeStatement": "The narrative gives the same year, unit count, and plant count.",
+      "origin": "propagated",
+      "explanation": "The counts and their distinct units are preserved accurately.",
+      "materiality": "High"
+    },
+    {
+      "exactBodyExcerpt": "Substitution or compensating units brought the Phase I total to 445 units",
+      "label": "F0",
+      "sourceEvidence": "“substitution or compensating units brought the phase I total to 445 units”",
+      "synthesisStatement": "Substitution or compensating units brought the Phase I total to 445 units.",
+      "narrativeStatement": "The narrative states the same increase and total.",
+      "origin": "propagated",
+      "explanation": "Faithful account of the coverage expansion; it does not conflate units with plants.",
+      "materiality": "High"
+    },
+    {
+      "exactBodyExcerpt": "Phase II began in 2000.",
+      "label": "F0",
+      "sourceEvidence": "“Phase II began in 2000.”",
+      "synthesisStatement": "Phase II began in 2000.",
+      "narrativeStatement": "The narrative gives the same Phase II date.",
+      "origin": "propagated",
+      "explanation": "The date is stated accurately.",
+      "materiality": "Medium"
+    },
+    {
+      "exactBodyExcerpt": "The program’s final cap, set in 2010, was 8.95 million tons—a permitted total, not a measure of actual emissions.",
+      "label": "F0",
+      "sourceEvidence": "“The final 2010 cap was 8.95 million tons” and “A cap is a permitted total rather than reported actual emissions.”",
+      "synthesisStatement": "The final cap was 8.95 million tons in 2010; it is not a reported actual-emissions total.",
+      "narrativeStatement": "The narrative gives the cap amount and year and clarifies that it is a permitted total, not actual emissions.",
+      "origin": "propagated",
+      "explanation": "Preserves the cap’s amount, date, and material qualification.",
+      "materiality": "High"
+    },
+    {
+      "exactBodyExcerpt": "The nitrogen oxides component followed a separate timeline and approach.",
+      "label": "F0",
+      "sourceEvidence": "“The nitrogen oxides component was rate-based for certain coal-fired units, began in 1996 and did not introduce a cap or allowance trading.”",
+      "synthesisStatement": "The nitrogen oxides component had a separate timeline and mechanism.",
+      "narrativeStatement": "The narrative contrasts the nitrogen oxides component’s rate-based approach with the sulfur dioxide system.",
+      "origin": "propagated",
+      "explanation": "Accurately introduces the documented difference without adding a new mechanism.",
+      "materiality": "Medium"
+    },
+    {
+      "exactBodyExcerpt": "It began in 1996 and used rate-based requirements for certain coal-fired units, without a cap or allowance trading.",
+      "label": "F0",
+      "sourceEvidence": "“The nitrogen oxides component was rate-based for certain coal-fired units, began in 1996 and did not introduce a cap or allowance trading.”",
+      "synthesisStatement": "The nitrogen oxides component began in 1996, was rate-based for certain coal-fired units, and did not introduce a cap or allowance trading.",
+      "narrativeStatement": "The narrative states the same start year, unit qualification, rate-based approach, and absence of a cap or allowance trading.",
+      "origin": "propagated",
+      "explanation": "All subject-specific qualifications are preserved, including “certain” coal-fired units.",
+      "materiality": "High"
+    },
+    {
+      "exactBodyExcerpt": "The two pollutants were therefore governed by different rules and timelines.",
+      "label": "F0",
+      "sourceEvidence": "“The sulfur dioxide and nitrogen oxides timelines and mechanisms differ.”",
+      "synthesisStatement": "The pollutants had different mechanisms and timelines.",
+      "narrativeStatement": "The narrative’s endpoint says the pollutants were governed through different mechanisms and timelines.",
+      "origin": "propagated",
+      "explanation": "Accurate concluding summary, though it repeats the opening distinction.",
+      "materiality": "Low"
+    }
+  ],
+  "preserved": [
+    "allowance-one-ton",
+    "sulfur-dioxide-cap-trading",
+    "nitrogen-oxides-rate-based",
+    "sulfur-dioxide-coverage-expansion",
+    "sulfur-dioxide-later-milestones"
+  ],
+  "distorted": [],
+  "omitted": [],
+  "developments": 5,
+  "explainedFacts": 12,
+  "paragraphSteps": [
+    "Paragraph 1: Establishes the Title IV context and contrasts the sulfur dioxide allowance-and-cap mechanism with the nitrogen oxides mechanism.",
+    "Paragraph 2: Explains the allowance, aggregate cap, and trading; traces Phase I’s 1995 start and unit counts, expansion to 445 units, Phase II’s 2000 start, and the 2010 final cap with its actual-emissions qualification.",
+    "Paragraph 3: States the nitrogen oxides component’s 1996 start, rate-based requirements for certain coal-fired units, and lack of a cap or allowance trading; concludes with the overall distinction."
+  ],
+  "endpointAddsMeaning": false,
+  "redundancy": [
+    "The final sentence repeats the opening claim that the pollutants had different rules and timelines."
+  ],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": false,
+  "omittedFromNarrativeUsedInArticle": []
+}

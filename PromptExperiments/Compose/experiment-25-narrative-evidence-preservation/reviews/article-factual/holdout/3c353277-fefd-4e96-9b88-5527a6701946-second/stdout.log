@@ -1,0 +1,111 @@
+{
+  "claims": [
+    {
+      "excerpt": "De aanpak van het POA-refundteam bij de refunddienst",
+      "label": "F0",
+      "sourceEvidence": "“My team and I built” the POA refunds service.",
+      "synthesisStatement": "“Het POA-refundteam lanceerde de dienst” and described its approach.",
+      "narrativeStatement": "“Het verhaal gaat over de beschreven aanpak van het POA-refundteam.”",
+      "origin": "upstream",
+      "explanation": "The heading accurately identifies the team and service.",
+      "materiality": "low"
+    },
+    {
+      "excerpt": "De digitale refunddienst werd onder tijdsdruk ontwikkeld en ging na twaalf weken publiek.",
+      "label": "F0",
+      "sourceEvidence": "“a digital and assisted digital service”; “We were initially asked to deliver the service in a matter of weeks”; “launched to the public in only 12 weeks.”",
+      "synthesisStatement": "“Het team lanceerde de dienst voor het publiek in twaalf weken.”",
+      "narrativeStatement": "“De refunddienst werd onder tijdsdruk ontwikkeld en ging na twaalf weken publiek.”",
+      "origin": "upstream",
+      "explanation": "The service was digital, developed under a tight deadline, and launched publicly after twelve weeks.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "De aanvankelijk gevraagde termijn van enkele weken werd niet haalbaar geacht als de gebruikersdienst kwalitatief moest blijven.",
+      "label": "F0",
+      "sourceEvidence": "“initially asked to deliver the service in a matter of weeks”; “would not be possible if we wanted to create a quality service for our users.”",
+      "synthesisStatement": "“Het was aanvankelijk gevraagd binnen enkele weken te leveren, maar concludeerde dat dit niet haalbaar was met behoud van een kwalitatieve gebruikersdienst.”",
+      "narrativeStatement": "“de aanvankelijk gevraagde termijn van enkele weken werd niet haalbaar geacht met behoud van een kwalitatieve gebruikersdienst.”",
+      "origin": "upstream",
+      "explanation": "Faithfully preserves both the requested timeframe and the stated quality constraint.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "In de beschreven aanpak stond eerst de ervaring van aanvragers centraal.",
+      "label": "F0",
+      "sourceEvidence": "“My team focused on the users applying for refunds first.”",
+      "synthesisStatement": "“Het team werkte eerst aan de aanvragerservaring.”",
+      "narrativeStatement": "“In de aanpak kwam eerst de ervaring van aanvragers aan bod.”",
+      "origin": "upstream",
+      "explanation": "Accurately states which users the team prioritized first.",
+      "materiality": "medium"
+    },
+    {
+      "excerpt": "Plannen voor caseworkers kwamen later aan bod.",
+      "label": "F0",
+      "sourceEvidence": "“Plans for the caseworker user came later.”",
+      "synthesisStatement": "“plannen voor caseworkers kwamen later.”",
+      "narrativeStatement": "“caseworkerwerk volgde later.”",
+      "origin": "upstream",
+      "explanation": "Faithfully preserves the order of the user groups.",
+      "materiality": "medium"
+    },
+    {
+      "excerpt": "Tijdens de private beta was er in het tweewekelijkse ritme, naast het aannemen en verwerken van aanvragen, vaste tijd voor onderzoek en testen.",
+      "label": "F2",
+      "sourceEvidence": "The source says the team split fortnightly sprints: “testing, researching and accepting applications in the first week,” then “suspending submissions” in the second week for “testing, researching and processing applications.”",
+      "synthesisStatement": "“Tijdens private beta verdeelde het team tweewekelijkse sprints: in de eerste week testte en onderzocht het team en nam het aanvragen aan; in de tweede week werden inzendingen gepauzeerd voor testen, onderzoek en verwerking.”",
+      "narrativeStatement": "“Tijdens private beta was er in het tweewekelijkse ritme vaste tijd voor onderzoek en testen.”",
+      "origin": "propagated",
+      "explanation": "The sentence inherits the narrative's broad summary but adds that accepting and processing applications happened alongside the research and testing. The source instead specifies different weekly activities and a pause in submissions during the second week, so the sprint cadence and sequencing are materially blurred.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "Zo bestond de werkwijze uit een volgorde waarin eerst naar aanvragers werd gekeken, en uit gereserveerde tijd voor onderzoek en testen tijdens de private beta.",
+      "label": "F0",
+      "sourceEvidence": "“focused on the users applying for refunds first”; “splitting our fortnightly sprints in two” to test and research during private beta.",
+      "synthesisStatement": "“een aanpak die eerst aanvragers centraal stelde” and “tijdens private beta vaste tijd reserveerde voor onderzoek en testen.”",
+      "narrativeStatement": "“de volgorde van gebruikersgroepen en de gereserveerde tijd voor onderzoek en testen zichtbaar zijn.”",
+      "origin": "narrative",
+      "explanation": "This summarizes the two described practices without asserting that they caused the launch or results.",
+      "materiality": "medium"
+    },
+    {
+      "excerpt": "Zij beschrijft de aanpak van het POA-refundteam; de afzonderlijke onderdelen worden hier niet als verklaring voor de lanceringstermijn gepresenteerd.",
+      "label": "F0",
+      "sourceEvidence": "The source describes the team's approach and does not state that the individual practices caused the launch timeline.",
+      "synthesisStatement": "“De bron documenteert deze keuzes, maar bewijst niet dat ze de lancering of gerapporteerde resultaten veroorzaakten.”",
+      "narrativeStatement": "“Presenteer dit als de aanpak van dit team, niet als een universeel recept of bewezen verklaring voor de termijn of resultaten.”",
+      "origin": "narrative",
+      "explanation": "The first clause refers to the described approach; the second accurately signals that no causal explanation is being claimed.",
+      "materiality": "low"
+    }
+  ],
+  "preserved": [
+    "launch-timeline",
+    "user-sequence"
+  ],
+  "distorted": [
+    "beta-research-rhythm"
+  ],
+  "omitted": [
+    "assisted-digital-scope",
+    "five-week-results"
+  ],
+  "developments": 3,
+  "explainedFacts": 2,
+  "paragraphSteps": [
+    "Paragraph 1: establishes deadline pressure, the twelve-week public launch, and the quality constraint on the initially requested schedule.",
+    "Paragraph 2: describes the applicant-first sequence, later caseworker planning, and private-beta research and testing rhythm.",
+    "Paragraph 3: summarizes the approach and explicitly avoids presenting its components as causes of the launch timeline."
+  ],
+  "endpointAddsMeaning": false,
+  "redundancy": [
+    "Zo bestond de werkwijze uit een volgorde waarin eerst naar aanvragers werd gekeken, en uit gereserveerde tijd voor onderzoek en testen tijdens de private beta."
+  ],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}
+

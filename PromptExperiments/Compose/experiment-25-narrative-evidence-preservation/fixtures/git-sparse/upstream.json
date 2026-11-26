@@ -1,0 +1,12 @@
+{
+  "selectedIdea": {
+    "title": "What cone-mode sparse checkout includes",
+    "description": "What cone-mode sparse checkout includes",
+    "audience": "Curious general readers",
+    "rationale": "Explain the central distinction through the available evidence.",
+    "evidence": "Use the frozen synthesis."
+  },
+  "synthesis": {
+    "content": "### Evidence\n\nSparse checkout changes which tracked files are present in the working tree.\n\nCone mode selects directories and includes all files recursively under them.\n\nIt also includes files that are siblings of the selected directory or any ancestor directory."
+  }
+}

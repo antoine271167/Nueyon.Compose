@@ -1,0 +1,69 @@
+{
+  "items": [
+    {
+      "id": "return-date",
+      "claim": "OSIRIS-REx returned Bennu material to Earth on September 24, 2023.",
+      "synthesisExcerpt": "OSIRIS-REx returned material from asteroid Bennu to Earth on September 24, 2023.",
+      "sourceEvidence": "Provided operator paraphrase of the NASA source: OSIRIS-REx returned material from Bennu to Earth on September 24, 2023.",
+      "kind": "context",
+      "useful": true,
+      "material": true,
+      "usefulness": "Dates the sample's return.",
+      "qualification": "The synthesis does not specify the amount returned on that date."
+    },
+    {
+      "id": "minimum-required",
+      "claim": "The mission required at least 60 grams of asteroid material.",
+      "synthesisExcerpt": "The mission required at least 60 grams of asteroid material.",
+      "sourceEvidence": "Provided operator paraphrase of the NASA source: the mission required at least 60 grams.",
+      "kind": "requirement",
+      "useful": true,
+      "material": true,
+      "usefulness": "Sets the benchmark for accounting for the sample.",
+      "qualification": "This is the mission requirement, not the final inventory."
+    },
+    {
+      "id": "requirement-exceeded-before-opening",
+      "claim": "The team exceeded the 60-gram requirement before completely opening the sampling head.",
+      "synthesisExcerpt": "The team exceeded that requirement before completely opening the sampling head.",
+      "sourceEvidence": "Provided operator paraphrase of the NASA source: the team exceeded the requirement before completely opening the sampling head.",
+      "kind": "milestone",
+      "useful": true,
+      "material": true,
+      "usefulness": "Shows the requirement was met before the sampling head was fully opened.",
+      "qualification": "The synthesis gives no amount for this earlier milestone."
+    },
+    {
+      "id": "final-pour",
+      "claim": "A final pour added 51.2 grams.",
+      "synthesisExcerpt": "A final pour added 51.2 grams.",
+      "sourceEvidence": "Provided operator paraphrase of the NASA source: a final pour added 51.2 grams.",
+      "kind": "addition",
+      "useful": true,
+      "material": true,
+      "usefulness": "Identifies a specific addition during final accounting.",
+      "qualification": "The synthesis does not state the amount present before this pour."
+    },
+    {
+      "id": "completed-inventory",
+      "claim": "The completed inventory amounted to 121.6 grams.",
+      "synthesisExcerpt": "The completed inventory amounted to 121.6 grams.",
+      "sourceEvidence": "Provided operator paraphrase of the NASA source: the completed inventory amounted to 121.6 grams.",
+      "kind": "outcome",
+      "useful": true,
+      "material": true,
+      "usefulness": "Gives the final accounted-for amount.",
+      "qualification": "The synthesis does not break down the full inventory by component."
+    }
+  ],
+  "uncertainties": [
+    "Evidence is limited to the supplied synthesis and operator paraphrase; no additional source details are asserted.",
+    "The synthesis does not specify the earlier amount, full inventory breakdown, or accounting procedure."
+  ],
+  "endpoint": "The completed inventory amounted to 121.6 grams.",
+  "operatorSourceAudit": {
+    "url": "https://science.nasa.gov/blogs/osiris-rex/2024/02/15/nasa-announces-osiris-rex-bulk-sample-mass/",
+    "locator": "Opening paragraphs and final-pour photo caption",
+    "evidence": "Return to Earth was on September 24, 2023. The 60 g science requirement was reached before the sampling head was fully opened. The final pour contributed 51.2 g and the total sample mass was 121.6 g."
+  }
+}

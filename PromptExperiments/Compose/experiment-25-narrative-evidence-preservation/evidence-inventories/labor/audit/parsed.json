@@ -1,0 +1,67 @@
+{
+  "checks": [
+    {
+      "id": "not-employed-in-reference-week",
+      "supported": true,
+      "useful": true,
+      "reason": "The excerpt verbatim matches both source and Synthesis. The claim accurately states one condition, not the full test.",
+      "coverageGap": "The claim alone omits the shared availability and search-or-layoff criteria; the excerpt includes them."
+    },
+    {
+      "id": "availability-required",
+      "supported": true,
+      "useful": true,
+      "reason": "The excerpt verbatim matches both source and Synthesis, including the temporary-illness exception. The claim accurately states one condition.",
+      "coverageGap": "The claim alone omits the nonemployment and search-or-layoff criteria; the excerpt includes them."
+    },
+    {
+      "id": "active-search-window",
+      "supported": true,
+      "useful": true,
+      "reason": "The excerpt verbatim matches both source and Synthesis. The claim correctly presents active search as one route and preserves its four-week window.",
+      "coverageGap": "The claim omits the shared nonemployment and availability criteria; the excerpt includes them. The temporary-layoff alternative is noted in the qualification."
+    },
+    {
+      "id": "temporary-layoff-recall",
+      "supported": true,
+      "useful": true,
+      "reason": "The excerpt verbatim matches both source and Synthesis, and “or” supports an alternative to active search.",
+      "coverageGap": "The claim omits the shared nonemployment and availability criteria; the excerpt includes them."
+    },
+    {
+      "id": "passive-search-excluded",
+      "supported": true,
+      "useful": true,
+      "reason": "The excerpt verbatim matches both source and Synthesis and directly supports the distinction between passive browsing and active search.",
+      "coverageGap": ""
+    },
+    {
+      "id": "waiting-to-start-job",
+      "supported": true,
+      "useful": true,
+      "reason": "The excerpt verbatim matches both source and Synthesis, including the qualification “generally.” It is a relevant, though secondary, qualification to the search rule.",
+      "coverageGap": ""
+    },
+    {
+      "id": "insurance-irrelevant",
+      "supported": true,
+      "useful": true,
+      "reason": "The excerpt verbatim matches both source and Synthesis. It is a relevant clarification, though secondary to the selected contrast and denominator.",
+      "coverageGap": "The claim concerns classification only, not eligibility for unemployment insurance; its qualification preserves this scope."
+    },
+    {
+      "id": "rate-denominator",
+      "supported": true,
+      "useful": true,
+      "reason": "The excerpt verbatim matches both source and Synthesis and states the denominator directly, central to the selected idea.",
+      "coverageGap": ""
+    },
+    {
+      "id": "outside-labor-force-distinction",
+      "supported": false,
+      "useful": true,
+      "reason": "The excerpt appears in Synthesis, but the source does not state that the populations are separate or define the outside-the-labor-force population. The denominator formula alone is insufficient authoritative evidence for this claim.",
+      "coverageGap": "Authoritative source support for the distinction is missing; the source only gives the unemployed definition and rate denominator."
+    }
+  ]
+}

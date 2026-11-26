@@ -1,0 +1,112 @@
+{
+  "claims": [
+    {
+      "excerpt": "Hernieuwbare bronnen leverden 32% van de elektriciteitsproductie",
+      "label": "F0",
+      "sourceEvidence": "EIA reports 10.0 trillion kWh of renewable electricity production out of 30.7 trillion kWh total, or 32%.",
+      "synthesisStatement": "In 2024, renewables supplied 32% of global electricity production.",
+      "narrativeStatement": "Renewables supplied 32% of electricity production.",
+      "origin": "propagated",
+      "explanation": "The figure and its production denominator are stated accurately.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "terwijl ze 7% uitmaakten van de totale energieproductie en van het totale energieverbruik.",
+      "label": "F0",
+      "sourceEvidence": "Renewables were 42.4 out of 605.6 quadrillion Btu of total energy production, reported as 7%; their share of all energy consumption was also 7%.",
+      "synthesisStatement": "Renewables accounted for 7% of all energy production and 7% of all energy consumption.",
+      "narrativeStatement": "The all-energy production share and all-energy consumption share were each 7%.",
+      "origin": "propagated",
+      "explanation": "Both 7% figures are assigned to the correct all-energy measures; production and consumption remain distinct.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "De lezer moet begrijpen dat deze cijfers verschillende delen van het energiesysteem beschrijven, geen tegenstrijdige antwoorden op precies dezelfde vraag.",
+      "label": "F0",
+      "sourceEvidence": "The evidence reports separate measures for electricity production, all-energy production, and all-energy consumption.",
+      "synthesisStatement": "The answer changes depending on which energy measure is considered.",
+      "narrativeStatement": "The figures describe different parts of the energy system, rather than contradictory answers to the same question.",
+      "origin": "compose",
+      "explanation": "This is a sound interpretation of the different denominators and measures.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "De vraag naar het aandeel hernieuwbare energie heeft geen enkel antwoord zonder te bepalen of het over elektriciteit of over alle energie gaat.",
+      "label": "F0",
+      "sourceEvidence": "The evidence gives different shares for electricity production and all-energy production and consumption.",
+      "synthesisStatement": "The answer varies with what is being measured.",
+      "narrativeStatement": "The measure must be specified as electricity or all energy.",
+      "origin": "compose",
+      "explanation": "The distinction is supported by the reported measures and frames them accurately.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "In 2024 was 32% van de wereldwijde elektriciteitsproductie hernieuwbaar.",
+      "label": "F0",
+      "sourceEvidence": "EIA reports 10.0 trillion kWh renewable out of 30.7 trillion kWh total electricity production in 2024, or 32%.",
+      "synthesisStatement": "Renewables supplied 32% of global electricity production in 2024.",
+      "narrativeStatement": "The 2024 global electricity-production share was 32%.",
+      "origin": "propagated",
+      "explanation": "The year, scope, measure, and percentage match the evidence.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "Voor alle energie samen was het aandeel 7% van de productie en eveneens 7% van het verbruik.",
+      "label": "F0",
+      "sourceEvidence": "Renewables accounted for 7% of all energy production and 7% of all energy consumption.",
+      "synthesisStatement": "The all-energy production and consumption shares were both 7%.",
+      "narrativeStatement": "Both all-energy measures are stated as 7%.",
+      "origin": "propagated",
+      "explanation": "The percentages and their respective measures are faithfully represented.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "De cijfers laten zien dat het gerapporteerde aandeel afhangt van de maatstaf: elektriciteitsproductie is niet hetzelfde als alle energieproductie of -verbruik.",
+      "label": "F0",
+      "sourceEvidence": "The evidence reports separate values for electricity production, all-energy production, and all-energy consumption.",
+      "synthesisStatement": "The reported share depends on the measure used.",
+      "narrativeStatement": "Electricity production differs from all-energy production and consumption.",
+      "origin": "compose",
+      "explanation": "This endpoint accurately synthesizes the distinction among the measures.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "De cijfers zijn voor 2024 en komen uit een datavintage van 1 juli 2026, die kan wijzigen.",
+      "label": "F0",
+      "sourceEvidence": "EIA identifies the data vintage as July 1, 2026 and notes that it is subject to change.",
+      "synthesisStatement": "The figures use a July 1, 2026 data vintage and may change.",
+      "narrativeStatement": "The figures are for 2024 and use a changeable July 1, 2026 data vintage.",
+      "origin": "propagated",
+      "explanation": "The year, vintage date, and change qualification are preserved.",
+      "materiality": "minor"
+    }
+  ],
+  "preserved": [
+    "renewable-electricity-production-share-2024",
+    "renewable-all-energy-production-share-2024",
+    "renewable-all-energy-consumption-share-2024",
+    "data-vintage"
+  ],
+  "distorted": [],
+  "omitted": [
+    "renewable-electricity-consumption-share-unavailable"
+  ],
+  "developments": 3,
+  "explainedFacts": 3,
+  "paragraphSteps": [
+    "Context: identifies that the answer depends on whether the measure is electricity or all energy.",
+    "Development: gives the 2024 electricity-production share and the separate all-energy production and consumption shares.",
+    "Endpoint: draws the supported conclusion that the reported share depends on the measure."
+  ],
+  "endpointAddsMeaning": false,
+  "redundancy": [
+    "De lezer moet begrijpen dat deze cijfers verschillende delen van het energiesysteem beschrijven, geen tegenstrijdige antwoorden op precies dezelfde vraag.",
+    "De vraag naar het aandeel hernieuwbare energie heeft geen enkel antwoord zonder te bepalen of het over elektriciteit of over alle energie gaat.",
+    "De cijfers laten zien dat het gerapporteerde aandeel afhangt van de maatstaf: elektriciteitsproductie is niet hetzelfde als alle energieproductie of -verbruik."
+  ],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}
+

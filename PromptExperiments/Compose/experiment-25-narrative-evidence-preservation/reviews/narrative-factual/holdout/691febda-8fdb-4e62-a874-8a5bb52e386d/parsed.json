@@ -1,0 +1,75 @@
+{
+  "claims": [
+    {
+      "excerpt": "Sparse checkout changes which tracked files are present in the working tree.",
+      "label": "F0",
+      "sourceEvidence": "Sparse checkout changes which tracked files are present in the working tree.",
+      "synthesisStatement": "Sparse checkout changes which tracked files are present in the working tree.",
+      "narrativeStatement": "Sparse checkout changes which tracked files are present in the working tree.",
+      "origin": "upstream",
+      "explanation": "Faithfully preserves the qualification that this concerns tracked files in the working tree.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "In cone mode, selecting a directory includes all files recursively beneath it.",
+      "label": "F0",
+      "sourceEvidence": "Cone mode selects directories and includes all files recursively under them.",
+      "synthesisStatement": "Cone mode selects directories and includes all files recursively under them.",
+      "narrativeStatement": "In cone mode, selecting a directory includes all files recursively beneath it.",
+      "origin": "upstream",
+      "explanation": "Accurately states recursive inclusion for a selected directory and its descendants.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "The story explains what cone-mode sparse checkout includes in the working tree: not only files beneath selected directories, but also certain files alongside those directories and their ancestors.",
+      "label": "F0",
+      "sourceEvidence": "Cone mode takes directories, includes their tracked contents recursively, and includes files immediately alongside the selected directory or its ancestors.",
+      "synthesisStatement": "Cone mode selects directories and includes all files recursively under them. It also includes files that are siblings of the selected directory or any ancestor directory.",
+      "narrativeStatement": "The story explains what cone-mode sparse checkout includes in the working tree: not only files beneath selected directories, but also certain files alongside those directories and their ancestors.",
+      "origin": "upstream",
+      "explanation": "Faithfully summarizes both recursive inclusion and the additional sibling-file scope. “Certain files” does not overstate the rule.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "The included files also extend to siblings of the selected directory and of any ancestor directory, so the scope includes files beyond the selected directory trees.",
+      "label": "F0",
+      "sourceEvidence": "It also includes files that are siblings of the selected directory or any ancestor directory.",
+      "synthesisStatement": "It also includes files that are siblings of the selected directory or any ancestor directory.",
+      "narrativeStatement": "The included files also extend to siblings of the selected directory and of any ancestor directory, so the scope includes files beyond the selected directory trees.",
+      "origin": "upstream",
+      "explanation": "Preserves the selected-directory and ancestor-level qualification; the final clause accurately states the implication of sibling inclusion.",
+      "materiality": "material"
+    }
+  ],
+  "preserved": [
+    "sparse-checkout-working-tree",
+    "cone-recursive-inclusion",
+    "cone-sibling-inclusion"
+  ],
+  "distorted": [],
+  "omitted": [],
+  "developments": 2,
+  "explainedFacts": 3,
+  "paragraphSteps": [
+    {
+      "paragraph": "Sparse checkout changes which tracked files are present in the working tree.",
+      "step": "Provides context for what sparse checkout changes."
+    },
+    {
+      "paragraph": "In cone mode, selecting a directory includes all files recursively beneath it.",
+      "step": "Explains recursive inclusion under selected directories."
+    },
+    {
+      "paragraph": "The included files also extend to siblings of the selected directory and of any ancestor directory, so the scope includes files beyond the selected directory trees.",
+      "step": "Adds the sibling-file qualification to the recursive rule."
+    }
+  ],
+  "endpointAddsMeaning": true,
+  "redundancy": [
+    "The sibling-file qualification is stated in both the Selected Story summary and the Endpoint."
+  ],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": false,
+  "omittedFromNarrativeUsedInArticle": []
+}

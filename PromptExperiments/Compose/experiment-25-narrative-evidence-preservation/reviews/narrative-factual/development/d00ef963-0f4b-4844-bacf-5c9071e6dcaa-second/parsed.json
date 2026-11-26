@@ -1,0 +1,124 @@
+{
+  "claims": [
+    {
+      "excerpt": "GRACE Follow-On uses the changing distance between two satellites to infer shifts in mass on Earth.",
+      "label": "F0",
+      "sourceEvidence": "The changing inter-satellite distance is a raw measurement used to infer shifts in mass.",
+      "synthesisStatement": "The changing distance is an indirect measurement used to infer mass shifts.",
+      "narrativeStatement": "The sentence accurately describes the measurement and inference.",
+      "origin": "propagated",
+      "explanation": "Faithfully restates the indirect measurement and inference; “on Earth” fits the mission’s stated water applications.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "The pair’s spacing changes as gravity acts on them",
+      "label": "F0",
+      "sourceEvidence": "As the pair approaches a larger mass concentration, stronger gravity acts on the leading satellite first, initially pulling it farther from the trailing one.",
+      "synthesisStatement": "Gravity’s effect on the satellites changes their separation.",
+      "narrativeStatement": "The clause gives a correct, general description of the cause.",
+      "origin": "propagated",
+      "explanation": "It omits the detailed sequence here, which the development bullet supplies; it does not contradict that sequence.",
+      "materiality": "medium"
+    },
+    {
+      "excerpt": "and those measurements help scientists investigate changes in water stored on land and added to the oceans.",
+      "label": "F0",
+      "sourceEvidence": "The mission follows changes involving groundwater, lakes and rivers, soil moisture, glaciers, ice sheets and changes in sea level attributable to water added to the oceans.",
+      "synthesisStatement": "The measurements help investigate water changes on land and sea-level changes attributable to water added to the oceans.",
+      "narrativeStatement": "The sentence summarizes the mission’s water applications.",
+      "origin": "propagated",
+      "explanation": "The following endpoint specifies the water categories and retains the ocean-water qualification.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "GRACE Follow-On consists of two satellites that follow one another about 137 miles (220 kilometers) apart.",
+      "label": "F0",
+      "sourceEvidence": "Twin satellites follow each other about 137 miles or 220 kilometers apart.",
+      "synthesisStatement": "The twin satellites follow one another about 137 miles or 220 kilometers apart.",
+      "narrativeStatement": "The context bullet gives the satellite count and separation accurately.",
+      "origin": "propagated",
+      "explanation": "Both the count and distance match the evidence.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "Their separation is the measurement at the center of the story.",
+      "label": "F0",
+      "sourceEvidence": "The changing inter-satellite distance is a raw measurement used to infer shifts in mass.",
+      "synthesisStatement": "The changing distance is the measurement the explanation centers on.",
+      "narrativeStatement": "The sentence identifies the central measurement.",
+      "origin": "compose",
+      "explanation": "This is a supported editorial characterization, not an additional mission specification.",
+      "materiality": "low"
+    },
+    {
+      "excerpt": "As the pair approaches a larger mass concentration, stronger gravity acts on the leading satellite first, initially pulling it farther from the trailing satellite.",
+      "label": "F0",
+      "sourceEvidence": "As the pair approaches a larger mass concentration, stronger gravity acts on the leading satellite first, initially pulling it farther from the trailing one.",
+      "synthesisStatement": "The leading satellite experiences the stronger gravitational effect first and is initially pulled farther from the trailing satellite.",
+      "narrativeStatement": "The development bullet accurately preserves the sequence and direction.",
+      "origin": "propagated",
+      "explanation": "It preserves the larger-mass context, leading-satellite-first sequence, and initial increase in separation.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "The changing distance is a raw measurement used to infer shifts in mass.",
+      "label": "F0",
+      "sourceEvidence": "The changing inter-satellite distance is a raw measurement used to infer shifts in mass.",
+      "synthesisStatement": "The changing inter-satellite distance is a raw measurement used to infer shifts in mass.",
+      "narrativeStatement": "The sentence accurately states the indirect inference.",
+      "origin": "propagated",
+      "explanation": "It does not imply direct imaging of groundwater or another direct observation.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "Those inferred shifts help scientists investigate changes involving groundwater, lakes and rivers, soil moisture, glaciers, ice sheets, and sea level attributable to water added to the oceans.",
+      "label": "F0",
+      "sourceEvidence": "The mission follows changes involving groundwater, lakes and rivers, soil moisture, glaciers, ice sheets and changes in sea level attributable to water added to the oceans.",
+      "synthesisStatement": "The mission follows these water-storage changes and sea-level changes attributable to water added to the oceans.",
+      "narrativeStatement": "The endpoint lists the water applications and preserves the sea-level qualification.",
+      "origin": "propagated",
+      "explanation": "The categories and the limit on the sea-level claim match the evidence.",
+      "materiality": "high"
+    }
+  ],
+  "preserved": [
+    "baseline",
+    "gravity-sequence",
+    "measurement-inference",
+    "water-changes"
+  ],
+  "distorted": [],
+  "omitted": [],
+  "developments": 4,
+  "explainedFacts": 4,
+  "paragraphSteps": [
+    {
+      "step": "Context",
+      "description": "Establishes the two-satellite separation as the measurement setup."
+    },
+    {
+      "step": "Mechanism",
+      "description": "Explains that stronger gravity affects the leading satellite first and initially increases the gap."
+    },
+    {
+      "step": "Inference",
+      "description": "Connects the changing gap to inferred shifts in mass."
+    },
+    {
+      "step": "Application",
+      "description": "Ends with water-storage categories and qualified sea-level changes."
+    }
+  ],
+  "endpointAddsMeaning": true,
+  "redundancy": [
+    "The selected-story sentence about using changing distance to infer mass overlaps with “The changing distance is a raw measurement used to infer shifts in mass.”"
+  ],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": [
+    "baseline",
+    "gravity-sequence",
+    "water-changes"
+  ]
+}

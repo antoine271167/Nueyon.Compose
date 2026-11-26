@@ -1,0 +1,76 @@
+{
+  "claims": [
+    {
+      "excerpt": "NIST released AI Risk Management Framework (AI RMF) 1.0 in January 2023.",
+      "label": "F0",
+      "sourceEvidence": "NIST released AI RMF 1.0 in January 2023.",
+      "synthesisStatement": "NIST released AI RMF 1.0 in January 2023.",
+      "narrativeStatement": "NIST released AI RMF 1.0 in January 2023.",
+      "origin": "upstream",
+      "explanation": "Faithfully preserves the framework, release date, and attribution; expanding the framework name does not change the claim.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "In July 2024, it published AI 600-1, a companion profile for generative AI with cross-sector scope.",
+      "label": "F0",
+      "sourceEvidence": "In July 2024 NIST published AI 600-1, a companion profile for generative AI with cross-sector scope.",
+      "synthesisStatement": "In July 2024 NIST published AI 600-1, a companion profile for generative AI with cross-sector scope.",
+      "narrativeStatement": "In July 2024 NIST published AI 600-1, a companion profile for generative AI with cross-sector scope.",
+      "origin": "upstream",
+      "explanation": "The pronoun refers to NIST, and the date, document, companion status, subject, and scope are preserved.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "The profile’s relation to the order concerns the development of the publication.",
+      "label": "F1",
+      "sourceEvidence": "The publication was prepared pursuant to Executive Order 14110. Its relation to the order concerns development of the publication.",
+      "synthesisStatement": "Its relation to the order concerns development of the publication.",
+      "narrativeStatement": "Its relation to the order concerns development of the publication.",
+      "origin": "upstream",
+      "explanation": "The development-related qualification is preserved, but the body never identifies the order as Executive Order 14110, leaving its referent unclear.",
+      "materiality": "low"
+    },
+    {
+      "excerpt": "Its abstract does not describe mandatory private-sector compliance.",
+      "label": "F0",
+      "sourceEvidence": "The abstract does not describe mandatory private-sector compliance.",
+      "synthesisStatement": "The abstract does not describe mandatory private-sector compliance.",
+      "narrativeStatement": "The abstract does not describe mandatory private-sector compliance.",
+      "origin": "upstream",
+      "explanation": "Preserves the source’s limited statement about what the abstract describes; it does not assert that no such compliance obligation exists.",
+      "materiality": "high"
+    }
+  ],
+  "preserved": [
+    "nist-ai-rmf-release",
+    "ai-600-1-release"
+  ],
+  "distorted": [
+    "order-relation"
+  ],
+  "omitted": [],
+  "developments": 2,
+  "explainedFacts": 1,
+  "paragraphSteps": [
+    {
+      "paragraph": 1,
+      "steps": [
+        "AI RMF 1.0 release in January 2023",
+        "AI 600-1 publication in July 2024"
+      ]
+    },
+    {
+      "paragraph": 2,
+      "steps": [
+        "The profile’s relation to the order concerns publication development",
+        "The abstract does not describe mandatory private-sector compliance"
+      ]
+    }
+  ],
+  "endpointAddsMeaning": false,
+  "redundancy": [],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}

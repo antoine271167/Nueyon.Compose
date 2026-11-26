@@ -1,0 +1,89 @@
+{
+  "claims": [
+    {
+      "exactBodyExcerpt": "De POA-refunddienst werd onder tijdsdruk ontwikkeld en ging na twaalf weken publiek.",
+      "label": "F0",
+      "sourceEvidence": "“launched to the public in only 12 weeks”; “We were initially asked to deliver the service in a matter of weeks”",
+      "synthesisStatement": "Het team lanceerde de dienst na twaalf weken, na een aanvankelijk zeer krappe gevraagde termijn.",
+      "narrativeStatement": "De narrative vermeldt tijdsdruk en dat de dienst na twaalf weken publiek ging.",
+      "origin": "propagated",
+      "explanation": "Dit geeft de gerapporteerde termijn en context getrouw weer; de bron specificeert geen startpunt voor de twaalf weken.",
+      "materiality": "high"
+    },
+    {
+      "exactBodyExcerpt": "Een aanvankelijk gevraagde levertijd van enkele weken werd niet haalbaar geacht als de gebruikersdienst kwalitatief moest blijven.",
+      "label": "F0",
+      "sourceEvidence": "“initially asked to deliver the service in a matter of weeks” en “would not be possible if we wanted to create a quality service for our users.”",
+      "synthesisStatement": "Het team concludeerde dat levering binnen enkele weken niet haalbaar was met behoud van een kwalitatieve gebruikersdienst.",
+      "narrativeStatement": "De narrative noemt dezelfde afweging tussen de gevraagde termijn en kwaliteit.",
+      "origin": "propagated",
+      "explanation": "Getrouwe parafrase van de gerapporteerde afweging.",
+      "materiality": "high"
+    },
+    {
+      "exactBodyExcerpt": "De aanpak begon bij de ervaring van aanvragers. Plannen voor caseworkers kwamen later aan bod.",
+      "label": "F0",
+      "sourceEvidence": "“My team focused on the users applying for refunds first”; “Plans for the caseworker user came later.”",
+      "synthesisStatement": "Het team richtte zich eerst op aanvragers en werkte plannen voor caseworkers later uit.",
+      "narrativeStatement": "De narrative beschrijft deze volgorde en vermeldt ook dat het team aannames wilde vermijden.",
+      "origin": "propagated",
+      "explanation": "De volgorde klopt. De body laat de bronvermelde reden voor die keuze weg, maar spreekt die niet tegen.",
+      "materiality": "high"
+    },
+    {
+      "exactBodyExcerpt": "Tijdens de private beta bood een tweewekelijks ritme vaste tijd voor onderzoek en testen, naast het aannemen en verwerken van aanvragen.",
+      "label": "F2",
+      "sourceEvidence": "“splitting our fortnightly sprints in two”: in week één “testing, researching and accepting applications”; in week twee “suspending submissions” voor “testing, researching and processing applications.”",
+      "synthesisStatement": "Tijdens private beta bestond elke sprint uit twee verschillende weken: eerst testen, onderzoek en aanvragen aannemen; daarna inzendingen pauzeren voor testen, onderzoek en aanvragen verwerken.",
+      "narrativeStatement": "De narrative geeft deze tweedeling en de opschorting van inzendingen in de tweede week expliciet weer.",
+      "origin": "propagated",
+      "explanation": "De body vat de planning samen als onderzoek en testen naast zowel aannemen als verwerken. Daardoor verdwijnt de wezenlijke weekindeling, waaronder dat inzendingen in de tweede week werden gepauzeerd.",
+      "materiality": "high"
+    },
+    {
+      "exactBodyExcerpt": "Zo zag de beschreven werkwijze eruit: eerst aandacht voor aanvragers, later voor caseworkers, met tijdens de private beta gereserveerde tijd voor onderzoek en testen.",
+      "label": "F1",
+      "sourceEvidence": "“focused on the users applying for refunds first”; “Plans for the caseworker user came later”; de beschreven tweewekelijkse sprintindeling reserveerde tijd voor onderzoek en testen.",
+      "synthesisStatement": "De aanpak stelde aanvragers eerst centraal en voegde caseworkerwerk later toe; tijdens private beta was onderzoek en testen ingepland.",
+      "narrativeStatement": "De narrative behandelt dezelfde volgorde en onderzoekstijd, met de sprintindeling nader uitgewerkt.",
+      "origin": "compose",
+      "explanation": "Dit is een juiste recap, maar herhaalt eerdere informatie en laat opnieuw de concrete tweedeling van de sprints weg.",
+      "materiality": "medium"
+    }
+  ],
+  "preserved": [
+    "launch-timeline",
+    "user-sequence"
+  ],
+  "distorted": [
+    "beta-research-rhythm"
+  ],
+  "omitted": [
+    "assisted-digital-scope",
+    "five-week-results"
+  ],
+  "developments": 3,
+  "explainedFacts": 4,
+  "paragraphSteps": [
+    {
+      "paragraph": 1,
+      "step": "Context en termijn: tijdsdruk, publieke lancering na twaalf weken en de onhaalbaar geachte termijn van enkele weken bij behoud van kwaliteit."
+    },
+    {
+      "paragraph": 2,
+      "step": "Aanpak: eerst aanvragers, later caseworkers; daarna de samengevatte onderzoeks- en testplanning tijdens private beta."
+    },
+    {
+      "paragraph": 3,
+      "step": "Recap van de aanpak uit alinea 2; geen nieuwe stap."
+    }
+  ],
+  "endpointAddsMeaning": false,
+  "redundancy": [
+    "De derde alinea herhaalt de volgorde aanvragers-eerst/caseworkers-later en de gereserveerde onderzoeks- en testtijd uit de tweede alinea."
+  ],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}

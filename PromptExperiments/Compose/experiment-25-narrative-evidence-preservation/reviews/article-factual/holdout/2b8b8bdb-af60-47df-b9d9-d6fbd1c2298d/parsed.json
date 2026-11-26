@@ -1,0 +1,93 @@
+{
+  "claims": [
+    {
+      "excerpt": "Een hot spot is een locatie in het bewegingsgebied van een luchthaven waar eerder een botsing of runway incursion heeft plaatsgevonden, of waar daarvoor een risico bestaat.",
+      "label": "F0",
+      "sourceEvidence": "A hot spot is an airport movement-area location with a history or potential risk of collision or runway incursion.",
+      "synthesisStatement": "A hot spot is an airport movement-area location with a history or potential risk of collision or runway incursion.",
+      "narrativeStatement": "A hot spot is an airport movement-area location with a history or potential risk of collision or runway incursion.",
+      "origin": "upstream",
+      "explanation": "Behoudt zowel de locatie in het bewegingsgebied als de twee mogelijkheden: voorgeschiedenis van een incident of een risico daarop.",
+      "materiality": "Hoog; dit definieert het onderwerp."
+    },
+    {
+      "excerpt": "Vanaf 19 mei 2022 standaardiseerde de FAA twee betekenissen voor hot spots met drie vormen.",
+      "label": "F0",
+      "sourceEvidence": "The FAA standardized two meanings with three shapes beginning May 19, 2022; the verification specifies this was on the May 19, 2022 chart cycle.",
+      "synthesisStatement": "The FAA standardized two meanings with three shapes beginning May 19, 2022.",
+      "narrativeStatement": "The FAA standardized two meanings with three shapes beginning May 19, 2022.",
+      "origin": "upstream",
+      "explanation": "Datum en aantallen kloppen; “vanaf” geeft de ingangsdatum weer zonder de nadere context van de chart cycle.",
+      "materiality": "Hoog; dit geeft de standaardisering en haar tijdstip."
+    },
+    {
+      "excerpt": "Een cirkel of ellips geeft een hot spot voor grondbewegingen aan;",
+      "label": "F0",
+      "sourceEvidence": "A circle or ellipse marks a ground movement hot spot.",
+      "synthesisStatement": "A circle or ellipse marks a ground movement hot spot.",
+      "narrativeStatement": "A circle or ellipse marks a ground movement hot spot;",
+      "origin": "upstream",
+      "explanation": "Geeft beide vormen correct weer als aanduiding voor een ground-movement-hotspot.",
+      "materiality": "Hoog; dit is een van de twee symboolbetekenissen."
+    },
+    {
+      "excerpt": "een cilinder staat voor een hot spot met risico op gebruik van de verkeerde ondergrond.",
+      "label": "F0",
+      "sourceEvidence": "A cylinder represents a wrong surface hot spot.",
+      "synthesisStatement": "A cylinder marks a wrong surface hot spot.",
+      "narrativeStatement": "a cylinder marks a wrong surface hot spot.",
+      "origin": "upstream",
+      "explanation": "De cilinder wordt aan de wrong-surface-categorie gekoppeld; de formulering licht die categorie toe als risico op gebruik van de verkeerde ondergrond.",
+      "materiality": "Hoog; dit is de tweede symboolbetekenis."
+    },
+    {
+      "excerpt": "Het doel van de standaardisering is verwarring over de betekenis of weergave van hot spots te voorkomen.",
+      "label": "F0",
+      "sourceEvidence": "The stated purpose is to prevent confusion about the meaning or depiction of hot spots.",
+      "synthesisStatement": "The stated purpose is to prevent confusion about the meaning or depiction of hot spots.",
+      "narrativeStatement": "The stated purpose is to prevent confusion about the meaning or depiction of hot spots.",
+      "origin": "upstream",
+      "explanation": "Geeft het genoemde doel weer en presenteert het niet als een gegarandeerd resultaat.",
+      "materiality": "Hoog; dit verklaart het nut van de standaardisering."
+    }
+  ],
+  "preserved": [
+    "hot-spot-definition",
+    "standardization-date",
+    "ground-movement-symbol",
+    "wrong-surface-symbol",
+    "standardization-purpose"
+  ],
+  "distorted": [],
+  "omitted": [],
+  "developments": 3,
+  "explainedFacts": 5,
+  "paragraphSteps": [
+    {
+      "paragraph": 1,
+      "steps": [
+        "Definitie en incidentrisico van een hot spot."
+      ]
+    },
+    {
+      "paragraph": 2,
+      "steps": [
+        "Standaardisering door de FAA, met datum, twee betekenissen en drie vormen."
+      ]
+    },
+    {
+      "paragraph": 3,
+      "steps": [
+        "Betekenis van cirkel en ellips voor grondbewegingen.",
+        "Betekenis van de cilinder voor wrong surface.",
+        "Doel van de standaardisering."
+      ]
+    }
+  ],
+  "endpointAddsMeaning": true,
+  "redundancy": [],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}

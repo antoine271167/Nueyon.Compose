@@ -1,0 +1,64 @@
+{
+  "items": [
+    {
+      "id": "nist-ai-rmf-release",
+      "claim": "NIST released AI RMF 1.0 in January 2023.",
+      "synthesisExcerpt": "NIST released AI RMF 1.0 in January 2023.",
+      "sourceEvidence": "NIST released AI RMF 1.0 in January 2023.",
+      "kind": "timeline",
+      "useful": true,
+      "material": true,
+      "usefulness": "Establishes the broad framework's place in the timeline.",
+      "qualification": ""
+    },
+    {
+      "id": "ai-rmf-purpose",
+      "claim": "AI RMF 1.0 is voluntary and aims to help organizations bring trustworthiness considerations into AI activities.",
+      "synthesisExcerpt": "It was designed for voluntary use and aims to help organizations bring trustworthiness considerations into the design, development, use and evaluation of AI.",
+      "sourceEvidence": "It was designed for voluntary use and aims to help organizations bring trustworthiness considerations into the design, development, use and evaluation of AI.",
+      "kind": "purpose",
+      "useful": true,
+      "material": true,
+      "usefulness": "Describes the framework's intended use and scope of guidance.",
+      "qualification": "The stated aim is not a compliance requirement."
+    },
+    {
+      "id": "ai-600-1-release",
+      "claim": "NIST published AI 600-1 in July 2024 as a cross-sector companion profile for generative AI.",
+      "synthesisExcerpt": "In July 2024 NIST published AI 600-1, a companion profile for generative AI with cross-sector scope.",
+      "sourceEvidence": "In July 2024 NIST published AI 600-1, a companion profile for generative AI with cross-sector scope.",
+      "kind": "timeline",
+      "useful": true,
+      "material": true,
+      "usefulness": "Identifies the later, more focused document and its scope.",
+      "qualification": "The source calls it a companion profile; it does not establish that it replaces AI RMF 1.0."
+    },
+    {
+      "id": "executive-order-attribution",
+      "claim": "AI 600-1 was prepared pursuant to Executive Order 14110.",
+      "synthesisExcerpt": "The publication was prepared pursuant to Executive Order 14110.",
+      "sourceEvidence": "The publication was prepared pursuant to Executive Order 14110.",
+      "kind": "publication-context",
+      "useful": true,
+      "material": true,
+      "usefulness": "Provides context for the profile's development.",
+      "qualification": "This attribution does not establish a private-sector compliance mandate."
+    },
+    {
+      "id": "order-relation",
+      "claim": "The publication's relation to Executive Order 14110 concerns its development, and the abstract does not describe mandatory private-sector compliance.",
+      "synthesisExcerpt": "Its relation to the order concerns development of the publication; the abstract does not describe mandatory private-sector compliance.",
+      "sourceEvidence": "Its relation to the order concerns development of the publication; the abstract does not describe mandatory private-sector compliance.",
+      "kind": "limitation",
+      "useful": true,
+      "material": true,
+      "usefulness": "Keeps the Executive Order attribution from being overstated.",
+      "qualification": "Limited to what this abstract describes."
+    }
+  ],
+  "endpoint": "The evidence supports a timeline from the broad AI RMF to a generative-AI companion profile, with their relationship framed as complementary guidance.",
+  "limitations": [
+    "The synthesis does not establish that AI 600-1 replaces AI RMF 1.0.",
+    "The Executive Order attribution does not establish mandatory private-sector compliance."
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "inputHash": "2d4a3f768e80aca185d5c9996b6c05b095ed398ee7ac2666154ea010936ae160",
+  "outputHash": "44727246b41de7f018252b757e253b75c05e6432c0a74f0b9b437a0d68205252",
+  "angle": "What two satellites infer from a changing gap",
+  "items": [
+    {
+      "id": "baseline",
+      "claim": "The twin satellites follow one another about 220 kilometers apart.",
+      "synthesisExcerpt": "Twin satellites follow each other about 137 miles or 220 kilometers apart.",
+      "sourceEvidence": "Twin satellites follow each other about 137 miles or 220 kilometers apart.",
+      "kind": "measurement setup",
+      "useful": true,
+      "material": true,
+      "usefulness": "Establishes the changing gap that anchors the explanation.",
+      "qualification": "This is separation, not altitude."
+    },
+    {
+      "id": "gravity-sequence",
+      "claim": "A larger mass concentration first strengthens gravity’s pull on the leading satellite.",
+      "synthesisExcerpt": "As the pair approaches a larger mass concentration, stronger gravity acts on the leading satellite first, initially pulling it farther from the trailing one.",
+      "sourceEvidence": "As the pair approaches a larger mass concentration, stronger gravity acts on the leading satellite first, initially pulling it farther from the trailing one.",
+      "kind": "mechanism",
+      "useful": true,
+      "material": true,
+      "usefulness": "Explains why the satellites’ spacing changes.",
+      "qualification": "The gravitational effect comes before the spacing change."
+    },
+    {
+      "id": "measurement-inference",
+      "claim": "Changing inter-satellite distance is measured to infer shifts in mass.",
+      "synthesisExcerpt": "The changing inter-satellite distance is a raw measurement used to infer shifts in mass.",
+      "sourceEvidence": "The changing inter-satellite distance is a raw measurement used to infer shifts in mass.",
+      "kind": "inference",
+      "useful": true,
+      "material": true,
+      "usefulness": "Clarifies what the measurement tells scientists.",
+      "qualification": "The measurement is indirect, not a direct view of groundwater."
+    },
+    {
+      "id": "water-changes",
+      "claim": "The mission follows changes in several forms of water storage and water added to the oceans.",
+      "synthesisExcerpt": "The mission follows changes involving groundwater, lakes and rivers, soil moisture, glaciers, ice sheets and changes in sea level attributable to water added to the oceans.",
+      "sourceEvidence": "The mission follows changes involving groundwater, lakes and rivers, soil moisture, glaciers, ice sheets and changes in sea level attributable to water added to the oceans.",
+      "kind": "application",
+      "useful": true,
+      "material": true,
+      "usefulness": "Provides the endpoint: the water movements these measurements help investigate.",
+      "qualification": "The sea-level claim is limited to water added to the oceans."
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "claims": [
+    {
+      "itemId": "hot-spot-definition",
+      "exactBodyExcerpt": "A hot spot is an airport movement-area location with a history or potential risk of collision or runway incursion.",
+      "label": "F0",
+      "sourceEvidence": "A hot spot is an airport movement-area location with a history or potential risk of collision or runway incursion.",
+      "synthesisStatement": "A hot spot is an airport movement-area location with a history or potential risk of collision or runway incursion.",
+      "narrativeStatement": "A hot spot is an airport movement-area location with a history or potential risk of collision or runway incursion.",
+      "origin": "propagated",
+      "explanation": "Faithfully preserves both the movement-area scope and the alternative of a history or potential risk.",
+      "materiality": "material"
+    },
+    {
+      "itemId": "standardization-date",
+      "exactBodyExcerpt": "The FAA standardized two meanings with three shapes beginning May 19, 2022.",
+      "label": "F0",
+      "sourceEvidence": "The FAA standardized two meanings with three shapes beginning May 19, 2022; the official-source verification specifies the May 19, 2022 chart cycle.",
+      "synthesisStatement": "The FAA standardized two meanings with three shapes beginning May 19, 2022.",
+      "narrativeStatement": "The FAA standardized two meanings with three shapes beginning May 19, 2022.",
+      "origin": "propagated",
+      "explanation": "Preserves the two-meaning, three-shape distinction and date; “beginning” is consistent with the stated chart-cycle timing.",
+      "materiality": "material"
+    },
+    {
+      "itemId": "ground-movement-symbol",
+      "exactBodyExcerpt": "A circle or ellipse marks a ground movement hot spot;",
+      "label": "F0",
+      "sourceEvidence": "A circle or ellipse marks a ground movement hot spot; the official-source verification identifies both as ground-movement indicators.",
+      "synthesisStatement": "A circle or ellipse marks a ground movement hot spot.",
+      "narrativeStatement": "A circle or ellipse marks a ground movement hot spot;",
+      "origin": "propagated",
+      "explanation": "Correctly includes both circle and ellipse and their ground-movement meaning.",
+      "materiality": "material"
+    },
+    {
+      "itemId": "wrong-surface-symbol",
+      "exactBodyExcerpt": "a cylinder marks a wrong surface hot spot.",
+      "label": "F0",
+      "sourceEvidence": "A cylinder marks a wrong surface hot spot.",
+      "synthesisStatement": "A cylinder marks a wrong surface hot spot.",
+      "narrativeStatement": "a cylinder marks a wrong surface hot spot.",
+      "origin": "propagated",
+      "explanation": "Correctly matches the cylinder to a wrong-surface hot spot.",
+      "materiality": "material"
+    },
+    {
+      "itemId": "standardization-purpose",
+      "exactBodyExcerpt": "The stated purpose is to prevent confusion about the meaning or depiction of hot spots.",
+      "label": "F0",
+      "sourceEvidence": "The stated purpose is to prevent confusion about the meaning or depiction of hot spots.",
+      "synthesisStatement": "The stated purpose is to prevent confusion about the meaning or depiction of hot spots.",
+      "narrativeStatement": "The stated purpose is to prevent confusion about the meaning or depiction of hot spots.",
+      "origin": "propagated",
+      "explanation": "Reports the intended purpose without claiming that confusion is fully eliminated.",
+      "materiality": "material"
+    }
+  ],
+  "preserved": [
+    "hot-spot-definition",
+    "standardization-date",
+    "ground-movement-symbol",
+    "wrong-surface-symbol",
+    "standardization-purpose"
+  ],
+  "distorted": [],
+  "omitted": [],
+  "developments": 3,
+  "explainedFacts": 5,
+  "paragraphSteps": [
+    {
+      "step": "Context: defines a hot spot and its risk scope.",
+      "inventoryIds": [
+        "hot-spot-definition"
+      ]
+    },
+    {
+      "step": "Development: gives the standardization date and the two-meaning, three-shape distinction.",
+      "inventoryIds": [
+        "standardization-date"
+      ]
+    },
+    {
+      "step": "Development: maps a circle or ellipse to a ground-movement hot spot.",
+      "inventoryIds": [
+        "ground-movement-symbol"
+      ]
+    },
+    {
+      "step": "Development: maps a cylinder to a wrong-surface hot spot.",
+      "inventoryIds": [
+        "wrong-surface-symbol"
+      ]
+    },
+    {
+      "step": "Endpoint: states the purpose of preventing confusion.",
+      "inventoryIds": [
+        "standardization-purpose"
+      ]
+    }
+  ],
+  "endpointAddsMeaning": false,
+  "redundancy": [],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}

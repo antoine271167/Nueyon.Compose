@@ -1,0 +1,114 @@
+{
+  "claims": [
+    {
+      "excerpt": "## How GRACE Follow-On Tracks Changes in Earth’s Mass",
+      "label": "F0",
+      "sourceEvidence": "The changing inter-satellite distance is a raw measurement used to infer shifts in mass.",
+      "synthesisStatement": "Begin with two spacecraft detecting distance changes and end with the kinds of water movement those measurements help scientists investigate.",
+      "narrativeStatement": "GRACE Follow-On uses the changing distance between two satellites to infer shifts in mass on Earth.",
+      "origin": "compose",
+      "explanation": "The title accurately summarizes the mission’s use of changing satellite distance to infer mass shifts.",
+      "materiality": "low"
+    },
+    {
+      "excerpt": "GRACE Follow-On consists of two satellites that follow one another about 137 miles (220 kilometers) apart.",
+      "label": "F0",
+      "sourceEvidence": "Twin satellites follow each other about 137 miles or 220 kilometers apart.",
+      "synthesisStatement": "Twin satellites follow each other about 137 miles or 220 kilometers apart.",
+      "narrativeStatement": "GRACE Follow-On consists of two satellites that follow one another about 137 miles (220 kilometers) apart.",
+      "origin": "propagated",
+      "explanation": "The satellite count and separation match the evidence; the distance is correctly presented as separation, not altitude.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "The distance between them is the measurement at the center of the mission’s study of shifting mass on Earth.",
+      "label": "F0",
+      "sourceEvidence": "The changing inter-satellite distance is a raw measurement used to infer shifts in mass.",
+      "synthesisStatement": "Begin with two spacecraft detecting distance changes and end with the kinds of water movement those measurements help scientists investigate.",
+      "narrativeStatement": "Their separation is the measurement at the center of the story.",
+      "origin": "propagated",
+      "explanation": "This accurately frames satellite separation as central to the mass-shift investigation without implying it is a direct measurement of mass.",
+      "materiality": "medium"
+    },
+    {
+      "excerpt": "As the satellites approach a larger concentration of mass, its stronger gravity acts on the leading satellite first, initially pulling it farther from the trailing satellite.",
+      "label": "F0",
+      "sourceEvidence": "As the pair approaches a larger mass concentration, stronger gravity acts on the leading satellite first, initially pulling it farther from the trailing one.",
+      "synthesisStatement": "As the pair approaches a larger mass concentration, stronger gravity acts on the leading satellite first, initially pulling it farther from the trailing one.",
+      "narrativeStatement": "As the pair approaches a larger mass concentration, stronger gravity acts on the leading satellite first, initially pulling it farther from the trailing satellite.",
+      "origin": "propagated",
+      "explanation": "The sequence and direction of the gravitational effect are preserved: the leading satellite is affected first, before the spacing changes.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "The changing separation is a raw measurement that scientists use to infer shifts in mass on Earth.",
+      "label": "F0",
+      "sourceEvidence": "The changing inter-satellite distance is a raw measurement used to infer shifts in mass.",
+      "synthesisStatement": "The changing inter-satellite distance is a raw measurement used to infer shifts in mass.",
+      "narrativeStatement": "The changing distance is a raw measurement used to infer shifts in mass.",
+      "origin": "propagated",
+      "explanation": "The text correctly characterizes separation as a raw, indirect measurement used to infer mass shifts.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "Those inferred shifts help scientists investigate changes in groundwater, lakes and rivers, soil moisture, glaciers and ice sheets.",
+      "label": "F0",
+      "sourceEvidence": "The mission follows changes involving groundwater, lakes and rivers, soil moisture, glaciers, ice sheets",
+      "synthesisStatement": "The mission follows changes involving groundwater, lakes and rivers, soil moisture, glaciers, ice sheets",
+      "narrativeStatement": "Those measurements help scientists investigate changes in water stored on land",
+      "origin": "propagated",
+      "explanation": "The examples are supported and the sentence presents them as applications of inferred shifts, not as direct imaging.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "The measurements also help investigate sea-level changes attributable to water added to the oceans.",
+      "label": "F0",
+      "sourceEvidence": "changes in sea level attributable to water added to the oceans.",
+      "synthesisStatement": "changes in sea level attributable to water added to the oceans.",
+      "narrativeStatement": "added to the oceans",
+      "origin": "propagated",
+      "explanation": "The sea-level statement retains the material qualification that it concerns water added to the oceans.",
+      "materiality": "high"
+    }
+  ],
+  "preserved": [
+    "baseline",
+    "gravity-sequence",
+    "measurement-inference",
+    "water-changes"
+  ],
+  "distorted": [],
+  "omitted": [],
+  "developments": 3,
+  "explainedFacts": 4,
+  "paragraphSteps": [
+    {
+      "paragraph": 1,
+      "steps": [
+        "Establishes the two-satellite separation",
+        "Frames separation as central to the mass-shift measurement"
+      ]
+    },
+    {
+      "paragraph": 2,
+      "steps": [
+        "Explains the order and direction of the gravity effect",
+        "Connects the changing separation to indirect mass inference"
+      ]
+    },
+    {
+      "paragraph": 3,
+      "steps": [
+        "Shows what water-storage changes the inferred shifts help investigate",
+        "Ends with the qualified sea-level application"
+      ]
+    }
+  ],
+  "endpointAddsMeaning": true,
+  "redundancy": [],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}
+

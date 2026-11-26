@@ -1,0 +1,174 @@
+{
+  "claims": [
+    {
+      "excerpt": "De James Webb-ruimtetelescoop moest opgevouwen in de neuskegel van de Ariane 5 passen.",
+      "label": "F0",
+      "sourceEvidence": "“Webb's fully deployed operational configuration is far too large to fit into any available rocket so it was designed to fold into a compact launch configuration that fit inside the Ariane 5.”",
+      "synthesisStatement": "Webb had to fold for launch because its operational configuration was too large for the available rocket.",
+      "narrativeStatement": "“Webb was ontworpen om opgevouwen in de Ariane 5-raket te passen”",
+      "origin": "upstream",
+      "explanation": "Faithfully conveys the launch constraint and the foldable design; the source also identifies the fairing as the rocket’s nose cone.",
+      "materiality": "medium"
+    },
+    {
+      "excerpt": "Eenmaal in de ruimte moest hij zich dus ontvouwen voordat hij zijn volledige configuratie kon bereiken.",
+      "label": "F0",
+      "sourceEvidence": "“In the two weeks after launch, the entire observatory underwent a highly choreographed transformation” and “This brought Webb into its fully deployed operational configuration.”",
+      "synthesisStatement": "Webb had to deploy after launch to reach its fully deployed configuration.",
+      "narrativeStatement": "“het bereiken van zijn volledig uitgevouwen configuratie was slechts een stap op weg naar routinewetenschap”",
+      "origin": "upstream",
+      "explanation": "The source describes deployment after launch as the means of reaching the fully deployed configuration.",
+      "materiality": "medium"
+    },
+    {
+      "excerpt": "Dat was een complexe operatie: meer dan vijftig grote stappen, met ruim driehonderd mogelijke afzonderlijke faalpunten.",
+      "label": "F0",
+      "sourceEvidence": "“There were over 50 major deployment steps” and “any one of over 300 single points of failure could have diminished or crippled the mission.”",
+      "synthesisStatement": "Deployment involved over 50 major steps and over 300 potential single points of failure.",
+      "narrativeStatement": "“De uitvouwing omvatte meer dan vijftig grote stappen en ruim driehonderd mogelijke afzonderlijke faalpunten”",
+      "origin": "upstream",
+      "explanation": "Both counts and their description as potential failure points match the source.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "Een probleem had de missie kunnen beperken of ernstig schaden;",
+      "label": "F0",
+      "sourceEvidence": "“any one of over 300 single points of failure could have diminished or crippled the mission.”",
+      "synthesisStatement": "A failure could have diminished or crippled the mission.",
+      "narrativeStatement": "“een probleem had de missie kunnen beperken of ernstig schaden”",
+      "origin": "upstream",
+      "explanation": "This accurately states the potential consequence and does not imply that a failure actually occurred.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "op Webb’s afstand van de aarde was reparatie geen optie.",
+      "label": "F0",
+      "sourceEvidence": "“Since Webb operates at approximately 1 million miles from Earth, there was no possibility for a repair mission.”",
+      "synthesisStatement": "A repair mission was not possible at Webb’s distance from Earth.",
+      "narrativeStatement": "“zonder mogelijkheid tot reparatie op Webb’s afstand van de aarde”",
+      "origin": "upstream",
+      "explanation": "Faithful paraphrase of the source’s repair constraint.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "De uitvouwing verliep soepel.",
+      "label": "F0",
+      "sourceEvidence": "“Webb's deployment was completed with remarkable smoothness.”",
+      "synthesisStatement": "Deployment proceeded smoothly.",
+      "narrativeStatement": "“de uitvouwing verliep volgens de bron soepel”",
+      "origin": "upstream",
+      "explanation": "Directly supported; the article does not invent setbacks.",
+      "materiality": "medium"
+    },
+    {
+      "excerpt": "In de tweede week waren de secundaire spiegel en de twee vleugels van de primaire spiegel uitgeklapt en vergrendeld.",
+      "label": "F0",
+      "sourceEvidence": "“During the second week after launch, we finished deploying the telescope structures by unfolding and latching the secondary mirror tripod and rotating and latching the two primary mirror wings.”",
+      "synthesisStatement": "By the second week, the secondary mirror structure and both primary-mirror wings had unfolded and latched.",
+      "narrativeStatement": "“In de tweede week waren de spiegelonderdelen uitgeklapt en vergrendeld.”",
+      "origin": "upstream",
+      "explanation": "Accurately summarizes the named structures and milestone; omitting the tripod and the wings’ rotation does not change the claim.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "Maar uitgevouwen betekende nog niet klaar voor routinewetenschap.",
+      "label": "F0",
+      "sourceEvidence": "“This brought Webb into its fully deployed operational configuration.” The source then describes five more months of commissioning and says, “After six months” Webb began “routine science operations.”",
+      "synthesisStatement": "Reaching the deployed configuration was not the same as being ready for routine science.",
+      "narrativeStatement": "“De centrale gedachte: Webb was uitgevouwen voordat het klaar was voor routinewetenschap.”",
+      "origin": "compose",
+      "explanation": "A faithful synthesis of the source’s deployment milestone and later start of routine science.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "Tijdens de ingebruikname van zes maanden moest Webb verder afkoelen, werden de spiegels uitgelijnd en de instrumenten gekalibreerd.",
+      "label": "F0",
+      "sourceEvidence": "“The telescope and scientific instruments started to cool rapidly … but it took several weeks for them to cool all the way down”; “the second, third and fourth months” covered telescope alignment; “In the fifth and sixth months: Calibration and completion of commissioning.”",
+      "synthesisStatement": "The six-month commissioning included cooling, mirror alignment, and instrument calibration.",
+      "narrativeStatement": "“Afkoeling, spiegeluitlijning en kalibratie”",
+      "origin": "upstream",
+      "explanation": "The stated activities and six-month commissioning period are supported. The wording does not claim that cooling began only after deployment; cooling overlapped the deployment timeline.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "Pas daarna begon de routinewetenschap.",
+      "label": "F0",
+      "sourceEvidence": "“After six months: ‘Science operations!’ Webb began its science mission and started to conduct routine science operations.”",
+      "synthesisStatement": "Routine science operations began after commissioning, at six months.",
+      "narrativeStatement": "“daarna begon de routinewetenschap”",
+      "origin": "upstream",
+      "explanation": "Faithfully places routine science after the commissioning period.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "De uitvouwing bracht Webb in zijn volledige configuratie.",
+      "label": "F0",
+      "sourceEvidence": "“This brought Webb into its fully deployed operational configuration.”",
+      "synthesisStatement": "Deployment brought Webb to its fully deployed operational configuration.",
+      "narrativeStatement": "“het bereiken van zijn volledig uitgevouwen configuratie”",
+      "origin": "upstream",
+      "explanation": "Accurate summary of the second-week deployment milestone.",
+      "materiality": "low"
+    },
+    {
+      "excerpt": "De ingebruikname maakte hem klaar om daarmee aan de slag te gaan.",
+      "label": "F0",
+      "sourceEvidence": "“After six months: ‘Science operations!’ Webb began its science mission and started to conduct routine science operations.”",
+      "synthesisStatement": "Completion of commissioning prepared Webb to begin routine science operations.",
+      "narrativeStatement": "“De ingebruikname maakte hem klaar voor routinewetenschap.”",
+      "origin": "compose",
+      "explanation": "The phrasing summarizes the documented transition to routine science; it does not add a specific calibration outcome.",
+      "materiality": "low"
+    }
+  ],
+  "preserved": [
+    "launch-fold",
+    "deployment-risk",
+    "deployed-second-week",
+    "cooling-and-alignment",
+    "calibration-to-science"
+  ],
+  "distorted": [],
+  "omitted": [],
+  "developments": 5,
+  "explainedFacts": 5,
+  "paragraphSteps": [
+    {
+      "paragraph": 1,
+      "steps": [
+        "Launch folding constraint",
+        "Deployment needed to reach full configuration"
+      ]
+    },
+    {
+      "paragraph": 2,
+      "steps": [
+        "Deployment risks and stakes",
+        "Smooth completion",
+        "Second-week mirror milestone"
+      ]
+    },
+    {
+      "paragraph": 3,
+      "steps": [
+        "Six-month commissioning",
+        "Cooling, alignment, calibration",
+        "Transition to routine science"
+      ]
+    },
+    {
+      "paragraph": 4,
+      "steps": [
+        "Summary of deployment and commissioning distinction"
+      ]
+    }
+  ],
+  "endpointAddsMeaning": false,
+  "redundancy": [
+    "De uitvouwing bracht Webb in zijn volledige configuratie. De ingebruikname maakte hem klaar om daarmee aan de slag te gaan."
+  ],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": false,
+  "omittedFromNarrativeUsedInArticle": []
+}

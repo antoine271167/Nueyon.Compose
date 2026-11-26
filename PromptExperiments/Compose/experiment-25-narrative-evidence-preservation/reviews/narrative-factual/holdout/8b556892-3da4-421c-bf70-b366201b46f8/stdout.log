@@ -1,0 +1,122 @@
+{
+  "claims": [
+    {
+      "excerpt": "Het verhaal gaat over de beschreven aanpak van het POA-refundteam om onder tijdsdruk een digitale dienst in twaalf weken publiek te lanceren.",
+      "label": "F0",
+      "sourceEvidence": "“launched to the public in only 12 weeks”; “We were initially asked to deliver the service in a matter of weeks” and found that was “not possible if we wanted to create a quality service for our users.”",
+      "synthesisStatement": "Het team lanceerde de dienst voor het publiek in twaalf weken, nadat het concludeerde dat levering binnen enkele weken niet haalbaar was met behoud van kwaliteit.",
+      "narrativeStatement": "Het verhaal gaat over de beschreven aanpak van het POA-refundteam om onder tijdsdruk een digitale dienst in twaalf weken publiek te lanceren.",
+      "origin": "propagated",
+      "explanation": "Vat de gerapporteerde termijn en de beschreven tijdsdruk accuraat samen.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "De aanpak omvatte eerst de aanvragerservaring uitwerken en naar alpha brengen, caseworkerwerk later toevoegen, en tijdens private beta vaste tijd reserveren voor onderzoek en testen.",
+      "label": "F0",
+      "sourceEvidence": "“My team focused on the users applying for refunds first and this is what we took to the alpha assessment. Plans for the caseworker user came later”; tijdens private beta werden tweewekelijkse sprints opgesplitst in een eerste week met testen, onderzoek en aanvragen aannemen, en een tweede week met gepauzeerde inzendingen voor testen, onderzoek en verwerking.",
+      "synthesisStatement": "Het team werkte eerst aan de aanvragerservaring en bracht die naar alpha; plannen voor caseworkers kwamen later. Tijdens private beta verdeelde het team tweewekelijkse sprints voor onderzoek, testen en operationeel werk.",
+      "narrativeStatement": "De aanpak omvatte eerst de aanvragerservaring uitwerken en naar alpha brengen, caseworkerwerk later toevoegen, en tijdens private beta vaste tijd reserveren voor onderzoek en testen.",
+      "origin": "propagated",
+      "explanation": "De beknopte formulering behoudt de volgorde en het ingeplande onderzoek; de bron beschrijft ook dat het casework-applicatiewerk tijdens private beta begon.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "De lezer moet begrijpen hoe die keuzes samen de werkwijze vormden, zonder ze als bewezen oorzaak van de lancering of resultaten voor te stellen.",
+      "label": "F0",
+      "sourceEvidence": "De synthese stelt dat de bron de keuzes documenteert, maar niet bewijst dat ze de lancering of gerapporteerde resultaten veroorzaakten. De bron beschrijft de werkwijzen en rapporteert de uitkomsten, zonder een causaal verband vast te stellen.",
+      "synthesisStatement": "De bron documenteert de keuzes, maar bewijst niet dat ze de lancering of gerapporteerde resultaten veroorzaakten.",
+      "narrativeStatement": "De lezer moet begrijpen hoe die keuzes samen de werkwijze vormden, zonder ze als bewezen oorzaak van de lancering of resultaten voor te stellen.",
+      "origin": "propagated",
+      "explanation": "Behoudt expliciet het onderscheid tussen beschreven aanpak en bewezen causaliteit.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "Het team kreeg aanvankelijk de opdracht binnen enkele weken te leveren, maar concludeerde dat dit niet haalbaar was met behoud van een kwalitatieve gebruikersdienst; de publieke lancering volgde na twaalf weken.",
+      "label": "F0",
+      "sourceEvidence": "“We were initially asked to deliver the service in a matter of weeks”; dit “would not be possible if we wanted to create a quality service for our users”; het team “launched to the public in only 12 weeks.”",
+      "synthesisStatement": "Aanvankelijk was gevraagd binnen enkele weken te leveren; het team concludeerde dat dit niet haalbaar was met behoud van kwaliteit en lanceerde na twaalf weken.",
+      "narrativeStatement": "Het team kreeg aanvankelijk de opdracht binnen enkele weken te leveren, maar concludeerde dat dit niet haalbaar was met behoud van een kwalitatieve gebruikersdienst; de publieke lancering volgde na twaalf weken.",
+      "origin": "propagated",
+      "explanation": "De context en kwalificatie over kwaliteit komen overeen met de bron.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "De dienst was digitaal en had ook een assisted-digital route, zonder papieren versie.",
+      "label": "F0",
+      "sourceEvidence": "“a digital and assisted digital service (no paper version).”",
+      "synthesisStatement": "De dienst was digitaal en assisted-digital, zonder papieren versie; de concrete ondersteuning wordt niet beschreven.",
+      "narrativeStatement": "De dienst was digitaal en had ook een assisted-digital route, zonder papieren versie.",
+      "origin": "propagated",
+      "explanation": "Behoudt de kanaalomschrijving en verzint geen details over de ondersteuning.",
+      "materiality": "low"
+    },
+    {
+      "excerpt": "De aanvragerservaring kwam eerst en werd naar alpha gebracht; plannen voor caseworkers volgden later. De auteur licht toe dat caseworkers nog geen bestaande gebruikers van deze nieuwe dienst waren en dat het team onder tijdsdruk aannames wilde vermijden.",
+      "label": "F0",
+      "sourceEvidence": "“focused on the users applying for refunds first”; “this is what we took to the alpha assessment”; “Plans for the caseworker user came later”; de caseworker user “didn’t yet exist” en het team wilde niet afdwalen door gebrek aan relevante kennis of “incorrect assumptions.”",
+      "synthesisStatement": "Het team werkte eerst aan de aanvragerservaring en bracht die naar alpha; plannen voor caseworkers kwamen later omdat die gebruikersrol nog niet bestond en het team aannames wilde vermijden.",
+      "narrativeStatement": "De aanvragerservaring kwam eerst en werd naar alpha gebracht; plannen voor caseworkers volgden later. De auteur licht toe dat caseworkers nog geen bestaande gebruikers van deze nieuwe dienst waren en dat het team onder tijdsdruk aannames wilde vermijden.",
+      "origin": "propagated",
+      "explanation": "De volgorde en de reden daarvoor zijn beide onderbouwd. “Nog geen bestaande gebruikers” is een nauwkeurige parafrase van de formulering dat de caseworker-gebruiker nog niet bestond.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "Tijdens private beta reserveerde het team in tweewekelijkse sprints tijd voor onderzoek en testen: in week één testte en onderzocht het team en nam het aanvragen aan; in week twee pauzeerde het inzendingen voor testen, onderzoek en verwerking.",
+      "label": "F0",
+      "sourceEvidence": "“During private beta”; “splitting our fortnightly sprints in two”; de eerste week voor “testing, researching and accepting applications” en de tweede voor “suspending submissions” om te testen, onderzoek te doen en aanvragen te verwerken.",
+      "synthesisStatement": "Tijdens private beta verdeelde het team tweewekelijkse sprints: in de eerste week testte en onderzocht het team en nam het aanvragen aan; in de tweede week werden inzendingen gepauzeerd voor testen, onderzoek en verwerking.",
+      "narrativeStatement": "Tijdens private beta reserveerde het team in tweewekelijkse sprints tijd voor onderzoek en testen: in week één testte en onderzocht het team en nam het aanvragen aan; in week twee pauzeerde het inzendingen voor testen, onderzoek en verwerking.",
+      "origin": "propagated",
+      "explanation": "Behoudt de tweewekelijkse cadans en het verschil tussen beide weken.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "Vijf weken na de publieke lancering rapporteerde de dienst meer dan 100.000 aanvragen, 92,6% gebruikerstevredenheid en een voltooiingspercentage van 80,2%.",
+      "label": "F0",
+      "sourceEvidence": "“The service has now been available for five weeks” and “has already received over 100k applications with 92.6% user satisfaction and an 80.2% completion rate.”",
+      "synthesisStatement": "Na vijf weken publieke beschikbaarheid rapporteerde de auteur meer dan 100.000 aanvragen, 92,6% gebruikerstevredenheid en een voltooiingspercentage van 80,2%.",
+      "narrativeStatement": "Vijf weken na de publieke lancering rapporteerde de dienst meer dan 100.000 aanvragen, 92,6% gebruikerstevredenheid en een voltooiingspercentage van 80,2%.",
+      "origin": "propagated",
+      "explanation": "De cijfers en periode kloppen. De bron geeft geen metriekdefinities, meetmethode of vergelijking; de omliggende tekst vermijdt verdere duiding en causaliteit.",
+      "materiality": "high"
+    }
+  ],
+  "preserved": [
+    "launch-timeline",
+    "user-sequence",
+    "beta-research-rhythm",
+    "assisted-digital-scope",
+    "five-week-results"
+  ],
+  "distorted": [],
+  "omitted": [],
+  "developments": 3,
+  "explainedFacts": 3,
+  "paragraphSteps": [
+    {
+      "step": "Context",
+      "description": "Aanvankelijk onhaalbare termijn voor kwaliteitsvolle levering; publieke lancering na twaalf weken en de digitale/assisted-digital scope."
+    },
+    {
+      "step": "Ontwerpkeuze",
+      "description": "Aanvragers eerst naar alpha; caseworkerplannen later, met de reden dat de gebruikersrol nog niet bestond en aannames moesten worden vermeden."
+    },
+    {
+      "step": "Private beta",
+      "description": "Tweewekelijkse sprintindeling met een week waarin aanvragen binnenkwamen en een week met gepauzeerde inzendingen."
+    },
+    {
+      "step": "Endpoint",
+      "description": "Gerapporteerde resultaten na vijf weken publieke beschikbaarheid, zonder causale claim."
+    }
+  ],
+  "endpointAddsMeaning": true,
+  "redundancy": [],
+  "peripheral": [
+    "assisted-digital-scope"
+  ],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}
+

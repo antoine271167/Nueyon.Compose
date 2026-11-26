@@ -1,0 +1,161 @@
+{
+  "claims": [
+    {
+      "excerpt": "De aanpak van het POA-refundteam voor een digitale dienst",
+      "label": "F0",
+      "sourceEvidence": "The source identifies the author as the Product Manager for the POA refunds service and says the team built a digital and assisted digital service.",
+      "synthesisStatement": "“Het POA-refundteam lanceerde de dienst na twaalf weken en beschrijft een aanpak...”",
+      "narrativeStatement": "“Het verhaal gaat over de beschreven aanpak van het POA-refundteam om onder tijdsdruk een digitale dienst in twaalf weken publiek te lanceren.”",
+      "origin": "compose",
+      "explanation": "A concise, supported description of the team and its service; it adds no unsupported detail.",
+      "materiality": "low"
+    },
+    {
+      "excerpt": "Het POA-refundteam kreeg aanvankelijk de opdracht om binnen enkele weken een digitale dienst te leveren.",
+      "label": "F0",
+      "sourceEvidence": "“We were initially asked to deliver the service in a matter of weeks” and “a team was set up to build a brand new service.”",
+      "synthesisStatement": "“Het was aanvankelijk gevraagd binnen enkele weken te leveren”",
+      "narrativeStatement": "“Het team kreeg aanvankelijk de opdracht binnen enkele weken te leveren”",
+      "origin": "upstream",
+      "explanation": "Faithfully reports the initially requested short delivery timeframe.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "Het team concludeerde dat die termijn niet haalbaar was als de gebruikersdienst kwalitatief moest blijven.",
+      "label": "F0",
+      "sourceEvidence": "“We quickly discovered [it] would not be possible if we wanted to create a quality service for our users.”",
+      "synthesisStatement": "“concludeerde dat dit niet haalbaar was met behoud van een kwalitatieve gebruikersdienst.”",
+      "narrativeStatement": "“concludeerde dat dit niet haalbaar was met behoud van een kwalitatieve gebruikersdienst”",
+      "origin": "upstream",
+      "explanation": "Preserves the source’s qualification: the deadline was infeasible if the team was to create a quality service.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "De publieke lancering volgde na twaalf weken.",
+      "label": "F0",
+      "sourceEvidence": "“launched to the public in only 12 weeks.”",
+      "synthesisStatement": "“Het team lanceerde de dienst voor het publiek in twaalf weken.”",
+      "narrativeStatement": "“de publieke lancering volgde na twaalf weken.”",
+      "origin": "upstream",
+      "explanation": "Matches the reported launch timeframe. It does not specify a start point, which the source also leaves unspecified.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "De dienst had ook een assisted-digital route en geen papieren versie.",
+      "label": "F0",
+      "sourceEvidence": "“a digital and assisted digital service (no paper version).”",
+      "synthesisStatement": "“De dienst was digitaal en assisted-digital, zonder papieren versie.”",
+      "narrativeStatement": "“De dienst was digitaal en had ook een assisted-digital route, zonder papieren versie.”",
+      "origin": "upstream",
+      "explanation": "Faithfully states the available service modes and absence of a paper version without specifying what assistance involved.",
+      "materiality": "low"
+    },
+    {
+      "excerpt": "De ontwikkeling begon bij de ervaring van aanvragers, die eerst werd uitgewerkt en naar alpha gebracht.",
+      "label": "F0",
+      "sourceEvidence": "“My team focused on the users applying for refunds first and this is what we took to the alpha assessment.”",
+      "synthesisStatement": "“Het team werkte eerst aan de aanvragerservaring en bracht die naar alpha”",
+      "narrativeStatement": "“De aanvragerservaring kwam eerst en werd naar alpha gebracht”",
+      "origin": "upstream",
+      "explanation": "Accurately summarizes the focus on applicants first and taking that work to the alpha assessment.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "Plannen voor caseworkers kwamen later.",
+      "label": "F0",
+      "sourceEvidence": "“Plans for the caseworker user came later.”",
+      "synthesisStatement": "“plannen voor caseworkers kwamen later.”",
+      "narrativeStatement": "“plannen voor caseworkers volgden later.”",
+      "origin": "upstream",
+      "explanation": "Directly supported by the source.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "Caseworkers waren nog geen bestaande gebruikers van deze nieuwe dienst, en het team wilde onder tijdsdruk aannames vermijden.",
+      "label": "F0",
+      "sourceEvidence": "“until we had applications coming through the casework user didn’t yet exist as this was a completely new service” and “with such limited time we wanted to make sure we didn’t stray off course due to lack of relevant knowledge or incorrect assumptions.”",
+      "synthesisStatement": "“caseworkers in deze nieuwe dienst nog geen bestaande gebruikers waren en dat het team onder tijdsdruk aannames wilde vermijden.”",
+      "narrativeStatement": "“caseworkers nog geen bestaande gebruikers van deze nieuwe dienst waren en dat het team onder tijdsdruk aannames wilde vermijden.”",
+      "origin": "upstream",
+      "explanation": "Retains both the new-service qualification and the team’s stated rationale; it does not claim that the sequencing caused any outcome.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "Tijdens de private beta reserveerde het team in tweewekelijkse sprints tijd voor onderzoek en testen.",
+      "label": "F0",
+      "sourceEvidence": "“During private beta” the team needed “to create a solid research plan”; “splitting our fortnightly sprints in two.”",
+      "synthesisStatement": "“Tijdens private beta verdeelde het team tweewekelijkse sprints”",
+      "narrativeStatement": "“Tijdens private beta reserveerde het team in tweewekelijkse sprints tijd voor onderzoek en testen”",
+      "origin": "upstream",
+      "explanation": "Faithfully describes the planned research and testing time without attributing a causal effect to it.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "In de eerste week testte en onderzocht het team en nam het aanvragen aan.",
+      "label": "F0",
+      "sourceEvidence": "“testing, researching and accepting applications in the first week.”",
+      "synthesisStatement": "“in de eerste week testte en onderzocht het team en nam het aanvragen aan”",
+      "narrativeStatement": "“in week één testte en onderzocht het team en nam het aanvragen aan”",
+      "origin": "upstream",
+      "explanation": "Preserves all three activities reported for the first week.",
+      "materiality": "medium"
+    },
+    {
+      "excerpt": "In de tweede week werden inzendingen gepauzeerd voor testen, onderzoek en verwerking.",
+      "label": "F0",
+      "sourceEvidence": "“suspending submissions” in the second week to “concentrate on testing, researching and processing applications.”",
+      "synthesisStatement": "“in de tweede week werden inzendingen gepauzeerd voor testen, onderzoek en verwerking.”",
+      "narrativeStatement": "“in week twee pauzeerde het inzendingen voor testen, onderzoek en verwerking.”",
+      "origin": "upstream",
+      "explanation": "Accurately reports the pause and the three stated focuses.",
+      "materiality": "medium"
+    },
+    {
+      "excerpt": "Vijf weken na de publieke lancering rapporteerde de dienst meer dan 100.000 aanvragen, een gebruikerstevredenheid van 92,6% en een voltooiingspercentage van 80,2%.",
+      "label": "F0",
+      "sourceEvidence": "“The service has now been available for five weeks and has already received over 100k applications with 92.6% user satisfaction and an 80.2% completion rate.”",
+      "synthesisStatement": "“De auteur rapporteert dat de dienst na vijf weken publiek beschikbaar meer dan 100.000 aanvragen had ontvangen, met 92,6% gebruikerstevredenheid en een voltooiingspercentage van 80,2%.”",
+      "narrativeStatement": "“Vijf weken na de publieke lancering rapporteerde de dienst meer dan 100.000 aanvragen, 92,6% gebruikerstevredenheid en een voltooiingspercentage van 80,2%.”",
+      "origin": "upstream",
+      "explanation": "The figures and five-week period match the source. “Rapporteerde” appropriately presents them as reported results, not independently verified metrics or proof of causation.",
+      "materiality": "high"
+    }
+  ],
+  "preserved": [
+    "launch-timeline",
+    "user-sequence",
+    "beta-research-rhythm",
+    "assisted-digital-scope",
+    "five-week-results"
+  ],
+  "distorted": [],
+  "omitted": [],
+  "developments": 2,
+  "explainedFacts": 3,
+  "paragraphSteps": [
+    {
+      "paragraph": 1,
+      "step": "Context: requested timeframe, quality constraint, launch timing, and service channels."
+    },
+    {
+      "paragraph": 2,
+      "step": "Development: applicant-first design, alpha, and later caseworker planning with its rationale."
+    },
+    {
+      "paragraph": 3,
+      "step": "Development: private-beta sprint cadence and the activities in each week."
+    },
+    {
+      "paragraph": 4,
+      "step": "Endpoint: reported results after five weeks of public availability."
+    }
+  ],
+  "endpointAddsMeaning": false,
+  "redundancy": [],
+  "peripheral": [
+    "De dienst had ook een assisted-digital route en geen papieren versie."
+  ],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}

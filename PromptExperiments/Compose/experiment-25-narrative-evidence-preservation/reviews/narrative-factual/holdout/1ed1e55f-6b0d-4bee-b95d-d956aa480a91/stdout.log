@@ -1,0 +1,201 @@
+{
+  "claims": [
+    {
+      "excerpt": "Dimorphos’s orbit changed after DART",
+      "label": "F0",
+      "sourceEvidence": "The source describes changes to Dimorphos’s orbital period and shape after the DART impact.",
+      "synthesisStatement": "After impact, Dimorphos’s orbit changed.",
+      "narrativeStatement": "Accurately states the central subject.",
+      "origin": "propagated",
+      "explanation": "Faithful summary of the documented period and shape changes.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "its orbital period was shorter immediately after the impact and continued to shorten over the following weeks",
+      "label": "F0",
+      "sourceEvidence": "Immediately after impact, the period shortened; over subsequent weeks, it continued to shorten.",
+      "synthesisStatement": "The period first shortened immediately after impact and kept shortening over subsequent weeks.",
+      "narrativeStatement": "Preserves the timing and direction of both changes without asserting a cause.",
+      "origin": "propagated",
+      "explanation": "Faithful to the reported sequence; the exact immediate reduction is not repeated.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "settling at about 11 hours and 22 minutes compared with 11 hours and 55 minutes beforehand",
+      "label": "F1",
+      "sourceEvidence": "The period settled at 11 hours, 22 minutes and 3 seconds; before impact it was about 11 hours and 55 minutes.",
+      "synthesisStatement": "The later settled period was 11:22:03, against a pre-impact period of about 11:55.",
+      "narrativeStatement": "Rounds the settled value to the minute and appropriately says “about.”",
+      "origin": "propagated",
+      "explanation": "Accurate at the stated precision, but omits seconds and the exact total reduction.",
+      "materiality": "medium"
+    },
+    {
+      "excerpt": "Its orbit was also no longer circular.",
+      "label": "F0",
+      "sourceEvidence": "The orbit was no longer circular after impact.",
+      "synthesisStatement": "After impact, Dimorphos’s orbit was noncircular.",
+      "narrativeStatement": "Faithfully reports the shape change.",
+      "origin": "propagated",
+      "explanation": "No unsupported quantification or additional shape detail is introduced.",
+      "materiality": "medium"
+    },
+    {
+      "excerpt": "The central point is that the orbital change continued beyond the immediate aftermath of the impact.",
+      "label": "F0",
+      "sourceEvidence": "The period continued to shorten over subsequent weeks after its immediate post-impact shortening.",
+      "synthesisStatement": "The orbital evolution continued beyond the immediate impact aftermath.",
+      "narrativeStatement": "Accurately frames the documented continued shortening as the central point.",
+      "origin": "compose",
+      "explanation": "This is a supported synthesis of the sequence, not a new physical claim.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "Dimorphos orbits the larger asteroid Didymos",
+      "label": "F0",
+      "sourceEvidence": "Before impact, Dimorphos took 11 hours and 55 minutes to orbit the larger asteroid Didymos.",
+      "synthesisStatement": "Dimorphos orbits the larger asteroid Didymos.",
+      "narrativeStatement": "Accurately states the orbital relationship in the Context instruction.",
+      "origin": "propagated",
+      "explanation": "This fact appears in Story Progression, not Selected Story.",
+      "materiality": "medium"
+    },
+    {
+      "excerpt": "its pre-impact period of 11 hours and 55 minutes",
+      "label": "F0",
+      "sourceEvidence": "Before impact, Dimorphos took 11 hours and 55 minutes to orbit Didymos.",
+      "synthesisStatement": "The pre-impact orbital period was 11 hours and 55 minutes.",
+      "narrativeStatement": "Faithfully gives the baseline in both the Context instruction and Selected Story.",
+      "origin": "propagated",
+      "explanation": "The source gives the baseline to the minute, so no extra precision is implied.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "Describe the shorter period immediately after impact",
+      "label": "F0",
+      "sourceEvidence": "Immediately after impact, the period shortened by 32 minutes and 42 seconds, to 11 hours, 22 minutes and 37 seconds.",
+      "synthesisStatement": "The period was shorter immediately after impact.",
+      "narrativeStatement": "The direction and timing are preserved, though the exact initial reduction is not stated.",
+      "origin": "propagated",
+      "explanation": "The accompanying Selected Story also reports the immediate shortening qualitatively.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "then its further shortening over subsequent weeks",
+      "label": "F0",
+      "sourceEvidence": "Over subsequent weeks, the orbital period continued to shorten.",
+      "synthesisStatement": "The period continued to shorten over subsequent weeks.",
+      "narrativeStatement": "Faithfully reports the later trend.",
+      "origin": "propagated",
+      "explanation": "The Selected Story also includes this trend.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "as Dimorphos lost more rocky material to space",
+      "label": "F0",
+      "sourceEvidence": "Over subsequent weeks Dimorphos lost more rocky material to space while its orbital period continued to shorten.",
+      "synthesisStatement": "Rocky material continued to escape while the period continued to shorten.",
+      "narrativeStatement": "Story Progression includes this concurrent observation and explicitly instructs that it not be presented as causation.",
+      "origin": "propagated",
+      "explanation": "The relationship is correctly kept as concurrence, not cause and effect.",
+      "materiality": "medium"
+    },
+    {
+      "excerpt": "the settled period of 11 hours and 22 minutes",
+      "label": "F1",
+      "sourceEvidence": "The period settled at 11 hours, 22 minutes and 3 seconds.",
+      "synthesisStatement": "The settled period was 11:22:03.",
+      "narrativeStatement": "Rounds the settled measurement to the minute.",
+      "origin": "propagated",
+      "explanation": "The rounded value is accurate but omits the seconds-level measurement.",
+      "materiality": "medium"
+    },
+    {
+      "excerpt": "the observation that the orbit was no longer circular",
+      "label": "F0",
+      "sourceEvidence": "The orbit was no longer circular after impact.",
+      "synthesisStatement": "The orbit was noncircular after impact.",
+      "narrativeStatement": "Faithfully reports the shape observation.",
+      "origin": "propagated",
+      "explanation": "Supported by the source and also stated in Selected Story.",
+      "materiality": "medium"
+    },
+    {
+      "excerpt": "describe the overall reduction as about 33 minutes",
+      "label": "F0",
+      "sourceEvidence": "The later settled period was reported as 33 minutes and 15 seconds shorter than before impact.",
+      "synthesisStatement": "The overall reduction was about 33 minutes.",
+      "narrativeStatement": "The instruction appropriately rounds 33 minutes and 15 seconds.",
+      "origin": "propagated",
+      "explanation": "The approximation preserves the stated reduction.",
+      "materiality": "medium"
+    },
+    {
+      "excerpt": "the exact reductions supplied do not align arithmetically with those values",
+      "label": "F0",
+      "sourceEvidence": "The source gives rounded baseline and settled periods alongside a 33-minute-15-second reduction; the exact modeled values are 1.5-second precision.",
+      "synthesisStatement": "The rounded period values do not subtract to the reported exact reduction.",
+      "narrativeStatement": "Accurately flags the arithmetic mismatch between rounded periods and the supplied exact reduction.",
+      "origin": "compose",
+      "explanation": "The rounded baseline is not a seconds-level value, so the exact reported reduction should not be inferred by subtracting the rounded figures.",
+      "materiality": "medium"
+    }
+  ],
+  "preserved": [
+    "pre-impact-period",
+    "immediate-period-change",
+    "continued-shortening",
+    "settled-period",
+    "orbit-shape"
+  ],
+  "distorted": [],
+  "omitted": [],
+  "developments": 3,
+  "explainedFacts": 5,
+  "paragraphSteps": [
+    {
+      "paragraph": "Selected Story",
+      "steps": [
+        "Pre-impact baseline: 11 hours and 55 minutes.",
+        "Immediate post-impact shortening, followed by continued shortening over weeks.",
+        "Settled period of about 11 hours and 22 minutes, plus the noncircular orbit."
+      ],
+      "assessment": "Supported sequence; the exact immediate and settled measurements are rounded or omitted."
+    },
+    {
+      "paragraph": "Story Progression — Context",
+      "steps": [
+        "Establishes the Dimorphos–Didymos relationship and pre-impact baseline."
+      ],
+      "assessment": "Supported context."
+    },
+    {
+      "paragraph": "Story Progression — Development",
+      "steps": [
+        "Moves from immediate shortening to continued shortening over subsequent weeks.",
+        "Includes concurrent rocky-material loss."
+      ],
+      "assessment": "Supported, with an explicit instruction not to claim causation."
+    },
+    {
+      "paragraph": "Story Progression — Endpoint",
+      "steps": [
+        "Ends with the rounded settled period and noncircular orbit."
+      ],
+      "assessment": "Supported endpoint."
+    }
+  ],
+  "endpointAddsMeaning": true,
+  "redundancy": [
+    "The 11-hour-55-minute baseline appears in Selected Story and Story Progression — Context.",
+    "Immediate and continued shortening appear in Selected Story and Story Progression — Development.",
+    "The settled period and noncircular orbit appear in Selected Story and Story Progression — Endpoint."
+  ],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": [
+    "continued-shortening"
+  ]
+}
+

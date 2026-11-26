@@ -1,0 +1,112 @@
+{
+  "claims": [
+    {
+      "excerpt": "## OSIRIS-REx Returned 121.6 Grams of Bennu Material",
+      "label": "F0",
+      "sourceEvidence": "The provided source verification states that the total sample mass was 121.6 g.",
+      "synthesisStatement": "The completed inventory amounted to 121.6 grams.",
+      "narrativeStatement": "The completed inventory was 121.6 grams",
+      "origin": "upstream",
+      "explanation": "Faithfully states the final inventory amount.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "OSIRIS-REx returned material from Bennu to Earth on September 24, 2023.",
+      "label": "F0",
+      "sourceEvidence": "The provided source verification states that the return to Earth was on September 24, 2023.",
+      "synthesisStatement": "OSIRIS-REx returned material from asteroid Bennu to Earth on September 24, 2023.",
+      "narrativeStatement": "OSIRIS-REx returned material from Bennu to Earth on September 24, 2023",
+      "origin": "upstream",
+      "explanation": "Preserves the return date and destination.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "The mission required at least 60 grams",
+      "label": "F0",
+      "sourceEvidence": "The provided source verification states that the science requirement was 60 g.",
+      "synthesisStatement": "The mission required at least 60 grams of asteroid material.",
+      "narrativeStatement": "a mission requirement of at least 60 grams",
+      "origin": "upstream",
+      "explanation": "Correctly identifies 60 grams as a minimum requirement, not the final inventory.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "that amount had already been exceeded before the sampling head was completely opened.",
+      "label": "F0",
+      "sourceEvidence": "The provided source verification states that the 60 g requirement was reached before the sampling head was fully opened.",
+      "synthesisStatement": "The team exceeded that requirement before completely opening the sampling head.",
+      "narrativeStatement": "The requirement was exceeded before the sampling head was completely opened",
+      "origin": "upstream",
+      "explanation": "“That amount” refers to the 60-gram minimum; the timing and qualification are preserved.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "A final pour added another 51.2 grams.",
+      "label": "F0",
+      "sourceEvidence": "The provided source verification states that the final pour contributed 51.2 g.",
+      "synthesisStatement": "A final pour added 51.2 grams.",
+      "narrativeStatement": "a final pour then added 51.2 grams",
+      "origin": "upstream",
+      "explanation": "Accurately states the amount added by the final pour without implying it was the only material collected.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "The completed inventory totaled 121.6 grams",
+      "label": "F0",
+      "sourceEvidence": "The provided source verification states that the total sample mass was 121.6 g.",
+      "synthesisStatement": "The completed inventory amounted to 121.6 grams.",
+      "narrativeStatement": "The completed inventory was 121.6 grams",
+      "origin": "upstream",
+      "explanation": "Correctly gives the final accounted-for amount.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "distinguishing the mission’s minimum requirement from the final amount accounted for.",
+      "label": "F0",
+      "sourceEvidence": "The source evidence gives a 60 g mission requirement and a completed inventory of 121.6 g.",
+      "synthesisStatement": "The mission requirement and completed inventory are stated as separate amounts.",
+      "narrativeStatement": "distinguishing the mission’s minimum requirement from the final amount accounted for",
+      "origin": "narrative",
+      "explanation": "Accurately frames the contrast between the minimum requirement and the final accounted amount.",
+      "materiality": "low"
+    }
+  ],
+  "preserved": [
+    "return-date",
+    "minimum-required",
+    "requirement-exceeded-before-opening",
+    "final-pour",
+    "completed-inventory"
+  ],
+  "distorted": [],
+  "omitted": [],
+  "developments": 3,
+  "explainedFacts": 5,
+  "paragraphSteps": [
+    {
+      "paragraph": 1,
+      "steps": [
+        "Return to Earth on September 24, 2023",
+        "The 60-gram minimum had been exceeded before the sampling head was completely opened"
+      ]
+    },
+    {
+      "paragraph": 2,
+      "steps": [
+        "A final pour added 51.2 grams",
+        "The completed inventory totaled 121.6 grams, distinguished from the minimum requirement"
+      ]
+    }
+  ],
+  "endpointAddsMeaning": true,
+  "redundancy": [
+    "The headline repeats the 121.6-gram total stated in the final paragraph."
+  ],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": [
+    "return-date"
+  ]
+}
+

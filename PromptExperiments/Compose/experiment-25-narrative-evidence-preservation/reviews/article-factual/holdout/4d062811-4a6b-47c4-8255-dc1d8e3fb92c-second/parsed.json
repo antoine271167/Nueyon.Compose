@@ -1,0 +1,96 @@
+{
+  "claims": [
+    {
+      "excerpt": "In August 2024, the Secretary of Commerce approved FIPS 203, 204, and 205",
+      "label": "F0",
+      "sourceEvidence": "The Secretary of Commerce approved FIPS 203, 204 and 205 in August 2024.",
+      "synthesisStatement": "The Secretary of Commerce approved FIPS 203, 204 and 205 in August 2024.",
+      "narrativeStatement": "In August 2024, the Secretary of Commerce approved FIPS 203, 204, and 205, standards designed to resist future quantum attacks.",
+      "origin": "propagated",
+      "explanation": "Faithfully states the approving official, standards, and date.",
+      "materiality": "High: establishes when and by whom the standards were approved."
+    },
+    {
+      "excerpt": "standards designed to resist future quantum attacks.",
+      "label": "F0",
+      "sourceEvidence": "The schemes are designed to resist future quantum attacks.",
+      "synthesisStatement": "The schemes are designed to resist future quantum attacks.",
+      "narrativeStatement": "The story explains how FIPS 203, 204, and 205 cover two functions within standards designed to resist future quantum attacks",
+      "origin": "propagated",
+      "explanation": "Calling the standards designed to resist these attacks faithfully describes the purpose of the schemes they specify; it does not claim a guarantee.",
+      "materiality": "High: states the standards' shared security goal."
+    },
+    {
+      "excerpt": "Together, they cover two functions: establishing a shared secret and creating digital signatures.",
+      "label": "F0",
+      "sourceEvidence": "FIPS 203 specifies ML-KEM to establish a shared secret between parties communicating over a public channel; FIPS 204 and FIPS 205 specify digital signature schemes.",
+      "synthesisStatement": "FIPS 203 specifies ML-KEM to establish a shared secret between parties communicating over a public channel. FIPS 204 specifies a module-lattice-based digital signature scheme. FIPS 205 specifies a stateless hash-based digital signature scheme.",
+      "narrativeStatement": "The reader should understand that the standards address both shared-secret establishment and digital signatures—not that each standard serves a separate purpose.",
+      "origin": "compose",
+      "explanation": "Accurately combines the key-establishment purpose of FIPS 203 with the shared signature purpose of FIPS 204 and 205.",
+      "materiality": "High: summarizes the standards' two distinct functions."
+    },
+    {
+      "excerpt": "FIPS 203 specifies a method for communicating parties to establish a shared secret over a public channel.",
+      "label": "F0",
+      "sourceEvidence": "FIPS 203 specifies ML-KEM to establish a shared secret between parties communicating over a public channel.",
+      "synthesisStatement": "FIPS 203 specifies ML-KEM to establish a shared secret between parties communicating over a public channel.",
+      "narrativeStatement": "FIPS 203 specifies a method for establishing a shared secret over a public channel.",
+      "origin": "propagated",
+      "explanation": "Faithful paraphrase. It omits the ML-KEM name, but does not change the stated purpose or public-channel qualification.",
+      "materiality": "High: explains FIPS 203's function and communication setting."
+    },
+    {
+      "excerpt": "FIPS 204 and FIPS 205 both specify digital signature schemes.",
+      "label": "F0",
+      "sourceEvidence": "FIPS 204 specifies a module-lattice-based digital signature scheme. FIPS 205 specifies a stateless hash-based digital signature scheme.",
+      "synthesisStatement": "FIPS 204 specifies a module-lattice-based digital signature scheme. FIPS 205 specifies a stateless hash-based digital signature scheme.",
+      "narrativeStatement": "FIPS 204 and 205 specify digital signature schemes",
+      "origin": "propagated",
+      "explanation": "Correctly identifies both standards as specifying signatures, without implying they serve different functions.",
+      "materiality": "High: distinguishes the signature standards from FIPS 203's key-establishment function."
+    },
+    {
+      "excerpt": "FIPS 204 uses a module-lattice-based approach",
+      "label": "F0",
+      "sourceEvidence": "FIPS 204 specifies a module-lattice-based digital signature scheme.",
+      "synthesisStatement": "FIPS 204 specifies a module-lattice-based digital signature scheme.",
+      "narrativeStatement": "using module-lattice-based and stateless hash-based approaches, respectively.",
+      "origin": "propagated",
+      "explanation": "“Uses a module-lattice-based approach” faithfully summarizes the specified scheme's basis.",
+      "materiality": "Medium: identifies FIPS 204's scheme type."
+    },
+    {
+      "excerpt": "FIPS 205 specifies a stateless hash-based approach.",
+      "label": "F0",
+      "sourceEvidence": "FIPS 205 specifies a stateless hash-based digital signature scheme.",
+      "synthesisStatement": "FIPS 205 specifies a stateless hash-based digital signature scheme.",
+      "narrativeStatement": "using module-lattice-based and stateless hash-based approaches, respectively.",
+      "origin": "propagated",
+      "explanation": "Faithfully states the scheme's basis; the prior sentence supplies its digital-signature function.",
+      "materiality": "Medium: identifies FIPS 205's scheme type."
+    }
+  ],
+  "preserved": [
+    "approval-date",
+    "ml-kem-purpose",
+    "ml-dsa-signature",
+    "slh-dsa-signature",
+    "quantum-resistance"
+  ],
+  "distorted": [],
+  "omitted": [],
+  "developments": 2,
+  "explainedFacts": 5,
+  "paragraphSteps": [
+    "Paragraph 1 gives the approval date and security goal, then introduces the two functions the standards cover.",
+    "Paragraph 2 explains FIPS 203's shared-secret function and public-channel setting.",
+    "Paragraph 3 identifies the shared signature function of FIPS 204 and 205, then distinguishes their scheme approaches."
+  ],
+  "endpointAddsMeaning": true,
+  "redundancy": [],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}

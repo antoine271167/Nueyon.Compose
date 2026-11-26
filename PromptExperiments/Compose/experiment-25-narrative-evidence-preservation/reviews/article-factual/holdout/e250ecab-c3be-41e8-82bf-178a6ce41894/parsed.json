@@ -1,0 +1,87 @@
+{
+  "claims": [
+    {
+      "excerpt": "# From Deployment to Routine Science: Webb’s First Six Months",
+      "label": "F0",
+      "sourceEvidence": "The source traces Webb from its folded launch configuration through deployment, commissioning, and routine science operations after six months.",
+      "synthesisStatement": "Webb reached full deployment in its second week, but cooling, alignment, and calibration continued across the six-month commissioning period.",
+      "narrativeStatement": "The title frames the article as a six-month progression from deployment to routine science.",
+      "origin": "upstream",
+      "explanation": "This accurately frames the source’s deployment-to-science timeline.",
+      "materiality": "low"
+    },
+    {
+      "excerpt": "The James Webb Space Telescope was designed to fold into the Ariane 5 rocket’s fairing because its operational configuration was too large to fit inside.",
+      "label": "F0",
+      "sourceEvidence": "“Webb's fully deployed operational configuration is far too large to fit into any available rocket so it was designed to fold into a compact launch configuration that fit inside the Ariane 5.”",
+      "synthesisStatement": "Webb was designed to fold into the Ariane 5 fairing because its operational configuration was too large for the available rocket.",
+      "narrativeStatement": "The launch-fold design is attributed to the telescope’s size in its operational configuration.",
+      "origin": "upstream",
+      "explanation": "Faithfully preserves the stated reason and launch context.",
+      "materiality": "low"
+    },
+    {
+      "excerpt": "Unfolding it in space involved more than 50 major steps and over 300 possible single points of failure. The source notes that any one of them could have diminished or crippled the mission, and that repair was not possible at Webb’s distance from Earth.",
+      "label": "F0",
+      "sourceEvidence": "“There were over 50 major deployment steps ... or any one of over 300 single points of failure could have diminished or crippled the mission.” The source also says: “Since Webb operates at approximately 1 million miles from Earth, there was no possibility for a repair mission.”",
+      "synthesisStatement": "Deployment involved more than 50 major steps and over 300 possible single points of failure; any one could have diminished or crippled the mission, and repair was not possible at Webb’s distance from Earth.",
+      "narrativeStatement": "The text reports deployment risks and the lack of a repair option as potential stakes, not as failures that occurred.",
+      "origin": "upstream",
+      "explanation": "The counts, conditional risk, and repair limitation match the source; the wording does not imply a failure occurred.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "By the second week, the secondary mirror and both wings of the primary mirror had unfolded and latched. Webb had reached its fully deployed operational configuration, but preparation for science continued.",
+      "label": "F0",
+      "sourceEvidence": "“During the second week after launch, we finished deploying the telescope structures by unfolding and latching the secondary mirror tripod and rotating and latching the two primary mirror wings. This brought Webb into its fully deployed operational configuration.” The source then describes the first month’s cooldown and the remaining five months of commissioning.",
+      "synthesisStatement": "By the second week, the secondary mirror and both primary-mirror wings had unfolded and latched, completing the fully deployed configuration; commissioning continued afterward.",
+      "narrativeStatement": "The article distinguishes physical deployment completion from readiness for science.",
+      "origin": "upstream",
+      "explanation": "“Secondary mirror” is a reasonable shorthand for the source’s secondary mirror tripod; the milestone and continued preparation are accurate.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "During the first month, the telescope and its instruments cooled for several weeks. Mirror alignment took place in months two through four.",
+      "label": "F1",
+      "sourceEvidence": "The source says cooling “took several weeks” and describes the second, third, and fourth months as the period of telescope alignment. It also says “Cooldown effectively ended” during that alignment period.",
+      "synthesisStatement": "Cooling, mirror alignment, and calibration continued across the commissioning period; cooldown effectively ended while alignment was underway.",
+      "narrativeStatement": "The timeline places first-month cooling before months-two-through-four alignment without stating that cooling overlapped alignment.",
+      "origin": "narrative",
+      "explanation": "Both stated timeframes are supported, but their staged presentation omits the source’s overlap and may suggest cooling was complete before alignment began.",
+      "materiality": "moderate"
+    },
+    {
+      "excerpt": "Instrument-mode calibration followed in months five and six. Webb began routine science operations after six months.",
+      "label": "F0",
+      "sourceEvidence": "“In the fifth and sixth months: Calibration and completion of commissioning.” The source adds: “After six months ... Webb began its science mission and started to conduct routine science operations.”",
+      "synthesisStatement": "Instrument calibration occupied months five and six, and routine science operations began after six months.",
+      "narrativeStatement": "The article gives the calibration period and the transition to routine science operations.",
+      "origin": "upstream",
+      "explanation": "The timing and endpoint match the source; no unsupported calibration outcome is claimed.",
+      "materiality": "high"
+    }
+  ],
+  "preserved": [
+    "launch-fold",
+    "deployment-risk",
+    "deployed-second-week",
+    "calibration-to-science"
+  ],
+  "distorted": [
+    "cooling-and-alignment"
+  ],
+  "omitted": [],
+  "developments": 5,
+  "explainedFacts": 10,
+  "paragraphSteps": [
+    "Paragraph 1: launch-size constraint; deployment complexity and potential stakes.",
+    "Paragraph 2: second-week deployment completion; continued science preparation; first-month cooling.",
+    "Paragraph 3: mirror alignment; instrument calibration; start of routine science."
+  ],
+  "endpointAddsMeaning": true,
+  "redundancy": [],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}

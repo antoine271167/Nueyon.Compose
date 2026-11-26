@@ -1,0 +1,110 @@
+{
+  "claims": [
+    {
+      "excerpt": "Bennu Sample Inventory Reached 121.6 Grams",
+      "label": "F0",
+      "sourceEvidence": "The provided source evidence says the completed inventory amounted to 121.6 grams.",
+      "synthesisStatement": "The completed inventory amounted to 121.6 grams.",
+      "narrativeStatement": "The completed inventory amounted to 121.6 grams.",
+      "origin": "upstream",
+      "explanation": "Faithfully states the final inventory amount.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "OSIRIS-REx returned material from asteroid Bennu to Earth on September 24, 2023.",
+      "label": "F0",
+      "sourceEvidence": "The provided source evidence says OSIRIS-REx returned material from Bennu to Earth on September 24, 2023.",
+      "synthesisStatement": "OSIRIS-REx returned material from asteroid Bennu to Earth on September 24, 2023.",
+      "narrativeStatement": "The Story Progression gives the same return date and identifies Bennu.",
+      "origin": "upstream",
+      "explanation": "Faithfully states the mission, destination, and date.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "The mission required at least 60 grams",
+      "label": "F0",
+      "sourceEvidence": "The provided source evidence says the mission required at least 60 grams of asteroid material.",
+      "synthesisStatement": "The mission required at least 60 grams of asteroid material.",
+      "narrativeStatement": "The narrative says the mission needed at least 60 grams.",
+      "origin": "upstream",
+      "explanation": "Preserves the amount and its status as a mission requirement.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "that minimum had already been exceeded before the sampling head was completely opened.",
+      "label": "F0",
+      "sourceEvidence": "The provided source evidence says the team exceeded the requirement before completely opening the sampling head.",
+      "synthesisStatement": "The team exceeded that requirement before completely opening the sampling head.",
+      "narrativeStatement": "The narrative says the threshold was exceeded before the sampling head was completely opened.",
+      "origin": "upstream",
+      "explanation": "Faithfully preserves the timing and does not invent an amount for this earlier milestone.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "A final pour added 51.2 grams.",
+      "label": "F0",
+      "sourceEvidence": "The provided source evidence says a final pour added 51.2 grams.",
+      "synthesisStatement": "A final pour added 51.2 grams.",
+      "narrativeStatement": "The narrative says the final pour added 51.2 grams.",
+      "origin": "upstream",
+      "explanation": "Faithfully states the amount attributed to the final pour.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "The completed inventory totaled 121.6 grams",
+      "label": "F0",
+      "sourceEvidence": "The provided source evidence says the completed inventory amounted to 121.6 grams.",
+      "synthesisStatement": "The completed inventory amounted to 121.6 grams.",
+      "narrativeStatement": "The narrative gives the completed inventory as 121.6 grams.",
+      "origin": "upstream",
+      "explanation": "Faithfully states the final accounted-for amount.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "separate from, and more than, the mission’s 60-gram minimum.",
+      "label": "F0",
+      "sourceEvidence": "The evidence distinguishes the 60-gram science requirement from the 121.6-gram total; 121.6 grams is greater than 60 grams.",
+      "synthesisStatement": "The mission requirement and completed inventory are stated as distinct facts.",
+      "narrativeStatement": "The narrative says the endpoint establishes the final total in relation to the 60-gram minimum.",
+      "origin": "compose",
+      "explanation": "This comparison is a supported synthesis of the distinct requirement and inventory amounts.",
+      "materiality": "material"
+    }
+  ],
+  "preserved": [
+    "return-date",
+    "minimum-required",
+    "requirement-exceeded-before-opening",
+    "final-pour",
+    "completed-inventory"
+  ],
+  "distorted": [],
+  "omitted": [],
+  "developments": 3,
+  "explainedFacts": 4,
+  "paragraphSteps": [
+    {
+      "paragraph": 1,
+      "steps": [
+        "Dates the return of Bennu material.",
+        "Sets the 60-gram requirement and reports that it was exceeded before the sampling head was completely opened."
+      ]
+    },
+    {
+      "paragraph": 2,
+      "steps": [
+        "Reports the 51.2-gram final pour.",
+        "Gives the 121.6-gram completed inventory and distinguishes it from the 60-gram minimum."
+      ]
+    }
+  ],
+  "endpointAddsMeaning": true,
+  "redundancy": [
+    "The headline repeats the 121.6-gram total stated in the final paragraph; this is standard headline/body repetition."
+  ],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}
+

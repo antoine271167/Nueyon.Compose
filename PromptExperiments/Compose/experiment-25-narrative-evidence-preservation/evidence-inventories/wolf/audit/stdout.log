@@ -1,0 +1,33 @@
+{
+  "checks": [
+    {
+      "id": "social-pack-behavior",
+      "supported": true,
+      "useful": true,
+      "reason": "The excerpt and claim match the source and Synthesis: Yellowstone packs are described as complex social families, and cooperative offspring care and group hunting are identified as benefits of social living.",
+      "coverageGap": "The source also mentions territory and carcass defense and survival benefits for infirmed individuals; these are not needed to support the claim."
+    },
+    {
+      "id": "kills-feed-other-animals",
+      "supported": true,
+      "useful": true,
+      "reason": "The excerpt and claim accurately summarize that wolf-kill remains are consumed by ravens, coyotes, bears, and invertebrates. The excerpt does not imply a broader ecosystem cascade.",
+      "coverageGap": "The source also names magpies and eagles and describes how animals access carcasses; those details are omitted."
+    },
+    {
+      "id": "prey-composition-shift",
+      "supported": true,
+      "useful": true,
+      "reason": "The excerpt and claim preserve the early-winter scope and reported periods: elk calves and bull elk proportions reversed between 1995–2000 and 2001–2007. The source says the change indicates shifts in prey vulnerability and availability.",
+      "coverageGap": "The source adds that elk remained the primary prey, bison became increasingly important, and long-term monitoring is important; these details are omitted."
+    },
+    {
+      "id": "multiple-influences-on-predation",
+      "supported": true,
+      "useful": true,
+      "reason": "The excerpt and claim accurately report that changes in wolf predation and impacts on prey such as elk are linked to other predators, outside-park ungulate management, and weather, and that NPS research examines the relative factors. They do not assign quantified contributions.",
+      "coverageGap": "The source explains that weather affects forage quality and availability and, in turn, elk nutritional condition; this pathway is omitted."
+    }
+  ]
+}
+

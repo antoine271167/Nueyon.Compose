@@ -1,0 +1,78 @@
+{
+  "claims": [
+    {
+      "excerpt": "Why one program used two emissions rules",
+      "label": "F0",
+      "sourceEvidence": "“The sulfur dioxide mechanism applies an aggregate cap and allows trading”; “The nitrogen oxides component was rate-based for certain coal-fired units”",
+      "synthesisStatement": "“the program treated the two pollutants differently”",
+      "narrativeStatement": "The title’s implication that the program used different rules for the two pollutants is supported.",
+      "origin": "propagated",
+      "explanation": "The source describes distinct sulfur dioxide and nitrogen oxides mechanisms. The title asks why but does not itself assert a reason.",
+      "materiality": "Low"
+    },
+    {
+      "excerpt": "The sulfur dioxide mechanism applies an aggregate cap and allows trading; one allowance covers one ton.",
+      "label": "F0",
+      "sourceEvidence": "“The sulfur dioxide mechanism applies an aggregate cap and allows trading; one allowance covers one ton.”",
+      "synthesisStatement": "“The sulfur dioxide mechanism applies an aggregate cap and allows trading; one allowance covers one ton.”",
+      "narrativeStatement": "Faithfully states the sulfur dioxide mechanism and allowance definition.",
+      "origin": "propagated",
+      "explanation": "The mechanism and one-ton allowance are accurately attributed to sulfur dioxide.",
+      "materiality": "High"
+    },
+    {
+      "excerpt": "The nitrogen oxides component was rate-based for certain coal-fired units, began in 1996 and did not introduce a cap or allowance trading.",
+      "label": "F0",
+      "sourceEvidence": "“The nitrogen oxides component was rate-based for certain coal-fired units, began in 1996 and did not introduce a cap or allowance trading.”",
+      "synthesisStatement": "“The nitrogen oxides component was rate-based for certain coal-fired units, began in 1996 and did not introduce a cap or allowance trading.”",
+      "narrativeStatement": "Faithfully preserves the component’s scope, start year, and distinction from the sulfur dioxide mechanism.",
+      "origin": "propagated",
+      "explanation": "The qualification “for certain coal-fired units” and the absence of a cap or trading are retained.",
+      "materiality": "High"
+    },
+    {
+      "excerpt": "Its phase I began in 1995 with 263 initial units at 110 plants; substitution or compensating units brought the phase I total to 445 units.",
+      "label": "F2",
+      "sourceEvidence": "“Its phase I began in 1995 with 263 initial units at 110 plants; substitution or compensating units brought the phase I total to 445 units.” In the source, “Its” refers to the sulfur dioxide mechanism.",
+      "synthesisStatement": "“Its phase I began in 1995 with 263 initial units at 110 plants; substitution or compensating units brought the phase I total to 445 units.”",
+      "narrativeStatement": "The placement after the nitrogen oxides bullet makes “Its” appear to refer to the nitrogen oxides component, misattributing the sulfur dioxide phase I figures.",
+      "origin": "compose",
+      "explanation": "The facts and qualifiers match the source, but the pronoun’s nearest antecedent is the nitrogen oxides component, not sulfur dioxide.",
+      "materiality": "High"
+    },
+    {
+      "excerpt": "Phase II began in 2000. The final 2010 cap was 8.95 million tons.",
+      "label": "F2",
+      "sourceEvidence": "“Phase II began in 2000. The final 2010 cap was 8.95 million tons.” The source identifies these as sulfur dioxide milestones.",
+      "synthesisStatement": "“Phase II began in 2000. The final 2010 cap was 8.95 million tons.”",
+      "narrativeStatement": "Following the ambiguous phase I attribution, this reads as a continuation of the nitrogen oxides timeline, though the source milestones are for sulfur dioxide.",
+      "origin": "compose",
+      "explanation": "The dates and cap amount are accurate, but the preceding attribution makes the subject misleading.",
+      "materiality": "High"
+    }
+  ],
+  "preserved": [
+    "allowance-one-ton",
+    "sulfur-dioxide-cap-trading",
+    "nitrogen-oxides-rate-based"
+  ],
+  "distorted": [
+    "sulfur-dioxide-coverage-expansion",
+    "sulfur-dioxide-later-milestones"
+  ],
+  "omitted": [],
+  "developments": 2,
+  "explainedFacts": 0,
+  "paragraphSteps": [
+    "Context: accurately introduces the sulfur dioxide cap, trading, and allowance.",
+    "Development: accurately contrasts the nitrogen oxides component and preserves its qualifications.",
+    "Development: gives sulfur dioxide phase I figures, but the pronoun points ambiguously to nitrogen oxides.",
+    "Endpoint: gives sulfur dioxide phase II and cap milestones, but the preceding attribution carries forward."
+  ],
+  "endpointAddsMeaning": true,
+  "redundancy": [],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}

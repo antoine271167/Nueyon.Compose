@@ -1,0 +1,66 @@
+{
+  "items": [
+    {
+      "id": "approval-date",
+      "claim": "FIPS 203, 204, and 205 were approved in August 2024.",
+      "synthesisExcerpt": "The Secretary of Commerce approved FIPS 203, 204 and 205 in August 2024.",
+      "sourceEvidence": "NIST page, operator paraphrase: “The Secretary of Commerce approved FIPS 203, 204 and 205 in August 2024.”",
+      "kind": "approval",
+      "useful": true,
+      "material": true,
+      "usefulness": "Dates the standards’ approval.",
+      "qualification": "Does not describe their later adoption."
+    },
+    {
+      "id": "ml-kem-purpose",
+      "claim": "FIPS 203 specifies ML-KEM for establishing a shared secret over a public channel.",
+      "synthesisExcerpt": "FIPS 203 specifies ML-KEM to establish a shared secret between parties communicating over a public channel.",
+      "sourceEvidence": "NIST page, operator paraphrase: “FIPS 203 specifies ML-KEM to establish a shared secret between parties communicating over a public channel.”",
+      "kind": "key-establishment",
+      "useful": true,
+      "material": true,
+      "usefulness": "Establishes one purpose of the standards.",
+      "qualification": "The excerpt does not describe the protocol or its use."
+    },
+    {
+      "id": "ml-dsa-signature",
+      "claim": "FIPS 204 specifies a module-lattice-based digital signature scheme.",
+      "synthesisExcerpt": "FIPS 204 specifies a module-lattice-based digital signature scheme.",
+      "sourceEvidence": "NIST page, operator paraphrase: “FIPS 204 specifies a module-lattice-based digital signature scheme.”",
+      "kind": "digital-signature",
+      "useful": true,
+      "material": true,
+      "usefulness": "Shows that FIPS 204 serves a signature purpose.",
+      "qualification": "The excerpt gives no further detail about the scheme."
+    },
+    {
+      "id": "slh-dsa-signature",
+      "claim": "FIPS 205 specifies a stateless hash-based digital signature scheme.",
+      "synthesisExcerpt": "FIPS 205 specifies a stateless hash-based digital signature scheme.",
+      "sourceEvidence": "NIST page, operator paraphrase: “FIPS 205 specifies a stateless hash-based digital signature scheme.”",
+      "kind": "digital-signature",
+      "useful": true,
+      "material": true,
+      "usefulness": "Shows a second signature standard, with a different stated basis.",
+      "qualification": "The excerpt does not compare the signature schemes."
+    },
+    {
+      "id": "quantum-resistance",
+      "claim": "The schemes are designed to resist future quantum attacks.",
+      "synthesisExcerpt": "The schemes are designed to resist future quantum attacks.",
+      "sourceEvidence": "NIST page, operator paraphrase: “The schemes are designed to resist future quantum attacks.”",
+      "kind": "security-goal",
+      "useful": true,
+      "material": true,
+      "usefulness": "States the shared security goal.",
+      "qualification": "Does not specify a guarantee or threat model."
+    }
+  ],
+  "uncertainties": "The supplied evidence does not explain signature use, compare the schemes, or provide implementation or performance details.",
+  "endpoint": "https://csrc.nist.gov/News/2024/postquantum-cryptography-fips-approved/",
+  "operatorSourceAudit": {
+    "url": "https://csrc.nist.gov/News/2024/postquantum-cryptography-fips-approved/",
+    "locator": "August 13, 2024 notice, list and descriptions of all three standards",
+    "evidence": "The Secretary of Commerce approved three standards. FIPS 203 is the module-lattice KEM for establishing a shared secret over a public channel. FIPS 204 is the module-lattice signature standard, and FIPS 205 is the stateless hash-based signature standard. They are designed to resist future quantum-computer attacks."
+  }
+}

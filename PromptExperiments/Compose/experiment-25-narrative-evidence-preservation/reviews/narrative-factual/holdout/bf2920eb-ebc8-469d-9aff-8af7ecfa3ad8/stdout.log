@@ -1,0 +1,106 @@
+{
+  "claims": [
+    {
+      "excerpt": "Uitgevouwen is nog niet klaar: de lange weg naar Webbs eerste wetenschap",
+      "label": "F0",
+      "sourceEvidence": "The source says Webb reached routine science operations after six months; it describes deployment and commissioning as distinct phases.",
+      "synthesisStatement": "Webb’s journey to routine science took longer than unfolding.",
+      "narrativeStatement": "Unfolding did not mean Webb was ready for science; the path to its first science operations was longer.",
+      "origin": "propagated",
+      "explanation": "The headline faithfully conveys the distinction between deployment and readiness for routine science.",
+      "materiality": "low"
+    },
+    {
+      "excerpt": " **Context:** Webb was designed to fold into the Ariane 5 fairing because its operational configuration was too large for the available rocket.",
+      "label": "F0",
+      "sourceEvidence": "“Webb's fully deployed operational configuration is far too large to fit into any available rocket so it was designed to fold into a compact launch configuration that fit inside the Ariane 5.”",
+      "synthesisStatement": "Webb was designed to fold into the Ariane 5 fairing because its operational configuration was too large for the available rocket.",
+      "narrativeStatement": "Webb folded to fit the Ariane 5 fairing because its deployed configuration was too large for an available rocket.",
+      "origin": "propagated",
+      "explanation": "The reason and launch vehicle are accurately stated.",
+      "materiality": "low"
+    },
+    {
+      "excerpt": "- **Development:** Deployment involved more than 50 major steps and over 300 possible single points of failure; the source says any one could have diminished or crippled the mission, and repair was not possible at Webb’s distance from Earth.",
+      "label": "F0",
+      "sourceEvidence": "“There were over 50 major deployment steps, with 178 release mechanisms that had to perform perfectly or any one of over 300 single points of failure could have diminished or crippled the mission.” The source also says: “Since Webb operates at approximately 1 million miles from Earth, there was no possibility for a repair mission.”",
+      "synthesisStatement": "Deployment had over 50 major steps and over 300 possible single points of failure; any one could have diminished or crippled the mission, and repair was not possible at Webb’s distance.",
+      "narrativeStatement": "The deployment had numerous potential failure points with serious possible consequences, and a repair mission was not possible.",
+      "origin": "propagated",
+      "explanation": "The risks are presented as possibilities, not as failures that actually occurred; the no-repair qualification is retained.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "- **Development:** By the second week, the secondary mirror and both primary-mirror wings had unfolded and latched, completing the telescope’s fully deployed operational configuration.",
+      "label": "F1",
+      "sourceEvidence": "“During the second week after launch, we finished deploying the telescope structures by unfolding and latching the secondary mirror tripod and rotating and latching the two primary mirror wings. This brought Webb into its fully deployed operational configuration.”",
+      "synthesisStatement": "By the second week, the secondary mirror and both primary-mirror wings had unfolded and latched, completing Webb’s fully deployed configuration.",
+      "narrativeStatement": "Webb completed deployment in its second week as the secondary-mirror structure and both primary-mirror wings were deployed and latched.",
+      "origin": "compose",
+      "explanation": "The milestone and outcome are correct, but the source specifies that the secondary mirror tripod unfolded and latched, rather than the mirror itself. This is a minor component-level imprecision.",
+      "materiality": "low"
+    },
+    {
+      "excerpt": "- **Development:** In the first month, the telescope and instruments cooled for several weeks. Mirror alignment took place in months two through four, followed by instrument-mode calibration in months five and six.",
+      "label": "F0",
+      "sourceEvidence": "“The telescope and scientific instruments started to cool rapidly in the shade of the sunshield, but it took several weeks for them to cool all the way down and reach stable temperatures.” The source describes “the second, third and fourth months” as the period for “Initial optics checkouts, and telescope alignment,” and the fifth and sixth months as “Calibration and completion of commissioning.”",
+      "synthesisStatement": "Cooling took several weeks; mirror alignment took place in months two through four, followed by instrument-mode calibration in months five and six.",
+      "narrativeStatement": "Cooling, alignment, and instrument calibration occurred in the stated commissioning periods.",
+      "origin": "propagated",
+      "explanation": "The sequence and time ranges match the source. It does not imply the planned commissioning stages were recovery from a failure.",
+      "materiality": "medium"
+    },
+    {
+      "excerpt": "- **Endpoint:** Mirror alignment took place in months two through four, followed by instrument-mode calibration in months five and six. Webb began routine science operations after six months.",
+      "label": "F0",
+      "sourceEvidence": "The source describes alignment in “the second, third and fourth months” and calibration in “the fifth and sixth months.” It adds: “After six months: ‘Science operations!’ Webb began its science mission and started to conduct routine science operations.”",
+      "synthesisStatement": "Instrument-mode calibration occupied months five and six; Webb began routine science operations after six months.",
+      "narrativeStatement": "After commissioning, Webb began routine science operations at the six-month mark.",
+      "origin": "compose",
+      "explanation": "The routine-science endpoint is supported. The alignment and calibration details repeat the preceding development bullet.",
+      "materiality": "medium"
+    }
+  ],
+  "preserved": [
+    "launch-fold",
+    "deployment-risk",
+    "deployed-second-week",
+    "cooling-and-alignment",
+    "calibration-to-science"
+  ],
+  "distorted": [],
+  "omitted": [],
+  "developments": 5,
+  "explainedFacts": 11,
+  "paragraphSteps": [
+    {
+      "paragraph": 1,
+      "steps": [
+        "Second-week completion of deployment"
+      ]
+    },
+    {
+      "paragraph": 2,
+      "steps": [
+        "First-month cooling",
+        "Months-two-through-four mirror alignment",
+        "Months-five-and-six instrument-mode calibration"
+      ]
+    },
+    {
+      "paragraph": 3,
+      "steps": [
+        "Routine science operations after six months"
+      ]
+    }
+  ],
+  "endpointAddsMeaning": true,
+  "redundancy": [
+    "The endpoint repeats the preceding development bullet’s mirror-alignment and instrument-calibration timeline; its routine-science milestone adds a new endpoint."
+  ],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}
+

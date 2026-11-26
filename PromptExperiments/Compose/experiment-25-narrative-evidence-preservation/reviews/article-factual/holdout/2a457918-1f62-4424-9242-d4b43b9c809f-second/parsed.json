@@ -1,0 +1,98 @@
+{
+  "claims": [
+    {
+      "exact body excerpt": "# The First Three NIST Post-Quantum Standards Serve Two Purposes",
+      "label": "F0",
+      "sourceEvidence": "The supplied evidence identifies FIPS 203 as serving shared-secret establishment and FIPS 204 and FIPS 205 as digital-signature standards.",
+      "synthesisStatement": "The selected idea is “Why the first three NIST post-quantum standards serve two distinct purposes.”",
+      "narrativeStatement": "Selected Story: “Why the first three NIST post-quantum standards serve two distinct purposes.”",
+      "origin": "narrative",
+      "explanation": "The headline accurately condenses the two purposes established by the standards’ descriptions.",
+      "materiality": "Non-material wording difference: “two” omits “distinct” without changing the meaning."
+    },
+    {
+      "exact body excerpt": "In August 2024, the Secretary of Commerce approved FIPS 203, FIPS 204 and FIPS 205.",
+      "label": "F0",
+      "sourceEvidence": "The supplied source evidence states that the Secretary of Commerce approved FIPS 203, 204 and 205 in August 2024.",
+      "synthesisStatement": "“The Secretary of Commerce approved FIPS 203, 204 and 205 in August 2024.”",
+      "narrativeStatement": "Context: “The Secretary of Commerce approved FIPS 203, 204 and 205 in August 2024.”",
+      "origin": "upstream",
+      "explanation": "The approving official, standards, and month and year match the evidence.",
+      "materiality": "Material date and approval fact, accurately stated."
+    },
+    {
+      "exact body excerpt": "The standards specify schemes for two distinct purposes: establishing a shared secret and creating digital signatures.",
+      "label": "F0",
+      "sourceEvidence": "The evidence describes FIPS 203 as establishing a shared secret and FIPS 204 and FIPS 205 as digital-signature standards.",
+      "synthesisStatement": "The selected idea frames the standards as serving “two distinct purposes”; the evidence lists one shared-secret scheme and two signature schemes.",
+      "narrativeStatement": "The selected story frames the standards as serving “two distinct purposes”; its developments describe shared-secret establishment and digital-signature schemes.",
+      "origin": "compose",
+      "explanation": "This accurately groups the three standards by their described purposes and does not imply each standard serves both.",
+      "materiality": "Material organizing distinction, accurately stated."
+    },
+    {
+      "exact body excerpt": "FIPS 203 specifies ML-KEM, which establishes a shared secret between parties communicating over a public channel.",
+      "label": "F0",
+      "sourceEvidence": "“FIPS 203 specifies ML-KEM to establish a shared secret between parties communicating over a public channel.”",
+      "synthesisStatement": "“FIPS 203 specifies ML-KEM to establish a shared secret between parties communicating over a public channel.”",
+      "narrativeStatement": "Development: “FIPS 203 specifies ML-KEM to establish a shared secret between parties communicating over a public channel.”",
+      "origin": "upstream",
+      "explanation": "Changing “to establish” to “which establishes” preserves the scheme’s stated purpose; the public-channel qualification remains.",
+      "materiality": "Material technical purpose and qualification, accurately preserved."
+    },
+    {
+      "exact body excerpt": "FIPS 204 specifies a module-lattice-based digital signature scheme,",
+      "label": "F0",
+      "sourceEvidence": "“FIPS 204 specifies a module-lattice-based digital signature scheme.”",
+      "synthesisStatement": "“FIPS 204 specifies a module-lattice-based digital signature scheme.”",
+      "narrativeStatement": "Development: “FIPS 204 specifies a module-lattice-based digital signature scheme.”",
+      "origin": "upstream",
+      "explanation": "The standard number, lattice basis, and signature function match the evidence.",
+      "materiality": "Material technical classification, accurately stated."
+    },
+    {
+      "exact body excerpt": "FIPS 205 specifies a stateless hash-based digital signature scheme.",
+      "label": "F0",
+      "sourceEvidence": "“FIPS 205 specifies a stateless hash-based digital signature scheme.”",
+      "synthesisStatement": "“FIPS 205 specifies a stateless hash-based digital signature scheme.”",
+      "narrativeStatement": "Development: “FIPS 205 specifies a stateless hash-based digital signature scheme.”",
+      "origin": "upstream",
+      "explanation": "The standard number, stateless property, hash basis, and signature function match the evidence.",
+      "materiality": "Material technical classification, accurately stated."
+    },
+    {
+      "exact body excerpt": "The schemes are designed to resist future quantum attacks.",
+      "label": "F0",
+      "sourceEvidence": "“The schemes are designed to resist future quantum attacks.”",
+      "synthesisStatement": "“The schemes are designed to resist future quantum attacks.”",
+      "narrativeStatement": "Endpoint: “The schemes are designed to resist future quantum attacks.”",
+      "origin": "upstream",
+      "explanation": "The statement preserves the design goal and does not claim a guarantee or specify an unstated threat model.",
+      "materiality": "Material security goal, accurately qualified as a design intent."
+    }
+  ],
+  "preserved": [
+    "approval-date",
+    "ml-kem-purpose",
+    "ml-dsa-signature",
+    "slh-dsa-signature",
+    "quantum-resistance"
+  ],
+  "distorted": [],
+  "omitted": [],
+  "developments": 3,
+  "explainedFacts": 3,
+  "paragraphSteps": [
+    "Paragraph 1: Gives the approval date and frames the standards’ two purposes.",
+    "Paragraph 2: Specifies the shared-secret function of FIPS 203 and the distinct signature schemes of FIPS 204 and FIPS 205.",
+    "Paragraph 3: States the schemes’ future-quantum-attack resistance goal."
+  ],
+  "endpointAddsMeaning": false,
+  "redundancy": [
+    "The headline’s two-purpose framing is repeated in paragraph 1; the repetition is brief and serves as the article’s organizing distinction."
+  ],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}

@@ -1,0 +1,88 @@
+{
+  "claims": [
+    {
+      "excerpt": "Why the 1906 earthquake has different magnitude estimates",
+      "label": "F0",
+      "sourceEvidence": "The synthesis reports a seismic estimate of 7.7 and a geodetic estimate of 7.9, and says the methods estimate earthquake size differently.",
+      "synthesisStatement": "Different methods of estimating earthquake size can disagree.",
+      "narrativeStatement": "The title asks why the 1906 earthquake has different magnitude estimates.",
+      "origin": "upstream",
+      "explanation": "The title's premise is supported by the two differing estimates; it does not assert an unsupported cause.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "One team studied seismic recordings from 96 observatories and digitized and modeled usable data from 12.",
+      "label": "F0",
+      "sourceEvidence": "Seismic waves were recorded at 96 observatories, and 12 stations had records suitable for digitization and modeling.",
+      "synthesisStatement": "One team studied seismic recordings from 96 observatories and digitized and modeled usable data from 12.",
+      "narrativeStatement": "One team studied seismic recordings from 96 observatories and digitized and modeled usable data from 12.",
+      "origin": "upstream",
+      "explanation": "The counts and description of usable data match the evidence.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "That seismic analysis suggested a surface-wave magnitude of 7.7.",
+      "label": "F0",
+      "sourceEvidence": "Those results suggested surface-wave magnitude 7.7.",
+      "synthesisStatement": "That seismic analysis suggested a surface-wave magnitude of 7.7.",
+      "narrativeStatement": "That seismic analysis suggested a surface-wave magnitude of 7.7.",
+      "origin": "upstream",
+      "explanation": "The estimate and its surface-wave qualification are preserved.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "A USGS team instead re-evaluated geodetic measurements made before and after the earthquake.",
+      "label": "F0",
+      "sourceEvidence": "USGS re-evaluated geodetic measurements from before and after the event.",
+      "synthesisStatement": "A USGS team instead re-evaluated geodetic measurements made before and after the earthquake.",
+      "narrativeStatement": "A USGS team instead re-evaluated geodetic measurements made before and after the earthquake.",
+      "origin": "upstream",
+      "explanation": "The team, method, and before-and-after timing are retained.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "The geodetic approach used ground deformation reflected in angles and distances between benchmarks and gave an estimate of 7.9.",
+      "label": "F0",
+      "sourceEvidence": "USGS assessed deformation with benchmark distances and angles; their slip models suggested moment magnitude 7.9.",
+      "synthesisStatement": "The geodetic approach used ground deformation reflected in angles and distances between benchmarks and gave an estimate of 7.9.",
+      "narrativeStatement": "The geodetic approach used ground deformation reflected in angles and distances between benchmarks and gave an estimate of 7.9.",
+      "origin": "upstream",
+      "explanation": "The measurement basis and estimate match the synthesis. The narrative does not assign a magnitude scale to 7.9, consistent with the synthesis's qualification.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "Different methods of estimating earthquake size can disagree.",
+      "label": "F0",
+      "sourceEvidence": "The methods estimate earthquake size differently.",
+      "synthesisStatement": "Different methods of estimating earthquake size can disagree.",
+      "narrativeStatement": "Different methods of estimating earthquake size can disagree.",
+      "origin": "upstream",
+      "explanation": "This supported takeaway follows from the contrasting estimates and methods.",
+      "materiality": "material"
+    }
+  ],
+  "preserved": [
+    "seismic-data",
+    "seismic-estimate",
+    "geodetic-reanalysis",
+    "geodetic-estimate",
+    "methods-can-disagree"
+  ],
+  "distorted": [],
+  "omitted": [],
+  "developments": 3,
+  "explainedFacts": 1,
+  "paragraphSteps": [
+    "Context: establishes the scope of the seismic data.",
+    "Development: gives the seismic analysis estimate.",
+    "Development: introduces the contrasting USGS geodetic re-evaluation.",
+    "Development: describes the geodetic measurement basis and estimate.",
+    "Endpoint: states the general takeaway that methods can disagree."
+  ],
+  "endpointAddsMeaning": true,
+  "redundancy": [],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}

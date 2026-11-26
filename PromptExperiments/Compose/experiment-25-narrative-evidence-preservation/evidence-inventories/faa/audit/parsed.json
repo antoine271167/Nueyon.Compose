@@ -1,0 +1,39 @@
+{
+  "checks": [
+    {
+      "id": "hot-spot-definition",
+      "supported": false,
+      "useful": true,
+      "reason": "De claim en het volledige excerpt komen overeen met de Synthesis en het aangeleverde evidence-abstract, inclusief de beperking tot voorgeschiedenis of risico. Maar het abstract is expliciet een parafrase; de aangehaalde officiële brontekst ontbreekt, dus verificatie tegen de oorspronkelijke autoritatieve bron blijft onopgelost.",
+      "coverageGap": "Geen ontbrekend onderdeel van deze definitie; de standaardisatiedatum, symboolbetekenissen en het doel staan in andere items."
+    },
+    {
+      "id": "standardization-date",
+      "supported": false,
+      "useful": true,
+      "reason": "De claim en het volledige excerpt stemmen overeen met de Synthesis en het aangeleverde evidence-abstract. De claim laat terecht open welke drie vormen het zijn, maar de oorspronkelijke autoritatieve brontekst ontbreekt; verificatie daarvan blijft onopgelost.",
+      "coverageGap": "Dit item noemt de vormen niet; de twee symboolitems behandelen die gezamenlijk."
+    },
+    {
+      "id": "ground-movement-symbol",
+      "supported": false,
+      "useful": true,
+      "reason": "De claim en het volledige excerpt stemmen overeen met de Synthesis en het aangeleverde evidence-abstract; de reikwijdte is de betekenis van een cirkel of ellips. De oorspronkelijke autoritatieve brontekst ontbreekt, dus verificatie daarvan blijft onopgelost.",
+      "coverageGap": "Dit item behandelt alleen ground movement; de cilinderbetekenis staat in het afzonderlijke wrong-surface-item."
+    },
+    {
+      "id": "wrong-surface-symbol",
+      "supported": false,
+      "useful": true,
+      "reason": "De claim en het volledige excerpt stemmen overeen met de Synthesis en het aangeleverde evidence-abstract; de reikwijdte is de betekenis van een cilinder. De oorspronkelijke autoritatieve brontekst ontbreekt, dus verificatie daarvan blijft onopgelost.",
+      "coverageGap": "Dit item behandelt alleen wrong surface; de cirkel- en ellipsbetekenis staat in het afzonderlijke ground-movement-item."
+    },
+    {
+      "id": "standardization-purpose",
+      "supported": false,
+      "useful": true,
+      "reason": "De claim en het volledige excerpt stemmen overeen met de Synthesis en het aangeleverde evidence-abstract. De kwalificatie voorkomt terecht de sterkere bewering dat verwarring zeker verdwijnt. De oorspronkelijke autoritatieve brontekst ontbreekt, dus verificatie daarvan blijft onopgelost.",
+      "coverageGap": "Geen ontbrekend onderdeel van het genoemde doel; de definitie, datum en symboolbetekenissen staan in andere items."
+    }
+  ]
+}

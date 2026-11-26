@@ -1,0 +1,90 @@
+{
+  "claims": [
+    {
+      "excerpt": "A 2022 experiment at the National Ignition Facility reported achieving fusion ignition, a step toward inertial fusion energy.",
+      "label": "F0",
+      "sourceEvidence": "A Lawrence Livermore National Laboratory experiment at the National Ignition Facility achieved fusion ignition in 2022; the announcement treated it as progress toward inertial fusion energy.",
+      "synthesisStatement": "The experiment achieved fusion ignition, and the announcement treats it as progress toward inertial fusion energy.",
+      "narrativeStatement": "The experiment's reported achievement of fusion ignition is a step toward inertial fusion energy.",
+      "origin": "propagated",
+      "explanation": "Faithfully combines the experiment's year, location, achievement, and stated significance.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "At the target, 2.05 megajoules of energy were delivered and 3.15 megajoules of fusion energy were generated.",
+      "label": "F0",
+      "sourceEvidence": "The experiment delivered 2.05 megajoules to the target and generated 3.15 megajoules of fusion energy.",
+      "synthesisStatement": "The experiment delivered 2.05 megajoules to the target and generated 3.15 megajoules of fusion energy.",
+      "narrativeStatement": "The target-level measurements are 2.05 megajoules delivered to the target and 3.15 megajoules of fusion energy generated.",
+      "origin": "propagated",
+      "explanation": "The figures and target-level denominator are stated accurately.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "That target-level comparison is an experimental result, not a measurement of net electricity produced or delivered to the grid.",
+      "label": "F0",
+      "sourceEvidence": "The target energy denominator excludes facility-wide electricity; fusion output is not net electricity delivered to the grid.",
+      "synthesisStatement": "The target-energy denominator excludes facility-wide electricity, and fusion output is not net electricity delivered to the grid.",
+      "narrativeStatement": "The comparison is significant as an experimental result, not as net electricity production.",
+      "origin": "narrative",
+      "explanation": "Preserves the key boundary: target energy is not a facility-wide electricity balance or grid-delivery measurement.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "Practical energy production remains a longer-term direction",
+      "label": "U",
+      "sourceEvidence": "The source says practical energy production still needs many scientific and technological developments, but specifies no timeline.",
+      "synthesisStatement": "Many scientific and technological developments are still needed for practical energy production; no timeline is specified.",
+      "narrativeStatement": "Practical energy production still requires substantial scientific and technological development.",
+      "origin": "unresolved",
+      "explanation": "“Longer-term” adds a temporal characterization not established by the evidence, which explicitly gives no timeline.",
+      "materiality": "low"
+    },
+    {
+      "excerpt": "requiring substantial scientific and technological development.",
+      "label": "F0",
+      "sourceEvidence": "The announcement notes the many scientific and technological developments still needed for practical energy production.",
+      "synthesisStatement": "Many scientific and technological developments are still needed for practical energy production.",
+      "narrativeStatement": "Practical energy production still requires substantial scientific and technological development.",
+      "origin": "propagated",
+      "explanation": "Faithfully conveys the stated development still required.",
+      "materiality": "medium"
+    }
+  ],
+  "preserved": [
+    "ignition-event",
+    "target-energy-comparison",
+    "development-still-needed"
+  ],
+  "distorted": [],
+  "omitted": [
+    "announcement-date"
+  ],
+  "developments": 3,
+  "explainedFacts": 4,
+  "paragraphSteps": [
+    {
+      "paragraph": 1,
+      "steps": [
+        "Establishes fusion ignition and its relevance to inertial fusion energy.",
+        "Gives the target-level energy measurements."
+      ]
+    },
+    {
+      "paragraph": 2,
+      "steps": [
+        "Clarifies that the target comparison is not net electricity production or grid delivery.",
+        "Places practical energy production in the context of further development."
+      ]
+    }
+  ],
+  "endpointAddsMeaning": false,
+  "redundancy": [],
+  "peripheral": [],
+  "unsupported": [
+    "Practical energy production remains a longer-term direction"
+  ],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}
+

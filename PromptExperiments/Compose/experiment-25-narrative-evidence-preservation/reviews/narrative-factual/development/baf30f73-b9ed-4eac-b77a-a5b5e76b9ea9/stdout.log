@@ -1,0 +1,124 @@
+{
+  "claims": [
+    {
+      "excerpt": "Explain how GRACE Follow-On’s two spacecraft use changes in the distance between them to infer shifts in mass on Earth.",
+      "label": "F0",
+      "sourceEvidence": "The changing inter-satellite distance is a raw measurement used to infer shifts in mass.",
+      "synthesisStatement": "The changing inter-satellite distance is a raw measurement used to infer shifts in mass.",
+      "narrativeStatement": "The spacecraft use changing separation to infer mass shifts.",
+      "origin": "compose",
+      "explanation": "Faithfully frames the indirect measurement and inference; “on Earth” fits the stated mass-concentration and water-change context.",
+      "materiality": "central"
+    },
+    {
+      "excerpt": "As the pair approaches a larger mass concentration, gravity acts on the leading spacecraft first, initially increasing its distance from the trailing one.",
+      "label": "F0",
+      "sourceEvidence": "As the pair approaches a larger mass concentration, stronger gravity acts on the leading satellite first, initially pulling it farther from the trailing one.",
+      "synthesisStatement": "As the pair approaches a larger mass concentration, stronger gravity acts on the leading satellite first, initially pulling it farther from the trailing one.",
+      "narrativeStatement": "The leading spacecraft is affected first, increasing its separation from the trailing spacecraft.",
+      "origin": "upstream",
+      "explanation": "Preserves the order of the gravitational effect and the initial increase in separation.",
+      "materiality": "central"
+    },
+    {
+      "excerpt": "That changing separation is a measurement—not a direct image of water—and helps scientists investigate water movement in groundwater, lakes and rivers, soil, ice, and sea-level changes associated with water added to the oceans.",
+      "label": "F1",
+      "sourceEvidence": "The changing inter-satellite distance is a raw measurement used to infer shifts in mass. The mission follows changes involving groundwater, lakes and rivers, soil moisture, glaciers, ice sheets and changes in sea level attributable to water added to the oceans.",
+      "synthesisStatement": "The changing inter-satellite distance is a raw measurement used to infer shifts in mass. The mission follows changes involving groundwater, lakes and rivers, soil moisture, glaciers, ice sheets and changes in sea level attributable to water added to the oceans.",
+      "narrativeStatement": "The separation is an indirect measurement used to investigate water changes, including sea-level changes linked to water added to the oceans.",
+      "origin": "compose",
+      "explanation": "The indirect-measurement distinction and sea-level qualification are faithful. “Soil” and “ice” generalize the source’s more specific soil-moisture, glacier, and ice-sheet categories, a minor loss of precision.",
+      "materiality": "minor"
+    },
+    {
+      "excerpt": "- **Context:** GRACE Follow-On launched in 2018 with two spacecraft that follow one another about 137 miles (220 kilometers) apart.",
+      "label": "F0",
+      "sourceEvidence": "GRACE Follow-On launched May 22, 2018. Twin satellites follow each other about 137 miles or 220 kilometers apart.",
+      "synthesisStatement": "GRACE Follow-On launched May 22, 2018. Twin satellites follow each other about 137 miles or 220 kilometers apart.",
+      "narrativeStatement": "The mission launched in 2018 and its two spacecraft follow one another about 137 miles apart.",
+      "origin": "upstream",
+      "explanation": "Accurately states the launch year and separation; omitting the day does not change the claim.",
+      "materiality": "contextual"
+    },
+    {
+      "excerpt": "- **Development:** As the pair approaches a larger mass concentration, its gravitational effect reaches the leading spacecraft first, initially pulling it farther from the trailing spacecraft.",
+      "label": "F0",
+      "sourceEvidence": "As the pair approaches a larger mass concentration, stronger gravity acts on the leading satellite first, initially pulling it farther from the trailing one.",
+      "synthesisStatement": "As the pair approaches a larger mass concentration, stronger gravity acts on the leading satellite first, initially pulling it farther from the trailing one.",
+      "narrativeStatement": "The leading spacecraft is affected first and initially pulled farther from the trailing spacecraft.",
+      "origin": "propagated",
+      "explanation": "Faithful repetition of the stated sequence and effect.",
+      "materiality": "central"
+    },
+    {
+      "excerpt": "The changing distance between them is used to infer shifts in mass.",
+      "label": "F0",
+      "sourceEvidence": "The changing inter-satellite distance is a raw measurement used to infer shifts in mass.",
+      "synthesisStatement": "The changing inter-satellite distance is a raw measurement used to infer shifts in mass.",
+      "narrativeStatement": "Changing separation is used to infer mass shifts.",
+      "origin": "propagated",
+      "explanation": "Faithful statement of the indirect inference.",
+      "materiality": "central"
+    },
+    {
+      "excerpt": "- **Endpoint:** Connect those inferred mass shifts to the water changes the mission follows: groundwater, lakes and rivers, soil moisture, glaciers and ice sheets, and sea-level changes attributable to water added to the oceans.",
+      "label": "F0",
+      "sourceEvidence": "The mission follows changes involving groundwater, lakes and rivers, soil moisture, glaciers, ice sheets and changes in sea level attributable to water added to the oceans.",
+      "synthesisStatement": "The mission follows changes involving groundwater, lakes and rivers, soil moisture, glaciers, ice sheets and changes in sea level attributable to water added to the oceans.",
+      "narrativeStatement": "The inferred mass shifts connect to the listed water changes, with sea-level changes limited to water added to the oceans.",
+      "origin": "upstream",
+      "explanation": "Preserves the listed water domains and the sea-level qualification.",
+      "materiality": "central"
+    },
+    {
+      "excerpt": "- Make clear that the changing measurement is the distance between the spacecraft, not their altitude.",
+      "label": "F0",
+      "sourceEvidence": "The changing inter-satellite distance is a raw measurement used to infer shifts in mass.",
+      "synthesisStatement": "The changing inter-satellite distance is a raw measurement used to infer shifts in mass.",
+      "narrativeStatement": "The measured change is separation, not altitude.",
+      "origin": "upstream",
+      "explanation": "Correctly distinguishes the measured separation from altitude.",
+      "materiality": "important qualification"
+    },
+    {
+      "excerpt": "- Preserve the sequence: gravity acts on the leading spacecraft before the spacing changes.",
+      "label": "F0",
+      "sourceEvidence": "As the pair approaches a larger mass concentration, stronger gravity acts on the leading satellite first, initially pulling it farther from the trailing one.",
+      "synthesisStatement": "As the pair approaches a larger mass concentration, stronger gravity acts on the leading satellite first, initially pulling it farther from the trailing one.",
+      "narrativeStatement": "The gravitational effect precedes the spacing change.",
+      "origin": "upstream",
+      "explanation": "Matches the source’s causal order.",
+      "materiality": "important qualification"
+    }
+  ],
+  "preserved": [
+    "baseline",
+    "gravity-sequence",
+    "measurement-inference",
+    "water-changes"
+  ],
+  "distorted": [],
+  "omitted": [],
+  "developments": 4,
+  "explainedFacts": 3,
+  "paragraphSteps": [
+    "Introduce the spacecraft’s changing separation as the measurement used to infer mass shifts.",
+    "Explain how a larger mass concentration affects the leading spacecraft first and changes the spacing.",
+    "Connect inferred mass shifts to the water changes the mission follows, with the sea-level qualification retained."
+  ],
+  "endpointAddsMeaning": true,
+  "redundancy": [
+    "The Story Progression development repeats the Selected Story’s gravity-first sequence.",
+    "The Story Progression repeats the distance-to-mass inference and water-change endpoint.",
+    "Critical Constraints restate the measurement distinction and gravity-before-spacing sequence as instructions."
+  ],
+  "peripheral": [
+    "The 2018 launch year is useful context but peripheral to the central measurement mechanism."
+  ],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": [
+    "baseline"
+  ]
+}
+

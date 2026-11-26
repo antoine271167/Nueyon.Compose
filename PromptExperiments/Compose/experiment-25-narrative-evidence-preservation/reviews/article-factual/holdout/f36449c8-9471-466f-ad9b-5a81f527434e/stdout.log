@@ -1,0 +1,131 @@
+{
+  "claims": [
+    {
+      "excerpt": "Two Magnitude Estimates for the 1906 Earthquake",
+      "label": "F0",
+      "sourceEvidence": "The supplied evidence gives two estimates for the 1906 earthquake: 7.7 and 7.9.",
+      "synthesisStatement": "Different methods yielded estimates of 7.7 and 7.9.",
+      "narrativeStatement": "The 1906 earthquake has estimates of magnitude 7.7 and 7.9 from two different approaches.",
+      "origin": "upstream",
+      "explanation": "The title accurately describes the two documented estimates.",
+      "materiality": "Low"
+    },
+    {
+      "excerpt": "Two approaches have produced different magnitude estimates for the 1906 earthquake: 7.7 and 7.9.",
+      "label": "F2",
+      "sourceEvidence": "The authoritative verification identifies the 7.7 estimate as surface-wave magnitude and the 7.9 estimate as moment magnitude.",
+      "synthesisStatement": "The seismic analysis suggested a surface-wave magnitude of 7.7; the geodetic approach gave an estimate of 7.9.",
+      "narrativeStatement": "The 1906 earthquake has estimates of magnitude 7.7 and 7.9 from two different approaches.",
+      "origin": "compose",
+      "explanation": "The values are supported, but presenting them without their different magnitude scales obscures a material qualification and can suggest a direct like-for-like comparison.",
+      "materiality": "High"
+    },
+    {
+      "excerpt": "The estimates come from different ways of measuring the earthquake’s size.",
+      "label": "F0",
+      "sourceEvidence": "Different methods of estimating earthquake size can disagree.",
+      "synthesisStatement": "Different methods of estimating earthquake size can disagree.",
+      "narrativeStatement": "The story explains how the methods differ and why estimates of earthquake size can disagree.",
+      "origin": "upstream",
+      "explanation": "This accurately states the distinction supported by the evidence.",
+      "materiality": "Low"
+    },
+    {
+      "excerpt": "A seismic analysis estimated a magnitude of 7.7",
+      "label": "F1",
+      "sourceEvidence": "The authoritative verification says the seismic results suggested surface-wave magnitude 7.7.",
+      "synthesisStatement": "That seismic analysis suggested a surface-wave magnitude of 7.7.",
+      "narrativeStatement": "The seismic analysis ... suggested 7.7.",
+      "origin": "upstream",
+      "explanation": "The value and method are supported; the surface-wave scale is omitted, and “estimated” is slightly more definitive than “suggested.”",
+      "materiality": "Medium"
+    },
+    {
+      "excerpt": "using usable recordings from 12 of the 96 observatories studied.",
+      "label": "F1",
+      "sourceEvidence": "The authoritative verification says seismic waves were recorded at 96 observatories, with 12 stations having records suitable for digitization and modeling.",
+      "synthesisStatement": "One team studied seismic recordings from 96 observatories and digitized and modeled usable data from 12.",
+      "narrativeStatement": "using usable recordings from 12 of 96 observatories studied",
+      "origin": "upstream",
+      "explanation": "The counts and usable-record qualification are accurate, but the article omits that the usable records were digitized and modeled.",
+      "materiality": "Low"
+    },
+    {
+      "excerpt": "A USGS re-evaluation of geodetic measurements",
+      "label": "F1",
+      "sourceEvidence": "The authoritative verification says USGS re-evaluated geodetic measurements from before and after the event.",
+      "synthesisStatement": "A USGS team instead re-evaluated geodetic measurements made before and after the earthquake.",
+      "narrativeStatement": "the USGS re-evaluation of geodetic measurements",
+      "origin": "upstream",
+      "explanation": "The re-evaluation is correctly attributed to USGS, but the before-and-after timing is omitted.",
+      "materiality": "Low"
+    },
+    {
+      "excerpt": "estimated 7.9",
+      "label": "F1",
+      "sourceEvidence": "The authoritative verification says USGS slip models suggested moment magnitude 7.9.",
+      "synthesisStatement": "The geodetic approach ... gave an estimate of 7.9.",
+      "narrativeStatement": "the USGS re-evaluation of geodetic measurements, which estimated 7.9",
+      "origin": "upstream",
+      "explanation": "The estimate is supported, but the moment-magnitude scale is not stated.",
+      "materiality": "Medium"
+    },
+    {
+      "excerpt": "based on changes in angles and distances between benchmarks.",
+      "label": "F1",
+      "sourceEvidence": "The authoritative verification says deformation was assessed with benchmark distances and angles.",
+      "synthesisStatement": "The geodetic approach used ground deformation reflected in angles and distances between benchmarks.",
+      "narrativeStatement": "from changes in angles and distances between benchmarks",
+      "origin": "upstream",
+      "explanation": "The benchmark measurements are accurately described, though their role in reflecting ground deformation is left implicit.",
+      "materiality": "Low"
+    },
+    {
+      "excerpt": "The estimates reflect different measurement methods—seismic recordings and ground deformation.",
+      "label": "F0",
+      "sourceEvidence": "The seismic estimate came from seismic recordings; the geodetic estimate used ground deformation reflected in benchmark angles and distances.",
+      "synthesisStatement": "Different methods of estimating earthquake size can disagree.",
+      "narrativeStatement": "one based on seismic recordings and another on geodetic measurements of ground deformation",
+      "origin": "compose",
+      "explanation": "This accurately condenses the two measurement approaches.",
+      "materiality": "Low"
+    },
+    {
+      "excerpt": "Different methods can produce different estimates of earthquake size.",
+      "label": "F0",
+      "sourceEvidence": "Different methods of estimating earthquake size can disagree.",
+      "synthesisStatement": "Different methods of estimating earthquake size can disagree.",
+      "narrativeStatement": "why estimates of earthquake size can disagree",
+      "origin": "upstream",
+      "explanation": "This is the supported takeaway, though it repeats the article’s earlier contrast.",
+      "materiality": "Low"
+    }
+  ],
+  "preserved": [
+    "seismic-data",
+    "methods-can-disagree"
+  ],
+  "distorted": [
+    "seismic-estimate",
+    "geodetic-reanalysis",
+    "geodetic-estimate"
+  ],
+  "omitted": [],
+  "developments": 3,
+  "explainedFacts": 2,
+  "paragraphSteps": [
+    "Introduces the two estimates and their differing approaches.",
+    "Describes the seismic data scope and the geodetic benchmark measurements behind the estimates.",
+    "Summarizes that different measurement methods can yield different estimates."
+  ],
+  "endpointAddsMeaning": false,
+  "redundancy": [
+    "The estimates come from different ways of measuring the earthquake’s size.",
+    "Different methods can produce different estimates of earthquake size."
+  ],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}
+

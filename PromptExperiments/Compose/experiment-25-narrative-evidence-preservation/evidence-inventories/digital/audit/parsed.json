@@ -1,0 +1,39 @@
+{
+  "checks": [
+    {
+      "id": "launch-timeline",
+      "supported": true,
+      "useful": true,
+      "reason": "The source says the service launched publicly in 12 weeks and that the initially requested delivery in a matter of weeks was not feasible while creating a quality service. The excerpt preserves that relationship without claiming causation.",
+      "coverageGap": "The source does not specify when the 12-week period began; that qualification is noted separately."
+    },
+    {
+      "id": "user-sequence",
+      "supported": true,
+      "useful": true,
+      "reason": "The source says the team focused on refund applicants first, took that work to alpha, and planned for caseworkers later to avoid going off course due to limited knowledge or incorrect assumptions under time pressure. The synthesis supports this account and cautions against causal claims.",
+      "coverageGap": "The excerpt does not state the source's specific context that the caseworker user did not yet exist until applications were coming through."
+    },
+    {
+      "id": "beta-research-rhythm",
+      "supported": true,
+      "useful": true,
+      "reason": "The source describes the two-week sprint split, including accepting applications in week one and suspending submissions for testing, research, and processing in week two. The excerpt presents it as a reported practice, not a proven cause of speed or quality.",
+      "coverageGap": "It omits that the team was building the case-management application while iterating the front end, the context given for needing a focused research plan."
+    },
+    {
+      "id": "assisted-digital-scope",
+      "supported": true,
+      "useful": true,
+      "reason": "The source explicitly describes a digital and assisted-digital service with no paper version, and neither source nor synthesis specifies what assistance involved. This is relevant scope context, but should remain secondary rather than become a standalone narrative point.",
+      "coverageGap": "The nature of the assisted-digital support is unspecified; the excerpt correctly does not describe it."
+    },
+    {
+      "id": "five-week-results",
+      "supported": true,
+      "useful": true,
+      "reason": "The source reports these figures after five weeks of public availability, and the synthesis characterizes them as a reported snapshot rather than evidence that the described practices caused the results.",
+      "coverageGap": "The source gives no metric definitions, measurement method, or comparison; retain the attribution as reported figures and avoid implying validation or causality."
+    }
+  ]
+}

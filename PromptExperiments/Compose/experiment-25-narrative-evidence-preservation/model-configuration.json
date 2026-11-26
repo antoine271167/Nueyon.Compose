@@ -1,0 +1,20 @@
+{
+  "baseline": "53b8b92b2cee4b390e7c97637762faf8d138d733",
+  "generation": "gpt-6-luna",
+  "review": "gpt-6-luna",
+  "runtime": "Production single-agent CLI with machine-local configuration and provider defaults. Independent Copilot CLI review.",
+  "probes": {
+    "narrative": "passed",
+    "copilot": "passed",
+    "remoteMain": "matched baseline",
+    "build": "passed",
+    "testsPassed": 303
+  },
+  "probeCallsOutsidePlan": {
+    "generation": 1,
+    "review": 1
+  },
+  "providerBuild": null,
+  "tokenUsage": null,
+  "billedCost": null
+}

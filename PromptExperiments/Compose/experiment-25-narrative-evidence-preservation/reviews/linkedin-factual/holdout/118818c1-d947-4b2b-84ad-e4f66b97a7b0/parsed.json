@@ -1,0 +1,74 @@
+{
+  "claims": [
+    {
+      "excerpt": "Sparse checkout controls which tracked files appear in your working tree.",
+      "label": "F0",
+      "sourceEvidence": "Sparse checkout changes which tracked files are present in the working tree.",
+      "synthesisStatement": "Sparse checkout changes which tracked files are present in the working tree.",
+      "narrativeStatement": "Sparse checkout changes which tracked files are present in the working tree.",
+      "origin": "none",
+      "explanation": "Faithfully restates the effect of sparse checkout and preserves the tracked-files qualification.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "In cone mode, selecting a directory includes the files beneath it, recursively.",
+      "label": "F0",
+      "sourceEvidence": "Cone mode selects directories and includes all files recursively under them.",
+      "synthesisStatement": "Cone mode selects directories and includes all files recursively under them.",
+      "narrativeStatement": "In cone mode, selecting a directory includes all files recursively beneath it.",
+      "origin": "none",
+      "explanation": "Faithfully states the recursive inclusion rule; “the files” does not materially change the meaning of “all files.”",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "the working tree can include more than those directory trees",
+      "label": "F0",
+      "sourceEvidence": "Cone mode also includes files that are siblings of the selected directory or any ancestor directory.",
+      "synthesisStatement": "Cone mode also includes files that are siblings of the selected directory or any ancestor directory.",
+      "narrativeStatement": "The included files also extend to siblings of the selected directory and of any ancestor directory.",
+      "origin": "none",
+      "explanation": "Accurately summarizes that cone-mode inclusion extends beyond the selected directory trees.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "it also includes certain files alongside the selected directories and their ancestor directories.",
+      "label": "F0",
+      "sourceEvidence": "Cone mode also includes files that are siblings of the selected directory or any ancestor directory.",
+      "synthesisStatement": "It also includes files that are siblings of the selected directory or any ancestor directory.",
+      "narrativeStatement": "The included files also extend to siblings of the selected directory and of any ancestor directory.",
+      "origin": "none",
+      "explanation": "“Alongside” accurately paraphrases sibling files, and “certain” does not overstate which files are included.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "So cone mode’s scope is broader than the directories you select.",
+      "label": "F0",
+      "sourceEvidence": "Cone mode includes files recursively under selected directories and also includes sibling files at the selected-directory and ancestor levels.",
+      "synthesisStatement": "The recursive inclusion rule is supplemented by sibling-file inclusion at selected-directory and ancestor levels.",
+      "narrativeStatement": "The scope includes files beyond the selected directory trees.",
+      "origin": "none",
+      "explanation": "Faithful summary of the two inclusion rules; it adds no unsupported scope.",
+      "materiality": "material"
+    }
+  ],
+  "preserved": [
+    "sparse-checkout-working-tree",
+    "cone-recursive-inclusion",
+    "cone-sibling-inclusion"
+  ],
+  "distorted": [],
+  "omitted": [],
+  "developments": 2,
+  "explainedFacts": 3,
+  "paragraphSteps": [
+    "Introduces the tracked-files working-tree effect of sparse checkout.",
+    "Explains recursive inclusion under selected directories, then adds sibling-file inclusion at selected and ancestor levels.",
+    "Summarizes the resulting scope as broader than the selected directories."
+  ],
+  "endpointAddsMeaning": false,
+  "redundancy": [],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": false,
+  "omittedFromNarrativeUsedInArticle": []
+}

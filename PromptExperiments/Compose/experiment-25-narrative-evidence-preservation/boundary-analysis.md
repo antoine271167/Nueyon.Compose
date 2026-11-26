@@ -1,0 +1,18 @@
+# Boundary analysis
+
+## What the comparison identifies
+
+A versus B estimates the effect of one prompt insertion on the regenerated Narrative and on writing from that handoff. A versus C estimates the behavior of the fixed Compose agent with an extractive evidence handoff. The latter intervention changes ordering, phrasing and scaffolding along with preservation. Neither comparison independently manipulates the number of supported facts, and each subject and condition has only one Narrative realization. Three Article generations measure variation downstream of the same handoff.
+
+The production Narrative prompt calls for exactly three concise progression bullets. Development can contain more than one related factual step. That requirement can concentrate several facts into one heavily loaded paragraph, as in the Digital B handoff, or encourage a generic middle step, as in Digital A. It therefore offers a plausible mechanism for loss of detail, but both A and B share the layout and the experiment has no controlled layout-only condition. The application itself accepts one string and does not impose a bullet count. C also uses that contract.
+
+Production Compose receives a projection containing only Narrative content and a composition format. The Article prompt permits reordering, transitions and splitting sentences. It also sets strict boundaries on inferred significance, conclusions, relationships and causes. Both conditions remain true when the handoff is more concrete. A distinct, fully supported development can become prose within this boundary, while a list of details may still fail to give the writer a coherent progression or endpoint.
+
+## Mechanisms visible in the historical checks
+
+- Digital A reduced the private-beta method to a fortnightly rhythm that made time for tests and research. B carried the exact first-week acceptance and second-week suspension and processing sequence, then added the independently reported early results. This is a case where Synthesis offered useful detail beyond A. See the [Digital source](https://mojdigital.blog.gov.uk/2018/03/13/how-to-build-and-release-a-digital-by-default-service-in-12-weeks/).
+- EIA A retained the 32% versus 7% distinction and the coverage boundary. B also kept the quantitative numerator and denominator pairs and their different units. That additional material can substantiate the distinction or make the output read as a table in prose, depending on how Compose uses it. See the [EIA table](https://www.eia.gov/tools/faqs/faq.php?id=527&t=4).
+- Wolf shows that source-grounded detail can lose its meaning through an entity substitution. The old and regenerated A handoffs use Dutch `eland` for Yellowstone elk. B retains `elk` for calves in one clause but still attributes broader effects to `elanden`. The meaning boundary is vulnerable even where evidence volume is adequate. See [NPS wolf ecology](https://home.nps.gov/yell/learn/nature/wolf.htm) and [NPS elk](https://www.nps.gov/yell/learn/nature/elk.htm).
+- Webb shows a separate risk from omission. Ordering deployment and cooling as successive milestones can assert a boundary that does not exist. NASA places the start of cooling within deployment. B gives explicit commissioning period ranges, while the sentence about cooling continuing through six months can read more broadly unless the reader carries the later qualification. See the [NASA launch media kit](https://science.nasa.gov/wp-content/uploads/2024/08/webbmediakit.pdf).
+
+The final report evaluates the strength of these mechanisms against the paired holdout and identifies the bottleneck that merits a separate intervention.

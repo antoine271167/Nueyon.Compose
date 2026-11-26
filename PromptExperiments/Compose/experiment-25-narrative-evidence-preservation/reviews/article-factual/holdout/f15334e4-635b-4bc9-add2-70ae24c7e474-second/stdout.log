@@ -1,0 +1,91 @@
+{
+  "claims": [
+    {
+      "excerpt": "Before the impact, Dimorphos took 11 hours and 55 minutes to orbit the larger asteroid Didymos.",
+      "label": "F0",
+      "sourceEvidence": "Before impact, Dimorphos took 11 hours and 55 minutes to orbit the larger asteroid Didymos.",
+      "synthesisStatement": "Before impact, Dimorphos took 11 hours and 55 minutes to orbit the larger asteroid Didymos.",
+      "narrativeStatement": "Before impact, Dimorphos took 11 hours and 55 minutes to orbit the larger asteroid Didymos.",
+      "origin": "propagated",
+      "explanation": "Faithfully gives the pre-impact orbital period and identifies Didymos as the larger asteroid.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "Immediately afterward, its orbital period was 11 hours, 22 minutes and 37 seconds—a shortening of 32 minutes and 42 seconds.",
+      "label": "F0",
+      "sourceEvidence": "Immediately after impact, the period shortened by 32 minutes and 42 seconds, to 11 hours, 22 minutes and 37 seconds.",
+      "synthesisStatement": "Immediately after impact, the period shortened by 32 minutes and 42 seconds, to 11 hours, 22 minutes and 37 seconds.",
+      "narrativeStatement": "Immediately after impact, the period shortened by 32 minutes and 42 seconds, to 11 hours, 22 minutes and 37 seconds.",
+      "origin": "propagated",
+      "explanation": "Preserves both the immediate post-impact period and its reduction from baseline.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "Over the following weeks, Dimorphos lost more rocky material to space as its orbital period continued to shorten.",
+      "label": "F0",
+      "sourceEvidence": "Over subsequent weeks Dimorphos lost more rocky material to space while its orbital period continued to shorten.",
+      "synthesisStatement": "Over subsequent weeks Dimorphos lost more rocky material to space while its orbital period continued to shorten.",
+      "narrativeStatement": "Over subsequent weeks Dimorphos lost more rocky material to space while its orbital period continued to shorten.",
+      "origin": "propagated",
+      "explanation": "Reports the concurrent material loss and continued shortening without asserting that one caused the other.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "The period eventually settled at 11 hours, 22 minutes and 3 seconds, 33 minutes and 15 seconds shorter than before impact.",
+      "label": "F0",
+      "sourceEvidence": "The period settled at 11 hours, 22 minutes and 3 seconds, 33 minutes and 15 seconds shorter than before impact.",
+      "synthesisStatement": "The period settled at 11 hours, 22 minutes and 3 seconds, 33 minutes and 15 seconds shorter than before impact.",
+      "narrativeStatement": "The period settled at 11 hours, 22 minutes and 3 seconds, 33 minutes and 15 seconds shorter than before impact.",
+      "origin": "propagated",
+      "explanation": "Correctly distinguishes the later settled period and total reduction from the immediate change.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "After the impact, Dimorphos’s orbit was no longer circular.",
+      "label": "F0",
+      "sourceEvidence": "The orbit was no longer circular after impact.",
+      "synthesisStatement": "The orbit was no longer circular after impact.",
+      "narrativeStatement": "The orbit was no longer circular after impact.",
+      "origin": "propagated",
+      "explanation": "Faithfully reports the post-impact change in orbit shape without adding an unsupported degree of change.",
+      "materiality": "material"
+    }
+  ],
+  "preserved": [
+    "pre-impact-period",
+    "immediate-period-change",
+    "continued-shortening",
+    "settled-period",
+    "orbit-shape"
+  ],
+  "distorted": [],
+  "omitted": [],
+  "developments": 4,
+  "explainedFacts": 5,
+  "paragraphSteps": [
+    {
+      "paragraph": 1,
+      "role": "context and immediate development",
+      "inventoryIds": [
+        "pre-impact-period",
+        "immediate-period-change"
+      ]
+    },
+    {
+      "paragraph": 2,
+      "role": "subsequent development and endpoint",
+      "inventoryIds": [
+        "continued-shortening",
+        "settled-period",
+        "orbit-shape"
+      ]
+    }
+  ],
+  "endpointAddsMeaning": true,
+  "redundancy": [],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}
+

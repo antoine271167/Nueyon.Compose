@@ -1,0 +1,84 @@
+{
+  "claims": [
+    {
+      "id": "C1",
+      "exactBodyExcerpt": "The Twenty-sixth Amendment added an age-based protection to voting rights: federal and state governments may not deny or limit a U.S. citizen’s voting rights because of age once the citizen is at least 18.",
+      "label": "F0",
+      "sourceEvidence": "The provided Archives.gov evidence says the amendment bars federal and state governments from denying or limiting U.S. citizens’ voting rights because of age when they are at least 18.",
+      "synthesisStatement": "The amendment bars both federal and state governments from denying or limiting US citizens' voting rights because of age when the citizens are at least 18.",
+      "narrativeStatement": "The Twenty-sixth Amendment added an age-based protection to voting rights: federal and state governments may not deny or limit a U.S. citizen’s voting rights because of age once the citizen is at least 18.",
+      "origin": "upstream",
+      "explanation": "Faithfully states the protected group, governments bound, prohibited basis, and age threshold.",
+      "materiality": "high"
+    },
+    {
+      "id": "C2",
+      "exactBodyExcerpt": "The central point is the scope of that protection, alongside Congress’s authority to enforce it through appropriate legislation.",
+      "label": "F0",
+      "sourceEvidence": "The provided evidence identifies the age-based protection and states that Section 2 gives Congress legislative enforcement authority.",
+      "synthesisStatement": "Congress can enforce the amendment through appropriate legislation.",
+      "narrativeStatement": "The central point is the scope of that protection, alongside Congress’s authority to enforce it through appropriate legislation.",
+      "origin": "compose",
+      "explanation": "The framing is editorial, while the enforcement authority and its qualification are supported by the evidence.",
+      "materiality": "material"
+    },
+    {
+      "id": "C3",
+      "exactBodyExcerpt": "The amendment was passed by Congress on March 23, 1971, and ratified on July 1, 1971.",
+      "label": "F0",
+      "sourceEvidence": "The provided Archives.gov evidence gives the passage date as March 23, 1971, and ratification date as July 1, 1971.",
+      "synthesisStatement": "Congress passed the amendment on March 23, 1971, and it was ratified on July 1, 1971.",
+      "narrativeStatement": "The amendment was passed by Congress on March 23, 1971, and ratified on July 1, 1971.",
+      "origin": "upstream",
+      "explanation": "Both dates and their associated events match the evidence.",
+      "materiality": "low"
+    },
+    {
+      "id": "C4",
+      "exactBodyExcerpt": "Explain the protection it established: federal and state governments are barred from denying or limiting U.S. citizens’ voting rights because of age when they are at least 18.",
+      "label": "F0",
+      "sourceEvidence": "The provided evidence says federal and state governments may not deny or limit US citizens’ voting rights because of age when they are at least 18.",
+      "synthesisStatement": "The amendment bars both federal and state governments from denying or limiting US citizens' voting rights because of age when the citizens are at least 18.",
+      "narrativeStatement": "Explain the protection it established: federal and state governments are barred from denying or limiting U.S. citizens’ voting rights because of age when they are at least 18.",
+      "origin": "propagated",
+      "explanation": "The outline repeats the protection accurately; it does not broaden the guarantee beyond age-based restrictions.",
+      "materiality": "high"
+    },
+    {
+      "id": "C5",
+      "exactBodyExcerpt": "Clarify that the amendment also gives Congress authority to enforce this protection through appropriate legislation.",
+      "label": "F0",
+      "sourceEvidence": "The provided evidence says Congress can enforce the amendment through appropriate legislation.",
+      "synthesisStatement": "Congress can enforce the amendment through appropriate legislation.",
+      "narrativeStatement": "Clarify that the amendment also gives Congress authority to enforce this protection through appropriate legislation.",
+      "origin": "propagated",
+      "explanation": "The outline repeats the supported enforcement authority and preserves the appropriate-legislation qualification.",
+      "materiality": "material"
+    }
+  ],
+  "preserved": [
+    "timeline",
+    "age-protection",
+    "enforcement"
+  ],
+  "distorted": [],
+  "omitted": [],
+  "developments": 3,
+  "explainedFacts": 1,
+  "paragraphSteps": [
+    "Paragraph 1: States the age-based protection and explains its scope by identifying the governments bound, the citizens covered, the prohibited basis, and the age threshold.",
+    "Paragraph 2: Frames the protection’s scope as central and adds Congress’s enforcement authority."
+  ],
+  "endpointAddsMeaning": false,
+  "redundancy": [
+    "The Story Progression development repeats the age-based protection already stated in Selected Story.",
+    "The Story Progression endpoint repeats Congress’s enforcement authority already stated in Selected Story."
+  ],
+  "peripheral": [
+    "timeline"
+  ],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}
+

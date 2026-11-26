@@ -1,0 +1,127 @@
+{
+  "claims": [
+    {
+      "inventoryIds": ["not-employed-in-reference-week"],
+      "exactBodyExcerpt": "Under the Current Population Survey, a person is classified as unemployed if they were not employed during the survey reference week",
+      "label": "F0",
+      "sourceEvidence": "“was not employed during the survey reference week”",
+      "synthesisStatement": "An unemployed person was not employed during the survey reference week.",
+      "narrativeStatement": "The Context includes this reference-week condition.",
+      "origin": "upstream",
+      "explanation": "Faithfully states the reference-week employment condition.",
+      "materiality": "material"
+    },
+    {
+      "inventoryIds": ["availability-required"],
+      "exactBodyExcerpt": "and were available for work, except for a temporary illness.",
+      "label": "F0",
+      "sourceEvidence": "“was available for work except for temporary illness”",
+      "synthesisStatement": "An unemployed person had to be available for work, except in cases of temporary illness.",
+      "narrativeStatement": "The Context includes the availability condition and temporary-illness exception.",
+      "origin": "upstream",
+      "explanation": "Preserves both the availability requirement and its exception.",
+      "materiality": "material"
+    },
+    {
+      "inventoryIds": ["active-search-window"],
+      "exactBodyExcerpt": "They must also have actively searched for a job during the four-week period ending with that week",
+      "label": "F0",
+      "sourceEvidence": "“made an active job search effort in the four-week period ending with that week”",
+      "synthesisStatement": "One route to classification was active job search during the four-week period ending with the reference week.",
+      "narrativeStatement": "The Context includes the active-search route and four-week window.",
+      "origin": "upstream",
+      "explanation": "Accurately states the active-search route and its time window.",
+      "materiality": "material"
+    },
+    {
+      "inventoryIds": ["temporary-layoff-recall"],
+      "exactBodyExcerpt": "or have been temporarily laid off and expected to be recalled.",
+      "label": "F0",
+      "sourceEvidence": "“or was temporarily laid off and expected recall”",
+      "synthesisStatement": "Temporary layoff with expected recall is an alternative to the active-search route.",
+      "narrativeStatement": "The Context includes temporary layoff and expected recall as the alternative route.",
+      "origin": "upstream",
+      "explanation": "Preserves the alternative route and expected-recall qualification.",
+      "materiality": "material"
+    },
+    {
+      "inventoryIds": ["passive-search-excluded"],
+      "exactBodyExcerpt": "Passive-only job search does not count as active search.",
+      "label": "F0",
+      "sourceEvidence": "“Passive-only job search does not count as active search.”",
+      "synthesisStatement": "Passive-only job search does not count as active search.",
+      "narrativeStatement": "A Development states that passive-only search does not count as active search.",
+      "origin": "upstream",
+      "explanation": "Faithfully states the exclusion without asserting that any particular activity, such as browsing listings, occurred.",
+      "materiality": "material"
+    },
+    {
+      "inventoryIds": ["waiting-to-start-job"],
+      "exactBodyExcerpt": "Someone waiting to start a new job generally needs to have actively searched as well.",
+      "label": "F0",
+      "sourceEvidence": "“Someone waiting to start a new job generally needs active search as well.”",
+      "synthesisStatement": "Someone waiting to start a new job generally needs active search as well.",
+      "narrativeStatement": "A Development states that someone waiting to start a new job generally needs active search.",
+      "origin": "upstream",
+      "explanation": "Preserves the general qualification; “have actively searched” is equivalent to “needs active search.”",
+      "materiality": "non-material"
+    },
+    {
+      "inventoryIds": ["insurance-irrelevant"],
+      "exactBodyExcerpt": "Receiving unemployment insurance does not affect the classification.",
+      "label": "F0",
+      "sourceEvidence": "“Receipt of unemployment insurance is irrelevant to the classification.”",
+      "synthesisStatement": "Receipt of unemployment insurance is irrelevant to the classification.",
+      "narrativeStatement": "A Development states that insurance receipt is irrelevant to classification.",
+      "origin": "upstream",
+      "explanation": "Faithfully limits the claim to classification, not benefit eligibility.",
+      "materiality": "non-material"
+    },
+    {
+      "inventoryIds": ["rate-denominator"],
+      "exactBodyExcerpt": "The unemployment rate is calculated by dividing the number of unemployed people by the combined number of employed and unemployed people.",
+      "label": "F0",
+      "sourceEvidence": "“The unemployment rate divides unemployed people by the sum of employed and unemployed people.”",
+      "synthesisStatement": "The unemployment rate divides unemployed people by the sum of employed and unemployed people.",
+      "narrativeStatement": "The Endpoint states the formula using the sum of employed and unemployed people.",
+      "origin": "upstream",
+      "explanation": "Accurately gives both the numerator and the denominator.",
+      "materiality": "material"
+    }
+  ],
+  "preserved": [
+    "not-employed-in-reference-week",
+    "availability-required",
+    "active-search-window",
+    "temporary-layoff-recall",
+    "passive-search-excluded",
+    "waiting-to-start-job",
+    "insurance-irrelevant",
+    "rate-denominator"
+  ],
+  "distorted": [],
+  "omitted": [],
+  "developments": 3,
+  "explainedFacts": 8,
+  "paragraphSteps": [
+    {
+      "paragraph": 1,
+      "steps": ["Context: reference-week employment condition", "Context: availability and temporary-illness exception", "Context: active-search window or temporary-layoff alternative"]
+    },
+    {
+      "paragraph": 2,
+      "steps": ["Development: passive-only search", "Development: waiting to start a job", "Development: unemployment insurance"]
+    },
+    {
+      "paragraph": 3,
+      "steps": ["Endpoint: unemployment-rate formula"]
+    }
+  ],
+  "endpointAddsMeaning": true,
+  "redundancy": [],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}
+

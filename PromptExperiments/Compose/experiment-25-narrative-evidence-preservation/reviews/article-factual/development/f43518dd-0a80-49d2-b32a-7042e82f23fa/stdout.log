@@ -1,0 +1,112 @@
+{
+  "claims": [
+    {
+      "excerpt": "The unemployment rate is calculated using the number of unemployed people divided by the combined number of employed and unemployed people.",
+      "label": "F0",
+      "sourceEvidence": "The unemployment rate divides unemployed people by the sum of employed and unemployed people.",
+      "synthesisStatement": "The unemployment rate divides unemployed people by the sum of employed and unemployed people.",
+      "narrativeStatement": "Establish that the unemployment rate divides the number of unemployed people by the combined number of employed and unemployed people",
+      "origin": "propagated",
+      "explanation": "Faithfully states the numerator and denominator.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "It does not include everyone who is not working: people outside the labor force are counted separately.",
+      "label": "F0",
+      "sourceEvidence": "The populations outside the labor force and unemployed are separate.",
+      "synthesisStatement": "The populations outside the labor force and unemployed are separate.",
+      "narrativeStatement": "people outside the labor force are a separate population.",
+      "origin": "propagated",
+      "explanation": "Accurately distinguishes people outside the labor force from the unemployed; supported by the upstream synthesis.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "A person who was not employed during the reference week may qualify as unemployed without actively searching if they are on temporary layoff and expect to be recalled.",
+      "label": "F0",
+      "sourceEvidence": "an unemployed person was not employed during the survey reference week ... or was temporarily laid off and expected recall",
+      "synthesisStatement": "A person temporarily laid off and expecting recall could qualify without the active-search route.",
+      "narrativeStatement": "A person on temporary layoff who expects recall may count as unemployed",
+      "origin": "propagated",
+      "explanation": "Preserves the reference-week condition and correctly presents temporary layoff with expected recall as an alternative to active search.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "They must also be available for work, except for temporary illness.",
+      "label": "F0",
+      "sourceEvidence": "was available for work except for temporary illness",
+      "synthesisStatement": "An unemployed person had to be available for work, except in cases of temporary illness.",
+      "narrativeStatement": "available for work except for temporary illness",
+      "origin": "propagated",
+      "explanation": "Accurately retains the temporary-illness exception to the availability requirement.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "Browsing job listings alone is different. It counts as passive-only search;",
+      "label": "F0",
+      "sourceEvidence": "Passive-only job search does not count as active search.",
+      "synthesisStatement": "Passive-only job search does not count as active search.",
+      "narrativeStatement": "someone who only browsed job listings has not made the active search effort",
+      "origin": "propagated",
+      "explanation": "Correctly treats browsing listings alone as passive search, not active search.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "active job-search efforts generally need to take place during the four-week period ending with the reference week.",
+      "label": "F1",
+      "sourceEvidence": "made an active job search effort in the four-week period ending with that week",
+      "synthesisStatement": "One route to being classified as unemployed was active job search during the four-week period ending with the reference week.",
+      "narrativeStatement": "active search generally must occur during the four-week period ending with the reference week",
+      "origin": "propagated",
+      "explanation": "The time window is correct, but “generally” slightly softens the stated rule; temporary layoff with expected recall is the specified alternative.",
+      "materiality": "low"
+    },
+    {
+      "excerpt": "So neither not working nor looking at listings alone determines whether someone is counted as unemployed.",
+      "label": "F0",
+      "sourceEvidence": "was not employed during the survey reference week ... Passive-only job search does not count as active search.",
+      "synthesisStatement": "Availability and the reference period matter. The populations outside the labor force and unemployed are separate.",
+      "narrativeStatement": "not working—or looking at listings—does not by itself determine whether someone is counted as unemployed.",
+      "origin": "propagated",
+      "explanation": "A supported summary of the fact that nonemployment and passive search alone do not satisfy the classification criteria.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "Classification depends on availability, the timing of the survey, and whether the person meets the active-search or temporary-layoff-and-recall condition.",
+      "label": "F0",
+      "sourceEvidence": "was available for work except for temporary illness ... made an active job search effort in the four-week period ending with that week or was temporarily laid off and expected recall",
+      "synthesisStatement": "Availability and the reference period matter.",
+      "narrativeStatement": "The definition turns on availability, the reference period, and whether the person meets the active-search or temporary-layoff-and-recall condition.",
+      "origin": "propagated",
+      "explanation": "Accurately synthesizes the availability, timing, and alternative search/recall conditions.",
+      "materiality": "high"
+    }
+  ],
+  "preserved": [
+    "not-employed-in-reference-week",
+    "availability-required",
+    "active-search-window",
+    "temporary-layoff-recall",
+    "passive-search-excluded",
+    "rate-denominator"
+  ],
+  "distorted": [],
+  "omitted": [
+    "waiting-to-start-job",
+    "insurance-irrelevant"
+  ],
+  "developments": 2,
+  "explainedFacts": 7,
+  "paragraphSteps": [
+    "Paragraph 1: Gives the rate denominator and distinguishes people outside the labor force.",
+    "Paragraph 2: Explains the reference-week and temporary-layoff/recall route, including availability.",
+    "Paragraph 3: Contrasts passive browsing with active search and gives the search window.",
+    "Paragraph 4: Synthesizes the criteria as the endpoint."
+  ],
+  "endpointAddsMeaning": false,
+  "redundancy": [],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}
+

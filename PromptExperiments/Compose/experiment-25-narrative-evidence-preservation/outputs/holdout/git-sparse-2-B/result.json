@@ -1,0 +1,3 @@
+{
+  "content": "# What Cone-Mode Sparse Checkout Includes\n\nSparse checkout controls which tracked files appear in the working tree. In cone mode, selecting a directory includes all files recursively beneath it.\n\nThe included files are not limited to those selected directory trees. Cone mode also includes certain files alongside the selected directories and their ancestors, extending the working-tree scope beyond the selected directories themselves."
+}

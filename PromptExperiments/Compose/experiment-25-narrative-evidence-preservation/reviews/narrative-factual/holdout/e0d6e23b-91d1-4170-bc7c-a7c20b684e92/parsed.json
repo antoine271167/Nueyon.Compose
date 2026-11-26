@@ -1,0 +1,129 @@
+{
+  "claims": [
+    {
+      "excerpt": "Het verhaal gaat over de beschreven aanpak van het POA-refundteam bij het ontwikkelen van een digitale refunddienst onder tijdsdruk.",
+      "label": "F1",
+      "sourceEvidence": "“built a digital and assisted digital service”; “We were initially asked to deliver the service in a matter of weeks”",
+      "synthesisStatement": "Het POA-refundteam ontwikkelde de refunddienst onder tijdsdruk.",
+      "narrativeStatement": "Het verhaal gaat over de beschreven aanpak van het POA-refundteam bij het ontwikkelen van een digitale refunddienst onder tijdsdruk.",
+      "origin": "propagated",
+      "explanation": "In grote lijnen juist, maar noemt de dienst alleen digitaal en laat de bronkwalificatie assisted-digital weg.",
+      "materiality": "Klein: de dienstkanalen zijn niet het verhaalaccent, maar de kwalificatie hoort wel bij de scope."
+    },
+    {
+      "excerpt": "De dienst ging na twaalf weken publiek, nadat levering binnen enkele weken niet haalbaar was geacht met behoud van een kwalitatieve gebruikersdienst.",
+      "label": "F0",
+      "sourceEvidence": "“launched to the public in only 12 weeks”; “would not be possible if we wanted to create a quality service for our users.”",
+      "synthesisStatement": "Het team lanceerde de dienst voor het publiek in twaalf weken; levering binnen enkele weken werd niet haalbaar geacht met behoud van kwaliteit.",
+      "narrativeStatement": "De dienst ging na twaalf weken publiek, nadat levering binnen enkele weken niet haalbaar was geacht met behoud van een kwalitatieve gebruikersdienst.",
+      "origin": "propagated",
+      "explanation": "Geeft de gerapporteerde termijn en de afweging rond kwaliteit getrouw weer.",
+      "materiality": "Hoog: dit is de centrale context van de aanpak."
+    },
+    {
+      "excerpt": "In de aanpak kwam eerst de ervaring van aanvragers aan bod; caseworkerwerk volgde later.",
+      "label": "F0",
+      "sourceEvidence": "“focused on the users applying for refunds first”; “Plans for the caseworker user came later.”",
+      "synthesisStatement": "Het team werkte eerst aan de aanvragerservaring en bracht die naar alpha; plannen voor caseworkers kwamen later.",
+      "narrativeStatement": "In de aanpak kwam eerst de ervaring van aanvragers aan bod; caseworkerwerk volgde later.",
+      "origin": "propagated",
+      "explanation": "De volgorde klopt. De reden om zo te werken—caseworkers waren nog geen bestaande gebruikers en het team wilde aannames vermijden—is niet opgenomen.",
+      "materiality": "Hoog voor de gekozen gebruikersvolgorde; de weggelaten reden beperkt de uitleg."
+    },
+    {
+      "excerpt": "Tijdens de private beta was er in het tweewekelijkse ritme vaste tijd voor onderzoek en testen.",
+      "label": "F1",
+      "sourceEvidence": "“splitting our fortnightly sprints in two”; de eerste week voor “testing, researching and accepting applications” en de tweede voor “testing, researching and processing applications.”",
+      "synthesisStatement": "Tijdens private beta verdeelde het team tweewekelijkse sprints in twee weken met verschillende activiteiten en een pauze op inzendingen in de tweede week.",
+      "narrativeStatement": "Tijdens de private beta was er in het tweewekelijkse ritme vaste tijd voor onderzoek en testen.",
+      "origin": "propagated",
+      "explanation": "De gereserveerde tijd is juist, maar de twee verschillende weken en de pauze op inzendingen verdwijnen.",
+      "materiality": "Hoog: de precieze sprintindeling is een kernonderdeel van de beschreven werkwijze."
+    },
+    {
+      "excerpt": "De refunddienst werd onder tijdsdruk ontwikkeld en ging na twaalf weken publiek; de aanvankelijk gevraagde termijn van enkele weken werd niet haalbaar geacht met behoud van een kwalitatieve gebruikersdienst.",
+      "label": "F0",
+      "sourceEvidence": "“launched to the public in only 12 weeks”; aanvankelijk gevraagd te leveren “in a matter of weeks”, wat “would not be possible” was bij behoud van een kwaliteitsdienst.",
+      "synthesisStatement": "Het team lanceerde de dienst voor het publiek in twaalf weken; levering binnen enkele weken werd niet haalbaar geacht met behoud van kwaliteit.",
+      "narrativeStatement": "De refunddienst werd onder tijdsdruk ontwikkeld en ging na twaalf weken publiek; de aanvankelijk gevraagde termijn van enkele weken werd niet haalbaar geacht met behoud van een kwalitatieve gebruikersdienst.",
+      "origin": "propagated",
+      "explanation": "Getrouwe herhaling van de context uit Selected Story.",
+      "materiality": "Hoog."
+    },
+    {
+      "excerpt": "De aanpak begon bij de aanvragerservaring en voegde plannen voor caseworkers later toe.",
+      "label": "F0",
+      "sourceEvidence": "“My team focused on the users applying for refunds first”; “Plans for the caseworker user came later.”",
+      "synthesisStatement": "Het team werkte eerst aan de aanvragerservaring en bracht die naar alpha; plannen voor caseworkers kwamen later.",
+      "narrativeStatement": "De aanpak begon bij de aanvragerservaring en voegde plannen voor caseworkers later toe.",
+      "origin": "propagated",
+      "explanation": "Getrouwe samenvatting van de gekozen volgorde.",
+      "materiality": "Hoog."
+    },
+    {
+      "excerpt": "Tijdens private beta bood een tweewekelijks ritme ruimte voor onderzoek en testen, naast het aannemen en verwerken van aanvragen.",
+      "label": "F1",
+      "sourceEvidence": "In de eerste sprintweek werden aanvragen aangenomen; in de tweede werden inzendingen gepauzeerd en aanvragen verwerkt.",
+      "synthesisStatement": "De twee sprintweken verschilden: aannemen in de eerste, inzendingen pauzeren en verwerken in de tweede.",
+      "narrativeStatement": "Tijdens private beta bood een tweewekelijks ritme ruimte voor onderzoek en testen, naast het aannemen en verwerken van aanvragen.",
+      "origin": "propagated",
+      "explanation": "Onderzoek, testen en operationeel werk worden genoemd, maar de formulering vervaagt de afwisseling tussen weken en kan ze als gelijktijdig voorstellen.",
+      "materiality": "Hoog: dit verzwakt de specifieke sprintcadans."
+    }
+  ],
+  "preserved": [
+    "launch-timeline",
+    "user-sequence"
+  ],
+  "distorted": [
+    "beta-research-rhythm"
+  ],
+  "omitted": [
+    "assisted-digital-scope",
+    "five-week-results"
+  ],
+  "developments": 3,
+  "explainedFacts": 1,
+  "paragraphSteps": [
+    {
+      "paragraph": "Selected Story",
+      "steps": [
+        "Tijdsdruk en de afweging tussen korte termijn en kwaliteit",
+        "Eerst aanvragers, daarna caseworkers",
+        "Onderzoek en testen binnen een tweewekelijks ritme"
+      ]
+    },
+    {
+      "paragraph": "Story Progression — Context",
+      "steps": [
+        "Herhaalt de tijdsdruk en de kwaliteitsoverweging"
+      ]
+    },
+    {
+      "paragraph": "Story Progression — Development",
+      "steps": [
+        "Herhaalt de volgorde van gebruikersgroepen",
+        "Vat de beta-cadans samen, maar laat de weekindeling weg"
+      ]
+    },
+    {
+      "paragraph": "Story Progression — Endpoint",
+      "steps": [
+        "Vraagt om de eerder genoemde aanpak samen te brengen zonder causaliteit of universaliteit te claimen"
+      ]
+    }
+  ],
+  "endpointAddsMeaning": false,
+  "redundancy": [
+    "De contextbullet herhaalt de tijdlijn en kwaliteitsoverweging uit Selected Story.",
+    "De development-bullet herhaalt de volgorde van aanvragers en caseworkers.",
+    "De development-bullet herhaalt het onderzoek-en-testenritme uit Selected Story."
+  ],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": [
+    "assisted-digital-scope",
+    "five-week-results"
+  ]
+}

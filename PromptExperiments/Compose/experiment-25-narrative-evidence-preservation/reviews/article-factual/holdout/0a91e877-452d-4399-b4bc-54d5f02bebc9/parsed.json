@@ -1,0 +1,100 @@
+{
+  "claims": [
+    {
+      "excerpt": "The First Three NIST Post-Quantum Standards Serve Two Distinct Purposes",
+      "label": "U",
+      "sourceEvidence": "The supplied verification says the Secretary approved three standards and describes each one, but does not establish that these were the first three NIST post-quantum standards. It does support the distinction between key establishment and signatures.",
+      "synthesisStatement": "The synthesis supports the two-purpose distinction, but does not establish the ordinal claim “First Three.”",
+      "narrativeStatement": "The narrative repeats the title’s “first three” framing and also describes the two purposes.",
+      "origin": "narrative",
+      "explanation": "The purpose distinction is supported; the title’s “First Three” qualifier is unresolved from the supplied evidence.",
+      "materiality": "The ordinal qualifier affects how the standards are positioned in the broader NIST program."
+    },
+    {
+      "excerpt": "The Secretary of Commerce approved FIPS 203, 204 and 205 in August 2024.",
+      "label": "F0",
+      "sourceEvidence": "The supplied NIST paraphrase states that the Secretary approved FIPS 203, 204 and 205 in August 2024.",
+      "synthesisStatement": "The Secretary of Commerce approved FIPS 203, 204 and 205 in August 2024.",
+      "narrativeStatement": "The narrative gives the same approval date and standards.",
+      "origin": "propagated",
+      "explanation": "The approval authority, standards, and date match the evidence.",
+      "materiality": "Material timeline context."
+    },
+    {
+      "excerpt": "The standards address two distinct tasks: establishing a shared secret between parties communicating over a public channel, and providing digital signature schemes.",
+      "label": "F0",
+      "sourceEvidence": "The evidence describes FIPS 203 as establishing a shared secret over a public channel and FIPS 204 and 205 as digital signature standards.",
+      "synthesisStatement": "The synthesis supports the key-establishment and digital-signature distinction through the descriptions of the three standards.",
+      "narrativeStatement": "The narrative’s ML-KEM and signature developments support this grouping.",
+      "origin": "compose",
+      "explanation": "This accurately groups the standards’ stated functions into key establishment and signatures.",
+      "materiality": "Central framing of the article."
+    },
+    {
+      "excerpt": "FIPS 203 specifies ML-KEM for establishing a shared secret.",
+      "label": "F0",
+      "sourceEvidence": "The evidence says FIPS 203 specifies ML-KEM to establish a shared secret between parties communicating over a public channel.",
+      "synthesisStatement": "FIPS 203 specifies ML-KEM to establish a shared secret between parties communicating over a public channel.",
+      "narrativeStatement": "The narrative gives the same ML-KEM purpose and public-channel context.",
+      "origin": "propagated",
+      "explanation": "The body shortens the description but does not change the stated purpose.",
+      "materiality": "Material description of FIPS 203."
+    },
+    {
+      "excerpt": "FIPS 204 specifies a module-lattice-based digital signature scheme",
+      "label": "F0",
+      "sourceEvidence": "The supplied evidence gives the same description of FIPS 204.",
+      "synthesisStatement": "FIPS 204 specifies a module-lattice-based digital signature scheme.",
+      "narrativeStatement": "The narrative gives the same description of FIPS 204.",
+      "origin": "propagated",
+      "explanation": "The scheme type and basis are preserved.",
+      "materiality": "Material identification of one signature standard."
+    },
+    {
+      "excerpt": "FIPS 205 specifies a stateless hash-based digital signature scheme.",
+      "label": "F0",
+      "sourceEvidence": "The supplied evidence gives the same description of FIPS 205.",
+      "synthesisStatement": "FIPS 205 specifies a stateless hash-based digital signature scheme.",
+      "narrativeStatement": "The narrative gives the same description of FIPS 205.",
+      "origin": "propagated",
+      "explanation": "The scheme type and basis are preserved.",
+      "materiality": "Material identification of the other signature standard."
+    },
+    {
+      "excerpt": "The schemes are designed to resist future quantum attacks.",
+      "label": "F0",
+      "sourceEvidence": "The supplied evidence says the schemes are designed to resist future quantum attacks.",
+      "synthesisStatement": "The schemes are designed to resist future quantum attacks.",
+      "narrativeStatement": "The narrative gives the same security goal.",
+      "origin": "propagated",
+      "explanation": "The stated design goal is preserved without adding a guarantee or threat model.",
+      "materiality": "Material statement of the standards’ security goal."
+    }
+  ],
+  "preserved": [
+    "approval-date",
+    "ml-kem-purpose",
+    "ml-dsa-signature",
+    "slh-dsa-signature",
+    "quantum-resistance"
+  ],
+  "distorted": [],
+  "omitted": [],
+  "developments": 3,
+  "explainedFacts": 3,
+  "paragraphSteps": [
+    "Paragraph 1 gives the approval date, then introduces the distinction between key establishment and signatures.",
+    "Paragraph 2 identifies the function or scheme type of each standard.",
+    "Paragraph 3 states the shared design goal of resisting future quantum attacks."
+  ],
+  "endpointAddsMeaning": true,
+  "redundancy": [
+    "The title’s “Two Distinct Purposes” framing is repeated in “The standards address two distinct tasks.”"
+  ],
+  "peripheral": [],
+  "unsupported": [
+    "The First Three NIST Post-Quantum Standards Serve Two Distinct Purposes"
+  ],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}

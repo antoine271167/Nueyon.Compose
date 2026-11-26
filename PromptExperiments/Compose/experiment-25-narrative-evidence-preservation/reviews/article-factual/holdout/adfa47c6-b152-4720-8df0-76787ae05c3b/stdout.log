@@ -1,0 +1,89 @@
+{
+  "claims": [
+    {
+      "excerpt": "Before DART’s impact, Dimorphos took 11 hours and 55 minutes to orbit the larger asteroid Didymos.",
+      "label": "F0",
+      "sourceEvidence": "Before impact, Dimorphos took 11 hours and 55 minutes to orbit the larger asteroid Didymos.",
+      "synthesisStatement": "The pre-impact orbital period was 11 hours and 55 minutes.",
+      "narrativeStatement": "Before the impact, Dimorphos took 11 hours and 55 minutes to orbit the larger asteroid Didymos.",
+      "origin": "upstream",
+      "explanation": "Faithfully states the pre-impact baseline and identifies Didymos as the larger asteroid.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "Immediately afterward, its orbital period was 11 hours, 22 minutes and 37 seconds—32 minutes and 42 seconds shorter.",
+      "label": "F0",
+      "sourceEvidence": "Immediately after impact, the period shortened by 32 minutes and 42 seconds, to 11 hours, 22 minutes and 37 seconds.",
+      "synthesisStatement": "Immediately after impact, the period was 11 hours, 22 minutes and 37 seconds, 32 minutes and 42 seconds shorter.",
+      "narrativeStatement": "Immediately after impact, the period was 11 hours, 22 minutes and 37 seconds—a decrease of 32 minutes and 42 seconds.",
+      "origin": "upstream",
+      "explanation": "The timing, period, and decrease all match the immediate post-impact result; it is not confused with the later settled period.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "Over the following weeks, Dimorphos lost more rocky material to space, while its orbital period continued to shorten.",
+      "label": "F0",
+      "sourceEvidence": "Over subsequent weeks Dimorphos lost more rocky material to space while its orbital period continued to shorten.",
+      "synthesisStatement": "Over subsequent weeks, rocky material continued to escape while the period continued to shorten.",
+      "narrativeStatement": "Over the following weeks, Dimorphos lost more rocky material to space while its orbital period continued to shorten.",
+      "origin": "upstream",
+      "explanation": "Faithfully reports the concurrent developments and does not claim that material loss caused the continued shortening.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "The period eventually settled at 11 hours, 22 minutes and 3 seconds, a total of 33 minutes and 15 seconds less than before the impact.",
+      "label": "F0",
+      "sourceEvidence": "The period settled at 11 hours, 22 minutes and 3 seconds, 33 minutes and 15 seconds shorter than before impact.",
+      "synthesisStatement": "The settled period was 11 hours, 22 minutes and 3 seconds, 33 minutes and 15 seconds shorter than before impact.",
+      "narrativeStatement": "The period settled at 11 hours, 22 minutes and 3 seconds, 33 minutes and 15 seconds shorter than before impact.",
+      "origin": "upstream",
+      "explanation": "The settled value and total reduction match the evidence and are distinguished from the immediate post-impact measurement.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "The orbit was also no longer circular after the impact.",
+      "label": "F0",
+      "sourceEvidence": "The orbit was no longer circular after impact.",
+      "synthesisStatement": "After impact, the orbit was no longer circular.",
+      "narrativeStatement": "The orbit was also no longer circular after impact.",
+      "origin": "upstream",
+      "explanation": "Faithfully reports the change in orbit shape without adding an unsupported quantity or mechanism.",
+      "materiality": "material"
+    }
+  ],
+  "preserved": [
+    "pre-impact-period",
+    "immediate-period-change",
+    "continued-shortening",
+    "settled-period",
+    "orbit-shape"
+  ],
+  "distorted": [],
+  "omitted": [],
+  "developments": 4,
+  "explainedFacts": 5,
+  "paragraphSteps": [
+    {
+      "paragraph": 1,
+      "steps": [
+        "pre-impact-period",
+        "immediate-period-change"
+      ]
+    },
+    {
+      "paragraph": 2,
+      "steps": [
+        "continued-shortening",
+        "settled-period",
+        "orbit-shape"
+      ]
+    }
+  ],
+  "endpointAddsMeaning": true,
+  "redundancy": [],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": false,
+  "omittedFromNarrativeUsedInArticle": []
+}
+

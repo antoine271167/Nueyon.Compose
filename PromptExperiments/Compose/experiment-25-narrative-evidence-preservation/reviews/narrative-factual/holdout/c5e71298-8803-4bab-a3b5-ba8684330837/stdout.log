@@ -1,0 +1,108 @@
+{
+  "claims": [
+    {
+      "excerpt": "Snel digitaal leveren begon hier met keuzes, niet met een formulier",
+      "label": "F1",
+      "sourceEvidence": "The source reports a 12-week launch, says the team set a mission and used evidence to support decisions, and advises: “Build services not form fillers.”",
+      "synthesisStatement": "The source documents design choices and a fast launch, but does not state that the service literally began with choices rather than a form.",
+      "narrativeStatement": "The headline frames the account as choices instead of a form.",
+      "origin": "amplification",
+      "explanation": "A reasonable editorial framing, but “begon” adds chronology and “niet met een formulier” sharpens the source’s distinction between a service and a form filler.",
+      "materiality": "low"
+    },
+    {
+      "excerpt": "Het team lanceerde de dienst voor het publiek in twaalf weken. Het was aanvankelijk gevraagd binnen enkele weken te leveren, maar concludeerde dat dit niet haalbaar was met behoud van een kwalitatieve gebruikersdienst.",
+      "label": "F0",
+      "sourceEvidence": "“launched to the public in only 12 weeks”; the team found delivery “in a matter of weeks” would not be possible if it wanted “to create a quality service for our users.”",
+      "synthesisStatement": "The team launched publicly in 12 weeks after concluding that the initially requested shorter timeline was incompatible with a quality service.",
+      "narrativeStatement": "The excerpt reports the 12-week launch and the shorter initial request’s quality constraint.",
+      "origin": "propagated",
+      "explanation": "Faithfully preserves the timeline and the source’s qualification; it does not invent a start point for the 12 weeks.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "Het team werkte eerst aan de aanvragerservaring en bracht die naar alpha; plannen voor caseworkers kwamen later. De auteur zegt dat caseworkers in deze nieuwe dienst nog geen bestaande gebruikers waren en dat het team onder tijdsdruk aannames wilde vermijden.",
+      "label": "F0",
+      "sourceEvidence": "“focused on the users applying for refunds first”; “this is what we took to the alpha assessment”; “Plans for the caseworker user came later”; the team wanted to avoid “lack of relevant knowledge or incorrect assumptions.”",
+      "synthesisStatement": "Applicants were the initial focus and went to alpha before caseworker plans; the author explains that the casework user did not yet exist for this new service and that the team wanted to avoid unsupported assumptions.",
+      "narrativeStatement": "The excerpt preserves that sequence and its stated rationale under time pressure.",
+      "origin": "propagated",
+      "explanation": "Faithful. It reports the author’s rationale without claiming the sequence caused the launch or results.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "Tijdens private beta verdeelde het team tweewekelijkse sprints: in de eerste week testte en onderzocht het team en nam het aanvragen aan; in de tweede week werden inzendingen gepauzeerd voor testen, onderzoek en verwerking.",
+      "label": "F0",
+      "sourceEvidence": "The team split “fortnightly sprints in two”: testing, researching and accepting applications in the first week, then “suspending submissions” for testing, researching and processing applications in the second.",
+      "synthesisStatement": "During private beta, each two-week sprint used the first week for testing, research and accepting applications, and the second for testing, research and processing with submissions suspended.",
+      "narrativeStatement": "The excerpt accurately describes the two-week cadence and the activities in each week.",
+      "origin": "propagated",
+      "explanation": "Faithful description of the cadence; it does not claim that this practice caused speed or quality.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "De dienst was digitaal en assisted-digital, zonder papieren versie. De bron specificeert niet welke hulp de assisted-digital route bood.",
+      "label": "F0",
+      "sourceEvidence": "“a digital and assisted digital service (no paper version).”",
+      "synthesisStatement": "The service had digital and assisted-digital provision, no paper version, and the source does not specify the assistance provided.",
+      "narrativeStatement": "The excerpt preserves the channel scope and explicitly avoids specifying unreported assistance.",
+      "origin": "propagated",
+      "explanation": "Faithful and appropriately qualified.",
+      "materiality": "medium"
+    },
+    {
+      "excerpt": "De auteur rapporte dat de dienst na vijf weken publiek beschikbaar meer dan 100.000 aanvragen had ontvangen, met 92,6% gebruikerstevredenheid en een voltooiingspercentage van 80,2%.",
+      "label": "F0",
+      "sourceEvidence": "The service had been “available for five weeks” and had “received over 100k applications with 92.6% user satisfaction and an 80.2% completion rate.”",
+      "synthesisStatement": "After five weeks of availability, the author reported over 100,000 applications, 92.6% user satisfaction and an 80.2% completion rate.",
+      "narrativeStatement": "The excerpt presents these as reported figures and does not attribute them causally to the described practices.",
+      "origin": "propagated",
+      "explanation": "Faithful report of the source’s figures and timeframe. The source provides no metric definitions or measurement method, and the excerpt adds none.",
+      "materiality": "high"
+    }
+  ],
+  "preserved": [
+    "launch-timeline",
+    "user-sequence",
+    "beta-research-rhythm",
+    "assisted-digital-scope",
+    "five-week-results"
+  ],
+  "distorted": [],
+  "omitted": [],
+  "developments": 3,
+  "explainedFacts": 2,
+  "paragraphSteps": [
+    {
+      "excerpt": "Het team lanceerde de dienst voor het publiek in twaalf weken. Het was aanvankelijk gevraagd binnen enkele weken te leveren, maar concludeerde dat dit niet haalbaar was met behoud van een kwalitatieve gebruikersdienst.",
+      "step": "Sets the deadline pressure and the quality constraint."
+    },
+    {
+      "excerpt": "Het team werkte eerst aan de aanvragerservaring en bracht die naar alpha; plannen voor caseworkers kwamen later. De auteur zegt dat caseworkers in deze nieuwe dienst nog geen bestaande gebruikers waren en dat het team onder tijdsdruk aannames wilde vermijden.",
+      "step": "Explains the order of user groups and the stated reason for it."
+    },
+    {
+      "excerpt": "Tijdens private beta verdeelde het team tweewekelijkse sprints: in de eerste week testte en onderzocht het team en nam het aanvragen aan; in de tweede week werden inzendingen gepauzeerd voor testen, onderzoek en verwerking.",
+      "step": "Describes the private-beta research and processing cadence."
+    },
+    {
+      "excerpt": "De dienst was digitaal en assisted-digital, zonder papieren versie. De bron specificeert niet welke hulp de assisted-digital route bood.",
+      "step": "Adds service-channel scope, not a separate development step."
+    },
+    {
+      "excerpt": "De auteur rapporteert dat de dienst na vijf weken publiek beschikbaar meer dan 100.000 aanvragen had ontvangen, met 92,6% gebruikerstevredenheid en een voltooiingspercentage van 80,2%.",
+      "step": "Ends with reported early results, without a causal conclusion."
+    }
+  ],
+  "endpointAddsMeaning": false,
+  "redundancy": [],
+  "peripheral": [
+    "De dienst was digitaal en assisted-digital, zonder papieren versie. De bron specificeert niet welke hulp de assisted-digital route bood."
+  ],
+  "unsupported": [
+    "Snel digitaal leveren begon hier met keuzes, niet met een formulier"
+  ],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}
+

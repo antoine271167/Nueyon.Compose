@@ -1,0 +1,106 @@
+{
+  "claims": [
+    {
+      "excerpt": "## Het aandeel hernieuwbare energie hangt af van wat je meet",
+      "label": "F0",
+      "sourceEvidence": "The source reports different renewable shares for electricity production, total energy production, and total energy consumption.",
+      "synthesisStatement": "The answer varies with the measure used.",
+      "narrativeStatement": "De wereldwijde cijfers voor 2024 laten zien dat het aandeel hernieuwbare energie afhangt van wat je meet.",
+      "origin": "narrative",
+      "explanation": "Faithfully expresses the supported distinction between measures.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "Wereldwijde cijfers voor 2024 geven verschillende percentages voor hernieuwbare energie, afhankelijk van de maatstaf.",
+      "label": "F0",
+      "sourceEvidence": "The 2024 table reports different renewable percentages for electricity production, all-energy production, and all-energy consumption.",
+      "synthesisStatement": "The 2024 figures differ according to the measure.",
+      "narrativeStatement": "De wereldwijde cijfers voor 2024 laten zien dat het aandeel hernieuwbare energie afhangt van wat je meet.",
+      "origin": "propagated",
+      "explanation": "Accurately frames the cited figures as global 2024 measurements whose percentages vary by measure.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "Hernieuwbare bronnen leverden 32% van de elektriciteitsproductie: 10,0 van in totaal 30,7 biljoen kWh.",
+      "label": "F0",
+      "sourceEvidence": "The source reports 10.0 trillion kWh of renewable electricity production out of 30.7 trillion kWh total, or 32%.",
+      "synthesisStatement": "10.0 trillion kWh renewable out of 30.7 trillion kWh total electricity production, reported as 32%.",
+      "narrativeStatement": "In 2024 bedroeg de hernieuwbare elektriciteitsproductie 10,0 van 30,7 biljoen kWh, gerapporteerd als 32%.",
+      "origin": "propagated",
+      "explanation": "The share, numerator, denominator, unit, and production qualifier all match the evidence.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "Gemeten als aandeel van de totale energieproductie was hernieuwbaar 7%: 42,4 van 605,6 biljard Btu.",
+      "label": "F0",
+      "sourceEvidence": "The source reports 42.4 quadrillion Btu renewable out of 605.6 quadrillion Btu total energy production, or 7%.",
+      "synthesisStatement": "42.4 quadrillion Btu renewable out of 605.6 quadrillion Btu total energy production, reported as 7%.",
+      "narrativeStatement": "Voor de totale energieproductie was dat 42,4 van 605,6 biljard Btu, gerapporteerd als 7%.",
+      "origin": "propagated",
+      "explanation": "The percentage, values, unit, denominator, and all-energy production measure are faithful.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "Ook het aandeel in het totale energieverbruik bedroeg 7%.",
+      "label": "F0",
+      "sourceEvidence": "The source states that the renewable share of all energy consumption was 7%.",
+      "synthesisStatement": "The renewable share of all energy consumption was also 7%.",
+      "narrativeStatement": "Het aandeel hernieuwbare energie in het totale energieverbruik was eveneens 7%.",
+      "origin": "propagated",
+      "explanation": "Accurately reports the consumption share and does not confuse it with production.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "Deze percentages beschrijven dus verschillende grootheden.",
+      "label": "F0",
+      "sourceEvidence": "The source gives separate measures for electricity production, all-energy production, and all-energy consumption.",
+      "synthesisStatement": "The figures refer to distinct measures.",
+      "narrativeStatement": "De percentages beantwoorden verschillende vragen over de energiesector.",
+      "origin": "narrative",
+      "explanation": "This is a supported summary of the distinctions in the figures.",
+      "materiality": "medium"
+    },
+    {
+      "excerpt": "Om een aandeel te begrijpen, moet duidelijk zijn of het om elektriciteit of alle energie gaat, en of productie of verbruik wordt gemeten.",
+      "label": "F0",
+      "sourceEvidence": "The source reports different figures for electricity versus all energy, and for production versus consumption.",
+      "synthesisStatement": "The figures vary by energy scope and whether production or consumption is measured.",
+      "narrativeStatement": "Om een aandeel te begrijpen, moet duidelijk zijn of het gaat om elektriciteit of alle energie, en of productie of verbruik wordt gemeten.",
+      "origin": "narrative",
+      "explanation": "The guidance accurately draws out the distinctions shown by the evidence; it does not assert that every combination has an available figure.",
+      "materiality": "medium"
+    }
+  ],
+  "preserved": [
+    "renewable-electricity-production-share-2024",
+    "renewable-all-energy-production-share-2024",
+    "renewable-all-energy-consumption-share-2024"
+  ],
+  "distorted": [],
+  "omitted": [
+    "renewable-electricity-consumption-share-unavailable",
+    "data-vintage"
+  ],
+  "developments": 3,
+  "explainedFacts": 3,
+  "paragraphSteps": [
+    {
+      "paragraph": 1,
+      "step": "Frames the metric-dependent question and gives the renewable share and underlying values for electricity production."
+    },
+    {
+      "paragraph": 2,
+      "step": "Contrasts the all-energy production share and values with the all-energy consumption share."
+    },
+    {
+      "paragraph": 3,
+      "step": "Draws out why energy scope and production-versus-consumption distinctions matter."
+    }
+  ],
+  "endpointAddsMeaning": true,
+  "redundancy": [],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}

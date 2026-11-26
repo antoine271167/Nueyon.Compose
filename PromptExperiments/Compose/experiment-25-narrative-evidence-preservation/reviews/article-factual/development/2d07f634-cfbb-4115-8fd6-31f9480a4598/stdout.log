@@ -1,0 +1,96 @@
+{
+  "claims": [
+    {
+      "excerpt": "Launched in 2018",
+      "label": "F0",
+      "sourceEvidence": "GRACE Follow-On launched May 22, 2018.",
+      "synthesisStatement": "Matches the supplied launch year.",
+      "narrativeStatement": "“GRACE Follow-On launched in 2018”",
+      "origin": "propagated",
+      "explanation": "The year is accurate; omitting the exact date does not change the claim.",
+      "materiality": "Low; establishes context."
+    },
+    {
+      "excerpt": "GRACE Follow-On consists of two spacecraft that follow one another about 137 miles (220 kilometers) apart",
+      "label": "F0",
+      "sourceEvidence": "Twin satellites follow each other about 137 miles or 220 kilometers apart.",
+      "synthesisStatement": "Matches the two-satellite setup and separation.",
+      "narrativeStatement": "“two spacecraft that follow one another about 137 miles (220 kilometers) apart”",
+      "origin": "propagated",
+      "explanation": "Preserves the number of spacecraft and the separation; it does not mistake separation for altitude.",
+      "materiality": "High; establishes the measurement setup."
+    },
+    {
+      "excerpt": "The mission uses changes in the distance between them to infer shifts in mass on Earth.",
+      "label": "F0",
+      "sourceEvidence": "The changing inter-satellite distance is a raw measurement used to infer shifts in mass.",
+      "synthesisStatement": "Matches the stated distance-to-mass inference.",
+      "narrativeStatement": "“use changes in the distance between them to infer shifts in mass on Earth”",
+      "origin": "propagated",
+      "explanation": "Correctly describes an indirect inference from changing separation, not a direct observation of water.",
+      "materiality": "High; states the mission’s core measurement purpose."
+    },
+    {
+      "excerpt": "As the pair approaches a larger mass concentration, gravity acts on the leading spacecraft first, initially pulling it farther from the trailing spacecraft.",
+      "label": "F0",
+      "sourceEvidence": "As the pair approaches a larger mass concentration, stronger gravity acts on the leading satellite first, initially pulling it farther from the trailing one.",
+      "synthesisStatement": "Matches the gravity-first sequence and its effect on separation.",
+      "narrativeStatement": "“As the pair approaches a larger mass concentration, gravity acts on the leading spacecraft first, initially increasing its distance from the trailing one.”",
+      "origin": "propagated",
+      "explanation": "Preserves that the leading spacecraft is affected first and initially moves farther from the trailing spacecraft.",
+      "materiality": "High; explains why the measured distance changes."
+    },
+    {
+      "excerpt": "The resulting change in their separation is the measurement",
+      "label": "F0",
+      "sourceEvidence": "The changing inter-satellite distance is a raw measurement used to infer shifts in mass.",
+      "synthesisStatement": "Matches the separation-as-measurement distinction.",
+      "narrativeStatement": "“That changing separation is a measurement”",
+      "origin": "propagated",
+      "explanation": "Identifies the changing separation, rather than a direct image, as the measurement.",
+      "materiality": "High; clarifies what the instrument measures."
+    },
+    {
+      "excerpt": "not a direct image of water",
+      "label": "F0",
+      "sourceEvidence": "The changing inter-satellite distance is a raw measurement used to infer shifts in mass.",
+      "synthesisStatement": "The supplied caution says not to treat the measurement as a direct camera for groundwater.",
+      "narrativeStatement": "“not a direct image of water”",
+      "origin": "propagated",
+      "explanation": "The contrast accurately conveys that water changes are inferred from mass shifts rather than directly imaged.",
+      "materiality": "High; prevents a misleading interpretation of the measurement."
+    },
+    {
+      "excerpt": "Scientists use the inferred mass shifts to investigate changes in groundwater, lakes and rivers, soil moisture, glaciers and ice sheets, and sea level associated with water added to the oceans.",
+      "label": "F0",
+      "sourceEvidence": "The mission follows changes involving groundwater, lakes and rivers, soil moisture, glaciers, ice sheets and changes in sea level attributable to water added to the oceans.",
+      "synthesisStatement": "Matches the listed water systems and preserves the qualification on sea-level changes.",
+      "narrativeStatement": "“helps scientists investigate water movement in groundwater, lakes and rivers, soil, ice, and sea-level changes associated with water added to the oceans.” Story Progression gives the fuller list, including soil moisture, glaciers and ice sheets.",
+      "origin": "propagated",
+      "explanation": "The sea-level statement remains limited to changes associated with water added to the oceans; it does not extend the claim to thermal expansion.",
+      "materiality": "High; gives the measurement’s applications and preserves a material qualification."
+    }
+  ],
+  "preserved": [
+    "baseline",
+    "gravity-sequence",
+    "measurement-inference",
+    "water-changes"
+  ],
+  "distorted": [],
+  "omitted": [],
+  "developments": 3,
+  "explainedFacts": 6,
+  "paragraphSteps": [
+    "Paragraph 1: establishes the mission’s launch and satellite separation, then states the distance-to-mass inference.",
+    "Paragraph 2: explains the gravity sequence and identifies changing separation as the indirect measurement.",
+    "Paragraph 3: connects inferred mass shifts to the water changes scientists investigate, with the sea-level qualification."
+  ],
+  "endpointAddsMeaning": true,
+  "redundancy": [],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}
+

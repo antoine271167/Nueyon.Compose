@@ -1,0 +1,112 @@
+{
+  "claims": [
+    {
+      "exact body excerpt": "NIST’s AI Risk Management Framework and Its Generative AI Profile",
+      "label": "F0",
+      "sourceEvidence": "NIST released AI RMF 1.0 in January 2023. ... In July 2024 NIST published AI 600-1, a companion profile for generative AI with cross-sector scope.",
+      "synthesisStatement": "Follow the timeline from the broad framework to a profile focused on one class of AI.",
+      "narrativeStatement": "The story follows the relationship between NIST’s broad AI Risk Management Framework and its later profile focused on generative AI.",
+      "origin": "narrative",
+      "explanation": "The heading accurately identifies the two publications and their broad-versus-generative-AI relationship.",
+      "materiality": "low"
+    },
+    {
+      "exact body excerpt": "NIST released AI RMF 1.0 in January 2023 as a framework for voluntary use.",
+      "label": "F0",
+      "sourceEvidence": "NIST released AI RMF 1.0 in January 2023. It was designed for voluntary use.",
+      "synthesisStatement": "NIST released AI RMF 1.0 in January 2023. It was designed for voluntary use.",
+      "narrativeStatement": "The framework, released in January 2023 for voluntary use",
+      "origin": "narrative",
+      "explanation": "The release date and voluntary-use qualification are retained.",
+      "materiality": "high"
+    },
+    {
+      "exact body excerpt": "It aims to help organizations incorporate trustworthiness considerations across AI design, development, use, and evaluation.",
+      "label": "F0",
+      "sourceEvidence": "It ... aims to help organizations bring trustworthiness considerations into the design, development, use and evaluation of AI.",
+      "synthesisStatement": "aims to help organizations bring trustworthiness considerations into the design, development, use and evaluation of AI",
+      "narrativeStatement": "aims to help organizations incorporate trustworthiness considerations across AI design, development, use, and evaluation",
+      "origin": "narrative",
+      "explanation": "The stated aim and all four lifecycle areas are preserved.",
+      "materiality": "medium"
+    },
+    {
+      "exact body excerpt": "In July 2024, NIST published AI 600-1, a cross-sector profile focused on generative AI.",
+      "label": "F0",
+      "sourceEvidence": "In July 2024 NIST published AI 600-1, a companion profile for generative AI with cross-sector scope.",
+      "synthesisStatement": "In July 2024 NIST published AI 600-1, a companion profile for generative AI with cross-sector scope.",
+      "narrativeStatement": "In July 2024, NIST published AI 600-1, a cross-sector companion profile for generative AI.",
+      "origin": "narrative",
+      "explanation": "The date, identifier, cross-sector scope, and generative-AI focus are accurate. The nearby non-replacement assertion is assessed separately.",
+      "materiality": "high"
+    },
+    {
+      "exact body excerpt": "The profile was prepared pursuant to Executive Order 14110.",
+      "label": "F0",
+      "sourceEvidence": "The publication was prepared pursuant to Executive Order 14110.",
+      "synthesisStatement": "The publication was prepared pursuant to Executive Order 14110.",
+      "narrativeStatement": "It was prepared pursuant to Executive Order 14110",
+      "origin": "narrative",
+      "explanation": "This accurately states the publication’s attribution to the order, without explicitly asserting a compliance mandate.",
+      "materiality": "medium"
+    },
+    {
+      "exact body excerpt": "The publications are a broad AI risk management framework and a companion profile focused on one class of AI.",
+      "label": "F0",
+      "sourceEvidence": "Follow the timeline from the broad framework to a profile focused on one class of AI.",
+      "synthesisStatement": "Show why the two documents should be read together.",
+      "narrativeStatement": "Readers should understand the two publications together as a broad framework and a profile focused on one class of AI",
+      "origin": "narrative",
+      "explanation": "This accurately summarizes the broad framework and narrower companion profile.",
+      "materiality": "medium"
+    },
+    {
+      "exact body excerpt": "AI 600-1 does not replace the framework.",
+      "label": "U",
+      "sourceEvidence": "Companion status does not establish replacement.",
+      "synthesisStatement": "Companion status does not establish replacement.",
+      "narrativeStatement": "not as evidence that the profile replaces the framework",
+      "origin": "amplification",
+      "explanation": "The evidence cautions that companion status does not establish whether the profile replaces the framework. The body turns that uncertainty into a definitive claim of non-replacement.",
+      "materiality": "high"
+    }
+  ],
+  "preserved": [
+    "nist-ai-rmf-release"
+  ],
+  "distorted": [
+    "ai-600-1-release"
+  ],
+  "omitted": [
+    "order-relation"
+  ],
+  "developments": 2,
+  "explainedFacts": 2,
+  "paragraphSteps": [
+    {
+      "paragraph": 1,
+      "step": "Introduces the framework’s release, voluntary-use status, and purpose."
+    },
+    {
+      "paragraph": 2,
+      "step": "Adds the later profile’s date, scope, and Executive Order attribution."
+    },
+    {
+      "paragraph": 3,
+      "step": "Summarizes the broad-framework/focused-profile relationship, then makes an unsupported definitive claim about replacement."
+    }
+  ],
+  "endpointAddsMeaning": true,
+  "redundancy": [
+    "The publications are a broad AI risk management framework and a companion profile focused on one class of AI."
+  ],
+  "peripheral": [],
+  "unsupported": [
+    "AI 600-1 does not replace the framework."
+  ],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": [
+    "AI 600-1 does not replace the framework."
+  ]
+}
+

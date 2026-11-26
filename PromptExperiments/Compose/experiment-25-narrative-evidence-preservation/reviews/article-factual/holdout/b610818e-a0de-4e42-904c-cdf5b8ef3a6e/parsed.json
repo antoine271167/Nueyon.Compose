@@ -1,0 +1,93 @@
+{
+  "claims": [
+    {
+      "excerpt": "Een hot spot is een locatie in het bewegingsgebied van een luchthaven waar in het verleden een botsing of runway incursion heeft plaatsgevonden, of waar daarop een risico bestaat.",
+      "label": "F0",
+      "sourceEvidence": "A hot spot is an airport movement-area location with a history or potential risk of collision or runway incursion.",
+      "synthesisStatement": "A hot spot is an airport movement-area location with a history or potential risk of collision or runway incursion.",
+      "narrativeStatement": "A hot spot is an airport movement-area location with a history or potential risk of collision or runway incursion.",
+      "origin": "propagated",
+      "explanation": "Preserves both alternatives: an incident history or a potential risk; it does not assert that an incident is certain.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "Vanaf 19 mei 2022 standaardiseerde de FAA twee betekenissen voor hot spots, weergegeven met drie vormen.",
+      "label": "F0",
+      "sourceEvidence": "On the May 19, 2022 chart cycle the FAA standardized three shapes and two meanings.",
+      "synthesisStatement": "The FAA standardized two meanings with three shapes beginning May 19, 2022.",
+      "narrativeStatement": "The FAA standardized two meanings with three shapes beginning May 19, 2022.",
+      "origin": "propagated",
+      "explanation": "The date, two meanings, and three shapes match the evidence.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "Een cirkel of ellips duidt een hot spot voor grondbewegingen aan;",
+      "label": "F0",
+      "sourceEvidence": "Circle and ellipse are both ground-movement indicators.",
+      "synthesisStatement": "A circle or ellipse marks a ground movement hot spot;",
+      "narrativeStatement": "A circle or ellipse marks a ground movement hot spot;",
+      "origin": "propagated",
+      "explanation": "Correctly assigns both circle and ellipse to ground movement hot spots.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "een cilinder duidt een hot spot voor een verkeerd oppervlak aan.",
+      "label": "F0",
+      "sourceEvidence": "A cylinder represents wrong surface.",
+      "synthesisStatement": "a cylinder marks a wrong surface hot spot.",
+      "narrativeStatement": "a cylinder marks a wrong surface hot spot.",
+      "origin": "propagated",
+      "explanation": "Correctly assigns the cylinder to the wrong-surface category.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "Het doel van deze standaardisering is verwarring over de betekenis of weergave van hot spots te voorkomen.",
+      "label": "F0",
+      "sourceEvidence": "Standardized depiction is intended to prevent confusion about the meaning or depiction of hot spots.",
+      "synthesisStatement": "The stated purpose is to prevent confusion about the meaning or depiction of hot spots.",
+      "narrativeStatement": "The stated purpose is to prevent confusion about the meaning or depiction of hot spots.",
+      "origin": "propagated",
+      "explanation": "Correctly states the purpose without claiming that standardization eliminates all confusion.",
+      "materiality": "material"
+    }
+  ],
+  "preserved": [
+    "hot-spot-definition",
+    "standardization-date",
+    "ground-movement-symbol",
+    "wrong-surface-symbol",
+    "standardization-purpose"
+  ],
+  "distorted": [],
+  "omitted": [],
+  "developments": 3,
+  "explainedFacts": 5,
+  "paragraphSteps": [
+    {
+      "paragraph": 1,
+      "steps": [
+        "hot-spot-definition"
+      ]
+    },
+    {
+      "paragraph": 2,
+      "steps": [
+        "standardization-date",
+        "ground-movement-symbol",
+        "wrong-surface-symbol"
+      ]
+    },
+    {
+      "paragraph": 3,
+      "steps": [
+        "standardization-purpose"
+      ]
+    }
+  ],
+  "endpointAddsMeaning": true,
+  "redundancy": [],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}

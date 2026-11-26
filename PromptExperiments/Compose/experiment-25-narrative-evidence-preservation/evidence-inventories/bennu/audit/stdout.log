@@ -1,0 +1,40 @@
+{
+  "checks": [
+    {
+      "id": "return-date",
+      "supported": false,
+      "useful": true,
+      "reason": "The synthesis supports the full excerpt. The supplied source evidence is only an operator paraphrase, not the frozen original-source text, so independent source verification is unresolved.",
+      "coverageGap": "The amount returned on that date is not specified."
+    },
+    {
+      "id": "minimum-required",
+      "supported": false,
+      "useful": true,
+      "reason": "The synthesis supports the full excerpt. The supplied source evidence is only an operator paraphrase, not the frozen original-source text, so independent source verification is unresolved.",
+      "coverageGap": "The requirement is not the final inventory amount."
+    },
+    {
+      "id": "requirement-exceeded-before-opening",
+      "supported": false,
+      "useful": true,
+      "reason": "The synthesis supports the relationship to the previously stated 60-gram requirement and the timing before complete opening. The supplied source evidence is only an operator paraphrase, so independent source verification is unresolved.",
+      "coverageGap": "The amount present at this earlier milestone is not specified."
+    },
+    {
+      "id": "final-pour",
+      "supported": false,
+      "useful": true,
+      "reason": "The synthesis supports the full excerpt, including that the 51.2 grams were added in a final pour. The supplied source evidence is only an operator paraphrase, so independent source verification is unresolved.",
+      "coverageGap": "The amount present before the pour is not specified."
+    },
+    {
+      "id": "completed-inventory",
+      "supported": false,
+      "useful": true,
+      "reason": "The synthesis supports the full excerpt as the completed inventory total. The supplied source evidence is only an operator paraphrase, so independent source verification is unresolved.",
+      "coverageGap": "The inventory's component breakdown is not specified."
+    }
+  ]
+}
+

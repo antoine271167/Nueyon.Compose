@@ -1,0 +1,121 @@
+{
+  "claims": [
+    {
+      "excerpt": "Dimorphos’s orbit around the larger asteroid Didymos kept changing in the weeks after DART’s impact.",
+      "label": "F0",
+      "sourceEvidence": "Over subsequent weeks, Dimorphos’s orbital period continued to shorten.",
+      "synthesisStatement": "Over subsequent weeks Dimorphos lost more rocky material to space while its orbital period continued to shorten.",
+      "narrativeStatement": "Its orbital period was shorter immediately after the impact and continued to shorten over the following weeks.",
+      "origin": "upstream",
+      "explanation": "Faithfully summarizes the documented continued orbital change in the weeks after impact.",
+      "materiality": "moderate"
+    },
+    {
+      "excerpt": "Before the impact, an orbit took 11 hours and 55 minutes.",
+      "label": "F0",
+      "sourceEvidence": "Before impact, Dimorphos took 11 hours and 55 minutes to orbit Didymos.",
+      "synthesisStatement": "Before impact, Dimorphos took 11 hours and 55 minutes to orbit the larger asteroid Didymos.",
+      "narrativeStatement": "Give its pre-impact period of 11 hours and 55 minutes as a baseline.",
+      "origin": "upstream",
+      "explanation": "The stated baseline period matches the supplied evidence.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "Immediately afterward, the period was shorter.",
+      "label": "F0",
+      "sourceEvidence": "Immediately after impact, the period shortened by 32 minutes and 42 seconds.",
+      "synthesisStatement": "Immediately after impact, the period shortened by 32 minutes and 42 seconds, to 11 hours, 22 minutes and 37 seconds.",
+      "narrativeStatement": "Its orbital period was shorter immediately after the impact.",
+      "origin": "upstream",
+      "explanation": "Correctly states the direction of the immediate change, without claiming the supplied exact reduction or post-impact value.",
+      "materiality": "moderate"
+    },
+    {
+      "excerpt": "Over the following weeks, it shortened further.",
+      "label": "F0",
+      "sourceEvidence": "Over subsequent weeks, the orbital period continued to shorten.",
+      "synthesisStatement": "Over subsequent weeks Dimorphos lost more rocky material to space while its orbital period continued to shorten.",
+      "narrativeStatement": "Continued to shorten over the following weeks.",
+      "origin": "upstream",
+      "explanation": "Faithfully describes the later shortening trend.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "During that same period, Dimorphos also lost more rocky material to space.",
+      "label": "F0",
+      "sourceEvidence": "Over subsequent weeks Dimorphos lost more rocky material to space while its orbital period continued to shorten.",
+      "synthesisStatement": "Over subsequent weeks Dimorphos lost more rocky material to space while its orbital period continued to shorten.",
+      "narrativeStatement": "As Dimorphos lost more rocky material to space.",
+      "origin": "upstream",
+      "explanation": "Presents material loss as concurrent with the shortening, not as its cause.",
+      "materiality": "moderate"
+    },
+    {
+      "excerpt": "The orbit eventually settled at 11 hours and 22 minutes",
+      "label": "F0",
+      "sourceEvidence": "The period settled at 11 hours, 22 minutes and 3 seconds.",
+      "synthesisStatement": "The period settled at 11 hours, 22 minutes and 3 seconds.",
+      "narrativeStatement": "Settling at about 11 hours and 22 minutes.",
+      "origin": "upstream",
+      "explanation": "The article rounds the settled value to the minute, consistent with the narrative’s stated approximation.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "about 33 minutes shorter than before",
+      "label": "F0",
+      "sourceEvidence": "The settled period was 33 minutes and 15 seconds shorter than before impact.",
+      "synthesisStatement": "33 minutes and 15 seconds shorter than before impact.",
+      "narrativeStatement": "Compared with 11 hours and 55 minutes beforehand.",
+      "origin": "upstream",
+      "explanation": "The rounded comparison accurately preserves the supplied 33-minute reduction.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "and was no longer circular.",
+      "label": "F0",
+      "sourceEvidence": "The orbit was no longer circular after impact.",
+      "synthesisStatement": "The orbit was no longer circular after impact.",
+      "narrativeStatement": "Its orbit was also no longer circular.",
+      "origin": "upstream",
+      "explanation": "Faithfully reports the documented change in orbit shape.",
+      "materiality": "moderate"
+    },
+    {
+      "excerpt": "The orbital change continued well beyond the immediate aftermath of the impact.",
+      "label": "F0",
+      "sourceEvidence": "Over the intervening weeks, the period continued to shorten.",
+      "synthesisStatement": "Over subsequent weeks ... its orbital period continued to shorten.",
+      "narrativeStatement": "The central point is that the orbital change continued beyond the immediate aftermath of the impact.",
+      "origin": "narrative",
+      "explanation": "Supported summary of the weeks-long trend, but repeats the earlier description.",
+      "materiality": "low"
+    }
+  ],
+  "preserved": [
+    "pre-impact-period",
+    "immediate-period-change",
+    "continued-shortening",
+    "settled-period",
+    "orbit-shape"
+  ],
+  "distorted": [],
+  "omitted": [],
+  "developments": 3,
+  "explainedFacts": 2,
+  "paragraphSteps": [
+    "Introduces the post-impact weeks-long change.",
+    "Establishes the pre-impact baseline, then distinguishes the immediate shortening from the continued shortening and concurrent material loss.",
+    "Gives the rounded settled period and total reduction, and reports the orbit-shape change.",
+    "Restates that the change extended beyond the immediate aftermath."
+  ],
+  "endpointAddsMeaning": true,
+  "redundancy": [
+    "“Dimorphos’s orbit around the larger asteroid Didymos kept changing in the weeks after DART’s impact.” repeats the weeks-long trend stated in paragraph two.",
+    "“The orbital change continued well beyond the immediate aftermath of the impact.” reiterates the same trend."
+  ],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}
+

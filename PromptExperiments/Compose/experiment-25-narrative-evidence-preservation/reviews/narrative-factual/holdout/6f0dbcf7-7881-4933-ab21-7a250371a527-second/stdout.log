@@ -1,0 +1,79 @@
+{
+  "claims": [
+    {
+      "excerpt": "OSIRIS-REx returned material from asteroid Bennu to Earth on September 24, 2023.",
+      "label": "F0",
+      "sourceEvidence": "The provided source paraphrase and verification say OSIRIS-REx returned material from Bennu to Earth on September 24, 2023.",
+      "synthesisStatement": "OSIRIS-REx returned material from asteroid Bennu to Earth on September 24, 2023.",
+      "narrativeStatement": "OSIRIS-REx returned material from asteroid Bennu to Earth on September 24, 2023.",
+      "origin": "upstream",
+      "explanation": "Faithfully preserves the return date and destination without adding an amount or other qualification.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "The mission required at least 60 grams of asteroid material.",
+      "label": "F0",
+      "sourceEvidence": "The provided source paraphrase and verification identify a 60-gram science requirement.",
+      "synthesisStatement": "The mission required at least 60 grams of asteroid material.",
+      "narrativeStatement": "The mission required at least 60 grams of asteroid material.",
+      "origin": "upstream",
+      "explanation": "Preserves the threshold and its status as a mission requirement.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "The team exceeded that requirement before completely opening the sampling head.",
+      "label": "F0",
+      "sourceEvidence": "The provided source paraphrase and verification say the requirement was exceeded before the sampling head was fully opened.",
+      "synthesisStatement": "The team exceeded that requirement before completely opening the sampling head.",
+      "narrativeStatement": "The team exceeded that requirement before completely opening the sampling head.",
+      "origin": "upstream",
+      "explanation": "Preserves both the milestone and its timing relative to fully opening the sampling head; it does not invent an amount for that milestone.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "A final pour added 51.2 grams.",
+      "label": "F0",
+      "sourceEvidence": "The provided source paraphrase and verification say the final pour contributed 51.2 grams.",
+      "synthesisStatement": "A final pour added 51.2 grams.",
+      "narrativeStatement": "A final pour added 51.2 grams.",
+      "origin": "upstream",
+      "explanation": "Faithfully states the amount attributed to the final pour without implying it was the entire sample.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "The completed inventory amounted to 121.6 grams.",
+      "label": "F0",
+      "sourceEvidence": "The provided source paraphrase and verification give the total sample mass as 121.6 grams.",
+      "synthesisStatement": "The completed inventory amounted to 121.6 grams.",
+      "narrativeStatement": "The completed inventory amounted to 121.6 grams.",
+      "origin": "upstream",
+      "explanation": "Preserves the final total and does not add a component breakdown.",
+      "materiality": "material"
+    }
+  ],
+  "preserved": [
+    "return-date",
+    "minimum-required",
+    "requirement-exceeded-before-opening",
+    "final-pour",
+    "completed-inventory"
+  ],
+  "distorted": [],
+  "omitted": [],
+  "developments": 5,
+  "explainedFacts": 0,
+  "paragraphSteps": [
+    "Return of Bennu material to Earth (context)",
+    "60-gram mission requirement",
+    "Requirement exceeded before the sampling head was completely opened",
+    "51.2-gram final pour",
+    "121.6-gram completed inventory"
+  ],
+  "endpointAddsMeaning": false,
+  "redundancy": [],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}
+

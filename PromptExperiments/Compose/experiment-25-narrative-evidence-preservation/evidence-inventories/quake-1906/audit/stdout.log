@@ -1,0 +1,40 @@
+{
+  "checks": [
+    {
+      "id": "seismic-data",
+      "supported": false,
+      "useful": true,
+      "reason": "The excerpt matches the synthesis, but the supplied source is only an operator paraphrase; the original source text is missing, so support by both sources is unresolved. The claim also compresses the excerpt’s separate details about studying recordings from 96 observatories and digitizing and modeling usable data from 12.",
+      "coverageGap": "The claim omits that the team studied recordings from 96 observatories and digitized the usable data before modeling it."
+    },
+    {
+      "id": "seismic-estimate",
+      "supported": false,
+      "useful": true,
+      "reason": "The excerpt and claim match the synthesis, including the surface-wave qualification, but the supplied source is only an operator paraphrase; authoritative source support is unresolved.",
+      "coverageGap": "No material detail from the excerpt is omitted."
+    },
+    {
+      "id": "geodetic-reanalysis",
+      "supported": false,
+      "useful": true,
+      "reason": "The excerpt and claim match the synthesis, but the supplied source is only an operator paraphrase; authoritative source support is unresolved. This is a distinct method from the seismic analysis.",
+      "coverageGap": "No material detail from the excerpt is omitted."
+    },
+    {
+      "id": "geodetic-estimate",
+      "supported": false,
+      "useful": true,
+      "reason": "The excerpt matches the synthesis, but the supplied source is only an operator paraphrase; authoritative source support is unresolved. The claim paraphrases deformation as measured through angles and distances, while the excerpt says it was reflected in angles and distances between benchmarks; that relationship should be preserved precisely.",
+      "coverageGap": "The claim omits that the angles and distances were between benchmarks and does not preserve the excerpt’s wording that deformation was reflected in those measurements."
+    },
+    {
+      "id": "methods-can-disagree",
+      "supported": false,
+      "useful": true,
+      "reason": "The excerpt and claim are consistent with the synthesis, but the supplied source is only an operator paraphrase; authoritative source support is unresolved. The takeaway is relevant, though it summarizes the contrast already conveyed by the two estimates.",
+      "coverageGap": "No material detail from the excerpt is omitted."
+    }
+  ]
+}
+

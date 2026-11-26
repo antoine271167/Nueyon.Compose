@@ -1,0 +1,93 @@
+{
+  "claims": [
+    {
+      "id": "return-date",
+      "excerpt": "OSIRIS-REx returned material from asteroid Bennu to Earth on September 24, 2023.",
+      "label": "F0",
+      "sourceEvidence": "The provided source verification states that the return to Earth was on September 24, 2023.",
+      "synthesisStatement": "OSIRIS-REx returned material from asteroid Bennu to Earth on September 24, 2023.",
+      "narrativeStatement": "OSIRIS-REx returned material from asteroid Bennu to Earth on September 24, 2023.",
+      "origin": "upstream",
+      "explanation": "Faithfully preserves the return date and destination without adding a quantity for the returned material.",
+      "materiality": "material"
+    },
+    {
+      "id": "minimum-required",
+      "excerpt": "The mission required at least 60 grams of asteroid material",
+      "label": "F0",
+      "sourceEvidence": "The provided source verification states that the 60 g science requirement was reached.",
+      "synthesisStatement": "The mission required at least 60 grams of asteroid material.",
+      "narrativeStatement": "The mission required at least 60 grams of asteroid material.",
+      "origin": "upstream",
+      "explanation": "Preserves the 60-gram minimum as a mission requirement, not as the final inventory.",
+      "materiality": "material"
+    },
+    {
+      "id": "requirement-exceeded-before-opening",
+      "excerpt": "that amount had been exceeded before the sampling head was completely opened.",
+      "label": "F0",
+      "sourceEvidence": "The provided source verification states that the 60 g science requirement was reached before the sampling head was fully opened.",
+      "synthesisStatement": "The team exceeded that requirement before completely opening the sampling head.",
+      "narrativeStatement": "The team exceeded that requirement before completely opening the sampling head.",
+      "origin": "upstream",
+      "explanation": "“That amount” refers to the 60-gram requirement, and “completely opened” preserves the source's fully-opened qualification.",
+      "materiality": "material"
+    },
+    {
+      "id": "final-pour",
+      "excerpt": "A final pour added 51.2 grams.",
+      "label": "F0",
+      "sourceEvidence": "The provided source verification states that the final pour contributed 51.2 g.",
+      "synthesisStatement": "A final pour added 51.2 grams.",
+      "narrativeStatement": "A final pour added 51.2 grams.",
+      "origin": "upstream",
+      "explanation": "Preserves both the amount and its attribution to the final pour.",
+      "materiality": "material"
+    },
+    {
+      "id": "completed-inventory",
+      "excerpt": "The completed inventory amounted to 121.6 grams.",
+      "label": "F0",
+      "sourceEvidence": "The provided source verification states that the total sample mass was 121.6 g.",
+      "synthesisStatement": "The completed inventory amounted to 121.6 grams.",
+      "narrativeStatement": "The completed inventory amounted to 121.6 grams.",
+      "origin": "upstream",
+      "explanation": "Preserves the final total without implying that the final pour alone accounted for it.",
+      "materiality": "material"
+    }
+  ],
+  "preserved": [
+    "return-date",
+    "minimum-required",
+    "requirement-exceeded-before-opening",
+    "final-pour",
+    "completed-inventory"
+  ],
+  "distorted": [],
+  "omitted": [],
+  "developments": 3,
+  "explainedFacts": 0,
+  "paragraphSteps": [
+    {
+      "paragraph": 1,
+      "steps": [
+        "return-date",
+        "minimum-required",
+        "requirement-exceeded-before-opening"
+      ]
+    },
+    {
+      "paragraph": 2,
+      "steps": [
+        "final-pour",
+        "completed-inventory"
+      ]
+    }
+  ],
+  "endpointAddsMeaning": true,
+  "redundancy": [],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}

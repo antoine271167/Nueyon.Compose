@@ -1,0 +1,8 @@
+{
+  "narrative": {
+    "content": "### Selected Story\nThe story explains what cone-mode sparse checkout includes in the working tree: not only files beneath selected directories, but also certain files alongside those directories and their ancestors. The reader should understand this scope as the central distinction in what cone mode includes.\n\n### Story Progression\n- **Context:** Sparse checkout changes which tracked files are present in the working tree.\n- **Development:** In cone mode, selecting a directory includes all files recursively beneath it.\n- **Endpoint:** The included files also extend to siblings of the selected directory and of any ancestor directory, so the scope includes files beyond the selected directory trees."
+  },
+  "composition": {
+    "format": "Article"
+  }
+}

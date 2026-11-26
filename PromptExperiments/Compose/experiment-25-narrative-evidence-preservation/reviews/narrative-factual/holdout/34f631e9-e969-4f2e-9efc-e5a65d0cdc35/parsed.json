@@ -1,0 +1,83 @@
+{
+  "claims": [
+    {
+      "excerpt": "The 1906 earthquake has estimates of magnitude 7.7 and 7.9 from two different approaches: one based on seismic recordings and another on geodetic measurements of ground deformation.",
+      "label": "F2",
+      "sourceEvidence": "The source identifies the seismic result as surface-wave magnitude 7.7 and the geodetic slip-model result as moment magnitude 7.9.",
+      "synthesisStatement": "The synthesis gives estimates of 7.7 and 7.9 from seismic and geodetic approaches, respectively.",
+      "narrativeStatement": "Presents both estimates as generic magnitudes without identifying their different magnitude scales.",
+      "origin": "upstream",
+      "explanation": "The approaches and values are correctly associated, but omitting the distinct magnitude scales materially obscures that the numbers are not directly like-for-like.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "The story explains how the methods differ and why estimates of earthquake size can disagree.",
+      "label": "U",
+      "sourceEvidence": "The source says the methods estimate earthquake size differently and can disagree; it does not explain the specific cause of the numerical difference.",
+      "synthesisStatement": "Different methods of estimating earthquake size can disagree.",
+      "narrativeStatement": "Promises an explanation of why estimates disagree.",
+      "origin": "narrative",
+      "explanation": "The evidence supports the disagreement and method contrast, but not a specific explanation for why these estimates differ.",
+      "materiality": "minor"
+    },
+    {
+      "excerpt": "the seismic analysis, which suggested 7.7 using usable recordings from 12 of 96 observatories studied",
+      "label": "F2",
+      "sourceEvidence": "The source says 12 of 96 stations had records suitable for digitization and modeling, producing a surface-wave magnitude of 7.7.",
+      "synthesisStatement": "The seismic analysis suggested a surface-wave magnitude of 7.7; usable data were digitized and modeled from 12 of 96 observatories.",
+      "narrativeStatement": "Accurately states the estimate and data count, but omits that 7.7 is a surface-wave magnitude.",
+      "origin": "upstream",
+      "explanation": "The count and estimate are supported, but omitting the magnitude type is material in a comparison with the geodetic estimate.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "with the USGS re-evaluation of geodetic measurements, which estimated 7.9 from changes in angles and distances between benchmarks.",
+      "label": "F2",
+      "sourceEvidence": "The source says USGS re-evaluated pre- and post-earthquake geodetic measurements, assessing deformation with benchmark distances and angles; slip models suggested moment magnitude 7.9.",
+      "synthesisStatement": "A USGS team re-evaluated measurements made before and after the earthquake; the geodetic approach used benchmark angles and distances and gave an estimate of 7.9.",
+      "narrativeStatement": "Correctly identifies the USGS geodetic re-evaluation and benchmark measurements, but omits the before-and-after timing and the moment-magnitude qualification.",
+      "origin": "upstream",
+      "explanation": "The measurement method is represented accurately, but the omitted magnitude type materially affects comparison with the 7.7 estimate.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "Clarify that the estimates come from different ways of measuring earthquake size, and that different methods can produce different estimates.",
+      "label": "F0",
+      "sourceEvidence": "The source states that the methods estimate earthquake size differently and can disagree.",
+      "synthesisStatement": "Different methods of estimating earthquake size can disagree.",
+      "narrativeStatement": "Restates the supported method contrast and takeaway.",
+      "origin": "upstream",
+      "explanation": "Faithful summary of the source's central interpretation.",
+      "materiality": "none"
+    }
+  ],
+  "preserved": [
+    "seismic-data",
+    "methods-can-disagree"
+  ],
+  "distorted": [
+    "seismic-estimate",
+    "geodetic-reanalysis",
+    "geodetic-estimate"
+  ],
+  "omitted": [],
+  "developments": 4,
+  "explainedFacts": 5,
+  "paragraphSteps": [
+    "Selected Story: establishes the two estimates and their contrasting approaches.",
+    "Context: introduces the estimate difference.",
+    "Development: gives the seismic data count and estimate, then the USGS geodetic method and estimate.",
+    "Endpoint: states that different measurement methods can yield different estimates."
+  ],
+  "endpointAddsMeaning": false,
+  "redundancy": [
+    "The 1906 earthquake has estimates of magnitude 7.7 and 7.9 from two different approaches: one based on seismic recordings and another on geodetic measurements of ground deformation.",
+    "Clarify that the estimates come from different ways of measuring earthquake size, and that different methods can produce different estimates."
+  ],
+  "peripheral": [],
+  "unsupported": [
+    "The story explains how the methods differ and why estimates of earthquake size can disagree."
+  ],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}

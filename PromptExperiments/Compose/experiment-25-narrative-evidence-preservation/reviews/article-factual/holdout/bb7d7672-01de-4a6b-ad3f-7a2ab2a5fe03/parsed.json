@@ -1,0 +1,74 @@
+{
+  "claims": [
+    {
+      "excerpt": "The Twenty-sixth Amendment and the Right to Vote at 18",
+      "label": "F1",
+      "sourceEvidence": "The amendment bars federal and state governments from denying or limiting U.S. citizens' voting rights because of age when they are at least 18.",
+      "synthesisStatement": "The amendment protects against age-based voting restrictions for citizens at least 18; it does not state an unrestricted right to vote.",
+      "narrativeStatement": "The narrative describes an age-based protection and specifies its limits.",
+      "origin": "amplification",
+      "explanation": "The headline may suggest a general right to vote at 18, broader than the source's specific protection against age-based restrictions. The body text clarifies that scope.",
+      "materiality": "minor"
+    },
+    {
+      "excerpt": "Passed by Congress on March 23, 1971, and ratified on July 1, 1971",
+      "label": "F0",
+      "sourceEvidence": "Congress passed the amendment on March 23, 1971, and it was ratified on July 1, 1971.",
+      "synthesisStatement": "Congress passed the amendment on March 23, 1971, and it was ratified on July 1, 1971.",
+      "narrativeStatement": "The amendment was passed by Congress on March 23, 1971, and ratified on July 1, 1971.",
+      "origin": "upstream",
+      "explanation": "Both dates and the distinction between passage and ratification are preserved.",
+      "materiality": "low"
+    },
+    {
+      "excerpt": "the Twenty-sixth Amendment established an age-based protection for voting rights.",
+      "label": "F0",
+      "sourceEvidence": "The amendment bars federal and state governments from denying or limiting US citizens' voting rights because of age when they are at least 18.",
+      "synthesisStatement": "The amendment bars federal and state governments from denying or limiting US citizens' voting rights because of age when they are at least 18.",
+      "narrativeStatement": "The amendment added an age-based protection to voting rights.",
+      "origin": "upstream",
+      "explanation": "This accurately summarizes the amendment's stated protection, which the following sentence specifies.",
+      "materiality": "low"
+    },
+    {
+      "excerpt": "It bars the federal and state governments from denying or limiting a U.S. citizen’s right to vote because of age if the citizen is at least 18.",
+      "label": "F0",
+      "sourceEvidence": "The amendment bars federal and state abridgment of US citizens' voting rights on account of age for those 18 or older.",
+      "synthesisStatement": "The amendment bars both federal and state governments from denying or limiting US citizens' voting rights because of age when the citizens are at least 18.",
+      "narrativeStatement": "Federal and state governments may not deny or limit a U.S. citizen’s voting rights because of age once the citizen is at least 18.",
+      "origin": "upstream",
+      "explanation": "It preserves the covered governments, citizens, age threshold, and the limitation to restrictions because of age.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "The amendment also gives Congress authority to enforce this protection through appropriate legislation.",
+      "label": "F0",
+      "sourceEvidence": "Section 2 gives Congress legislative enforcement authority.",
+      "synthesisStatement": "Congress can enforce the amendment through appropriate legislation.",
+      "narrativeStatement": "The amendment gives Congress authority to enforce this protection through appropriate legislation.",
+      "origin": "upstream",
+      "explanation": "The enforcement authority and its qualification, appropriate legislation, are accurately stated.",
+      "materiality": "medium"
+    }
+  ],
+  "preserved": [
+    "timeline",
+    "age-protection",
+    "enforcement"
+  ],
+  "distorted": [],
+  "omitted": [],
+  "developments": 3,
+  "explainedFacts": 5,
+  "paragraphSteps": [
+    "Introduces the amendment’s enactment dates and summarizes its age-based protection.",
+    "Specifies which governments and citizens are covered, the age threshold, and the restriction at issue.",
+    "Adds Congress’s enforcement authority and the legislation mechanism."
+  ],
+  "endpointAddsMeaning": true,
+  "redundancy": [],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}

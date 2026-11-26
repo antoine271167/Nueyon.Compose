@@ -1,0 +1,81 @@
+{
+  "claims": [
+    {
+      "excerpt": "The GPS change users did not have to install",
+      "label": "U",
+      "sourceEvidence": "No supplied source evidence establishes that users did not have to install anything.",
+      "synthesisStatement": "The selected idea uses the same title, but the synthesis does not substantiate the no-install assertion.",
+      "narrativeStatement": "The GPS change users did not have to install",
+      "origin": "upstream",
+      "explanation": "The supplied material describes government policy and a future-generation procurement decision, not whether users had to install something.",
+      "materiality": "Low; the headline framing is unsupported, but does not alter the two interventions."
+    },
+    {
+      "excerpt": "Selective Availability deliberately degraded public GPS signals for national security.",
+      "label": "F0",
+      "sourceEvidence": "“Selective Availability deliberately degraded public GPS signals for national security.”",
+      "synthesisStatement": "“Selective Availability deliberately degraded public GPS signals for national security.”",
+      "narrativeStatement": "Selective Availability deliberately degraded public GPS signals for national security.",
+      "origin": "upstream",
+      "explanation": "Faithfully states the feature and its stated purpose without adding a degree of degradation.",
+      "materiality": "High; establishes the context for both developments."
+    },
+    {
+      "excerpt": "In May 2000 the US government stopped using it at President Bill Clinton’s direction to make civil and commercial GPS more useful worldwide.",
+      "label": "F0",
+      "sourceEvidence": "“In May 2000 the US government stopped using it at President Bill Clinton’s direction to make civil and commercial GPS more useful worldwide.”",
+      "synthesisStatement": "“In May 2000 the US government stopped using it at President Bill Clinton’s direction to make civil and commercial GPS more useful worldwide.”",
+      "narrativeStatement": "In May 2000 the US government stopped using it at President Bill Clinton’s direction to make civil and commercial GPS more useful worldwide.",
+      "origin": "upstream",
+      "explanation": "Preserves the date, action, direction, and stated purpose; it does not imply the capability was removed.",
+      "materiality": "High; identifies the first intervention."
+    },
+    {
+      "excerpt": "In September 2007 the government announced it would procure the future GPS III generation without the feature.",
+      "label": "F0",
+      "sourceEvidence": "“In September 2007 the government announced it would procure the future GPS III generation without the feature.”",
+      "synthesisStatement": "“In September 2007 the government announced it would procure the future GPS III generation without the feature.”",
+      "narrativeStatement": "In September 2007 the government announced it would procure the future GPS III generation without the feature.",
+      "origin": "upstream",
+      "explanation": "Preserves the announcement, procurement scope, future GPS III generation, and omission of the feature without suggesting when every satellite lacked it.",
+      "materiality": "High; identifies the second intervention."
+    },
+    {
+      "excerpt": "The 2007 procurement decision was not the 2000 operational switch.",
+      "label": "F0",
+      "sourceEvidence": "The source separately says the government “stopped using” Selective Availability in May 2000 and announced procurement of a future generation without it in September 2007.",
+      "synthesisStatement": "“The 2007 procurement decision was not the 2000 operational switch.”",
+      "narrativeStatement": "The 2007 procurement decision was not the 2000 operational switch.",
+      "origin": "upstream",
+      "explanation": "Accurately distinguishes the operational change from the later procurement decision.",
+      "materiality": "High; preserves the central distinction."
+    }
+  ],
+  "preserved": [
+    "sa-purpose",
+    "operational-switch-2000",
+    "future-generation-procurement",
+    "events-not-equivalent"
+  ],
+  "distorted": [],
+  "omitted": [],
+  "developments": 2,
+  "explainedFacts": 2,
+  "paragraphSteps": [
+    "Context: Selective Availability deliberately degraded public GPS signals for national security.",
+    "Development: In May 2000 the US government stopped using it at President Bill Clinton’s direction to make civil and commercial GPS more useful worldwide.",
+    "Development: In September 2007 the government announced it would procure the future GPS III generation without the feature.",
+    "Endpoint: The 2007 procurement decision was not the 2000 operational switch."
+  ],
+  "endpointAddsMeaning": true,
+  "redundancy": [],
+  "peripheral": [],
+  "unsupported": [
+    "The GPS change users did not have to install"
+  ],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": [
+    "GPS.gov describes the procurement choice as making the 2000 policy durable by removing that feature in the future generation."
+  ]
+}
+

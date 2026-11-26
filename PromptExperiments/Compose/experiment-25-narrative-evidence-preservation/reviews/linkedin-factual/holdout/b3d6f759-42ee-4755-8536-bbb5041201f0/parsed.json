@@ -1,0 +1,80 @@
+{
+  "claims": [
+    {
+      "excerpt": "Een digitale refunddienst binnen enkele weken opleveren werd niet haalbaar geacht als de gebruikersdienst kwalitatief moest blijven.",
+      "label": "F0",
+      "sourceEvidence": "“We were initially asked to deliver the service in a matter of weeks” and “would not be possible if we wanted to create a quality service for our users.”",
+      "synthesisStatement": "Het was aanvankelijk gevraagd binnen enkele weken te leveren, maar concludeerde dat dit niet haalbaar was met behoud van een kwalitatieve gebruikersdienst.",
+      "narrativeStatement": "De aanvankelijk gevraagde termijn van enkele weken werd niet haalbaar geacht met behoud van een kwalitatieve gebruikersdienst.",
+      "origin": "propagated",
+      "explanation": "Behoudt zowel de aanvankelijk korte gevraagde termijn als de voorwaarde van kwaliteit.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "De POA-refunddienst ging na twaalf weken publiek.",
+      "label": "F0",
+      "sourceEvidence": "“launched to the public in only 12 weeks.”",
+      "synthesisStatement": "Het team lanceerde de dienst voor het publiek in twaalf weken.",
+      "narrativeStatement": "De dienst ging na twaalf weken publiek.",
+      "origin": "propagated",
+      "explanation": "Geeft de gerapporteerde termijn en publieke lancering getrouw weer.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "In de ontwikkeling begon de aanpak bij de ervaring van aanvragers. Plannen voor het werk van caseworkers kwamen later.",
+      "label": "F0",
+      "sourceEvidence": "“My team focused on the users applying for refunds first” and “Plans for the caseworker user came later.”",
+      "synthesisStatement": "Het team werkte eerst aan de aanvragerservaring en bracht die naar alpha; plannen voor caseworkers kwamen later.",
+      "narrativeStatement": "In de aanpak kwam eerst de ervaring van aanvragers aan bod; caseworkerwerk volgde later.",
+      "origin": "propagated",
+      "explanation": "Behoudt de volgorde; de weggelaten alpha-stap is geen tegenspraak.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "Tijdens de private beta bood het tweewekelijkse ritme vaste tijd voor onderzoek en testen, naast het aannemen en verwerken van aanvragen.",
+      "label": "F2",
+      "sourceEvidence": "“splitting our fortnightly sprints in two”: in week één “testing, researching and accepting applications”; in week twee “suspending submissions” om te testen, onderzoek te doen en aanvragen te verwerken.",
+      "synthesisStatement": "Tijdens private beta verdeelde het team tweewekelijkse sprints: in de eerste week testte en onderzocht het team en nam het aanvragen aan; in de tweede week werden inzendingen gepauzeerd voor testen, onderzoek en verwerking.",
+      "narrativeStatement": "Tijdens de private beta was er in het tweewekelijkse ritme vaste tijd voor onderzoek en testen.",
+      "origin": "propagated",
+      "explanation": "De formulering vat de terugkerende onderzoeks- en testtijd samen, maar verliest de belangrijke afwisseling tussen weken en het opschorten van inzendingen in week twee. “Naast” het aannemen en verwerken kan bovendien gelijktijdigheid suggereren die de bron niet beschrijft.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "Zo kreeg de aanpak een herkenbare volgorde: eerst aandacht voor de ervaring van aanvragers, en tijdens de beta terugkerend ruimte voor onderzoek en testen.",
+      "label": "F1",
+      "sourceEvidence": "“focused on the users applying for refunds first”; tijdens private beta werden testen en onderzoek in beide weken ingepland.",
+      "synthesisStatement": "Het team werkte eerst aan de aanvragerservaring en bracht die naar alpha; plannen voor caseworkers kwamen later. Tijdens private beta verdeelde het team tweewekelijkse sprints [...] voor testen, onderzoek en verwerking.",
+      "narrativeStatement": "De lezer moet begrijpen hoe die volgorde en die gereserveerde tijd onderdeel waren van de beschreven werkwijze.",
+      "origin": "propagated",
+      "explanation": "Dit is een ondersteunende samenvatting van eerder genoemde feiten, maar herhaalt de cadencebeschrijving zonder de weekindeling en inzendingspauze.",
+      "materiality": "low"
+    }
+  ],
+  "preserved": [
+    "launch-timeline",
+    "user-sequence"
+  ],
+  "distorted": [
+    "beta-research-rhythm"
+  ],
+  "omitted": [
+    "assisted-digital-scope",
+    "five-week-results"
+  ],
+  "developments": 2,
+  "explainedFacts": 3,
+  "paragraphSteps": [
+    "Alinea 1: tijdsdruk en publieke lancering (context).",
+    "Alinea 2: eerst de aanvragerservaring, later caseworkerplannen (ontwikkeling 1).",
+    "Alinea 3: onderzoeks- en testritme tijdens private beta; herhaalt vervolgens de gebruikersvolgorde en beta-aanpak (ontwikkeling 2 en samenvatting)."
+  ],
+  "endpointAddsMeaning": false,
+  "redundancy": [
+    "Zo kreeg de aanpak een herkenbare volgorde: eerst aandacht voor de ervaring van aanvragers, en tijdens de beta terugkerend ruimte voor onderzoek en testen."
+  ],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}

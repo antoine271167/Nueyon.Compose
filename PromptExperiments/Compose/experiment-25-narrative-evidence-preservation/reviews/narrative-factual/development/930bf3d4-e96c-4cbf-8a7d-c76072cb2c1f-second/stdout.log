@@ -1,0 +1,113 @@
+{
+  "claims": [
+    {
+      "excerpt": "The GPS story centers on two different ways the United States government addressed Selective Availability, a feature that deliberately degraded public GPS signals for national security: it stopped using the feature in May 2000, then in September 2007 announced that the future GPS III generation would be procured without it.",
+      "label": "F0",
+      "sourceEvidence": "Selective Availability deliberately degraded public GPS signals for national security. In May 2000 the US government stopped using it. In September 2007 the government announced it would procure the future GPS III generation without the feature.",
+      "synthesisStatement": "The account contrasts stopping use of the existing feature with announcing its omission from a future generation.",
+      "narrativeStatement": "The sentence accurately summarizes the feature's purpose and the two distinct government actions.",
+      "origin": "propagated",
+      "explanation": "The feature description, both dates, and the difference between stopping use and future procurement match the supplied evidence.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "The reader should understand the distinction between ending the use of an existing feature and specifying its omission from a future generation—and how the latter made the 2000 policy durable.",
+      "label": "F0",
+      "sourceEvidence": "GPS.gov describes the procurement choice as making the 2000 policy durable by removing that feature in the future generation.",
+      "synthesisStatement": "The 2007 procurement choice made the 2000 policy durable by removing the feature from the future generation.",
+      "narrativeStatement": "The body identifies the distinction and the stated durability effect.",
+      "origin": "propagated",
+      "explanation": "This is supported by the supplied synthesis; it does not claim the 2007 decision was the 2000 operational switch.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "- **Context:** Selective Availability deliberately degraded public GPS signals for national security, establishing what the feature was and why ending its use was a change to an existing system.",
+      "label": "F0",
+      "sourceEvidence": "Selective Availability deliberately degraded public GPS signals for national security. The 2000 action was stopping use of the feature, not removing the capability.",
+      "synthesisStatement": "Selective Availability deliberately degraded public GPS signals for national security; the 2000 action stopped using it.",
+      "narrativeStatement": "The context states the feature's purpose and frames the 2000 action as a change to the existing system.",
+      "origin": "propagated",
+      "explanation": "The context is consistent with the source and does not imply the capability was removed in 2000.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "- **Development:** In May 2000, at President Bill Clinton’s direction, the US government stopped using Selective Availability to make civil and commercial GPS more useful worldwide. In September 2007, it announced that it would procure the future GPS III generation without the feature—a separate intervention focused on what a future generation would include.",
+      "label": "F0",
+      "sourceEvidence": "In May 2000 the US government stopped using it at President Bill Clinton’s direction to make civil and commercial GPS more useful worldwide. In September 2007 the government announced it would procure the future GPS III generation without the feature.",
+      "synthesisStatement": "The May 2000 operational change and September 2007 future-generation procurement announcement were separate interventions.",
+      "narrativeStatement": "The development paragraph gives the supported direction, purpose, dates, and procurement scope.",
+      "origin": "propagated",
+      "explanation": "All details match the supplied evidence. The future-generation phrasing preserves the procurement scope.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "- **Endpoint:** The two actions were distinct: the 2000 action stopped use of the feature, while the 2007 procurement choice made the 2000 policy durable by removing it from the future generation.",
+      "label": "F0",
+      "sourceEvidence": "The source separately describes the 2000 action as stopping use and the 2007 decision as procuring a future generation without the feature; GPS.gov describes the latter as making the 2000 policy durable.",
+      "synthesisStatement": "The 2007 procurement decision was not the 2000 operational switch and made the policy durable for the future generation.",
+      "narrativeStatement": "The endpoint accurately distinguishes the actions and states the supported durability effect.",
+      "origin": "propagated",
+      "explanation": "The distinction and effect are supported; no date for universal absence of the capability is asserted.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "- Keep the May 2000 operational switch distinct from the September 2007 procurement announcement; do not present them as one event.",
+      "label": "F0",
+      "sourceEvidence": "The source separately states that the government stopped using Selective Availability in May 2000 and announced future-generation procurement without it in September 2007.",
+      "synthesisStatement": "The 2007 procurement decision was not the 2000 operational switch.",
+      "narrativeStatement": "The constraint calls for preserving the source-supported distinction.",
+      "origin": "propagated",
+      "explanation": "This is a supported distinction framed as an instruction, not a conflation of the events.",
+      "materiality": "high"
+    }
+  ],
+  "preserved": [
+    "sa-purpose",
+    "operational-switch-2000",
+    "future-generation-procurement",
+    "events-not-equivalent"
+  ],
+  "distorted": [],
+  "omitted": [],
+  "developments": 2,
+  "explainedFacts": 4,
+  "paragraphSteps": [
+    {
+      "paragraph": "Selected Story",
+      "steps": [
+        "Context: feature purpose",
+        "May 2000: operational switch",
+        "September 2007: future-generation procurement"
+      ]
+    },
+    {
+      "paragraph": "Story Progression — Context",
+      "steps": [
+        "Context: feature purpose"
+      ]
+    },
+    {
+      "paragraph": "Story Progression — Development",
+      "steps": [
+        "May 2000: operational switch",
+        "September 2007: future-generation procurement"
+      ]
+    },
+    {
+      "paragraph": "Story Progression — Endpoint",
+      "steps": [
+        "Distinguishes the two actions and states the durability effect"
+      ]
+    }
+  ],
+  "endpointAddsMeaning": false,
+  "redundancy": [
+    "The Selected Story repeats the key context and both interventions later detailed in Story Progression.",
+    "The May 2000/September 2007 distinction and durability effect recur in the Endpoint and Critical Constraints."
+  ],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}
+

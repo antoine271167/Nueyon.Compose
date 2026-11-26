@@ -1,0 +1,148 @@
+{
+  "claims": [
+    {
+      "excerpt": "# From Deployment to Routine Science: Webb’s Six-Month Commissioning",
+      "label": "F0",
+      "sourceEvidence": "“Webb began its science mission and started to conduct routine science operations” after six months.",
+      "synthesisStatement": "Webb’s path from deployment to routine science spanned a six-month commissioning period.",
+      "narrativeStatement": "The narrative states that routine science began after six months.",
+      "origin": "propagated",
+      "explanation": "The title accurately summarizes the timeline.",
+      "materiality": "central"
+    },
+    {
+      "excerpt": "Webb was too large in its operational configuration to fit inside the available rocket’s Ariane 5 fairing, so it was designed to fold for launch.",
+      "label": "F0",
+      "sourceEvidence": "“Webb's fully deployed operational configuration is far too large to fit into any available rocket so it was designed to fold into a compact launch configuration that fit inside the Ariane 5.”",
+      "synthesisStatement": "Webb folded to fit the Ariane 5 fairing because its operational configuration was too large for the available rocket.",
+      "narrativeStatement": "The narrative gives this as context for the deployment.",
+      "origin": "propagated",
+      "explanation": "Faithfully preserves both the size constraint and the Ariane 5 launch context.",
+      "materiality": "supporting"
+    },
+    {
+      "excerpt": "Unfolding involved more than 50 major steps and over 300 possible single points of failure.",
+      "label": "F0",
+      "sourceEvidence": "“There were over 50 major deployment steps” and “over 300 single points of failure.”",
+      "synthesisStatement": "Deployment had more than 50 major steps and over 300 possible single points of failure.",
+      "narrativeStatement": "The narrative presents these figures as the stakes of deployment.",
+      "origin": "propagated",
+      "explanation": "The figures and their characterization as possible failure points match the source.",
+      "materiality": "supporting"
+    },
+    {
+      "excerpt": "Any one could have diminished or crippled the mission, and repair would not have been possible at Webb’s distance from Earth.",
+      "label": "F0",
+      "sourceEvidence": "“Any one of over 300 single points of failure could have diminished or crippled the mission”; at approximately one million miles from Earth, “there was no possibility for a repair mission.”",
+      "synthesisStatement": "A failure could have seriously harmed the mission, and a repair mission was not possible at Webb’s distance.",
+      "narrativeStatement": "The narrative makes the same risk and repair-constraint claims.",
+      "origin": "propagated",
+      "explanation": "The conditional risk is not presented as an actual failure, and the repair limitation is supported.",
+      "materiality": "supporting"
+    },
+    {
+      "excerpt": "Deployment proceeded smoothly.",
+      "label": "F0",
+      "sourceEvidence": "“Webb's deployment was completed with remarkable smoothness.”",
+      "synthesisStatement": "Deployment was smooth.",
+      "narrativeStatement": "The narrative says deployment proceeded smoothly.",
+      "origin": "propagated",
+      "explanation": "Accurately reports the source’s characterization.",
+      "materiality": "supporting"
+    },
+    {
+      "excerpt": "By the telescope’s second week, its secondary mirror and both primary-mirror wings had unfolded and latched, completing its fully deployed operational configuration.",
+      "label": "F1",
+      "sourceEvidence": "“During the second week after launch,” the “secondary mirror tripod” was unfolded and latched and the two primary mirror wings were rotated and latched, bringing Webb into its “fully deployed operational configuration.”",
+      "synthesisStatement": "Webb reached its fully deployed configuration in the second week after the secondary mirror tripod and primary-mirror wings were deployed and latched.",
+      "narrativeStatement": "The narrative describes the secondary mirror and both wings as unfolded and latched in the second week.",
+      "origin": "propagated",
+      "explanation": "The timing, wing deployment, and completed configuration are supported. The source specifies that the secondary mirror tripod—not the mirror itself—was unfolded and latched, a minor imprecision.",
+      "materiality": "central"
+    },
+    {
+      "excerpt": "But deployment was only one stage on the way to routine science.",
+      "label": "F0",
+      "sourceEvidence": "The source distinguishes the second-week fully deployed configuration from commissioning and says, “After six months” Webb began routine science operations.",
+      "synthesisStatement": "Reaching the deployed configuration was not the same as beginning routine science.",
+      "narrativeStatement": "The narrative explicitly emphasizes this distinction.",
+      "origin": "propagated",
+      "explanation": "This is a supported summary of the source’s staged timeline.",
+      "materiality": "central"
+    },
+    {
+      "excerpt": "During the first month, the telescope and instruments cooled for several weeks.",
+      "label": "F0",
+      "sourceEvidence": "In the first month, “the telescope and scientific instruments” cooled, taking “several weeks” to reach stable temperatures.",
+      "synthesisStatement": "The telescope and instruments took several weeks to cool during the first month.",
+      "narrativeStatement": "The narrative gives the same cooling duration and period.",
+      "origin": "propagated",
+      "explanation": "Faithfully preserves the duration and timeline.",
+      "materiality": "central"
+    },
+    {
+      "excerpt": "Mirror alignment took place in months two through four, followed by instrument-mode calibration in months five and six.",
+      "label": "F0",
+      "sourceEvidence": "“In the second, third and fourth months” Webb undertook telescope alignment; “In the fifth and sixth months” it calibrated the scientific instruments’ modes of operation.",
+      "synthesisStatement": "Alignment occupied months two through four, followed by instrument calibration in months five and six.",
+      "narrativeStatement": "The narrative presents the same sequence and timing.",
+      "origin": "propagated",
+      "explanation": "The commissioning stages and their order are accurately represented.",
+      "materiality": "central"
+    },
+    {
+      "excerpt": "Webb began routine science operations after the six-month commissioning period.",
+      "label": "F0",
+      "sourceEvidence": "“After six months” Webb “began its science mission and started to conduct routine science operations.”",
+      "synthesisStatement": "Routine science began after six months of commissioning.",
+      "narrativeStatement": "The narrative gives the same endpoint.",
+      "origin": "propagated",
+      "explanation": "The timeline and endpoint are supported; no additional calibration outcome is claimed.",
+      "materiality": "central"
+    }
+  ],
+  "preserved": [
+    "launch-fold",
+    "deployment-risk",
+    "deployed-second-week",
+    "cooling-and-alignment",
+    "calibration-to-science"
+  ],
+  "distorted": [],
+  "omitted": [],
+  "developments": 5,
+  "explainedFacts": 5,
+  "paragraphSteps": [
+    {
+      "paragraph": 1,
+      "steps": [
+        "The launch-size constraint explains why Webb folded for launch.",
+        "Deployment risks and repair limitations establish the stakes."
+      ]
+    },
+    {
+      "paragraph": 2,
+      "steps": [
+        "Deployment proceeded smoothly.",
+        "Webb reached its fully deployed configuration in the second week.",
+        "Deployment completion was distinct from readiness for routine science."
+      ]
+    },
+    {
+      "paragraph": 3,
+      "steps": [
+        "Cooling took several weeks during the first month.",
+        "Mirror alignment took place in months two through four.",
+        "Instrument-mode calibration followed in months five and six.",
+        "Routine science began after six months."
+      ]
+    }
+  ],
+  "endpointAddsMeaning": false,
+  "redundancy": [],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}
+

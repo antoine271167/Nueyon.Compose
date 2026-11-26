@@ -1,0 +1,59 @@
+{
+  "claims": [
+    {
+      "exact body excerpt": "Congress passed the Twenty-sixth Amendment on March 23, 1971, and it was ratified on July 1 of that year.",
+      "label": "F0",
+      "sourceEvidence": "Congress passed the amendment on March 23, 1971, and it was ratified on July 1, 1971.",
+      "synthesisStatement": "Congress passed the amendment on March 23, 1971, and it was ratified on July 1, 1971.",
+      "narrativeStatement": "Congress passed the amendment on March 23, 1971, and it was ratified on July 1, 1971.",
+      "origin": "propagated",
+      "explanation": "Both dates and their relationship are preserved; “that year” correctly refers to 1971.",
+      "materiality": "Low; historical context."
+    },
+    {
+      "exact body excerpt": "It bars federal and state governments from denying or limiting U.S. citizens’ voting rights because of age when they are at least 18.",
+      "label": "F0",
+      "sourceEvidence": "The amendment bars federal and state governments from denying or limiting US citizens' voting rights because of age when the citizens are at least 18.",
+      "synthesisStatement": "The amendment bars both federal and state governments from denying or limiting US citizens' voting rights because of age when the citizens are at least 18.",
+      "narrativeStatement": "Both federal and state governments are barred from denying or limiting U.S. citizens’ voting rights because of age when they are at least 18.",
+      "origin": "propagated",
+      "explanation": "The body retains the covered governments, citizens, age threshold, and age-based limitation; the wording does not imply removal of other voting requirements.",
+      "materiality": "High; central protection."
+    },
+    {
+      "exact body excerpt": "The amendment also gives Congress authority to enforce this protection through appropriate legislation.",
+      "label": "F0",
+      "sourceEvidence": "Congress can enforce the amendment through appropriate legislation.",
+      "synthesisStatement": "Congress can enforce the amendment through appropriate legislation.",
+      "narrativeStatement": "The amendment gives Congress authority to enforce this protection through appropriate legislation.",
+      "origin": "propagated",
+      "explanation": "Faithfully states Congress’s enforcement authority and preserves the qualification that it is through appropriate legislation.",
+      "materiality": "Moderate; enforcement mechanism."
+    }
+  ],
+  "preserved": [
+    "timeline",
+    "age-protection",
+    "enforcement"
+  ],
+  "distorted": [],
+  "omitted": [],
+  "developments": 3,
+  "explainedFacts": 3,
+  "paragraphSteps": [
+    {
+      "paragraph": 1,
+      "steps": [
+        "timeline context",
+        "age-based protection and scope",
+        "congressional enforcement"
+      ]
+    }
+  ],
+  "endpointAddsMeaning": true,
+  "redundancy": [],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}

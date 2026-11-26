@@ -1,0 +1,118 @@
+{
+  "claims": [
+    {
+      "excerpt": "How GRACE Follow-On Tracks Changes in Earth’s Mass",
+      "label": "F0",
+      "sourceEvidence": "The changing inter-satellite distance is a raw measurement used to infer shifts in mass.",
+      "synthesisStatement": "The mission uses distance changes to infer changes in Earth's mass.",
+      "narrativeStatement": "Explain how GRACE Follow-On’s two spacecraft use changes in the distance between them to infer shifts in mass on Earth.",
+      "origin": "compose",
+      "explanation": "The heading accurately summarizes the mission's inference from changing separation.",
+      "materiality": "low"
+    },
+    {
+      "excerpt": "Launched in 2018, GRACE Follow-On consists of two spacecraft",
+      "label": "F0",
+      "sourceEvidence": "GRACE Follow-On launched May 22, 2018. Twin satellites follow each other...",
+      "synthesisStatement": "GRACE Follow-On launched in 2018 and has two spacecraft.",
+      "narrativeStatement": "GRACE Follow-On launched in 2018 with two spacecraft...",
+      "origin": "propagated",
+      "explanation": "Faithfully preserves the launch year and twin-spacecraft setup; omitting the exact launch date is not material here.",
+      "materiality": "low"
+    },
+    {
+      "excerpt": "that follow one another about 137 miles (220 kilometers) apart",
+      "label": "F0",
+      "sourceEvidence": "Twin satellites follow each other about 137 miles or 220 kilometers apart.",
+      "synthesisStatement": "The spacecraft follow one another about 137 miles or 220 kilometers apart.",
+      "narrativeStatement": "two spacecraft that follow one another about 137 miles (220 kilometers) apart.",
+      "origin": "propagated",
+      "explanation": "Both the approximate distance and unit conversion are preserved.",
+      "materiality": "medium"
+    },
+    {
+      "excerpt": "The mission uses changes in the distance between them—not changes in their altitude—to infer shifts in mass on Earth.",
+      "label": "F0",
+      "sourceEvidence": "The changing inter-satellite distance is a raw measurement used to infer shifts in mass. The supplied qualification says separation is not altitude.",
+      "synthesisStatement": "Changing separation, rather than altitude, is used to infer mass shifts.",
+      "narrativeStatement": "The changing measurement is the distance between the spacecraft, not their altitude.",
+      "origin": "narrative",
+      "explanation": "Correctly identifies the measured quantity and preserves the distinction from altitude.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "As the pair approaches a larger mass concentration, gravity acts on the leading spacecraft first, initially pulling it farther ahead of the trailing spacecraft and increasing the distance between them.",
+      "label": "F0",
+      "sourceEvidence": "As the pair approaches a larger mass concentration, stronger gravity acts on the leading satellite first, initially pulling it farther from the trailing one.",
+      "synthesisStatement": "The larger mass concentration affects the leading spacecraft first, initially increasing its lead and the separation.",
+      "narrativeStatement": "As the pair approaches a larger mass concentration, gravity acts on the leading spacecraft first, initially increasing its distance from the trailing one.",
+      "origin": "propagated",
+      "explanation": "The causal order and initial increase in separation are faithful to the evidence.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "That changing separation is the measurement the mission uses",
+      "label": "F0",
+      "sourceEvidence": "The changing inter-satellite distance is a raw measurement used to infer shifts in mass.",
+      "synthesisStatement": "Changing inter-satellite distance is the measurement used for the inference.",
+      "narrativeStatement": "The changing distance between them is used to infer shifts in mass.",
+      "origin": "propagated",
+      "explanation": "Accurately identifies separation as the measurement; the following sentence in the paragraph supplies its inferential purpose.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "the spacecraft do not directly image water",
+      "label": "F0",
+      "sourceEvidence": "The supplied qualification says the measurement is indirect, not a direct view of groundwater.",
+      "synthesisStatement": "The mission infers mass shifts rather than directly imaging water.",
+      "narrativeStatement": "That changing separation is a measurement—not a direct image of water.",
+      "origin": "narrative",
+      "explanation": "This is a supported negation clarifying the indirect measurement, not an assertion that the spacecraft image something else.",
+      "materiality": "medium"
+    },
+    {
+      "excerpt": "The inferred mass shifts help scientists investigate water movement in groundwater, lakes and rivers, soil, glaciers and ice sheets, as well as sea-level changes associated with water added to the oceans.",
+      "label": "F1",
+      "sourceEvidence": "The mission follows changes involving groundwater, lakes and rivers, soil moisture, glaciers, ice sheets and changes in sea level attributable to water added to the oceans.",
+      "synthesisStatement": "Inferred mass shifts help investigate changes in water storage and sea level caused by water added to the oceans.",
+      "narrativeStatement": "helps scientists investigate water movement in groundwater, lakes and rivers, soil, ice, and sea-level changes associated with water added to the oceans.",
+      "origin": "propagated",
+      "explanation": "The applications and the sea-level qualification are preserved. “Soil” is broader and less precise than the source's “soil moisture,” a minor loss of qualification.",
+      "materiality": "medium"
+    }
+  ],
+  "preserved": [
+    "baseline",
+    "gravity-sequence",
+    "measurement-inference"
+  ],
+  "distorted": [
+    "water-changes"
+  ],
+  "omitted": [],
+  "developments": 3,
+  "explainedFacts": 9,
+  "paragraphSteps": [
+    {
+      "paragraph": 1,
+      "step": "Establishes the mission's two-spacecraft configuration and separation, then distinguishes the measured separation from altitude and connects it to mass inference."
+    },
+    {
+      "paragraph": 2,
+      "step": "Explains the gravity-first sequence and how it changes the measured separation, while clarifying that water is not directly imaged."
+    },
+    {
+      "paragraph": 3,
+      "step": "Connects inferred mass shifts to water-storage changes and the qualified sea-level application."
+    }
+  ],
+  "endpointAddsMeaning": true,
+  "redundancy": [
+    "The measurement role of changing separation is stated in paragraph 1 and restated in paragraph 2; the latter also connects it to the gravity sequence."
+  ],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}
+

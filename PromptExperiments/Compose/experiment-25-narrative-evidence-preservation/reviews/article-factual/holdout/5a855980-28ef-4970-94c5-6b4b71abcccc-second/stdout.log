@@ -1,0 +1,55 @@
+{
+  "claims": [
+    {
+      "excerpt": "Sparse checkout changes which tracked files are present in the working tree.",
+      "label": "F0",
+      "sourceEvidence": "Sparse checkout changes which tracked files are present in the working tree.",
+      "synthesisStatement": "Sparse checkout changes which tracked files are present in the working tree.",
+      "narrativeStatement": "Sparse checkout changes which tracked files are present in the working tree.",
+      "origin": "propagated",
+      "explanation": "Faithfully preserves the qualification that sparse checkout affects tracked files in the working tree.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "In cone mode, it selects directories and includes all files recursively beneath them.",
+      "label": "F0",
+      "sourceEvidence": "Cone mode takes directories, includes their tracked contents recursively.",
+      "synthesisStatement": "Cone mode selects directories and includes all files recursively under them.",
+      "narrativeStatement": "Cone mode selects directories and includes all files recursively beneath them.",
+      "origin": "propagated",
+      "explanation": "Faithfully states the recursive inclusion rule for selected directories.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "It also includes files that are siblings of the selected directory or any of its ancestor directories.",
+      "label": "F0",
+      "sourceEvidence": "Includes files immediately alongside the selected directory or its ancestors.",
+      "synthesisStatement": "It also includes files that are siblings of the selected directory or any ancestor directory.",
+      "narrativeStatement": "It also includes files that are siblings of the selected directory or any ancestor directory.",
+      "origin": "propagated",
+      "explanation": "Faithfully preserves the sibling-file rule and its application to the selected directory and ancestors.",
+      "materiality": "material"
+    }
+  ],
+  "preserved": [
+    "sparse-checkout-working-tree",
+    "cone-recursive-inclusion",
+    "cone-sibling-inclusion"
+  ],
+  "distorted": [],
+  "omitted": [],
+  "developments": 3,
+  "explainedFacts": 3,
+  "paragraphSteps": [
+    "Sparse checkout changes which tracked files are present in the working tree.",
+    "Cone mode selects directories and includes all files recursively beneath them.",
+    "Cone mode also includes sibling files at the selected-directory and ancestor levels."
+  ],
+  "endpointAddsMeaning": true,
+  "redundancy": [],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}
+

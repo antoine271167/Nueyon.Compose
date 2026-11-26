@@ -1,0 +1,118 @@
+{
+  "claims": [
+    {
+      "excerpt": "CPython 3.13 introduced experimental free threading as a configuration that can run with the Global Interpreter Lock (GIL) disabled.",
+      "label": "F0",
+      "sourceEvidence": "“CPython 3.13 introduced experimental free threading, a configuration that can run with the global interpreter lock disabled.”",
+      "synthesisStatement": "Faithfully preserves the version, experimental status, and configuration with the GIL disabled.",
+      "narrativeStatement": "Matches the narrative context.",
+      "origin": "upstream",
+      "explanation": "The wording preserves the source’s qualification that free threading is experimental and specific to CPython 3.13.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "In this mode, an application’s runtime choice is connected to the extensions it imports",
+      "label": "F0",
+      "sourceEvidence": "“Tell the story from application runtime choice to the import boundary”",
+      "synthesisStatement": "Faithfully expresses the selected idea’s runtime-choice-to-import-boundary framing.",
+      "narrativeStatement": "Matches the narrative’s stated story progression.",
+      "origin": "narrative",
+      "explanation": "This is supported as a framing of the import behavior described next, not as a separate technical mechanism.",
+      "materiality": "medium"
+    },
+    {
+      "excerpt": "importing an extension without an explicit free-threading support declaration triggers a warning and enables the GIL.",
+      "label": "F0",
+      "sourceEvidence": "“An extension must explicitly indicate that it supports this mode; importing one without that declaration warns and enables the GIL.”",
+      "synthesisStatement": "Faithfully preserves both consequences of importing an extension without the declaration.",
+      "narrativeStatement": "Matches the narrative’s import-boundary development.",
+      "origin": "upstream",
+      "explanation": "The source specifies the same condition and outcomes; “triggers a warning” is equivalent to “warns.”",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "The declaration mechanism depends on how the extension is initialized. Multi-phase and single-phase initialization use different mechanisms",
+      "label": "F0",
+      "sourceEvidence": "“The mechanism differs between extensions using multi-phase and single-phase initialization.”",
+      "synthesisStatement": "Faithfully states that the mechanism varies by initialization style without inventing the mechanisms.",
+      "narrativeStatement": "Matches the narrative’s development.",
+      "origin": "upstream",
+      "explanation": "Both initialization styles and the distinction between their mechanisms are preserved.",
+      "materiality": "medium"
+    },
+    {
+      "excerpt": "in either case the declaration communicates compatibility with the free-threaded mode.",
+      "label": "F0",
+      "sourceEvidence": "“An extension must explicitly indicate that it supports this mode” and “a support declaration is distinct from the work of making code thread-safe.”",
+      "synthesisStatement": "Faithfully characterizes the declaration as communicating support for the mode.",
+      "narrativeStatement": "Matches the endpoint’s description of communicating compatibility.",
+      "origin": "compose",
+      "explanation": "This is a supported synthesis of what the declaration indicates, not a claim that the declaration certifies thread safety.",
+      "materiality": "medium"
+    },
+    {
+      "excerpt": "For extension authors, declaring compatibility is separate from making the extension’s code thread-safe.",
+      "label": "F0",
+      "sourceEvidence": "“Free threading is a configuration, and a support declaration is distinct from the work of making code thread-safe.”",
+      "synthesisStatement": "Faithfully preserves the distinction and its relevance to extension authors.",
+      "narrativeStatement": "Matches the narrative’s stated responsibility for extension authors.",
+      "origin": "upstream",
+      "explanation": "The claim distinguishes declaring compatibility from doing the work of thread safety.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "A support declaration does not itself make the code thread-safe or establish that it is.",
+      "label": "F0",
+      "sourceEvidence": "“Do not imply that a support declaration makes extension code thread-safe or establishes that it is.”",
+      "synthesisStatement": "Faithfully preserves the explicit constraint against implying that the declaration establishes thread safety.",
+      "narrativeStatement": "Matches the narrative’s endpoint and critical constraint.",
+      "origin": "upstream",
+      "explanation": "The negative is explicitly supported; it does not assert that the code is thread-safe.",
+      "materiality": "high"
+    }
+  ],
+  "preserved": [
+    "runtime-mode",
+    "import-boundary",
+    "support-vs-safety",
+    "initialization-mechanisms"
+  ],
+  "distorted": [],
+  "omitted": [
+    "windows-build-macro",
+    "sysconfig-check"
+  ],
+  "developments": 3,
+  "explainedFacts": 6,
+  "paragraphSteps": [
+    {
+      "paragraph": 1,
+      "steps": [
+        "Context: CPython 3.13 experimental free-threading configuration",
+        "Development: import behavior links an undeclared extension to a warning and GIL enablement"
+      ]
+    },
+    {
+      "paragraph": 2,
+      "steps": [
+        "Development: declaration mechanisms differ by initialization style",
+        "Clarification: declaration communicates compatibility"
+      ]
+    },
+    {
+      "paragraph": 3,
+      "steps": [
+        "Endpoint: compatibility declaration does not establish thread safety"
+      ]
+    }
+  ],
+  "endpointAddsMeaning": true,
+  "redundancy": [
+    "A support declaration does not itself make the code thread-safe or establish that it is."
+  ],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}
+

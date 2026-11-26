@@ -1,0 +1,44 @@
+{
+  "items": [
+    {
+      "id": "timeline",
+      "claim": "Congress passed the amendment on March 23, 1971, and it was ratified on July 1, 1971.",
+      "synthesisExcerpt": "Congress passed the amendment on March 23, 1971, and it was ratified on July 1, 1971.",
+      "sourceEvidence": "Archives.gov source, as provided in the operator paraphrase: Congress passed the amendment on March 23, 1971, and it was ratified on July 1, 1971.",
+      "kind": "timeline",
+      "useful": true,
+      "material": false,
+      "usefulness": "Provides brief historical context.",
+      "qualification": "Context only; does not define the age protection."
+    },
+    {
+      "id": "age-protection",
+      "claim": "The amendment protects citizens aged 18 or older from age-based voting-rights restrictions by both federal and state governments.",
+      "synthesisExcerpt": "The amendment bars both federal and state governments from denying or limiting US citizens' voting rights because of age when the citizens are at least 18.",
+      "sourceEvidence": "Archives.gov source, as provided in the operator paraphrase: the amendment bars federal and state governments from denying or limiting US citizens' voting rights because of age when they are at least 18.",
+      "kind": "protection",
+      "useful": true,
+      "material": true,
+      "usefulness": "States the amendment's central age-based protection and who it binds.",
+      "qualification": "Applies to US citizens at least 18; the stated bar concerns restrictions because of age."
+    },
+    {
+      "id": "enforcement",
+      "claim": "Congress may enforce the amendment through appropriate legislation.",
+      "synthesisExcerpt": "Congress can enforce the amendment through appropriate legislation.",
+      "sourceEvidence": "Archives.gov source, as provided in the operator paraphrase: Congress can enforce the amendment through appropriate legislation.",
+      "kind": "enforcement",
+      "useful": true,
+      "material": true,
+      "usefulness": "Adds the stated mechanism for congressional enforcement.",
+      "qualification": "The synthesis does not specify what legislation Congress may enact."
+    }
+  ],
+  "uncertainties": "Based only on the frozen synthesis; source details are provided as an operator paraphrase, not independently verified.",
+  "endpoint": "Evidence inventory for the selected direction: the Twenty-sixth Amendment's age protection.",
+  "operatorSourceAudit": {
+    "url": "https://www.archives.gov/founding-docs/amendments-11-27",
+    "locator": "Amendment XXVI, enactment dates and sections 1 and 2",
+    "evidence": "Congress passed it March 23, 1971, and ratification followed July 1. It bars federal and state abridgment of US citizens' voting rights on account of age for those 18 or older. Section 2 gives Congress legislative enforcement authority."
+  }
+}

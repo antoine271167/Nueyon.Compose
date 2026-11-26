@@ -1,0 +1,76 @@
+{
+  "items": [
+    {
+      "id": "ignition-event",
+      "claim": "A National Ignition Facility experiment achieved fusion ignition on December 5, 2022.",
+      "synthesisExcerpt": "On December 5, 2022, a Lawrence Livermore National Laboratory experiment at the National Ignition Facility achieved fusion ignition.",
+      "sourceEvidence": "“On December 5, 2022, a Lawrence Livermore National Laboratory experiment at the National Ignition Facility achieved fusion ignition.”",
+      "kind": "event",
+      "useful": true,
+      "material": true,
+      "usefulness": "Establishes the result and when it occurred.",
+      "qualification": ""
+    },
+    {
+      "id": "target-energy-comparison",
+      "claim": "Reported fusion energy generated exceeded the energy delivered to the target: 3.15 MJ versus 2.05 MJ.",
+      "synthesisExcerpt": "The experiment delivered 2.05 megajoules to the target and generated 3.15 megajoules of fusion energy.",
+      "sourceEvidence": "“The experiment delivered 2.05 megajoules to the target and generated 3.15 megajoules of fusion energy.”",
+      "kind": "measurement",
+      "useful": true,
+      "material": true,
+      "usefulness": "Provides the central comparison for the selected direction.",
+      "qualification": "The target-energy denominator excludes facility-wide electricity."
+    },
+    {
+      "id": "facility-electricity-limit",
+      "claim": "The target-energy comparison excludes facility-wide electricity.",
+      "synthesisExcerpt": "The target energy denominator excludes facility-wide electricity.",
+      "sourceEvidence": "Synthesis states: “The target energy denominator excludes facility-wide electricity.” The source gives the 2.05 MJ delivered-to-target figure but does not state facility-wide electricity use.",
+      "kind": "qualification",
+      "useful": true,
+      "material": true,
+      "usefulness": "Bounds what the energy comparison demonstrates.",
+      "qualification": "The source provides no facility-wide electricity figure."
+    },
+    {
+      "id": "not-grid-electricity",
+      "claim": "The reported fusion output is not net electricity delivered to the grid.",
+      "synthesisExcerpt": "Fusion output is not net electricity delivered to the grid.",
+      "sourceEvidence": "Synthesis states: “Fusion output is not net electricity delivered to the grid.” The source describes fusion energy, not electricity delivered to the grid.",
+      "kind": "qualification",
+      "useful": true,
+      "material": true,
+      "usefulness": "Prevents conflating fusion energy output with delivered electricity.",
+      "qualification": ""
+    },
+    {
+      "id": "development-still-needed",
+      "claim": "The experiment is progress toward inertial fusion energy, but practical production still needs many scientific and technological developments.",
+      "synthesisExcerpt": "The announcement treats the experiment as progress toward inertial fusion energy and notes the many scientific and technological developments still needed for practical energy production.",
+      "sourceEvidence": "“The announcement treats the experiment as progress toward inertial fusion energy and notes the many scientific and technological developments still needed for practical energy production.”",
+      "kind": "outlook",
+      "useful": true,
+      "material": true,
+      "usefulness": "Places the result in context without implying practical energy production.",
+      "qualification": "The source does not specify a timeline for those developments."
+    },
+    {
+      "id": "announcement-date",
+      "claim": "DOE announced the achievement on December 13, eight days after the experiment.",
+      "synthesisExcerpt": "DOE announced the achievement on December 13.",
+      "sourceEvidence": "“On December 5, 2022, a Lawrence Livermore National Laboratory experiment at the National Ignition Facility achieved fusion ignition.” “DOE announced the achievement on December 13.”",
+      "kind": "chronology",
+      "useful": true,
+      "material": false,
+      "usefulness": "Distinguishes the experiment date from the announcement date.",
+      "qualification": "The synthesis gives the announcement date without a year; the eight-day interval follows from the dates stated together."
+    }
+  ],
+  "endpoint": "Evidence inventory complete for the selected direction.",
+  "limitations": [
+    "No facility-wide electricity use or net electricity delivery figure is provided.",
+    "The source does not quantify the developments or timeline needed for practical production."
+  ]
+}
+

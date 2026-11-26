@@ -1,0 +1,89 @@
+{
+  "claims": [
+    {
+      "excerpt": "NIST released AI RMF 1.0 in January 2023 as a framework for voluntary use.",
+      "label": "F0",
+      "sourceEvidence": "NIST released AI RMF 1.0 in January 2023. It was designed for voluntary use",
+      "synthesisStatement": "NIST released AI RMF 1.0 in January 2023.",
+      "narrativeStatement": "The framework, released in January 2023 for voluntary use",
+      "origin": "upstream",
+      "explanation": "The release date and voluntary-use characterization match the evidence.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "It aims to help organizations incorporate trustworthiness considerations across the design, development, use, and evaluation of AI.",
+      "label": "F0",
+      "sourceEvidence": "aims to help organizations bring trustworthiness considerations into the design, development, use and evaluation of AI.",
+      "synthesisStatement": "It was designed for voluntary use and aims to help organizations bring trustworthiness considerations into the design, development, use and evaluation of AI.",
+      "narrativeStatement": "aims to help organizations incorporate trustworthiness considerations across AI design, development, use, and evaluation.",
+      "origin": "upstream",
+      "explanation": "The purpose and four AI lifecycle areas are retained.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "In July 2024, NIST published AI 600-1, a cross-sector companion profile focused on generative AI.",
+      "label": "F0",
+      "sourceEvidence": "In July 2024 NIST published AI 600-1, a companion profile for generative AI with cross-sector scope.",
+      "synthesisStatement": "In July 2024 NIST published AI 600-1, a companion profile for generative AI with cross-sector scope.",
+      "narrativeStatement": "In July 2024, NIST published AI 600-1, a cross-sector companion profile for generative AI.",
+      "origin": "upstream",
+      "explanation": "The date, identifier, companion status, subject, and cross-sector scope are accurate.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "The profile was prepared pursuant to Executive Order 14110.",
+      "label": "F0",
+      "sourceEvidence": "The publication was prepared pursuant to Executive Order 14110.",
+      "synthesisStatement": "The publication was prepared pursuant to Executive Order 14110.",
+      "narrativeStatement": "It was prepared pursuant to Executive Order 14110; this establishes the publication’s connection to the order, not a private-sector compliance requirement.",
+      "origin": "upstream",
+      "explanation": "The preparation attribution is supported. The body does not itself claim that the order mandates private-sector compliance.",
+      "materiality": "medium"
+    },
+    {
+      "excerpt": "The publications are a broad framework and a companion profile focused on one class of AI.",
+      "label": "F0",
+      "sourceEvidence": "a broad framework and a profile focused on one class of AI.",
+      "synthesisStatement": "Follow the timeline from the broad framework to a profile focused on one class of AI.",
+      "narrativeStatement": "Present the publications together as a broad framework and a companion profile focused on generative AI.",
+      "origin": "upstream",
+      "explanation": "This accurately summarizes the broad framework and narrower generative-AI profile relationship.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "AI 600-1 does not replace AI RMF 1.0.",
+      "label": "U",
+      "sourceEvidence": "Companion status does not establish replacement.",
+      "synthesisStatement": "Companion status does not establish replacement.",
+      "narrativeStatement": "not as evidence that the profile replaces the framework.",
+      "origin": "amplification",
+      "explanation": "The evidence says companion status alone does not establish replacement; it does not establish the categorical claim that AI 600-1 does not replace AI RMF 1.0.",
+      "materiality": "high"
+    }
+  ],
+  "preserved": [
+    "nist-ai-rmf-release",
+    "ai-600-1-release"
+  ],
+  "distorted": [
+    "order-relation"
+  ],
+  "omitted": [],
+  "developments": 2,
+  "explainedFacts": 3,
+  "paragraphSteps": [
+    "Paragraph 1: establishes the framework’s release, voluntary-use status, and purpose.",
+    "Paragraph 2: introduces the later generative-AI profile, its scope, and its Executive Order attribution.",
+    "Paragraph 3: synthesizes the broad-versus-focused relationship and makes a categorical nonreplacement claim not established by the evidence."
+  ],
+  "endpointAddsMeaning": true,
+  "redundancy": [],
+  "peripheral": [
+    "The profile was prepared pursuant to Executive Order 14110."
+  ],
+  "unsupported": [
+    "AI 600-1 does not replace AI RMF 1.0."
+  ],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}

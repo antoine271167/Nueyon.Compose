@@ -1,0 +1,64 @@
+{
+  "claims": [
+    {
+      "exactBodyExcerpt": "What a generative AI profile adds to broader guidance",
+      "label": "F1",
+      "sourceEvidence": "Follow the timeline from the broad framework to a profile focused on one class of AI. Show why the two documents should be read together.",
+      "synthesisStatement": "The profile is presented as complementary to broader guidance, but the source does not specify what it adds.",
+      "narrativeStatement": "What a generative AI profile adds to broader guidance",
+      "origin": "amplification",
+      "explanation": "The headline frames the profile as adding to broader guidance. That is a mild interpretation of its companion status, not a specific supported account of what it adds.",
+      "materiality": "minor"
+    },
+    {
+      "exactBodyExcerpt": "NIST released AI RMF 1.0 in January 2023.",
+      "label": "F0",
+      "sourceEvidence": "NIST released AI RMF 1.0 in January 2023.",
+      "synthesisStatement": "NIST released AI RMF 1.0 in January 2023.",
+      "narrativeStatement": "NIST released AI RMF 1.0 in January 2023.",
+      "origin": "upstream",
+      "explanation": "Faithfully states the release and date.",
+      "materiality": "material"
+    },
+    {
+      "exactBodyExcerpt": "In July 2024 NIST published AI 600-1, a companion profile for generative AI with cross-sector scope.",
+      "label": "F0",
+      "sourceEvidence": "In July 2024 NIST published AI 600-1, a companion profile for generative AI with cross-sector scope.",
+      "synthesisStatement": "In July 2024 NIST published AI 600-1, a companion profile for generative AI with cross-sector scope.",
+      "narrativeStatement": "In July 2024 NIST published AI 600-1, a companion profile for generative AI with cross-sector scope.",
+      "origin": "upstream",
+      "explanation": "Preserves the date, document identity, companion status, subject, and cross-sector scope.",
+      "materiality": "material"
+    },
+    {
+      "exactBodyExcerpt": "Its relation to the order concerns development of the publication; the abstract does not describe mandatory private-sector compliance.",
+      "label": "F0",
+      "sourceEvidence": "Its relation to the order concerns development of the publication; the abstract does not describe mandatory private-sector compliance.",
+      "synthesisStatement": "Its relation to the order concerns development of the publication; the abstract does not describe mandatory private-sector compliance.",
+      "narrativeStatement": "Its relation to the order concerns development of the publication; the abstract does not describe mandatory private-sector compliance.",
+      "origin": "upstream",
+      "explanation": "Preserves the stated limit on what the abstract says and does not infer a compliance mandate.",
+      "materiality": "material"
+    }
+  ],
+  "preserved": [
+    "nist-ai-rmf-release",
+    "ai-600-1-release",
+    "order-relation"
+  ],
+  "distorted": [],
+  "omitted": [],
+  "developments": 2,
+  "explainedFacts": 1,
+  "paragraphSteps": [
+    "Context: establishes the January 2023 release of the broad framework.",
+    "Development: introduces the July 2024 companion profile and its scope.",
+    "Endpoint: limits the Executive Order connection and rules out an unsupported compliance inference."
+  ],
+  "endpointAddsMeaning": false,
+  "redundancy": [],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": false,
+  "omittedFromNarrativeUsedInArticle": []
+}

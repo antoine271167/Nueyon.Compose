@@ -1,0 +1,106 @@
+{
+  "claims": [
+    {
+      "excerpt": "federal and state governments may not deny or limit a U.S. citizen’s voting rights because of age once the citizen is at least 18.",
+      "label": "F0",
+      "sourceEvidence": "The supplied Archives.gov paraphrase says the amendment bars federal and state governments from denying or limiting U.S. citizens' voting rights because of age when they are at least 18.",
+      "synthesisStatement": "The amendment bars federal and state governments from denying or limiting citizens' voting rights because of age when they are at least 18.",
+      "narrativeStatement": "Faithfully states the amendment's age-based protection, covered governments, and age threshold.",
+      "origin": "upstream",
+      "explanation": "The wording preserves the actors, protected group, prohibited basis, and age threshold.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "Congress’s authority to enforce it through appropriate legislation.",
+      "label": "F0",
+      "sourceEvidence": "The supplied Archives.gov paraphrase says Congress can enforce the amendment through appropriate legislation.",
+      "synthesisStatement": "Congress can enforce the amendment through appropriate legislation.",
+      "narrativeStatement": "Faithfully states Congress's legislative enforcement authority.",
+      "origin": "upstream",
+      "explanation": "No specific legislation or broader power is claimed.",
+      "materiality": "medium"
+    },
+    {
+      "excerpt": "The amendment was passed by Congress on March 23, 1971, and ratified on July 1, 1971.",
+      "label": "F0",
+      "sourceEvidence": "The supplied Archives.gov paraphrase gives the passage date as March 23, 1971, and the ratification date as July 1, 1971.",
+      "synthesisStatement": "Congress passed the amendment on March 23, 1971, and it was ratified on July 1, 1971.",
+      "narrativeStatement": "Provides the two dates accurately as context.",
+      "origin": "upstream",
+      "explanation": "Both dates and their sequence match the supplied evidence.",
+      "materiality": "low"
+    },
+    {
+      "excerpt": "federal and state governments are barred from denying or limiting U.S. citizens’ voting rights because of age when they are at least 18.",
+      "label": "F0",
+      "sourceEvidence": "The supplied Archives.gov paraphrase says the amendment bars federal and state governments from denying or limiting U.S. citizens' voting rights because of age when they are at least 18.",
+      "synthesisStatement": "The amendment bars federal and state governments from denying or limiting citizens' voting rights because of age when they are at least 18.",
+      "narrativeStatement": "Restates the age-based protection accurately.",
+      "origin": "upstream",
+      "explanation": "The restatement retains the material qualifications.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "the amendment also gives Congress authority to enforce this protection through appropriate legislation.",
+      "label": "F0",
+      "sourceEvidence": "The supplied Archives.gov paraphrase says Congress can enforce the amendment through appropriate legislation.",
+      "synthesisStatement": "Congress can enforce the amendment through appropriate legislation.",
+      "narrativeStatement": "Restates the enforcement authority accurately.",
+      "origin": "upstream",
+      "explanation": "This does not specify or overstate what legislation Congress may enact.",
+      "materiality": "medium"
+    }
+  ],
+  "preserved": [
+    "age-protection",
+    "timeline",
+    "enforcement"
+  ],
+  "distorted": [],
+  "omitted": [],
+  "developments": 3,
+  "explainedFacts": 2,
+  "paragraphSteps": [
+    {
+      "section": "Selected Story",
+      "paragraph": 1,
+      "steps": [
+        "age-protection",
+        "enforcement"
+      ]
+    },
+    {
+      "section": "Story Progression",
+      "step": "Context",
+      "facts": [
+        "timeline"
+      ]
+    },
+    {
+      "section": "Story Progression",
+      "step": "Development",
+      "facts": [
+        "age-protection"
+      ]
+    },
+    {
+      "section": "Story Progression",
+      "step": "Endpoint",
+      "facts": [
+        "enforcement"
+      ]
+    }
+  ],
+  "endpointAddsMeaning": false,
+  "redundancy": [
+    "The Story Progression development repeats the age-protection claim already stated in Selected Story.",
+    "The Story Progression endpoint repeats the enforcement authority already stated in Selected Story."
+  ],
+  "peripheral": [
+    "timeline"
+  ],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}
+

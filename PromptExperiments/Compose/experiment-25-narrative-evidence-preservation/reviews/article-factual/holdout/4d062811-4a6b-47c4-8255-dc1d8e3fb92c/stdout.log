@@ -1,0 +1,103 @@
+{
+  "claims": [
+    {
+      "id": "C1",
+      "exactBodyExcerpt": "In August 2024, the Secretary of Commerce approved FIPS 203, 204, and 205, standards designed to resist future quantum attacks.",
+      "label": "F0",
+      "sourceEvidence": "The Secretary of Commerce approved FIPS 203, 204 and 205 in August 2024.",
+      "synthesisStatement": "The Secretary of Commerce approved FIPS 203, 204, and 205 in August 2024.",
+      "narrativeStatement": "In August 2024, the Secretary of Commerce approved FIPS 203, 204, and 205, standards designed to resist future quantum attacks.",
+      "origin": "none",
+      "explanation": "The approval authority, standards, and date match the evidence.",
+      "materiality": "high"
+    },
+    {
+      "id": "C2",
+      "exactBodyExcerpt": "In August 2024, the Secretary of Commerce approved FIPS 203, 204, and 205, standards designed to resist future quantum attacks.",
+      "label": "F0",
+      "sourceEvidence": "The schemes are designed to resist future quantum attacks.",
+      "synthesisStatement": "The schemes are designed to resist future quantum attacks.",
+      "narrativeStatement": "standards designed to resist future quantum attacks",
+      "origin": "none",
+      "explanation": "The stated security goal matches the source; it does not claim a guarantee or specify a threat model.",
+      "materiality": "high"
+    },
+    {
+      "id": "C3",
+      "exactBodyExcerpt": "Together, they cover two functions: establishing a shared secret and creating digital signatures.",
+      "label": "F0",
+      "sourceEvidence": "FIPS 203 specifies ML-KEM to establish a shared secret between parties communicating over a public channel. FIPS 204 and FIPS 205 specify digital signature schemes.",
+      "synthesisStatement": "The standards cover shared-secret establishment and digital signatures.",
+      "narrativeStatement": "the standards address both shared-secret establishment and digital signatures",
+      "origin": "none",
+      "explanation": "This accurately groups the standards’ two functions.",
+      "materiality": "high"
+    },
+    {
+      "id": "C4",
+      "exactBodyExcerpt": "FIPS 203 specifies a method for communicating parties to establish a shared secret over a public channel.",
+      "label": "F0",
+      "sourceEvidence": "FIPS 203 specifies ML-KEM to establish a shared secret between parties communicating over a public channel.",
+      "synthesisStatement": "FIPS 203 specifies ML-KEM to establish a shared secret between parties communicating over a public channel.",
+      "narrativeStatement": "FIPS 203 specifies a method for establishing a shared secret over a public channel.",
+      "origin": "none",
+      "explanation": "The purpose and public-channel qualification are accurate. The body does not identify the method as ML-KEM; that inventory detail is omitted, not contradicted.",
+      "materiality": "high"
+    },
+    {
+      "id": "C5",
+      "exactBodyExcerpt": "FIPS 204 and FIPS 205 both specify digital signature schemes.",
+      "label": "F0",
+      "sourceEvidence": "FIPS 204 specifies a module-lattice-based digital signature scheme. FIPS 205 specifies a stateless hash-based digital signature scheme.",
+      "synthesisStatement": "FIPS 204 and FIPS 205 each specify a digital signature scheme.",
+      "narrativeStatement": "FIPS 204 and 205 both specify digital signature schemes",
+      "origin": "none",
+      "explanation": "Both standards’ shared function is accurately stated.",
+      "materiality": "high"
+    },
+    {
+      "id": "C6",
+      "exactBodyExcerpt": "FIPS 204 uses a module-lattice-based approach, while FIPS 205 specifies a stateless hash-based approach.",
+      "label": "F0",
+      "sourceEvidence": "FIPS 204 specifies a module-lattice-based digital signature scheme. FIPS 205 specifies a stateless hash-based digital signature scheme.",
+      "synthesisStatement": "FIPS 204 uses a module-lattice-based signature scheme; FIPS 205 uses a stateless hash-based signature scheme.",
+      "narrativeStatement": "using module-lattice-based and stateless hash-based approaches, respectively",
+      "origin": "none",
+      "explanation": "The approaches are correctly assigned to the respective standards.",
+      "materiality": "high"
+    }
+  ],
+  "preserved": [
+    "approval-date",
+    "ml-dsa-signature",
+    "slh-dsa-signature",
+    "quantum-resistance"
+  ],
+  "distorted": [],
+  "omitted": [
+    "ml-kem-purpose"
+  ],
+  "developments": 2,
+  "explainedFacts": 4,
+  "paragraphSteps": [
+    {
+      "paragraph": 1,
+      "step": "Sets the approval and security-goal context, then previews the two functions."
+    },
+    {
+      "paragraph": 2,
+      "step": "Maps FIPS 203 to shared-secret establishment and FIPS 204/205 to signatures."
+    },
+    {
+      "paragraph": 3,
+      "step": "Distinguishes the two signature standards by their approaches."
+    }
+  ],
+  "endpointAddsMeaning": false,
+  "redundancy": [],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}
+

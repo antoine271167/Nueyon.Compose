@@ -1,0 +1,67 @@
+{
+  "claims": [
+    {
+      "excerpt": "Sparse checkout controls which tracked files appear in your working tree.",
+      "label": "F0",
+      "sourceEvidence": "Sparse checkout limits which tracked files appear in the working tree.",
+      "synthesisStatement": "Sparse checkout changes which tracked files are present in the working tree.",
+      "narrativeStatement": "sparse checkout changes which tracked files are present in the working tree",
+      "origin": "upstream",
+      "explanation": "Faithfully states that sparse checkout determines which tracked files are present in the working tree.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "In cone mode, you select directories, and Git includes all files beneath them recursively.",
+      "label": "F0",
+      "sourceEvidence": "Cone mode takes directories and includes their tracked contents recursively.",
+      "synthesisStatement": "Cone mode selects directories and includes all files recursively under them.",
+      "narrativeStatement": "cone mode includes all files recursively under selected directories",
+      "origin": "upstream",
+      "explanation": "Accurately states the recursive inclusion rule. The preceding sentence establishes the scope as tracked files, preserving the relevant qualification.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "But the selection reaches beyond those directories: it also includes files that are siblings of a selected directory and of each of its ancestor directories.",
+      "label": "F0",
+      "sourceEvidence": "Cone mode includes files immediately alongside the selected directory or its ancestors.",
+      "synthesisStatement": "It also includes files that are siblings of the selected directory or any ancestor directory.",
+      "narrativeStatement": "files that are siblings of a selected directory or any of its ancestors",
+      "origin": "upstream",
+      "explanation": "Faithfully includes sibling files at the selected-directory and ancestor levels; “siblings” conveys the relevant relationship.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "So cone mode includes more than the contents of the directories you selected.",
+      "label": "F0",
+      "sourceEvidence": "Cone mode includes files alongside the selected directory or its ancestors, in addition to the selected directories’ tracked contents.",
+      "synthesisStatement": "Cone mode includes recursively selected contents and files that are siblings of the selected directory or an ancestor.",
+      "narrativeStatement": "cone mode’s included files extend beyond the selected directories’ recursive contents",
+      "origin": "compose",
+      "explanation": "This is a supported summary of the sibling-inclusion rule, not an additional unsupported behavior.",
+      "materiality": "minor"
+    }
+  ],
+  "preserved": [
+    "sparse-checkout-working-tree",
+    "cone-recursive-inclusion",
+    "cone-sibling-inclusion"
+  ],
+  "distorted": [],
+  "omitted": [],
+  "developments": 2,
+  "explainedFacts": 3,
+  "paragraphSteps": [
+    "Establishes that sparse checkout determines which tracked files appear in the working tree.",
+    "Explains recursive inclusion under selected directories and additional sibling-file inclusion at selected and ancestor levels.",
+    "Summarizes that cone mode includes files beyond the selected directories’ recursive contents."
+  ],
+  "endpointAddsMeaning": false,
+  "redundancy": [
+    "So cone mode includes more than the contents of the directories you selected."
+  ],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}
+

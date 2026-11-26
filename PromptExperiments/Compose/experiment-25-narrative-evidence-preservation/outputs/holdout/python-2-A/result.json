@@ -1,0 +1,3 @@
+{
+  "content": "## CPython 3.13\u2019s Free-Threaded Mode and Extension Support\n\nCPython 3.13 introduced experimental free threading as a configuration that can run with the GIL disabled. In that mode, an extension\u2019s support declaration matters when the extension is imported: if it lacks an explicit declaration, CPython warns and enables the GIL.\n\nHow an extension makes that declaration depends on whether it uses multi-phase or single-phase initialization. In either case, declaring support communicates compatibility with free-threaded mode. It does not make the extension\u2019s code thread-safe; that is a separate responsibility for extension authors."
+}

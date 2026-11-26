@@ -1,0 +1,90 @@
+{
+  "claims": [
+    {
+      "excerpt": "CPython 3.13 introduced experimental free threading as a configuration that can run with the GIL disabled.",
+      "label": "F0",
+      "sourceEvidence": "CPython 3.13 introduced experimental free threading, a configuration that can run with the global interpreter lock disabled.",
+      "synthesisStatement": "CPython 3.13 introduced experimental free threading, a configuration that can run with the global interpreter lock disabled.",
+      "narrativeStatement": "CPython 3.13 introduced experimental free threading as a configuration that can run with the GIL disabled.",
+      "origin": "propagated",
+      "explanation": "Faithfully preserves the version, experimental status, and configuration-level qualification; “GIL” abbreviates “global interpreter lock.”",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "In that mode, an extension’s support declaration matters when the extension is imported: if it lacks an explicit declaration, CPython warns and enables the GIL.",
+      "label": "F0",
+      "sourceEvidence": "An extension must explicitly indicate that it supports this mode; importing one without that declaration warns and enables the GIL.",
+      "synthesisStatement": "An extension must explicitly indicate that it supports this mode; importing one without that declaration warns and enables the GIL.",
+      "narrativeStatement": "An extension without an explicit support declaration triggers a warning and enables the GIL.",
+      "origin": "propagated",
+      "explanation": "Accurately states the import-time condition and its warning-and-GIL behavior.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "How an extension makes that declaration depends on whether it uses multi-phase or single-phase initialization.",
+      "label": "F0",
+      "sourceEvidence": "The mechanism differs between extensions using multi-phase and single-phase initialization.",
+      "synthesisStatement": "The mechanism differs between extensions using multi-phase and single-phase initialization.",
+      "narrativeStatement": "The declaration mechanism differs between multi-phase and single-phase initialization.",
+      "origin": "propagated",
+      "explanation": "Faithfully states that the declaration mechanism depends on initialization style without inventing implementation details.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "In either case, declaring support communicates compatibility with free-threaded mode.",
+      "label": "F0",
+      "sourceEvidence": "An extension must explicitly indicate that it supports this mode.",
+      "synthesisStatement": "A support declaration is distinct from the work of making code thread-safe.",
+      "narrativeStatement": "Declaring support communicates compatibility with the mode.",
+      "origin": "narrative",
+      "explanation": "The narrative explicitly frames the declaration as communicating compatibility; this is consistent with the source’s description of indicating support.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "It does not make the extension’s code thread-safe; that is a separate responsibility for extension authors.",
+      "label": "F0",
+      "sourceEvidence": "A support declaration is distinct from the work of making code thread-safe.",
+      "synthesisStatement": "A support declaration is distinct from the work of making code thread-safe.",
+      "narrativeStatement": "Declaring support is separate from the work of making the code thread-safe.",
+      "origin": "narrative",
+      "explanation": "Faithfully preserves the distinction and responsibility described in the synthesis and narrative.",
+      "materiality": "material"
+    }
+  ],
+  "preserved": [
+    "runtime-mode",
+    "import-boundary",
+    "support-vs-safety",
+    "initialization-mechanisms"
+  ],
+  "distorted": [],
+  "omitted": [
+    "windows-build-macro",
+    "sysconfig-check"
+  ],
+  "developments": 3,
+  "explainedFacts": 4,
+  "paragraphSteps": [
+    {
+      "paragraph": 1,
+      "steps": [
+        "Establishes the CPython 3.13 free-threaded configuration.",
+        "Explains the import-time consequence of a missing support declaration.",
+        "Notes that declaration mechanics vary by initialization style."
+      ]
+    },
+    {
+      "paragraph": 2,
+      "steps": [
+        "Clarifies that a support declaration communicates compatibility but does not make code thread-safe."
+      ]
+    }
+  ],
+  "endpointAddsMeaning": true,
+  "redundancy": [],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}
+

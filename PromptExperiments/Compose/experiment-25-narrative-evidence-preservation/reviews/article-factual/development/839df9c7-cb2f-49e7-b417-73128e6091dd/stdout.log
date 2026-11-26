@@ -1,0 +1,98 @@
+{
+  "claims": [
+    {
+      "excerpt": "How GRACE Follow-On Tracks Changes in Earth’s Mass",
+      "label": "F0",
+      "sourceEvidence": "The changing inter-satellite distance is a raw measurement used to infer shifts in mass.",
+      "synthesisStatement": "The synthesis says the distance measurement is used to infer shifts in mass.",
+      "narrativeStatement": "The narrative likewise says GRACE Follow-On uses changing distance to infer shifts in mass.",
+      "origin": "compose",
+      "explanation": "The title accurately summarizes the mission’s inference about changes in Earth’s mass.",
+      "materiality": "Low"
+    },
+    {
+      "excerpt": "GRACE Follow-On consists of two satellites that follow one another about 137 miles (220 kilometers) apart.",
+      "label": "F0",
+      "sourceEvidence": "Twin satellites follow each other about 137 miles or 220 kilometers apart.",
+      "synthesisStatement": "The synthesis gives the same satellite count and approximate separation.",
+      "narrativeStatement": "The narrative’s context gives the same satellite count and separation.",
+      "origin": "upstream",
+      "explanation": "The count and approximate distance match the evidence.",
+      "materiality": "High"
+    },
+    {
+      "excerpt": "Their changing separation is the measurement at the center of the mission: as gravity acts on the pair, the distance between them shifts.",
+      "label": "F0",
+      "sourceEvidence": "The changing inter-satellite distance is a raw measurement used to infer shifts in mass. As the pair approaches a larger mass concentration, stronger gravity acts on the leading satellite first, initially pulling it farther from the trailing one.",
+      "synthesisStatement": "The synthesis identifies changing separation as the raw measurement and explains the gravity-driven change.",
+      "narrativeStatement": "The narrative describes separation as the central measurement and says it changes as gravity acts on the pair.",
+      "origin": "upstream",
+      "explanation": "This accurately states the measurement’s central role and that gravity changes the spacing; the following sentence supplies the sequence and direction.",
+      "materiality": "High"
+    },
+    {
+      "excerpt": "As the satellites approach a larger concentration of mass, stronger gravity acts on the leading satellite first, initially pulling it farther from the trailing satellite.",
+      "label": "F0",
+      "sourceEvidence": "As the pair approaches a larger mass concentration, stronger gravity acts on the leading satellite first, initially pulling it farther from the trailing one.",
+      "synthesisStatement": "The synthesis gives the same mass-concentration context and leading-satellite-first sequence.",
+      "narrativeStatement": "The narrative’s development gives the same sequence and direction of pull.",
+      "origin": "upstream",
+      "explanation": "The order, affected satellite, and initial direction all match the evidence.",
+      "materiality": "High"
+    },
+    {
+      "excerpt": "Scientists use these changes in distance as raw measurements to infer shifts in mass on Earth.",
+      "label": "F0",
+      "sourceEvidence": "The changing inter-satellite distance is a raw measurement used to infer shifts in mass.",
+      "synthesisStatement": "The synthesis describes distance as a raw measurement used to infer mass shifts.",
+      "narrativeStatement": "The narrative says the changing distance is a raw measurement used to infer shifts in mass.",
+      "origin": "upstream",
+      "explanation": "The body preserves the indirect-measurement qualification and the inference drawn from it.",
+      "materiality": "High"
+    },
+    {
+      "excerpt": "Those estimates help them investigate changes in groundwater, lakes and rivers, soil moisture, glaciers, and ice sheets, as well as sea-level changes attributable to water added to the oceans.",
+      "label": "F0",
+      "sourceEvidence": "The mission follows changes involving groundwater, lakes and rivers, soil moisture, glaciers, ice sheets and changes in sea level attributable to water added to the oceans.",
+      "synthesisStatement": "The synthesis lists the same water systems and limits the sea-level connection to water added to the oceans.",
+      "narrativeStatement": "The narrative’s endpoint lists the same systems and keeps that sea-level qualification.",
+      "origin": "upstream",
+      "explanation": "The applications and the sea-level qualification are preserved; the body does not imply direct imaging.",
+      "materiality": "High"
+    }
+  ],
+  "preserved": [
+    "baseline",
+    "gravity-sequence",
+    "measurement-inference",
+    "water-changes"
+  ],
+  "distorted": [],
+  "omitted": [],
+  "developments": 3,
+  "explainedFacts": 5,
+  "paragraphSteps": [
+    {
+      "paragraph": 1,
+      "steps": [
+        "Establishes the two-satellite separation.",
+        "Identifies gravity-driven distance changes as the central measurement."
+      ]
+    },
+    {
+      "paragraph": 2,
+      "steps": [
+        "Explains the leading-satellite-first gravitational pull near a mass concentration.",
+        "Connects distance changes to mass inference.",
+        "Connects those estimates to water-storage and qualified sea-level investigations."
+      ]
+    }
+  ],
+  "endpointAddsMeaning": true,
+  "redundancy": [],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}
+

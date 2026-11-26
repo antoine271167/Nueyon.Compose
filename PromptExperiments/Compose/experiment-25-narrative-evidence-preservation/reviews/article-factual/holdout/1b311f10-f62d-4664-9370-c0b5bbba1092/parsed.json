@@ -1,0 +1,153 @@
+{
+  "claims": [
+    {
+      "excerpt": "CPython 3.13 introduced experimental free threading as a configuration that can run with the Global Interpreter Lock (GIL) disabled.",
+      "label": "F0",
+      "sourceEvidence": "“CPython 3.13 introduced experimental free threading, a configuration that can run with the global interpreter lock disabled.”",
+      "synthesisStatement": "Free threading is an experimental CPython 3.13 configuration that can run with the GIL disabled.",
+      "narrativeStatement": "The article states this directly, preserving the version and experimental qualification.",
+      "origin": "upstream",
+      "explanation": "Faithful paraphrase; expanding GIL on first use does not change the claim.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "In that configuration, an application’s runtime choice also affects what happens when it imports extensions.",
+      "label": "F0",
+      "sourceEvidence": "“importing one without that declaration warns and enables the GIL.”",
+      "synthesisStatement": "Connect the application’s runtime choice to the extension import boundary.",
+      "narrativeStatement": "The article summarizes that connection before describing the import behavior.",
+      "origin": "compose",
+      "explanation": "Supported framing of the documented import fallback; it does not claim that every import changes runtime mode.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "An extension must explicitly declare support for free threading.",
+      "label": "F0",
+      "sourceEvidence": "“An extension must explicitly indicate that it supports this mode”",
+      "synthesisStatement": "An extension must indicate support for free threading.",
+      "narrativeStatement": "The article states the requirement directly.",
+      "origin": "upstream",
+      "explanation": "Faithful paraphrase.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "If it does not, importing it produces a warning and enables the GIL.",
+      "label": "F0",
+      "sourceEvidence": "“importing one without that declaration warns and enables the GIL.”",
+      "synthesisStatement": "Without the support declaration, importing the extension warns and enables the GIL.",
+      "narrativeStatement": "The article preserves both the missing-declaration condition and the two import effects.",
+      "origin": "upstream",
+      "explanation": "Faithful paraphrase with the condition intact.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "How an extension makes the declaration depends on whether it uses multi-phase or single-phase initialization.",
+      "label": "F0",
+      "sourceEvidence": "“The mechanism differs between extensions using multi-phase and single-phase initialization.”",
+      "synthesisStatement": "The support mechanism differs by initialization style.",
+      "narrativeStatement": "The article specifies the two initialization styles named in the evidence.",
+      "origin": "upstream",
+      "explanation": "Faithful paraphrase; it does not invent the mechanisms themselves.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "There is also a build detail for Windows: the compiler does not automatically receive the `Py_GIL_DISABLED` macro when building extensions.",
+      "label": "F0",
+      "sourceEvidence": "“On Windows the compiler does not get the Py_GIL_DISABLED macro automatically for extension builds”",
+      "synthesisStatement": "Windows extension builds do not automatically receive the macro from the compiler.",
+      "narrativeStatement": "The article retains the Windows qualification, macro name, and extension-build scope.",
+      "origin": "upstream",
+      "explanation": "Faithful paraphrase.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "The configuration can be checked through `sysconfig`.",
+      "label": "F0",
+      "sourceEvidence": "“the configuration can be checked via sysconfig.”",
+      "synthesisStatement": "The configuration can be checked using sysconfig.",
+      "narrativeStatement": "The article preserves this verification detail.",
+      "origin": "upstream",
+      "explanation": "Faithful paraphrase; no specific command is claimed.",
+      "materiality": "minor"
+    },
+    {
+      "excerpt": "The support declaration is a compatibility signal that affects import behavior; it is not proof that the extension’s code is thread-safe.",
+      "label": "F0",
+      "sourceEvidence": "“a support declaration is distinct from the work of making code thread-safe.”",
+      "synthesisStatement": "A support declaration is distinct from making code thread-safe.",
+      "narrativeStatement": "The article explains that the declaration signals compatibility and does not establish thread safety.",
+      "origin": "propagated",
+      "explanation": "Faithfully preserves the distinction and ties it to the documented import behavior.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "Extension authors therefore have a distinct compatibility responsibility when supporting CPython 3.13’s experimental free-threading configuration.",
+      "label": "F0",
+      "sourceEvidence": "“explain why extension authors have a distinct compatibility responsibility”; “Keep the claim pinned to 3.13.”",
+      "synthesisStatement": "Extension authors have a distinct compatibility responsibility for this configuration.",
+      "narrativeStatement": "The article states the selected editorial conclusion and keeps it specific to CPython 3.13’s experimental configuration.",
+      "origin": "propagated",
+      "explanation": "Supported synthesis, not an additional technical mechanism.",
+      "materiality": "material"
+    }
+  ],
+  "preserved": [
+    "runtime-mode",
+    "import-boundary",
+    "support-vs-safety",
+    "initialization-mechanisms",
+    "windows-build-macro",
+    "sysconfig-check"
+  ],
+  "distorted": [],
+  "omitted": [],
+  "developments": 3,
+  "explainedFacts": 6,
+  "paragraphSteps": [
+    {
+      "paragraph": 1,
+      "step": "Context",
+      "facts": [
+        "runtime-mode"
+      ]
+    },
+    {
+      "paragraph": 2,
+      "step": "Import behavior",
+      "facts": [
+        "import-boundary"
+      ]
+    },
+    {
+      "paragraph": 3,
+      "step": "Implementation distinction",
+      "facts": [
+        "initialization-mechanisms"
+      ]
+    },
+    {
+      "paragraph": 4,
+      "step": "Platform and verification details",
+      "facts": [
+        "windows-build-macro",
+        "sysconfig-check"
+      ]
+    },
+    {
+      "paragraph": 5,
+      "step": "Compatibility implication",
+      "facts": [
+        "support-vs-safety"
+      ]
+    }
+  ],
+  "endpointAddsMeaning": true,
+  "redundancy": [],
+  "peripheral": [
+    "windows-build-macro",
+    "sysconfig-check"
+  ],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}

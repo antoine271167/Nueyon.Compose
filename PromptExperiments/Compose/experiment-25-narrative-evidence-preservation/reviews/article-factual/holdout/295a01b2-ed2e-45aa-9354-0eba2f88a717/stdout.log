@@ -1,0 +1,113 @@
+{
+  "claims": [
+    {
+      "excerpt": "# De ontwikkeling van een digitale dienst in twaalf weken",
+      "label": "F0",
+      "sourceEvidence": "“built ... and launched to the public in only 12 weeks.”",
+      "synthesisStatement": "The service was launched publicly within twelve weeks.",
+      "narrativeStatement": "The title accurately summarizes the reported launch timeline.",
+      "origin": "upstream",
+      "explanation": "Consistent with the source’s reported twelve-week build and public launch.",
+      "materiality": "medium"
+    },
+    {
+      "excerpt": "Het team lanceerde de dienst voor het publiek in twaalf weken. De oorspronkelijke vraag was om binnen enkele weken te leveren, maar het team concludeerde dat dit niet haalbaar was met behoud van een kwalitatieve gebruikersdienst.",
+      "label": "F0",
+      "sourceEvidence": "“launched to the public in only 12 weeks”; “initially asked to deliver the service in a matter of weeks”; “would not be possible if we wanted to create a quality service for our users.”",
+      "synthesisStatement": "The team launched publicly in twelve weeks after concluding that the initial deadline of a matter of weeks was incompatible with a quality service.",
+      "narrativeStatement": "Both the reported timeline and the team’s stated deadline constraint are preserved.",
+      "origin": "upstream",
+      "explanation": "Faithfully reports the source’s timeline and the team’s stated reason for not meeting the initial deadline.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "De eerste ontwikkelfase richtte zich op de ervaring van aanvragers en bracht die tot alpha. Plannen voor caseworkers kwamen later. De auteur merkt op dat caseworkers nog geen bestaande gebruikers van deze nieuwe dienst waren. Onder tijdsdruk wilde het team aannames over hen vermijden.",
+      "label": "F0",
+      "sourceEvidence": "“focused on the users applying for refunds first”; “this is what we took to the alpha assessment”; “Plans for the caseworker user came later”; “until we had applications coming through the casework user didn’t yet exist”; “we wanted to make sure we didn’t stray off course due to lack of relevant knowledge or incorrect assumptions.”",
+      "synthesisStatement": "The team took the applicants’ experience to alpha first, planned caseworker work later, and said it wanted to avoid assumptions about that not-yet-existing user group.",
+      "narrativeStatement": "The sequence and the author’s stated rationale are accurately represented.",
+      "origin": "upstream",
+      "explanation": "Preserves the alpha milestone, the later caseworker plans, and the source’s qualification that this was the author’s rationale under time pressure.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "Tijdens de private beta werkte het team met sprints van twee weken. In de eerste week testte en onderzocht het de dienst en nam het aanvragen aan. In de tweede week werden inzendingen gepauzeerd, zodat het team kon testen, onderzoek doen en aanvragen verwerken.",
+      "label": "F0",
+      "sourceEvidence": "“During private beta”; “splitting our fortnightly sprints in two”; “testing, researching and accepting applications in the first week”; “suspending submissions” in the second week to focus on “testing, researching and processing applications.”",
+      "synthesisStatement": "During private beta, fortnightly sprints alternated a week of testing, research, and accepting applications with a week of paused submissions for testing, research, and processing.",
+      "narrativeStatement": "The sprint cadence and the activities in each week are preserved.",
+      "origin": "upstream",
+      "explanation": "Accurately states the fortnightly cadence and distinguishes accepting applications in week one from pausing submissions in week two.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "De dienst was digitaal en bood ook een assisted-digital route; er was geen papieren versie. Welke hulp die route bood, is niet gespecificeerd.",
+      "label": "F0",
+      "sourceEvidence": "“a digital and assisted digital service (no paper version).”",
+      "synthesisStatement": "The service was digital and assisted digital, with no paper version; the source does not describe the specific assistance provided.",
+      "narrativeStatement": "The available channels are stated without inventing details about the assistance.",
+      "origin": "propagated",
+      "explanation": "The service scope is explicit in the source; the statement that assistance details are unspecified preserves the source’s limits.",
+      "materiality": "low"
+    },
+    {
+      "excerpt": "Na vijf weken beschikbaarheid voor het publiek had de dienst volgens de auteur meer dan 100.000 aanvragen ontvangen. De gebruikerstevredenheid was 92,6 procent en het voltooiingspercentage 80,2 procent.",
+      "label": "F0",
+      "sourceEvidence": "“available for five weeks” and “has already received over 100k applications with 92.6% user satisfaction and an 80.2% completion rate.”",
+      "synthesisStatement": "After five weeks of availability, the author reported over 100,000 applications, 92.6% user satisfaction, and an 80.2% completion rate.",
+      "narrativeStatement": "The reported figures are presented as a snapshot, not as effects caused by the preceding choices.",
+      "origin": "upstream",
+      "explanation": "The values and five-week timeframe match the source; no metric definitions or causal claim are added.",
+      "materiality": "high"
+    }
+  ],
+  "preserved": [
+    "launch-timeline",
+    "user-sequence",
+    "beta-research-rhythm",
+    "assisted-digital-scope",
+    "five-week-results"
+  ],
+  "distorted": [],
+  "omitted": [],
+  "developments": 2,
+  "explainedFacts": 3,
+  "paragraphSteps": [
+    {
+      "paragraph": 1,
+      "step": "Context",
+      "description": "Reports the launch timeline and the quality constraint on the initial deadline."
+    },
+    {
+      "paragraph": 2,
+      "step": "Development",
+      "description": "Describes taking applicants’ experience to alpha before planning for caseworkers, with the stated rationale."
+    },
+    {
+      "paragraph": 3,
+      "step": "Development",
+      "description": "Describes the two-week private-beta sprint cadence and its weekly activities."
+    },
+    {
+      "paragraph": 4,
+      "step": "Scope detail",
+      "description": "States the digital and assisted-digital channels and the absence of a paper version; this is not a distinct process step."
+    },
+    {
+      "paragraph": 5,
+      "step": "Endpoint",
+      "description": "Reports the first five weeks’ application, satisfaction, and completion figures."
+    }
+  ],
+  "endpointAddsMeaning": true,
+  "redundancy": [
+    "# De ontwikkeling van een digitale dienst in twaalf weken"
+  ],
+  "peripheral": [
+    "De dienst was digitaal en bood ook een assisted-digital route; er was geen papieren versie. Welke hulp die route bood, is niet gespecificeerd."
+  ],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}
+

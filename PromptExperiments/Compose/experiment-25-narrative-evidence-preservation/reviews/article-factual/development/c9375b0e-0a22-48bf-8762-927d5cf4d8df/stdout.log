@@ -1,0 +1,82 @@
+{
+  "claims": [
+    {
+      "excerpt": "On December 5, 2022, an experiment at the National Ignition Facility at Lawrence Livermore National Laboratory achieved fusion ignition.",
+      "label": "F0",
+      "sourceEvidence": "On December 5, 2022, a Lawrence Livermore National Laboratory experiment at the National Ignition Facility achieved fusion ignition.",
+      "synthesisStatement": "On December 5, 2022, a Lawrence Livermore National Laboratory experiment at the National Ignition Facility achieved fusion ignition.",
+      "narrativeStatement": "On December 5, 2022, a Lawrence Livermore National Laboratory experiment at the National Ignition Facility achieved fusion ignition.",
+      "origin": "propagated",
+      "explanation": "The date, facility, laboratory, and achievement match the source.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "It delivered 2.05 megajoules of energy to the target and generated 3.15 megajoules of fusion energy.",
+      "label": "F1",
+      "sourceEvidence": "The experiment delivered 2.05 megajoules to the target and generated 3.15 megajoules of fusion energy. The target energy denominator excludes facility-wide electricity; fusion output is not net electricity delivered to the grid.",
+      "synthesisStatement": "The experiment delivered 2.05 megajoules to the target and generated 3.15 megajoules of fusion energy.",
+      "narrativeStatement": "The experiment delivered 2.05 megajoules to the target and generated 3.15 megajoules of fusion energy.",
+      "origin": "propagated",
+      "explanation": "The figures and target-energy wording are accurate, and the body does not explicitly claim net electricity. It omits the material qualification that target input excludes facility-wide electricity, leaving the comparison less clearly bounded.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "The announcement described the experiment as progress toward inertial fusion energy",
+      "label": "F0",
+      "sourceEvidence": "The announcement treats the experiment as progress toward inertial fusion energy.",
+      "synthesisStatement": "The announcement treats the experiment as progress toward inertial fusion energy.",
+      "narrativeStatement": "The announcement treats the experiment as progress toward inertial fusion energy.",
+      "origin": "propagated",
+      "explanation": "This accurately characterizes the announcement's framing.",
+      "materiality": "medium"
+    },
+    {
+      "excerpt": "while noting that many scientific and technological developments are still needed for practical energy production.",
+      "label": "F0",
+      "sourceEvidence": "The announcement notes the many scientific and technological developments still needed for practical energy production.",
+      "synthesisStatement": "The announcement treats the experiment as progress toward inertial fusion energy and notes the many scientific and technological developments still needed for practical energy production.",
+      "narrativeStatement": "The announcement treats the experiment as progress toward inertial fusion energy and notes the many scientific and technological developments still needed for practical energy production.",
+      "origin": "propagated",
+      "explanation": "The body preserves the qualification that practical energy production still requires substantial development.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "The Department of Energy announced the achievement on December 13.",
+      "label": "F0",
+      "sourceEvidence": "DOE announced the achievement on December 13.",
+      "synthesisStatement": "DOE announced the achievement on December 13.",
+      "narrativeStatement": "DOE announced the achievement on December 13.",
+      "origin": "propagated",
+      "explanation": "The agency and date match. The preceding December 5, 2022 event date supplies the year and makes the chronology clear.",
+      "materiality": "low"
+    }
+  ],
+  "preserved": [
+    "ignition-event",
+    "development-still-needed",
+    "announcement-date"
+  ],
+  "distorted": [
+    "target-energy-comparison"
+  ],
+  "omitted": [],
+  "developments": 2,
+  "explainedFacts": 1,
+  "paragraphSteps": [
+    {
+      "paragraph": 1,
+      "step": "Reports the ignition event and its target-energy and fusion-energy measurements."
+    },
+    {
+      "paragraph": 2,
+      "step": "Places the result in the context of progress toward inertial fusion energy and the remaining work, then gives the announcement date."
+    }
+  ],
+  "endpointAddsMeaning": false,
+  "redundancy": [],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}
+

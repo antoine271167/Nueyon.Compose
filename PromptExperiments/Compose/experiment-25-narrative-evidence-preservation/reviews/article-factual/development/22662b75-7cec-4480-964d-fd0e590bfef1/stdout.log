@@ -1,0 +1,98 @@
+{
+  "claims": [
+    {
+      "excerpt": "National Ignition Facility Experiment Achieved Fusion Ignition",
+      "label": "F0",
+      "sourceEvidence": "“a Lawrence Livermore National Laboratory experiment at the National Ignition Facility achieved fusion ignition.”",
+      "synthesisStatement": "A National Ignition Facility experiment achieved fusion ignition.",
+      "narrativeStatement": "The National Ignition Facility’s December 5, 2022 experiment achieved fusion ignition.",
+      "origin": "upstream",
+      "explanation": "Faithful headline shorthand for the reported result; it repeats the opening sentence.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "A Lawrence Livermore National Laboratory experiment at the National Ignition Facility achieved fusion ignition on December 5, 2022.",
+      "label": "F0",
+      "sourceEvidence": "“On December 5, 2022, a Lawrence Livermore National Laboratory experiment at the National Ignition Facility achieved fusion ignition.”",
+      "synthesisStatement": "The experiment achieved fusion ignition at the stated facility and date.",
+      "narrativeStatement": "The National Ignition Facility’s December 5, 2022 experiment achieved fusion ignition.",
+      "origin": "upstream",
+      "explanation": "Preserves the experiment, institution, facility, result, and date.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "The U.S. Department of Energy announced the result on December 13.",
+      "label": "F0",
+      "sourceEvidence": "“DOE announced the achievement on December 13.”",
+      "synthesisStatement": "DOE announced the achievement on December 13.",
+      "narrativeStatement": "DOE announced it on December 13.",
+      "origin": "upstream",
+      "explanation": "Preserves the announcement date; the preceding date gives the experiment’s year, and the dates allow the interval to be inferred.",
+      "materiality": "low"
+    },
+    {
+      "excerpt": "The experiment delivered 2.05 megajoules of energy to its target and generated 3.15 megajoules of fusion energy.",
+      "label": "F0",
+      "sourceEvidence": "“The experiment delivered 2.05 megajoules to the target and generated 3.15 megajoules of fusion energy.”",
+      "synthesisStatement": "The experiment delivered 2.05 megajoules to the target and generated 3.15 megajoules of fusion energy.",
+      "narrativeStatement": "The experiment achieved fusion ignition, producing 3.15 megajoules of fusion energy from 2.05 megajoules delivered to the target.",
+      "origin": "upstream",
+      "explanation": "Preserves both quantities, their units, and the target-energy denominator.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "That comparison applies at the target level: it is not a measure of net electricity delivered to the grid, and it does not account for facility-wide electricity use.",
+      "label": "F0",
+      "sourceEvidence": "“The target energy denominator excludes facility-wide electricity. Fusion output is not net electricity delivered to the grid.”",
+      "synthesisStatement": "The target-energy denominator excludes facility-wide electricity; fusion output is not net electricity delivered to the grid.",
+      "narrativeStatement": "That comparison is significant at the target level, but it is not a measure of net electricity delivered to the grid; the 2.05-megajoule denominator excludes facility-wide electricity.",
+      "origin": "upstream",
+      "explanation": "Correctly distinguishes target-level fusion output from grid electricity and facility-wide electricity use.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "The DOE described the achievement as progress toward inertial fusion energy.",
+      "label": "F0",
+      "sourceEvidence": "“The announcement treats the experiment as progress toward inertial fusion energy.”",
+      "synthesisStatement": "The announcement treats the achievement as progress toward inertial fusion energy.",
+      "narrativeStatement": "The achievement is progress toward inertial fusion energy.",
+      "origin": "upstream",
+      "explanation": "Faithfully conveys the DOE’s characterization as progress, not achieved practical energy production.",
+      "materiality": "medium"
+    },
+    {
+      "excerpt": "Many scientific and technological developments are still needed before practical energy production.",
+      "label": "F0",
+      "sourceEvidence": "“many scientific and technological developments still needed for practical energy production.”",
+      "synthesisStatement": "Many scientific and technological developments are still needed for practical energy production.",
+      "narrativeStatement": "Many scientific and technological developments [are] still needed for practical energy production.",
+      "origin": "upstream",
+      "explanation": "Preserves the qualification that practical production requires further scientific and technological developments; it adds no timeline.",
+      "materiality": "medium"
+    }
+  ],
+  "preserved": [
+    "ignition-event",
+    "target-energy-comparison",
+    "development-still-needed",
+    "announcement-date"
+  ],
+  "distorted": [],
+  "omitted": [],
+  "developments": 3,
+  "explainedFacts": 2,
+  "paragraphSteps": [
+    "Establishes the experiment, its result and date, then gives the DOE announcement date.",
+    "States the measured target-level comparison and explains what it does not measure.",
+    "Places the result in the context of progress toward inertial fusion energy and the work still required."
+  ],
+  "endpointAddsMeaning": true,
+  "redundancy": [
+    "The headline repeats the fusion-ignition result stated in the first paragraph."
+  ],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}
+

@@ -1,0 +1,46 @@
+{
+  "checks": [
+    {
+      "id": "runtime-mode",
+      "supported": true,
+      "useful": true,
+      "reason": "The excerpt verbatim matches both source and Synthesis. The claim preserves the CPython 3.13 scope and the meaning that free threading can run with the GIL disabled.",
+      "coverageGap": "Does not cover extension import behavior or build details."
+    },
+    {
+      "id": "import-boundary",
+      "supported": true,
+      "useful": true,
+      "reason": "The excerpt verbatim matches both source and Synthesis, including both outcomes when the declaration is absent: a warning and enabling the GIL. This directly supports the import-boundary narrative.",
+      "coverageGap": "Does not explain how to make the declaration or distinguish initialization mechanisms."
+    },
+    {
+      "id": "support-vs-safety",
+      "supported": true,
+      "useful": true,
+      "reason": "The excerpt verbatim matches both source and Synthesis. The claim accurately distinguishes declaring support from doing the work to make code thread-safe.",
+      "coverageGap": "Does not describe the work needed to make code thread-safe; the source and Synthesis provide no such details."
+    },
+    {
+      "id": "initialization-mechanisms",
+      "supported": true,
+      "useful": true,
+      "reason": "The excerpt verbatim matches both source and Synthesis. It usefully signals that the mechanism varies by initialization style without claiming what either mechanism is.",
+      "coverageGap": "Does not specify the mechanisms for either initialization style."
+    },
+    {
+      "id": "windows-build-macro",
+      "supported": true,
+      "useful": true,
+      "reason": "The excerpt verbatim matches both source and Synthesis. The claim retains the Windows and extension-build scope and accurately states that the compiler does not receive the macro automatically.",
+      "coverageGap": "Does not explain how to supply the macro or cover non-Windows builds."
+    },
+    {
+      "id": "sysconfig-check",
+      "supported": true,
+      "useful": true,
+      "reason": "The excerpt verbatim matches both source and Synthesis. It adds a distinct, practical way to inspect the configuration, though no specific command is provided.",
+      "coverageGap": "Does not give a specific sysconfig command or identify the exact setting to inspect."
+    }
+  ]
+}

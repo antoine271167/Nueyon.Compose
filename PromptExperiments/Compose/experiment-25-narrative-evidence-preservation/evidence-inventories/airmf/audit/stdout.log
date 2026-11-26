@@ -1,0 +1,40 @@
+{
+  "checks": [
+    {
+      "id": "nist-ai-rmf-release",
+      "supported": true,
+      "useful": true,
+      "reason": "The excerpt and claim are supported by both the source and Synthesis; it establishes the timeline's starting point.",
+      "coverageGap": "Does not by itself explain how the framework relates to the later profile."
+    },
+    {
+      "id": "ai-rmf-purpose",
+      "supported": false,
+      "useful": true,
+      "reason": "The excerpt is fully supported, but “is voluntary” is stronger than the source and Synthesis, which say it was designed for voluntary use. The claim also omits the stated activities.",
+      "coverageGap": "The claim omits the design, development, use, and evaluation scope and should preserve the qualification that this is intended use, not a compliance requirement."
+    },
+    {
+      "id": "ai-600-1-release",
+      "supported": true,
+      "useful": true,
+      "reason": "The full excerpt and claim are supported by both source and Synthesis, including the publication date, companion relationship, and cross-sector scope.",
+      "coverageGap": "The evidence does not describe the profile's substantive guidance or explicitly explain why readers should use it alongside AI RMF 1.0."
+    },
+    {
+      "id": "executive-order-attribution",
+      "supported": true,
+      "useful": false,
+      "reason": "The excerpt and claim are supported by both source and Synthesis, but this context is peripheral to the proposed focus and overlaps with the order-relation item.",
+      "coverageGap": "The source does not establish that the attribution creates private-sector compliance obligations."
+    },
+    {
+      "id": "order-relation",
+      "supported": true,
+      "useful": true,
+      "reason": "The full excerpt and claim are supported by both source and Synthesis; the limitation helps prevent overstating the Executive Order connection.",
+      "coverageGap": "This only states what the abstract does not describe; it does not establish broader legal status or implications."
+    }
+  ]
+}
+

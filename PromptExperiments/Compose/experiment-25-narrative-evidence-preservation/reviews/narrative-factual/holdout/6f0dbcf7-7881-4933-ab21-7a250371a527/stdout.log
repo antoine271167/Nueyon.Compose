@@ -1,0 +1,79 @@
+{
+  "claims": [
+    {
+      "excerpt": "OSIRIS-REx returned material from asteroid Bennu to Earth on September 24, 2023.",
+      "label": "F0",
+      "sourceEvidence": "The provided NASA-source verification says the return to Earth was on September 24, 2023.",
+      "synthesisStatement": "OSIRIS-REx returned material from asteroid Bennu to Earth on September 24, 2023.",
+      "narrativeStatement": "OSIRIS-REx returned material from asteroid Bennu to Earth on September 24, 2023.",
+      "origin": "propagated",
+      "explanation": "Faithfully preserves the return date and does not imply how much material was returned then.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "The mission required at least 60 grams of asteroid material.",
+      "label": "F0",
+      "sourceEvidence": "The provided source paraphrase says the mission required at least 60 grams.",
+      "synthesisStatement": "The mission required at least 60 grams of asteroid material.",
+      "narrativeStatement": "The mission required at least 60 grams of asteroid material.",
+      "origin": "propagated",
+      "explanation": "Preserves the minimum requirement and distinguishes it from the final inventory.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "The team exceeded that requirement before completely opening the sampling head.",
+      "label": "F0",
+      "sourceEvidence": "The provided NASA-source verification says the 60 g science requirement was reached before the sampling head was fully opened; the source paraphrase and synthesis state it was exceeded.",
+      "synthesisStatement": "The team exceeded that requirement before completely opening the sampling head.",
+      "narrativeStatement": "The team exceeded that requirement before completely opening the sampling head.",
+      "origin": "propagated",
+      "explanation": "Preserves both the milestone and its timing without adding an amount for that earlier point.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "A final pour added 51.2 grams.",
+      "label": "F0",
+      "sourceEvidence": "The provided NASA-source verification says the final pour contributed 51.2 g.",
+      "synthesisStatement": "A final pour added 51.2 grams.",
+      "narrativeStatement": "A final pour added 51.2 grams.",
+      "origin": "propagated",
+      "explanation": "Faithfully states the amount attributed to the final pour without implying the prior amount.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "The completed inventory amounted to 121.6 grams.",
+      "label": "F0",
+      "sourceEvidence": "The provided NASA-source verification says the total sample mass was 121.6 g.",
+      "synthesisStatement": "The completed inventory amounted to 121.6 grams.",
+      "narrativeStatement": "The completed inventory amounted to 121.6 grams.",
+      "origin": "propagated",
+      "explanation": "Faithfully gives the final total without inventing a component breakdown.",
+      "materiality": "material"
+    }
+  ],
+  "preserved": [
+    "return-date",
+    "minimum-required",
+    "requirement-exceeded-before-opening",
+    "final-pour",
+    "completed-inventory"
+  ],
+  "distorted": [],
+  "omitted": [],
+  "developments": 3,
+  "explainedFacts": 0,
+  "paragraphSteps": [
+    "Context: OSIRIS-REx returned material from asteroid Bennu to Earth on September 24, 2023.",
+    "Development: The mission required at least 60 grams of asteroid material.",
+    "Development: The team exceeded that requirement before completely opening the sampling head.",
+    "Development: A final pour added 51.2 grams.",
+    "Endpoint: The completed inventory amounted to 121.6 grams."
+  ],
+  "endpointAddsMeaning": true,
+  "redundancy": [],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": false,
+  "omittedFromNarrativeUsedInArticle": []
+}
+

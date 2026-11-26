@@ -1,0 +1,108 @@
+{
+  "claims": [
+    {
+      "excerpt": "Drie kaartvormen voor twee soorten hot spots",
+      "label": "F0",
+      "sourceEvidence": "De FAA standaardiseerde drie vormen voor twee betekenissen.",
+      "synthesisStatement": "Twee betekenissen worden weergegeven met drie kaartvormen.",
+      "narrativeStatement": "De FAA standaardiseerde de weergave van twee soorten hot spots met drie vormen.",
+      "origin": "upstream",
+      "explanation": "Een getrouwe samenvatting van het aantal vormen en betekenissen.",
+      "materiality": "Geen afwijking."
+    },
+    {
+      "excerpt": "Een hot spot op een luchthavenkaart markeert een plek in het bewegingsgebied van een luchthaven waar eerder een botsing of runway incursion heeft plaatsgevonden, of waar zo’n risico bestaat.",
+      "label": "F0",
+      "sourceEvidence": "Een hot spot is een locatie in het bewegingsgebied met een voorgeschiedenis van of potentieel risico op een botsing of runway incursion.",
+      "synthesisStatement": "Een hot spot is een luchthavenlocatie met een voorgeschiedenis van of risico op een botsing of runway incursion.",
+      "narrativeStatement": "Een hot spot is een plek in het bewegingsgebied van een luchthaven met een voorgeschiedenis van, of mogelijk risico op, een botsing of runway incursion.",
+      "origin": "upstream",
+      "explanation": "Behoudt zowel de voorgeschiedenis als het mogelijke risico; beweert niet dat een incident zeker zal plaatsvinden.",
+      "materiality": "Geen afwijking."
+    },
+    {
+      "excerpt": "Vanaf 19 mei 2022 standaardiseerde de FAA de weergave van twee soorten hot spots met drie kaartvormen.",
+      "label": "F0",
+      "sourceEvidence": "Op de kaartcyclus van 19 mei 2022 standaardiseerde de FAA drie vormen en twee betekenissen.",
+      "synthesisStatement": "De FAA standaardiseerde twee betekenissen met drie vormen, ingaand op 19 mei 2022.",
+      "narrativeStatement": "De FAA standaardiseerde vanaf 19 mei 2022 de weergave van twee soorten hot spots met drie vormen.",
+      "origin": "upstream",
+      "explanation": "De datum, instantie en verhouding tussen soorten en vormen komen overeen met het bewijs.",
+      "materiality": "Geen afwijking."
+    },
+    {
+      "excerpt": "Een cirkel of ellips duidt een hot spot voor grondbewegingen aan;",
+      "label": "F0",
+      "sourceEvidence": "Een cirkel of ellips is een aanduiding voor een ground-movement hot spot.",
+      "synthesisStatement": "Een cirkel of ellips duidt een hot spot voor grondbewegingen aan.",
+      "narrativeStatement": "Een cirkel of ellips staat voor een hot spot voor grondbewegingen.",
+      "origin": "upstream",
+      "explanation": "De kaartvorm en bijbehorende categorie zijn correct weergegeven.",
+      "materiality": "Geen afwijking."
+    },
+    {
+      "excerpt": "een cilinder staat voor een hot spot op een verkeerd oppervlak.",
+      "label": "F0",
+      "sourceEvidence": "Een cilinder staat voor een wrong surface hot spot.",
+      "synthesisStatement": "Een cilinder duidt een wrong surface hot spot aan.",
+      "narrativeStatement": "Een cilinder staat voor een hot spot op een verkeerd oppervlak.",
+      "origin": "upstream",
+      "explanation": "De cilinder is aan de juiste categorie gekoppeld.",
+      "materiality": "Geen afwijking."
+    },
+    {
+      "excerpt": "Zo zijn er drie vormen voor twee betekenissen.",
+      "label": "F0",
+      "sourceEvidence": "De FAA standaardiseerde drie vormen en twee betekenissen.",
+      "synthesisStatement": "Er zijn drie vormen voor twee betekenissen.",
+      "narrativeStatement": "Samen zijn dit drie vormen voor twee betekenissen.",
+      "origin": "compose",
+      "explanation": "Correcte herhaling van de telling uit de voorafgaande zin.",
+      "materiality": "Geen afwijking; redundant."
+    },
+    {
+      "excerpt": "Het onderscheid is bedoeld om verwarring over de betekenis of weergave van hot spots te voorkomen.",
+      "label": "F0",
+      "sourceEvidence": "Het genoemde doel van de standaardisering is verwarring over de betekenis of weergave van hot spots te voorkomen.",
+      "synthesisStatement": "De standaardisering is bedoeld om verwarring over betekenis of weergave te voorkomen.",
+      "narrativeStatement": "Het doel van het onderscheid is verwarring over de betekenis of weergave van hot spots te voorkomen.",
+      "origin": "upstream",
+      "explanation": "Het doel wordt als bedoeling gepresenteerd, niet als bewezen resultaat.",
+      "materiality": "Geen afwijking."
+    }
+  ],
+  "preserved": [
+    "hot-spot-definition",
+    "standardization-date",
+    "ground-movement-symbol",
+    "wrong-surface-symbol",
+    "standardization-purpose"
+  ],
+  "distorted": [],
+  "omitted": [],
+  "developments": 3,
+  "explainedFacts": 5,
+  "paragraphSteps": [
+    {
+      "paragraph": 1,
+      "step": "Context: definieert de hot spot en behoudt de kwalificatie dat er een voorgeschiedenis of risico is."
+    },
+    {
+      "paragraph": 2,
+      "step": "Ontwikkeling: noemt de ingangsdatum, de drie vormen en de twee categorieën die de symbolen aanduiden."
+    },
+    {
+      "paragraph": 3,
+      "step": "Endpoint: verklaart het doel van het onderscheid, namelijk verwarring voorkomen."
+    }
+  ],
+  "endpointAddsMeaning": true,
+  "redundancy": [
+    "Zo zijn er drie vormen voor twee betekenissen."
+  ],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}
+

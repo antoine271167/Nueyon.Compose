@@ -1,0 +1,96 @@
+{
+  "claims": [
+    {
+      "exactBodyExcerpt": "De digitale refunddienst werd onder tijdsdruk ontwikkeld en ging na twaalf weken publiek.",
+      "label": "F0",
+      "sourceEvidence": "“launched to the public in only 12 weeks”; “We had a tight deadline.”",
+      "synthesisStatement": "Het team lanceerde de dienst voor het publiek in twaalf weken.",
+      "narrativeStatement": "De dienst ging na twaalf weken publiek.",
+      "origin": "upstream",
+      "explanation": "Faithfully reports the public launch timing and time pressure.",
+      "materiality": "high"
+    },
+    {
+      "exactBodyExcerpt": "De aanvankelijk gevraagde termijn van enkele weken werd niet haalbaar geacht als de gebruikersdienst kwalitatief moest blijven.",
+      "label": "F0",
+      "sourceEvidence": "“initially asked to deliver the service in a matter of weeks”; “would not be possible if we wanted to create a quality service for our users.”",
+      "synthesisStatement": "De aanvankelijk gevraagde levering binnen enkele weken was niet haalbaar met behoud van een kwalitatieve gebruikersdienst.",
+      "narrativeStatement": "De termijn van enkele weken werd niet haalbaar geacht met behoud van kwaliteit.",
+      "origin": "upstream",
+      "explanation": "Preserves the reported deadline constraint and its quality qualification.",
+      "materiality": "high"
+    },
+    {
+      "exactBodyExcerpt": "In de beschreven aanpak stond eerst de ervaring van aanvragers centraal. Plannen voor caseworkers kwamen later aan bod.",
+      "label": "F1",
+      "sourceEvidence": "“My team focused on the users applying for refunds first”; “Plans for the caseworker user came later.”",
+      "synthesisStatement": "Het team werkte eerst aan de aanvragerservaring; plannen voor caseworkers kwamen later.",
+      "narrativeStatement": "Eerst de ervaring van aanvragers, daarna plannen voor caseworkers.",
+      "origin": "upstream",
+      "explanation": "Faithful overall, though “ervaring ... centraal” is broader than the source’s specific account of focusing first on applicants and taking that work to alpha.",
+      "materiality": "minor"
+    },
+    {
+      "exactBodyExcerpt": "Tijdens de private beta was er in het tweewekelijkse ritme, naast het aannemen en verwerken van aanvragen, vaste tijd voor onderzoek en testen.",
+      "label": "F2",
+      "sourceEvidence": "“testing, researching and accepting applications in the first week”; in the second week, “suspending submissions” to focus on “testing, researching and processing applications.”",
+      "synthesisStatement": "De tweewekelijkse sprints splitsten het werk: aanvragen aannemen in de eerste week; inzendingen pauzeren in de tweede week voor onderzoek, testen en verwerking.",
+      "narrativeStatement": "Onderzoek en testen vonden in het tweewekelijkse ritme plaats naast het aannemen én verwerken van aanvragen.",
+      "origin": "compose",
+      "explanation": "Collapses the alternating weekly schedule into work happening alongside both accepting and processing applications, obscuring that submissions were suspended in the second week.",
+      "materiality": "high"
+    },
+    {
+      "exactBodyExcerpt": "Zo bestond de werkwijze uit een volgorde waarin eerst naar aanvragers werd gekeken, en uit gereserveerde tijd voor onderzoek en testen tijdens de private beta.",
+      "label": "F1",
+      "sourceEvidence": "“focused on the users applying for refunds first”; “splitting our fortnightly sprints in two” for testing and research.",
+      "synthesisStatement": "De aanpak stelde aanvragers eerst centraal en reserveerde tijdens private beta tijd voor onderzoek en testen.",
+      "narrativeStatement": "Vat de eerder beschreven volgorde en onderzoeks- en testtijd opnieuw samen.",
+      "origin": "upstream",
+      "explanation": "The broad summary is supported, but “gereserveerde tijd” omits the material weekly split described in the source; it also repeats the preceding paragraph.",
+      "materiality": "medium"
+    }
+  ],
+  "preserved": [
+    "launch-timeline",
+    "user-sequence"
+  ],
+  "distorted": [
+    "beta-research-rhythm"
+  ],
+  "omitted": [
+    "assisted-digital-scope",
+    "five-week-results"
+  ],
+  "developments": 2,
+  "explainedFacts": 1,
+  "paragraphSteps": [
+    {
+      "paragraph": 1,
+      "steps": [
+        "Reports the twelve-week public launch and the infeasibility of the initially requested few-week deadline while maintaining quality."
+      ]
+    },
+    {
+      "paragraph": 2,
+      "steps": [
+        "Puts applicants before caseworker plans.",
+        "Describes the private-beta research and testing cadence, but conflates its alternating weeks."
+      ]
+    },
+    {
+      "paragraph": 3,
+      "steps": [
+        "Summarizes the user sequence and research/testing time without adding a distinct supported step."
+      ]
+    }
+  ],
+  "endpointAddsMeaning": false,
+  "redundancy": [
+    "Zo bestond de werkwijze uit een volgorde waarin eerst naar aanvragers werd gekeken, en uit gereserveerde tijd voor onderzoek en testen tijdens de private beta."
+  ],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}

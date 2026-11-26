@@ -1,0 +1,104 @@
+{
+  "claims": [
+    {
+      "excerpt": "In de tabel voor 2024 is hernieuwbare elektriciteitsproductie goed voor 10,0 biljoen kWh van de totale elektriciteitsproductie van 30,7 biljoen kWh.",
+      "label": "F0",
+      "sourceEvidence": "The 2024 table lists 10.0 trillion kWh of renewable electricity production out of 30.7 trillion kWh total.",
+      "synthesisStatement": "The 2024 table lists 10.0 trillion kWh of renewable electricity production out of 30.7 trillion kWh total electricity production.",
+      "narrativeStatement": "The table for 2024 lists 10.0 trillion kWh of renewable electricity production out of 30.7 trillion kWh of total electricity production.",
+      "origin": "upstream",
+      "explanation": "Faithfully reports the quantities and keeps the scope as electricity production.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "Het gerapporteerde aandeel is 32%.",
+      "label": "F0",
+      "sourceEvidence": "The renewable electricity production share is reported as 32%.",
+      "synthesisStatement": "The reported share is 32%.",
+      "narrativeStatement": "The table reports 32%.",
+      "origin": "upstream",
+      "explanation": "Correctly gives the reported production share.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "De totale elektriciteitsconsumptie bedroeg 28,5 biljoen kWh; het aandeel daarbinnen van hernieuwbare elektriciteit is als niet beschikbaar vermeld.",
+      "label": "F0",
+      "sourceEvidence": "Total electricity consumption is 28.5 trillion kWh; its renewable portion is listed as unavailable.",
+      "synthesisStatement": "Total electricity consumption was 28.5 trillion kWh; the renewable portion is listed as unavailable.",
+      "narrativeStatement": "Total electricity consumption was 28.5 trillion kWh; the renewable portion is listed as unavailable.",
+      "origin": "upstream",
+      "explanation": "Preserves both the consumption total and the table's unavailable-value qualification.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "Voor de totale energieproductie vermeldt de tabel 42,4 biljard Btu uit hernieuwbare bronnen op een totaal van 605,6 biljard Btu, oftewel 7%.",
+      "label": "F0",
+      "sourceEvidence": "Total energy production is 605.6 quadrillion Btu, of which 42.4 quadrillion Btu is renewable, reported as 7%.",
+      "synthesisStatement": "Across all energy production, renewables were 42.4 out of 605.6 quadrillion Btu, reported as 7%.",
+      "narrativeStatement": "Across all energy production, renewables were 42.4 out of 605.6 quadrillion Btu, reported as 7%.",
+      "origin": "upstream",
+      "explanation": "Uses the correct Btu units and retains the all-energy production denominator and 7% share.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "Ook het aandeel hernieuwbare energie in de totale energieconsumptie is 7%.",
+      "label": "F0",
+      "sourceEvidence": "The renewable share of all energy consumption is also 7%.",
+      "synthesisStatement": "The renewable share of all energy consumption was also 7%.",
+      "narrativeStatement": "The renewable share of all energy consumption was also 7%.",
+      "origin": "upstream",
+      "explanation": "Correctly identifies this as the all-energy consumption share, distinct from production.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "De gegevensstand is 1 juli 2026 en kan veranderen.",
+      "label": "F0",
+      "sourceEvidence": "The data vintage is July 1, 2026, and the figures are subject to change.",
+      "synthesisStatement": "This is a July 1, 2026 data vintage subject to change.",
+      "narrativeStatement": "This is a July 1, 2026 data vintage subject to change.",
+      "origin": "upstream",
+      "explanation": "Faithfully preserves the date and change caveat.",
+      "materiality": "minor"
+    }
+  ],
+  "preserved": [
+    "renewable-electricity-production-share-2024",
+    "renewable-electricity-consumption-share-unavailable",
+    "renewable-all-energy-production-share-2024",
+    "renewable-all-energy-consumption-share-2024",
+    "data-vintage"
+  ],
+  "distorted": [],
+  "omitted": [],
+  "developments": 3,
+  "explainedFacts": 5,
+  "paragraphSteps": [
+    {
+      "paragraph": 1,
+      "steps": [
+        "renewable-electricity-production-share-2024"
+      ]
+    },
+    {
+      "paragraph": 2,
+      "steps": [
+        "renewable-electricity-consumption-share-unavailable",
+        "renewable-all-energy-production-share-2024",
+        "renewable-all-energy-consumption-share-2024"
+      ]
+    },
+    {
+      "paragraph": 3,
+      "steps": [
+        "data-vintage"
+      ]
+    }
+  ],
+  "endpointAddsMeaning": true,
+  "redundancy": [],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}
+

@@ -1,0 +1,12 @@
+{
+  "selectedIdea": {
+    "title": "Why the first three NIST post-quantum standards serve two distinct purposes",
+    "description": "Why the first three NIST post-quantum standards serve two distinct purposes",
+    "audience": "Curious general readers",
+    "rationale": "Explain the central distinction through the available evidence.",
+    "evidence": "Use the frozen synthesis."
+  },
+  "synthesis": {
+    "content": "### Evidence\n\nThe Secretary of Commerce approved FIPS 203, 204 and 205 in August 2024.\n\nFIPS 203 specifies ML-KEM to establish a shared secret between parties communicating over a public channel.\n\nFIPS 204 specifies a module-lattice-based digital signature scheme.\n\nFIPS 205 specifies a stateless hash-based digital signature scheme.\n\nThe schemes are designed to resist future quantum attacks."
+  }
+}

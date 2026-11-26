@@ -1,0 +1,108 @@
+{
+  "claims": [
+    {
+      "excerpt": "Het aandeel hernieuwbare energie hangt af van de maatstaf",
+      "label": "F0",
+      "sourceEvidence": "The selected idea and synthesis say the answer changes depending on what is measured.",
+      "synthesisStatement": "The answer changes with the measure used.",
+      "narrativeStatement": "Het aandeel hernieuwbare energie afhangt van wat je meet.",
+      "origin": "propagated",
+      "explanation": "The article’s heading accurately states the supported comparison between electricity production and broader energy measures.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "Wereldwijd bedroeg hernieuwbare energie in 2024 32% van de elektriciteitsproductie.",
+      "label": "F0",
+      "sourceEvidence": "The 2024 table reports 10.0 trillion kWh renewable out of 30.7 trillion kWh total electricity production, or 32%.",
+      "synthesisStatement": "The reported renewable share of electricity production is 32%.",
+      "narrativeStatement": "32% van de elektriciteitsproductie",
+      "origin": "propagated",
+      "explanation": "Correctly identifies the global 2024 figure as an electricity-production share, not a consumption share.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "Gemeten als aandeel van de totale energieproductie was dat 7%.",
+      "label": "F0",
+      "sourceEvidence": "Renewables were 42.4 out of 605.6 quadrillion Btu of total energy production, reported as 7%.",
+      "synthesisStatement": "The renewable share of all energy production was 7%.",
+      "narrativeStatement": "7% van de totale energieproductie",
+      "origin": "propagated",
+      "explanation": "The referent of “dat” is clear from context; the sentence correctly distinguishes all-energy production from electricity production.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "Ook van het totale energieverbruik kwam 7% uit hernieuwbare energie.",
+      "label": "F0",
+      "sourceEvidence": "The source states that the renewable share of all energy consumption was also 7%.",
+      "synthesisStatement": "The renewable share of all energy consumption was also 7%.",
+      "narrativeStatement": "het aandeel in het totale energieverbruik was 7%.",
+      "origin": "propagated",
+      "explanation": "Accurately states the all-energy consumption share; it does not misidentify this as electricity consumption.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "De percentages hebben verschillende grondslagen.",
+      "label": "F0",
+      "sourceEvidence": "The evidence compares electricity production with all-energy production and all-energy consumption.",
+      "synthesisStatement": "The answer changes depending on what is measured.",
+      "narrativeStatement": "Deze percentages verschillende maatstaven voor hernieuwbare energie beschrijven.",
+      "origin": "propagated",
+      "explanation": "This is a faithful summary of the distinct quantities underlying the reported percentages.",
+      "materiality": "medium"
+    },
+    {
+      "excerpt": "Hernieuwbare elektriciteitsproductie bedroeg 10,0 van in totaal 30,7 biljoen kWh.",
+      "label": "F0",
+      "sourceEvidence": "The source reports 10.0 trillion kWh of renewable electricity production out of 30.7 trillion kWh total electricity production.",
+      "synthesisStatement": "10.0 trillion kWh renewable out of 30.7 trillion kWh total electricity production.",
+      "narrativeStatement": "10,0 van 30,7 biljoen kWh",
+      "origin": "propagated",
+      "explanation": "The figures, unit, and denominator are correct; Dutch “biljoen” corresponds to trillion.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "De totale energieproductie uit hernieuwbare bronnen was 42,4 van 605,6 biljard Btu.",
+      "label": "F0",
+      "sourceEvidence": "The source reports 42.4 quadrillion Btu renewable out of 605.6 quadrillion Btu total energy production.",
+      "synthesisStatement": "42.4 out of 605.6 quadrillion Btu of total energy production.",
+      "narrativeStatement": "42,4 van 605,6 biljard Btu",
+      "origin": "propagated",
+      "explanation": "The values and denominator are correct; Dutch “biljard” corresponds to quadrillion. The sentence correctly refers to total energy production.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "Om een aandeel hernieuwbare energie te begrijpen, moet dus duidelijk zijn welke maatstaf wordt gebruikt: elektriciteit of alle energie, en productie of verbruik.",
+      "label": "F0",
+      "sourceEvidence": "The evidence provides distinct production and consumption measures, including a separate electricity-production share.",
+      "synthesisStatement": "The answer changes with what is measured.",
+      "narrativeStatement": "Om een aandeel te begrijpen, moet duidelijk zijn of het gaat om elektriciteit of alle energie, en of productie of verbruik wordt gemeten.",
+      "origin": "propagated",
+      "explanation": "This is a supported interpretive takeaway. It does not imply that the unavailable renewable electricity-consumption share is known.",
+      "materiality": "medium"
+    }
+  ],
+  "preserved": [
+    "renewable-electricity-production-share-2024",
+    "renewable-all-energy-production-share-2024",
+    "renewable-all-energy-consumption-share-2024"
+  ],
+  "distorted": [],
+  "omitted": [
+    "renewable-electricity-consumption-share-unavailable",
+    "data-vintage"
+  ],
+  "developments": 3,
+  "explainedFacts": 3,
+  "paragraphSteps": [
+    "Paragraph 1 compares the 2024 renewable shares for electricity production, all-energy production, and all-energy consumption.",
+    "Paragraph 2 supplies the production numerators, denominators, and units behind the electricity and all-energy production shares.",
+    "Paragraph 3 draws the takeaway that the measure—electricity or all energy, production or consumption—must be specified."
+  ],
+  "endpointAddsMeaning": true,
+  "redundancy": [],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}
+

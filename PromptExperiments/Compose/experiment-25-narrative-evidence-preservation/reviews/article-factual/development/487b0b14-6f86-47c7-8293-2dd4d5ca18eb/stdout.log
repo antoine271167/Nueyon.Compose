@@ -1,0 +1,85 @@
+{
+  "claims": [
+    {
+      "excerpt": "NIST’s AI Risk Management Framework (AI RMF) 1.0, released in January 2023, is a voluntary framework intended to help organizations incorporate trustworthiness considerations across the design, development, use, and evaluation of AI.",
+      "label": "F0",
+      "sourceEvidence": "NIST released AI RMF 1.0 in January 2023. It was designed for voluntary use and aims to help organizations bring trustworthiness considerations into the design, development, use and evaluation of AI.",
+      "synthesisStatement": "NIST released AI RMF 1.0 in January 2023. It was designed for voluntary use and aims to help organizations bring trustworthiness considerations into the design, development, use and evaluation of AI.",
+      "narrativeStatement": "NIST released AI RMF 1.0 in January 2023 as a voluntary framework intended to help organizations incorporate trustworthiness considerations across the design, development, use, and evaluation of AI.",
+      "origin": "upstream",
+      "explanation": "Faithfully preserves the release date, voluntary status, purpose, and lifecycle scope.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "In July 2024, NIST published AI 600-1, a cross-sector profile focused on generative AI.",
+      "label": "F0",
+      "sourceEvidence": "In July 2024 NIST published AI 600-1, a companion profile for generative AI with cross-sector scope.",
+      "synthesisStatement": "In July 2024 NIST published AI 600-1, a companion profile for generative AI with cross-sector scope.",
+      "narrativeStatement": "In July 2024, NIST published AI 600-1, a cross-sector profile focused on generative AI",
+      "origin": "upstream",
+      "explanation": "Preserves the publication date and the profile’s cross-sector and generative-AI scope.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "It serves as a more specific companion to the broader framework.",
+      "label": "F0",
+      "sourceEvidence": "In July 2024 NIST published AI 600-1, a companion profile for generative AI with cross-sector scope.",
+      "synthesisStatement": "Follow the timeline from the broad framework to a profile focused on one class of AI. Show why the two documents should be read together.",
+      "narrativeStatement": "AI 600-1 focuses on generative AI. The reader should understand them as a broad framework and a more focused companion",
+      "origin": "compose",
+      "explanation": "The companion relationship is explicit; describing the profile as more specific follows from its narrower generative-AI scope.",
+      "materiality": "moderate"
+    },
+    {
+      "excerpt": "The documents address different scopes: the AI RMF covers AI broadly, while AI 600-1 focuses on generative AI.",
+      "label": "F0",
+      "sourceEvidence": "AI RMF 1.0 ... aims to help organizations bring trustworthiness considerations into the design, development, use and evaluation of AI. In July 2024 NIST published AI 600-1, a companion profile for generative AI with cross-sector scope.",
+      "synthesisStatement": "Follow the timeline from the broad framework to a profile focused on one class of AI.",
+      "narrativeStatement": "the framework offers voluntary, cross-lifecycle guidance for AI generally, while AI 600-1 focuses on generative AI.",
+      "origin": "compose",
+      "explanation": "Accurately contrasts the framework’s general AI scope with the profile’s generative-AI focus.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "They are complementary, not interchangeable.",
+      "label": "F0",
+      "sourceEvidence": "AI 600-1, a companion profile for generative AI with cross-sector scope. Companion status does not establish replacement.",
+      "synthesisStatement": "Show why the two documents should be read together. Companion status does not establish replacement.",
+      "narrativeStatement": "The reader should understand them as a broad framework and a more focused companion, not as interchangeable documents.",
+      "origin": "compose",
+      "explanation": "A concise, supported synthesis of the distinct scopes and companion relationship; it does not claim that either document formally declares this wording.",
+      "materiality": "moderate"
+    }
+  ],
+  "preserved": [
+    "nist-ai-rmf-release",
+    "ai-600-1-release"
+  ],
+  "distorted": [],
+  "omitted": [
+    "order-relation"
+  ],
+  "developments": 2,
+  "explainedFacts": 5,
+  "paragraphSteps": [
+    {
+      "paragraph": 1,
+      "step": "Introduces AI RMF 1.0’s date, voluntary nature, purpose, and lifecycle scope."
+    },
+    {
+      "paragraph": 2,
+      "step": "Introduces AI 600-1’s date, cross-sector scope, generative-AI focus, and companion role."
+    },
+    {
+      "paragraph": 3,
+      "step": "Synthesizes the documents’ differing scopes and relationship."
+    }
+  ],
+  "endpointAddsMeaning": true,
+  "redundancy": [],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}
+

@@ -1,0 +1,8 @@
+{
+  "narrative": {
+    "content": "### Selected Story\nThe first three NIST post-quantum standards, approved by the Secretary of Commerce in August 2024, cover two functions: FIPS 203 specifies ML-KEM to establish a shared secret between parties communicating over a public channel, while FIPS 204 and FIPS 205 specify digital signature schemes. The reader should understand that the standards share a design aim—resisting future quantum attacks—but do different kinds of work.\n\n### Story Progression\n- **Context:** The Secretary of Commerce approved FIPS 203, 204 and 205 in August 2024; all three schemes are designed to resist future quantum attacks.\n- **Development:** FIPS 203 specifies ML-KEM for establishing a shared secret between parties communicating over a public channel. FIPS 204 and FIPS 205 instead specify digital signature schemes: module-lattice-based and stateless hash-based, respectively.\n- **Endpoint:** The three standards therefore cover two functions: shared-secret establishment and digital signatures. Their common design aim does not erase this difference in purpose.\n\n### Critical Constraints\n- Describe the schemes as designed to resist future quantum attacks; do not imply that resistance is guaranteed or demonstrated."
+  },
+  "composition": {
+    "format": "Article"
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "claims": [
+    {
+      "id": "C1",
+      "excerpt": "Een digitale refunddienst ontwikkelen onder tijdsdruk",
+      "label": "F0",
+      "sourceEvidence": "“We had a tight deadline”; “put huge pressure on everyone.”",
+      "synthesisStatement": "Het team ontwikkelde de refunddienst onder tijdsdruk.",
+      "narrativeStatement": "“het ontwikkelen van een digitale refunddienst onder tijdsdruk.”",
+      "origin": "narrative",
+      "explanation": "De titel geeft de in de bron beschreven tijdsdruk getrouw weer.",
+      "materiality": "low"
+    },
+    {
+      "id": "C2",
+      "excerpt": "De digitale refunddienst van het POA-refundteam ging na twaalf weken publiek.",
+      "label": "F0",
+      "sourceEvidence": "“launched to the public in only 12 weeks.”",
+      "synthesisStatement": "Het team lanceerde de dienst voor het publiek in twaalf weken.",
+      "narrativeStatement": "“De dienst ging na twaalf weken publiek.”",
+      "origin": "propagated",
+      "explanation": "Getrouwe weergave van de gerapporteerde termijn; de bron specificeert het startpunt van die twaalf weken niet, maar de body voegt dat ook niet toe.",
+      "materiality": "high"
+    },
+    {
+      "id": "C3",
+      "excerpt": "De aanvankelijk gevraagde levering binnen enkele weken werd niet haalbaar geacht met behoud van een kwalitatieve gebruikersdienst.",
+      "label": "F0",
+      "sourceEvidence": "“initially asked to deliver the service in a matter of weeks”; “would not be possible if we wanted to create a quality service for our users.”",
+      "synthesisStatement": "De aanvankelijk gevraagde levering binnen enkele weken was volgens het team niet haalbaar met behoud van een kwalitatieve gebruikersdienst.",
+      "narrativeStatement": "“levering binnen enkele weken niet haalbaar was geacht met behoud van een kwalitatieve gebruikersdienst.”",
+      "origin": "propagated",
+      "explanation": "Behoudt zowel de gevraagde korte termijn als de voorwaarde rond kwaliteit.",
+      "materiality": "high"
+    },
+    {
+      "id": "C4",
+      "excerpt": "De aanpak begon bij de ervaring van aanvragers.",
+      "label": "F0",
+      "sourceEvidence": "“My team focused on the users applying for refunds first.”",
+      "synthesisStatement": "Het team werkte eerst aan de aanvragerservaring.",
+      "narrativeStatement": "“In de aanpak kwam eerst de ervaring van aanvragers aan bod.”",
+      "origin": "propagated",
+      "explanation": "Getrouwe samenvatting van welke gebruikersgroep eerst centraal stond.",
+      "materiality": "medium"
+    },
+    {
+      "id": "C5",
+      "excerpt": "Plannen voor het werk van caseworkers kwamen later aan bod.",
+      "label": "F0",
+      "sourceEvidence": "“Plans for the caseworker user came later.”",
+      "synthesisStatement": "Plannen voor caseworkers kwamen later.",
+      "narrativeStatement": "“caseworkerwerk volgde later.”",
+      "origin": "propagated",
+      "explanation": "Behoudt de volgorde; de body laat de bronreden voor die keuze weg, maar beweert geen andere reden.",
+      "materiality": "medium"
+    },
+    {
+      "id": "C6",
+      "excerpt": "Tijdens de private beta was er in het tweewekelijkse ritme vaste tijd gereserveerd voor onderzoek en testen, naast het aannemen en verwerken van aanvragen.",
+      "label": "F2",
+      "sourceEvidence": "“splitting our fortnightly sprints in two”; week één: “testing, researching and accepting applications”; week twee: “suspending submissions” voor “testing, researching and processing applications.”",
+      "synthesisStatement": "Tijdens private beta wisselde het team in tweewekelijkse sprints een week met testen, onderzoek en aanvragen aannemen af met een week zonder inzendingen, gericht op testen, onderzoek en verwerking.",
+      "narrativeStatement": "“Tijdens de private beta was er in het tweewekelijkse ritme vaste tijd voor onderzoek en testen.”",
+      "origin": "propagated",
+      "explanation": "De body vlakt de beschreven tweeweekse afwisseling af en zegt dat onderzoek en testen naast zowel aannemen als verwerken plaatsvonden. De bron onderscheidt de weken expliciet: inzendingen aannemen in week één en opschorten in week twee, wanneer aanvragen werden verwerkt.",
+      "materiality": "high"
+    },
+    {
+      "id": "C7",
+      "excerpt": "Zo bestond de beschreven werkwijze uit een volgorde waarin eerst de aanvragerservaring centraal stond, en uit gereserveerde tijd voor onderzoek en testen tijdens de private beta.",
+      "label": "F0",
+      "sourceEvidence": "“focused on the users applying for refunds first”; “splitting our fortnightly sprints in two” met onderzoek en testen in beide weken.",
+      "synthesisStatement": "De beschreven aanpak stelde eerst aanvragers centraal en reserveerde tijdens private beta tijd voor onderzoek en testen.",
+      "narrativeStatement": "“hoe die volgorde en die gereserveerde tijd onderdeel waren van de beschreven werkwijze.”",
+      "origin": "propagated",
+      "explanation": "Dit is een getrouwe samenvatting van de aanpak op hoofdlijnen, maar herhaalt eerdere informatie en herstelt de afgevlakte sprintcadans niet.",
+      "materiality": "low"
+    }
+  ],
+  "preserved": [
+    "launch-timeline",
+    "user-sequence"
+  ],
+  "distorted": [
+    "beta-research-rhythm"
+  ],
+  "omitted": [
+    "assisted-digital-scope",
+    "five-week-results"
+  ],
+  "developments": 3,
+  "explainedFacts": 1,
+  "paragraphSteps": [
+    {
+      "paragraph": 1,
+      "claimIds": ["C2", "C3"],
+      "steps": ["De dienst ging na twaalf weken publiek.", "Levering binnen enkele weken werd niet haalbaar geacht met behoud van kwaliteit."]
+    },
+    {
+      "paragraph": 2,
+      "claimIds": ["C4", "C5", "C6"],
+      "steps": ["De aanvragerservaring kwam eerst.", "Plannen voor caseworkers volgden later.", "De private-beta-cadans is weergegeven, maar de afwisseling tussen de weken is afgevlakt."]
+    },
+    {
+      "paragraph": 3,
+      "claimIds": ["C7"],
+      "steps": ["Vat de gebruikersvolgorde en onderzoekstijd opnieuw samen."]
+    }
+  ],
+  "endpointAddsMeaning": false,
+  "redundancy": [
+    {
+      "claimId": "C7",
+      "repeats": ["C4", "C5", "C6"],
+      "explanation": "De slotzin vat de eerder beschreven volgorde en gereserveerde onderzoekstijd opnieuw samen."
+    }
+  ],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}
+

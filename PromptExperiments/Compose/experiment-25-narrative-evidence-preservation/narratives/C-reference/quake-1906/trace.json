@@ -1,0 +1,62 @@
+{
+  "inputHash": "b17c054c0f9e5824cbd8d5d142e8a8c2a7220107ef2eb00914ef69198ea62d95",
+  "outputHash": "199a77f7130e5520ef05a16cabe18d3c3654892533edd5f6754e52b1d41f2ce6",
+  "angle": "Why the 1906 earthquake has different magnitude estimates",
+  "items": [
+    {
+      "id": "seismic-data",
+      "claim": "One team modeled usable seismic data from 12 of 96 observatories.",
+      "synthesisExcerpt": "One team studied seismic recordings from 96 observatories and digitized and modeled usable data from 12.",
+      "sourceEvidence": "Operator paraphrase: “One team studied seismic recordings from 96 observatories and digitized and modeled usable data from 12.”",
+      "kind": "method",
+      "useful": true,
+      "material": true,
+      "usefulness": "Shows the data scope behind the seismic estimate.",
+      "qualification": "The synthesis does not explain why data from only 12 observatories were usable."
+    },
+    {
+      "id": "seismic-estimate",
+      "claim": "The seismic analysis suggested a surface-wave magnitude of 7.7.",
+      "synthesisExcerpt": "That seismic analysis suggested a surface-wave magnitude of 7.7.",
+      "sourceEvidence": "Operator paraphrase: “That seismic analysis suggested a surface-wave magnitude of 7.7.”",
+      "kind": "estimate",
+      "useful": true,
+      "material": true,
+      "usefulness": "Provides one side of the magnitude-estimate contrast.",
+      "qualification": "Identified specifically as a surface-wave magnitude."
+    },
+    {
+      "id": "geodetic-reanalysis",
+      "claim": "A USGS team re-evaluated geodetic measurements from before and after the earthquake.",
+      "synthesisExcerpt": "A USGS team instead re-evaluated geodetic measurements made before and after the earthquake.",
+      "sourceEvidence": "Operator paraphrase: “A USGS team instead re-evaluated geodetic measurements made before and after the earthquake.”",
+      "kind": "method",
+      "useful": true,
+      "material": true,
+      "usefulness": "Introduces the contrasting approach used for the other estimate.",
+      "qualification": "The synthesis does not provide further details about the re-evaluation."
+    },
+    {
+      "id": "geodetic-estimate",
+      "claim": "The geodetic approach used ground deformation measured through benchmark angles and distances and gave an estimate of 7.9.",
+      "synthesisExcerpt": "The geodetic approach used ground deformation reflected in angles and distances between benchmarks and gave an estimate of 7.9.",
+      "sourceEvidence": "Operator paraphrase: “The geodetic approach used ground deformation reflected in angles and distances between benchmarks and gave an estimate of 7.9.”",
+      "kind": "estimate",
+      "useful": true,
+      "material": true,
+      "usefulness": "Provides the other estimate and the measurement basis.",
+      "qualification": "The synthesis does not specify the magnitude scale for 7.9."
+    },
+    {
+      "id": "methods-can-disagree",
+      "claim": "Different methods of estimating earthquake size can produce different estimates.",
+      "synthesisExcerpt": "Different methods of estimating earthquake size can disagree.",
+      "sourceEvidence": "Operator paraphrase: “Different methods of estimating earthquake size can disagree.”",
+      "kind": "interpretation",
+      "useful": true,
+      "material": true,
+      "usefulness": "States the central takeaway supported by the contrasting estimates.",
+      "qualification": "The synthesis does not explain the specific cause of the difference."
+    }
+  ]
+}

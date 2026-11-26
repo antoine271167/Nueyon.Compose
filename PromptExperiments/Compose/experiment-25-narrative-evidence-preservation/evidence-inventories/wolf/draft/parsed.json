@@ -1,0 +1,53 @@
+{
+  "items": [
+    {
+      "id": "social-pack-behavior",
+      "claim": "Yellowstone wolf packs are social families with cooperative offspring care and group hunting.",
+      "synthesisExcerpt": "Yellowstone packs are social families; the source identifies cooperative offspring care and group hunting among their social-living benefits. (Fact 3)",
+      "sourceEvidence": "Description: packs are “complex social famil[ies]”; social-living benefits include “cooperative care of offspring” and “group hunting of large prey.”",
+      "kind": "social behavior",
+      "useful": true,
+      "material": true,
+      "usefulness": "Shows the social dimension of wolf ecology.",
+      "qualification": "Does not establish that social behavior alone determines ecosystem outcomes."
+    },
+    {
+      "id": "kills-feed-other-animals",
+      "claim": "Wolf kills provide food for other animals, including ravens, coyotes, bears, and invertebrates.",
+      "synthesisExcerpt": "Wolf kills provide food for other animals, from ravens and coyotes to bears and invertebrates. (Fact 6)",
+      "sourceEvidence": "Description: ravens and magpies arrive at elk kills, coyotes wait nearby, bears may chase wolves away, and animals “from eagles to invertebrates” consume remains.",
+      "kind": "food-web relationship",
+      "useful": true,
+      "material": true,
+      "usefulness": "Provides a concrete example of wolf kills supporting other animals.",
+      "qualification": "Describes use of carcasses; it does not establish an ecosystem-wide cascade."
+    },
+    {
+      "id": "prey-composition-shift",
+      "claim": "The early-winter composition of wolf prey shifted: the proportions of elk calves and bull elk reversed between the two reported periods.",
+      "synthesisExcerpt": "The composition of wolf prey changed over time: the proportion of early-winter prey made up by elk calves and bull elk reversed between 1995–2000 and 2001–2007. The source links such changes to prey vulnerability and availability. (Fact 7)",
+      "sourceEvidence": "Changes in Their Prey: elk calves made up 50% and bull elk 25% of early-winter prey from 1995 to 2000; “That ratio reversed from 2001 to 2007.”",
+      "kind": "temporal change",
+      "useful": true,
+      "material": true,
+      "usefulness": "Offers a specific example of changing predator-prey dynamics.",
+      "qualification": "The reversal concerns early-winter prey composition in the stated periods."
+    },
+    {
+      "id": "multiple-influences-on-predation",
+      "claim": "Changes in wolf predation and elk impacts involve several interacting factors, including other predators, outside-park ungulate management, and weather.",
+      "synthesisExcerpt": "The source describes changes in wolf predation and elk impacts as involving interactions among other predators, ungulate management outside the park, and weather, and says research is examining these factors’ relative roles. (Fact 9; Fact 13)",
+      "sourceEvidence": "Changes in Their Prey: predation patterns and elk impacts are linked to “other predators, management of ungulates outside the park, and weather”; NPS research focuses on the relative factors driving wolf predation.",
+      "kind": "multifactor dynamics",
+      "useful": true,
+      "material": true,
+      "usefulness": "Supports a qualified account rather than a single-cause explanation.",
+      "qualification": "The source does not quantify the factors’ relative contributions."
+    }
+  ],
+  "endpoint": "Evidence supports an account of Yellowstone wolves’ social behavior, the animals using their kills, changing prey composition, and multiple influences on predation.",
+  "limitations": [
+    "The source does not establish measured plant effects or an ecosystem-wide cascade.",
+    "It does not show that pack social behavior alone determines population or ecosystem outcomes."
+  ]
+}

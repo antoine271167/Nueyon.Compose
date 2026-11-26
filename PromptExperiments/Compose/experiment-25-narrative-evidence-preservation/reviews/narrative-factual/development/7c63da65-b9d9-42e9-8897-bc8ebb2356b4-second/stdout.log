@@ -1,0 +1,140 @@
+{
+  "claims": [
+    {
+      "excerpt": "an unemployed person was not employed during the survey reference week",
+      "label": "F0",
+      "sourceEvidence": "“was not employed during the survey reference week”",
+      "synthesisStatement": "Under the Current Population Survey, an unemployed person was not employed during the survey reference week, was available for work except for temporary illness, and made an active job search effort in the four-week period ending with that week or was temporarily laid off and expected recall.",
+      "narrativeStatement": "an unemployed person was not employed during the survey reference week",
+      "origin": "propagated",
+      "explanation": "Faithfully preserves the reference-week qualification.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "was available for work except for temporary illness",
+      "label": "F0",
+      "sourceEvidence": "“was available for work except for temporary illness”",
+      "synthesisStatement": "Under the Current Population Survey, an unemployed person was not employed during the survey reference week, was available for work except for temporary illness, and made an active job search effort in the four-week period ending with that week or was temporarily laid off and expected recall.",
+      "narrativeStatement": "was available for work except for temporary illness",
+      "origin": "propagated",
+      "explanation": "Preserves both the availability requirement and its temporary-illness exception.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "made an active job search effort in the four-week period ending with that week",
+      "label": "F0",
+      "sourceEvidence": "“made an active job search effort in the four-week period ending with that week”",
+      "synthesisStatement": "Under the Current Population Survey, an unemployed person was not employed during the survey reference week, was available for work except for temporary illness, and made an active job search effort in the four-week period ending with that week or was temporarily laid off and expected recall.",
+      "narrativeStatement": "made an active job search effort in the four-week period ending with that week",
+      "origin": "propagated",
+      "explanation": "Preserves the active-search route and its four-week window.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "was temporarily laid off and expected recall",
+      "label": "F0",
+      "sourceEvidence": "“or was temporarily laid off and expected recall”",
+      "synthesisStatement": "Under the Current Population Survey, an unemployed person was not employed during the survey reference week, was available for work except for temporary illness, and made an active job search effort in the four-week period ending with that week or was temporarily laid off and expected recall.",
+      "narrativeStatement": "was temporarily laid off and expected recall",
+      "origin": "propagated",
+      "explanation": "Preserves temporary layoff with expected recall as an alternative to the active-search route.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "Passive-only job search does not count as active search.",
+      "label": "F0",
+      "sourceEvidence": "“Passive-only job search does not count as active search.”",
+      "synthesisStatement": "Passive-only job search does not count as active search.",
+      "narrativeStatement": "Passive-only job search does not count as active search.",
+      "origin": "propagated",
+      "explanation": "Faithfully states the limitation to passive-only search.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "Someone waiting to start a new job generally needs active search as well.",
+      "label": "F0",
+      "sourceEvidence": "“Someone waiting to start a new job generally needs active search as well.”",
+      "synthesisStatement": "Someone waiting to start a new job generally needs active search as well.",
+      "narrativeStatement": "Someone waiting to start a new job generally needs active search as well.",
+      "origin": "propagated",
+      "explanation": "Preserves the “generally” qualification.",
+      "materiality": "non-material"
+    },
+    {
+      "excerpt": "Receipt of unemployment insurance is irrelevant to the classification.",
+      "label": "F0",
+      "sourceEvidence": "“Receipt of unemployment insurance is irrelevant to the classification.”",
+      "synthesisStatement": "Receipt of unemployment insurance is irrelevant to the classification.",
+      "narrativeStatement": "Receipt of unemployment insurance is irrelevant to the classification.",
+      "origin": "propagated",
+      "explanation": "Faithfully limits the point to classification, not benefit eligibility.",
+      "materiality": "non-material"
+    },
+    {
+      "excerpt": "The unemployment rate divides unemployed people by the sum of employed and unemployed people.",
+      "label": "F0",
+      "sourceEvidence": "“The unemployment rate divides unemployed people by the sum of employed and unemployed people.”",
+      "synthesisStatement": "The unemployment rate divides unemployed people by the sum of employed and unemployed people.",
+      "narrativeStatement": "The unemployment rate divides unemployed people by the sum of employed and unemployed people.",
+      "origin": "propagated",
+      "explanation": "Faithfully states the numerator and denominator.",
+      "materiality": "material"
+    }
+  ],
+  "preserved": [
+    "not-employed-in-reference-week",
+    "availability-required",
+    "active-search-window",
+    "temporary-layoff-recall",
+    "passive-search-excluded",
+    "waiting-to-start-job",
+    "insurance-irrelevant",
+    "rate-denominator"
+  ],
+  "distorted": [],
+  "omitted": [],
+  "developments": 5,
+  "explainedFacts": 8,
+  "paragraphSteps": [
+    {
+      "step": "Under the Current Population Survey, an unemployed person was not employed during the survey reference week, was available for work except for temporary illness, and made an active job search effort in the four-week period ending with that week or was temporarily laid off and expected recall.",
+      "inventoryIds": [
+        "not-employed-in-reference-week",
+        "availability-required",
+        "active-search-window",
+        "temporary-layoff-recall"
+      ]
+    },
+    {
+      "step": "Passive-only job search does not count as active search.",
+      "inventoryIds": [
+        "passive-search-excluded"
+      ]
+    },
+    {
+      "step": "Someone waiting to start a new job generally needs active search as well.",
+      "inventoryIds": [
+        "waiting-to-start-job"
+      ]
+    },
+    {
+      "step": "Receipt of unemployment insurance is irrelevant to the classification.",
+      "inventoryIds": [
+        "insurance-irrelevant"
+      ]
+    },
+    {
+      "step": "The unemployment rate divides unemployed people by the sum of employed and unemployed people.",
+      "inventoryIds": [
+        "rate-denominator"
+      ]
+    }
+  ],
+  "endpointAddsMeaning": true,
+  "redundancy": [],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}
+

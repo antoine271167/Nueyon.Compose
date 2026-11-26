@@ -1,0 +1,40 @@
+{
+  "checks": [
+    {
+      "id": "renewable-electricity-production-share-2024",
+      "supported": false,
+      "useful": true,
+      "reason": "The excerpt and claim match the supplied synthesis and abstract, including the production scope and 10.0/30.7 trillion kWh relationship. But the source is explicitly a paraphrase, not the authoritative table, so support remains unresolved.",
+      "coverageGap": "The original authoritative table was not supplied for verification."
+    },
+    {
+      "id": "renewable-electricity-consumption-share-unavailable",
+      "supported": false,
+      "useful": true,
+      "reason": "The excerpt and claim match the supplied synthesis and abstract: total electricity consumption is given, while its renewable portion is unavailable. The underlying authoritative table was not supplied, so this is not independently verified.",
+      "coverageGap": "The original table is needed to verify the unavailable entry and its scope."
+    },
+    {
+      "id": "renewable-all-energy-production-share-2024",
+      "supported": false,
+      "useful": true,
+      "reason": "The excerpt and claim match the supplied synthesis and abstract, including the all-energy production scope and 42.4/605.6 quadrillion Btu relationship. The abstract is paraphrased, so authoritative support remains unresolved.",
+      "coverageGap": "The original authoritative table was not supplied for verification."
+    },
+    {
+      "id": "renewable-all-energy-consumption-share-2024",
+      "supported": false,
+      "useful": true,
+      "reason": "The excerpt and claim match the supplied synthesis and abstract. This consumption measure is distinct from all-energy production, though it repeats the 7% figure; the underlying authoritative table was not supplied.",
+      "coverageGap": "The source abstract gives no consumption totals or component values; the original table is needed to verify the share."
+    },
+    {
+      "id": "data-vintage",
+      "supported": false,
+      "useful": true,
+      "reason": "The excerpt and claim match the supplied synthesis and abstract, and the date/change qualification is editorially relevant. Because the source is a paraphrase, the authoritative vintage note remains unverified.",
+      "coverageGap": "The original source's date and revision note were not supplied for verification."
+    }
+  ]
+}
+

@@ -1,0 +1,74 @@
+{
+  "claims": [
+    {
+      "excerpt": "What Two Satellites Infer from a Changing Gap",
+      "label": "F0",
+      "sourceEvidence": "The changing inter-satellite distance is a raw measurement used to infer shifts in mass.",
+      "synthesisStatement": "Begin with two spacecraft detecting distance changes and end with the kinds of water movement those measurements help scientists investigate.",
+      "narrativeStatement": "What two satellites infer from a changing gap",
+      "origin": "propagated",
+      "explanation": "The headline accurately frames the changing gap as a measurement used to infer mass shifts.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "Two satellites follow one another about 137 miles (220 kilometers) apart.",
+      "label": "F0",
+      "sourceEvidence": "Twin satellites follow each other about 137 miles or 220 kilometers apart.",
+      "synthesisStatement": "Twin satellites follow each other about 137 miles or 220 kilometers apart.",
+      "narrativeStatement": "Context: Twin satellites follow each other about 137 miles or 220 kilometers apart.",
+      "origin": "propagated",
+      "explanation": "The stated separation matches the source; it does not claim this is their altitude.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "As they approach a larger concentration of mass, stronger gravity acts on the leading satellite first, initially pulling it farther from the trailing satellite.",
+      "label": "F0",
+      "sourceEvidence": "As the pair approaches a larger mass concentration, stronger gravity acts on the leading satellite first, initially pulling it farther from the trailing one.",
+      "synthesisStatement": "As the pair approaches a larger mass concentration, stronger gravity acts on the leading satellite first, initially pulling it farther from the trailing one.",
+      "narrativeStatement": "Development: As the pair approaches a larger mass concentration, stronger gravity acts on the leading satellite first, initially pulling it farther from the trailing one.",
+      "origin": "propagated",
+      "explanation": "The gravity sequence and its initial effect on the separation are preserved.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "The changing distance between them is a raw measurement used to infer shifts in mass.",
+      "label": "F0",
+      "sourceEvidence": "The changing inter-satellite distance is a raw measurement used to infer shifts in mass.",
+      "synthesisStatement": "The changing inter-satellite distance is a raw measurement used to infer shifts in mass.",
+      "narrativeStatement": "Development: The changing inter-satellite distance is a raw measurement used to infer shifts in mass.",
+      "origin": "propagated",
+      "explanation": "“Distance between them” accurately conveys inter-satellite distance, and the indirect inference is retained.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "The mission follows changes involving groundwater, lakes and rivers, soil moisture, glaciers, ice sheets, and sea level changes attributable to water added to the oceans.",
+      "label": "F0",
+      "sourceEvidence": "The mission follows changes involving groundwater, lakes and rivers, soil moisture, glaciers, ice sheets and changes in sea level attributable to water added to the oceans.",
+      "synthesisStatement": "The mission follows changes involving groundwater, lakes and rivers, soil moisture, glaciers, ice sheets and changes in sea level attributable to water added to the oceans.",
+      "narrativeStatement": "Endpoint: The mission follows changes involving groundwater, lakes and rivers, soil moisture, glaciers, ice sheets and changes in sea level attributable to water added to the oceans.",
+      "origin": "propagated",
+      "explanation": "The listed water systems and the qualification limiting the sea-level claim to water added to the oceans are preserved.",
+      "materiality": "material"
+    }
+  ],
+  "preserved": [
+    "baseline",
+    "gravity-sequence",
+    "measurement-inference",
+    "water-changes"
+  ],
+  "distorted": [],
+  "omitted": [],
+  "developments": 2,
+  "explainedFacts": 2,
+  "paragraphSteps": [
+    "Paragraph 1: establishes satellite separation, then explains how stronger gravity acts on the leading satellite first and initially increases the gap.",
+    "Paragraph 2: explains that the changing gap is used to infer mass shifts, then gives the water changes the mission follows."
+  ],
+  "endpointAddsMeaning": true,
+  "redundancy": [],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}

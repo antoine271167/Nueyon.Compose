@@ -1,0 +1,3 @@
+{
+  "content": "Sparse checkout controls which tracked files appear in your working tree.\n\nIn cone mode, selecting a directory includes the files beneath it, recursively. But the working tree can include more than those directory trees: it also includes certain files alongside the selected directories and their ancestor directories.\n\nSo cone mode\u2019s scope is broader than the directories you select."
+}

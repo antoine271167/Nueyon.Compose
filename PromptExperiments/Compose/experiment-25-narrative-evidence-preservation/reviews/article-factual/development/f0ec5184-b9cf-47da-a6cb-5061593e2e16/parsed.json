@@ -1,0 +1,139 @@
+{
+  "claims": [
+    {
+      "excerpt": "The unemployment rate is calculated using the number of unemployed people divided by the combined number of employed and unemployed people.",
+      "label": "F0",
+      "sourceEvidence": "The unemployment rate divides unemployed people by the sum of employed and unemployed people.",
+      "synthesisStatement": "The unemployment rate divides unemployed people by the sum of employed and unemployed people.",
+      "narrativeStatement": "Establish that the unemployment rate divides the number of unemployed people by the combined number of employed and unemployed people",
+      "origin": "propagated",
+      "explanation": "Faithfully states the numerator and denominator.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "It does not include everyone who is not working: people outside the labor force are counted separately.",
+      "label": "F0",
+      "sourceEvidence": "The populations outside the labor force and unemployed are separate.",
+      "synthesisStatement": "The populations outside the labor force and unemployed are separate.",
+      "narrativeStatement": "people outside the labor force are a separate population",
+      "origin": "propagated",
+      "explanation": "Correctly distinguishes people outside the labor force from the unemployed population in the denominator.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "Whether someone is classified as unemployed depends on the survey’s reference period, the person’s availability for work, and the circumstances of their job search.",
+      "label": "F0",
+      "sourceEvidence": "An unemployed person was not employed during the survey reference week, was available for work except for temporary illness, and made an active job search effort in the four-week period ending with that week or was temporarily laid off and expected recall.",
+      "synthesisStatement": "Availability and the reference period matter.",
+      "narrativeStatement": "The classification depends on the survey’s timing and availability criteria as well as the type of job-search activity.",
+      "origin": "propagated",
+      "explanation": "Accurately summarizes the reference-period, availability, and search-condition criteria.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "A person who was not employed during the reference week,",
+      "label": "F0",
+      "sourceEvidence": "was not employed during the survey reference week",
+      "synthesisStatement": "An unemployed person was not employed during the survey reference week.",
+      "narrativeStatement": "A person not employed during the reference week",
+      "origin": "propagated",
+      "explanation": "Preserves the specified survey reference week.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "was available for work apart from a temporary illness,",
+      "label": "F0",
+      "sourceEvidence": "was available for work except for temporary illness",
+      "synthesisStatement": "An unemployed person had to be available for work, except in cases of temporary illness.",
+      "narrativeStatement": "available for work except for temporary illness",
+      "origin": "propagated",
+      "explanation": "Faithfully states the availability requirement and its temporary-illness exception.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "and was on temporary layoff expecting recall may count as unemployed without actively searching for a job.",
+      "label": "F0",
+      "sourceEvidence": "or was temporarily laid off and expected recall",
+      "synthesisStatement": "A person temporarily laid off and expecting recall could qualify without the active-search route.",
+      "narrativeStatement": "on temporary layoff expecting recall can qualify without an active search",
+      "origin": "propagated",
+      "explanation": "Accurately presents temporary layoff with expected recall as an alternative to active search; the surrounding sentence retains the reference-week and availability conditions.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "Browsing job listings alone is different. It is considered passive-only search;",
+      "label": "F0",
+      "sourceEvidence": "Passive-only job search does not count as active search.",
+      "synthesisStatement": "Passive-only job search does not count as active search.",
+      "narrativeStatement": "someone who only browsed job listings has not made the active search effort",
+      "origin": "propagated",
+      "explanation": "Correctly distinguishes browsing listings alone from active job search.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "active job-search efforts generally must take place during the four-week period ending with the reference week.",
+      "label": "F0",
+      "sourceEvidence": "made an active job search effort in the four-week period ending with that week",
+      "synthesisStatement": "One route to being classified as unemployed was active job search during the four-week period ending with the reference week.",
+      "narrativeStatement": "active search generally must occur during the four-week period ending with the reference week",
+      "origin": "propagated",
+      "explanation": "Preserves the four-week window and appropriately qualifies it in light of the temporary-layoff alternative.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "So neither not working nor looking at listings, by itself, determines whether someone is counted as unemployed.",
+      "label": "F0",
+      "sourceEvidence": "An unemployed person was not employed during the survey reference week ... and made an active job search effort ... or was temporarily laid off and expected recall. Passive-only job search does not count as active search.",
+      "synthesisStatement": "The classification depends on the search-based route or the temporary-layoff-and-recall alternative, with the other stated criteria.",
+      "narrativeStatement": "not working—or looking at listings—does not by itself determine whether someone is counted as unemployed",
+      "origin": "propagated",
+      "explanation": "Validly synthesizes that neither fact alone establishes the classification.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "The classification depends on meeting the active-search criteria or the temporary-layoff-and-recall condition, along with the applicable timing and availability criteria.",
+      "label": "F0",
+      "sourceEvidence": "An unemployed person was not employed during the survey reference week, was available for work except for temporary illness, and made an active job search effort in the four-week period ending with that week or was temporarily laid off and expected recall.",
+      "synthesisStatement": "The search-based route and the temporary-layoff-and-recall alternative apply with the reference-period and availability criteria.",
+      "narrativeStatement": "The definition turns on availability, the reference period, and whether the person meets the active-search or temporary-layoff-and-recall condition.",
+      "origin": "propagated",
+      "explanation": "Accurately summarizes the qualifying routes and shared timing and availability requirements.",
+      "materiality": "material"
+    }
+  ],
+  "preserved": [
+    "not-employed-in-reference-week",
+    "availability-required",
+    "active-search-window",
+    "temporary-layoff-recall",
+    "passive-search-excluded",
+    "rate-denominator"
+  ],
+  "distorted": [],
+  "omitted": [
+    "waiting-to-start-job",
+    "insurance-irrelevant"
+  ],
+  "developments": 3,
+  "explainedFacts": 7,
+  "paragraphSteps": [
+    {
+      "paragraph": 1,
+      "step": "Defines the unemployment-rate denominator and distinguishes the labor force from people outside it."
+    },
+    {
+      "paragraph": 2,
+      "step": "Applies the reference-week and availability criteria to the temporary-layoff-and-recall route."
+    },
+    {
+      "paragraph": 3,
+      "step": "Contrasts passive browsing with active search, gives the search window, and synthesizes the classification criteria."
+    }
+  ],
+  "endpointAddsMeaning": true,
+  "redundancy": [],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}

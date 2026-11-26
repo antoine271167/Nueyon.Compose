@@ -1,0 +1,114 @@
+{
+  "claims": [
+    {
+      "excerpt": "the rate uses the labor force—employed people plus people classified as unemployed",
+      "label": "F0",
+      "sourceEvidence": "The unemployment rate divides unemployed people by the sum of employed and unemployed people.",
+      "synthesisStatement": "The denominator is the sum of employed and unemployed people.",
+      "narrativeStatement": "The rate uses the labor force, defined here as employed people plus people classified as unemployed.",
+      "origin": "propagated",
+      "explanation": "Faithfully states the denominator.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "not everyone who is out of work or considering a job",
+      "label": "F1",
+      "sourceEvidence": "An unemployed person was not employed during the survey reference week, was available for work, and met the active-search or temporary-layoff route.",
+      "synthesisStatement": "The populations outside the labor force and unemployed are separate.",
+      "narrativeStatement": "Being out of work or considering a job does not by itself establish inclusion in the denominator.",
+      "origin": "compose",
+      "explanation": "Consistent with the classification criteria, but “considering a job” is broader and less precise than the source’s defined search criteria.",
+      "materiality": "low"
+    },
+    {
+      "excerpt": "A person on temporary layoff who expects recall can qualify as unemployed without active search",
+      "label": "F0",
+      "sourceEvidence": "“or was temporarily laid off and expected recall”",
+      "synthesisStatement": "Temporary layoff with expected recall is an alternative to the active-search route.",
+      "narrativeStatement": "A person on temporary layoff who expects recall can qualify without active search.",
+      "origin": "propagated",
+      "explanation": "Faithfully conveys the alternative route; “can qualify” does not imply that the person is automatically classified as unemployed.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "passive-only browsing does not meet the active-search criterion",
+      "label": "F0",
+      "sourceEvidence": "“Passive-only job search does not count as active search.”",
+      "synthesisStatement": "Passive-only job search does not count as active search.",
+      "narrativeStatement": "Browsing listings alone does not meet the active-search criterion.",
+      "origin": "propagated",
+      "explanation": "Faithful application of the passive-only search qualification.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "Classification also depends on being available for work",
+      "label": "F1",
+      "sourceEvidence": "“was available for work except for temporary illness”",
+      "synthesisStatement": "Availability for work is required, except in cases of temporary illness.",
+      "narrativeStatement": "Classification depends on being available for work.",
+      "origin": "propagated",
+      "explanation": "The availability condition is included, but the temporary-illness exception is not.",
+      "materiality": "medium"
+    },
+    {
+      "excerpt": "on the relevant survey reference periods",
+      "label": "F1",
+      "sourceEvidence": "“during the survey reference week” and “in the four-week period ending with that week”",
+      "synthesisStatement": "The definition uses a survey reference week and a four-week active-search window.",
+      "narrativeStatement": "Classification depends on relevant survey reference periods.",
+      "origin": "propagated",
+      "explanation": "Signals that timing matters but does not state the reference-week or four-week search-window details.",
+      "materiality": "medium"
+    },
+    {
+      "excerpt": "being out of work or looking at listings alone does not determine whether someone is counted as unemployed",
+      "label": "F0",
+      "sourceEvidence": "An unemployed person was not employed during the survey reference week, was available for work, and met the active-search or temporary-layoff route.",
+      "synthesisStatement": "Classification depends on the defined conditions, not simply being out of work or passive-only searching.",
+      "narrativeStatement": "Neither being out of work nor browsing listings alone determines unemployment classification.",
+      "origin": "compose",
+      "explanation": "Accurately synthesizes the multiple classification conditions.",
+      "materiality": "medium"
+    },
+    {
+      "excerpt": "people classified as unemployed are included in the labor-force denominator alongside employed people",
+      "label": "F0",
+      "sourceEvidence": "“The unemployment rate divides unemployed people by the sum of employed and unemployed people.”",
+      "synthesisStatement": "The denominator is the sum of employed and unemployed people.",
+      "narrativeStatement": "People classified as unemployed are included alongside employed people in the denominator.",
+      "origin": "propagated",
+      "explanation": "Faithfully restates the denominator’s components.",
+      "materiality": "high"
+    }
+  ],
+  "preserved": [
+    "temporary-layoff-recall",
+    "passive-search-excluded",
+    "rate-denominator"
+  ],
+  "distorted": [
+    "availability-required",
+    "active-search-window"
+  ],
+  "omitted": [
+    "not-employed-in-reference-week",
+    "waiting-to-start-job",
+    "insurance-irrelevant"
+  ],
+  "developments": 3,
+  "explainedFacts": 5,
+  "paragraphSteps": [
+    "Context: define the denominator as employed people plus people classified as unemployed.",
+    "Development: contrast the temporary-layoff route with passive-only browsing, then note availability and timing conditions.",
+    "Endpoint: synthesize that being out of work or browsing listings alone does not determine classification and restate who is in the denominator."
+  ],
+  "endpointAddsMeaning": false,
+  "redundancy": [
+    "The denominator is stated in the selected-story paragraph and repeated in the endpoint."
+  ],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}
+

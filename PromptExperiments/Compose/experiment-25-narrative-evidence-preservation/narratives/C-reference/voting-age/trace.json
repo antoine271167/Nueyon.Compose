@@ -1,0 +1,40 @@
+{
+  "inputHash": "a60203f6645fc3239af30d6e22b916b2d1107dee60eee13fa90b4a5316729b2f",
+  "outputHash": "839b3b824dff7e2801aad57bb559c81f27cd0fb377b555ac33d5f95b16b857c4",
+  "angle": "What age protection the Twenty-sixth Amendment added",
+  "items": [
+    {
+      "id": "timeline",
+      "claim": "Congress passed the amendment on March 23, 1971, and it was ratified on July 1, 1971.",
+      "synthesisExcerpt": "Congress passed the amendment on March 23, 1971, and it was ratified on July 1, 1971.",
+      "sourceEvidence": "Archives.gov source, as provided in the operator paraphrase: Congress passed the amendment on March 23, 1971, and it was ratified on July 1, 1971.",
+      "kind": "timeline",
+      "useful": true,
+      "material": false,
+      "usefulness": "Provides brief historical context.",
+      "qualification": "Context only; does not define the age protection."
+    },
+    {
+      "id": "age-protection",
+      "claim": "The amendment protects citizens aged 18 or older from age-based voting-rights restrictions by both federal and state governments.",
+      "synthesisExcerpt": "The amendment bars both federal and state governments from denying or limiting US citizens' voting rights because of age when the citizens are at least 18.",
+      "sourceEvidence": "Archives.gov source, as provided in the operator paraphrase: the amendment bars federal and state governments from denying or limiting US citizens' voting rights because of age when they are at least 18.",
+      "kind": "protection",
+      "useful": true,
+      "material": true,
+      "usefulness": "States the amendment's central age-based protection and who it binds.",
+      "qualification": "Applies to US citizens at least 18; the stated bar concerns restrictions because of age."
+    },
+    {
+      "id": "enforcement",
+      "claim": "Congress may enforce the amendment through appropriate legislation.",
+      "synthesisExcerpt": "Congress can enforce the amendment through appropriate legislation.",
+      "sourceEvidence": "Archives.gov source, as provided in the operator paraphrase: Congress can enforce the amendment through appropriate legislation.",
+      "kind": "enforcement",
+      "useful": true,
+      "material": true,
+      "usefulness": "Adds the stated mechanism for congressional enforcement.",
+      "qualification": "The synthesis does not specify what legislation Congress may enact."
+    }
+  ]
+}

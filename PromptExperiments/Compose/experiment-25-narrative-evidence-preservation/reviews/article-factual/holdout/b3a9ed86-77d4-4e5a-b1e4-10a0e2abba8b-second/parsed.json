@@ -1,0 +1,88 @@
+{
+  "claims": [
+    {
+      "excerpt": "The 1906 earthquake has two magnitude estimates: 7.7 and 7.9, derived from different measurement approaches.",
+      "label": "F0",
+      "sourceEvidence": "The synthesis gives 7.7 from seismic analysis and 7.9 from geodetic measurements, and says different methods can disagree.",
+      "synthesisStatement": "“That seismic analysis suggested a surface-wave magnitude of 7.7.” “The geodetic approach used ground deformation reflected in angles and distances between benchmarks and gave an estimate of 7.9.”",
+      "narrativeStatement": "The selected story identifies estimates of 7.7 and 7.9 from seismic and geodetic approaches.",
+      "origin": "upstream",
+      "explanation": "Both estimates and their distinct measurement approaches are supported.",
+      "materiality": "Central framing; faithfully stated."
+    },
+    {
+      "excerpt": "The 7.7 estimate came from seismic analysis using usable recordings from 12 of the 96 observatories studied.",
+      "label": "F0",
+      "sourceEvidence": "Seismic waves were recorded at 96 observatories; 12 stations had records suitable for digitization and modeling, and those results suggested 7.7.",
+      "synthesisStatement": "“One team studied seismic recordings from 96 observatories and digitized and modeled usable data from 12.”",
+      "narrativeStatement": "The story progression specifies usable recordings from 12 of 96 observatories studied.",
+      "origin": "upstream",
+      "explanation": "The sample counts and usable-recordings qualification match the evidence.",
+      "materiality": "Material method detail; faithfully stated."
+    },
+    {
+      "excerpt": "The 7.7 estimate came from seismic analysis",
+      "label": "F1",
+      "sourceEvidence": "The seismic results suggested a surface-wave magnitude of 7.7.",
+      "synthesisStatement": "“That seismic analysis suggested a surface-wave magnitude of 7.7.”",
+      "narrativeStatement": "The story identifies the seismic estimate as 7.7 but does not state its surface-wave scale.",
+      "origin": "upstream",
+      "explanation": "The body omits the surface-wave qualification, making the estimate less precise. It does not state a conflicting scale.",
+      "materiality": "Minor loss of a meaningful magnitude-scale qualification."
+    },
+    {
+      "excerpt": "A USGS re-evaluation of geodetic measurements estimated the earthquake at 7.9, based on changes in angles and distances between benchmarks.",
+      "label": "F1",
+      "sourceEvidence": "USGS re-evaluated geodetic measurements from before and after the event, assessing deformation with benchmark distances and angles; slip models suggested moment magnitude 7.9.",
+      "synthesisStatement": "“A USGS team instead re-evaluated geodetic measurements made before and after the earthquake.” “The geodetic approach used ground deformation reflected in angles and distances between benchmarks and gave an estimate of 7.9.”",
+      "narrativeStatement": "The story progression includes the USGS re-evaluation, estimate of 7.9, and benchmark angles and distances.",
+      "origin": "upstream",
+      "explanation": "The method and estimate are supported. The body omits that measurements were made before and after the earthquake and does not identify 7.9 as moment magnitude; it does not assert a different timeframe or scale.",
+      "materiality": "Minor loss of method and magnitude-scale qualifications."
+    },
+    {
+      "excerpt": "The estimates differ because they come from different ways of measuring earthquake size.",
+      "label": "F0",
+      "sourceEvidence": "The evidence says the methods estimate earthquake size differently and can disagree.",
+      "synthesisStatement": "“Different methods of estimating earthquake size can disagree.”",
+      "narrativeStatement": "The endpoint says estimates can differ because they use different ways of measuring earthquake size.",
+      "origin": "upstream",
+      "explanation": "This accurately states the supported distinction without claiming one estimate is more accurate.",
+      "materiality": "Central takeaway; faithfully stated."
+    }
+  ],
+  "preserved": [
+    "seismic-data",
+    "geodetic-reanalysis",
+    "geodetic-estimate",
+    "methods-can-disagree"
+  ],
+  "distorted": [
+    "seismic-estimate"
+  ],
+  "omitted": [],
+  "developments": 3,
+  "explainedFacts": 5,
+  "paragraphSteps": [
+    {
+      "paragraph": "The 1906 earthquake has two magnitude estimates: 7.7 and 7.9, derived from different measurement approaches.",
+      "step": "Context: introduces the two estimates and their methodological distinction."
+    },
+    {
+      "paragraph": "The 7.7 estimate came from seismic analysis using usable recordings from 12 of the 96 observatories studied. A USGS re-evaluation of geodetic measurements estimated the earthquake at 7.9, based on changes in angles and distances between benchmarks.",
+      "step": "Development: contrasts the seismic data and estimate with the geodetic method and estimate."
+    },
+    {
+      "paragraph": "The estimates differ because they come from different ways of measuring earthquake size.",
+      "step": "Endpoint: states the takeaway about differing methods."
+    }
+  ],
+  "endpointAddsMeaning": false,
+  "redundancy": [
+    "The final paragraph restates the methodological distinction already given in the opening sentence."
+  ],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}

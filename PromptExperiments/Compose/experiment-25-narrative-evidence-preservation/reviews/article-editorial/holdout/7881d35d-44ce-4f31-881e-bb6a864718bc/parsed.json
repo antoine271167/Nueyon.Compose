@@ -1,0 +1,18 @@
+{
+  "scores": [
+    3,
+    3,
+    4,
+    4,
+    2,
+    3
+  ],
+  "defects": [
+    "thin_substance",
+    "repetition",
+    "jargon",
+    "report_voice"
+  ],
+  "strength": "The distinction is stated clearly: “FIPS 203 specifies ML-KEM, which establishes a shared secret,” while “FIPS 204 and FIPS 205 specify digital signature schemes.”",
+  "weakness": "The final sentence repeats the second paragraph’s core point—“FIPS 203 addresses shared-secret establishment, and FIPS 204 and 205 address digital signatures”—so the ending adds little. Terms such as “module-lattice-based” and “stateless hash-based” are left unexplained for general readers."
+}

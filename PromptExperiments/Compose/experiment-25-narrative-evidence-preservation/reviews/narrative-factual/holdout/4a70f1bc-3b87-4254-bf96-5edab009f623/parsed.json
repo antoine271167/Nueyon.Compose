@@ -1,0 +1,98 @@
+{
+  "claims": [
+    {
+      "excerpt": "The table for 2024 lists 10.0 trillion kWh of renewable electricity production out of 30.7 trillion kWh of total electricity production, reported as 32%.",
+      "label": "F0",
+      "sourceEvidence": "The supplied source evidence lists 10.0 trillion kWh renewable and 30.7 trillion kWh total electricity production, reported as 32%.",
+      "synthesisStatement": "In 2024, renewable electricity production was 10.0 trillion kWh out of 30.7 trillion kWh total, or 32%.",
+      "narrativeStatement": "Faithfully reports the electricity production figures and their production scope.",
+      "origin": "propagated",
+      "explanation": "The values, unit, year, and production denominator match the evidence.",
+      "materiality": true
+    },
+    {
+      "excerpt": "Total electricity consumption was 28.5 trillion kWh; the renewable portion is listed as unavailable.",
+      "label": "F0",
+      "sourceEvidence": "The supplied evidence lists total electricity consumption as 28.5 trillion kWh and its renewable portion as unavailable.",
+      "synthesisStatement": "The table provides total electricity consumption but no renewable-consumption value.",
+      "narrativeStatement": "Faithfully distinguishes electricity consumption from production and preserves the unavailable-value qualification.",
+      "origin": "propagated",
+      "explanation": "The stated total and limitation match the evidence; it does not imply a renewable-consumption share.",
+      "materiality": true
+    },
+    {
+      "excerpt": "Across all energy production, renewables were 42.4 out of 605.6 quadrillion Btu, reported as 7%.",
+      "label": "F0",
+      "sourceEvidence": "The supplied evidence lists 42.4 quadrillion Btu renewable out of 605.6 quadrillion Btu total energy production, reported as 7%.",
+      "synthesisStatement": "Renewables accounted for 7% of all energy production in 2024.",
+      "narrativeStatement": "Faithfully reports the all-energy production numerator, denominator, unit, and share.",
+      "origin": "propagated",
+      "explanation": "The figures and all-energy production scope match the evidence.",
+      "materiality": true
+    },
+    {
+      "excerpt": "The renewable share of all energy consumption was also 7%.",
+      "label": "F0",
+      "sourceEvidence": "The supplied evidence states that the renewable share of all energy consumption was 7%.",
+      "synthesisStatement": "Renewables accounted for 7% of all energy consumption in 2024.",
+      "narrativeStatement": "Faithfully states the all-energy consumption share without supplying unsupported totals.",
+      "origin": "propagated",
+      "explanation": "The share and consumption scope match the evidence; “also” accurately compares it with the preceding 7% production share.",
+      "materiality": true
+    },
+    {
+      "excerpt": "This is a July 1, 2026 data vintage subject to change.",
+      "label": "F0",
+      "sourceEvidence": "The supplied evidence identifies a July 1, 2026 data vintage and says it is subject to change.",
+      "synthesisStatement": "The figures use a July 1, 2026 data vintage and may change.",
+      "narrativeStatement": "Faithfully preserves the vintage date and change qualification.",
+      "origin": "propagated",
+      "explanation": "The date and qualification match the evidence.",
+      "materiality": false
+    }
+  ],
+  "preserved": [
+    "renewable-electricity-production-share-2024",
+    "renewable-electricity-consumption-share-unavailable",
+    "renewable-all-energy-production-share-2024",
+    "renewable-all-energy-consumption-share-2024",
+    "data-vintage"
+  ],
+  "distorted": [],
+  "omitted": [],
+  "developments": 4,
+  "explainedFacts": 0,
+  "paragraphSteps": [
+    {
+      "step": 1,
+      "excerpt": "The table for 2024 lists 10.0 trillion kWh of renewable electricity production out of 30.7 trillion kWh of total electricity production, reported as 32%.",
+      "role": "Context"
+    },
+    {
+      "step": 2,
+      "excerpt": "Total electricity consumption was 28.5 trillion kWh; the renewable portion is listed as unavailable.",
+      "role": "Development"
+    },
+    {
+      "step": 3,
+      "excerpt": "Across all energy production, renewables were 42.4 out of 605.6 quadrillion Btu, reported as 7%.",
+      "role": "Development"
+    },
+    {
+      "step": 4,
+      "excerpt": "The renewable share of all energy consumption was also 7%.",
+      "role": "Development"
+    },
+    {
+      "step": 5,
+      "excerpt": "This is a July 1, 2026 data vintage subject to change.",
+      "role": "Endpoint"
+    }
+  ],
+  "endpointAddsMeaning": true,
+  "redundancy": [],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}

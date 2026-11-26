@@ -1,0 +1,76 @@
+{
+  "claims": [
+    {
+      "excerpt": "Een hot spot op een luchthavenkaart is een plek in het bewegingsgebied van een luchthaven waar eerder een botsing of runway incursion heeft plaatsgevonden, of waar zo’n risico bestaat.",
+      "label": "F0",
+      "sourceEvidence": "A hot spot is an airport movement-area location with a history or potential risk of collision or runway incursion.",
+      "synthesisStatement": "Een hot spot is een locatie in het bewegingsgebied van een luchthaven met een voorgeschiedenis van of potentieel risico op een botsing of runway incursion.",
+      "narrativeStatement": "De definitie geeft zowel een voorgeschiedenis als een mogelijk risico weer, zonder een toekomstig incident als zeker voor te stellen.",
+      "origin": "propagated",
+      "explanation": "Dit volgt de brondefinitie en behoudt de kwalificatie dat het om voorgeschiedenis óf risico gaat.",
+      "materiality": "hoog"
+    },
+    {
+      "excerpt": "De FAA standaardiseerde vanaf 19 mei 2022 de weergave van twee soorten hot spots met drie vormen.",
+      "label": "F0",
+      "sourceEvidence": "On the May 19, 2022 chart cycle the FAA standardized three shapes and two meanings.",
+      "synthesisStatement": "De FAA standaardiseerde twee betekenissen met drie vormen, ingaand op 19 mei 2022.",
+      "narrativeStatement": "De zin noemt twee soorten en drie vormen en dateert de standaardisering vanaf 19 mei 2022.",
+      "origin": "propagated",
+      "explanation": "De aantallen en datum stemmen overeen met de bron; ‘soorten’ geeft de twee betekenissen weer.",
+      "materiality": "hoog"
+    },
+    {
+      "excerpt": "Het onderscheid tussen die vormen maakt duidelijk welk type risicoplek de kaart aanduidt.",
+      "label": "F0",
+      "sourceEvidence": "Circle and ellipse are both ground-movement indicators. A cylinder represents wrong surface.",
+      "synthesisStatement": "De vormen onderscheiden de ground-movement- en wrong-surface-betekenissen.",
+      "narrativeStatement": "De zin vat samen dat de vorm aangeeft welk type risicoplek bedoeld is, maar noemt de afzonderlijke vorm-betekeniskoppelingen niet.",
+      "origin": "narrative",
+      "explanation": "Dit is een ondersteunde gevolgtrekking uit de symboolbetekenissen, geen nieuwe bewering over een bewezen effect.",
+      "materiality": "laag"
+    }
+  ],
+  "preserved": [
+    "hot-spot-definition",
+    "standardization-date"
+  ],
+  "distorted": [],
+  "omitted": [
+    "ground-movement-symbol",
+    "wrong-surface-symbol",
+    "standardization-purpose"
+  ],
+  "developments": 3,
+  "explainedFacts": 2,
+  "paragraphSteps": [
+    {
+      "paragraph": 1,
+      "steps": [
+        "Definitie en risicokwalificatie van een hot spot."
+      ]
+    },
+    {
+      "paragraph": 2,
+      "steps": [
+        "Standaardisering door de FAA, met datum en aantallen betekenissen en vormen."
+      ]
+    },
+    {
+      "paragraph": 3,
+      "steps": [
+        "Interpretatie van het nut van de vormonderscheidingen."
+      ]
+    }
+  ],
+  "endpointAddsMeaning": false,
+  "redundancy": [],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": [
+    "ground-movement-symbol",
+    "wrong-surface-symbol",
+    "standardization-purpose"
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "claims": [
+    {
+      "id": "C1",
+      "excerpt": "Een hot spot op een luchthavenkaart is een plek in het bewegingsgebied van een luchthaven waar eerder een botsing of runway incursion heeft plaatsgevonden, of waar zo’n risico bestaat.",
+      "label": "F0",
+      "sourceEvidence": "A hot spot is an airport movement-area location with a history or potential risk of collision or runway incursion.",
+      "synthesisStatement": "Een hot spot is een locatie in het bewegingsgebied met een voorgeschiedenis van of risico op een botsing of runway incursion.",
+      "narrativeStatement": "Een hot spot op een luchthavenkaart is een plek in het bewegingsgebied van een luchthaven waar eerder een botsing of runway incursion heeft plaatsgevonden, of waar zo’n risico bestaat.",
+      "origin": "upstream",
+      "explanation": "Behoudt zowel de locatie als de mogelijkheid van een voorgeschiedenis óf risico; suggereert geen zekerheid over een incident.",
+      "materiality": "Geen materiële afwijking."
+    },
+    {
+      "id": "C2",
+      "excerpt": "De FAA standaardiseerde vanaf 19 mei 2022 de weergave van twee soorten hot spots met drie vormen.",
+      "label": "F0",
+      "sourceEvidence": "On the May 19, 2022 chart cycle the FAA standardized three shapes and two meanings.",
+      "synthesisStatement": "De FAA standaardiseerde twee betekenissen met drie vormen, ingaand op 19 mei 2022.",
+      "narrativeStatement": "De FAA standaardiseerde vanaf 19 mei 2022 de weergave van twee soorten hot spots met drie vormen.",
+      "origin": "upstream",
+      "explanation": "Behoudt het aantal betekenissen en vormen en de ingangsdatum; ‘soorten’ is hier een passende weergave van ‘meanings’.",
+      "materiality": "Geen materiële afwijking."
+    },
+    {
+      "id": "C3",
+      "excerpt": "Het onderscheid tussen die vormen maakt duidelijk welk type risicoplek de kaart aanduidt.",
+      "label": "F2",
+      "sourceEvidence": "The stated purpose is to prevent confusion about the meaning or depiction of hot spots. Circle and ellipse are both ground-movement indicators; a cylinder represents wrong surface.",
+      "synthesisStatement": "De vormen zijn bedoeld om betekenis of weergave van hot spots herkenbaar te maken en verwarring te voorkomen.",
+      "narrativeStatement": "Het onderscheid tussen die vormen maakt duidelijk welk type risicoplek de kaart aanduidt.",
+      "origin": "amplification",
+      "explanation": "Formuleert duidelijkheid als bereikt resultaat, terwijl de bron verwarring voorkomen als stated doel noemt. De concrete vormbetekenissen ontbreken bovendien in deze zin.",
+      "materiality": "Materieel: het onderscheid tussen een beoogd doel en een bewezen resultaat vervalt."
+    }
+  ],
+  "preserved": [
+    "hot-spot-definition",
+    "standardization-date"
+  ],
+  "distorted": [
+    "standardization-purpose"
+  ],
+  "omitted": [
+    "ground-movement-symbol",
+    "wrong-surface-symbol"
+  ],
+  "developments": 1,
+  "explainedFacts": 2,
+  "paragraphSteps": [
+    {
+      "paragraph": 1,
+      "steps": [
+        "context: definitie van een hot spot",
+        "development: standaardisering, aantal vormen en betekenissen, en datum",
+        "endpoint: beweerde duidelijkheid over het type risicoplek"
+      ]
+    }
+  ],
+  "endpointAddsMeaning": true,
+  "redundancy": [],
+  "peripheral": [],
+  "unsupported": [
+    "C3"
+  ],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": [
+    "ground-movement-symbol",
+    "wrong-surface-symbol",
+    "standardization-purpose"
+  ]
+}
+

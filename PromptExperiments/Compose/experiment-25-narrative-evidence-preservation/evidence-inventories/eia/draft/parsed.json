@@ -1,0 +1,64 @@
+{
+  "items": [
+    {
+      "id": "renewable-electricity-production-share-2024",
+      "claim": "In 2024, renewables supplied 32% of global electricity production.",
+      "synthesisExcerpt": "The table for 2024 lists 10.0 trillion kWh of renewable electricity production out of 30.7 trillion kWh of total electricity production, reported as 32%.",
+      "sourceEvidence": "The source abstract lists 10.0 trillion kWh renewable and 30.7 trillion kWh total electricity production, reported as 32%.",
+      "kind": "measurement",
+      "useful": true,
+      "material": true,
+      "usefulness": "Gives a concrete share for electricity production.",
+      "qualification": "This is production, not consumption."
+    },
+    {
+      "id": "renewable-electricity-consumption-share-unavailable",
+      "claim": "The renewable share of global electricity consumption is unavailable in the table.",
+      "synthesisExcerpt": "Total electricity consumption was 28.5 trillion kWh; the renewable portion is listed as unavailable.",
+      "sourceEvidence": "The source abstract lists total electricity consumption as 28.5 trillion kWh and its renewable portion as unavailable.",
+      "kind": "data limitation",
+      "useful": true,
+      "material": true,
+      "usefulness": "Clarifies that the electricity-production share cannot be presented as a consumption share.",
+      "qualification": "The excerpt gives no renewable-consumption value."
+    },
+    {
+      "id": "renewable-all-energy-production-share-2024",
+      "claim": "Renewables accounted for 7% of all energy production in 2024.",
+      "synthesisExcerpt": "Across all energy production, renewables were 42.4 out of 605.6 quadrillion Btu, reported as 7%.",
+      "sourceEvidence": "The source abstract lists 42.4 quadrillion Btu renewable out of 605.6 quadrillion Btu total energy production, reported as 7%.",
+      "kind": "measurement",
+      "useful": true,
+      "material": true,
+      "usefulness": "Contrasts the all-energy production share with the electricity-production share.",
+      "qualification": "This measures energy production across all energy, not electricity alone."
+    },
+    {
+      "id": "renewable-all-energy-consumption-share-2024",
+      "claim": "Renewables accounted for 7% of all energy consumption in 2024.",
+      "synthesisExcerpt": "The renewable share of all energy consumption was also 7%.",
+      "sourceEvidence": "The source abstract states that the renewable share of all energy consumption was 7%.",
+      "kind": "measurement",
+      "useful": true,
+      "material": true,
+      "usefulness": "Adds the all-energy consumption measure for comparison.",
+      "qualification": "The excerpt provides no consumption totals or component values."
+    },
+    {
+      "id": "data-vintage",
+      "claim": "The figures use a July 1, 2026 data vintage and may change.",
+      "synthesisExcerpt": "This is a July 1, 2026 data vintage subject to change.",
+      "sourceEvidence": "The source abstract identifies the data vintage as July 1, 2026 and says it is subject to change.",
+      "kind": "qualification",
+      "useful": true,
+      "material": false,
+      "usefulness": "Signals that the figures are time-specific.",
+      "qualification": "The source notes that the data may change."
+    }
+  ],
+  "endpoint": "The inventory includes explicit 2024 renewable-share measurements and the stated data limitation and vintage.",
+  "limitations": [
+    "The synthesis does not provide a renewable share for electricity consumption.",
+    "The reported figures are subject to change."
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "items": [
+    {
+      "id": "sparse-checkout-working-tree",
+      "claim": "Sparse checkout changes which tracked files are present in the working tree.",
+      "synthesisExcerpt": "Sparse checkout changes which tracked files are present in the working tree.",
+      "sourceEvidence": "Operator paraphrase: “Sparse checkout changes which tracked files are present in the working tree.”",
+      "kind": "definition",
+      "useful": true,
+      "material": true,
+      "usefulness": "Establishes what sparse checkout changes.",
+      "qualification": "Limited to tracked files in the working tree."
+    },
+    {
+      "id": "cone-recursive-inclusion",
+      "claim": "Cone mode includes all files recursively under selected directories.",
+      "synthesisExcerpt": "Cone mode selects directories and includes all files recursively under them.",
+      "sourceEvidence": "Operator paraphrase: “Cone mode selects directories and includes all files recursively under them.”",
+      "kind": "behavior",
+      "useful": true,
+      "material": true,
+      "usefulness": "Explains the central inclusion rule in cone mode.",
+      "qualification": "Applies to selected directories and their descendants."
+    },
+    {
+      "id": "cone-sibling-inclusion",
+      "claim": "Cone mode also includes files that are siblings of selected directories or their ancestors.",
+      "synthesisExcerpt": "It also includes files that are siblings of the selected directory or any ancestor directory.",
+      "sourceEvidence": "Operator paraphrase: “It also includes files that are siblings of the selected directory or any ancestor directory.”",
+      "kind": "behavior",
+      "useful": true,
+      "material": true,
+      "usefulness": "Adds an important qualification to the recursive inclusion rule.",
+      "qualification": "The synthesis specifies sibling files at the selected directory and ancestor levels."
+    }
+  ],
+  "endpoint": "https://git-scm.com/docs/git-sparse-checkout.html",
+  "limitations": [
+    "Source evidence is provided as an operator paraphrase; no independent source verification was performed."
+  ]
+}

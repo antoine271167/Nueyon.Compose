@@ -1,0 +1,114 @@
+{
+  "claims": [
+    {
+      "excerpt": "CPython 3.13’s experimental free-threaded configuration connects an application’s runtime choice to the extensions it imports",
+      "label": "F0",
+      "sourceEvidence": "“Tell the story from application runtime choice to the import boundary” and “CPython 3.13 introduced experimental free threading.”",
+      "synthesisStatement": "Frames the runtime choice through the extensions encountered at the import boundary.",
+      "narrativeStatement": "The selected story connects application runtime choice to imported extensions.",
+      "origin": "upstream",
+      "explanation": "Faithfully expresses the supplied editorial framing and keeps the configuration tied to CPython 3.13.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "an extension without an explicit support declaration triggers a warning and enables the GIL.",
+      "label": "F0",
+      "sourceEvidence": "“An extension must explicitly indicate that it supports this mode; importing one without that declaration warns and enables the GIL.”",
+      "synthesisStatement": "An extension lacking a support declaration warns on import and enables the GIL.",
+      "narrativeStatement": "States the same import behavior.",
+      "origin": "propagated",
+      "explanation": "Preserves both the missing-declaration condition and the two consequences.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "declaring support is a compatibility responsibility for extension authors, separate from the work of making the code thread-safe.",
+      "label": "F0",
+      "sourceEvidence": "“An extension must explicitly indicate that it supports this mode” and “a support declaration is distinct from the work of making code thread-safe.”",
+      "synthesisStatement": "Extension authors have a compatibility responsibility distinct from making code thread-safe.",
+      "narrativeStatement": "States that distinction directly.",
+      "origin": "propagated",
+      "explanation": "Faithfully distinguishes declaring compatibility from achieving thread safety; it does not claim the declaration ensures safety.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "CPython 3.13 introduced experimental free threading as a configuration that can run with the GIL disabled.",
+      "label": "F0",
+      "sourceEvidence": "“CPython 3.13 introduced experimental free threading, a configuration that can run with the global interpreter lock disabled.”",
+      "synthesisStatement": "CPython 3.13 introduced experimental free threading, which can run with the GIL disabled.",
+      "narrativeStatement": "States the version, experimental status, and configuration accurately.",
+      "origin": "propagated",
+      "explanation": "Preserves the version and experimental qualification, and does not imply free threading is a separate runtime or that the GIL is always disabled.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "At the import boundary, an extension’s support declaration matters: importing one without it warns and enables the GIL.",
+      "label": "F0",
+      "sourceEvidence": "“An extension must explicitly indicate that it supports this mode; importing one without that declaration warns and enables the GIL.”",
+      "synthesisStatement": "Importing an extension without a support declaration warns and enables the GIL.",
+      "narrativeStatement": "Restates the import behavior and locates it at the import boundary.",
+      "origin": "propagated",
+      "explanation": "Faithful repetition of the stated behavior.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "The declaration mechanism differs between multi-phase and single-phase initialization.",
+      "label": "F0",
+      "sourceEvidence": "“The mechanism differs between extensions using multi-phase and single-phase initialization.”",
+      "synthesisStatement": "The support mechanism differs for multi-phase and single-phase extensions.",
+      "narrativeStatement": "States the same distinction using initialization terminology.",
+      "origin": "propagated",
+      "explanation": "Preserves the distinction without inventing either mechanism’s details.",
+      "materiality": "medium"
+    },
+    {
+      "excerpt": "Make clear that declaring support communicates compatibility with the mode; it is distinct from making the extension’s code thread-safe.",
+      "label": "F0",
+      "sourceEvidence": "“a support declaration is distinct from the work of making code thread-safe” and “An extension must explicitly indicate that it supports this mode.”",
+      "synthesisStatement": "A support declaration indicates compatibility and is not the work of making code thread-safe.",
+      "narrativeStatement": "Emphasizes that compatibility declaration and thread safety are separate.",
+      "origin": "propagated",
+      "explanation": "Supported by the source’s explicit support requirement and distinction from thread-safety work.",
+      "materiality": "high"
+    }
+  ],
+  "preserved": [
+    "runtime-mode",
+    "import-boundary",
+    "support-vs-safety",
+    "initialization-mechanisms"
+  ],
+  "distorted": [],
+  "omitted": [
+    "windows-build-macro",
+    "sysconfig-check"
+  ],
+  "developments": 4,
+  "explainedFacts": 3,
+  "paragraphSteps": [
+    {
+      "step": "Context",
+      "assessment": "Establishes CPython 3.13 experimental free threading and its GIL-disabled configuration."
+    },
+    {
+      "step": "Import behavior",
+      "assessment": "Explains that a missing support declaration warns and enables the GIL."
+    },
+    {
+      "step": "Initialization distinction",
+      "assessment": "Signals that the declaration mechanism differs by initialization style but does not explain the mechanisms."
+    },
+    {
+      "step": "Compatibility endpoint",
+      "assessment": "Clarifies that support declaration is distinct from making code thread-safe."
+    }
+  ],
+  "endpointAddsMeaning": false,
+  "redundancy": [
+    "The import-without-declaration behavior appears in both Selected Story and Story Progression.",
+    "The compatibility-versus-thread-safety distinction appears in both Selected Story and Story Progression."
+  ],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}

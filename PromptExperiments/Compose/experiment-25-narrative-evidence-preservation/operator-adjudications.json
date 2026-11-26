@@ -1,0 +1,174 @@
+[
+  {
+    "subject": "pq-standards",
+    "phase": "holdout",
+    "contains": "first three NIST post-quantum standards",
+    "decision": "F0",
+    "origin": "none",
+    "reason": "The first finalized suite is the three approval notices. The selected Idea authorizes the initial-suite framing and the Narrative/Article identifies the specific three standards.",
+    "source": "https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards"
+  },
+  {
+    "subject": "git-sparse",
+    "phase": "holdout",
+    "stage": "narrative",
+    "condition": "C",
+    "contains": "all files recursively under them",
+    "decision": "F0",
+    "origin": "none",
+    "reason": "The immediately preceding sentence confines the passage to tracked files in the sparse working tree. The Git cone-mode description gives recursive inclusion under the chosen directories.",
+    "source": "https://git-scm.com/docs/git-sparse-checkout.html"
+  },
+  {
+    "subject": "faa",
+    "phase": "holdout",
+    "stage": "narrative",
+    "condition": "B",
+    "contains": "Het onderscheid tussen die vormen",
+    "decision": "F0",
+    "origin": "none",
+    "reason": "The statement describes what the documented shape-to-category mapping lets a chart reader identify. It does not claim the standard has eliminated observed confusion.",
+    "source": "https://www.faa.gov/newsroom/hot-spot-standardized-symbology"
+  },
+  {
+    "subject": "digital",
+    "phase": "holdout",
+    "stage": "article",
+    "condition": "A",
+    "contains": "in het tweewekelijkse ritme",
+    "decision": "F0",
+    "origin": "none",
+    "reason": "The text compresses the two weeks without reversing or replacing their cadence. It does not state that intake and processing ran simultaneously throughout each sprint. The omitted weekly partition is tracked in preservation.",
+    "source": "https://mojdigital.blog.gov.uk/2018/03/13/how-to-build-and-release-a-digital-by-default-service-in-12-weeks/"
+  },
+  {
+    "subject": "webb",
+    "phase": "holdout",
+    "stage": "narrative",
+    "condition": "A",
+    "contains": "In de tweede week waren de secundaire spiegel",
+    "decision": "F0",
+    "origin": "none",
+    "reason": "NASA describes the relevant second-week unfolding and latching. Cooling overlap is contradicted by a different sentence about what happened afterward, which the operator separately flagged.",
+    "source": "https://science.nasa.gov/mission/webb/deployment/"
+  },
+  {
+    "subject": "quake-1906",
+    "phase": "holdout",
+    "condition": "A",
+    "contains": "different magnitude estimates",
+    "decision": "F1",
+    "origin": "none",
+    "reason": "Two real magnitude estimates are accurately attributed to distinct methods. The generic term loses the measurement type but does not equate the two scales or numbers.",
+    "source": "https://earthquake.usgs.gov/earthquakes/events/1906calif/18april/magnitude.php"
+  },
+  {
+    "subject": "quake-1906",
+    "phase": "holdout",
+    "stage": "narrative",
+    "condition": "A",
+    "contains": "estimates of magnitude 7.7 and 7.9",
+    "decision": "F1",
+    "origin": "none",
+    "reason": "Two methods and two correct estimates are distinguished. The loss of the surface-wave type is a detail omission. No equivalence of scales is asserted.",
+    "source": "https://earthquake.usgs.gov/earthquakes/events/1906calif/18april/magnitude.php"
+  },
+  {
+    "subject": "quake-1906",
+    "phase": "holdout",
+    "stage": "narrative",
+    "condition": "A",
+    "contains": "why estimates of earthquake size can disagree",
+    "decision": "F0",
+    "origin": "none",
+    "reason": "The story direction points to the supplied distinction between the ways earthquake size is estimated. It does not assert an unsupported mechanism, ranking, or correction.",
+    "source": "https://earthquake.usgs.gov/earthquakes/events/1906calif/18april/magnitude.php"
+  },
+  {
+    "subject": "quake-1906",
+    "phase": "holdout",
+    "stage": "narrative",
+    "condition": "A",
+    "contains": "seismic analysis, which suggested 7.7",
+    "decision": "F1",
+    "origin": "none",
+    "reason": "The correct result and the use of records from 12 of 96 observatories remain. The surface-wave qualifier is omitted without claiming an alternative scale.",
+    "source": "https://earthquake.usgs.gov/earthquakes/events/1906calif/18april/magnitude.php"
+  },
+  {
+    "subject": "quake-1906",
+    "phase": "holdout",
+    "stage": "narrative",
+    "condition": "A",
+    "contains": "USGS re-evaluation of geodetic measurements, which estimated",
+    "decision": "F0",
+    "origin": "none",
+    "reason": "The number and geodetic basis match the source and Synthesis. The latter does not name moment magnitude, so the handoff could not add that term here.",
+    "source": "https://earthquake.usgs.gov/earthquakes/events/1906calif/18april/magnitude.php"
+  },
+  {
+    "subject": "quake-1906",
+    "phase": "holdout",
+    "stage": "article",
+    "condition": "B",
+    "exact": "later",
+    "decision": "F1",
+    "origin": "compose",
+    "reason": "The geodetic paper appeared in 1997 and the seismic paper in 1993. The source-supported order is absent from the authorized handoff, a boundary addition without a material change to the comparison of methods.",
+    "source": "https://authors.library.caltech.edu/records/tmnhr-7ha12 | https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/96JB03486"
+  },
+  {
+    "subject": "wolf",
+    "phase": "holdout",
+    "stage": "article",
+    "condition": "B",
+    "contains": "effecten op elanden zijn",
+    "decision": "F2",
+    "origin": "propagated",
+    "reason": "The Article preserves the B Narrative's Dutch eland reference for effects on the prey population. Yellowstone elk here is wapiti and the source does not attach the finding to moose.",
+    "source": "https://www.nps.gov/yell/learn/nature/elk.htm | https://anw.ivdnt.org/article/eland"
+  },
+  {
+    "subject": "digital",
+    "phase": "holdout",
+    "condition": "A",
+    "contains": "ritme vaste tijd voor onderzoek",
+    "decision": "F0",
+    "origin": "none",
+    "reason": "The fortnightly rhythm and reservation of research and testing time are documented. The article and post both compress the split without asserting an alternate weekly cadence.",
+    "source": "https://mojdigital.blog.gov.uk/2018/03/13/how-to-build-and-release-a-digital-by-default-service-in-12-weeks/"
+  },
+  {
+    "subject": "quake-1906",
+    "phase": "holdout",
+    "condition": "A",
+    "stage": "article",
+    "contains": "The 1906 earthquake has two magnitude estimates",
+    "decision": "F1",
+    "origin": "none",
+    "reason": "The Article introduces the two figures and distinguishes their methods. The generic magnitude wording compresses scale detail without falsely asserting equivalence or claiming that only two estimates have ever existed.",
+    "source": "https://earthquake.usgs.gov/earthquakes/events/1906calif/18april/magnitude.php"
+  },
+  {
+    "subject": "quake-1906",
+    "phase": "holdout",
+    "stage": "article",
+    "condition": "B",
+    "contains": "re-evaluation of geodetic measurements estimated 7.9",
+    "decision": "F0",
+    "origin": "none",
+    "reason": "USGS explains that models based on the geodetic measurements yielded 7.9 moment magnitude. The attribution and estimate agree with Synthesis.",
+    "source": "https://earthquake.usgs.gov/earthquakes/events/1906calif/18april/magnitude.php"
+  },
+  {
+    "subject": "quake-1906",
+    "phase": "holdout",
+    "condition": "C",
+    "stage": "article",
+    "contains": "Those measurements captured ground deformation",
+    "decision": "F0",
+    "origin": "none",
+    "reason": "The USGS section for M = 7.9 uses changes in angles and distances between benchmarks to observe deformation. The article expresses the listed method and numerical estimate.",
+    "source": "https://earthquake.usgs.gov/earthquakes/events/1906calif/18april/magnitude.php"
+  }
+]

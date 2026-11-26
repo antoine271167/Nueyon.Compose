@@ -1,0 +1,46 @@
+{
+  "checks": [
+    {
+      "id": "allowance-one-ton",
+      "supported": true,
+      "useful": true,
+      "reason": "The excerpt and claim are supported: the source ties the one-ton allowance to the sulfur dioxide mechanism. This is a concrete entry point, though the excerpt overlaps with the next item's mechanism description.",
+      "coverageGap": "Does not include the broader context that the program addresses both pollutants from the power sector under Title IV."
+    },
+    {
+      "id": "sulfur-dioxide-cap-trading",
+      "supported": true,
+      "useful": true,
+      "reason": "The excerpt and claim match the source and Synthesis. The qualification that the cap is not a reported actual-emissions total appears in the Synthesis but is not stated in the source; authoritative support for that qualification is unresolved.",
+      "coverageGap": "Does not give the cap amount or distinguish the cap from actual emissions; the latter distinction lacks source support here."
+    },
+    {
+      "id": "nitrogen-oxides-rate-based",
+      "supported": true,
+      "useful": true,
+      "reason": "The excerpt preserves the scope—certain coal-fired units—and the claim accurately contrasts the nitrogen oxides component with the sulfur dioxide cap-and-trading mechanism.",
+      "coverageGap": "The excerpt includes the 1996 start date, but omits the broader program context: power sector and Title IV."
+    },
+    {
+      "id": "sulfur-dioxide-coverage-expansion",
+      "supported": true,
+      "useful": true,
+      "reason": "The excerpt and claim accurately preserve the relationship between the 263 initial units at 110 plants and the 445-unit phase I total after substitution or compensating units. The qualification correctly warns against conflating unit and plant counts.",
+      "coverageGap": "Does not include phase II's 2000 start or the final 2010 cap."
+    },
+    {
+      "id": "sulfur-dioxide-later-milestones",
+      "supported": true,
+      "useful": true,
+      "reason": "The excerpt and claim accurately state both milestones. The qualification that the cap is not a reported actual-emissions total appears in the Synthesis but is not stated in the source; authoritative support for that qualification is unresolved.",
+      "coverageGap": "Does not include the phase I coverage figures or the nitrogen oxides timeline and mechanism."
+    },
+    {
+      "id": "nitrogen-oxides-start",
+      "supported": true,
+      "useful": false,
+      "reason": "The excerpt and claim are supported, but the 1996 start date is already included in the nitrogen-oxides mechanism item, so this standalone item is redundant.",
+      "coverageGap": "No distinct material is omitted from this date-only item; its relevant mechanism and scope are covered by the nitrogen-oxides mechanism item."
+    }
+  ]
+}

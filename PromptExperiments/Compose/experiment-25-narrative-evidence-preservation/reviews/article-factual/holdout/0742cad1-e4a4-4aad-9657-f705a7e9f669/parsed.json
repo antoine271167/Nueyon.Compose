@@ -1,0 +1,95 @@
+{
+  "claims": [
+    {
+      "excerpt": "In August 2024, the Secretary of Commerce approved FIPS 203, 204, and 205",
+      "label": "F0",
+      "sourceEvidence": "The Secretary of Commerce approved FIPS 203, 204 and 205 in August 2024.",
+      "synthesisStatement": "The three listed standards were approved in August 2024.",
+      "narrativeStatement": "The narrative states that the Secretary of Commerce approved the three standards in August 2024.",
+      "origin": "upstream",
+      "explanation": "Matches the supplied approval date, approving official, and standards.",
+      "materiality": "Material: establishes when and by whom the standards were approved."
+    },
+    {
+      "excerpt": "standards designed to resist future quantum attacks",
+      "label": "F0",
+      "sourceEvidence": "The schemes are designed to resist future quantum attacks.",
+      "synthesisStatement": "The standards are designed to resist future quantum attacks.",
+      "narrativeStatement": "The narrative describes the standards as designed to resist future quantum attacks.",
+      "origin": "upstream",
+      "explanation": "The wording preserves the stated design goal without implying a guarantee.",
+      "materiality": "Material: states the standards’ shared security goal."
+    },
+    {
+      "excerpt": "They cover two functions: establishing a shared secret and creating digital signatures.",
+      "label": "F0",
+      "sourceEvidence": "FIPS 203 establishes a shared secret; FIPS 204 and FIPS 205 specify digital signature schemes.",
+      "synthesisStatement": "The three standards address shared-secret establishment and digital signatures.",
+      "narrativeStatement": "The narrative identifies these same two functions and clarifies that the two signature standards share a function.",
+      "origin": "compose",
+      "explanation": "This accurately groups the supplied functions across the three standards.",
+      "materiality": "Material: conveys the central distinction among the standards."
+    },
+    {
+      "excerpt": "FIPS 203 specifies a method for communicating parties to establish a shared secret over a public channel.",
+      "label": "F0",
+      "sourceEvidence": "FIPS 203 specifies ML-KEM to establish a shared secret between parties communicating over a public channel.",
+      "synthesisStatement": "FIPS 203 specifies shared-secret establishment between parties communicating over a public channel.",
+      "narrativeStatement": "The narrative states that FIPS 203 establishes a shared secret between communicating parties and, in the progression, specifies the public channel.",
+      "origin": "upstream",
+      "explanation": "The article omits the ML-KEM name but faithfully describes its stated function and channel.",
+      "materiality": "Material: explains FIPS 203’s function."
+    },
+    {
+      "excerpt": "FIPS 204 and FIPS 205 both specify digital signature schemes",
+      "label": "F0",
+      "sourceEvidence": "FIPS 204 specifies a module-lattice-based digital signature scheme. FIPS 205 specifies a stateless hash-based digital signature scheme.",
+      "synthesisStatement": "Both standards specify digital signature schemes.",
+      "narrativeStatement": "The narrative states that FIPS 204 and 205 both specify digital signature schemes.",
+      "origin": "upstream",
+      "explanation": "Accurately states their shared function.",
+      "materiality": "Material: distinguishes their shared function from FIPS 203’s."
+    },
+    {
+      "excerpt": "FIPS 204 uses a module-lattice-based approach",
+      "label": "F0",
+      "sourceEvidence": "FIPS 204 specifies a module-lattice-based digital signature scheme.",
+      "synthesisStatement": "FIPS 204’s signature scheme is module-lattice-based.",
+      "narrativeStatement": "The narrative describes FIPS 204 as using a module-lattice-based scheme.",
+      "origin": "upstream",
+      "explanation": "Faithfully preserves the stated basis of FIPS 204’s signature scheme.",
+      "materiality": "Material: identifies the scheme type."
+    },
+    {
+      "excerpt": "FIPS 205 uses a stateless hash-based approach.",
+      "label": "F0",
+      "sourceEvidence": "FIPS 205 specifies a stateless hash-based digital signature scheme.",
+      "synthesisStatement": "FIPS 205’s signature scheme is stateless and hash-based.",
+      "narrativeStatement": "The narrative describes FIPS 205 as using a stateless hash-based scheme.",
+      "origin": "upstream",
+      "explanation": "Faithfully preserves the stated basis of FIPS 205’s signature scheme.",
+      "materiality": "Material: identifies the scheme type."
+    }
+  ],
+  "preserved": [
+    "approval-date",
+    "ml-kem-purpose",
+    "ml-dsa-signature",
+    "slh-dsa-signature",
+    "quantum-resistance"
+  ],
+  "distorted": [],
+  "omitted": [],
+  "developments": 1,
+  "explainedFacts": 5,
+  "paragraphSteps": [
+    "Context: approval date and security goal.",
+    "Development: FIPS 203’s shared-secret function and the shared signature function and distinct approaches of FIPS 204 and FIPS 205."
+  ],
+  "endpointAddsMeaning": false,
+  "redundancy": [],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}

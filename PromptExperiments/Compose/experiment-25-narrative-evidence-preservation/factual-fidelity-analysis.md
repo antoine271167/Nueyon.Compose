@@ -1,0 +1,21 @@
+# Factual fidelity
+
+The five regression checks use the subjects frozen before generation. Wolf tests local species identity. Webb tests overlap and calibration timing. Digital tests the two weeks within each fortnightly sprint. EIA tests different denominators and trillion kWh versus quadrillion Btu. FAA tests category identity and its three-shape mapping. Primary-source locations and archived fixtures are in [source provenance](source-provenance.md).
+
+The finding ledger retains all usable, exact flagged excerpts, including exact flags extracted from a review whose complete coverage failed validation. Review failures and incomplete target coverage remain in the operational and scoring records. Independent adjudication sees the full draft with its Narrative and the frozen evidence, without the candidate label or initial verdict. A disputed claim may receive a source-backed operator override. An unresolved item remains explicit.
+
+In development, extraction exposed a weakness of C. Reordering EPA's sentences left the pronoun in “Its phase I” immediately after the nitrogen-oxides component. The counts and dates concern sulfur dioxide. The source audit flags the new ambiguity and its follow-on cap statement. This is an extractive reference development observation and the original outputs remain available. The holdout reference handoffs were verified as extractive and reviewed independently for similar context shifts. See [EPA Acid Rain Program](https://www.epa.gov/acidrain/acid-rain-program).
+
+## Holdout F2 by stage and origin
+
+| Condition | Narrative introduces | Article propagates | Article amplifies | Article introduces independently | LinkedIn F2 |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| A | 2 | 3 | 0 | 0 | 0 |
+| B | 1 | 3 | 2 | 0 | 0 |
+| C | 0 | 0 | 0 | 4 | — |
+
+Counts are affected outputs per origin. Two B Articles are counted under both propagation and amplification. There were no confirmed holdout F2s explicit in Synthesis. In A, Wolf and Webb were Narrative introductions. B introduced the Wolf substitution and two Article repetitions broadened it from population effects to the prey-age comparison. C kept English elk in the handoff, and three Articles introduced Dutch *eland*. The fourth independently introduced Article error under C was EIA's Dutch *quadriljoen* for American English *quadrillion*. A retained the 32% electricity versus 7% energy distinction and B also retained the correct absolute scales. The other two EIA C outputs preserved the numerical scale. [Operator anchor records](operator-anchor-findings.json) · [EIA table](https://www.eia.gov/tools/faqs/faq.php?id=527&t=4) · [Dutch scales](https://www.vlaanderen.be/team-taaladvies/taaladviezen/verhoudingen-bij-maten-en-gewichten)
+
+Digital C and B preserve the first and second weeks within one fortnightly sprint across all three Articles. A's broader phrasing loses the weekly partition but does not assert the older alternating-sprint error. All nine FAA Articles retain the three-shape mapping. B's translations of *wrong surface* are less precise as categorical labels and the inventory counts that loss. The factual verdict treats the FAA Article language as concerning the same mapped risk category without a material shape or category reassignment. None of the Webb Articles claims that cooling began only after all deployment. A's *verder* in the Articles removes the explicit misleading sequence present in its Narrative. [Justice Digital](https://mojdigital.blog.gov.uk/2018/03/13/how-to-build-and-release-a-digital-by-default-service-in-12-weeks/) · [FAA](https://www.faa.gov/newsroom/hot-spot-standardized-symbology) · [NASA deployment](https://science.nasa.gov/mission/webb/deployment/)
+
+All 36 holdout handoffs, 108 holdout Articles and eight posts have usable independent factual reviews. All holdout decision-relevant flagged claims were adjudicated. Some usable reviews had missed anchor errors or misread evidence items, which the operator checks document. Those omissions show why raw review agreement and complete response coverage do not establish publication safety. [Adjudication records](adjudications.json) · [Raw reviews](reviews) · [Decision](decision.json)

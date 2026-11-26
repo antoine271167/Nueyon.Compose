@@ -1,0 +1,76 @@
+{
+  "claims": [
+    {
+      "excerpt": "The Twenty-sixth Amendment’s Age-Based Voting Protection",
+      "label": "F0",
+      "sourceEvidence": "The supplied Archives.gov verification says Amendment XXVI bars federal and state abridgment of U.S. citizens’ voting rights on account of age for those 18 or older.",
+      "synthesisStatement": "The amendment bars both federal and state governments from denying or limiting U.S. citizens' voting rights because of age when the citizens are at least 18.",
+      "narrativeStatement": "The Twenty-sixth Amendment added an age-based protection to voting rights.",
+      "origin": "narrative",
+      "explanation": "The headline accurately summarizes the amendment’s stated age-based voting protection.",
+      "materiality": "Low; it states the article’s central subject."
+    },
+    {
+      "excerpt": "Congress passed the Twenty-sixth Amendment on March 23, 1971, and it was ratified on July 1 of that year.",
+      "label": "F0",
+      "sourceEvidence": "The supplied Archives.gov verification says Congress passed it March 23, 1971, and ratification followed July 1.",
+      "synthesisStatement": "Congress passed the amendment on March 23, 1971, and it was ratified on July 1, 1971.",
+      "narrativeStatement": "The amendment was passed by Congress on March 23, 1971, and ratified on July 1, 1971.",
+      "origin": "propagated",
+      "explanation": "Both dates and their sequence match; “of that year” correctly refers to 1971.",
+      "materiality": "Contextual timeline information."
+    },
+    {
+      "excerpt": "It bars federal and state governments from denying or limiting a U.S. citizen’s voting rights because of age if the citizen is at least 18.",
+      "label": "F0",
+      "sourceEvidence": "The supplied Archives.gov verification says the amendment bars federal and state abridgment of U.S. citizens’ voting rights on account of age for those 18 or older.",
+      "synthesisStatement": "The amendment bars both federal and state governments from denying or limiting U.S. citizens' voting rights because of age when the citizens are at least 18.",
+      "narrativeStatement": "Federal and state governments may not deny or limit a U.S. citizen’s voting rights because of age once the citizen is at least 18.",
+      "origin": "propagated",
+      "explanation": "The government levels, protected group, age threshold, and age-based limitation are all preserved.",
+      "materiality": "Central protection."
+    },
+    {
+      "excerpt": "The amendment also gives Congress authority to enforce this protection through appropriate legislation.",
+      "label": "F0",
+      "sourceEvidence": "The supplied Archives.gov verification says Section 2 gives Congress legislative enforcement authority.",
+      "synthesisStatement": "Congress can enforce the amendment through appropriate legislation.",
+      "narrativeStatement": "The amendment also gives Congress authority to enforce this protection through appropriate legislation.",
+      "origin": "propagated",
+      "explanation": "This accurately restates Congress’s enforcement authority without adding a claim about the scope of permissible legislation.",
+      "materiality": "Material enforcement detail."
+    }
+  ],
+  "preserved": [
+    "timeline",
+    "age-protection",
+    "enforcement"
+  ],
+  "distorted": [],
+  "omitted": [],
+  "developments": 3,
+  "explainedFacts": 1,
+  "paragraphSteps": [
+    {
+      "paragraph": 1,
+      "steps": [
+        "timeline",
+        "age-protection"
+      ]
+    },
+    {
+      "paragraph": 2,
+      "steps": [
+        "enforcement"
+      ]
+    }
+  ],
+  "endpointAddsMeaning": false,
+  "redundancy": [],
+  "peripheral": [
+    "timeline"
+  ],
+  "unsupported": [],
+  "formatNeutral": false,
+  "omittedFromNarrativeUsedInArticle": []
+}

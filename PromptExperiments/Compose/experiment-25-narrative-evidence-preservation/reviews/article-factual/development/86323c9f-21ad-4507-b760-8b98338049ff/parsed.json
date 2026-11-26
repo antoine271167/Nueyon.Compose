@@ -1,0 +1,112 @@
+{
+  "claims": [
+    {
+      "exact body excerpt": "The unemployment rate’s denominator is the labor force: people who are employed plus people classified as unemployed.",
+      "label": "F0",
+      "sourceEvidence": "“The unemployment rate divides unemployed people by the sum of employed and unemployed people.”",
+      "synthesisStatement": "The denominator consists of employed and unemployed people.",
+      "narrativeStatement": "“The key point is that the rate uses the labor force—employed people plus people classified as unemployed”",
+      "origin": "narrative",
+      "explanation": "Faithfully states the denominator. Calling it the labor force is consistent with the supplied definition.",
+      "materiality": "high"
+    },
+    {
+      "exact body excerpt": "It does not include everyone who is out of work or considering a job.",
+      "label": "F0",
+      "sourceEvidence": "“The populations outside the labor force and unemployed are separate.”",
+      "synthesisStatement": "The labor-force denominator does not include everyone who is out of work or considering work.",
+      "narrativeStatement": "“not everyone who is out of work or considering a job”",
+      "origin": "narrative",
+      "explanation": "Faithful broad explanation that being out of work or considering a job does not by itself place someone in the denominator.",
+      "materiality": "medium"
+    },
+    {
+      "exact body excerpt": "Classification depends on the circumstances.",
+      "label": "F0",
+      "sourceEvidence": "“an unemployed person was not employed during the survey reference week, was available for work except for temporary illness, and made an active job search effort ... or was temporarily laid off and expected recall.”",
+      "synthesisStatement": "Classification depends on meeting the applicable criteria.",
+      "narrativeStatement": "“Classification also depends on being available for work and on the relevant survey reference periods.”",
+      "origin": "narrative",
+      "explanation": "Accurately summarizes that classification depends on circumstances and criteria.",
+      "materiality": "low"
+    },
+    {
+      "exact body excerpt": "Someone on temporary layoff who expects to be recalled can qualify as unemployed without actively searching for work, provided the other criteria are met.",
+      "label": "F0",
+      "sourceEvidence": "“or was temporarily laid off and expected recall.”",
+      "synthesisStatement": "Temporary layoff with expected recall is an alternative to the active-search route.",
+      "narrativeStatement": "“A person on temporary layoff who expects recall can qualify as unemployed without active search”",
+      "origin": "narrative",
+      "explanation": "Faithfully states the alternative route and preserves the qualification that other criteria still apply.",
+      "materiality": "high"
+    },
+    {
+      "exact body excerpt": "By contrast, someone whose only job-search activity was browsing listings has not met the active-search criterion through that activity alone.",
+      "label": "F0",
+      "sourceEvidence": "“Passive-only job search does not count as active search.”",
+      "synthesisStatement": "Browsing listings alone does not satisfy the active-search criterion.",
+      "narrativeStatement": "“passive-only browsing does not meet the active-search criterion”",
+      "origin": "narrative",
+      "explanation": "Faithfully distinguishes passive browsing from active job search and does not imply that browsing alone determines overall classification.",
+      "materiality": "high"
+    },
+    {
+      "exact body excerpt": "Availability for work and the relevant survey reference periods also matter.",
+      "label": "F1",
+      "sourceEvidence": "“was available for work except for temporary illness” and “made an active job search effort in the four-week period ending with that week”",
+      "synthesisStatement": "Availability, the survey reference week, and the four-week search window are part of the classification criteria.",
+      "narrativeStatement": "“Classification also depends on being available for work and on the relevant survey reference periods.”",
+      "origin": "narrative",
+      "explanation": "Accurately signals that availability and timing matter, but leaves out the temporary-illness exception and the specific reference-week and four-week periods.",
+      "materiality": "medium"
+    },
+    {
+      "exact body excerpt": "Being out of work—or looking at listings—does not by itself determine whether someone is counted as unemployed.",
+      "label": "F0",
+      "sourceEvidence": "“was not employed during the survey reference week” and “Passive-only job search does not count as active search.”",
+      "synthesisStatement": "Unemployment classification depends on criteria beyond simply being out of work or browsing listings.",
+      "narrativeStatement": "“being out of work or looking at listings alone does not determine whether someone is counted as unemployed”",
+      "origin": "narrative",
+      "explanation": "Faithful summary of the classification criteria; it does not assert that these situations always exclude someone from unemployment.",
+      "materiality": "medium"
+    },
+    {
+      "exact body excerpt": "Those classified as unemployed are included in the labor-force denominator alongside employed people.",
+      "label": "F0",
+      "sourceEvidence": "“The unemployment rate divides unemployed people by the sum of employed and unemployed people.”",
+      "synthesisStatement": "Unemployed people are included in the denominator with employed people.",
+      "narrativeStatement": "“employed people plus people classified as unemployed”",
+      "origin": "narrative",
+      "explanation": "Accurate, but repeats the denominator definition already given in the opening paragraph.",
+      "materiality": "medium"
+    }
+  ],
+  "preserved": [
+    "availability-required",
+    "temporary-layoff-recall",
+    "passive-search-excluded",
+    "rate-denominator"
+  ],
+  "distorted": [],
+  "omitted": [
+    "not-employed-in-reference-week",
+    "active-search-window",
+    "waiting-to-start-job",
+    "insurance-irrelevant"
+  ],
+  "developments": 3,
+  "explainedFacts": 5,
+  "paragraphSteps": [
+    "Paragraph 1 establishes the labor-force denominator and distinguishes it from the broader group of people out of work or considering a job.",
+    "Paragraph 2 contrasts the temporary-layoff exception with passive-only browsing.",
+    "Paragraph 3 adds availability and timing as relevant criteria, then restates the denominator implication."
+  ],
+  "endpointAddsMeaning": false,
+  "redundancy": [
+    "The final sentence repeats the opening paragraph’s point that unemployed people are included in the denominator alongside employed people."
+  ],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}

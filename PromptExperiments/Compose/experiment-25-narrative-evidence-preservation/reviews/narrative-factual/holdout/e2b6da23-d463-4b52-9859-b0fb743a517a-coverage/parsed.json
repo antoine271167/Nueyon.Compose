@@ -1,0 +1,78 @@
+{
+  "claims": [
+    {
+      "excerpt": "A hot spot is an airport movement-area location with a history or potential risk of collision or runway incursion.",
+      "label": "F0",
+      "sourceEvidence": "A hot spot is an airport movement-area location with a history or potential risk of collision or runway incursion.",
+      "synthesisStatement": "A hot spot is an airport movement-area location with a history or potential risk of collision or runway incursion.",
+      "narrativeStatement": "A hot spot is an airport movement-area location with a history or potential risk of collision or runway incursion.",
+      "origin": "upstream",
+      "explanation": "Faithfully preserves the location and the qualified risk or history of an incident.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "The FAA standardized two meanings with three shapes beginning May 19, 2022.",
+      "label": "F0",
+      "sourceEvidence": "On the May 19, 2022 chart cycle the FAA standardized three shapes and two meanings.",
+      "synthesisStatement": "The FAA standardized two meanings with three shapes beginning May 19, 2022.",
+      "narrativeStatement": "The FAA standardized two meanings with three shapes beginning May 19, 2022.",
+      "origin": "upstream",
+      "explanation": "Preserves both counts and the effective date; “beginning” retains the chart-cycle timing without changing its substance.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "A circle or ellipse marks a ground movement hot spot;",
+      "label": "F0",
+      "sourceEvidence": "Circle and ellipse are both ground-movement indicators.",
+      "synthesisStatement": "A circle or ellipse marks a ground movement hot spot;",
+      "narrativeStatement": "A circle or ellipse marks a ground movement hot spot;",
+      "origin": "upstream",
+      "explanation": "Correctly identifies both shapes as ground-movement indicators.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "a cylinder marks a wrong surface hot spot.",
+      "label": "F0",
+      "sourceEvidence": "A cylinder represents wrong surface.",
+      "synthesisStatement": "a cylinder marks a wrong surface hot spot.",
+      "narrativeStatement": "a cylinder marks a wrong surface hot spot.",
+      "origin": "upstream",
+      "explanation": "Correctly identifies the cylinder as the wrong-surface indicator.",
+      "materiality": "material"
+    },
+    {
+      "excerpt": "The stated purpose is to prevent confusion about the meaning or depiction of hot spots.",
+      "label": "F0",
+      "sourceEvidence": "Standardized depiction is intended to prevent confusion.",
+      "synthesisStatement": "The stated purpose is to prevent confusion about the meaning or depiction of hot spots.",
+      "narrativeStatement": "The stated purpose is to prevent confusion about the meaning or depiction of hot spots.",
+      "origin": "upstream",
+      "explanation": "Preserves the stated aim and does not claim that confusion is eliminated.",
+      "materiality": "material"
+    }
+  ],
+  "preserved": [
+    "hot-spot-definition",
+    "standardization-date",
+    "ground-movement-symbol",
+    "wrong-surface-symbol",
+    "standardization-purpose"
+  ],
+  "distorted": [],
+  "omitted": [],
+  "developments": 3,
+  "explainedFacts": 5,
+  "paragraphSteps": [
+    "Context: hot-spot definition",
+    "Development: standardization date and counts",
+    "Development: circle or ellipse indicates ground movement",
+    "Development: cylinder indicates wrong surface",
+    "Endpoint: standardization purpose"
+  ],
+  "endpointAddsMeaning": true,
+  "redundancy": [],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}

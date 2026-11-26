@@ -1,0 +1,119 @@
+{
+  "claims": [
+    {
+      "exactBodyExcerpt": "The 1906 earthquake has different magnitude estimates from two approaches",
+      "label": "F0",
+      "sourceEvidence": "“Different methods of estimating earthquake size can disagree.”",
+      "synthesisStatement": "Two approaches produced different estimates for the 1906 earthquake.",
+      "narrativeStatement": "The story opens by contrasting estimates from two methods.",
+      "origin": "propagated",
+      "explanation": "Faithfully introduces the supported contrast.",
+      "materiality": "Low"
+    },
+    {
+      "exactBodyExcerpt": "a seismic analysis suggested 7.7",
+      "label": "F1",
+      "sourceEvidence": "“That seismic analysis suggested a surface-wave magnitude of 7.7.”",
+      "synthesisStatement": "The seismic analysis suggested a surface-wave magnitude of 7.7.",
+      "narrativeStatement": "The seismic analysis suggested 7.7.",
+      "origin": "propagated",
+      "explanation": "The estimate is correct, but the narrative omits the qualifying surface-wave magnitude.",
+      "materiality": "Moderate; the magnitude type is a useful qualification."
+    },
+    {
+      "exactBodyExcerpt": "a USGS team’s re-evaluation of geodetic measurements estimated 7.9",
+      "label": "F0",
+      "sourceEvidence": "“A USGS team instead re-evaluated geodetic measurements made before and after the earthquake” and “gave an estimate of 7.9.”",
+      "synthesisStatement": "A USGS team re-evaluated geodetic measurements and obtained an estimate of 7.9.",
+      "narrativeStatement": "The USGS team’s geodetic re-evaluation estimated 7.9.",
+      "origin": "propagated",
+      "explanation": "Matches the supplied synthesis; it does not assert an unsupported magnitude scale.",
+      "materiality": "High; this is one side of the central contrast."
+    },
+    {
+      "exactBodyExcerpt": "The central point is that the estimates come from different kinds of measurements, and earthquake-size estimates made by different methods can disagree.",
+      "label": "F0",
+      "sourceEvidence": "“Different methods of estimating earthquake size can disagree.”",
+      "synthesisStatement": "Different measurement methods can produce different estimates.",
+      "narrativeStatement": "The estimates differ because they come from different kinds of measurements, and methods can disagree.",
+      "origin": "propagated",
+      "explanation": "Faithfully states the supported takeaway without claiming which estimate is definitive.",
+      "materiality": "High; this is the central takeaway."
+    },
+    {
+      "exactBodyExcerpt": "the story concerns differing estimates of the 1906 earthquake’s size",
+      "label": "F0",
+      "sourceEvidence": "“Different methods of estimating earthquake size can disagree.”",
+      "synthesisStatement": "Different methods produced differing size estimates.",
+      "narrativeStatement": "The outline identifies the topic as differing size estimates.",
+      "origin": "propagated",
+      "explanation": "Accurately describes the story’s supported subject.",
+      "materiality": "Low"
+    },
+    {
+      "exactBodyExcerpt": "it examined recordings from 96 observatories and digitized and modeled usable data from 12, suggesting a surface-wave magnitude of 7.7.",
+      "label": "F0",
+      "sourceEvidence": "“One team studied seismic recordings from 96 observatories and digitized and modeled usable data from 12” and “suggested a surface-wave magnitude of 7.7.”",
+      "synthesisStatement": "The seismic analysis used modeled usable data from 12 of 96 observatories and suggested 7.7 surface-wave magnitude.",
+      "narrativeStatement": "The outline gives the data scope and qualified seismic estimate.",
+      "origin": "propagated",
+      "explanation": "Preserves the observatory counts, data treatment, and magnitude qualification.",
+      "materiality": "High"
+    },
+    {
+      "exactBodyExcerpt": "this with a USGS team’s re-evaluation of geodetic measurements made before and after the earthquake.",
+      "label": "F0",
+      "sourceEvidence": "“A USGS team instead re-evaluated geodetic measurements made before and after the earthquake.”",
+      "synthesisStatement": "A USGS team re-evaluated pre- and post-earthquake geodetic measurements.",
+      "narrativeStatement": "The outline contrasts the seismic analysis with the USGS geodetic re-evaluation.",
+      "origin": "propagated",
+      "explanation": "Faithfully retains the team, method, and timing.",
+      "materiality": "High"
+    },
+    {
+      "exactBodyExcerpt": "The approach used ground deformation reflected in angles and distances between benchmarks and produced an estimate of 7.9.",
+      "label": "F0",
+      "sourceEvidence": "“The geodetic approach used ground deformation reflected in angles and distances between benchmarks and gave an estimate of 7.9.”",
+      "synthesisStatement": "The geodetic approach used benchmark angles and distances to assess ground deformation and gave an estimate of 7.9.",
+      "narrativeStatement": "The outline explains the geodetic measurement basis and result.",
+      "origin": "propagated",
+      "explanation": "Matches the supplied method description and estimate.",
+      "materiality": "High"
+    },
+    {
+      "exactBodyExcerpt": "different measurement methods can yield different estimates.",
+      "label": "F0",
+      "sourceEvidence": "“Different methods of estimating earthquake size can disagree.”",
+      "synthesisStatement": "Different methods can yield different earthquake-size estimates.",
+      "narrativeStatement": "The outline concludes with the supported distinction.",
+      "origin": "propagated",
+      "explanation": "Faithful paraphrase of the synthesis takeaway.",
+      "materiality": "High"
+    }
+  ],
+  "preserved": [
+    "geodetic-reanalysis",
+    "geodetic-estimate",
+    "methods-can-disagree"
+  ],
+  "distorted": [
+    "seismic-estimate"
+  ],
+  "omitted": [
+    "seismic-data"
+  ],
+  "developments": 2,
+  "explainedFacts": 0,
+  "paragraphSteps": [
+    {
+      "paragraph": 1,
+      "step": "Introduces the two estimates and states the general difference between methods."
+    }
+  ],
+  "endpointAddsMeaning": false,
+  "redundancy": [],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}

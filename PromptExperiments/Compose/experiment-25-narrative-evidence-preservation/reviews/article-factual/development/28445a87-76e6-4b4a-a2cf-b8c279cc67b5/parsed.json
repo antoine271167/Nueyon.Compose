@@ -1,0 +1,159 @@
+{
+  "claims": [
+    {
+      "exact body excerpt": "Two Different Mechanisms in the Acid Rain Program",
+      "label": "F0",
+      "sourceEvidence": "The selected idea and synthesis describe how the program treated the two pollutants differently.",
+      "synthesisStatement": "The program used distinct mechanisms for sulfur dioxide and nitrogen oxides.",
+      "narrativeStatement": "“The reader should understand that these were distinct mechanisms with different timelines, not one shared emissions rule.”",
+      "origin": "compose",
+      "explanation": "A concise, supported summary of the comparison developed in the body.",
+      "materiality": "low"
+    },
+    {
+      "exact body excerpt": "Under Title IV, the EPA’s Acid Rain Program addressed sulfur dioxide and nitrogen oxides from the power sector through distinct mechanisms and timelines.",
+      "label": "F0",
+      "sourceEvidence": "“EPA’s Acid Rain Program addresses sulfur dioxide and nitrogen oxides from the power sector under Title IV.” The evidence also specifies different mechanisms and timelines.",
+      "synthesisStatement": "The program covered both pollutants under Title IV, with different mechanisms and timelines.",
+      "narrativeStatement": "“Introduce EPA’s Acid Rain Program under Title IV, which addresses both pollutants from the power sector.”",
+      "origin": "propagated",
+      "explanation": "Faithfully combines the program scope, statutory context, and distinction supported by the evidence.",
+      "materiality": "high"
+    },
+    {
+      "exact body excerpt": "For sulfur dioxide, the program used an aggregate cap and tradable allowances.",
+      "label": "F0",
+      "sourceEvidence": "“The sulfur dioxide mechanism applies an aggregate cap and allows trading.”",
+      "synthesisStatement": "The sulfur dioxide component used an aggregate cap and trading.",
+      "narrativeStatement": "“The sulfur dioxide component used an aggregate cap and tradable allowances”",
+      "origin": "propagated",
+      "explanation": "The mechanism is stated accurately and specifically for sulfur dioxide.",
+      "materiality": "high"
+    },
+    {
+      "exact body excerpt": "Each allowance covered one ton of sulfur dioxide",
+      "label": "F0",
+      "sourceEvidence": "“one allowance covers one ton”",
+      "synthesisStatement": "One sulfur dioxide allowance covered one ton.",
+      "narrativeStatement": "“a sulfur dioxide allowance covers one ton under the trading system”",
+      "origin": "propagated",
+      "explanation": "Preserves the allowance quantity and its sulfur dioxide context.",
+      "materiality": "high"
+    },
+    {
+      "exact body excerpt": "while the cap set the permitted total—it was not a measure of reported actual emissions.",
+      "label": "F0",
+      "sourceEvidence": "“A cap is a permitted total rather than reported actual emissions.”",
+      "synthesisStatement": "The cap specifies a permitted total, not reported actual emissions.",
+      "narrativeStatement": "“the aggregate cap is a permitted total, not a report of actual emissions”",
+      "origin": "propagated",
+      "explanation": "Preserves an important qualification and does not conflate the cap with actual emissions.",
+      "materiality": "high"
+    },
+    {
+      "exact body excerpt": "Phase I began in 1995 with 263 initial units at 110 plants.",
+      "label": "F0",
+      "sourceEvidence": "“phase I began in 1995 with 263 initial units at 110 plants”",
+      "synthesisStatement": "Phase I started in 1995 with 263 initial units at 110 plants.",
+      "narrativeStatement": "“Phase I began in 1995 with 263 initial units at 110 plants”",
+      "origin": "propagated",
+      "explanation": "Preserves the year and both counts, distinguishing units from plants.",
+      "materiality": "high"
+    },
+    {
+      "exact body excerpt": "Substitution or compensating units brought the Phase I total to 445 units.",
+      "label": "F0",
+      "sourceEvidence": "“substitution or compensating units brought the phase I total to 445 units”",
+      "synthesisStatement": "Substitution or compensating units increased the Phase I total to 445 units.",
+      "narrativeStatement": "“substitution or compensating units brought the Phase I total to 445 units”",
+      "origin": "propagated",
+      "explanation": "Retains the stated mechanism and final unit count without implying a plant count.",
+      "materiality": "high"
+    },
+    {
+      "exact body excerpt": "Phase II began in 2000, and the final cap in 2010 was 8.95 million tons.",
+      "label": "F0",
+      "sourceEvidence": "“Phase II began in 2000. The final 2010 cap was 8.95 million tons.”",
+      "synthesisStatement": "Phase II started in 2000; the final cap in 2010 was 8.95 million tons.",
+      "narrativeStatement": "“Phase II began in 2000, and the final cap in 2010 was 8.95 million tons.”",
+      "origin": "propagated",
+      "explanation": "Preserves both dates and the cap quantity; it does not present the cap as actual emissions.",
+      "materiality": "high"
+    },
+    {
+      "exact body excerpt": "The nitrogen oxides component followed a different approach. It began in 1996 and applied a rate-based rule to certain coal-fired units;",
+      "label": "F0",
+      "sourceEvidence": "“The nitrogen oxides component was rate-based for certain coal-fired units, began in 1996”",
+      "synthesisStatement": "Beginning in 1996, the nitrogen oxides component used a rate-based rule for certain coal-fired units.",
+      "narrativeStatement": "“the nitrogen oxides component instead used a rate-based rule for certain coal-fired units” and “it was rate-based for certain coal-fired units, began in 1996”",
+      "origin": "propagated",
+      "explanation": "Preserves the start year, rate-based category, and limitation to certain coal-fired units.",
+      "materiality": "high"
+    },
+    {
+      "exact body excerpt": "it did not introduce a cap or allowance trading.",
+      "label": "F0",
+      "sourceEvidence": "“did not introduce a cap or allowance trading”",
+      "synthesisStatement": "The nitrogen oxides component did not add a cap or allowance trading.",
+      "narrativeStatement": "“did not introduce a cap or allowance trading”",
+      "origin": "propagated",
+      "explanation": "Accurately states the negative distinction; it does not assert any additional positive fact.",
+      "materiality": "high"
+    },
+    {
+      "exact body excerpt": "The two pollutants were therefore governed by different mechanisms on different timelines.",
+      "label": "F0",
+      "sourceEvidence": "“The sulfur dioxide and nitrogen oxides timelines and mechanisms differ.”",
+      "synthesisStatement": "The pollutants had different mechanisms and timelines.",
+      "narrativeStatement": "“Conclude with the central distinction: the program used different mechanisms and timelines for the two pollutants.”",
+      "origin": "compose",
+      "explanation": "A supported synthesis of the preceding comparison, not a new factual detail.",
+      "materiality": "medium"
+    }
+  ],
+  "preserved": [
+    "allowance-one-ton",
+    "sulfur-dioxide-cap-trading",
+    "nitrogen-oxides-rate-based",
+    "sulfur-dioxide-coverage-expansion",
+    "sulfur-dioxide-later-milestones"
+  ],
+  "distorted": [],
+  "omitted": [],
+  "developments": 2,
+  "explainedFacts": 17,
+  "paragraphSteps": [
+    {
+      "paragraph": 1,
+      "steps": [
+        "Establishes Title IV program scope and the pollutant distinction."
+      ]
+    },
+    {
+      "paragraph": 2,
+      "steps": [
+        "Explains the sulfur dioxide cap-and-trading mechanism and allowance unit.",
+        "Clarifies cap versus actual emissions.",
+        "Traces Phase I coverage expansion and later sulfur dioxide milestones."
+      ]
+    },
+    {
+      "paragraph": 3,
+      "steps": [
+        "Introduces the nitrogen oxides rate-based approach, its start year and scope, and the absence of cap trading."
+      ]
+    },
+    {
+      "paragraph": 4,
+      "steps": [
+        "Summarizes the supported difference in mechanisms and timelines."
+      ]
+    }
+  ],
+  "endpointAddsMeaning": false,
+  "redundancy": [],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}

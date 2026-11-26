@@ -1,0 +1,108 @@
+{
+  "claims": [
+    {
+      "exactBodyExcerpt": "Three NIST Post-Quantum Standards, Two Different Functions",
+      "label": "F0",
+      "sourceEvidence": "The source identifies FIPS 203, 204, and 205 and describes FIPS 203 as a key-encapsulation mechanism and FIPS 204 and 205 as digital-signature standards.",
+      "synthesisStatement": "The evidence lists one shared-secret standard and two signature standards.",
+      "narrativeStatement": "The standards therefore cover two functions: shared-secret establishment and digital signatures.",
+      "origin": "compose",
+      "explanation": "This headline accurately groups the three standards by their two stated purposes.",
+      "materiality": "material"
+    },
+    {
+      "exactBodyExcerpt": "Approved by the Secretary of Commerce in August 2024",
+      "label": "F0",
+      "sourceEvidence": "“The Secretary of Commerce approved FIPS 203, 204 and 205 in August 2024.”",
+      "synthesisStatement": "The Secretary of Commerce approved FIPS 203, 204 and 205 in August 2024.",
+      "narrativeStatement": "The Secretary of Commerce approved FIPS 203, 204 and 205 in August 2024.",
+      "origin": "propagated",
+      "explanation": "The approving official and month match the evidence.",
+      "materiality": "material"
+    },
+    {
+      "exactBodyExcerpt": "the first three NIST post-quantum standards are designed to resist future quantum attacks.",
+      "label": "F0",
+      "sourceEvidence": "The source identifies the first three standards and says they are designed to resist future quantum-computer attacks.",
+      "synthesisStatement": "The schemes are designed to resist future quantum attacks.",
+      "narrativeStatement": "All three schemes are designed to resist future quantum attacks.",
+      "origin": "propagated",
+      "explanation": "The claim accurately states the shared design aim and does not present it as a guarantee.",
+      "materiality": "material"
+    },
+    {
+      "exactBodyExcerpt": "They cover two distinct functions: establishing a shared secret and creating digital signatures.",
+      "label": "F0",
+      "sourceEvidence": "FIPS 203 establishes a shared secret; FIPS 204 and FIPS 205 are digital-signature standards.",
+      "synthesisStatement": "FIPS 203 establishes a shared secret, while FIPS 204 and 205 specify digital signatures.",
+      "narrativeStatement": "The first three standards cover two functions: shared-secret establishment and digital signatures.",
+      "origin": "compose",
+      "explanation": "This is a faithful summary of the specific functions described in the evidence.",
+      "materiality": "material"
+    },
+    {
+      "exactBodyExcerpt": "FIPS 203 specifies ML-KEM, which establishes a shared secret between parties communicating over a public channel.",
+      "label": "F0",
+      "sourceEvidence": "“FIPS 203 specifies ML-KEM to establish a shared secret between parties communicating over a public channel.”",
+      "synthesisStatement": "FIPS 203 specifies ML-KEM to establish a shared secret between parties communicating over a public channel.",
+      "narrativeStatement": "FIPS 203 specifies ML-KEM for establishing a shared secret between parties communicating over a public channel.",
+      "origin": "propagated",
+      "explanation": "The standard, algorithm, purpose, and public-channel qualification are preserved.",
+      "materiality": "material"
+    },
+    {
+      "exactBodyExcerpt": "FIPS 204 and FIPS 205 specify digital signature schemes: FIPS 204 is module-lattice-based, while FIPS 205 is stateless hash-based.",
+      "label": "F0",
+      "sourceEvidence": "FIPS 204 specifies a module-lattice-based digital signature scheme; FIPS 205 specifies a stateless hash-based digital signature scheme.",
+      "synthesisStatement": "FIPS 204 specifies a module-lattice-based digital signature scheme. FIPS 205 specifies a stateless hash-based digital signature scheme.",
+      "narrativeStatement": "FIPS 204 and FIPS 205 instead specify digital signature schemes: module-lattice-based and stateless hash-based, respectively.",
+      "origin": "propagated",
+      "explanation": "Both signature categories are correctly assigned to their respective standards.",
+      "materiality": "material"
+    },
+    {
+      "exactBodyExcerpt": "The standards share a design aim, but their purposes differ: FIPS 203 addresses shared-secret establishment, and FIPS 204 and 205 address digital signatures.",
+      "label": "F0",
+      "sourceEvidence": "The schemes are designed to resist future quantum attacks; FIPS 203 establishes a shared secret, and FIPS 204 and 205 are signature standards.",
+      "synthesisStatement": "The schemes share a resistance-to-quantum-attacks design aim while serving different functions.",
+      "narrativeStatement": "Their common design aim does not erase this difference in purpose.",
+      "origin": "propagated",
+      "explanation": "This is an accurate recap of the shared aim and the previously stated functional distinction.",
+      "materiality": "minor"
+    }
+  ],
+  "preserved": [
+    "approval-date",
+    "ml-kem-purpose",
+    "ml-dsa-signature",
+    "slh-dsa-signature",
+    "quantum-resistance"
+  ],
+  "distorted": [],
+  "omitted": [],
+  "developments": 2,
+  "explainedFacts": 3,
+  "paragraphSteps": [
+    {
+      "paragraph": 1,
+      "step": "Context: approval date, shared design aim, and the two functions."
+    },
+    {
+      "paragraph": 2,
+      "step": "Development: identifies each standard’s function and the signature schemes’ stated bases."
+    },
+    {
+      "paragraph": 3,
+      "step": "Endpoint: restates the shared aim and functional distinction without adding a new fact."
+    }
+  ],
+  "endpointAddsMeaning": false,
+  "redundancy": [
+    "The standards share a design aim, but their purposes differ: FIPS 203 addresses shared-secret establishment, and FIPS 204 and 205 address digital signatures."
+  ],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}
+

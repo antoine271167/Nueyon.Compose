@@ -1,0 +1,16 @@
+{
+  "scores": [
+    4,
+    2,
+    3,
+    3,
+    2,
+    3
+  ],
+  "defects": [
+    "thin_substance",
+    "repetition"
+  ],
+  "strength": "The opening clearly states the practical consequence: “importing an extension without an explicit free-threading support declaration triggers a warning and enables the GIL.”",
+  "weakness": "The final sentence repeats itself and provides little payoff: “A support declaration does not itself make the code thread-safe or establish that it is.”"
+}

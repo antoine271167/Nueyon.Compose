@@ -1,0 +1,187 @@
+{
+  "claims": [
+    {
+      "excerpt": "Webb’s path to routine science extended well beyond unfolding.",
+      "label": "F0",
+      "sourceEvidence": "The source places completion of telescope deployment in the second week and the start of routine science operations after six months.",
+      "synthesisStatement": "The transition to routine science took substantially longer than deployment.",
+      "narrativeStatement": "Faithfully summarizes the timeline.",
+      "origin": "compose",
+      "explanation": "A supported comparison of the second-week deployment milestone with the six-month commissioning period.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "Because its operational configuration was too large for the available rocket, the telescope was designed to fold into the Ariane 5 fairing.",
+      "label": "F0",
+      "sourceEvidence": "“Webb's fully deployed operational configuration is far too large to fit into any available rocket so it was designed to fold into a compact launch configuration that fit inside the Ariane 5.”",
+      "synthesisStatement": "Webb folded for launch because its deployed configuration could not fit in the available rocket.",
+      "narrativeStatement": "Accurately states the launch-design rationale without broadening it.",
+      "origin": "upstream",
+      "explanation": "The source directly supports both the size constraint and the Ariane 5 fairing.",
+      "materiality": "medium"
+    },
+    {
+      "excerpt": "It reached its fully deployed configuration in its second week",
+      "label": "F0",
+      "sourceEvidence": "“During the second week after launch, we finished deploying the telescope structures ... This brought Webb into its fully deployed operational configuration.”",
+      "synthesisStatement": "Webb reached its fully deployed operational configuration during the second week after launch.",
+      "narrativeStatement": "Faithfully states the deployment milestone and timing.",
+      "origin": "upstream",
+      "explanation": "The source explicitly dates completion of the telescope structures to the second week.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "cooling, mirror alignment and instrument calibration continued through the six-month commissioning period.",
+      "label": "F0",
+      "sourceEvidence": "The source describes several weeks of cooling in the first month, alignment in months two through four, and instrument calibration in months five and six.",
+      "synthesisStatement": "Cooling, alignment, and calibration were commissioning work spanning the period before routine science.",
+      "narrativeStatement": "Faithful as a summary of the commissioning timeline; it does not assert that cooling lasted all six months or began only after deployment.",
+      "origin": "compose",
+      "explanation": "The later timeline in the body specifies the durations of the individual stages. Cooling began during the first month, overlapping the second-week deployment period, and continued beyond that milestone.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "The central point is that deployment completed one major stage; routine science began only after the subsequent commissioning stages.",
+      "label": "F0",
+      "sourceEvidence": "The source distinguishes second-week completion of deployment from routine science operations after six months of commissioning.",
+      "synthesisStatement": "Deployment completion was not the start of routine science; commissioning intervened.",
+      "narrativeStatement": "Accurately emphasizes the distinction supported by the source.",
+      "origin": "compose",
+      "explanation": "This is a supported synthesis of the stated milestones, not an additional claim about calibration results.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "Webb had to fold to fit inside the Ariane 5 fairing.",
+      "label": "F0",
+      "sourceEvidence": "“Webb was designed to fold compactly to fit inside the fairing.”",
+      "synthesisStatement": "The folded launch design addressed the fairing size constraint.",
+      "narrativeStatement": "Accurate context, repeated from the selected story.",
+      "origin": "propagated",
+      "explanation": "Faithful paraphrase of the source.",
+      "materiality": "low"
+    },
+    {
+      "excerpt": "Unfolding involved more than 50 major steps and over 300 possible single points of failure; any one could have diminished or crippled the mission, and repair was not possible at Webb’s distance from Earth.",
+      "label": "F0",
+      "sourceEvidence": "“There were over 50 major deployment steps ... any one of over 300 single points of failure could have diminished or crippled the mission.” The source also says: “Since Webb operates at approximately 1 million miles from Earth, there was no possibility for a repair mission.”",
+      "synthesisStatement": "Deployment had many potential failure points and a failed mission could not be repaired at Webb’s distance.",
+      "narrativeStatement": "Faithfully presents potential risks, not events that actually occurred.",
+      "origin": "upstream",
+      "explanation": "The body correctly frames the failure points as possible and the repair limitation as a consequence of distance.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "By the second week, the secondary mirror and both primary-mirror wings had unfolded and latched, completing Webb’s fully deployed operational configuration.",
+      "label": "F0",
+      "sourceEvidence": "“During the second week after launch, we finished deploying the telescope structures by unfolding and latching the secondary mirror tripod and rotating and latching the two primary mirror wings. This brought Webb into its fully deployed operational configuration.”",
+      "synthesisStatement": "The second-week mirror deployment completed Webb’s fully deployed configuration.",
+      "narrativeStatement": "Accurately describes the structures and completion milestone.",
+      "origin": "upstream",
+      "explanation": "The source confirms the secondary mirror structure and both primary-mirror wings were deployed and latched.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "Deployment proceeded smoothly",
+      "label": "F0",
+      "sourceEvidence": "“Webb's deployment was completed with remarkable smoothness.”",
+      "synthesisStatement": "Deployment was completed smoothly.",
+      "narrativeStatement": "Accurate and consistent with the constraint not to invent deployment problems.",
+      "origin": "upstream",
+      "explanation": "The source explicitly characterizes deployment as smooth.",
+      "materiality": "medium"
+    },
+    {
+      "excerpt": "the telescope and instruments cooled for several weeks in the first month",
+      "label": "F0",
+      "sourceEvidence": "“The telescope and scientific instruments started to cool rapidly ... but it took several weeks for them to cool all the way down and reach stable temperatures.” This is listed under “1st Month.”",
+      "synthesisStatement": "Cooling to stable temperatures took several weeks during the first month.",
+      "narrativeStatement": "Faithful timing; it does not claim cooling began after deployment or exclude overlap with deployment.",
+      "origin": "upstream",
+      "explanation": "The source places the cooling phase in the first month, while deployment continued into the second week.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "mirror alignment took place in months two through four, and instrument-mode calibration followed in months five and six.",
+      "label": "F0",
+      "sourceEvidence": "The source labels months two, three, and four as the period for telescope alignment, and months five and six as “Calibration and completion of commissioning.”",
+      "synthesisStatement": "Alignment took place in months two through four, followed by calibration in months five and six.",
+      "narrativeStatement": "Faithfully summarizes the stated sequence and timing.",
+      "origin": "upstream",
+      "explanation": "The source directly provides these commissioning periods.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "Webb began routine science operations after six months.",
+      "label": "F0",
+      "sourceEvidence": "“After six months: ‘Science operations!’ Webb began its science mission and started to conduct routine science operations.”",
+      "synthesisStatement": "Routine science operations began after six months.",
+      "narrativeStatement": "Accurately states the endpoint without claiming specific calibration results.",
+      "origin": "upstream",
+      "explanation": "The source explicitly gives this endpoint.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "Its timeline distinguishes reaching the deployed configuration in the second week from completing the extended commissioning period and beginning routine science.",
+      "label": "F0",
+      "sourceEvidence": "The source places full deployment in the second week and routine science after six months.",
+      "synthesisStatement": "The timeline separates physical deployment from the later start of routine science.",
+      "narrativeStatement": "A supported summary of the timeline.",
+      "origin": "compose",
+      "explanation": "This restates the central distinction without adding a new milestone.",
+      "materiality": "medium"
+    }
+  ],
+  "preserved": [
+    "launch-fold",
+    "deployment-risk",
+    "deployed-second-week",
+    "cooling-and-alignment",
+    "calibration-to-science"
+  ],
+  "distorted": [],
+  "omitted": [],
+  "developments": 5,
+  "explainedFacts": 8,
+  "paragraphSteps": [
+    {
+      "paragraph": "Selected Story, paragraph 1",
+      "steps": [
+        "launch-fold",
+        "deployed-second-week",
+        "cooling-and-alignment",
+        "calibration-to-science"
+      ]
+    },
+    {
+      "paragraph": "Story Progression, Context",
+      "steps": [
+        "launch-fold",
+        "deployment-risk"
+      ]
+    },
+    {
+      "paragraph": "Story Progression, Development",
+      "steps": [
+        "deployed-second-week",
+        "cooling-and-alignment",
+        "calibration-to-science"
+      ]
+    },
+    {
+      "paragraph": "Story Progression, Endpoint",
+      "steps": [
+        "calibration-to-science"
+      ]
+    }
+  ],
+  "endpointAddsMeaning": true,
+  "redundancy": [
+    "The selected story states that deployment was one stage before routine science; the Story Progression endpoint repeats that the timeline distinguishes deployment from commissioning and routine science."
+  ],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": [
+    "deployment-risk"
+  ]
+}

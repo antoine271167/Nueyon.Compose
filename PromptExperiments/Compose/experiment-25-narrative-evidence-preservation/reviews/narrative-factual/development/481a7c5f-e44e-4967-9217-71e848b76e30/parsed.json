@@ -1,0 +1,108 @@
+{
+  "claims": [
+    {
+      "excerpt": "The story follows the relationship between NIST’s broad AI Risk Management Framework and its later profile focused on generative AI.",
+      "label": "F0",
+      "sourceEvidence": "NIST released AI RMF 1.0 in January 2023. In July 2024 NIST published AI 600-1, a companion profile for generative AI with cross-sector scope.",
+      "synthesisStatement": "The later generative AI profile is presented in relation to the earlier, broader framework.",
+      "narrativeStatement": "The story follows the relationship between NIST’s broad AI Risk Management Framework and its later profile focused on generative AI.",
+      "origin": "propagated",
+      "explanation": "Faithfully conveys the timeline and distinction between the broad framework and focused profile.",
+      "materiality": "Material framing for the story."
+    },
+    {
+      "excerpt": "The framework, released in January 2023 for voluntary use, aims to help organizations incorporate trustworthiness considerations across AI design, development, use, and evaluation.",
+      "label": "F0",
+      "sourceEvidence": "NIST released AI RMF 1.0 in January 2023. It was designed for voluntary use and aims to help organizations bring trustworthiness considerations into the design, development, use and evaluation of AI.",
+      "synthesisStatement": "AI RMF 1.0 was released in January 2023, is voluntary, and aims to incorporate trustworthiness across AI activities.",
+      "narrativeStatement": "The framework, released in January 2023 for voluntary use, aims to help organizations incorporate trustworthiness considerations across AI design, development, use, and evaluation.",
+      "origin": "upstream",
+      "explanation": "Accurately paraphrases the release date, voluntary status, audience, aim, and covered activities.",
+      "materiality": "Material."
+    },
+    {
+      "excerpt": "In July 2024, NIST published AI 600-1, a cross-sector companion profile for generative AI.",
+      "label": "F0",
+      "sourceEvidence": "In July 2024 NIST published AI 600-1, a companion profile for generative AI with cross-sector scope.",
+      "synthesisStatement": "AI 600-1 is a July 2024 cross-sector companion profile focused on generative AI.",
+      "narrativeStatement": "In July 2024, NIST published AI 600-1, a cross-sector companion profile for generative AI.",
+      "origin": "upstream",
+      "explanation": "Preserves the date, publisher, profile status, subject, and cross-sector scope.",
+      "materiality": "Material."
+    },
+    {
+      "excerpt": "Readers should understand the two publications together as a broad framework and a profile focused on one class of AI—not as evidence that the profile replaces the framework.",
+      "label": "F0",
+      "sourceEvidence": "Follow the timeline from the broad framework to a profile focused on one class of AI. Show why the two documents should be read together. Companion status does not establish replacement.",
+      "synthesisStatement": "Read the documents together as a broad framework and focused companion profile; companion status does not establish replacement.",
+      "narrativeStatement": "Readers should understand the two publications together as a broad framework and a profile focused on one class of AI—not as evidence that the profile replaces the framework.",
+      "origin": "propagated",
+      "explanation": "Preserves the supplied distinction and does not claim that the profile replaces the framework.",
+      "materiality": "Material."
+    },
+    {
+      "excerpt": "NIST released AI RMF 1.0 in January 2023 as a framework designed for voluntary use, with the aim of bringing trustworthiness considerations into AI design, development, use, and evaluation.",
+      "label": "F0",
+      "sourceEvidence": "NIST released AI RMF 1.0 in January 2023. It was designed for voluntary use and aims to help organizations bring trustworthiness considerations into the design, development, use and evaluation of AI.",
+      "synthesisStatement": "AI RMF 1.0 was released in January 2023 for voluntary use and aims to integrate trustworthiness considerations across AI activities.",
+      "narrativeStatement": "NIST released AI RMF 1.0 in January 2023 as a framework designed for voluntary use, with the aim of bringing trustworthiness considerations into AI design, development, use, and evaluation.",
+      "origin": "upstream",
+      "explanation": "This repeats the earlier account without changing its factual meaning.",
+      "materiality": "Material, but redundant."
+    },
+    {
+      "excerpt": "In July 2024, NIST published AI 600-1, a cross-sector profile focused on generative AI.",
+      "label": "F0",
+      "sourceEvidence": "In July 2024 NIST published AI 600-1, a companion profile for generative AI with cross-sector scope.",
+      "synthesisStatement": "AI 600-1 is a July 2024 cross-sector profile for generative AI.",
+      "narrativeStatement": "In July 2024, NIST published AI 600-1, a cross-sector profile focused on generative AI.",
+      "origin": "upstream",
+      "explanation": "Accurately restates the profile’s date and scope; the companion designation is supplied elsewhere in the body.",
+      "materiality": "Material, but redundant."
+    },
+    {
+      "excerpt": "It was prepared pursuant to Executive Order 14110; this establishes the publication’s connection to the order, not a private-sector compliance requirement.",
+      "label": "F0",
+      "sourceEvidence": "The publication was prepared pursuant to Executive Order 14110. Its relation to the order concerns development of the publication; the abstract does not describe mandatory private-sector compliance.",
+      "synthesisStatement": "The order is connected to preparation of the publication; the source does not establish a private-sector mandate.",
+      "narrativeStatement": "It was prepared pursuant to Executive Order 14110; this establishes the publication’s connection to the order, not a private-sector compliance requirement.",
+      "origin": "upstream",
+      "explanation": "Preserves the development attribution and the limitation on what can be inferred about private-sector compliance.",
+      "materiality": "Material."
+    },
+    {
+      "excerpt": "Present the publications together as a broad framework and a companion profile focused on generative AI. Companion status does not establish that the profile replaces the framework.",
+      "label": "F0",
+      "sourceEvidence": "Follow the timeline from the broad framework to a profile focused on one class of AI. Show why the two documents should be read together. Companion status does not establish replacement.",
+      "synthesisStatement": "Present the documents together while avoiding an unsupported replacement claim.",
+      "narrativeStatement": "Present the publications together as a broad framework and a companion profile focused on generative AI. Companion status does not establish that the profile replaces the framework.",
+      "origin": "propagated",
+      "explanation": "The endpoint preserves the supported relationship and limitation.",
+      "materiality": "Material, but repeats the selected-story framing."
+    }
+  ],
+  "preserved": [
+    "nist-ai-rmf-release",
+    "ai-600-1-release",
+    "order-relation"
+  ],
+  "distorted": [],
+  "omitted": [],
+  "developments": 2,
+  "explainedFacts": 6,
+  "paragraphSteps": [
+    "AI RMF 1.0 was released in January 2023 for voluntary use, with a stated trustworthiness aim across AI activities.",
+    "AI 600-1 was published in July 2024 as a cross-sector generative AI profile prepared pursuant to Executive Order 14110.",
+    "The publications are framed together as broad guidance and a focused companion profile, without implying replacement or a private-sector compliance requirement."
+  ],
+  "endpointAddsMeaning": true,
+  "redundancy": [
+    "The January 2023 release, voluntary status, and framework aim appear in both Selected Story and the Context step.",
+    "The July 2024 publication and generative AI scope appear in both Selected Story and the Development step.",
+    "The read-together and non-replacement framing is repeated in Selected Story and the Endpoint step."
+  ],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": false,
+  "omittedFromNarrativeUsedInArticle": []
+}

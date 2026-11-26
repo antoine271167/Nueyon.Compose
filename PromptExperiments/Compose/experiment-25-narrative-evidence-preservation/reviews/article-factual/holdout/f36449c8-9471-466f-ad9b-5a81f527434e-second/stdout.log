@@ -1,0 +1,132 @@
+{
+  "claims": [
+    {
+      "excerpt": "Two Magnitude Estimates for the 1906 Earthquake",
+      "label": "F0",
+      "sourceEvidence": "The evidence gives two estimates for the 1906 earthquake: 7.7 and 7.9.",
+      "synthesisStatement": "The evidence presents both magnitude estimates.",
+      "narrativeStatement": "The 1906 earthquake has estimates of magnitude 7.7 and 7.9 from two different approaches.",
+      "origin": "compose",
+      "explanation": "The heading accurately summarizes the evidence.",
+      "materiality": "low"
+    },
+    {
+      "excerpt": "Two approaches have produced different magnitude estimates for the 1906 earthquake: 7.7 and 7.9.",
+      "label": "F0",
+      "sourceEvidence": "The seismic analysis suggested 7.7; the geodetic approach gave an estimate of 7.9.",
+      "synthesisStatement": "Different approaches produced estimates of 7.7 and 7.9.",
+      "narrativeStatement": "The 1906 earthquake has estimates of magnitude 7.7 and 7.9 from two different approaches.",
+      "origin": "upstream",
+      "explanation": "The estimates and their contrast are supported.",
+      "materiality": "high"
+    },
+    {
+      "excerpt": "The estimates come from different ways of measuring the earthquake’s size.",
+      "label": "F0",
+      "sourceEvidence": "Different methods of estimating earthquake size can disagree.",
+      "synthesisStatement": "The estimates reflect different methods.",
+      "narrativeStatement": "The story explains how the methods differ.",
+      "origin": "upstream",
+      "explanation": "This accurately describes the methodological distinction.",
+      "materiality": "medium"
+    },
+    {
+      "excerpt": "A seismic analysis estimated a magnitude of 7.7",
+      "label": "F1",
+      "sourceEvidence": "The seismic analysis suggested a surface-wave magnitude of 7.7.",
+      "synthesisStatement": "The seismic analysis suggested a surface-wave magnitude of 7.7.",
+      "narrativeStatement": "The seismic analysis ... suggested 7.7.",
+      "origin": "upstream",
+      "explanation": "The value is correct, but the body drops the source’s specific surface-wave magnitude qualification.",
+      "materiality": "medium"
+    },
+    {
+      "excerpt": "using usable recordings from 12 of the 96 observatories studied.",
+      "label": "F0",
+      "sourceEvidence": "Seismic waves were recorded at 96 observatories, and 12 stations had records suitable for digitization and modeling.",
+      "synthesisStatement": "Usable data were digitized and modeled from 12 of 96 observatories studied.",
+      "narrativeStatement": "using usable recordings from 12 of 96 observatories studied",
+      "origin": "upstream",
+      "explanation": "The count and usable-recordings qualification are preserved.",
+      "materiality": "medium"
+    },
+    {
+      "excerpt": "A USGS re-evaluation of geodetic measurements estimated 7.9",
+      "label": "F1",
+      "sourceEvidence": "USGS re-evaluated geodetic measurements from before and after the event; their slip models suggested moment magnitude 7.9.",
+      "synthesisStatement": "A USGS team re-evaluated geodetic measurements made before and after the earthquake and gave an estimate of 7.9.",
+      "narrativeStatement": "the USGS re-evaluation of geodetic measurements, which estimated 7.9",
+      "origin": "upstream",
+      "explanation": "The attribution, method, and estimate are supported, but the body omits that the measurements were made before and after the earthquake.",
+      "materiality": "low"
+    },
+    {
+      "excerpt": "based on changes in angles and distances between benchmarks.",
+      "label": "F0",
+      "sourceEvidence": "The geodetic measurements assessed deformation with benchmark distances and angles.",
+      "synthesisStatement": "The geodetic approach used ground deformation reflected in angles and distances between benchmarks.",
+      "narrativeStatement": "from changes in angles and distances between benchmarks",
+      "origin": "upstream",
+      "explanation": "This faithfully describes the geodetic measurement basis.",
+      "materiality": "medium"
+    },
+    {
+      "excerpt": "The estimates reflect different measurement methods—seismic recordings and ground deformation.",
+      "label": "F0",
+      "sourceEvidence": "One approach used seismic recordings; the other used geodetic measurements of ground deformation.",
+      "synthesisStatement": "The estimates reflect seismic recordings and geodetic measurements of ground deformation.",
+      "narrativeStatement": "one based on seismic recordings and another on geodetic measurements of ground deformation",
+      "origin": "upstream",
+      "explanation": "The methods are accurately distinguished.",
+      "materiality": "medium"
+    },
+    {
+      "excerpt": "Different methods can produce different estimates of earthquake size.",
+      "label": "F0",
+      "sourceEvidence": "Different methods of estimating earthquake size can disagree.",
+      "synthesisStatement": "Different methods of estimating earthquake size can disagree.",
+      "narrativeStatement": "different methods can produce different estimates",
+      "origin": "upstream",
+      "explanation": "This is the supported takeaway and does not claim either estimate is more accurate.",
+      "materiality": "medium"
+    }
+  ],
+  "preserved": [
+    "seismic-data",
+    "geodetic-estimate",
+    "methods-can-disagree"
+  ],
+  "distorted": [
+    "seismic-estimate",
+    "geodetic-reanalysis"
+  ],
+  "omitted": [],
+  "developments": 3,
+  "explainedFacts": 4,
+  "paragraphSteps": [
+    {
+      "paragraph": 1,
+      "step": "Introduces the two estimates and identifies their methodological contrast.",
+      "supported": true
+    },
+    {
+      "paragraph": 2,
+      "step": "Provides the seismic data scope and contrasts the seismic and geodetic bases for the estimates.",
+      "supported": true
+    },
+    {
+      "paragraph": 3,
+      "step": "Restates the method distinction as the takeaway.",
+      "supported": true
+    }
+  ],
+  "endpointAddsMeaning": false,
+  "redundancy": [
+    "The final paragraph repeats the opening paragraph’s point that the estimates come from different methods and can differ."
+  ],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}
+

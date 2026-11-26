@@ -1,0 +1,118 @@
+{
+  "claims": [
+    {
+      "excerpt": "Two Estimates of the 1906 Earthquake",
+      "label": "F0",
+      "sourceEvidence": "The evidence describes a seismic estimate of 7.7 and a geodetic estimate of 7.9.",
+      "synthesisStatement": "The story compares two estimates of the 1906 earthquake.",
+      "narrativeStatement": "The narrative frames the story around two approaches and their estimates.",
+      "origin": "upstream",
+      "explanation": "Faithful as a heading for the two estimates discussed; it does not assert that only two estimates exist.",
+      "materiality": "Low"
+    },
+    {
+      "excerpt": "The 1906 earthquake has been assigned different magnitude estimates using different kinds of measurements.",
+      "label": "F0",
+      "sourceEvidence": "The synthesis says the methods of estimating earthquake size can disagree and describes seismic and geodetic approaches.",
+      "synthesisStatement": "Different methods can produce different earthquake-size estimates.",
+      "narrativeStatement": "The narrative identifies different approaches and says their estimates can disagree.",
+      "origin": "upstream",
+      "explanation": "Faithfully summarizes the supported contrast.",
+      "materiality": "Central"
+    },
+    {
+      "excerpt": "One seismic analysis examined recordings from 96 observatories",
+      "label": "F0",
+      "sourceEvidence": "“One team studied seismic recordings from 96 observatories” and the authoritative verification says seismic waves were recorded at 96 observatories.",
+      "synthesisStatement": "The seismic analysis drew on recordings from 96 observatories.",
+      "narrativeStatement": "The progression says the analysis examined recordings from 96 observatories.",
+      "origin": "upstream",
+      "explanation": "Faithful paraphrase of the stated data scope.",
+      "materiality": "Material"
+    },
+    {
+      "excerpt": "digitized and modeled usable data from 12",
+      "label": "F0",
+      "sourceEvidence": "The synthesis says usable data from 12 observatories were digitized and modeled.",
+      "synthesisStatement": "Usable seismic data from 12 observatories were digitized and modeled.",
+      "narrativeStatement": "The progression gives the same count and processing steps.",
+      "origin": "upstream",
+      "explanation": "Preserves the count and qualification that the data were usable.",
+      "materiality": "Material"
+    },
+    {
+      "excerpt": "suggesting a surface-wave magnitude of 7.7.",
+      "label": "F0",
+      "sourceEvidence": "The synthesis and authoritative verification identify a suggested surface-wave magnitude of 7.7.",
+      "synthesisStatement": "The seismic analysis suggested a surface-wave magnitude of 7.7.",
+      "narrativeStatement": "The progression gives the same scale and estimate.",
+      "origin": "upstream",
+      "explanation": "Preserves both the estimate and its surface-wave qualification.",
+      "materiality": "Material"
+    },
+    {
+      "excerpt": "A USGS team later re-evaluated geodetic measurements made before and after the earthquake.",
+      "label": "F0",
+      "sourceEvidence": "The synthesis says a USGS team re-evaluated geodetic measurements made before and after the earthquake.",
+      "synthesisStatement": "A USGS team re-evaluated pre- and post-earthquake geodetic measurements.",
+      "narrativeStatement": "The progression describes the same re-evaluation and measurement period.",
+      "origin": "upstream",
+      "explanation": "Faithfully preserves the team, method, and timing.",
+      "materiality": "Material"
+    },
+    {
+      "excerpt": "This approach used ground deformation recorded in angles and distances between benchmarks",
+      "label": "F0",
+      "sourceEvidence": "The synthesis says the geodetic approach used ground deformation reflected in angles and distances between benchmarks; the authoritative verification describes deformation assessed with benchmark distances and angles.",
+      "synthesisStatement": "The geodetic method assessed ground deformation through benchmark angles and distances.",
+      "narrativeStatement": "The progression gives the same measurement basis.",
+      "origin": "upstream",
+      "explanation": "Faithful paraphrase of the geodetic measurement details.",
+      "materiality": "Material"
+    },
+    {
+      "excerpt": "produced an estimate of 7.9.",
+      "label": "F1",
+      "sourceEvidence": "The synthesis says the approach “gave an estimate of 7.9”; the authoritative verification specifies that slip models suggested moment magnitude 7.9.",
+      "synthesisStatement": "The geodetic approach gave an estimate of 7.9.",
+      "narrativeStatement": "The progression also gives 7.9 without naming its magnitude scale.",
+      "origin": "propagated",
+      "explanation": "The value is correct, but “produced” is firmer than the source’s “suggested,” and the body omits the source’s moment-magnitude qualification. It does not explicitly assign 7.9 to the surface-wave scale.",
+      "materiality": "Minor"
+    },
+    {
+      "excerpt": "The estimates come from different measurement methods, which can yield different estimates of an earthquake’s size.",
+      "label": "F0",
+      "sourceEvidence": "The synthesis says different methods of estimating earthquake size can disagree.",
+      "synthesisStatement": "Different measurement methods can yield different earthquake-size estimates.",
+      "narrativeStatement": "The narrative states the same supported distinction.",
+      "origin": "upstream",
+      "explanation": "Faithful conclusion, though it repeats the opening contrast.",
+      "materiality": "Low"
+    }
+  ],
+  "preserved": [
+    "seismic-data",
+    "seismic-estimate",
+    "geodetic-reanalysis",
+    "geodetic-estimate",
+    "methods-can-disagree"
+  ],
+  "distorted": [],
+  "omitted": [],
+  "developments": 2,
+  "explainedFacts": 5,
+  "paragraphSteps": [
+    "Introduces the differing estimates and explains the seismic dataset and 7.7 surface-wave estimate.",
+    "Contrasts the seismic analysis with USGS re-evaluation of pre- and post-earthquake geodetic measurements, including its measurement basis and 7.9 estimate.",
+    "States the takeaway that different measurement methods can yield different estimates."
+  ],
+  "endpointAddsMeaning": false,
+  "redundancy": [
+    "The opening sentence and final paragraph both state that differing measurement methods yield differing estimates."
+  ],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": []
+}

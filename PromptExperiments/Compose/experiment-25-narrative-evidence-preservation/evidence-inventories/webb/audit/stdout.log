@@ -1,0 +1,40 @@
+{
+  "checks": [
+    {
+      "id": "launch-fold",
+      "supported": true,
+      "useful": true,
+      "reason": "The source and Synthesis support both the size constraint and folding into the Ariane 5 fairing. Useful as brief context for why deployment was necessary; keep it separate from the later deployment and commissioning milestones.",
+      "coverageGap": "Does not describe the deployment sequence; that is covered by other items."
+    },
+    {
+      "id": "deployment-risk",
+      "supported": true,
+      "useful": true,
+      "reason": "Both the source and Synthesis support the potential failure points, their possible mission impact, and the lack of a possible repair mission at Webb’s distance. These were risks, not reported failures; this is a distinct stakes-setting detail.",
+      "coverageGap": "Omits the 178 release mechanisms. The excerpt preserves the more relevant step and failure-point counts."
+    },
+    {
+      "id": "deployed-second-week",
+      "supported": true,
+      "useful": true,
+      "reason": "Both support that unfolding and latching the secondary mirror tripod and primary-mirror wings completed the fully deployed configuration in the second week. This is a distinct physical-deployment milestone, not the start of routine science.",
+      "coverageGap": "Does not cover the earlier sunshield deployment or other steps; those are not needed to establish this milestone."
+    },
+    {
+      "id": "cooling-and-alignment",
+      "supported": true,
+      "useful": true,
+      "reason": "Both support cooling to stable temperatures taking several weeks and alignment work occurring in months two through four. This complements, rather than repeats, the deployment milestone by showing commissioning continued afterward.",
+      "coverageGap": "Omits the detailed cooling controls and alignment procedure, which are not needed for the proposed timeline."
+    },
+    {
+      "id": "calibration-to-science",
+      "supported": true,
+      "useful": true,
+      "reason": "Both support calibration of instrument modes during months five and six and the transition to routine science operations after six months. This is the timeline’s endpoint and is distinct from the earlier cooling and alignment stages.",
+      "coverageGap": "Omits representative targets, moving-target demonstrations, and Early Release Observations; the excerpt appropriately makes no claim about specific calibration results."
+    }
+  ]
+}
+

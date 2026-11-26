@@ -1,0 +1,47 @@
+{
+  "checks": [
+    {
+      "id": "ignition-event",
+      "supported": true,
+      "useful": true,
+      "reason": "The excerpt and claim are supported by both source and Synthesis. The claim accurately states the date, facility, and result, though it omits the Lawrence Livermore National Laboratory attribution.",
+      "coverageGap": "The claim omits the laboratory attribution and the broader energy comparison and practical-development context."
+    },
+    {
+      "id": "target-energy-comparison",
+      "supported": true,
+      "useful": true,
+      "reason": "Both source and Synthesis support the full excerpt and the 3.15 MJ versus 2.05 MJ comparison. The qualification that the denominator excludes facility-wide electricity is stated in Synthesis but not established by the source, so that qualification remains unresolved.",
+      "coverageGap": "The source does not report facility-wide electricity use; the comparison is specifically energy delivered to the target versus fusion energy generated."
+    },
+    {
+      "id": "facility-electricity-limit",
+      "supported": false,
+      "useful": true,
+      "reason": "Synthesis states this qualification, but the source does not establish it. The source's target-energy figure alone is not authoritative evidence about facility-wide electricity.",
+      "coverageGap": "No facility-wide electricity use or accounting boundary is given in the source."
+    },
+    {
+      "id": "not-grid-electricity",
+      "supported": false,
+      "useful": true,
+      "reason": "Synthesis states this qualification, but the source does not address electricity delivered to the grid. The claim cannot be independently verified from the source.",
+      "coverageGap": "The source reports fusion energy, not electricity generation, conversion, or delivery to the grid."
+    },
+    {
+      "id": "development-still-needed",
+      "supported": true,
+      "useful": true,
+      "reason": "Both source and Synthesis support the full excerpt and the claim that the result is progress toward inertial fusion energy while many developments remain necessary for practical production.",
+      "coverageGap": "The source gives no timeline or specifics for the needed developments."
+    },
+    {
+      "id": "announcement-date",
+      "supported": true,
+      "useful": true,
+      "reason": "Both source and Synthesis give the December 5, 2022 experiment date and December 13 announcement date. The eight-day interval follows from those dates; the year for the announcement is implicit in its reference to that experiment.",
+      "coverageGap": "The announcement date is given without an explicit year; the relationship to the 2022 experiment supplies the context."
+    }
+  ]
+}
+

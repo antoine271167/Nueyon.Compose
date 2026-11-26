@@ -1,0 +1,121 @@
+{
+  "claims": [
+    {
+      "excerpt": "Dimorphos’s Orbit Continued to Change After DART",
+      "label": "F0",
+      "sourceEvidence": "The supplied evidence says the period shortened immediately after impact and continued to shorten over subsequent weeks.",
+      "synthesisStatement": "The orbital period shortened immediately after impact and continued to shorten over subsequent weeks.",
+      "narrativeStatement": "The central point is that the orbital change continued beyond the immediate aftermath of the impact.",
+      "origin": "upstream",
+      "explanation": "Accurately summarizes the supported post-impact changes; it is repeated in the body.",
+      "materiality": "Low; a headline summary."
+    },
+    {
+      "excerpt": "Dimorphos, the smaller asteroid orbiting Didymos",
+      "label": "F0",
+      "sourceEvidence": "The supplied evidence identifies Didymos as the larger asteroid and Dimorphos as orbiting it.",
+      "synthesisStatement": "Dimorphos took 11 hours and 55 minutes to orbit the larger asteroid Didymos.",
+      "narrativeStatement": "Establish that Dimorphos orbits the larger asteroid Didymos.",
+      "origin": "upstream",
+      "explanation": "Faithfully identifies the orbiting body and its larger companion.",
+      "materiality": "Low; contextual identification."
+    },
+    {
+      "excerpt": "completed an orbit in 11 hours and 55 minutes before DART’s impact",
+      "label": "F1",
+      "sourceEvidence": "The authoritative verification describes the pre-impact period as around 11 hours 55 minutes; the supplied paraphrase and synthesis give 11 hours and 55 minutes.",
+      "synthesisStatement": "Before impact, Dimorphos took 11 hours and 55 minutes to orbit Didymos.",
+      "narrativeStatement": "Give its pre-impact period of 11 hours and 55 minutes as a baseline.",
+      "origin": "upstream",
+      "explanation": "The value is accurate at the stated precision, though the authoritative verification qualifies it as approximate.",
+      "materiality": "Minor; the baseline is presented slightly more precisely than the verification."
+    },
+    {
+      "excerpt": "Its orbital period was shorter immediately after the impact, then shortened further over the following weeks.",
+      "label": "F0",
+      "sourceEvidence": "The period shortened immediately after impact and continued to shorten over subsequent weeks.",
+      "synthesisStatement": "Immediately after impact, the period shortened; over subsequent weeks it continued to shorten.",
+      "narrativeStatement": "Its orbital period was shorter immediately after the impact and continued to shorten over the following weeks.",
+      "origin": "upstream",
+      "explanation": "Faithfully preserves the sequence and direction of change. It omits the exact immediate post-impact measurement.",
+      "materiality": "Material trend; the omitted measurement is noted under inventory coverage."
+    },
+    {
+      "excerpt": "During that time, Dimorphos also lost more rocky material to space",
+      "label": "F0",
+      "sourceEvidence": "Over subsequent weeks Dimorphos lost more rocky material to space while its orbital period continued to shorten.",
+      "synthesisStatement": "Over subsequent weeks Dimorphos lost more rocky material to space while its orbital period continued to shorten.",
+      "narrativeStatement": "Describe its further shortening over subsequent weeks as Dimorphos lost more rocky material to space.",
+      "origin": "upstream",
+      "explanation": "Faithfully reports the concurrent material loss.",
+      "materiality": "Material to the account of the subsequent period."
+    },
+    {
+      "excerpt": "the observations do not establish that this loss caused the continued shortening",
+      "label": "F0",
+      "sourceEvidence": "The evidence reports material loss and continued shortening together, without establishing a causal link.",
+      "synthesisStatement": "The supplied synthesis reports the two changes concurrently and does not state that one caused the other.",
+      "narrativeStatement": "Keep these as concurrent observations, not a cause-and-effect claim.",
+      "origin": "propagated",
+      "explanation": "Preserves the evidence’s causal limitation without implying a causal finding.",
+      "materiality": "Material qualification."
+    },
+    {
+      "excerpt": "The period eventually settled at about 11 hours and 22 minutes",
+      "label": "F0",
+      "sourceEvidence": "The period settled at 11 hours, 22 minutes and 3 seconds.",
+      "synthesisStatement": "The period settled at 11 hours, 22 minutes and 3 seconds.",
+      "narrativeStatement": "Settling at about 11 hours and 22 minutes.",
+      "origin": "upstream",
+      "explanation": "A faithful rounded rendering of the settled period.",
+      "materiality": "Material endpoint, accurately rounded."
+    },
+    {
+      "excerpt": "roughly 33 minutes shorter than before the impact",
+      "label": "F0",
+      "sourceEvidence": "The settled period was 33 minutes and 15 seconds shorter than before impact.",
+      "synthesisStatement": "The settled period was 33 minutes and 15 seconds shorter than before impact.",
+      "narrativeStatement": "The narrative gives the before-and-after periods but does not state the total reduction explicitly.",
+      "origin": "upstream",
+      "explanation": "Accurately rounds the reported total reduction.",
+      "materiality": "Material comparison, accurately rounded."
+    },
+    {
+      "excerpt": "Dimorphos’s orbit was also no longer circular.",
+      "label": "F0",
+      "sourceEvidence": "The orbit was no longer circular after impact.",
+      "synthesisStatement": "The orbit was no longer circular after impact.",
+      "narrativeStatement": "Its orbit was also no longer circular.",
+      "origin": "upstream",
+      "explanation": "Faithfully reports the orbit-shape change.",
+      "materiality": "Material additional outcome."
+    }
+  ],
+  "preserved": [
+    "continued-shortening",
+    "settled-period",
+    "orbit-shape"
+  ],
+  "distorted": [
+    "pre-impact-period"
+  ],
+  "omitted": [
+    "immediate-period-change"
+  ],
+  "developments": 3,
+  "explainedFacts": 8,
+  "paragraphSteps": [
+    "Paragraph 1 establishes the orbiting bodies and baseline, then describes the immediate and subsequent shortening, concurrent rocky-material loss, and causal limitation.",
+    "Paragraph 2 gives the rounded settled period, total reduction, and noncircular orbit."
+  ],
+  "endpointAddsMeaning": true,
+  "redundancy": [
+    "The headline’s continued-change summary is repeated in the first paragraph."
+  ],
+  "peripheral": [],
+  "unsupported": [],
+  "formatNeutral": true,
+  "omittedFromNarrativeUsedInArticle": [
+    "roughly 33 minutes shorter than before the impact"
+  ]
+}
